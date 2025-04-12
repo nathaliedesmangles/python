@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Semaine8s on My New Hugo Site</title>
-    <link>https://example.org/semaine8/</link>
-    <description>Recent content in Semaine8s on My New Hugo Site</description>
+    <title>Traitement et analyse de données avec Pandas :: 420-SN1-RE</title>
+    <link>https://example.org/semaine8/index.html</link>
+    <description>Chargement et manipulation de données avec Pandas Calculs statistiques de base Application : analyse de mesures en biologie/chimie</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATELIER #8: Titre</title>
+      <link>https://example.org/semaine8/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/atelier/index.html</guid>
+      <description>Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre +++ title = “Atelier #7” weight = 81 +++&#xA;Atelier</description>
+    </item>
   </channel>
 </rss>

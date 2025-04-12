@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Règlements en classe :: 420-SN1-RE</title>
+    <link>https://example.org/regles/index.html</link>
+    <description>🧠 40 cerveaux curieux 🧑‍💻 un seul code de conduite ! ⏰ Ponctuel·le tu seras Arriver à l’heure = comme un bon script : bien lancé dès le début.&#xA;⚠️ 3 retards = 1 absence. 👀 Présent·e et concentré·e Pas de mode veille en classe.&#xA;🖱️ Ta souris clique, mais c’est ton cerveau qui code ! 🗣️ Une classe, pas un chat Discord On lève la main, on respecte les autres. On écoute avant de poser une question. 💻 Ordinateur = outil de travail Réseaux sociaux : off. IDE (Outils de développement) : ON.&#xA;🐍 On reste dans l’univers Python ! 🔄 Collaboration ≠ copie Tu peux aider, mais pas coder à la place d’un·e autre.&#xA;🧬 Apprends, pas juste CTRL+C / CTRL+V. 📂 Ton code, c’est ta signature Plagiat, triche ou ChatGPT non assumé ?&#xA;🚫 Refusé, comme un bug au premier run. 🧪 Rigueur scientifique exigée Variables claires, commentaires utiles. Un raisonnement logique à toute épreuve. 📅 Travaux à temps = projets qui roulent Un script livré trop tard = programme qui plante.&#xA;⏳ Prévois tes tests et commits ! 🤝 En équipe, on débogue ensemble L’erreur est humaine, l’entraide est précieuse.&#xA;Pas de jugement, juste du soutien.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/regles/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

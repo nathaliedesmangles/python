@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Semaine1s on My New Hugo Site</title>
-    <link>https://example.org/semaine1/</link>
-    <description>Recent content in Semaine1s on My New Hugo Site</description>
+    <title>Introduction à Python et à l&#39;algorithmie :: 420-SN1-RE</title>
+    <link>https://example.org/semaine1/index.html</link>
+    <description>Objectifs de la leçon Comprendre ce qu’est un langage de programmation Identifier les types de données de base en Python Écrire des expressions simples en Python Créer des scripts simples avec des calculs scientifiques S’initier à la logique algorithmique Plan de la leçon Section Durée (approx.) 1. Pourquoi Python ? 2 min 2. Présentation d’Anaconda et Jupyter 5 min 3. Variables et types de base 10 min 4. Opérations mathématiques de base 5 min 5. Fonctions intégrées utiles 15 min 6. Qu’est-ce qu’un algorithme ? 5 min 7. Exemples d’algorithmes simples 5 min Pause 10 min 8. Activité pratique en classe 1h50 9. Activité pratique à la maison 3h 1. Pourquoi apprendre Python en science ? Polyvalence : utilisé en bio, chimie, physique, météo, environnement, IA. Lisibilité : syntaxe claire = moins de stress pour les débutants. Gratuit et supporté par une grande communauté scientifique. Nombreux modules utiles : numpy, matplotlib, pandas, etc. 📌 Exemple : afficher le résultat d’un calcul</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATELIER #1: Titre</title>
+      <link>https://example.org/semaine1/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine1/atelier/index.html</guid>
+      <description>Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre +++ title = “ATELIER #1: Titre” weight = 12 +++&#xA;Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre</description>
+    </item>
   </channel>
 </rss>

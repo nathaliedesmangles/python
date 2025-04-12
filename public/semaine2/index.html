@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.5.0+827ae9c6712454adc1cc4bbf334febc4ff68f947">
+    <meta name="description" content="Objectifs de la leçon Comprendre et utiliser les structures de contrôle : if, while, for Maîtriser l’indentation en Python Appliquer des opérateurs logiques (and, or, not) Réfléchir à l’ordre logique dans un programme Plan de la leçon Section Durée (approx.) 1. Boucle while 2 min 2. Conditions d’arrêt 5 min 3. Listes pour stocker les températures 10 min 4. Affichage formaté (print, round) 5 min 5. (Optionnel) matplotlib pour visualisation 15 min Pause 10 min 6. Activité pratique en classe 1h50 7. Activité pratique à la maison 3h 1. Structure d’un if (10 min) Syntaxe : if condition: instruction1 elif autre_condition: instruction2 else: instruction3Indentation L’indentation (espacement en début de ligne) est obligatoire en Python pour indiquer les blocs de code. Convention : 4 espaces Opérateurs logiques utiles : == (égal à) != (différent de) &gt; &lt; &gt;= &lt;= and, or, not Exemple en direct : x = float(input(&#34;Entrez un nombre : &#34;)) if x &gt; 0: print(&#34;Le nombre est positif.&#34;) elif x &lt; 0: print(&#34;Le nombre est négatif.&#34;) else: print(&#34;Le nombre est nul.&#34;)2. Boucle while (10 min) Principe : La boucle while répète un bloc tant qu’une condition est vraie.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Structures de contrôle (conditions et boucles) :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs de la leçon Comprendre et utiliser les structures de contrôle : if, while, for Maîtriser l’indentation en Python Appliquer des opérateurs logiques (and, or, not) Réfléchir à l’ordre logique dans un programme Plan de la leçon Section Durée (approx.) 1. Boucle while 2 min 2. Conditions d’arrêt 5 min 3. Listes pour stocker les températures 10 min 4. Affichage formaté (print, round) 5 min 5. (Optionnel) matplotlib pour visualisation 15 min Pause 10 min 6. Activité pratique en classe 1h50 7. Activité pratique à la maison 3h 1. Structure d’un if (10 min) Syntaxe : if condition: instruction1 elif autre_condition: instruction2 else: instruction3Indentation L’indentation (espacement en début de ligne) est obligatoire en Python pour indiquer les blocs de code. Convention : 4 espaces Opérateurs logiques utiles : == (égal à) != (différent de) &gt; &lt; &gt;= &lt;= and, or, not Exemple en direct : x = float(input(&#34;Entrez un nombre : &#34;)) if x &gt; 0: print(&#34;Le nombre est positif.&#34;) elif x &lt; 0: print(&#34;Le nombre est négatif.&#34;) else: print(&#34;Le nombre est nul.&#34;)2. Boucle while (10 min) Principe : La boucle while répète un bloc tant qu’une condition est vraie.">
+    <meta property="og:url" content="https://example.org/semaine2/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Structures de contrôle (conditions et boucles) :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs de la leçon Comprendre et utiliser les structures de contrôle : if, while, for Maîtriser l’indentation en Python Appliquer des opérateurs logiques (and, or, not) Réfléchir à l’ordre logique dans un programme Plan de la leçon Section Durée (approx.) 1. Boucle while 2 min 2. Conditions d’arrêt 5 min 3. Listes pour stocker les températures 10 min 4. Affichage formaté (print, round) 5 min 5. (Optionnel) matplotlib pour visualisation 15 min Pause 10 min 6. Activité pratique en classe 1h50 7. Activité pratique à la maison 3h 1. Structure d’un if (10 min) Syntaxe : if condition: instruction1 elif autre_condition: instruction2 else: instruction3Indentation L’indentation (espacement en début de ligne) est obligatoire en Python pour indiquer les blocs de code. Convention : 4 espaces Opérateurs logiques utiles : == (égal à) != (différent de) &gt; &lt; &gt;= &lt;= and, or, not Exemple en direct : x = float(input(&#34;Entrez un nombre : &#34;)) if x &gt; 0: print(&#34;Le nombre est positif.&#34;) elif x &lt; 0: print(&#34;Le nombre est négatif.&#34;) else: print(&#34;Le nombre est nul.&#34;)2. Boucle while (10 min) Principe : La boucle while répète un bloc tant qu’une condition est vraie.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Structures de contrôle (conditions et boucles) :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs de la leçon Comprendre et utiliser les structures de contrôle : if, while, for Maîtriser l’indentation en Python Appliquer des opérateurs logiques (and, or, not) Réfléchir à l’ordre logique dans un programme Plan de la leçon Section Durée (approx.) 1. Boucle while 2 min 2. Conditions d’arrêt 5 min 3. Listes pour stocker les températures 10 min 4. Affichage formaté (print, round) 5 min 5. (Optionnel) matplotlib pour visualisation 15 min Pause 10 min 6. Activité pratique en classe 1h50 7. Activité pratique à la maison 3h 1. Structure d’un if (10 min) Syntaxe : if condition: instruction1 elif autre_condition: instruction2 else: instruction3Indentation L’indentation (espacement en début de ligne) est obligatoire en Python pour indiquer les blocs de code. Convention : 4 espaces Opérateurs logiques utiles : == (égal à) != (différent de) &gt; &lt; &gt;= &lt;= and, or, not Exemple en direct : x = float(input(&#34;Entrez un nombre : &#34;)) if x &gt; 0: print(&#34;Le nombre est positif.&#34;) elif x &lt; 0: print(&#34;Le nombre est négatif.&#34;) else: print(&#34;Le nombre est nul.&#34;)2. Boucle while (10 min) Principe : La boucle while répète un bloc tant qu’une condition est vraie.">
+    <meta itemprop="wordCount" content="495">
+    <title>Structures de contrôle (conditions et boucles) :: 420-SN1-RE</title>
+    <link href="/semaine2/index.xml" rel="alternate" type="application/rss+xml" title="Structures de contrôle (conditions et boucles) :: 420-SN1-RE">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1744497068" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1744497068" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1744497068" rel="stylesheet">
+    <link href="/css/theme.min.css?1744497068" rel="stylesheet">
+    <link href="/css/format-html.min.css?1744497068" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1744497068" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1744497068" defer></script>
+    <script src="/js/lunr/lunr.min.js?1744497068" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1744497068" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1744497068" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1744497068" defer></script>
+    <script src="/js/search.min.js?1744497068" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/semaine2\/index.html';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1744497068";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine2/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs-de-la-leçon">Objectifs de la leçon</a></li>
+    <li><a href="#plan-de-la-leçon">Plan de la leçon</a></li>
+    <li><a href="#1-structure-dun-if-10-min">1. Structure d’un <code>if</code> (10 min)</a>
+      <ul>
+        <li><a href="#syntaxe-">Syntaxe :</a></li>
+        <li><a href="#indentation">Indentation</a></li>
+        <li><a href="#opérateurs-logiques-utiles-">Opérateurs logiques utiles :</a></li>
+        <li><a href="#exemple-en-direct-">Exemple en direct :</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-boucle-while-10-min">2. Boucle <code>while</code> (10 min)</a>
+      <ul>
+        <li><a href="#principe-">Principe :</a></li>
+        <li><a href="#exemple-en-direct--1">Exemple en direct :</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-boucle-for-10-min">3. Boucle <code>for</code> (10 min)</a>
+      <ul>
+        <li><a href="#principe--1">Principe :</a></li>
+        <li><a href="#exemple-en-direct--2">Exemple en direct :</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-importance-de-lordre-logique-10-min">4. Importance de l’ordre logique (10 min)</a>
+      <ul>
+        <li><a href="#mini-démo-">Mini-démo :</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion-et-transition-vers-la-pratique-5-min">Conclusion et transition vers la pratique (5 min)</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Structures de contrôle (conditions et boucles)</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine1/atelier/index.html" title="ATELIER #1: Titre (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine2/atelier/index.html" title="ATELIER #2: Titre (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine2" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="structures-de-contrôle-conditions-et-boucles">Structures de contrôle (conditions et boucles)</h1>
+
+<h2 id="objectifs-de-la-leçon">Objectifs de la leçon</h2>
+<ul>
+<li>Comprendre et utiliser les structures de contrôle : <code>if</code>, <code>while</code>, <code>for</code></li>
+<li>Maîtriser l’indentation en Python</li>
+<li>Appliquer des opérateurs logiques (<code>and</code>, <code>or</code>, <code>not</code>)</li>
+<li>Réfléchir à l’ordre logique dans un programme</li>
+</ul>
+<hr>
+<h2 id="plan-de-la-leçon">Plan de la leçon</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Section</th>
+          <th style="text-align: center">Durée (approx.)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1. Boucle while</td>
+          <td style="text-align: center">2 min</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2. Conditions d’arrêt</td>
+          <td style="text-align: center">5 min</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3. Listes pour stocker les températures</td>
+          <td style="text-align: center">10 min</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4. Affichage formaté (print, round)</td>
+          <td style="text-align: center">5 min</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5. (Optionnel) matplotlib pour visualisation</td>
+          <td style="text-align: center">15 min</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Pause</strong></td>
+          <td style="text-align: center"><strong>10 min</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">6. Activité pratique en classe</td>
+          <td style="text-align: center">1h50</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">7. Activité pratique à la maison</td>
+          <td style="text-align: center">3h</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="1-structure-dun-if-10-min">1. Structure d’un <code>if</code> (10 min)</h2>
+<h3 id="syntaxe-">Syntaxe :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> condition:
+</span></span><span style="display:flex;"><span>    instruction1
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> autre_condition:
+</span></span><span style="display:flex;"><span>    instruction2
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    instruction3</span></span></code></pre></div>
+<h3 id="indentation">Indentation</h3>
+<ul>
+<li>L’indentation <strong>(espacement en début de ligne)</strong> est <strong>obligatoire</strong> en Python pour indiquer les blocs de code.</li>
+<li>Convention : 4 espaces</li>
+</ul>
+<h3 id="opérateurs-logiques-utiles-">Opérateurs logiques utiles :</h3>
+<ul>
+<li><code>==</code> (égal à)</li>
+<li><code>!=</code> (différent de)</li>
+<li><code>&gt;</code> <code>&lt;</code> <code>&gt;=</code> <code>&lt;=</code></li>
+<li><code>and</code>, <code>or</code>, <code>not</code></li>
+</ul>
+<h3 id="exemple-en-direct-">Exemple en direct :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez un nombre : &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Le nombre est positif.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> x <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Le nombre est négatif.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Le nombre est nul.&#34;</span>)</span></span></code></pre></div>
+<hr>
+<h2 id="2-boucle-while-10-min">2. Boucle <code>while</code> (10 min)</h2>
+<h3 id="principe-">Principe :</h3>
+<p>La boucle <code>while</code> répète un bloc <strong>tant qu’une condition est vraie</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> condition:
+</span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
+<h3 id="exemple-en-direct--1">Exemple en direct :</h3>
+<p><strong>Affiche les minutes jusqu&rsquo;à l’ébullition (100°C)</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>minutes <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> temp <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Minute </span><span style="color:#e6db74">{</span>minutes<span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>temp<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C&#34;</span>)
+</span></span><span style="display:flex;"><span>    temp <span style="color:#f92672">+=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>    minutes <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Ébullition atteinte !&#34;</span>)</span></span></code></pre></div>
+<hr>
+<h2 id="3-boucle-for-10-min">3. Boucle <code>for</code> (10 min)</h2>
+<h3 id="principe--1">Principe :</h3>
+<p>La boucle <code>for</code> est idéale pour <strong>répéter un nombre connu de fois</strong>, ou <strong>parcourir une séquence</strong> (ex : liste, chaîne de caractères, <code>range()</code>).</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> élément <span style="color:#f92672">in</span> séquence:
+</span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
+<h3 id="exemple-en-direct--2">Exemple en direct :</h3>
+<p><strong>Calculer la vitesse (v = d/t) pour plusieurs distances fixes</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>distances <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>]  <span style="color:#75715e"># en mètres</span>
+</span></span><span style="display:flex;"><span>temps <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>  <span style="color:#75715e"># secondes</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> distances:
+</span></span><span style="display:flex;"><span>    v <span style="color:#f92672">=</span> d <span style="color:#f92672">/</span> temps
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Distance : </span><span style="color:#e6db74">{</span>d<span style="color:#e6db74">}</span><span style="color:#e6db74"> m, Vitesse : </span><span style="color:#e6db74">{</span>v<span style="color:#e6db74">}</span><span style="color:#e6db74"> m/s&#34;</span>)</span></span></code></pre></div>
+<hr>
+<h2 id="4-importance-de-lordre-logique-10-min">4. Importance de l’ordre logique (10 min)</h2>
+<ul>
+<li>Un programme <strong>se lit de haut en bas</strong>.</li>
+<li>Une mauvaise organisation peut conduire à des <strong>résultats erronés</strong>.</li>
+<li>L’ordre : <strong>entrée → traitement → sortie</strong></li>
+<li>Exemple courant d’erreur : utiliser une variable <strong>avant de lui avoir donné une valeur</strong>.</li>
+</ul>
+<h3 id="mini-démo-">Mini-démo :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Mauvais ordre :</span>
+</span></span><span style="display:flex;"><span>print(resultat)
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Erreur : la variable n&#39;existe pas encore</span></span></span></code></pre></div>
+<hr>
+<h2 id="conclusion-et-transition-vers-la-pratique-5-min">Conclusion et transition vers la pratique (5 min)</h2>
+<ul>
+<li>Les structures conditionnelles (<code>if</code>) permettent à votre programme de <strong>prendre des décisions</strong>.</li>
+<li>Les boucles (<code>while</code> et <code>for</code>) permettent de <strong>répéter des actions</strong> efficacement.</li>
+<li>L’indentation est <strong>essentielle</strong> pour structurer le code.</li>
+<li>Il faut toujours penser à la <strong>logique du déroulement</strong> du programme.</li>
+</ul>
+<hr>
+<ol start="2">
+<li>Activité pratique (1h50)
+Titre : Refroidissement d’un café – Modélisation par la loi de Newton
+Contexte scientifique
+Lorsqu’un café chaud est laissé sur une table, sa température diminue avec le temps. La loi de Newton du refroidissement modélise cette situation :</li>
+</ol>
+<p>Formule :
+T(t+1) = T(t) - k * (T(t) - T_env)
+où :</p>
+<p>T(t) est la température à l’instant t</p>
+<p>T_env est la température ambiante</p>
+<p>k est une constante de refroidissement</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">420-SN1-RE</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div id="R-shortcutmenu-homelinks" class="R-sidebarmenu">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements en classe</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Introduction à Python et à l&#39;algorithmie</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="active parent " data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Structures de contrôle (conditions et boucles)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine2/atelier/index.html"><a class="padding" href="/semaine2/atelier/index.html">ATELIER #2: Titre</a></li></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Trace et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Fonctions et modules</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Manipulation de listes et dictionnaires</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Introduction aux bibliothèques scientifiques</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Examen 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Traitement et analyse de données avec Pandas</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Traitement et analyse de données avec Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Les objets prédéfinis: Comment les utiliser ?</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Examen 2 (25%)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Révisions et préparation au projet final</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Projet final (semaines 13-15)</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Projet final (semaines 13-15)</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (fin et remise)</a></li>
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1744497068" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1744497068" defer></script>
+    <script src="/js/theme.min.js?1744497068" defer></script>
+  </body>
+</html>

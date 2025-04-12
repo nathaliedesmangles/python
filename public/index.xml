@@ -1,11 +1,123 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programmation en sciences on My New Hugo Site</title>
-    <link>https://example.org/</link>
-    <description>Recent content in Programmation en sciences on My New Hugo Site</description>
+    <title>Programmation en sciences :: 420-SN1-RE</title>
+    <link>https://example.org/index.html</link>
+    <description>Pondération : 1-2-3 Durée par semaine : 2h40 (50 min théorie + 1h50 pratique) Description du cours Ce cours permet de se familiariser avec la programmation informatique dans un contexte scientifique et de faire le lien entre les technologies et le domaine des sciences.&#xA;L’élève est introduit à la résolution de problèmes à l’aide d’algorithmes. Il doit traduire les algorithmes en code en utilisant un langage de programmation, tout en vérifiant le bon fonctionnement de son programme. Il traite des données et présente des résultats scientifiques à l’aide de la programmation lettrée.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Règlements en classe</title>
+      <link>https://example.org/regles/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/regles/index.html</guid>
+      <description>🧠 40 cerveaux curieux 🧑‍💻 un seul code de conduite ! ⏰ Ponctuel·le tu seras Arriver à l’heure = comme un bon script : bien lancé dès le début.&#xA;⚠️ 3 retards = 1 absence. 👀 Présent·e et concentré·e Pas de mode veille en classe.&#xA;🖱️ Ta souris clique, mais c’est ton cerveau qui code ! 🗣️ Une classe, pas un chat Discord On lève la main, on respecte les autres. On écoute avant de poser une question. 💻 Ordinateur = outil de travail Réseaux sociaux : off. IDE (Outils de développement) : ON.&#xA;🐍 On reste dans l’univers Python ! 🔄 Collaboration ≠ copie Tu peux aider, mais pas coder à la place d’un·e autre.&#xA;🧬 Apprends, pas juste CTRL+C / CTRL+V. 📂 Ton code, c’est ta signature Plagiat, triche ou ChatGPT non assumé ?&#xA;🚫 Refusé, comme un bug au premier run. 🧪 Rigueur scientifique exigée Variables claires, commentaires utiles. Un raisonnement logique à toute épreuve. 📅 Travaux à temps = projets qui roulent Un script livré trop tard = programme qui plante.&#xA;⏳ Prévois tes tests et commits ! 🤝 En équipe, on débogue ensemble L’erreur est humaine, l’entraide est précieuse.&#xA;Pas de jugement, juste du soutien.</description>
+    </item>
+    <item>
+      <title>Introduction à Python et à l&#39;algorithmie</title>
+      <link>https://example.org/semaine1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine1/index.html</guid>
+      <description>Objectifs de la leçon Comprendre ce qu’est un langage de programmation Identifier les types de données de base en Python Écrire des expressions simples en Python Créer des scripts simples avec des calculs scientifiques S’initier à la logique algorithmique Plan de la leçon Section Durée (approx.) 1. Pourquoi Python ? 2 min 2. Présentation d’Anaconda et Jupyter 5 min 3. Variables et types de base 10 min 4. Opérations mathématiques de base 5 min 5. Fonctions intégrées utiles 15 min 6. Qu’est-ce qu’un algorithme ? 5 min 7. Exemples d’algorithmes simples 5 min Pause 10 min 8. Activité pratique en classe 1h50 9. Activité pratique à la maison 3h 1. Pourquoi apprendre Python en science ? Polyvalence : utilisé en bio, chimie, physique, météo, environnement, IA. Lisibilité : syntaxe claire = moins de stress pour les débutants. Gratuit et supporté par une grande communauté scientifique. Nombreux modules utiles : numpy, matplotlib, pandas, etc. 📌 Exemple : afficher le résultat d’un calcul</description>
+    </item>
+    <item>
+      <title>Structures de contrôle (conditions et boucles)</title>
+      <link>https://example.org/semaine2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine2/index.html</guid>
+      <description>Objectifs de la leçon Comprendre et utiliser les structures de contrôle : if, while, for Maîtriser l’indentation en Python Appliquer des opérateurs logiques (and, or, not) Réfléchir à l’ordre logique dans un programme Plan de la leçon Section Durée (approx.) 1. Boucle while 2 min 2. Conditions d’arrêt 5 min 3. Listes pour stocker les températures 10 min 4. Affichage formaté (print, round) 5 min 5. (Optionnel) matplotlib pour visualisation 15 min Pause 10 min 6. Activité pratique en classe 1h50 7. Activité pratique à la maison 3h 1. Structure d’un if (10 min) Syntaxe : if condition: instruction1 elif autre_condition: instruction2 else: instruction3&#xD;Indentation L’indentation (espacement en début de ligne) est obligatoire en Python pour indiquer les blocs de code. Convention : 4 espaces Opérateurs logiques utiles : == (égal à) != (différent de) &gt; &lt; &gt;= &lt;= and, or, not Exemple en direct : x = float(input(&#34;Entrez un nombre : &#34;)) if x &gt; 0: print(&#34;Le nombre est positif.&#34;) elif x &lt; 0: print(&#34;Le nombre est négatif.&#34;) else: print(&#34;Le nombre est nul.&#34;)&#xD;2. Boucle while (10 min) Principe : La boucle while répète un bloc tant qu’une condition est vraie.</description>
+    </item>
+    <item>
+      <title>Trace et débogage</title>
+      <link>https://example.org/semaine3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/index.html</guid>
+      <description>Importance du débogage en programmation Utilisation de traces d’exécution pour diagnostiquer les problèmes Techniques de débogage avec des outils intégrés dans Jupyter Notebook Application : identification et correction d’erreurs dans des scripts scientifiques</description>
+    </item>
+    <item>
+      <title>Fonctions et modules</title>
+      <link>https://example.org/semaine4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/index.html</guid>
+      <description>Définition et appel de fonctions Paramètres et valeurs de retour Réutilisation de code Cas scientifique : fonctions pour des calculs physiques (chute libre, vitesse, énergie)</description>
+    </item>
+    <item>
+      <title>Manipulation de listes et dictionnaires</title>
+      <link>https://example.org/semaine5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine5/index.html</guid>
+      <description>Listes et itérations Indexation et slicing Dictionnaires pour structurer des données Applications : analyse de données expérimentales</description>
+    </item>
+    <item>
+      <title>Introduction aux bibliothèques scientifiques</title>
+      <link>https://example.org/semaine6/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/index.html</guid>
+      <description>NumPy : tableaux et opérations mathématiques Matplotlib : graphiques et visualisation Applications : tracer des courbes de croissance, mouvements physiques</description>
+    </item>
+    <item>
+      <title>Examen 1 (25%)</title>
+      <link>https://example.org/semaine7/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine7/index.html</guid>
+      <description>Examen pratique sur les bases de Python et l’analyse de données scientifiques</description>
+    </item>
+    <item>
+      <title>Traitement et analyse de données avec Pandas</title>
+      <link>https://example.org/semaine8/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/index.html</guid>
+      <description>Chargement et manipulation de données avec Pandas Calculs statistiques de base Application : analyse de mesures en biologie/chimie</description>
+    </item>
+    <item>
+      <title>Traitement et analyse de données avec Pandas</title>
+      <link>https://example.org/semaine9/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine9/index.html</guid>
+      <description>Chargement et manipulation de données avec Pandas Calculs statistiques de base Application : analyse de mesures en biologie/chimie</description>
+    </item>
+    <item>
+      <title>Les objets prédéfinis: Comment les utiliser ?</title>
+      <link>https://example.org/semaine10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine10/index.html</guid>
+      <description>Classes et objets (juste l’idée et faire le parallèle avec des cas simples) Encapsulation et méthodes Application : système physique simple (particules, écosystème)</description>
+    </item>
+    <item>
+      <title>Examen 2 (25%)</title>
+      <link>https://example.org/semaine11/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine11/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Révisions et préparation au projet final</title>
+      <link>https://example.org/semaine12/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine12/index.html</guid>
+      <description>Synthèse des concepts abordés Ateliers pratiques pour consolider les acquis Discussion sur les attentes et les critères du projet final</description>
+    </item>
+    <item>
+      <title>Projet final (semaines 13-15)</title>
+      <link>https://example.org/semaine13/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine13/index.html</guid>
+      <description>Partie 1:</description>
+    </item>
+    <item>
+      <title>Projet final (semaines 13-15)</title>
+      <link>https://example.org/semaine14/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine14/index.html</guid>
+      <description>Partie 2:</description>
+    </item>
+    <item>
+      <title>Projet final (fin et remise)</title>
+      <link>https://example.org/semaine15/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine15/index.html</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

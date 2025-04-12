@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Semaine2s on My New Hugo Site</title>
-    <link>https://example.org/semaine2/</link>
-    <description>Recent content in Semaine2s on My New Hugo Site</description>
+    <title>Structures de contrôle (conditions et boucles) :: 420-SN1-RE</title>
+    <link>https://example.org/semaine2/index.html</link>
+    <description>Objectifs de la leçon Comprendre et utiliser les structures de contrôle : if, while, for Maîtriser l’indentation en Python Appliquer des opérateurs logiques (and, or, not) Réfléchir à l’ordre logique dans un programme Plan de la leçon Section Durée (approx.) 1. Boucle while 2 min 2. Conditions d’arrêt 5 min 3. Listes pour stocker les températures 10 min 4. Affichage formaté (print, round) 5 min 5. (Optionnel) matplotlib pour visualisation 15 min Pause 10 min 6. Activité pratique en classe 1h50 7. Activité pratique à la maison 3h 1. Structure d’un if (10 min) Syntaxe : if condition: instruction1 elif autre_condition: instruction2 else: instruction3&#xD;Indentation L’indentation (espacement en début de ligne) est obligatoire en Python pour indiquer les blocs de code. Convention : 4 espaces Opérateurs logiques utiles : == (égal à) != (différent de) &gt; &lt; &gt;= &lt;= and, or, not Exemple en direct : x = float(input(&#34;Entrez un nombre : &#34;)) if x &gt; 0: print(&#34;Le nombre est positif.&#34;) elif x &lt; 0: print(&#34;Le nombre est négatif.&#34;) else: print(&#34;Le nombre est nul.&#34;)&#xD;2. Boucle while (10 min) Principe : La boucle while répète un bloc tant qu’une condition est vraie.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATELIER #2: Titre</title>
+      <link>https://example.org/semaine2/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine2/atelier/index.html</guid>
+      <description>Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre +++ title = “ATELIER #2: Titre” weight = 21 +++&#xA;Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre</description>
+    </item>
   </channel>
 </rss>

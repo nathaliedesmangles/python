@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Semaine6s on My New Hugo Site</title>
-    <link>https://example.org/semaine6/</link>
-    <description>Recent content in Semaine6s on My New Hugo Site</description>
+    <title>Introduction aux bibliothèques scientifiques :: 420-SN1-RE</title>
+    <link>https://example.org/semaine6/index.html</link>
+    <description>NumPy : tableaux et opérations mathématiques Matplotlib : graphiques et visualisation Applications : tracer des courbes de croissance, mouvements physiques</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATELIER #6: Titre</title>
+      <link>https://example.org/semaine6/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/atelier/index.html</guid>
+      <description>Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre +++ title = “ATELIER #6: Titre” weight = 62 +++&#xA;Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre</description>
+    </item>
   </channel>
 </rss>

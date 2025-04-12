@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Semaine4s on My New Hugo Site</title>
-    <link>https://example.org/semaine4/</link>
-    <description>Recent content in Semaine4s on My New Hugo Site</description>
+    <title>Fonctions et modules :: 420-SN1-RE</title>
+    <link>https://example.org/semaine4/index.html</link>
+    <description>Définition et appel de fonctions Paramètres et valeurs de retour Réutilisation de code Cas scientifique : fonctions pour des calculs physiques (chute libre, vitesse, énergie)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATELIER #4: Titre</title>
+      <link>https://example.org/semaine4/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/atelier/index.html</guid>
+      <description>Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre +++ title = “ATELIER #4: Titre” weight = 42 +++&#xA;Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre</description>
+    </item>
   </channel>
 </rss>

@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Semaine12s on My New Hugo Site</title>
-    <link>https://example.org/semaine12/</link>
-    <description>Recent content in Semaine12s on My New Hugo Site</description>
+    <title>Révisions et préparation au projet final :: 420-SN1-RE</title>
+    <link>https://example.org/semaine12/index.html</link>
+    <description>Synthèse des concepts abordés Ateliers pratiques pour consolider les acquis Discussion sur les attentes et les critères du projet final</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine12/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATELIER #12: Titre</title>
+      <link>https://example.org/semaine12/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine12/atelier/index.html</guid>
+      <description>Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre</description>
+    </item>
   </channel>
 </rss>

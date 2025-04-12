@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://example.org/semaine6/atelier/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>ATELIER #6: Titre :: 420-SN1-RE</title>
+    <link>https://example.org/semaine6/atelier/index.html</link>
+    <description>Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre +++ title = “ATELIER #6: Titre” weight = 62 +++&#xA;Objectif de l’atelier Cet atelier a pour but de vous familiariser avec .&#xA;Atelier Exercice 1 : Titre</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine6/atelier/index.xml" rel="self" type="application/rss+xml" />
