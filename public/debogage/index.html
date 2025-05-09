@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs Adopter des pratiques de codage claires et lisibles Comprendre l’utilité des commentaires et de la documentation Apprendre des méthodes simples pour détecter et corriger des erreurs Se préparer à lire et améliorer du code existant Pourquoi adopter de bonnes pratiques? Un programme fonctionnel n’est pas forcément un programme lisible ou facile à maintenir. Les bonnes pratiques rendent le code :
+Plus facile à comprendre pour soi-même et pour les autres Plus simple à déboguer Moins susceptible de contenir des erreurs Quelques bonnes pratiques essentielles a.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Bonnes pratiques, documentation, débogage :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Adopter des pratiques de codage claires et lisibles Comprendre l’utilité des commentaires et de la documentation Apprendre des méthodes simples pour détecter et corriger des erreurs Se préparer à lire et améliorer du code existant Pourquoi adopter de bonnes pratiques? Un programme fonctionnel n’est pas forcément un programme lisible ou facile à maintenir. Les bonnes pratiques rendent le code :
+Plus facile à comprendre pour soi-même et pour les autres Plus simple à déboguer Moins susceptible de contenir des erreurs Quelques bonnes pratiques essentielles a.">
+    <meta property="og:url" content="https://example.org/debogage/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Bonnes pratiques, documentation, débogage :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Adopter des pratiques de codage claires et lisibles Comprendre l’utilité des commentaires et de la documentation Apprendre des méthodes simples pour détecter et corriger des erreurs Se préparer à lire et améliorer du code existant Pourquoi adopter de bonnes pratiques? Un programme fonctionnel n’est pas forcément un programme lisible ou facile à maintenir. Les bonnes pratiques rendent le code :
+Plus facile à comprendre pour soi-même et pour les autres Plus simple à déboguer Moins susceptible de contenir des erreurs Quelques bonnes pratiques essentielles a.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Bonnes pratiques, documentation, débogage :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Adopter des pratiques de codage claires et lisibles Comprendre l’utilité des commentaires et de la documentation Apprendre des méthodes simples pour détecter et corriger des erreurs Se préparer à lire et améliorer du code existant Pourquoi adopter de bonnes pratiques? Un programme fonctionnel n’est pas forcément un programme lisible ou facile à maintenir. Les bonnes pratiques rendent le code :
+Plus facile à comprendre pour soi-même et pour les autres Plus simple à déboguer Moins susceptible de contenir des erreurs Quelques bonnes pratiques essentielles a.">
+    <meta itemprop="wordCount" content="435">
+    <title>Bonnes pratiques, documentation, débogage :: 420-SN1-RE</title>
+    <link href="/debogage/index.xml" rel="alternate" type="application/rss+xml" title="Bonnes pratiques, documentation, débogage :: 420-SN1-RE">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746804580" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746804580" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1746804580" rel="stylesheet">
+    <link href="/css/theme.min.css?1746804580" rel="stylesheet">
+    <link href="/css/format-html.min.css?1746804580" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1746804580" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1746804580" defer></script>
+    <script src="/js/search.min.js?1746804580" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/debogage\/index.html';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1746804580";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/debogage/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs">Objectifs</a></li>
+    <li><a href="#pourquoi-adopter-de-bonnes-pratiques">Pourquoi adopter de bonnes pratiques?</a></li>
+    <li><a href="#quelques-bonnes-pratiques-essentielles">Quelques bonnes pratiques essentielles</a></li>
+    <li><a href="#comment-bien-commenter-un-programme">Comment bien commenter un programme?</a></li>
+    <li><a href="#erreurs-fréquentes-et-débogage">Erreurs fréquentes et débogage</a></li>
+    <li><a href="#astuces-pour-déboguer">Astuces pour déboguer</a>
+      <ul>
+        <li><a href="#exercice-proposé">Exercice proposé</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Bonnes pratiques, documentation, débogage</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/regles/index.html" title="Règlements en classe (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/debogage/atelier/index.html" title="Activité - Corriger un script scientifique erroné (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable debogage" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="bonnes-pratiques-documentation-débogage">Bonnes pratiques, documentation, débogage</h1>
+
+<h2 id="objectifs">Objectifs</h2>
+<ul>
+<li>Adopter des pratiques de codage claires et lisibles</li>
+<li>Comprendre l’utilité des commentaires et de la documentation</li>
+<li>Apprendre des méthodes simples pour détecter et corriger des erreurs</li>
+<li>Se préparer à lire et améliorer du code existant</li>
+</ul>
+<hr>
+<h2 id="pourquoi-adopter-de-bonnes-pratiques">Pourquoi adopter de bonnes pratiques?</h2>
+<p>Un programme <strong>fonctionnel</strong> n’est pas forcément un programme <strong>lisible</strong> ou <strong>facile à maintenir</strong>. Les bonnes pratiques rendent le code :</p>
+<ul>
+<li>Plus facile à comprendre pour soi-même et pour les autres</li>
+<li>Plus simple à déboguer</li>
+<li>Moins susceptible de contenir des erreurs</li>
+</ul>
+<h2 id="quelques-bonnes-pratiques-essentielles">Quelques bonnes pratiques essentielles</h2>
+<p><strong>a. Clarté des noms de variables</strong>
+Utilisez des noms qui ont du sens :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>r <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>       <span style="color:#75715e"># Mauvais  </span>
+</span></span><span style="display:flex;"><span>resistance <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>  <span style="color:#75715e"># Meilleur</span></span></span></code></pre></div>
+<p><strong>b. Indentation et structure du code</strong>
+Python utilise l’indentation pour organiser le code. Ne mélangez jamais des espaces et des tabulations.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Positif&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Négatif ou nul&#34;</span>)</span></span></code></pre></div>
+<p><strong>c. Simplicité</strong>
+Un bon code est simple. Évitez les constructions compliquées si une version plus directe existe.</p>
+<p><strong>d. Séparer les étapes</strong>
+Clarifiez le processus en séparant les étapes : entrées, calculs, affichage.</p>
+<h2 id="comment-bien-commenter-un-programme">Comment bien commenter un programme?</h2>
+<p>Les commentaires doivent expliquer <strong>le pourquoi</strong>, pas le comment (que l’on peut souvent lire dans le code).</p>
+<p><strong>Exemple utile :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Conversion de la masse en grammes vers kilogrammes</span>
+</span></span><span style="display:flex;"><span>masse_kg <span style="color:#f92672">=</span> masse_g <span style="color:#f92672">/</span> <span style="color:#ae81ff">1000</span></span></span></code></pre></div>
+<p><strong>Commentaires inutiles :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masse <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>  <span style="color:#75715e"># On met 3 dans masse</span></span></span></code></pre></div>
+<p><strong>À retenir :</strong></p>
+<ul>
+<li>Ne commentez pas l’évidence</li>
+<li>Mettez un commentaire en haut du programme pour résumer son objectif</li>
+<li>Utilisez des blocs de commentaires pour expliquer des parties complexes</li>
+</ul>
+<h2 id="erreurs-fréquentes-et-débogage">Erreurs fréquentes et débogage</h2>
+<p><strong>a. Erreurs de syntaxe</strong>
+Oubli d’un deux-points, parenthèse mal fermée, indentation incorrecte.
+Python indique souvent la ligne (ou juste après) où l’erreur se produit.</p>
+<p><strong>b. Erreurs de type</strong>
+Essayer de multiplier une chaîne de caractères par un nombre flottant :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2.5</span>  <span style="color:#75715e"># Erreur</span></span></span></code></pre></div>
+<p><strong>c. Erreur de conversion avec <code>input()</code></strong>
+Le retour de <code>input()</code> est toujours une chaîne (<code>str</code>) même si l’utilisateur entre un nombre. Oublier de convertir entraîne des erreurs lors des calculs.
+Exemple :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrer un nombre : &#34;</span>)
+</span></span><span style="display:flex;"><span>print(x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>)  <span style="color:#75715e"># Répète la chaîne deux fois au lieu de doubler le nombre</span></span></span></code></pre></div>
+<p><strong>Correction :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrer un nombre : &#34;</span>))
+</span></span><span style="display:flex;"><span>print(x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>)</span></span></code></pre></div>
+<p><strong>d. Erreurs de logique</strong>
+Le programme fonctionne mais donne un résultat faux (ex. : division au mauvais endroit, mauvaise formule).</p>
+<h2 id="astuces-pour-déboguer">Astuces pour déboguer</h2>
+<ul>
+<li>Lire les messages d’erreur lentement, ligne par ligne</li>
+<li>Ajouter des <code>print()</code> pour afficher les valeurs intermédiaires</li>
+<li>Tester avec des valeurs simples</li>
+<li>Isoler les parties du programme pour tester séparément</li>
+</ul>
+<hr>
+<h3 id="exercice-proposé">Exercice proposé</h3>
+<p>Mettre en pratique ces notions en <strong>corrigeant un script scientifique erroné</strong> (voir activité de la semaine).</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">420-SN1-RE</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements en classe</a></li>
+            <li class="active parent " data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a><ul id="R-subsections-7b5fecad8b2191e55b651abb92da0390" class="collapsible-menu">
+            <li class="" data-nav-id="/debogage/atelier/index.html"><a class="padding" href="/debogage/atelier/index.html">Activité - Corriger un script scientifique erroné</a></li></ul></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et introduction à Python</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Opérations arithmétiques, entrées/sorties, erreurs courantes</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Prendre des décisions avec `if`, `elif`, `else`</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Listes et chaînes de caractères</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Fonctions simples et paramètres</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Examen 1 (30%)</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Structures de données (listes, dictionnaires)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1746804580" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1746804580" defer></script>
+    <script src="/js/theme.min.js?1746804580" defer></script>
+  </body>
+</html>

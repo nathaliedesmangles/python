@@ -1,0 +1,5 @@
+theme = "relearn"
+
+[params]
+  logo = "images/logoSN.png"
+

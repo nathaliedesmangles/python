@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activité 5 – Traitement d’une série de mesures et moyenne mobile :: 420-SN1-RE</title>
+    <link>https://example.org/semaine5/atelier/index.html</link>
+    <description>Objectifs d’apprentissage Manipuler des listes en Python Écrire une fonction pour calculer une moyenne mobile Visualiser l’effet du lissage sur une série de données Renforcer les notions de boucles, indices et opérations sur les listes Contexte scientifique En laboratoire, on mesure la concentration d’un produit chimique toutes les 2 minutes pendant une expérience de 20 minutes. Les mesures présentent des fluctuations dues à des imprécisions expérimentales. Pour lisser ces données et observer les tendances, on applique une moyenne mobile sur les résultats.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine5/atelier/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

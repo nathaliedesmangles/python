@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs d’apprentissage À la fin de cette leçon, devez être en mesure de :
+Utiliser Anaconda et Jupyter Notebook Créer et exécuter une cellule de code Définir des variables Manipuler des types de base : int, float, str, bool Qu’est-ce qu’Anaconda ? Anaconda est une distribution Python qui inclut :
+Python 3 Jupyter Notebook Des bibliothèques scientifiques (numpy, matplotlib, pandas, etc.) Lancement de Jupyter Notebook Ouvrir Anaconda Navigator Cliquer sur “Launch” à côté de Jupyter Notebook Le navigateur s’ouvre sur une interface locale.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="L&#39;environnement de travail et Introduction à Python :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs d’apprentissage À la fin de cette leçon, devez être en mesure de :
+Utiliser Anaconda et Jupyter Notebook Créer et exécuter une cellule de code Définir des variables Manipuler des types de base : int, float, str, bool Qu’est-ce qu’Anaconda ? Anaconda est une distribution Python qui inclut :
+Python 3 Jupyter Notebook Des bibliothèques scientifiques (numpy, matplotlib, pandas, etc.) Lancement de Jupyter Notebook Ouvrir Anaconda Navigator Cliquer sur “Launch” à côté de Jupyter Notebook Le navigateur s’ouvre sur une interface locale.">
+    <meta property="og:url" content="http://localhost:1313/semaine1/_index1/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="L&#39;environnement de travail et Introduction à Python :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs d’apprentissage À la fin de cette leçon, devez être en mesure de :
+Utiliser Anaconda et Jupyter Notebook Créer et exécuter une cellule de code Définir des variables Manipuler des types de base : int, float, str, bool Qu’est-ce qu’Anaconda ? Anaconda est une distribution Python qui inclut :
+Python 3 Jupyter Notebook Des bibliothèques scientifiques (numpy, matplotlib, pandas, etc.) Lancement de Jupyter Notebook Ouvrir Anaconda Navigator Cliquer sur “Launch” à côté de Jupyter Notebook Le navigateur s’ouvre sur une interface locale.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Présentation du cours et introduction à Python">
+    <meta itemprop="name" content="L&#39;environnement de travail et Introduction à Python :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs d’apprentissage À la fin de cette leçon, devez être en mesure de :
+Utiliser Anaconda et Jupyter Notebook Créer et exécuter une cellule de code Définir des variables Manipuler des types de base : int, float, str, bool Qu’est-ce qu’Anaconda ? Anaconda est une distribution Python qui inclut :
+Python 3 Jupyter Notebook Des bibliothèques scientifiques (numpy, matplotlib, pandas, etc.) Lancement de Jupyter Notebook Ouvrir Anaconda Navigator Cliquer sur “Launch” à côté de Jupyter Notebook Le navigateur s’ouvre sur une interface locale.">
+    <meta itemprop="wordCount" content="343">
+    <title>L&#39;environnement de travail et Introduction à Python :: 420-SN1-RE</title>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746296201" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746296201" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1746296201" rel="stylesheet">
+    <link href="/css/theme.css?1746296201" rel="stylesheet">
+    <link href="/css/format-html.css?1746296201" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1746296201" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1746296201" defer></script>
+    <script src="/js/lunr/lunr.min.js?1746296201" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1746296201" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1746296201" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1746296201" defer></script>
+    <script src="/js/search.js?1746296201" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine1\/_index1\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1746296201";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine1/_index1/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs-dapprentissage">Objectifs d’apprentissage</a></li>
+    <li><a href="#quest-ce-quanaconda-">Qu&rsquo;est-ce qu’Anaconda ?</a></li>
+    <li><a href="#lancement-de-jupyter-notebook">Lancement de Jupyter Notebook</a></li>
+    <li><a href="#premiers-pas-avec-jupyter">Premiers pas avec Jupyter</a>
+      <ul>
+        <li><a href="#exemple-">Exemple :</a></li>
+      </ul>
+    </li>
+    <li><a href="#variables-et-types-de-base">Variables et types de base</a>
+      <ul>
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#types-de-base">Types de base</a></li>
+        <li><a href="#exemples-à-tester-">Exemples à tester :</a></li>
+        <li><a href="#vérifier-le-type-dune-variable-">Vérifier le type d’une variable :</a></li>
+        <li><a href="#à-retenir">À retenir</a></li>
+        <li><a href="#activité-suggérée-pour-la-maison">Activité suggérée pour la maison</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine1/index.html"><span itemprop="name">Présentation du cours et introduction à Python</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">L&#39;environnement de travail et Introduction à Python</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine1/index.html" title="Présentation du cours et introduction à Python (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine1/atelier/index.html" title="Activité – Questionnaire + Mini-lab en équipe (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine1" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="lenvironnement-de-travail-et-introduction-à-python">L&#39;environnement de travail et Introduction à Python</h1>
+
+<h2 id="objectifs-dapprentissage">Objectifs d’apprentissage</h2>
+<p>À la fin de cette leçon, devez être en mesure de :</p>
+<ul>
+<li>Utiliser <strong>Anaconda</strong> et <strong>Jupyter Notebook</strong></li>
+<li>Créer et exécuter une cellule de code</li>
+<li>Définir des <strong>variables</strong></li>
+<li>Manipuler des <strong>types de base</strong> : <code>int</code>, <code>float</code>, <code>str</code>, <code>bool</code></li>
+</ul>
+<hr>
+<h2 id="quest-ce-quanaconda-">Qu&rsquo;est-ce qu’Anaconda ?</h2>
+<p><strong>Anaconda</strong> est une distribution Python qui inclut :</p>
+<ul>
+<li>Python 3</li>
+<li>Jupyter Notebook</li>
+<li>Des bibliothèques scientifiques (numpy, matplotlib, pandas, etc.)</li>
+</ul>
+<h2 id="lancement-de-jupyter-notebook">Lancement de Jupyter Notebook</h2>
+<ol>
+<li>Ouvrir <strong>Anaconda Navigator</strong>
+<a href="/semaine1/_index1/index.html"></a></li>
+<li>Cliquer sur <strong>&ldquo;Launch&rdquo;</strong> à côté de <em>Jupyter Notebook</em>
+<a href="/semaine1/_index1/index.html"></a></li>
+<li>Le navigateur s’ouvre sur une interface locale.
+<a href="/semaine1/_index1/index.html"></a></li>
+<li>Naviguer jusqu’au dossier de votre choix et cliquer sur <strong>&ldquo;New &gt; Python 3 Notebook&rdquo;</strong>.
+<a href="/semaine1/_index1/index.html"></a></li>
+</ol>
+<h2 id="premiers-pas-avec-jupyter">Premiers pas avec Jupyter</h2>
+<ul>
+<li>Chaque <strong>cellule</strong> permet d’écrire du code Python.</li>
+<li>Pour <strong>exécuter</strong> une cellule : <code>Shift + Enter</code></li>
+<li>Vous pouvez aussi ajouter du <strong>texte formaté</strong> en changeant le type de cellule en <em>Markdown</em>.</li>
+</ul>
+<h3 id="exemple-">Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ceci est un commentaire</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Bonjour le monde !&#34;</span>)</span></span></code></pre></div>
+<h2 id="variables-et-types-de-base">Variables et types de base</h2>
+<h3 id="variables">Variables</h3>
+<p>Une <strong>variable</strong> sert à stocker une information :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Camille&#34;</span>
+</span></span><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">18</span></span></span></code></pre></div>
+<h3 id="types-de-base">Types de base</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int</code></td>
+<td>Nombre entier</td>
+<td><code>x = 12</code></td>
+</tr>
+<tr>
+<td><code>float</code></td>
+<td>Nombre décimal</td>
+<td><code>pi = 3.14</code></td>
+</tr>
+<tr>
+<td><code>str</code></td>
+<td>Chaîne de caractères</td>
+<td><code>nom = &quot;Alice&quot;</code></td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td>Valeur booléenne (vrai/faux)</td>
+<td><code>actif = True</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="exemples-à-tester-">Exemples à tester :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Types de base</span>
+</span></span><span style="display:flex;"><span>temperature <span style="color:#f92672">=</span> <span style="color:#ae81ff">22.5</span>       <span style="color:#75715e"># float</span>
+</span></span><span style="display:flex;"><span>pression <span style="color:#f92672">=</span> <span style="color:#ae81ff">101325</span>        <span style="color:#75715e"># int</span>
+</span></span><span style="display:flex;"><span>ville <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Montréal&#34;</span>       <span style="color:#75715e"># str</span>
+</span></span><span style="display:flex;"><span>pluie <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>            <span style="color:#75715e"># bool</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Il fait&#34;</span>, temperature, <span style="color:#e6db74">&#34;degrés à&#34;</span>, ville)</span></span></code></pre></div>
+<h3 id="vérifier-le-type-dune-variable-">Vérifier le type d’une variable :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>type(temperature)  <span style="color:#75715e"># Résultat : &lt;class &#39;float&#39;&gt;</span></span></span></code></pre></div>
+<hr>
+<h3 id="à-retenir">À retenir</h3>
+<ul>
+<li>Python est sensible à la <strong>casse</strong> : <code>Nom</code> ≠ <code>nom</code></li>
+<li>Les noms de variables ne doivent <strong>pas commencer par un chiffre</strong></li>
+<li>Utilisez des noms clairs et significatifs (ex : <code>masse</code>, <code>volume</code>, <code>vitesse</code>)</li>
+</ul>
+<hr>
+<h3 id="activité-suggérée-pour-la-maison">Activité suggérée pour la maison</h3>
+<ul>
+<li>Si vous avez un ordinateur à la maison: Installer Anaconda et créer un premier fichier <code>.ipynb</code>
+<strong>Étapes pour installer Anaconda</strong> :
+<ol>
+<li>Aller sur <a href="https://www.anaconda.com/products/distribution" rel="external" target="_blank">Le site d&rsquo;Anaconda</a></li>
+<li>Télécharger la version <strong>Windows, Mac ou Linux</strong> selon votre système.</li>
+<li>Suivre les instructions d’installation. Accepter les options par défaut.</li>
+</ol>
+</li>
+<li>Reproduire et modifier les exemples de cette leçon</li>
+<li>Changer les valeurs des variables et observer les résultats</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">420-SN1-RE</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements en classe</a></li>
+            <li class="parent " data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et introduction à Python</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine1/_index1/index.html"><a class="padding" href="/semaine1/_index1/index.html">L&#39;environnement de travail et Introduction à Python</a></li>
+            <li class="" data-nav-id="/semaine1/atelier/index.html"><a class="padding" href="/semaine1/atelier/index.html">Activité – Questionnaire &#43; Mini-lab en équipe</a></li></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Opérations arithmétiques, entrées/sorties, erreurs courantes</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Prendre des décisions avec `if`, `elif`, `else`</a></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Fonctions et modules</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Manipulation de listes et dictionnaires</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Introduction aux bibliothèques scientifiques</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Examen 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Traitement et analyse de données avec Pandas</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Traitement et analyse de données avec Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Les objets prédéfinis: Comment les utiliser ?</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Examen 2 (25%)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Révisions et préparation au projet final</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Projet final (semaines 13-15)</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Projet final (semaines 13-15)</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (fin et remise)</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1746296201" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1746296201" defer></script>
+    <script src="/js/theme.js?1746296201" defer></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Semaine 3 input et print formate :: 420-SN1-RE</title>
+    <link>http://localhost:1313/semaine3/cours/index.html</link>
+    <description>🎤 La fonction input() En Python, la fonction input() permet à l’utilisateur de saisir des informations pendant l’exécution du programme. C’est un outil essentiel pour rendre un programme interactif.&#xA;🔧 Syntaxe de base nom = input(&#34;Quel est ton nom ? &#34;)&#xD;Quand Python rencontre cette ligne, il :&#xA;Affiche le message &#34;Quel est ton nom ? &#34; à l’écran. Attend que l’utilisateur tape quelque chose au clavier. Stocke ce que l’utilisateur a tapé (sous forme de chaîne de caractères) dans la variable nom.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/semaine3/cours/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

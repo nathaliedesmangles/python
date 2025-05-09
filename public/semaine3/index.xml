@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prendre des décisions avec `if`, `elif`, `else` :: 420-SN1-RE</title>
+    <link>https://example.org/semaine3/index.html</link>
+    <description>Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :&#xA;Écrire des instructions conditionnelles en Python Utiliser if, elif et else pour gérer plusieurs cas Évaluer des expressions logiques avec les opérateurs de comparaison (==, !=, &lt;, &gt;, &lt;=, &gt;=) Combiner plusieurs conditions avec les opérateurs logiques (and, or, not) Pourquoi des conditions ? Un programme prend souvent des décisions :&#xA;S’il fait moins de 0 °C, l’eau gèle.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Activité 3 - État physique de l’eau selon la température et la pression</title>
+      <link>https://example.org/semaine3/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/atelier/index.html</guid>
+      <description>Objectifs pédagogiques Utiliser les structures conditionnelles if, elif, else Travailler avec les types numériques (float, int) Comprendre l’effet de la pression sur les températures de fusion et d’ébullition Énoncé L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :&#xA;L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse.</description>
+    </item>
+  </channel>
+</rss>

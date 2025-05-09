@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Présentation du cours et introduction à Python :: 420-SN1-RE</title>
+    <link>https://example.org/semaine1/index.html</link>
+    <description>Plan de cours : Programmation en sciences avec Python Durée : 15 semaines&#xA;Séances hebdomadaires : 2 h 40 (50 min théorie + 1 h 50 pratique)&#xA;Modalités pédagogiques : Apprentissage actif, travail d’équipe, exercices concrets tirés des sciences&#xA;Environnement de travail : Anaconda avec Jupyter Notebook&#xA;Objectifs du cours Apprendre à écrire des programmes simples en Python Modéliser des situations scientifiques à l’aide d’algorithmes Développer une démarche rigoureuse de résolution de problèmes Collaborer efficacement pour tester et discuter des solutions Évaluations Type d’évaluation Format Pondération Formatives (en équipe) Exercices pratiques hebdomadaires Non noté Examen 1 Problèmes scientifiques avec structures de contrôle 30 % Examen 2 Fonctions et structures de données 30 % Projet final Mini-projet individuel sur un thème scientifique au choix 40 % Planification hebdomadaire Semaine Thèmes et activités principales 1 Leçon : Introduction au cours, prise en main d’Anaconda et de Jupyter Notebook, variables, types de base.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>L&#39;environnement de travail et Introduction à Python</title>
+      <link>https://example.org/semaine1/environnement_intro/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine1/environnement_intro/index.html</guid>
+      <description>Objectifs d’apprentissage À la fin de cette leçon, devez être en mesure de :&#xA;Utiliser Anaconda et Jupyter Notebook Créer et exécuter une cellule de code Définir des variables Manipuler des types de base : int, float, str, bool Qu’est-ce qu’Anaconda ? Anaconda est une distribution Python qui inclut :&#xA;Python 3 Jupyter Notebook Des bibliothèques scientifiques (numpy, matplotlib, pandas, etc.) Lancement de Jupyter Notebook Ouvrir Anaconda Navigator Cliquer sur “Launch” à côté de Jupyter Notebook Le navigateur s’ouvre sur une interface locale.</description>
+    </item>
+    <item>
+      <title>Activité 1 – Questionnaire &#43; Mini-lab en équipe</title>
+      <link>https://example.org/semaine1/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine1/atelier/index.html</guid>
+      <description>Objectifs pédagogiques Identifier les connaissances préalables et les attentes des étudiants. Favoriser une première collaboration en équipe. Prendre contact avec l’environnement de développement (Anaconda et Jupyter Notebook). Manipuler des notions de base : variables, types de données, opérations simples. Questionnaire de départ (20 minutes – individuel, puis discussion en groupe) Répondre au questions se trouvant dans le quiz [ici](lien MS Forms)&#xA;As-tu déjà programmé? Si oui, dans quel langage et dans quel contexte?</description>
+    </item>
+  </channel>
+</rss>

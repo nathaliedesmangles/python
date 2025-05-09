@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activité 1 – Questionnaire &#43; Mini-lab en équipe :: 420-SN1-RE</title>
+    <link>https://example.org/semaine1/atelier/index.html</link>
+    <description>Objectifs pédagogiques Identifier les connaissances préalables et les attentes des étudiants. Favoriser une première collaboration en équipe. Prendre contact avec l’environnement de développement (Anaconda et Jupyter Notebook). Manipuler des notions de base : variables, types de données, opérations simples. Questionnaire de départ (20 minutes – individuel, puis discussion en groupe) Répondre au questions se trouvant dans le quiz [ici](lien MS Forms)&#xA;As-tu déjà programmé? Si oui, dans quel langage et dans quel contexte?</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine1/atelier/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

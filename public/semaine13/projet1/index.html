@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Consigne du projet final Contexte : Dans ce projet, vous allez analyser l’impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.
+Objectifs Importer et manipuler les données : Vous allez charger les données dans un DataFrame pandas à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Projet: Effet de la caféine sur la fréquence cardiaque :: 420-SN1-RE">
+    <meta name="twitter:description" content="Consigne du projet final Contexte : Dans ce projet, vous allez analyser l’impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.
+Objectifs Importer et manipuler les données : Vous allez charger les données dans un DataFrame pandas à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.">
+    <meta property="og:url" content="https://example.org/semaine13/projet1/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Projet: Effet de la caféine sur la fréquence cardiaque :: 420-SN1-RE">
+    <meta property="og:description" content="Consigne du projet final Contexte : Dans ce projet, vous allez analyser l’impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.
+Objectifs Importer et manipuler les données : Vous allez charger les données dans un DataFrame pandas à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Introduction au projet final (40%)">
+    <meta itemprop="name" content="Projet: Effet de la caféine sur la fréquence cardiaque :: 420-SN1-RE">
+    <meta itemprop="description" content="Consigne du projet final Contexte : Dans ce projet, vous allez analyser l’impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.
+Objectifs Importer et manipuler les données : Vous allez charger les données dans un DataFrame pandas à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.">
+    <meta itemprop="wordCount" content="473">
+    <title>Projet: Effet de la caféine sur la fréquence cardiaque :: 420-SN1-RE</title>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746804580" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746804580" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1746804580" rel="stylesheet">
+    <link href="/css/theme.min.css?1746804580" rel="stylesheet">
+    <link href="/css/format-html.min.css?1746804580" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1746804580" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1746804580" defer></script>
+    <script src="/js/search.min.js?1746804580" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/semaine13\/projet1\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1746804580";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine13/projet1/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#consigne-du-projet-final">Consigne du projet final</a>
+      <ul>
+        <li><a href="#contexte-">Contexte :</a></li>
+        <li><a href="#objectifs">Objectifs</a></li>
+        <li><a href="#consignes-spécifiques-">Consignes spécifiques :</a></li>
+        <li><a href="#données-">Données :</a></li>
+        <li><a href="#critères-dévaluation-">Critères d’évaluation :</a></li>
+        <li><a href="#format-du-projet-">Format du projet :</a></li>
+        <li><a href="#ressources-">Ressources :</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine13/index.html"><span itemprop="name">Introduction au projet final (40%)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Projet: Effet de la caféine sur la fréquence cardiaque</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine13/index.html" title="Introduction au projet final (40%) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine13/projet2/index.html" title="Projet: Cinétique d'une réaction chimique (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine13" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="projet-effet-de-la-caféine-sur-la-fréquence-cardiaque">Projet: Effet de la caféine sur la fréquence cardiaque</h1>
+
+<h2 id="consigne-du-projet-final">Consigne du projet final</h2>
+<h3 id="contexte-">Contexte :</h3>
+<p>Dans ce projet, vous allez analyser l&rsquo;impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.</p>
+<h3 id="objectifs">Objectifs</h3>
+<ol>
+<li><strong>Importer et manipuler les données</strong> : Vous allez charger les données dans un DataFrame <code>pandas</code> à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.</li>
+<li><strong>Analyser la variation</strong> de la fréquence cardiaque après la consommation de café.</li>
+<li><strong>Visualiser</strong> les tendances de la fréquence cardiaque pour chaque sujet avec un graphique linéaire, en mettant en évidence l&rsquo;effet de la consommation de café sur la fréquence cardiaque.</li>
+<li><strong>Faire des comparaisons</strong> entre les sujets et interpréter les résultats. Vous allez calculer des statistiques descriptives (moyenne, écart-type) et identifier les variations notables dans les données.</li>
+<li><strong>Rédiger une conclusion</strong> sur l&rsquo;impact de la caféine sur la fréquence cardiaque, en basant votre analyse sur les résultats obtenus.</li>
+</ol>
+<h3 id="consignes-spécifiques-">Consignes spécifiques :</h3>
+<ol>
+<li>
+<p><strong>Lecture et traitement des données</strong> :</p>
+<ul>
+<li>Importez les données à l&rsquo;aide de <code>pandas</code> et affichez un résumé des données.</li>
+<li>Utilisez <code>numpy</code> pour effectuer des calculs comme la moyenne et l&rsquo;écart-type de la fréquence cardiaque pour chaque sujet avant et après l&rsquo;ingestion de café.</li>
+</ul>
+</li>
+<li>
+<p><strong>Création des fonctions</strong> :</p>
+<ul>
+<li>Créez une fonction <code>variation(frequence)</code> qui calcule les variations de fréquence cardiaque entre les mesures (avant et après).</li>
+<li>Créez une fonction <code>analyser_impact(frequences_avant, frequences_apres)</code> qui retourne la différence moyenne de la fréquence cardiaque et des statistiques de variation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Visualisation</strong> :</p>
+<ul>
+<li>Utilisez <code>matplotlib</code> pour tracer l’évolution de la fréquence cardiaque pour chaque sujet avant et après l’ingestion de café.</li>
+<li>Ajoutez une ligne horizontale pour la fréquence cardiaque moyenne avant consommation et une autre pour la fréquence après consommation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Exportation</strong> :</p>
+<ul>
+<li>Exportez un fichier CSV contenant les résultats de votre analyse, incluant les variations de fréquence cardiaque pour chaque sujet.</li>
+</ul>
+</li>
+</ol>
+<h3 id="données-">Données :</h3>
+<ul>
+<li>
+<p>Le fichier CSV <code>problematique_1_cafeine.csv</code> contient les données à analyser. Il est structuré comme suit :</p>
+<ul>
+<li><code>Sujet</code> : Nom du sujet (A, B, C, D)</li>
+<li><code>Temps (min)</code> : Temps écoulé depuis le début de l’expérience (en minutes)</li>
+<li><code>Frequence (bpm)</code> : Fréquence cardiaque (battements par minute)</li>
+</ul>
+</li>
+</ul>
+<h3 id="critères-dévaluation-">Critères d’évaluation :</h3>
+<ul>
+<li><strong>Précision de l&rsquo;analyse</strong> : Exactitude des calculs et des interprétations statistiques.</li>
+<li><strong>Qualité du code</strong> : Clarté et organisation du code, utilisation adéquate des structures de données (<code>pandas</code>, <code>numpy</code>).</li>
+<li><strong>Visualisation</strong> : Graphiques clairs et pertinents, avec une bonne utilisation de <code>matplotlib</code>.</li>
+<li><strong>Clarté de la conclusion</strong> : Interprétation logique des résultats et conclusion sur l’effet de la caféine sur la fréquence cardiaque.</li>
+</ul>
+<h3 id="format-du-projet-">Format du projet :</h3>
+<ul>
+<li>
+<p><strong>Délai</strong> : Le projet est à rendre dans trois semaines (fin de la semaine 15).</p>
+</li>
+<li>
+<p><strong>Livrables</strong> :</p>
+<ol>
+<li>Un notebook Jupyter contenant le code et les analyses.</li>
+<li>Le fichier CSV exporté avec les résultats.</li>
+<li>Un document PDF ou une section dans le notebook avec la conclusion.</li>
+</ol>
+</li>
+</ul>
+<h3 id="ressources-">Ressources :</h3>
+<ul>
+<li>Pandas : <a href="https://pandas.pydata.org/" rel="external" target="_blank">https://pandas.pydata.org/</a></li>
+<li>Matplotlib : <a href="https://matplotlib.org/" rel="external" target="_blank">https://matplotlib.org/</a></li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">420-SN1-RE</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements en classe</a></li>
+            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a><ul id="R-subsections-7b5fecad8b2191e55b651abb92da0390" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et introduction à Python</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Opérations arithmétiques, entrées/sorties, erreurs courantes</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Prendre des décisions avec `if`, `elif`, `else`</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Listes et chaînes de caractères</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Fonctions simples et paramètres</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Examen 1 (30%)</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Structures de données (listes, dictionnaires)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
+            <li class="parent " data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine13/projet1/index.html"><a class="padding" href="/semaine13/projet1/index.html">Projet: Effet de la caféine sur la fréquence cardiaque</a></li>
+            <li class="" data-nav-id="/semaine13/projet2/index.html"><a class="padding" href="/semaine13/projet2/index.html">Projet: Cinétique d&#39;une réaction chimique</a></li>
+            <li class="" data-nav-id="/semaine13/projet3/index.html"><a class="padding" href="/semaine13/projet3/index.html">Projet: Analyse de l’impact de l&#39;entraînement sur la performance physique</a></li>
+            <li class="" data-nav-id="/semaine13/projet4/index.html"><a class="padding" href="/semaine13/projet4/index.html">Projet: Analyse de la croissance bactérienne</a></li></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1746804580" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1746804580" defer></script>
+    <script src="/js/theme.min.js?1746804580" defer></script>
+  </body>
+</html>

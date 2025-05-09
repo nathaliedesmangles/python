@@ -1,0 +1,113 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Projet final : Analyse de la performance physique\n",
+    "Ce projet a pour but d'analyser les effets d'un programme d'entraînement sur les performances de course.\n",
+    "\n",
+    "**Fichier à analyser** : `problematique_4_course.csv`\n",
+    "\n",
+    "**Objectifs** :\n",
+    "- Charger et visualiser les données\n",
+    "- Calculer les améliorations individuelles\n",
+    "- Visualiser les résultats\n",
+    "- Conclure sur l'efficacité du programme"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Importation des bibliothèques nécessaires\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Lecture du fichier CSV\n",
+    "df = pd.read_csv('problematique_4_course.csv')\n",
+    "df.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Calcul de l'amélioration\n",
+    "df['Amélioration (s)'] = df['Avant (s)'] - df['Apres (s)']\n",
+    "df.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Statistiques descriptives\n",
+    "df.describe()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Visualisation des performances"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Graphique comparatif\n",
+    "plt.figure(figsize=(10,5))\n",
+    "x = np.arange(len(df))\n",
+    "plt.bar(x - 0.2, df['Avant (s)'], width=0.4, label='Avant')\n",
+    "plt.bar(x + 0.2, df['Apres (s)'], width=0.4, label='Après')\n",
+    "plt.xticks(x, df['Nom'], rotation=45)\n",
+    "plt.ylabel('Temps (s)')\n",
+    "plt.title('Performance avant et après entraînement')\n",
+    "plt.legend()\n",
+    "plt.tight_layout()\n",
+    "plt.show()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## À compléter par l'étudiant :\n",
+    "- Ajouter une fonction pour analyser l'amélioration moyenne\n",
+    "- Créer un graphique de l'amélioration\n",
+    "- Rédiger une conclusion sur l'efficacité du programme"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python",
+   "version": ""
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre). :: 420-SN1-RE</title>
+    <link>https://example.org/semaine6/atelier/index.html</link>
+    <description>Objectif de l’atelier Apprendre à créer une fonction Python qui modélise une loi physique simple et l’utiliser pour explorer des situations concrètes dans un contexte scientifique.&#xA;Consignes Travaillez à deux ou trois, discutez de chaque étape.&#xA;Testez vos fonctions avec plusieurs valeurs.&#xA;Commentez brièvement votre code.&#xA;Ajoutez une brève conclusion à la fin du notebook :&#xA;Qu’avez-vous observé? Quelle relation la fonction exprime-t-elle? Livrable À la fin de la séance, vous devez avoir un fichier .</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine6/atelier/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

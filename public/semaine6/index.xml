@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fonctions simples et paramètres :: 420-SN1-RE</title>
+    <link>https://example.org/semaine6/index.html</link>
+    <description>Objectifs de la leçon À la fin de cette leçon, vous devrez être capable de :&#xA;Expliquer le rôle des fonctions dans un programme Définir une fonction avec ou sans paramètres Appeler une fonction dans un script Réutiliser une fonction pour éviter la répétition de code Comprendre la portée des variables (locale vs globale) Écrire des programmes clairs et efficaces demande de bien structurer son code. Les fonctions permettent de regrouper des blocs d’instructions qu’on peut exécuter plusieurs fois à différents endroits du programme.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre).</title>
+      <link>https://example.org/semaine6/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/atelier/index.html</guid>
+      <description>Objectif de l’atelier Apprendre à créer une fonction Python qui modélise une loi physique simple et l’utiliser pour explorer des situations concrètes dans un contexte scientifique.&#xA;Consignes Travaillez à deux ou trois, discutez de chaque étape.&#xA;Testez vos fonctions avec plusieurs valeurs.&#xA;Commentez brièvement votre code.&#xA;Ajoutez une brève conclusion à la fin du notebook :&#xA;Qu’avez-vous observé? Quelle relation la fonction exprime-t-elle? Livrable À la fin de la séance, vous devez avoir un fichier .</description>
+    </item>
+  </channel>
+</rss>

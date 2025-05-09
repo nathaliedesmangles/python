@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs de la leçon À la fin de cette leçon, vous devrez être capable de :
+Expliquer le rôle des fonctions dans un programme Définir une fonction avec ou sans paramètres Appeler une fonction dans un script Réutiliser une fonction pour éviter la répétition de code Comprendre la portée des variables (locale vs globale) Écrire des programmes clairs et efficaces demande de bien structurer son code. Les fonctions permettent de regrouper des blocs d’instructions qu’on peut exécuter plusieurs fois à différents endroits du programme.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Fonctions simples et paramètres :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs de la leçon À la fin de cette leçon, vous devrez être capable de :
+Expliquer le rôle des fonctions dans un programme Définir une fonction avec ou sans paramètres Appeler une fonction dans un script Réutiliser une fonction pour éviter la répétition de code Comprendre la portée des variables (locale vs globale) Écrire des programmes clairs et efficaces demande de bien structurer son code. Les fonctions permettent de regrouper des blocs d’instructions qu’on peut exécuter plusieurs fois à différents endroits du programme.">
+    <meta property="og:url" content="https://example.org/semaine6/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Fonctions simples et paramètres :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs de la leçon À la fin de cette leçon, vous devrez être capable de :
+Expliquer le rôle des fonctions dans un programme Définir une fonction avec ou sans paramètres Appeler une fonction dans un script Réutiliser une fonction pour éviter la répétition de code Comprendre la portée des variables (locale vs globale) Écrire des programmes clairs et efficaces demande de bien structurer son code. Les fonctions permettent de regrouper des blocs d’instructions qu’on peut exécuter plusieurs fois à différents endroits du programme.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Fonctions simples et paramètres :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs de la leçon À la fin de cette leçon, vous devrez être capable de :
+Expliquer le rôle des fonctions dans un programme Définir une fonction avec ou sans paramètres Appeler une fonction dans un script Réutiliser une fonction pour éviter la répétition de code Comprendre la portée des variables (locale vs globale) Écrire des programmes clairs et efficaces demande de bien structurer son code. Les fonctions permettent de regrouper des blocs d’instructions qu’on peut exécuter plusieurs fois à différents endroits du programme.">
+    <meta itemprop="wordCount" content="359">
+    <title>Fonctions simples et paramètres :: 420-SN1-RE</title>
+    <link href="/semaine6/index.xml" rel="alternate" type="application/rss+xml" title="Fonctions simples et paramètres :: 420-SN1-RE">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746804580" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746804580" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1746804580" rel="stylesheet">
+    <link href="/css/theme.min.css?1746804580" rel="stylesheet">
+    <link href="/css/format-html.min.css?1746804580" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1746804580" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1746804580" defer></script>
+    <script src="/js/search.min.js?1746804580" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/semaine6\/index.html';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1746804580";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine6/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs-de-la-leçon">Objectifs de la leçon</a></li>
+    <li><a href="#définir-une-fonction">Définir une fonction</a></li>
+    <li><a href="#paramètres-dune-fonction">Paramètres d’une fonction</a></li>
+    <li><a href="#valeurs-de-retour-return">Valeurs de retour (<code>return</code>)</a></li>
+    <li><a href="#portée-des-variables">Portée des variables</a></li>
+    <li><a href="#résumé-des-bonnes-pratiques">Résumé des bonnes pratiques</a></li>
+    <li><a href="#mise-en-pratique-aperçu">Mise en pratique (aperçu)</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Fonctions simples et paramètres</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/atelier/index.html" title="Activité 5 – Traitement d’une série de mesures et moyenne mobile (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/atelier/index.html" title="Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre). (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine6" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="fonctions-simples-et-paramètres">Fonctions simples et paramètres</h1>
+
+<h2 id="objectifs-de-la-leçon">Objectifs de la leçon</h2>
+<p>À la fin de cette leçon, vous devrez être capable de :</p>
+<ul>
+<li>Expliquer le rôle des fonctions dans un programme</li>
+<li>Définir une fonction avec ou sans paramètres</li>
+<li>Appeler une fonction dans un script</li>
+<li>Réutiliser une fonction pour éviter la répétition de code</li>
+<li>Comprendre la portée des variables (locale vs globale)</li>
+</ul>
+<hr>
+<p>Écrire des programmes clairs et efficaces demande de bien structurer son code. Les <strong>fonctions</strong> permettent de regrouper des blocs d’instructions qu’on peut exécuter plusieurs fois à différents endroits du programme. Elles rendent le code plus <strong>lisible</strong>, <strong>réutilisable</strong> et <strong>facile à tester</strong>.</p>
+<h2 id="définir-une-fonction">Définir une fonction</h2>
+<p>Une fonction se définit avec le mot-clé <code>def</code>, suivi du nom de la fonction, de parenthèses et de deux-points.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bonjour</span>():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Bonjour!&#34;</span>)</span></span></code></pre></div>
+<p>Pour exécuter (appeler) cette fonction :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>bonjour()</span></span></code></pre></div>
+<h2 id="paramètres-dune-fonction">Paramètres d’une fonction</h2>
+<p>On peut rendre une fonction plus souple en lui donnant des <strong>paramètres</strong> : des valeurs qu’on lui transmet au moment de l’appel.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">saluer</span>(nom):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Bonjour, </span><span style="color:#e6db74">{</span>nom<span style="color:#e6db74">}</span><span style="color:#e6db74">!&#34;</span>)</span></span></code></pre></div>
+<p>Appel de la fonction :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>saluer(<span style="color:#e6db74">&#34;Marie&#34;</span>)
+</span></span><span style="display:flex;"><span>saluer(<span style="color:#e6db74">&#34;Paul&#34;</span>)</span></span></code></pre></div>
+<p>On peut aussi passer plusieurs paramètres :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculer_tension</span>(resistance, courant):
+</span></span><span style="display:flex;"><span>    tension <span style="color:#f92672">=</span> resistance <span style="color:#f92672">*</span> courant
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La tension est de </span><span style="color:#e6db74">{</span>tension<span style="color:#e6db74">}</span><span style="color:#e6db74"> V&#34;</span>)</span></span></code></pre></div>
+<p>Appel :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>calculer_tension(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>)</span></span></code></pre></div>
+<h2 id="valeurs-de-retour-return">Valeurs de retour (<code>return</code>)</h2>
+<p>Une fonction peut <strong>retourner</strong> un résultat au lieu de seulement afficher quelque chose.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculer_tension</span>(resistance, courant):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> resistance <span style="color:#f92672">*</span> courant
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>u <span style="color:#f92672">=</span> calculer_tension(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Tension : </span><span style="color:#e6db74">{</span>u<span style="color:#e6db74">}</span><span style="color:#e6db74"> V&#34;</span>)</span></span></code></pre></div>
+<p>Cela permet de réutiliser le résultat dans un autre calcul ou de le manipuler.</p>
+<h2 id="portée-des-variables">Portée des variables</h2>
+<p>Les variables créées <strong>à l’intérieur d’une fonction</strong> sont locales à cette fonction. Ce qui signifie que seule la fonction peut utiliser la variable.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">exemple</span>():
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>    print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>exemple()
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># print(x)  # Provoque une erreur : x n’existe pas ici</span></span></span></code></pre></div>
+<p>Cela permet d’éviter que des variables se mélangent entre différentes parties du programme.</p>
+<h2 id="résumé-des-bonnes-pratiques">Résumé des bonnes pratiques</h2>
+<ul>
+<li>Donner des <strong>noms clairs</strong> aux fonctions</li>
+<li>Une fonction doit faire <strong>une seule chose</strong></li>
+<li>Éviter de trop dépendre de variables globales (variables à l&rsquo;extérieur de la fonction</li>
+<li>Écrire un petit <strong>commentaire au-dessus</strong> de chaque fonction</li>
+</ul>
+<h2 id="mise-en-pratique-aperçu">Mise en pratique (aperçu)</h2>
+<p>Vous allez créer des fonctions pour modéliser des phénomènes simples (loi d’Ohm, formule de l’aire, conversion d’unités) et vous devrez les réutiliser dans un script principal.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">420-SN1-RE</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements en classe</a></li>
+            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a><ul id="R-subsections-7b5fecad8b2191e55b651abb92da0390" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et introduction à Python</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Opérations arithmétiques, entrées/sorties, erreurs courantes</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Prendre des décisions avec `if`, `elif`, `else`</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Listes et chaînes de caractères</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="active parent " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Fonctions simples et paramètres</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine6/atelier/index.html"><a class="padding" href="/semaine6/atelier/index.html">Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre).</a></li></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Examen 1 (30%)</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Structures de données (listes, dictionnaires)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1746804580" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1746804580" defer></script>
+    <script src="/js/theme.min.js?1746804580" defer></script>
+  </body>
+</html>

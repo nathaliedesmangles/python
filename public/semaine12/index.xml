@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Examen 2 (30%) :: 420-SN1-RE</title>
+    <link>https://example.org/semaine12/index.html</link>
+    <description>Examen formatif Description Type : Activité formative&#xA;Durée : 2h40&#xA;But : Révision collaborative, application active&#xA;Modalité : Individuelle – Accès aux notes de cours permis, mais aucun partage entre étudiants. Outils autorisés : Jupyter Notebook avec Anaconda (numpy, pandas, matplotlib intégrés)&#xA;Cette activité n’est pas notée, mais vous recevrez une rétroaction qualitative sur :&#xA;La clarté et la structure de votre code Votre capacité à repérer et expliquer des erreurs Notions évaluées</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine12/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

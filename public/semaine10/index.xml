@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualisation de données avec matplotlib (bases) :: 420-SN1-RE</title>
+    <link>https://example.org/semaine10/index.html</link>
+    <description>Objectif de la leçon Apprendre à tracer des graphiques simples en 2D à partir de données scientifiques à l’aide de la bibliothèque matplotlib.&#xA;Durée : 50 minutes de théorie + 1 h 50 de pratique&#xA;Contexte Les scientifiques visualisent souvent des données sous forme de graphiques pour interpréter plus facilement des tendances, des anomalies ou des corrélations. Python permet de produire des graphiques de haute qualité grâce à la bibliothèque matplotlib.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Activité 10 - tracer un graphique de données expérimentales.</title>
+      <link>https://example.org/semaine10/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine10/atelier/index.html</guid>
+      <description>Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.&#xA;Activité : Courbe de refroidissement d’un liquide Contexte&#xA;Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.&#xA;Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.</description>
+    </item>
+  </channel>
+</rss>

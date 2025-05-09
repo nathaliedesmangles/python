@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :
+Comprendre le rôle de NumPy pour le calcul scientifique rapide avec des tableaux. Utiliser Pandas pour manipuler des tableaux de données (DataFrame). Charger des données à partir d’un fichier CSV et faire des analyses simples. Appliquer des opérations mathématiques et statistiques de base. Pourquoi utiliser NumPy et Pandas? Python est très puissant pour l’analyse de données scientifiques.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Introduction à NumPy et Pandas :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :
+Comprendre le rôle de NumPy pour le calcul scientifique rapide avec des tableaux. Utiliser Pandas pour manipuler des tableaux de données (DataFrame). Charger des données à partir d’un fichier CSV et faire des analyses simples. Appliquer des opérations mathématiques et statistiques de base. Pourquoi utiliser NumPy et Pandas? Python est très puissant pour l’analyse de données scientifiques.">
+    <meta property="og:url" content="https://example.org/semaine9/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Introduction à NumPy et Pandas :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :
+Comprendre le rôle de NumPy pour le calcul scientifique rapide avec des tableaux. Utiliser Pandas pour manipuler des tableaux de données (DataFrame). Charger des données à partir d’un fichier CSV et faire des analyses simples. Appliquer des opérations mathématiques et statistiques de base. Pourquoi utiliser NumPy et Pandas? Python est très puissant pour l’analyse de données scientifiques.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Introduction à NumPy et Pandas :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :
+Comprendre le rôle de NumPy pour le calcul scientifique rapide avec des tableaux. Utiliser Pandas pour manipuler des tableaux de données (DataFrame). Charger des données à partir d’un fichier CSV et faire des analyses simples. Appliquer des opérations mathématiques et statistiques de base. Pourquoi utiliser NumPy et Pandas? Python est très puissant pour l’analyse de données scientifiques.">
+    <meta itemprop="wordCount" content="344">
+    <title>Introduction à NumPy et Pandas :: 420-SN1-RE</title>
+    <link href="/semaine9/index.xml" rel="alternate" type="application/rss+xml" title="Introduction à NumPy et Pandas :: 420-SN1-RE">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746804580" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746804580" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1746804580" rel="stylesheet">
+    <link href="/css/theme.min.css?1746804580" rel="stylesheet">
+    <link href="/css/format-html.min.css?1746804580" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1746804580" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1746804580" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1746804580" defer></script>
+    <script src="/js/search.min.js?1746804580" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/semaine9\/index.html';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1746804580";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine9/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs-dapprentissage">Objectifs d’apprentissage</a></li>
+    <li><a href="#pourquoi-utiliser-numpy-et-pandas">Pourquoi utiliser NumPy et Pandas?</a>
+      <ul>
+        <li><a href="#quand-utiliser-quoi">Quand utiliser quoi?</a></li>
+      </ul>
+    </li>
+    <li><a href="#introduction-à-numpy">Introduction à NumPy</a>
+      <ul>
+        <li><a href="#importation-de-la-bibliothèque">Importation de la bibliothèque</a></li>
+        <li><a href="#création-dun-tableau-array">Création d’un tableau (array)</a></li>
+        <li><a href="#opérations-mathématiques-sur-des-tableaux">Opérations mathématiques sur des tableaux</a></li>
+        <li><a href="#quelques-fonctions-utiles">Quelques fonctions utiles</a></li>
+        <li><a href="#tableaux-multidimensionnels">Tableaux multidimensionnels</a></li>
+      </ul>
+    </li>
+    <li><a href="#introduction-à-pandas">Introduction à Pandas</a>
+      <ul>
+        <li><a href="#importation-de-la-bibliothèque-1">Importation de la bibliothèque</a></li>
+        <li><a href="#lecture-dun-fichier-csv">Lecture d’un fichier CSV</a></li>
+        <li><a href="#accès-à-une-colonne">Accès à une colonne</a></li>
+        <li><a href="#statistiques-de-base">Statistiques de base</a></li>
+        <li><a href="#filtrage-des-données">Filtrage des données</a></li>
+        <li><a href="#moyenne-par-groupe">Moyenne par groupe</a></li>
+      </ul>
+    </li>
+    <li><a href="#comparaison-pandas-vs-numpy">Comparaison Pandas vs NumPy</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Introduction à NumPy et Pandas</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/atelier/index.html" title="Activité 8 - tableau périodique, molécule, données biologiques (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine9/atelier/index.html" title="Activité 9 - Analyse de données environnementales (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine9" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="introduction-à-numpy-et-pandas">Introduction à NumPy et Pandas</h1>
+
+<h2 id="objectifs-dapprentissage">Objectifs d’apprentissage</h2>
+<p>À la fin de cette leçon, vous devrez être capable de :</p>
+<ul>
+<li>Comprendre le rôle de <strong>NumPy</strong> pour le calcul scientifique rapide avec des tableaux.</li>
+<li>Utiliser <strong>Pandas</strong> pour manipuler des tableaux de données (DataFrame).</li>
+<li>Charger des données à partir d’un fichier CSV et faire des analyses simples.</li>
+<li>Appliquer des opérations mathématiques et statistiques de base.</li>
+</ul>
+<hr>
+<h2 id="pourquoi-utiliser-numpy-et-pandas">Pourquoi utiliser NumPy et Pandas?</h2>
+<p>Python est très puissant pour l’analyse de données scientifiques. Deux bibliothèques sont incontournables :</p>
+<ul>
+<li><strong>NumPy</strong> (Numerical Python) : pour le calcul rapide sur des tableaux de données numériques.</li>
+<li><strong>Pandas</strong> : pour organiser, filtrer et analyser des tableaux de données avec des étiquettes (colonnes/indices).</li>
+</ul>
+<h3 id="quand-utiliser-quoi">Quand utiliser quoi?</h3>
+<ul>
+<li>Tu veux faire des calculs rapides, des matrices, des moyennes, des sinusoïdes → NumPy</li>
+<li>Tu veux lire un fichier de données expérimentales, calculer une moyenne par groupe, trier ou filtrer → Pandas</li>
+</ul>
+<h2 id="introduction-à-numpy">Introduction à NumPy</h2>
+<h3 id="importation-de-la-bibliothèque">Importation de la bibliothèque</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np</span></span></code></pre></div>
+<h3 id="création-dun-tableau-array">Création d’un tableau (array)</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>])
+</span></span><span style="display:flex;"><span>print(a)</span></span></code></pre></div>
+<h3 id="opérations-mathématiques-sur-des-tableaux">Opérations mathématiques sur des tableaux</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>b <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>           <span style="color:#75715e"># Multiplie chaque élément par 2</span>
+</span></span><span style="display:flex;"><span>c <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sqrt(a)      <span style="color:#75715e"># Racine carrée de chaque élément</span></span></span></code></pre></div>
+<h3 id="quelques-fonctions-utiles">Quelques fonctions utiles</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>mean(a)      <span style="color:#75715e"># Moyenne</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>max(a)       <span style="color:#75715e"># Maximum</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>min(a)       <span style="color:#75715e"># Minimum</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>std(a)       <span style="color:#75715e"># Écart-type</span></span></span></code></pre></div>
+<h3 id="tableaux-multidimensionnels">Tableaux multidimensionnels</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>matrice <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]])
+</span></span><span style="display:flex;"><span>print(matrice<span style="color:#f92672">.</span>shape)     <span style="color:#75715e"># Affiche les dimensions (2 lignes, 2 colonnes)</span></span></span></code></pre></div>
+<h2 id="introduction-à-pandas">Introduction à Pandas</h2>
+<h3 id="importation-de-la-bibliothèque-1">Importation de la bibliothèque</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd</span></span></code></pre></div>
+<h3 id="lecture-dun-fichier-csv">Lecture d’un fichier CSV</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;donnees.csv&#34;</span>)
+</span></span><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>head())      <span style="color:#75715e"># Affiche les 5 premières lignes</span></span></span></code></pre></div>
+<h3 id="accès-à-une-colonne">Accès à une colonne</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Température&#34;</span>]</span></span></code></pre></div>
+<h3 id="statistiques-de-base">Statistiques de base</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;pH&#34;</span>]<span style="color:#f92672">.</span>max()</span></span></code></pre></div>
+<h3 id="filtrage-des-données">Filtrage des données</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[df[<span style="color:#e6db74">&#34;Température&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">25</span>]     <span style="color:#75715e"># Sélectionne les lignes où la température dépasse 25</span></span></span></code></pre></div>
+<h3 id="moyenne-par-groupe">Moyenne par groupe</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Échantillon&#34;</span>)[<span style="color:#e6db74">&#34;Concentration&#34;</span>]<span style="color:#f92672">.</span>mean()</span></span></code></pre></div>
+<h2 id="comparaison-pandas-vs-numpy">Comparaison Pandas vs NumPy</h2>
+<table>
+<thead>
+<tr>
+<th>Tâche</th>
+<th>NumPy</th>
+<th>Pandas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Calculs numériques rapides</td>
+<td>✅</td>
+<td>❌ (moins rapide)</td>
+</tr>
+<tr>
+<td>Données avec étiquettes</td>
+<td>❌</td>
+<td>✅ (DataFrame avec colonnes)</td>
+</tr>
+<tr>
+<td>Lecture de fichiers CSV</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Visualisation rapide</td>
+<td>❌</td>
+<td>✅ (avec <code>.plot()</code> ou matplotlib)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conclusion">Conclusion</h2>
+<p>NumPy est idéal pour les <strong>tableaux numériques purs</strong>. Pandas est parfait pour manipuler des <strong>données tabulaires structurées</strong> comme celles qu&rsquo;on retrouve en laboratoire ou en recherche scientifique. Ces deux bibliothèques sont souvent utilisées ensemble.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">420-SN1-RE</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements en classe</a></li>
+            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a><ul id="R-subsections-7b5fecad8b2191e55b651abb92da0390" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et introduction à Python</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Opérations arithmétiques, entrées/sorties, erreurs courantes</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Prendre des décisions avec `if`, `elif`, `else`</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Listes et chaînes de caractères</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Fonctions simples et paramètres</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Examen 1 (30%)</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Structures de données (listes, dictionnaires)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="active parent " data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine9/atelier/index.html"><a class="padding" href="/semaine9/atelier/index.html">Activité 9 - Analyse de données environnementales</a></li></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1746804580" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1746804580" defer></script>
+    <script src="/js/theme.min.js?1746804580" defer></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
++++
+chapter = true
+pre = "<b>Semaine 7.</b>"
+title = "Examen 1 (formatif)"
+weight = 70
++++
+
+## ÉVALUATION 1 – Formative
+
+**Type : Activité formative**
+**Durée : 2h40**
+**But : Révision collaborative, application active**
+
+Cette activité n’est pas notée, mais vous recevrez une **rétroaction qualitative** sur :
+
+* La clarté et la structure de votre code
+* Votre capacité à repérer et expliquer des erreurs
+
+
+### Consigne générale
+
+Seul ou en équipe de 2 ou 3, vous devez résoudre **3 xercices de programmation scientifique** à l’aide de Jupyter Notebook. Chaque défi fait appel à des concepts vus dans les semaines 1 à 6. 
+**Recommandation**: À la fin de l’activité, chaque équipe fera une **courte rétroaction** sur les codes d’une autre équipe.
+
+
+### Exercice 1 – Réaction chimique
+
+Un script doit calculer la masse totale de produits d’une réaction chimique.
+Données d’entrée : deux masses (réactif A et réactif B).
+Affichage de la masse totale, avec vérification si elle dépasse une certaine valeur critique.
+Bonus : afficher un message d’alerte si la masse dépasse 50 g.
+
+
+### Exercice 2 – Analyse de mesures
+
+L’étudiant doit entrer 4 mesures expérimentales (valeurs numériques).
+Calculer et afficher :
+
+* La moyenne
+* La différence maximale entre deux valeurs
+* Un message si une valeur est très éloignée de la moyenne
+
+
+### Exercice 3 – Débogage en équipe
+
+Un script erroné est fourni (contenant erreurs de type, mauvais calcul, pas de conversions `input()`).
+Chaque équipe doit :
+
+* Identifier au moins 3 erreurs
+* Corriger le code
+* Ajouter les commentaires explicatifs
+* Proposer une amélioration
+
+
+
+<!--
+
+## Examen 1 – Sommative
+
+**Type : Évaluation individuelle pratique**
+**Durée : 2h40**
+**Semaines couvertes : 1 à 5 et 7**
+**Compétences évaluées :**
+
+* Comprendre et manipuler les types de données de base
+* Contrôler le déroulement d’un programme (conditions, boucles)
+* Lire et produire du code Python simple et fonctionnel
+* Appliquer de bonnes pratiques de code et de documentation
+* Déboguer un script scientifique simple
+
+## Consigne générale
+
+Vous devez produire un programme Python complet dans Jupyter Notebook qui simule une situation réelle en sciences. Le sujet vous sera assigné au hasard parmi deux options (voir plus bas). Le programme devra inclure les éléments suivants :
+
+* Interaction avec l’utilisateur via `input()`
+* Traitement de données numériques (float, int)
+* Utilisation de conditions (`if/else`)
+* Utilisation d’une boucle (`for` ou `while`)
+* Calculs scientifiques simples avec une formule
+* Affichage clair des résultats avec unité
+* Code lisible avec commentaires clairs
+* Correction d’erreurs dans un sous-script fourni
+
+
+## Éléments attendus pour la notation
+
+* Fonctionnement complet du programme (40 %)
+* Clarté et lisibilité du code (20 %)
+* Bonne utilisation des structures de contrôle (20 %)
+* Qualité des commentaires et de la documentation (10 %)
+* Débogage efficace du sous-script fourni (10 %)
+
+
+## Exercice A – Dosage d’un médicament
+
+L’étudiant doit créer un script qui :
+
+1. Demande à l’utilisateur la masse corporelle (en kg) d’un patient
+2. Calcule la dose recommandée d’un médicament (0,8 mg/kg)
+3. Affiche la dose en mg avec 1 décimale
+4. Demande le nombre de doses à administrer dans la journée
+5. Calcule et affiche la dose totale quotidienne
+6. Vérifie si la dose totale dépasse 100 mg et affiche un avertissement si nécessaire
+7. Répète le calcul pour 3 patients (avec une boucle)
+
+
+## Exercice B – Analyse de températures
+
+L’étudiant doit créer un script qui :
+
+1. Demande à l’utilisateur d’entrer 5 températures (en °C) une par une
+2. Calcule la moyenne, le minimum et le maximum
+3. Affiche les résultats avec des messages clairs
+4. Affiche un message si la moyenne est sous 0 °C
+5. Commente clairement le code
+6. Corrige un sous-script erroné fourni (exemple : mauvaise conversion de `input()`)
+
+---
+
+## Grille de correction – Examen 1
+
+**Durée :** 2h40
+**Note sur 100**
+
+| Critère                                          | Description                                                                                                                  | Pondération | Note obtenue |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------ |
+| **1. Fonctionnalité du programme**               | Le programme s’exécute sans erreur. Il respecte l’ensemble des consignes (entrées, calculs, affichages, boucle, condition).  | /40         |              |
+| **2. Structure et lisibilité du code**           | Code bien structuré (indentation, sections claires). Noms de variables explicites. Séparation claire des étapes.             | /10         |              |
+| **3. Utilisation des structures de contrôle**    | Utilisation correcte et pertinente de `if`, `else`, `while` ou `for` selon la logique du problème.                           | /10         |              |
+| **4. Saisie et traitement des données**          | Usage approprié de `input()`, avec conversion (`int` ou `float`) au bon moment. Vérification de base des valeurs si demandé. | /10         |              |
+| **5. Calculs scientifiques**                     | Calculs conformes à la formule donnée, unités cohérentes, affichage du bon type de résultat.                                 | /10         |              |
+| **6. Qualité des commentaires et documentation** | Commentaires utiles et pertinents (pas trop, pas trop peu). Objectif du programme mentionné.                                 | /10         |              |
+| **7. Débogage du sous-script**                   | Identification et correction d’au moins trois erreurs dans le script fourni. Explication claire des modifications.           | /10         |              |
+| **Total**                                        |                                                                                                                              | **/100**    |              |
+
+---
+
+## Remarques générales
+
+* **Note ≥ 90** : Maîtrise très solide. Le programme est fonctionnel, bien structuré et clairement expliqué.
+* **Note entre 75 et 89** : Compétences bien acquises. Quelques oublis ou erreurs mineures.
+* **Note entre 60 et 74** : Code fonctionnel mais des erreurs nuisent à la compréhension ou à la précision.
+* **Note < 60** : Difficultés à appliquer plusieurs notions clés. Programme incomplet ou mal structuré.
+
+-->
+
+
+
+
+
+

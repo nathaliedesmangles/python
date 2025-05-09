@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activité 8 - tableau périodique, molécule, données biologiques :: 420-SN1-RE</title>
+    <link>https://example.org/semaine8/atelier/index.html</link>
+    <description>Sujet Thème : Structures de données (listes et dictionnaires) Durée prévue : 1 h 30 à 1 h 50 Travail en équipe de 2 ou 3&#xA;Objectifs pédagogiques Savoir représenter des entités scientifiques sous forme de structures de données Python Utiliser les dictionnaires pour associer des clés et des valeurs significatives Accéder et modifier les éléments d’une structure Appliquer ces compétences à des situations authentiques en sciences Contexte Les structures de données comme les dictionnaires et les listes sont très utiles pour représenter de l’information scientifique structurée.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine8/atelier/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

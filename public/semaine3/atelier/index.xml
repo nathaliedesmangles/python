@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activité 3 - État physique de l’eau selon la température et la pression :: 420-SN1-RE</title>
+    <link>https://example.org/semaine3/atelier/index.html</link>
+    <description>Objectifs pédagogiques Utiliser les structures conditionnelles if, elif, else Travailler avec les types numériques (float, int) Comprendre l’effet de la pression sur les températures de fusion et d’ébullition Énoncé L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :&#xA;L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine3/atelier/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

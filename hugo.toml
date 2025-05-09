@@ -1,0 +1,13 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = '420-SN1-RE'
+theme = "relearn"
+repository_url = ""
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+  show_metadata = false 
+  logo = "images/logoSN.png"
+
