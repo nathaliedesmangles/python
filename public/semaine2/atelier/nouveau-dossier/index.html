@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectif de la leçon Apprendre à lire et écrire des fichiers .csv (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).
-Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules). Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc. Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.">
+    <meta name="description" content="Objectifs pédagogiques Identifier et corriger des erreurs fréquentes : types de données, concaténation, calculs Introduire la validation minimale des entrées Revoir les conventions de nommage et la clarté du code Préambule Thème : Loi d’Ohm (U = R × I)
+Durée prévue : 60 à 90 minutes
+Travail en équipe de 2 ou 3
+Contexte Un technicien de laboratoire a tenté d’écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Lecture/écriture de fichiers texte (CSV) :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectif de la leçon Apprendre à lire et écrire des fichiers .csv (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).
-Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules). Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc. Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.">
-    <meta property="og:url" content="https://example.org/semaine11/index.html">
+    <meta name="twitter:title" content="Activité 2.1 - Corriger un script scientifique erroné :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs pédagogiques Identifier et corriger des erreurs fréquentes : types de données, concaténation, calculs Introduire la validation minimale des entrées Revoir les conventions de nommage et la clarté du code Préambule Thème : Loi d’Ohm (U = R × I)
+Durée prévue : 60 à 90 minutes
+Travail en équipe de 2 ou 3
+Contexte Un technicien de laboratoire a tenté d’écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm.">
+    <meta property="og:url" content="http://localhost:1313/semaine2/atelier/nouveau-dossier/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content="Lecture/écriture de fichiers texte (CSV) :: 420-SN1-RE">
-    <meta property="og:description" content="Objectif de la leçon Apprendre à lire et écrire des fichiers .csv (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).
-Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules). Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc. Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.">
+    <meta property="og:title" content="Activité 2.1 - Corriger un script scientifique erroné :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs pédagogiques Identifier et corriger des erreurs fréquentes : types de données, concaténation, calculs Introduire la validation minimale des entrées Revoir les conventions de nommage et la clarté du code Préambule Thème : Loi d’Ohm (U = R × I)
+Durée prévue : 60 à 90 minutes
+Travail en équipe de 2 ou 3
+Contexte Un technicien de laboratoire a tenté d’écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="Lecture/écriture de fichiers texte (CSV) :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectif de la leçon Apprendre à lire et écrire des fichiers .csv (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).
-Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules). Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc. Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.">
-    <meta itemprop="wordCount" content="153">
-    <title>Lecture/écriture de fichiers texte (CSV) :: 420-SN1-RE</title>
-    <link href="/semaine11/index.xml" rel="alternate" type="application/rss+xml" title="Lecture/écriture de fichiers texte (CSV) :: 420-SN1-RE">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1747052849" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1747052849" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1747052849" rel="stylesheet">
-    <link href="/css/theme.min.css?1747052849" rel="stylesheet">
-    <link href="/css/format-html.min.css?1747052849" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1747052849" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1747052849" defer></script>
-    <script src="/js/lunr/lunr.min.js?1747052849" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1747052849" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1747052849" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1747052849" defer></script>
-    <script src="/js/search.min.js?1747052849" defer></script>
+    <meta itemprop="name" content="Activité 2.1 - Corriger un script scientifique erroné :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs pédagogiques Identifier et corriger des erreurs fréquentes : types de données, concaténation, calculs Introduire la validation minimale des entrées Revoir les conventions de nommage et la clarté du code Préambule Thème : Loi d’Ohm (U = R × I)
+Durée prévue : 60 à 90 minutes
+Travail en équipe de 2 ou 3
+Contexte Un technicien de laboratoire a tenté d’écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm.">
+    <meta itemprop="wordCount" content="264">
+    <title>Activité 2.1 - Corriger un script scientifique erroné :: 420-SN1-RE</title>
+    <link href="/semaine2/atelier/nouveau-dossier/index.xml" rel="alternate" type="application/rss+xml" title="Activité 2.1 - Corriger un script scientifique erroné :: 420-SN1-RE">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746828292" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746828292" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1746828292" rel="stylesheet">
+    <link href="/css/theme.css?1746828292" rel="stylesheet">
+    <link href="/css/format-html.css?1746828292" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1746828292" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1746828292" defer></script>
+    <script src="/js/lunr/lunr.min.js?1746828292" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1746828292" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1746828292" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1746828292" defer></script>
+    <script src="/js/search.js?1746828292" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
-      window.relearn.path='\/semaine11\/index.html';
-      window.relearn.relBasePath='..';
-      window.relearn.relBaseUri='..';
-      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine2\/atelier\/nouveau-dossier\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1747052849";
+      window.relearn.index_js_url="/searchindex.en.js?1746828292";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +100,7 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/semaine11/index.html">
+  <body class="mobile-support html" data-url="/semaine2/atelier/nouveau-dossier/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -106,11 +114,12 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#objectif-de-la-leçon">Objectif de la leçon</a></li>
-    <li><a href="#quest-ce-quun-fichier-csv">Qu’est-ce qu’un fichier CSV?</a></li>
-    <li><a href="#lecture-de-fichier-csv-sans-module-méthode-simple-avec-open">Lecture de fichier CSV sans module (méthode simple avec <em>open()</em>)</a></li>
-    <li><a href="#écriture-de-données-dans-un-fichier-csv">Écriture de données dans un fichier CSV</a></li>
-    <li><a href="#bonne-pratique--toujours-fermer-le-fichier-ou-utiliser-with">Bonne pratique : toujours fermer le fichier (ou utiliser <em>with</em>)</a></li>
+    <li><a href="#objectifs-pédagogiques">Objectifs pédagogiques</a></li>
+    <li><a href="#préambule">Préambule</a></li>
+    <li><a href="#contexte">Contexte</a></li>
+    <li><a href="#script-initial-erroné">Script initial (erroné)</a></li>
+    <li><a href="#consignes">Consignes</a></li>
+    <li><a href="#résultat-attendu">Résultat attendu</a></li>
   </ul>
 </nav>
                 </div>
@@ -119,12 +128,14 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Lecture/écriture de fichiers texte (CSV)</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine2/index.html"><span itemprop="name">Opérations arithmétiques, entrées/sorties, erreurs courantes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine2/atelier/index.html"><span itemprop="name">Activité 2.2 – Calculs de concentrations et vitesses de réaction</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Activité 2.1 - Corriger un script scientifique erroné</span><meta itemprop="position" content="4"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/atelier/index.html" title="Activité 10 - tracer un graphique de données expérimentales. (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine2/atelier/index.html" title="Activité 2.2 – Calculs de concentrations et vitesses de réaction (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine11/atelier/index.html" title="Activité 11 - Traitement de résultats de laboratoire (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine3/index.html" title="Prendre des décisions avec `if`, `elif`, `else` (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -138,43 +149,50 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable semaine11" tabindex="-1">
+      <main id="R-body-inner" class="highlightable semaine2" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
   </header>
 
-<h1 id="lectureécriture-de-fichiers-texte-csv">Lecture/écriture de fichiers texte (CSV)</h1>
+<h1 id="activité-21---corriger-un-script-scientifique-erroné">Activité 2.1 - Corriger un script scientifique erroné</h1>
 
-<h2 id="objectif-de-la-leçon">Objectif de la leçon</h2>
-<p>Apprendre à lire et écrire des fichiers <code>.csv</code> (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).</p>
-<hr>
-<h2 id="quest-ce-quun-fichier-csv">Qu’est-ce qu’un fichier CSV?</h2>
+<h2 id="objectifs-pédagogiques">Objectifs pédagogiques</h2>
 <ul>
-<li>Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules).</li>
-<li>Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc.</li>
-<li>Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.</li>
+<li>Identifier et corriger des erreurs fréquentes : types de données, concaténation, calculs</li>
+<li>Introduire la validation minimale des entrées</li>
+<li>Revoir les conventions de nommage et la clarté du code</li>
 </ul>
-<p><strong>Exemple de fichier <code>mesures.csv</code> :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>temps,temperature
-0,22.5
-5,24.1
-10,26.3
-15,28.0</code></pre></div>
-<h2 id="lecture-de-fichier-csv-sans-module-méthode-simple-avec-open">Lecture de fichier CSV sans module (méthode simple avec <em>open()</em>)</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;mesures.csv&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> fichier:
-</span></span><span style="display:flex;"><span>    lignes <span style="color:#f92672">=</span> fichier<span style="color:#f92672">.</span>readlines()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> lignes[<span style="color:#ae81ff">1</span>:]:  <span style="color:#75715e"># Ignorer l’en-tête</span>
-</span></span><span style="display:flex;"><span>    temps, temperature <span style="color:#f92672">=</span> ligne<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Temps : </span><span style="color:#e6db74">{</span>temps<span style="color:#e6db74">}</span><span style="color:#e6db74"> min, Température : </span><span style="color:#e6db74">{</span>temperature<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C&#34;</span>)</span></span></code></pre></div>
-<h2 id="écriture-de-données-dans-un-fichier-csv">Écriture de données dans un fichier CSV</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;resultats.csv&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> fichier:
-</span></span><span style="display:flex;"><span>    fichier<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;temps,temperature</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>    fichier<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;0,22.5</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>    fichier<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;5,24.1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
-<h2 id="bonne-pratique--toujours-fermer-le-fichier-ou-utiliser-with">Bonne pratique : toujours fermer le fichier (ou utiliser <em>with</em>)</h2>
 <hr>
+<h2 id="préambule">Préambule</h2>
+<p><strong>Thème</strong> : Loi d’Ohm (U = R × I)<br>
+<strong>Durée prévue</strong> : 60 à 90 minutes<br>
+<strong>Travail en équipe de 2 ou 3</strong></p>
+<h2 id="contexte">Contexte</h2>
+<p>Un technicien de laboratoire a tenté d’écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm. Il voulait que l’utilisateur entre la valeur de la résistance (en ohms) et du courant (en ampères), puis obtenir la tension. Malheureusement, le script contient plusieurs erreurs.</p>
+<p>Vous devez lire, exécuter et corriger le script pour qu’il fonctionne correctement et respecte les bonnes pratiques vues en classe.</p>
+<h2 id="script-initial-erroné">Script initial (erroné)</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Calcul de la tension selon la loi d’Ohm</span>
+</span></span><span style="display:flex;"><span>resistance <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrer la résistance en ohms : &#34;</span>)
+</span></span><span style="display:flex;"><span>courant <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrer le courant en ampères : &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tension <span style="color:#f92672">=</span> courant <span style="color:#f92672">*</span> resistance
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La tension est de &#34;</span> <span style="color:#f92672">+</span> tension <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; V&#34;</span>)</span></span></code></pre></div>
+<h2 id="consignes">Consignes</h2>
+<ol>
+<li>Exécuter le script tel quel et observer les messages d’erreurs.</li>
+<li>Identifier au moins <strong>trois problèmes</strong> différents dans le code.</li>
+<li>Corriger le script pour qu’il fonctionne correctement et soit lisible.</li>
+<li>Ajouter une explication en commentaire pour chaque correction.</li>
+<li>Faire valider votre version corrigée avec une autre équipe.</li>
+<li>Proposer une amélioration facultative (ex. : arrondir le résultat, afficher les unités, utiliser <code>f-strings</code>).</li>
+</ol>
+<h2 id="résultat-attendu">Résultat attendu</h2>
+<p>Un script fonctionnel, lisible, commenté, et capable de produire une sortie comme :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Entrer la résistance en ohms : 10
+Entrer le courant en ampères : 2
+La tension est de 20.0 V</code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -222,10 +240,12 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements en classe</a><ul id="R-subsections-3ea28dc4360980e174b3940bdd3cc4da" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements en classe</a></li>
             <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et introduction à Python</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Opérations arithmétiques, entrées/sorties, erreurs courantes</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Opérations arithmétiques, entrées/sorties, erreurs courantes</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu">
+            <li class="parent alwaysopen " data-nav-id="/semaine2/atelier/index.html"><a class="padding" href="/semaine2/atelier/index.html">Activité 2.2 – Calculs de concentrations et vitesses de réaction</a><ul id="R-subsections-ce9f7673ac0c3740f0b08d5916ea9919" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine2/atelier/nouveau-dossier/index.html"><a class="padding" href="/semaine2/atelier/nouveau-dossier/index.html">Activité 2.1 - Corriger un script scientifique erroné</a></li></ul></li></ul></li>
             <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Prendre des décisions avec `if`, `elif`, `else`</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Listes et chaînes de caractères</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
@@ -234,8 +254,7 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
             <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Structures de données (listes, dictionnaires)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="active parent " data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu">
-            <li class="" data-nav-id="/semaine11/atelier/index.html"><a class="padding" href="/semaine11/atelier/index.html">Activité 11 - Traitement de résultats de laboratoire</a></li></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
@@ -257,8 +276,8 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1747052849" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1747052849" defer></script>
-    <script src="/js/theme.min.js?1747052849" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1746828292" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1746828292" defer></script>
+    <script src="/js/theme.js?1746828292" defer></script>
   </body>
 </html>

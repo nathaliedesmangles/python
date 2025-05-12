@@ -24,7 +24,7 @@ Un programme **fonctionnel** n’est pas forcément un programme **lisible** ou 
 
 ## Quelques bonnes pratiques essentielles
 
-**a. Clarté des noms de variables**
+**a. Clarté des noms de variables**  
 Utilisez des noms qui ont du sens :
 
 ```python
@@ -32,7 +32,7 @@ r = 10       # Mauvais
 resistance = 10  # Meilleur
 ```
 
-**b. Indentation et structure du code**
+**b. Indentation et structure du code**  
 Python utilise l’indentation pour organiser le code. Ne mélangez jamais des espaces et des tabulations.
 
 ```python
@@ -42,10 +42,10 @@ else:
     print("Négatif ou nul")
 ```
 
-**c. Simplicité**
+**c. Simplicité**  
 Un bon code est simple. Évitez les constructions compliquées si une version plus directe existe.
 
-**d. Séparer les étapes**
+**d. Séparer les étapes**  
 Clarifiez le processus en séparant les étapes : entrées, calculs, affichage.
 
 
@@ -75,19 +75,23 @@ masse = 3  # On met 3 dans masse
 
 ## Erreurs fréquentes et débogage
 
-**a. Erreurs de syntaxe**
-Oubli d’un deux-points, parenthèse mal fermée, indentation incorrecte.
+**a. Erreurs de syntaxe**  
+- Oubli d’un deux-points. 
+- Parenthèse mal fermée. 
+- Indentation incorrecte.
+
 Python indique souvent la ligne (ou juste après) où l’erreur se produit.
 
-**b. Erreurs de type**
-Essayer de multiplier une chaîne de caractères par un nombre flottant :
+**b. Erreurs de type**  
+- Essayer de multiplier une chaîne de caractères par un nombre flottant :
 
 ```python
 "3" * 2.5  # Erreur
 ```
 
-**c. Erreur de conversion avec `input()`**
-Le retour de `input()` est toujours une chaîne (`str`) même si l’utilisateur entre un nombre. Oublier de convertir entraîne des erreurs lors des calculs.
+**c. Erreur de conversion avec `input()`**  
+Le retour de `input()` est toujours une chaîne (`str`) même si l’utilisateur entre un nombre. 
+- Oublier de convertir entraîne des erreurs lors des calculs.
 Exemple :
 
 ```python
@@ -102,8 +106,8 @@ x = float(input("Entrer un nombre : "))
 print(x * 2)
 ```
 
-**d. Erreurs de logique**
-Le programme fonctionne mais donne un résultat faux (ex. : division au mauvais endroit, mauvaise formule).
+**d. Erreurs de logique**  
+- Le programme fonctionne mais donne un résultat faux (ex. : division au mauvais endroit, mauvaise formule).
 
 
 ## Astuces pour déboguer
@@ -117,5 +121,5 @@ Le programme fonctionne mais donne un résultat faux (ex. : division au mauvais 
 
 ### Exercice proposé
 
-Mettre en pratique ces notions en **corrigeant un script scientifique erroné** (voir activité de la semaine).
+Mettre en pratique ces notions en **corrigeant un script scientifique erroné** (voir activité de la **semaine 2**).
 

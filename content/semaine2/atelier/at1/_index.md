@@ -1,6 +1,6 @@
 +++
-title = "Activité - Corriger un script scientifique erroné"
-weight = 2
+title = "Activité 2.1 - Corriger un script scientifique erroné"
+weight = 21
 +++
 
 
@@ -14,9 +14,9 @@ weight = 2
 
 ## Préambule
 
-**Thème : Loi d’Ohm (U = R × I)**
-**Durée prévue :** 60 à 90 minutes
-**Travail en équipe de 2 ou 3**
+**Thème** : Loi d’Ohm (U = R × I)  
+**Durée prévue** : 60 à 90 minutes  
+**Travail en équipe de 2 ou 3**  
 
 ## Contexte
 

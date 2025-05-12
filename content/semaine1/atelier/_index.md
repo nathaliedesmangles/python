@@ -12,35 +12,37 @@ weight = 12
 
 ---
 
-## Questionnaire de départ (20 minutes – individuel, puis discussion en groupe)
+## Questionnaire de départ (~15 minutes)
 
-Répondre au questions se trouvant dans le quiz [ici](lien MS Forms)
+Répondre **individuellement** aux questions du quiz [Apprendre à se connaitre](https://forms.office.com/r/xCsCbJTy4e?origin=lprLink)
 
-* As-tu déjà programmé? Si oui, dans quel langage et dans quel contexte?
-* Qu’est-ce qui te motive à apprendre la programmation?
-* Quelles sont tes craintes ou tes attentes par rapport au cours?
-* Peux-tu donner un exemple de situation scientifique où tu crois que la programmation pourrait être utile?
+**Suivi** (~5 minutes) : 
+1. Discussion en petits groupes (3-4 étudiants)
+2. Mise en commun de quelques idées (question #9) à l’oral.
 
-**Suivi** : discussion en petits groupes (3-4 étudiants), puis mise en commun de quelques idées à l’oral.
+## Mini-lab – Découverte de Python (~1 h 30)
 
+**En équipe** : 2 ou 3 étudiants
 
-## Mini-lab en équipe (2 ou 3 étudiants) – Découverte de Python (1 h 30)
-
-**Objectifs du mini-lab :**
+**Objectifs :**
 
 * Comprendre la structure d’un script Python dans Jupyter
 * Modifier des cellules et exécuter du code
 * Manipuler des variables et des opérations de base
 * Discuter et s’entraider au sein de l’équipe
 
-**Titre :** "Ton premier labo avec Python : une calculatrice scientifique de base"
+**Titre :** Une calculatrice scientifique de base
 
 **Matériel :**
 
-* Jupyter Notebook prêt à remplir (fourni par l’enseignante)
+* Jupyter Notebook prêt à remplir (Sur Moodle)
 * Contient des cellules à compléter avec des instructions simples
 
-**Contenu du mini-lab :**
+<!--
+* L’enseignante passe dans les équipes pour observer l’interaction et répondre aux questions.
+-->
+
+{{% notice style="green" title="Contenu du mini-lab" groupid="notice-toggle" expanded="false" %}}
 
 ```python
 # Cellule 1 : Affiche ton nom et ton programme d’études
@@ -59,11 +61,13 @@ vitesse = 3.0  # m/s
 energie = 0.5 * masse * vitesse ** 2
 print("Énergie cinétique : ", energie, "J")
 ```
+{{% /notice %}}
 
-## Retour en groupe (10 minutes)
+
+## Retour en groupe (~10 minutes)
 
 * Discussion : qu’avez-vous appris aujourd’hui?
 * Quels éléments vous ont surpris ou intéressés?
-* L’enseignante passe dans les équipes pour observer l’interaction et répondre aux questions.
+
 
 [Le notebook `.ipynb`](./Mini-lab1_Introduction_Python.ipynb)

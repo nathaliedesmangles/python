@@ -50,4 +50,4 @@ weight = 10
 
 ## Règlements en classe
 
-[Voir les règlements ici]()
+[Voir les règlements ici](https://python-a25.netlify.app/regles/)

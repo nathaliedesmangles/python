@@ -1,6 +1,6 @@
 +++
-title = "Activité 2 – Calculs de concentrations et vitesses de réaction"
-weight = 21
+title = "Activité 2.2 – Calculs de concentrations et vitesses de réaction"
+weight = 22
 +++
 
 ## Objectif

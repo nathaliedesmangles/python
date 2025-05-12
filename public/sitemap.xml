@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/regles/index.html</loc>
+    <loc>https://example.org/regles/a-faire/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/debogage/atelier/index.html</loc>
+    <loc>https://example.org/regles/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/debogage/index.html</loc>
@@ -22,7 +22,10 @@
     <loc>https://example.org/semaine2/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine2/atelier/index.html</loc>
+    <loc>https://example.org/semaine2/atelier/at1/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine2/atelier/at2/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine3/index.html</loc>
