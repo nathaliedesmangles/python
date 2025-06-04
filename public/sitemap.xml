@@ -100,13 +100,13 @@
     <loc>https://example.org/semaine15/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/alternatives/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/alternatives/google-colab/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/afaire/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/alternatives/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>
