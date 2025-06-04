@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/regles/a-faire/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/regles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/debogage/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine1/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine1/environnement_intro/index.html</loc>
+    <loc>https://example.org/semaine1/onedrive/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine1/vscodejupyter/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine1/atelier/index.html</loc>
@@ -103,7 +100,16 @@
     <loc>https://example.org/semaine15/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/google-colab/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/afaire/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/categories/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/afaire/maths/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/index.html</loc>

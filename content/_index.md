@@ -16,7 +16,7 @@ Ce cours permet de se familiariser avec la programmation informatique dans un co
 
 L’élève est introduit à la résolution de problèmes à l’aide d’algorithmes. Il doit traduire les algorithmes en code en utilisant un langage de programmation, tout en vérifiant le bon fonctionnement de son programme. Il traite des données et présente des résultats scientifiques à l’aide de la programmation lettrée.
 
-### Objectifs du cours
+## Objectifs du cours
 
 - Apprendre les bases de la programmation en Python
 - Appliquer la programmation à des problèmes scientifiques (mathématiques, physique, biologie, etc.)
@@ -26,8 +26,12 @@ L’élève est introduit à la résolution de problèmes à l’aide d’algori
 - Comprendre la gestion des fichiers et dossiers sous Windows
 - Introduire les techniques de débogage et de traçage d'exécution
 
-### Évaluations
+## Évaluations
 
-- Éval. 1 (sem. 7)
-- Éval. 2 (sem. 12)
-- Projet final (sem. 13 à 15)
+### Évaluations formatives
+- Ateliers hebdomadaires
+
+### Évaluations sommatives
+- Examen 1 (30%, semaine 7)
+- Examen 2 (30%, semaine 12)
+- Projet final (40%, semaines 13 à 15)

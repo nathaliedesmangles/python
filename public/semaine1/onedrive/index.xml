@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OneDrive et gestion des fichiers et dossiers :: 420-SN1-RE</title>
+    <link>https://example.org/semaine1/onedrive/index.html</link>
+    <description>OneDrive OneDrive est un stockage et synchronisation de fichiers personnels ou scolaires dans le cloud et accessible à partir de n’importe quel emplacement sur n’importe quel appareil. Idéal pour le travail en cours et le partage avec des personnes spécifiques. Les documents sont privés jusqu’à ce que vous les partagez. 1. Repérer l’icône OneDrive Vous devriez voir l’icône de OneDrive (scolaire = en bleu) (personnel = en gris), sur la barre des tâches, en bas à droite de l’écran (près de l’horloge).</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine1/onedrive/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

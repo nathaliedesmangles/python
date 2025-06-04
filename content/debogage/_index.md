@@ -1,6 +1,7 @@
 +++
 title = "Bonnes pratiques, documentation, débogage"
-weight = 2
+weight = 3
+draft = true
 +++
 
 

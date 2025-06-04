@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Règlements en classe :: 420-SN1-RE</title>
+    <title>Règlements de classe — Comportement attendu :: 420-SN1-RE</title>
     <link>https://example.org/regles/index.html</link>
-    <description>🧠 40 cerveaux curieux 🧑‍💻 un seul code de conduite ! ⏰ Ponctuel·le tu seras Arriver à l’heure = comme un bon script : bien lancé dès le début.&#xA;⚠️ 3 retards = 1 absence. 👀 Présent·e et concentré·e Pas de mode veille en classe.&#xA;🖱️ Ta souris clique, mais c’est ton cerveau qui code ! 🗣️ Une classe, pas un chat Discord On lève la main, on respecte les autres.</description>
+    <description>1. Comporte-toi comme si tu étais déjà en emploi. Arrive à l’heure, sois prêt à travailler, et respecte les échéances. Ton attitude ici prépare ton avenir professionnel.&#xA;2. Respecte-toi, donc agis avec respect. Ton comportement reflète la manière dont tu te considères. Adopte une attitude calme, polie et attentive envers toi-même, les autres et l’enseignant·e.&#xA;3. Sois présent, mentalement et physiquement. Utilise ton cellulaire seulement pour les besoins du cours.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/regles/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>À FAIRE</title>
-      <link>https://example.org/regles/a-faire/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/regles/a-faire/index.html</guid>
-      <description>Semaine 1 Cours Mettre à jour infos tableau planification de cours Préparer la démo sur Anaconda et Jupyter Préparer guide installation sur Windows 11: https://www.datacamp.com/fr/tutorial/installing-anaconda-windows Semaine 2 Cours Réviser Activité 2.1 Créer ipynb Activité 2.2 Contexte à confirmer Mise en forme des formule Vérifier ipynb Semaine 3 Cours Activité 3 Semaine 4 Cours Activité 4 Semaine 5 Cours Activité 5 Semaine 6 Cours Activité 6</description>
-    </item>
   </channel>
 </rss>

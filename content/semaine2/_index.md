@@ -1,17 +1,26 @@
 +++
 chapter = true
 pre = "<b>Semaine 2.</b>"
-title = "Opérations arithmétiques, entrées/sorties, erreurs courantes"
+title = "Introduction à Python (variables, types, entrée/sortie)"
 weight = 20
 +++
 
 
-## Objectifs de la leçon
+## Objectifs d'apprentissage
 
-* Utiliser Python comme calculatrice scientifique.
-* Lire des données entrées par l’utilisateur.
-* Afficher les résultats de manière claire et lisible.
-* Identifier et corriger les erreurs fréquentes.
+À la fin de cette leçon vous serez en mesure de:
+
+* Définir et utiliser des **variables** en Python.
+* Manipuler les **types de base** en Python: `int`, `float`, `str`, `bool`.
+	* Afficher les résultats de manière claire et lisible
+* Gérer les entrées (**saisies au clavier**) et les sorties (**affichage**) d'un programme Python.
+	* Lire des données entrées par l’utilisateur.
+
+
+## Les variables et les types et affichage de données de base
+
+- Une variable c'est...
+
 
 ## Les opérations arithmétiques en Python
 
@@ -30,7 +39,7 @@ Python peut effectuer toutes les opérations de base :
 Les règles de priorité sont les mêmes qu’en mathématiques.
 Utilisez les parenthèses pour clarifier vos intentions.
 
-## Les entrées de l'utilisateur
+## Les entrées de l'utilisateur (via le clavier)
 
 Pour demander une valeur à l’utilisateur :
 

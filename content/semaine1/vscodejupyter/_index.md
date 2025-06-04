@@ -1,0 +1,153 @@
++++
+title = "Visual Studio Code et Jupyter Notebook"
+weight = 13
++++
+
+
+## 1. Visual Studio Code (VS Code)
+
+**Visual Studio Code** est un éditeur de code moderne, simple et très utilisé pour programmer avec Python.
+Il vous permet aussi de bien organiser vos projets grâce à une gestion intuitive des dossiers et fichiers.
+
+### Ce que vous pouvez faire avec VS Code :
+
+* Écrire et exécuter du code Python
+* Ouvrir et modifier des notebooks Jupyter (`.ipynb`)
+* Voir tous les fichiers de votre projet dans un seul endroit
+* Lire les erreurs et déboguer plus facilement
+
+### Gestion des dossiers et fichiers
+
+1. Avant de commencer, assurez-vous d'être connectés à **votre compte OneDrive du cégep**.
+
+2. Dans votre OneDrive, créez un **dossier pour le cours d'aujourd'hui** (par exemple : `python-cours1`) dans l’Explorateur Windows.
+
+![Créer un dossier](../images/creer-dossier.png?width=40vw)
+
+![Dossier python-cours1](../images/dossier-python-cours1.png)
+
+3. Ouvrez VS Code
+
+![Recherche](../images/recherche.png?width=15vw)
+
+![Ouvrir VS Code](../images/ouvrir-vs-code.png?width=30vw)
+
+4. Ouvrez le dossier `python-cours1` dans VS Code :
+
+ ![Ouvrir dossier dans VS Code](../images/ouvrir-dossier.png?width=40vw)
+
+ Sélectionnez le dossier
+
+ ![Ouvrir python-cours1 dans VS Code](../ouvrir-dossier-python-cours1.png?width=30vw)
+
+ ![Dossier dans VS Code](../images/dossier-dans-vs-code.png?width=30vw)
+
+
+5. Dans VS Code, dans le panneau à gauche, vous pouvez :
+
+  * Ajouter un **nouveau fichier**
+
+  ![Nouveau fichier](../images/nouveau-fichier.png?width=30vw)
+
+  > Créer un nouveau fichier nommé `intro-python.ipynb` en tapant le nom complet, suivi de la touche **Enter**.
+
+  ![fichier intro-python.ipynb](../images/creer-fichier.png?width=30vw)
+
+  * Créer un **sous-dossier**
+
+  ![Nouveau dossier](../images/nouveau-dossier.png?width=30vw)
+
+  > Créer un nouveau dossier nommé `exercices` en tapant le nom complet, suivi de la touche **Enter**.
+
+  ![sous-dossier exercices](../images/creer-sous-dossier.png?width=30vw)
+
+  * Pour **supprimer** ou **renommer** des fichiers ou des dossiers, simplement faites un **clic-droit** sur le nom du fichier ou dossier, puis choisissez l'option souhaitée.
+
+  ![Supprimer ou Renommer](../images/supprimer-renommer.png?width=20vw)
+
+  > Supprimez le fichier nommé `intro-python.ipynb`.
+
+* Les fichiers `.py` (scripts Python) et `.ipynb` (notebooks) seront tous visibles ici.
+
+{{% notice style="cyan" title="Notez que" %}}
+Dans ce cours nous utiliserons uniquement des fichiers `.ipynb`(***iPy**thon **N**ote***B***ook*)
+{{% /notice %}}
+
+
+## 2. Jupyter Notebook
+
+**Jupyter Notebook** vous permet d’écrire du texte et du code Python dans un même document.
+C’est un outil idéal pour expérimenter, visualiser des données et commenter vos résultats.
+
+### Pourquoi l’utiliser ?
+
+* On peut écrire du code Python et l’exécuter **cellule par cellule**.
+* On peut insérer des explications ou des titres entre les blocs de code.
+* Très pratique pour les **calculs scientifiques**, les **graphiques** et les **analyses de données**.
+
+### Comment l’utiliser dans VS Code
+
+1. À partir de Moodle (Section **Semaine 1**), téléchargez le fichier `introduction.ipynb`.
+
+> Par défaut, le fichier se trouvera dans le dossier **Téléchargement**.
+
+2. Via l'**Explorateur de fichiers**, déplacer (**Glisser-Déposer**) le fichier `introduction.ipynb` du dossier **Téléchargement** vers le dossier **Exercices**
+
+  ![Déplacer introduction_python.ipynb](../deplacer-fichier.png?width=35vw)
+
+3. Revenez dans VS Code, assurez-vous de voir le fichier `introduction_pyton.ipynb` dans le dossier `exercices`.
+
+ ![fichier exercice1](../fichier-intro.png?width=30vw)
+
+4. Une fois ouvert, à droite, vous verrez des **cellules** :
+
+  	* Certaines celules servent à écrire du **texte** explicatif (format Markdown)
+
+ 	![cellule markdown](../cell-md.png?width=45vw)
+
+  	* D'autres servent à écrire du **code** Python
+
+ 	![cellule code](../cell-code.png?width=45vw)
+
+	* Cliquez sur ▶ pour exécuter une cellule
+
+ 	![Executer](../images/executer.png?width=40vw)
+
+---
+
+## Bonnes pratiques
+
+### Organisez bien vos projets :
+
+* Utilisez un **dossier par thème ou par semaine**
+* Nommez vos fichiers clairement : `calcul_masse.ipynb`, `analyse_temp.ipynb`
+
+### La sauvegarde automatique ou sauvegardez régulièrement
+
+Si un rond blanc est présent à droit du nom du fichier dans l'onglet, c'est parce qu'il n'est PAS sauvegardé (comme dans l'exemple ci-dessous).
+
+![point blanc](../images/point-blanc.png?width=30vw)
+
+Pour activer la **sauvegarde automatique**, cliquez l'onglet `Fichier`, puis cliquez sur `Enregistrement automatique`.
+
+![sauvegarde automatique](../images/save-auto.png?height=30vw)
+
+Vous devriez maintenant voir un crochet à gauche de cette option.
+
+![crochet](../images/crochet.png)
+
+* Pour ce fichier, VS Code détectera les modifications et fera la sauvegarde automatiquement, mais vous pouvez à tout moment appuyer sur **Ctrl + S** pour forcer la sauvegarde
+
+
+Il devrait maintenant avoir un `X` à gauche du nom du fichier dans l'onglet du haut. Ce qui signifie que le fichier est sauvegardé.
+
+![X](../images/X.png)
+
+
+### Fermez les notebooks proprement
+
+* En haut à droite du nom d’un notebook, cliquez sur `X` pour fermer le fichier
+
+# **Pause 5 minutes**
+
+![Pause](../../pause.jpg?width=50vw)

@@ -1,6 +1,6 @@
 +++
 title = "Activité 1 – Questionnaire + Mini-lab en équipe"
-weight = 12
+weight = 14
 +++
 
 ## Objectifs pédagogiques

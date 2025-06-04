@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <!-- Question 1 -->
+  <question type="multichoice">
+    <name>
+      <text>Pondération du cours</text>
+    </name>
+    <questiontext format="html">
+      <text>Quelle est la pondération du cours (heures de théorie - de laboratoire - de travail personnel) ?</text>
+    </questiontext>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="0">
+      <text>2-2-2</text>
+    </answer>
+    <answer fraction="100">
+      <text>2-1-3</text>
+    </answer>
+    <answer fraction="0">
+      <text>3-1-2</text>
+    </answer>
+    <answer fraction="0">
+      <text>1-2-3</text>
+    </answer>
+    <feedback>
+      <text>La bonne réponse est 2-1-3 : 2h de théorie, 1h de labo, 3h de travail personnel.</text>
+    </feedback>
+  </question>
+
+  <!-- Question 2 -->
+  <question type="multichoice">
+    <name>
+      <text>Pondération de l’évaluation finale</text>
+    </name>
+    <questiontext format="html">
+      <text>Combien de pourcentage vaut l’évaluation finale ?</text>
+    </questiontext>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="0">
+      <text>20 %</text>
+    </answer>
+    <answer fraction="0">
+      <text>25 %</text>
+    </answer>
+    <answer fraction="100">
+      <text>30 %</text>
+    </answer>
+    <answer fraction="0">
+      <text>35 %</text>
+    </answer>
+    <feedback>
+      <text>Vérifie bien le tableau des évaluations dans ton plan de cours.</text>
+    </feedback>
+  </question>
+
+  <!-- Question 3 -->
+  <question type="shortanswer">
+    <name>
+      <text>Date de la première évaluation sommative</text>
+    </name>
+    <questiontext format="html">
+      <text>Quelle est la date de la première évaluation sommative ? (Écris au format AAAA-MM-JJ)</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>2025-09-23</text>
+    </answer>
+    <feedback>
+      <text>Assure-toi de consulter le calendrier des évaluations.</text>
+    </feedback>
+  </question>
+
+  <!-- Question 4 -->
+  <question type="shortanswer">
+    <name>
+      <text>Nombre d’évaluations formatives</text>
+    </name>
+    <questiontext format="html">
+      <text>Combien y a-t-il d’évaluations formatives prévues ?</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>3</text>
+    </answer>
+    <feedback>
+      <text>Les évaluations formatives servent à te préparer aux évaluations sommatives.</text>
+    </feedback>
+  </question>
+
+  <!-- Question 5 -->
+  <question type="multichoice">
+    <name>
+      <text>Absence à une évaluation</text>
+    </name>
+    <questiontext format="html">
+      <text>Que dois-tu faire si tu es absent à une évaluation ?</text>
+    </questiontext>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="0">
+      <text>Rien, c’est perdu.</text>
+    </answer>
+    <answer fraction="100">
+      <text>Apporter un billet médical pour reprendre l’évaluation.</text>
+    </answer>
+    <answer fraction="0">
+      <text>Envoyer un courriel au prof sans justification.</text>
+    </answer>
+    <answer fraction="0">
+      <text>Refaire automatiquement l’évaluation la semaine suivante.</text>
+    </answer>
+    <feedback>
+      <text>Un billet médical ou une preuve valide est nécessaire pour un report.</text>
+    </feedback>
+  </question>
+
+  <!-- Question 6 -->
+  <question type="shortanswer">
+    <name>
+      <text>Conséquences des retards fréquents</text>
+    </name>
+    <questiontext format="html">
+      <text>Quelles sont les conséquences d’un retard fréquent en classe ?</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>Intervention du professeur ou signalement à la coordination</text>
+    </answer>
+    <feedback>
+      <text>Les retards fréquents nuisent au bon déroulement du cours.</text>
+    </feedback>
+  </question>
+
+  <!-- Question 7 -->
+  <question type="truefalse">
+    <name>
+      <text>Plagiat toléré ?</text>
+    </name>
+    <questiontext format="html">
+      <text>Le plagiat est toléré dans certains cas.</text>
+    </questiontext>
+    <answer fraction="0">
+      <text>true</text>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+    </answer>
+    <feedback>
+      <text>Le plagiat est interdit, peu importe le contexte.</text>
+    </feedback>
+  </question>
+
+  <!-- Question 8 -->
+  <question type="multichoice">
+    <name>
+      <text>Conséquence d’un plagiat</text>
+    </name>
+    <questiontext format="html">
+      <text>Que se passe-t-il si un cas de plagiat est détecté ?</text>
+    </questiontext>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="0">
+      <text>Tu dois réécrire le travail.</text>
+    </answer>
+    <answer fraction="0">
+      <text>Tu as 50 %.</text>
+    </answer>
+    <answer fraction="100">
+      <text>Tu obtiens 0 et c’est signalé à la coordination.</text>
+    </answer>
+    <answer fraction="0">
+      <text>Le professeur te donne un avertissement verbal.</text>
+    </answer>
+    <feedback>
+      <text>Le plagiat entraîne un 0 et un signalement officiel.</text>
+    </feedback>
+  </question>
+
+  <!-- Question 9 -->
+  <question type="shortanswer">
+    <name>
+      <text>Ressources d’aide</text>
+    </name>
+    <questiontext format="html">
+      <text>Où peux-tu trouver les ressources d’aide en cas de difficulté dans le cours ?</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>Dans le plan de cours ou au centre d’aide</text>
+    </answer>
+    <feedback>
+      <text>Ne reste pas seul·e avec tes difficultés. Demande de l’aide !</text>
+    </feedback>
+  </question>
+
+  <!-- Question 10 -->
+  <question type="multichoice">
+    <name>
+      <text>Travaux remis en retard</text>
+    </name>
+    <questiontext format="html">
+      <text>Quelle est la politique du professeur concernant les retards à la remise des travaux ?</text>
+    </questiontext>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="0">
+      <text>Chaque jour de retard enlève 5 %.</text>
+    </answer>
+    <answer fraction="100">
+      <text>Aucun travail en retard n’est accepté.</text>
+    </answer>
+    <answer fraction="0">
+      <text>Les travaux en retard sont acceptés avec justification.</text>
+    </answer>
+    <answer fraction="0">
+      <text>Retard accepté avec pénalité de 10 %.</text>
+    </answer>
+    <feedback>
+      <text>Respecte les échéanciers ! Les retards ne sont pas acceptés sans autorisation préalable.</text>
+    </feedback>
+  </question>
+
+</quiz>

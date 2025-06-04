@@ -8,32 +8,25 @@
     <language>en-us</language>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Règlements en classe</title>
+      <title>Règlements de classe — Comportement attendu</title>
       <link>https://example.org/regles/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/regles/index.html</guid>
-      <description>🧠 40 cerveaux curieux 🧑‍💻 un seul code de conduite ! ⏰ Ponctuel·le tu seras Arriver à l’heure = comme un bon script : bien lancé dès le début.&#xA;⚠️ 3 retards = 1 absence. 👀 Présent·e et concentré·e Pas de mode veille en classe.&#xA;🖱️ Ta souris clique, mais c’est ton cerveau qui code ! 🗣️ Une classe, pas un chat Discord On lève la main, on respecte les autres.</description>
+      <description>1. Comporte-toi comme si tu étais déjà en emploi. Arrive à l’heure, sois prêt à travailler, et respecte les échéances. Ton attitude ici prépare ton avenir professionnel.&#xA;2. Respecte-toi, donc agis avec respect. Ton comportement reflète la manière dont tu te considères. Adopte une attitude calme, polie et attentive envers toi-même, les autres et l’enseignant·e.&#xA;3. Sois présent, mentalement et physiquement. Utilise ton cellulaire seulement pour les besoins du cours.</description>
     </item>
     <item>
-      <title>Bonnes pratiques, documentation, débogage</title>
-      <link>https://example.org/debogage/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/debogage/index.html</guid>
-      <description>Objectifs Adopter des pratiques de codage claires et lisibles Comprendre l’utilité des commentaires et de la documentation Apprendre des méthodes simples pour détecter et corriger des erreurs Se préparer à lire et améliorer du code existant Pourquoi adopter de bonnes pratiques? Un programme fonctionnel n’est pas forcément un programme lisible ou facile à maintenir. Les bonnes pratiques rendent le code :&#xA;Plus facile à comprendre pour soi-même et pour les autres Plus simple à déboguer Moins susceptible de contenir des erreurs Quelques bonnes pratiques essentielles a.</description>
-    </item>
-    <item>
-      <title>Présentation du cours et introduction à Python</title>
+      <title>L&#39;environnement de travail (OneDrive, VS Code et Jupyter)</title>
       <link>https://example.org/semaine1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine1/index.html</guid>
-      <description>Plan de cours : Programmation en sciences avec Python Durée : 15 semaines&#xA;Séances hebdomadaires : 2 h 40 (50 min théorie + 1 h 50 pratique)&#xA;Modalités pédagogiques : Apprentissage actif, travail d’équipe, exercices concrets tirés des sciences&#xA;Environnement de travail : Anaconda avec Jupyter Notebook&#xA;Objectifs du cours Apprendre à écrire des programmes simples en Python Modéliser des situations scientifiques à l’aide d’algorithmes Développer une démarche rigoureuse de résolution de problèmes Collaborer efficacement pour tester et discuter des solutions Évaluations Type d’évaluation Format Pondération Formatives (en équipe) Exercices pratiques hebdomadaires Non noté Examen 1 Problèmes scientifiques avec structures de contrôle 30 % Examen 2 Fonctions et structures de données 30 % Projet final Mini-projet individuel sur un thème scientifique au choix 40 % Planification hebdomadaire Semaine Thèmes et activités principales 1 Leçon : Introduction au cours, prise en main d’Anaconda et de Jupyter Notebook, variables, types de base.</description>
+      <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Vous connecter à OneDrive et créer une structure de dossiers pour le cours. Télécharger un fichier, le retrouver et le placer dans le bon dossier. Activez l’extension des fichiers Activer la sauvegarde automatique dans Visual Studio Code. Créer un premier fichier .ipynb (Jupyter Notebook) sur Visual Studio Code. Créer et exécuter des cellules (code et texte) avec Jupyter Notebook dans Visual Studio Code.</description>
     </item>
     <item>
-      <title>Opérations arithmétiques, entrées/sorties, erreurs courantes</title>
+      <title>Introduction à Python (variables, types, entrée/sortie)</title>
       <link>https://example.org/semaine2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/index.html</guid>
-      <description>Objectifs de la leçon Utiliser Python comme calculatrice scientifique. Lire des données entrées par l’utilisateur. Afficher les résultats de manière claire et lisible. Identifier et corriger les erreurs fréquentes. Les opérations arithmétiques en Python Python peut effectuer toutes les opérations de base :&#xA;Opération Symbole Exemple Résultat Addition + 2 + 3 5 Soustraction - 7 - 2 5 Multiplication * 4 * 5 20 Division / 10 / 4 2.</description>
+      <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Les variables et les types et affichage de données de base Une variable c’est… Les opérations arithmétiques en Python Python peut effectuer toutes les opérations de base :</description>
     </item>
     <item>
       <title>Prendre des décisions avec `if`, `elif`, `else`</title>
@@ -125,6 +118,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine15/index.html</guid>
       <description>Vous devez remettre votre code en plus de la vidéo</description>
+    </item>
+    <item>
+      <title>Tutoriel</title>
+      <link>https://example.org/google-colab/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/google-colab/index.html</guid>
+      <description>Google Colab, ou Colaboratory, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d’exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques (GPU ou Graphics Processing), pour accélérer les calculs.&#xA;Accéder à Google Colab Pour commencer à utiliser Google Colab, suivez ces étapes simples :&#xA;Via le site de Google Colab Allez sur le site: Google Colab.</description>
+    </item>
+    <item>
+      <title>À FAIRE</title>
+      <link>https://example.org/afaire/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/afaire/index.html</guid>
+      <description>Semaine 1 Cours Mettre à jour infos tableau planification de cours Préparer la démo sur Anaconda et Jupyter Préparer guide installation sur Windows 11: https://www.datacamp.com/fr/tutorial/installing-anaconda-windows Semaine 2 Cours Réviser Activité 2.1 Créer ipynb Activité 2.2 Contexte à confirmer Mise en forme des formule Vérifier ipynb Semaine 3 Cours Activité 3 Semaine 4 Cours Activité 4 Semaine 5 Cours Activité 5 Semaine 6 Cours Activité 6</description>
     </item>
   </channel>
 </rss>

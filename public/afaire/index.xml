@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>À FAIRE :: 420-SN1-RE</title>
+    <link>https://example.org/afaire/index.html</link>
+    <description>Semaine 1 Cours Mettre à jour infos tableau planification de cours Préparer la démo sur Anaconda et Jupyter Préparer guide installation sur Windows 11: https://www.datacamp.com/fr/tutorial/installing-anaconda-windows Semaine 2 Cours Réviser Activité 2.1 Créer ipynb Activité 2.2 Contexte à confirmer Mise en forme des formule Vérifier ipynb Semaine 3 Cours Activité 3 Semaine 4 Cours Activité 4 Semaine 5 Cours Activité 5 Semaine 6 Cours Activité 6</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/afaire/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>maths</title>
+      <link>https://example.org/afaire/maths/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/afaire/maths/index.html</guid>
+      <description>🎯 Problème : Probabilité que la fléchette atteigne la zone blanche Structure de la cible : Zone noire : cercle de rayon 2 cm Zone blanche : anneau entre rayon 2 cm et 3 cm Zone grise : anneau entre rayon 3 cm et 6 cm Étape 1 — Aire totale de la cible La cible est un disque de rayon 6 cm : Aire totale = π × 6² = 36π cm²</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>L&#39;environnement de travail :: 420-SN1-RE</title>
+    <link>http://localhost:1313/semaine1/environnement/index.html</link>
+    <description>Présentation des outils utilisés ans ce cours 1. Se connecter à OneDrive Ouvrir OneDrive Cliquez sur la petite flèche en bas à droite de l’écran (dans la barre de menu). Si l’icone de OneDrive ressemble à celle-ci, c’est que vous n’est pas connecté. ![alt text](./environnement/Capture d’écran du 2024-08-17 13-28-32.png) Si l’icone est comme la suivante, c’est que vous êtes connecté. Assurez-vous que vous êtes bien connectés à votre compte du collège.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/semaine1/environnement/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

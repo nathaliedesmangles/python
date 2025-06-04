@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs d’apprentissage À la fin de cette leçon, devez être en mesure de :
+Utiliser VS Code et Jupyter Notebook Créer et exécuter une cellule de code Définir des variables Manipuler des types de base : int, float, str, bool Présentation des outils de programmation 1. Visual Studio Code (VS Code) Visual Studio Code est un éditeur de code moderne, simple et très utilisé pour programmer avec Python. Il vous permet aussi de bien organiser vos projets grâce à une gestion intuitive des dossiers et fichiers.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="L&#39;environnement de travail et Introduction à Python :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs d’apprentissage À la fin de cette leçon, devez être en mesure de :
+Utiliser VS Code et Jupyter Notebook Créer et exécuter une cellule de code Définir des variables Manipuler des types de base : int, float, str, bool Présentation des outils de programmation 1. Visual Studio Code (VS Code) Visual Studio Code est un éditeur de code moderne, simple et très utilisé pour programmer avec Python. Il vous permet aussi de bien organiser vos projets grâce à une gestion intuitive des dossiers et fichiers.">
+    <meta property="og:url" content="http://localhost:1313/semaine1/images/environnement_intro/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="L&#39;environnement de travail et Introduction à Python :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs d’apprentissage À la fin de cette leçon, devez être en mesure de :
+Utiliser VS Code et Jupyter Notebook Créer et exécuter une cellule de code Définir des variables Manipuler des types de base : int, float, str, bool Présentation des outils de programmation 1. Visual Studio Code (VS Code) Visual Studio Code est un éditeur de code moderne, simple et très utilisé pour programmer avec Python. Il vous permet aussi de bien organiser vos projets grâce à une gestion intuitive des dossiers et fichiers.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Présentation du cours et introduction à Python">
+    <meta itemprop="name" content="L&#39;environnement de travail et Introduction à Python :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs d’apprentissage À la fin de cette leçon, devez être en mesure de :
+Utiliser VS Code et Jupyter Notebook Créer et exécuter une cellule de code Définir des variables Manipuler des types de base : int, float, str, bool Présentation des outils de programmation 1. Visual Studio Code (VS Code) Visual Studio Code est un éditeur de code moderne, simple et très utilisé pour programmer avec Python. Il vous permet aussi de bien organiser vos projets grâce à une gestion intuitive des dossiers et fichiers.">
+    <meta itemprop="wordCount" content="821">
+    <title>L&#39;environnement de travail et Introduction à Python :: 420-SN1-RE</title>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1748038011" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1748038011" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1748038011" rel="stylesheet">
+    <link href="/css/theme.css?1748038011" rel="stylesheet">
+    <link href="/css/format-html.css?1748038011" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1748038011" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1748038011" defer></script>
+    <script src="/js/lunr/lunr.min.js?1748038011" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1748038011" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1748038011" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1748038011" defer></script>
+    <script src="/js/search.js?1748038011" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine1\/images\/environnement_intro\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1748038011";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine1/images/environnement_intro/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs-dapprentissage">Objectifs d’apprentissage</a></li>
+    <li><a href="#présentation-des-outils-de-programmation">Présentation des outils de programmation</a>
+      <ul>
+        <li><a href="#1-visual-studio-code-vs-code">1. Visual Studio Code (VS Code)</a></li>
+        <li><a href="#2-jupyter-notebook">2. Jupyter Notebook</a></li>
+      </ul>
+    </li>
+    <li><a href="#bonnes-pratiques">Bonnes pratiques</a>
+      <ul>
+        <li><a href="#organisez-bien-vos-projets-">Organisez bien vos projets :</a></li>
+        <li><a href="#la-sauvegarde-automatique-ou-sauvegardez-régulièrement">La sauvegarde automatique ou sauvegardez régulièrement</a></li>
+        <li><a href="#fermez-les-notebooks-proprement">Fermez les notebooks proprement</a></li>
+      </ul>
+    </li>
+    <li><a href="#premiers-pas-avec-jupyter">Premiers pas avec Jupyter</a>
+      <ul>
+        <li><a href="#exemple-">Exemple :</a></li>
+      </ul>
+    </li>
+    <li><a href="#variables-et-types-de-base">Variables et types de base</a>
+      <ul>
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#types-de-base">Types de base</a></li>
+        <li><a href="#exemples-à-tester-">Exemples à tester :</a></li>
+        <li><a href="#vérifier-le-type-dune-variable-">Vérifier le type d’une variable :</a></li>
+        <li><a href="#à-retenir">À retenir</a></li>
+        <li><a href="#activité-suggérée-pour-la-maison">Activité suggérée pour la maison</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine1/index.html"><span itemprop="name">Présentation du cours et introduction à Python</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">L&#39;environnement de travail et Introduction à Python</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine1/index.html" title="Présentation du cours et introduction à Python (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine1/atelier/index.html" title="Activité 1 – Questionnaire + Mini-lab en équipe (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine1" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="lenvironnement-de-travail-et-introduction-à-python">L&#39;environnement de travail et Introduction à Python</h1>
+
+<h2 id="objectifs-dapprentissage">Objectifs d’apprentissage</h2>
+<p>À la fin de cette leçon, devez être en mesure de :</p>
+<ul>
+<li>Utiliser <strong>VS Code</strong> et <strong>Jupyter Notebook</strong></li>
+<li>Créer et exécuter une cellule de code</li>
+<li>Définir des <strong>variables</strong></li>
+<li>Manipuler des <strong>types de base</strong> : <code>int</code>, <code>float</code>, <code>str</code>, <code>bool</code></li>
+</ul>
+<hr>
+<h2 id="présentation-des-outils-de-programmation">Présentation des outils de programmation</h2>
+<h3 id="1-visual-studio-code-vs-code">1. Visual Studio Code (VS Code)</h3>
+<p><strong>Visual Studio Code</strong> est un éditeur de code moderne, simple et très utilisé pour programmer avec Python.
+Il vous permet aussi de bien organiser vos projets grâce à une gestion intuitive des dossiers et fichiers.</p>
+<h4 id="ce-que-vous-pouvez-faire-avec-vs-code-">Ce que vous pouvez faire avec VS Code :</h4>
+<ul>
+<li>Écrire et exécuter du code Python</li>
+<li>Ouvrir et modifier des notebooks Jupyter (<code>.ipynb</code>)</li>
+<li>Voir tous les fichiers de votre projet dans un seul endroit</li>
+<li>Lire les erreurs et déboguer plus facilement</li>
+</ul>
+<h4 id="gestion-des-dossiers-et-fichiers">Gestion des dossiers et fichiers</h4>
+<ol>
+<li>
+<p>Avant de commencer, assurez-vous d&rsquo;être connectés à <strong>votre compte OneDrive du cégep</strong>.</p>
+</li>
+<li>
+<p>Dans votre OneDrive, créez un <strong>dossier pour le cours d&rsquo;aujourd&rsquo;hui</strong> (par exemple : <code>python-cours1</code>) dans l’Explorateur Windows.</p>
+</li>
+</ol>
+<p><a href="#R-image-f380667993aa4fd6454451dce348e5ac" class="lightbox-link"><img alt="Créer un dossier" class="lazy lightbox figure-image" loading="lazy" src="../creer-dossier.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f380667993aa4fd6454451dce348e5ac"><img alt="Créer un dossier" class="lazy lightbox lightbox-image" loading="lazy" src="../creer-dossier.png?width=40vw"></a></p>
+<p><a href="#R-image-b9f2392cd630e050fd44b33736c2763d" class="lightbox-link"><img alt="Dossier python-cours1" class="lazy lightbox figure-image" loading="lazy" src="../dossier-python-cours1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b9f2392cd630e050fd44b33736c2763d"><img alt="Dossier python-cours1" class="lazy lightbox lightbox-image" loading="lazy" src="../dossier-python-cours1.png"></a></p>
+<ol start="3">
+<li>Ouvrez VS Code</li>
+</ol>
+<p><a href="#R-image-432b12c0c664b801d87519356ff02cd8" class="lightbox-link"><img alt="Recherche" class="lazy lightbox figure-image" loading="lazy" src="../recherche.png?width=15vw" style=" height: auto; width: 15vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-432b12c0c664b801d87519356ff02cd8"><img alt="Recherche" class="lazy lightbox lightbox-image" loading="lazy" src="../recherche.png?width=15vw"></a></p>
+<p><a href="#R-image-998738c049ebb6630247c294d7b6ecd0" class="lightbox-link"><img alt="Ouvrir VS Code" class="lazy lightbox figure-image" loading="lazy" src="../ouvrir-vs-code.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-998738c049ebb6630247c294d7b6ecd0"><img alt="Ouvrir VS Code" class="lazy lightbox lightbox-image" loading="lazy" src="../ouvrir-vs-code.png?width=30vw"></a></p>
+<ol start="4">
+<li>Ouvrez le dossier <code>python-cours1</code> dans VS Code :</li>
+</ol>
+<p><a href="#R-image-80489c71653b7c6be312d0be6c33aa75" class="lightbox-link"><img alt="Ouvrir dossier dans VS Code" class="lazy lightbox figure-image" loading="lazy" src="../ouvrir-dossier.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-80489c71653b7c6be312d0be6c33aa75"><img alt="Ouvrir dossier dans VS Code" class="lazy lightbox lightbox-image" loading="lazy" src="../ouvrir-dossier.png?width=40vw"></a></p>
+<p>Sélectionnez le dossier</p>
+<p><a href="#R-image-a84f18b056fc82a9905eb15ca832e4f2" class="lightbox-link"><img alt="Ouvrir python-cours1 dans VS Code" class="lazy lightbox figure-image" loading="lazy" src="../ouvrir-dossier-python-cours1.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a84f18b056fc82a9905eb15ca832e4f2"><img alt="Ouvrir python-cours1 dans VS Code" class="lazy lightbox lightbox-image" loading="lazy" src="../ouvrir-dossier-python-cours1.png?width=30vw"></a></p>
+<p><a href="#R-image-53f0ce2df096bae7dcc2dec0a5a1d846" class="lightbox-link"><img alt="Dossier dans VS Code" class="lazy lightbox figure-image" loading="lazy" src="../dossier-dans-vs-code.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-53f0ce2df096bae7dcc2dec0a5a1d846"><img alt="Dossier dans VS Code" class="lazy lightbox lightbox-image" loading="lazy" src="../dossier-dans-vs-code.png?width=30vw"></a></p>
+<ol start="5">
+<li>Dans VS Code, dans le panneau à gauche, vous pouvez :</li>
+</ol>
+<ul>
+<li>Ajouter un <strong>nouveau fichier</strong></li>
+</ul>
+<p><a href="#R-image-421bec38fe4396bdbe5fd84862e1cd0c" class="lightbox-link"><img alt="Nouveau fichier" class="lazy lightbox figure-image" loading="lazy" src="../nouveau-fichier.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-421bec38fe4396bdbe5fd84862e1cd0c"><img alt="Nouveau fichier" class="lazy lightbox lightbox-image" loading="lazy" src="../nouveau-fichier.png?width=30vw"></a></p>
+<blockquote>
+<p>Créer un nouveau fichier nommé <code>intro-python.ipynb</code> en tapant le nom complet, suivi de la touche <strong>Enter</strong>.</p>
+</blockquote>
+<p><a href="#R-image-c78759513c2797c49f39a6a6c76b49d7" class="lightbox-link"><img alt="fichier intro-python.ipynb" class="lazy lightbox figure-image" loading="lazy" src="../creer-fichier.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c78759513c2797c49f39a6a6c76b49d7"><img alt="fichier intro-python.ipynb" class="lazy lightbox lightbox-image" loading="lazy" src="../creer-fichier.png?width=30vw"></a></p>
+<ul>
+<li>Créer un <strong>sous-dossier</strong></li>
+</ul>
+<p><a href="#R-image-dfe7e9a0023d81eb1962e20a061a68aa" class="lightbox-link"><img alt="Nouveau dossier" class="lazy lightbox figure-image" loading="lazy" src="../nouveau-dossier.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dfe7e9a0023d81eb1962e20a061a68aa"><img alt="Nouveau dossier" class="lazy lightbox lightbox-image" loading="lazy" src="../nouveau-dossier.png?width=30vw"></a></p>
+<blockquote>
+<p>Créer un nouveau dossier nommé <code>exercices</code> en tapant le nom complet, suivi de la touche <strong>Enter</strong>.</p>
+</blockquote>
+<p><a href="#R-image-f54b4e3f196a73d9d90e781aad4d7019" class="lightbox-link"><img alt="sous-dossier exercices" class="lazy lightbox figure-image" loading="lazy" src="../creer-sous-dossier.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f54b4e3f196a73d9d90e781aad4d7019"><img alt="sous-dossier exercices" class="lazy lightbox lightbox-image" loading="lazy" src="../creer-sous-dossier.png?width=30vw"></a></p>
+<ul>
+<li>Pour <strong>supprimer</strong> ou <strong>renommer</strong> des fichiers ou des dossiers, simplement faites un <strong>clic-droit</strong> sur le nom du fichier ou dossier, puis choisissez l&rsquo;option souhaitée.</li>
+</ul>
+<p><a href="#R-image-aac311b58cdb48f8e2fedeeca70e1505" class="lightbox-link"><img alt="Supprimer ou Renommer" class="lazy lightbox figure-image" loading="lazy" src="../supprimer-renommer.png?width=20vw" style=" height: auto; width: 20vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aac311b58cdb48f8e2fedeeca70e1505"><img alt="Supprimer ou Renommer" class="lazy lightbox lightbox-image" loading="lazy" src="../supprimer-renommer.png?width=20vw"></a></p>
+<blockquote>
+<p>Supprimez le fichier nommé <code>intro-python.ipynb</code>.</p>
+</blockquote>
+<ul>
+<li>Les fichiers <code>.py</code> (scripts Python) et <code>.ipynb</code> (notebooks) seront tous visibles ici.</li>
+</ul>
+
+<details open class=" box cstyle notices cyan">
+  <summary class="box-label" tabindex="-1">
+    Notez que
+  </summary>
+  <div class="box-content">
+<p>Dans ce cours nous utiliserons uniquement des fichiers <code>.ipynb</code>(<em><strong>iPy</strong>thon <strong>N</strong>ote</em><strong>B</strong><em>ook</em>)</p>
+  </div>
+</details>
+<h3 id="2-jupyter-notebook">2. Jupyter Notebook</h3>
+<p><strong>Jupyter Notebook</strong> vous permet d’écrire du texte et du code Python dans un même document.
+C’est un outil idéal pour expérimenter, visualiser des données et commenter vos résultats.</p>
+<h4 id="pourquoi-lutiliser-">Pourquoi l’utiliser ?</h4>
+<ul>
+<li>On peut écrire du code Python et l’exécuter <strong>cellule par cellule</strong>.</li>
+<li>On peut insérer des explications ou des titres entre les blocs de code.</li>
+<li>Très pratique pour les <strong>calculs scientifiques</strong>, les <strong>graphiques</strong> et les <strong>analyses de données</strong>.</li>
+</ul>
+<h4 id="comment-lutiliser-dans-vs-code">Comment l’utiliser dans VS Code</h4>
+<ol>
+<li>À partir de Moodle (Section <strong>Semaine 1</strong>), téléchargez le fichier <code>introduction.ipynb</code>.</li>
+</ol>
+<blockquote>
+<p>Par défaut, le fichier se trouvera dans le dossier <strong>Téléchargement</strong>.</p>
+</blockquote>
+<ol start="2">
+<li>Via l&rsquo;<strong>Explorateur de fichiers</strong>, déplacer (<strong>Glisser-Déposer</strong>) le fichier <code>introduction.ipynb</code> du dossier <strong>Téléchargement</strong> vers le dossier <strong>Exercices</strong></li>
+</ol>
+<p><a href="#R-image-03608801094011ec311918e917edd17e" class="lightbox-link"><img alt="Déplacer introduction_python.ipynb" class="lazy lightbox figure-image" loading="lazy" src="../deplacer-fichier.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-03608801094011ec311918e917edd17e"><img alt="Déplacer introduction_python.ipynb" class="lazy lightbox lightbox-image" loading="lazy" src="../deplacer-fichier.png?width=35vw"></a></p>
+<ol start="3">
+<li>Revenez dans VS Code, assurez-vous de voir le fichier <code>introduction.ipynb</code> dans le dossier <code>exercices</code>.</li>
+</ol>
+<p><a href="#R-image-0f49ae27f8728d6d04c36758cf546d5d" class="lightbox-link"><img alt="fichier exercice1" class="lazy lightbox figure-image" loading="lazy" src="../fichier-intro.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f49ae27f8728d6d04c36758cf546d5d"><img alt="fichier exercice1" class="lazy lightbox lightbox-image" loading="lazy" src="../fichier-intro.png?width=30vw"></a></p>
+<ol start="4">
+<li>
+<p>Une fois ouvert, à droite, vous verrez des <strong>cellules</strong> :</p>
+<ul>
+<li>D’autres servent à écrire du <strong>texte</strong> explicatif (format Markdown)</li>
+</ul>
+<p><a href="#R-image-7baf807bc29c8bb42dede2a76ab98758" class="lightbox-link"><img alt="cellule markdown" class="lazy lightbox figure-image" loading="lazy" src="../cell-md.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7baf807bc29c8bb42dede2a76ab98758"><img alt="cellule markdown" class="lazy lightbox lightbox-image" loading="lazy" src="../cell-md.png?width=40vw"></a></p>
+<ul>
+<li>Certaines servent à écrire du <strong>code</strong> Python</li>
+</ul>
+<p><a href="#R-image-bdc15fb1f12ef163f19cbb3253801135" class="lightbox-link"><img alt="cellule code" class="lazy lightbox figure-image" loading="lazy" src="../cell-code.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bdc15fb1f12ef163f19cbb3253801135"><img alt="cellule code" class="lazy lightbox lightbox-image" loading="lazy" src="../cell-code.png?width=40vw"></a></p>
+<ul>
+<li>Cliquez sur ▶ pour exécuter une cellule</li>
+</ul>
+<p><a href="#R-image-203bc9981d5c2fc90cb14d55b3348d04" class="lightbox-link"><img alt="fichier exercice1" class="lazy lightbox figure-image" loading="lazy" src="../fichier-intro.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-203bc9981d5c2fc90cb14d55b3348d04"><img alt="fichier exercice1" class="lazy lightbox lightbox-image" loading="lazy" src="../fichier-intro.png?width=30vw"></a></p>
+</li>
+</ol>
+<hr>
+<h2 id="bonnes-pratiques">Bonnes pratiques</h2>
+<h3 id="organisez-bien-vos-projets-">Organisez bien vos projets :</h3>
+<ul>
+<li>Utilisez un <strong>dossier par thème ou par semaine</strong></li>
+<li>Nommez vos fichiers clairement : <code>calcul_masse.ipynb</code>, <code>analyse_temp.ipynb</code></li>
+</ul>
+<h3 id="la-sauvegarde-automatique-ou-sauvegardez-régulièrement">La sauvegarde automatique ou sauvegardez régulièrement</h3>
+<p>Si un rond blanc est présent à droit du nom du fichier dans l&rsquo;onglet, c&rsquo;est parce qu&rsquo;il n&rsquo;est PAS sauvegardé (comme dans l&rsquo;exemple ci-dessous).</p>
+<p><a href="#R-image-8432ae70fc4fd604b8bd18a5997521fe" class="lightbox-link"><img alt="point blanc" class="lazy lightbox figure-image" loading="lazy" src="../point-blanc.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8432ae70fc4fd604b8bd18a5997521fe"><img alt="point blanc" class="lazy lightbox lightbox-image" loading="lazy" src="../point-blanc.png?width=30vw"></a></p>
+<p>Pour ACTIVER la sauvegarde automatique, allez dans <code>fichier</code>, puis cliquez sur <code>Enregistrement automatique</code>.</p>
+<p><a href="#R-image-ec7b0c07a7613488c488884053b58a8e" class="lightbox-link"><img alt="sauvegarde automatique" class="lazy lightbox figure-image" loading="lazy" src="../save-auto.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ec7b0c07a7613488c488884053b58a8e"><img alt="sauvegarde automatique" class="lazy lightbox lightbox-image" loading="lazy" src="../save-auto.png?width=30vw"></a></p>
+<p>Vous devriez maintenant voir un crochet à gauche de cette option.</p>
+<p><a href="#R-image-3f39ec6a9a9233681489454e3a9b032e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="Capture%20d%E2%80%99%C3%A9cran%20du%202024-09-05%2014-04-47-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f39ec6a9a9233681489454e3a9b032e"><img class="lazy lightbox lightbox-image" loading="lazy" src="Capture%20d%E2%80%99%C3%A9cran%20du%202024-09-05%2014-04-47-1.png"></a></p>
+<p>Il devrait maintenant avoir un <code>X</code> à gauche du nom du fichier dans l&rsquo;onglet du haut. Ce qui signifie que le fichier est sauvegardé.</p>
+<p><a href="#R-image-80d6c8c05f29d91678dfae09c0943731" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="Capture%20d%E2%80%99%C3%A9cran%20du%202024-09-05%2014-05-00-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-80d6c8c05f29d91678dfae09c0943731"><img class="lazy lightbox lightbox-image" loading="lazy" src="Capture%20d%E2%80%99%C3%A9cran%20du%202024-09-05%2014-05-00-1.png"></a></p>
+<ul>
+<li>VS Code le fait souvent automatiquement, mais vous pouvez appuyer sur <strong>Ctrl + S</strong> pour forcer la sauvegarde</li>
+</ul>
+<h3 id="fermez-les-notebooks-proprement">Fermez les notebooks proprement</h3>
+<ul>
+<li>En haut à droite d’un notebook, cliquez sur <code>Fermer le noyau</code> pour libérer de la mémoire</li>
+</ul>
+<h2 id="premiers-pas-avec-jupyter">Premiers pas avec Jupyter</h2>
+<ul>
+<li>Chaque <strong>cellule</strong> permet d’écrire du code Python.</li>
+<li>Pour <strong>exécuter</strong> une cellule : <code>Shift + Enter</code></li>
+<li>Vous pouvez aussi ajouter du <strong>texte formaté</strong> en changeant le type de cellule en <em>Markdown</em>.</li>
+</ul>
+<h3 id="exemple-">Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ceci est un commentaire</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Bonjour le monde !&#34;</span>)</span></span></code></pre></div>
+<h2 id="variables-et-types-de-base">Variables et types de base</h2>
+<h3 id="variables">Variables</h3>
+<p>Une <strong>variable</strong> sert à stocker une information :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Camille&#34;</span>
+</span></span><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">18</span></span></span></code></pre></div>
+<h3 id="types-de-base">Types de base</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int</code></td>
+<td>Nombre entier</td>
+<td><code>x = 12</code></td>
+</tr>
+<tr>
+<td><code>float</code></td>
+<td>Nombre décimal</td>
+<td><code>pi = 3.14</code></td>
+</tr>
+<tr>
+<td><code>str</code></td>
+<td>Chaîne de caractères</td>
+<td><code>nom = &quot;Alice&quot;</code></td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td>Valeur booléenne (vrai/faux)</td>
+<td><code>actif = True</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="exemples-à-tester-">Exemples à tester :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Types de base</span>
+</span></span><span style="display:flex;"><span>temperature <span style="color:#f92672">=</span> <span style="color:#ae81ff">22.5</span>       <span style="color:#75715e"># float</span>
+</span></span><span style="display:flex;"><span>pression <span style="color:#f92672">=</span> <span style="color:#ae81ff">101325</span>        <span style="color:#75715e"># int</span>
+</span></span><span style="display:flex;"><span>ville <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Montréal&#34;</span>       <span style="color:#75715e"># str</span>
+</span></span><span style="display:flex;"><span>pluie <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>            <span style="color:#75715e"># bool</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Il fait&#34;</span>, temperature, <span style="color:#e6db74">&#34;degrés à&#34;</span>, ville)</span></span></code></pre></div>
+<h3 id="vérifier-le-type-dune-variable-">Vérifier le type d’une variable :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>type(temperature)  <span style="color:#75715e"># Résultat : &lt;class &#39;float&#39;&gt;</span></span></span></code></pre></div>
+<hr>
+<h3 id="à-retenir">À retenir</h3>
+<ul>
+<li>Python est sensible à la <strong>casse</strong> : <code>Nom</code> ≠ <code>nom</code></li>
+<li>Les noms de variables ne doivent <strong>pas commencer par un chiffre</strong></li>
+<li>Utilisez des noms clairs et significatifs (ex : <code>masse</code>, <code>volume</code>, <code>vitesse</code>)</li>
+</ul>
+<hr>
+<h3 id="activité-suggérée-pour-la-maison">Activité suggérée pour la maison</h3>
+<ul>
+<li>Si vous avez un ordinateur à la maison: Installer Anaconda et créer un premier fichier <code>.ipynb</code>
+<strong>Étapes pour installer Anaconda</strong> :
+<ol>
+<li>Aller sur <a href="https://www.anaconda.com/products/distribution" rel="external" target="_blank">Le site d&rsquo;Anaconda</a></li>
+<li>Télécharger la version <strong>Windows, Mac ou Linux</strong> selon votre système.</li>
+<li>Suivre les instructions d’installation. Accepter les options par défaut.</li>
+</ol>
+</li>
+<li>Reproduire et modifier les exemples de cette leçon</li>
+<li>Changer les valeurs des variables et observer les résultats</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">420-SN1-RE</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements en classe</a></li>
+            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
+            <li class="parent " data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et introduction à Python</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine1/images/environnement_intro/index.html"><a class="padding" href="/semaine1/images/environnement_intro/index.html">L&#39;environnement de travail et Introduction à Python</a></li>
+            <li class="" data-nav-id="/semaine1/atelier/index.html"><a class="padding" href="/semaine1/atelier/index.html">Activité 1 – Questionnaire &#43; Mini-lab en équipe</a></li></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Opérations arithmétiques, entrées/sorties, erreurs courantes</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Prendre des décisions avec `if`, `elif`, `else`</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Listes et chaînes de caractères</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Fonctions simples et paramètres</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Examen 1 (30%)</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Structures de données (listes, dictionnaires)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
+            <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1748038011" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1748038011" defer></script>
+    <script src="/js/theme.js?1748038011" defer></script>
+  </body>
+</html>

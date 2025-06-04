@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mot de bienvenue :: 420-SN1-RE</title>
+    <link>http://localhost:1313/bienvenus/index.html</link>
+    <description>À vous, étudiant.e.s de première année,&#xA;Bienvenue au cégep. Vous venez d’entamer une nouvelle étape de votre parcours, et c’est normal que cela vous semble parfois exigeant, voire intimidant. Ce que vous allez apprendre ici ne vous sera pas « donné ». Rien n’arrive sans effort. La réussite, ce n’est pas une question de chance, c’est une question d’engagement, de travail et de persévérance.&#xA;Mais attention : faire des efforts ne veut pas dire tout réussir du premier coup.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/bienvenus/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

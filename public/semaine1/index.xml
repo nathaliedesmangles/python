@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Présentation du cours et introduction à Python :: 420-SN1-RE</title>
+    <title>L&#39;environnement de travail (OneDrive, VS Code et Jupyter) :: 420-SN1-RE</title>
     <link>https://example.org/semaine1/index.html</link>
-    <description>Plan de cours : Programmation en sciences avec Python Durée : 15 semaines&#xA;Séances hebdomadaires : 2 h 40 (50 min théorie + 1 h 50 pratique)&#xA;Modalités pédagogiques : Apprentissage actif, travail d’équipe, exercices concrets tirés des sciences&#xA;Environnement de travail : Anaconda avec Jupyter Notebook&#xA;Objectifs du cours Apprendre à écrire des programmes simples en Python Modéliser des situations scientifiques à l’aide d’algorithmes Développer une démarche rigoureuse de résolution de problèmes Collaborer efficacement pour tester et discuter des solutions Évaluations Type d’évaluation Format Pondération Formatives (en équipe) Exercices pratiques hebdomadaires Non noté Examen 1 Problèmes scientifiques avec structures de contrôle 30 % Examen 2 Fonctions et structures de données 30 % Projet final Mini-projet individuel sur un thème scientifique au choix 40 % Planification hebdomadaire Semaine Thèmes et activités principales 1 Leçon : Introduction au cours, prise en main d’Anaconda et de Jupyter Notebook, variables, types de base.</description>
+    <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Vous connecter à OneDrive et créer une structure de dossiers pour le cours. Télécharger un fichier, le retrouver et le placer dans le bon dossier. Activez l’extension des fichiers Activer la sauvegarde automatique dans Visual Studio Code. Créer un premier fichier .ipynb (Jupyter Notebook) sur Visual Studio Code. Créer et exécuter des cellules (code et texte) avec Jupyter Notebook dans Visual Studio Code.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine1/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>L&#39;environnement de travail et Introduction à Python</title>
-      <link>https://example.org/semaine1/environnement_intro/index.html</link>
+      <title>OneDrive et gestion des fichiers et dossiers</title>
+      <link>https://example.org/semaine1/onedrive/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine1/environnement_intro/index.html</guid>
-      <description>Objectifs d’apprentissage À la fin de cette leçon, devez être en mesure de :&#xA;Utiliser Anaconda et Jupyter Notebook Créer et exécuter une cellule de code Définir des variables Manipuler des types de base : int, float, str, bool Qu’est-ce qu’Anaconda ? Anaconda est une distribution Python qui inclut :&#xA;Python 3 Jupyter Notebook Des bibliothèques scientifiques (numpy, matplotlib, pandas, etc.) Lancement de Jupyter Notebook Ouvrir Anaconda Navigator Cliquer sur “Launch” à côté de Jupyter Notebook Le navigateur s’ouvre sur une interface locale.</description>
+      <guid>https://example.org/semaine1/onedrive/index.html</guid>
+      <description>OneDrive OneDrive est un stockage et synchronisation de fichiers personnels ou scolaires dans le cloud et accessible à partir de n’importe quel emplacement sur n’importe quel appareil. Idéal pour le travail en cours et le partage avec des personnes spécifiques. Les documents sont privés jusqu’à ce que vous les partagez. 1. Repérer l’icône OneDrive Vous devriez voir l’icône de OneDrive (scolaire = en bleu) (personnel = en gris), sur la barre des tâches, en bas à droite de l’écran (près de l’horloge).</description>
+    </item>
+    <item>
+      <title>Visual Studio Code et Jupyter Notebook</title>
+      <link>https://example.org/semaine1/vscodejupyter/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine1/vscodejupyter/index.html</guid>
+      <description>1. Visual Studio Code (VS Code) Visual Studio Code est un éditeur de code moderne, simple et très utilisé pour programmer avec Python. Il vous permet aussi de bien organiser vos projets grâce à une gestion intuitive des dossiers et fichiers.&#xA;Ce que vous pouvez faire avec VS Code : Écrire et exécuter du code Python Ouvrir et modifier des notebooks Jupyter (.ipynb) Voir tous les fichiers de votre projet dans un seul endroit Lire les erreurs et déboguer plus facilement Gestion des dossiers et fichiers Avant de commencer, assurez-vous d’être connectés à votre compte OneDrive du cégep.</description>
     </item>
     <item>
       <title>Activité 1 – Questionnaire &#43; Mini-lab en équipe</title>
