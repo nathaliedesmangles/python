@@ -1,6 +1,6 @@
 +++
-title = 'Tutoriel'
-weight = 170
+title = 'Google Colab'
+weight = 171
 +++
 
 ![Google Colab](./colab.png?width=25vw)

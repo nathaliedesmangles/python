@@ -9,7 +9,7 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :\nVous connecter à OneDrive et créer une structure de dossiers pour le cours. Télécharger un fichier, le retrouver et le placer dans le bon dossier. Activez l’extension des fichiers Activer la sauvegarde automatique dans Visual Studio Code. Créer un premier fichier .ipynb (Jupyter Notebook) sur Visual Studio Code. Créer et exécuter des cellules (code et texte) avec Jupyter Notebook dans Visual Studio Code.",
+    "content": "Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :\nVous connecter à OneDrive et créer une structure de dossiers pour le cours. Télécharger un fichier, le retrouver et le placer dans le bon dossier. Activez l’extension des fichiers Activer la sauvegarde automatique dans Visual Studio Code. Créer un premier fichier .ipynb (Jupyter Notebook) sur Visual Studio Code. Créer et exécuter des cellules (code et texte) avec Jupyter Notebook dans Visual Studio Code. Alternatives à Visual Studio Code (pour la maison) Google Colab PyCharm",
     "description": "Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :\nVous connecter à OneDrive et créer une structure de dossiers pour le cours. Télécharger un fichier, le retrouver et le placer dans le bon dossier. Activez l’extension des fichiers Activer la sauvegarde automatique dans Visual Studio Code. Créer un premier fichier .ipynb (Jupyter Notebook) sur Visual Studio Code. Créer et exécuter des cellules (code et texte) avec Jupyter Notebook dans Visual Studio Code.",
     "tags": [],
     "title": "L'environnement de travail (OneDrive, VS Code et Jupyter)",
@@ -264,12 +264,12 @@ var relearn_searchindex = [
     "uri": "/semaine15/index.html"
   },
   {
-    "breadcrumb": "Programmation en sciences",
+    "breadcrumb": "Programmation en sciences \u003e \rAlternatives",
     "content": "Google Colab, ou Colaboratory, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d’exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques (GPU ou Graphics Processing), pour accélérer les calculs.\nAccéder à Google Colab Pour commencer à utiliser Google Colab, suivez ces étapes simples :\nVia le site de Google Colab Allez sur le site: Google Colab. Cliquez sur le bouton Open Colab. Si la fenêtre Ouvrir le notebook s’ouvre, cliquez sur le bouton + Nouveau notebook pour créer un nouveau notebook. Sinon, une fois sur l’interface de Colab, vous pouvez créer un nouveau notebook en utilisant le menu Fichier et en sélectionnant Nouveau notebook. Les notebooks Colab permettent d’écrire et d’exécuter du code Python. Par exemple, pour exécuter une cellule de code, cliquez dessus et appuyez sur le bouton de lecture ou utilisez le raccourci clavier Ctrl+Entrée.\nVia votre compte Google Drive Ouvrez votre compte Google Drive, cliquez sur Nouveau, puis sur Plus et sélectionnez Google Colaboratory. Utilisation des bibliothèques Python Colab permet d’utiliser des bibliothèques populaires pour l’analyse et la visualisation des données. Par exemple, pour générer des données aléatoires avec NumPy et les visualiser avec Matplotlib :\nimport numpy as np import matplotlib.pyplot as plt ys = 200 + np.random.randn(100) x = [x for x in range(len(ys))] plt.figure(figsize=(10, 6)) plt.plot(x, ys, '-') plt.fill_between(x, ys, 195, where=(ys \u003e 195), facecolor='g', alpha=0.6) plt.show()\rCollaboration et partage Les notebooks Colab sont enregistrés dans votre compte Google Drive, ce qui facilite le partage et la collaboration. Vous pouvez partager vos notebooks avec d’autres utilisateurs, qui peuvent les commenter ou les modifier.\nUtiliser Colab Lire ce notebook",
     "description": "Google Colab, ou Colaboratory, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d’exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques (GPU ou Graphics Processing), pour accélérer les calculs.\nAccéder à Google Colab Pour commencer à utiliser Google Colab, suivez ces étapes simples :\nVia le site de Google Colab Allez sur le site: Google Colab.",
     "tags": [],
-    "title": "Tutoriel",
-    "uri": "/google-colab/index.html"
+    "title": "Google Colab",
+    "uri": "/alternatives/google-colab/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences",
@@ -278,6 +278,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "À FAIRE",
     "uri": "/afaire/index.html"
+  },
+  {
+    "breadcrumb": "Programmation en sciences",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Alternatives",
+    "uri": "/alternatives/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences",

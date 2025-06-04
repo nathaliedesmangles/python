@@ -17,4 +17,10 @@ weight = 10
 * Créer et exécuter des cellules (code et texte) avec ***Jupyter Notebook*** dans Visual Studio Code.
 
 
+## Alternatives à Visual Studio Code (pour la maison)
+
+[Google Colab]()
+[PyCharm]()
+
+
 
