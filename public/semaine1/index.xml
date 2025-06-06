@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>L&#39;environnement de travail (OneDrive, VS Code et Jupyter) :: 420-SN1-RE</title>
+    <title>Présentation du cours et de l&#39;environnement de travail (OneDrive, VS Code, Jupyter) :: 420-SN1-RE</title>
     <link>https://example.org/semaine1/index.html</link>
-    <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Vous connecter à OneDrive et créer une structure de dossiers pour le cours. Télécharger un fichier, le retrouver et le placer dans le bon dossier. Activez l’extension des fichiers Activer la sauvegarde automatique dans Visual Studio Code. Créer un premier fichier .ipynb (Jupyter Notebook) sur Visual Studio Code. Créer et exécuter des cellules (code et texte) avec Jupyter Notebook dans Visual Studio Code.</description>
+    <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Connaître les objectifs du cours et les règlements du collège à respecter (Questionnaire interactif Kahoot). Activité guidée :&#xA;2.1 Se connecter à OneDrive&#xA;2.2 Comprendre la gestion de fichiers (Explorateur de fichiers)&#xA;- Créer une structure de dossiers pour le cours.&#xA;- Activez l’affichage de l’extension des fichiers dans l’Explorateur.&#xA;- Télécharger un fichier, le retrouver et le placer dans le bon dossier.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine1/index.xml" rel="self" type="application/rss+xml" />

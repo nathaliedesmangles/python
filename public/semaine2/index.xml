@@ -3,7 +3,7 @@
   <channel>
     <title>Introduction à Python (variables, types, entrée/sortie) :: 420-SN1-RE</title>
     <link>https://example.org/semaine2/index.html</link>
-    <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Les variables et les types et affichage de données de base Une variable c’est… Les opérations arithmétiques en Python Python peut effectuer toutes les opérations de base :</description>
+    <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Les variables et les types et affichage de données de base Lorsqu’on écrit de vrais programmes, on a souvent besoin de stocker des valeurs ou des résultats de calculs en mémoire.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine2/index.xml" rel="self" type="application/rss+xml" />

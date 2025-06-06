@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66a41d0b-83e2-4609-a4cf-545f5a66b1be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/content/alternatives/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/alternatives/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/alternatives/google-colab/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/alternatives/google-colab/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/semaine1/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semaine1/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/afaire/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/afaire/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/afaire/maths/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/maths/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/afaire/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/alternatives/google-colab/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/alternatives/google-colab/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/alternatives/google-colab/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/alternatives/google-colab/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/alternatives/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/alternatives/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/alternatives/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/alternatives/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bienvenus/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/bienvenus/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/debogage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/debogage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/regles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/regles/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/regles/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/regles/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/search/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/searchindex.en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/searchindex.en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine1/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/atelier/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine1/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/atelier/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine1/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine1/onedrive/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/onedrive/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine1/onedrive/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/onedrive/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine1/presentationcours/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/presentationcours/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine1/vscodejupyter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/vscodejupyter/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine1/vscodejupyter/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/vscodejupyter/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine10/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine10/atelier/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine10/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine10/atelier/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine10/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine10/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine10/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine11/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine11/atelier/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine11/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine11/atelier/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine11/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine11/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine11/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine11/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine12/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine12/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine12/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine12/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine13/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine13/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine13/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine13/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine13/projet1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine13/projet1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine13/projet2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine13/projet2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine13/projet3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine13/projet3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine13/projet4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine13/projet4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine14/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine14/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine14/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine14/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine15/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine15/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine15/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine15/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine2/atelier/at1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine2/atelier/at1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine2/atelier/at1/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine2/atelier/at1/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine2/atelier/at2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine2/atelier/at2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine2/atelier/at2/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine2/atelier/at2/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine2/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine2/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine3/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine3/atelier/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine3/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine3/atelier/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine3/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine3/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine4/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine4/atelier/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine4/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine4/atelier/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine4/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine4/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine5/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine5/atelier/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine5/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine5/atelier/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine5/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine5/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine6/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine6/atelier/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine6/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine6/atelier/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine6/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine6/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine6/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine7/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine7/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine7/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine8/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine8/atelier/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine8/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine8/atelier/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine8/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine8/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine8/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine8/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine9/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine9/atelier/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine9/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine9/atelier/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine9/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine9/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine9/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2y6wlzSjXUPQFLzGW9BGepl9zui" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66a41d0b-83e2-4609-a4cf-545f5a66b1be" name="Changes" comment="" />
+      <created>1749168486452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749168486452</updated>
+      <workItem from="1749168487772" duration="103000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

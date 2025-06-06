@@ -15,18 +15,18 @@
       <description>1. Comporte-toi comme si tu étais déjà en emploi. Arrive à l’heure, sois prêt à travailler, et respecte les échéances. Ton attitude ici prépare ton avenir professionnel.&#xA;2. Respecte-toi, donc agis avec respect. Ton comportement reflète la manière dont tu te considères. Adopte une attitude calme, polie et attentive envers toi-même, les autres et l’enseignant·e.&#xA;3. Sois présent, mentalement et physiquement. Utilise ton cellulaire seulement pour les besoins du cours.</description>
     </item>
     <item>
-      <title>L&#39;environnement de travail (OneDrive, VS Code et Jupyter)</title>
+      <title>Présentation du cours et de l&#39;environnement de travail (OneDrive, VS Code, Jupyter)</title>
       <link>https://example.org/semaine1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine1/index.html</guid>
-      <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Vous connecter à OneDrive et créer une structure de dossiers pour le cours. Télécharger un fichier, le retrouver et le placer dans le bon dossier. Activez l’extension des fichiers Activer la sauvegarde automatique dans Visual Studio Code. Créer un premier fichier .ipynb (Jupyter Notebook) sur Visual Studio Code. Créer et exécuter des cellules (code et texte) avec Jupyter Notebook dans Visual Studio Code.</description>
+      <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Connaître les objectifs du cours et les règlements du collège à respecter (Questionnaire interactif Kahoot). Activité guidée :&#xA;2.1 Se connecter à OneDrive&#xA;2.2 Comprendre la gestion de fichiers (Explorateur de fichiers)&#xA;- Créer une structure de dossiers pour le cours.&#xA;- Activez l’affichage de l’extension des fichiers dans l’Explorateur.&#xA;- Télécharger un fichier, le retrouver et le placer dans le bon dossier.</description>
     </item>
     <item>
       <title>Introduction à Python (variables, types, entrée/sortie)</title>
       <link>https://example.org/semaine2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/index.html</guid>
-      <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Les variables et les types et affichage de données de base Une variable c’est… Les opérations arithmétiques en Python Python peut effectuer toutes les opérations de base :</description>
+      <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Les variables et les types et affichage de données de base Lorsqu’on écrit de vrais programmes, on a souvent besoin de stocker des valeurs ou des résultats de calculs en mémoire.</description>
     </item>
     <item>
       <title>Prendre des décisions avec `if`, `elif`, `else`</title>
@@ -120,11 +120,11 @@
       <description>Vous devez remettre votre code en plus de la vidéo</description>
     </item>
     <item>
-      <title>Colab, PyCharm</title>
+      <title>(Colab et PyCharm)</title>
       <link>https://example.org/alternatives/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/alternatives/index.html</guid>
-      <description></description>
+      <description>Si vous cherchez une alternative simple et accessible à VS Code avec Jupyter, Google Colab est une excellente option. Colab est un environnement de notebooks en ligne gratuit, offert par Google, qui ne nécessite aucune installation. Il vous permet d’écrire et d’exécuter du code Python directement dans votre navigateur, tout en profitant d’un accès facile à des bibliothèques scientifiques populaires comme NumPy, pandas, ou matplotlib. C’est l’outil idéal pour débuter en programmation scientifique ou collaborer à distance, puisqu’il s’intègre à Google Drive et permet de partager vos notebooks aussi facilement qu’un document Google Docs.</description>
     </item>
     <item>
       <title>À FAIRE</title>
