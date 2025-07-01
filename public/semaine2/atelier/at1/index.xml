@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Activité 2.1 - Corriger un script scientifique erroné :: 420-SN1-RE</title>
-    <link>https://example.org/semaine2/atelier/at1/index.html</link>
-    <description>Objectifs pédagogiques Identifier et corriger des erreurs fréquentes : types de données, concaténation, calculs Introduire la validation minimale des entrées Revoir les conventions de nommage et la clarté du code Préambule Thème : Loi d’Ohm (U = R × I)&#xA;Durée prévue : 60 à 90 minutes&#xA;Travail en équipe de 2 ou 3&#xA;Contexte Un technicien de laboratoire a tenté d’écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm.</description>
+    <title>Atelier 2 : Variables, types et saisie de données et affichage de résultats :: 420-SN1-RE</title>
+    <link>http://localhost:1313/semaine2/atelier/at1/index.html</link>
+    <description>Objectifs Manipuler des variables. Utiliser des types de données différents. Saisir des données au clavier. Convertir des types de données Afficher des résultats. Exercice 1 : Conversion de température Énoncé :&#xA;Un thermomètre donne des relevés en Fahrenheit, mais vous devez les convertir en Celsius et Kelvin.&#xA;Demandez à l’utilisateur de saisir une température en °C.&#xA;Convertissez cette température en °F et en K.&#xA;Affichez les trois valeurs avec des messages clairs.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine2/atelier/at1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine2/atelier/at1/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

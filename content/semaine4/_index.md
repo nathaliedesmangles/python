@@ -1,107 +1,111 @@
 +++
 chapter = true
 pre = "<b>Semaine 4.</b>"
-title = "Répéter avec `for` et `while`"
+title = "Décider avec `if`, `elif`, `else` et les opérateurs"
 weight = 40
 +++
 
-## Objectifs de la leçon
 
-* Comprendre l’utilité des boucles en programmation
-* Savoir écrire des boucles `while` et `for`
-* Appliquer les boucles à des cas concrets en sciences (répétitions, séries de mesures, simulations)
+## Objectifs d’apprentissage
+
+1. **Identifier et utiliser correctement les opérateurs de comparaison et logiques** pour évaluer des conditions simples en Python.
+2. **Écrire des structures conditionnelles (`if`, `elif`, `else`)** pour contrôler le déroulement d’un programme selon différentes situations.
+3. **Appliquer les structures conditionnelles** à des contextes scientifiques simples.
+---
+
+
+## Les opérateurs de comparaison
+
+Ces opérateurs permettent de comparer des valeurs. Le résultat est **toujours un booléen** : `True` (vrai) ou `False` (faux).
+
+| Opérateur | Signification        | Exemple  | Résultat |
+| --------- | -------------------- | -------- | -------- |
+| `==`      | égal à               | `5 == 5` | `True`   |
+| `!=`      | différent de         | `3 != 4` | `True`   |
+| `<`       | plus petit que       | `2 < 5`  | `True`   |
+| `<=`      | plus petit ou égal à | `5 <= 5` | `True`   |
+| `>`       | plus grand que       | `7 > 4`  | `True`   |
+| `>=`      | plus grand ou égal à | `6 >= 9` | `False`  |
+
+> Dans une cellule de Code, testez les exemples du tableau.
+
+
+## Les opérateurs logiques
+
+Ils permettent de **combiner plusieurs conditions**.
+
+| Opérateur | Signification            | Exemple               | Résultat |
+| --------- | ------------------------ | --------------------- | -------- |
+| `and`     | et (toutes vraies)       | `(4 < 5) and (6 > 3)` | `True`   |
+| `or`      | ou (au moins une vraie)  | `(4 < 5) or (6 < 3)`  | `True`   |
+| `not`     | négation                 | `not (4 < 5)`         | `False`  |
+
+> Dans une cellule de Code, testez les exemples du tableau.
+
+## Les structures conditionnelles
+
+Elles permettent **d’exécuter un bloc de code seulement si une condition est vraie**.
+
+
+### `if`
+
+Si la condition est vraie, le bloc **indenté** (décalé) est exécuté.  
+Notez la présence du caractère deux-points (`:`) après la condition.
+
+```python
+temp = 30
+if temp > 25:
+    print("Il fait chaud.")
+```
+
+> Dans une cellule de Code dans VS Code, testez l'exemple du `if`.
+
+### `if`…`else`
+
+**Deux chemins possibles** : un si la condition est vraie, un si elle est fausse.
+
+```python
+temp = 15
+if temp > 25:
+    print("Il fait chaud.")
+else:
+    print("Il fait frais.")
+```
+
+> Dans une cellule de Code dans VS Code, testez l'exemple du `if-else`.
+
+### `if`…`elif`…`else`
+
+Utilisé pour tester **plusieurs cas différents**.
+
+```python
+temp = 20
+if temp > 25:
+    print("Il fait chaud.")
+elif temp > 15:
+    print("Il fait bon.")
+else:
+    print("Il fait frais.")
+```
+
+> Dans une cellule de Code dans VS Code, testez l'exemple du `if-elif-else`.
+
+### Exercice 
+
+Écrire le code qui permet de tester la valeur du pH d'une solution.
+- Créez une variable `pH = 4.5`
+- Si le pH est strictement inférieur à 7 le programme affiche "Solution acide"
+- Sinon, si le pH est égale à 7, le programme affiche "Solution neutre"
+- Sinon, le programme affiche "Solution basique"
+
 
 ---
 
-## Pourquoi utiliser une boucle?
-
-Une boucle permet de **répéter automatiquement** une suite d'instructions **tant qu'une condition est vraie** (`while`) ou pour **parcourir une série de valeurs** (`for`).
-
-
-## La boucle `while`
-
-### Syntaxe de base :
-
-```python
-compteur = 0
-while compteur < 5:
-    print("Compteur =", compteur)
-    compteur += 1
-```
-
-> Il faut **modifier la condition dans la boucle** pour éviter une boucle infinie.
-
-### Exemple en sciences :
-
-```python
-# Simulation d’un refroidissement
-temp = 100  # température initiale
-while temp > 0:
-    print(f"Température : {temp} °C")
-    temp -= 10
-```
-
-
-## La boucle `for`
-
-### Syntaxe de base :
-
-```python
-for i in range(5):
-    print("i =", i)
-```
-
-### `range(n)` génère les entiers de 0 à n-1. On peut aussi faire :
-
-```python
-for i in range(2, 10, 2):  # de 2 à 8, par pas de 2
-    print(i)
-```
-
-### Exemple en sciences :
-
-```python
-# Affichage de mesures prises chaque seconde
-mesures = [22.5, 22.8, 23.0, 23.3, 23.5]
-for mesure in mesures:
-    print(f"Température mesurée : {mesure} °C")
-```
-
-
-## Comparaison `while` vs `for`
-
-| Situation                            | Utiliser `while` si… | Utiliser `for` si… |
-| ------------------------------------ | -------------------- | ------------------ |
-| Nombre d’itérations inconnu d’avance | ✅                    | ❌                  |
-| Série connue (liste, range)          | ❌                    | ✅                  |
-
----
-
-## Exercices rapides à faire pendant le cours
-
-**1. Afficher les nombres de 1 à 10**
-
-```python
-for i in range(1, 11):
-    print(i)
-```
-
-**2. Compter jusqu’à 100 par bonds de 10**
-**3. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)**
-**4. Lire une température jusqu’à ce qu’elle soit < 0 (entrée utilisateur)**
-
----
-
-## À éviter / pièges fréquents
-
-* Boucle infinie (`while` sans mise à jour de la condition)
-* Utiliser `range` sans comprendre que la fin est **exclusive**
-* Oublier l’indentation dans le bloc de la boucle
-
-
-## À retenir
-
-* `while` = tant qu’une **condition** est vraie
-* `for` = pour **chaque valeur** dans une séquence
-* Les boucles permettent d’automatiser les calculs et traitements de données en science
-
+{{% notice style="cyan" title="À retenir" %}}
+* Les **opérateurs de comparaison** comparent des valeurs.
+* Les **opérateurs logiques** combinent plusieurs conditions.
+* Les **structures conditionnelles** permettent de **réagir à des critères** dans un programme.
+	* `if` vérifie si une condition est vraie, **si et seulement si c'est le cas**, les instructions en dessous et décalées seront exécutées.
+	* `elif` permet de vérifier une autre condition, **si et seulement si elle est vrais**, les instructions en dessous et décalées seront exécutées.
+	* `else` permet de prévoir des instructions à effectuer, **si et seulement si aucune des conditions précédentes est vraie**.
+{{% /notice %}}

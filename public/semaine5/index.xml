@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Listes et chaînes de caractères :: 420-SN1-RE</title>
-    <link>https://example.org/semaine5/index.html</link>
-    <description>Objectifs de la leçon Comprendre ce qu’est une liste et comment la manipuler Utiliser les chaînes de caractères comme des séquences Appliquer les connaissances à des données scientifiques simples Travailler en équipe sur une activité d’analyse de mesures Listes en Python Une liste est une collection ordonnée, modifiable, qui peut contenir différents types de données.&#xA;Définir une liste : mesures = [12.1, 13.0, 12.8, 13.5]&#xD;Accéder à un élément print(mesures[0]) # 12.</description>
+    <title>Évaluation 1 (25%) :: 420-SN1-RE</title>
+    <link>http://localhost:1313/semaine5/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine5/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Activité 5 – Traitement d’une série de mesures et moyenne mobile</title>
-      <link>https://example.org/semaine5/atelier/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine5/atelier/index.html</guid>
-      <description>Objectifs d’apprentissage Manipuler des listes en Python Écrire une fonction pour calculer une moyenne mobile Visualiser l’effet du lissage sur une série de données Renforcer les notions de boucles, indices et opérations sur les listes Contexte scientifique En laboratoire, on mesure la concentration d’un produit chimique toutes les 2 minutes pendant une expérience de 20 minutes. Les mesures présentent des fluctuations dues à des imprécisions expérimentales. Pour lisser ces données et observer les tendances, on applique une moyenne mobile sur les résultats.</description>
-    </item>
+    <atom:link href="http://localhost:1313/semaine5/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,10 +1,7 @@
 +++
-title = "Règlements de classe — Comportement attendu"
+title = "Règlements de classe"
 weight = 2
 +++
-
-
-![Python](./py.jpeg?width=30vw)
 
 
 ### 1. **Comporte-toi comme si tu étais déjà en emploi.**

@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectif de l’atelier Apprendre à créer une fonction Python qui modélise une loi physique simple et l’utiliser pour explorer des situations concrètes dans un contexte scientifique.
-Consignes Travaillez à deux ou trois, discutez de chaque étape.
-Testez vos fonctions avec plusieurs valeurs.
-Commentez brièvement votre code.
-Ajoutez une brève conclusion à la fin du notebook :
-Qu’avez-vous observé? Quelle relation la fonction exprime-t-elle? Livrable À la fin de la séance, vous devez avoir un fichier .">
+    <meta name="description" content="Objectifs d’apprentissage Utiliser les boucles for et while pour automatiser des tâches répétitives. Appliquer les boucles à une situation scientifique concrète. Travailler en collaboration pour planifier une solution et tester différents scénarios. Exercice 1 – Table de multiplication Écrire un programme Python qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.
+Exemple de sortie :
+Entrez un nombre entre 1 et 12 : 71 x 7 = 72 x 7 = 143 x 7 = 21.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre). :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectif de l’atelier Apprendre à créer une fonction Python qui modélise une loi physique simple et l’utiliser pour explorer des situations concrètes dans un contexte scientifique.
-Consignes Travaillez à deux ou trois, discutez de chaque étape.
-Testez vos fonctions avec plusieurs valeurs.
-Commentez brièvement votre code.
-Ajoutez une brève conclusion à la fin du notebook :
-Qu’avez-vous observé? Quelle relation la fonction exprime-t-elle? Livrable À la fin de la séance, vous devez avoir un fichier .">
-    <meta property="og:url" content="https://example.org/semaine6/atelier/index.html">
+    <meta name="twitter:title" content="Atelier 6 :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs d’apprentissage Utiliser les boucles for et while pour automatiser des tâches répétitives. Appliquer les boucles à une situation scientifique concrète. Travailler en collaboration pour planifier une solution et tester différents scénarios. Exercice 1 – Table de multiplication Écrire un programme Python qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.
+Exemple de sortie :
+Entrez un nombre entre 1 et 12 : 71 x 7 = 72 x 7 = 143 x 7 = 21.">
+    <meta property="og:url" content="http://localhost:1313/semaine6/atelier/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content="Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre). :: 420-SN1-RE">
-    <meta property="og:description" content="Objectif de l’atelier Apprendre à créer une fonction Python qui modélise une loi physique simple et l’utiliser pour explorer des situations concrètes dans un contexte scientifique.
-Consignes Travaillez à deux ou trois, discutez de chaque étape.
-Testez vos fonctions avec plusieurs valeurs.
-Commentez brièvement votre code.
-Ajoutez une brève conclusion à la fin du notebook :
-Qu’avez-vous observé? Quelle relation la fonction exprime-t-elle? Livrable À la fin de la séance, vous devez avoir un fichier .">
+    <meta property="og:title" content="Atelier 6 :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs d’apprentissage Utiliser les boucles for et while pour automatiser des tâches répétitives. Appliquer les boucles à une situation scientifique concrète. Travailler en collaboration pour planifier une solution et tester différents scénarios. Exercice 1 – Table de multiplication Écrire un programme Python qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.
+Exemple de sortie :
+Entrez un nombre entre 1 et 12 : 71 x 7 = 72 x 7 = 143 x 7 = 21.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre). :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectif de l’atelier Apprendre à créer une fonction Python qui modélise une loi physique simple et l’utiliser pour explorer des situations concrètes dans un contexte scientifique.
-Consignes Travaillez à deux ou trois, discutez de chaque étape.
-Testez vos fonctions avec plusieurs valeurs.
-Commentez brièvement votre code.
-Ajoutez une brève conclusion à la fin du notebook :
-Qu’avez-vous observé? Quelle relation la fonction exprime-t-elle? Livrable À la fin de la séance, vous devez avoir un fichier .">
-    <meta itemprop="wordCount" content="275">
-    <title>Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre). :: 420-SN1-RE</title>
-    <link href="/semaine6/atelier/index.xml" rel="alternate" type="application/rss+xml" title="Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre). :: 420-SN1-RE">
-    <link href="/images/logo.png?1749231934" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1749231934" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1749231934" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1749231934" rel="stylesheet">
-    <link href="/css/theme.min.css?1749231934" rel="stylesheet">
-    <link href="/css/format-html.min.css?1749231934" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1749231934" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1749231934" defer></script>
-    <script src="/js/lunr/lunr.min.js?1749231934" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1749231934" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1749231934" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1749231934" defer></script>
-    <script src="/js/search.min.js?1749231934" defer></script>
+    <meta itemprop="name" content="Atelier 6 :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs d’apprentissage Utiliser les boucles for et while pour automatiser des tâches répétitives. Appliquer les boucles à une situation scientifique concrète. Travailler en collaboration pour planifier une solution et tester différents scénarios. Exercice 1 – Table de multiplication Écrire un programme Python qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.
+Exemple de sortie :
+Entrez un nombre entre 1 et 12 : 71 x 7 = 72 x 7 = 143 x 7 = 21.">
+    <meta itemprop="wordCount" content="540">
+    <title>Atelier 6 :: 420-SN1-RE</title>
+    <link href="/semaine6/atelier/index.xml" rel="alternate" type="application/rss+xml" title="Atelier 6 :: 420-SN1-RE">
+    <link href="/images/logo.png?1751401527" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751401527" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751401527" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751401527" rel="stylesheet">
+    <link href="/css/theme.css?1751401527" rel="stylesheet">
+    <link href="/css/format-html.css?1751401527" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1751401527" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1751401527" defer></script>
+    <script src="/js/search.js?1751401527" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/semaine6\/atelier\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1749231934";
+      window.relearn.index_js_url="/searchindex.en.js?1751401527";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -123,15 +111,17 @@ Qu’avez-vous observé? Quelle relation la fonction exprime-t-elle? Livrable À
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#objectif-de-latelier">Objectif de l’atelier</a></li>
-    <li><a href="#consignes">Consignes</a></li>
-    <li><a href="#livrable">Livrable</a></li>
-    <li><a href="#choix-de-la-loi-physique">Choix de la loi physique</a>
-      <ul>
-        <li><a href="#option-a--loi-dohm-électricité">Option A – Loi d’Ohm (électricité)</a></li>
-        <li><a href="#option-b--chute-libre-sans-frottement">Option B – Chute libre (sans frottement)</a></li>
-      </ul>
-    </li>
+    <li><a href="#objectifs-dapprentissage">Objectifs d’apprentissage</a></li>
+    <li><a href="#exercice-1--table-de-multiplication">Exercice 1 – Table de multiplication</a></li>
+    <li><a href="#exercice-2--utiliser-while-pour-atteindre-un-objectif">Exercice 2 – Utiliser <code>while</code> pour atteindre un objectif</a></li>
+    <li><a href="#exercice-3--répéter-une-mesure-fixe-avec-for">Exercice 3 – Répéter une mesure fixe avec <code>for</code></a></li>
+    <li><a href="#exercice-4--arrêter-une-boucle-avec-break-semaine-7">Exercice 4 – Arrêter une boucle avec <code>break</code> (Semaine 7)</a></li>
+    <li><a href="#exercice-4--motif-croissant-simple">Exercice 4 – Motif croissant simple</a></li>
+    <li><a href="#exercice-5--motif-croissant-inversé-triangle-renversé">Exercice 5 – Motif croissant inversé (triangle renversé)</a></li>
+    <li><a href="#exercice-6--motif-avec-nombres-décroissants-par-ligne">Exercice 6 – Motif avec nombres décroissants par ligne</a></li>
+    <li><a href="#exercice-7--triangle-aligné-à-droite-avec-nombres-croissants">Exercice 7 – Triangle aligné à droite avec nombres croissants</a></li>
+    <li><a href="#exercice-8--triangle-inversé-avec-décalage-à-gauche">Exercice 8 – Triangle inversé avec décalage à gauche</a></li>
+    <li><a href="#exercice-9--triangle-inversé-symétrique-détoiles">Exercice 9 – Triangle inversé symétrique d’étoiles</a></li>
   </ul>
 </nav>
                 </div>
@@ -140,13 +130,13 @@ Qu’avez-vous observé? Quelle relation la fonction exprime-t-elle? Livrable À
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine6/index.html"><span itemprop="name">Fonctions simples et paramètres</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre).</span><meta itemprop="position" content="3"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine6/index.html"><span itemprop="name">Répéter avec `for` et `while`</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Atelier 6</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/index.html" title="Fonctions simples et paramètres (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/index.html" title="Répéter avec `for` et `while` (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/index.html" title="Examen 1 (30%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/atelier/solution/index.html" title="Solution (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -166,69 +156,114 @@ Qu’avez-vous observé? Quelle relation la fonction exprime-t-elle? Livrable À
   <header class="headline">
   </header>
 
-<h1 id="activité-6---modélisation-dune-loi-physique-loi-dohm-chute-libre">Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre).</h1>
+<h1 id="atelier-6">Atelier 6</h1>
 
-<h2 id="objectif-de-latelier">Objectif de l’atelier</h2>
-<p>Apprendre à créer une <strong>fonction Python</strong> qui modélise une <strong>loi physique simple</strong> et l’utiliser pour explorer des situations concrètes dans un contexte scientifique.</p>
+<h2 id="objectifs-dapprentissage">Objectifs d’apprentissage</h2>
+<ul>
+<li>Utiliser les boucles <code>for</code> et <code>while</code> pour automatiser des tâches répétitives.</li>
+<li>Appliquer les boucles à une situation scientifique concrète.</li>
+<li>Travailler en collaboration pour planifier une solution et tester différents scénarios.</li>
+</ul>
 <hr>
-<h2 id="consignes">Consignes</h2>
-<ul>
-<li>
-<p>Travaillez <strong>à deux ou trois</strong>, discutez de chaque étape.</p>
-</li>
-<li>
-<p>Testez vos fonctions avec <strong>plusieurs valeurs</strong>.</p>
-</li>
-<li>
-<p>Commentez brièvement votre code.</p>
-</li>
-<li>
-<p>Ajoutez une <strong>brève conclusion</strong> à la fin du notebook :</p>
-<ul>
-<li>Qu’avez-vous observé?</li>
-<li>Quelle relation la fonction exprime-t-elle?</li>
-</ul>
-</li>
-</ul>
-<h2 id="livrable">Livrable</h2>
-<p>À la fin de la séance, vous devez avoir un <strong>fichier <code>.ipynb</code> propre, documenté, et fonctionnel</strong> avec :</p>
-<ul>
-<li>La fonction Python créée</li>
-<li>L’affichage des résultats</li>
-<li>Une conclusion en 2-3 phrases</li>
-</ul>
-<h2 id="choix-de-la-loi-physique">Choix de la loi physique</h2>
-<p>Choisissez <strong>un seul</strong> des deux modèles suivants à implémenter :</p>
-<h3 id="option-a--loi-dohm-électricité">Option A – Loi d’Ohm (électricité)</h3>
-<p>Formule :
-  <strong>V = R × I</strong></p>
+<h2 id="exercice-1--table-de-multiplication">Exercice 1 – Table de multiplication</h2>
 <blockquote>
-<p>V = tension (en volts)
-R = résistance (en ohms)
-I = courant (en ampères)</p>
+<p>Écrire un programme Python qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.</p>
 </blockquote>
-<p><strong>À faire :</strong></p>
+<p><strong>Exemple de sortie :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Entrez un nombre entre 1 et 12 : 7
+1 x 7 = 7
+2 x 7 = 14
+3 x 7 = 21
+...
+12 x 7 = 84</code></pre></div>
+<ul>
+<li>Variante : demander à l&rsquo;usager s’il veut une table en ordre croissant ou décroissant.</li>
+<li>Version bonus : utiliser une boucle <code>while</code> pour refaire une autre table tant que l’usager le souhaite.</li>
+</ul>
+<h2 id="exercice-2--utiliser-while-pour-atteindre-un-objectif">Exercice 2 – Utiliser <code>while</code> pour atteindre un objectif</h2>
+<p>Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
+Écrire un programme qui affiche l’évolution de la température <strong>jusqu’à ce qu’elle atteigne 30 °C</strong>.</p>
+<p><strong>Aide pas à pas :</strong></p>
 <ol>
-<li>Créez une fonction nommée <code>calcul_tension(R, I)</code> qui retourne la tension.</li>
-<li>Affichez un tableau des tensions pour un courant qui varie de 0 à 2 A, par pas de 0.1 A, pour une résistance de 10 ohms.</li>
-<li>Gérez les cas d’entrée invalides (ex. : valeurs négatives).</li>
+<li>Crée une variable <code>temp</code> avec 20 comme valeur initiale.</li>
+<li>Utilise une boucle <code>while</code> pour vérifier si <code>temp</code> est inférieure à 30.</li>
+<li>À chaque tour, affiche la température.</li>
+<li>Augmente la température de 1.5.</li>
 </ol>
-<h3 id="option-b--chute-libre-sans-frottement">Option B – Chute libre (sans frottement)</h3>
-<p>Formule :
-  <strong>h(t) = h₀ – ½·g·t²</strong>
-  (g = 9.8 m/s²)</p>
-<blockquote>
-<p>h(t) = hauteur à un instant t
-h₀ = hauteur initiale
-t = temps en secondes</p>
-</blockquote>
-<p><strong>À faire :</strong></p>
+<h2 id="exercice-3--répéter-une-mesure-fixe-avec-for">Exercice 3 – Répéter une mesure fixe avec <code>for</code></h2>
+<p>On veut afficher les numéros de 10 échantillons : <code>Échantillon 1</code>, <code>Échantillon 2</code>, &hellip;, <code>Échantillon 10</code>.</p>
+<p><strong>Aide pas à pas :</strong></p>
 <ol>
-<li>Créez une fonction nommée <code>calcul_position(h0, t)</code> qui retourne la hauteur à l’instant t.</li>
-<li>Simulez la chute d’un objet depuis une hauteur de 20 m, à chaque 0.5 s, jusqu’à ce qu’il touche le sol.</li>
-<li>Affichez les résultats sous forme de tableau (temps et hauteur).</li>
-<li>Arrêtez la simulation automatiquement quand l’objet atteint le sol.</li>
+<li>Utilise une boucle <code>for</code> avec <code>range(1, 11)</code>.</li>
+<li>À chaque tour, affiche <code>Échantillon</code> suivi du numéro.</li>
 </ol>
+<h2 id="exercice-4--arrêter-une-boucle-avec-break-semaine-7">Exercice 4 – Arrêter une boucle avec <code>break</code> (Semaine 7)</h2>
+<p>Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, <strong>mais arrêter dès qu’il donne une mauvaise réponse</strong>.</p>
+<p><strong>Aide pas à pas :</strong></p>
+<ol>
+<li>Simule des réponses avec une variable (par exemple, une bonne réponse = &ldquo;A&rdquo;).</li>
+<li>Utilise une boucle <code>for</code> pour passer les questions.</li>
+<li>Si la réponse est incorrecte, affiche &ldquo;Test terminé&rdquo; et utilise <code>break</code>.</li>
+</ol>
+<h2 id="exercice-4--motif-croissant-simple">Exercice 4 – Motif croissant simple</h2>
+<ul>
+<li>Utilise deux boucles <code>for</code> imbriquées.</li>
+<li>Aucun <code>input()</code> n’est requis.</li>
+<li>Le résultat doit s’afficher exactement comme ci-dessous.</li>
+</ul>
+<p><strong>Affichage attendu :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>1
+12
+123</code></pre></div>
+<h2 id="exercice-5--motif-croissant-inversé-triangle-renversé">Exercice 5 – Motif croissant inversé (triangle renversé)</h2>
+<ul>
+<li>Utilise une boucle <code>for</code> pour afficher un motif décroissant.</li>
+<li>Aucune liste n’est nécessaire.</li>
+<li>Ne pas utiliser de conditions (<code>if</code>).</li>
+</ul>
+<p><strong>Affichage attendu :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>123
+12
+1</code></pre></div>
+<h2 id="exercice-6--motif-avec-nombres-décroissants-par-ligne">Exercice 6 – Motif avec nombres décroissants par ligne</h2>
+<ul>
+<li>Affiche les nombres dans l’ordre décroissant sur chaque ligne.</li>
+<li>Utilise deux boucles <code>for</code> imbriquées.</li>
+<li>Ne pas utiliser de chaînes préfabriquées (ex: <code>&quot;321&quot;</code>).</li>
+</ul>
+<p><strong>Affichage attendu :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>321
+21
+1</code></pre></div>
+<h2 id="exercice-7--triangle-aligné-à-droite-avec-nombres-croissants">Exercice 7 – Triangle aligné à droite avec nombres croissants</h2>
+<ul>
+<li>Utilise les fonctions <code>print()</code> et la multiplication de chaînes (<code>&quot; &quot; * n</code>).</li>
+<li>Aligne le motif à droite.</li>
+<li>Ne pas utiliser de fonctions avancées comme <code>rjust()</code>.</li>
+</ul>
+<p><strong>Affichage attendu :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>  1
+ 12
+123</code></pre></div>
+<h2 id="exercice-8--triangle-inversé-avec-décalage-à-gauche">Exercice 8 – Triangle inversé avec décalage à gauche</h2>
+<ul>
+<li>Utilise deux boucles imbriquées et des espaces (<code>&quot; &quot;</code>) pour le décalage.</li>
+<li>Le triangle doit se décaler d’une position à droite à chaque ligne.</li>
+</ul>
+<p><strong>Affichage attendu :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>123
+ 12
+  1</code></pre></div>
+<h2 id="exercice-9--triangle-inversé-symétrique-détoiles">Exercice 9 – Triangle inversé symétrique d’étoiles</h2>
+<ul>
+<li>Le motif doit être centré.</li>
+<li>Le nombre d’étoiles par ligne suit la suite : 5, 3, 1 (soit 2*i – 1).</li>
+<li>Utilise des boucles pour gérer les espaces et les étoiles.</li>
+</ul>
+<p><strong>Affichage attendu :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>*****
+ ***
+  *</code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -240,9 +275,11 @@ t = temps en secondes</p>
       <div id="R-header-topbar" class="default-animation"></div>
       <div id="R-header-wrapper" class="default-animation">
         <div id="R-header" class="default-animation">
-          <a id="R-logo" class="R-default" href="/index.html">
-            <div class="logo-title">420-SN1-RE</div>
-          </a>
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
         </div>
         <search><form action="/search/index.html" method="get">
           <div class="searchbox default-animation">
@@ -276,16 +313,18 @@ t = temps en secondes</p>
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe — Comportement attendu</a></li>
-            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et de l&#39;environnement de travail (OneDrive, VS Code, Jupyter)</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Introduction à Python (variables, types, entrée/sortie)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Prendre des décisions avec `if`, `elif`, `else`</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Listes et chaînes de caractères</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
-            <li class="parent " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Fonctions simples et paramètres</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu">
-            <li class="active " data-nav-id="/semaine6/atelier/index.html"><a class="padding" href="/semaine6/atelier/index.html">Activité 6 - modélisation d’une loi physique (loi d’Ohm, chute libre).</a></li></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Examen 1 (30%)</a></li>
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Structures de données (listes, dictionnaires)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
+            <li class="" data-nav-id="/environnement_travail/index.html"><a class="padding" href="/environnement_travail/index.html">L&#39;environnement de travail</a><ul id="R-subsections-778a4ef1cb285be699e264e0f36c1129" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Évaluation 1 (25%)</a></li>
+            <li class="parent " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu">
+            <li class="active parent alwaysopen " data-nav-id="/semaine6/atelier/index.html"><a class="padding" href="/semaine6/atelier/index.html">Atelier 6</a><ul id="R-subsections-aaf86cb4e12018cb06c709121633b657" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine6/atelier/solution/index.html"><a class="padding" href="/semaine6/atelier/solution/index.html">Solution</a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Évaluation 2 (20%)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
@@ -293,7 +332,7 @@ t = temps en secondes</p>
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
             <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
-            <li class="" data-nav-id="/alternatives/index.html"><a class="padding" href="/alternatives/index.html"><b>Alternatives à VS Code </b>(Colab et PyCharm)</a><ul id="R-subsections-9f4e292d0c7bd466e594a2d757e89641" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Astuces et réponses aux questions fréquentes</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
           </ul>
         </div>
@@ -312,8 +351,8 @@ t = temps en secondes</p>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1749231934" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1749231934" defer></script>
-    <script src="/js/theme.min.js?1749231934" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1751401527" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751401527" defer></script>
+    <script src="/js/theme.js?1751401527" defer></script>
   </body>
 </html>

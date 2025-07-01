@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Questions-Rencontre interdisciplinaire 9 juin :: 420-SN1-RE</title>
+    <link>http://localhost:1313/reunioninterdiscipline/index.html</link>
+    <description>Objectif général : Créer des activités de programmation pertinentes, motivantes et utiles pour les étudiants, en cohérence avec les contenus scientifiques vus dans les autres cours.&#xA;1. Questions générales sur les contenus disciplinaires Quels sont les concepts ou phénomènes clés que vous abordez dans votre cours cette session ? À quels moments de la session ces notions sont-elles introduites ? Quels chapitres ou thèmes se prêtent bien à la modélisation ou la simulation ?</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/reunioninterdiscipline/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

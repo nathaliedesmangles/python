@@ -11,7 +11,7 @@ weight = 12
 
 ### 1. Repérer l’icône OneDrive
 
-* Vous devriez voir l'icône de ***OneDrive*** (scolaire = en bleu) (personnel = en gris), sur la **barre des tâches**, en bas à droite de l'écran (près de l’horloge). Si ce n'est pas le cas, cliquez sur la **flèche** (encradrée en bleu) pour voir les icônes cachées.
+* Vous devriez voir l'icône de ***OneDrive*** (scolaire = en bleu) (personnel = en gris), sur la **barre des tâches**, en bas à droite de l'écran (près de l’horloge). Si ce n'est pas le cas, cliquez sur la **flèche** (encradré en bleu) pour voir les icônes cachées.
 * Recherchez l’**icône de nuage** OneDrive !
 
 ![identifier icône](./identifier.png)
@@ -21,15 +21,15 @@ weight = 12
 ### 2. Se connecter à son compte scolaire/professionnel
 
  - Aller à l’adresse suivante [https://login.microsoftonline.com/?whr=cmontmorency.qc.ca](https://login.microsoftonline.com/?whr=cmontmorency.qc.ca)
- - Entrer votre nom d'utilisateur, i.e. **les 7 derniers chiffres du numéro de DA**, soit le nom utilisé pour se connecter sur les ordinateurs du Collège, suivi de « @cmontmorency.qc.ca » 
- - Entrer votre mot de passe, soit le même que celui pour le sans-fil et pour se connecter sur les ordinateurs du Collège
+ - Entrer votre nom d'utilisateur, i.e. **les 7 derniers chiffres du numéro de DA**, soit le nom utilisé pour se connecter sur les ordinateurs du Collège, suivi de ***@cmontmorency.qc.ca***
+ - Entrer votre mot de passe, soit le même que celui pour le sans-fil (*Wi-Fi*) et pour se connecter sur les ordinateurs du Collège
 	- **N. B.** Ce mot de passe initial se trouve dans Col.NET sous ***"Dossier personnel / Autres informations"***.
 	- S'il n'y a pas de mot de passe c'est que votre compte n'a pas encore été créé, revérifiez plus tard.
-	- Si la connexion échoue, réessayez dans quelques heures, il se peut qu'il y ait un délai. S'il excède 48h, faites une demande sur le portail de service.
+	- Si la connexion échoue, réessayez dans quelques heures, il se peut qu'il y ait un délai. S'il excède **48h**, faites une demande sur le portail de service.
 
- - Cliquer sur « Suivant » au message indiquant « Plus d'informations requises ». 
+ - Cliquer sur **Suivant** au message indiquant **Plus d'informations requises**. 
 
-N. B. Pour configurer votre authentification multifacteur (MFA) avec un numéro de cellulaire, sélectionner « Je veux configurer une autre méthode » au bas de la fenêtre pour et  suivre l'étape #7. 
+N. B. Pour configurer votre authentification multifacteur (MFA) avec un numéro de cellulaire, sélectionner **Je veux configurer une autre méthode** au bas de la fenêtre pour et suivre l'étape #7. 
 
 ### 2.1 Lancer la configuration
 

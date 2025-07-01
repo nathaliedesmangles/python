@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="1. Qu’est-ce qu’un tableau imbriqué? Un tableau imbriqué est une liste qui contient d’autres listes.
+Cela permet de représenter des données structurées en deux dimensions (comme un tableau ou une matrice en sciences).
+Exemple de tableau 2D (2 lignes, 3 colonnes) notes = [ [85, 90, 88], # notes de l&#39;élève 1 [78, 82, 80] # notes de l&#39;élève 2 ]Ici, notes[0] donne la liste [85, 90, 88], et notes[1][2] donne la valeur 80 (3e note de l’élève 2).">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Les tableaux imbriqués :: 420-SN1-RE">
+    <meta name="twitter:description" content="1. Qu’est-ce qu’un tableau imbriqué? Un tableau imbriqué est une liste qui contient d’autres listes.
+Cela permet de représenter des données structurées en deux dimensions (comme un tableau ou une matrice en sciences).
+Exemple de tableau 2D (2 lignes, 3 colonnes) notes = [ [85, 90, 88], # notes de l&#39;élève 1 [78, 82, 80] # notes de l&#39;élève 2 ]Ici, notes[0] donne la liste [85, 90, 88], et notes[1][2] donne la valeur 80 (3e note de l’élève 2).">
+    <meta property="og:url" content="http://localhost:1313/semaine7/tableaux_imbriques/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Les tableaux imbriqués :: 420-SN1-RE">
+    <meta property="og:description" content="1. Qu’est-ce qu’un tableau imbriqué? Un tableau imbriqué est une liste qui contient d’autres listes.
+Cela permet de représenter des données structurées en deux dimensions (comme un tableau ou une matrice en sciences).
+Exemple de tableau 2D (2 lignes, 3 colonnes) notes = [ [85, 90, 88], # notes de l&#39;élève 1 [78, 82, 80] # notes de l&#39;élève 2 ]Ici, notes[0] donne la liste [85, 90, 88], et notes[1][2] donne la valeur 80 (3e note de l’élève 2).">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Listes de données et chaînes de caractères">
+    <meta itemprop="name" content="Les tableaux imbriqués :: 420-SN1-RE">
+    <meta itemprop="description" content="1. Qu’est-ce qu’un tableau imbriqué? Un tableau imbriqué est une liste qui contient d’autres listes.
+Cela permet de représenter des données structurées en deux dimensions (comme un tableau ou une matrice en sciences).
+Exemple de tableau 2D (2 lignes, 3 colonnes) notes = [ [85, 90, 88], # notes de l&#39;élève 1 [78, 82, 80] # notes de l&#39;élève 2 ]Ici, notes[0] donne la liste [85, 90, 88], et notes[1][2] donne la valeur 80 (3e note de l’élève 2).">
+    <meta itemprop="wordCount" content="277">
+    <title>Les tableaux imbriqués :: 420-SN1-RE</title>
+    <link href="/images/logo.png?1751401381" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751401381" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751401381" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751401381" rel="stylesheet">
+    <link href="/css/theme.css?1751401381" rel="stylesheet">
+    <link href="/css/format-html.css?1751401381" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1751401381" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1751401381" defer></script>
+    <script src="/js/lunr/lunr.min.js?1751401381" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1751401381" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1751401381" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1751401381" defer></script>
+    <script src="/js/search.js?1751401381" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine7\/tableaux_imbriques\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1751401381";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine7/tableaux_imbriques/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#1-quest-ce-quun-tableau-imbriqué">1. Qu’est-ce qu’un tableau imbriqué?</a>
+      <ul>
+        <li><a href="#exemple-de-tableau-2d-2-lignes-3-colonnes">Exemple de tableau 2D (2 lignes, 3 colonnes)</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-accès-aux-éléments">2. Accès aux éléments</a></li>
+    <li><a href="#3-modifier-un-élément">3. Modifier un élément</a></li>
+    <li><a href="#4-parcourir-un-tableau-imbriqué-avec-deux-boucles-for">4. Parcourir un tableau imbriqué avec deux boucles <code>for</code></a></li>
+    <li><a href="#5-application-en-sciences--températures-sur-3-jours-dans-2-villes">5. Application en sciences – Températures sur 3 jours, dans 2 villes</a>
+      <ul>
+        <li><a href="#moyenne-de-température-par-ville-">Moyenne de température par ville :</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-créer-un-tableau-vide-de-3-lignes-et-4-colonnes">6. Créer un tableau vide de 3 lignes et 4 colonnes</a></li>
+    <li><a href="#à-retenir">À retenir</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine7/index.html"><span itemprop="name">Listes de données et chaînes de caractères</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Les tableaux imbriqués</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/dictionnaires/index.html" title="Dictionnaires (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/atelier/index.html" title="Atelier 7 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine7" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="les-tableaux-imbriqués">Les tableaux imbriqués</h1>
+
+<h2 id="1-quest-ce-quun-tableau-imbriqué">1. Qu’est-ce qu’un tableau imbriqué?</h2>
+<ul>
+<li>
+<p>Un <strong>tableau imbriqué</strong> est une <strong>liste qui contient d’autres listes</strong>.</p>
+</li>
+<li>
+<p>Cela permet de représenter des données structurées <strong>en deux dimensions</strong> (comme un tableau ou une matrice en sciences).</p>
+</li>
+</ul>
+<h3 id="exemple-de-tableau-2d-2-lignes-3-colonnes">Exemple de tableau 2D (2 lignes, 3 colonnes)</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>notes <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">85</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">88</span>],   <span style="color:#75715e"># notes de l&#39;élève 1</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">78</span>, <span style="color:#ae81ff">82</span>, <span style="color:#ae81ff">80</span>]    <span style="color:#75715e"># notes de l&#39;élève 2</span>
+</span></span><span style="display:flex;"><span>]</span></span></code></pre></div>
+<p>Ici, <code>notes[0]</code> donne la liste <code>[85, 90, 88]</code>, et <code>notes[1][2]</code> donne la valeur <code>80</code> (3e note de l&rsquo;élève 2).</p>
+<h2 id="2-accès-aux-éléments">2. Accès aux éléments</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(notes[<span style="color:#ae81ff">0</span>])      <span style="color:#75715e"># Affiche la 1re ligne : [85, 90, 88]</span>
+</span></span><span style="display:flex;"><span>print(notes[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">2</span>])   <span style="color:#75715e"># Affiche 3e note de l’élève 2 : 80</span></span></span></code></pre></div>
+<h2 id="3-modifier-un-élément">3. Modifier un élément</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>notes[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">95</span>     <span style="color:#75715e"># On change la 2e note de l’élève 1</span>
+</span></span><span style="display:flex;"><span>print(notes[<span style="color:#ae81ff">0</span>])      <span style="color:#75715e"># Résultat : [85, 95, 88]</span></span></span></code></pre></div>
+<h2 id="4-parcourir-un-tableau-imbriqué-avec-deux-boucles-for">4. Parcourir un tableau imbriqué avec deux boucles <code>for</code></h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> notes:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> ligne:
+</span></span><span style="display:flex;"><span>        print(valeur)</span></span></code></pre></div>
+<p><strong>Ce que ça fait</strong> : imprime chaque note, une à la fois.</p>
+<h2 id="5-application-en-sciences--températures-sur-3-jours-dans-2-villes">5. Application en sciences – Températures sur 3 jours, dans 2 villes</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">12.4</span>, <span style="color:#ae81ff">13.0</span>, <span style="color:#ae81ff">15.2</span>],  <span style="color:#75715e"># Ville A</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">11.1</span>, <span style="color:#ae81ff">14.5</span>, <span style="color:#ae81ff">16.3</span>]   <span style="color:#75715e"># Ville B</span>
+</span></span><span style="display:flex;"><span>]</span></span></code></pre></div>
+<h3 id="moyenne-de-température-par-ville-">Moyenne de température par ville :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ville <span style="color:#f92672">in</span> temperatures:
+</span></span><span style="display:flex;"><span>    moyenne <span style="color:#f92672">=</span> sum(ville) <span style="color:#f92672">/</span> len(ville)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Moyenne:&#34;</span>, moyenne)</span></span></code></pre></div>
+<h2 id="6-créer-un-tableau-vide-de-3-lignes-et-4-colonnes">6. Créer un tableau vide de 3 lignes et 4 colonnes</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tableau <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>)] <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>)]
+</span></span><span style="display:flex;"><span>print(tableau)</span></span></code></pre></div>
+<p>Résultat :
+<code>[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]</code></p>
+<h2 id="à-retenir">À retenir</h2>
+<ul>
+<li>Un tableau imbriqué = liste de listes</li>
+<li>On accède à un élément avec deux indices : <code>liste[i][j]</code></li>
+<li>On parcourt avec deux boucles <code>for</code></li>
+<li>Très utile pour représenter des données en 2D (ex. données expérimentales, résultats d&rsquo;élèves)</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
+            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
+            <li class="" data-nav-id="/environnement_travail/index.html"><a class="padding" href="/environnement_travail/index.html">L&#39;environnement de travail</a><ul id="R-subsections-778a4ef1cb285be699e264e0f36c1129" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Évaluation 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine7/dictionnaires/index.html"><a class="padding" href="/semaine7/dictionnaires/index.html">Dictionnaires</a></li>
+            <li class="active " data-nav-id="/semaine7/tableaux_imbriques/index.html"><a class="padding" href="/semaine7/tableaux_imbriques/index.html">Les tableaux imbriqués</a></li>
+            <li class="" data-nav-id="/semaine7/atelier/index.html"><a class="padding" href="/semaine7/atelier/index.html">Atelier 7</a></li></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Évaluation 2 (20%)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Astuces et réponses aux questions fréquentes</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/reunioninterdiscipline/index.html"><a class="padding" href="/reunioninterdiscipline/index.html">Questions-Rencontre interdisciplinaire 9 juin</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1751401381" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751401381" defer></script>
+    <script src="/js/theme.js?1751401381" defer></script>
+  </body>
+</html>

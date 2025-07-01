@@ -1,126 +1,232 @@
 +++
 chapter = true
 pre = "<b>Semaine 3.</b>"
-title = "Prendre des décisions avec `if`, `elif`, `else`"
+title = "Entrées/Sorties, Algorithme, débogage et fonctions"
 weight = 30
 +++
 
-### Objectifs d’apprentissage
+## Objectifs d'apprentissage
 
-À la fin de cette leçon, vous devrez être capable de :
-
-* Écrire des instructions conditionnelles en Python
-* Utiliser `if`, `elif` et `else` pour gérer plusieurs cas
-* Évaluer des expressions logiques avec les opérateurs de comparaison (`==`, `!=`, `<`, `>`, `<=`, `>=`)
-* Combiner plusieurs conditions avec les opérateurs logiques (`and`, `or`, `not`)
-
----
-
-## Pourquoi des conditions ?
-
-Un programme prend souvent des décisions :
-
-* S’il fait moins de 0 °C, l’eau gèle.
-* Si un patient a une température > 38 °C, il a de la fièvre.
-* Si la vitesse dépasse 120 km/h, une alarme est déclenchée.
-
-Ces situations sont modélisées avec des **conditions**.
-
-## La structure `if` de base
-
-```python
-temp = -5
-
-if temp < 0:
-    print("L'eau est solide (glace).")
-```
-
-**Rappel important :** L’indentation (espaces ou tabulation) est **obligatoire** pour indiquer le bloc conditionnel.
-
-
-## Ajouter un cas alternatif avec `else`**
-
-```python
-temp = 20
-
-if temp < 0:
-    print("Glace")
-else:
-    print("Pas de glace")
-```
-
-## Gérer plusieurs cas avec `elif`
-
-```python
-temp = 100
-
-if temp < 0:
-    print("Solide (glace)")
-elif temp < 100:
-    print("Liquide")
-else:
-    print("Gaz (vapeur)")
-```
-
-Note : Python évalue les conditions **dans l’ordre**. Dès qu’une condition est vraie, il saute les suivantes.
+* Gérer les entrées (**saisies au clavier**) et les sorties (**affichage**) d'un programme Python.
+	* Lire des données entrées par l’utilisateur.
+* Comprendre le rôle d'un algorithme.
+* Écrire et traduire des algorithmes simples en python.
+* Apprendre à comprendre les messages d'erreurs et à déboguer un programme
+* Utiliser des fonctions prédéfinies (ex: Module math)
+* Définir ses propres fonctions.
 
 ---
 
-## Opérateurs de comparaison utiles
+## Lecture, conversion et affichage soigné des données
 
-| Opérateur | Signification     | Exemple  |
-| --------- | ----------------- | -------- |
-| `==`      | égal à            | `a == b` |
-| `!=`      | différent de      | `a != b` |
-| `<`       | plus petit que    | `a < b`  |
-| `>`       | plus grand que    | `a > b`  |
-| `<=`      | inférieur ou égal | `a <= b` |
-| `>=`      | supérieur ou égal | `a >= b` |
+### Lire une donnée au clavier
 
-
-## Combiner les conditions avec `and`, `or`, `not`
+La fonction `input()` permet de lire une donnée saisie au clavier :
 
 ```python
-temp = 80
-pression = 1.0
-
-if temp > 0 and temp < 100:
-    print("L’eau est liquide à pression normale.")
+nom = input("Quel est ton nom ? ")
 ```
+
+### Convertir les données
+
+Les données entrées par `input()` sont **toujours** des chaînes (`str`). Il faut donc les **convertir** pour faire des calculs :
+
+**Exemple d'erreur en cas d'oubli de convertir**
 
 ```python
-if temp > 100 or pression > 1.5:
-    print("Attention à l’ébullition !")
+note1 = input("Entrez la première note")
+note1 = note1	r
+note2 = input("Entrez la deuxième note")
+note2 = note2
+
+moyenne = (note1 + note2) / 2	==> ERREUR
 ```
 
----
+CAPTURE IMAGE ERREUR
 
-## Application scientifique simple
+#### Comment convertir des données en entier (int) ou en nombre flottant (float)
+
+| Fonction  | Conversion vers… | Exemple                |
+| --------- | ---------------- | ---------------------- |
+| `int()`   | entier           | `int("5") → 5`         |
+| `float()` | décimal          | `float("3.14") → 3.14` |
 
 ```python
-temp = float(input("Température en °C : "))
+note1 = input("Entrez la première note")
+note1 = int(note1)	# conversion en entier
+note2 = input("Entrez la deuxième note")
+note2 = int(note2)	# conversion en entier
 
-if temp < 0:
-    print("L’eau est sous forme de glace.")
-elif temp < 100:
-    print("L’eau est liquide.")
-else:
-    print("L’eau est sous forme de vapeur.")
+moyenne = (note1 + note2) / 2
 ```
 
----
+### Affichage de résultats
 
-## Petits exercices pratiques
+On utilise `print()` pour afficher du texte et des valeurs.
 
-1. Écris un programme qui indique si un étudiant a réussi ou échoué selon sa note (seuil : 60 %).
-2. Demande un pH à l’utilisateur et affiche si la solution est acide, neutre ou basique.
-3. Crée un programme qui vérifie si un triangle est équilatéral, isocèle ou scalène selon les longueurs des côtés.
+```python
+note1 = input("Entrez la première note")
+note1 = int(note1)	# conversion en entier
+note2 = input("Entrez la deuxième note")
+note2 = int(note2)	# conversion en entier
 
----
+moyenne = (note1 + note2) / 2
 
-## Pour aller plus loin
+print("La moyenne des deux notes", note1, "et", note2, "est:", moyenne)
+```
 
-* Que se passe-t-il si aucune condition n’est vraie et qu’il n’y a pas de `else` ?
-* Peut-on avoir plusieurs `elif` dans une même structure ? (Réponse : Oui)
-* Peut-on imbriquer des `if` dans d’autres `if` ? (Réponse : Oui, mais attention à la lisibilité)
+Pour un affichage plus soigné, on peut utiliser les **f-strings** :
 
+```python
+print(f"La moyenne des deux notes {note1} et {note2} est: {moyenne}")
+```
+
+#### Affichage soigné des résultats numériques
+
+EXEMPLE AVEC ALGO SCIENTIFIQUE
+
+## Traduction de l’algorithme en code Python
+
+**Un algorithme**, c’est une suite d’instructions claires pour résoudre un problème.
+
+### Cas concret
+
+Écrire un programme qui calcule la force d'un objet à l'aide de la formule `F = m x a` où `m` est la masse de l'objet et `a` l'accélération.
+Le programme doit demander à l'utilisateur d'entrer au clavier la masse et l'accélération.
+À la fin, le programme affiche le résultat de la force.
+
+#### L'algorithme (en français) :
+
+> 1. Demander la masse d’un objet
+> 2. Demander l’accélération
+> 3. Calculer la force avec la formule `F = m × a`
+> 4. Afficher la force
+
+#### Traduction en Python :
+
+```python
+masse = float(input("Entrez la masse (kg) : "))
+acceleration = float(input("Entrez l'accélération (m/s²) : "))
+force = masse * acceleration
+print("La force est", force, "N")
+```
+
+> Astuce : chaque ligne de l’algorithme devient une ou plusieurs lignes de code.
+
+
+## Débogage
+
+**Déboguer**, c’est trouver et corriger les erreurs dans le code.
+
+### Types d’erreurs fréquentes :
+
+| Type d’erreur      | Exemple                                      | Solution                             |
+| ------------------ | -------------------------------------------- | ------------------------------------ |
+| Erreur de syntaxe  | `print("Bonjour'`                            | Corriger la fermeture des guillemets |
+| Erreur d’exécution | `valeur = int("abc")`                        | Vérifier le type des entrées         |
+| Erreur logique     | `aire = longueur + largeur` (au lieu de `*`) | Vérifier la formule                  |
+
+### Exemples à tester (à copier dans VS Code) :
+
+#### Exemple 1 – Erreur de syntaxe
+
+```python
+print("Début du programme)
+```
+
+> Que dit le message d'erreur ?
+> Corrige la ligne.
+
+#### Exemple 2 – Erreur d’exécution
+
+```python
+val = int("bonjour")
+```
+
+> Quelle est la cause de l’erreur ?
+> Remplace `"bonjour"` par `"12"`.
+
+#### Exemple 3 – Erreur logique
+
+```python
+longueur = 5
+largeur = 2
+aire = longueur + largeur  # erreur de formule
+print("Aire =", aire)
+```
+
+> Est-ce que le résultat est correct ?
+> Corrige la formule avec `*` au lieu de `+`.
+
+### Astuces pour déboguer :
+
+* Lire le message d’erreur affiché
+* Ajouter des **print()** pour suivre les valeurs
+* Tester une ligne à la fois
+* Vérifier les types avec type()
+
+### Exemples concrets
+
+**Message d'erreur affiché**
+
+**Utilisation de print()**
+
+**Exploration des variables, ligne par ligne**
+
+## Utilisation de fonctions prédéfinies
+
+Python offre déjà plein de **fonctions toutes prêtes** (*prédéfinies*).
+
+### Exemples utiles :
+
+| Fonction  | Utilité                                 | Exemple                         |
+| --------- | --------------------------------------- | ------------------------------- |
+| `print()` | Afficher un message                     | `print("Bonjour !")`            |
+| `input()` | Demander une donnée à l’utilisateur     | `nom = input("Votre nom :")`    |
+| `int()`   | Convertir en entier                     | `val = int("5")`                |
+| `float()` | Convertir en nombre décimal             | `val = float("3.14")`           |
+| `round()` | Arrondir un nombre                      | `round(2.718, 2)` → `2.72`      |
+| `len()`   | Compter les éléments d’une chaîne/liste | `len("atomes")` → `6`           |
+| `type()`  | Afficher le type d’une variable         | `type(3.5)` → `<class 'float'>` |
+
+> On **appelle** une fonction en écrivant son nom suivi de parenthèses.
+
+### Fonctions du module `math`
+
+Pour accéder à des fonctions mathématiques plus avancées, on utilise le **module `math`**.
+
+```python
+import math
+```
+
+| Fonction         | Description        | Exemple                         |
+| ---------------- | ------------------ | ------------------------------- |
+| `math.sqrt(x)`   | Racine carrée      | `math.sqrt(16)` → `4.0`         |
+| `math.pow(x, y)` | Puissance          | `math.pow(2, 3)` → `8.0`        |
+| `math.pi`        | La constante π     | `math.pi` → `3.14159...`        |
+| `math.sin(x)`    | Sinus (en radians) | `math.sin(math.pi / 2)` → `1.0` |
+| `math.log(x)`    | Logarithme naturel | `math.log(10)`                  |
+
+### Exercices à faire :
+
+a) Écrire l'algorithme correspondant au code ci-dessous :
+
+```python
+import math
+
+r = float(input("Entrez le rayon du cercle : "))
+aire = math.pi * math.pow(r, 2)
+print("Aire du cercle :", round(aire, 2), "unités²")
+```
+
+
+b) Traduisez l’algorithme suivant en code Python :
+
+> 1. Demander le nom d’un élément chimique
+> 2. Afficher un message disant "L’élément choisi est \[nom]"
+
+{{% notice style="cyan" title="À retenir" %}}
+* `input()` permet de lire une donnée (toujours une chaîne).
+* Il faut convertir avec `int()` ou `float()` pour faire des calculs.
+* `print()` permet d'afficher une réponse, seule ou avec du texte et .
+{{% /notice %}}

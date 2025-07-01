@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs de la séance Apprendre à arrêter une boucle selon une condition. Apprendre à créer et manipuler une liste. Apprendre à parcourir des listes ou des chaînes de caractères avec la boucle for. Partie 1 – Arrêter une boucle selon une condition Explication Une boucle while ou for continue tant qu’une condition est vraie. On peut aussi utiliser break pour arrêter manuellement une boucle. Démonstration : boucle while valeur = 0 while valeur &lt; 100: print(&#34;Valeur actuelle :&#34;, valeur) if valeur == 50: break # Arrête la boucle valeur &#43;= 1Démonstration : boucle for for i in range(11):	# i prends les valeurs 0,1,2,3,4,5,6,7,8,9,10 if i == 5: break	# Arrête la boucle print(i) # Affiche: 0, 1, 2, 3, 4Exercice 1 Demander à l’utilisateur de saisir des températures (float).">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="break, continue, liste et boucle :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs de la séance Apprendre à arrêter une boucle selon une condition. Apprendre à créer et manipuler une liste. Apprendre à parcourir des listes ou des chaînes de caractères avec la boucle for. Partie 1 – Arrêter une boucle selon une condition Explication Une boucle while ou for continue tant qu’une condition est vraie. On peut aussi utiliser break pour arrêter manuellement une boucle. Démonstration : boucle while valeur = 0 while valeur &lt; 100: print(&#34;Valeur actuelle :&#34;, valeur) if valeur == 50: break # Arrête la boucle valeur &#43;= 1Démonstration : boucle for for i in range(11):	# i prends les valeurs 0,1,2,3,4,5,6,7,8,9,10 if i == 5: break	# Arrête la boucle print(i) # Affiche: 0, 1, 2, 3, 4Exercice 1 Demander à l’utilisateur de saisir des températures (float).">
+    <meta property="og:url" content="http://localhost:1313/afaire/break_continue_liste/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="break, continue, liste et boucle :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs de la séance Apprendre à arrêter une boucle selon une condition. Apprendre à créer et manipuler une liste. Apprendre à parcourir des listes ou des chaînes de caractères avec la boucle for. Partie 1 – Arrêter une boucle selon une condition Explication Une boucle while ou for continue tant qu’une condition est vraie. On peut aussi utiliser break pour arrêter manuellement une boucle. Démonstration : boucle while valeur = 0 while valeur &lt; 100: print(&#34;Valeur actuelle :&#34;, valeur) if valeur == 50: break # Arrête la boucle valeur &#43;= 1Démonstration : boucle for for i in range(11):	# i prends les valeurs 0,1,2,3,4,5,6,7,8,9,10 if i == 5: break	# Arrête la boucle print(i) # Affiche: 0, 1, 2, 3, 4Exercice 1 Demander à l’utilisateur de saisir des températures (float).">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="À FAIRE">
+    <meta itemprop="name" content="break, continue, liste et boucle :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs de la séance Apprendre à arrêter une boucle selon une condition. Apprendre à créer et manipuler une liste. Apprendre à parcourir des listes ou des chaînes de caractères avec la boucle for. Partie 1 – Arrêter une boucle selon une condition Explication Une boucle while ou for continue tant qu’une condition est vraie. On peut aussi utiliser break pour arrêter manuellement une boucle. Démonstration : boucle while valeur = 0 while valeur &lt; 100: print(&#34;Valeur actuelle :&#34;, valeur) if valeur == 50: break # Arrête la boucle valeur &#43;= 1Démonstration : boucle for for i in range(11):	# i prends les valeurs 0,1,2,3,4,5,6,7,8,9,10 if i == 5: break	# Arrête la boucle print(i) # Affiche: 0, 1, 2, 3, 4Exercice 1 Demander à l’utilisateur de saisir des températures (float).">
+    <meta itemprop="wordCount" content="808">
+    <title>break, continue, liste et boucle :: 420-SN1-RE</title>
+    <link href="/images/logo.png?1751401527" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751401527" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751401527" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751401527" rel="stylesheet">
+    <link href="/css/theme.css?1751401527" rel="stylesheet">
+    <link href="/css/format-html.css?1751401527" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1751401527" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1751401527" defer></script>
+    <script src="/js/search.js?1751401527" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/afaire\/break_continue_liste\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1751401527";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/afaire/break_continue_liste/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs-de-la-séance">Objectifs de la séance</a></li>
+    <li><a href="#partie-1--arrêter-une-boucle-selon-une-condition">Partie 1 – Arrêter une boucle selon une condition</a>
+      <ul>
+        <li><a href="#explication">Explication</a></li>
+        <li><a href="#démonstration--boucle-while">Démonstration : boucle <code>while</code></a></li>
+        <li><a href="#démonstration--boucle-for">Démonstration : boucle <code>for</code></a></li>
+        <li><a href="#exercice-1">Exercice 1</a></li>
+      </ul>
+    </li>
+    <li><a href="#partie-2--créer-et-manipuler-une-liste">Partie 2 – Créer et manipuler une liste</a>
+      <ul>
+        <li><a href="#explication-1">Explication</a></li>
+        <li><a href="#démonstration--création-et-accès">Démonstration : création et accès</a></li>
+        <li><a href="#démonstration--opérations-utiles">Démonstration : opérations utiles</a></li>
+        <li><a href="#exercice-2">Exercice 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#partie-3--parcourir-une-liste-ou-une-chaîne-avec-la-boucle-for">Partie 3 – Parcourir une liste ou une chaîne avec la boucle <code>for</code></a>
+      <ul>
+        <li><a href="#explication-2">Explication</a></li>
+        <li><a href="#démonstration-5--liste">Démonstration 5 : liste</a></li>
+        <li><a href="#démonstration--chaîne-de-caractères">Démonstration : chaîne de caractères</a></li>
+        <li><a href="#exercice-3">Exercice 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#exercices-dintégration">Exercices d&rsquo;intégration</a>
+      <ul>
+        <li><a href="#exercice-4">Exercice 4</a></li>
+        <li><a href="#solution-attendue-exemple-guidé"><strong>Solution attendue (exemple guidé)</strong></a></li>
+        <li><a href="#exercice-5">Exercice 5</a></li>
+        <li><a href="#exercice-6">Exercice 6</a></li>
+        <li><a href="#indices"><strong>Indices</strong></a></li>
+        <li><a href="#solution-attendue-exemple-guidé-1"><strong>Solution attendue (exemple guidé)</strong></a></li>
+        <li><a href="#variante-possible">Variante possible</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/afaire/index.html"><span itemprop="name">À FAIRE</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">break, continue, liste et boucle</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/afaire/plan/index.html" title="Planification (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/afaire/debogage/index.html" title="Débogage pas à pas (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable afaire" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="break-continue-liste-et-boucle">break, continue, liste et boucle</h1>
+
+<h2 id="objectifs-de-la-séance">Objectifs de la séance</h2>
+<ol>
+<li>Apprendre à <strong>arrêter une boucle</strong> selon une condition.</li>
+<li>Apprendre à <strong>créer et manipuler une liste</strong>.</li>
+<li>Apprendre à <strong>parcourir des listes ou des chaînes de caractères avec la boucle <code>for</code></strong>.</li>
+</ol>
+<hr>
+<h2 id="partie-1--arrêter-une-boucle-selon-une-condition">Partie 1 – Arrêter une boucle selon une condition</h2>
+<h3 id="explication">Explication</h3>
+<ul>
+<li>Une boucle <code>while</code> ou <code>for</code> continue tant qu&rsquo;une condition est vraie. On peut aussi utiliser <code>break</code> pour arrêter manuellement une boucle.</li>
+</ul>
+<h3 id="démonstration--boucle-while">Démonstration : boucle <code>while</code></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>valeur <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> valeur <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Valeur actuelle :&#34;</span>, valeur)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> valeur <span style="color:#f92672">==</span> <span style="color:#ae81ff">50</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>  		<span style="color:#75715e"># Arrête la boucle</span>
+</span></span><span style="display:flex;"><span>    valeur <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div>
+<h3 id="démonstration--boucle-for">Démonstration : boucle <code>for</code></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">11</span>):	<span style="color:#75715e"># i prends les valeurs 0,1,2,3,4,5,6,7,8,9,10</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>		<span style="color:#75715e"># Arrête la boucle</span>
+</span></span><span style="display:flex;"><span>    print(i)    	<span style="color:#75715e"># Affiche: 0, 1, 2, 3, 4</span></span></span></code></pre></div>
+<h3 id="exercice-1">Exercice 1</h3>
+<ul>
+<li>Demander à l’utilisateur de saisir des températures (float).</li>
+<li>La boucle s’arrête dès qu’on entre la valeur 0 (valeur sentinelle).</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Saisie de températures</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:		<span style="color:#75715e"># Toujours Vrai, pratique ici, mais à éviter</span>
+</span></span><span style="display:flex;"><span>    temp <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez une température (ou 0 pour arrêter) : &#34;</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> temp <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Arrêt de la saisie.&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span></span></span></code></pre></div>
+<hr>
+<h2 id="partie-2--créer-et-manipuler-une-liste">Partie 2 – Créer et manipuler une liste</h2>
+<h3 id="explication-1">Explication</h3>
+<ul>
+<li>Une <strong>liste</strong> permet de stocker plusieurs éléments (nombres, chaînes, etc.) dans une seule variable.</li>
+<li>Dans une liste les éléments sont indexés à partir de 0, ce qui signifie que le premier élément d&rsquo;une liste et à l&rsquo;indice 0.</li>
+<li>Pour accéder à un élément d&rsquo;une liste on utilise: <code>nom-de-la-liste[index]</code>.
+<ul>
+<li>Exemple: Pour accéder au <strong>3e élément</strong> d&rsquo;une liste nommée <code>ma_liste</code>, on écrit: <code>ma_liste[2]</code>. <code>2</code> étant l&rsquo;indice du 3e élément.</li>
+</ul>
+</li>
+</ul>
+<h3 id="démonstration--création-et-accès">Démonstration : création et accès</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;pomme&#34;</span>, <span style="color:#e6db74">&#34;banane&#34;</span>, <span style="color:#e6db74">&#34;kiwi&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(fruits[<span style="color:#ae81ff">0</span>])  		<span style="color:#75715e"># Affiche &#39;pomme&#39;</span>
+</span></span><span style="display:flex;"><span>fruits<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#34;mangue&#34;</span>)		<span style="color:#75715e"># Ajoute &#39;mangue&#39; à la fin</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(fruits)     		<span style="color:#75715e"># Ajoute un élément</span></span></span></code></pre></div>
+<h3 id="démonstration--opérations-utiles">Démonstration : opérations utiles</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>notes <span style="color:#f92672">=</span> [<span style="color:#ae81ff">85</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">78</span>, <span style="color:#ae81ff">92</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Nombre de notes :&#34;</span>, len(notes))		<span style="color:#75715e"># Affiche le nombre d&#39;éléments dans la liste &#34;notes&#34;</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Somme :&#34;</span>, sum(notes))			<span style="color:#75715e"># Affiche la somme des notes dans la liste</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Moyenne :&#34;</span>, sum(notes) <span style="color:#f92672">/</span> len(notes))	<span style="color:#75715e"># Affiche la moyenne des notes dans la liste</span></span></span></code></pre></div>
+<ul>
+<li>La fonction <code>len</code> donne la longueur d&rsquo;une liste ou d&rsquo;une chaine de caractères.</li>
+</ul>
+<h3 id="exercice-2">Exercice 2</h3>
+<ul>
+<li>Créer une liste de pH mesurés dans différents échantillons et calculer la moyenne.</li>
+<li>Afficher un message si un pH est inférieur à 4.</li>
+</ul>
+<hr>
+<h2 id="partie-3--parcourir-une-liste-ou-une-chaîne-avec-la-boucle-for">Partie 3 – Parcourir une liste ou une chaîne avec la boucle <code>for</code></h2>
+<h3 id="explication-2">Explication</h3>
+<ul>
+<li>La boucle <code>for</code> permet de <strong>parcourir</strong> une liste ou une chaîne de caractères <strong>élément par élément</strong>.</li>
+</ul>
+<h3 id="démonstration-5--liste">Démonstration 5 : liste</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>vitesses <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10.2</span>, <span style="color:#ae81ff">11.5</span>, <span style="color:#ae81ff">9.8</span>, <span style="color:#ae81ff">12.0</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> v <span style="color:#f92672">in</span> vitesses:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Vitesse :&#34;</span>, v)</span></span></code></pre></div>
+<h3 id="démonstration--chaîne-de-caractères">Démonstration : chaîne de caractères</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mot <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;glucose&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> lettre <span style="color:#f92672">in</span> mot:
+</span></span><span style="display:flex;"><span>    print(lettre)</span></span></code></pre></div>
+<h3 id="exercice-3">Exercice 3</h3>
+<p>Demander de :</p>
+<ul>
+<li>Créer une liste de volumes en mL.</li>
+<li>Convertir chaque volume en L (1 L = 1000 mL) et afficher les conversions avec une boucle <code>for</code>.</li>
+</ul>
+<hr>
+<h2 id="exercices-dintégration">Exercices d&rsquo;intégration</h2>
+<h3 id="exercice-4">Exercice 4</h3>
+<p>On a mesuré la concentration d’un soluté (en g/L) à 6 moments différents. La boucle :</p>
+<ul>
+<li>Affiche chaque concentration</li>
+<li>Affiche un message d’alerte si &gt; 20 g/L</li>
+<li>Calcule la moyenne à la fin</li>
+</ul>
+<h3 id="solution-attendue-exemple-guidé"><strong>Solution attendue (exemple guidé)</strong></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>concentrations <span style="color:#f92672">=</span> [<span style="color:#ae81ff">12.5</span>, <span style="color:#ae81ff">18.0</span>, <span style="color:#ae81ff">22.3</span>, <span style="color:#ae81ff">19.5</span>, <span style="color:#ae81ff">21.0</span>, <span style="color:#ae81ff">15.7</span>]
+</span></span><span style="display:flex;"><span>somme <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> concentrations:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Concentration :&#34;</span>, c)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> c <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">20</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Attention : concentration élevée !&#34;</span>)
+</span></span><span style="display:flex;"><span>    somme <span style="color:#f92672">+=</span> c
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> somme <span style="color:#f92672">/</span> len(concentrations)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Moyenne :&#34;</span>, moyenne)</span></span></code></pre></div>
+<h3 id="exercice-5">Exercice 5</h3>
+<ul>
+<li>Écrire une fonction qui prend une liste de températures et retourne la température maximale et sa position
+<ul>
+<li>Exemple de nom de fonction: <code>temperature_max(une_liste)</code></li>
+<li>Exemple d&rsquo;utilisation de la fonction:</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">34</span>,<span style="color:#ae81ff">23</span>,<span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">31</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">20</span>]
+</span></span><span style="display:flex;"><span>temp_max <span style="color:#f92672">=</span> temperature_max(liste)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La température maximum est&#34;</span>, temp_max)</span></span></code></pre></div>
+</li>
+</ul>
+<h3 id="exercice-6">Exercice 6</h3>
+<ul>
+<li>On vous donne une séquence d’ADN représentée par une chaîne de caractères composée uniquement des lettres <code>A</code>, <code>T</code>, <code>C</code> et <code>G</code>. Par exemple :</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sequence <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ATGCGCATTAAGGCCGTA&#34;</span></span></span></code></pre></div>
+<ol>
+<li>Parcourez la séquence avec une boucle <code>for</code>.</li>
+<li>Comptez le nombre de bases <code>A</code>, <code>T</code>, <code>C</code> et <code>G</code>.</li>
+<li>Affichez le nombre total de bases.</li>
+<li>Affichez le pourcentage de <strong>G+C</strong> dans la séquence.</li>
+</ol>
+<h3 id="indices"><strong>Indices</strong></h3>
+<ul>
+<li>Une lettre dans une chaîne peut être parcourue avec une boucle <code>for</code>.</li>
+<li>Pour augmenter un compteur, on peut faire : <code>compteur += 1</code></li>
+<li>Calcul du pourcentage :</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Pourcentage de G+C = (nombre de G + nombre de C) / nombre total de bases * 100</code></pre></div>
+<hr>
+<h3 id="solution-attendue-exemple-guidé-1"><strong>Solution attendue (exemple guidé)</strong></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sequence <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ATGCGCATTAAGGCCGTA&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nb_A <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>nb_T <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>nb_C <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>nb_G <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> base <span style="color:#f92672">in</span> sequence:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> base <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;A&#39;</span>:
+</span></span><span style="display:flex;"><span>        nb_A <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> base <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;T&#39;</span>:
+</span></span><span style="display:flex;"><span>        nb_T <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> base <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;C&#39;</span>:
+</span></span><span style="display:flex;"><span>        nb_C <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> base <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;G&#39;</span>:
+</span></span><span style="display:flex;"><span>        nb_G <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>total <span style="color:#f92672">=</span> len(sequence)
+</span></span><span style="display:flex;"><span>gc_content <span style="color:#f92672">=</span> ((nb_G <span style="color:#f92672">+</span> nb_C) <span style="color:#f92672">/</span> total) <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;A :&#34;</span>, nb_A)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;T :&#34;</span>, nb_T)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;C :&#34;</span>, nb_C)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;G :&#34;</span>, nb_G)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Total :&#34;</span>, total)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Pourcentage de G+C :&#34;</span>, round(gc_content, <span style="color:#ae81ff">2</span>), <span style="color:#e6db74">&#34;%&#34;</span>)</span></span></code></pre></div>
+<hr>
+<h3 id="variante-possible">Variante possible</h3>
+<ul>
+<li>Ajouter une vérification : si une base <strong>n’est pas</strong> A, T, C ou G, afficher un message d’erreur.</li>
+<li>Compter les codons (groupes de 3 bases) avec une boucle <code>for</code> allant de 0 à <code>len(sequence)-3</code> par pas de 3.</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
+            <li class="" data-nav-id="/environnement_travail/index.html"><a class="padding" href="/environnement_travail/index.html">L&#39;environnement de travail</a><ul id="R-subsections-778a4ef1cb285be699e264e0f36c1129" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Évaluation 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Évaluation 2 (20%)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Astuces et réponses aux questions fréquentes</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu">
+            <li class="" data-nav-id="/afaire/boucles/index.html"><a class="padding" href="/afaire/boucles/index.html">Boucles while et for</a></li>
+            <li class="" data-nav-id="/afaire/fonctions/index.html"><a class="padding" href="/afaire/fonctions/index.html">Fonctions personnalisées, docstring et test unitaires et Maths</a></li>
+            <li class="" data-nav-id="/afaire/plan/index.html"><a class="padding" href="/afaire/plan/index.html">Planification</a></li>
+            <li class="active " data-nav-id="/afaire/break_continue_liste/index.html"><a class="padding" href="/afaire/break_continue_liste/index.html">break, continue, liste et boucle</a></li>
+            <li class="" data-nav-id="/afaire/debogage/index.html"><a class="padding" href="/afaire/debogage/index.html">Débogage pas à pas</a></li>
+            <li class="" data-nav-id="/afaire/lecture_ecriture_csv_numpy/index.html"><a class="padding" href="/afaire/lecture_ecriture_csv_numpy/index.html">L’écriture et la lecture de données (csv)</a></li>
+            <li class="" data-nav-id="/afaire/boucler_tableaux2d/index.html"><a class="padding" href="/afaire/boucler_tableaux2d/index.html">Boucler sur un tableau 2D</a></li>
+            <li class="" data-nav-id="/afaire/maths/index.html"><a class="padding" href="/afaire/maths/index.html">Maths secondaire 3</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1751401527" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751401527" defer></script>
+    <script src="/js/theme.js?1751401527" defer></script>
+  </body>
+</html>

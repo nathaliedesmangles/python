@@ -1,126 +1,201 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/regles/index.html</loc>
+    <loc>http://localhost:1313/afaire/boucles/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine1/index.html</loc>
+    <loc>http://localhost:1313/afaire/fonctions/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine1/onedrive/index.html</loc>
+    <loc>http://localhost:1313/afaire/plan/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine1/vscodejupyter/index.html</loc>
+    <loc>http://localhost:1313/regles/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine1/atelier/index.html</loc>
+    <loc>http://localhost:1313/afaire/break_continue_liste/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine2/index.html</loc>
+    <loc>http://localhost:1313/afaire/debogage/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine2/atelier/at1/index.html</loc>
+    <loc>http://localhost:1313/afaire/lecture_ecriture_csv_numpy/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine2/atelier/at2/index.html</loc>
+    <loc>http://localhost:1313/afaire/boucler_tableaux2d/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine3/index.html</loc>
+    <loc>http://localhost:1313/environnement_travail/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine3/atelier/index.html</loc>
+    <loc>http://localhost:1313/semaine1/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine4/index.html</loc>
+    <loc>http://localhost:1313/environnement_travail/prise-en-main-de-loutil-informatique/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine4/atelier/index.html</loc>
+    <loc>http://localhost:1313/environnement_travail/systeme_de_fichiers/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine5/index.html</loc>
+    <loc>http://localhost:1313/semaine1/onedrive/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine5/atelier/index.html</loc>
+    <loc>http://localhost:1313/semaine1/vscodejupyter/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/index.html</loc>
+    <loc>http://localhost:1313/semaine1/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/atelier/index.html</loc>
+    <loc>http://localhost:1313/environnement_travail/sauvegarde_vscode/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine7/index.html</loc>
+    <loc>http://localhost:1313/environnement_travail/jupyter/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine8/index.html</loc>
+    <loc>http://localhost:1313/environnement_travail/trucs_pratiques/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine8/atelier/index.html</loc>
+    <loc>http://localhost:1313/environnement_travail/vs-code/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine9/index.html</loc>
+    <loc>http://localhost:1313/environnement_travail/markdown/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine9/atelier/index.html</loc>
+    <loc>http://localhost:1313/semaine2/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine10/index.html</loc>
+    <loc>http://localhost:1313/semaine2/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine10/atelier/index.html</loc>
+    <loc>http://localhost:1313/semaine3/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine11/index.html</loc>
+    <loc>http://localhost:1313/semaine3/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine11/atelier/index.html</loc>
+    <loc>http://localhost:1313/semaine4/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine12/index.html</loc>
+    <loc>http://localhost:1313/semaine4/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/index.html</loc>
+    <loc>http://localhost:1313/semaine4/atelier/solution/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/projet1/index.html</loc>
+    <loc>http://localhost:1313/semaine5/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/projet2/index.html</loc>
+    <loc>http://localhost:1313/semaine6/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/projet3/index.html</loc>
+    <loc>http://localhost:1313/semaine6/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/projet4/index.html</loc>
+    <loc>http://localhost:1313/semaine6/atelier/solution/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine14/index.html</loc>
+    <loc>http://localhost:1313/semaine7/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine15/index.html</loc>
+    <loc>http://localhost:1313/semaine7/dictionnaires/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/alternatives/index.html</loc>
+    <loc>http://localhost:1313/semaine7/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/alternatives/google-colab/index.html</loc>
+    <loc>http://localhost:1313/semaine8/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/alternatives/pycharm/index.html</loc>
+    <loc>http://localhost:1313/semaine8/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/afaire/index.html</loc>
+    <loc>http://localhost:1313/semaine9/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/categories/index.html</loc>
+    <loc>http://localhost:1313/semaine9/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/afaire/maths/index.html</loc>
+    <loc>http://localhost:1313/semaine10/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/index.html</loc>
+    <loc>http://localhost:1313/semaine10/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/tags/index.html</loc>
+    <loc>http://localhost:1313/semaine11/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/semaine11/atelier/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/semaine12/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/semaine13/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/semaine13/projet1/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/semaine13/projet2/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/semaine13/projet3/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/semaine13/projet4/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/semaine14/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/semaine15/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/alternatives/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/alternatives/google-colab/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/alternatives/pycharm/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/sauvegarde_auto/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/raccourcis_clavier/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/touches_speciales/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/locaux_python/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/environnement_travail/vs-code/deboggueur/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/environnement_travail/vs-code/sauvegarge-automatique/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/environnement_travail/vs-code/vs-code-jupyter/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/afaire/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/categories/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/afaire/maths/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/index.html</loc>
   </url>
 </urlset>

@@ -1,11 +1,11 @@
 +++
-title = "maths"
+title = "Maths secondaire 3"
 weight = 0
 +++
 
 ---
 
-### 🎯 Problème : Probabilité que la fléchette atteigne la **zone blanche**
+### Problème : Probabilité que la fléchette atteigne la **zone blanche**
 
 #### Structure de la cible :
 
@@ -40,7 +40,7 @@ Donc :
 
 ---
 
-### ✅ Réponse finale :
+### Réponse finale :
 
 La probabilité que la fléchette atteigne la zone blanche est :
 

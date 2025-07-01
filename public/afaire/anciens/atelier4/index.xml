@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://localhost:1313/afaire/anciens/atelier4/index.html</link>
+    <description>Une expérience consiste à mesurer la température (°C) d’un liquide chaque minute pendant 10 minutes.&#xA;Voici les données recueillies : [20.1, 21.3, 22.0, 22.5, 23.1, 23.7, 24.0, 24.2, 24.5, 24.7]&#xA;Tâches demandées Afficher chaque température avec la minute correspondante.&#xA;Exemple : Minute 1 : 20.1 °C Calculer la variation moyenne de température par minute.&#xA;Détecter les anomalies : afficher un message si une variation dépasse 1 °C par minute.&#xA;(Optionnel, si le temps le permet) Comparer avec un seuil théorique (24.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/afaire/anciens/atelier4/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -3,14 +3,10 @@ title = "Programmation en sciences"
 type = "home"
 +++
 
+![Python](./py.jpeg?width=30vw)
 
-### Pondération : 1-2-3
 
-### Durée par semaine : 2h40
- - ~50 min théorie 
- - ~1h50 pratique
-
-### Description du cours
+## Description du cours
 
 Ce cours permet de se familiariser avec la programmation informatique dans un contexte scientifique et de faire le lien entre les technologies et le domaine des sciences.
 
@@ -26,12 +22,12 @@ L’élève est introduit à la résolution de problèmes à l’aide d’algori
 - Comprendre la gestion des fichiers et dossiers sous Windows
 - Introduire les techniques de débogage et de traçage d'exécution
 
-## Évaluations
+## Planification du cours et règlements du cégep
 
-### Évaluations formatives
-- Ateliers hebdomadaires
+[Plan du cours](./A25_420-SN1-RE_ND.pdf)
 
-### Évaluations sommatives
-- Examen 1 (30%, semaine 7)
-- Examen 2 (30%, semaine 12)
-- Projet final (40%, semaines 13 à 15)
+
+## Évaluation intégratrice
+
+- Projet: Simulation scientifique (20%)
+- Examen: Question sur la simulation (20%)

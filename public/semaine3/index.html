@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :
-Écrire des instructions conditionnelles en Python Utiliser if, elif et else pour gérer plusieurs cas Évaluer des expressions logiques avec les opérateurs de comparaison (==, !=, &lt;, &gt;, &lt;=, &gt;=) Combiner plusieurs conditions avec les opérateurs logiques (and, or, not) Pourquoi des conditions ? Un programme prend souvent des décisions :
-S’il fait moins de 0 °C, l’eau gèle.">
+    <meta name="description" content="Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Utiliser des fonctions prédéfinies (ex: Module math) Définir ses propres fonctions. Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Prendre des décisions avec `if`, `elif`, `else` :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :
-Écrire des instructions conditionnelles en Python Utiliser if, elif et else pour gérer plusieurs cas Évaluer des expressions logiques avec les opérateurs de comparaison (==, !=, &lt;, &gt;, &lt;=, &gt;=) Combiner plusieurs conditions avec les opérateurs logiques (and, or, not) Pourquoi des conditions ? Un programme prend souvent des décisions :
-S’il fait moins de 0 °C, l’eau gèle.">
-    <meta property="og:url" content="https://example.org/semaine3/index.html">
+    <meta name="twitter:title" content="Entrées/Sorties, Algorithme, débogage et fonctions :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Utiliser des fonctions prédéfinies (ex: Module math) Définir ses propres fonctions. Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :">
+    <meta property="og:url" content="http://localhost:1313/semaine3/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content="Prendre des décisions avec `if`, `elif`, `else` :: 420-SN1-RE">
-    <meta property="og:description" content="Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :
-Écrire des instructions conditionnelles en Python Utiliser if, elif et else pour gérer plusieurs cas Évaluer des expressions logiques avec les opérateurs de comparaison (==, !=, &lt;, &gt;, &lt;=, &gt;=) Combiner plusieurs conditions avec les opérateurs logiques (and, or, not) Pourquoi des conditions ? Un programme prend souvent des décisions :
-S’il fait moins de 0 °C, l’eau gèle.">
+    <meta property="og:title" content="Entrées/Sorties, Algorithme, débogage et fonctions :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Utiliser des fonctions prédéfinies (ex: Module math) Définir ses propres fonctions. Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="Prendre des décisions avec `if`, `elif`, `else` :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :
-Écrire des instructions conditionnelles en Python Utiliser if, elif et else pour gérer plusieurs cas Évaluer des expressions logiques avec les opérateurs de comparaison (==, !=, &lt;, &gt;, &lt;=, &gt;=) Combiner plusieurs conditions avec les opérateurs logiques (and, or, not) Pourquoi des conditions ? Un programme prend souvent des décisions :
-S’il fait moins de 0 °C, l’eau gèle.">
-    <meta itemprop="wordCount" content="414">
-    <title>Prendre des décisions avec `if`, `elif`, `else` :: 420-SN1-RE</title>
-    <link href="/semaine3/index.xml" rel="alternate" type="application/rss+xml" title="Prendre des décisions avec `if`, `elif`, `else` :: 420-SN1-RE">
-    <link href="/images/logo.png?1749231934" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1749231934" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1749231934" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1749231934" rel="stylesheet">
-    <link href="/css/theme.min.css?1749231934" rel="stylesheet">
-    <link href="/css/format-html.min.css?1749231934" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1749231934" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1749231934" defer></script>
-    <script src="/js/lunr/lunr.min.js?1749231934" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1749231934" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1749231934" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1749231934" defer></script>
-    <script src="/js/search.min.js?1749231934" defer></script>
+    <meta itemprop="name" content="Entrées/Sorties, Algorithme, débogage et fonctions :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Utiliser des fonctions prédéfinies (ex: Module math) Définir ses propres fonctions. Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :">
+    <meta itemprop="wordCount" content="847">
+    <title>Entrées/Sorties, Algorithme, débogage et fonctions :: 420-SN1-RE</title>
+    <link href="/semaine3/index.xml" rel="alternate" type="application/rss+xml" title="Entrées/Sorties, Algorithme, débogage et fonctions :: 420-SN1-RE">
+    <link href="/images/logo.png?1751401527" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751401527" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751401527" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751401527" rel="stylesheet">
+    <link href="/css/theme.css?1751401527" rel="stylesheet">
+    <link href="/css/format-html.css?1751401527" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1751401527" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1751401527" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1751401527" defer></script>
+    <script src="/js/search.js?1751401527" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/semaine3\/index.html';
       window.relearn.relBasePath='..';
       window.relearn.relBaseUri='..';
-      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1749231934";
+      window.relearn.index_js_url="/searchindex.en.js?1751401527";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -111,20 +103,34 @@ S’il fait moins de 0 °C, l’eau gèle.">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#objectifs-dapprentissage">Objectifs d&rsquo;apprentissage</a></li>
+    <li><a href="#lecture-conversion-et-affichage-soigné-des-données">Lecture, conversion et affichage soigné des données</a>
       <ul>
-        <li><a href="#objectifs-dapprentissage">Objectifs d’apprentissage</a></li>
+        <li><a href="#lire-une-donnée-au-clavier">Lire une donnée au clavier</a></li>
+        <li><a href="#convertir-les-données">Convertir les données</a></li>
+        <li><a href="#affichage-de-résultats">Affichage de résultats</a></li>
       </ul>
     </li>
-    <li><a href="#pourquoi-des-conditions-">Pourquoi des conditions ?</a></li>
-    <li><a href="#la-structure-if-de-base">La structure <code>if</code> de base</a></li>
-    <li><a href="#ajouter-un-cas-alternatif-avec-else">Ajouter un cas alternatif avec <code>else</code>**</a></li>
-    <li><a href="#gérer-plusieurs-cas-avec-elif">Gérer plusieurs cas avec <code>elif</code></a></li>
-    <li><a href="#opérateurs-de-comparaison-utiles">Opérateurs de comparaison utiles</a></li>
-    <li><a href="#combiner-les-conditions-avec-and-or-not">Combiner les conditions avec <code>and</code>, <code>or</code>, <code>not</code></a></li>
-    <li><a href="#application-scientifique-simple">Application scientifique simple</a></li>
-    <li><a href="#petits-exercices-pratiques">Petits exercices pratiques</a></li>
-    <li><a href="#pour-aller-plus-loin">Pour aller plus loin</a></li>
+    <li><a href="#traduction-de-lalgorithme-en-code-python">Traduction de l’algorithme en code Python</a>
+      <ul>
+        <li><a href="#cas-concret">Cas concret</a></li>
+      </ul>
+    </li>
+    <li><a href="#débogage">Débogage</a>
+      <ul>
+        <li><a href="#types-derreurs-fréquentes-">Types d’erreurs fréquentes :</a></li>
+        <li><a href="#exemples-à-tester-à-copier-dans-vs-code-">Exemples à tester (à copier dans VS Code) :</a></li>
+        <li><a href="#astuces-pour-déboguer-">Astuces pour déboguer :</a></li>
+        <li><a href="#exemples-concrets">Exemples concrets</a></li>
+      </ul>
+    </li>
+    <li><a href="#utilisation-de-fonctions-prédéfinies">Utilisation de fonctions prédéfinies</a>
+      <ul>
+        <li><a href="#exemples-utiles-">Exemples utiles :</a></li>
+        <li><a href="#fonctions-du-module-math">Fonctions du module <code>math</code></a></li>
+        <li><a href="#exercices-à-faire-">Exercices à faire :</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 </div>
@@ -133,12 +139,12 @@ S’il fait moins de 0 °C, l’eau gèle.">
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Prendre des décisions avec `if`, `elif`, `else`</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Entrées/Sorties, Algorithme, débogage et fonctions</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine2/atelier/at2/index.html" title="Activité 2.2 – Calculs de concentrations et vitesses de réaction (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine2/atelier/index.html" title="Atelier 2 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine3/atelier/index.html" title="Activité 3 - État physique de l’eau selon la température et la pression (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine3/atelier/index.html" title="Atelier 3 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -158,123 +164,281 @@ S’il fait moins de 0 °C, l’eau gèle.">
   <header class="headline">
   </header>
 
-<h1 id="prendre-des-décisions-avec-if-elif-else">Prendre des décisions avec `if`, `elif`, `else`</h1>
+<h1 id="entréessorties-algorithme-débogage-et-fonctions">Entrées/Sorties, Algorithme, débogage et fonctions</h1>
 
-<h3 id="objectifs-dapprentissage">Objectifs d’apprentissage</h3>
-<p>À la fin de cette leçon, vous devrez être capable de :</p>
+<h2 id="objectifs-dapprentissage">Objectifs d&rsquo;apprentissage</h2>
 <ul>
-<li>Écrire des instructions conditionnelles en Python</li>
-<li>Utiliser <code>if</code>, <code>elif</code> et <code>else</code> pour gérer plusieurs cas</li>
-<li>Évaluer des expressions logiques avec les opérateurs de comparaison (<code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>)</li>
-<li>Combiner plusieurs conditions avec les opérateurs logiques (<code>and</code>, <code>or</code>, <code>not</code>)</li>
+<li>Gérer les entrées (<strong>saisies au clavier</strong>) et les sorties (<strong>affichage</strong>) d&rsquo;un programme Python.
+<ul>
+<li>Lire des données entrées par l’utilisateur.</li>
+</ul>
+</li>
+<li>Comprendre le rôle d&rsquo;un algorithme.</li>
+<li>Écrire et traduire des algorithmes simples en python.</li>
+<li>Apprendre à comprendre les messages d&rsquo;erreurs et à déboguer un programme</li>
+<li>Utiliser des fonctions prédéfinies (ex: Module math)</li>
+<li>Définir ses propres fonctions.</li>
 </ul>
 <hr>
-<h2 id="pourquoi-des-conditions-">Pourquoi des conditions ?</h2>
-<p>Un programme prend souvent des décisions :</p>
-<ul>
-<li>S’il fait moins de 0 °C, l’eau gèle.</li>
-<li>Si un patient a une température &gt; 38 °C, il a de la fièvre.</li>
-<li>Si la vitesse dépasse 120 km/h, une alarme est déclenchée.</li>
-</ul>
-<p>Ces situations sont modélisées avec des <strong>conditions</strong>.</p>
-<h2 id="la-structure-if-de-base">La structure <code>if</code> de base</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>
+<h2 id="lecture-conversion-et-affichage-soigné-des-données">Lecture, conversion et affichage soigné des données</h2>
+<h3 id="lire-une-donnée-au-clavier">Lire une donnée au clavier</h3>
+<p>La fonction <code>input()</code> permet de lire une donnée saisie au clavier :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Quel est ton nom ? &#34;</span>)</span></span></code></pre></div>
+<h3 id="convertir-les-données">Convertir les données</h3>
+<p>Les données entrées par <code>input()</code> sont <strong>toujours</strong> des chaînes (<code>str</code>). Il faut donc les <strong>convertir</strong> pour faire des calculs :</p>
+<p><strong>Exemple d&rsquo;erreur en cas d&rsquo;oubli de convertir</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>note1 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez la première note&#34;</span>)
+</span></span><span style="display:flex;"><span>note1 <span style="color:#f92672">=</span> note1	r
+</span></span><span style="display:flex;"><span>note2 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez la deuxième note&#34;</span>)
+</span></span><span style="display:flex;"><span>note2 <span style="color:#f92672">=</span> note2
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> temp <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;L&#39;eau est solide (glace).&#34;</span>)</span></span></code></pre></div>
-<p><strong>Rappel important :</strong> L’indentation (espaces ou tabulation) est <strong>obligatoire</strong> pour indiquer le bloc conditionnel.</p>
-<h2 id="ajouter-un-cas-alternatif-avec-else">Ajouter un cas alternatif avec <code>else</code>**</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> temp <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Glace&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Pas de glace&#34;</span>)</span></span></code></pre></div>
-<h2 id="gérer-plusieurs-cas-avec-elif">Gérer plusieurs cas avec <code>elif</code></h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> temp <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Solide (glace)&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> temp <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Liquide&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Gaz (vapeur)&#34;</span>)</span></span></code></pre></div>
-<p>Note : Python évalue les conditions <strong>dans l’ordre</strong>. Dès qu’une condition est vraie, il saute les suivantes.</p>
-<hr>
-<h2 id="opérateurs-de-comparaison-utiles">Opérateurs de comparaison utiles</h2>
+</span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> (note1 <span style="color:#f92672">+</span> note2) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>	<span style="color:#f92672">==&gt;</span> ERREUR</span></span></code></pre></div>
+<p>CAPTURE IMAGE ERREUR</p>
+<h4 id="comment-convertir-des-données-en-entier-int-ou-en-nombre-flottant-float">Comment convertir des données en entier (int) ou en nombre flottant (float)</h4>
 <table>
 <thead>
 <tr>
-<th>Opérateur</th>
-<th>Signification</th>
+<th>Fonction</th>
+<th>Conversion vers…</th>
 <th>Exemple</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>==</code></td>
-<td>égal à</td>
-<td><code>a == b</code></td>
+<td><code>int()</code></td>
+<td>entier</td>
+<td><code>int(&quot;5&quot;) → 5</code></td>
 </tr>
 <tr>
-<td><code>!=</code></td>
-<td>différent de</td>
-<td><code>a != b</code></td>
-</tr>
-<tr>
-<td><code>&lt;</code></td>
-<td>plus petit que</td>
-<td><code>a &lt; b</code></td>
-</tr>
-<tr>
-<td><code>&gt;</code></td>
-<td>plus grand que</td>
-<td><code>a &gt; b</code></td>
-</tr>
-<tr>
-<td><code>&lt;=</code></td>
-<td>inférieur ou égal</td>
-<td><code>a &lt;= b</code></td>
-</tr>
-<tr>
-<td><code>&gt;=</code></td>
-<td>supérieur ou égal</td>
-<td><code>a &gt;= b</code></td>
+<td><code>float()</code></td>
+<td>décimal</td>
+<td><code>float(&quot;3.14&quot;) → 3.14</code></td>
 </tr>
 </tbody>
 </table>
-<h2 id="combiner-les-conditions-avec-and-or-not">Combiner les conditions avec <code>and</code>, <code>or</code>, <code>not</code></h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>
-</span></span><span style="display:flex;"><span>pression <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>note1 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez la première note&#34;</span>)
+</span></span><span style="display:flex;"><span>note1 <span style="color:#f92672">=</span> int(note1)	<span style="color:#75715e"># conversion en entier</span>
+</span></span><span style="display:flex;"><span>note2 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez la deuxième note&#34;</span>)
+</span></span><span style="display:flex;"><span>note2 <span style="color:#f92672">=</span> int(note2)	<span style="color:#75715e"># conversion en entier</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> temp <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> temp <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;L’eau est liquide à pression normale.&#34;</span>)</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> temp <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">or</span> pression <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1.5</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Attention à l’ébullition !&#34;</span>)</span></span></code></pre></div>
-<hr>
-<h2 id="application-scientifique-simple">Application scientifique simple</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Température en °C : &#34;</span>))
+</span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> (note1 <span style="color:#f92672">+</span> note2) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span></span></span></code></pre></div>
+<h3 id="affichage-de-résultats">Affichage de résultats</h3>
+<p>On utilise <code>print()</code> pour afficher du texte et des valeurs.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>note1 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez la première note&#34;</span>)
+</span></span><span style="display:flex;"><span>note1 <span style="color:#f92672">=</span> int(note1)	<span style="color:#75715e"># conversion en entier</span>
+</span></span><span style="display:flex;"><span>note2 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez la deuxième note&#34;</span>)
+</span></span><span style="display:flex;"><span>note2 <span style="color:#f92672">=</span> int(note2)	<span style="color:#75715e"># conversion en entier</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> temp <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;L’eau est sous forme de glace.&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> temp <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;L’eau est liquide.&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;L’eau est sous forme de vapeur.&#34;</span>)</span></span></code></pre></div>
-<hr>
-<h2 id="petits-exercices-pratiques">Petits exercices pratiques</h2>
+</span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> (note1 <span style="color:#f92672">+</span> note2) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La moyenne des deux notes&#34;</span>, note1, <span style="color:#e6db74">&#34;et&#34;</span>, note2, <span style="color:#e6db74">&#34;est:&#34;</span>, moyenne)</span></span></code></pre></div>
+<p>Pour un affichage plus soigné, on peut utiliser les <strong>f-strings</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La moyenne des deux notes </span><span style="color:#e6db74">{</span>note1<span style="color:#e6db74">}</span><span style="color:#e6db74"> et </span><span style="color:#e6db74">{</span>note2<span style="color:#e6db74">}</span><span style="color:#e6db74"> est: </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<h4 id="affichage-soigné-des-résultats-numériques">Affichage soigné des résultats numériques</h4>
+<p>EXEMPLE AVEC ALGO SCIENTIFIQUE</p>
+<h2 id="traduction-de-lalgorithme-en-code-python">Traduction de l’algorithme en code Python</h2>
+<p><strong>Un algorithme</strong>, c’est une suite d’instructions claires pour résoudre un problème.</p>
+<h3 id="cas-concret">Cas concret</h3>
+<p>Écrire un programme qui calcule la force d&rsquo;un objet à l&rsquo;aide de la formule <code>F = m x a</code> où <code>m</code> est la masse de l&rsquo;objet et <code>a</code> l&rsquo;accélération.
+Le programme doit demander à l&rsquo;utilisateur d&rsquo;entrer au clavier la masse et l&rsquo;accélération.
+À la fin, le programme affiche le résultat de la force.</p>
+<h4 id="lalgorithme-en-français-">L&rsquo;algorithme (en français) :</h4>
+<blockquote>
 <ol>
-<li>Écris un programme qui indique si un étudiant a réussi ou échoué selon sa note (seuil : 60 %).</li>
-<li>Demande un pH à l’utilisateur et affiche si la solution est acide, neutre ou basique.</li>
-<li>Crée un programme qui vérifie si un triangle est équilatéral, isocèle ou scalène selon les longueurs des côtés.</li>
+<li>Demander la masse d’un objet</li>
+<li>Demander l’accélération</li>
+<li>Calculer la force avec la formule <code>F = m × a</code></li>
+<li>Afficher la force</li>
 </ol>
-<hr>
-<h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
+</blockquote>
+<h4 id="traduction-en-python-">Traduction en Python :</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masse <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez la masse (kg) : &#34;</span>))
+</span></span><span style="display:flex;"><span>acceleration <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez l&#39;accélération (m/s²) : &#34;</span>))
+</span></span><span style="display:flex;"><span>force <span style="color:#f92672">=</span> masse <span style="color:#f92672">*</span> acceleration
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La force est&#34;</span>, force, <span style="color:#e6db74">&#34;N&#34;</span>)</span></span></code></pre></div>
+<blockquote>
+<p>Astuce : chaque ligne de l’algorithme devient une ou plusieurs lignes de code.</p>
+</blockquote>
+<h2 id="débogage">Débogage</h2>
+<p><strong>Déboguer</strong>, c’est trouver et corriger les erreurs dans le code.</p>
+<h3 id="types-derreurs-fréquentes-">Types d’erreurs fréquentes :</h3>
+<table>
+<thead>
+<tr>
+<th>Type d’erreur</th>
+<th>Exemple</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Erreur de syntaxe</td>
+<td><code>print(&quot;Bonjour'</code></td>
+<td>Corriger la fermeture des guillemets</td>
+</tr>
+<tr>
+<td>Erreur d’exécution</td>
+<td><code>valeur = int(&quot;abc&quot;)</code></td>
+<td>Vérifier le type des entrées</td>
+</tr>
+<tr>
+<td>Erreur logique</td>
+<td><code>aire = longueur + largeur</code> (au lieu de <code>*</code>)</td>
+<td>Vérifier la formule</td>
+</tr>
+</tbody>
+</table>
+<h3 id="exemples-à-tester-à-copier-dans-vs-code-">Exemples à tester (à copier dans VS Code) :</h3>
+<h4 id="exemple-1--erreur-de-syntaxe">Exemple 1 – Erreur de syntaxe</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Début du programme)</span></span></span></code></pre></div>
+<blockquote>
+<p>Que dit le message d&rsquo;erreur ?
+Corrige la ligne.</p>
+</blockquote>
+<h4 id="exemple-2--erreur-dexécution">Exemple 2 – Erreur d’exécution</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>val <span style="color:#f92672">=</span> int(<span style="color:#e6db74">&#34;bonjour&#34;</span>)</span></span></code></pre></div>
+<blockquote>
+<p>Quelle est la cause de l’erreur ?
+Remplace <code>&quot;bonjour&quot;</code> par <code>&quot;12&quot;</code>.</p>
+</blockquote>
+<h4 id="exemple-3--erreur-logique">Exemple 3 – Erreur logique</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>longueur <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>largeur <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>aire <span style="color:#f92672">=</span> longueur <span style="color:#f92672">+</span> largeur  <span style="color:#75715e"># erreur de formule</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Aire =&#34;</span>, aire)</span></span></code></pre></div>
+<blockquote>
+<p>Est-ce que le résultat est correct ?
+Corrige la formule avec <code>*</code> au lieu de <code>+</code>.</p>
+</blockquote>
+<h3 id="astuces-pour-déboguer-">Astuces pour déboguer :</h3>
 <ul>
-<li>Que se passe-t-il si aucune condition n’est vraie et qu’il n’y a pas de <code>else</code> ?</li>
-<li>Peut-on avoir plusieurs <code>elif</code> dans une même structure ? (Réponse : Oui)</li>
-<li>Peut-on imbriquer des <code>if</code> dans d’autres <code>if</code> ? (Réponse : Oui, mais attention à la lisibilité)</li>
+<li>Lire le message d’erreur affiché</li>
+<li>Ajouter des <strong>print()</strong> pour suivre les valeurs</li>
+<li>Tester une ligne à la fois</li>
+<li>Vérifier les types avec type()</li>
 </ul>
+<h3 id="exemples-concrets">Exemples concrets</h3>
+<p><strong>Message d&rsquo;erreur affiché</strong></p>
+<p><strong>Utilisation de print()</strong></p>
+<p><strong>Exploration des variables, ligne par ligne</strong></p>
+<h2 id="utilisation-de-fonctions-prédéfinies">Utilisation de fonctions prédéfinies</h2>
+<p>Python offre déjà plein de <strong>fonctions toutes prêtes</strong> (<em>prédéfinies</em>).</p>
+<h3 id="exemples-utiles-">Exemples utiles :</h3>
+<table>
+<thead>
+<tr>
+<th>Fonction</th>
+<th>Utilité</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>print()</code></td>
+<td>Afficher un message</td>
+<td><code>print(&quot;Bonjour !&quot;)</code></td>
+</tr>
+<tr>
+<td><code>input()</code></td>
+<td>Demander une donnée à l’utilisateur</td>
+<td><code>nom = input(&quot;Votre nom :&quot;)</code></td>
+</tr>
+<tr>
+<td><code>int()</code></td>
+<td>Convertir en entier</td>
+<td><code>val = int(&quot;5&quot;)</code></td>
+</tr>
+<tr>
+<td><code>float()</code></td>
+<td>Convertir en nombre décimal</td>
+<td><code>val = float(&quot;3.14&quot;)</code></td>
+</tr>
+<tr>
+<td><code>round()</code></td>
+<td>Arrondir un nombre</td>
+<td><code>round(2.718, 2)</code> → <code>2.72</code></td>
+</tr>
+<tr>
+<td><code>len()</code></td>
+<td>Compter les éléments d’une chaîne/liste</td>
+<td><code>len(&quot;atomes&quot;)</code> → <code>6</code></td>
+</tr>
+<tr>
+<td><code>type()</code></td>
+<td>Afficher le type d’une variable</td>
+<td><code>type(3.5)</code> → <code>&lt;class 'float'&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>On <strong>appelle</strong> une fonction en écrivant son nom suivi de parenthèses.</p>
+</blockquote>
+<h3 id="fonctions-du-module-math">Fonctions du module <code>math</code></h3>
+<p>Pour accéder à des fonctions mathématiques plus avancées, on utilise le <strong>module <code>math</code></strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math</span></span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Fonction</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>math.sqrt(x)</code></td>
+<td>Racine carrée</td>
+<td><code>math.sqrt(16)</code> → <code>4.0</code></td>
+</tr>
+<tr>
+<td><code>math.pow(x, y)</code></td>
+<td>Puissance</td>
+<td><code>math.pow(2, 3)</code> → <code>8.0</code></td>
+</tr>
+<tr>
+<td><code>math.pi</code></td>
+<td>La constante π</td>
+<td><code>math.pi</code> → <code>3.14159...</code></td>
+</tr>
+<tr>
+<td><code>math.sin(x)</code></td>
+<td>Sinus (en radians)</td>
+<td><code>math.sin(math.pi / 2)</code> → <code>1.0</code></td>
+</tr>
+<tr>
+<td><code>math.log(x)</code></td>
+<td>Logarithme naturel</td>
+<td><code>math.log(10)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="exercices-à-faire-">Exercices à faire :</h3>
+<p>a) Écrire l&rsquo;algorithme correspondant au code ci-dessous :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez le rayon du cercle : &#34;</span>))
+</span></span><span style="display:flex;"><span>aire <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>pow(r, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Aire du cercle :&#34;</span>, round(aire, <span style="color:#ae81ff">2</span>), <span style="color:#e6db74">&#34;unités²&#34;</span>)</span></span></code></pre></div>
+<p>b) Traduisez l’algorithme suivant en code Python :</p>
+<blockquote>
+<ol>
+<li>Demander le nom d’un élément chimique</li>
+<li>Afficher un message disant &ldquo;L’élément choisi est [nom]&rdquo;</li>
+</ol>
+</blockquote>
+
+<details open class=" box cstyle notices cyan">
+  <summary class="box-label" tabindex="-1">
+    À retenir
+  </summary>
+  <div class="box-content">
+<ul>
+<li><code>input()</code> permet de lire une donnée (toujours une chaîne).</li>
+<li>Il faut convertir avec <code>int()</code> ou <code>float()</code> pour faire des calculs.</li>
+<li><code>print()</code> permet d&rsquo;afficher une réponse, seule ou avec du texte et .</li>
+</ul>
+  </div>
+</details>
 
   <footer class="footline">
   </footer>
@@ -286,9 +450,11 @@ S’il fait moins de 0 °C, l’eau gèle.">
       <div id="R-header-topbar" class="default-animation"></div>
       <div id="R-header-wrapper" class="default-animation">
         <div id="R-header" class="default-animation">
-          <a id="R-logo" class="R-default" href="/index.html">
-            <div class="logo-title">420-SN1-RE</div>
-          </a>
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
         </div>
         <search><form action="/search/index.html" method="get">
           <div class="searchbox default-animation">
@@ -322,16 +488,17 @@ S’il fait moins de 0 °C, l’eau gèle.">
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe — Comportement attendu</a></li>
-            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et de l&#39;environnement de travail (OneDrive, VS Code, Jupyter)</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Introduction à Python (variables, types, entrée/sortie)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
-            <li class="active parent " data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Prendre des décisions avec `if`, `elif`, `else`</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu">
-            <li class="" data-nav-id="/semaine3/atelier/index.html"><a class="padding" href="/semaine3/atelier/index.html">Activité 3 - État physique de l’eau selon la température et la pression</a></li></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Listes et chaînes de caractères</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Fonctions simples et paramètres</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Examen 1 (30%)</a></li>
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Structures de données (listes, dictionnaires)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
+            <li class="" data-nav-id="/environnement_travail/index.html"><a class="padding" href="/environnement_travail/index.html">L&#39;environnement de travail</a><ul id="R-subsections-778a4ef1cb285be699e264e0f36c1129" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="active parent " data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine3/atelier/index.html"><a class="padding" href="/semaine3/atelier/index.html">Atelier 3</a></li></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Évaluation 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Évaluation 2 (20%)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
@@ -339,7 +506,7 @@ S’il fait moins de 0 °C, l’eau gèle.">
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
             <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
-            <li class="" data-nav-id="/alternatives/index.html"><a class="padding" href="/alternatives/index.html"><b>Alternatives à VS Code </b>(Colab et PyCharm)</a><ul id="R-subsections-9f4e292d0c7bd466e594a2d757e89641" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Astuces et réponses aux questions fréquentes</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
           </ul>
         </div>
@@ -358,8 +525,8 @@ S’il fait moins de 0 °C, l’eau gèle.">
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1749231934" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1749231934" defer></script>
-    <script src="/js/theme.min.js?1749231934" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1751401527" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751401527" defer></script>
+    <script src="/js/theme.js?1751401527" defer></script>
   </body>
 </html>

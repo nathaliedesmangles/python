@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Répéter avec `for` et `while` :: 420-SN1-RE</title>
-    <link>https://example.org/semaine4/index.html</link>
-    <description>Objectifs de la leçon Comprendre l’utilité des boucles en programmation Savoir écrire des boucles while et for Appliquer les boucles à des cas concrets en sciences (répétitions, séries de mesures, simulations) Pourquoi utiliser une boucle? Une boucle permet de répéter automatiquement une suite d’instructions tant qu’une condition est vraie (while) ou pour parcourir une série de valeurs (for).&#xA;La boucle while Syntaxe de base : compteur = 0 while compteur &lt; 5: print(&#34;Compteur =&#34;, compteur) compteur += 1&#xD;Il faut modifier la condition dans la boucle pour éviter une boucle infinie.</description>
+    <title>Décider avec `if`, `elif`, `else` et les opérateurs :: 420-SN1-RE</title>
+    <link>http://localhost:1313/semaine4/index.html</link>
+    <description>Objectifs d’apprentissage Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine4/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Activité 4 – Table de multiplication et données expérimentales</title>
-      <link>https://example.org/semaine4/atelier/index.html</link>
+      <title>Atelier 4</title>
+      <link>http://localhost:1313/semaine4/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine4/atelier/index.html</guid>
-      <description>Objectifs d’apprentissage Utiliser les boucles for et while pour automatiser des tâches répétitives. Appliquer les boucles à une situation scientifique concrète. Travailler en collaboration pour planifier une solution et tester différents scénarios. Partie 1 – Table de multiplication Écrire un programme Python qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.&#xA;Exemple de sortie :&#xA;Entrez un nombre entre 1 et 12 : 7&#xD;1 x 7 = 7&#xD;2 x 7 = 14&#xD;3 x 7 = 21&#xD;.</description>
+      <guid>http://localhost:1313/semaine4/atelier/index.html</guid>
+      <description>Objectifs pédagogiques Utiliser les opérateurs de comparaison et logiques. Utiliser les structures conditionnelles if, elif, else. Travailler avec les types numériques (float, int). Exercice 1 Contexte L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :&#xA;L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse. En autocuiseur, la pression est plus élevée, donc l’eau bout à une température plus élevée.</description>
     </item>
   </channel>
 </rss>

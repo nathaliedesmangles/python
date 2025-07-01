@@ -1,0 +1,111 @@
++++
+chapter = true
+pre = "<b>Semaine 6.</b>"
+title = "Opérateurs de comparaison, logiques et décider avec `if`, `elif` et `else`"
+weight = 60
++++
+
+
+## Objectifs d’apprentissage
+
+1. **Identifier et utiliser correctement les opérateurs de comparaison et logiques** pour évaluer des conditions simples en Python.
+2. **Écrire des structures conditionnelles (`if`, `elif`, `else`)** pour contrôler le déroulement d’un programme selon différentes situations.
+3. **Appliquer les structures conditionnelles** à des contextes scientifiques simples.
+---
+
+
+## Les opérateurs de comparaison
+
+Ces opérateurs permettent de comparer des valeurs. Le résultat est **toujours un booléen** : `True` (vrai) ou `False` (faux).
+
+| Opérateur | Signification        | Exemple  | Résultat |
+| --------- | -------------------- | -------- | -------- |
+| `==`      | égal à               | `5 == 5` | `True`   |
+| `!=`      | différent de         | `3 != 4` | `True`   |
+| `<`       | plus petit que       | `2 < 5`  | `True`   |
+| `<=`      | plus petit ou égal à | `5 <= 5` | `True`   |
+| `>`       | plus grand que       | `7 > 4`  | `True`   |
+| `>=`      | plus grand ou égal à | `6 >= 9` | `False`  |
+
+> Dans une cellule de Code, testez les exemples du tableau.
+
+
+## Les opérateurs logiques
+
+Ils permettent de **combiner plusieurs conditions**.
+
+| Opérateur | Signification            | Exemple               | Résultat |
+| --------- | ------------------------ | --------------------- | -------- |
+| `and`     | et (toutes vraies)       | `(4 < 5) and (6 > 3)` | `True`   |
+| `or`      | ou (au moins une vraie)  | `(4 < 5) or (6 < 3)`  | `True`   |
+| `not`     | négation                 | `not (4 < 5)`         | `False`  |
+
+> Dans une cellule de Code, testez les exemples du tableau.
+
+## Les structures conditionnelles
+
+Elles permettent **d’exécuter un bloc de code seulement si une condition est vraie**.
+
+
+### `if`
+
+Si la condition est vraie, le bloc **indenté** (décalé) est exécuté.  
+Notez la présence du caractère deux-points (`:`) après la condition.
+
+```python
+temp = 30
+if temp > 25:
+    print("Il fait chaud.")
+```
+
+> Dans une cellule de Code dans VS Code, testez l'exemple du `if`.
+
+### `if`…`else`
+
+**Deux chemins possibles** : un si la condition est vraie, un si elle est fausse.
+
+```python
+temp = 15
+if temp > 25:
+    print("Il fait chaud.")
+else:
+    print("Il fait frais.")
+```
+
+> Dans une cellule de Code dans VS Code, testez l'exemple du `if-else`.
+
+### `if`…`elif`…`else`
+
+Utilisé pour tester **plusieurs cas différents**.
+
+```python
+temp = 20
+if temp > 25:
+    print("Il fait chaud.")
+elif temp > 15:
+    print("Il fait bon.")
+else:
+    print("Il fait frais.")
+```
+
+> Dans une cellule de Code dans VS Code, testez l'exemple du `if-elif-else`.
+
+### Exercice 
+
+Écrire le code qui permet de tester la valeur du pH d'une solution.
+- Créez une variable `pH = 4.5`
+- Si le pH est strictement inférieur à 7 le programme affiche "Solution acide"
+- Sinon, si le pH est égale à 7, le programme affiche "Solution neutre"
+- Sinon, le programme affiche "Solution basique"
+
+
+---
+
+{{% notice style="cyan" title="À retenir" %}}
+* Les **opérateurs de comparaison** comparent des valeurs.
+* Les **opérateurs logiques** combinent plusieurs conditions.
+* Les **structures conditionnelles** permettent de **réagir à des critères** dans un programme.
+	* `if` vérifie si une condition est vraie, **si et seulement si c'est le cas**, les instructions en dessous et décalées seront exécutées.
+	* `elif` permet de vérifier une autre condition, **si et seulement si elle est vrais**, les instructions en dessous et décalées seront exécutées.
+	* `else` permet de prévoir des instructions à effectuer, **si et seulement si aucune des conditions précédentes est vraie**.
+{{% /notice %}}

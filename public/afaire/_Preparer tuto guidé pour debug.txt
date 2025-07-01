@@ -1,0 +1,45 @@
+-Preparer tuto guidé pour debug 
+- pratique d'examen: 
+  - documentation persime
+  - pycharm ?
+  - questions pratiques ou théoriques
+
+
+Concernant les examens, on reçoit l'examen 
+	- sous la forme papier et on doit 
+	- répondre aux questions pratiques sur pycharm 
+	- les questions théoriques doivent être complétées directement sur le document papier. 
+Permettent d'avoir accès à notre cahier d'activité ("La programmation") et à nos notes de cours personnelles du cours. 
+
+
+SN1
+- preparer 4-5 exerices par atelier + solution
+- préparer 2-3 exercices démos + solutions
+- préparer évaluations semblables sux exercices et ateliers
+- préparer projet final + données experimentales
+- préparer grille d'évaluation
+
+A faire
+Semaine 1: finaliser démo Environnement
+
+Semaine 3: Examen Formatif
+Semaine 4: Examen (15%)
+
+Semaine 6: Ajout exemples avec continue, Solution Atelier avec continue (sans liste)
+Semaine 7: Liste, chaines et boucles + [dictionnaires] + atelier
+
+Semaine 8: Examen 2 (20%)
+
+Semaine 9: Import, pandas, numpy
+
+Semaine 10: intro à Matplotlib
+
+Semaine 11: Embellir graphique
+
+Semaine 12: projet
+
+Semaine 13: projet
+
+Semaine 14: projet
+
+Semaine 15: Remise rapport (20%) et eval projet (20%)

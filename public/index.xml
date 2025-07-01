@@ -2,135 +2,142 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programmation en sciences :: 420-SN1-RE</title>
-    <link>https://example.org/index.html</link>
-    <description>Pondération : 1-2-3 Durée par semaine : 2h40 ~50 min théorie ~1h50 pratique Description du cours Ce cours permet de se familiariser avec la programmation informatique dans un contexte scientifique et de faire le lien entre les technologies et le domaine des sciences.&#xA;L’élève est introduit à la résolution de problèmes à l’aide d’algorithmes. Il doit traduire les algorithmes en code en utilisant un langage de programmation, tout en vérifiant le bon fonctionnement de son programme.</description>
+    <link>http://localhost:1313/index.html</link>
+    <description>Description du cours Ce cours permet de se familiariser avec la programmation informatique dans un contexte scientifique et de faire le lien entre les technologies et le domaine des sciences.&#xA;L’élève est introduit à la résolution de problèmes à l’aide d’algorithmes. Il doit traduire les algorithmes en code en utilisant un langage de programmation, tout en vérifiant le bon fonctionnement de son programme. Il traite des données et présente des résultats scientifiques à l’aide de la programmation lettrée.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Règlements de classe — Comportement attendu</title>
-      <link>https://example.org/regles/index.html</link>
+      <title>Règlements de classe</title>
+      <link>http://localhost:1313/regles/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/regles/index.html</guid>
-      <description>1. Comporte-toi comme si tu étais déjà en emploi. Arrive à l’heure, sois prêt à travailler, et respecte les échéances. Ton attitude ici prépare ton avenir professionnel.&#xA;2. Respecte-toi, donc agis avec respect. Ton comportement reflète la manière dont tu te considères. Adopte une attitude calme, polie et attentive envers toi-même, les autres et l’enseignant·e.&#xA;3. Sois présent, mentalement et physiquement. Utilise ton cellulaire seulement pour les besoins du cours.</description>
+      <guid>http://localhost:1313/regles/index.html</guid>
+      <description>1. Comporte-toi comme si tu étais déjà en emploi. Arrive à l’heure, sois prêt à travailler, et respecte les échéances. Ton attitude ici prépare ton avenir professionnel.&#xA;2. Respecte-toi, donc agis avec respect. Ton comportement reflète la manière dont tu te considères. Adopte une attitude calme, polie et attentive envers toi-même, les autres et l’enseignant·e.&#xA;3. Sois présent, mentalement et physiquement. Utilise ton cellulaire seulement pour les besoins du cours. Reste concentré·e pendant les activités, comme tu le ferais dans un contexte de travail.</description>
     </item>
     <item>
-      <title>Présentation du cours et de l&#39;environnement de travail (OneDrive, VS Code, Jupyter)</title>
-      <link>https://example.org/semaine1/index.html</link>
+      <title>L&#39;environnement de travail</title>
+      <link>http://localhost:1313/environnement_travail/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine1/index.html</guid>
-      <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Connaître les objectifs du cours et les règlements du collège à respecter (Questionnaire interactif Kahoot). Activité guidée :&#xA;2.1 Se connecter à OneDrive&#xA;2.2 Comprendre la gestion de fichiers (Explorateur de fichiers)&#xA;- Créer une structure de dossiers pour le cours.&#xA;- Activez l’affichage de l’extension des fichiers dans l’Explorateur.&#xA;- Télécharger un fichier, le retrouver et le placer dans le bon dossier.</description>
+      <guid>http://localhost:1313/environnement_travail/index.html</guid>
+      <description>Prise en main de l’outil informatique Les fichiers et répertoires/dossiers Visual studio code (VS Code) Sauvegarde avec VS Code Bloc note Jupyter/Jupyter Notebook Trucs pratiques pour bien coder Markdown pour les rapports lettrés</description>
     </item>
     <item>
-      <title>Introduction à Python (variables, types, entrée/sortie)</title>
-      <link>https://example.org/semaine2/index.html</link>
+      <title>Présentation du cours et l&#39;environnement de travail</title>
+      <link>http://localhost:1313/semaine1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine2/index.html</guid>
-      <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Les variables et les types et affichage de données de base Lorsqu’on écrit de vrais programmes, on a souvent besoin de stocker des valeurs ou des résultats de calculs en mémoire.</description>
+      <guid>http://localhost:1313/semaine1/index.html</guid>
+      <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Connaître les objectifs du cours et les règlements du collège à respecter (Questionnaire interactif WooClap). Se connecter à OneDrive du cégep. Comprendre la gestion de fichiers (Explorateur de fichiers). Créer une structure de dossiers pour le cours. Activer l’affichage de l’extension des fichiers dans l’Explorateur. Télécharger un fichier de Moodle, le retrouver et le placer dans le bon dossier.</description>
     </item>
     <item>
-      <title>Prendre des décisions avec `if`, `elif`, `else`</title>
-      <link>https://example.org/semaine3/index.html</link>
+      <title>Introduction à Python (Variables, types et expressions)</title>
+      <link>http://localhost:1313/semaine2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine3/index.html</guid>
-      <description>Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :&#xA;Écrire des instructions conditionnelles en Python Utiliser if, elif et else pour gérer plusieurs cas Évaluer des expressions logiques avec les opérateurs de comparaison (==, !=, &lt;, &gt;, &lt;=, &gt;=) Combiner plusieurs conditions avec les opérateurs logiques (and, or, not) Pourquoi des conditions ? Un programme prend souvent des décisions :&#xA;S’il fait moins de 0 °C, l’eau gèle.</description>
+      <guid>http://localhost:1313/semaine2/index.html</guid>
+      <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.&#xA;Exemples :&#xA;age = 17 nom = &#34;Julie&#34; temperature = 36.</description>
+    </item>
+    <item>
+      <title>Entrées/Sorties, Algorithme, débogage et fonctions</title>
+      <link>http://localhost:1313/semaine3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine3/index.html</guid>
+      <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Utiliser des fonctions prédéfinies (ex: Module math) Définir ses propres fonctions. Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
+    </item>
+    <item>
+      <title>Décider avec `if`, `elif`, `else` et les opérateurs</title>
+      <link>http://localhost:1313/semaine4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine4/index.html</guid>
+      <description>Objectifs d’apprentissage Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
+    </item>
+    <item>
+      <title>Évaluation 1 (25%)</title>
+      <link>http://localhost:1313/semaine5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine5/index.html</guid>
+      <description></description>
     </item>
     <item>
       <title>Répéter avec `for` et `while`</title>
-      <link>https://example.org/semaine4/index.html</link>
+      <link>http://localhost:1313/semaine6/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine4/index.html</guid>
-      <description>Objectifs de la leçon Comprendre l’utilité des boucles en programmation Savoir écrire des boucles while et for Appliquer les boucles à des cas concrets en sciences (répétitions, séries de mesures, simulations) Pourquoi utiliser une boucle? Une boucle permet de répéter automatiquement une suite d’instructions tant qu’une condition est vraie (while) ou pour parcourir une série de valeurs (for).&#xA;La boucle while Syntaxe de base : compteur = 0 while compteur &lt; 5: print(&#34;Compteur =&#34;, compteur) compteur += 1&#xD;Il faut modifier la condition dans la boucle pour éviter une boucle infinie.</description>
+      <guid>http://localhost:1313/semaine6/index.html</guid>
+      <description>Objectifs de la leçon Comprendre l’utilité des boucles en programmation. Savoir écrire des boucles while et for. Savoir identifier quand utiliser une boucle for vs. while. Interrompre le déroulement d’une boucle. Appliquer les boucles à des cas concrets en sciences. À quoi servent les boucles ? Elles permettent de répéter des instructions plusieurs fois, soit un nombre connu, soit jusqu’à ce qu’une condition soit atteinte.&#xA;La boucle while Utilisée quand on ne connaît pas d’avance combien de fois répéter.</description>
     </item>
     <item>
-      <title>Listes et chaînes de caractères</title>
-      <link>https://example.org/semaine5/index.html</link>
+      <title>Listes de données et chaînes de caractères</title>
+      <link>http://localhost:1313/semaine7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine5/index.html</guid>
-      <description>Objectifs de la leçon Comprendre ce qu’est une liste et comment la manipuler Utiliser les chaînes de caractères comme des séquences Appliquer les connaissances à des données scientifiques simples Travailler en équipe sur une activité d’analyse de mesures Listes en Python Une liste est une collection ordonnée, modifiable, qui peut contenir différents types de données.&#xA;Définir une liste : mesures = [12.1, 13.0, 12.8, 13.5]&#xD;Accéder à un élément print(mesures[0]) # 12.</description>
+      <guid>http://localhost:1313/semaine7/index.html</guid>
+      <description>Objectifs d’apprentissage Créer et manipuler des listes de données numériques ou textuelles en Python (ajout, suppression, parcours, calcul de statistiques simples). Accéder, modifier et parcourir les caractères d’une chaîne de caractères. Appliquer des méthodes de traitement de texte pour analyser ou transformer des chaînes de caractères (ex. : mise en minuscules, découpage, recherche, comptage). Les listes de données Une liste est un contenant qui peut regrouper plusieurs valeurs (appelées éléments), dans un ordre donné.</description>
     </item>
     <item>
-      <title>Fonctions simples et paramètres</title>
-      <link>https://example.org/semaine6/index.html</link>
+      <title>Évaluation 2 (20%)</title>
+      <link>http://localhost:1313/semaine8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine6/index.html</guid>
-      <description>Objectifs de la leçon À la fin de cette leçon, vous devrez être capable de :&#xA;Expliquer le rôle des fonctions dans un programme Définir une fonction avec ou sans paramètres Appeler une fonction dans un script Réutiliser une fonction pour éviter la répétition de code Comprendre la portée des variables (locale vs globale) Écrire des programmes clairs et efficaces demande de bien structurer son code. Les fonctions permettent de regrouper des blocs d’instructions qu’on peut exécuter plusieurs fois à différents endroits du programme.</description>
-    </item>
-    <item>
-      <title>Examen 1 (30%)</title>
-      <link>https://example.org/semaine7/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine7/index.html</guid>
-      <description>Examen formatif Description Type : Activité formative&#xA;Durée : 2h40&#xA;But : Révision collaborative, application active&#xA;Cette activité n’est pas notée, mais vous recevrez une rétroaction qualitative sur :&#xA;La clarté et la structure de votre code Votre capacité à repérer et expliquer des erreurs Consigne générale Seul ou en équipe de 2 ou 3, vous devez résoudre 3 exercices de programmation scientifique à l’aide de Jupyter Notebook. Chaque exercice fait appel à des concepts vus dans les semaines 1 à 6.</description>
-    </item>
-    <item>
-      <title>Structures de données (listes, dictionnaires)</title>
-      <link>https://example.org/semaine8/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine8/index.html</guid>
-      <description>Objectifs de la leçon À la fin de cette leçon, vous devrez être capable de :&#xA;Créer et manipuler une liste pour stocker une collection ordonnée de données Créer un dictionnaire pour représenter des associations clé-valeur Choisir la structure appropriée selon le contexte scientifique Listes (list) Une liste est une structure ordonnée et modifiable.&#xA;Création d’une liste temperatures = [22.1, 23.5, 21.8] prenoms = [&#34;louise&#34;, &#34;georges&#34;, &#34;mohammed&#34;, &#34;julie&#34;]&#xD;Accès aux éléments print(temperatures[0]) # Affiche : 22.</description>
+      <guid>http://localhost:1313/semaine8/index.html</guid>
+      <description></description>
     </item>
     <item>
       <title>Introduction à NumPy et Pandas</title>
-      <link>https://example.org/semaine9/index.html</link>
+      <link>http://localhost:1313/semaine9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine9/index.html</guid>
+      <guid>http://localhost:1313/semaine9/index.html</guid>
       <description>Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :&#xA;Comprendre le rôle de NumPy pour le calcul scientifique rapide avec des tableaux. Utiliser Pandas pour manipuler des tableaux de données (DataFrame). Charger des données à partir d’un fichier CSV et faire des analyses simples. Appliquer des opérations mathématiques et statistiques de base. Pourquoi utiliser NumPy et Pandas? Python est très puissant pour l’analyse de données scientifiques.</description>
     </item>
     <item>
       <title>Visualisation de données avec matplotlib (bases)</title>
-      <link>https://example.org/semaine10/index.html</link>
+      <link>http://localhost:1313/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine10/index.html</guid>
+      <guid>http://localhost:1313/semaine10/index.html</guid>
       <description>Objectif de la leçon Apprendre à tracer des graphiques simples en 2D à partir de données scientifiques à l’aide de la bibliothèque matplotlib.&#xA;Durée : 50 minutes de théorie + 1 h 50 de pratique&#xA;Contexte Les scientifiques visualisent souvent des données sous forme de graphiques pour interpréter plus facilement des tendances, des anomalies ou des corrélations. Python permet de produire des graphiques de haute qualité grâce à la bibliothèque matplotlib.</description>
     </item>
     <item>
       <title>Lecture/écriture de fichiers texte (CSV)</title>
-      <link>https://example.org/semaine11/index.html</link>
+      <link>http://localhost:1313/semaine11/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine11/index.html</guid>
+      <guid>http://localhost:1313/semaine11/index.html</guid>
       <description>Objectif de la leçon Apprendre à lire et écrire des fichiers .csv (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).&#xA;Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules). Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc. Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.</description>
     </item>
     <item>
       <title>Examen 2 (30%)</title>
-      <link>https://example.org/semaine12/index.html</link>
+      <link>http://localhost:1313/semaine12/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine12/index.html</guid>
+      <guid>http://localhost:1313/semaine12/index.html</guid>
       <description>Examen formatif Description Type : Activité formative&#xA;Durée : 2h40&#xA;But : Révision collaborative, application active&#xA;Modalité : Individuelle – Accès aux notes de cours permis, mais aucun partage entre étudiants. Outils autorisés : Jupyter Notebook avec Anaconda (numpy, pandas, matplotlib intégrés)&#xA;Cette activité n’est pas notée, mais vous recevrez une rétroaction qualitative sur :&#xA;La clarté et la structure de votre code Votre capacité à repérer et expliquer des erreurs Notions évaluées</description>
     </item>
     <item>
       <title>Introduction au projet final (40%)</title>
-      <link>https://example.org/semaine13/index.html</link>
+      <link>http://localhost:1313/semaine13/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine13/index.html</guid>
+      <guid>http://localhost:1313/semaine13/index.html</guid>
       <description>Remue-méninges et planification # Fiche de projet final – Programmation en sciences avec Python ## Informations de l&#39;étudiant - **Nom :** - **Date :** --- ## 1. Titre du projet *(Donne un titre clair et descriptif à ton projet)* --- ## 2. Objectif du projet *(Explique en une ou deux phrases ce que ton programme permettra d’analyser, de simuler ou de résoudre.)* --- ## 3. Description du fonctionnement prévu - **Entrées attendues :** *(Quelles données l’utilisateur devra-t-il fournir?</description>
     </item>
     <item>
       <title>Travail sur le projet final.</title>
-      <link>https://example.org/semaine14/index.html</link>
+      <link>http://localhost:1313/semaine14/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine14/index.html</guid>
+      <guid>http://localhost:1313/semaine14/index.html</guid>
       <description>Présentation préliminaire (code, intention, défis). Révision par les pairs</description>
     </item>
     <item>
       <title>Projet final (Remise présentation en vidéo, démonstration du code)</title>
-      <link>https://example.org/semaine15/index.html</link>
+      <link>http://localhost:1313/semaine15/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine15/index.html</guid>
+      <guid>http://localhost:1313/semaine15/index.html</guid>
       <description>Vous devez remettre votre code en plus de la vidéo</description>
     </item>
     <item>
-      <title>(Colab et PyCharm)</title>
-      <link>https://example.org/alternatives/index.html</link>
+      <title>Astuces et réponses aux questions fréquentes</title>
+      <link>http://localhost:1313/faq/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/alternatives/index.html</guid>
-      <description>Si vous cherchez une alternative simple et accessible à VS Code avec Jupyter, Google Colab est une excellente option. Colab est un environnement de notebooks en ligne gratuit, offert par Google, qui ne nécessite aucune installation. Il vous permet d’écrire et d’exécuter du code Python directement dans votre navigateur, tout en profitant d’un accès facile à des bibliothèques scientifiques populaires comme NumPy, pandas, ou matplotlib. C’est l’outil idéal pour débuter en programmation scientifique ou collaborer à distance, puisqu’il s’intègre à Google Drive et permet de partager vos notebooks aussi facilement qu’un document Google Docs.</description>
+      <guid>http://localhost:1313/faq/index.html</guid>
+      <description>Exemples Quel logiciel je peux installer sur mon ordinateur personnel pour pratiquer à la maison ? La sauvegarde automatique dans Visual Studio Code. Les raccourcis clavier (copier, coller, couper, enregistrer, etc.) Où se trouve les touches pour [, ], {, }, @, &lt;, &gt;, etc. sur un clavier QWERTY. 174 Dans quels locaux du cégep, je peux aller pratiquer ?</description>
     </item>
     <item>
       <title>À FAIRE</title>
-      <link>https://example.org/afaire/index.html</link>
+      <link>http://localhost:1313/afaire/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/afaire/index.html</guid>
+      <guid>http://localhost:1313/afaire/index.html</guid>
       <description>Semaine 1 Cours Mettre à jour infos tableau planification de cours Préparer la démo sur Anaconda et Jupyter Préparer guide installation sur Windows 11: https://www.datacamp.com/fr/tutorial/installing-anaconda-windows Semaine 2 Cours Réviser Activité 2.1 Créer ipynb Activité 2.2 Contexte à confirmer Mise en forme des formule Vérifier ipynb Semaine 3 Cours Activité 3 Semaine 4 Cours Activité 4 Semaine 5 Cours Activité 5 Semaine 6 Cours Activité 6</description>
     </item>
   </channel>

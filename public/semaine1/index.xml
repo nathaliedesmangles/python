@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Présentation du cours et de l&#39;environnement de travail (OneDrive, VS Code, Jupyter) :: 420-SN1-RE</title>
-    <link>https://example.org/semaine1/index.html</link>
-    <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Connaître les objectifs du cours et les règlements du collège à respecter (Questionnaire interactif Kahoot). Activité guidée :&#xA;2.1 Se connecter à OneDrive&#xA;2.2 Comprendre la gestion de fichiers (Explorateur de fichiers)&#xA;- Créer une structure de dossiers pour le cours.&#xA;- Activez l’affichage de l’extension des fichiers dans l’Explorateur.&#xA;- Télécharger un fichier, le retrouver et le placer dans le bon dossier.</description>
+    <title>Présentation du cours et l&#39;environnement de travail :: 420-SN1-RE</title>
+    <link>http://localhost:1313/semaine1/index.html</link>
+    <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Connaître les objectifs du cours et les règlements du collège à respecter (Questionnaire interactif WooClap). Se connecter à OneDrive du cégep. Comprendre la gestion de fichiers (Explorateur de fichiers). Créer une structure de dossiers pour le cours. Activer l’affichage de l’extension des fichiers dans l’Explorateur. Télécharger un fichier de Moodle, le retrouver et le placer dans le bon dossier.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OneDrive et gestion des fichiers et dossiers</title>
-      <link>https://example.org/semaine1/onedrive/index.html</link>
+      <link>http://localhost:1313/semaine1/onedrive/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine1/onedrive/index.html</guid>
+      <guid>http://localhost:1313/semaine1/onedrive/index.html</guid>
       <description>OneDrive OneDrive est un stockage et synchronisation de fichiers personnels ou scolaires dans le cloud et accessible à partir de n’importe quel emplacement sur n’importe quel appareil. Idéal pour le travail en cours et le partage avec des personnes spécifiques. Les documents sont privés jusqu’à ce que vous les partagez. 1. Repérer l’icône OneDrive Vous devriez voir l’icône de OneDrive (scolaire = en bleu) (personnel = en gris), sur la barre des tâches, en bas à droite de l’écran (près de l’horloge).</description>
     </item>
     <item>
       <title>Visual Studio Code et Jupyter Notebook</title>
-      <link>https://example.org/semaine1/vscodejupyter/index.html</link>
+      <link>http://localhost:1313/semaine1/vscodejupyter/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine1/vscodejupyter/index.html</guid>
+      <guid>http://localhost:1313/semaine1/vscodejupyter/index.html</guid>
       <description>1. Visual Studio Code (VS Code) Visual Studio Code est un éditeur de code moderne, simple et très utilisé pour programmer avec Python. Il vous permet aussi de bien organiser vos projets grâce à une gestion intuitive des dossiers et fichiers.&#xA;Ce que vous pouvez faire avec VS Code : Écrire et exécuter du code Python Ouvrir et modifier des notebooks Jupyter (.ipynb) Voir tous les fichiers de votre projet dans un seul endroit Lire les erreurs et déboguer plus facilement Gestion des dossiers et fichiers Avant de commencer, assurez-vous d’être connectés à votre compte OneDrive du cégep.</description>
     </item>
     <item>
-      <title>Activité 1 – Questionnaire &#43; Mini-lab en équipe</title>
-      <link>https://example.org/semaine1/atelier/index.html</link>
+      <title>Atelier 1</title>
+      <link>http://localhost:1313/semaine1/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine1/atelier/index.html</guid>
-      <description>Objectifs pédagogiques Identifier les connaissances préalables et les attentes des étudiants. Favoriser une première collaboration en équipe. Prendre contact avec l’environnement de développement (Anaconda et Jupyter Notebook). Manipuler des notions de base : variables, types de données, opérations simples. Questionnaire de départ (~15 minutes) Répondre individuellement aux questions du quiz Apprendre à se connaitre&#xA;Suivi (~5 minutes) :&#xA;Discussion en petits groupes (3-4 étudiants) Mise en commun de quelques idées (question #9) à l’oral.</description>
+      <guid>http://localhost:1313/semaine1/atelier/index.html</guid>
+      <description>Objectifs pédagogiques Se familiariser avec l’environnement de développement et les notions de base. Énoncé : Créez un dossier nommé programmation-sciences dans votre OneDrive.&#xA;Lancez Visual Studio Code et ouvrez ce dossier.&#xA;Créez un nouveau fichier Jupyter nommé atelier1.ipynb.&#xA;Dans une première cellule Markdown, écrivez un commentaire avec votre nom, la date, et l’objectif de l’atelier.&#xA;Dans une deuxième cellule Code, affichez un message de bienvenue avec print().&#xA;# Message proposé : print(&#34;Bienvenue dans le cours de programmation en sciences !</description>
     </item>
   </channel>
 </rss>

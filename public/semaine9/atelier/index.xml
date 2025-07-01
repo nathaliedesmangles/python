@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Activité 9 - Analyse de données environnementales :: 420-SN1-RE</title>
-    <link>https://example.org/semaine9/atelier/index.html</link>
+    <link>http://localhost:1313/semaine9/atelier/index.html</link>
     <description>Objectif Utiliser NumPy pour effectuer des calculs sur des données numériques, et Pandas pour analyser un fichier CSV contenant des données environnementales.&#xA;Durée : Entre 45 et 60 minutes, à faire en équipe de 2.&#xA;Partie 1 – Calculs avec NumPy Crée un tableau NumPy contenant les températures suivantes (en °C) mesurées chaque heure : import numpy as np temperatures = np.array([18.5, 19.0, 20.1, 21.3, 22.8, 23.4, 22.9, 21.0])&#xD;Calcule et affiche :</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine9/atelier/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine9/atelier/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

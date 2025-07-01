@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Les fichiers et répertoires :: 420-SN1-RE</title>
+    <link>http://localhost:1313/environnement_travail/systeme_de_fichiers/index.html</link>
+    <description>Qu’est-ce qu’un fichier ? Un fichier est une unité de stockage sur un ordinateur. Pensez à un fichier comme à une feuille de papier où vous pouvez écrire des informations. Les fichiers peuvent contenir différents types de données, comme du texte, des images, de la musique, des vidéos, ou des programmes.&#xA;Qu’est-ce qu’un répertoire ? Un répertoire, aussi appelé dossier, est un conteneur qui peut contenir des fichiers et d’autres répertoires.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/environnement_travail/systeme_de_fichiers/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PyCharm :: 420-SN1-RE</title>
+    <link>http://localhost:1313/faq/alternatives/pycharm/index.html</link>
+    <description>Développé par JetBrains, PyCharm est à ce jour une plateforme très populaire pour Python. Cette plateforme hybride est couramment utilisée pour le développement d’applications Python, et notamment par de grandes entreprises telles que Twitter, Facebook, Amazon ou Pinterest.&#xA;Compatible avec Windows, Linux et macOS, PyCharm contient des modules et des packages aidant les développeurs à programmer des logiciels avec Python plus rapidement et avec moins d’efforts.&#xA;Installation et configuration Télécharger PyCharm Téléchargez PyCharm en cliquant sur le lien de téléchargement.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/faq/alternatives/pycharm/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

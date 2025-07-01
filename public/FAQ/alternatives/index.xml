@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>(Colab et PyCharm) :: 420-SN1-RE</title>
+    <link>http://localhost:1313/faq/alternatives/index.html</link>
+    <description>Si vous cherchez une alternative simple et accessible à VS Code avec Jupyter, Google Colab est une excellente option. Colab est un environnement de notebooks en ligne gratuit, offert par Google, qui ne nécessite aucune installation. Il vous permet d’écrire et d’exécuter du code Python directement dans votre navigateur, tout en profitant d’un accès facile à des bibliothèques scientifiques populaires comme NumPy, pandas, ou matplotlib. C’est l’outil idéal pour débuter en programmation scientifique ou collaborer à distance, puisqu’il s’intègre à Google Drive et permet de partager vos notebooks aussi facilement qu’un document Google Docs.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/faq/alternatives/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Colab</title>
+      <link>http://localhost:1313/faq/alternatives/google-colab/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/alternatives/google-colab/index.html</guid>
+      <description>Google Colab, ou Colaboratory, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d’exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques, pour accélérer les calculs.&#xA;Accéder à Google Colab Pour commencer à utiliser Google Colab, suivez ces étapes simples :&#xA;Méthode 1: Via le site de Google Colab Allez sur le site: Google Colab.</description>
+    </item>
+    <item>
+      <title>PyCharm</title>
+      <link>http://localhost:1313/faq/alternatives/pycharm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/alternatives/pycharm/index.html</guid>
+      <description>Développé par JetBrains, PyCharm est à ce jour une plateforme très populaire pour Python. Cette plateforme hybride est couramment utilisée pour le développement d’applications Python, et notamment par de grandes entreprises telles que Twitter, Facebook, Amazon ou Pinterest.&#xA;Compatible avec Windows, Linux et macOS, PyCharm contient des modules et des packages aidant les développeurs à programmer des logiciels avec Python plus rapidement et avec moins d’efforts.&#xA;Installation et configuration Télécharger PyCharm Téléchargez PyCharm en cliquant sur le lien de téléchargement.</description>
+    </item>
+  </channel>
+</rss>

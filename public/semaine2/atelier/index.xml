@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Activité 2.2 – Calculs de concentrations et vitesses de réaction :: 420-SN1-RE</title>
+    <title>Atelier 2 :: 420-SN1-RE</title>
     <link>http://localhost:1313/semaine2/atelier/index.html</link>
-    <description>Objectif Mettre en pratique les opérations arithmétiques et la manipulation de variables en Python dans un contexte scientifique (chimie et physique). Compétences exercées Déclaration et affectation de variables Opérations arithmétiques Affichage de résultats avec formatage Interprétation scientifique d’un problème Contexte : Vous travaillez en équipe de 2 ou 3. Chaque équipe reçoit des situations-problèmes à modéliser en Python.&#xA;Exercice 1 : Calcul de concentration molaire Énoncé : Un technicien prépare une solution en dissolvant une masse donnée de soluté dans un certain volume de solvant.</description>
+    <description>Copier les exercices qui utilisent input pour les mettre dans l’atelier de la semaine 3 Remanier les exercices pour enlever la saisie au clavier&#xA;Objectifs Manipuler des variables. Utiliser des types de données différents. Afficher des résultats. Exercice 1 : Conversion de température Un thermomètre donne des relevés en Fahrenheit, mais vous devez les convertir en Celsius et Kelvin.&#xA;Utiliser une variable pour stockez une température en °C. Convertissez cette température en °F et en K.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/semaine2/atelier/index.xml" rel="self" type="application/rss+xml" />
