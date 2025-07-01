@@ -64,6 +64,9 @@
     <loc>https://example.org/semaine2/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/faq/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine2/atelier/index.html</loc>
   </url>
   <url>
@@ -151,9 +154,6 @@
     <loc>https://example.org/semaine15/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/faq/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/faq/alternatives/index.html</loc>
   </url>
   <url>
@@ -161,15 +161,6 @@
   </url>
   <url>
     <loc>https://example.org/faq/alternatives/pycharm/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/faq/sauvegarde_auto/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/faq/raccourcis_clavier/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/faq/touches_speciales/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/faq/locaux_python/index.html</loc>

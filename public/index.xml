@@ -36,6 +36,13 @@
       <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.&#xA;Exemples :&#xA;age = 17 nom = &#34;Julie&#34; temperature = 36.</description>
     </item>
     <item>
+      <title>Questions fréquemment posées</title>
+      <link>https://example.org/faq/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/faq/index.html</guid>
+      <description>Exemples Quel logiciel je peux installer sur mon ordinateur personnel pour pratiquer à la maison ? Alternatives à VS Code La sauvegarde automatique dans Visual Studio Code. Sauvegarde dans VS Code Les raccourcis clavier (copier, coller, couper, enregistrer, etc.) Trucs pratiques pour bien coder Où se trouve les touches pour [, ], {, }, @, &lt;, &gt;, etc. sur un clavier QWERTY. Trucs pratiques pour bien coder Dans quels locaux du cégep, je peux aller pratiquer ?</description>
+    </item>
+    <item>
       <title>Entrées/Sorties, Algorithme, débogage et fonctions</title>
       <link>https://example.org/semaine3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -125,13 +132,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine15/index.html</guid>
       <description>Vous devez remettre votre code en plus de la vidéo</description>
-    </item>
-    <item>
-      <title>Astuces et réponses aux questions fréquentes</title>
-      <link>https://example.org/faq/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/faq/index.html</guid>
-      <description>Exemples Quel logiciel je peux installer sur mon ordinateur personnel pour pratiquer à la maison ? La sauvegarde automatique dans Visual Studio Code. Les raccourcis clavier (copier, coller, couper, enregistrer, etc.) Où se trouve les touches pour [, ], {, }, @, &lt;, &gt;, etc. sur un clavier QWERTY. 174 Dans quels locaux du cégep, je peux aller pratiquer ?</description>
     </item>
     <item>
       <title>À FAIRE</title>
