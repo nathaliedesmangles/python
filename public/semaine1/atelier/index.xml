@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atelier 1 :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine1/atelier/index.html</link>
+    <link>https://example.org/semaine1/atelier/index.html</link>
     <description>Objectifs pédagogiques Se familiariser avec l’environnement de développement et les notions de base. Énoncé : Créez un dossier nommé programmation-sciences dans votre OneDrive.&#xA;Lancez Visual Studio Code et ouvrez ce dossier.&#xA;Créez un nouveau fichier Jupyter nommé atelier1.ipynb.&#xA;Dans une première cellule Markdown, écrivez un commentaire avec votre nom, la date, et l’objectif de l’atelier.&#xA;Dans une deuxième cellule Code, affichez un message de bienvenue avec print().&#xA;# Message proposé : print(&#34;Bienvenue dans le cours de programmation en sciences !</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine1/atelier/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine1/atelier/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

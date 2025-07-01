@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Décider avec `if`, `elif`, `else` et les opérateurs :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine4/index.html</link>
+    <link>https://example.org/semaine4/index.html</link>
     <description>Objectifs d’apprentissage Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atelier 4</title>
-      <link>http://localhost:1313/semaine4/atelier/index.html</link>
+      <link>https://example.org/semaine4/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine4/atelier/index.html</guid>
+      <guid>https://example.org/semaine4/atelier/index.html</guid>
       <description>Objectifs pédagogiques Utiliser les opérateurs de comparaison et logiques. Utiliser les structures conditionnelles if, elif, else. Travailler avec les types numériques (float, int). Exercice 1 Contexte L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :&#xA;L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse. En autocuiseur, la pression est plus élevée, donc l’eau bout à une température plus élevée.</description>
     </item>
   </channel>

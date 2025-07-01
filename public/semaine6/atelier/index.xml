@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atelier 6 :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine6/atelier/index.html</link>
+    <link>https://example.org/semaine6/atelier/index.html</link>
     <description>Objectifs d’apprentissage Utiliser les boucles for et while pour automatiser des tâches répétitives. Appliquer les boucles à une situation scientifique concrète. Travailler en collaboration pour planifier une solution et tester différents scénarios. Exercice 1 – Table de multiplication Écrire un programme Python qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.&#xA;Exemple de sortie :&#xA;Entrez un nombre entre 1 et 12 : 7&#xD;1 x 7 = 7&#xD;2 x 7 = 14&#xD;3 x 7 = 21&#xD;.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine6/atelier/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine6/atelier/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solution</title>
-      <link>http://localhost:1313/semaine6/atelier/solution/index.html</link>
+      <link>https://example.org/semaine6/atelier/solution/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine6/atelier/solution/index.html</guid>
+      <guid>https://example.org/semaine6/atelier/solution/index.html</guid>
       <description>Exercice 1 – Table de multiplication Solution de base (avec boucle for) # Demande à l&#39;usager un nombre entre 1 et 12 n = int(input(&#34;Entrez un nombre entre 1 et 12 : &#34;)) # Vérifie que le nombre est valide if 1 &lt;= n &lt;= 12: for i in range(1, 13): print(f&#34;{i} x {n} = {i * n}&#34;) else: print(&#34;Le nombre doit être entre 1 et 12.&#34;)&#xD;Variante : ordre croissant ou décroissant n = int(input(&#34;Entrez un nombre entre 1 et 12 : &#34;)) if 1 &lt;= n &lt;= 12: ordre = input(&#34;Voulez-vous l’ordre croissant (c) ou décroissant (d) ?</description>
     </item>
   </channel>

@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Astuces et réponses aux questions fréquentes :: 420-SN1-RE</title>
-    <link>http://localhost:1313/faq/index.html</link>
+    <link>https://example.org/faq/index.html</link>
     <description>Exemples Quel logiciel je peux installer sur mon ordinateur personnel pour pratiquer à la maison ? La sauvegarde automatique dans Visual Studio Code. Les raccourcis clavier (copier, coller, couper, enregistrer, etc.) Où se trouve les touches pour [, ], {, }, @, &lt;, &gt;, etc. sur un clavier QWERTY. 174 Dans quels locaux du cégep, je peux aller pratiquer ?</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/faq/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/faq/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>(Colab et PyCharm)</title>
-      <link>http://localhost:1313/faq/alternatives/index.html</link>
+      <link>https://example.org/faq/alternatives/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/faq/alternatives/index.html</guid>
+      <guid>https://example.org/faq/alternatives/index.html</guid>
       <description>Si vous cherchez une alternative simple et accessible à VS Code avec Jupyter, Google Colab est une excellente option. Colab est un environnement de notebooks en ligne gratuit, offert par Google, qui ne nécessite aucune installation. Il vous permet d’écrire et d’exécuter du code Python directement dans votre navigateur, tout en profitant d’un accès facile à des bibliothèques scientifiques populaires comme NumPy, pandas, ou matplotlib. C’est l’outil idéal pour débuter en programmation scientifique ou collaborer à distance, puisqu’il s’intègre à Google Drive et permet de partager vos notebooks aussi facilement qu’un document Google Docs.</description>
     </item>
     <item>
       <title>Sauvegarde automatique dans VS Code</title>
-      <link>http://localhost:1313/faq/sauvegarde_auto/index.html</link>
+      <link>https://example.org/faq/sauvegarde_auto/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/faq/sauvegarde_auto/index.html</guid>
+      <guid>https://example.org/faq/sauvegarde_auto/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Raccourcis clavier (copier, coller, couper, enregistrer)</title>
-      <link>http://localhost:1313/faq/raccourcis_clavier/index.html</link>
+      <link>https://example.org/faq/raccourcis_clavier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/faq/raccourcis_clavier/index.html</guid>
+      <guid>https://example.org/faq/raccourcis_clavier/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Touches spéciales ([ ], { }, @, &lt; &gt;, etc.)</title>
-      <link>http://localhost:1313/faq/touches_speciales/index.html</link>
+      <link>https://example.org/faq/touches_speciales/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/faq/touches_speciales/index.html</guid>
+      <guid>https://example.org/faq/touches_speciales/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Locaux avec Python</title>
-      <link>http://localhost:1313/faq/locaux_python/index.html</link>
+      <link>https://example.org/faq/locaux_python/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/faq/locaux_python/index.html</guid>
+      <guid>https://example.org/faq/locaux_python/index.html</guid>
       <description></description>
     </item>
   </channel>

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Listes de données et chaînes de caractères :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine7/index.html</link>
+    <link>https://example.org/semaine7/index.html</link>
     <description>Objectifs d’apprentissage Créer et manipuler des listes de données numériques ou textuelles en Python (ajout, suppression, parcours, calcul de statistiques simples). Accéder, modifier et parcourir les caractères d’une chaîne de caractères. Appliquer des méthodes de traitement de texte pour analyser ou transformer des chaînes de caractères (ex. : mise en minuscules, découpage, recherche, comptage). Les listes de données Une liste est un contenant qui peut regrouper plusieurs valeurs (appelées éléments), dans un ordre donné.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine7/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dictionnaires</title>
-      <link>http://localhost:1313/semaine7/dictionnaires/index.html</link>
+      <link>https://example.org/semaine7/dictionnaires/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine7/dictionnaires/index.html</guid>
+      <guid>https://example.org/semaine7/dictionnaires/index.html</guid>
       <description>Objectifs d’apprentissage Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.&#xA;Syntaxe de base :&#xA;mon_dictionnaire = { &#34;clé1&#34;: valeur1, &#34;clé2&#34;: valeur2 }&#xD;Exemple Un dictionnaire contenant les masses molaires de quelques éléments :&#xA;masses_molaires = { &#34;H&#34;: 1.008, &#34;O&#34;: 15.</description>
     </item>
     <item>
       <title>Atelier 7</title>
-      <link>http://localhost:1313/semaine7/atelier/index.html</link>
+      <link>https://example.org/semaine7/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine7/atelier/index.html</guid>
+      <guid>https://example.org/semaine7/atelier/index.html</guid>
       <description></description>
     </item>
   </channel>

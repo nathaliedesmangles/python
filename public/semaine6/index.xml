@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Répéter avec `for` et `while` :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine6/index.html</link>
+    <link>https://example.org/semaine6/index.html</link>
     <description>Objectifs de la leçon Comprendre l’utilité des boucles en programmation. Savoir écrire des boucles while et for. Savoir identifier quand utiliser une boucle for vs. while. Interrompre le déroulement d’une boucle. Appliquer les boucles à des cas concrets en sciences. À quoi servent les boucles ? Elles permettent de répéter des instructions plusieurs fois, soit un nombre connu, soit jusqu’à ce qu’une condition soit atteinte.&#xA;La boucle while Utilisée quand on ne connaît pas d’avance combien de fois répéter.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atelier 6</title>
-      <link>http://localhost:1313/semaine6/atelier/index.html</link>
+      <link>https://example.org/semaine6/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine6/atelier/index.html</guid>
+      <guid>https://example.org/semaine6/atelier/index.html</guid>
       <description>Objectifs d’apprentissage Utiliser les boucles for et while pour automatiser des tâches répétitives. Appliquer les boucles à une situation scientifique concrète. Travailler en collaboration pour planifier une solution et tester différents scénarios. Exercice 1 – Table de multiplication Écrire un programme Python qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.&#xA;Exemple de sortie :&#xA;Entrez un nombre entre 1 et 12 : 7&#xD;1 x 7 = 7&#xD;2 x 7 = 14&#xD;3 x 7 = 21&#xD;.</description>
     </item>
   </channel>

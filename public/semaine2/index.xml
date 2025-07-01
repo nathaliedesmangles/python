@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction à Python (Variables, types et expressions) :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine2/index.html</link>
+    <link>https://example.org/semaine2/index.html</link>
     <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.&#xA;Exemples :&#xA;age = 17 nom = &#34;Julie&#34; temperature = 36.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atelier 2</title>
-      <link>http://localhost:1313/semaine2/atelier/index.html</link>
+      <link>https://example.org/semaine2/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine2/atelier/index.html</guid>
+      <guid>https://example.org/semaine2/atelier/index.html</guid>
       <description>Copier les exercices qui utilisent input pour les mettre dans l’atelier de la semaine 3 Remanier les exercices pour enlever la saisie au clavier&#xA;Objectifs Manipuler des variables. Utiliser des types de données différents. Afficher des résultats. Exercice 1 : Conversion de température Un thermomètre donne des relevés en Fahrenheit, mais vous devez les convertir en Celsius et Kelvin.&#xA;Utiliser une variable pour stockez une température en °C. Convertissez cette température en °F et en K.</description>
     </item>
   </channel>

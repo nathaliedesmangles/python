@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Entrées/Sorties, Algorithme, débogage et fonctions :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine3/index.html</link>
+    <link>https://example.org/semaine3/index.html</link>
     <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Utiliser des fonctions prédéfinies (ex: Module math) Définir ses propres fonctions. Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atelier 3</title>
-      <link>http://localhost:1313/semaine3/atelier/index.html</link>
+      <link>https://example.org/semaine3/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine3/atelier/index.html</guid>
+      <guid>https://example.org/semaine3/atelier/index.html</guid>
       <description>Objectifs pédagogiques Être capable de :&#xA;Saisir des données au clavier. Convertir des types de données Traduire un algorithme simple en code Python Repérer et corriger des erreurs dans un script Utiliser des fonctions prédéfinies pour faire des calculs ou manipuler des données Exercice 1 – Traduire un algorithme Voici un algorithme :&#xA;Demander la distance parcourue (en mètres) Demander le temps écoulé (en secondes) Calculer la vitesse moyenne (v = d / t) Afficher la vitesse moyenne Consigne : Traduis cet algorithme en code Python.</description>
     </item>
   </channel>

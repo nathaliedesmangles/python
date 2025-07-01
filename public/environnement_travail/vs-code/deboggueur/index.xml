@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Déboguer dans Visual Studio Code :: 420-SN1-RE</title>
-    <link>http://localhost:1313/environnement_travail/vs-code/deboggueur/index.html</link>
+    <link>https://example.org/environnement_travail/vs-code/deboggueur/index.html</link>
     <description>Extensions de débogage VS Code prend en charge le débogage pour Node.js et peut déboguer JavaScript, TypeScript, et d’autres langages compilés en JavaScript. Pour d’autres langages et environnements d’exécution, il existe des extensions de débogage dans le Marketplace de VS Code.&#xA;Par exemple pour Python:&#xA;Le débogueur est un outil utile qui vous permet d’inspecter le flux d’exécution de votre code et d’identifier plus facilement les erreurs, ainsi que d’explorer comment vos variables et données changent au fur et à mesure que votre programme s’exécute.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/environnement_travail/vs-code/deboggueur/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/environnement_travail/vs-code/deboggueur/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prise en main de l&#39;outil informatique :: 420-SN1-RE</title>
-    <link>http://localhost:1313/environnement_travail/prise-en-main-de-loutil-informatique/index.html</link>
+    <link>https://example.org/environnement_travail/prise-en-main-de-loutil-informatique/index.html</link>
     <description>Objectifs pédagogiques Apprendre à s’organiser pour le cours Se connecter et utiliser OneDrive Créer une structure de dossiers pour le cours Télécharger un fichier, le retrouver et le placer dans le bon dossier Prendre en main VS Code et Jupyter Notebook Activez l’extension des fichiers 1. Se connecter à OneDrive Ouvrir OneDrive : Cliquez sur la petite flèche en bas à droite de l’écran (dans la barre de menu). Si l’icone de OneDrive ressemble à celle-ci, c’est que vous n’est pas connecté.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/environnement_travail/prise-en-main-de-loutil-informatique/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/environnement_travail/prise-en-main-de-loutil-informatique/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
