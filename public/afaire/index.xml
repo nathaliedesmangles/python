@@ -43,6 +43,13 @@
       <description>Objectifs de la séance (2h) Comprendre comment fonctionne le débogueur dans PyCharm. Apprendre à utiliser les points d’arrêt (breakpoints), la fenêtre des variables, les options Step Over, Step Into, Evaluate Expression, etc. Réviser les structures conditionnelles (if/elif/else) et les boucles (for, while) en les testant pas à pas. Apprendre à identifier les erreurs logiques classiques en sciences (unités, ordre des opérations, initialisation incorrecte, etc.). Plan de la séance (2h) Temps Activité 0:00-0:15 Introduction au débogueur PyCharm (démonstration) 0:15-0:35 Exemple guidé 1 : if/elif/else – température de changement d’état 0:35-1:00 Exercice 1 : Identifier les erreurs dans un modèle de dilatation thermique 1:00-1:20 Exemple guidé 2 : boucle for – somme des masses d’échantillons 1:20-1:40 Exercice 2 : Corriger une boucle while mal conditionnée (demi-vie radioactive) 1:40-2:00 Défi final : simulation simplifiée de chute libre avec erreur à trouver Outils PyCharm installé.</description>
     </item>
     <item>
+      <title>Écrire un notebook Python bien structuré</title>
+      <link>https://example.org/afaire/markdown/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/afaire/markdown/index.html</guid>
+      <description>Voici une leçon concise et essentielle sur la rédaction d’un notebook Jupyter clair et bien structuré en Python, avec des explications adaptées à des étudiants de première session en sciences de la nature.&#xA;🧾 Leçon : 🎯 Objectifs Utiliser le Markdown pour structurer les sections du notebook Séparer clairement la théorie, le code et l’interprétation Ajouter des commentaires dans le code S’assurer que toutes les cellules s’exécutent sans erreur, du haut vers le bas 1.</description>
+    </item>
+    <item>
       <title>L’écriture et la lecture de données (csv)</title>
       <link>https://example.org/afaire/lecture_ecriture_csv_numpy/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

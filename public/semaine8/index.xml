@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Évaluation 2 (20%) :: 420-SN1-RE</title>
+    <title>Listes et tableaux imbriqués :: 420-SN1-RE</title>
     <link>https://example.org/semaine8/index.html</link>
-    <description></description>
+    <description>Objectifs d’apprentissage Créer des listes Accéder à un élément dans une liste ou un tableau 2D (liste de listes) Utiliser des boucles imbriquées pour parcourir un tableau Ajouter des conditions dans les boucles 1. Liste simple Une liste est un ensemble de valeurs entre crochets [].&#xA;notes = [78, 85, 92] print(notes[1]) # 85 (indice commence à 0)&#xD;Chaque valeur d’une liste est est positionné par indice, en commençant par l’indice 0.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine8/index.xml" rel="self" type="application/rss+xml" />

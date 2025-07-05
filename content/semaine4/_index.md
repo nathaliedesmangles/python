@@ -1,8 +1,8 @@
 +++
 chapter = true
-pre = "<b>Semaine 4.</b>"
+pre = "<b>4.</b>"
 title = "Décider avec `if`, `elif`, `else` et les opérateurs"
-weight = 40
+weight = 104
 +++
 
 

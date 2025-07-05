@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>  :: 420-SN1-RE</title>
+    <link>https://example.org/outils_dev/jupyter/index.html</link>
+    <description>Tutoriel pour VS Code et Jupyter Notebook Voici un fichier qui vous expliquera comment utiliser jupyter notebook dans VS Code : Tutoriel pour utiliser Jupyter avec VS Code&#xA;Blocs-notes Jupyter dans VS Code Jupyter (anciennement IPython Notebook) est un projet open source qui vous permet de combiner facilement du texte Markdown et du code source Python exécutable sur un canevas appelé notebook.&#xA;Visual Studio Code prend en charge l’utilisation des blocs-notes Jupyter en mode natif et via des fichiers de code Python.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/outils_dev/jupyter/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

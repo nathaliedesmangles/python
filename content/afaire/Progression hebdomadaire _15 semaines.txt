@@ -1,0 +1,41 @@
++++
+title = "Progression hebdomadaire (15 semaines)"
+weight = 5
++++
+
+Parfait ! Voici une **progression par semaine** sur 15 semaines pour un **cours de programmation en sciences avec Python**, en intégrant progressivement les bibliothèques **NumPy**, **Matplotlib**, **Pandas** et **SciPy**, selon un ordre pédagogique cohérent pour des étudiants de première session en sciences de la nature.
+
+---
+
+## 🔍 Progression hebdomadaire (15 semaines)
+
+| Semaine | Contenu principal                            | Objectifs et bibliothèques introduites                           | Activités                                                                  |
+| ------- | -------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **1**   | Introduction à Python                        | Syntaxe de base, variables, types, expressions, `print()`        | Exemples simples issus de la science (aire, volume, dilution)              |
+| **2**   | Structures de contrôle                       | Conditions, boucles `for` et `while`                             | Petits programmes avec répétition de mesures, tests de seuil               |
+| **3**   | Fonctions                                    | Définir et appeler des fonctions, paramètres, retour             | Créer des fonctions scientifiques simples : ex. loi de Beer-Lambert        |
+| **4**   | Listes et tableaux simples                   | Listes Python, listes de listes, intro aux structures de données | Manipuler des mesures expérimentales sous forme de liste                   |
+| **5**   | 📦 **Introduction à NumPy**                  | Tableaux 1D et 2D, opérations vectorisées, statistiques          | Créer des tableaux de données expérimentales, calculer moyenne, écart-type |
+| **6**   | 💡 **Opérations avancées avec NumPy**        | Indexation, masques, fonctions d’agrégation, slicing             | Analyser des résultats d’expérience avec plusieurs conditions              |
+| **7**   | 📊 **Introduction à Matplotlib**             | `plot()`, `xlabel()`, `title()`, `legend()`                      | Tracer des courbes température/temps, croissance bactérienne               |
+| **8**   | 🎨 **Graphiques multiples et personnalisés** | Plusieurs courbes, styles, annotations, `subplot()`              | Comparaison de données simulées vs expérimentales                          |
+| **9**   | 📁 **Fichiers texte et CSV (manuel)**        | Utilisation de `open()`, `write()`, `readlines()`                | Sauvegarde et lecture de mesures simulées ou réelles                       |
+| **10**  | 🐼 **Introduction à Pandas**                 | `read_csv()`, `DataFrame`, sélection, indexation                 | Lire un fichier de mesures expérimentales, extraire des colonnes           |
+| **11**  | 🔎 **Analyse de données avec Pandas**        | Moyennes par groupe, tri, filtres, fusion de fichiers            | Analyse d’un tableau de résultats de laboratoire                           |
+| **12**  | 🧠 **Introduction à SciPy**                  | `curve_fit`, interpolation, intégration                          | Ajustement de modèle (ex: cinétique enzymatique)                           |
+| **13**  | 📈 **Projet guidé – Analyse de données**     | Consolidation : NumPy + Pandas + Matplotlib                      | Analyse de données scientifiques réelles ou simulées                       |
+| **14**  | 🧪 **Projet final (suite)**                  | Intégration de tout : lecture, analyse, visualisation            | Projet : présentation des résultats sous forme de graphique                |
+| **15**  | 🎥 Présentation des projets finaux           | Présentations vidéo ou en classe                                 | Évaluation finale avec grille de compétences                               |
+
+---
+
+## 📌 Évaluations proposées
+
+| Évaluation                         | Semaine          | Pondération | Contenu évalué                                      |
+| ---------------------------------- | ---------------- | ----------- | --------------------------------------------------- |
+| Éval 1 – Fonctions et boucles      | Semaine 4        | 15 %        | Syntaxe, logique, petites fonctions                 |
+| Éval 2 – Tableaux + Graphiques     | Semaine 8        | 20 %        | NumPy + Matplotlib                                  |
+| Éval 3 – Données réelles + analyse | Semaine 11       | 25 %        | Fichier `.csv`, Pandas, visualisation               |
+| Projet intégrateur                 | Semaines 13 à 15 | 40 %        | Intégration de tout, rendu structuré (vidéo + code) |
+
+

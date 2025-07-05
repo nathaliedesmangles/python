@@ -1,7 +1,7 @@
 +++
 chapter = true
-pre = "<b>Semaine 13.</b>"
-title = "Introduction au projet final (40%)"
+pre = "<b>13.</b>"
+title = "Travail sur le projet final"
 weight = 130
 +++
 

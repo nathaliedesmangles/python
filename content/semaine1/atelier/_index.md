@@ -1,15 +1,18 @@
 +++
 title = "Atelier 1"
-weight = 14
+weight = 102
 +++
 
 ## Objectifs pédagogiques
 
-* Se familiariser avec l’environnement de développement et les notions de base.
+* Se familiariser avec l’environnement de développement.
+	* Le système de fichiers
+	* Visual Studio Code
+	* Jupyter Notebook (Cellules Markdown vs Code)
+	* Écrire et exécuter un premier script en python
 
 ---
 
-## Énoncé :
 
 1. Créez un dossier nommé programmation-sciences dans votre OneDrive.
 

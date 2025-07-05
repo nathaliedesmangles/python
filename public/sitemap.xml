@@ -10,13 +10,13 @@
     <loc>https://example.org/afaire/plan/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/regles/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/afaire/break_continue_liste/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/afaire/debogage/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/afaire/markdown/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/afaire/lecture_ecriture_csv_numpy/index.html</loc>
@@ -25,16 +25,13 @@
     <loc>https://example.org/afaire/boucler_tableaux2d/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/environnement_travail/index.html</loc>
+    <loc>https://example.org/faq/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine1/index.html</loc>
+    <loc>https://example.org/faq/alternatives/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/environnement_travail/prise-en-main-de-loutil-informatique/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/environnement_travail/systeme_de_fichiers/index.html</loc>
+    <loc>https://example.org/faq/locaux_python/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine1/onedrive/index.html</loc>
@@ -43,40 +40,43 @@
     <loc>https://example.org/semaine1/vscodejupyter/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine1/atelier/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/environnement_travail/sauvegarde_vscode/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/environnement_travail/jupyter/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/environnement_travail/trucs_pratiques/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/environnement_travail/vs-code/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/environnement_travail/markdown/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine2/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/faq/index.html</loc>
+    <loc>https://example.org/outils_dev/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine2/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine3/index.html</loc>
+    <loc>https://example.org/outils_dev/onedrive/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/outils_dev/fichiers_dossiers/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/outils_dev/vs-code/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/outils_dev/vs-code/debogueur/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/outils_dev/vs-code/sauvegarde/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/outils_dev/jupyter/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/outils_dev/trucs_pratiques/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/outils_dev/markdown/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/regles/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine3/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine4/index.html</loc>
+    <loc>https://example.org/separateur_section/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine4/atelier/index.html</loc>
@@ -85,19 +85,10 @@
     <loc>https://example.org/semaine4/atelier/solution/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine5/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine6/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/semaine6/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine6/atelier/solution/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine7/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine7/dictionnaires/index.html</loc>
@@ -106,31 +97,76 @@
     <loc>https://example.org/semaine7/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine8/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/semaine8/atelier/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine9/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine9/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine10/index.html</loc>
+    <loc>https://example.org/cours/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine10/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine11/index.html</loc>
+    <loc>https://example.org/semaine1/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine1/atelier/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine2/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine3/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine4/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine5/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine6/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine7/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine8/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine9/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine10/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine11/atelier/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine11/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine12/exercices_preparatoires/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine12/grille/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine12/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine12/notions_utiles_necessaires/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine12/projet_integrateur/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine14/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine15/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine13/index.html</loc>
@@ -148,31 +184,10 @@
     <loc>https://example.org/semaine13/projet4/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine14/index.html</loc>
+    <loc>https://example.org/solutions_exercices/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine15/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/faq/alternatives/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/faq/alternatives/google-colab/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/faq/alternatives/pycharm/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/faq/locaux_python/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/environnement_travail/vs-code/deboggueur/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/environnement_travail/vs-code/sauvegarge-automatique/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/environnement_travail/vs-code/vs-code-jupyter/index.html</loc>
+    <loc>https://example.org/solutions_ateliers/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/afaire/index.html</loc>

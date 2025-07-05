@@ -5,54 +5,38 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Examen formatif Description Type : Activité formative
-Durée : 2h40
-But : Révision collaborative, application active
-Modalité : Individuelle – Accès aux notes de cours permis, mais aucun partage entre étudiants. Outils autorisés : Jupyter Notebook avec Anaconda (numpy, pandas, matplotlib intégrés)
-Cette activité n’est pas notée, mais vous recevrez une rétroaction qualitative sur :
-La clarté et la structure de votre code Votre capacité à repérer et expliquer des erreurs Notions évaluées">
+    <meta name="description" content="Objectifs d’apprentissage Créer un tableau de données (DataFrame) Lire un fichier CSV Parcourir les lignes d’un tableau Faire des calculs sur les colonnes Ajouter une nouvelle colonne 1. Importer Pandas Avant toute manipulation :
+import pandas as pd2. Créer un DataFrame à la main data = { &#34;Nom&#34;: [&#34;Alice&#34;, &#34;Bob&#34;, &#34;Chloé&#34;], &#34;Note&#34;: [88, 72, 91] } df = pd.DataFrame(data)On crée un tableau à partir d’un dictionnaire : chaque clé devient une colonne.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Examen 2 (30%) :: 420-SN1-RE">
-    <meta name="twitter:description" content="Examen formatif Description Type : Activité formative
-Durée : 2h40
-But : Révision collaborative, application active
-Modalité : Individuelle – Accès aux notes de cours permis, mais aucun partage entre étudiants. Outils autorisés : Jupyter Notebook avec Anaconda (numpy, pandas, matplotlib intégrés)
-Cette activité n’est pas notée, mais vous recevrez une rétroaction qualitative sur :
-La clarté et la structure de votre code Votre capacité à repérer et expliquer des erreurs Notions évaluées">
+    <meta name="twitter:title" content="Manipulation de tableaux avec Pandas :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs d’apprentissage Créer un tableau de données (DataFrame) Lire un fichier CSV Parcourir les lignes d’un tableau Faire des calculs sur les colonnes Ajouter une nouvelle colonne 1. Importer Pandas Avant toute manipulation :
+import pandas as pd2. Créer un DataFrame à la main data = { &#34;Nom&#34;: [&#34;Alice&#34;, &#34;Bob&#34;, &#34;Chloé&#34;], &#34;Note&#34;: [88, 72, 91] } df = pd.DataFrame(data)On crée un tableau à partir d’un dictionnaire : chaque clé devient une colonne.">
     <meta property="og:url" content="https://example.org/semaine12/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content="Examen 2 (30%) :: 420-SN1-RE">
-    <meta property="og:description" content="Examen formatif Description Type : Activité formative
-Durée : 2h40
-But : Révision collaborative, application active
-Modalité : Individuelle – Accès aux notes de cours permis, mais aucun partage entre étudiants. Outils autorisés : Jupyter Notebook avec Anaconda (numpy, pandas, matplotlib intégrés)
-Cette activité n’est pas notée, mais vous recevrez une rétroaction qualitative sur :
-La clarté et la structure de votre code Votre capacité à repérer et expliquer des erreurs Notions évaluées">
+    <meta property="og:title" content="Manipulation de tableaux avec Pandas :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs d’apprentissage Créer un tableau de données (DataFrame) Lire un fichier CSV Parcourir les lignes d’un tableau Faire des calculs sur les colonnes Ajouter une nouvelle colonne 1. Importer Pandas Avant toute manipulation :
+import pandas as pd2. Créer un DataFrame à la main data = { &#34;Nom&#34;: [&#34;Alice&#34;, &#34;Bob&#34;, &#34;Chloé&#34;], &#34;Note&#34;: [88, 72, 91] } df = pd.DataFrame(data)On crée un tableau à partir d’un dictionnaire : chaque clé devient une colonne.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="Examen 2 (30%) :: 420-SN1-RE">
-    <meta itemprop="description" content="Examen formatif Description Type : Activité formative
-Durée : 2h40
-But : Révision collaborative, application active
-Modalité : Individuelle – Accès aux notes de cours permis, mais aucun partage entre étudiants. Outils autorisés : Jupyter Notebook avec Anaconda (numpy, pandas, matplotlib intégrés)
-Cette activité n’est pas notée, mais vous recevrez une rétroaction qualitative sur :
-La clarté et la structure de votre code Votre capacité à repérer et expliquer des erreurs Notions évaluées">
-    <meta itemprop="wordCount" content="436">
-    <title>Examen 2 (30%) :: 420-SN1-RE</title>
-    <link href="/semaine12/index.xml" rel="alternate" type="application/rss+xml" title="Examen 2 (30%) :: 420-SN1-RE">
-    <link href="/images/logo.png?1751403943" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751403943" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751403943" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751403943" rel="stylesheet">
-    <link href="/css/theme.min.css?1751403943" rel="stylesheet">
-    <link href="/css/format-html.min.css?1751403943" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1751403943" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1751403943" defer></script>
-    <script src="/js/search.min.js?1751403943" defer></script>
+    <meta itemprop="name" content="Manipulation de tableaux avec Pandas :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs d’apprentissage Créer un tableau de données (DataFrame) Lire un fichier CSV Parcourir les lignes d’un tableau Faire des calculs sur les colonnes Ajouter une nouvelle colonne 1. Importer Pandas Avant toute manipulation :
+import pandas as pd2. Créer un DataFrame à la main data = { &#34;Nom&#34;: [&#34;Alice&#34;, &#34;Bob&#34;, &#34;Chloé&#34;], &#34;Note&#34;: [88, 72, 91] } df = pd.DataFrame(data)On crée un tableau à partir d’un dictionnaire : chaque clé devient une colonne.">
+    <meta itemprop="wordCount" content="302">
+    <title>Manipulation de tableaux avec Pandas :: 420-SN1-RE</title>
+    <link href="/semaine12/index.xml" rel="alternate" type="application/rss+xml" title="Manipulation de tableaux avec Pandas :: 420-SN1-RE">
+    <link href="/images/logo.png?1751740318" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751740318" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751740318" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751740318" rel="stylesheet">
+    <link href="/css/theme.min.css?1751740318" rel="stylesheet">
+    <link href="/css/format-html.min.css?1751740318" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1751740318" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1751740318" defer></script>
+    <script src="/js/search.min.js?1751740318" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -62,7 +46,7 @@ La clarté et la structure de votre code Votre capacité à repérer et explique
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1751403943";
+      window.relearn.index_js_url="/searchindex.en.js?1751740318";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -123,17 +107,31 @@ La clarté et la structure de votre code Votre capacité à repérer et explique
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#description">Description</a></li>
-    <li><a href="#consigne-générale">Consigne générale</a>
+    <li><a href="#objectifs-dapprentissage">Objectifs d&rsquo;apprentissage</a></li>
+    <li><a href="#1-importer-pandas">1. Importer Pandas</a></li>
+    <li><a href="#2-créer-un-dataframe-à-la-main">2. Créer un DataFrame à la main</a></li>
+    <li><a href="#3-lire-un-fichier-csv">3. Lire un fichier CSV</a></li>
+    <li><a href="#4-parcourir-un-dataframe">4. Parcourir un DataFrame</a>
       <ul>
-        <li><a href="#contexte-scientifique--étude-dune-expérience-de-fermentation">Contexte scientifique : Étude d’une expérience de fermentation</a></li>
-        <li><a href="#fichier-fourni--fermentation_co2csv">Fichier fourni : <code>fermentation_co2.csv</code></a></li>
-        <li><a href="#partie-1--lecture-et-traitement-des-données-30-">Partie 1 – Lecture et traitement des données (30 %)</a></li>
-        <li><a href="#partie-2--fonctions-personnalisées-25-">Partie 2 – Fonctions personnalisées (25 %)</a></li>
-        <li><a href="#partie-3--visualisation-des-données-20-">Partie 3 – Visualisation des données (20 %)</a></li>
-        <li><a href="#partie-4--exportation-des-résultats-15-">Partie 4 – Exportation des résultats (15 %)</a></li>
-        <li><a href="#partie-5--interprétation-et-conclusion-10-">Partie 5 – Interprétation et conclusion (10 %)</a></li>
-        <li><a href="#critères-de-correction-résumé">Critères de correction (résumé)</a></li>
+        <li><a href="#avec-iterrows-">Avec <code>.iterrows()</code> :</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-calculs-sur-une-colonne">5. Calculs sur une colonne</a>
+      <ul>
+        <li><a href="#exemple-">Exemple :</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-ajouter-une-nouvelle-colonne">6. Ajouter une nouvelle colonne</a>
+      <ul>
+        <li><a href="#exemple--1">Exemple :</a></li>
+      </ul>
+    </li>
+    <li><a href="#résumé-minimal">Résumé minimal</a></li>
+    <li><a href="#exercices-guidés">Exercices guidés</a>
+      <ul>
+        <li><a href="#exercice-1--lire-et-afficher">Exercice 1 – Lire et afficher</a></li>
+        <li><a href="#exercice-2--calculer-une-colonne-normalisée">Exercice 2 – Calculer une colonne normalisée</a></li>
+        <li><a href="#exercice-3--trier-et-afficher">Exercice 3 – Trier et afficher</a></li>
       </ul>
     </li>
   </ul>
@@ -144,12 +142,12 @@ La clarté et la structure de votre code Votre capacité à repérer et explique
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Examen 2 (30%)</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Manipulation de tableaux avec Pandas</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine11/atelier/index.html" title="Activité 11 - Traitement de résultats de laboratoire (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine13/index.html" title="Introduction au projet final (40%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine12/exercices_preparatoires/index.html" title="exercices préparatoires progressifs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -169,138 +167,128 @@ La clarté et la structure de votre code Votre capacité à repérer et explique
   <header class="headline">
   </header>
 
-<h1 id="examen-2-30">Examen 2 (30%)</h1>
+<h1 id="manipulation-de-tableaux-avec-pandas">Manipulation de tableaux avec Pandas</h1>
 
-<h1 id="examen-formatif">Examen formatif</h1>
-<h2 id="description">Description</h2>
-<p><strong>Type</strong> : Activité formative<br>
-<strong>Durée</strong> : 2h40<br>
-<strong>But</strong> : Révision collaborative, application active<br>
-<strong>Modalité :</strong> Individuelle – Accès aux notes de cours permis, mais aucun partage entre étudiants.
-<strong>Outils autorisés :</strong> Jupyter Notebook avec Anaconda (numpy, pandas, matplotlib intégrés)</p>
-<p>Cette activité n’est pas notée, mais vous recevrez une <strong>rétroaction qualitative</strong> sur :</p>
+<h2 id="objectifs-dapprentissage">Objectifs d&rsquo;apprentissage</h2>
 <ul>
-<li>La clarté et la structure de votre code</li>
-<li>Votre capacité à repérer et expliquer des erreurs</li>
-</ul>
-<p><strong>Notions évaluées</strong></p>
-<ul>
-<li>Fonctions définies par l&rsquo;utilisateur</li>
-<li>Structures de données (listes et dictionnaires)</li>
-<li>Bibliothèques <strong>numpy</strong> et <strong>pandas</strong></li>
-<li>Visualisation avec <strong>matplotlib</strong></li>
-<li>Lecture/écriture de fichiers <strong>CSV</strong></li>
+<li>Créer un tableau de données (<code>DataFrame</code>)</li>
+<li>Lire un fichier CSV</li>
+<li>Parcourir les lignes d’un tableau</li>
+<li>Faire des calculs sur les colonnes</li>
+<li>Ajouter une nouvelle colonne</li>
 </ul>
 <hr>
-<h2 id="consigne-générale">Consigne générale</h2>
-<h3 id="contexte-scientifique--étude-dune-expérience-de-fermentation">Contexte scientifique : Étude d’une expérience de fermentation</h3>
-<p>Un laboratoire a mesuré la concentration de dioxyde de carbone (CO₂) produite par un mélange de levure et de sucre dans un récipient fermé, à intervalles de 10 minutes pendant 2 heures. Ces données ont été enregistrées dans un fichier CSV.</p>
-<h3 id="fichier-fourni--fermentation_co2csv">Fichier fourni : <code>fermentation_co2.csv</code></h3>
-<p>Contenu du fichier :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Temps (min),CO2 (mg/L)
-0,0
-10,5.2
-20,10.4
-30,17.5
-40,25.1
-50,32.0
-60,38.5
-70,43.2
-80,46.0
-90,48.1
-100,49.2
-110,49.8
-120,50.0</code></pre></div>
-<h3 id="partie-1--lecture-et-traitement-des-données-30-">Partie 1 – Lecture et traitement des données (30 %)</h3>
-<ol>
-<li>
-<p>Lire le fichier CSV à l’aide de <code>pandas</code>.</p>
-</li>
-<li>
-<p>Convertir la colonne CO2 en tableau numpy et calculer :</p>
-<ul>
-<li>la moyenne</li>
-<li>l’écart-type</li>
-<li>la variation maximale entre deux mesures consécutives</li>
-</ul>
-</li>
-<li>
-<p>Créer un dictionnaire associant chaque temps à la variation de CO₂ depuis la mesure précédente.</p>
-</li>
-</ol>
-<h3 id="partie-2--fonctions-personnalisées-25-">Partie 2 – Fonctions personnalisées (25 %)</h3>
-<ol>
-<li>Écrire une fonction <code>variation(co2)</code> qui prend une liste de valeurs de CO₂ et retourne une nouvelle liste des variations absolues entre chaque mesure et la précédente.</li>
-<li>Écrire une fonction <code>alerte_variation(var, seuil)</code> qui retourne les indices où la variation dépasse un seuil donné (par exemple 5 mg/L).</li>
-</ol>
-<h3 id="partie-3--visualisation-des-données-20-">Partie 3 – Visualisation des données (20 %)</h3>
-<ol>
-<li>Tracer un graphique montrant la concentration de CO₂ en fonction du temps.</li>
-<li>Ajouter au graphique une ligne horizontale représentant la moyenne de CO₂.</li>
-<li>Ajouter une annotation (flèche ou texte) au moment où la variation maximale s’est produite.</li>
-</ol>
-<h3 id="partie-4--exportation-des-résultats-15-">Partie 4 – Exportation des résultats (15 %)</h3>
-<ol>
-<li>
-<p>Ajouter une colonne &ldquo;Variation_CO2&rdquo; au DataFrame.</p>
-</li>
-<li>
-<p>Écrire un nouveau fichier <code>fermentation_analyse.csv</code> avec les colonnes :</p>
-<ul>
-<li>Temps (min)</li>
-<li>CO2 (mg/L)</li>
-<li>Variation_CO2</li>
-</ul>
-</li>
-</ol>
-<h3 id="partie-5--interprétation-et-conclusion-10-">Partie 5 – Interprétation et conclusion (10 %)</h3>
-<ol>
-<li>
-<p>En 4 à 5 lignes, résumez :</p>
-<ul>
-<li>L’allure générale de l’évolution du CO₂</li>
-<li>Le moment où l’activité fermentaire est la plus intense</li>
-<li>Une hypothèse sur le ralentissement ou la stabilisation observée</li>
-</ul>
-</li>
-</ol>
-<h3 id="critères-de-correction-résumé">Critères de correction (résumé)</h3>
+<h2 id="1-importer-pandas">1. Importer Pandas</h2>
+<p>Avant toute manipulation :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd</span></span></code></pre></div>
+<h2 id="2-créer-un-dataframe-à-la-main">2. Créer un DataFrame à la main</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Nom&#34;</span>: [<span style="color:#e6db74">&#34;Alice&#34;</span>, <span style="color:#e6db74">&#34;Bob&#34;</span>, <span style="color:#e6db74">&#34;Chloé&#34;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Note&#34;</span>: [<span style="color:#ae81ff">88</span>, <span style="color:#ae81ff">72</span>, <span style="color:#ae81ff">91</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data)</span></span></code></pre></div>
+<p>On crée un tableau à partir d’un <strong>dictionnaire</strong> : chaque clé devient une <strong>colonne</strong>.</p>
+<h2 id="3-lire-un-fichier-csv">3. Lire un fichier CSV</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;fichier.csv&#34;</span>)</span></span></code></pre></div>
+<p>Le fichier doit être dans le même dossier, ou donner le chemin complet.</p>
+<h2 id="4-parcourir-un-dataframe">4. Parcourir un DataFrame</h2>
+<h3 id="avec-iterrows-">Avec <code>.iterrows()</code> :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> index, row <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>iterrows():
+</span></span><span style="display:flex;"><span>    print(row[<span style="color:#e6db74">&#34;Nom&#34;</span>], row[<span style="color:#e6db74">&#34;Note&#34;</span>])</span></span></code></pre></div>
+<p>On peut accéder à chaque <strong>ligne</strong> comme un dictionnaire (<code>row[&quot;Nom&quot;]</code>).</p>
+<h2 id="5-calculs-sur-une-colonne">5. Calculs sur une colonne</h2>
 <table>
 <thead>
 <tr>
-<th>Section</th>
-<th>Pondération</th>
-<th>Éléments évalués</th>
+<th>But</th>
+<th>Syntaxe</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Lecture et traitement</td>
-<td>30 %</td>
-<td>Lecture correcte, calculs numpy, dictionnaire</td>
+<td>Moyenne</td>
+<td><code>df[&quot;Note&quot;].mean()</code></td>
 </tr>
 <tr>
-<td>Fonctions</td>
-<td>25 %</td>
-<td>Syntaxe, utilité, bon usage des structures</td>
+<td>Arrondir</td>
+<td><code>df[&quot;Note&quot;].round(1)</code></td>
 </tr>
 <tr>
-<td>Graphique</td>
-<td>20 %</td>
-<td>Clarté, précision, annotations</td>
-</tr>
-<tr>
-<td>Fichier exporté</td>
-<td>15 %</td>
-<td>Structure correcte, données exactes</td>
-</tr>
-<tr>
-<td>Interprétation scientifique</td>
-<td>10 %</td>
-<td>Clarté, pertinence de l’analyse</td>
+<td>Trier</td>
+<td><code>df.sort_values(&quot;Note&quot;, ascending=False)</code></td>
 </tr>
 </tbody>
 </table>
+<h3 id="exemple-">Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>moy <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Note&#34;</span>]<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Moyenne :&#34;</span>, moy)</span></span></code></pre></div>
+<h2 id="6-ajouter-une-nouvelle-colonne">6. Ajouter une nouvelle colonne</h2>
+<p>On peut <strong>créer une colonne calculée</strong> à partir des autres.</p>
+<h3 id="exemple--1">Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Note_sur_10&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Note&#34;</span>] <span style="color:#f92672">/</span> <span style="color:#ae81ff">10</span></span></span></code></pre></div>
+<p>Cela ajoute une nouvelle colonne au tableau.</p>
+<h2 id="résumé-minimal">Résumé minimal</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Syntaxe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Créer un DataFrame</td>
+<td><code>pd.DataFrame({...})</code></td>
+</tr>
+<tr>
+<td>Lire CSV</td>
+<td><code>pd.read_csv(&quot;fichier.csv&quot;)</code></td>
+</tr>
+<tr>
+<td>Parcourir les lignes</td>
+<td><code>for i, row in df.iterrows():</code></td>
+</tr>
+<tr>
+<td>Moyenne</td>
+<td><code>df[&quot;col&quot;].mean()</code></td>
+</tr>
+<tr>
+<td>Arrondir</td>
+<td><code>df[&quot;col&quot;].round(1)</code></td>
+</tr>
+<tr>
+<td>Trier</td>
+<td><code>df.sort_values(&quot;col&quot;)</code></td>
+</tr>
+<tr>
+<td>Ajouter une colonne</td>
+<td><code>df[&quot;nouvelle&quot;] = ...</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="exercices-guidés">Exercices guidés</h2>
+<h3 id="exercice-1--lire-et-afficher">Exercice 1 – Lire et afficher</h3>
+<p><strong>Énoncé :</strong>
+Lis un fichier <code>donnees.csv</code> contenant les colonnes <code>Nom</code> et <code>Valeur</code>.
+Affiche chaque nom et sa valeur.</p>
+<p><strong>Solution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;donnees.csv&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i, row <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>iterrows():
+</span></span><span style="display:flex;"><span>    print(row[<span style="color:#e6db74">&#34;Nom&#34;</span>], <span style="color:#e6db74">&#34;→&#34;</span>, row[<span style="color:#e6db74">&#34;Valeur&#34;</span>])</span></span></code></pre></div>
+<h3 id="exercice-2--calculer-une-colonne-normalisée">Exercice 2 – Calculer une colonne normalisée</h3>
+<p><strong>Énoncé :</strong>
+À partir de la colonne <code>Valeur</code>, crée une colonne <code>Valeur_sur_100</code> qui est <code>Valeur / 100</code>.</p>
+<p><strong>Solution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Valeur_sur_100&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Valeur&#34;</span>] <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span></span></span></code></pre></div>
+<h3 id="exercice-3--trier-et-afficher">Exercice 3 – Trier et afficher</h3>
+<p><strong>Énoncé :</strong>
+Trie les données selon la colonne <code>Valeur</code> en ordre décroissant et affiche-les.</p>
+<p><strong>Solution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#34;Valeur&#34;</span>, ascending<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>print(df)</span></span></code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -350,24 +338,32 @@ La clarté et la structure de votre code Votre capacité à repérer et explique
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html">Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
-            <li class="" data-nav-id="/environnement_travail/index.html"><a class="padding" href="/environnement_travail/index.html">L&#39;environnement de travail</a><ul id="R-subsections-778a4ef1cb285be699e264e0f36c1129" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Questions fréquemment posées</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Évaluation 1 (25%)</a></li>
-            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Évaluation 2 (20%)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
-            <li class="active " data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
-            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b>Évaluation 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b>Listes et tableaux imbriqués</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b>Évaluation 2 (35%)</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b>Les tableaux NumPy et graphiques avancés</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="active parent " data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b>Manipulation de tableaux avec Pandas</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine12/exercices_preparatoires/index.html"><a class="padding" href="/semaine12/exercices_preparatoires/index.html">exercices préparatoires progressifs</a></li>
+            <li class="" data-nav-id="/semaine12/grille/index.html"><a class="padding" href="/semaine12/grille/index.html">Grille d&#39;évaluation</a></li>
+            <li class="" data-nav-id="/semaine12/notions_utiles_necessaires/index.html"><a class="padding" href="/semaine12/notions_utiles_necessaires/index.html">Notions et outils nécessaires pour réussir le projet</a></li>
+            <li class="" data-nav-id="/semaine12/projet_integrateur/index.html"><a class="padding" href="/semaine12/projet_integrateur/index.html">Projet intégrateur</a></li></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Évaluation finale (Projet final)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b>Travail sur le projet final</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"><b> * </b>Solutions des exercices</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"><b> * </b>Solutions des ateliers</a></li>
             <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
           </ul>
         </div>
@@ -386,8 +382,8 @@ La clarté et la structure de votre code Votre capacité à repérer et explique
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1751403943" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751403943" defer></script>
-    <script src="/js/theme.min.js?1751403943" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1751740318" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751740318" defer></script>
+    <script src="/js/theme.min.js?1751740318" defer></script>
   </body>
 </html>

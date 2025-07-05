@@ -1,8 +1,8 @@
 +++
 chapter = true
-pre = "<b>Semaine 6.</b>"
+pre = "<b>6.</b>"
 title = "Répéter avec `for` et `while`"
-weight = 60
+weight = 106
 +++
 
 ## Objectifs de la leçon

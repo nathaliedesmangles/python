@@ -1,112 +1,145 @@
 +++
 chapter = true
-pre = "<b>Semaine 12.</b>"
-title = "Examen 2 (30%)"
-weight = 120
+pre = "<b>12.</b>"
+title = "Manipulation de tableaux avec Pandas"
+weight = 112
 +++
 
-# Examen formatif
-## Description
 
-**Type** : Activité formative  
-**Durée** : 2h40  
-**But** : Révision collaborative, application active  
-**Modalité :** Individuelle – Accès aux notes de cours permis, mais aucun partage entre étudiants.
-**Outils autorisés :** Jupyter Notebook avec Anaconda (numpy, pandas, matplotlib intégrés)
+## Objectifs d'apprentissage
 
-Cette activité n’est pas notée, mais vous recevrez une **rétroaction qualitative** sur :
-
-* La clarté et la structure de votre code
-* Votre capacité à repérer et expliquer des erreurs
-
-**Notions évaluées**
-
-* Fonctions définies par l'utilisateur
-* Structures de données (listes et dictionnaires)
-* Bibliothèques **numpy** et **pandas**
-* Visualisation avec **matplotlib**
-* Lecture/écriture de fichiers **CSV**
-
+* Créer un tableau de données (`DataFrame`)
+* Lire un fichier CSV
+* Parcourir les lignes d’un tableau
+* Faire des calculs sur les colonnes
+* Ajouter une nouvelle colonne
 
 ---
-## Consigne générale
 
-### Contexte scientifique : Étude d’une expérience de fermentation
+## 1. Importer Pandas
 
-Un laboratoire a mesuré la concentration de dioxyde de carbone (CO₂) produite par un mélange de levure et de sucre dans un récipient fermé, à intervalles de 10 minutes pendant 2 heures. Ces données ont été enregistrées dans un fichier CSV.
+Avant toute manipulation :
 
-
-### Fichier fourni : `fermentation_co2.csv`
-
-Contenu du fichier :
-
-```
-Temps (min),CO2 (mg/L)
-0,0
-10,5.2
-20,10.4
-30,17.5
-40,25.1
-50,32.0
-60,38.5
-70,43.2
-80,46.0
-90,48.1
-100,49.2
-110,49.8
-120,50.0
+```python
+import pandas as pd
 ```
 
 
-### Partie 1 – Lecture et traitement des données (30 %)
+## 2. Créer un DataFrame à la main
 
-1. Lire le fichier CSV à l’aide de `pandas`.
-2. Convertir la colonne CO2 en tableau numpy et calculer :
+```python
+data = {
+    "Nom": ["Alice", "Bob", "Chloé"],
+    "Note": [88, 72, 91]
+}
+df = pd.DataFrame(data)
+```
 
-   * la moyenne
-   * l’écart-type
-   * la variation maximale entre deux mesures consécutives
-3. Créer un dictionnaire associant chaque temps à la variation de CO₂ depuis la mesure précédente.
-
-### Partie 2 – Fonctions personnalisées (25 %)
-
-1. Écrire une fonction `variation(co2)` qui prend une liste de valeurs de CO₂ et retourne une nouvelle liste des variations absolues entre chaque mesure et la précédente.
-2. Écrire une fonction `alerte_variation(var, seuil)` qui retourne les indices où la variation dépasse un seuil donné (par exemple 5 mg/L).
-
-### Partie 3 – Visualisation des données (20 %)
-
-1. Tracer un graphique montrant la concentration de CO₂ en fonction du temps.
-2. Ajouter au graphique une ligne horizontale représentant la moyenne de CO₂.
-3. Ajouter une annotation (flèche ou texte) au moment où la variation maximale s’est produite.
-
-### Partie 4 – Exportation des résultats (15 %)
-
-1. Ajouter une colonne "Variation\_CO2" au DataFrame.
-2. Écrire un nouveau fichier `fermentation_analyse.csv` avec les colonnes :
-
-   * Temps (min)
-   * CO2 (mg/L)
-   * Variation\_CO2
-
-### Partie 5 – Interprétation et conclusion (10 %)
-
-1. En 4 à 5 lignes, résumez :
-
-   * L’allure générale de l’évolution du CO₂
-   * Le moment où l’activité fermentaire est la plus intense
-   * Une hypothèse sur le ralentissement ou la stabilisation observée
+On crée un tableau à partir d’un **dictionnaire** : chaque clé devient une **colonne**.
 
 
-### Critères de correction (résumé)
+## 3. Lire un fichier CSV
 
-| Section                     | Pondération | Éléments évalués                              |
-| --------------------------- | ----------- | --------------------------------------------- |
-| Lecture et traitement       | 30 %        | Lecture correcte, calculs numpy, dictionnaire |
-| Fonctions                   | 25 %        | Syntaxe, utilité, bon usage des structures    |
-| Graphique                   | 20 %        | Clarté, précision, annotations                |
-| Fichier exporté             | 15 %        | Structure correcte, données exactes           |
-| Interprétation scientifique | 10 %        | Clarté, pertinence de l’analyse               |
+```python
+df = pd.read_csv("fichier.csv")
+```
+
+Le fichier doit être dans le même dossier, ou donner le chemin complet.
 
 
+## 4. Parcourir un DataFrame
+
+### Avec `.iterrows()` :
+
+```python
+for index, row in df.iterrows():
+    print(row["Nom"], row["Note"])
+```
+
+On peut accéder à chaque **ligne** comme un dictionnaire (`row["Nom"]`).
 
 
+## 5. Calculs sur une colonne
+
+| But      | Syntaxe                                   |
+| -------- | ----------------------------------------- |
+| Moyenne  | `df["Note"].mean()`                       |
+| Arrondir | `df["Note"].round(1)`                     |
+| Trier    | `df.sort_values("Note", ascending=False)` |
+
+### Exemple :
+
+```python
+moy = df["Note"].mean()
+print("Moyenne :", moy)
+```
+
+
+## 6. Ajouter une nouvelle colonne
+
+On peut **créer une colonne calculée** à partir des autres.
+
+### Exemple :
+
+```python
+df["Note_sur_10"] = df["Note"] / 10
+```
+
+Cela ajoute une nouvelle colonne au tableau.
+
+
+## Résumé minimal
+
+| Action               | Syntaxe                        |
+| -------------------- | ------------------------------ |
+| Créer un DataFrame   | `pd.DataFrame({...})`          |
+| Lire CSV             | `pd.read_csv("fichier.csv")`   |
+| Parcourir les lignes | `for i, row in df.iterrows():` |
+| Moyenne              | `df["col"].mean()`             |
+| Arrondir             | `df["col"].round(1)`           |
+| Trier                | `df.sort_values("col")`        |
+| Ajouter une colonne  | `df["nouvelle"] = ...`         |
+
+---
+
+## Exercices guidés
+
+### Exercice 1 – Lire et afficher
+
+**Énoncé :**
+Lis un fichier `donnees.csv` contenant les colonnes `Nom` et `Valeur`.
+Affiche chaque nom et sa valeur.
+
+**Solution :**
+
+```python
+import pandas as pd
+
+df = pd.read_csv("donnees.csv")
+for i, row in df.iterrows():
+    print(row["Nom"], "→", row["Valeur"])
+```
+
+### Exercice 2 – Calculer une colonne normalisée
+
+**Énoncé :**
+À partir de la colonne `Valeur`, crée une colonne `Valeur_sur_100` qui est `Valeur / 100`.
+
+**Solution :**
+
+```python
+df["Valeur_sur_100"] = df["Valeur"] / 100
+```
+
+
+### Exercice 3 – Trier et afficher
+
+**Énoncé :**
+Trie les données selon la colonne `Valeur` en ordre décroissant et affiche-les.
+
+**Solution :**
+
+```python
+df = df.sort_values("Valeur", ascending=False)
+print(df)
+```

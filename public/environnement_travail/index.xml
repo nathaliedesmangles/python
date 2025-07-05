@@ -1,60 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>L&#39;environnement de travail :: 420-SN1-RE</title>
-    <link>https://example.org/environnement_travail/index.html</link>
-    <description>Prise en main de l’outil informatique Les fichiers et répertoires/dossiers Visual studio code (VS Code) Sauvegarde avec VS Code Bloc note Jupyter/Jupyter Notebook Trucs pratiques pour bien coder Markdown pour les rapports lettrés</description>
+    <title>Environnement_travails :: 420-SN1-RE</title>
+    <link>http://localhost:1313/environnement_travail/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/environnement_travail/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Prise en main de l&#39;outil informatique</title>
-      <link>https://example.org/environnement_travail/prise-en-main-de-loutil-informatique/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/environnement_travail/prise-en-main-de-loutil-informatique/index.html</guid>
-      <description>Objectifs pédagogiques Apprendre à s’organiser pour le cours Se connecter et utiliser OneDrive Créer une structure de dossiers pour le cours Télécharger un fichier, le retrouver et le placer dans le bon dossier Prendre en main VS Code et Jupyter Notebook Activez l’extension des fichiers 1. Se connecter à OneDrive Ouvrir OneDrive : Cliquez sur la petite flèche en bas à droite de l’écran (dans la barre de menu). Si l’icone de OneDrive ressemble à celle-ci, c’est que vous n’est pas connecté.</description>
-    </item>
-    <item>
-      <title>Les fichiers et répertoires</title>
-      <link>https://example.org/environnement_travail/systeme_de_fichiers/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/environnement_travail/systeme_de_fichiers/index.html</guid>
-      <description>Qu’est-ce qu’un fichier ? Un fichier est une unité de stockage sur un ordinateur. Pensez à un fichier comme à une feuille de papier où vous pouvez écrire des informations. Les fichiers peuvent contenir différents types de données, comme du texte, des images, de la musique, des vidéos, ou des programmes.&#xA;Qu’est-ce qu’un répertoire ? Un répertoire, aussi appelé dossier, est un conteneur qui peut contenir des fichiers et d’autres répertoires.</description>
-    </item>
-    <item>
-      <title>Sauvegarde avec VS Code</title>
-      <link>https://example.org/environnement_travail/sauvegarde_vscode/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/environnement_travail/sauvegarde_vscode/index.html</guid>
-      <description>Sur cette page, vous trouverez les étapes pour sauvegarder vos programmes dans VS Code.&#xA;Sauvegarde Automatique Si un rond est présent à droit du nom du fichier dans l’onglet en haut, c’est que votre travail n’est PAS sauvegardé (comme dans l’exemple ci-dessous).&#xA;Pour ACTIVER la sauvegarde automatique, allez dans fichier, puis cliquez sur Enregistrement automatique.&#xA;Vous devriez maintenant voir un crochet à gauche de cette option.&#xA;Il devrait maintenant avoir un X à gauche du nom du fichier dans l’onglet du haut.</description>
-    </item>
-    <item>
-      <title>Jupyter</title>
-      <link>https://example.org/environnement_travail/jupyter/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/environnement_travail/jupyter/index.html</guid>
-      <description>Blocs-notes Jupyter dans VS Code Jupyter (anciennement IPython Notebook) est un projet open source qui vous permet de combiner facilement du texte Markdown et du code source Python exécutable sur un canevas appelé notebook.&#xA;Visual Studio Code prend en charge l’utilisation des blocs-notes Jupyter en mode natif et via des fichiers de code Python.&#xA;Créer, ouvrir et enregistrer des blocs-notes Jupyter Utiliser des cellules de code Jupyter Afficher, inspecter et filtrer les variables à l’aide de l’Explorateur de variables et de la visionneuse de données Se connecter à un serveur Jupyter distant Déboguer un bloc-notes Jupyter Configuration de votre environnement Pour utiliser Python dans Jupyter Notebooks, vous devez activer un environnement Anaconda dans VS Code ou un autre environnement Python dans lequel vous avez installé le package Jupyter.</description>
-    </item>
-    <item>
-      <title>Trucs pratiques pour bien coder</title>
-      <link>https://example.org/environnement_travail/trucs_pratiques/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/environnement_travail/trucs_pratiques/index.html</guid>
-      <description>Cette page rassemble une série de petits détails importants pour bien débuter en programmation. Ces astuces visent à rendre l’utilisation du clavier et de l’environnement plus fluide, surtout en contexte de cours avec Jupyter Notebook.&#xA;Raccourcis clavier utiles Copier, couper, coller Ctrl + C : Copie la sélection. Ctrl + X : Coupe la sélection (la sélection sera effacée, mais pourra être collée). Ctrl + V : Colle le contenu précédemment copié ou coupé.</description>
-    </item>
-    <item>
-      <title>Utilisation de VS Code</title>
-      <link>https://example.org/environnement_travail/vs-code/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/environnement_travail/vs-code/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MarkDown</title>
-      <link>https://example.org/environnement_travail/markdown/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/environnement_travail/markdown/index.html</guid>
-      <description>Introduction au Markdown dans Jupyter Notebook Markdown est un langage de balisage léger qui vous permet de formater du texte en utilisant une syntaxe simple. Dans Jupyter Notebook, vous pouvez utiliser des cellules Markdown pour ajouter des titres, des listes, des liens, des images, et bien plus encore.&#xA;Comment créer une cellule Markdown Créer une nouvelle cellule : Cliquez sur le bouton “+” dans la barre d’outils pour ajouter une nouvelle cellule.</description>
-    </item>
+    <atom:link href="http://localhost:1313/environnement_travail/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

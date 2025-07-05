@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fichiers et répertoires (dossiers) :: 420-SN1-RE</title>
+    <link>http://localhost:1313/environnement_travail/fichiers_dossiers/index.html</link>
+    <description>Qu’est-ce qu’un fichier et un dossier ? Fichier : Un document ou un programme (ex. : texte, image, tableur). Exemples : rapport.docx, photo.jpg, budget.xlsx&#xA;Dossier (ou répertoire) : Contenant qui regroupe des fichiers et d’autres dossiers. Exemple : le dossier Documents contient des fichiers Word, PDF, etc.&#xA;L’explorateur de fichiers Ouvrir l’explorateur : Raccourci clavier : Windows + E Ou clique sur l’icône 📁 dans la barre des tâches Principales zones : Volet de navigation à gauche : accès rapide à Ce PC, Téléchargements, Documents, etc.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/environnement_travail/fichiers_dossiers/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

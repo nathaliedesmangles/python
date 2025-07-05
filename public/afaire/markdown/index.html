@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Voici une leçon concise et essentielle sur la rédaction d’un notebook Jupyter clair et bien structuré en Python, avec des explications adaptées à des étudiants de première session en sciences de la nature.
+🧾 Leçon : 🎯 Objectifs Utiliser le Markdown pour structurer les sections du notebook Séparer clairement la théorie, le code et l’interprétation Ajouter des commentaires dans le code S’assurer que toutes les cellules s’exécutent sans erreur, du haut vers le bas 1.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Écrire un notebook Python bien structuré :: 420-SN1-RE">
+    <meta name="twitter:description" content="Voici une leçon concise et essentielle sur la rédaction d’un notebook Jupyter clair et bien structuré en Python, avec des explications adaptées à des étudiants de première session en sciences de la nature.
+🧾 Leçon : 🎯 Objectifs Utiliser le Markdown pour structurer les sections du notebook Séparer clairement la théorie, le code et l’interprétation Ajouter des commentaires dans le code S’assurer que toutes les cellules s’exécutent sans erreur, du haut vers le bas 1.">
+    <meta property="og:url" content="https://example.org/afaire/markdown/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Écrire un notebook Python bien structuré :: 420-SN1-RE">
+    <meta property="og:description" content="Voici une leçon concise et essentielle sur la rédaction d’un notebook Jupyter clair et bien structuré en Python, avec des explications adaptées à des étudiants de première session en sciences de la nature.
+🧾 Leçon : 🎯 Objectifs Utiliser le Markdown pour structurer les sections du notebook Séparer clairement la théorie, le code et l’interprétation Ajouter des commentaires dans le code S’assurer que toutes les cellules s’exécutent sans erreur, du haut vers le bas 1.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="À FAIRE">
+    <meta itemprop="name" content="Écrire un notebook Python bien structuré :: 420-SN1-RE">
+    <meta itemprop="description" content="Voici une leçon concise et essentielle sur la rédaction d’un notebook Jupyter clair et bien structuré en Python, avec des explications adaptées à des étudiants de première session en sciences de la nature.
+🧾 Leçon : 🎯 Objectifs Utiliser le Markdown pour structurer les sections du notebook Séparer clairement la théorie, le code et l’interprétation Ajouter des commentaires dans le code S’assurer que toutes les cellules s’exécutent sans erreur, du haut vers le bas 1.">
+    <meta itemprop="wordCount" content="388">
+    <title>Écrire un notebook Python bien structuré :: 420-SN1-RE</title>
+    <link href="/images/logo.png?1751740318" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751740318" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751740318" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751740318" rel="stylesheet">
+    <link href="/css/theme.min.css?1751740318" rel="stylesheet">
+    <link href="/css/format-html.min.css?1751740318" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1751740318" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1751740318" defer></script>
+    <script src="/js/search.min.js?1751740318" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/afaire\/markdown\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1751740318";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/afaire/markdown/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#-objectifs">🎯 Objectifs</a></li>
+    <li><a href="#1--utiliser-markdown-pour-structurer-le-notebook">1. 📝 Utiliser Markdown pour structurer le notebook</a>
+      <ul>
+        <li><a href="#-titres-et-sous-titres">🔹 Titres et sous-titres</a></li>
+        <li><a href="#-exemple-">📌 Exemple :</a></li>
+      </ul>
+    </li>
+    <li><a href="#2--séparer--théorie--code--interprétation">2. 🧱 Séparer : Théorie / Code / Interprétation</a></li>
+    <li><a href="#3--ajouter-des-commentaires-dans-le-code">3. 💬 Ajouter des commentaires dans le code</a>
+      <ul>
+        <li><a href="#-exemple--1">📌 Exemple :</a></li>
+      </ul>
+    </li>
+    <li><a href="#4--exécution-sans-erreur--haut-en-bas">4. ✅ Exécution sans erreur : haut en bas</a></li>
+    <li><a href="#-résumé-minimal">✅ Résumé minimal</a></li>
+    <li><a href="#-exercice-guidé">🧪 Exercice guidé</a>
+      <ul>
+        <li><a href="#-exercice--structure-ton-notebook">🔧 Exercice – Structure ton notebook</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/afaire/index.html"><span itemprop="name">À FAIRE</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Écrire un notebook Python bien structuré</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/afaire/debogage/index.html" title="Débogage pas à pas (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/afaire/lecture_ecriture_csv_numpy/index.html" title="L’écriture et la lecture de données (csv) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable afaire" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="écrire-un-notebook-python-bien-structuré">Écrire un notebook Python bien structuré</h1>
+
+<p>Voici une <strong>leçon concise et essentielle</strong> sur la <strong>rédaction d’un notebook Jupyter clair et bien structuré</strong> en Python, avec des explications adaptées à des <strong>étudiants de première session en sciences de la nature</strong>.</p>
+<hr>
+<h1 id="-leçon-">🧾 Leçon :</h1>
+<h2 id="-objectifs">🎯 Objectifs</h2>
+<ul>
+<li>Utiliser le <strong>Markdown</strong> pour structurer les sections du notebook</li>
+<li>Séparer clairement <strong>la théorie</strong>, <strong>le code</strong> et <strong>l’interprétation</strong></li>
+<li>Ajouter des <strong>commentaires dans le code</strong></li>
+<li>S’assurer que <strong>toutes les cellules s’exécutent sans erreur</strong>, du haut vers le bas</li>
+</ul>
+<hr>
+<h2 id="1--utiliser-markdown-pour-structurer-le-notebook">1. 📝 Utiliser Markdown pour structurer le notebook</h2>
+<p>Markdown permet d’écrire du <strong>texte formaté</strong> dans les cellules non-code.</p>
+<h3 id="-titres-et-sous-titres">🔹 Titres et sous-titres</h3>
+<table>
+<thead>
+<tr>
+<th>Élément</th>
+<th>Syntaxe Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Titre principal</td>
+<td><code># Titre</code></td>
+</tr>
+<tr>
+<td>Sous-titre</td>
+<td><code>## Sous-titre</code></td>
+</tr>
+<tr>
+<td>Sous-section</td>
+<td><code>### Sous-section</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="-exemple-">📌 Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Analyse d&#39;une expérience
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Objectif
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Étudier l’évolution de la température en fonction du temps.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Données expérimentales
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Les données sont fournies dans un fichier CSV.</span></span></code></pre></div>
+<hr>
+<h2 id="2--séparer--théorie--code--interprétation">2. 🧱 Séparer : Théorie / Code / Interprétation</h2>
+<p>Organise chaque section de ton notebook comme suit :</p>
+<ol>
+<li><strong>Théorie</strong> (Markdown) : But, formule, contexte scientifique</li>
+<li><strong>Code Python</strong> (cellule code) : Lecture des données, calculs, tracé</li>
+<li><strong>Interprétation</strong> (Markdown) : Résultats obtenus, analyse</li>
+</ol>
+<hr>
+<h2 id="3--ajouter-des-commentaires-dans-le-code">3. 💬 Ajouter des commentaires dans le code</h2>
+<p>Utilise <code>#</code> pour écrire un commentaire sur une ligne dans une cellule de code.</p>
+<h3 id="-exemple--1">📌 Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Charger les bibliothèques nécessaires</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lire les données expérimentales</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;temperature.csv&#34;</span>)</span></span></code></pre></div>
+<p>➡️ <strong>Règle :</strong> chaque bloc de code doit avoir des commentaires clairs.</p>
+<hr>
+<h2 id="4--exécution-sans-erreur--haut-en-bas">4. ✅ Exécution sans erreur : haut en bas</h2>
+<p>Avant de partager ton notebook :</p>
+<ul>
+<li>Va dans le menu <strong>&ldquo;Kernel&rdquo; → &ldquo;Restart &amp; Run All&rdquo;</strong> (ou équivalent dans Google Colab : <strong>Runtime &gt; Run all</strong>)</li>
+<li>Toutes les cellules doivent s&rsquo;exécuter <strong>dans l’ordre</strong> sans erreur.</li>
+<li>Aucune cellule ne doit dépendre de code non exécuté auparavant.</li>
+</ul>
+<hr>
+<h2 id="-résumé-minimal">✅ Résumé minimal</h2>
+<table>
+<thead>
+<tr>
+<th>Bonnes pratiques</th>
+<th>Exemples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Markdown pour titres</td>
+<td><code># Titre</code>, <code>## Sous-titre</code></td>
+</tr>
+<tr>
+<td>Théorie avant le code</td>
+<td>Explication en Markdown</td>
+</tr>
+<tr>
+<td>Commentaires dans le code</td>
+<td><code># Calcul de la moyenne</code></td>
+</tr>
+<tr>
+<td>Cellules exécutables sans erreur</td>
+<td><code>Run all</code> sans blocage</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-exercice-guidé">🧪 Exercice guidé</h2>
+<h3 id="-exercice--structure-ton-notebook">🔧 Exercice – Structure ton notebook</h3>
+<p>Crée un petit notebook contenant :</p>
+<ol>
+<li>Un titre principal (<code># Étude d’un phénomène physique</code>)</li>
+<li>Une section Markdown expliquant le but de l&rsquo;expérience</li>
+<li>Un bloc de code lisant un petit tableau CSV fictif</li>
+<li>Une interprétation en Markdown (même si brève)</li>
+<li>Des commentaires dans chaque cellule de code</li>
+<li>Aucune erreur à l’exécution complète</li>
+</ol>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html">Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b>Évaluation 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b>Listes et tableaux imbriqués</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b>Évaluation 2 (35%)</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b>Les tableaux NumPy et graphiques avancés</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b>Manipulation de tableaux avec Pandas</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Évaluation finale (Projet final)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b>Travail sur le projet final</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"><b> * </b>Solutions des exercices</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"><b> * </b>Solutions des ateliers</a></li>
+            <li class="parent " data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu">
+            <li class="" data-nav-id="/afaire/boucles/index.html"><a class="padding" href="/afaire/boucles/index.html">Boucles while et for</a></li>
+            <li class="" data-nav-id="/afaire/fonctions/index.html"><a class="padding" href="/afaire/fonctions/index.html">Fonctions personnalisées, docstring et test unitaires et Maths</a></li>
+            <li class="" data-nav-id="/afaire/plan/index.html"><a class="padding" href="/afaire/plan/index.html">Planification</a></li>
+            <li class="" data-nav-id="/afaire/break_continue_liste/index.html"><a class="padding" href="/afaire/break_continue_liste/index.html">break, continue, liste et boucle</a></li>
+            <li class="" data-nav-id="/afaire/debogage/index.html"><a class="padding" href="/afaire/debogage/index.html">Débogage pas à pas</a></li>
+            <li class="active " data-nav-id="/afaire/markdown/index.html"><a class="padding" href="/afaire/markdown/index.html">Écrire un notebook Python bien structuré</a></li>
+            <li class="" data-nav-id="/afaire/lecture_ecriture_csv_numpy/index.html"><a class="padding" href="/afaire/lecture_ecriture_csv_numpy/index.html">L’écriture et la lecture de données (csv)</a></li>
+            <li class="" data-nav-id="/afaire/boucler_tableaux2d/index.html"><a class="padding" href="/afaire/boucler_tableaux2d/index.html">Boucler sur un tableau 2D</a></li>
+            <li class="" data-nav-id="/afaire/maths/index.html"><a class="padding" href="/afaire/maths/index.html">Maths secondaire 3</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1751740318" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751740318" defer></script>
+    <script src="/js/theme.min.js?1751740318" defer></script>
+  </body>
+</html>

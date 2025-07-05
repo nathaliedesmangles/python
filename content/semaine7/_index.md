@@ -1,8 +1,8 @@
 +++
 chapter = true
-pre = "<b>Semaine 7.</b>"
+pre = "<b>7.</b>"
 title = "Listes de données et chaînes de caractères"
-weight = 70
+weight = 107
 +++
 
 

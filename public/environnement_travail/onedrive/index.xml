@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Connexion à OneDrive – Compte scolaire :: 420-SN1-RE</title>
+    <link>http://localhost:1313/environnement_travail/onedrive/index.html</link>
+    <description>Étape 1 – Accéder à la page de connexion Aller à l’adresse suivante : https://login.microsoftonline.com/?whr=cmontmorency.qc.ca&#xA;Étape 2 – Entrer les identifiants Nom d’utilisateur : Le même que pour se connecter sur les ordinateurs du Collège, suivi de @cmontmorency.qc.ca.&#xA;il s’agit des 7 derniers chiffres du numéro de DA.&#xA;Mot de passe : Le même que pour le Wi-Fi ou les ordinateurs du Collège.&#xA;Le mot de passe initial se trouve dans Col.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/environnement_travail/onedrive/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

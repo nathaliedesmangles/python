@@ -5,30 +5,38 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="">
+    <meta name="description" content="Objectifs d’apprentissage Créer des listes Accéder à un élément dans une liste ou un tableau 2D (liste de listes) Utiliser des boucles imbriquées pour parcourir un tableau Ajouter des conditions dans les boucles 1. Liste simple Une liste est un ensemble de valeurs entre crochets [].
+notes = [78, 85, 92] print(notes[1]) # 85 (indice commence à 0)Chaque valeur d’une liste est est positionné par indice, en commençant par l’indice 0.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Évaluation 2 (20%) :: 420-SN1-RE">
+    <meta name="twitter:title" content="Listes et tableaux imbriqués :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs d’apprentissage Créer des listes Accéder à un élément dans une liste ou un tableau 2D (liste de listes) Utiliser des boucles imbriquées pour parcourir un tableau Ajouter des conditions dans les boucles 1. Liste simple Une liste est un ensemble de valeurs entre crochets [].
+notes = [78, 85, 92] print(notes[1]) # 85 (indice commence à 0)Chaque valeur d’une liste est est positionné par indice, en commençant par l’indice 0.">
     <meta property="og:url" content="https://example.org/semaine8/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content="Évaluation 2 (20%) :: 420-SN1-RE">
+    <meta property="og:title" content="Listes et tableaux imbriqués :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs d’apprentissage Créer des listes Accéder à un élément dans une liste ou un tableau 2D (liste de listes) Utiliser des boucles imbriquées pour parcourir un tableau Ajouter des conditions dans les boucles 1. Liste simple Une liste est un ensemble de valeurs entre crochets [].
+notes = [78, 85, 92] print(notes[1]) # 85 (indice commence à 0)Chaque valeur d’une liste est est positionné par indice, en commençant par l’indice 0.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="Évaluation 2 (20%) :: 420-SN1-RE">
-    <title>Évaluation 2 (20%) :: 420-SN1-RE</title>
-    <link href="/semaine8/index.xml" rel="alternate" type="application/rss+xml" title="Évaluation 2 (20%) :: 420-SN1-RE">
-    <link href="/images/logo.png?1751403943" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751403943" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751403943" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751403943" rel="stylesheet">
-    <link href="/css/theme.min.css?1751403943" rel="stylesheet">
-    <link href="/css/format-html.min.css?1751403943" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1751403943" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1751403943" defer></script>
-    <script src="/js/search.min.js?1751403943" defer></script>
+    <meta itemprop="name" content="Listes et tableaux imbriqués :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs d’apprentissage Créer des listes Accéder à un élément dans une liste ou un tableau 2D (liste de listes) Utiliser des boucles imbriquées pour parcourir un tableau Ajouter des conditions dans les boucles 1. Liste simple Une liste est un ensemble de valeurs entre crochets [].
+notes = [78, 85, 92] print(notes[1]) # 85 (indice commence à 0)Chaque valeur d’une liste est est positionné par indice, en commençant par l’indice 0.">
+    <meta itemprop="wordCount" content="323">
+    <title>Listes et tableaux imbriqués :: 420-SN1-RE</title>
+    <link href="/semaine8/index.xml" rel="alternate" type="application/rss+xml" title="Listes et tableaux imbriqués :: 420-SN1-RE">
+    <link href="/images/logo.png?1751740318" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751740318" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751740318" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751740318" rel="stylesheet">
+    <link href="/css/theme.min.css?1751740318" rel="stylesheet">
+    <link href="/css/format-html.min.css?1751740318" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1751740318" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1751740318" defer></script>
+    <script src="/js/search.min.js?1751740318" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -38,7 +46,7 @@
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1751403943";
+      window.relearn.index_js_url="/searchindex.en.js?1751740318";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -96,14 +104,43 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs-dapprentissage">Objectifs d&rsquo;apprentissage</a></li>
+    <li><a href="#1-liste-simple">1. Liste simple</a></li>
+    <li><a href="#2-liste-de-listes-tableau-2d">2. Liste de listes (tableau 2D)</a>
+      <ul>
+        <li><a href="#accès-à-un-élément-">Accès à un élément :</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-boucles-imbriquées-pour-parcourir-un-tableau">3. Boucles imbriquées pour parcourir un tableau</a>
+      <ul>
+        <li><a href="#exemple-">Exemple :</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-ajouter-une-condition-dans-la-boucle">4. Ajouter une condition dans la boucle</a>
+      <ul>
+        <li><a href="#exemple--afficher-seulement-les-valeurs--3">Exemple : afficher seulement les valeurs &gt; 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#résumé">Résumé</a></li>
+    <li><a href="#exercices-guidés">Exercices guidés</a>
+      <ul>
+        <li><a href="#exercice-1--accès-à-un-élément">Exercice 1 – Accès à un élément</a></li>
+        <li><a href="#exercice-2--afficher-tous-les-éléments">Exercice 2 – Afficher tous les éléments</a></li>
+        <li><a href="#exercice-3--afficher-les-valeurs-paires">Exercice 3 – Afficher les valeurs paires</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Évaluation 2 (20%)</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Listes et tableaux imbriqués</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/atelier/index.html" title="Atelier 7 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
@@ -128,8 +165,122 @@
   <header class="headline">
   </header>
 
-<h1 id="évaluation-2-20">Évaluation 2 (20%)</h1>
+<h1 id="listes-et-tableaux-imbriqués">Listes et tableaux imbriqués</h1>
 
+<h2 id="objectifs-dapprentissage">Objectifs d&rsquo;apprentissage</h2>
+<ul>
+<li>Créer des listes</li>
+<li>Accéder à un élément dans une liste ou un tableau 2D (liste de listes)</li>
+<li>Utiliser des boucles imbriquées pour parcourir un tableau</li>
+<li>Ajouter des conditions dans les boucles</li>
+</ul>
+<hr>
+<h2 id="1-liste-simple">1. Liste simple</h2>
+<p>Une <strong>liste</strong> est un ensemble de valeurs entre crochets <code>[]</code>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>notes <span style="color:#f92672">=</span> [<span style="color:#ae81ff">78</span>, <span style="color:#ae81ff">85</span>, <span style="color:#ae81ff">92</span>]
+</span></span><span style="display:flex;"><span>print(notes[<span style="color:#ae81ff">1</span>])  <span style="color:#75715e"># 85 (indice commence à 0)</span></span></span></code></pre></div>
+<ul>
+<li>Chaque valeur d&rsquo;une liste est est positionné par indice, en commençant par l&rsquo;indice 0.</li>
+</ul>
+<h2 id="2-liste-de-listes-tableau-2d">2. Liste de listes (tableau 2D)</h2>
+<p>C’est une <strong>liste dans laquelle chaque élément est lui-même une liste</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tableau <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>]
+</span></span><span style="display:flex;"><span>]</span></span></code></pre></div>
+<p><strong>Représentation tabulaire</strong>:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Chaque élément (sous-liste) est positionné par indice, en commençant par l&rsquo;indice 0.</li>
+<li>Chaque valeur d&rsquo;une sous-liste est est positionné par indice, en commençant par l&rsquo;indice 0.</li>
+</ul>
+<h3 id="accès-à-un-élément-">Accès à un élément :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(tableau[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">2</span>])  <span style="color:#75715e"># 6</span></span></span></code></pre></div>
+<h2 id="3-boucles-imbriquées-pour-parcourir-un-tableau">3. Boucles imbriquées pour parcourir un tableau</h2>
+<h3 id="exemple-">Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> tableau:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> ligne:
+</span></span><span style="display:flex;"><span>        print(valeur)</span></span></code></pre></div>
+<p>Affiche tous les éléments, un par un.</p>
+<h2 id="4-ajouter-une-condition-dans-la-boucle">4. Ajouter une condition dans la boucle</h2>
+<h3 id="exemple--afficher-seulement-les-valeurs--3">Exemple : afficher seulement les valeurs &gt; 3</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> tableau:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> ligne:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> valeur <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span>:
+</span></span><span style="display:flex;"><span>            print(valeur)</span></span></code></pre></div>
+<h2 id="résumé">Résumé</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accès à un élément</td>
+<td><code>tableau[1][2]</code></td>
+</tr>
+<tr>
+<td>Boucle sur tableau 2D</td>
+<td><code>for ligne in tableau:</code></td>
+</tr>
+<tr>
+<td>Boucle imbriquée</td>
+<td><code>for valeur in ligne:</code></td>
+</tr>
+<tr>
+<td>Condition</td>
+<td><code>if valeur &gt; 3:</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="exercices-guidés">Exercices guidés</h2>
+<h3 id="exercice-1--accès-à-un-élément">Exercice 1 – Accès à un élément</h3>
+<p><strong>Énoncé :</strong>
+Dans la liste suivante, affiche la valeur 7.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>t <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>], [<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>], [<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>]]</span></span></code></pre></div>
+<p><strong>Solution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(t[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">1</span>])  <span style="color:#75715e"># 7</span></span></span></code></pre></div>
+<h3 id="exercice-2--afficher-tous-les-éléments">Exercice 2 – Afficher tous les éléments</h3>
+<p><strong>Énoncé :</strong>
+Parcours le tableau <code>t</code> et affiche chaque valeur sur une ligne.</p>
+<p><strong>Solution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> t:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> val <span style="color:#f92672">in</span> ligne:
+</span></span><span style="display:flex;"><span>        print(val)</span></span></code></pre></div>
+<h3 id="exercice-3--afficher-les-valeurs-paires">Exercice 3 – Afficher les valeurs paires</h3>
+<p><strong>Énoncé :</strong>
+Affiche seulement les valeurs <strong>paires</strong> du tableau <code>t</code>.</p>
+<p><strong>Solution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> t:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> val <span style="color:#f92672">in</span> ligne:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> val <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            print(val)</span></span></code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -179,25 +330,29 @@
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html">Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
-            <li class="" data-nav-id="/environnement_travail/index.html"><a class="padding" href="/environnement_travail/index.html">L&#39;environnement de travail</a><ul id="R-subsections-778a4ef1cb285be699e264e0f36c1129" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Questions fréquemment posées</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Évaluation 1 (25%)</a></li>
-            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
-            <li class="active parent " data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Évaluation 2 (20%)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu">
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b>Évaluation 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="active parent " data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b>Listes et tableaux imbriqués</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu">
             <li class="" data-nav-id="/semaine8/atelier/index.html"><a class="padding" href="/semaine8/atelier/index.html">Activité 8 - tableau périodique, molécule, données biologiques</a></li></ul></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
-            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b>Évaluation 2 (35%)</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b>Les tableaux NumPy et graphiques avancés</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b>Manipulation de tableaux avec Pandas</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Évaluation finale (Projet final)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b>Travail sur le projet final</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"><b> * </b>Solutions des exercices</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"><b> * </b>Solutions des ateliers</a></li>
             <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
           </ul>
         </div>
@@ -216,8 +371,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1751403943" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751403943" defer></script>
-    <script src="/js/theme.min.js?1751403943" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1751740318" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751740318" defer></script>
+    <script src="/js/theme.min.js?1751740318" defer></script>
   </body>
 </html>

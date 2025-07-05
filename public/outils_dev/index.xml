@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Outils de développement :: 420-SN1-RE</title>
+    <link>https://example.org/outils_dev/index.html</link>
+    <description>Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/outils_dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connexion à OneDrive – Compte scolaire</title>
+      <link>https://example.org/outils_dev/onedrive/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/onedrive/index.html</guid>
+      <description>Étape 1 – Accéder à la page de connexion Aller à l’adresse suivante : https://login.microsoftonline.com/?whr=cmontmorency.qc.ca&#xA;Étape 2 – Entrer les identifiants Nom d’utilisateur : Le même que pour se connecter sur les ordinateurs du Collège, suivi de @cmontmorency.qc.ca.&#xA;il s’agit des 7 derniers chiffres du numéro de DA.&#xA;Mot de passe : Le même que pour le Wi-Fi ou les ordinateurs du Collège.&#xA;Le mot de passe initial se trouve dans Col.</description>
+    </item>
+    <item>
+      <title>Fichiers et répertoires (dossiers)</title>
+      <link>https://example.org/outils_dev/fichiers_dossiers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/fichiers_dossiers/index.html</guid>
+      <description>Qu’est-ce qu’un fichier et un dossier ? Fichier : Un document ou un programme (ex. : texte, image, tableur). Exemples : rapport.docx, photo.jpg, budget.xlsx&#xA;Dossier (ou répertoire) : Contenant qui regroupe des fichiers et d’autres dossiers. Exemple : le dossier Documents contient des fichiers Word, PDF, etc.&#xA;L’explorateur de fichiers Ouvrir l’explorateur : Raccourci clavier : Windows + E Ou clique sur l’icône 📁 dans la barre des tâches Principales zones : Volet de navigation à gauche : accès rapide à Ce PC, Téléchargements, Documents, etc.</description>
+    </item>
+    <item>
+      <title> </title>
+      <link>https://example.org/outils_dev/vs-code/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/vs-code/index.html</guid>
+      <description>Installation &amp; premier lancement Étapes : Aller sur le site officiel : https://code.visualstudio.com Cliquer sur Download for Windows Lancer le fichier téléchargé (VSCodeSetup.exe) Accepter les conditions → clique sur Suivant plusieurs fois Cocher “Add to PATH” si disponible Cliquer sur Installer Lorsque l’installation est terminée, cliquer sur le raccourci Visual Studio Code dans le menu Démarrer ou cherche “Visual Studio Code” dans la barre de recherche Tu devrais voir l’écran d’accueil (Bienvenue ou Welcome)</description>
+    </item>
+    <item>
+      <title> </title>
+      <link>https://example.org/outils_dev/jupyter/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/jupyter/index.html</guid>
+      <description>Tutoriel pour VS Code et Jupyter Notebook Voici un fichier qui vous expliquera comment utiliser jupyter notebook dans VS Code : Tutoriel pour utiliser Jupyter avec VS Code&#xA;Blocs-notes Jupyter dans VS Code Jupyter (anciennement IPython Notebook) est un projet open source qui vous permet de combiner facilement du texte Markdown et du code source Python exécutable sur un canevas appelé notebook.&#xA;Visual Studio Code prend en charge l’utilisation des blocs-notes Jupyter en mode natif et via des fichiers de code Python.</description>
+    </item>
+    <item>
+      <title>Astuces, touches spéciales et &#43;</title>
+      <link>https://example.org/outils_dev/trucs_pratiques/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/trucs_pratiques/index.html</guid>
+      <description>Cette page rassemble une série de petits détails importants pour bien débuter en programmation. Ces astuces visent à rendre l’utilisation du clavier et de l’environnement plus fluide, surtout en contexte de cours avec Jupyter Notebook.&#xA;Raccourcis clavier utiles Copier, couper, coller Ctrl + C : Copie la sélection. Ctrl + X : Coupe la sélection (la sélection sera effacée, mais pourra être collée). Ctrl + V : Colle le contenu précédemment copié ou coupé.</description>
+    </item>
+    <item>
+      <title> </title>
+      <link>https://example.org/outils_dev/markdown/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/markdown/index.html</guid>
+      <description>Introduction au Markdown dans Jupyter Notebook Markdown est un langage de balisage léger qui vous permet de formater du texte en utilisant une syntaxe simple. Dans Jupyter Notebook, vous pouvez utiliser des cellules Markdown pour ajouter des titres, des listes, des liens, des images, et bien plus encore.&#xA;Comment créer une cellule Markdown Créer une nouvelle cellule : Cliquez sur le bouton “+” dans la barre d’outils pour ajouter une nouvelle cellule.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,8 +1,8 @@
 +++
 chapter = true
-pre = "<b>Semaine 10.</b>"
+pre = "<b>10.</b>"
 title = "Visualisation de données avec matplotlib (bases)"
-weight = 100
+weight = 110
 +++
 
 

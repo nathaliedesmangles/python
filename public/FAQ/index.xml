@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Questions fréquemment posées :: 420-SN1-RE</title>
+    <title>Foire Aux Questions :: 420-SN1-RE</title>
     <link>https://example.org/faq/index.html</link>
-    <description>Exemples Quel logiciel je peux installer sur mon ordinateur personnel pour pratiquer à la maison ? Alternatives à VS Code La sauvegarde automatique dans Visual Studio Code. Sauvegarde dans VS Code Les raccourcis clavier (copier, coller, couper, enregistrer, etc.) Trucs pratiques pour bien coder Où se trouve les touches pour [, ], {, }, @, &lt;, &gt;, etc. sur un clavier QWERTY. Trucs pratiques pour bien coder Dans quels locaux du cégep, je peux aller pratiquer ?</description>
+    <description>Outils et locaux pour pratiquer Quel logiciel je peux installer sur mon ordinateur personnel pour pratiquer à la maison ? Alternatives à VS Code La sauvegarde automatique dans Visual Studio Code. Sauvegarde dans VS Code Les raccourcis clavier (copier, coller, couper, enregistrer, etc.) Trucs pratiques pour bien coder Où se trouve les touches pour [, ], {, }, @, &lt;, &gt;, etc. sur un clavier QWERTY. Trucs pratiques pour bien coder Dans quels locaux du cégep, je peux aller pratiquer ?</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/faq/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>(Colab et PyCharm)</title>
+      <title>Alternatives à VS Code</title>
       <link>https://example.org/faq/alternatives/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/faq/alternatives/index.html</guid>
-      <description>Si vous cherchez une alternative simple et accessible à VS Code avec Jupyter, Google Colab est une excellente option. Colab est un environnement de notebooks en ligne gratuit, offert par Google, qui ne nécessite aucune installation. Il vous permet d’écrire et d’exécuter du code Python directement dans votre navigateur, tout en profitant d’un accès facile à des bibliothèques scientifiques populaires comme NumPy, pandas, ou matplotlib. C’est l’outil idéal pour débuter en programmation scientifique ou collaborer à distance, puisqu’il s’intègre à Google Drive et permet de partager vos notebooks aussi facilement qu’un document Google Docs.</description>
+      <description>Deux alternatives populaires Si vous cherchez une alternative simple et accessible à VS Code avec Jupyter, Google Colab est une excellente option. Colab est un environnement de notebooks en ligne gratuit, offert par Google, qui ne nécessite aucune installation. Il vous permet d’écrire et d’exécuter du code Python directement dans votre navigateur, tout en profitant d’un accès facile à des bibliothèques scientifiques populaires comme NumPy, pandas, ou matplotlib. C’est l’outil idéal pour débuter en programmation scientifique ou collaborer à distance, puisqu’il s’intègre à Google Drive et permet de partager vos notebooks aussi facilement qu’un document Google Docs.</description>
     </item>
     <item>
       <title>Locaux avec Python</title>
       <link>https://example.org/faq/locaux_python/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/faq/locaux_python/index.html</guid>
-      <description></description>
+      <description>Locaux où se donne le cours 420-SN1-RE A-3820 B-2302 B-2303 B-3376 B-3410 Autres locaux (à confirmer) * *</description>
     </item>
   </channel>
 </rss>

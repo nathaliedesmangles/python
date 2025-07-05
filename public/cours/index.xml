@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Les séances de cours :: 420-SN1-RE</title>
+    <link>https://example.org/cours/index.html</link>
+    <description>Groupe 09&#xA;(lundi 15h20)&#xD;Groupe 11&#xA;(mercredi 08h00)&#xD;Groupe 10&#xA;(vendredi 15h20)&#xD;Cours 01&#xD;15 août&#xD;15 août&#xD;17 août&#xD;Cours 02&#xD;22 août&#xD;22 août&#xD;24 août&#xD;Cours 03&#xD;29 août&#xD;29 août&#xD;31 août&#xD;Cours 04&#xD;...&#xD;....&#xD;.....&#xD;Cours 05&#xD;Évaluation #1 (25%)&#xD;Cours 06&#xD;...&#xD;....&#xD;.....&#xD;Cours 07&#xD;...&#xD;....&#xD;.....&#xD;Cours 08&#xD;...&#xD;....&#xD;.....&#xD;Cours 09&#xD;...&#xD;....&#xD;.....&#xD;Cours 10&#xD;Évaluation #2 (35%)&#xD;Cours 11&#xD;.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/cours/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

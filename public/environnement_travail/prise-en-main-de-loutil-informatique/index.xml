@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Prise en main de l&#39;outil informatique :: 420-SN1-RE</title>
-    <link>https://example.org/environnement_travail/prise-en-main-de-loutil-informatique/index.html</link>
-    <description>Objectifs pédagogiques Apprendre à s’organiser pour le cours Se connecter et utiliser OneDrive Créer une structure de dossiers pour le cours Télécharger un fichier, le retrouver et le placer dans le bon dossier Prendre en main VS Code et Jupyter Notebook Activez l’extension des fichiers 1. Se connecter à OneDrive Ouvrir OneDrive : Cliquez sur la petite flèche en bas à droite de l’écran (dans la barre de menu). Si l’icone de OneDrive ressemble à celle-ci, c’est que vous n’est pas connecté.</description>
+    <title>Se connecter à OneDrive Scolaire :: 420-SN1-RE</title>
+    <link>http://localhost:1313/environnement_travail/prise-en-main-de-loutil-informatique/index.html</link>
+    <description>https://ccti.cmontmorency.qc.ca/faq/27&#xA;Utiliser Capture d’écran pour effectuer une capture vidéo: https://support.microsoft.com/fr-fr/windows/utiliser-l-outil-capture-d-%C3%A9cran-pour-effectuer-des-captures-d-%C3%A9cran-00246869-1843-655f-f220-97299b865f6b#ID0EDD=Windows_11&amp;id0edd=windows_11&#xA;Microsoft Clipchamp&#xA;Une application gratuite sur Microsoft Store et facile à utiliser pour capturer et éditer vos vidéos. Vous pouvez enregistrer votre écran d’ordinateur ou utiliser votre webcam. Sur Windows 11, une fois une capture vidéo enregistrée avec Outil Capture d’écran, vous pouvez directement l’importer sur Clipchamp pour l’améliorer. Diverses fonctionnalités d’édition sont disponibles telles que le découpage, le rognage et le contrôle de vitesse.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/environnement_travail/prise-en-main-de-loutil-informatique/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/environnement_travail/prise-en-main-de-loutil-informatique/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

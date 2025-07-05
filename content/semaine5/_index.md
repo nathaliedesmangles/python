@@ -1,6 +1,6 @@
 +++
 chapter = true
-pre = "<b>Semaine 5.</b>"
+pre = "<b>5.</b>"
 title = "Évaluation 1 (25%)"
-weight = 50
+weight = 105
 +++

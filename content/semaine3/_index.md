@@ -1,8 +1,8 @@
 +++
 chapter = true
-pre = "<b>Semaine 3.</b>"
+pre = "<b>3.</b>"
 title = "Entrées/Sorties, Algorithme, débogage et fonctions"
-weight = 30
+weight = 103
 +++
 
 ## Objectifs d'apprentissage

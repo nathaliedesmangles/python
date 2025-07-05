@@ -1,8 +1,8 @@
 +++
 chapter = true
-pre = "<b>Semaine 2.</b>"
+pre = "<b>2.</b>"
 title = "Introduction à Python (Variables, types et expressions)"
-weight = 20
+weight = 102
 +++
 
 

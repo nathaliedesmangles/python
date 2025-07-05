@@ -1,6 +1,6 @@
 +++
 title = "Règlements de classe"
-weight = 2
+weight = 30
 +++
 
 

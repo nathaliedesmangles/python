@@ -1,8 +1,7 @@
 +++
 chapter = true
-pre = "<b>Semaine 14.</b>"
+pre = "<b>14.</b>"
 title = "Travail sur le projet final."
-weight = 140
+weight = 114
 +++
 
-Présentation préliminaire (code, intention, défis). Révision par les pairs

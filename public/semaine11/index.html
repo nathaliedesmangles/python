@@ -5,38 +5,34 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectif de la leçon Apprendre à lire et écrire des fichiers .csv (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).
-Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules). Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc. Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.">
+    <meta name="description" content="Objectifs d’apprentissage Importer la bibliothèque NumPy Utiliser les fonctions de NumPy pour créer des tableaux (1D, 2D) Utiliser les fonctions mathématiques de NumPy pour obtenir des statistiques sur les données Ajouter une droite sur un graphique (régression linéaire) Calculer une droite de régression (y = a·x &#43; b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination Importer la bibliothèque Avant d’utiliser NumPy, il faut l’importer au début de votre script ou notebook :">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Lecture/écriture de fichiers texte (CSV) :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectif de la leçon Apprendre à lire et écrire des fichiers .csv (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).
-Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules). Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc. Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.">
+    <meta name="twitter:title" content="Les tableaux NumPy et graphiques avancés :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs d’apprentissage Importer la bibliothèque NumPy Utiliser les fonctions de NumPy pour créer des tableaux (1D, 2D) Utiliser les fonctions mathématiques de NumPy pour obtenir des statistiques sur les données Ajouter une droite sur un graphique (régression linéaire) Calculer une droite de régression (y = a·x &#43; b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination Importer la bibliothèque Avant d’utiliser NumPy, il faut l’importer au début de votre script ou notebook :">
     <meta property="og:url" content="https://example.org/semaine11/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content="Lecture/écriture de fichiers texte (CSV) :: 420-SN1-RE">
-    <meta property="og:description" content="Objectif de la leçon Apprendre à lire et écrire des fichiers .csv (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).
-Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules). Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc. Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.">
+    <meta property="og:title" content="Les tableaux NumPy et graphiques avancés :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs d’apprentissage Importer la bibliothèque NumPy Utiliser les fonctions de NumPy pour créer des tableaux (1D, 2D) Utiliser les fonctions mathématiques de NumPy pour obtenir des statistiques sur les données Ajouter une droite sur un graphique (régression linéaire) Calculer une droite de régression (y = a·x &#43; b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination Importer la bibliothèque Avant d’utiliser NumPy, il faut l’importer au début de votre script ou notebook :">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="Lecture/écriture de fichiers texte (CSV) :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectif de la leçon Apprendre à lire et écrire des fichiers .csv (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).
-Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules). Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc. Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.">
-    <meta itemprop="wordCount" content="153">
-    <title>Lecture/écriture de fichiers texte (CSV) :: 420-SN1-RE</title>
-    <link href="/semaine11/index.xml" rel="alternate" type="application/rss+xml" title="Lecture/écriture de fichiers texte (CSV) :: 420-SN1-RE">
-    <link href="/images/logo.png?1751403943" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751403943" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751403943" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751403943" rel="stylesheet">
-    <link href="/css/theme.min.css?1751403943" rel="stylesheet">
-    <link href="/css/format-html.min.css?1751403943" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1751403943" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1751403943" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1751403943" defer></script>
-    <script src="/js/search.min.js?1751403943" defer></script>
+    <meta itemprop="name" content="Les tableaux NumPy et graphiques avancés :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs d’apprentissage Importer la bibliothèque NumPy Utiliser les fonctions de NumPy pour créer des tableaux (1D, 2D) Utiliser les fonctions mathématiques de NumPy pour obtenir des statistiques sur les données Ajouter une droite sur un graphique (régression linéaire) Calculer une droite de régression (y = a·x &#43; b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination Importer la bibliothèque Avant d’utiliser NumPy, il faut l’importer au début de votre script ou notebook :">
+    <meta itemprop="wordCount" content="942">
+    <title>Les tableaux NumPy et graphiques avancés :: 420-SN1-RE</title>
+    <link href="/semaine11/index.xml" rel="alternate" type="application/rss+xml" title="Les tableaux NumPy et graphiques avancés :: 420-SN1-RE">
+    <link href="/images/logo.png?1751740318" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751740318" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751740318" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751740318" rel="stylesheet">
+    <link href="/css/theme.min.css?1751740318" rel="stylesheet">
+    <link href="/css/format-html.min.css?1751740318" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1751740318" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1751740318" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1751740318" defer></script>
+    <script src="/js/search.min.js?1751740318" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +42,7 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1751403943";
+      window.relearn.index_js_url="/searchindex.en.js?1751740318";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -107,11 +103,77 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#objectif-de-la-leçon">Objectif de la leçon</a></li>
-    <li><a href="#quest-ce-quun-fichier-csv">Qu’est-ce qu’un fichier CSV?</a></li>
-    <li><a href="#lecture-de-fichier-csv-sans-module-méthode-simple-avec-open">Lecture de fichier CSV sans module (méthode simple avec <em>open()</em>)</a></li>
-    <li><a href="#écriture-de-données-dans-un-fichier-csv">Écriture de données dans un fichier CSV</a></li>
-    <li><a href="#bonne-pratique--toujours-fermer-le-fichier-ou-utiliser-with">Bonne pratique : toujours fermer le fichier (ou utiliser <em>with</em>)</a></li>
+    <li><a href="#objectifs-dapprentissage">Objectifs d&rsquo;apprentissage</a></li>
+    <li><a href="#importer-la-bibliothèque">Importer la bibliothèque</a></li>
+    <li><a href="#1-créer-un-tableau-numpy-nparray">1. Créer un tableau NumPy (<code>np.array()</code>)</a></li>
+    <li><a href="#2-fonctions-mathématiques-statistiques-utiles">2. Fonctions mathématiques statistiques utiles</a>
+      <ul>
+        <li><a href="#somme">Somme</a></li>
+        <li><a href="#moyenne">Moyenne</a></li>
+        <li><a href="#écart-type-standard-deviation">Écart-type (standard deviation)</a></li>
+        <li><a href="#tableau-rempli-dune-même-valeur">Tableau rempli d’une même valeur</a></li>
+        <li><a href="#valeurs-espacées-régulièrement-utile-pour-les-graphiques">Valeurs espacées régulièrement (utile pour les graphiques)</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-opérations-vectorielles-rapides-et-simples">3. Opérations vectorielles (rapides et simples)</a>
+      <ul>
+        <li><a href="#addition-élément-par-élément-">Addition élément par élément :</a></li>
+        <li><a href="#soustraction-">Soustraction :</a></li>
+        <li><a href="#multiplication-par-un-scalaire-">Multiplication par un scalaire :</a></li>
+        <li><a href="#division-">Division :</a></li>
+      </ul>
+    </li>
+    <li><a href="#exemple-complet-">Exemple complet :</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#régression-linéaire-simple-avec-scipy">Régression linéaire simple avec SciPy</a></li>
+    <li><a href="#1-importation-de-la-fonction">1. Importation de la fonction</a></li>
+    <li><a href="#2-données">2. Données</a></li>
+    <li><a href="#3-régression-linéaire">3. Régression linéaire</a>
+      <ul>
+        <li><a href="#code-">Code :</a></li>
+        <li><a href="#exemple-">Exemple :</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-équation-de-la-droite">4. Équation de la droite</a></li>
+    <li><a href="#5-évaluer-la-concordance-qualité-de-lajustement">5. Évaluer la concordance (qualité de l’ajustement)</a>
+      <ul>
+        <li><a href="#coefficient-de-détermination-">Coefficient de détermination :</a></li>
+      </ul>
+    </li>
+    <li><a href="#résumé-minimal">Résumé minimal</a></li>
+    <li><a href="#exercice-guidé">Exercice guidé</a>
+      <ul>
+        <li><a href="#-exercice--ajuster-une-droite">🔧 Exercice – Ajuster une droite</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#-1-importer-numpy">📦 1. Importer NumPy</a></li>
+    <li><a href="#-2-créer-un-tableau-numpy">🔢 2. Créer un tableau NumPy</a>
+      <ul>
+        <li><a href="#-exemple-">📘 Exemple :</a></li>
+        <li><a href="#-exercice-1-">🧪 Exercice 1 :</a></li>
+      </ul>
+    </li>
+    <li><a href="#-3-fonctions-mathématiques">🧮 3. Fonctions mathématiques</a>
+      <ul>
+        <li><a href="#-exemple--1">📘 Exemple :</a></li>
+        <li><a href="#-exercice-2-">🧪 Exercice 2 :</a></li>
+        <li><a href="#-exercice-3-">🧪 Exercice 3 :</a></li>
+        <li><a href="#-exercice-4-">🧪 Exercice 4 :</a></li>
+      </ul>
+    </li>
+    <li><a href="#-4-opérations-vectorielles">➗ 4. Opérations vectorielles</a>
+      <ul>
+        <li><a href="#-exemple--2">📘 Exemple :</a></li>
+        <li><a href="#-exercice-5-">🧪 Exercice 5 :</a></li>
+        <li><a href="#-exercice-6-">🧪 Exercice 6 :</a></li>
+        <li><a href="#-exercice-7-révision-libre-">🧪 Exercice 7 (révision libre) :</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 </div>
@@ -120,7 +182,7 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Lecture/écriture de fichiers texte (CSV)</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Les tableaux NumPy et graphiques avancés</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/atelier/index.html" title="Activité 10 - tracer un graphique de données expérimentales. (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
@@ -145,37 +207,263 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
   <header class="headline">
   </header>
 
-<h1 id="lectureécriture-de-fichiers-texte-csv">Lecture/écriture de fichiers texte (CSV)</h1>
+<h1 id="les-tableaux-numpy-et-graphiques-avancés">Les tableaux NumPy et graphiques avancés</h1>
 
-<h2 id="objectif-de-la-leçon">Objectif de la leçon</h2>
-<p>Apprendre à lire et écrire des fichiers <code>.csv</code> (valeurs séparées par des virgules) avec Python pour automatiser le traitement de données scientifiques (ex. : résultats de laboratoire, données expérimentales).</p>
-<hr>
-<h2 id="quest-ce-quun-fichier-csv">Qu’est-ce qu’un fichier CSV?</h2>
+<h2 id="objectifs-dapprentissage">Objectifs d&rsquo;apprentissage</h2>
 <ul>
-<li>Un fichier texte simple où chaque ligne contient une série de valeurs séparées par des virgules (ou des points-virgules).</li>
-<li>Utilisé pour représenter des tableaux de données : résultats d’expériences, séries de mesures, etc.</li>
-<li>Peut être ouvert avec un tableur comme Excel ou LibreOffice Calc.</li>
+<li>Importer la bibliothèque NumPy
+<ul>
+<li>Utiliser les fonctions de NumPy pour créer des tableaux (1D, 2D)</li>
+<li>Utiliser les fonctions mathématiques de NumPy pour obtenir des statistiques sur les données</li>
 </ul>
-<p><strong>Exemple de fichier <code>mesures.csv</code> :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>temps,temperature
-0,22.5
-5,24.1
-10,26.3
-15,28.0</code></pre></div>
-<h2 id="lecture-de-fichier-csv-sans-module-méthode-simple-avec-open">Lecture de fichier CSV sans module (méthode simple avec <em>open()</em>)</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;mesures.csv&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> fichier:
-</span></span><span style="display:flex;"><span>    lignes <span style="color:#f92672">=</span> fichier<span style="color:#f92672">.</span>readlines()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> lignes[<span style="color:#ae81ff">1</span>:]:  <span style="color:#75715e"># Ignorer l’en-tête</span>
-</span></span><span style="display:flex;"><span>    temps, temperature <span style="color:#f92672">=</span> ligne<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Temps : </span><span style="color:#e6db74">{</span>temps<span style="color:#e6db74">}</span><span style="color:#e6db74"> min, Température : </span><span style="color:#e6db74">{</span>temperature<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C&#34;</span>)</span></span></code></pre></div>
-<h2 id="écriture-de-données-dans-un-fichier-csv">Écriture de données dans un fichier CSV</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;resultats.csv&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> fichier:
-</span></span><span style="display:flex;"><span>    fichier<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;temps,temperature</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>    fichier<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;0,22.5</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>    fichier<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;5,24.1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
-<h2 id="bonne-pratique--toujours-fermer-le-fichier-ou-utiliser-with">Bonne pratique : toujours fermer le fichier (ou utiliser <em>with</em>)</h2>
+</li>
+<li>Ajouter une droite sur un graphique (régression linéaire)
+<ul>
+<li>Calculer une droite de régression (y = a·x + b)</li>
+<li>Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur</li>
+<li>Évaluer la qualité de l’ajustement avec le coefficient de détermination</li>
+</ul>
+</li>
+</ul>
 <hr>
+<h2 id="importer-la-bibliothèque">Importer la bibliothèque</h2>
+<p>Avant d’utiliser <em><strong>NumPy</strong></em>, il faut l’importer au début de votre script ou notebook :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np</span></span></code></pre></div>
+<hr>
+<h2 id="1-créer-un-tableau-numpy-nparray">1. Créer un tableau NumPy (<code>np.array()</code>)</h2>
+<p>Un <strong>tableau NumPy</strong> est une structure efficace pour manipuler des séries de données numériques (ex : mesures, positions, températures…).</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Créer un tableau à partir d’une liste</span>
+</span></span><span style="display:flex;"><span>mesures <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">3.2</span>, <span style="color:#ae81ff">4.1</span>, <span style="color:#ae81ff">2.9</span>, <span style="color:#ae81ff">5.0</span>])
+</span></span><span style="display:flex;"><span>print(mesures)</span></span></code></pre></div>
+<p>Résultat :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[3.2 4.1 2.9 5. ]</code></pre></div>
+<h2 id="2-fonctions-mathématiques-statistiques-utiles">2. Fonctions mathématiques statistiques utiles</h2>
+<h3 id="somme">Somme</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>sum(mesures)  <span style="color:#75715e"># Total des valeurs</span></span></span></code></pre></div>
+<h3 id="moyenne">Moyenne</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>mean(mesures)  <span style="color:#75715e"># Moyenne des valeurs</span></span></span></code></pre></div>
+<h3 id="écart-type-standard-deviation">Écart-type (standard deviation)</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>std(mesures)  <span style="color:#75715e"># Mesure de la dispersion des données</span></span></span></code></pre></div>
+<h3 id="tableau-rempli-dune-même-valeur">Tableau rempli d’une même valeur</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>full(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">0.5</span>)  <span style="color:#75715e"># Crée un tableau [0.5, 0.5, 0.5, 0.5]</span></span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>zeros((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))  <span style="color:#75715e"># Crée un tableau de 2 lignes et 3 colonnes rempli de 0</span></span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>ones((<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>))  <span style="color:#75715e"># Crée un tableau de 3 lignes et 2 colonnes rempli de 1</span></span></span></code></pre></div>
+<h3 id="valeurs-espacées-régulièrement-utile-pour-les-graphiques">Valeurs espacées régulièrement (utile pour les graphiques)</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>)  <span style="color:#75715e"># Crée un tableau de 5 valeurs (saut de 5) : [ 0.  2.5  5.  7.5 10. ]</span></span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>)  <span style="color:#75715e"># Crée un tableau avec les nombres pairs de 0 à 10 exclu : [0 2 4 6 8] </span></span></span></code></pre></div>
+<h2 id="3-opérations-vectorielles-rapides-et-simples">3. Opérations vectorielles (rapides et simples)</h2>
+<p>L’intérêt principal de NumPy : on peut faire des <strong>opérations sur tout un tableau en une seule ligne</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>])</span></span></code></pre></div>
+<h3 id="addition-élément-par-élément-">Addition élément par élément :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">+</span> y    <span style="color:#75715e"># [5 7 9]</span></span></span></code></pre></div>
+<h3 id="soustraction-">Soustraction :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y <span style="color:#f92672">-</span> x    <span style="color:#75715e"># [3 3 3]</span></span></span></code></pre></div>
+<h3 id="multiplication-par-un-scalaire-">Multiplication par un scalaire :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span>   <span style="color:#75715e"># [10 20 30]</span></span></span></code></pre></div>
+<h3 id="division-">Division :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>    <span style="color:#75715e"># [2.  2.5 3. ]</span></span></span></code></pre></div>
+<h2 id="exemple-complet-">Exemple complet :</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>hauteurs <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">165</span>, <span style="color:#ae81ff">172</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">158</span>])
+</span></span><span style="display:flex;"><span>moy <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>mean(hauteurs)
+</span></span><span style="display:flex;"><span>ecart <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>std(hauteurs)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Moyenne :&#34;</span>, moy)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Écart-type :&#34;</span>, ecart)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Centrer les données</span>
+</span></span><span style="display:flex;"><span>hauteurs_centrees <span style="color:#f92672">=</span> hauteurs <span style="color:#f92672">-</span> moy
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hauteurs centrées :&#34;</span>, hauteurs_centrees)</span></span></code></pre></div>
+<h1 id="pause-5-minutes"><strong>Pause 5 minutes</strong></h1>
+<p><a href="#R-image-50ec2ed9edf03a96f510f6b6bfb14911" class="lightbox-link"><img alt="Pause" class="lazy lightbox figure-image" loading="lazy" src="../pause.jpg?width=50vw" style=" height: auto; width: 50vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-50ec2ed9edf03a96f510f6b6bfb14911"><img alt="Pause" class="lazy lightbox lightbox-image" loading="lazy" src="../pause.jpg?width=50vw"></a></p>
+<h2 id="régression-linéaire-simple-avec-scipy">Régression linéaire simple avec SciPy</h2>
+<h2 id="1-importation-de-la-fonction">1. Importation de la fonction</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> linregress</span></span></code></pre></div>
+<h2 id="2-données">2. Données</h2>
+<p>On part de deux listes (ou tableaux) de valeurs numériques :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]       <span style="color:#75715e"># Variable indépendante</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">4.0</span>, <span style="color:#ae81ff">5.9</span>, <span style="color:#ae81ff">8.2</span>, <span style="color:#ae81ff">10.1</span>]  <span style="color:#75715e"># Variable dépendante</span></span></span></code></pre></div>
+<h2 id="3-régression-linéaire">3. Régression linéaire</h2>
+<h3 id="code-">Code :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>resultats <span style="color:#f92672">=</span> linregress(x, y)</span></span></code></pre></div>
+<p>La fonction retourne les informations suivantes :</p>
+<table>
+<thead>
+<tr>
+<th>Élément</th>
+<th>Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>slope</code></td>
+<td>pente (a)</td>
+</tr>
+<tr>
+<td><code>intercept</code></td>
+<td>ordonnée à l’origine (b)</td>
+</tr>
+<tr>
+<td><code>rvalue</code></td>
+<td>coefficient de corrélation</td>
+</tr>
+<tr>
+<td><code>pvalue</code></td>
+<td>test statistique de validité</td>
+</tr>
+<tr>
+<td><code>stderr</code></td>
+<td>erreur-type sur la pente</td>
+</tr>
+</tbody>
+</table>
+<h3 id="exemple-">Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> linregress
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2.0</span>, <span style="color:#ae81ff">4.1</span>, <span style="color:#ae81ff">6.0</span>, <span style="color:#ae81ff">7.9</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">=</span> linregress(x, y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Pente :&#34;</span>, res<span style="color:#f92672">.</span>slope)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Ordonnée à l’origine :&#34;</span>, res<span style="color:#f92672">.</span>intercept)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;r :&#34;</span>, res<span style="color:#f92672">.</span>rvalue)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;R² :&#34;</span>, res<span style="color:#f92672">.</span>rvalue<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Erreur-type :&#34;</span>, res<span style="color:#f92672">.</span>stderr)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;p-valeur :&#34;</span>, res<span style="color:#f92672">.</span>pvalue)</span></span></code></pre></div>
+<h2 id="4-équation-de-la-droite">4. Équation de la droite</h2>
+<p>L’équation ajustée est :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>y = slope * x + intercept</code></pre></div>
+<p>On peut l’utiliser pour tracer la droite ou prédire des valeurs.</p>
+<h2 id="5-évaluer-la-concordance-qualité-de-lajustement">5. Évaluer la concordance (qualité de l’ajustement)</h2>
+<h3 id="coefficient-de-détermination-">Coefficient de détermination :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>R2 <span style="color:#f92672">=</span> res<span style="color:#f92672">.</span>rvalue <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span></span></span></code></pre></div>
+<ul>
+<li>R² proche de <strong>1</strong> → très bon ajustement</li>
+<li>R² proche de <strong>0</strong> → pas de relation linéaire</li>
+</ul>
+<h2 id="résumé-minimal">Résumé minimal</h2>
+<table>
+<thead>
+<tr>
+<th>Tâche</th>
+<th>Syntaxe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Importer</td>
+<td><code>from scipy.stats import linregress</code></td>
+</tr>
+<tr>
+<td>Calculer la régression</td>
+<td><code>res = linregress(x, y)</code></td>
+</tr>
+<tr>
+<td>Obtenir la pente</td>
+<td><code>res.slope</code></td>
+</tr>
+<tr>
+<td>Obtenir l’intercept</td>
+<td><code>res.intercept</code></td>
+</tr>
+<tr>
+<td>Obtenir R²</td>
+<td><code>res.rvalue ** 2</code></td>
+</tr>
+<tr>
+<td>Obtenir l’erreur-type</td>
+<td><code>res.stderr</code></td>
+</tr>
+<tr>
+<td>Obtenir la p-valeur</td>
+<td><code>res.pvalue</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercice-guidé">Exercice guidé</h2>
+<h3 id="-exercice--ajuster-une-droite">🔧 Exercice – Ajuster une droite</h3>
+<p><strong>Énoncé :</strong>
+Pour <code>x = [0, 1, 2, 3]</code> et <code>y = [1, 2.2, 3.9, 6.0]</code> :</p>
+<ul>
+<li>Calcule la régression linéaire</li>
+<li>Affiche l’équation de la droite (y = ax + b)</li>
+<li>Affiche R²</li>
+</ul>
+<p><strong>Solution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> linregress
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2.2</span>, <span style="color:#ae81ff">3.9</span>, <span style="color:#ae81ff">6.0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">=</span> linregress(x, y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Équation : y = </span><span style="color:#e6db74">{</span>res<span style="color:#f92672">.</span>slope<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">x + </span><span style="color:#e6db74">{</span>res<span style="color:#f92672">.</span>intercept<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;R² = </span><span style="color:#e6db74">{</span>res<span style="color:#f92672">.</span>rvalue<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span><span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<hr>
+<h1 id="-python-scientifique--numpy-avec-exercices-guidés">🧪 Python scientifique – NumPy avec exercices guidés</h1>
+<hr>
+<h2 id="-1-importer-numpy">📦 1. Importer NumPy</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np</span></span></code></pre></div>
+<hr>
+<h2 id="-2-créer-un-tableau-numpy">🔢 2. Créer un tableau NumPy</h2>
+<h3 id="-exemple-">📘 Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mesures <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">3.2</span>, <span style="color:#ae81ff">4.1</span>, <span style="color:#ae81ff">2.9</span>, <span style="color:#ae81ff">5.0</span>])
+</span></span><span style="display:flex;"><span>print(mesures)</span></span></code></pre></div>
+<h3 id="-exercice-1-">🧪 Exercice 1 :</h3>
+<p>Crée un tableau nommé <code>temperatures</code> contenant les valeurs :
+<code>[21.1, 19.5, 22.3, 20.7, 23.0]</code>
+et affiche-le.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ton code ici</span></span></span></code></pre></div>
+<hr>
+<h2 id="-3-fonctions-mathématiques">🧮 3. Fonctions mathématiques</h2>
+<h3 id="-exemple--1">📘 Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>mean(mesures)   <span style="color:#75715e"># Moyenne</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>std(mesures)    <span style="color:#75715e"># Écart-type</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>full(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">0.5</span>)    <span style="color:#75715e"># [0.5, 0.5, 0.5, 0.5]</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>)  <span style="color:#75715e"># [0.  2.5  5.  7.5 10.]</span></span></span></code></pre></div>
+<h3 id="-exercice-2-">🧪 Exercice 2 :</h3>
+<p>Utilise le tableau <code>temperatures</code> pour :</p>
+<ul>
+<li>Calculer la moyenne</li>
+<li>Calculer l’écart-type</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ton code ici</span></span></span></code></pre></div>
+<hr>
+<h3 id="-exercice-3-">🧪 Exercice 3 :</h3>
+<p>Crée un tableau nommé <code>barres_d_erreur</code> rempli de <code>0.5</code>, de même longueur que <code>temperatures</code>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ton code ici</span></span></span></code></pre></div>
+<hr>
+<h3 id="-exercice-4-">🧪 Exercice 4 :</h3>
+<p>Crée un tableau de 6 valeurs également espacées entre 0 et 100, nommé <code>x_positions</code>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ton code ici</span></span></span></code></pre></div>
+<hr>
+<h2 id="-4-opérations-vectorielles">➗ 4. Opérations vectorielles</h2>
+<h3 id="-exemple--2">📘 Exemple :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">+</span> y     <span style="color:#75715e"># [5 7 9]</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>     <span style="color:#75715e"># [2 4 6]</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>     <span style="color:#75715e"># [2.  2.5 3. ]</span></span></span></code></pre></div>
+<h3 id="-exercice-5-">🧪 Exercice 5 :</h3>
+<p>Crée un tableau <code>decalage = temperatures - 20</code>.
+Que signifie ce tableau ?</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ton code ici</span></span></span></code></pre></div>
+<hr>
+<h3 id="-exercice-6-">🧪 Exercice 6 :</h3>
+<p>Multiplie chaque valeur de <code>temperatures</code> par 1.8 et ajoute 32 pour obtenir la température en Fahrenheit.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ton code ici</span></span></span></code></pre></div>
+<hr>
+<h3 id="-exercice-7-révision-libre-">🧪 Exercice 7 (révision libre) :</h3>
+<p>Crée deux tableaux NumPy : <code>a = [1, 3, 5, 7]</code> et <code>b = [2, 4, 6, 8]</code>
+Fais les opérations suivantes :</p>
+<ul>
+<li>Addition</li>
+<li>Soustraction</li>
+<li>Multiplication par un scalaire</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ton code ici</span></span></span></code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -225,25 +513,29 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html">Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
-            <li class="" data-nav-id="/environnement_travail/index.html"><a class="padding" href="/environnement_travail/index.html">L&#39;environnement de travail</a><ul id="R-subsections-778a4ef1cb285be699e264e0f36c1129" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>Semaine 1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>Semaine 2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Questions fréquemment posées</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>Semaine 3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>Semaine 4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>Semaine 5.</b>Évaluation 1 (25%)</a></li>
-            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>Semaine 6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>Semaine 7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>Semaine 8.</b>Évaluation 2 (20%)</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>Semaine 9.</b>Introduction à NumPy et Pandas</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>Semaine 10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="active parent " data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>Semaine 11.</b>Lecture/écriture de fichiers texte (CSV)</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu">
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b>Entrées/Sorties, Algorithme, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b>Évaluation 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b>Listes et tableaux imbriqués</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b>Évaluation 2 (35%)</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="active parent " data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b>Les tableaux NumPy et graphiques avancés</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu">
             <li class="" data-nav-id="/semaine11/atelier/index.html"><a class="padding" href="/semaine11/atelier/index.html">Activité 11 - Traitement de résultats de laboratoire</a></li></ul></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>Semaine 12.</b>Examen 2 (30%)</a></li>
-            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>Semaine 13.</b>Introduction au projet final (40%)</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>Semaine 14.</b>Travail sur le projet final.</a></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>Semaine 15.</b>Projet final (Remise présentation en vidéo, démonstration du code)</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b>Manipulation de tableaux avec Pandas</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Évaluation finale (Projet final)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b>Travail sur le projet final</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"><b> * </b>Solutions des exercices</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"><b> * </b>Solutions des ateliers</a></li>
             <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
           </ul>
         </div>
@@ -262,8 +554,8 @@ Qu’est-ce qu’un fichier CSV? Un fichier texte simple où chaque ligne contie
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1751403943" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751403943" defer></script>
-    <script src="/js/theme.min.js?1751403943" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1751740318" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751740318" defer></script>
+    <script src="/js/theme.min.js?1751740318" defer></script>
   </body>
 </html>

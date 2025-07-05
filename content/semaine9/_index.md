@@ -1,8 +1,8 @@
 +++
 chapter = true
-pre = "<b>Semaine 9.</b>"
-title = "Introduction à NumPy et Pandas"
-weight = 90
+pre = "<b>9.</b>"
+title = "Évaluation 2 (35%)"
+weight = 109
 +++
  
 

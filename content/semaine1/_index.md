@@ -1,8 +1,8 @@
 +++
 chapter = true
-pre = "<b>Semaine 1.</b>"
+pre = "<b>1.</b>"
 title = "Présentation du cours et l'environnement de travail"
-weight = 10
+weight = 101
 +++
 
 ## Objectifs d’apprentissage
@@ -28,6 +28,8 @@ weight = 10
 
 * [Google Colab](https://youtu.be/SRPCqXcuxKo?si=Js77FuFNuBLMMcY_)
 * [PyCharm Community](https://youtu.be/VXbiS2rzCNE?si=Sm5V1wBX5I3ahbDu)
+
+
 
 
 
