@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>  :: 420-SN1-RE</title>
+    <link>http://localhost:1313/faq/alternatives/installer_vs_code/index.html</link>
+    <description>Installation de VS Code, Python et des bibliothèques scientifiques Pour ceux qui ont un système d’exploitation Windows, voici deux fichiers exécutables qui installeront automatiquement VS Code, Python et toutes les librairies nécessaires :&#xA;Première étape Deuxième étape Pour une installation manuelle : voici les liens utiles pour installer les outils de développement (sur votre ordinateur personnel):&#xA;Télécharger et installer Python : Python Télécharger et installer Visual Studio Code : Visual Studio Code - Mac, Linux, Windows Les extensions et bibliothèques à installer dans VS Code: Python, Run, Pandas, Numpy, Matplotlib, SciPy Tutoriel pour installer des extensions sur VS Code Installer Jupyter Notebook sur Visual Studio Code (en anglais) : How to Install Jupyter Notebook in VSCode | Jupyter Notebook in Visual Studio Code (Easy)</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/faq/alternatives/installer_vs_code/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

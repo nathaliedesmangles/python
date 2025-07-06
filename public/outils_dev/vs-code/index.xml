@@ -3,7 +3,7 @@
   <channel>
     <title>  :: 420-SN1-RE</title>
     <link>https://example.org/outils_dev/vs-code/index.html</link>
-    <description>Installation &amp; premier lancement Étapes : Aller sur le site officiel : https://code.visualstudio.com Cliquer sur Download for Windows Lancer le fichier téléchargé (VSCodeSetup.exe) Accepter les conditions → clique sur Suivant plusieurs fois Cocher “Add to PATH” si disponible Cliquer sur Installer Lorsque l’installation est terminée, cliquer sur le raccourci Visual Studio Code dans le menu Démarrer ou cherche “Visual Studio Code” dans la barre de recherche Tu devrais voir l’écran d’accueil (Bienvenue ou Welcome)</description>
+    <description>Installation &amp; premier lancement Aller sur le site officiel : https://code.visualstudio.com Cliquer sur Download for Windows Lancer le fichier téléchargé (VSCodeSetup.exe) Accepter les conditions → clique sur Suivant plusieurs fois Cocher “Add to PATH” si disponible Cliquer sur Installer Lorsque l’installation est terminée, cliquer sur le raccourci Visual Studio Code dans le menu Démarrer ou cherche “Visual Studio Code” dans la barre de recherche Tu devrais voir l’écran d’accueil (Bienvenue ou Welcome)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/outils_dev/vs-code/index.xml" rel="self" type="application/rss+xml" />
