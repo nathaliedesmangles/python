@@ -79,10 +79,10 @@
     <loc>https://example.org/separateur_section/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine4/atelier/index.html</loc>
+    <loc>https://example.org/semaine6_v2/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine4/atelier/solution/index.html</loc>
+    <loc>https://example.org/semaine6_v2/atelier/solution/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine6/atelier/index.html</loc>
@@ -119,6 +119,9 @@
   </url>
   <url>
     <loc>https://example.org/semaine3/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine6_v2/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine4/index.html</loc>
@@ -188,6 +191,33 @@
   </url>
   <url>
     <loc>https://example.org/solutions_ateliers/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_exercices/2_variables/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_exercices/3_input/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_exercices/4_fonctions/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_exercices/6_if/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_exercices/7_boucles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_exercices/8_listes/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_exercices/10_matplotlib_base/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_exercices/11_numpy/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_exercices/12_scipy/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/afaire/index.html</loc>

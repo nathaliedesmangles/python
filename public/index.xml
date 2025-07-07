@@ -40,7 +40,7 @@
       <link>https://example.org/cours/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/cours/index.html</guid>
-      <description>Groupe 09&#xA;(lundi 15h20)&#xD;Groupe 11&#xA;(mercredi 08h00)&#xD;Groupe 10&#xA;(vendredi 15h20)&#xD;Cours 01&#xD;15 août&#xD;15 août&#xD;17 août&#xD;Cours 02&#xD;22 août&#xD;22 août&#xD;24 août&#xD;Cours 03&#xD;29 août&#xD;29 août&#xD;31 août&#xD;Cours 04&#xD;...&#xD;....&#xD;.....&#xD;Cours 05&#xD;Évaluation #1 (25%)&#xD;Cours 06&#xD;...&#xD;....&#xD;.....&#xD;Cours 07&#xD;...&#xD;....&#xD;.....&#xD;Cours 08&#xD;...&#xD;....&#xD;.....&#xD;Cours 09&#xD;...&#xD;....&#xD;.....&#xD;Cours 10&#xD;Évaluation #2 (35%)&#xD;Cours 11&#xD;.</description>
+      <description>Liste d’attente pour poser des questions Cliquez ici pour entrer votre nom&#xA;Calendrier scolaire et répartition des 15 semaines Calendrier scolaire Répartition des 15 semaines Groupe 09&#xA;(lundi 15h20)&#xD;Groupe 11&#xA;(mercredi 08h00)&#xD;Groupe 10&#xA;(vendredi 15h20)&#xD;Cours 01&#xD;25 août&#xA;Plan de cours&#xA;Quiz&#xD;27 août&#xA;Plan de cours&#xA;Quiz&#xD;22 août&#xA;Plan de cours&#xA;Quiz&#xD;Cours 02&#xD;4 septembre&#xD;3 septembre&#xD;29 août&#xD;Cours 03&#xD;8 septembre&#xD;10 septembre&#xD;5 septembre&#xD;Cours 04&#xD;15 septembre&#xD;17 septembre&#xD;12 septembre&#xD;Cours 05&#xD;Évaluation #1 (25%)</description>
     </item>
     <item>
       <title>Présentation du cours et l&#39;environnement de travail</title>
@@ -57,18 +57,25 @@
       <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.&#xA;Exemples :&#xA;age = 17 nom = &#34;Julie&#34; temperature = 36.</description>
     </item>
     <item>
-      <title>Entrées/Sorties, Algorithme, débogage et fonctions</title>
+      <title>Entrées/Sorties, algorithme et débogage</title>
       <link>https://example.org/semaine3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/index.html</guid>
-      <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Utiliser des fonctions prédéfinies (ex: Module math) Définir ses propres fonctions. Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
+      <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :&#xA;nom = input(&#34;Quel est ton nom ?</description>
     </item>
     <item>
       <title>Décider avec `if`, `elif`, `else` et les opérateurs</title>
+      <link>https://example.org/semaine6_v2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6_v2/index.html</guid>
+      <description>Objectifs d’apprentissage Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
+    </item>
+    <item>
+      <title>Les fonctions</title>
       <link>https://example.org/semaine4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine4/index.html</guid>
-      <description>Objectifs d’apprentissage Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
+      <description>Objectifs d’apprentissage Utiliser des fonctions prédéfinies Définir ses propres fonctions avec def Utiliser des paramètres pour envoyer des données Retourner un résultat avec return Comprendre la portée locale des variables Qu’est-ce qu’une fonction ? Une fonction est un bloc de code réutilisable. On peut lui donner des paramètres (valeurs en entrée) et elle peut renvoyer un résultat. Si une fonction renvoie un résultat, il devra être stocké dans une variable pour pouvoir être utilisé ailleurs dans le code.</description>
     </item>
     <item>
       <title>Évaluation 1 (25%)</title>
@@ -152,7 +159,7 @@
       <link>https://example.org/solutions_exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/index.html</guid>
-      <description></description>
+      <description>02. Variables, types et expressions&#xA;03. Entrées/Sorties, algorithme et débogage&#xA;04. Fonctions&#xA;06. IF-ELIF-ELSE&#xA;07. Boucles WHILE et FOR&#xA;08. Listes, chaines et dictionnaires&#xA;10. Visualisation des données (la base)&#xA;11. Tableaux NumPy et graphiques avancés&#xA;12. Visualisation des données et présentation du projet</description>
     </item>
     <item>
       <title>Solutions des ateliers</title>

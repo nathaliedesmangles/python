@@ -20,4 +20,11 @@ title = "Présentation du cours et l'environnement de travail"
 weight = 101
 +++
 
+{{% notice style="cyan" title="À retenir" %}}
+* `input()` permet de lire une donnée (toujours une chaîne).
+* Il faut convertir avec `int()` ou `float()` pour faire des calculs.
+* `print()` permet d'afficher une réponse, seule ou avec du texte et .
+{{% /notice %}}
+
+
 Cours en mode atelier guidé (démo), mais juste l'essentiel

@@ -1,111 +1,203 @@
 +++
 chapter = true
 pre = "<b>4.</b>"
-title = "Décider avec `if`, `elif`, `else` et les opérateurs"
+title = "Les fonctions"
 weight = 104
 +++
 
 
-## Objectifs d’apprentissage
+## Objectifs d'apprentissage
 
-1. **Identifier et utiliser correctement les opérateurs de comparaison et logiques** pour évaluer des conditions simples en Python.
-2. **Écrire des structures conditionnelles (`if`, `elif`, `else`)** pour contrôler le déroulement d’un programme selon différentes situations.
-3. **Appliquer les structures conditionnelles** à des contextes scientifiques simples.
----
-
-
-## Les opérateurs de comparaison
-
-Ces opérateurs permettent de comparer des valeurs. Le résultat est **toujours un booléen** : `True` (vrai) ou `False` (faux).
-
-| Opérateur | Signification        | Exemple  | Résultat |
-| --------- | -------------------- | -------- | -------- |
-| `==`      | égal à               | `5 == 5` | `True`   |
-| `!=`      | différent de         | `3 != 4` | `True`   |
-| `<`       | plus petit que       | `2 < 5`  | `True`   |
-| `<=`      | plus petit ou égal à | `5 <= 5` | `True`   |
-| `>`       | plus grand que       | `7 > 4`  | `True`   |
-| `>=`      | plus grand ou égal à | `6 >= 9` | `False`  |
-
-> Dans une cellule de Code, testez les exemples du tableau.
-
-
-## Les opérateurs logiques
-
-Ils permettent de **combiner plusieurs conditions**.
-
-| Opérateur | Signification            | Exemple               | Résultat |
-| --------- | ------------------------ | --------------------- | -------- |
-| `and`     | et (toutes vraies)       | `(4 < 5) and (6 > 3)` | `True`   |
-| `or`      | ou (au moins une vraie)  | `(4 < 5) or (6 < 3)`  | `True`   |
-| `not`     | négation                 | `not (4 < 5)`         | `False`  |
-
-> Dans une cellule de Code, testez les exemples du tableau.
-
-## Les structures conditionnelles
-
-Elles permettent **d’exécuter un bloc de code seulement si une condition est vraie**.
-
-
-### `if`
-
-Si la condition est vraie, le bloc **indenté** (décalé) est exécuté.  
-Notez la présence du caractère deux-points (`:`) après la condition.
-
-```python
-temp = 30
-if temp > 25:
-    print("Il fait chaud.")
-```
-
-> Dans une cellule de Code dans VS Code, testez l'exemple du `if`.
-
-### `if`…`else`
-
-**Deux chemins possibles** : un si la condition est vraie, un si elle est fausse.
-
-```python
-temp = 15
-if temp > 25:
-    print("Il fait chaud.")
-else:
-    print("Il fait frais.")
-```
-
-> Dans une cellule de Code dans VS Code, testez l'exemple du `if-else`.
-
-### `if`…`elif`…`else`
-
-Utilisé pour tester **plusieurs cas différents**.
-
-```python
-temp = 20
-if temp > 25:
-    print("Il fait chaud.")
-elif temp > 15:
-    print("Il fait bon.")
-else:
-    print("Il fait frais.")
-```
-
-> Dans une cellule de Code dans VS Code, testez l'exemple du `if-elif-else`.
-
-### Exercice 
-
-Écrire le code qui permet de tester la valeur du pH d'une solution.
-- Créez une variable `pH = 4.5`
-- Si le pH est strictement inférieur à 7 le programme affiche "Solution acide"
-- Sinon, si le pH est égale à 7, le programme affiche "Solution neutre"
-- Sinon, le programme affiche "Solution basique"
-
+* Utiliser des fonctions prédéfinies
+* Définir ses propres fonctions avec `def`
+* Utiliser des paramètres pour envoyer des données
+* Retourner un résultat avec `return`
+* Comprendre la portée locale des variables
 
 ---
+
+## Qu’est-ce qu’une fonction ?
+
+* Une fonction est un **bloc de code réutilisable**. On peut lui donner des **paramètres** (valeurs en entrée) et elle peut renvoyer un **résultat**. 
+* Si une fonction renvoie un résultat, il devra être stocké dans  une variable pour pouvoir être utilisé ailleurs dans le code.
+
+## Utilisation de fonctions prédéfinies
+
+Python offre déjà plein de **fonctions toutes prêtes** (*prédéfinies*).
+
+### Exemples utiles :
+
+| Fonction  | Utilité                                 | Exemple                         |
+| --------- | --------------------------------------- | ------------------------------- |
+| `print()` | Afficher un message                     | `print("Bonjour !")`            |
+| `input()` | Demander une donnée à l’utilisateur     | `nom = input("Votre nom :")`    |
+| `int()`   | Convertir en entier                     | `val = int("5")`                |
+| `float()` | Convertir en nombre décimal             | `val = float("3.14")`           |
+| `round()` | Arrondir un nombre                      | `round(2.718, 2)` → `2.72`      |
+| `len()`   | Compter les éléments d’une chaîne/liste | `len("atomes")` → `6`           |
+| `type()`  | Afficher le type d’une variable         | `type(3.5)` → `<class 'float'>` |
+
+> On **appelle** une fonction en écrivant son nom suivi de parenthèses.
+
+### Quelques fonctions du module `math`
+
+Pour accéder à des fonctions mathématiques plus avancées, on utilise le **module `math`**.
+
+```python
+import math
+```
+
+| Fonction         | Description        | Exemple                         |
+| ---------------- | ------------------ | ------------------------------- |
+| `math.sqrt(x)`   | Racine carrée      | `math.sqrt(16)` → `4.0`         |
+| `math.pow(x, y)` | Puissance          | `math.pow(2, 3)` → `8.0`        |
+| `math.pi`        | La constante π     | `math.pi` → `3.14159...`        |
+| `math.sin(x)`    | Sinus (en radians) | `math.sin(math.pi / 2)` → `1.0` |
+| `math.log(x)`    | Logarithme naturel | `math.log(10)`                  |
+
+
+## Définir une fonction avec `def`
+
+### Syntaxe de base :
+
+```python
+def nom_fonction(param1, param2):
+    instructions
+    return résultat
+```
+
+### Exemple :
+
+```python
+def aire_rectangle(longueur, largeur):
+    aire = longueur * largeur
+    return aire
+```
+
+> Cette fonction reçoit deux valeurs, calcule l’aire et la retourne.
+
+
+## Appeler une fonction
+
+### Exemple :
+
+```python
+a = aire_rectangle(5, 2)
+print("Aire :", a)
+```
+
+
+## Le mot-clé `return`
+
+* Il **renvoie un résultat** à l’endroit où la fonction a été appelée.
+* Dès que `return` est exécuté, la fonction **s’arrête**.
+
+### Exemple :
+
+```python
+def carre(x):
+    return x * x
+```
+
+
+## La portée locale des variables
+
+Les **variables créées dans une fonction** (ex: `aire`) **n’existent que dans la fonction**.
+
+### Exemple :
+
+```python
+def test():
+    x = 10
+    return x
+
+print(test())  # OK
+print(x)       # Erreur : x n'existe pas ici
+```
+
 
 {{% notice style="cyan" title="À retenir" %}}
-* Les **opérateurs de comparaison** comparent des valeurs.
-* Les **opérateurs logiques** combinent plusieurs conditions.
-* Les **structures conditionnelles** permettent de **réagir à des critères** dans un programme.
-	* `if` vérifie si une condition est vraie, **si et seulement si c'est le cas**, les instructions en dessous et décalées seront exécutées.
-	* `elif` permet de vérifier une autre condition, **si et seulement si elle est vrais**, les instructions en dessous et décalées seront exécutées.
-	* `else` permet de prévoir des instructions à effectuer, **si et seulement si aucune des conditions précédentes est vraie**.
+| Élément       | Rôle                                                        |
+| ------------- | ----------------------------------------------------------- |
+| `def`         | Définir une fonction                                        |
+| Paramètres    | Donner des valeurs à la fonction                            |
+| `return`      | Retourner un résultat (`resultat = fonction()` ou <br> `print(fonction())`)             |
+| Portée locale | Les variables dans une fonction n’existent qu’à l’intérieur |
 {{% /notice %}}
+
+
+---
+
+## Exercices à faire avant le cours
+
+{{% notice style="cyan" title="Appel de fonction" %}}
+Pour chacun des exercices ci-dessous, utilisez (appelez) la fonction crée.
+{{% /notice %}}
+
+### Exercice 1 - Élément chimique
+
+Écrire une fonction `element_chimique()` qui :
+* Demande à l'utilisateur d'entrer le nom d’un élément chimique.
+* Affiche un message disant "L’élément choisi est \[nom]"
+
+### Exercice 2 - Aire d'un cercle
+
+Écrire une fonction `aire_cercle()` qui :
+* Demande à l'utilisateur d'entrer le rayon du cercle (en cm).
+* Calcule l'aire du cercle (utiliser le **module math** pour PI et le rayon².)
+* Affiche l'aire du cercle, arrondie à 2 décimales (utiliser la fonction `round`).
+
+**Exemple d'affichage attendu (rayon de 5 cm)** :
+```python
+Aire du cercle de rayon 5 cm : 78.54 cm²
+```
+
+### Exercice 3 - Convertir Celsius en Kelvin
+
+Crée une fonction nommée `convertir_C_en_K` qui :
+
+* prend une température en °C en paramètre
+* retourne la température en Kelvin (formule : K = C + 273.15)
+
+**Solution :**
+
+```python
+def convertir_C_en_K(celsius):
+    kelvin = celsius + 273.15
+    return kelvin
+
+print(convertir_C_en_K(25))  # 298.15
+```
+
+### Exercice 4 – Calculer une énergie cinétique
+
+Crée une fonction `energie_cinetique(m, v)` qui calcule :
+
+```math
+$E_c = \frac{1}{2} \cdot m \cdot v^2$
+```
+
+**Solution :**
+
+```python
+def energie_cinetique(m, v):
+    return 0.5 * m * v**2
+
+print(energie_cinetique(2.0, 3.0))  # 9.0
+```
+
+### Exercice 5 – Vérifier la portée locale
+
+Crée une fonction `tester_variable()` qui crée une variable `x = 10` et l’affiche dans la fonction.
+Essaye ensuite d’afficher `x` **à l’extérieur de la fonction**.
+
+**Solution :**
+
+```python
+def tester_variable():
+    x = 10
+    print("Dans la fonction :", x)
+
+tester_variable()
+print("À l’extérieur :", x)  # Erreur attendue
+```

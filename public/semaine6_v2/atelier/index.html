@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs pédagogiques Utiliser les opérateurs de comparaison et logiques. Utiliser les structures conditionnelles if, elif, else. Travailler avec les types numériques (float, int). Exercice 1 Contexte L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :
+L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse. En autocuiseur, la pression est plus élevée, donc l’eau bout à une température plus élevée.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Atelier 4 :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs pédagogiques Utiliser les opérateurs de comparaison et logiques. Utiliser les structures conditionnelles if, elif, else. Travailler avec les types numériques (float, int). Exercice 1 Contexte L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :
+L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse. En autocuiseur, la pression est plus élevée, donc l’eau bout à une température plus élevée.">
+    <meta property="og:url" content="https://example.org/semaine6_v2/atelier/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Atelier 4 :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs pédagogiques Utiliser les opérateurs de comparaison et logiques. Utiliser les structures conditionnelles if, elif, else. Travailler avec les types numériques (float, int). Exercice 1 Contexte L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :
+L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse. En autocuiseur, la pression est plus élevée, donc l’eau bout à une température plus élevée.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Atelier 4 :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs pédagogiques Utiliser les opérateurs de comparaison et logiques. Utiliser les structures conditionnelles if, elif, else. Travailler avec les types numériques (float, int). Exercice 1 Contexte L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :
+L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse. En autocuiseur, la pression est plus élevée, donc l’eau bout à une température plus élevée.">
+    <meta itemprop="wordCount" content="272">
+    <title>Atelier 4 :: 420-SN1-RE</title>
+    <link href="/semaine6_v2/atelier/index.xml" rel="alternate" type="application/rss+xml" title="Atelier 4 :: 420-SN1-RE">
+    <link href="/images/logo.png?1751926087" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751926087" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1751926087" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1751926087" rel="stylesheet">
+    <link href="/css/theme.min.css?1751926087" rel="stylesheet">
+    <link href="/css/format-html.min.css?1751926087" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1751926087" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1751926087" defer></script>
+    <script src="/js/lunr/lunr.min.js?1751926087" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1751926087" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1751926087" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1751926087" defer></script>
+    <script src="/js/search.min.js?1751926087" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/semaine6_v2\/atelier\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1751926087";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine6_v2/atelier/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs-pédagogiques">Objectifs pédagogiques</a></li>
+    <li><a href="#exercice-1">Exercice 1</a>
+      <ul>
+        <li><a href="#contexte">Contexte</a></li>
+        <li><a href="#à-faire">À faire</a></li>
+      </ul>
+    </li>
+    <li><a href="#exemples-de-fonctionnements-attendus">Exemples de fonctionnements attendus</a></li>
+    <li><a href="#pistes--rappels">Pistes / rappels</a>
+      <ul>
+        <li><a href="#bonus-facultatif">Bonus (facultatif)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine6_v2/index.html"><span itemprop="name">Décider avec `if`, `elif`, `else` et les opérateurs</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Atelier 4</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6_v2/index.html" title="Décider avec `if`, `elif`, `else` et les opérateurs (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6_v2/atelier/solution/index.html" title="Solution (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine6_v2" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="atelier-4">Atelier 4</h1>
+
+<h2 id="objectifs-pédagogiques">Objectifs pédagogiques</h2>
+<ul>
+<li>Utiliser les opérateurs de comparaison et logiques.</li>
+<li>Utiliser les structures conditionnelles <code>if</code>, <code>elif</code>, <code>else</code>.</li>
+<li>Travailler avec les types numériques (<code>float</code>, <code>int</code>).</li>
+</ul>
+<hr>
+<h2 id="exercice-1">Exercice 1</h2>
+<h3 id="contexte">Contexte</h3>
+<p>L’état physique de l’eau dépend de la température et de la pression. À <strong>pression atmosphérique normale (1 atm)</strong> :</p>
+<ul>
+<li>L’eau gèle à 0 °C et bout à 100 °C.</li>
+<li>En <strong>altitude</strong>, la pression est plus faible, donc l’eau bout à une température plus basse.</li>
+<li>En <strong>autocuiseur</strong>, la pression est plus élevée, donc l’eau bout à une température plus élevée.</li>
+</ul>
+<p>On suppose ici un modèle très simple :</p>
+<table>
+<thead>
+<tr>
+<th>Pression (atm)</th>
+<th>Température d’ébullition (°C)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.5</td>
+<td>81</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>100</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>112</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>120</td>
+</tr>
+</tbody>
+</table>
+<p>Le point de congélation demeure à 0 °C peu importe la pression.</p>
+<h3 id="à-faire">À faire</h3>
+<p>Écris un programme Python qui :</p>
+<ol>
+<li>
+<p>Demande à l’utilisateur d’entrer :</p>
+<ul>
+<li>La <strong>température de l’eau en °C</strong></li>
+<li>La <strong>pression en atm</strong> (choix parmi 0.5, 1.0, 1.5, 2.0)</li>
+</ul>
+</li>
+<li>
+<p>Détermine et affiche l’<strong>état physique de l’eau</strong> : <code>&quot;solide&quot;</code>, <code>&quot;liquide&quot;</code> ou <code>&quot;gaz&quot;</code>.</p>
+</li>
+</ol>
+<h2 id="exemples-de-fonctionnements-attendus">Exemples de fonctionnements attendus</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Température (°C) : 50
+</span></span><span style="display:flex;"><span>Pression (atm) : 1.0
+</span></span><span style="display:flex;"><span>État de l’eau : liquide</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Température (°C) : 101
+</span></span><span style="display:flex;"><span>Pression (atm) : 1.0
+</span></span><span style="display:flex;"><span>État de l’eau : gaz</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Température (°C) : -5
+</span></span><span style="display:flex;"><span>Pression (atm) : 2.0
+</span></span><span style="display:flex;"><span>État de l’eau : solide</span></span></code></pre></div>
+<h2 id="pistes--rappels">Pistes / rappels</h2>
+<ul>
+<li>Utiliser des conditions imbriquées ou combinées (<code>if ... and ...</code>, <code>elif</code>)</li>
+<li>Pour simplifier, tu peux faire un <code>if</code> sur la pression pour définir le point d’ébullition</li>
+<li>Utilise des variables pour stocker les seuils</li>
+</ul>
+<h3 id="bonus-facultatif">Bonus (facultatif)</h3>
+<ul>
+<li>Gérer des cas d’erreurs (ex. : pression invalide)</li>
+<li>Afficher une petite phrase plus descriptive selon l’état :</li>
+<li><em>&ldquo;L’eau est sous forme de vapeur.&rdquo;</em> ou <em>&ldquo;L’eau est liquide à cette température et pression.&rdquo;</em></li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html">Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b>Entrées/Sorties, algorithme et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine6_v2/index.html"><a class="padding" href="/semaine6_v2/index.html"><b>4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-e5502eaae07a621463e621cd38d9dd04" class="collapsible-menu">
+            <li class="active parent alwaysopen " data-nav-id="/semaine6_v2/atelier/index.html"><a class="padding" href="/semaine6_v2/atelier/index.html">Atelier 4</a><ul id="R-subsections-849bec20c077b1dd0d34274b5f1a429e" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine6_v2/atelier/solution/index.html"><a class="padding" href="/semaine6_v2/atelier/solution/index.html">Solution</a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b>Les fonctions</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b>Évaluation 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b>Listes et tableaux imbriqués</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b>Évaluation 2 (35%)</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b>Les tableaux NumPy et graphiques avancés</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b>Manipulation de tableaux avec Pandas</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Évaluation finale (Projet final)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b>Travail sur le projet final</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"><b> * </b>Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"><b> * </b>Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1751926087" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1751926087" defer></script>
+    <script src="/js/theme.min.js?1751926087" defer></script>
+  </body>
+</html>

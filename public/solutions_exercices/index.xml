@@ -3,9 +3,72 @@
   <channel>
     <title>Solutions des exercices :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/index.html</link>
-    <description></description>
+    <description>02. Variables, types et expressions&#xA;03. Entrées/Sorties, algorithme et débogage&#xA;04. Fonctions&#xA;06. IF-ELIF-ELSE&#xA;07. Boucles WHILE et FOR&#xA;08. Listes, chaines et dictionnaires&#xA;10. Visualisation des données (la base)&#xA;11. Tableaux NumPy et graphiques avancés&#xA;12. Visualisation des données et présentation du projet</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Variables, types et expressions</title>
+      <link>https://example.org/solutions_exercices/2_variables/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/2_variables/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title> Entrées/Sorties, algorithme et débogage</title>
+      <link>https://example.org/solutions_exercices/3_input/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/3_input/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title> Fonctions</title>
+      <link>https://example.org/solutions_exercices/4_fonctions/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/4_fonctions/index.html</guid>
+      <description>Exercice 1 - Élément chimique Écrire une fonction element_chimique() qui :&#xA;Demande à l’utilisateur d’entrer le nom d’un élément chimique. Affiche un message disant “L’élément choisi est [nom]” Solution :&#xA;def element_chimique(): element = input(&#34;Entrez le nom d&#39;un élément chimique : &#34;)) print(&#34;L’élément choisi est&#34;, element) # Appel de la fonction element_chimique()&#xD;Exercice 2 - Aire d’un cercle Écrire une fonction aire_cercle() qui : demande à l’utilisateur d’entrer le rayon du cercle (en cm).</description>
+    </item>
+    <item>
+      <title> If-elif-else</title>
+      <link>https://example.org/solutions_exercices/6_if/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/6_if/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title> Boucles WHILE et FOR</title>
+      <link>https://example.org/solutions_exercices/7_boucles/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/7_boucles/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title> Listes et chaines</title>
+      <link>https://example.org/solutions_exercices/8_listes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/8_listes/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title> Visualisation des données (base)</title>
+      <link>https://example.org/solutions_exercices/10_matplotlib_base/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/10_matplotlib_base/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title> Tableaux NumPy</title>
+      <link>https://example.org/solutions_exercices/11_numpy/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/11_numpy/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title> Graphiques avancés - Scipy</title>
+      <link>https://example.org/solutions_exercices/12_scipy/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/12_scipy/index.html</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

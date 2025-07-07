@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Entrées/Sorties, Algorithme, débogage et fonctions :: 420-SN1-RE</title>
+    <title>Entrées/Sorties, algorithme et débogage :: 420-SN1-RE</title>
     <link>https://example.org/semaine3/index.html</link>
-    <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Utiliser des fonctions prédéfinies (ex: Module math) Définir ses propres fonctions. Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
+    <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :&#xA;nom = input(&#34;Quel est ton nom ?</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine3/index.xml" rel="self" type="application/rss+xml" />

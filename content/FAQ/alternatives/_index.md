@@ -172,7 +172,7 @@ Pour cette étape, vous pouvez:
 
 - Regarder la vidéo sur YouTube: [vidéo](https://youtu.be/W5p8v4yhxjk)
 ou 
-- Lire (en anglais) les instruction sur [le site de PyCharm](https://www.jetbrains.com/guide/python/tutorials/getting-started-pycharm/your-first-project/)
+- Lire (en anglais) les instructions sur [le site de PyCharm](https://www.jetbrains.com/guide/python/tutorials/getting-started-pycharm/your-first-project/)
 
 ## Comprendre l'interface de PyCharm
 

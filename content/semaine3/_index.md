@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "<b>3.</b>"
-title = "Entrées/Sorties, Algorithme, débogage et fonctions"
+title = "Entrées/Sorties, algorithme et débogage"
 weight = 103
 +++
 
@@ -12,8 +12,6 @@ weight = 103
 * Comprendre le rôle d'un algorithme.
 * Écrire et traduire des algorithmes simples en python.
 * Apprendre à comprendre les messages d'erreurs et à déboguer un programme
-* Utiliser des fonctions prédéfinies (ex: Module math)
-* Définir ses propres fonctions.
 
 ---
 
@@ -171,43 +169,9 @@ print("Aire =", aire)
 
 **Utilisation de print()**
 
-**Exploration des variables, ligne par ligne**
+---
 
-## Utilisation de fonctions prédéfinies
-
-Python offre déjà plein de **fonctions toutes prêtes** (*prédéfinies*).
-
-### Exemples utiles :
-
-| Fonction  | Utilité                                 | Exemple                         |
-| --------- | --------------------------------------- | ------------------------------- |
-| `print()` | Afficher un message                     | `print("Bonjour !")`            |
-| `input()` | Demander une donnée à l’utilisateur     | `nom = input("Votre nom :")`    |
-| `int()`   | Convertir en entier                     | `val = int("5")`                |
-| `float()` | Convertir en nombre décimal             | `val = float("3.14")`           |
-| `round()` | Arrondir un nombre                      | `round(2.718, 2)` → `2.72`      |
-| `len()`   | Compter les éléments d’une chaîne/liste | `len("atomes")` → `6`           |
-| `type()`  | Afficher le type d’une variable         | `type(3.5)` → `<class 'float'>` |
-
-> On **appelle** une fonction en écrivant son nom suivi de parenthèses.
-
-### Fonctions du module `math`
-
-Pour accéder à des fonctions mathématiques plus avancées, on utilise le **module `math`**.
-
-```python
-import math
-```
-
-| Fonction         | Description        | Exemple                         |
-| ---------------- | ------------------ | ------------------------------- |
-| `math.sqrt(x)`   | Racine carrée      | `math.sqrt(16)` → `4.0`         |
-| `math.pow(x, y)` | Puissance          | `math.pow(2, 3)` → `8.0`        |
-| `math.pi`        | La constante π     | `math.pi` → `3.14159...`        |
-| `math.sin(x)`    | Sinus (en radians) | `math.sin(math.pi / 2)` → `1.0` |
-| `math.log(x)`    | Logarithme naturel | `math.log(10)`                  |
-
-### Exercices à faire :
+### Exercices à faire avant le cours:
 
 a) Écrire l'algorithme correspondant au code ci-dessous :
 
@@ -219,7 +183,6 @@ aire = math.pi * math.pow(r, 2)
 print("Aire du cercle :", round(aire, 2), "unités²")
 ```
 
-
 b) Traduisez l’algorithme suivant en code Python :
 
 > 1. Demander le nom d’un élément chimique
@@ -228,5 +191,5 @@ b) Traduisez l’algorithme suivant en code Python :
 {{% notice style="cyan" title="À retenir" %}}
 * `input()` permet de lire une donnée (toujours une chaîne).
 * Il faut convertir avec `int()` ou `float()` pour faire des calculs.
-* `print()` permet d'afficher une réponse, seule ou avec du texte et .
+* `print()` permet d'afficher une réponse, seule ou avec du texte.
 {{% /notice %}}
