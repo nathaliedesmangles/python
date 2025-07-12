@@ -176,7 +176,7 @@ Vous devriez maintenant voir un crochet à gauche de cette option.
 
 9. Assurez-vous que la sauvegarde automatique s'est faite, c'est-à-dire que le point blanc sur l'onglet du fichier a disparu et a été remplacé par un `X`. Ce qui signifie que le fichier est sauvegardé.
 
-![X](./X.png)
+![X](./vscodejupyter/X.png)
 
 > Vous pouvez à nouveau cliquer sur **Exécuter tout** pour voir le résultat de la dernière cellule de code.
 
