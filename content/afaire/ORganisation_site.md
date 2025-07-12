@@ -1,3 +1,18 @@
+A FAIRE
+
+- Vérifier pourquoi les quiz Wooclap ne permettent pas de voir toutes les questions ?
+- Ajouter des questions aux quiz, pour couvrir les points suivants:
+* Pondération et place du cours dans le programme
+* Méthode pédagogique: déroulement des séances de cours et présentation des calendriers et des plateformes utilisées
+* Évaluations formatives et sommatives
+* Règlements pour:
+	* Absences ou retards en classe
+	* Retard dans les remises de travaux
+	* Absences lors d'une évaluation sommative
+	* Manquement à l'intégrité intellectuelle (plagiat, tricherie et fraude)
+
+
+==================
 FAQ 				10
 Outils de développement		20
 - OneDrive			21
@@ -26,5 +41,9 @@ weight = 101
 * `print()` permet d'afficher une réponse, seule ou avec du texte et .
 {{% /notice %}}
 
+```math
+$ °F = (°C × 9/5) + 32 $  <br> 
+$ K = °C + 273.15 $
+```
 
 Cours en mode atelier guidé (démo), mais juste l'essentiel

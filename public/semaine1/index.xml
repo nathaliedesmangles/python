@@ -3,17 +3,10 @@
   <channel>
     <title>Présentation du cours et l&#39;environnement de travail :: 420-SN1-RE</title>
     <link>https://example.org/semaine1/index.html</link>
-    <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Connaître les objectifs du cours et les règlements du collège à respecter (Questionnaire interactif WooClap). Se connecter à OneDrive du cégep. Comprendre la gestion de fichiers (Explorateur de fichiers). Créer une structure de dossiers pour le cours. Activer l’affichage de l’extension des fichiers dans l’Explorateur. Télécharger un fichier de Moodle, le retrouver et le placer dans le bon dossier.</description>
+    <description>Objectifs pédagogiques À la fin de la séance, vous devriez être capables de :&#xA;Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Créer une structure de dossiers pour le cours. Comprendre l’interface de VS Code Ouvrir un dossier et un fichier (.ipynb) dans VS Code. Créer un fichier .ipynb dans VS Code. Écrire et exécuter du code Python simple.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>OneDrive et gestion des fichiers et dossiers</title>
-      <link>https://example.org/semaine1/onedrive/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine1/onedrive/index.html</guid>
-      <description>OneDrive OneDrive est un stockage et synchronisation de fichiers personnels ou scolaires dans le cloud et accessible à partir de n’importe quel emplacement sur n’importe quel appareil. Idéal pour le travail en cours et le partage avec des personnes spécifiques. Les documents sont privés jusqu’à ce que vous les partagez. 1. Repérer l’icône OneDrive Vous devriez voir l’icône de OneDrive (scolaire = en bleu) (personnel = en gris), sur la barre des tâches, en bas à droite de l’écran (près de l’horloge).</description>
-    </item>
     <item>
       <title>Visual Studio Code et Jupyter Notebook</title>
       <link>https://example.org/semaine1/vscodejupyter/index.html</link>
@@ -26,7 +19,7 @@
       <link>https://example.org/semaine1/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine1/atelier/index.html</guid>
-      <description>Objectifs pédagogiques Se familiariser avec l’environnement de développement. Le système de fichiers Visual Studio Code Jupyter Notebook (Cellules Markdown vs Code) Écrire et exécuter un premier script en python Créez un dossier nommé programmation-sciences dans votre OneDrive.&#xA;Lancez Visual Studio Code et ouvrez ce dossier.&#xA;Créez un nouveau fichier Jupyter nommé atelier1.ipynb.&#xA;Dans une première cellule Markdown, écrivez un commentaire avec votre nom, la date, et l’objectif de l’atelier.&#xA;Dans une deuxième cellule Code, affichez un message de bienvenue avec print().</description>
+      <description>Objectifs pédagogiques Se familiariser avec l’environnement de développement. Le système de fichiers Visual Studio Code Jupyter Notebook (Cellules Markdown vs Code) Écrire et exécuter un premier script en python Dans votre dossier semaine1, créez un sous-dossier nommé atelier.&#xA;Lancez Visual Studio Code et ouvrez ce dossier.&#xA;Créez un nouveau fichier Jupyter nommé atelier1.ipynb.&#xA;Dans une première cellule Markdown, écrivez un commentaire avec votre nom, la date, et l’objectif de l’atelier.</description>
     </item>
   </channel>
 </rss>

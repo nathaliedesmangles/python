@@ -47,7 +47,7 @@
       <link>https://example.org/semaine1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine1/index.html</guid>
-      <description>Objectifs d’apprentissage À la fin de cette leçon, vous serez en mesure de :&#xA;Connaître les objectifs du cours et les règlements du collège à respecter (Questionnaire interactif WooClap). Se connecter à OneDrive du cégep. Comprendre la gestion de fichiers (Explorateur de fichiers). Créer une structure de dossiers pour le cours. Activer l’affichage de l’extension des fichiers dans l’Explorateur. Télécharger un fichier de Moodle, le retrouver et le placer dans le bon dossier.</description>
+      <description>Objectifs pédagogiques À la fin de la séance, vous devriez être capables de :&#xA;Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Créer une structure de dossiers pour le cours. Comprendre l’interface de VS Code Ouvrir un dossier et un fichier (.ipynb) dans VS Code. Créer un fichier .ipynb dans VS Code. Écrire et exécuter du code Python simple.</description>
     </item>
     <item>
       <title>Introduction à Python (Variables, types et expressions)</title>

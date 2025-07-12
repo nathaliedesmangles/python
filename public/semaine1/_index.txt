@@ -1,235 +1,251 @@
 +++
 chapter = true
-pre = "<b>Semaine 1.</b>"
-title = "Introduction à Python et à l'algorithmie"
-weight = 10
+pre = "<b>1.</b>"
+title = "Présentation du cours et l'environnement de travail"
+weight = 101
 +++
 
-## Objectifs de la leçon
+## Objectifs d’apprentissage
 
-- Comprendre ce qu’est un langage de programmation
-- Identifier les types de données de base en Python
-- Écrire des expressions simples en Python
-- Créer des scripts simples avec des calculs scientifiques
-- S’initier à la logique algorithmique
-
---- 
-
-## Plan de la leçon
-
-| Section | Durée (approx.) |
-|--------|:--------:|
-| 1. Pourquoi Python ? | 2 min |
-| 2. Présentation d’Anaconda et Jupyter | 5 min |
-| 3. Variables et types de base | 10 min |
-| 4. Opérations mathématiques de base | 5 min |
-| 5. Fonctions intégrées utiles | 15 min |
-| 6. Qu’est-ce qu’un algorithme ? | 10 min |
-| **Pause** | **10 min** |
-| 7. Activité pratique en classe | 1h50 |
-| 8. Activité à faire à la maison | 3h |
+1. Connaître les objectifs du cours et les règlements du collège à respecter (Quiz WooClap).
+2. Prise en main de l'environnement de travail
+   * Se connecter à son compte ***OneDrive*** du cégep.
+   * Comprendre la gestion de fichiers (Explorateur de fichiers).
+   * Utiliser un bloc notes Jupyter (`.ipynb`) existant (Moodle)
+   * Créer un nouveau bloc-notes sur ***Visual Studio Code***, le modifier et sauvegarder les modification.
 
 ---
 
-## 1. Pourquoi apprendre Python en science ?
+## 1. Présentation du cours (~ 40 minutes)
 
-- **Polyvalence** : utilisé en bio, chimie, physique, météo, environnement, IA.
-- **Lisibilité** : syntaxe claire = moins de stress pour les débutants.
-- **Gratuit** et supporté par une **grande communauté** scientifique.
-- Nombreux modules utiles : `numpy`, `matplotlib`, `pandas`, etc.
+* Pondération et place du cours dans le programme
+* Méthode pédagogique: déroulement des séances de cours et présentation des calendriers et des plateformes utilisées
+* Évaluations formatives et sommatives
+* Règlements pour:
+	* Absences ou retards en classe
+	* Retard dans les remises de travaux
+	* Absences lors d'une évaluation sommative
+	* Manquement à l'intégrité intellectuelle (plagiat, tricherie et fraude)
 
-📌 **Exemple** : _afficher le résultat d’un calcul_  
-```python
-print(9.81 * 2)
-```
+>> Pause 5 minutes
 
-## 2. Présentation de l’environnement (Anaconda et Jupyter) 
+## 2. Prise en main de l'environnement de travail (~ 120 minutes)
 
-- Lancer ***Anaconda Navigator*** → ouvrir ***Jupyter Notebook***
-- Avantages de Jupyter :
-  - Mélange de texte, de code, de graphiques
-  - Très utilisé dans les labos pour documenter les expériences
+### **Étape 1.** Se connecter à son compte OneDrive du collège
 
-💡 Cellule code vs cellule texte dans un notebook.
+* ***OneDrive*** est un stockage et synchronisation de fichiers personnels ou scolaires dans le cloud et accessible à partir de n’importe quel emplacement sur n’importe quel appareil. Idéal pour le travail en cours et le partage avec des personnes spécifiques. Les documents sont privés jusqu’à ce que vous les partagez. 
 
-## 3. Variables et types de base
+**1.1. Ouvrir OneDrive :**
+	* Cliquez sur la petite flèche en bas à droite de l'écran (dans la barre de menu).  
+	* Si l'icone de **OneDrive** ressemble à celle-ci, c'est que vous n'est pas connecté.  
 
-Une **variable** est une zone de la mémoire de l’ordinateur dans laquelle une valeur est stockée. 
+      	![alt text](<Capture d’écran du 2024-08-17 13-28-32.png>)  
+     
+	* Si l'icône est comme la suivante, c'est que vous êtes connecté.
+		* Assurez-vous que vous êtes bien connectés à votre compte du collège.
+		* Dans ce cas, passez à l'étape suivante.
 
-### 3.1 Nommer une variable
+{{%notice style="warning" title="Attention"%}}
+**IMPORTANT :** Au risque de perdre tous les travaux que vous êtes en train d'effectuer, vous devez en tout temps et à chaque fois que vous accéder à votre poste de travail, vérifier et vous assurer que l’icône du nuage est bleue comme ci-dessous : ![alt text](<Capture d'écran 2025-05-30 173548.png>)
+C’est à vous de veiller à la bonne sauvegarde de vos travaux. En cas de problème, l’enseignant pourra difficilement vous aider, alors soyez vigilants dès le début.
+{{% /notice%}}
 
-### 3.2 Types principaux de base
+**1.2. Connexion à OneDrive :**
 
-| Type | Exemple | Description |
-|-------|---------|-------------|
-| `int` | `5` | entier |
-| `float` | `3.14` | nombre décimal |
-| `str` | `"bonjour"` ou `'bonjour'` | chaîne de caractères |
-| `bool` | `True`, `False` | valeur logique |
+* Cliquez sur l'icone du nuage, une fenêtre de connexion s'ouvrira. Entrez votre adresse email associée à votre compte Microsoft et cliquez sur ***Se connecter***.
+* Suivez les instructions pour entrer votre mot de passe et configurer votre compte.
+![alt text](<Capture d’écran du 2024-08-17 13-29-04.png>)
 
-### 3.3 Création d’une variable
+## Comprendre les icônes de synchronisation
 
-- Pour stocker un valeur dans une variable, on utilise le symbole **égal** (`=`) 
+| Icône             | Signification                                |
+| ----------------- | -------------------------------------------- |
+| ☁️ Nuage          | Fichier uniquement en ligne                  |
+| ✅ Cercle vert     | Fichier synchronisé et disponible hors ligne |
+| 🔄 Flèches bleues | Synchronisation en cours                     |
+| ❌ Croix rouge     | Erreur de synchronisation                    |
 
-#### 3.3.1 Règles pour nommer une variable
+### **Étape 2.** Comprendre la gestion de fichiers
+ 1. structure
+ 2. télécharger semaine1_premier.ipynb sur Moodle
+	- Téléchargements > Glisser déposez dans dossier `semaine1`
+ 3. Ouvrir VS Code, puis dossier `Prog_sciences`
+ 4. Assurez-vous d'y voir le fichier .ipynb
+ 5. Ajoutez un cellule Markdown (titres, listes, formule)
+ 6. Ajouter un cellule Code ou Python (Commentaire, variable, formule, print)
+ 7. Activer la sauvegarde automatique
+ 8. Ajouter en premiere position un cellule markdown y écrire votre nom
+   - Assurez-vous que la sauvegarde automatique s'est faite
 
-- Utiliser des noms significatifs: le nom doit permettre de savoir quelle information elle contient.
-- Commencer par une lettre ou un underscore (`_`)
-- Ensuite, utiliser des lettres, des chiffres et/ou des underscores
-   <span style="color:red;"><b>NB</b>: Ne jamais utiliser de lettres accentuées, ni de caractères spéciaux</span>.
-- Respecter la casse (en Python, `prenom` et `Prenom` sont deux variables différentes.
-- Ne pas utiliser les mots appartenant au langage Python (ex: `print`, `input`, etc.)
+**2.1. Création d'un dossier pour le cours**
 
-📌 **Exemples de noms valides**
+* Vous pouvez ouvrir votre dossier **OneDrive**.
+![alt text](<Capture d'écran 2025-05-30 174517.png>)
+* En utilisant le bouton de droite de la souris, cliquez dans l'espace de droite (vous devriez avoir une page blanche).
+![alt text](<Capture d’écran du 2024-08-17 13-35-40.png>)
+* Nommez ce nouveau dossier avec le nom suivant : ***Programmation en sciences***.
+![alt text](<Capture d'écran 2025-05-30 182644.png>)
+* Double-cliquez sur ce nouveau dossier puis créez 6 sous-dossiers avec les noms suivants :
+   - ***Semaine 1***
+   - ***Semaine 2***
+   - ***Semaine 3***
+   - ...
+> Vous pouvez utiliser d'autres noms de sous-dossiers, dans ce cas, assurez-vous d'utiliser des noms significatifs, afin de vous y retrouver facilement.
 
-```python
-temperature_celsius = 22   # int
-prenom = "Nathalie"	       # str
-impot2025 = 1234.5         # float
-coursReussi = True         # bool
-```
+**2.2. Télécharger et déplacer un fichier dans le répertoire** ***Semaine 1***
 
-> [!Warning]
-> Une fois qu'on a créé une variable, **on utilise son nom à la place de la valeur** qu'elle contient.
+Vous allez manipuler de nombreux fichiers qui devront être placés dans les bons répertoires afin de ne pas vous perdre dans vos travaux. Pour cela, nous allons faire un premier exemple afin de prendre en main les bases du téléchargement et de la copie d'un fichier sur **Windows**.
 
-## 4. Opérations mathématiques de base
+****
+Cliquez **une fois** sur le fichier ci-après : [**Premier fichier**](premier_fichier_python.ipynb)
+****
 
-```python
-# Addition
-a = 5 + 2    # 7
+Vous remarquez l'ouverture d'une petite fenêtre en haut à droite de votre écran, cliquez sur le petit dossier présent à droite du nom du fichier :
 
-# Soustraction
-b = 10 - 4   # 6
+![alt text](<Capture d'écran 2025-05-30 184345.png>)
 
-# Multiplication
-c = 3 * 4    # 12
+{{%notice style="note" title="Note"%}}
+Il est possible que ce soit légèrement différent pour vous en fonction du navigateur utilisé (Microsoft Edge, Google Chrome...). L'exemple ci-dessus est montré à partir du navigateur Firefox, le principe reste le même.
+{{%/notice%}}
 
-# Divisions
-d = 8 / 2    # 4.0 pas 4
-e = 10 // 3  # 3 pas 3.0 ni 3.3333
+{{%notice style="warning" title="Attention"%}}
+Plus vous cliquez sur **Premier Fichier**, plus il se télécharge et se duplique. Exemple d'un cas où vous cliquez plusieurs fois sur le fichier :
+![alt text](<Capture d'écran 2025-05-30 185120.png>)
 
-# Puissance
-f = 2 ** 3   # 8
+Comment procéder ?
 
-# Modulo (reste)
-g = 10 % 3   # 1
-```
+Lorsque vous êtes dans le répertoire ***Téléchargements***, supprimez directement les fichiers dupliquées en faisant un clic gauche pour sélectionner le fichier puis un clic droit sur la même ligne puis cliquer sur **Supprimer** :
 
-## 5. Fonctions intégrées utiles
+![alt text](<2025-05-30 19_15_57-Semaine 1 _ Explorateur de fichiers.png>)
 
-| Fonction | Utilité | Exemple |
-|----------|--------|---------|
-| `print()` | Afficher à l’écran | `print("Bonjour !")` |
-| `type()` | Voir le type d’une variable | `type(3.14)` |
-| `round()` | Arrondir | `round(3.14159, 2)` → `3.14` |
-| `input()` | Entrée utilisateur (à venir plus tard) | `input("Ton nom ?")` |
+{{%/notice%}}
 
-📌 **Exemple 1** : afficher à l'écran avec `print()` :
-```python
-prenom = "Nathalie"
-print("Bonjour", prenom, "et bienvenue dans le monde de Python !")
-```
+L'explorateur de fichier s'est automatiquement ouvert dans le dossier ***Téléchargements***. Nous allons déplacer le fichier pour le mettre dans notre répertoire ***Semaine 1***.
 
-📌 **Exemple 2** : prédire le type avec `type()` :
-```python
-type(22)
-type("python")
-type(3.0)
-type(True)
-```
+* Faites un clic gauche sur le fichier pour le sélectionner
+* Sur la même ligne, faites un clic droit puis cliquer sur **Couper**
 
-📌 **Exemple 3** : arrondir avec `round()` :
+![alt text](<2025-05-30 18_59_33-Semaine 1 _ Explorateur de fichiers.png>)
 
-**Arrondir à l'entier le plus proche**
-```python
-resultat = 10 / 3   # 3.333333333333333
-resultat_arrondi = round(resultat)
-print(resultat_arrondi)
-3
+* A partir de l'explorateur de fichier, naviguez vers le dossier de votre OneDrive - ***Semaine 1*** :
 
-nombre = 3.567
-nombre_arrondi = round(nombre)
-print(nombre_arrondi)
-4
-```
+![alt text](<2025-05-30 19_03_18-Exercice SN _ Explorateur de fichiers.png>)
 
-**Arrondir à 2 décimales**
-```python
-nombre = 3.567
-nombre_arrondi = round(nombre,2)
-print(nombre_arrondi)
-3.57
-```
+* Lorsque vous êtes dans votre répertoire ***Semaine 1***, faites un clic droit dans le dossier puis faites **Coller** :
 
-📌 **Exemple 4** : obtenir une donnée saisie au clavier avec `input()` :
+![alt text](<2025-05-30 19_06_28-Semaine 1 _ Explorateur de fichiers.png>)
 
-**Capture de nombres saisis au clavier**
-```python
-nombre1 = int(input("Entrez un premier nombre entier")
-nombre2 = int(input("Entrez un deuxième nombre entier")
-somme = nombre1 + nombre2
-print(nombre1, " + ", nombre2, " = ", somme)
-```
+{{%notice style="note" title="Attention"%}}
+Vous allez devoir répéter cette manipulation de nombreuses fois pendant ce cours. Il est très important de la maîtriser.
+{{%/notice%}}
+
+Votre dossier doit ressembler à ça :
+
+![alt text](<Capture d'écran 2025-05-31 122342.png>)
+
+>> Pause
+
+## 4. Ouvrir un dossier de travail qui est sur OneDrive
+
+Nous allons travailler avec **VS Code** et comprendre comment ouvrir un dossier de travail avec un fichier présent. Nous allons par la suite créer un fichier qui nous permettra d'écrire du code.
+
+Pour ouvrir **VS Code**, cliquez la barre de recherche en bas de votre écran, puis écrivez tout simplement **VS**, le premier logiciel visible devrait être **Visual Studio Code**.
+
+1. **Ouvrir un dossier dans VS Code :**
+   - Sélectionnez l'onglet **Explorateur** sur la barre latérale de gauche. Et ensuite `Ouvrir le dossier`.
+   ![alt text](<Capture d’écran du 2024-08-17 15-47-41.png>)
+   - Sélectionnez votre dossier OneDrive, puis ouvrez le dossier que vous avez créé précédemment.
+   ![alt text](<Capture d’écran du 2024-08-17 15-49-28.png>)
+   - Cliquez sur `Sélectionner un dossier`
+   ![alt text](<Capture d’écran du 2024-08-17 13-45-12-1.png>)
+
+   Il est normal de ne pas voir vos fichiers lorsque vous sélectionnez un dossier de travail.
+
+   Une fois le dossier ouvert, vous devriez voir le fichier sur **VS Code** dans la partie gauche de votre explorateur de fichier.
+   ![alt text](<Capture d'écran 2025-05-31 141823.png>)
+   
+
+   Un simple clic gauche vous permet d'ouvrir votre fichier.
+
+   Voilà ! Votre environnement de travail est créé et vous avez réussi à ouvrir votre premier fichier sur **VS Code**
+
+   Nous allons maintenant voir comment créer un fichier à partir du même dossier.   
+
+## 5. Créer un premier fichier `.ipynb`
+1. **Créer un fichier Jupyter Notebook :**
+   - Cliquez sur l'icône suivante pour créer un nouveau fichier :
+   ![alt text](<Capture d'écran 2025-05-31 141320.png>)
+   - Nommez le fichier avec l'extension `.ipynb` (par exemple, `deuxieme_fichier_python.ipynb`) et appuyez sur la touche de votre clavier **Entrée**.
+   ![alt text](<Capture d'écran 2025-05-31 142138.png>)
+   - Le fichier s'ouvrira automatiquement dans l'éditeur **Jupyter** de **VS Code** (fenêtre à droite), où vous pourrez commencer à écrire et exécuter du code **Python**.
+   - Cliquez simplement sur l'icône **+ Code** pour créer une cellule.
+   ![alt text](<Capture d'écran 2025-05-31 142255.png>)
+
+   Si vous avez créé trop de cellule et que vous voulez les supprimer, positionnez vous sur la cellule et cliquez sur la corbeille tout à droite :
+   ![alt text](<2025-05-31 14_47_38-deuxième_fichier_python.png>)
+   
+
+## 6. Écrire un premier programme
+  - Dans la fenêtre de droite, écrivez `print("Bonjour!")` dans le premier encadré.
+  - Appuyez sur le button "Jouer" pour exécuter le code.
+      - Vous pouvez alternativement appuyer sur les touches `Ctrl+Entrée` pour lancer l'exécution d'un bloc de code.
+  ![alt text](<2025-05-31 14_49_45-deuxième_fichier_python.png>)
+
+## 7. Activation de l'enregistrement automatique
+
+L'avantage de l'enregistrement automatique est qu'à chaque fois que vous saisirez du code ou du texte dans vos fichiers **Jupyter Notebook**, ils s'enregistreront automatiquement.
+
+   - Cliquez sur **Fichier** en haut à gauche de votre **VS Code**, puis cochez **Enregistrement automatique** comme sur l'image ci-dessous
+   ![alt text](<Capture d'écran 2025-05-31 165838.png>)
+
+## 8. Activer l'extension des fichiers cachés
+   - Une extension de nom de fichier vous permet de savoir quel est le type du fichier. L'extension de nom de fichier est situé après le `.` de votre nom de fichier :
+      - `.docx` va correspondre à des fichiers **Word**
+         
+         Ex : remise_projet.**docx**
+      - `.xlsx` pour des fichiers **Excel**
+
+         Ex : atelier_chimie.**xlsx**
+      - `.ipynb` pour des fichier **Jupyter Notebook**
+
+         Ex : premier_programme.**ipynb**
+
+   - A date, vous ne les voyez pas dans vos dossiers, c'est pourquoi vous allez les activer avec la manipulation suivante :
+   ![alt text](<2025-05-31 14_40_02-Prise en main de l'outil informatique.png>)
+
+<!--   
+## 9. Prise en main de Safe Exam Browser
+
+La majorité de vos tests vont s'effectuer sur Moodle à l'aide de Safe Exam Browser. Nous allons faire un premier test pour que vous puissiez prendre en main cet outil et être à l'aise le jour de votre premier test.
+   - Ouvrez un navigateur web et rendez vous sur le site **[Moodle](https://cmontmorency.moodle.decclic.qc.ca/login/index.php)** du collège.
+   - Vos identifiants se trouvent sur la lettre d'admission que vous avez reçue sur le site **colnet**.
+   - Connectez vous puis rendez vous sur le site du cours à la **semaine 1**.
+   - Ouvrez le **quiz** et faites-le. Aucun stress, ce n'est absolument pas noté!
+
+{{%notice style="note" title="Note"%}}
+**Safe Exam Browser** peut prendre un peu de temps à s'exécuter. Dans le cas où rien ne s'ouvre, appelez-moi et nous verrons ça ensemble.
+{{%/notice%}}
+-->
+=====================
 
 
-## 6. Qu’est-ce qu’un algorithme ?
+# **Pause 5 minutes**
 
-- **Définition simple** : une suite d’instructions ordonnées pour résoudre un problème.
-- **Lien avec les sciences** : les expériences sont souvent des suites d’étapes.
-- Exemples quotidiens :
-  - Recette de cuisine
-  - Mode d’emploi
-  - Protocole expérimental
+![Pause](../../pause.jpg?width=40vw)
 
-## 6.1. Exemples d'algorithmes simples
+==========================
 
-📌 **Exemple 1** : Pseudo-algorithme de conversion Celsius → Fahrenheit :
-```
-1. Lire la température en Celsius
-2. Multiplier par 9
-3. Diviser par 5
-4. Ajouter 32
-5. Afficher le résultat
-```
+## Installation de Python et Visual Studio Code sur Windows 11 (pour la maison)
 
-**Traduit en Python**
-```python
-c = 25
-f = c * 9 / 5 + 32
-print(c, "°C = ", f, "°F°")
-```
+* [Installer Python et VS Code](https://youtu.be/2faQMy72k3A?si=JNSN6SML0wJN1x60)
+* [Installer Jupyter dans VS Code et créer un bloc notes](https://youtu.be/9Xe7mdjnKmc?si=hypU7Ba81UkgPnt1)
 
-📌 **Exemple 2** : Calcul de l'aire d’un cercle
-```
-1. Lire le rayon du cercle.
-2. Multiplier la valeur de Pi(3.14) au rayon²
-3. Afficher le résultat.
-```
+## Alternatives à Visual Studio Code (pour la maison)
 
-**Traduit en Python**
-```python
-rayon = 3
-aire = 3.14 * rayon ** 2
-print("L'aire du cercle est de", aire, "cm²")
-```
+* [Google Colab](https://youtu.be/SRPCqXcuxKo?si=Js77FuFNuBLMMcY_)
+* [PyCharm Community](https://youtu.be/VXbiS2rzCNE?si=Sm5V1wBX5I3ahbDu)
 
----
 
-## 7. Activité pratique en classe
 
-**Contexte scientifique** : L’IMC est utilisé pour évaluer la corpulence d’une personne. Ce n’est pas un indicateur parfait, mais il est utile à grande échelle.
-```
-Formule : IMC = poids (kg) / (taille (m))²
-```
 
->Utiliser le fichier semaine1.ipynb se trouvant sur Moodle/Teams
 
----
-
-## 8. Activités à faire à la maison
-
-- Réviser la matière d'aujourd'hui, refaites les exemples et modifier ou ajouter des variables afin
-- Gestion des fichiers et dossiers 
-- Lecture du plan de cours (quiz oralement au prochain cours)
-
- 

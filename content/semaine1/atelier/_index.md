@@ -14,7 +14,7 @@ weight = 102
 ---
 
 
-1. Créez un dossier nommé programmation-sciences dans votre OneDrive.
+1. Dans votre dossier `semaine1`, créez un sous-dossier nommé `atelier`.
 
 2. Lancez Visual Studio Code et ouvrez ce dossier.
 
@@ -28,3 +28,4 @@ weight = 102
 # Message proposé :
 print("Bienvenue dans le cours de programmation en sciences !")
 ```
+6. Déposez votre fichier .ipynb sur Moodle, dans la boite de remise prévue à cet effet.

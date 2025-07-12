@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs pédagogiques À la fin de la séance, vous devriez être capables de :
+Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Naviguer dans l’explorateur de fichiers Windows 11 (créer, nommer, organiser). Ouvrir un dossier de projet dans VS Code. Créer un fichier .ipynb avec VS Code (Jupyter Notebook). Écrire et exécuter du code Python simple dans un notebook.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Présentation du cours et l&#39;environnement de travail :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs pédagogiques À la fin de la séance, vous devriez être capables de :
+Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Naviguer dans l’explorateur de fichiers Windows 11 (créer, nommer, organiser). Ouvrir un dossier de projet dans VS Code. Créer un fichier .ipynb avec VS Code (Jupyter Notebook). Écrire et exécuter du code Python simple dans un notebook.">
+    <meta property="og:url" content="http://localhost:1313/semaine1/index2/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Présentation du cours et l&#39;environnement de travail :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs pédagogiques À la fin de la séance, vous devriez être capables de :
+Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Naviguer dans l’explorateur de fichiers Windows 11 (créer, nommer, organiser). Ouvrir un dossier de projet dans VS Code. Créer un fichier .ipynb avec VS Code (Jupyter Notebook). Écrire et exécuter du code Python simple dans un notebook.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Présentation du cours et l&#39;environnement de travail">
+    <meta itemprop="name" content="Présentation du cours et l&#39;environnement de travail :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs pédagogiques À la fin de la séance, vous devriez être capables de :
+Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Naviguer dans l’explorateur de fichiers Windows 11 (créer, nommer, organiser). Ouvrir un dossier de projet dans VS Code. Créer un fichier .ipynb avec VS Code (Jupyter Notebook). Écrire et exécuter du code Python simple dans un notebook.">
+    <meta itemprop="wordCount" content="924">
+    <title>Présentation du cours et l&#39;environnement de travail :: 420-SN1-RE</title>
+    <link href="/images/logo.png?1752103685" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752103685" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752103685" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752103685" rel="stylesheet">
+    <link href="/css/theme.css?1752103685" rel="stylesheet">
+    <link href="/css/format-html.css?1752103685" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1752103685" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1752103685" defer></script>
+    <script src="/js/lunr/lunr.min.js?1752103685" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1752103685" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1752103685" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1752103685" defer></script>
+    <script src="/js/search.js?1752103685" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine1\/index2\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1752103685";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine1/index2/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs-pédagogiques">Objectifs pédagogiques</a></li>
+    <li><a href="#1-présentation-du-cours--50-minutes">1. Présentation du cours (~ 50 minutes)</a></li>
+    <li><a href="#2-prise-en-main-de-lenvironnement-de-travail---activité-guidée--110-minutes">2. Prise en main de l&rsquo;environnement de travail - Activité guidée (~ 110 minutes)</a>
+      <ul>
+        <li><a href="#étape-1--se-connecter-à-votre-compte-onedrive-du-cégep--15-min"><strong>Étape 1</strong> – Se connecter à votre compte OneDrive du cégep (~ 15 min.)</a></li>
+        <li><a href="#étape-2--organisation-des-fichiers--15-min"><strong>Étape 2</strong> – Organisation des fichiers (~ 15 min.)</a></li>
+        <li><a href="#étape-2--découverte-de-vs-code--30-min"><strong>Étape 2</strong> – Découverte de VS Code (~ 30 min.)</a></li>
+        <li><a href="#étape-3--créer-et-utiliser-un-jupyter-notebook--30-min"><strong>Étape 3</strong> – Créer et utiliser un Jupyter Notebook (~ 30 min.)</a></li>
+      </ul>
+    </li>
+    <li><a href="#retour-réflexif--15-minutes">Retour réflexif (~ 15 minutes)</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine1/index.html"><span itemprop="name">Présentation du cours et l&#39;environnement de travail</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Présentation du cours et l&#39;environnement de travail</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine1/vscodejupyter/index.html" title="Visual Studio Code et Jupyter Notebook (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine1/atelier/index.html" title="Atelier 1 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine1" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="présentation-du-cours-et-lenvironnement-de-travail">Présentation du cours et l&#39;environnement de travail</h1>
+
+<h2 id="objectifs-pédagogiques">Objectifs pédagogiques</h2>
+<p>À la fin de la séance, vous devriez être capables de :</p>
+<ul>
+<li>Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap)</li>
+<li>Vous connecter à votre compte OneDrive scolaire.</li>
+<li>Naviguer dans l’explorateur de fichiers Windows 11 (créer, nommer, organiser).</li>
+<li>Ouvrir un dossier de projet dans VS Code.</li>
+<li>Créer un fichier <code>.ipynb</code> avec VS Code (Jupyter Notebook).</li>
+<li>Écrire et exécuter du code Python simple dans un notebook.</li>
+<li>Sauvegarder leur travail et comprendre l’organisation de leurs fichiers.</li>
+</ul>
+<hr>
+<h2 id="1-présentation-du-cours--50-minutes">1. Présentation du cours (~ 50 minutes)</h2>
+<p><a href="/semaine1/index2/index.html">Plan de cours</a></p>
+<ul>
+<li>Pondération et place du cours dans le programme</li>
+<li>Méthode pédagogique: déroulement des séances de cours et présentation des calendriers et des plateformes utilisées</li>
+<li>Évaluations formatives et sommatives</li>
+<li>Règlements pour:
+<ul>
+<li>Absences ou retards en classe</li>
+<li>Retard dans les remises de travaux</li>
+<li>Absences lors d&rsquo;une évaluation sommative</li>
+<li>Manquement à l&rsquo;intégrité intellectuelle (plagiat, tricherie et fraude)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>Pause 5 minutes</p>
+</blockquote>
+</blockquote>
+<h2 id="2-prise-en-main-de-lenvironnement-de-travail---activité-guidée--110-minutes">2. Prise en main de l&rsquo;environnement de travail - Activité guidée (~ 110 minutes)</h2>
+<h3 id="étape-1--se-connecter-à-votre-compte-onedrive-du-cégep--15-min"><strong>Étape 1</strong> – Se connecter à votre compte OneDrive du cégep (~ 15 min.)</h3>
+<ul>
+<li><em><strong>OneDrive</strong></em> est un stockage et synchronisation de fichiers personnels ou scolaires dans le cloud et accessible à partir de n’importe quel emplacement sur n’importe quel appareil. Idéal pour le travail en cours et le partage avec des personnes spécifiques. Les documents sont privés jusqu’à ce que vous les partagez.</li>
+</ul>
+<ol>
+<li>Ouvrir OneDrive :
+<ul>
+<li>
+<p>Cliquez sur la petite flèche en bas à droite de l&rsquo;écran (dans la barre de menu).</p>
+</li>
+<li>
+<p>Si l&rsquo;icone de <strong>OneDrive</strong> ressemble à celle-ci, c&rsquo;est que vous n&rsquo;est pas connecté.<br>
+<a href="#R-image-982e4ffebcb3a5083479384133f8b086" class="lightbox-link"><img alt="OneDrive non connecté" class="lazy lightbox figure-image" loading="lazy" src="./onedrive-non-connecte.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-982e4ffebcb3a5083479384133f8b086"><img alt="OneDrive non connecté" class="lazy lightbox lightbox-image" loading="lazy" src="./onedrive-non-connecte.png"></a></p>
+</li>
+<li>
+<p>Si l&rsquo;icône est comme la suivante, c&rsquo;est que vous êtes connecté.</p>
+<ul>
+<li>Assurez-vous que vous êtes bien connectés à votre compte du collège.</li>
+<li>Dans ce cas, passez à l&rsquo;étape suivante.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+<details open class=" box cstyle notices warning">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> 
+    Attention
+  </summary>
+  <div class="box-content">
+<p><strong>IMPORTANT :</strong> Au risque de perdre tous les travaux que vous êtes en train d&rsquo;effectuer, vous devez en tout temps et à chaque fois que vous accéder à votre poste de travail, vérifier et vous assurer que l’icône du nuage est <strong>bleue</strong> comme ci-dessous : <a href="#R-image-6b222225ecd2723dfe496702ea85a31b" class="lightbox-link"><img alt="OneDrive bleu" class="lazy lightbox figure-image" loading="lazy" src="./onedrive-bleu.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6b222225ecd2723dfe496702ea85a31b"><img alt="OneDrive bleu" class="lazy lightbox lightbox-image" loading="lazy" src="./onedrive-bleu.png"></a>
+C’est à vous de veiller à la bonne sauvegarde de vos travaux. En cas de problème, l’enseignante pourra difficilement vous aider, alors soyez vigilants dès le début.</p>
+  </div>
+</details>
+<ol start="2">
+<li>Connexion à OneDrive :
+<ul>
+<li>Cliquez sur l&rsquo;icone du nuage, une fenêtre de connexion s&rsquo;ouvrira. Entrez votre adresse email associée à votre compte Microsoft et cliquez sur <em><strong>Se connecter</strong></em>.</li>
+<li>Suivez les instructions pour entrer votre mot de passe et configurer votre compte.
+<a href="#R-image-8addc880b55613f014b57057762c8658" class="lightbox-link"><img alt="Connexion à OneDrive" class="lazy lightbox figure-image" loading="lazy" src="./onedrive-connexion.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8addc880b55613f014b57057762c8658"><img alt="Connexion à OneDrive" class="lazy lightbox lightbox-image" loading="lazy" src="./onedrive-connexion.png"></a></li>
+</ul>
+</li>
+</ol>
+<h4 id="comprendre-les-icônes-de-synchronisation">Comprendre les icônes de synchronisation</h4>
+<table>
+<thead>
+<tr>
+<th>Icône</th>
+<th>Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>☁️ Nuage</td>
+<td>Fichier uniquement en ligne</td>
+</tr>
+<tr>
+<td>✅ Cercle vert</td>
+<td>Fichier synchronisé et disponible hors ligne</td>
+</tr>
+<tr>
+<td>🔄 Flèches bleues</td>
+<td>Synchronisation en cours</td>
+</tr>
+<tr>
+<td>❌ Croix rouge</td>
+<td>Erreur de synchronisation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="étape-2--organisation-des-fichiers--15-min"><strong>Étape 2</strong> – Organisation des fichiers (~ 15 min.)</h3>
+<p><strong>But : créer un espace de travail simple et bien organisé pour éviter de perdre ses fichiers.</strong></p>
+
+<details open class=" box cstyle notices primary">
+  <summary class="box-label" tabindex="-1">
+    Sachez que..
+  </summary>
+  <div class="box-content">
+<p>Vous pouvez changer les noms des dossiers suggérés, en autant que vous utilisiez des noms représentatifs.</p>
+  </div>
+</details>
+<ol>
+<li>Ouvrir l’explorateur de fichiers Windows.
+<ul>
+<li>Appuyer sur les touches <strong>Windows + E</strong> : Cette méthode ouvre directement l&rsquo;Explorateur de fichiers.</li>
+<li>Ou :
+<ul>
+<li>Cliquez sur le bouton <strong>Démarrer</strong> (icône Windows).
+<a href="#R-image-18d779524aa95a2210f1762e81641a7b" class="lightbox-link"><img alt="Touches Windows + E" class="lazy lightbox figure-image" loading="lazy" src="./windows-e.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-18d779524aa95a2210f1762e81641a7b"><img alt="Touches Windows + E" class="lazy lightbox lightbox-image" loading="lazy" src="./windows-e.png"></a></li>
+<li>Tapez <strong>&ldquo;Explorateur de fichiers&rdquo;</strong> dans la barre de recherche.</li>
+<li>Cliquez sur l&rsquo;icône de l&rsquo;<strong>Explorateur de fichiers</strong> qui apparaît dans les résultats de recherche.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Créer un dossier dans <code>Documents</code> appelé <code>programmation-sciences</code>.</li>
+<li>Dans ce dossier, créer au moins trois (3) sous-dossiers nommés <code>semaine01-environnement</code>, <code>semaine02-intro-python</code> et <code>semaine03-algorithme</code>.</li>
+<li>Allez sur Moodle et téléchargez le fichier <code>semaine01.ipynb</code>.</li>
+<li>Allez dans l&rsquo;<strong>Explorateur de fichiers</strong> et le dossier <strong>Téléchargement</strong>.</li>
+<li>Déplacez (<code>Ctrl+X</code> et <code>Ctrl+V</code>) ou glissez-déposez le fichier <code>semaine01.ipynb</code> de <strong>Téléchargement</strong> vers le dossier <strong>semaine01-environnement</strong>.</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>Pause 5 minutes</p>
+</blockquote>
+</blockquote>
+<h3 id="étape-2--découverte-de-vs-code--30-min"><strong>Étape 2</strong> – Découverte de VS Code (~ 30 min.)</h3>
+<p><strong>But : repérer les éléments essentiels de l’interface</strong></p>
+<ol>
+<li>Ouvrir VS Code.</li>
+<li>Cliquer sur <strong>Fichier &gt; Ouvrir le dossier&hellip;</strong> et choisir <code>programmation-sciences</code>.</li>
+<li>Identifier dans VS Code : <a href="/outils_dev/vs-code/index.html#interface-principale">Cliquez ici</a>
+<ul>
+<li>La <strong>barre latérale</strong> (explorateur, recherche, extensions&hellip;).</li>
+<li>L’<strong>explorateur</strong> de fichiers.</li>
+<li>Le <strong>panneau de fichiers ouverts</strong> (onglets).</li>
+<li>Le <strong>bouton de terminal</strong>.</li>
+<li>Le <strong>bouton Nouveau fichier</strong> → pour créer un nouveau fichier l’ouvrir.</li>
+<li>Etc.</li>
+</ul>
+</li>
+</ol>
+<h3 id="étape-3--créer-et-utiliser-un-jupyter-notebook--30-min"><strong>Étape 3</strong> – Créer et utiliser un Jupyter Notebook (~ 30 min.)</h3>
+<p><strong>But : créer et exécuter un notebook Python</strong></p>
+<ol>
+<li>
+<p>Cliquer sur <strong>Nouveau fichier</strong> → nommer <code>premier_notebook.ipynb</code>.</p>
+</li>
+<li>
+<p>Dans la première cellule de Code:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Mon premier programme Python</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Bonjour tout le monde !&#34;</span>)</span></span></code></pre></div>
+<p>Puis cliquer sur <strong>Exécuter</strong>.</p>
+</li>
+<li>
+<p>Ajouter une <strong>cellule Markdown</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># Semaine 1 – Environnement de développement
+Voici mon premier notebook avec du code et des commentaires.</code></pre></div>
+</li>
+<li>
+<p>Créer une cellule de calcul :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">4</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>)</span></span></code></pre></div>
+</li>
+<li>
+<p>Sauvegarder avec <strong>Ctrl + S</strong> ou <strong>Fichier &gt; Enregistrer</strong>. Vérifier que le fichier <code>.ipynb</code> apparaît bien dans le dossier.</p>
+</li>
+<li>
+<p>A</p>
+</li>
+</ol>
+<p>télécharger semaine1_premier.ipynb sur Moodle
+- Téléchargements &gt; Glisser déposez dans dossier <code>semaine1</code>
+3. Ouvrir VS Code, puis dossier <code>Prog_sciences</code>
+4. Assurez-vous d&rsquo;y voir le fichier .ipynb
+5. Ajoutez un cellule Markdown (titres, listes, formule)
+6. Ajouter un cellule Code ou Python (Commentaire, variable, formule, print)
+7. Activer la sauvegarde automatique
+8. Ajouter en premiere position un cellule markdown y écrire votre nom</p>
+<ul>
+<li>Assurez-vous que la sauvegarde automatique s&rsquo;est faite</li>
+</ul>
+<p>==============</p>
+<ol>
+<li>
+<p>🗂️ Créer un nouveau notebook <code>exercice_fichiers.ipynb</code> dans un sous-dossier <code>exercices</code>.</p>
+</li>
+<li>
+<p>Dans une cellule Markdown, expliquer la différence entre <strong>Markdown</strong> et <strong>Python</strong> dans un notebook.</p>
+</li>
+<li>
+<p>Écrire un programme qui affiche :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Camille&#34;</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Bonjour&#34;</span>, nom)</span></span></code></pre></div>
+</li>
+<li>
+<p>Faire un calcul scientifique :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masse <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.5</span>  <span style="color:#75715e"># kg</span>
+</span></span><span style="display:flex;"><span>acceleration <span style="color:#f92672">=</span> <span style="color:#ae81ff">9.8</span>  <span style="color:#75715e"># m/s²</span>
+</span></span><span style="display:flex;"><span>force <span style="color:#f92672">=</span> masse <span style="color:#f92672">*</span> acceleration
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Force =&#34;</span>, force, <span style="color:#e6db74">&#34;N&#34;</span>)</span></span></code></pre></div>
+</li>
+<li>
+<p>Sauvegarder, fermer, puis réouvrir le fichier <code>.ipynb</code> pour vérifier que tout fonctionne.</p>
+</li>
+</ol>
+<hr>
+<h2 id="retour-réflexif--15-minutes">Retour réflexif (~ 15 minutes)</h2>
+<p><strong>Discussion ouverte</strong> :</p>
+<ul>
+<li>Avez-vous rencontré des problèmes ?</li>
+<li>Qu’est-ce qui vous semble encore flou ?</li>
+<li>Que fait exactement un notebook quand on l’exécute ?</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html">Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="parent " data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine1/onedrive/index.html"><a class="padding" href="/semaine1/onedrive/index.html">OneDrive et gestion des fichiers et dossiers</a></li>
+            <li class="" data-nav-id="/semaine1/vscodejupyter/index.html"><a class="padding" href="/semaine1/vscodejupyter/index.html">Visual Studio Code et Jupyter Notebook</a></li>
+            <li class="active " data-nav-id="/semaine1/index2/index.html"><a class="padding" href="/semaine1/index2/index.html"><b>1.</b>Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-id="/semaine1/atelier/index.html"><a class="padding" href="/semaine1/atelier/index.html">Atelier 1</a></li></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b>Introduction à Python (Variables, types et expressions)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b>Entrées/Sorties, algorithme et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6_v2/index.html"><a class="padding" href="/semaine6_v2/index.html"><b>4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-e5502eaae07a621463e621cd38d9dd04" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b>Les fonctions</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b>Évaluation 1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b>Listes et tableaux imbriqués</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b>Évaluation 2 (35%)</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b>Les tableaux NumPy et graphiques avancés</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b>Manipulation de tableaux avec Pandas</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b>Travail sur le projet final.</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Évaluation finale (Projet final)</a></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b>Travail sur le projet final</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"><b> * </b>Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"><b> * </b>Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1752103685" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752103685" defer></script>
+    <script src="/js/theme.js?1752103685" defer></script>
+  </body>
+</html>

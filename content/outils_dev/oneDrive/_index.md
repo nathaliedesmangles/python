@@ -4,86 +4,78 @@ weight = 21
 +++
 
 
-## Étape 1 – Accéder à la page de connexion
+1. Cliquer sur la petite flèche à droite du menu des applications dans la barre des tâches de Windows afin de faire apparaître les applications masquées.
 
-Aller à l’adresse suivante :
-[https://login.microsoftonline.com/?whr=cmontmorency.qc.ca](https://login.microsoftonline.com/?whr=cmontmorency.qc.ca)
+2. Effectuer un clic droit sur le logo de OneDrive (s'il n'est pas connecté, il apparaît grisé et barré).
 
+![Trouver l'icone](1_trouver_onedrive.png?width=30vw)
 
-## Étape 2 – Entrer les identifiants
+3. Cliquer sur **« Se connecter »**.
 
-1. **Nom d'utilisateur** :
+![Se connecter](2_se_connecter.png?width=25vw)
+
+![Compte scolaire](5_onedrive_scolaire.png?width=30vw)
+
+4. **Nom d'utilisateur** :
    Le même que pour se connecter sur les ordinateurs du Collège, suivi de *`@cmontmorency.qc.ca`*.
 
    > il s'agit des **7 derniers chiffres du numéro de DA**.
 
-2. **Mot de passe** :
+
+5. **Mot de passe** :
    Le même que pour le Wi-Fi ou les ordinateurs du Collège.
 
    > Le mot de passe initial se trouve dans **Col.NET → Dossier personnel → Autres informations**
-   > *Aucun mot de passe affiché ?* Votre compte n'est peut-être pas encore créé. Réessayez plus tard.
-   > *Connexion échouée ?* Réessayez dans quelques heures. Si le problème dure plus de 48h, faites une demande sur le portail de service.
 
+   > *Si aucun mot de passe est affiché ?* Votre compte n'est peut-être pas encore créé. Réessayez plus tard.
+   
+   > *Si la connexion a échouée ?* Réessayez dans quelques heures. Si le problème dure plus de 48h, faites une demande sur le portail de service.
 
-## Étape 3 – Sécurisation du compte (MFA)
+![Entrer mot de passe](6_mot2passe.png?width=30vw)
 
-1. Cliquer sur **Suivant** lorsqu’un message s’affiche disant :
-   **« Sécurisons votre compte »**.
-2. Pour configurer **l’authentification multifacteur (MFA)** avec un téléphone :
+6. Cliquer sur **Suivant** lorsqu’un message s’affiche disant :
+   **« Sécurisons votre compte »**. 
+
+7. Pour configurer **l’authentification multifacteur (MFA)** avec un téléphone :
 
    * Cliquer sur **« Je veux configurer une autre méthode »**
-   * Suivre l’étape 7 ci-dessous
+   * Suivre l’étape  ci-dessous
 
-
-## Étape 4 – Installer Microsoft Authenticator
-
-1. Sur votre téléphone, installez l’application :
+8. Sur votre téléphone, installez l’application :
    **Microsoft Authenticator** (disponible dans le Play Store ou App Store)
-2. Cliquez sur **Suivant** deux fois sur l’ordinateur.
-3. Sur la page qui affiche un code QR :
+
+9. Cliquez sur **Suivant** deux fois sur l’ordinateur.
+
+10. Sur la page qui affiche un code QR :
 
    * Ouvrir l’application sur votre téléphone
    * Appuyer sur le **+**
    * Choisir **Compte professionnel ou scolaire**
    * Choisir **Analyser le code QR**
    * Numériser le code QR affiché à l’écran de votre ordinateur
-4. Votre compte s’affiche dans l’application.
-5. Sur l’ordinateur, cliquer sur **Suivant**
-6. Deux chiffres apparaissent à l’écran :
+
+11. Votre compte s’affiche dans l’application.
+
+12. Sur l’ordinateur, cliquer sur **Suivant**
+
+13. Deux chiffres apparaissent à l’écran :
 
    * Entrez-les sur votre téléphone
-7. Cliquer sur **Suivant**, puis **Terminé**
 
+14. Cliquer sur **Suivant**, puis **Terminé**
 
-## Étape 5 – Mise à jour du mot de passe (si demandé)
+15. Vous avez la possibilité d’installer OneDrive sur votre téléphone mobile :
 
-Si un message indique : **« Mettre à jour votre mot de passe »**, suivez les critères suivants :
+    * Si vous souhaitez le faire, cliquer sur **« Télécharger l'application mobile »**.
+      Une page web va s’ouvrir dans votre navigateur par défaut. Il vous suffira de suivre les instructions pour procéder à l’installation.
+    * Si vous ne souhaitez pas utiliser l’application mobile ou préférez la configurer plus tard, cliquer sur **« Plus tard »**.
 
-* **12 caractères minimum**
-* **Inclure au moins 3** des éléments suivants :
+![Télécharger l'appli](10_telecharger_appli.png?width=30vw)
 
-  * Minuscules (`a-z`)
-  * Majuscules (`A-Z`)
-  * Chiffres (`0-9`)
-  * Caractères spéciaux (éviter les lettres accentuées comme `é`, `è`, `ç`, etc.)
-* **Ne pas inclure** votre prénom, nom ou code utilisateur
-* **Utiliser un mot de passe unique** que vous n’utilisez pas ailleurs
+16. Cliquer sur **« Ouvrir mon dossier OneDrive »**.
 
+![Ouvrir dossier OneDrive](11_ouvrir_dossier.png?width=30vw)
 
-## Étape 6 – Associer son numéro de téléphone (facultatif)
+17. L’explorateur de fichiers va s’ouvrir dans le dossier contenant les fichiers synchronisés, et la synchronisation va commencer.
 
-> Non recommandé, car :
->
-> * Risque de frais selon votre forfait
-> * Processus long si vous changez d’appareil ou de numéro
-> * Moins fiable à l’étranger
-
-Si vous souhaitez quand même l’ajouter :
-
-1. Aller à : [https://mysignins.microsoft.com/security-info](https://mysignins.microsoft.com/security-info)
-2. Cliquer sur **+ Ajouter une méthode de connexion**
-3. Choisir **Téléphone** → **Ajouter**
-4. Sélectionner **Canada (+1)**, entrer votre numéro, puis cliquer sur **Suivant**
-5. Entrer le **code SMS** reçu
-
-Votre téléphone est maintenant associé.
+> **OneDrive est maintenant prêt à être utilisé !**
