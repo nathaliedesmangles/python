@@ -34,9 +34,6 @@
     <loc>https://example.org/faq/locaux_python/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine1/vscodejupyter/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/outils_dev/index.html</loc>
   </url>
   <url>
@@ -118,10 +115,10 @@
     <loc>https://example.org/semaine3/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6_v2/index.html</loc>
+    <loc>https://example.org/semaine4/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine4/index.html</loc>
+    <loc>https://example.org/semaine6_v2/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine5/index.html</loc>

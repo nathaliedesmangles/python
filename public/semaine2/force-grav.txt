@@ -1,0 +1,42 @@
+
+
+* **Formule** : $F = G \cdot \frac{m_1 \cdot m_2}{r^2}$
+* **Constante** : $G = 6.674 \times 10^{-11}$ N·m²/kg²
+
+```python
+# Constante gravitationnelle
+G = 6.674e-11  # en N·m²/kg²
+
+# Données d'entrée
+m1 = 5.98e24  # masse de la Terre en kg
+m2 = 7.35e22  # masse de la Lune en kg
+r = 3.84e8    # distance Terre-Lune en mètres
+
+# Calcul
+F = G * m1 * m2 / r**2
+
+# Affichage
+print("Force gravitationnelle {F} N")
+```
+
+
+**Exemple** : Écrire un programme qui calcule la force d'un objet à l'aide de la formule `F = m x a` où `m` est la masse de l'objet et `a` l'accélération.
+À la fin, le programme affiche le résultat de la force.
+
+### L'algorithme (en français) :
+
+> 1. Définir la masse d’un objet
+> 2. Définir la constante d’accélération
+> 3. Calculer la force avec la formule `F = m × a`
+> 4. Afficher la force à l'aide de f-string
+
+### Traduction en Python :
+
+```python
+masse = 4.6	# float
+acceleration = 9.8 # (m/s²)
+force = masse * acceleration
+print("La force est {force} N")
+```
+
+

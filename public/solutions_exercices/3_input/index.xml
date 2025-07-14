@@ -3,7 +3,7 @@
   <channel>
     <title> Entrées/Sorties, algorithme et débogage :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/3_input/index.html</link>
-    <description></description>
+    <description>## Exercice #1&#xA;### Cellule Markdown – Algorithme&#xA;#### Algorithme – Calcul de la force gravitationnelle 1. Demander à l’utilisateur d’entrer le nom de l’objet (chaîne de caractères). 2. Demander à l’utilisateur d’entrer la masse de l’objet (nombre décimal, en kg). 3. Définir la constante d’accélération gravitationnelle (9,8 m/s²). 4. Calculer la force en utilisant la formule : `force = masse \* accélération` 5. Afficher la force avec une phrase claire, incluant le nom de l’objet et l’unité en N (Newton).</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/3_input/index.xml" rel="self" type="application/rss+xml" />

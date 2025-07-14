@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Les fonctions :: 420-SN1-RE</title>
+    <title> Évaluation #1 (15%) :: 420-SN1-RE</title>
     <link>https://example.org/semaine4/index.html</link>
-    <description>Objectifs d’apprentissage Utiliser des fonctions prédéfinies Définir ses propres fonctions avec def Utiliser des paramètres pour envoyer des données Retourner un résultat avec return Comprendre la portée locale des variables Qu’est-ce qu’une fonction ? Une fonction est un bloc de code réutilisable. On peut lui donner des paramètres (valeurs en entrée) et elle peut renvoyer un résultat. Si une fonction renvoie un résultat, il devra être stocké dans une variable pour pouvoir être utilisé ailleurs dans le code.</description>
+    <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />

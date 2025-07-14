@@ -1,21 +1,24 @@
 +++
 chapter = true
 pre = "<b>3.</b>"
-title = "Entrées/Sorties, algorithme et débogage"
+title = "Saisie au clavier, débogage et fonctions"
 weight = 103
 +++
 
 ## Objectifs d'apprentissage
 
-* Gérer les entrées (**saisies au clavier**) et les sorties (**affichage**) d'un programme Python.
+* Gérer les entrées (**saisies au clavier**) d'un programme Python.
 	* Lire des données entrées par l’utilisateur.
-* Comprendre le rôle d'un algorithme.
-* Écrire et traduire des algorithmes simples en python.
+* Utiliser des fonctions prédéfinies
+* Définir ses propres fonctions avec `def`
+   * Utiliser des paramètres pour envoyer des données
+   * Retourner un résultat avec `return`
+   * Comprendre la portée locale des variables
 * Apprendre à comprendre les messages d'erreurs et à déboguer un programme
 
 ---
 
-## Lecture, conversion et affichage soigné des données
+## Lecture et conversion de données
 
 ### Lire une donnée au clavier
 
@@ -56,61 +59,9 @@ note2 = input("Entrez la deuxième note")
 note2 = int(note2)	# conversion en entier
 
 moyenne = (note1 + note2) / 2
-```
 
-### Affichage de résultats
-
-On utilise `print()` pour afficher du texte et des valeurs.
-
-```python
-note1 = input("Entrez la première note")
-note1 = int(note1)	# conversion en entier
-note2 = input("Entrez la deuxième note")
-note2 = int(note2)	# conversion en entier
-
-moyenne = (note1 + note2) / 2
-
-print("La moyenne des deux notes", note1, "et", note2, "est:", moyenne)
-```
-
-Pour un affichage plus soigné, on peut utiliser les **f-strings** :
-
-```python
 print(f"La moyenne des deux notes {note1} et {note2} est: {moyenne}")
 ```
-
-#### Affichage soigné des résultats numériques
-
-EXEMPLE AVEC ALGO SCIENTIFIQUE
-
-## Traduction de l’algorithme en code Python
-
-**Un algorithme**, c’est une suite d’instructions claires pour résoudre un problème.
-
-### Cas concret
-
-Écrire un programme qui calcule la force d'un objet à l'aide de la formule `F = m x a` où `m` est la masse de l'objet et `a` l'accélération.
-Le programme doit demander à l'utilisateur d'entrer au clavier la masse et l'accélération.
-À la fin, le programme affiche le résultat de la force.
-
-#### L'algorithme (en français) :
-
-> 1. Demander la masse d’un objet
-> 2. Demander l’accélération
-> 3. Calculer la force avec la formule `F = m × a`
-> 4. Afficher la force
-
-#### Traduction en Python :
-
-```python
-masse = float(input("Entrez la masse (kg) : "))
-acceleration = float(input("Entrez l'accélération (m/s²) : "))
-force = masse * acceleration
-print("La force est", force, "N")
-```
-
-> Astuce : chaque ligne de l’algorithme devient une ou plusieurs lignes de code.
-
 
 ## Débogage
 
@@ -123,6 +74,116 @@ print("La force est", force, "N")
 | Erreur de syntaxe  | `print("Bonjour'`                            | Corriger la fermeture des guillemets |
 | Erreur d’exécution | `valeur = int("abc")`                        | Vérifier le type des entrées         |
 | Erreur logique     | `aire = longueur + largeur` (au lieu de `*`) | Vérifier la formule                  |
+
+## Qu’est-ce qu’une fonction ?
+
+* Une fonction est un **bloc de code réutilisable**. On peut lui donner des **paramètres** (valeurs en entrée) et elle peut renvoyer un **résultat**. 
+* Si une fonction renvoie un résultat, il devra être stocké dans  une variable pour pouvoir être utilisé ailleurs dans le code.
+
+## Utilisation de fonctions prédéfinies
+
+Python offre déjà plein de **fonctions toutes prêtes** (*prédéfinies*).
+
+### Exemples utiles :
+
+| Fonction  | Utilité                                 | Exemple                         |
+| --------- | --------------------------------------- | ------------------------------- |
+| `print()` | Afficher un message                     | `print("Bonjour !")`            |
+| `input()` | Demander une donnée à l’utilisateur     | `nom = input("Votre nom :")`    |
+| `int()`   | Convertir en entier                     | `val = int("5")`                |
+| `float()` | Convertir en nombre décimal             | `val = float("3.14")`           |
+| `round()` | Arrondir un nombre                      | `round(2.718, 2)` → `2.72`      |
+| `len()`   | Compter les éléments d’une chaîne/liste | `len("atomes")` → `6`           |
+| `type()`  | Afficher le type d’une variable         | `type(3.5)` → `<class 'float'>` |
+
+> On **appelle** une fonction en écrivant son nom suivi de parenthèses.
+
+### Quelques fonctions du module `math`
+
+Pour accéder à des fonctions mathématiques plus avancées, on utilise le **module `math`**.
+
+```python
+import math
+```
+
+| Fonction         | Description        | Exemple                         |
+| ---------------- | ------------------ | ------------------------------- |
+| `math.sqrt(x)`   | Racine carrée      | `math.sqrt(16)` → `4.0`         |
+| `math.pow(x, y)` | Puissance          | `math.pow(2, 3)` → `8.0`        |
+| `math.pi`        | La constante π     | `math.pi` → `3.14159...`        |
+| `math.sin(x)`    | Sinus (en radians) | `math.sin(math.pi / 2)` → `1.0` |
+| `math.log(x)`    | Logarithme naturel | `math.log(10)`                  |
+
+
+## Définir une fonction avec `def`
+
+### Syntaxe de base :
+
+```python
+def nom_fonction(param1, param2):
+    instructions
+    return résultat
+```
+
+### Exemple :
+
+```python
+def aire_rectangle(longueur, largeur):
+    aire = longueur * largeur
+    return aire
+```
+
+> Cette fonction reçoit deux valeurs, calcule l’aire et la retourne.
+
+
+## Appeler une fonction
+
+### Exemple :
+
+```python
+a = aire_rectangle(5, 2)
+print("Aire :", a)
+```
+
+
+## Le mot-clé `return`
+
+* Il **renvoie un résultat** à l’endroit où la fonction a été appelée.
+* Dès que `return` est exécuté, la fonction **s’arrête**.
+
+### Exemple :
+
+```python
+def carre(x):
+    return x * x
+```
+
+
+## La portée locale des variables
+
+Les **variables créées dans une fonction** (ex: `aire`) **n’existent que dans la fonction**.
+
+### Exemple :
+
+```python
+def test():
+    x = 10
+    return x
+
+print(test())  # OK
+print(x)       # Erreur : x n'existe pas ici
+```
+
+
+{{% notice style="cyan" title="À retenir" %}}
+| Élément       | Rôle                                                        |
+| ------------- | ----------------------------------------------------------- |
+| `def`         | Définir une fonction                                        |
+| Paramètres    | Donner des valeurs à la fonction                            |
+| `return`      | Retourner un résultat (`resultat = fonction()` ou <br> `print(fonction())`)             |
+| Portée locale | Les variables dans une fonction n’existent qu’à l’intérieur |
+{{% /notice %}}
+
 
 ### Exemples à tester (à copier dans VS Code) :
 
@@ -169,27 +230,86 @@ print("Aire =", aire)
 
 **Utilisation de print()**
 
----
-
-### Exercices à faire avant le cours:
-
-a) Écrire l'algorithme correspondant au code ci-dessous :
-
-```python
-import math
-
-r = float(input("Entrez le rayon du cercle : "))
-aire = math.pi * math.pow(r, 2)
-print("Aire du cercle :", round(aire, 2), "unités²")
-```
-
-b) Traduisez l’algorithme suivant en code Python :
-
-> 1. Demander le nom d’un élément chimique
-> 2. Afficher un message disant "L’élément choisi est \[nom]"
-
 {{% notice style="cyan" title="À retenir" %}}
 * `input()` permet de lire une donnée (toujours une chaîne).
 * Il faut convertir avec `int()` ou `float()` pour faire des calculs.
 * `print()` permet d'afficher une réponse, seule ou avec du texte.
 {{% /notice %}}
+
+
+---
+
+### Exercices à faire avant le cours:
+
+
+{{% notice style="cyan" title="Appel de fonction" %}}
+Pour chacun des exercices ci-dessous, utilisez (appelez) la fonction crée.
+{{% /notice %}}
+
+### Exercice 1 - Élément chimique
+
+Écrire une fonction `element_chimique()` qui :
+* Demande à l'utilisateur d'entrer le nom d’un élément chimique.
+* Affiche un message disant "L’élément choisi est \[nom]"
+
+### Exercice 2 - Aire d'un cercle
+
+Écrire une fonction `aire_cercle()` qui :
+* Demande à l'utilisateur d'entrer le rayon du cercle (en cm).
+* Calcule l'aire du cercle (utiliser le **module math** pour PI et le rayon².)
+* Affiche l'aire du cercle, arrondie à 2 décimales (utiliser la fonction `round`).
+
+**Exemple d'affichage attendu (rayon de 5 cm)** :
+```python
+Aire du cercle de rayon 5 cm : 78.54 cm²
+```
+
+### Exercice 3 - Convertir Celsius en Kelvin
+
+Crée une fonction nommée `convertir_C_en_K` qui :
+
+* prend une température en °C en paramètre
+* retourne la température en Kelvin (formule : K = C + 273.15)
+
+**Solution :**
+
+```python
+def convertir_C_en_K(celsius):
+    kelvin = celsius + 273.15
+    return kelvin
+
+print(convertir_C_en_K(25))  # 298.15
+```
+
+### Exercice 4 – Calculer une énergie cinétique
+
+Crée une fonction `energie_cinetique(m, v)` qui calcule :
+
+```math
+$E_c = \frac{1}{2} \cdot m \cdot v^2$
+```
+
+**Solution :**
+
+```python
+def energie_cinetique(m, v):
+    return 0.5 * m * v**2
+
+print(energie_cinetique(2.0, 3.0))  # 9.0
+```
+
+### Exercice 5 – Vérifier la portée locale
+
+Crée une fonction `tester_variable()` qui crée une variable `x = 10` et l’affiche dans la fonction.
+Essaye ensuite d’afficher `x` **à l’extérieur de la fonction**.
+
+**Solution :**
+
+```python
+def tester_variable():
+    x = 10
+    print("Dans la fonction :", x)
+
+tester_variable()
+print("À l’extérieur :", x)  # Erreur attendue
+```

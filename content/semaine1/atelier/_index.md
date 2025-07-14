@@ -20,7 +20,7 @@ weight = 102
 
 3. Créez un nouveau fichier Jupyter nommé `atelier1.ipynb`.
 
-4. Dans une première cellule `Markdown`, écrivez un commentaire avec votre nom, la date, et l’objectif de l’atelier.
+4. Dans une première cellule `Markdown`, écrivez un commentaire avec votre **nom**, la **date**, et l’**objectif de l’atelier**.
 
 5. Dans une deuxième cellule `Code`, affichez un message de bienvenue avec print().
 

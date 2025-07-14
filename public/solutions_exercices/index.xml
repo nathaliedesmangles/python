@@ -12,14 +12,14 @@
       <link>https://example.org/solutions_exercices/2_variables/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/2_variables/index.html</guid>
-      <description></description>
+      <description>Exercice #1 - Calcul de probabilité On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles. Un rectangle contenant 6 cercles isométriques (même taille), Ils sont organisés en 2 rangées de 3 cercles, La hauteur du rectangle est 10 cm, ce qui correspond à deux diamètres de cercles (1 par rangée). a) Identifier les variables, les constantes et les formules nécessaires</description>
     </item>
     <item>
       <title> Entrées/Sorties, algorithme et débogage</title>
       <link>https://example.org/solutions_exercices/3_input/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/3_input/index.html</guid>
-      <description></description>
+      <description>## Exercice #1&#xA;### Cellule Markdown – Algorithme&#xA;#### Algorithme – Calcul de la force gravitationnelle 1. Demander à l’utilisateur d’entrer le nom de l’objet (chaîne de caractères). 2. Demander à l’utilisateur d’entrer la masse de l’objet (nombre décimal, en kg). 3. Définir la constante d’accélération gravitationnelle (9,8 m/s²). 4. Calculer la force en utilisant la formule : `force = masse \* accélération` 5. Afficher la force avec une phrase claire, incluant le nom de l’objet et l’unité en N (Newton).</description>
     </item>
     <item>
       <title> Fonctions</title>

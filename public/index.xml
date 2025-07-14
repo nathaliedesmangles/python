@@ -47,21 +47,28 @@
       <link>https://example.org/semaine1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine1/index.html</guid>
-      <description>Objectifs pédagogiques À la fin de la séance, vous devriez être capables de :&#xA;Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Créer une structure de dossiers pour le cours. Comprendre l’interface de VS Code Ouvrir un dossier et un fichier (.ipynb) dans VS Code. Créer un fichier .ipynb dans VS Code. Écrire et exécuter du code Python simple.</description>
+      <description>Objectifs pédagogiques À la fin de la leçon, vous devrez être en mesure de :&#xA;Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Créer une structure de dossiers pour le cours. Comprendre l’interface de VS Code Ouvrir un dossier et un fichier (.ipynb) dans VS Code. Créer un fichier .ipynb dans VS Code. Écrire et exécuter du code Python simple.</description>
     </item>
     <item>
-      <title>Introduction à Python (Variables, types et expressions)</title>
+      <title>Introduction à Python (Variables, types de données et algorithme)</title>
       <link>https://example.org/semaine2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/index.html</guid>
-      <description>Objectifs d’apprentissage À la fin de cette leçon vous serez en mesure de:&#xA;Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.&#xA;Exemples :&#xA;age = 17 nom = &#34;Julie&#34; temperature = 36.</description>
+      <description>Objectifs d’apprentissage À la fin de la leçon, vous devrez être en mesure de :&#xA;Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.</description>
     </item>
     <item>
-      <title>Entrées/Sorties, algorithme et débogage</title>
+      <title>Saisie au clavier, débogage et fonctions</title>
       <link>https://example.org/semaine3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/index.html</guid>
-      <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) et les sorties (affichage) d’un programme Python. Lire des données entrées par l’utilisateur. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Apprendre à comprendre les messages d’erreurs et à déboguer un programme Lecture, conversion et affichage soigné des données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :&#xA;nom = input(&#34;Quel est ton nom ?</description>
+      <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) d’un programme Python. Lire des données entrées par l’utilisateur. Utiliser des fonctions prédéfinies Définir ses propres fonctions avec def Utiliser des paramètres pour envoyer des données Retourner un résultat avec return Comprendre la portée locale des variables Apprendre à comprendre les messages d’erreurs et à déboguer un programme Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
+    </item>
+    <item>
+      <title> Évaluation #1 (15%)</title>
+      <link>https://example.org/semaine4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/index.html</guid>
+      <description></description>
     </item>
     <item>
       <title>Décider avec `if`, `elif`, `else` et les opérateurs</title>
@@ -69,13 +76,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine6_v2/index.html</guid>
       <description>Objectifs d’apprentissage Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
-    </item>
-    <item>
-      <title>Les fonctions</title>
-      <link>https://example.org/semaine4/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine4/index.html</guid>
-      <description>Objectifs d’apprentissage Utiliser des fonctions prédéfinies Définir ses propres fonctions avec def Utiliser des paramètres pour envoyer des données Retourner un résultat avec return Comprendre la portée locale des variables Qu’est-ce qu’une fonction ? Une fonction est un bloc de code réutilisable. On peut lui donner des paramètres (valeurs en entrée) et elle peut renvoyer un résultat. Si une fonction renvoie un résultat, il devra être stocké dans une variable pour pouvoir être utilisé ailleurs dans le code.</description>
     </item>
     <item>
       <title>Évaluation 1 (25%)</title>

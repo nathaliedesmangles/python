@@ -7,7 +7,7 @@ weight = 101
 
 ## Objectifs pédagogiques
 
-À la fin de la séance, vous devriez être capables de :
+À la fin de la leçon, vous devrez être en mesure de :
 
 * Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap)
 * Vous connecter à votre compte OneDrive scolaire.
@@ -78,7 +78,7 @@ Si l'extension (.ipynb) du fichier n'apparait pas, cliquez sur **Afficher**>**Af
 
 ### **Étape 3** – Découverte de VS Code et utilisation d'un bloc-notes Jupyter
 
-Nous allons travailler avec VS Code et comprendre comment ouvrir un dossier de travail avec un fichier présent. Nous allons par la suite créer un fichier qui nous permettra d’écrire du code.
+Nous allons travailler avec VS Code, un éditeur de code, et comprendre comment ouvrir un dossier de travail avec un fichier présent. Nous allons par la suite créer un fichier qui nous permettra d’écrire du code.
 
 1. Pour ouvrir VS Code, cliquez la **barre de recherche** (loupe) en bas de votre écran, puis écrivez tout simplement **VS**, la première application visible devrait être ***Visual Studio Code***.
 ![Recherche - Ouvrir VS Code](./vscodejupyter/ouvrir-vs-code.png?width=25vw)
@@ -164,7 +164,7 @@ Pour ouvrir un dossier vous pouvez aussi aller dans la page d'accueil, cliquer s
 
 Vous devriez maintenant voir un crochet à gauche de cette option.
 
-![crochet](./crochet.png)
+![crochet](./crochet.png?width=30vw)
 
 * Pour ce fichier, VS Code détectera les modifications et fera la sauvegarde automatiquement, mais vous pouvez à tout moment appuyer sur **Ctrl + S** pour forcer la sauvegarde.
 
@@ -176,17 +176,10 @@ Vous devriez maintenant voir un crochet à gauche de cette option.
 
 9. Assurez-vous que la sauvegarde automatique s'est faite, c'est-à-dire que le point blanc sur l'onglet du fichier a disparu et a été remplacé par un `X`. Ce qui signifie que le fichier est sauvegardé.
 
-![X](./vscodejupyter/X.png)
+![X](./vscodejupyter/X.png?width=30vw)
 
 > Vous pouvez à nouveau cliquer sur **Exécuter tout** pour voir le résultat de la dernière cellule de code.
 
----
-
-## Retour réflexif
-
-* Avez-vous rencontré des problèmes ?
-* Qu’est-ce qui vous semble encore flou ?
-* Que fait exactement un notebook quand on l’exécute ?
 
 ---
 
@@ -203,3 +196,17 @@ Vous devriez maintenant voir un crochet à gauche de cette option.
 
 * En haut à droite du nom d’un notebook, cliquez sur `X` pour fermer le fichier.
 
+---
+
+## Retour réflexif
+
+* Avez-vous rencontré des problèmes ?
+* Qu’est-ce qui vous semble encore flou ?
+* Que fait exactement un notebook quand on l’exécute ?
+
+---
+
+## À faire avant le prochain cours
+
+1. Lire la matière sur [Introduction à Python](../semaine2/)
+2. Faire les [exercices se trouvant à la fin de la leçon 2](../semaine2/#exercices-à-faire-avant-le-cours)
