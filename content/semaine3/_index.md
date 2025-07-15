@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "<b>3.</b>"
-title = "Saisie au clavier, débogage et fonctions"
+title = " Saisie au clavier, fonctions et débogage"
 weight = 103
 +++
 
@@ -9,12 +9,12 @@ weight = 103
 
 * Gérer les entrées (**saisies au clavier**) d'un programme Python.
 	* Lire des données entrées par l’utilisateur.
-* Utiliser des fonctions prédéfinies
+* Utiliser des fonctions prédéfinies.
 * Définir ses propres fonctions avec `def`
-   * Utiliser des paramètres pour envoyer des données
-   * Retourner un résultat avec `return`
-   * Comprendre la portée locale des variables
-* Apprendre à comprendre les messages d'erreurs et à déboguer un programme
+   * Utiliser des paramètres pour envoyer des données.
+   * Retourner un résultat avec `return`.
+   * Comprendre la portée locale des variables.
+* Comprendre les messages d'erreurs et à apprendre à déboguer un programme.
 
 ---
 
@@ -36,16 +36,19 @@ Les données entrées par `input()` sont **toujours** des chaînes (`str`). Il f
 
 ```python
 note1 = input("Entrez la première note")
-note1 = note1	r
 note2 = input("Entrez la deuxième note")
-note2 = note2
 
 moyenne = (note1 + note2) / 2	==> ERREUR
 ```
 
-CAPTURE IMAGE ERREUR
+![Erreur de type](./erreur_type.png)
 
-#### Comment convertir des données en entier (int) ou en nombre flottant (float)
+{{% notice style="cyan" title="Important" %}}
+L'erreur est causée par le fait que la fonction `input()`, transforme toutes les saisies au clavier en **chaine de caractères (`str`)**.
+Si on tape **95** au clavier, pour Python ça devient **"95"**.
+{{% /notice %}}
+
+#### Comment convertir des données en entier (*int*) ou en nombre flottant (*float*)
 
 | Fonction  | Conversion vers… | Exemple                |
 | --------- | ---------------- | ---------------------- |
@@ -62,29 +65,21 @@ moyenne = (note1 + note2) / 2
 
 print(f"La moyenne des deux notes {note1} et {note2} est: {moyenne}")
 ```
+> La **conversion des deux notes en entier**, fait en sorte que Python arrive à faire le calcul sans problème.
 
-## Débogage
-
-**Déboguer**, c’est trouver et corriger les erreurs dans le code.
-
-### Types d’erreurs fréquentes :
-
-| Type d’erreur      | Exemple                                      | Solution                             |
-| ------------------ | -------------------------------------------- | ------------------------------------ |
-| Erreur de syntaxe  | `print("Bonjour'`                            | Corriger la fermeture des guillemets |
-| Erreur d’exécution | `valeur = int("abc")`                        | Vérifier le type des entrées         |
-| Erreur logique     | `aire = longueur + largeur` (au lieu de `*`) | Vérifier la formule                  |
 
 ## Qu’est-ce qu’une fonction ?
+
+AJOUTER ANALOGIE
 
 * Une fonction est un **bloc de code réutilisable**. On peut lui donner des **paramètres** (valeurs en entrée) et elle peut renvoyer un **résultat**. 
 * Si une fonction renvoie un résultat, il devra être stocké dans  une variable pour pouvoir être utilisé ailleurs dans le code.
 
-## Utilisation de fonctions prédéfinies
+### Utilisation de fonctions prédéfinies
 
-Python offre déjà plein de **fonctions toutes prêtes** (*prédéfinies*).
+Python offre plein de **fonctions toutes prêtes** (*prédéfinies*).
 
-### Exemples utiles :
+**Exemples de fonctions prédéfinies** :
 
 | Fonction  | Utilité                                 | Exemple                         |
 | --------- | --------------------------------------- | ------------------------------- |
@@ -96,7 +91,7 @@ Python offre déjà plein de **fonctions toutes prêtes** (*prédéfinies*).
 | `len()`   | Compter les éléments d’une chaîne/liste | `len("atomes")` → `6`           |
 | `type()`  | Afficher le type d’une variable         | `type(3.5)` → `<class 'float'>` |
 
-> On **appelle** une fonction en écrivant son nom suivi de parenthèses.
+> On utilise une fonction en l'**appelant**. On l'appelle en écrivant son nom suivi de parenthèses.
 
 ### Quelques fonctions du module `math`
 
@@ -115,9 +110,47 @@ import math
 | `math.log(x)`    | Logarithme naturel | `math.log(10)`                  |
 
 
-## Définir une fonction avec `def`
+## Création de fonction avec `def`
 
-### Syntaxe de base :
+**Rappel** : 
+> Une fonction peut:
+   > 1. Afficher un résultat (ex: `print()`)
+   > 2. Retourner un résultat (ex: `input()`)
+
+
+### Comment créer et utiliser une fonction ?
+
+1. On utilise le mot clé `def`.
+2. Suivi du nom de la fonction.
+3. Suivi de parenthèses `()`.
+4. suivi de deux-points `:`.
+5. Les instructions de la fonction sont sur les lignes d'en dessous, décalées. Ce décalage, permet à Python de reconnaitre le code à exécuter.
+
+{{% notice style="cyan" title="Important" %}}
+* Les règles de **nomenclature des variables**, s'appliquent aussi aux noms de fonctions.
+* Entre les parenthèses, on peut indiquer des **paramètres ou pas**, mais les **parenthèses sont obligatoires**.
+{{% /notice %}}
+
+#### Syntaxes générales
+
+**Une fonction qui affiche le résultat** :
+```python
+def nom_fonction(param1, param2):
+    instructions
+    print(résultat)
+```
+
+**Exemple** :
+
+```python
+def aire_rectangle(longueur, largeur):
+    aire = longueur * largeur
+    print(f"L'aire du rectangle de longueur {longueur} et de largeur {largeur} est {aire} cm^2")
+```
+
+> Cette fonction reçoit deux valeurs, calcule l’aire et **affiche** l'aire.
+
+**Une fonction qui retourne le résultat** :
 
 ```python
 def nom_fonction(param1, param2):
@@ -125,7 +158,7 @@ def nom_fonction(param1, param2):
     return résultat
 ```
 
-### Exemple :
+**Exemple** :
 
 ```python
 def aire_rectangle(longueur, largeur):
@@ -133,109 +166,142 @@ def aire_rectangle(longueur, largeur):
     return aire
 ```
 
-> Cette fonction reçoit deux valeurs, calcule l’aire et la retourne.
+> Cette fonction reçoit deux valeurs, calcule l’aire et la **retourne**.
 
+#### Le mot-clé `return`
 
-## Appeler une fonction
-
-### Exemple :
-
-```python
-a = aire_rectangle(5, 2)
-print("Aire :", a)
-```
-
-
-## Le mot-clé `return`
-
-* Il **renvoie un résultat** à l’endroit où la fonction a été appelée.
+* Il **renvoie un résultat** à l’endroit où la fonction a été utilisée (appelée).
 * Dès que `return` est exécuté, la fonction **s’arrête**.
 
-### Exemple :
+
+#### Appeler (utiliser) une fonction
+
+**Utilisation de la fonction `aire_rectangle()` qui **affiche** l'aire**
 
 ```python
-def carre(x):
-    return x * x
+aire_rectangle(5, 2)
 ```
 
+**Utilisation de la fonction `aire_rectangle()` qui **retourne** l'aire**
 
-## La portée locale des variables
+```python
+surface = aire_rectangle(5, 2)
+print("L'aire du rectangle est : {surface}")
+```
+> Notez la différence: Ici, **il faut stocker le résultat de la fonction dans une variable**.
 
-Les **variables créées dans une fonction** (ex: `aire`) **n’existent que dans la fonction**.
+### La portée locale des variables
 
-### Exemple :
+Les **variables créées **à l'intérieur** d'une fonction** (ex: `aire`) **n’existent que dans la fonction**.
+
+**Exemple** :
 
 ```python
 def test():
-    x = 10
-    return x
+    x = 10  <---- On peut utiliser x qu'à l'intérieur de la fonction.
+    return x <---- Après cette ligne, x n'existe plus. 
 
-print(test())  # OK
+print(test())  # OK, affiche 10
 print(x)       # Erreur : x n'existe pas ici
 ```
+![Erreur de nom](./erreur_name.png?width=35vw)
 
 
-{{% notice style="cyan" title="À retenir" %}}
-| Élément       | Rôle                                                        |
-| ------------- | ----------------------------------------------------------- |
-| `def`         | Définir une fonction                                        |
-| Paramètres    | Donner des valeurs à la fonction                            |
-| `return`      | Retourner un résultat (`resultat = fonction()` ou <br> `print(fonction())`)             |
-| Portée locale | Les variables dans une fonction n’existent qu’à l’intérieur |
-{{% /notice %}}
+## Trouver facilement les sources des erreurs dans nos programmes (débogage)
 
+**Déboguer**, c’est trouver les causes des erreurs dans le cod, afin de les corriger rapidement.
 
-### Exemples à tester (à copier dans VS Code) :
+### Types d’erreurs fréquentes
 
-#### Exemple 1 – Erreur de syntaxe
+* **Erreur de syntaxe** : La syntaxe de Python n'est pas respectée. Ex.: `print("Bonjour'`
+* **Erreur d’exécution** : Le mauvais type de données est utilisé. Ex.: `valeur = int("abc")`
+* **Erreur logique** : Les instructions ne correspondent pas à la logique imposée par le problème. Ex.: `aire = longueur + largeur`
+ 
 
-```python
-print("Début du programme)
-```
-
-> Que dit le message d'erreur ?
-> Corrige la ligne.
-
-#### Exemple 2 – Erreur d’exécution
-
-```python
-val = int("bonjour")
-```
-
-> Quelle est la cause de l’erreur ?
-> Remplace `"bonjour"` par `"12"`.
-
-#### Exemple 3 – Erreur logique
-
-```python
-longueur = 5
-largeur = 2
-aire = longueur + largeur  # erreur de formule
-print("Aire =", aire)
-```
-
-> Est-ce que le résultat est correct ?
-> Corrige la formule avec `*` au lieu de `+`.
-
-### Astuces pour déboguer :
+### Quelques habitudes à avoir pour déboguer :
 
 * Lire le message d’erreur affiché
 * Ajouter des **print()** pour suivre les valeurs
 * Tester une ligne à la fois
+* Est-ce que le résultat est correct ?
 * Vérifier les types avec type()
 
-### Exemples concrets
 
-**Message d'erreur affiché**
+### Exemple de code présentant des erreurs
 
-**Utilisation de print()**
+**Énoncé du problème**
 
-{{% notice style="cyan" title="À retenir" %}}
-* `input()` permet de lire une donnée (toujours une chaîne).
-* Il faut convertir avec `int()` ou `float()` pour faire des calculs.
-* `print()` permet d'afficher une réponse, seule ou avec du texte.
+Ce programme est censé calculer le temps nécessaire pour qu’un objet tombe d’une certaine hauteur `h` en chute libre (sans frottement), en utilisant la formule :
+
+```math
+$$
+t = \sqrt{\frac{2h}{g}}
+$$
+où $g = 9.8 \, m/s^2$ est l’accélération gravitationnelle.
+```
+> Malheureusement, le programme contient des erreurs. Utilise des `print()` pour comprendre ce qui ne fonctionne pas, puis corrige le code.
+
+---
+
+**Code à déboguer**
+
+```python
+import math
+
+def temps_chute(hauteur):
+    g = "9.8"
+    t = math.sqrt(2 * hauteur / g)
+    return t
+
+h = input("Entrez la hauteur de chute en mètres: ")
+
+print("Hauteur entrée:", h)
+
+temps = temps_chute(h)
+
+print("Le temps de chute est", temps "secondes.")
+```
+
+---
+
+{{% notice style="red" title="Correction attendue" groupid="notice-toggle" expanded="false" %}}
+
+**Erreurs intégrées** :
+
+1. `g = "9.8"` : valeur gravitationnelle en chaîne de caractères → provoquera une erreur de type.
+2. `input()` retourne une chaîne → doit être convertie en `float()`.
+3. Il manque une virgule dans le `print()` final.
+4. Le type de la variable `hauteur` dans `temps_chute()` est incorrect (chaîne).
+5. Possibilité d’ajouter un `print()` intermédiaire dans `temps_chute()` pour voir la valeur de `t`.
+
+```python
+import math
+
+def temps_chute(hauteur):
+    g = 9.8
+    t = math.sqrt(2 * hauteur / g)
+    return t
+
+h = float(input("Entrez la hauteur de chute en mètres: "))
+
+print("Hauteur entrée:", h)
+
+temps = temps_chute(h)
+
+print("Le temps de chute est", temps, "secondes.")
+```
 {{% /notice %}}
 
+{{% notice style="cyan" title="À retenir" %}}
+* Python fourni des fonctions prédéfinies, prêtes à être utiliser (ex: les fonctions du module `math`)
+* `input()` permet de lire une donnée (toujours une chaîne).
+* Il faut convertir avec `int()` ou `float()` pour faire des calculs.
+* `def` : sert à définir une fonction 
+* nom_fonction(paramètres) : Les paramètres sont les variables représentant les données dont la fonction a besoin pour obtenir le résultat.                   
+* `return` : Permet à la fonction de retourner un résultat (`resultat = fonction()` ou <br> `print(fonction())`)
+* Portée locale : Signifie que les variables dans une fonction n’existent qu’à l’intérieur de .elle-ci|
+* Pour utiliser une fonction prédéfinie ou personnalisé, il faut écrire sont nom, les parenthèses et les paramètres si elle en a.
+{{% /notice %}}
 
 ---
 
@@ -313,3 +379,67 @@ def tester_variable():
 tester_variable()
 print("À l’extérieur :", x)  # Erreur attendue
 ```
+### Exercice 6 - Trouvez les erreurs et corrigez les
+
+**Énoncé du problème** :
+
+> Ce programme est censé calculer la surface d’un cône droit à partir du rayon et de la hauteur entrés par l’utilisateur. La formule utilisée est :
+```math
+> $$
+> \text{Surface} = \pi \cdot r \cdot (r + \sqrt{r^2 + h^2})
+> $$
+```
+> Toutefois, plusieurs erreurs se sont glissées dans le programme. Utilise des instructions `print()` pour comprendre les erreurs, puis corrige-les une à une.
+
+
+### Code à déboguer et corriger
+
+```python
+import math
+
+def surface_cone(rayon, hauteur):
+    aire_base = math.pi * rayon ** 2
+    aire_lateral = math.pi * rayon * math.sqrt(rayon**2 + hauteur)
+    surface = aire_base + aire_latérale
+    return surface
+
+r = input("Entrez le rayon du cône: ")
+h = input("Entrez la hauteur du cône: ")
+
+print("Rayon saisi:", r)
+print("Hauteur saisie:", h)
+
+resultat = surface_cone(r, h)
+
+print("La surface totale du cône est de", resultat "cm²")
+```
+---
+
+{{% notice style="red" title="Correction attendue" groupid="notice-toggle" expanded="false" %}}
+**Erreurs à corriger, dans l'ordre**:  
+1. `input()` retourne une **chaîne de caractères** → nécessite une conversion `float()`.
+2. Erreur dans le calcul de `aire_lateral`: `hauteur` au lieu de `hauteur**2`.
+3. Nom de variable mal orthographié : `aire_latérale` ≠ `aire_lateral` (accent).
+4. Manque une virgule dans le `print()` final.
+5. Nom de variables non explicites et parfois contradictoires (`r`, `rayon`), ce qui peut déstabiliser.
+
+```python
+import math
+
+def surface_cone(rayon, hauteur):
+    aire_base = math.pi * rayon ** 2
+    aire_lateral = math.pi * rayon * math.sqrt(rayon**2 + hauteur**2)
+    surface = aire_base + aire_lateral
+    return surface
+
+r = float(input("Entrez le rayon du cône: "))
+h = float(input("Entrez la hauteur du cône: "))
+
+print("Rayon saisi:", r)
+print("Hauteur saisie:", h)
+
+resultat = surface_cone(r, h)
+
+print("La surface totale du cône est de", resultat, "cm²")
+```
+{{% /notice %}}

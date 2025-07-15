@@ -5,46 +5,46 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.
-Activité : Courbe de refroidissement d’un liquide Contexte
-Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
-Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.">
+    <meta name="description" content="Objectif pédagogique Apprendre à lire et traiter un fichier contenant des données expérimentales, effectuer des calculs simples, et produire un résumé statistique à l’aide de Python.
+Exercice 1 : Analyse de données de température Contexte : Un technicien a mesuré la température d’un liquide toutes les 5 minutes pendant 30 minutes. Les données sont enregistrées dans un fichier CSV.
+Étapes :
+Télécharger et lire le fichier donnees_temp.csv fourni par l’enseignant.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Activité 10 - tracer un graphique de données expérimentales. :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.
-Activité : Courbe de refroidissement d’un liquide Contexte
-Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
-Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.">
+    <meta name="twitter:title" content="Activité 11 - Traitement de résultats de laboratoire :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectif pédagogique Apprendre à lire et traiter un fichier contenant des données expérimentales, effectuer des calculs simples, et produire un résumé statistique à l’aide de Python.
+Exercice 1 : Analyse de données de température Contexte : Un technicien a mesuré la température d’un liquide toutes les 5 minutes pendant 30 minutes. Les données sont enregistrées dans un fichier CSV.
+Étapes :
+Télécharger et lire le fichier donnees_temp.csv fourni par l’enseignant.">
     <meta property="og:url" content="https://example.org/semaine10/atelier/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content="Activité 10 - tracer un graphique de données expérimentales. :: 420-SN1-RE">
-    <meta property="og:description" content="Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.
-Activité : Courbe de refroidissement d’un liquide Contexte
-Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
-Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.">
+    <meta property="og:title" content="Activité 11 - Traitement de résultats de laboratoire :: 420-SN1-RE">
+    <meta property="og:description" content="Objectif pédagogique Apprendre à lire et traiter un fichier contenant des données expérimentales, effectuer des calculs simples, et produire un résumé statistique à l’aide de Python.
+Exercice 1 : Analyse de données de température Contexte : Un technicien a mesuré la température d’un liquide toutes les 5 minutes pendant 30 minutes. Les données sont enregistrées dans un fichier CSV.
+Étapes :
+Télécharger et lire le fichier donnees_temp.csv fourni par l’enseignant.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="Activité 10 - tracer un graphique de données expérimentales. :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.
-Activité : Courbe de refroidissement d’un liquide Contexte
-Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
-Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.">
-    <meta itemprop="wordCount" content="201">
-    <title>Activité 10 - tracer un graphique de données expérimentales. :: 420-SN1-RE</title>
-    <link href="/semaine10/atelier/index.xml" rel="alternate" type="application/rss+xml" title="Activité 10 - tracer un graphique de données expérimentales. :: 420-SN1-RE">
-    <link href="/images/logo.png?1752453950" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752453950" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752453950" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752453950" rel="stylesheet">
-    <link href="/css/theme.min.css?1752453950" rel="stylesheet">
-    <link href="/css/format-html.min.css?1752453950" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1752453950" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1752453950" defer></script>
-    <script src="/js/lunr/lunr.min.js?1752453950" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1752453950" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1752453950" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1752453950" defer></script>
-    <script src="/js/search.min.js?1752453950" defer></script>
+    <meta itemprop="name" content="Activité 11 - Traitement de résultats de laboratoire :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectif pédagogique Apprendre à lire et traiter un fichier contenant des données expérimentales, effectuer des calculs simples, et produire un résumé statistique à l’aide de Python.
+Exercice 1 : Analyse de données de température Contexte : Un technicien a mesuré la température d’un liquide toutes les 5 minutes pendant 30 minutes. Les données sont enregistrées dans un fichier CSV.
+Étapes :
+Télécharger et lire le fichier donnees_temp.csv fourni par l’enseignant.">
+    <meta itemprop="wordCount" content="393">
+    <title>Activité 11 - Traitement de résultats de laboratoire :: 420-SN1-RE</title>
+    <link href="/semaine10/atelier/index.xml" rel="alternate" type="application/rss+xml" title="Activité 11 - Traitement de résultats de laboratoire :: 420-SN1-RE">
+    <link href="/images/logo.png?1752613623" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752613623" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752613623" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752613623" rel="stylesheet">
+    <link href="/css/theme.min.css?1752613623" rel="stylesheet">
+    <link href="/css/format-html.min.css?1752613623" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1752613623" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1752613623" defer></script>
+    <script src="/js/lunr/lunr.min.js?1752613623" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1752613623" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1752613623" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1752613623" defer></script>
+    <script src="/js/search.min.js?1752613623" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -54,7 +54,7 @@ Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichag
       window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1752453950";
+      window.relearn.index_js_url="/searchindex.en.js?1752613623";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -115,13 +115,10 @@ Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichag
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#objectif-">Objectif :</a></li>
-    <li><a href="#activité--courbe-de-refroidissement-dun-liquide">Activité : Courbe de refroidissement d’un liquide</a>
-      <ul>
-        <li><a href="#consignes">Consignes</a></li>
-        <li><a href="#données-fournies">Données fournies</a></li>
-      </ul>
-    </li>
+    <li><a href="#objectif-pédagogique">Objectif pédagogique</a></li>
+    <li><a href="#exercice-1--analyse-de-données-de-température">Exercice 1 : Analyse de données de température</a></li>
+    <li><a href="#exercice-2--impact-de-la-température-sur-le-ph-de-leau">Exercice 2 : Impact de la température sur le pH de l’eau</a></li>
+    <li><a href="#consignes">Consignes</a></li>
   </ul>
 </nav>
                 </div>
@@ -130,13 +127,13 @@ Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichag
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine10/index.html"><span itemprop="name">Visualisation de données avec matplotlib (bases)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Activité 10 - tracer un graphique de données expérimentales.</span><meta itemprop="position" content="3"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine10/index.html"><span itemprop="name"> Graphiques SciPy et traitement de fichiers CSV avec Pandas</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Activité 11 - Traitement de résultats de laboratoire</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/index.html" title="Visualisation de données avec matplotlib (bases) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/index.html" title="Graphiques SciPy et traitement de fichiers CSV avec Pandas (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine11/index.html" title="Les tableaux NumPy et graphiques avancés (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine11/index.html" title="Évaluation #3 (20%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -156,60 +153,94 @@ Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichag
   <header class="headline">
   </header>
 
-<h1 id="activité-10---tracer-un-graphique-de-données-expérimentales">Activité 10 - tracer un graphique de données expérimentales.</h1>
+<h1 id="activité-11---traitement-de-résultats-de-laboratoire">Activité 11 - Traitement de résultats de laboratoire</h1>
 
-<h2 id="objectif-">Objectif :</h2>
-<p>Utiliser <code>matplotlib</code> pour tracer une courbe représentant l&rsquo;évolution de la température dans le temps, à partir de données expérimentales.</p>
+<h2 id="objectif-pédagogique">Objectif pédagogique</h2>
+<p>Apprendre à lire et traiter un fichier contenant des données expérimentales, effectuer des calculs simples, et produire un résumé statistique à l’aide de Python.</p>
 <hr>
-<h2 id="activité--courbe-de-refroidissement-dun-liquide">Activité : Courbe de refroidissement d’un liquide</h2>
-<p><strong>Contexte</strong></p>
-<p>Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.</p>
-<h3 id="consignes">Consignes</h3>
+<h2 id="exercice-1--analyse-de-données-de-température">Exercice 1 : Analyse de données de température</h2>
+<p><strong>Contexte</strong> : Un technicien a mesuré la température d’un liquide toutes les 5 minutes pendant 30 minutes. Les données sont enregistrées dans un fichier CSV.</p>
+<p><strong>Étapes :</strong></p>
 <ol>
-<li>Importer la bibliothèque <code>matplotlib.pyplot</code> et configurer l&rsquo;affichage dans Jupyter Notebook.</li>
-<li>Tracer un graphique en ligne (<code>line plot</code>) de la température en fonction du temps.</li>
-<li>Ajouter un <strong>titre</strong>, des <strong>étiquettes d’axes</strong> et une <strong>grille</strong>.</li>
-<li>Ajouter un <strong>point de départ</strong> et un <strong>point final</strong> avec des marqueurs distinctifs.</li>
-<li>En bonus : ajouter une ligne horizontale représentant la température ambiante (ex. 22 °C).</li>
-</ol>
-<p><strong>Travail d’équipe</strong> (formative)</p>
+<li>
+<p><strong>Télécharger et lire le fichier <code>donnees_temp.csv</code></strong> fourni par l’enseignant.</p>
+</li>
+<li>
+<p><strong>Afficher les données ligne par ligne</strong>, avec mise en forme : « À t = 10 min, T = 25.8 °C »</p>
+</li>
+<li>
+<p><strong>Calculer la température moyenne à partir des données lues.</strong></p>
+</li>
+<li>
+<p><strong>Écrire un nouveau fichier <code>analyse.csv</code></strong> qui contient :</p>
 <ul>
-<li>Discuter des anomalies possibles dans les données.</li>
-<li>Comment cette courbe pourrait-elle être utilisée pour modéliser un phénomène (loi de Newton du refroidissement, par exemple) ?</li>
+<li>Une colonne « temps »</li>
+<li>Une colonne « température »</li>
+<li>Une colonne « écart à la moyenne »</li>
 </ul>
-<h3 id="données-fournies">Données fournies</h3>
-<p>Les données sont fournies sous forme de deux listes Python :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Temps en minutes</span>
-</span></span><span style="display:flex;"><span>temps <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">55</span>, <span style="color:#ae81ff">60</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Température en degrés Celsius</span>
-</span></span><span style="display:flex;"><span>temperature <span style="color:#f92672">=</span> [<span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">78</span>, <span style="color:#ae81ff">69</span>, <span style="color:#ae81ff">62</span>, <span style="color:#ae81ff">56</span>, <span style="color:#ae81ff">52</span>, <span style="color:#ae81ff">48</span>, <span style="color:#ae81ff">45</span>, <span style="color:#ae81ff">43</span>, <span style="color:#ae81ff">41</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">39.5</span>, <span style="color:#ae81ff">39</span>]</span></span></code></pre></div>
-<!--
-### Exemple de solution attendue
-
-```python
-import matplotlib.pyplot as plt
-
-temps = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
-temperature = [90, 78, 69, 62, 56, 52, 48, 45, 43, 41, 40, 39.5, 39]
-
-plt.figure(figsize=(8, 5))
-plt.plot(temps, temperature, marker='o', linestyle='-', color='blue', label="Température")
-plt.axhline(y=22, color='red', linestyle='--', label='Température ambiante')
-
-plt.title("Refroidissement d’un liquide dans le temps")
-plt.xlabel("Temps (minutes)")
-plt.ylabel("Température (°C)")
-plt.grid(True)
-plt.legend()
-
-plt.scatter([0], [90], color='green', label='Départ', zorder=5)
-plt.scatter([60], [39], color='black', label='Fin', zorder=5)
-
-plt.legend()
-plt.show()
-```
--->
+</li>
+<li>
+<p><strong>Bonus</strong> : Tracer les données avec matplotlib (si le temps le permet).</p>
+</li>
+</ol>
+<p><strong>Éléments d’évaluation formative (en équipe)</strong></p>
+<ul>
+<li>Capacité à extraire et utiliser les données du fichier</li>
+<li>Respect des bonnes pratiques (indentation, noms de variables, commentaires)</li>
+<li>Clarté du fichier CSV généré</li>
+<li>Travail collaboratif dans la répartition des tâches</li>
+</ul>
+<hr>
+<h2 id="exercice-2--impact-de-la-température-sur-le-ph-de-leau">Exercice 2 : Impact de la température sur le pH de l’eau</h2>
+<p><strong>Contexte :</strong>
+Une équipe d’étudiants en chimie a réalisé une série de mesures du pH d’un échantillon d’eau à différentes températures, à raison de 3 mesures par température. Les données ont été consignées dans un fichier CSV.</p>
+<p><strong>Contenu du fichier <code>ph_mesures.csv</code> :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Température (°C),Mesure1,Mesure2,Mesure3
+10,7.12,7.10,7.13
+15,7.05,7.06,7.04
+20,6.98,6.97,6.99
+25,6.92,6.91,6.93
+30,6.85,6.86,6.87</code></pre></div>
+<h2 id="consignes">Consignes</h2>
+<ol>
+<li>
+<p><strong>Lecture du fichier :</strong></p>
+<ul>
+<li>Utiliser Python (avec <code>csv</code> ou <code>pandas</code>) pour lire les données.</li>
+</ul>
+</li>
+<li>
+<p><strong>Traitement des données :</strong></p>
+<ul>
+<li>Calculer la moyenne du pH pour chaque température.</li>
+<li>Conserver les résultats dans une nouvelle structure de données (liste ou dictionnaire).</li>
+</ul>
+</li>
+<li>
+<p><strong>Analyse simple :</strong></p>
+<ul>
+<li>Identifier s’il y a une tendance du pH en fonction de la température.</li>
+<li>Ajouter une colonne &ldquo;Moyenne_pH&rdquo; aux données.</li>
+</ul>
+</li>
+<li>
+<p><strong>Affichage des résultats :</strong></p>
+<ul>
+<li>Afficher les résultats dans une table lisible.</li>
+<li>Écrire les résultats dans un nouveau fichier CSV : <code>ph_moyennes.csv</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Extension (facultative) :</strong></p>
+<ul>
+<li>Tracer un graphique température vs moyenne du pH à l’aide de <code>matplotlib</code>.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Livrable attendu :</strong>
+Un script Python complet et bien commenté, ainsi qu’un fichier CSV de sortie contenant les moyennes.</p>
+<p><strong>Discussion en équipe (20 minutes) :</strong>
+En petits groupes (2-3), comparer les résultats, discuter de la fiabilité des mesures et de l’impact de la température sur le pH de l’eau. Chaque équipe propose une conclusion en 2-3 phrases à partager au groupe.</p>
 
   <footer class="footline">
   </footer>
@@ -264,26 +295,24 @@ plt.show()
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
             <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────</a></li>
             <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
-            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b>Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b>Introduction à Python (Variables, types de données et algorithme)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b>Saisie au clavier, débogage et fonctions</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Évaluation #1 (15%)</a></li>
-            <li class="" data-nav-id="/semaine6_v2/index.html"><a class="padding" href="/semaine6_v2/index.html"><b>4.</b>Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-e5502eaae07a621463e621cd38d9dd04" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b>Évaluation 1 (25%)</a></li>
-            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b>Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b>Listes de données et chaînes de caractères</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b>Listes et tableaux imbriqués</a><ul id="R-subsections-7bf4c42fec072f49370d66f846070b45" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b>Évaluation 2 (35%)</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
-            <li class="parent " data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b>Visualisation de données avec matplotlib (bases)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu">
-            <li class="active " data-nav-id="/semaine10/atelier/index.html"><a class="padding" href="/semaine10/atelier/index.html">Activité 10 - tracer un graphique de données expérimentales.</a></li></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b>Les tableaux NumPy et graphiques avancés</a><ul id="R-subsections-b4d497b6531d9f49241f6ec42b8e80f7" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b>Manipulation de tableaux avec Pandas</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b>Travail sur le projet final.</a></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Évaluation finale (Projet final)</a></li>
-            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b>Travail sur le projet final</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables, types de données et algorithme)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Évaluation #1 (20%)</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Graphiques SciPy et traitement de fichiers CSV avec Pandas</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine10/atelier/index.html"><a class="padding" href="/semaine10/atelier/index.html">Activité 11 - Traitement de résultats de laboratoire</a></li></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Évaluation #3 (20%)</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet-Partie 1: Analyse et algorithmes</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b> Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Finalisation et Remise du rapport final</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"><b> * </b>Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"><b> * </b>Solutions des ateliers</a></li>
-            <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
@@ -301,8 +330,8 @@ plt.show()
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1752453950" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752453950" defer></script>
-    <script src="/js/theme.min.js?1752453950" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1752613623" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752613623" defer></script>
+    <script src="/js/theme.min.js?1752613623" defer></script>
   </body>
 </html>

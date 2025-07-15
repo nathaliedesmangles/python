@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "<b>15.</b>"
-title = "Évaluation finale (Projet final)"
+title = "Finalisation et Remise du rapport final"
 weight = 115
 +++
 

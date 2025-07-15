@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Manipulation de tableaux avec Pandas :: 420-SN1-RE</title>
+    <title> Projet-Partie 1: Analyse et algorithmes :: 420-SN1-RE</title>
     <link>https://example.org/semaine12/index.html</link>
-    <description>Objectifs d’apprentissage Créer un tableau de données (DataFrame) Lire un fichier CSV Parcourir les lignes d’un tableau Faire des calculs sur les colonnes Ajouter une nouvelle colonne 1. Importer Pandas Avant toute manipulation :&#xA;import pandas as pd&#xD;2. Créer un DataFrame à la main data = { &#34;Nom&#34;: [&#34;Alice&#34;, &#34;Bob&#34;, &#34;Chloé&#34;], &#34;Note&#34;: [88, 72, 91] } df = pd.DataFrame(data)&#xD;On crée un tableau à partir d’un dictionnaire : chaque clé devient une colonne.</description>
+    <description>## Objectifs pédagogiques&#xA;Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): * Comprendre le problème&#xA;* Identifier les variables (types), constantes, formules, fonctions, etc.&#xA;* Élaborer les algorithmes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine12/index.xml" rel="self" type="application/rss+xml" />

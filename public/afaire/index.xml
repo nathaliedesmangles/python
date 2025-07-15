@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>À FAIRE :: 420-SN1-RE</title>
-    <link>https://example.org/afaire/index.html</link>
+    <link>http://localhost:1313/afaire/index.html</link>
     <description>Semaine 1 Cours Mettre à jour infos tableau planification de cours Préparer la démo sur Anaconda et Jupyter Préparer guide installation sur Windows 11: https://www.datacamp.com/fr/tutorial/installing-anaconda-windows Semaine 2 Cours Réviser Activité 2.1 Créer ipynb Activité 2.2 Contexte à confirmer Mise en forme des formule Vérifier ipynb Semaine 3 Cours Activité 3 Semaine 4 Cours Activité 4 Semaine 5 Cours Activité 5 Semaine 6 Cours Activité 6</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/afaire/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/afaire/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Boucles while et for</title>
-      <link>https://example.org/afaire/boucles/index.html</link>
+      <link>http://localhost:1313/afaire/boucles/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/afaire/boucles/index.html</guid>
+      <guid>http://localhost:1313/afaire/boucles/index.html</guid>
       <description>Objectifs de la séance Réviser les structures conditionnelles (if, elif, else) Comprendre les boucles (while, for) Appliquer ces notions à des situations scientifiques simples (physique, chimie, biologie) Plan de la séance 0. Accueil et mise en contexte (10 min) Présentation des objectifs Brève discussion sur ce que les étudiants trouvent difficile Partage d’un fichier Jupyter Notebook ou Google Colab 1. Révision des structures conditionnelles (30 min) Théorie (10 min) Rappel syntaxe : temp = 36.</description>
     </item>
     <item>
       <title>Fonctions personnalisées, docstring et test unitaires et Maths</title>
-      <link>https://example.org/afaire/fonctions/index.html</link>
+      <link>http://localhost:1313/afaire/fonctions/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/afaire/fonctions/index.html</guid>
+      <guid>http://localhost:1313/afaire/fonctions/index.html</guid>
       <description>Contenu :&#xA;Les fonctions personnalisées La documentation (docstring) Les tests unitaires avec PyTest Les fonctions arithmétiques intégrées (min, max, sum, abs, etc.) Le module math Objectifs de la séance (2 heures) À la fin de cette séance, l’étudiant(e) sera capable de :&#xA;Utiliser les fonctions arithmétiques intégrées et du module math Créer ses propres fonctions avec paramètres et valeurs de retour Documenter ses fonctions avec des docstrings Écrire des tests unitaires simples avec pytest Déroulement de la séance 🔹 0:00 – 0:10 | Accueil et plan de la séance Brève discussion : Pourquoi utiliser des fonctions ?</description>
     </item>
     <item>
       <title>Planification</title>
-      <link>https://example.org/afaire/plan/index.html</link>
+      <link>http://localhost:1313/afaire/plan/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/afaire/plan/index.html</guid>
+      <guid>http://localhost:1313/afaire/plan/index.html</guid>
       <description>semaine 1: Cours et environnement de travail semaine 2: intro Python (variables, types, affichage, conversion et input) semaine 3: structures conditionnelles semaine 4: boucles semaine 5: introduction aux listes (base liste sans boucle, test #1 15% –&gt; Semaines 1 à 4 incl.)&#xA;semaine 6: liste et boucles semaine 7: dictionnaires semaine 8: intro aux fonctions (fn intégrées Math) et into aux graphiques semaine 9: tableaux Numpy semaine 10: test #2 20% –&gt; Semaines 5 à 9 incl.</description>
     </item>
     <item>
       <title>break, continue, liste et boucle</title>
-      <link>https://example.org/afaire/break_continue_liste/index.html</link>
+      <link>http://localhost:1313/afaire/break_continue_liste/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/afaire/break_continue_liste/index.html</guid>
+      <guid>http://localhost:1313/afaire/break_continue_liste/index.html</guid>
       <description>Objectifs de la séance Apprendre à arrêter une boucle selon une condition. Apprendre à créer et manipuler une liste. Apprendre à parcourir des listes ou des chaînes de caractères avec la boucle for. Partie 1 – Arrêter une boucle selon une condition Explication Une boucle while ou for continue tant qu’une condition est vraie. On peut aussi utiliser break pour arrêter manuellement une boucle. Démonstration : boucle while valeur = 0 while valeur &lt; 100: print(&#34;Valeur actuelle :&#34;, valeur) if valeur == 50: break # Arrête la boucle valeur += 1&#xD;Démonstration : boucle for for i in range(11):&#x9;# i prends les valeurs 0,1,2,3,4,5,6,7,8,9,10 if i == 5: break&#x9;# Arrête la boucle print(i) # Affiche: 0, 1, 2, 3, 4&#xD;Exercice 1 Demander à l’utilisateur de saisir des températures (float).</description>
     </item>
     <item>
       <title>Débogage pas à pas</title>
-      <link>https://example.org/afaire/debogage/index.html</link>
+      <link>http://localhost:1313/afaire/debogage/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/afaire/debogage/index.html</guid>
+      <guid>http://localhost:1313/afaire/debogage/index.html</guid>
       <description>Objectifs de la séance (2h) Comprendre comment fonctionne le débogueur dans PyCharm. Apprendre à utiliser les points d’arrêt (breakpoints), la fenêtre des variables, les options Step Over, Step Into, Evaluate Expression, etc. Réviser les structures conditionnelles (if/elif/else) et les boucles (for, while) en les testant pas à pas. Apprendre à identifier les erreurs logiques classiques en sciences (unités, ordre des opérations, initialisation incorrecte, etc.). Plan de la séance (2h) Temps Activité 0:00-0:15 Introduction au débogueur PyCharm (démonstration) 0:15-0:35 Exemple guidé 1 : if/elif/else – température de changement d’état 0:35-1:00 Exercice 1 : Identifier les erreurs dans un modèle de dilatation thermique 1:00-1:20 Exemple guidé 2 : boucle for – somme des masses d’échantillons 1:20-1:40 Exercice 2 : Corriger une boucle while mal conditionnée (demi-vie radioactive) 1:40-2:00 Défi final : simulation simplifiée de chute libre avec erreur à trouver Outils PyCharm installé.</description>
     </item>
     <item>
       <title>Écrire un notebook Python bien structuré</title>
-      <link>https://example.org/afaire/markdown/index.html</link>
+      <link>http://localhost:1313/afaire/markdown/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/afaire/markdown/index.html</guid>
+      <guid>http://localhost:1313/afaire/markdown/index.html</guid>
       <description>Voici une leçon concise et essentielle sur la rédaction d’un notebook Jupyter clair et bien structuré en Python, avec des explications adaptées à des étudiants de première session en sciences de la nature.&#xA;🧾 Leçon : 🎯 Objectifs Utiliser le Markdown pour structurer les sections du notebook Séparer clairement la théorie, le code et l’interprétation Ajouter des commentaires dans le code S’assurer que toutes les cellules s’exécutent sans erreur, du haut vers le bas 1.</description>
     </item>
     <item>
       <title>L’écriture et la lecture de données (csv)</title>
-      <link>https://example.org/afaire/lecture_ecriture_csv_numpy/index.html</link>
+      <link>http://localhost:1313/afaire/lecture_ecriture_csv_numpy/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/afaire/lecture_ecriture_csv_numpy/index.html</guid>
+      <guid>http://localhost:1313/afaire/lecture_ecriture_csv_numpy/index.html</guid>
       <description>Programmation scientifique en Python — Leçon : Fichiers, Tableaux et Visualisation 1. Lire et écrire des fichiers de données (.csv) Les fichiers .csv (Comma-Separated Values) permettent de stocker des tableaux de données.&#xA;Écrire un fichier .csv with open(&#34;donnees.csv&#34;, &#34;w&#34;) as f: f.write(&#34;Nom,Âge\n&#34;) f.write(&#34;Alice,20\n&#34;) f.write(&#34;Bob,22\n&#34;)&#xD;Lire un fichier .csv with open(&#34;donnees.csv&#34;, &#34;r&#34;) as f: contenu = f.read() print(contenu)&#xD;Pour des données numériques, on peut utiliser numpy.savetxt() et numpy.loadtxt() : import numpy as np # Sauvegarder un tableau tableau = np.</description>
     </item>
     <item>
       <title>Boucler sur un tableau 2D</title>
-      <link>https://example.org/afaire/boucler_tableaux2d/index.html</link>
+      <link>http://localhost:1313/afaire/boucler_tableaux2d/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/afaire/boucler_tableaux2d/index.html</guid>
+      <guid>http://localhost:1313/afaire/boucler_tableaux2d/index.html</guid>
       <description>Qu’est-ce qu’un tableau 2D ? C’est une liste de listes.&#xA;Exemple d’un tableau 3 lignes × 4 colonnes rempli de 0 :&#xA;tableau = [ [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0] ]&#xD;Chaque sous-liste représente une ligne.&#xA;Boucler sur les lignes (1 niveau) for ligne in tableau: print(ligne)&#xD;➡ On affiche chaque ligne entière.&#xA;Boucler sur chaque élément (2 niveaux) Pour accéder à chaque case du tableau, on utilise deux boucles imbriquées :</description>
     </item>
     <item>
       <title>Maths secondaire 3</title>
-      <link>https://example.org/afaire/maths/index.html</link>
+      <link>http://localhost:1313/afaire/maths/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/afaire/maths/index.html</guid>
+      <guid>http://localhost:1313/afaire/maths/index.html</guid>
       <description>Problème : Probabilité que la fléchette atteigne la zone blanche Structure de la cible : Zone noire : cercle de rayon 2 cm Zone blanche : anneau entre rayon 2 cm et 3 cm Zone grise : anneau entre rayon 3 cm et 6 cm Étape 1 — Aire totale de la cible La cible est un disque de rayon 6 cm : Aire totale = π × 6² = 36π cm²</description>
     </item>
   </channel>

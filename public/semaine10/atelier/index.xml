@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Activité 10 - tracer un graphique de données expérimentales. :: 420-SN1-RE</title>
+    <title>Activité 11 - Traitement de résultats de laboratoire :: 420-SN1-RE</title>
     <link>https://example.org/semaine10/atelier/index.html</link>
-    <description>Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.&#xA;Activité : Courbe de refroidissement d’un liquide Contexte&#xA;Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.&#xA;Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.</description>
+    <description>Objectif pédagogique Apprendre à lire et traiter un fichier contenant des données expérimentales, effectuer des calculs simples, et produire un résumé statistique à l’aide de Python.&#xA;Exercice 1 : Analyse de données de température Contexte : Un technicien a mesuré la température d’un liquide toutes les 5 minutes pendant 30 minutes. Les données sont enregistrées dans un fichier CSV.&#xA;Étapes :&#xA;Télécharger et lire le fichier donnees_temp.csv fourni par l’enseignant.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine10/atelier/index.xml" rel="self" type="application/rss+xml" />

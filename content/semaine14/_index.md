@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "<b>14.</b>"
-title = "Travail sur le projet final."
+title = " Projet-Partie 3: Représentation graphique avancée"
 weight = 114
 +++
 

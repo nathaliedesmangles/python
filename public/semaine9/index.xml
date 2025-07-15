@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Évaluation 2 (35%) :: 420-SN1-RE</title>
+    <title> Tableaux NumPy :: 420-SN1-RE</title>
     <link>https://example.org/semaine9/index.html</link>
     <description>Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :&#xA;Comprendre le rôle de NumPy pour le calcul scientifique rapide avec des tableaux. Utiliser Pandas pour manipuler des tableaux de données (DataFrame). Charger des données à partir d’un fichier CSV et faire des analyses simples. Appliquer des opérations mathématiques et statistiques de base. Pourquoi utiliser NumPy et Pandas? Python est très puissant pour l’analyse de données scientifiques.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine9/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Activité 9 - Analyse de données environnementales</title>
+      <title>Activité 9</title>
       <link>https://example.org/semaine9/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine9/atelier/index.html</guid>

@@ -37,9 +37,6 @@
     <loc>https://example.org/outils_dev/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine2/atelier/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/outils_dev/onedrive/index.html</loc>
   </url>
   <url>
@@ -67,19 +64,10 @@
     <loc>https://example.org/regles/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine3/atelier/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/separateur_section/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6_v2/atelier/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine6_v2/atelier/solution/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine6/atelier/index.html</loc>
+    <loc>https://example.org/semaine5/atelier/solution/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine6/atelier/solution/index.html</loc>
@@ -88,19 +76,7 @@
     <loc>https://example.org/semaine7/dictionnaires/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine7/atelier/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine8/atelier/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine9/atelier/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/cours/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine10/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine1/index.html</loc>
@@ -112,22 +88,34 @@
     <loc>https://example.org/semaine2/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine2/atelier/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine3/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine3/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine4/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6_v2/index.html</loc>
+    <loc>https://example.org/semaine5/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine5/index.html</loc>
+    <loc>https://example.org/semaine5/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine6/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine6/atelier/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine7/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine7/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine8/index.html</loc>
@@ -136,13 +124,19 @@
     <loc>https://example.org/semaine9/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine9/atelier/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine10/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine11/atelier/index.html</loc>
+    <loc>https://example.org/semaine11/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine11/index.html</loc>
+    <loc>https://example.org/semaine10/atelier/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine12/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine12/exercices_preparatoires/index.html</loc>
@@ -151,22 +145,19 @@
     <loc>https://example.org/semaine12/grille/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine12/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/semaine12/notions_utiles_necessaires/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine12/projet_integrateur/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine13/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine14/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine15/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine13/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine13/projet1/index.html</loc>
@@ -212,9 +203,6 @@
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/12_scipy/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Présentation du cours et l&#39;environnement de travail :: 420-SN1-RE</title>
+    <title> Présentation du cours et l&#39;environnement de travail :: 420-SN1-RE</title>
     <link>https://example.org/semaine1/index.html</link>
     <description>Objectifs pédagogiques À la fin de la leçon, vous devrez être en mesure de :&#xA;Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Créer une structure de dossiers pour le cours. Comprendre l’interface de VS Code Ouvrir un dossier et un fichier (.ipynb) dans VS Code. Créer un fichier .ipynb dans VS Code. Écrire et exécuter du code Python simple.</description>
     <generator>Hugo</generator>

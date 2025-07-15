@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Atelier 7 :: 420-SN1-RE</title>
+    <title>Activité 7 :: 420-SN1-RE</title>
     <link>https://example.org/semaine7/atelier/index.html</link>
-    <description></description>
+    <description>Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.&#xA;Activité : Courbe de refroidissement d’un liquide Contexte&#xA;Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.&#xA;Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine7/atelier/index.xml" rel="self" type="application/rss+xml" />

@@ -31,7 +31,7 @@ Les cours			100
 +++
 chapter = true
 pre = "<b>1.</b>"
-title = "Présentation du cours et l'environnement de travail"
+title = " Présentation du cours et l'environnement de travail"
 weight = 101
 +++
 

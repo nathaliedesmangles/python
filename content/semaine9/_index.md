@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "<b>9.</b>"
-title = "Évaluation 2 (35%)"
+title = " Tableaux NumPy"
 weight = 109
 +++
  

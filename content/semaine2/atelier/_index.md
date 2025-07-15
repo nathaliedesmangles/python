@@ -1,6 +1,6 @@
 +++
 title = "Atelier 2"
-weight = 21
+weight = 102
 +++
 
 Copier les exercices qui utilisent input pour les mettre dans l'atelier de la semaine 3

@@ -1,70 +1,87 @@
 +++
-title = "Activité 10 - tracer un graphique de données expérimentales."
-weight = 101
+title = "Activité 11 - Traitement de résultats de laboratoire"
+weight = 111
 +++
 
-## Objectif :
 
-Utiliser `matplotlib` pour tracer une courbe représentant l'évolution de la température dans le temps, à partir de données expérimentales.
+## Objectif pédagogique
+
+Apprendre à lire et traiter un fichier contenant des données expérimentales, effectuer des calculs simples, et produire un résumé statistique à l’aide de Python.
 
 ---
 
-## Activité : Courbe de refroidissement d’un liquide
+## Exercice 1 : Analyse de données de température
 
-**Contexte**
+**Contexte** : Un technicien a mesuré la température d’un liquide toutes les 5 minutes pendant 30 minutes. Les données sont enregistrées dans un fichier CSV.
 
-Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
+**Étapes :**
+
+1. **Télécharger et lire le fichier `donnees_temp.csv`** fourni par l’enseignant.
+2. **Afficher les données ligne par ligne**, avec mise en forme : « À t = 10 min, T = 25.8 °C »
+3. **Calculer la température moyenne à partir des données lues.**
+4. **Écrire un nouveau fichier `analyse.csv`** qui contient :
+
+   * Une colonne « temps »
+   * Une colonne « température »
+   * Une colonne « écart à la moyenne »
+5. **Bonus** : Tracer les données avec matplotlib (si le temps le permet).
 
 
-### Consignes
+**Éléments d’évaluation formative (en équipe)**
 
-1. Importer la bibliothèque `matplotlib.pyplot` et configurer l'affichage dans Jupyter Notebook.
-2. Tracer un graphique en ligne (`line plot`) de la température en fonction du temps.
-3. Ajouter un **titre**, des **étiquettes d’axes** et une **grille**.
-4. Ajouter un **point de départ** et un **point final** avec des marqueurs distinctifs.
-5. En bonus : ajouter une ligne horizontale représentant la température ambiante (ex. 22 °C).
+* Capacité à extraire et utiliser les données du fichier
+* Respect des bonnes pratiques (indentation, noms de variables, commentaires)
+* Clarté du fichier CSV généré
+* Travail collaboratif dans la répartition des tâches
 
-**Travail d’équipe** (formative)
-* Discuter des anomalies possibles dans les données.
-* Comment cette courbe pourrait-elle être utilisée pour modéliser un phénomène (loi de Newton du refroidissement, par exemple) ?
+---
 
-### Données fournies
+## Exercice 2 : Impact de la température sur le pH de l’eau
 
-Les données sont fournies sous forme de deux listes Python :
+**Contexte :**
+Une équipe d’étudiants en chimie a réalisé une série de mesures du pH d’un échantillon d’eau à différentes températures, à raison de 3 mesures par température. Les données ont été consignées dans un fichier CSV.
 
-```python
-# Temps en minutes
-temps = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
+**Contenu du fichier `ph_mesures.csv` :**
 
-# Température en degrés Celsius
-temperature = [90, 78, 69, 62, 56, 52, 48, 45, 43, 41, 40, 39.5, 39]
+```
+Température (°C),Mesure1,Mesure2,Mesure3
+10,7.12,7.10,7.13
+15,7.05,7.06,7.04
+20,6.98,6.97,6.99
+25,6.92,6.91,6.93
+30,6.85,6.86,6.87
 ```
 
-<!--
-### Exemple de solution attendue
+## Consignes
 
-```python
-import matplotlib.pyplot as plt
+1. **Lecture du fichier :**
 
-temps = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
-temperature = [90, 78, 69, 62, 56, 52, 48, 45, 43, 41, 40, 39.5, 39]
+   * Utiliser Python (avec `csv` ou `pandas`) pour lire les données.
 
-plt.figure(figsize=(8, 5))
-plt.plot(temps, temperature, marker='o', linestyle='-', color='blue', label="Température")
-plt.axhline(y=22, color='red', linestyle='--', label='Température ambiante')
+2. **Traitement des données :**
 
-plt.title("Refroidissement d’un liquide dans le temps")
-plt.xlabel("Temps (minutes)")
-plt.ylabel("Température (°C)")
-plt.grid(True)
-plt.legend()
+   * Calculer la moyenne du pH pour chaque température.
+   * Conserver les résultats dans une nouvelle structure de données (liste ou dictionnaire).
 
-plt.scatter([0], [90], color='green', label='Départ', zorder=5)
-plt.scatter([60], [39], color='black', label='Fin', zorder=5)
+3. **Analyse simple :**
 
-plt.legend()
-plt.show()
-```
--->
+   * Identifier s’il y a une tendance du pH en fonction de la température.
+   * Ajouter une colonne "Moyenne\_pH" aux données.
+
+4. **Affichage des résultats :**
+
+   * Afficher les résultats dans une table lisible.
+   * Écrire les résultats dans un nouveau fichier CSV : `ph_moyennes.csv`.
+
+5. **Extension (facultative) :**
+
+   * Tracer un graphique température vs moyenne du pH à l’aide de `matplotlib`.
+
+**Livrable attendu :**
+Un script Python complet et bien commenté, ainsi qu’un fichier CSV de sortie contenant les moyennes.
+
+**Discussion en équipe (20 minutes) :**
+En petits groupes (2-3), comparer les résultats, discuter de la fiabilité des mesures et de l’impact de la température sur le pH de l’eau. Chaque équipe propose une conclusion en 2-3 phrases à partager au groupe.
+
 
 

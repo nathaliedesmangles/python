@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "<b>2.</b>"
-title = "Introduction à Python (Variables, types de données et algorithme)"
+title = " Introduction à Python (Variables, types de données et algorithme)"
 weight = 102
 +++
 

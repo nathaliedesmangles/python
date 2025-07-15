@@ -14,20 +14,16 @@ L’élève est introduit à la résolution de problèmes à l’aide d’algori
 
 ## Objectifs du cours
 
-- Apprendre les bases de la programmation en Python
-- Appliquer la programmation à des problèmes scientifiques (mathématiques, physique, biologie, etc.)
-- Automatiser des calculs et analyser des données expérimentales
-- Développer un raisonnement algorithmique et structuré
-- Maîtriser l'utilisation d'Anaconda et de Jupyter Notebook pour le développement scientifique
 - Comprendre la gestion des fichiers et dossiers sous Windows
-- Introduire les techniques de débogage et de traçage d'exécution
+- Apprendre les bases de la programmation en Python.
+- Introduire les techniques de débogage et de traçage d'exécution.
+- Appliquer la programmation à des problèmes scientifiques (mathématiques, physique, biologie, etc.).
+- Automatiser des calculs et analyser des données expérimentales.
+- Développer un raisonnement algorithmique et structuré.
+- Maîtriser l'utilisation de Jupyter Notebook pour le développement scientifique.
+
 
 ## Planification du cours et règlements du cégep
 
 [Plan du cours](./A25_420-SN1-RE_ND.pdf)
 
-
-## Évaluation intégratrice
-
-- Projet: Simulation scientifique (20%)
-- Examen: Question sur la simulation (20%)

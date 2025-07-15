@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Listes et tableaux imbriqués :: 420-SN1-RE</title>
+    <title> Évaluation #2 (25%) :: 420-SN1-RE</title>
     <link>https://example.org/semaine8/index.html</link>
-    <description>Objectifs d’apprentissage Créer des listes Accéder à un élément dans une liste ou un tableau 2D (liste de listes) Utiliser des boucles imbriquées pour parcourir un tableau Ajouter des conditions dans les boucles 1. Liste simple Une liste est un ensemble de valeurs entre crochets [].&#xA;notes = [78, 85, 92] print(notes[1]) # 85 (indice commence à 0)&#xD;Chaque valeur d’une liste est est positionné par indice, en commençant par l’indice 0.</description>
+    <description>Informations ⦁&#x9;Date:&#x9;Semaine #8 (Voir le calendrier) ⦁&#x9;Matière: Semaines 5 à 7 inclusivement ⦁&#x9;Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) ⦁&#x9;Format:&#x9;À confirmer</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine8/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Activité 8 - tableau périodique, molécule, données biologiques</title>
-      <link>https://example.org/semaine8/atelier/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine8/atelier/index.html</guid>
-      <description>Sujet Thème : Structures de données (listes et dictionnaires) Durée prévue : 1 h 30 à 1 h 50 Travail en équipe de 2 ou 3&#xA;Objectifs pédagogiques Savoir représenter des entités scientifiques sous forme de structures de données Python Utiliser les dictionnaires pour associer des clés et des valeurs significatives Accéder et modifier les éléments d’une structure Appliquer ces compétences à des situations authentiques en sciences Contexte Les structures de données comme les dictionnaires et les listes sont très utiles pour représenter de l’information scientifique structurée.</description>
-    </item>
   </channel>
 </rss>

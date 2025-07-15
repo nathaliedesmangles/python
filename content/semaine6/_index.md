@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "<b>6.</b>"
-title = "Répéter avec `for` et `while`"
+title = " Répéter avec `for` et `while`"
 weight = 106
 +++
 

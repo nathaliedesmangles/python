@@ -1,4 +1,70 @@
 +++
-title = "Atelier 7"
-weight = 74
+title = "Activité 7"
+weight = 107
 +++
+
+## Objectif :
+
+Utiliser `matplotlib` pour tracer une courbe représentant l'évolution de la température dans le temps, à partir de données expérimentales.
+
+---
+
+## Activité : Courbe de refroidissement d’un liquide
+
+**Contexte**
+
+Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
+
+
+### Consignes
+
+1. Importer la bibliothèque `matplotlib.pyplot` et configurer l'affichage dans Jupyter Notebook.
+2. Tracer un graphique en ligne (`line plot`) de la température en fonction du temps.
+3. Ajouter un **titre**, des **étiquettes d’axes** et une **grille**.
+4. Ajouter un **point de départ** et un **point final** avec des marqueurs distinctifs.
+5. En bonus : ajouter une ligne horizontale représentant la température ambiante (ex. 22 °C).
+
+**Travail d’équipe** (formative)
+* Discuter des anomalies possibles dans les données.
+* Comment cette courbe pourrait-elle être utilisée pour modéliser un phénomène (loi de Newton du refroidissement, par exemple) ?
+
+### Données fournies
+
+Les données sont fournies sous forme de deux listes Python :
+
+```python
+# Temps en minutes
+temps = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
+
+# Température en degrés Celsius
+temperature = [90, 78, 69, 62, 56, 52, 48, 45, 43, 41, 40, 39.5, 39]
+```
+
+<!--
+### Exemple de solution attendue
+
+```python
+import matplotlib.pyplot as plt
+
+temps = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
+temperature = [90, 78, 69, 62, 56, 52, 48, 45, 43, 41, 40, 39.5, 39]
+
+plt.figure(figsize=(8, 5))
+plt.plot(temps, temperature, marker='o', linestyle='-', color='blue', label="Température")
+plt.axhline(y=22, color='red', linestyle='--', label='Température ambiante')
+
+plt.title("Refroidissement d’un liquide dans le temps")
+plt.xlabel("Temps (minutes)")
+plt.ylabel("Température (°C)")
+plt.grid(True)
+plt.legend()
+
+plt.scatter([0], [90], color='green', label='Départ', zorder=5)
+plt.scatter([60], [39], color='black', label='Fin', zorder=5)
+
+plt.legend()
+plt.show()
+```
+-->
+
+
