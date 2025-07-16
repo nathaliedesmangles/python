@@ -30,10 +30,6 @@ weight = 10
 > Chaque semaine, **au plus tard à la fin du cours**, à moins d'un avis contraire de l'enseignante.
 
 
-* Faut-il remettre les ateliers ?
-> **Oui**. Il ne sont pas notés, mais ils servent à ce que vous pratiquez et à voir où sont les difficultés des étudiants.
-
-
 * Puis-je avoir les solutions des exercices des cours ?
 > **Oui**. Ils sont faits en classe et ajoutés [ICI](../solutions_exercices) au fur et à mesure.
 
@@ -48,22 +44,18 @@ weight = 10
 
 
 * Qu'avons-nous droit pour les examens ?
-> **Évaluation 1** : 1 feuille recto-verso (manuscrite ou imprimée).  
-> **Évaluation 2** : 1 feuille recto-verso (manuscrite ou imprimée).  
-> **Examen final**: Le site web du cours.
+> [Évaluation 1](../semaine4/)
+> [Évaluation 2](../semaine8/)  
+> [Évaluation 3](../semaine11/)      
 
 
 * Combien vaut l'examen ?
-> **Évaluation 1** : 25%  
-> **Évaluation 2** : 35%  
-> **Examen final**: 25%
+> **Évaluation 1** : 20%  
+> **Évaluation 2** : 25%  
+> **Évaluation 3** : 20% 
 
 
 * Sur quoi portera l'examen ?
-> **Évaluation 1** : La matière des 4 premières semaines inclusivement.   
-> **Évaluation 2** : La matière des semaines 6 à 9 inclusivement.   
-> **Examen final**: Toute la matière, mais accès sur le projet. 
-
-
-* Le projet (fichier .ipynb) est-il noté ?
-> **Oui**. Il compte pour 15% de la note finale
+> **Évaluation 1** : La matière des 3 premières semaines inclusivement.   
+> **Évaluation 2** : La matière des semaines 5 à 7 inclusivement.    
+> **Évaluation 3** : La matière des semaines 9 et 10. 

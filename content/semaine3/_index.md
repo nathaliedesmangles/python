@@ -148,7 +148,7 @@ def aire_rectangle(longueur, largeur):
     print(f"L'aire du rectangle de longueur {longueur} et de largeur {largeur} est {aire} cm^2")
 ```
 
-> Cette fonction reçoit deux valeurs, calcule l’aire et **affiche** l'aire.
+> Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et **affiche** l'aire.
 
 **Une fonction qui retourne le résultat** :
 
@@ -166,7 +166,7 @@ def aire_rectangle(longueur, largeur):
     return aire
 ```
 
-> Cette fonction reçoit deux valeurs, calcule l’aire et la **retourne**.
+> Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et la **retourne**.
 
 #### Le mot-clé `return`
 
@@ -181,6 +181,8 @@ def aire_rectangle(longueur, largeur):
 ```python
 aire_rectangle(5, 2)
 ```
+
+> Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.
 
 **Utilisation de la fonction `aire_rectangle()` qui **retourne** l'aire**
 

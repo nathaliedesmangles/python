@@ -142,8 +142,7 @@ Numpy, Matplotlib, SciPy [Tutoriel pour installer des extensions sur VS Code](ht
 
 ## Références
 
-* [Tutorial: Get started with Visual Studio Code](https://code.visualstudio.com/docs/getstarted/getting-started?utm_source=chatgpt.com)
-* [Interface de VS Code](https://code.visualstudio.com/docs/getstarted/userinterface?utm_source=chatgpt.com)
-* [Getting started with Visual Studio Code](https://code.visualstudio.com/docs/introvideos/basics?utm_source=chatgpt.com)  
-* [My first VS Code Extension](https://www.reddit.com/r/vscode/comments/og0mo4/snipped_my_first_vs_code_extension_create_fancy/?utm_source=chatgpt.com)
-* [Trucs & Astuces](https://code.visualstudio.com/docs/getstarted/tips-and-tricks?utm_source=chatgpt.com)
+* [Tutorial: Get started with Visual Studio Code](https://code.visualstudio.com/docs/getstarted/getting-started)
+* [Interface de VS Code](https://code.visualstudio.com/docs/getstarted/userinterface)
+* [Getting started with Visual Studio Code](https://code.visualstudio.com/docs/introvideos/basics)  
+* [Trucs & Astuces](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
