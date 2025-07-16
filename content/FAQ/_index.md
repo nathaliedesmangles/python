@@ -44,18 +44,21 @@ weight = 10
 
 
 * Qu'avons-nous droit pour les examens ?
-> [Évaluation 1](../semaine4/)
-> [Évaluation 2](../semaine8/)  
-> [Évaluation 3](../semaine11/)      
+> [Évaluation 1](../semaine4/)  
+> [Évaluation 2](../semaine8/)   
+> [Évaluation 3](../semaine11/)       
 
 
 * Combien vaut l'examen ?
-> **Évaluation 1** : 20%  
-> **Évaluation 2** : 25%  
-> **Évaluation 3** : 20% 
+> [Évaluation 1](../semaine4/)  
+> [Évaluation 2](../semaine8/)   
+> [Évaluation 3](../semaine11/)    
 
 
 * Sur quoi portera l'examen ?
-> **Évaluation 1** : La matière des 3 premières semaines inclusivement.   
-> **Évaluation 2** : La matière des semaines 5 à 7 inclusivement.    
-> **Évaluation 3** : La matière des semaines 9 et 10. 
+> [Évaluation 1](../semaine4/)  
+> [Évaluation 2](../semaine8/)   
+> [Évaluation 3](../semaine11/)   
+
+* Combien vaut le projet final ?
+> [Projet](../semaine12/)  

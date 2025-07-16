@@ -22,21 +22,21 @@ Comprendre l’utilité des variables en programmation. Définir et utiliser des
     <meta itemprop="name" content=" Introduction à Python (Variables, types de données et algorithme) :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs d’apprentissage À la fin de la leçon, vous devrez être en mesure de :
 Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.">
-    <meta itemprop="wordCount" content="1923">
+    <meta itemprop="wordCount" content="1956">
     <title> Introduction à Python (Variables, types de données et algorithme) :: 420-SN1-RE</title>
     <link href="/semaine2/index.xml" rel="alternate" type="application/rss+xml" title=" Introduction à Python (Variables, types de données et algorithme) :: 420-SN1-RE">
-    <link href="/images/logo.png?1752667659" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752667659" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752667659" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752667659" rel="stylesheet">
-    <link href="/css/theme.min.css?1752667659" rel="stylesheet">
-    <link href="/css/format-html.min.css?1752667659" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1752667659" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1752667659" defer></script>
-    <script src="/js/lunr/lunr.min.js?1752667659" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1752667659" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1752667659" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1752667659" defer></script>
-    <script src="/js/search.min.js?1752667659" defer></script>
+    <link href="/images/logo.png?1752695771" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752695771" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752695771" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752695771" rel="stylesheet">
+    <link href="/css/theme.min.css?1752695771" rel="stylesheet">
+    <link href="/css/format-html.min.css?1752695771" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1752695771" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1752695771" defer></script>
+    <script src="/js/lunr/lunr.min.js?1752695771" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1752695771" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1752695771" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1752695771" defer></script>
+    <script src="/js/search.min.js?1752695771" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +46,7 @@ Comprendre l’utilité des variables en programmation. Définir et utiliser des
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1752667659";
+      window.relearn.index_js_url="/searchindex.en.js?1752695771";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,6 +92,7 @@ Comprendre l’utilité des variables en programmation. Définir et utiliser des
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
+    <link href="/css/custom.css?1752695771" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine2/index.html">
     <div id="R-body" class="default-animation">
@@ -146,6 +147,7 @@ Comprendre l’utilité des variables en programmation. Définir et utiliser des
       </ul>
     </li>
     <li><a href="#exercice-3---calcul-dintérêts-simple-et-composé">Exercice #3 - Calcul d&rsquo;intérêts simple et composé</a></li>
+    <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
   </ul>
 </nav>
                 </div>
@@ -318,7 +320,7 @@ Comprendre l’utilité des variables en programmation. Définir et utiliser des
 
 <details open class=" box cstyle notices cyan">
   <summary class="box-label" tabindex="-1">
-    Notez&hellip;
+    Notez
   </summary>
   <div class="box-content">
 <p>Les differents résultats pour les trois types de division (en <strong>gras</strong> dans le tableau).</p>
@@ -431,15 +433,12 @@ Comprendre l’utilité des variables en programmation. Définir et utiliser des
 </ul>
 <p><strong>Étape 3</strong>: Écrire la formule</p>
 <span class="math align-center">Loi de Boyle : 
-   $P_1 \cdot V_1 = P_2 \cdot V_2$</span>
-<br>
-<span class="math align-center">Isoler P2: 
-   $P_2 = \frac{P_1 \cdot V_1}{V_2}$</span>
+   $P_1 \cdot V_1 = P_2 \cdot V_2$ &nbsp Donc $P_2 = \frac{P_1 \cdot V_1}{V_2}$</span>
 <p><strong>Étape 4</strong>: Écrire un algorithme clair<br>
 <strong>Format 1</strong>: algorithme en phrases simples et claires</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-plaintxt" data-lang="plaintxt"> * Définir les deux volumes V1 et V2 (initial et final) et la pression initiale P1.
- * Calculer la pression finale à l&#39;aide de la formule `P2 = (P1 * V1) / V2`.
- * Afficher la pression finale.</code></pre></div>
+ * Calculer la pression finale à l&#39;aide de la formule P2 = (P1 * V1) / V2.
+ * Afficher la pression finale P2.</code></pre></div>
 <p>Ou
 <strong>Format 2</strong>: algorithme en pseudo-code</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-plaintxt" data-lang="plaintxt">Début
@@ -497,9 +496,10 @@ Fin</code></pre></div>
 <p><strong>Exemple 2 à faire à la maison</strong> : Calculer la force gravitationnelle entre deux masses.</p>
 </blockquote>
 
-<details open class=" box cstyle notices cyan">
-  <summary class="box-label" tabindex="-1">
-    À retenir
+<details class=" box cstyle notices blue expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    À retenir&hellip;
   </summary>
   <div class="box-content">
 <ul>
@@ -527,20 +527,21 @@ Fin</code></pre></div>
 <hr>
 <h2 id="exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</h2>
 
-<details open class=" box cstyle notices cyan">
-  <summary class="box-label" tabindex="-1">
-    Recommandé
+<details class=" box cstyle notices magenta expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    Organisation des fichiers recommandée&hellip;
   </summary>
   <div class="box-content">
 <p>Pour chaque exercice, créez un nouveau notebook (par ex.: <code>exercice1.ipynb</code>, <code>exercice2.ipynb</code>,&hellip;, <code>exercice4.ipynb</code>) dans un <strong>sous-dossier <code>exercices</code></strong> dans le dossier de la <strong>semaine2</strong>.
-<a href="#R-image-5abd6e59ca9f7817a293eb778560f041" class="lightbox-link"><img alt="Dossier exercices" class="lazy lightbox figure-image" loading="lazy" src="/semaine2/dossier-exercices.png?width=25vw" style=" height: auto; width: 25vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5abd6e59ca9f7817a293eb778560f041"><img alt="Dossier exercices" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine2/dossier-exercices.png?width=25vw"></a></p>
+<a href="#R-image-7c920c2037dcae2db487ef42edf9a123" class="lightbox-link"><img alt="Dossier exercices" class="lazy lightbox figure-image" loading="lazy" src="/semaine2/dossier-exercices.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c920c2037dcae2db487ef42edf9a123"><img alt="Dossier exercices" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine2/dossier-exercices.png?width=25vw"></a></p>
   </div>
 </details>
 <h3 id="exercice-1---calcul-de-probabilité">Exercice 1 - Calcul de probabilité</h3>
 <p>On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles.
-<a href="#R-image-66479935907433d851002fe3ebd67f40" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/semaine2/probabilite.png?width=30vw" style=" height: auto; width: 30vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-66479935907433d851002fe3ebd67f40"><img class="lazy lightbox lightbox-image" loading="lazy" src="/semaine2/probabilite.png?width=30vw"></a></p>
+<a href="#R-image-cbfe9d3532a9c97157cc5194046e2cf2" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/semaine2/probabilite.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cbfe9d3532a9c97157cc5194046e2cf2"><img class="lazy lightbox lightbox-image" loading="lazy" src="/semaine2/probabilite.png?width=30vw"></a></p>
 <ul>
 <li>Un rectangle contenant <strong>6 cercles isométriques</strong> (même taille),</li>
 <li>Ils sont organisés en <strong>2 rangées</strong> de <strong>3 cercles</strong>,</li>
@@ -604,6 +605,12 @@ b) En déduire quel est le meilleur placement sur 10 ans.</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Valeur avec intérêt simple : 132.00 $
 Valeur avec intérêt composé : 134.87 $
 Écart relatif : 2.17 %</code></pre></div>
+<hr>
+<h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
+<ol>
+<li>Lire la matière sur <a href="/semaine3/index.html">La saisie au clavier, fonctions et débogage</a></li>
+<li>Faire les <a href="/semaine3/index.html#exercices-à-faire-avant-le-cours">exercices se trouvant à la fin de la leçon 3</a></li>
+</ol>
 
   <footer class="footline">
   </footer>
@@ -674,8 +681,8 @@ Valeur avec intérêt composé : 134.87 $
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b> Projet-Partie 3: Représentation graphique avancée</a></li>
             <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Finalisation et Remise du rapport final</a></li>
-            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"><b> * </b>Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"><b> * </b>Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
@@ -693,8 +700,8 @@ Valeur avec intérêt composé : 134.87 $
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1752667659" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752667659" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1752695771" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752695771" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -706,7 +713,7 @@ Valeur avec intérêt composé : 134.87 $
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1752667659"></script>
-    <script src="/js/theme.min.js?1752667659" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1752695771"></script>
+    <script src="/js/theme.min.js?1752695771" defer></script>
   </body>
 </html>

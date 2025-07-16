@@ -8,6 +8,8 @@ home = [ "HTML", "RSS", "SEARCH"]
 [params]
   # Chemin relatif à /static
   logo = "images/logo.png"
+  # Pour la sidebar
+  custom_css = ["css/custom.css"]
 
   # Hide the Home entry.
   # Default: false

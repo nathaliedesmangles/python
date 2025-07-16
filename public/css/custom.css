@@ -1,0 +1,15 @@
+/* Couleur de fond de la zone de navigation latérale */
+#sidebar {
+    background-color: #2e3b4e; /* Choisis ta couleur */
+}
+
+/* Couleur des liens dans le menu */
+#sidebar .nav a {
+    color: #ffffff; /* Texte des liens */
+}
+
+/* Couleur au survol */
+#sidebar .nav a:hover {
+    background-color: #40526b;
+    color: #ffffff;
+}

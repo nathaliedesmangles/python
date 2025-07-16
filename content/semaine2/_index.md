@@ -94,7 +94,7 @@ aire = 3.14 * rayon ** 2  # formule de l’aire
 | `%`       | **Modulo** (reste)              | `7 % 2`  | `1`      |
 | `**`      | Puissance                       | `3 ** 2` | `9`      |
 
-{{% notice style="cyan" title="Notez..." %}}
+{{% notice style="cyan" title="Notez" %}}
 Les differents résultats pour les trois types de division (en **gras** dans le tableau).
 * [Division et division entière](http://w3.uqo.ca/adavoust/cours/expressions1.html#Division-et-division-enti%C3%A8re)   
 * [Division entière et modulo](http://w3.uqo.ca/adavoust/cours/expressions1.html#Division-enti%C3%A8re-et-modulo)  
@@ -222,22 +222,15 @@ Voyons chacune des étapes plus en détails:
 **Étape 3**: Écrire la formule
 ```math
 Loi de Boyle : 
-   $P_1 \cdot V_1 = P_2 \cdot V_2$
+   $P_1 \cdot V_1 = P_2 \cdot V_2$ &nbsp Donc $P_2 = \frac{P_1 \cdot V_1}{V_2}$
 ```
-<br>
-
-```math
-Isoler P2: 
-   $P_2 = \frac{P_1 \cdot V_1}{V_2}$
-```
-
 
 **Étape 4**: Écrire un algorithme clair  
     **Format 1**: algorithme en phrases simples et claires  
    ```plaintxt
     * Définir les deux volumes V1 et V2 (initial et final) et la pression initiale P1.
-    * Calculer la pression finale à l'aide de la formule `P2 = (P1 * V1) / V2`.
-    * Afficher la pression finale.
+    * Calculer la pression finale à l'aide de la formule P2 = (P1 * V1) / V2.
+    * Afficher la pression finale P2.
    ```
 Ou
    **Format 2**: algorithme en pseudo-code
@@ -312,7 +305,7 @@ Ces tests montrent que :
 > **Exemple 2 à faire à la maison** : Calculer la force gravitationnelle entre deux masses.
 
 
-{{% notice style="cyan" title="À retenir" %}}
+{{% notice style="blue" title="À retenir..." groupid="notice-toggle" expanded="false" %}}
 * Une variable garde une **valeur**.
 * On utilise les **bonnes pratiques** pour nommer nos variables.
 * Les **commentaires** servent à documenter le code.
@@ -331,7 +324,7 @@ Ces tests montrent que :
 
 ## Exercices à faire avant le cours
 
-{{% notice style="cyan" title="Recommandé" %}}
+{{% notice style="magenta" title="Organisation des fichiers recommandée..." groupid="notice-toggle" expanded="false"%}}
 Pour chaque exercice, créez un nouveau notebook (par ex.: `exercice1.ipynb`, `exercice2.ipynb`,..., `exercice4.ipynb`) dans un **sous-dossier `exercices`** dans le dossier de la **semaine2**.
 ![Dossier exercices](./dossier-exercices.png?width=25vw)
 {{% /notice %}}
@@ -425,4 +418,10 @@ Valeur avec intérêt composé : 134.87 $
 Écart relatif : 2.17 %
 ```
 
+---
+
+## À faire avant le prochain cours
+
+1. Lire la matière sur [La saisie au clavier, fonctions et débogage](../semaine3/)
+2. Faire les [exercices se trouvant à la fin de la leçon 3](../semaine3/#exercices-à-faire-avant-le-cours)
 

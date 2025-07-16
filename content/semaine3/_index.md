@@ -8,12 +8,8 @@ weight = 103
 ## Objectifs d'apprentissage
 
 * Gérer les entrées (**saisies au clavier**) d'un programme Python.
-	* Lire des données entrées par l’utilisateur.
-* Utiliser des fonctions prédéfinies.
-* Définir ses propres fonctions avec `def`
-   * Utiliser des paramètres pour envoyer des données.
-   * Retourner un résultat avec `return`.
-   * Comprendre la portée locale des variables.
+* Utiliser des fonctions **prédéfinies**.
+* Définir ses propres fonctions avec `def` (paramètres, `return`, portée locale)
 * Comprendre les messages d'erreurs et à apprendre à déboguer un programme.
 
 ---
@@ -43,7 +39,7 @@ moyenne = (note1 + note2) / 2	==> ERREUR
 
 ![Erreur de type](./erreur_type.png)
 
-{{% notice style="cyan" title="Important" %}}
+{{% notice style="accent" title="Important" %}}
 L'erreur est causée par le fait que la fonction `input()`, transforme toutes les saisies au clavier en **chaine de caractères (`str`)**.
 Si on tape **95** au clavier, pour Python ça devient **"95"**.
 {{% /notice %}}
@@ -70,7 +66,11 @@ print(f"La moyenne des deux notes {note1} et {note2} est: {moyenne}")
 
 ## Qu’est-ce qu’une fonction ?
 
-AJOUTER ANALOGIE
+
+{{% notice style="cyan" title="Analogie dans la vie de touts les jours" %}}
+
+
+{{% /notice %}}
 
 * Une fonction est un **bloc de code réutilisable**. On peut lui donner des **paramètres** (valeurs en entrée) et elle peut renvoyer un **résultat**. 
 * Si une fonction renvoie un résultat, il devra être stocké dans  une variable pour pouvoir être utilisé ailleurs dans le code.
@@ -126,7 +126,7 @@ import math
 4. suivi de deux-points `:`.
 5. Les instructions de la fonction sont sur les lignes d'en dessous, décalées. Ce décalage, permet à Python de reconnaitre le code à exécuter.
 
-{{% notice style="cyan" title="Important" %}}
+{{% notice style="accent" title="Important" %}}
 * Les règles de **nomenclature des variables**, s'appliquent aussi aux noms de fonctions.
 * Entre les parenthèses, on peut indiquer des **paramètres ou pas**, mais les **parenthèses sont obligatoires**.
 {{% /notice %}}
@@ -266,7 +266,7 @@ print("Le temps de chute est", temps "secondes.")
 
 ---
 
-{{% notice style="red" title="Correction attendue" groupid="notice-toggle" expanded="false" %}}
+{{% notice style="magenta" title="Correction attendue" groupid="notice-toggle" expanded="false" %}}
 
 **Erreurs intégrées** :
 
@@ -294,7 +294,7 @@ print("Le temps de chute est", temps, "secondes.")
 ```
 {{% /notice %}}
 
-{{% notice style="cyan" title="À retenir" %}}
+{{% notice style="cyan" title="À retenir" groupid="notice-toggle" expanded="false" %}}
 * Python fourni des fonctions prédéfinies, prêtes à être utiliser (ex: les fonctions du module `math`)
 * `input()` permet de lire une donnée (toujours une chaîne).
 * Il faut convertir avec `int()` ou `float()` pour faire des calculs.
@@ -307,10 +307,10 @@ print("Le temps de chute est", temps, "secondes.")
 
 ---
 
-### Exercices à faire avant le cours:
+### Exercices à faire avant le cours
 
 
-{{% notice style="cyan" title="Appel de fonction" %}}
+{{% notice style="magenta" title="Appel de fonction" groupid="notice-toggle" expanded="false" %}}
 Pour chacun des exercices ci-dessous, utilisez (appelez) la fonction crée.
 {{% /notice %}}
 
@@ -387,9 +387,9 @@ print("À l’extérieur :", x)  # Erreur attendue
 
 > Ce programme est censé calculer la surface d’un cône droit à partir du rayon et de la hauteur entrés par l’utilisateur. La formule utilisée est :
 ```math
-> $$
-> \text{Surface} = \pi \cdot r \cdot (r + \sqrt{r^2 + h^2})
-> $$
+$$
+\text{Surface} = \pi \cdot r \cdot (r + \sqrt{r^2 + h^2})
+$$
 ```
 > Toutefois, plusieurs erreurs se sont glissées dans le programme. Utilise des instructions `print()` pour comprendre les erreurs, puis corrige-les une à une.
 
@@ -417,7 +417,7 @@ print("La surface totale du cône est de", resultat "cm²")
 ```
 ---
 
-{{% notice style="red" title="Correction attendue" groupid="notice-toggle" expanded="false" %}}
+{{% notice style="magenta" title="Correction attendue" groupid="notice-toggle" expanded="false" %}}
 **Erreurs à corriger, dans l'ordre**:  
 1. `input()` retourne une **chaîne de caractères** → nécessite une conversion `float()`.
 2. Erreur dans le calcul de `aire_lateral`: `hauteur` au lieu de `hauteur**2`.
@@ -445,3 +445,12 @@ resultat = surface_cone(r, h)
 print("La surface totale du cône est de", resultat, "cm²")
 ```
 {{% /notice %}}
+
+---
+
+## À faire avant le prochain cours
+
+> **RAPPEL**: Semaine prochaine c'est le **premier examen** (15%)
+
+1. Lire la matière sur [Décider avec if, elif, else et les opérateurs](../semaine5/)
+2. Faire les [exercices se trouvant à la fin de la leçon 5](../semaine5/#exercices-à-faire-avant-le-cours)

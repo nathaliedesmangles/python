@@ -35,15 +35,46 @@ title = " Présentation du cours et l'environnement de travail"
 weight = 101
 +++
 
-{{% notice style="cyan" title="À retenir" %}}
-* `input()` permet de lire une donnée (toujours une chaîne).
-* Il faut convertir avec `int()` ou `float()` pour faire des calculs.
-* `print()` permet d'afficher une réponse, seule ou avec du texte et .
+## Infos, Sachez, Notez
+
+{{% notice style="cyan" title="Notez" %}}
+
 {{% /notice %}}
+
+
+## Important
+
+{{% notice style="accent" title="Notez" %}}
+
+{{% /notice %}}
+
+
+## Retenir
+
+{{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
+
+{{% /notice %}}
+
+
+## Exercices
+
+{{% notice style="magenta" title="Organisation des fichiers recommandée..." groupid="notice-toggle" expanded="false" %}}
+
+{{% /notice %}}
+
 
 ```math
 $ °F = (°C × 9/5) + 32 $  <br> 
 $ K = °C + 273.15 $
 ```
+
+
+
+## À faire avant le prochain cours
+
+1. Lire la matière sur [Titre](../semaineX/)
+2. Faire les [exercices se trouvant à la fin de la leçon X](../semaineX/#exercices-à-faire-avant-le-cours)
+
+
 
 Cours en mode atelier guidé (démo), mais juste l'essentiel

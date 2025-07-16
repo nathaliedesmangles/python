@@ -61,7 +61,7 @@
       <link>https://example.org/semaine3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/index.html</guid>
-      <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) d’un programme Python. Lire des données entrées par l’utilisateur. Utiliser des fonctions prédéfinies. Définir ses propres fonctions avec def Utiliser des paramètres pour envoyer des données. Retourner un résultat avec return. Comprendre la portée locale des variables. Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
+      <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) d’un programme Python. Utiliser des fonctions prédéfinies. Définir ses propres fonctions avec def (paramètres, return, portée locale) Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :&#xA;nom = input(&#34;Quel est ton nom ? &#34;)&#xD;Convertir les données Les données entrées par input() sont toujours des chaînes (str).</description>
     </item>
     <item>
       <title> Évaluation #1 (20%)</title>
@@ -152,14 +152,14 @@
       <link>https://example.org/solutions_exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/index.html</guid>
-      <description>02. Variables, types et expressions&#xA;03. Entrées/Sorties, algorithme et débogage&#xA;04. Fonctions&#xA;06. IF-ELIF-ELSE&#xA;07. Boucles WHILE et FOR&#xA;08. Listes, chaines et dictionnaires&#xA;10. Visualisation des données (la base)&#xA;11. Tableaux NumPy et graphiques avancés&#xA;12. Visualisation des données et présentation du projet</description>
+      <description>02. Variables, types et expressions&#xA;03. Entrées/Sorties, algorithme et débogage&#xA;05. IF-ELIF-ELSE&#xA;06. Boucles WHILE et FOR&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Graphiques SciPy et CSV</description>
     </item>
     <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions_ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/index.html</guid>
-      <description></description>
+      <description>02. Variables, types et expressions&#xA;03. Entr?es/Sorties, algorithme et d?bogage&#xA;05. IF-ELIF-ELSE&#xA;06. Boucles WHILE et FOR&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Graphiques SciPy et CSV</description>
     </item>
   </channel>
 </rss>

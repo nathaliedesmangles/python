@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Exercice #1 - Calcul de probabilité On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles. Un rectangle contenant 6 cercles isométriques (même taille), Ils sont organisés en 2 rangées de 3 cercles, La hauteur du rectangle est 10 cm, ce qui correspond à deux diamètres de cercles (1 par rangée). a) Identifier les variables, les constantes et les formules nécessaires">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Variables, types et expressions :: 420-SN1-RE">
+    <meta name="twitter:description" content="Exercice #1 - Calcul de probabilité On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles. Un rectangle contenant 6 cercles isométriques (même taille), Ils sont organisés en 2 rangées de 3 cercles, La hauteur du rectangle est 10 cm, ce qui correspond à deux diamètres de cercles (1 par rangée). a) Identifier les variables, les constantes et les formules nécessaires">
+    <meta property="og:url" content="https://example.org/solutions_ateliers/2_variables/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content=" Variables, types et expressions :: 420-SN1-RE">
+    <meta property="og:description" content="Exercice #1 - Calcul de probabilité On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles. Un rectangle contenant 6 cercles isométriques (même taille), Ils sont organisés en 2 rangées de 3 cercles, La hauteur du rectangle est 10 cm, ce qui correspond à deux diamètres de cercles (1 par rangée). a) Identifier les variables, les constantes et les formules nécessaires">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content=" Variables, types et expressions :: 420-SN1-RE">
+    <meta itemprop="description" content="Exercice #1 - Calcul de probabilité On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles. Un rectangle contenant 6 cercles isométriques (même taille), Ils sont organisés en 2 rangées de 3 cercles, La hauteur du rectangle est 10 cm, ce qui correspond à deux diamètres de cercles (1 par rangée). a) Identifier les variables, les constantes et les formules nécessaires">
+    <meta itemprop="wordCount" content="846">
+    <title> Variables, types et expressions :: 420-SN1-RE</title>
+    <link href="/solutions_ateliers/2_variables/index.xml" rel="alternate" type="application/rss+xml" title=" Variables, types et expressions :: 420-SN1-RE">
+    <link href="/images/logo.png?1752695771" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752695771" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752695771" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752695771" rel="stylesheet">
+    <link href="/css/theme.min.css?1752695771" rel="stylesheet">
+    <link href="/css/format-html.min.css?1752695771" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1752695771" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1752695771" defer></script>
+    <script src="/js/lunr/lunr.min.js?1752695771" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1752695771" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1752695771" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1752695771" defer></script>
+    <script src="/js/search.min.js?1752695771" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/solutions_ateliers\/2_variables\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1752695771";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1752695771" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/solutions_ateliers/2_variables/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#exercice-1---calcul-de-probabilité">Exercice #1 - Calcul de probabilité</a>
+      <ul>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#exercice-2---expérience-en-chimie">Exercice #2 - Expérience en chimie</a></li>
+        <li><a href="#solution-1">Solution</a></li>
+      </ul>
+    </li>
+    <li><a href="#exercice-3---calcul-dintérêts-simple-et-composé">Exercice #3 - Calcul d&rsquo;intérêts simple et composé</a>
+      <ul>
+        <li><a href="#solution-2">Solution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_ateliers/index.html"><span itemprop="name">Solutions des ateliers</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Variables, types et expressions</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/3_input_fonctions_debug/5_if-elif-else/index.html" title="Fonctions (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/5_if/index.html" title="If-elif-else (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable solutions_ateliers" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="variables-types-et-expressions"> Variables, types et expressions</h1>
+
+<h2 id="exercice-1---calcul-de-probabilité">Exercice #1 - Calcul de probabilité</h2>
+<p>On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles.
+<a href="#R-image-5980303cc52c9e9d82fb4bd68930e3a8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../semaine2/probabilite.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5980303cc52c9e9d82fb4bd68930e3a8"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../semaine2/probabilite.png?width=30vw"></a></p>
+<ul>
+<li>Un rectangle contenant <strong>6 cercles isométriques</strong> (même taille),</li>
+<li>Ils sont organisés en <strong>2 rangées</strong> de <strong>3 cercles</strong>,</li>
+<li>La <strong>hauteur du rectangle est 10 cm</strong>, ce qui correspond à <strong>deux diamètres</strong> de cercles (1 par rangée).</li>
+</ul>
+<p>a) Identifier les variables, les constantes et les formules nécessaires<br>
+b) Écrire l&rsquo;algorithme<br>
+c) Traduire l&rsquo;algorithme en Python</p>
+<h3 id="solution">Solution</h3>
+<p>a) Identifier les variables, constantes et formules</p>
+<ul>
+<li>
+<p><strong>Variables d&rsquo;entrées</strong> :</p>
+<ul>
+<li>diametre = hauteur_rect / 2</li>
+<li>rayon = diametre / 2</li>
+<li>largeur_rect = 3 x diametre</li>
+<li>aire_rectangle = hauteur_rect x largeur_rect</li>
+<li>aire_cercle = math.pi x rayon²</li>
+<li>aire_totale_cercles = 6 x aire_cercle</li>
+</ul>
+</li>
+<li>
+<p><strong>Variable de sortie</strong> :</p>
+<ul>
+<li>prob_grise = 1 - (aire_totale_cercles / aire_rect)</li>
+</ul>
+</li>
+<li>
+<p><strong>Constantes</strong> : la valeur de PI (module math) <code>math.pi</code></p>
+</li>
+</ul>
+<p>b) Écrire l&rsquo;algorithme</p>
+<ol>
+<li>Définir le diamètre et le rayon d&rsquo;un cercle.</li>
+<li>Définir la largeur du rectangle.</li>
+<li>Définir l&rsquo;aire du rectangle.</li>
+<li>Définir l&rsquo;aire des 6 cercles, pour ce faire :<br>
+4.1.obtenir le rayon d&rsquo;un cercle.<br>
+4.2 calculer l&rsquo;aire d&rsquo;un cercle.<br>
+4.3 calculer l&rsquo;aire des 6 cercles.</li>
+<li>Calculer la probabilité de tomber dans la région grise.</li>
+</ol>
+<p>c) Traduire l&rsquo;algorithme en Python</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>diametre <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>  <span style="color:#75715e"># cm</span>
+</span></span><span style="display:flex;"><span>rayon <span style="color:#f92672">=</span> diametre <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>aire_rectangle <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span>  <span style="color:#75715e"># cm²</span>
+</span></span><span style="display:flex;"><span>aire_cercle <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> rayon<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>aire_total_cercles <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span> <span style="color:#f92672">*</span> aire_cercle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Probabilité</span>
+</span></span><span style="display:flex;"><span>prob_grise <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> (aire_total_cercles <span style="color:#f92672">/</span> aire_rectangle)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Probabilité qu’un point tombe dans la région grise : </span><span style="color:#e6db74">{</span>prob_grise<span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> (soit </span><span style="color:#e6db74">{</span>prob_grise<span style="color:#f92672">*</span><span style="color:#ae81ff">100</span><span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> %)&#34;</span>)</span></span></code></pre></div>
+<hr>
+<ul>
+<li>Définir le diamètre d&rsquo;un cercle
+Puisqu’il y a 2 rangées verticales et une hauteur totale de 10 cm :</li>
+</ul>
+<span class="math align-center">   $$
+   \text{diamètre} = \frac{10}{2} = 5 \text{ cm}
+   $$</span>
+<ul>
+<li>Définir l&rsquo;aire du rectangle</li>
+</ul>
+<span class="math align-center">   Largeur = 3 diamètres = $3 \times 5 = 15$ cm
+   Hauteur = 10 cm
+
+   $$
+   A_{\text{rectangle}} = 15 \times 10 = 150 \text{ cm}^2
+   $$</span>
+<ul>
+<li>Définir l&rsquo;aire des cercles</li>
+</ul>
+<span class="math align-center">   Rayon $r = \frac{5}{2} = 2.5$ cm
+   Aire d’un cercle :
+
+   $$
+   A_{\text{cercle}} = \pi r^2 = \pi \times (2.5)^2 = \pi \times 6.25
+   $$
+
+   Il y a 6 cercles :
+
+   $$
+   A_{\text{cercles}} = 6 \times \pi \times 6.25
+   $$</span>
+<ol start="4">
+<li>
+<p><strong>Probabilité de tomber dans la région grise</strong> :</p>
+<p>$$
+P_{\text{grise}} = 1 - \frac{A_{\text{cercles}}}{A_{\text{rectangle}}}
+$$</p>
+</li>
+</ol>
+<hr>
+<h3 id="exercice-2---expérience-en-chimie">Exercice #2 - Expérience en chimie</h3>
+<p>Un bécher contient 400 mL de solution. La solution s’évapore à raison de 25 mL/min.
+La situation est linéaire : on commence à 400 mL, et on perd 25 mL chaque minute.
+Donc la fonction est :</p>
+<span class="math align-center">$$
+q(t) = 400 - 25t
+$$</span>
+<p>où :</p>
+<ul>
+<li>$t$ est le temps en minutes,</li>
+<li>$q(t)$ est la quantité de solution restante (en mL) après $t$ minutes.</li>
+</ul>
+<p>On souhaite trouver la quantité de solution qu&rsquo;il restera après 10 min 15 s</p>
+<p>a) Définir les variables, constantes et formules
+b) Écrire l&rsquo;algorithme
+c) Traduire l&rsquo;algorithme en Python</p>
+<h3 id="solution-1">Solution</h3>
+<p>a) Identifier les variables, constantes et formules</p>
+<p>quel est le temps écoulé en minutes ?</p>
+<blockquote>
+<p>15 secondes = 0.25 minutes
+Donc $t = 10.25$</p>
+</blockquote>
+<p>b) Écrire l&rsquo;algorithme</p>
+<ol>
+<li>Définir la fonction qui représente</li>
+</ol>
+<p>c) Traduire l&rsquo;algorithme en Python</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># a) Fonction q(t)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">q</span>(t):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">400</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">25</span> <span style="color:#f92672">*</span> t
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># b) Temps écoulé en minutes</span>
+</span></span><span style="display:flex;"><span>temps_minutes <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">15</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">60</span>  <span style="color:#75715e"># 10 min 15 s = 10.25 min</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de la quantité restante</span>
+</span></span><span style="display:flex;"><span>quantité_restante <span style="color:#f92672">=</span> q(temps_minutes)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage clair</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Après </span><span style="color:#e6db74">{</span>temps_minutes<span style="color:#e6db74">}</span><span style="color:#e6db74"> minutes, il reste </span><span style="color:#e6db74">{</span>quantité_restante<span style="color:#e6db74">}</span><span style="color:#e6db74"> mL de solution.&#34;</span>)</span></span></code></pre></div>
+<h2 id="exercice-3---calcul-dintérêts-simple-et-composé">Exercice #3 - Calcul d&rsquo;intérêts simple et composé</h2>
+<ul>
+<li>Vous avez deux placements avec <strong>le même montant initial</strong> (qu&rsquo;on peut appeler <code>montant</code>).
+<ul>
+<li><strong>Premier placement</strong> : intérêt <strong>annuel simple</strong> de <strong>3,2 %</strong> pendant <strong>10 ans</strong>.</li>
+<li><strong>Deuxième placement</strong> : intérêt <strong>composé</strong> à <strong>1,6 % tous les 6 mois</strong>, donc <strong>2 fois par an</strong>, pendant <strong>10 ans</strong>.</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>On cherche <strong>l’écart en % entre les deux montants finaux</strong> au bout de 10 ans.</li>
+<li>En déduire quel est le meilleur placement sur 10 ans.</li>
+</ol>
+<p><strong>Hypothèse</strong> : Comme le montant initial est le <strong>même</strong>, on peut le fixer à 100 $ pour faciliter le calcul de l’écart en <strong>pourcentage</strong> à la fin.</p>
+<h3 id="solution-2">Solution</h3>
+<ol>
+<li>L&rsquo;écart en % entre les deux montnats</li>
+</ol>
+<p>a) Identifier les variables, constantes et formules</p>
+<p>b) Écrire l&rsquo;algorithme</p>
+<p>c) Traduire l&rsquo;algorithme en Python</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Montant initial</span>
+</span></span><span style="display:flex;"><span>montant <span style="color:#f92672">=</span> <span style="color:#ae81ff">100.0</span>  <span style="color:#75715e"># Peu importe le montant, car on cherche un écart en %</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Premier placement : intérêt simple annuel</span>
+</span></span><span style="display:flex;"><span>taux_simple_annuel <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.032</span>  <span style="color:#75715e"># 3,2 %</span>
+</span></span><span style="display:flex;"><span>duree <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>  <span style="color:#75715e"># années</span>
+</span></span><span style="display:flex;"><span>valeur_simple <span style="color:#f92672">=</span> montant <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> taux_simple_annuel <span style="color:#f92672">*</span> duree)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Deuxième placement : intérêt composé semestriel</span>
+</span></span><span style="display:flex;"><span>taux_compose_semestriel <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.016</span>  <span style="color:#75715e"># 1,6 % tous les 6 mois</span>
+</span></span><span style="display:flex;"><span>nombre_periodes <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> duree  <span style="color:#75715e"># 2 périodes par an pendant 10 ans</span>
+</span></span><span style="display:flex;"><span>valeur_composee <span style="color:#f92672">=</span> montant <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> taux_compose_semestriel) <span style="color:#f92672">**</span> nombre_periodes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de l&#39;écart en pourcentage (par rapport à la valeur du placement simple)</span>
+</span></span><span style="display:flex;"><span>ecart_pourcent <span style="color:#f92672">=</span> ((valeur_composee <span style="color:#f92672">-</span> valeur_simple) <span style="color:#f92672">/</span> valeur_simple) <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Valeur avec intérêt simple : </span><span style="color:#e6db74">{</span>valeur_simple<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> $&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Valeur avec intérêt composé : </span><span style="color:#e6db74">{</span>valeur_composee<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> $&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Écart relatif : </span><span style="color:#e6db74">{</span>ecart_pourcent<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> %&#34;</span>)</span></span></code></pre></div>
+<ol start="2">
+<li>Déduction: <strong>le placement avec intérêts composés</strong> vaut environ <strong>2,17 % de plus</strong> que celui avec intérêts simples, au bout de 10 ans.</li>
+</ol>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html">Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables, types de données et algorithme)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Évaluation #1 (20%)</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Graphiques SciPy et traitement de fichiers CSV avec Pandas</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Évaluation #3 (20%)</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet-Partie 1: Analyse et algorithmes</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b> Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Finalisation et Remise du rapport final</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/solutions_ateliers/3_input_fonctions_debug/index.html"><a class="padding" href="/solutions_ateliers/3_input_fonctions_debug/index.html">3. Entrées/Sorties, algorithme, fonctions et débogage</a><ul id="R-subsections-dff9c335f2a9d54f54606a9d1df60702" class="collapsible-menu"></ul></li>
+            <li class="active " data-nav-id="/solutions_ateliers/2_variables/index.html"><a class="padding" href="/solutions_ateliers/2_variables/index.html">2. Variables, types et expressions</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/5_if/index.html"><a class="padding" href="/solutions_ateliers/5_if/index.html"><b>6.</b> If-elif-else</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/6_boucles/index.html"><a class="padding" href="/solutions_ateliers/6_boucles/index.html"><b>7.</b> Boucles WHILE et FOR</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/7_listes/index.html"><a class="padding" href="/solutions_ateliers/7_listes/index.html">**8.** Listes, chaines et graphiques de base</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/9_numpy/index.html"><a class="padding" href="/solutions_ateliers/9_numpy/index.html">**11.** Tableaux NumPy</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/10_scipy/index.html"><a class="padding" href="/solutions_ateliers/10_scipy/index.html">**12.** Graphiques avancés - Scipy</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1752695771" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752695771" defer></script>
+    <script>
+      window.MathJax = Object.assign( window.MathJax || {}, {
+        tex: {
+          inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+          displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+        },
+        options: {
+          enableMenu: false 
+        }
+      }, JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1752695771"></script>
+    <script src="/js/theme.min.js?1752695771" defer></script>
+  </body>
+</html>
