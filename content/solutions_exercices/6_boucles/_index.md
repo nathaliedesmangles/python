@@ -1,7 +1,8 @@
 +++
 pre = "<b>7.</b>"
-title = " Boucles WHILE et FOR"
+title = " Répéter avec FOR et WHILE"
 weight = 207
 +++
 
-##
+## 
+

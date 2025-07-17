@@ -52,21 +52,21 @@ Vous pouvez changer les noms des dossiers suggérés, en autant que vous utilisi
 {{% /notice %}}
 
 1. Dans l’explorateur de fichiers (OneDrive), allez dans le dossier `Documents` et créez un sous-dossier nommé `programmation-sciences`.
-![Créer nouveau dossier](./gestion_fichiers/creer-dossier.png?width=35vw)
+![Créer nouveau dossier](./gestion_fichiers/creer-dossier.png?width=30vw)
 
-![Créer dossier prog-sciences](./gestion_fichiers/dossier_progsciences.png?width=35vw)
+![Créer dossier prog-sciences](./gestion_fichiers/dossier_progsciences.png?width=30vw)
 
 2. Dans ce dossier, créer au moins trois (3) sous-dossiers nommés `semaine01-environnement`, `semaine02-intro-python` et `semaine03-algorithme`.
-![Structure semaines](./gestion_fichiers/structure-semaines.png?width=40vw)
+![Structure semaines](./gestion_fichiers/structure-semaines.png?width=45vw)
 
 3. Allez sur Moodle et téléchargez le fichier `semaine01.ipynb`.
 ![Moodle](./gestion_fichiers/moodle.png?width=40vw)
 
 4. Allez dans l'**Explorateur de fichiers** et le dossier **Téléchargement**.
-![Dossier Téléchargements](./gestion_fichiers/telechargements.png?width=40vw)
+![Dossier Téléchargements](./gestion_fichiers/telechargements.png?width=25vw)
 
 Si l'extension (.ipynb) du fichier n'apparait pas, cliquez sur **Afficher**>**Afficher**>**Extensions des noms de fichiers**
-![Afficher extensions](./gestion_fichiers/afficher-ext.png?width=35vw)
+![Afficher extensions](./gestion_fichiers/afficher-ext.png?width=40vw)
 
 ![Extensions affichées](./gestion_fichiers/extensions-affichees.png?width=20vw)
 
@@ -81,7 +81,7 @@ Si l'extension (.ipynb) du fichier n'apparait pas, cliquez sur **Afficher**>**Af
 Nous allons travailler avec VS Code, un éditeur de code, et comprendre comment ouvrir un dossier de travail avec un fichier présent. Nous allons par la suite créer un fichier qui nous permettra d’écrire du code.
 
 1. Pour ouvrir VS Code, cliquez la **barre de recherche** (loupe) en bas de votre écran, puis écrivez tout simplement **VS**, la première application visible devrait être ***Visual Studio Code***.
-![Recherche - Ouvrir VS Code](./vscodejupyter/ouvrir-vs-code.png?width=25vw)
+![Recherche - Ouvrir VS Code](./vscodejupyter/ouvrir-vs-code.png?width=20vw)
 
 2. Lorsque vous ouvrez VS Code pour la première fois, la page d'accueil devrait s'afficher et proposer différentes actions pour démarrer.
 
@@ -97,7 +97,7 @@ Nous allons travailler avec VS Code, un éditeur de code, et comprendre comment 
 
 5. Sélectionner le menu **Fichier > Ouvrir le dossier…**, choisir le dossier **programmation-sciences**
 
-![Ouvrir dossier dans VS Code](./vscodejupyter/ouvrir-le-dossier.png?width=40vw)
+![Ouvrir dossier dans VS Code](./vscodejupyter/ouvrir-le-dossier.png?width=35vw)
 
 {{% notice style="cyan" title="Sachez que.." %}}
 Pour ouvrir un dossier vous pouvez aussi aller dans la page d'accueil, cliquer sur le lien **Ouvrir un dossier...**, puis, chercher le dossier à ouvrir:  
@@ -121,11 +121,11 @@ Pour ouvrir un dossier vous pouvez aussi aller dans la page d'accueil, cliquer s
 
 ![Nouveau fichier](./vscodejupyter/nouveau-fichier.png?width=30vw)
 
-![Nouveau notebook](./vscodejupyter/nouveau-notebook.png?width=30vw)
+![Nouveau notebook](./vscodejupyter/nouveau-notebook.png?width=25vw)
 
 3. Ajoutez un cellule de type Marquage (***Markdown***)
 
-![Aout cellule md](./vscodejupyter/ajout-cell-md.png?width=30vw)
+![Aout cellule md](./vscodejupyter/ajout-cell-md.png?width=35vw)
 
 
 4. Ajoutez le contenu suivant:
@@ -136,21 +136,17 @@ Pour ouvrir un dossier vous pouvez aussi aller dans la page d'accueil, cliquer s
    Nom de l'étudiant.e: 
    ```
 
-![Cellule Markdown](./vscodejupyter/cell-md.png?width=30vw)
+![Cellule Markdown](./vscodejupyter/cell-md.png?width=35vw)
 
 5. Ajouter un cellule **Code** (Python) et écrire le commentaire (`#`) et code ci-dessous
 
 ![Aout cellule Code](./vscodejupyter/ajout-cell-code.png?width=30vw)
 
-   ```python
-   # Mon premier programme Python
-   print("Bonjour tout le monde !")
-   ```
-   Puis cliquer sur **Exécuter Tout**.
-
 ![Cellule Python](./vscodejupyter/cell-code.png?width=30vw)
 
-![Executer tout](./vscodejupyter/exec-tout.png?width=30vw)
+Puis cliquer sur **Exécuter Tout**.
+
+![Executer tout](./vscodejupyter/exec-tout.png?width=40vw)
 
 6. Sauvegarder avec **Ctrl + S** ou **Fichier > Enregistrer**.
 
@@ -160,7 +156,7 @@ Pour ouvrir un dossier vous pouvez aussi aller dans la page d'accueil, cliquer s
 
 7. Activer la **sauvegarde automatique**, via l'onglet `Fichier`, puis cliquez sur `Enregistrement automatique`.
 
-![Enreg. auto](./vscodejupyter/enregistrement-auto.png?width=30vw)
+![Enreg. auto](./vscodejupyter/enregistrement-auto.png?width=35vw)
 
 Vous devriez maintenant voir un crochet à gauche de cette option.
 

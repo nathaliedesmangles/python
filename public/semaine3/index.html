@@ -22,21 +22,21 @@ nom = input(&#34;Quel est ton nom ? &#34;)Convertir les données Les données e
     <meta itemprop="name" content=" Saisie au clavier, fonctions et débogage :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs d’apprentissage Gérer les entrées (saisies au clavier) d’un programme Python. Utiliser des fonctions prédéfinies. Définir ses propres fonctions avec def (paramètres, return, portée locale) Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :
 nom = input(&#34;Quel est ton nom ? &#34;)Convertir les données Les données entrées par input() sont toujours des chaînes (str).">
-    <meta itemprop="wordCount" content="1772">
+    <meta itemprop="wordCount" content="1896">
     <title> Saisie au clavier, fonctions et débogage :: 420-SN1-RE</title>
     <link href="/semaine3/index.xml" rel="alternate" type="application/rss+xml" title=" Saisie au clavier, fonctions et débogage :: 420-SN1-RE">
-    <link href="/images/logo.png?1752695771" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752695771" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752695771" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752695771" rel="stylesheet">
-    <link href="/css/theme.min.css?1752695771" rel="stylesheet">
-    <link href="/css/format-html.min.css?1752695771" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1752695771" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1752695771" defer></script>
-    <script src="/js/lunr/lunr.min.js?1752695771" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1752695771" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1752695771" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1752695771" defer></script>
-    <script src="/js/search.min.js?1752695771" defer></script>
+    <link href="/images/logo.png?1752771895" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752771895" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752771895" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752771895" rel="stylesheet">
+    <link href="/css/theme.min.css?1752771895" rel="stylesheet">
+    <link href="/css/format-html.min.css?1752771895" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1752771895" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1752771895" defer></script>
+    <script src="/js/lunr/lunr.min.js?1752771895" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1752771895" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1752771895" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1752771895" defer></script>
+    <script src="/js/search.min.js?1752771895" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +46,7 @@ nom = input(&#34;Quel est ton nom ? &#34;)Convertir les données Les données e
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1752695771";
+      window.relearn.index_js_url="/searchindex.en.js?1752771895";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +92,7 @@ nom = input(&#34;Quel est ton nom ? &#34;)Convertir les données Les données e
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1752695771" rel="stylesheet">
+    <link href="/css/custom.css?1752771895" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine3/index.html">
     <div id="R-body" class="default-animation">
@@ -133,12 +133,16 @@ nom = input(&#34;Quel est ton nom ? &#34;)Convertir les données Les données e
         <li><a href="#quelques-habitudes-à-avoir-pour-déboguer-">Quelques habitudes à avoir pour déboguer :</a></li>
         <li><a href="#exemple-de-code-présentant-des-erreurs">Exemple de code présentant des erreurs</a></li>
         <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a></li>
-        <li><a href="#exercice-1---élément-chimique">Exercice 1 - Élément chimique</a></li>
-        <li><a href="#exercice-2---aire-dun-cercle">Exercice 2 - Aire d&rsquo;un cercle</a></li>
-        <li><a href="#exercice-3---convertir-celsius-en-kelvin">Exercice 3 - Convertir Celsius en Kelvin</a></li>
-        <li><a href="#exercice-4--calculer-une-énergie-cinétique">Exercice 4 – Calculer une énergie cinétique</a></li>
-        <li><a href="#exercice-5--vérifier-la-portée-locale">Exercice 5 – Vérifier la portée locale</a></li>
-        <li><a href="#exercice-6---trouvez-les-erreurs-et-corrigez-les">Exercice 6 - Trouvez les erreurs et corrigez les</a></li>
+      </ul>
+    </li>
+    <li><a href="#exercice-1--la-loi-dohm">Exercice 1 : La loi d&rsquo;Ohm</a>
+      <ul>
+        <li><a href="#exercice-2--élément-chimique">Exercice 2 : Élément chimique</a></li>
+        <li><a href="#exercice-3--aire-dun-cercle">Exercice 3 : Aire d&rsquo;un cercle</a></li>
+        <li><a href="#exercice-4--convertir-celsius-en-kelvin">Exercice 4 : Convertir Celsius en Kelvin</a></li>
+        <li><a href="#exercice-5--calculer-une-énergie-cinétique">Exercice 5 : Calculer une énergie cinétique</a></li>
+        <li><a href="#exercice-6--vérifier-la-portée-locale">Exercice 6 : Vérifier la portée locale</a></li>
+        <li><a href="#exercice-7--trouvez-les-erreurs-et-corrigez-les">Exercice 7 : Trouvez les erreurs et corrigez les</a></li>
         <li><a href="#code-à-déboguer-et-corriger">Code à déboguer et corriger</a></li>
       </ul>
     </li>
@@ -197,8 +201,8 @@ nom = input(&#34;Quel est ton nom ? &#34;)Convertir les données Les données e
 </span></span><span style="display:flex;"><span>note2 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez la deuxième note&#34;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> (note1 <span style="color:#f92672">+</span> note2) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>	<span style="color:#f92672">==&gt;</span> ERREUR</span></span></code></pre></div>
-<p><a href="#R-image-dce9e9d5f7de4e1a4f335c888cd3456f" class="lightbox-link"><img alt="Erreur de type" class="lazy lightbox figure-image" loading="lazy" src="/semaine3/erreur_type.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dce9e9d5f7de4e1a4f335c888cd3456f"><img alt="Erreur de type" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine3/erreur_type.png"></a></p>
+<p><a href="#R-image-41111a318c44de08d80765cbbe635fa1" class="lightbox-link"><img alt="Erreur de type" class="lazy lightbox figure-image" loading="lazy" src="/semaine3/erreur_type.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-41111a318c44de08d80765cbbe635fa1"><img alt="Erreur de type" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine3/erreur_type.png"></a></p>
 
 <details open class=" box cstyle notices accent">
   <summary class="box-label" tabindex="-1">
@@ -422,8 +426,8 @@ Si on tape <strong>95</strong> au clavier, pour Python ça devient <strong>&ldqu
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(test())  <span style="color:#75715e"># OK, affiche 10</span>
 </span></span><span style="display:flex;"><span>print(x)       <span style="color:#75715e"># Erreur : x n&#39;existe pas ici</span></span></span></code></pre></div>
-<p><a href="#R-image-d7dcc364aba3850c33df63285915190f" class="lightbox-link"><img alt="Erreur de nom" class="lazy lightbox figure-image" loading="lazy" src="/semaine3/erreur_name.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d7dcc364aba3850c33df63285915190f"><img alt="Erreur de nom" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine3/erreur_name.png?width=35vw"></a></p>
+<p><a href="#R-image-c512c3bd0c85d73779577b970881fa2e" class="lightbox-link"><img alt="Erreur de nom" class="lazy lightbox figure-image" loading="lazy" src="/semaine3/erreur_name.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c512c3bd0c85d73779577b970881fa2e"><img alt="Erreur de nom" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine3/erreur_name.png?width=35vw"></a></p>
 <h2 id="trouver-facilement-les-sources-des-erreurs-dans-nos-programmes-débogage">Trouver facilement les sources des erreurs dans nos programmes (débogage)</h2>
 <p><strong>Déboguer</strong>, c’est trouver les causes des erreurs dans le cod, afin de les corriger rapidement.</p>
 <h3 id="types-derreurs-fréquentes">Types d’erreurs fréquentes</h3>
@@ -529,13 +533,26 @@ où $g = 9.8 \, m/s^2$ est l’accélération gravitationnelle.</span>
 <p>Pour chacun des exercices ci-dessous, utilisez (appelez) la fonction crée.</p>
   </div>
 </details>
-<h3 id="exercice-1---élément-chimique">Exercice 1 - Élément chimique</h3>
+<h2 id="exercice-1--la-loi-dohm">Exercice 1 : La loi d&rsquo;Ohm</h2>
+<p>Un technicien de laboratoire vous demande d&rsquo;écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm. Il voudrait pouvoir entrer la valeur de la résistance (en ohms) et la valeur du courant (en ampères), puis obtenir la tension.</p>
+<span class="math align-center">Loi d’Ohm : $ U = R × I $</span>
+<ol>
+<li>Le programme demande à l&rsquo;utilisateur d&rsquo;entrer la valeur de la résistance (en ohms)</li>
+<li>Le programme demande à l&rsquo;utilisateur d&rsquo;entrer la valeur du courant (en ampères)</li>
+<li>Calculer et afficher la tension à l&rsquo;aide d&rsquo;une phrase.</li>
+<li>Ajouter des explications en commentaire dans le code.</li>
+</ol>
+<p><strong>Résultat attendu</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Entrer la résistance en ohms : 10
+Entrer le courant en ampères : 2
+La tension est de 20.0 V</code></pre></div>
+<h3 id="exercice-2--élément-chimique">Exercice 2 : Élément chimique</h3>
 <p>Écrire une fonction <code>element_chimique()</code> qui :</p>
 <ul>
 <li>Demande à l&rsquo;utilisateur d&rsquo;entrer le nom d’un élément chimique.</li>
 <li>Affiche un message disant &ldquo;L’élément choisi est [nom]&rdquo;</li>
 </ul>
-<h3 id="exercice-2---aire-dun-cercle">Exercice 2 - Aire d&rsquo;un cercle</h3>
+<h3 id="exercice-3--aire-dun-cercle">Exercice 3 : Aire d&rsquo;un cercle</h3>
 <p>Écrire une fonction <code>aire_cercle()</code> qui :</p>
 <ul>
 <li>Demande à l&rsquo;utilisateur d&rsquo;entrer le rayon du cercle (en cm).</li>
@@ -544,7 +561,7 @@ où $g = 9.8 \, m/s^2$ est l’accélération gravitationnelle.</span>
 </ul>
 <p><strong>Exemple d&rsquo;affichage attendu (rayon de 5 cm)</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Aire du cercle de rayon <span style="color:#ae81ff">5</span> cm : <span style="color:#ae81ff">78.54</span> cm²</span></span></code></pre></div>
-<h3 id="exercice-3---convertir-celsius-en-kelvin">Exercice 3 - Convertir Celsius en Kelvin</h3>
+<h3 id="exercice-4--convertir-celsius-en-kelvin">Exercice 4 : Convertir Celsius en Kelvin</h3>
 <p>Crée une fonction nommée <code>convertir_C_en_K</code> qui :</p>
 <ul>
 <li>prend une température en °C en paramètre</li>
@@ -556,7 +573,7 @@ où $g = 9.8 \, m/s^2$ est l’accélération gravitationnelle.</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> kelvin
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(convertir_C_en_K(<span style="color:#ae81ff">25</span>))  <span style="color:#75715e"># 298.15</span></span></span></code></pre></div>
-<h3 id="exercice-4--calculer-une-énergie-cinétique">Exercice 4 – Calculer une énergie cinétique</h3>
+<h3 id="exercice-5--calculer-une-énergie-cinétique">Exercice 5 : Calculer une énergie cinétique</h3>
 <p>Crée une fonction <code>energie_cinetique(m, v)</code> qui calcule :</p>
 <span class="math align-center">$E_c = \frac{1}{2} \cdot m \cdot v^2$</span>
 <p><strong>Solution :</strong></p>
@@ -564,7 +581,7 @@ où $g = 9.8 \, m/s^2$ est l’accélération gravitationnelle.</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">*</span> m <span style="color:#f92672">*</span> v<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(energie_cinetique(<span style="color:#ae81ff">2.0</span>, <span style="color:#ae81ff">3.0</span>))  <span style="color:#75715e"># 9.0</span></span></span></code></pre></div>
-<h3 id="exercice-5--vérifier-la-portée-locale">Exercice 5 – Vérifier la portée locale</h3>
+<h3 id="exercice-6--vérifier-la-portée-locale">Exercice 6 : Vérifier la portée locale</h3>
 <p>Crée une fonction <code>tester_variable()</code> qui crée une variable <code>x = 10</code> et l’affiche dans la fonction.
 Essaye ensuite d’afficher <code>x</code> <strong>à l’extérieur de la fonction</strong>.</p>
 <p><strong>Solution :</strong></p>
@@ -574,7 +591,7 @@ Essaye ensuite d’afficher <code>x</code> <strong>à l’extérieur de la fonct
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>tester_variable()
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;À l’extérieur :&#34;</span>, x)  <span style="color:#75715e"># Erreur attendue</span></span></span></code></pre></div>
-<h3 id="exercice-6---trouvez-les-erreurs-et-corrigez-les">Exercice 6 - Trouvez les erreurs et corrigez les</h3>
+<h3 id="exercice-7--trouvez-les-erreurs-et-corrigez-les">Exercice 7 : Trouvez les erreurs et corrigez les</h3>
 <p><strong>Énoncé du problème</strong> :</p>
 <blockquote>
 <p>Ce programme est censé calculer la surface d’un cône droit à partir du rayon et de la hauteur entrés par l’utilisateur. La formule utilisée est :</p>
@@ -736,8 +753,8 @@ $$</span>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1752695771" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752695771" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1752771895" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752771895" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -749,7 +766,7 @@ $$</span>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1752695771"></script>
-    <script src="/js/theme.min.js?1752695771" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1752771895"></script>
+    <script src="/js/theme.min.js?1752771895" defer></script>
   </body>
 </html>

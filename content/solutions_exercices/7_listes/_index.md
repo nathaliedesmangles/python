@@ -1,7 +1,8 @@
 +++
 pre = "<b>8.</b>"
-title = " Listes et chaines"
+title = " Listes, chaines de caractères et graphiques de base"
 weight = 208
 +++
 
-##
+## 
+

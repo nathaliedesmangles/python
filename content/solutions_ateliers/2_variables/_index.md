@@ -1,24 +1,11 @@
 +++
-pre = "2."
-title = " Variables, types et expressions"
+pre = "<b>2.</b>"
+title = " Variables, types de données et algorithme"
 weight = 302
 draft = false
 +++
 
 ## Exercice #1 - Calcul de probabilité
-
-On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles.
-![](../../semaine2/probabilite.png?width=30vw)
-
-* Un rectangle contenant **6 cercles isométriques** (même taille),
-* Ils sont organisés en **2 rangées** de **3 cercles**,
-* La **hauteur du rectangle est 10 cm**, ce qui correspond à **deux diamètres** de cercles (1 par rangée).
-
-a) Identifier les variables, les constantes et les formules nécessaires  
-b) Écrire l'algorithme  
-c) Traduire l'algorithme en Python
-
-### Solution
 
 a) Identifier les variables, constantes et formules
 
@@ -31,7 +18,7 @@ a) Identifier les variables, constantes et formules
      - aire_totale_cercles = 6 x aire_cercle
 
    * **Variable de sortie** :
-     - prob_grise = 1 - (aire_totale_cercles / aire_rect)
+     - prob_grise = 1 - (aire_totale_cercles / aire_rectangle)
 
    * **Constantes** : la valeur de PI (module math) `math.pi`
 
@@ -64,142 +51,127 @@ prob_grise = 1 - (aire_total_cercles / aire_rectangle)
 # Affichage
 print(f"Probabilité qu’un point tombe dans la région grise : {prob_grise:.4f} (soit {prob_grise*100:.2f} %)")
 ```
-
----
-* Définir le diamètre d'un cercle
-Puisqu’il y a 2 rangées verticales et une hauteur totale de 10 cm :
-
-```math
-   $$
-   \text{diamètre} = \frac{10}{2} = 5 \text{ cm}
-   $$
-```
-
-* Définir l'aire du rectangle
-```math
-   Largeur = 3 diamètres = $3 \times 5 = 15$ cm
-   Hauteur = 10 cm
-
-   $$
-   A_{\text{rectangle}} = 15 \times 10 = 150 \text{ cm}^2
-   $$
-```
-
-* Définir l'aire des cercles
-```math
-   Rayon $r = \frac{5}{2} = 2.5$ cm
-   Aire d’un cercle :
-
-   $$
-   A_{\text{cercle}} = \pi r^2 = \pi \times (2.5)^2 = \pi \times 6.25
-   $$
-
-   Il y a 6 cercles :
-
-   $$
-   A_{\text{cercles}} = 6 \times \pi \times 6.25
-   $$
-```
-
-4. **Probabilité de tomber dans la région grise** :
-
-   $$
-   P_{\text{grise}} = 1 - \frac{A_{\text{cercles}}}{A_{\text{rectangle}}}
-   $$
 ---
 
 ### Exercice #2 - Expérience en chimie
 
-Un bécher contient 400 mL de solution. La solution s’évapore à raison de 25 mL/min.
-La situation est linéaire : on commence à 400 mL, et on perd 25 mL chaque minute.
-Donc la fonction est :
-```math
-$$
-q(t) = 400 - 25t
-$$
-```
-où :
-* $t$ est le temps en minutes,
-* $q(t)$ est la quantité de solution restante (en mL) après $t$ minutes.
-
-On souhaite trouver la quantité de solution qu'il restera après 10 min 15 s
-
 a) Définir les variables, constantes et formules
-b) Écrire l'algorithme
-c) Traduire l'algorithme en Python
 
-### Solution
+**Constantes :**
 
-a) Identifier les variables, constantes et formules
+* `Q0 = 400` (volume initial, en mL)
+* `V = 25` (vitesse d’évaporation, en mL/min)
 
-quel est le temps écoulé en minutes ?
-> 15 secondes = 0.25 minutes
-> Donc $t = 10.25$
+**Variables :**
 
-b) Écrire l'algorithme
-   1. Définir la fonction qui représente 
+* `t_min = 10` (minutes)
+* `t_sec = 15` (secondes)
+* `t` : temps total en **minutes**, donc `t = t_min + t_sec / 60`
 
-c) Traduire l'algorithme en Python
+**Formule :**
+
+```math
+$ q(t) = Q0 - V * t $
+```
+
+b) Écrire l'algorithme (en français)
+
+1. Initialiser le volume initial `Q0` à 400
+2. Initialiser la vitesse d’évaporation `V` à 25
+3. Définir le temps écoulé `t` en minutes : `10 + 15/60`
+4. Calculer la quantité de solution restante avec la formule `q = Q0 - V * t`
+5. Afficher le résultat
+
+
+c) Traduction en Python
 
 ```python
-# a) Fonction q(t)
-def q(t):
-    return 400 - 25 * t
+# Constantes
+Q0 = 400         # volume initial en mL
+V = 25           # vitesse d'évaporation en mL/min
 
-# b) Temps écoulé en minutes
-temps_minutes = 10 + 15 / 60  # 10 min 15 s = 10.25 min
+# Temps écoulé
+t_min = 10       # minutes
+t_sec = 15       # secondes
+t = t_min + t_sec / 60  # conversion en minutes
 
-# Calcul de la quantité restante
-quantité_restante = q(temps_minutes)
+# Calcul
+q = Q0 - V * t
 
-# Affichage clair
-print(f"Après {temps_minutes} minutes, il reste {quantité_restante} mL de solution.")
+# Affichage
+print(f"Quantité restante après {t} minutes : {q} mL")```
 ```
+---
+
 
 ## Exercice #3 - Calcul d'intérêts simple et composé
 
-* Vous avez deux placements avec **le même montant initial** (qu'on peut appeler `montant`).
-   * **Premier placement** : intérêt **annuel simple** de **3,2 %** pendant **10 ans**.
-   * **Deuxième placement** : intérêt **composé** à **1,6 % tous les 6 mois**, donc **2 fois par an**, pendant **10 ans**.
+i) **L'écart en % entre les deux montants finaux**
 
-1. On cherche **l’écart en % entre les deux montants finaux** au bout de 10 ans.  
-2. En déduire quel est le meilleur placement sur 10 ans.
+a) Définir les variables, constantes et formules
 
-**Hypothèse** : Comme le montant initial est le **même**, on peut le fixer à 100 \$ pour faciliter le calcul de l’écart en **pourcentage** à la fin.
+**Constantes** :
+
+* `montant = 100`  (valeur initiale, arbitraire mais identique)
+* `t = 10` (durée en années)
+
+**Placement 1** — intérêt simple :
+
+* taux annuel = `3.2 %` = `0.032`
+* Formule :
+  $M_{\text{simple}} = montant \times (1 + taux \times temps)$
+
+**Placement 2** — intérêt composé semestriel :
+
+* taux semestriel = `1.6 %` = `0.016`
+* nombre de périodes = `2 × 10 = 20`
+* Formule :
+```math
+  $M_{\text{composé}} = montant \times (1 + taux)^{nombre\_de\_périodes}$
+```
+
+**Écart relatif en %** :
+
+```math
+* $\text{écart} = \frac{M_{\text{composé}} - M_{\text{simple}}}{M_{\text{simple}}} \times 100$
+```
+
+b) Algorithme
+
+1. Définir les constantes : montant, temps, taux simple, taux composé
+2. Calculer le montant final avec intérêt simple
+3. Calculer le montant final avec intérêt composé
+4. Calculer l’écart relatif en pourcentage
+5. Afficher les résultats
 
 
-### Solution
-
-1. L'écart en % entre les deux montnats
-
-a) Identifier les variables, constantes et formules
-
-b) Écrire l'algorithme
-
-c) Traduire l'algorithme en Python
+c) Traduction en Python
 
 ```python
-# Montant initial
-montant = 100.0  # Peu importe le montant, car on cherche un écart en %
+# Constantes
+montant = 100
+t = 10
 
-# Premier placement : intérêt simple annuel
-taux_simple_annuel = 0.032  # 3,2 %
-duree = 10  # années
-valeur_simple = montant * (1 + taux_simple_annuel * duree)
+# Placement 1 : intérêt simple
+taux_simple = 0.032
+valeur_simple = montant * (1 + taux_simple * t)
 
-# Deuxième placement : intérêt composé semestriel
-taux_compose_semestriel = 0.016  # 1,6 % tous les 6 mois
-nombre_periodes = 2 * duree  # 2 périodes par an pendant 10 ans
-valeur_composee = montant * (1 + taux_compose_semestriel) ** nombre_periodes
+# Placement 2 : intérêt composé
+taux_compose = 0.016  # tous les 6 mois
+n = 2 * t  # 2 périodes par année pendant 10 ans
+valeur_composee = montant * (1 + taux_compose) ** n
 
-# Calcul de l'écart en pourcentage (par rapport à la valeur du placement simple)
-ecart_pourcent = ((valeur_composee - valeur_simple) / valeur_simple) * 100
+# Écart relatif en %
+ecart = (valeur_composee - valeur_simple) / valeur_simple * 100
 
 # Affichage
 print(f"Valeur avec intérêt simple : {valeur_simple:.2f} $")
 print(f"Valeur avec intérêt composé : {valeur_composee:.2f} $")
-print(f"Écart relatif : {ecart_pourcent:.2f} %")
+print(f\"Écart relatif : {ecart:.2f} %\")
 ```
 
-2. Déduction: **le placement avec intérêts composés** vaut environ **2,17 % de plus** que celui avec intérêts simples, au bout de 10 ans.
+ii) **Déduction**
+
+* Le placement **composé** est **plus avantageux** après 10 ans, malgré un taux plus bas, grâce à l'effet des intérêts composés.
+**Le placement avec intérêts composés** vaut environ **2,17 % de plus** que celui avec intérêts simples, au bout de 10 ans.
 

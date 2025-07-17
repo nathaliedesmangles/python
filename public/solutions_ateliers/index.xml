@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des ateliers :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/index.html</link>
-    <description>02. Variables, types et expressions&#xA;03. Entr?es/Sorties, algorithme et d?bogage&#xA;05. IF-ELIF-ELSE&#xA;06. Boucles WHILE et FOR&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Graphiques SciPy et CSV</description>
+    <description>02. Variables, types de donnes et algorithme&#xA;03. Saisie au clavier, fonctions et debogage&#xA;05. Decider avec if-elif-else et les oprateurs&#xA;06. Repeter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Graphiques SciPy et fichiers CSV avec Pandas</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_ateliers/index.xml" rel="self" type="application/rss+xml" />
@@ -15,11 +15,11 @@
       <description>Exercice 1 - Élément chimique Écrire une fonction element_chimique() qui :&#xA;Demande à l’utilisateur d’entrer le nom d’un élément chimique. Affiche un message disant “L’élément choisi est [nom]” Solution :&#xA;def element_chimique(): element = input(&#34;Entrez le nom d&#39;un élément chimique : &#34;)) print(&#34;L’élément choisi est&#34;, element) # Appel de la fonction element_chimique()&#xD;Exercice 2 - Aire d’un cercle Écrire une fonction aire_cercle() qui : demande à l’utilisateur d’entrer le rayon du cercle (en cm).</description>
     </item>
     <item>
-      <title> Variables, types et expressions</title>
+      <title> Variables, types de données et algorithme</title>
       <link>https://example.org/solutions_ateliers/2_variables/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/2_variables/index.html</guid>
-      <description>Exercice #1 - Calcul de probabilité On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles. Un rectangle contenant 6 cercles isométriques (même taille), Ils sont organisés en 2 rangées de 3 cercles, La hauteur du rectangle est 10 cm, ce qui correspond à deux diamètres de cercles (1 par rangée). a) Identifier les variables, les constantes et les formules nécessaires</description>
+      <description>Exercice #1 - Calcul de probabilité a) Identifier les variables, constantes et formules&#xA;Variables d’entrées :&#xA;diametre = hauteur_rect / 2 rayon = diametre / 2 largeur_rect = 3 x diametre aire_rectangle = hauteur_rect x largeur_rect aire_cercle = math.pi x rayon² aire_totale_cercles = 6 x aire_cercle Variable de sortie :&#xA;prob_grise = 1 - (aire_totale_cercles / aire_rectangle) Constantes : la valeur de PI (module math) math.pi&#xA;b) Écrire l’algorithme&#xA;Définir le diamètre et le rayon d’un cercle.</description>
     </item>
     <item>
       <title> If-elif-else</title>

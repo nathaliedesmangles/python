@@ -27,6 +27,10 @@ Séparation			40
 
 Les cours			100
 
+cours			101-115
+	Ateliers	
+Solutions exos		202-210
+Solutions ateliers	302-310
 
 +++
 chapter = true
@@ -67,6 +71,7 @@ weight = 101
 $ °F = (°C × 9/5) + 32 $  <br> 
 $ K = °C + 273.15 $
 ```
+> **Exemple 2 à faire à la maison** : Calculer la force gravitationnelle entre deux masses.
 
 
 

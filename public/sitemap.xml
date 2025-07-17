@@ -178,16 +178,13 @@
     <loc>https://example.org/solutions_exercices/2_variables/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/3_input_fonctions_debug/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/solutions_ateliers/3_input_fonctions_debug/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/3_input_fonctions_debug/5_if-elif-else/index.html</loc>
+    <loc>https://example.org/solutions_exercices/3_input_fonctions_debug/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/3_input_fonctions_debug/5_if-elif-else/index.html</loc>
+    <loc>https://example.org/solutions_ateliers/3_input_fonctions_debug/5_if-elif-else/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/5_if/index.html</loc>
@@ -197,9 +194,6 @@
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/7_listes/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/solutions_exercices/7_listes/10_matplotlib_base/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/9_numpy/index.html</loc>

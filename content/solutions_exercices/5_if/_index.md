@@ -1,7 +1,8 @@
 +++
 pre = "<b>6.</b>"
-title = " If-elif-else"
+title = " Décider avec if-elif-else et les opérateurs"
 weight = 206
 +++
 
-##
+## 
+

@@ -314,13 +314,34 @@ print("Le temps de chute est", temps, "secondes.")
 Pour chacun des exercices ci-dessous, utilisez (appelez) la fonction crée.
 {{% /notice %}}
 
-### Exercice 1 - Élément chimique
+## Exercice 1 : La loi d'Ohm
+
+Un technicien de laboratoire vous demande d'écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm. Il voudrait pouvoir entrer la valeur de la résistance (en ohms) et la valeur du courant (en ampères), puis obtenir la tension.
+
+```math
+Loi d’Ohm : $ U = R × I $
+```
+
+1. Le programme demande à l'utilisateur d'entrer la valeur de la résistance (en ohms)
+2. Le programme demande à l'utilisateur d'entrer la valeur du courant (en ampères)
+3. Calculer et afficher la tension à l'aide d'une phrase.
+4. Ajouter des explications en commentaire dans le code.
+
+**Résultat attendu** :
+
+```
+Entrer la résistance en ohms : 10
+Entrer le courant en ampères : 2
+La tension est de 20.0 V
+```
+
+### Exercice 2 : Élément chimique
 
 Écrire une fonction `element_chimique()` qui :
 * Demande à l'utilisateur d'entrer le nom d’un élément chimique.
 * Affiche un message disant "L’élément choisi est \[nom]"
 
-### Exercice 2 - Aire d'un cercle
+### Exercice 3 : Aire d'un cercle
 
 Écrire une fonction `aire_cercle()` qui :
 * Demande à l'utilisateur d'entrer le rayon du cercle (en cm).
@@ -332,7 +353,7 @@ Pour chacun des exercices ci-dessous, utilisez (appelez) la fonction crée.
 Aire du cercle de rayon 5 cm : 78.54 cm²
 ```
 
-### Exercice 3 - Convertir Celsius en Kelvin
+### Exercice 4 : Convertir Celsius en Kelvin
 
 Crée une fonction nommée `convertir_C_en_K` qui :
 
@@ -349,7 +370,7 @@ def convertir_C_en_K(celsius):
 print(convertir_C_en_K(25))  # 298.15
 ```
 
-### Exercice 4 – Calculer une énergie cinétique
+### Exercice 5 : Calculer une énergie cinétique
 
 Crée une fonction `energie_cinetique(m, v)` qui calcule :
 
@@ -366,7 +387,7 @@ def energie_cinetique(m, v):
 print(energie_cinetique(2.0, 3.0))  # 9.0
 ```
 
-### Exercice 5 – Vérifier la portée locale
+### Exercice 6 : Vérifier la portée locale
 
 Crée une fonction `tester_variable()` qui crée une variable `x = 10` et l’affiche dans la fonction.
 Essaye ensuite d’afficher `x` **à l’extérieur de la fonction**.
@@ -381,7 +402,7 @@ def tester_variable():
 tester_variable()
 print("À l’extérieur :", x)  # Erreur attendue
 ```
-### Exercice 6 - Trouvez les erreurs et corrigez les
+### Exercice 7 : Trouvez les erreurs et corrigez les
 
 **Énoncé du problème** :
 

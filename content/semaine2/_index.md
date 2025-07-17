@@ -18,7 +18,6 @@ weight = 102
 
 ---
 
-
 ## Variables et types de données de base
 
 Une **variable** est un nom qui permet de **stocker une valeur** pour la réutiliser.
@@ -121,9 +120,12 @@ resultat = (3 + 4) * 2     # donne 14 grâce aux ()
 
 ## Affichage des données avec *print* et les *f-string*
 
-Quand on veut afficher une phrase contenant des **valeurs numériques ou des variables**, c'est préférable d'utiliser des **f-strings** (ou **chaînes formatées**) pour aller plus vite et rendre le code plus clair.
+* La fonction  `print()` permet d'afficher des résultats.
+* On peut aussi utiliser `print()` pour ajouter un saut de ligne.
 
-### Exemple
+* Quand on veut afficher une phrase contenant des **valeurs numériques ou des variables**, c'est préférable d'utiliser des **f-strings** (ou **chaînes formatées**) pour aller plus vite et rendre le code plus clair.
+
+**Exemple** :
 
 ```python
 nom = "Sophie"
@@ -135,9 +137,39 @@ print(f"{nom} a {age} ans.")
 Résultat : Sophie a 18 ans.
 ```
 
-Le `f` devant les guillemets indique qu’on veut insérer des **valeurs de variables** directement dans le texte. On place les **variables ou calculs** entre **accolades** `{}`.
+* Le `f` devant les guillemets indique qu’on veut insérer des **valeurs de variables** directement dans le texte. On place les **variables** entre **accolades** `{}`.
 
-* On peut utiliser `print()` pour ajouter un saut de ligne.
+* Mais parfois, on veut afficher **un nombre arrondi**, **aligné**, ou **avec des zéros**. C’est là qu’on utilise les **modificateurs de format** juste après la variable, entre `:` et `}`.
+
+
+### Les modificateurs de format numérique
+
+| Objectif                                | Syntaxe           | Exemple de résultat |
+| --------------------------------------- | ----------------- | ------------------- |
+| Afficher **2 décimales**                | `{valeur:.2f}`    | `3.14`              |
+| Afficher **avec des zéros devant**      | `{valeur:06.2f}`  | `003.14`            |
+| **Aligner à droite** sur 10 caractères  | `{valeur:>10.2f}` | `      3.14`        |
+| **Aligner à gauche** sur 10 caractères  | `{valeur:<10.2f}` | `3.14      `        |
+| **Pourcentage** avec 1 décimale         | `{valeur:.1%}`    | `314.2%`            |
+| Format **scientifique** (notation exp.) | `{valeur:.2e}`    | `3.14e+00`          |
+
+
+**Exemples** :
+
+```python
+montant = 134.8678
+print(f"Montant : {montant:.2f} $")        # → Montant : 134.87 $
+print(f"Montant : {montant:10.2f} $")      # → Montant :     134.87 $
+print(f"Montant : {montant:<10.2f} $")     # → Montant : 134.87     $ 
+print(f"Montant : {montant:>10.2f} $")     # → Montant :     134.87 $
+print(f"Montant : {montant:^10.2f} $")     # → Montant :   134.87   $
+```
+
+**Explication** :
+
+* `.2f` → **f** pour "float", **2** pour eux décimales
+* `10.2f` → total de 10 caractères, dont 2 après la virgule
+* `<`, `>`, `^` → alignement (gauche, droite, centré)
 
 
 ## Comment décortiquer un problème scientifique en algorithme et le traduire en Python ?
@@ -267,7 +299,7 @@ V2 = 2.0
 P2 = (P1 * V1) / V2 = (100 * 2.0) / 2.0 = 100.0
 ```
 
-**Résultat :** `P2 = 100.0 kPa`
+**Résultat :** `P2 = 100.0 kPa`  
 **Interprétation :** Si le volume ne change pas, la pression reste la même.
 
 * **Test 2 — Volume final diminué de 4 à 1 L**
@@ -279,7 +311,7 @@ V2 = 1.0
 P2 = (100 * 4.0) / 1.0 = 400.0
 ```
 
-**Résultat :** `P2 = 400.0 kPa`
+**Résultat :** `P2 = 400.0 kPa`  
 **Interprétation :** Si on divise le volume par 4, la pression est **multipliée par 4**.
 
 * **Test 3 — Pression initiale réduite à 50 kPa**
@@ -291,7 +323,7 @@ V2 = 2.0
 P2 = (50 * 4.0) / 2.0 = 100.0
 ```
 
-**Résultat :** `P2 = 100.0 kPa`
+**Résultat :** `P2 = 100.0 kPa`  
 **Interprétation :** Une pression initiale plus faible donne une pression finale plus faible, toutes choses égales par ailleurs.
 
 **Conclusion**
@@ -301,8 +333,6 @@ Ces tests montrent que :
 * La **pression est inversement proportionnelle au volume** : si le volume diminue, la pression augmente, et inversement.
 * Le calcul respecte la **loi de Boyle** à température constante.
 * Les résultats sont **cohérents avec l’intuition physique**.
-
-> **Exemple 2 à faire à la maison** : Calculer la force gravitationnelle entre deux masses.
 
 
 {{% notice style="blue" title="À retenir..." groupid="notice-toggle" expanded="false" %}}
@@ -329,95 +359,76 @@ Pour chaque exercice, créez un nouveau notebook (par ex.: `exercice1.ipynb`, `e
 ![Dossier exercices](./dossier-exercices.png?width=25vw)
 {{% /notice %}}
 
+## Exercice 1 : Conversion de température
 
-### Exercice 1 - Calcul de probabilité
+Un thermomètre donne des relevés en Fahrenheit, mais vous devez les convertir en Celsius et Kelvin.
 
-On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles.
-![](./probabilite.png?width=30vw)
+1. Utilisez une variable pour stocker une température en °C.
+2. Convertissez cette température en °F et en K.
+3. Affichez les trois valeurs avec des messages clairs.
 
-
-* Un rectangle contenant **6 cercles isométriques** (même taille),
-* Ils sont organisés en **2 rangées** de **3 cercles**,
-* La **hauteur du rectangle est 10 cm**, ce qui correspond à **deux diamètres** de cercles (1 par rangée).
-
-a) Identifier les variables, les constantes et les formules nécessaires
-b) Écrire l'algorithme
-c) Traduire l'algorithme en Python
-
-### Résultat attendu:
-
-```
-Probabilité qu’un point tombe dans la région grise : 0.2119 (soit 21.19 %)
-```
-
-### Exercice #2 - Expérience en chimie
-
-Un bécher contient 400 mL de solution. La solution s’évapore à raison de 25 mL/min.
-La situation est linéaire : on commence à 400 mL, et on perd 25 mL chaque minute.
-Donc la fonction est :
+**Formules** :
 ```math
-$$
-q(t) = 400 - 25t
-$$
-```
-où :
-* $t$ est le temps en minutes,
-* $q(t)$ est la quantité de solution restante (en mL) après $t$ minutes.
-
-On souhaite trouver la quantité de solution qu'il restera après 10 min 15 s
-
-a) Définir les variables, constantes et formules
-b) Écrire l'algorithme
-c) Traduire l'algorithme en Python
-
-**Résultat attendu** :
-
-```
-Après 10.25 minutes, il reste 143.75 mL de solution.
+$ °F = (°C × 9/5) + 32 $  <br> 
+$ K = °C + 273.15 $
 ```
 
+**Résultat attendu avec une température de 38°C** :
+```
+Température en Celsius : 38°C)
+Température en Fahrenheit : 100.4°F)
+Température en Kelvin : 311.15K)
+```
 ---
 
-quel est le temps écoulé en minutes ?
-> 15 secondes = 0.25 minutes
-> Donc $t = 10.25$
+## Exercice 2 : Calcul de concentration molaire
 
-### Code Python :
-
-```python
-# a) Fonction q(t)
-def q(t):
-    return 400 - 25 * t
-
-# b) Temps écoulé en minutes
-temps_minutes = 10 + 15 / 60  # 10 min 15 s = 10.25 min
-
-# Calcul de la quantité restante
-quantité_restante = q(temps_minutes)
-
-# Affichage clair
-print(f"Après {temps_minutes} minutes, il reste {quantité_restante} mL de solution.")
+Un technicien prépare une solution en dissolvant une masse donnée de soluté dans un certain volume de solvant.
+Écrire un programme qui calcule la concentration molaire (mol/L) selon la formule :
+```math
+$ C = n / V $ où  $ n = m / M $
 ```
 
-## Exercice #3 - Calcul d'intérêts simple et composé
-
-* Vous avez deux placements avec **le même montant initial** (qu'on peut appeler `montant`).
-   * **Premier placement** : intérêt **annuel simple** de **3,2 %** pendant **10 ans**.
-   * **Deuxième placement** : intérêt **composé** à **1,6 % tous les 6 mois**, donc **2 fois par an**, pendant **10 ans**.
-
-a) On cherche **l’écart en % entre les deux montants finaux** au bout de 10 ans.  
-b) En déduire quel est le meilleur placement sur 10 ans.
-
-**Hypothèse** : Comme le montant initial est le **même**, on peut le fixer à 100 \$ pour faciliter le calcul de l’écart en **pourcentage** à la fin.
-
-**Résultat attendu** (approximatif) :
+**Résultat attendu avec** :  
+m = 10.0 	masse du soluté en grammes  
+M = 58.5	masse molaire du soluté en g/mol (ex. NaCl)  
+V = 0.25	volume de la solution en litres  
 
 ```
-Valeur avec intérêt simple : 132.00 $
-Valeur avec intérêt composé : 134.87 $
-Écart relatif : 2.17 %
+Concentration molaire : 0.682051282051282 mol/L
+```
+---
+
+## Exercice 3 : Vitesse moyenne d’une réaction
+
+Lors d’une expérience de cinétique chimique, on mesure la variation de la concentration d’un réactif au cours du temps.
+Écrire un programme qui calcule la vitesse moyenne de disparition selon :
+
+```math
+$ v = \frac{\Delta [A]}{\Delta t} $
 ```
 
+où `[A]` est la concentration du réactif.
+
+**Résultat attendu avec**:  \[Réactif A] passe de 0.80 mol/L à 0.20 mol/L en 120 secondes.
+
+```
+Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
+```
+---
+
+## Exercice 4 : Distance parcourue
+
+Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.
+
+1. **Écris l’algorithme en phrases** pour calculer la distance parcourue.
+2. **Implémente l’algorithme en Python**`.
+3. **Affiche la distance parcourue avec une phrase complète.**
+
+**Résultat attendu**:
+```
+Le cycliste a parcouru 4680.0 mètres en 12 minutes.
+```
 ---
 
 ## À faire avant le prochain cours
