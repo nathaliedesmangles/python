@@ -129,8 +129,13 @@ La constante PI est aussi disponible via le module math :
 1. On utilise le mot clé `def`.
 2. Suivi du nom de la fonction.
 3. Suivi de parenthèses `()`.
-4. suivi de deux-points `:`.
-5. Les instructions de la fonction sont sur les lignes d'en dessous, décalées. Ce décalage, permet à Python de reconnaitre le code qui appartient à la fonction et qui sera exécuté lors de son utilisation.
+4. Suivi de deux-points `:`.
+5. Les instructions de la fonction sont sur les lignes d'en dessous, décalées. Ce décalage, permet à Python de reconnaitre le code qui appartient à la fonction et qui sera exécuté lors de son utilisation. 
+L'absence de ce décalage (**indentation**) provoque l'erreur ***IndentationError***.
+
+```python
+IndentationError: expected an indented block after function definition on line X
+```
 
 {{% notice style="accent" title="Important" %}}
 * Les règles de **nomenclature des variables**, s'appliquent aussi aux noms de fonctions.
@@ -141,9 +146,9 @@ La constante PI est aussi disponible via le module math :
 
 **Une fonction qui affiche le résultat** :
 ```python
-def nom_fonction(param1, param2):
+def nom_fonction(param1, param2): # <--- Les deux-points 
     instructions
-    print(résultat) # <---- La fonction se termine ici
+    print(résultat) # <--- La fonction se termine ici
 ```
 
 **Exemple** :
@@ -152,7 +157,7 @@ def nom_fonction(param1, param2):
 # Définition de la fonction
 def aire_rectangle(longueur, largeur):
     aire = longueur * largeur
-    print(f"L'aire du rectangle de longueur {longueur} et de largeur {largeur} est {aire} cm^2") # <---- La fonction se termine ici
+    print(f"L'aire du rectangle de longueur {longueur} et de largeur {largeur} est {aire} cm^2") 
 ```
 
 > Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et **affiche** l'aire.
@@ -171,7 +176,7 @@ def nom_fonction(param1, param2):
 # Définition de la fonction
 def aire_rectangle(longueur, largeur):
     aire = longueur * largeur
-    return aire  # <---- La fonction se termine ici
+    return aire  
 ```
 
 > Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et la **retourne**.
@@ -234,7 +239,7 @@ print(x)       # Erreur : x n'existe pas ici
 * **Erreur logique** : Les instructions ne correspondent pas à la logique imposée par le problème. Ex.: `aire = longueur + largeur`
  
 
-### Quelques habitudes à avoir pour déboguer :
+### Quelques habitudes à avoir pour déboguer
 
 * Lire le message d’erreur affiché
 * Ajouter des ***print()*** pour suivre les valeurs.
@@ -264,17 +269,15 @@ où $g = 9.8 \, m/s^2$ est l’accélération gravitationnelle.
 import math
 
 def temps_chute(hauteur):
-    g = "9.8"
+g = "9.8"
     t = math.sqrt(2 * hauteur / g)
     return t
 
 h = input("Entrez la hauteur de chute en mètres: ")
 
-print("Hauteur entrée:", h)
-
 temps = temps_chute(h)
 
-print("Le temps de chute est", temps "secondes.")
+print("Le temps de chute est {temps} secondes.")
 ```
 
 ---
@@ -282,28 +285,36 @@ print("Le temps de chute est", temps "secondes.")
 {{% notice style="magenta" title="Correction attendue" groupid="notice-toggle" expanded="false" %}}
 
 **Erreurs intégrées** :
-
-1. `g = "9.8"` : valeur gravitationnelle en chaîne de caractères → provoquera une erreur de type.
-2. `input()` retourne une chaîne → doit être convertie en `float()`.
-3. Il manque une virgule dans le `print()` final.
-4. Le type de la variable `hauteur` dans `temps_chute()` est incorrect (chaîne).
-5. Possibilité d’ajouter un `print()` intermédiaire dans `temps_chute()` pour voir la valeur de `t`.
+1. Erreur d'indentation : définition de `g` n'est dans le corps de la fonction.
+2. `g = "9.8"` : valeur gravitationnelle en chaîne de caractères → provoquera une erreur de type.
+3. `input()` retourne une chaîne → doit être convertie en `float()`.
+4. Il manque `f` dans le `print()` final.
+5. Le type de la variable `hauteur` dans `temps_chute()` est incorrect (chaîne).
 
 ```python
 import math
 
 def temps_chute(hauteur):
     g = 9.8
+
+    # Vérification du type de g
+    print(type(g))
+
     t = math.sqrt(2 * hauteur / g)
-    return t # <---- La fonction se termine ici
+
+    # vérification de la valeur de t
+    print(f"Temps de chute calculé: {t}")
+
+    return t 
 
 h = float(input("Entrez la hauteur de chute en mètres: "))
 
-print("Hauteur entrée:", h)
+# vérification de la valeur de h
+print(f"Hauteur entrée: {h}")
 
 temps = temps_chute(h)
 
-print("Le temps de chute est", temps, "secondes.")
+print("Le temps de chute est {temps} secondes.")
 ```
 {{% /notice %}}
 
@@ -422,7 +433,7 @@ $$
 \text{Surface} = \pi \cdot r \cdot (r + \sqrt{r^2 + h^2})
 $$
 ```
-> Toutefois, 6 erreurs se sont glissées dans le programme. Utilise des instructions `print()` pour comprendre les erreurs, puis corrige-les une à une et exécute le code après chaque correction avant de passer à l'erreur suivante.
+> Toutefois, des erreurs se sont glissées dans le programme. Utilisez des instructions `print()` pour comprendre les erreurs, puis corrigez-les une à une et exécutez le code après chaque correction avant de passer à l'erreur suivante.
 
 **Code à déboguer et corriger** :
 
@@ -435,9 +446,6 @@ def surface_cone(rayon, hauteur):
 
 r = input("Entrez le rayon du cône: ")
 h = input("Entrez la hauteur du cône: ")
-
-print("Rayon saisi:", r)
-print("Hauteur saisie:", h)
 
 resultat = surface_cone(r, h)
 
