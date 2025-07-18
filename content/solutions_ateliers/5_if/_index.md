@@ -1,7 +1,7 @@
 +++
-pre = "<b>6.</b>"
-title = " If-elif-else"
-weight = 306
+pre = "<b>5.</b>"
+title = " Décider avec if-elif-else et les opérateurs"
+weight = 305
 +++
 
 ## 

@@ -5,7 +5,9 @@ title = " Saisie au clavier, fonctions et débogage"
 weight = 103
 +++
 
-## Objectifs d'apprentissage
+## Objectifs 
+
+À la fin de la leçon, vous devrez être en mesure de :
 
 * Gérer les entrées (**saisies au clavier**) d'un programme Python.
 * Utiliser des fonctions **prédéfinies**.
@@ -41,7 +43,7 @@ moyenne = (note1 + note2) / 2	==> ERREUR
 
 {{% notice style="accent" title="Important" %}}
 L'erreur est causée par le fait que la fonction `input()`, transforme toutes les saisies au clavier en **chaine de caractères (`str`)**.
-Si on tape **95** au clavier, pour Python ça devient **"95"**.
+Si on tape au clavier **95** et **98**, pour Python c'est **"95" + "98"**, ce qui n'est pas une opération valide. C'est comme essayer de faire "Bonjour" + "Salut".
 {{% /notice %}}
 
 #### Comment convertir des données en entier (*int*) ou en nombre flottant (*float*)
@@ -66,14 +68,16 @@ print(f"La moyenne des deux notes {note1} et {note2} est: {moyenne}")
 
 ## Qu’est-ce qu’une fonction ?
 
-
-{{% notice style="cyan" title="Analogie dans la vie de touts les jours" %}}
-
-
-{{% /notice %}}
-
-* Une fonction est un **bloc de code réutilisable**. On peut lui donner des **paramètres** (valeurs en entrée) et elle peut renvoyer un **résultat**. 
+* Une fonction est un **bloc de code réutilisable**. On peut lui donner des **paramètres** (valeurs en entrée) et elle peut renvoyer un **résultat** ou simplement l'afficher. 
 * Si une fonction renvoie un résultat, il devra être stocké dans  une variable pour pouvoir être utilisé ailleurs dans le code.
+
+{{% notice style="cyan" title="Analogie dans la vie de tous les jours" groupid="notice-toggle" expanded="false" %}}
+Une fonction est comme une recette qu'on peut réutiliser autant de fois que l'on veut:
+- Les ingrédients : les paramètres.
+- La préparation : le corps de la fonction.
+- Le résultat final : la valeur retournée ou affichée.
+Utiliser une fonction, c’est suivre la recette avec des ingrédients précis.
+{{% /notice %}}
 
 ### Utilisation de fonctions prédéfinies
 
@@ -84,12 +88,12 @@ Python offre plein de **fonctions toutes prêtes** (*prédéfinies*).
 | Fonction  | Utilité                                 | Exemple                         |
 | --------- | --------------------------------------- | ------------------------------- |
 | `print()` | Afficher un message                     | `print("Bonjour !")`            |
+| `type()`  | Afficher le type d’une variable         | `type(3.5)` → `<class 'float'>` |
 | `input()` | Demander une donnée à l’utilisateur     | `nom = input("Votre nom :")`    |
 | `int()`   | Convertir en entier                     | `val = int("5")`                |
 | `float()` | Convertir en nombre décimal             | `val = float("3.14")`           |
 | `round()` | Arrondir un nombre                      | `round(2.718, 2)` → `2.72`      |
 | `len()`   | Compter les éléments d’une chaîne/liste | `len("atomes")` → `6`           |
-| `type()`  | Afficher le type d’une variable         | `type(3.5)` → `<class 'float'>` |
 
 > On utilise une fonction en l'**appelant**. On l'appelle en écrivant son nom suivi de parenthèses.
 
@@ -105,14 +109,16 @@ import math
 | ---------------- | ------------------ | ------------------------------- |
 | `math.sqrt(x)`   | Racine carrée      | `math.sqrt(16)` → `4.0`         |
 | `math.pow(x, y)` | Puissance          | `math.pow(2, 3)` → `8.0`        |
-| `math.pi`        | La constante π     | `math.pi` → `3.14159...`        |
 | `math.sin(x)`    | Sinus (en radians) | `math.sin(math.pi / 2)` → `1.0` |
 | `math.log(x)`    | Logarithme naturel | `math.log(10)`                  |
 
+La constante PI est aussi disponible via le module math :
+| Constante      | Description        | Exemple       |               
+| -------------- | ------------------ | ------------- |
+| `math.pi`        | La constante π     | `math.pi` → `3.14159...`        |
 
 ## Création de fonction avec `def`
-
-**Rappel** : 
+ 
 > Une fonction peut:
    > 1. Afficher un résultat (ex: `print()`)
    > 2. Retourner un résultat (ex: `input()`)
@@ -124,7 +130,7 @@ import math
 2. Suivi du nom de la fonction.
 3. Suivi de parenthèses `()`.
 4. suivi de deux-points `:`.
-5. Les instructions de la fonction sont sur les lignes d'en dessous, décalées. Ce décalage, permet à Python de reconnaitre le code à exécuter.
+5. Les instructions de la fonction sont sur les lignes d'en dessous, décalées. Ce décalage, permet à Python de reconnaitre le code qui appartient à la fonction et qui sera exécuté lors de son utilisation.
 
 {{% notice style="accent" title="Important" %}}
 * Les règles de **nomenclature des variables**, s'appliquent aussi aux noms de fonctions.
@@ -137,15 +143,16 @@ import math
 ```python
 def nom_fonction(param1, param2):
     instructions
-    print(résultat)
+    print(résultat) # <---- La fonction se termine ici
 ```
 
 **Exemple** :
 
 ```python
+# Définition de la fonction
 def aire_rectangle(longueur, largeur):
     aire = longueur * largeur
-    print(f"L'aire du rectangle de longueur {longueur} et de largeur {largeur} est {aire} cm^2")
+    print(f"L'aire du rectangle de longueur {longueur} et de largeur {largeur} est {aire} cm^2") # <---- La fonction se termine ici
 ```
 
 > Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et **affiche** l'aire.
@@ -155,15 +162,16 @@ def aire_rectangle(longueur, largeur):
 ```python
 def nom_fonction(param1, param2):
     instructions
-    return résultat
+    return résultat # <---- La fonction se termine ici
 ```
 
 **Exemple** :
 
 ```python
+# Définition de la fonction
 def aire_rectangle(longueur, largeur):
     aire = longueur * largeur
-    return aire
+    return aire  # <---- La fonction se termine ici
 ```
 
 > Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et la **retourne**.
@@ -179,18 +187,24 @@ def aire_rectangle(longueur, largeur):
 **Utilisation de la fonction `aire_rectangle()` qui **affiche** l'aire**
 
 ```python
+# Appel de la fonction
 aire_rectangle(5, 2)
 ```
-
+> Les valeurs utilisées entre les parenthèses seront utilisées par la fonction.
 > Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.
 
 **Utilisation de la fonction `aire_rectangle()` qui **retourne** l'aire**
 
 ```python
-surface = aire_rectangle(5, 2)
-print("L'aire du rectangle est : {surface}")
+surface = aire_rectangle(5, 2) # Appel de la fonction
+print(f"L'aire du rectangle est : {surface}")
 ```
 > Notez la différence: Ici, **il faut stocker le résultat de la fonction dans une variable**.
+
+On aurait aussi pu faire:
+```python
+print(f"L'aire du rectangle est : {aire_rectangle(5, 2)}") # Appel de la fonction
+```
 
 ### La portée locale des variables
 
@@ -223,10 +237,11 @@ print(x)       # Erreur : x n'existe pas ici
 ### Quelques habitudes à avoir pour déboguer :
 
 * Lire le message d’erreur affiché
-* Ajouter des **print()** pour suivre les valeurs
-* Tester une ligne à la fois
-* Est-ce que le résultat est correct ?
-* Vérifier les types avec type()
+* Ajouter des ***print()*** pour suivre les valeurs.
+* Corriger les erreurs dans l'**ordre de leur apparition**, car 1 erreur, peut soit en cacher ou être la cause d'autres erreurs.
+* Tester **une ligne à la fois**.
+* Se poser la question : "Est-ce que le résultat est correct ?".
+* Vérifier les types des données avec *type()*.
 
 
 ### Exemple de code présentant des erreurs
@@ -241,9 +256,7 @@ t = \sqrt{\frac{2h}{g}}
 $$
 où $g = 9.8 \, m/s^2$ est l’accélération gravitationnelle.
 ```
-> Malheureusement, le programme contient des erreurs. Utilise des `print()` pour comprendre ce qui ne fonctionne pas, puis corrige le code.
-
----
+> Malheureusement, le programme contient des erreurs. Utilisez des `print()` pour comprendre ce qui ne fonctionne pas, puis corrigez le code.
 
 **Code à déboguer**
 
@@ -282,7 +295,7 @@ import math
 def temps_chute(hauteur):
     g = 9.8
     t = math.sqrt(2 * hauteur / g)
-    return t
+    return t # <---- La fonction se termine ici
 
 h = float(input("Entrez la hauteur de chute en mètres: "))
 
@@ -299,19 +312,18 @@ print("Le temps de chute est", temps, "secondes.")
 * `input()` permet de lire une donnée (toujours une chaîne).
 * Il faut convertir avec `int()` ou `float()` pour faire des calculs.
 * `def` : sert à définir une fonction 
-* nom_fonction(paramètres) : Les paramètres sont les variables représentant les données dont la fonction a besoin pour obtenir le résultat.                   
+* ***nom_fonction(paramètres)*** : Les paramètres sont les variables représentant les données dont la fonction a besoin pour obtenir le résultat.                   
 * `return` : Permet à la fonction de retourner un résultat (`resultat = fonction()` ou <br> `print(fonction())`)
-* Portée locale : Signifie que les variables dans une fonction n’existent qu’à l’intérieur de .elle-ci|
-* Pour utiliser une fonction prédéfinie ou personnalisé, il faut écrire sont nom, les parenthèses et les paramètres si elle en a.
+* **Portée locale** : Signifie que les variables dans une fonction n’existent qu’à l’intérieur de .elle-ci|
+* Pour **utiliser une fonction** prédéfinie ou personnalisé, il faut écrire sont nom, les parenthèses et les paramètres si elle en a.
 {{% /notice %}}
 
 ---
 
 ### Exercices à faire avant le cours
 
-
 {{% notice style="magenta" title="Appel de fonction" groupid="notice-toggle" expanded="false" %}}
-Pour chacun des exercices ci-dessous, utilisez (appelez) la fonction crée.
+Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.
 {{% /notice %}}
 
 ## Exercice 1 : La loi d'Ohm
@@ -321,14 +333,14 @@ Un technicien de laboratoire vous demande d'écrire un programme Python pour cal
 ```math
 Loi d’Ohm : $ U = R × I $
 ```
+Écrire un programme qui : 
+1. Demande à l'utilisateur d'entrer la valeur de la résistance (en ohms).
+2. Demande à l'utilisateur d'entrer la valeur du courant (en ampères).
+3. Calcule et affiche la tension à l'aide d'une phrase.
 
-1. Le programme demande à l'utilisateur d'entrer la valeur de la résistance (en ohms)
-2. Le programme demande à l'utilisateur d'entrer la valeur du courant (en ampères)
-3. Calculer et afficher la tension à l'aide d'une phrase.
-4. Ajouter des explications en commentaire dans le code.
+**NB** : Ajoutez des explications en commentaire dans le code.
 
 **Résultat attendu** :
-
 ```
 Entrer la résistance en ohms : 10
 Entrer le courant en ampères : 2
@@ -337,74 +349,72 @@ La tension est de 20.0 V
 
 ### Exercice 2 : Élément chimique
 
-Écrire une fonction `element_chimique()` qui :
+Écrire un programme qui :
 * Demande à l'utilisateur d'entrer le nom d’un élément chimique.
 * Affiche un message disant "L’élément choisi est \[nom]"
 
-### Exercice 3 : Aire d'un cercle
+**Exemple d'affichage attendu (élément oxygène)** :
+```python
+Entrer le nom d'un élément chimique : oxygène
+L’élément choisi est : oxygène
+```
+
+### Exercice 3 : Convertir Celsius en Kelvin
+
+Crée une fonction nommée `convertir_C_en_K` qui :
+* prend une température en °C en paramètre
+* retourne la température en Kelvin (formule : K = C + 273.15)
+
+**Exemple d'affichage attendu (30°C)** :
+```python
+Une température de 30°C équivaut à 303.15 K.
+```
+
+### Exercice 4 : Calculer une énergie cinétique
+
+Créez une fonction `energie_cinetique(m, v)` qui calcule et retourne la valeur de l'énergie cinétique d'un objet en joules:
+
+```math
+$E_c = \frac{1}{2} \cdot m \cdot v^2$
+```
+où
+* m  : La masse de l'objet en kilogrammes.
+* v  : La vitesse de l'objet en mètres par seconde.
+
+**Exemple d'affichage attendu avec `masse=2.0 kg` et `vitesse=3.0 m/s`** :
+```python
+L'énergie cinétique de l'objet est de 9.0 joules.
+```
+
+### Exercice 5 : Aire d'un cercle
 
 Écrire une fonction `aire_cercle()` qui :
 * Demande à l'utilisateur d'entrer le rayon du cercle (en cm).
-* Calcule l'aire du cercle (utiliser le **module math** pour PI et le rayon².)
-* Affiche l'aire du cercle, arrondie à 2 décimales (utiliser la fonction `round`).
+* Calcule l'aire du cercle (utilisez le **module math** pour PI et le rayon².)
+* Affiche l'aire du cercle, arrondie à 2 décimales (utilisez la fonction `round`).
 
 **Exemple d'affichage attendu (rayon de 5 cm)** :
 ```python
 Aire du cercle de rayon 5 cm : 78.54 cm²
 ```
 
-### Exercice 4 : Convertir Celsius en Kelvin
-
-Crée une fonction nommée `convertir_C_en_K` qui :
-
-* prend une température en °C en paramètre
-* retourne la température en Kelvin (formule : K = C + 273.15)
-
-**Solution :**
-
-```python
-def convertir_C_en_K(celsius):
-    kelvin = celsius + 273.15
-    return kelvin
-
-print(convertir_C_en_K(25))  # 298.15
-```
-
-### Exercice 5 : Calculer une énergie cinétique
-
-Crée une fonction `energie_cinetique(m, v)` qui calcule :
-
-```math
-$E_c = \frac{1}{2} \cdot m \cdot v^2$
-```
-
-**Solution :**
-
-```python
-def energie_cinetique(m, v):
-    return 0.5 * m * v**2
-
-print(energie_cinetique(2.0, 3.0))  # 9.0
-```
-
 ### Exercice 6 : Vérifier la portée locale
 
-Crée une fonction `tester_variable()` qui crée une variable `x = 10` et l’affiche dans la fonction.
-Essaye ensuite d’afficher `x` **à l’extérieur de la fonction**.
+Crée une fonction `tester_variable()` qui crée une variable `prenom = "votre prénom` et l’affiche dans la fonction avec un `print`.
+Essaye ensuite d’afficher la valeur de `prenom` **à l’extérieur de la fonction**.
 
-**Solution :**
-
+**Exemple d'affichage attendu** :
 ```python
-def tester_variable():
-    x = 10
-    print("Dans la fonction :", x)
+NameError                                 Traceback (most recent call last)
+Cell In[16], line 6
+      3     print(f"Dans la fonction tu t'appelles : {prenom}")
+      5 tester_variable()
+----> 6 print(f"À l'exterieur de la fonction tu t'appelles : {prenom}") 
 
-tester_variable()
-print("À l’extérieur :", x)  # Erreur attendue
+NameError: name 'prenom' is not defined
 ```
-### Exercice 7 : Trouvez les erreurs et corrigez les
 
-**Énoncé du problème** :
+### Exercice 7 : Trouvez les erreurs et corrigez les
 
 > Ce programme est censé calculer la surface d’un cône droit à partir du rayon et de la hauteur entrés par l’utilisateur. La formule utilisée est :
 ```math
@@ -412,14 +422,11 @@ $$
 \text{Surface} = \pi \cdot r \cdot (r + \sqrt{r^2 + h^2})
 $$
 ```
-> Toutefois, plusieurs erreurs se sont glissées dans le programme. Utilise des instructions `print()` pour comprendre les erreurs, puis corrige-les une à une.
+> Toutefois, 6 erreurs se sont glissées dans le programme. Utilise des instructions `print()` pour comprendre les erreurs, puis corrige-les une à une et exécute le code après chaque correction avant de passer à l'erreur suivante.
 
-
-### Code à déboguer et corriger
+**Code à déboguer et corriger** :
 
 ```python
-import math
-
 def surface_cone(rayon, hauteur):
     aire_base = math.pi * rayon ** 2
     aire_lateral = math.pi * rayon * math.sqrt(rayon**2 + hauteur)
@@ -434,44 +441,14 @@ print("Hauteur saisie:", h)
 
 resultat = surface_cone(r, h)
 
-print("La surface totale du cône est de", resultat "cm²")
+print("La surface totale du cône est de {resultat} cm²")
 ```
----
-
-{{% notice style="magenta" title="Correction attendue" groupid="notice-toggle" expanded="false" %}}
-**Erreurs à corriger, dans l'ordre**:  
-1. `input()` retourne une **chaîne de caractères** → nécessite une conversion `float()`.
-2. Erreur dans le calcul de `aire_lateral`: `hauteur` au lieu de `hauteur**2`.
-3. Nom de variable mal orthographié : `aire_latérale` ≠ `aire_lateral` (accent).
-4. Manque une virgule dans le `print()` final.
-5. Nom de variables non explicites et parfois contradictoires (`r`, `rayon`), ce qui peut déstabiliser.
-
-```python
-import math
-
-def surface_cone(rayon, hauteur):
-    aire_base = math.pi * rayon ** 2
-    aire_lateral = math.pi * rayon * math.sqrt(rayon**2 + hauteur**2)
-    surface = aire_base + aire_lateral
-    return surface
-
-r = float(input("Entrez le rayon du cône: "))
-h = float(input("Entrez la hauteur du cône: "))
-
-print("Rayon saisi:", r)
-print("Hauteur saisie:", h)
-
-resultat = surface_cone(r, h)
-
-print("La surface totale du cône est de", resultat, "cm²")
-```
-{{% /notice %}}
 
 ---
 
 ## À faire avant le prochain cours
 
-> **RAPPEL**: Semaine prochaine c'est le **premier examen** (15%)
+> **RAPPEL**: Semaine prochaine c'est le **premier examen** (20%)
 
 1. Lire la matière sur [Décider avec if, elif, else et les opérateurs](../semaine5/)
 2. Faire les [exercices se trouvant à la fin de la leçon 5](../semaine5/#exercices-à-faire-avant-le-cours)

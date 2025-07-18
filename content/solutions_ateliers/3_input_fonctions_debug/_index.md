@@ -1,8 +1,7 @@
 +++
-pre = "3."
-title = " Entrées/Sorties, algorithme, fonctions et débogage"
-weight = 203
-
+pre = "<b>3.</b>"
+title = " Saisie au clavier, fonctions et débogage"
+weight = 303
 draft = false
 +++
 

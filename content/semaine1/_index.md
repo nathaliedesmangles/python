@@ -5,7 +5,7 @@ title = " Présentation du cours et l'environnement de travail"
 weight = 101
 +++
 
-## Objectifs pédagogiques
+## Objectifs
 
 À la fin de la leçon, vous devrez être en mesure de :
 

@@ -5,7 +5,7 @@ title = " Introduction à Python (Variables, types de données et algorithme)"
 weight = 102
 +++
 
-## Objectifs d'apprentissage
+## Objectifs
 
 À la fin de la leçon, vous devrez être en mesure de :
 

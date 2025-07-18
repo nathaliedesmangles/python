@@ -3,7 +3,7 @@
   <channel>
     <title> Saisie au clavier, fonctions et débogage :: 420-SN1-RE</title>
     <link>https://example.org/semaine3/index.html</link>
-    <description>Objectifs d’apprentissage Gérer les entrées (saisies au clavier) d’un programme Python. Utiliser des fonctions prédéfinies. Définir ses propres fonctions avec def (paramètres, return, portée locale) Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :&#xA;nom = input(&#34;Quel est ton nom ? &#34;)&#xD;Convertir les données Les données entrées par input() sont toujours des chaînes (str).</description>
+    <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Gérer les entrées (saisies au clavier) d’un programme Python. Utiliser des fonctions prédéfinies. Définir ses propres fonctions avec def (paramètres, return, portée locale) Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine3/index.xml" rel="self" type="application/rss+xml" />

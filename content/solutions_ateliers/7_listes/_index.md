@@ -1,7 +1,7 @@
 +++
-pre = "**8.**"
+pre = "<b>7.</b>"
 title = " Listes, chaines et graphiques de base"
-weight = 308
+weight = 307
 +++
 
 ## 

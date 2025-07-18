@@ -3,7 +3,7 @@
   <channel>
     <title> Introduction à Python (Variables, types de données et algorithme) :: 420-SN1-RE</title>
     <link>https://example.org/semaine2/index.html</link>
-    <description>Objectifs d’apprentissage À la fin de la leçon, vous devrez être en mesure de :&#xA;Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.</description>
+    <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine2/index.xml" rel="self" type="application/rss+xml" />

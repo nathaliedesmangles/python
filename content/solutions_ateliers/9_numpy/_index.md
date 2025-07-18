@@ -1,5 +1,5 @@
 +++
-pre = "**11.**"
+pre = "<b>11.</b>"
 title = " Tableaux NumPy"
 weight = 311
 +++

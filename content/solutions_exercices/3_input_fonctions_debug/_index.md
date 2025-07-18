@@ -5,178 +5,188 @@ weight = 203
 draft = false
 +++
 
-## Exercice 1 - Élément chimique
-
-Écrire une fonction `element_chimique()` qui :
-* Demande à l'utilisateur d'entrer le nom d’un élément chimique.
-* Affiche un message disant "L’élément choisi est \[nom]"
-
-**Solution :**
+## Exercice 1 : La loi d'Ohm
 
 ```python
-def element_chimique():
-   element = input("Entrez le nom d'un élément chimique : "))
-   print("L’élément choisi est", element)
+# Étape 1 : Demander la résistance à l'utilisateur (en ohms)
+resistance = float(input("Entrer la résistance en ohms : "))
 
-# Appel de la fonction
-element_chimique()
+# Étape 2 : Demander le courant à l'utilisateur (en ampères)
+courant = float(input("Entrer le courant en ampères : "))
+
+# Étape 3 : Calculer la tension à l'aide de la formule U = R * I
+tension = resistance * courant
+
+# Étape 4 : Afficher le résultat
+print(f"La tension est de {tension} V")
 ```
+---
 
-## Exercice 2 - Aire d'un cercle
+### Exercice 2 : Élément chimique
 
-1. Écrire une fonction `aire_cercle()` qui :
-   * demande à l'utilisateur d'entrer le rayon du cercle (en cm).
-   * calcule l'aire du cercle (utiliser le **module math** pour PI et le rayon².)
-   * affiche l'aire du cercle, arrondie à 2 décimales (utiliser la fonction `round`).
-
-**Exemple d'affichage attendu (rayon de 5 cm)** :
 ```python
-Aire du cercle de rayon 5 cm : 78.54 cm²
-```
+# Demander à l'utilisateur d'entrer le nom d’un élément chimique
+element = input("Entrer le nom d'un élément chimique : ")
 
-**Solution :**
+# Afficher le message avec l’élément choisi
+print("L’élément choisi est :", element)
+```
+---
+
+### Exercice 3 : Convertir Celsius en Kelvin
+
+```python
+# Définition de la fonction
+def convertir_C_en_K(celsius):
+    kelvin = celsius + 273.15
+    return kelvin    # <---- La fonction se termine ici
+
+# Affichage et appel de la fonction
+print(f"Une température de 30°C équivaut à {convertir_C_en_K(30)} K")
+```
+---
+
+### Exercice 4 : Calculer une énergie cinétique
+
+```python
+# Définition de la fonction
+def energie_cinetique(m, v):
+    return 0.5 * m * v**2
+
+# Affichage et appel de la fonction
+print(f"L'énergie cinétique de l'objet est de {energie_cinetique(2.0, 3.0)} joules")  # 9.0 J
+```
+---
+
+### Exercice 5 : Aire d'un cercle
 
 ```python
 import math
 
 def aire_cercle():
-   r = float(input("Entrez le rayon du cercle : "))
-   aire = math.pi * math.pow(r, 2)
-   print("Aire du cercle :", round(aire, 2), "cm²")
+    rayon = float(input("Entrez le rayon du cercle (en cm) : "))
+    aire = math.pi * rayon ** 2
+    aire_arrondie = round(aire, 2)
+    print(f"Aire du cercle de rayon {rayon} cm : {aire_arrondie} cm²")
 
 # Appel de la fonction
 aire_cercle()
 ```
+---
 
-## Exercice 3 - Convertir Celsius en Kelvin
-
-Crée une fonction nommée `convertir_C_en_K` qui :
-
-* prend une température en °C en paramètre.
-* retourne la température en Kelvin (formule : K = C + 273.15)
-
-**Solution :**
-
-```python
-def convertir_C_en_K(celsius):
-    kelvin = celsius + 273.15
-    return kelvin
-
-# Appel de la fonction
-print(convertir_C_en_K(25))  # 298.15
-```
-
-## Exercice 4 – Calculer une énergie cinétique
-
-Crée une fonction `energie_cinetique(m, v)` qui calcule :
-
-```math
-$E_c = \frac{1}{2} \cdot m \cdot v^2$
-```
-**Solution :**
-
-```python
-def energie_cinetique(m, v):
-    return 0.5 * m * v**2
-
-# Appel de la fonction
-print(energie_cinetique(2.0, 3.0))  # 9.0
-```
-
-## Exercice 5 – Vérifier la portée locale
-
-Crée une fonction `tester_variable()` qui crée une variable `x = 10` et l’affiche dans la fonction.
-Essaye ensuite d’afficher `x` **à l’extérieur de la fonction**.
-
-**Solution :**
+### Exercice 6 : Vérifier la portée locale
 
 ```python
 def tester_variable():
-    x = 10
-    print("Dans la fonction :", x)
+    prenom = "Nathalie"
+    print(f"Dans la fonction tu t'appelles : {prenom}")
 
-# Appel de la fonction
 tester_variable()
-print("À l’extérieur :", x)  # Erreur attendue
+print(f"À l'exterieur de la fonction tu t'appelles : {prenom}")  # NameError: name 'prenom' is not defined attendue
 ```
-
-## Exercice #1
-
-
-\### Cellule Markdown – Algorithme
-
-```markdown
-#### Algorithme – Calcul de la force gravitationnelle
-
-1. Demander à l’utilisateur d’entrer le nom de l’objet (chaîne de caractères).
-2. Demander à l’utilisateur d’entrer la masse de l’objet (nombre décimal, en kg).
-3. Définir la constante d’accélération gravitationnelle (9,8 m/s²).
-4. Calculer la force en utilisant la formule : `force = masse \* accélération`
-5. Afficher la force avec une phrase claire, incluant le nom de l’objet et l’unité en N (Newton).
-```
+---
 
 
-\### Cellule Code
+### Exercice 7 : Trouvez les erreurs et corrigez-les
+
+Voici les erreurs dans **l’ordre d’apparition dans le code**, **corrigées une à une**, avec explications :
+
+**1. `math` n’est pas importé**
+
+**Erreur** : `NameError: name 'math' is not defined`
+
+**Correction** :
 
 ```python
-# Demande du nom de l'objet (chaîne de caractères)
-nom\_objet = input("Entrez le nom de l'objet : ")
-
-# Demande de la masse (nombre décimal)
-masse = float(input("Entrez la masse de l'objet en kg : "))
-
-# Déclaration de la constante d'accélération gravitationnelle (en m/s²)
-ACCELERATION\_GRAVITATIONNELLE = 9.8  # constante en majuscules
-
-# Calcul de la force
-force = masse \* ACCELERATION\_GRAVITATIONNELLE
-
-# Affichage du résultat
-print(f"La force de {nom\_objet} de {masse:.1f} est de {force:.2f} N.")
+import math
 ```
 
-\## Résultats des tests
+Ajout en haut du script.
 
-\### Test 1
+**2. Formule de l’aire latérale incorrecte**
 
-\*\*Entrée\*\* :
-
-\* nom\_objet = "balle"
-
-\* masse = 2.5
-
-\*\*Sortie attendue\*\* :
-
-```
-La force de la balle de 2.5 Kg est de 24.50 N.
+```python
+aire_lateral = math.pi * rayon * math.sqrt(rayon**2 + hauteur)
 ```
 
+**Erreur** : la formule du cône utilise la **génératrice** ℓ, pas `√(rayon² + hauteur)`. Et ici, `hauteur` est encore une **chaîne de caractères** donc cela causera une **erreur de type** plus loin.
 
-\### Test 2
-
-\*\*Entrée\*\* :
-
-\* nom\_objet = "voiture"
-
-\* masse = 1000.0
-
-\*\*Sortie attendue\*\* :
+Mais avant d'y toucher, corrigeons d’abord l’erreur **suivante plus urgente** :
 
 
+**3. `rayon` et `hauteur` sont des chaînes de caractères**
+
+**Erreur** : `TypeError: unsupported operand type(s)` quand on tente un calcul mathématique sur des `str`.
+
+**Correction** :
+
+```python
+r = float(input("Entrez le rayon du cône: "))
+h = float(input("Entrez la hauteur du cône: "))
 ```
-La force de la voiture de 1000.0 Kg est de 9800.00 N.
+
+**4. Mauvais calcul de l’aire latérale**
+
+**Erreur mathématique** : La bonne formule est
+```math
+$$
+\text{Aire latérale} = \pi r \ell \quad \text{avec } \ell = \sqrt{r^2 + h^2}
+$$
+```
+**Correction** :
+
+```python
+generatrice = math.sqrt(rayon**2 + hauteur**2)
+aire_laterale = math.pi * rayon * generatrice
 ```
 
+**5. Mauvais nom de variable `aire_latérale` au lieu de `aire_lateral`**
 
-\## Exercice #2
+**Erreur** : `NameError: name 'aire_latérale' is not defined` (car on utilise un accent non défini)
 
+**Correction** :
 
+```python
+surface = aire_base + aire_lateral
+```
 
-\## Exercice #3
+**6. Format incorrect de la dernière `print()`**
 
+```python
+print("La surface totale du cône est de {resultat} cm²")
+```
 
+**Erreur** : la chaîne affiche `{resultat}` littéralement.
 
-\## Exercice #4
+**Correction** :
 
+```python
+print(f"La surface totale du cône est de {resultat:.2f} cm²")
+```
 
+(avec f-string et arrondi à 2 décimales)
 
+**Code final corrigé** :
+
+```python
+import math
+
+def surface_cone(rayon, hauteur):
+    aire_base = math.pi * rayon ** 2
+    generatrice = math.sqrt(rayon**2 + hauteur**2)
+    aire_laterale = math.pi * rayon * generatrice
+    surface = aire_base + aire_laterale
+    return surface
+
+r = float(input("Entrez le rayon du cône: "))
+h = float(input("Entrez la hauteur du cône: "))
+
+print("Rayon saisi:", r)
+print("Hauteur saisie:", h)
+
+resultat = surface_cone(r, h)
+
+print(f"La surface totale du cône est de {resultat:.2f} cm²")
+```
+
+ 

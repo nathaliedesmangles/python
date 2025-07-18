@@ -14,11 +14,11 @@ weight = 104
 
 
 
-\## Informations
+### Informations
 
 
 
-* Date:			Semaine #4 (Voir le calendrier)
-* Matière: 			Semaines 1 à 3 inclusivement
-* Documentation permise: 	1 feuille recto-verso (manuscrite ou imprimée)
-* Format:			À confirmer
+* ***Date***:	 			Semaine #4 (Voir le calendrier scolaire)
+* ***Matière***: 			Semaines 1 à 3 inclusivement
+* ***Documentation permise***: 	1 feuille recto-verso (manuscrite ou imprimée)
+* ***Format de l'examen***:		À confirmer

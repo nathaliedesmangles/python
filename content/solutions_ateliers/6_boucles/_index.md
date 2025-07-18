@@ -1,7 +1,7 @@
 +++
-pre = "<b>7.</b>"
-title = " Boucles WHILE et FOR"
-weight = 307
+pre = "<b>6.</b>"
+title = " Répéter avec FOR et WHILE"
+weight = 306
 +++
 
 ## 
