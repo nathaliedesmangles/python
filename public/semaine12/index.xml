@@ -3,37 +3,9 @@
   <channel>
     <title> Projet-Partie 1: Analyse et algorithmes :: 420-SN1-RE</title>
     <link>https://example.org/semaine12/index.html</link>
-    <description>## Objectifs pédagogiques&#xA;Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): * Comprendre le problème&#xA;* Identifier les variables (types), constantes, formules, fonctions, etc.&#xA;* Élaborer les algorithmes</description>
+    <description>Objectifs pédagogiques Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine12/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>exercices préparatoires progressifs</title>
-      <link>https://example.org/semaine12/exercices_preparatoires/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine12/exercices_preparatoires/index.html</guid>
-      <description>Parfait ! Voici une série d’exercices préparatoires progressifs, organisés par bloc de compétences, pour bien préparer tes étudiant·es au projet ADN.&#xA;🔁 Bloc A – Programmation de base en Python 🧪 Exercice A1 — Comparaison de deux séquences # Complète la fonction pour comparer deux séquences de même longueur. # Un caractère &#34;?&#34; agit comme un joker qui compte toujours comme une correspondance. def comparer(seq1, seq2): correspondance = 0 for a, b in zip(seq1, seq2): if a == b or a == &#34;?</description>
-    </item>
-    <item>
-      <title>Grille d&#39;évaluation</title>
-      <link>https://example.org/semaine12/grille/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine12/grille/index.html</guid>
-      <description>Voici la grille d’évaluation complète sur 100 points, mise à jour avec pondération ajustée pour refléter l’importance pédagogique des nouveaux volets :&#xA;🧾 Grille d’évaluation – Projet scientifique Python avec ADN (.ipynb) – /100 Volet Critères d’évaluation Points 1. Planification Objectifs, étapes, structure claire du notebook /10 2. Code fonctionnel Syntaxe correcte, fonctions bien définies, logique claire, variables bien nommées /15 3. Comparaison ADN Fonction de comparaison tolérante (?), application sur plusieurs loci /10 4.</description>
-    </item>
-    <item>
-      <title>Notions et outils nécessaires pour réussir le projet</title>
-      <link>https://example.org/semaine12/notions_utiles_necessaires/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine12/notions_utiles_necessaires/index.html</guid>
-      <description>Voici une liste complète et structurée de toutes les notions, fonctions et méthodes que les étudiant·es doivent avoir apprises avant de faire le projet ADN. Elle couvre la programmation de base, les bibliothèques scientifiques et les compétences analytiques spécifiques au projet.&#xA;🧠 Notions et outils nécessaires pour réussir le projet 🧾 A. Programmation de base en Python Thème Notions, fonctions, méthodes Variables &amp; types int, float, str, bool, list, dict Structures de contrôle if, elif, else, for, while, break, continue Fonctions personnalisées def, return, paramètres et portée locale Manipulation de chaînes str.</description>
-    </item>
-    <item>
-      <title>Projet intégrateur</title>
-      <link>https://example.org/semaine12/projet_integrateur/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine12/projet_integrateur/index.html</guid>
-      <description>Voici l’énoncé du projet mis à jour avec les nouveaux éléments (régression linéaire, barres d’erreur, incertitudes), tout en conservant le thème d’enquête ADN.&#xA;🕵️‍♀️ Projet intégrateur – Enquête scientifique par analyse d’ADN Programmation scientifique en Python — Valeur : 40 % 🔎 Contexte Une scène de crime a été découverte dans un laboratoire. Des échantillons biologiques (contenant de l’ADN partiel) ont été récupérés sur place, mais les séquences sont incomplètes ou partiellement contaminées.</description>
-    </item>
   </channel>
 </rss>

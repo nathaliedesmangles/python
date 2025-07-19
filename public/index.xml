@@ -96,14 +96,14 @@
       <link>https://example.org/semaine12/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine12/index.html</guid>
-      <description>## Objectifs pédagogiques&#xA;Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): * Comprendre le problème&#xA;* Identifier les variables (types), constantes, formules, fonctions, etc.&#xA;* Élaborer les algorithmes</description>
+      <description>Objectifs pédagogiques Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes</description>
     </item>
     <item>
       <title>Finalisation et Remise du rapport final</title>
       <link>https://example.org/semaine15/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine15/index.html</guid>
-      <description>Vous devez remettre votre code : le fichier prenomNom.ipynb au plus tard ce soir à 23h59.</description>
+      <description>Vous devez remettre votre code sur Moodle : le fichier projet_prenomNom.ipynb au plus tard ce soir à 23h59.</description>
     </item>
     <item>
       <title>Solutions des exercices</title>

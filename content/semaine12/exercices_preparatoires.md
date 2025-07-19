@@ -1,6 +1,7 @@
 +++
 title = "exercices préparatoires progressifs"
 weight = 112
+draft = true
 +++
 
 Parfait ! Voici une **série d’exercices préparatoires progressifs**, organisés par bloc de compétences, pour bien préparer tes étudiant·es au projet ADN.

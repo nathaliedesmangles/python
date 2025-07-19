@@ -1,6 +1,7 @@
 +++
 title = "Notions et outils nécessaires pour réussir le projet"
 weight = 112
+draft = true
 +++
 
 Voici une **liste complète et structurée** de toutes les **notions, fonctions et méthodes** que les étudiant·es doivent avoir **apprises avant de faire le projet ADN**. Elle couvre la programmation de base, les bibliothèques scientifiques et les compétences analytiques spécifiques au projet.

@@ -6,4 +6,4 @@ weight = 115
 draft = false
 +++
 
-Vous devez remettre votre code : le fichier `prenomNom.ipynb` au plus tard ce soir à 23h59.
+Vous devez remettre votre code sur Moodle : le fichier `projet_prenomNom.ipynb` au plus tard ce soir à 23h59.

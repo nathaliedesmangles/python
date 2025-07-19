@@ -3,7 +3,7 @@
   <channel>
     <title>Finalisation et Remise du rapport final :: 420-SN1-RE</title>
     <link>https://example.org/semaine15/index.html</link>
-    <description>Vous devez remettre votre code : le fichier prenomNom.ipynb au plus tard ce soir à 23h59.</description>
+    <description>Vous devez remettre votre code sur Moodle : le fichier projet_prenomNom.ipynb au plus tard ce soir à 23h59.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine15/index.xml" rel="self" type="application/rss+xml" />
