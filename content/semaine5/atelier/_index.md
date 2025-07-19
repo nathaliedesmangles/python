@@ -1,9 +1,10 @@
 +++
 title = "Atelier 5"
 weight = 105
+draft = true
 +++
 
-## Objectifs pédagogiques
+## Objectifs
 
 * Utiliser les opérateurs de comparaison et logiques.
 * Utiliser les structures conditionnelles `if`, `elif`, `else`.

@@ -69,7 +69,7 @@ print(f"La moyenne des deux notes {note1} et {note2} est: {moyenne}")
 ## Qu’est-ce qu’une fonction ?
 
 * Une fonction est un **bloc de code réutilisable**. On peut lui donner des **paramètres** (valeurs en entrée) et elle peut renvoyer un **résultat** ou simplement l'afficher. 
-* Si une fonction renvoie un résultat, il devra être stocké dans  une variable pour pouvoir être utilisé ailleurs dans le code.
+* Si une fonction renvoie un résultat, il devra être **stocké dans une variable** pour être utilisé ailleurs dans le code ou on pourra **utiliser la fonction** directement à l'endroit où le résultat est requis.
 
 {{% notice style="cyan" title="Analogie dans la vie de tous les jours" groupid="notice-toggle" expanded="false" %}}
 Une fonction est comme une recette qu'on peut réutiliser autant de fois que l'on veut:

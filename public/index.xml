@@ -68,7 +68,7 @@
       <link>https://example.org/semaine4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine4/index.html</guid>
-      <description>Informations Date:&#x9;Semaine #4 (Voir le calendrier scolaire) Matière: Semaines 1 à 3 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;À confirmer</description>
+      <description>Informations Date:&#x9;Semaine #4 (Voir le calendrier scolaire) Matière: Semaines 1 à 3 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;Exercices pratiques avec VS Code.</description>
     </item>
     <item>
       <title> Décider avec `if`, `elif`, `else` et les opérateurs</title>
@@ -78,39 +78,11 @@
       <description>Objectifs d’apprentissage Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
     </item>
     <item>
-      <title> Répéter avec `for` et `while`</title>
-      <link>https://example.org/semaine6/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine6/index.html</guid>
-      <description>Objectifs de la leçon Comprendre l’utilité des boucles en programmation. Savoir écrire des boucles while et for. Savoir identifier quand utiliser une boucle for vs. while. Interrompre le déroulement d’une boucle. Appliquer les boucles à des cas concrets en sciences. À quoi servent les boucles ? Elles permettent de répéter des instructions plusieurs fois, soit un nombre connu, soit jusqu’à ce qu’une condition soit atteinte.&#xA;La boucle while Utilisée quand on ne connaît pas d’avance combien de fois répéter.</description>
-    </item>
-    <item>
-      <title> Listes, chaînes de caractères et graphiques de base</title>
-      <link>https://example.org/semaine7/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine7/index.html</guid>
-      <description>Objectifs d’apprentissage Créer et manipuler des listes de données numériques ou textuelles en Python (ajout, suppression, parcours, calcul de statistiques simples). Accéder, modifier et parcourir les caractères d’une chaîne de caractères. Appliquer des méthodes de traitement de texte pour analyser ou transformer des chaînes de caractères (ex. : mise en minuscules, découpage, recherche, comptage). Les listes de données Une liste est un contenant qui peut regrouper plusieurs valeurs (appelées éléments), dans un ordre donné.</description>
-    </item>
-    <item>
       <title> Évaluation #2 (25%)</title>
       <link>https://example.org/semaine8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine8/index.html</guid>
       <description>Informations ⦁&#x9;Date:&#x9;Semaine #8 (Voir le calendrier) ⦁&#x9;Matière: Semaines 5 à 7 inclusivement ⦁&#x9;Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) ⦁&#x9;Format:&#x9;À confirmer</description>
-    </item>
-    <item>
-      <title> Tableaux NumPy</title>
-      <link>https://example.org/semaine9/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine9/index.html</guid>
-      <description>Objectifs d’apprentissage À la fin de cette leçon, vous devrez être capable de :&#xA;Comprendre le rôle de NumPy pour le calcul scientifique rapide avec des tableaux. Utiliser Pandas pour manipuler des tableaux de données (DataFrame). Charger des données à partir d’un fichier CSV et faire des analyses simples. Appliquer des opérations mathématiques et statistiques de base. Pourquoi utiliser NumPy et Pandas? Python est très puissant pour l’analyse de données scientifiques.</description>
-    </item>
-    <item>
-      <title> Graphiques SciPy et traitement de fichiers CSV avec Pandas</title>
-      <link>https://example.org/semaine10/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine10/index.html</guid>
-      <description>* Importer la bibliothèque NumPy&#xA;* Utiliser les fonctions de NumPy pour créer des tableaux (1D, 2D)&#xA;* Utiliser les fonctions mathématiques de NumPy pour obtenir des statistiques sur les données&#xA;* Ajouter une droite sur un graphique (régression linéaire)&#xA;* Calculer une droite de régression (y = a·x + b)&#xA;* Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur&#xA;* Évaluer la qualité de l’ajustement avec le coefficient de détermination</description>
     </item>
     <item>
       <title> Évaluation #3 (20%)</title>
@@ -125,20 +97,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine12/index.html</guid>
       <description>## Objectifs pédagogiques&#xA;Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): * Comprendre le problème&#xA;* Identifier les variables (types), constantes, formules, fonctions, etc.&#xA;* Élaborer les algorithmes</description>
-    </item>
-    <item>
-      <title> Projet-Partie 2: Représentations graphiques de base</title>
-      <link>https://example.org/semaine13/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine13/index.html</guid>
-      <description>Remue-méninges et planification # Fiche de projet final – Programmation en sciences avec Python ## Informations de l&#39;étudiant - **Nom :** - **Date :** --- ## 1. Titre du projet *(Donne un titre clair et descriptif à ton projet)* --- ## 2. Objectif du projet *(Explique en une ou deux phrases ce que ton programme permettra d’analyser, de simuler ou de résoudre.)* --- ## 3. Description du fonctionnement prévu - **Entrées attendues :** *(Quelles données l’utilisateur devra-t-il fournir?</description>
-    </item>
-    <item>
-      <title> Projet-Partie 3: Représentation graphique avancée</title>
-      <link>https://example.org/semaine14/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine14/index.html</guid>
-      <description></description>
     </item>
     <item>
       <title>Finalisation et Remise du rapport final</title>

@@ -22,21 +22,21 @@ Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
     <meta itemprop="name" content=" Décider avec `if`, `elif`, `else` et les opérateurs :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs d’apprentissage Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).
 Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
-    <meta itemprop="wordCount" content="478">
+    <meta itemprop="wordCount" content="615">
     <title> Décider avec `if`, `elif`, `else` et les opérateurs :: 420-SN1-RE</title>
     <link href="/semaine5/index.xml" rel="alternate" type="application/rss+xml" title=" Décider avec `if`, `elif`, `else` et les opérateurs :: 420-SN1-RE">
-    <link href="/images/logo.png?1752811486" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752811486" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752811486" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752811486" rel="stylesheet">
-    <link href="/css/theme.min.css?1752811486" rel="stylesheet">
-    <link href="/css/format-html.min.css?1752811486" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1752811486" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1752811486" defer></script>
-    <script src="/js/lunr/lunr.min.js?1752811486" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1752811486" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1752811486" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1752811486" defer></script>
-    <script src="/js/search.min.js?1752811486" defer></script>
+    <link href="/images/logo.png?1752945726" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752945726" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752945726" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752945726" rel="stylesheet">
+    <link href="/css/theme.min.css?1752945726" rel="stylesheet">
+    <link href="/css/format-html.min.css?1752945726" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1752945726" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1752945726" defer></script>
+    <script src="/js/lunr/lunr.min.js?1752945726" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1752945726" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1752945726" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1752945726" defer></script>
+    <script src="/js/search.min.js?1752945726" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +46,7 @@ Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1752811486";
+      window.relearn.index_js_url="/searchindex.en.js?1752945726";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +92,7 @@ Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1752811486" rel="stylesheet">
+    <link href="/css/custom.css?1752945726" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine5/index.html">
     <div id="R-body" class="default-animation">
@@ -113,9 +113,9 @@ Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
     <li><a href="#les-opérateurs-logiques">Les opérateurs logiques</a></li>
     <li><a href="#les-structures-conditionnelles">Les structures conditionnelles</a>
       <ul>
-        <li><a href="#linstruction-if">L&rsquo;instruction <code>if</code></a></li>
-        <li><a href="#linstruction-ifelse">L&rsquo;instruction <code>if</code>…<code>else</code></a></li>
-        <li><a href="#linstruction-ifelifelse">L&rsquo;instruction <code>if</code>…<code>elif</code>…<code>else</code></a></li>
+        <li><a href="#linstruction-if">L&rsquo;instruction <em>if</em></a></li>
+        <li><a href="#linstruction-if-else">L&rsquo;instruction <em>if</em>-<em>else</em></a></li>
+        <li><a href="#linstruction-if-elif-else">L&rsquo;instruction <em>if</em>-<em>elif</em>-<em>else</em></a></li>
         <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a></li>
       </ul>
     </li>
@@ -130,9 +130,9 @@ Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Décider avec `if`, `elif`, `else` et les opérateurs</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine4/index.html" title="Évaluation #1 (20%) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine4/eval1/evaluation1/index.html" title="Évaluation #1 (20%) + solution (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/atelier/index.html" title="Atelier 5 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Évaluation #2 (25%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -251,52 +251,99 @@ Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
 </blockquote>
 <h2 id="les-structures-conditionnelles">Les structures conditionnelles</h2>
 <p>Elles permettent <strong>d’exécuter un bloc de code seulement si une condition est vraie</strong>.</p>
-<h3 id="linstruction-if">L&rsquo;instruction <code>if</code></h3>
-<p>Si la condition est vraie, le bloc <strong>indenté</strong> (décalé) est exécuté.<br>
-Notez la présence du caractère deux-points (<code>:</code>) après la condition.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> temp <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">25</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Il fait chaud.&#34;</span>)</span></span></code></pre></div>
+<h3 id="linstruction-if">L&rsquo;instruction <em>if</em></h3>
 <blockquote>
-<p>Dans une cellule de Code dans VS Code, testez l&rsquo;exemple du <code>if</code>.</p>
+<p>Pour exécuter du code <strong>si une condition est vraie</strong>.</p>
 </blockquote>
-<h3 id="linstruction-ifelse">L&rsquo;instruction <code>if</code>…<code>else</code></h3>
-<p><strong>Deux chemins possibles</strong> : un si la condition est vraie, un si elle est fausse.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> temp <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">25</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Il fait chaud.&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Il fait frais.&#34;</span>)</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> condition:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Bloc de code exécuté si la condition est vraie</span></span></span></code></pre></div>
+<p><strong>Exemple :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Majeur&#34;</span>)</span></span></code></pre></div>
+<h3 id="linstruction-if-else">L&rsquo;instruction <em>if</em>-<em>else</em></h3>
 <blockquote>
-<p>Dans une cellule de Code dans VS Code, testez l&rsquo;exemple du <code>if-else</code>.</p>
+<p>Pour exécuter du code <strong>si une condition est fausse</strong>.</p>
 </blockquote>
-<h3 id="linstruction-ifelifelse">L&rsquo;instruction <code>if</code>…<code>elif</code>…<code>else</code></h3>
-<p>Utilisé pour tester <strong>plusieurs cas différents</strong>.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> temp <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">25</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Il fait chaud.&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> temp <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">15</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Il fait bon.&#34;</span>)
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> condition:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Si la condition est vraie</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Il fait frais.&#34;</span>)</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Sinon (condition fausse)</span></span></span></code></pre></div>
+<p><strong>Exemple :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Majeur&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Mineur&#34;</span>)</span></span></code></pre></div>
+<h3 id="linstruction-if-elif-else">L&rsquo;instruction <em>if</em>-<em>elif</em>-<em>else</em></h3>
 <blockquote>
-<p>Dans une cellule de Code dans VS Code, testez l&rsquo;exemple du <code>if-elif-else</code>.</p>
+<p>Pour tester <strong>plusieurs cas différents</strong> et exécuter du code différent selon le cas.</p>
+</blockquote>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Important
+  </summary>
+  <div class="box-content">
+<ul>
+<li><strong>Si la condition du <code>if</code> est fausse</strong>, un seul <code>elif</code> sera exécuté.</li>
+<li><strong>Si et seulement si toutes les conditions</strong> (<code>if</code> et tous les <code>elif</code>) <strong>sont fausses</strong>, le <code>else</code> sera traité.</li>
+</ul>
+  </div>
+</details>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> condition1:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Si condition1 est vraie</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> condition2:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Sinon, si condition2 est vraie</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> condition3:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Sinon, si condition3 est vraie</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Sinon (aucune condition vraie)</span></span></span></code></pre></div>
+<p><strong>Exemple :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>note <span style="color:#f92672">=</span> <span style="color:#ae81ff">85</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> note <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">90</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Excellent&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> note <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">75</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Très bien&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> note <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">60</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Passable&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Échec&#34;</span>)</span></span></code></pre></div>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Important
+  </summary>
+  <div class="box-content">
+<ul>
+<li><strong>Les deux-points (<code>:</code>)</strong> sont obligatoires à la fin des lignes <code>if</code>, <code>elif</code> et <code>else</code>.</li>
+<li><strong>L&rsquo;indentation</strong> est essentielle : elle délimite le bloc de code à exécuter.</li>
+</ul>
+  </div>
+</details>
+<blockquote>
+<p>Dans des cellules de Code dans VS Code, testez les exemples des instructions <code>if</code>, <code>elif</code> et <code>else</code>.</p>
 </blockquote>
 <hr>
 
-<details open class=" box cstyle notices cyan">
-  <summary class="box-label" tabindex="-1">
+<details class=" box cstyle notices cyan expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
     À retenir
   </summary>
   <div class="box-content">
 <ul>
 <li>Les <strong>opérateurs de comparaison</strong> comparent des valeurs.</li>
 <li>Les <strong>opérateurs logiques</strong> combinent plusieurs conditions.</li>
-<li>Les <strong>structures conditionnelles</strong> permettent de <strong>réagir à des critères</strong> dans un programme.
+<li>Les <strong>structures conditionnelles</strong> permettent de <strong>réagir à des critères</strong> dans un programme.</li>
+<li><strong>Les deux-points (<code>:</code>)</strong> sont obligatoires à la fin des lignes <code>if</code>, <code>elif</code> et <code>else</code>.</li>
+<li><strong>L&rsquo;indentation</strong> (souvent 4 espaces) est essentielle : elle délimite le bloc de code à exécuter.</li>
+<li>Il peut y avoir <strong>autant de <code>elif</code> que nécessaire</strong>, mais <strong>un seul <code>if</code> et au plus un seul <code>else</code></strong>.
 <ul>
-<li><code>if</code> vérifie si une condition est vraie, <strong>si et seulement si c&rsquo;est le cas</strong>, les instructions en dessous et décalées seront exécutées.</li>
-<li><code>elif</code> permet de vérifier une autre condition, <strong>si et seulement si elle est vrais</strong>, les instructions en dessous et décalées seront exécutées.</li>
-<li><code>else</code> permet de prévoir des instructions à effectuer, <strong>si et seulement si aucune des conditions précédentes est vraie</strong>.</li>
+<li><code>if</code> vérifie si une condition est vraie, <strong>si et seulement si c&rsquo;est le cas</strong>, les instructions en dessous seront exécutées.</li>
+<li><code>elif</code> permet de vérifier une autre condition, <strong>si et seulement si la condition du <code>if</code> est fausse ET celle du <code>elif</code> est vraie</strong>, les instructions en dessous et décalées seront exécutées.</li>
+<li><code>else</code> permet de prévoir des instructions à effectuer, <strong>si et seulement si aucune des conditions précédentes n&rsquo;est vraie</strong>.</li>
 </ul>
 </li>
 </ul>
@@ -368,18 +415,11 @@ Notez la présence du caractère deux-points (<code>:</code>) après la conditio
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables, types de données et algorithme)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Évaluation #1 (20%)</a></li>
-            <li class="active parent " data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu">
-            <li class="alwaysopen " data-nav-id="/semaine5/atelier/index.html"><a class="padding" href="/semaine5/atelier/index.html">Atelier 5</a><ul id="R-subsections-c23cd37aa20a0fcb535481daaf136d09" class="collapsible-menu"></ul></li></ul></li>
-            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Évaluation #1 (20%)</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="active " data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a></li>
             <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Graphiques SciPy et traitement de fichiers CSV avec Pandas</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Évaluation #3 (20%)</a></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet-Partie 1: Analyse et algorithmes</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b> Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html">12. Projet-Partie 1: Analyse et algorithmes</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Finalisation et Remise du rapport final</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
@@ -400,8 +440,8 @@ Notez la présence du caractère deux-points (<code>:</code>) après la conditio
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1752811486" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752811486" defer></script>
-    <script src="/js/theme.min.js?1752811486" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1752945726" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752945726" defer></script>
+    <script src="/js/theme.min.js?1752945726" defer></script>
   </body>
 </html>

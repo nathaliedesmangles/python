@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Projet-Partie 2: Représentations graphiques de base :: 420-SN1-RE</title>
-    <link>https://example.org/semaine13/index.html</link>
+    <link>http://localhost:1313/semaine13/index.html</link>
     <description>Remue-méninges et planification # Fiche de projet final – Programmation en sciences avec Python ## Informations de l&#39;étudiant - **Nom :** - **Date :** --- ## 1. Titre du projet *(Donne un titre clair et descriptif à ton projet)* --- ## 2. Objectif du projet *(Explique en une ou deux phrases ce que ton programme permettra d’analyser, de simuler ou de résoudre.)* --- ## 3. Description du fonctionnement prévu - **Entrées attendues :** *(Quelles données l’utilisateur devra-t-il fournir?</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine13/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine13/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projet: Effet de la caféine sur la fréquence cardiaque</title>
-      <link>https://example.org/semaine13/projet1/index.html</link>
+      <link>http://localhost:1313/semaine13/projet1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine13/projet1/index.html</guid>
+      <guid>http://localhost:1313/semaine13/projet1/index.html</guid>
       <description>Consigne du projet final Contexte : Dans ce projet, vous allez analyser l’impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.&#xA;Objectifs Importer et manipuler les données : Vous allez charger les données dans un DataFrame pandas à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.</description>
     </item>
     <item>
       <title>Projet: Cinétique d&#39;une réaction chimique</title>
-      <link>https://example.org/semaine13/projet2/index.html</link>
+      <link>http://localhost:1313/semaine13/projet2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine13/projet2/index.html</guid>
+      <guid>http://localhost:1313/semaine13/projet2/index.html</guid>
       <description>Consigne du projet final Contexte : Dans ce projet, vous allez analyser la cinétique d’une réaction chimique en utilisant des données simulées de la concentration d’un réactif au cours du temps. Ces données vous permettront de déterminer la vitesse de la réaction et d’observer l’évolution de la concentration.&#xA;Objectifs : Importer et manipuler les données : Charger les données à partir du fichier CSV fourni, puis traiter et préparer les informations pour l’analyse.</description>
     </item>
     <item>
       <title>Projet: Analyse de l’impact de l&#39;entraînement sur la performance physique</title>
-      <link>https://example.org/semaine13/projet3/index.html</link>
+      <link>http://localhost:1313/semaine13/projet3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine13/projet3/index.html</guid>
+      <guid>http://localhost:1313/semaine13/projet3/index.html</guid>
       <description>Consigne du projet final Contexte : Une équipe d’étudiants a participé à un programme d’entraînement visant à améliorer leurs performances en course à pied. Des tests de temps de course (sur une même distance) ont été réalisés avant et après le programme. Vous devez analyser ces données pour déterminer si le programme a été efficace.&#xA;Objectifs : Importer et manipuler les données : Charger les données à partir d’un fichier CSV, puis préparer les données pour l’analyse.</description>
     </item>
     <item>
       <title>Projet: Analyse de la croissance bactérienne</title>
-      <link>https://example.org/semaine13/projet4/index.html</link>
+      <link>http://localhost:1313/semaine13/projet4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine13/projet4/index.html</guid>
+      <guid>http://localhost:1313/semaine13/projet4/index.html</guid>
       <description>Consigne du projet final Contexte : Vous avez mené une expérience de croissance bactérienne dans un milieu nutritif contrôlé. La concentration bactérienne a été mesurée à différents moments. Vous devez analyser ces données pour comprendre la dynamique de croissance et déterminer le modèle le plus approprié (linéaire, exponentiel, logistique).&#xA;Objectifs : Charger et manipuler les données expérimentales. Analyser la progression de la population bactérienne dans le temps. Visualiser les résultats pour identifier un modèle de croissance.</description>
     </item>
   </channel>

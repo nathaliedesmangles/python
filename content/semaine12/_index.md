@@ -1,8 +1,10 @@
 +++
 chapter = true
-pre = "<b>12.</b>"
+pre = "12."
 title = " Projet-Partie 1: Analyse et algorithmes"
 weight = 112
+
+draft = false
 +++
 
 

@@ -3,7 +3,7 @@ title = "Atelier 1"
 weight = 101
 +++
 
-## Objectifs pédagogiques
+## Objectifs
 
 * Se familiariser avec l’environnement de développement.
 	* Le système de fichiers

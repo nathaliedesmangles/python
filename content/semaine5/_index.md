@@ -46,60 +46,101 @@ Ils permettent de **combiner plusieurs conditions**.
 
 Elles permettent **d’exécuter un bloc de code seulement si une condition est vraie**.
 
+### L'instruction *if*
 
-### L'instruction `if`
-
-Si la condition est vraie, le bloc **indenté** (décalé) est exécuté.  
-Notez la présence du caractère deux-points (`:`) après la condition.
+> Pour exécuter du code **si une condition est vraie**.
 
 ```python
-temp = 30
-if temp > 25:
-    print("Il fait chaud.")
+if condition:
+    # Bloc de code exécuté si la condition est vraie
 ```
 
-> Dans une cellule de Code dans VS Code, testez l'exemple du `if`.
-
-### L'instruction `if`…`else`
-
-**Deux chemins possibles** : un si la condition est vraie, un si elle est fausse.
+**Exemple :**
 
 ```python
-temp = 15
-if temp > 25:
-    print("Il fait chaud.")
+age = 20
+if age >= 18:
+    print("Majeur")
+```
+
+
+### L'instruction *if*-*else*
+
+> Pour exécuter du code **si une condition est fausse**.
+
+```python
+if condition:
+    # Si la condition est vraie
 else:
-    print("Il fait frais.")
+    # Sinon (condition fausse)
 ```
 
-> Dans une cellule de Code dans VS Code, testez l'exemple du `if-else`.
-
-### L'instruction `if`…`elif`…`else`
-
-Utilisé pour tester **plusieurs cas différents**.
+**Exemple :**
 
 ```python
-temp = 20
-if temp > 25:
-    print("Il fait chaud.")
-elif temp > 15:
-    print("Il fait bon.")
+age = 16
+if age >= 18:
+    print("Majeur")
 else:
-    print("Il fait frais.")
+    print("Mineur")
 ```
 
-> Dans une cellule de Code dans VS Code, testez l'exemple du `if-elif-else`.
 
+### L'instruction *if*-*elif*-*else*
+
+> Pour tester **plusieurs cas différents** et exécuter du code différent selon le cas.
+
+{{% notice style="accent" title="Important" %}}
+* **Si la condition du `if` est fausse**, un seul `elif` sera exécuté.  
+* **Si et seulement si toutes les conditions** (`if` et tous les `elif`) **sont fausses**, le `else` sera traité.
+{{% /notice %}}
+
+```python
+if condition1:
+    # Si condition1 est vraie
+elif condition2:
+    # Sinon, si condition2 est vraie
+elif condition3:
+    # Sinon, si condition3 est vraie
+else:
+    # Sinon (aucune condition vraie)
+```
+
+**Exemple :**
+
+```python
+note = 85
+
+if note >= 90:
+    print("Excellent")
+elif note >= 75:
+    print("Très bien")
+elif note >= 60:
+    print("Passable")
+else:
+    print("Échec")
+```
+
+{{% notice style="accent" title="Important" %}}
+* **Les deux-points (`:`)** sont obligatoires à la fin des lignes `if`, `elif` et `else`.
+* **L'indentation** est essentielle : elle délimite le bloc de code à exécuter.
+{{% /notice %}}
+
+> Dans des cellules de Code dans VS Code, testez les exemples des instructions `if`, `elif` et `else`.
 
 ---
 
-{{% notice style="cyan" title="À retenir" %}}
+
+{{% notice style="cyan" title="À retenir" groupid="notice-toggle" expanded="false" %}}
 * Les **opérateurs de comparaison** comparent des valeurs.
 * Les **opérateurs logiques** combinent plusieurs conditions.
 * Les **structures conditionnelles** permettent de **réagir à des critères** dans un programme.
-	* `if` vérifie si une condition est vraie, **si et seulement si c'est le cas**, les instructions en dessous et décalées seront exécutées.
-	* `elif` permet de vérifier une autre condition, **si et seulement si elle est vrais**, les instructions en dessous et décalées seront exécutées.
-	* `else` permet de prévoir des instructions à effectuer, **si et seulement si aucune des conditions précédentes est vraie**.
+* **Les deux-points (`:`)** sont obligatoires à la fin des lignes `if`, `elif` et `else`.
+* **L'indentation** (souvent 4 espaces) est essentielle : elle délimite le bloc de code à exécuter.
+* Il peut y avoir **autant de `elif` que nécessaire**, mais **un seul `if` et au plus un seul `else`**.
+	* `if` vérifie si une condition est vraie, **si et seulement si c'est le cas**, les instructions en dessous seront exécutées.
+	* `elif` permet de vérifier une autre condition, **si et seulement si la condition du `if` est fausse ET celle du `elif` est vraie**, les instructions en dessous et décalées seront exécutées.
+	* `else` permet de prévoir des instructions à effectuer, **si et seulement si aucune des conditions précédentes n'est vraie**.
 {{% /notice %}}
 
 ---

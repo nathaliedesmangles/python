@@ -3,6 +3,7 @@ chapter = true
 pre = "<b>7.</b>"
 title = " Listes, chaînes de caractères et graphiques de base"
 weight = 107
+draft = true
 +++
 
 

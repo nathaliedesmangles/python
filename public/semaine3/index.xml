@@ -12,7 +12,7 @@
       <link>https://example.org/semaine3/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/atelier/index.html</guid>
-      <description>Objectifs pédagogiques Être capable de :&#xA;Saisir des données au clavier. Convertir des types de données Traduire un algorithme simple en code Python Repérer et corriger des erreurs dans un script Utiliser des fonctions prédéfinies pour faire des calculs ou manipuler des données Exercice 1 – Traduire un algorithme Voici un algorithme :&#xA;Demander la distance parcourue (en mètres) Demander le temps écoulé (en secondes) Calculer la vitesse moyenne (v = d / t) Afficher la vitesse moyenne Consigne : Traduis cet algorithme en code Python.</description>
+      <description>Objectifs Gérer les entrées clavier. Utiliser des fonctions prédéfinies. Définir et utiliser des fonctions. Comprendre et corriger des messages d’erreurs simples. Exercice #1 : Calcul de la force gravitationnelle Écrire une fonction qui:&#xA;Demande à l’utilisateur d’entrer le nom de l’objet (chaîne de caractères). Demande à l’utilisateur d’entrer la masse de l’objet (nombre décimal, en kg). Défini la constante d’accélération gravitationnelle (9,8 m/s²). Calcule la force en utilisant la formule : force = masse * accélération Affiche la force avec une phrase claire, incluant le nom de l’objet et l’unité en N (Newton).</description>
     </item>
   </channel>
 </rss>

@@ -3,6 +3,7 @@ chapter = true
 pre = "<b>9.</b>"
 title = " Tableaux NumPy"
 weight = 109
+draft = true
 +++
  
 

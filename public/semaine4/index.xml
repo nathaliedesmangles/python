@@ -3,9 +3,16 @@
   <channel>
     <title> Évaluation #1 (20%) :: 420-SN1-RE</title>
     <link>https://example.org/semaine4/index.html</link>
-    <description>Informations Date:&#x9;Semaine #4 (Voir le calendrier scolaire) Matière: Semaines 1 à 3 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;À confirmer</description>
+    <description>Informations Date:&#x9;Semaine #4 (Voir le calendrier scolaire) Matière: Semaines 1 à 3 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;Exercices pratiques avec VS Code.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Évaluation #1 (20%) &#43; solution</title>
+      <link>https://example.org/semaine4/eval1/evaluation1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/eval1/evaluation1/index.html</guid>
+      <description>Information générale Durée : 2h et 2h40 pour les étudiants du SAA Important&#xD;Ce n’est pas un examen pour ChatGPT… c’est pour vous !&#xA;Pendant cette évaluation, vous êtes la seule intelligence permise dans la pièce. Voici ce qui est interdit (désolé ChatGPT, Copilot, etc.) :&#xA;IA : ChatGPT, Copilot, Bard, Gemini et toute la clique Internet : site du cours, Stack Overflow, forums, TikTok,…. Vos collègues, votre chat 😉 ou votre petit.</description>
+    </item>
   </channel>
 </rss>

@@ -3,6 +3,7 @@ chapter = true
 pre = "<b>6.</b>"
 title = " Répéter avec `for` et `while`"
 weight = 106
+draft = true
 +++
 
 ## Objectifs de la leçon

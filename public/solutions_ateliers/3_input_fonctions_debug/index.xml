@@ -3,7 +3,7 @@
   <channel>
     <title> Saisie au clavier, fonctions et débogage :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/3_input_fonctions_debug/index.html</link>
-    <description>Exercice 1 - Élément chimique Écrire une fonction element_chimique() qui :&#xA;Demande à l’utilisateur d’entrer le nom d’un élément chimique. Affiche un message disant “L’élément choisi est [nom]” Solution :&#xA;def element_chimique(): element = input(&#34;Entrez le nom d&#39;un élément chimique : &#34;)) print(&#34;L’élément choisi est&#34;, element) # Appel de la fonction element_chimique()&#xD;Exercice 2 - Aire d’un cercle Écrire une fonction aire_cercle() qui : demande à l’utilisateur d’entrer le rayon du cercle (en cm).</description>
+    <description>Exercice #1 : Calcul de la force gravitationnelle # Demande du nom de l&#39;objet (chaîne de caractères) nom_objet = input(&#34;Entrez le nom de l&#39;objet : &#34;) # Demande de la masse (nombre décimal) masse = float(input(&#34;Entrez la masse de l&#39;objet en kg : &#34;)) # Déclaration de la constante d&#39;accélération gravitationnelle (en m/s²) ACCELERATION_GRAVITATIONNELLE = 9.8 # constante en majuscules # Calcul de la force force = masse * ACCELERATION_GRAVITATIONNELLE # Affichage du résultat print(f&#34;La force de {nom_objet} de {masse:.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_ateliers/3_input_fonctions_debug/index.xml" rel="self" type="application/rss+xml" />
