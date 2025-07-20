@@ -171,6 +171,7 @@ print(f"Montant : {montant:^10.2f} $")     # → Montant :   134.87   $
 * `10.2f` → total de 10 caractères, dont 2 après la virgule
 * `<`, `>`, `^` → alignement (gauche, droite, centré)
 
+>> Pause 5 minutes
 
 ## Comment décortiquer un problème scientifique en algorithme et le traduire en Python ?
 
@@ -334,6 +335,7 @@ Ces tests montrent que :
 * Le calcul respecte la **loi de Boyle** à température constante.
 * Les résultats sont **cohérents avec l’intuition physique**.
 
+>> Pause 5 minutes
 
 {{% notice style="blue" title="À retenir..." groupid="notice-toggle" expanded="false" %}}
 * Une variable garde une **valeur**.

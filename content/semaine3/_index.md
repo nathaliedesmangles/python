@@ -117,6 +117,9 @@ La constante PI est aussi disponible via le module math :
 | -------------- | ------------------ | ------------- |
 | `math.pi`        | La constante π     | `math.pi` → `3.14159...`        |
 
+>> Pause 5 minutes
+
+
 ## Création de fonction avec `def`
  
 > Une fonction peut:
@@ -210,6 +213,7 @@ On aurait aussi pu faire:
 ```python
 print(f"L'aire du rectangle est : {aire_rectangle(5, 2)}") # Appel de la fonction
 ```
+>> Pause 5 minutes
 
 ### La portée locale des variables
 

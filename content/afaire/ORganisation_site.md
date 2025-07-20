@@ -70,6 +70,9 @@ weight = 101
 {{% /notice %}}
 
 
+>> Pause 5 minutes
+
+
 ```math
 $ °F = (°C × 9/5) + 32 $  <br> 
 $ K = °C + 273.15 $
