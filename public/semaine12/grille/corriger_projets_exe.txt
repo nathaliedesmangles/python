@@ -1,0 +1,9 @@
+📄 Télécharger corriger_projets_exec.py
+
+Il inclut :
+
+💡 Tous les critères pédagogiques,
+
+✅ La vérification que le code s’exécute sans erreur avec nbclient,
+
+🗃️ Un CSV final avec les notes de chaque étudiant.

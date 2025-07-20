@@ -7,277 +7,6 @@ draft = true
 +++
 
 
-
-
-
-\* Importer la bibliothèque NumPy
-
-&nbsp;	\* Utiliser les fonctions de NumPy pour créer des tableaux (1D, 2D)
-
-&nbsp;	\* Utiliser les fonctions mathématiques de NumPy pour obtenir des statistiques sur les données
-
-\* Ajouter une droite sur un graphique (régression linéaire)
-
-&nbsp;	\* Calculer une droite de régression (y = a·x + b)
-
-&nbsp;	\* Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur
-
-&nbsp;	\* Évaluer la qualité de l’ajustement avec le coefficient de détermination
-
-
-
----
-
-
-
-\## Importer la bibliothèque
-
-
-
-Avant d’utiliser \*\*\*NumPy\*\*\*, il faut l’importer au début de votre script ou notebook :
-
-
-
-```python
-
-import numpy as np
-
-```
-
-
-
----
-
-
-
-\## 1. Créer un tableau NumPy (`np.array()`)
-
-
-
-Un \*\*tableau NumPy\*\* est une structure efficace pour manipuler des séries de données numériques (ex : mesures, positions, températures…).
-
-
-
-```python
-
-\# Créer un tableau à partir d’une liste
-
-mesures = np.array(\[3.2, 4.1, 2.9, 5.0])
-
-print(mesures)
-
-```
-
-
-
-Résultat :
-
-
-
-```
-
-\[3.2 4.1 2.9 5. ]
-
-```
-
-
-
-
-
-\## 2. Fonctions mathématiques statistiques utiles
-
-
-
-\### Somme
-
-
-
-```python
-
-np.sum(mesures)  # Total des valeurs
-
-```
-
-
-
-\### Moyenne
-
-
-
-```python
-
-np.mean(mesures)  # Moyenne des valeurs
-
-```
-
-
-
-\### Écart-type (standard deviation)
-
-
-
-```python
-
-np.std(mesures)  # Mesure de la dispersion des données
-
-```
-
-
-
-\### Tableau rempli d’une même valeur
-
-
-
-```python
-
-np.full(4, 0.5)  # Crée un tableau \[0.5, 0.5, 0.5, 0.5]
-
-```
-
-
-
-```python
-
-np.zeros((2, 3))  # Crée un tableau de 2 lignes et 3 colonnes rempli de 0
-
-```
-
-
-
-```python
-
-np.ones((3, 2))  # Crée un tableau de 3 lignes et 2 colonnes rempli de 1
-
-```
-
-
-
-
-
-\### Valeurs espacées régulièrement (utile pour les graphiques)
-
-
-
-```python
-
-np.linspace(0, 10, 5)  # Crée un tableau de 5 valeurs (saut de 5) : \[ 0.  2.5  5.  7.5 10. ]
-
-```
-
-
-
-```python
-
-np.arange(0, 10, 2)  # Crée un tableau avec les nombres pairs de 0 à 10 exclu : \[0 2 4 6 8] 
-
-```
-
-
-
-
-
-\## 3. Opérations vectorielles (rapides et simples)
-
-
-
-L’intérêt principal de NumPy : on peut faire des \*\*opérations sur tout un tableau en une seule ligne\*\*.
-
-
-
-```python
-
-x = np.array(\[1, 2, 3])
-
-y = np.array(\[4, 5, 6])
-
-```
-
-
-
-\### Addition élément par élément :
-
-
-
-```python
-
-x + y    # \[5 7 9]
-
-```
-
-
-
-\### Soustraction :
-
-
-
-```python
-
-y - x    # \[3 3 3]
-
-```
-
-
-
-\### Multiplication par un scalaire :
-
-
-
-```python
-
-x \* 10   # \[10 20 30]
-
-```
-
-
-
-\### Division :
-
-
-
-```python
-
-y / 2    # \[2.  2.5 3. ]
-
-```
-
-
-
-
-
-\## Exemple complet :
-
-
-
-```python
-
-hauteurs = np.array(\[165, 172, 180, 158])
-
-moy = np.mean(hauteurs)
-
-ecart = np.std(hauteurs)
-
-print("Moyenne :", moy)
-
-print("Écart-type :", ecart)
-
-
-
-\# Centrer les données
-
-hauteurs\_centrees = hauteurs - moy
-
-print("Hauteurs centrées :", hauteurs\_centrees)
-
-```
-
-\# \*\*Pause 5 minutes\*\*
-
-
-
-!\[Pause](../pause.jpg?width=50vw)
-
-
-
 \## Régression linéaire simple avec SciPy
 
 
@@ -430,6 +159,46 @@ R2 = res.rvalue \*\* 2
 
 
 
+
+## Introduction à Pandas
+
+### Importation de la bibliothèque
+
+```python
+import pandas as pd
+```
+
+### Lecture d’un fichier CSV
+
+```python
+df = pd.read_csv("donnees.csv")
+print(df.head())      # Affiche les 5 premières lignes
+```
+
+### Accès à une colonne
+
+```python
+df["Température"]
+```
+
+### Statistiques de base
+
+```python
+df.mean()
+df["pH"].max()
+```
+
+### Filtrage des données
+
+```python
+df[df["Température"] > 25]     # Sélectionne les lignes où la température dépasse 25
+```
+
+### Moyenne par groupe
+
+```python
+df.groupby("Échantillon")["Concentration"].mean()
+```
 
 
 \## Résumé minimal

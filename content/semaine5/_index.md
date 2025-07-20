@@ -6,7 +6,7 @@ weight = 105
 +++
 
 
-## Objectifs d’apprentissage
+## Objectifs
 
 1. **Identifier et utiliser correctement les opérateurs de comparaison et logiques** pour évaluer des conditions simples en Python.
 2. **Écrire des structures conditionnelles (`if`, `elif`, `else`)** pour contrôler le déroulement d’un programme selon différentes situations.

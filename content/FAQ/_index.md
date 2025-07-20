@@ -39,8 +39,8 @@ weight = 10
 
 
 * Quelle date est l'examen ?
-> Voir le **plan de cours** accompagné du calendrier scolaire/répartition des semaines
-> Voir le [site Web du cours](https://python-a25.netlify.app/) 
+> Voir le **plan de cours** accompagné du **calendrier scolaire/répartition des semaines**.  
+> Voir la page [Séances du cours](../cours/) 
 
 
 * Qu'avons-nous droit pour les examens ?
@@ -61,4 +61,4 @@ weight = 10
 > [Évaluation 3](../semaine11/)   
 
 * Combien vaut le projet final ?
-> [Projet](../semaine12/)  
+> [Grille d'évaluation du projet](../semaine12/grille/)  

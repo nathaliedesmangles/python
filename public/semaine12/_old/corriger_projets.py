@@ -1,9 +1,7 @@
 
-import zipfile, os, json, shutil
+import zipfile, os, json, shutil, re
 from pathlib import Path
 import pandas as pd
-from nbclient import NotebookClient
-from nbformat import read
 
 ARCHIVE_PATH = "projet_final.zip"
 EXTRACTION_DIR = "copies_corrigees"
@@ -16,7 +14,6 @@ NOTE_PAR_CRITERE = {
     "Visualisation": 5,
     "Markdown lettrés": 5,
     "Conclusion critique": 5,
-    "Code exécutable sans erreur": 5
 }
 
 if os.path.exists(EXTRACTION_DIR):
@@ -27,16 +24,6 @@ with zipfile.ZipFile(ARCHIVE_PATH, "r") as archive:
     archive.extractall(EXTRACTION_DIR)
 
 notebook_paths = list(Path(EXTRACTION_DIR).rglob("*.ipynb"))
-
-def notebook_executable(path):
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            nb = read(f, as_version=4)
-        client = NotebookClient(nb, timeout=60, kernel_name="python3")
-        client.execute()
-        return True
-    except Exception:
-        return False
 
 def corriger_notebook(nb_path):
     with open(nb_path, "r", encoding="utf-8") as f:
@@ -55,7 +42,6 @@ def corriger_notebook(nb_path):
     markdowns = [cell for cell in nb_cells if cell.get("cell_type") == "markdown"]
     notes["Markdown lettrés"] = NOTE_PAR_CRITERE["Markdown lettrés"] if len(markdowns) >= 3 else 0
     notes["Conclusion critique"] = NOTE_PAR_CRITERE["Conclusion critique"] if "conclusion" in contenu.lower() or "discussion" in contenu.lower() else 0
-    notes["Code exécutable sans erreur"] = NOTE_PAR_CRITERE["Code exécutable sans erreur"] if notebook_executable(nb_path) else 0
 
     return notes
 

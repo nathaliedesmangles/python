@@ -8,7 +8,7 @@ EXTRACTION_DIR = "copies_corrigees"
 NOTE_CSV = "corrections.csv"
 NOTE_PAR_CRITERE = {
     "Planification": 5,
-    "Code fonctionnel": 10,
+    "Code fonctionnel": 5,
     "Comparaison ADN": 5,
     "Tableau final": 5,
     "Visualisation": 5,

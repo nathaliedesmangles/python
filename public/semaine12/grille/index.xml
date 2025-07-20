@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grille d&#39;évaluation :: 420-SN1-RE</title>
+    <link>https://example.org/semaine12/grille/index.html</link>
+    <description>Pondération du projet Rappel : Le projet compte pour 35% de la note finale du cours.&#xA;Voici la grille d’évaluation complète sur 100 points :&#xA;Grille d’évaluation Volet Critères d’évaluation Points 1. Planification Objectifs, étapes, structure claire du bloc-notes /10 2. Code fonctionnel Syntaxe correcte, fonctions bien définies, logique claire, variables bien nommées /15 3. Comparaison ADN Fonction de comparaison tolérante (?), application sur plusieurs loci /10 4. Résultats tabulés Calcul des moyennes, tableaux bien présentés et triés /10 5.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine12/grille/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

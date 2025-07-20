@@ -118,6 +118,12 @@
     <loc>https://example.org/semaine12/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine12/grille/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine12/competences_reussite/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine15/index.html</loc>
   </url>
   <url>

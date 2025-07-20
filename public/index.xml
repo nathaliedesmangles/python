@@ -75,35 +75,35 @@
       <link>https://example.org/semaine5/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine5/index.html</guid>
-      <description>Objectifs d’apprentissage Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
+      <description>Objectifs Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
     </item>
     <item>
       <title> Évaluation #2 (25%)</title>
       <link>https://example.org/semaine8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine8/index.html</guid>
-      <description>Informations ⦁&#x9;Date:&#x9;Semaine #8 (Voir le calendrier) ⦁&#x9;Matière: Semaines 5 à 7 inclusivement ⦁&#x9;Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) ⦁&#x9;Format:&#x9;À confirmer</description>
+      <description>Informations ⦁ Date:&#x9;Semaine #8 (Voir le calendrier)&#xA;⦁ Matière: Semaines 5 à 7 inclusivement&#xA;⦁ Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁ Format:&#x9;À confirmer</description>
     </item>
     <item>
       <title> Évaluation #3 (20%)</title>
       <link>https://example.org/semaine11/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine11/index.html</guid>
-      <description>## Informations&#xA;⦁&#x9;Date:&#x9;Semaine #8 (Voir le calendrier)&#xA;⦁&#x9;Matière: Semaines 9 et 10 inclusivement&#xA;⦁&#x9;Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁&#x9;Format:&#x9;À confirmer</description>
+      <description>**&#xA;Informations Date:&#x9;Semaine #11 (Voir le calendrier) Matière: Semaines 9 et 10 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format:&#x9;À confirmer</description>
     </item>
     <item>
-      <title> Projet-Partie 1: Analyse et algorithmes</title>
+      <title> Projet - Présentation et analyse</title>
       <link>https://example.org/semaine12/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine12/index.html</guid>
-      <description>Objectifs pédagogiques Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes</description>
+      <description>Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Contraintes techniques Utiliser Python avec Jupyter Notebook (.ipynb) Utiliser le bloc-notes projet_enquete_adn.ipynb et le fichier de données suspects.csv se trouvant sur Moodle. Bibliothèques obligatoires : uniquement pandas, numpy, matplotlib, scipy Utiliser des fonctions personnalisées (def) Respecter les normes de programmation lettrée (sections Markdown, titres, explications) Remise Remettre un seul fichier projet_prenom_nom.</description>
     </item>
     <item>
-      <title>Finalisation et Remise du rapport final</title>
+      <title> Finalisation et Remise du rapport final</title>
       <link>https://example.org/semaine15/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine15/index.html</guid>
-      <description>Vous devez remettre votre code sur Moodle : le fichier projet_prenomNom.ipynb au plus tard ce soir à 23h59.</description>
+      <description>Vous devez remettre votre code sur Moodle : le fichier projet_prenom_nom.ipynb au plus tard ce soir à 23h59.</description>
     </item>
     <item>
       <title>Solutions des exercices</title>

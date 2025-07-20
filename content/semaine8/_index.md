@@ -8,7 +8,7 @@ weight = 108
 
 ## Informations
 
-⦁	Date:			Semaine #8 (Voir le calendrier)
-⦁	Matière: 		Semaines 5 à 7 inclusivement
-⦁	Documentation permise: 	1 feuille recto-verso (manuscrite ou imprimée)
-⦁	Format:			À confirmer
+⦁ **Date**:			Semaine #8 (Voir le calendrier)  
+⦁ **Matière**: 		        Semaines 5 à 7 inclusivement  
+⦁ **Documentation permise**: 	1 feuille recto-verso (manuscrite ou imprimée)  
+⦁ **Format**:			À confirmer

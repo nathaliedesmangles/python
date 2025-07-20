@@ -7,121 +7,141 @@ draft = true
 +++
  
 
-## Objectifs d’apprentissage
+## Objectifs
 
 À la fin de cette leçon, vous devrez être capable de :
 
-* Comprendre le rôle de **NumPy** pour le calcul scientifique rapide avec des tableaux.
-* Utiliser **Pandas** pour manipuler des tableaux de données (DataFrame).
-* Charger des données à partir d’un fichier CSV et faire des analyses simples.
-* Appliquer des opérations mathématiques et statistiques de base.
+* Utiliser les fonctions de NumPy pour créer des tableaux (1D, 2D)
+* Utiliser les fonctions mathématiques de NumPy pour obtenir des statistiques sur les données
+
 
 ---
 
-## Pourquoi utiliser NumPy et Pandas?
 
-Python est très puissant pour l’analyse de données scientifiques. Deux bibliothèques sont incontournables :
+## Importer la bibliothèque
 
-* **NumPy** (Numerical Python) : pour le calcul rapide sur des tableaux de données numériques.
-* **Pandas** : pour organiser, filtrer et analyser des tableaux de données avec des étiquettes (colonnes/indices).
-
-### Quand utiliser quoi?
-
-* Tu veux faire des calculs rapides, des matrices, des moyennes, des sinusoïdes → NumPy
-* Tu veux lire un fichier de données expérimentales, calculer une moyenne par groupe, trier ou filtrer → Pandas
-
-
-## Introduction à NumPy
-
-### Importation de la bibliothèque
+Avant d’utiliser NumPy, il faut l’importer au début de votre bloc-notes :
 
 ```python
 import numpy as np
 ```
 
-### Création d’un tableau (array)
+## Créer un tableau NumPy (`np.array()`)
+
+Un **tableau NumPy** est une structure efficace pour manipuler des séries de données numériques (ex : mesures, positions, températures…).
 
 ```python
-a = np.array([1, 2, 3, 4])
-print(a)
+# Créer un tableau à partir d’une liste
+mesures = np.array([3.2, 4.1, 2.9, 5.0])
+print(mesures)
 ```
 
-### Opérations mathématiques sur des tableaux
+Résultat :
+
+```
+[3.2 4.1 2.9 5. ]
+```
+
+
+## Fonctions mathématiques utiles
+
+### Moyenne
 
 ```python
-b = a * 2           # Multiplie chaque élément par 2
-c = np.sqrt(a)      # Racine carrée de chaque élément
+np.mean(mesures)  # Moyenne des valeurs
 ```
 
-### Quelques fonctions utiles
+### Écart-type (standard deviation)
 
 ```python
-np.mean(a)      # Moyenne
-np.max(a)       # Maximum
-np.min(a)       # Minimum
-np.std(a)       # Écart-type
+np.std(mesures)  # Mesure de la dispersion des données
 ```
 
-### Tableaux multidimensionnels
+### Tableau rempli d’une même valeur
+
+**Que des 0**
+
+```python
+np.zeros((2, 3))  # Crée un tableau de 2 lignes et 3 colonnes rempli de 0
+```
+
+**Que des 1**
+
+```python
+np.ones((3, 2))  # Crée un tableau de 3 lignes et 2 colonnes rempli de 1
+```
+
+**Une autre valeur**
+
+```python
+np.full(4, 0.5)  # Crée un tableau [0.5, 0.5, 0.5, 0.5]
+```
+
+### Valeurs espacées régulièrement (utile pour les graphiques)
+
+```python
+np.linspace(0, 10, 5)  # Crée un tableau : [ 0.  2.5  5.  7.5 10. ]
+```
+
+
+## Opérations vectorielles (rapides et simples)
+
+L’intérêt principal de NumPy : on peut faire des **opérations sur tout un tableau en une seule ligne**.
+
+```python
+x = np.array([1, 2, 3])
+y = np.array([4, 5, 6])
+```
+
+### Addition élément par élément :
+
+```python
+x + y    # [5 7 9]
+```
+
+### Soustraction :
+
+```python
+y - x    # [3 3 3]
+```
+
+### Multiplication par un scalaire :
+
+```python
+x * 10   # [10 20 30]
+```
+
+### Division :
+
+```python
+y / 2    # [2.  2.5 3. ]
+```
+
+## Exemple complet :
+
+```python
+hauteurs = np.array([165, 172, 180, 158])
+moy = np.mean(hauteurs)
+maxium = np.max(hauteurs)     
+minimum = np.min(hauteurs)       
+ecart = np.std(hauteurs)
+print(f"Moyenne : {moy}")
+print(f"Maximum : {maximum}")
+print(f"Minimum : {minimum}")
+print(f"Écart-type :{ecart}")
+
+# Centrer les données
+hauteurs_centrees = hauteurs - moy
+print(f"Hauteurs centrées : {hauteurs_centrees}")
+```
+
+## Tableaux multidimensionnels
+
+* Un **tableau numpy** multidimentionnel c'est un **tableau numpy** qui contient **une liste de listes**.
 
 ```python
 matrice = np.array([[1, 2], [3, 4]])
 print(matrice.shape)     # Affiche les dimensions (2 lignes, 2 colonnes)
 ```
 
-
-## Introduction à Pandas
-
-### Importation de la bibliothèque
-
-```python
-import pandas as pd
-```
-
-### Lecture d’un fichier CSV
-
-```python
-df = pd.read_csv("donnees.csv")
-print(df.head())      # Affiche les 5 premières lignes
-```
-
-### Accès à une colonne
-
-```python
-df["Température"]
-```
-
-### Statistiques de base
-
-```python
-df.mean()
-df["pH"].max()
-```
-
-### Filtrage des données
-
-```python
-df[df["Température"] > 25]     # Sélectionne les lignes où la température dépasse 25
-```
-
-### Moyenne par groupe
-
-```python
-df.groupby("Échantillon")["Concentration"].mean()
-```
-
-
-## Comparaison Pandas vs NumPy
-
-| Tâche                      | NumPy | Pandas                           |
-| -------------------------- | ----- | -------------------------------- |
-| Calculs numériques rapides | ✅     | ❌ (moins rapide)                 |
-| Données avec étiquettes    | ❌     | ✅ (DataFrame avec colonnes)      |
-| Lecture de fichiers CSV    | ❌     | ✅                                |
-| Visualisation rapide       | ❌     | ✅ (avec `.plot()` ou matplotlib) |
-
-
-## Conclusion
-
-NumPy est idéal pour les **tableaux numériques purs**. Pandas est parfait pour manipuler des **données tabulaires structurées** comme celles qu'on retrouve en laboratoire ou en recherche scientifique. Ces deux bibliothèques sont souvent utilisées ensemble.
 

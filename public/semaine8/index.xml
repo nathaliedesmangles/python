@@ -3,7 +3,7 @@
   <channel>
     <title> Évaluation #2 (25%) :: 420-SN1-RE</title>
     <link>https://example.org/semaine8/index.html</link>
-    <description>Informations ⦁&#x9;Date:&#x9;Semaine #8 (Voir le calendrier) ⦁&#x9;Matière: Semaines 5 à 7 inclusivement ⦁&#x9;Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) ⦁&#x9;Format:&#x9;À confirmer</description>
+    <description>Informations ⦁ Date:&#x9;Semaine #8 (Voir le calendrier)&#xA;⦁ Matière: Semaines 5 à 7 inclusivement&#xA;⦁ Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁ Format:&#x9;À confirmer</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine8/index.xml" rel="self" type="application/rss+xml" />
