@@ -8,11 +8,11 @@
     <language>en-us</language>
     <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Évaluation #1 (20%) &#43; solution</title>
-      <link>https://example.org/semaine4/eval1/evaluation1/index.html</link>
+      <title>Evaluation formative</title>
+      <link>https://example.org/semaine4/eval1_formative/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine4/eval1/evaluation1/index.html</guid>
-      <description>Information générale Durée : 2h et 2h40 pour les étudiants du SAA Important&#xD;Ce n’est pas un examen pour ChatGPT… c’est pour vous !&#xA;Pendant cette évaluation, vous êtes la seule intelligence permise dans la pièce. Voici ce qui est interdit (désolé ChatGPT, Copilot, etc.) :&#xA;IA : ChatGPT, Copilot, Bard, Gemini et toute la clique Internet : site du cours, Stack Overflow, forums, TikTok,…. Vos collègues, votre chat 😉 ou votre petit.</description>
+      <guid>https://example.org/semaine4/eval1_formative/index.html</guid>
+      <description>Informations générales Durée : 2h&#xA;Outils autorisés : VS Code, feuille de notes personnelle.&#xA;Interdits : Internet, site du cours, IA, etc.&#xA;Objectifs évalués Comprendre l’utilité des variables Utiliser les types de base (int, float, str, bool) Gérer les entrées et les affichages Utiliser des fonctions prédéfinies Créer des fonctions simples (def, param, return) Traduire un algorithme simple Lire et corriger un code erroné Instructions Créez un dossier nommé formatif_nom_prenom Enregistrez un fichier .</description>
     </item>
   </channel>
 </rss>
