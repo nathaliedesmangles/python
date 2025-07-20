@@ -1,7 +1,7 @@
 +++
-pre = "<b>12.</b>"
+pre = "<b>10.</b>"
 title = " Graphiques SciPy et fichiers CSV avec Pandas"
-weight = 312
+weight = 310
 +++
 
 ## 
