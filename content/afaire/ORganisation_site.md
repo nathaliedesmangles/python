@@ -11,6 +11,9 @@ A FAIRE
 	* Absences lors d'une évaluation sommative
 	* Manquement à l'intégrité intellectuelle (plagiat, tricherie et fraude)
 
+## Objectifs
+
+À la fin de la leçon, vous devrez être en mesure de :
 
 ==================
 FAQ 				10
@@ -48,7 +51,7 @@ weight = 101
 
 ## Important
 
-{{% notice style="accent" title="Notez" %}}
+{{% notice style="accent" title="Important" %}}
 
 {{% /notice %}}
 
