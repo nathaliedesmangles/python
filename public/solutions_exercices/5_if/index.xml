@@ -3,7 +3,7 @@
   <channel>
     <title> Décider avec if-elif-else et les opérateurs :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/5_if/index.html</link>
-    <description></description>
+    <description>Partie 1 – Opérateurs de comparaison # 1.1 a = 10 b = 7 print(a &gt; b) # True print(a == 7) # False # 1.2 # Résultats : 5 != 3 # True 8 &lt;= 8 # True 4 &gt; 10 # False 3 == 3 # True&#xD;Partie 2 – Opérateurs logiques # 2.1 (5 &gt; 2) and (7 &lt; 10) # True and True = True (3 !</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/5_if/index.xml" rel="self" type="application/rss+xml" />

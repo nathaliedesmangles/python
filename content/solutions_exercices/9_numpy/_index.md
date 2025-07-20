@@ -1,7 +1,8 @@
 +++
-pre = "<b>11.</b>"
+pre = "<b>9.</b>"
 title = " Tableaux NumPy"
-weight = 211
+weight = 209
 +++
 
-##
+## 
+

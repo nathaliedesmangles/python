@@ -1,5 +1,5 @@
 +++
-pre = "<b>7.</b>"
+pre = "<b>6.</b>"
 title = " Répéter avec FOR et WHILE"
 weight = 207
 +++

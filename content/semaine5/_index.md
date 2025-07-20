@@ -147,8 +147,89 @@ else:
 
 ### Exercices à faire avant le cours
 
-Écrire le code qui permet de tester la valeur du pH d'une solution.
-- Créez une variable `pH = 4.5`
-- Si le pH est strictement inférieur à 7 le programme affiche "Solution acide"
-- Sinon, si le pH est égale à 7, le programme affiche "Solution neutre"
-- Sinon, le programme affiche "Solution basique"
+==> Vous pouvez utiliser ce notebook [exercices.ipynb](./exercices.ipynb) pour répondre aux questions
+
+### Partie 1 – Comprendre les opérateurs de comparaison
+
+**1.1** Quelle sera la sortie du code suivant ?
+
+```python
+a = 10
+b = 7
+print(a > b)
+print(a == 7)
+```
+
+**1.2** Complète avec `True` ou `False` :
+
+| Expression | Résultat |
+| ---------- | -------- |
+| `5 != 3`   |          |
+| `8 <= 8`   |          |
+| `4 > 10`   |          |
+| `3 == 3`   |          |
+
+---
+
+### Partie 2 – Explorer les opérateurs logiques
+
+**2.1** Écris le résultat de chacune des expressions suivantes :
+
+| Expression             | Résultat |
+| ---------------------- | -------- |
+| `(5 > 2) and (7 < 10)` |          |
+| `(3 != 3) or (6 >= 6)` |          |
+| `not (2 < 5)`          |          |
+
+**2.2** Dans quel cas cette condition sera-t-elle vraie ?
+
+```python
+(temperature > 30) and (humidite < 50)
+```
+
+---
+
+### Partie 3 – Lire et prédire des structures conditionnelles
+
+**3.1** Que va afficher ce code si `temp = 10` ?
+
+```python
+if temp > 25:
+    print("Il fait chaud.")
+elif temp > 15:
+    print("Il fait confortable.")
+else:
+    print("Il fait frais.")
+```
+
+**3.2** Le code suivant contient une erreur. Saurais-tu la repérer ?
+
+```python
+if vitesse > 80
+    print("Trop vite !")
+```
+
+---
+
+### Partie 4 – Écrire ses propres conditions
+
+**4.1** Complète ce programme pour qu’il affiche :
+
+* `"Solution acide"` si le pH est plus petit que 7
+* `"Solution neutre"` si le pH est égal à 7
+* `"Solution basique"` si le pH est plus grand que 7
+
+```python
+ph = 6.4
+
+# ton code ici
+```
+
+**4.2** Crée une condition `if` qui affiche `"Attention, danger"` seulement si une température dépasse 100 **et** qu'une pression est plus grande que 1.5 atm.
+
+```python
+temperature = 110
+pression = 1.6
+
+# ton code ici
+```
