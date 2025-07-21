@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectifs de la leçon Comprendre l’utilité des boucles en programmation. Savoir écrire des boucles while et for. Savoir identifier quand utiliser une boucle for vs. while. Interrompre le déroulement d’une boucle. Appliquer les boucles à des cas concrets en sciences. À quoi servent les boucles ? Elles permettent de répéter des instructions plusieurs fois, soit un nombre connu, soit jusqu’à ce qu’une condition soit atteinte.
-La boucle while Utilisée quand on ne connaît pas d’avance combien de fois répéter.">
+    <meta name="description" content="Objectifs Comprendre l’utilité des boucles en programmation. Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. Interrompre le déroulement d’une boucle. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).
+La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.
+Syntaxe : for i in range(début, fin, pas): instructionsdébut : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Répéter avec `for` et `while` :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectifs de la leçon Comprendre l’utilité des boucles en programmation. Savoir écrire des boucles while et for. Savoir identifier quand utiliser une boucle for vs. while. Interrompre le déroulement d’une boucle. Appliquer les boucles à des cas concrets en sciences. À quoi servent les boucles ? Elles permettent de répéter des instructions plusieurs fois, soit un nombre connu, soit jusqu’à ce qu’une condition soit atteinte.
-La boucle while Utilisée quand on ne connaît pas d’avance combien de fois répéter.">
-    <meta property="og:url" content="http://localhost:1313/semaine6/index.html">
+    <meta name="twitter:description" content="Objectifs Comprendre l’utilité des boucles en programmation. Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. Interrompre le déroulement d’une boucle. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).
+La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.
+Syntaxe : for i in range(début, fin, pas): instructionsdébut : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :">
+    <meta property="og:url" content="https://example.org/semaine6/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Répéter avec `for` et `while` :: 420-SN1-RE">
-    <meta property="og:description" content="Objectifs de la leçon Comprendre l’utilité des boucles en programmation. Savoir écrire des boucles while et for. Savoir identifier quand utiliser une boucle for vs. while. Interrompre le déroulement d’une boucle. Appliquer les boucles à des cas concrets en sciences. À quoi servent les boucles ? Elles permettent de répéter des instructions plusieurs fois, soit un nombre connu, soit jusqu’à ce qu’une condition soit atteinte.
-La boucle while Utilisée quand on ne connaît pas d’avance combien de fois répéter.">
+    <meta property="og:description" content="Objectifs Comprendre l’utilité des boucles en programmation. Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. Interrompre le déroulement d’une boucle. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).
+La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.
+Syntaxe : for i in range(début, fin, pas): instructionsdébut : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Répéter avec `for` et `while` :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectifs de la leçon Comprendre l’utilité des boucles en programmation. Savoir écrire des boucles while et for. Savoir identifier quand utiliser une boucle for vs. while. Interrompre le déroulement d’une boucle. Appliquer les boucles à des cas concrets en sciences. À quoi servent les boucles ? Elles permettent de répéter des instructions plusieurs fois, soit un nombre connu, soit jusqu’à ce qu’une condition soit atteinte.
-La boucle while Utilisée quand on ne connaît pas d’avance combien de fois répéter.">
-    <meta itemprop="wordCount" content="591">
+    <meta itemprop="description" content="Objectifs Comprendre l’utilité des boucles en programmation. Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. Interrompre le déroulement d’une boucle. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).
+La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.
+Syntaxe : for i in range(début, fin, pas): instructionsdébut : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :">
+    <meta itemprop="wordCount" content="695">
     <title> Répéter avec `for` et `while` :: 420-SN1-RE</title>
     <link href="/semaine6/index.xml" rel="alternate" type="application/rss+xml" title=" Répéter avec `for` et `while` :: 420-SN1-RE">
-    <link href="/images/logo.png?1752940267" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752940267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752940267" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752940267" rel="stylesheet">
-    <link href="/css/theme.css?1752940267" rel="stylesheet">
-    <link href="/css/format-html.css?1752940267" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1752940267" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1752940267" defer></script>
-    <script src="/js/lunr/lunr.min.js?1752940267" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1752940267" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1752940267" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1752940267" defer></script>
-    <script src="/js/search.js?1752940267" defer></script>
+    <link href="/images/logo.png?1753064763" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753064763" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753064763" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753064763" rel="stylesheet">
+    <link href="/css/theme.min.css?1753064763" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753064763" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753064763" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753064763" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753064763" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753064763" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753064763" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753064763" defer></script>
+    <script src="/js/search.min.js?1753064763" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = ``;
+      window.relearn.min = `.min`;
       window.relearn.path='\/semaine6\/index.html';
       window.relearn.relBasePath='..';
       window.relearn.relBaseUri='..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1752940267";
+      window.relearn.index_js_url="/searchindex.en.js?1753064763";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +96,7 @@ La boucle while Utilisée quand on ne connaît pas d’avance combien de fois r�
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1752940267" rel="stylesheet">
+    <link href="/css/custom.css?1753064763" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine6/index.html">
     <div id="R-body" class="default-animation">
@@ -108,28 +112,32 @@ La boucle while Utilisée quand on ne connaît pas d’avance combien de fois r�
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#objectifs-de-la-leçon">Objectifs de la leçon</a></li>
+    <li><a href="#objectifs">Objectifs</a></li>
     <li><a href="#à-quoi-servent-les-boucles-">À quoi servent les boucles ?</a></li>
-    <li><a href="#la-boucle-while">La boucle <code>while</code></a>
-      <ul>
-        <li><a href="#syntaxe-">Syntaxe :</a></li>
-        <li><a href="#exemple-">Exemple :</a></li>
-        <li><a href="#exemples-de-boucle-infinie">Exemples de boucle infinie:</a></li>
-      </ul>
-    </li>
     <li><a href="#la-boucle-for-avec-range">La boucle <code>for</code> avec <code>range()</code></a>
       <ul>
-        <li><a href="#syntaxes-">Syntaxes :</a></li>
-        <li><a href="#exemple--3">Exemple :</a></li>
+        <li><a href="#syntaxe-">Syntaxe :</a></li>
+      </ul>
+    </li>
+    <li><a href="#la-boucle-while">La boucle <code>while</code></a>
+      <ul>
+        <li><a href="#syntaxe--1">Syntaxe :</a></li>
+        <li><a href="#boucle-infinie">Boucle infinie</a></li>
       </ul>
     </li>
     <li><a href="#interrompre-une-boucle">Interrompre une boucle</a>
       <ul>
-        <li><a href="#exemple-avec-break-">Exemple avec <code>break</code> :</a></li>
+        <li><a href="#exemple-avec-continue">Exemple avec <code>continue</code></a></li>
+        <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a></li>
       </ul>
     </li>
-    <li><a href="#à-éviter--pièges-fréquents">À éviter / pièges fréquents</a></li>
-    <li><a href="#exercice-guidé---boucle-for-ou-while-">Exercice guidé - Boucle <code>for</code> ou <code>while</code> ?</a></li>
+    <li><a href="#exercice-1---for-ou-while-">Exercice 1 - For ou While ?</a>
+      <ul>
+        <li><a href="#exercice-2--utiliser-while-pour-atteindre-un-objectif">Exercice 2 – Utiliser <code>while</code> pour atteindre un objectif</a></li>
+        <li><a href="#exercice-3--répéter-une-mesure-fixe-avec-for">Exercice 3 – Répéter une mesure fixe avec <code>for</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
   </ul>
 </nav>
                 </div>
@@ -141,9 +149,9 @@ La boucle while Utilisée quand on ne connaît pas d’avance combien de fois r�
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Répéter avec `for` et `while`</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/atelier/solution/index.html" title="Solution (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/atelier/index.html" title="Atelier 5 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/atelier/index.html" title="Atelier 6 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Évaluation #2 (25%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -165,30 +173,56 @@ La boucle while Utilisée quand on ne connaît pas d’avance combien de fois r�
 
 <h1 id="répéter-avec-for-et-while"> Répéter avec `for` et `while`</h1>
 
-<h2 id="objectifs-de-la-leçon">Objectifs de la leçon</h2>
+<h2 id="objectifs">Objectifs</h2>
 <ul>
 <li>Comprendre l’utilité des boucles en programmation.</li>
-<li>Savoir écrire des boucles <code>while</code> et <code>for</code>.</li>
 <li>Savoir identifier quand utiliser une boucle <code>for</code> vs. <code>while</code>.</li>
+<li>Savoir écrire des boucles <code>for</code> et <code>while</code>.</li>
 <li>Interrompre le déroulement d&rsquo;une boucle.</li>
-<li>Appliquer les boucles à des cas concrets en sciences.</li>
 </ul>
 <hr>
 <h2 id="à-quoi-servent-les-boucles-">À quoi servent les boucles ?</h2>
-<p>Elles permettent de répéter des instructions plusieurs fois, soit un nombre connu, soit jusqu’à ce qu’une condition soit atteinte.</p>
+<p>Répéter des instructions plusieurs fois, soit un nombre connu (<code>for</code>), soit jusqu’à ce qu’une condition soit atteinte (<code>while</code>).</p>
+<h2 id="la-boucle-for-avec-range">La boucle <code>for</code> avec <code>range()</code></h2>
+<p>Utilisée quand <strong>on connaît d’avance</strong> combien de fois répéter.</p>
+<h3 id="syntaxe-">Syntaxe :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(début, fin, pas):
+</span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
+<ul>
+<li><code>début</code> : valeur initiale (optionnel, par défaut = 0)</li>
+<li><code>fin</code> : valeur <strong>non incluse</strong></li>
+<li><code>pas</code> : saut entre chaque valeur (optionnel, par défaut = 1)</li>
+</ul>
+<p><strong>Exemple</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span>):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;i =&#34;</span>, i)</span></span></code></pre></div>
+<blockquote>
+<p>Affiche les valeurs de 0 à 4.</p>
+</blockquote>
 <h2 id="la-boucle-while">La boucle <code>while</code></h2>
 <p>Utilisée quand <strong>on ne connaît pas d’avance</strong> combien de fois répéter.</p>
-<h3 id="syntaxe-">Syntaxe :</h3>
+<h3 id="syntaxe--1">Syntaxe :</h3>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> condition:
 </span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
-<h3 id="exemple-">Exemple :</h3>
+<p><strong>Exemple</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>compteur <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> compteur <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>:
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Valeur :&#34;</span>, compteur)
 </span></span><span style="display:flex;"><span>    compteur <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div>
-<p>Tant que la condition est vraie (<code>compteur &lt; 5</code>), on exécute le bloc.<br>
-Il faut <strong>modifier l&rsquo;état de la condition dans la boucle</strong> pour éviter une boucle infinie.</p>
-<h3 id="exemples-de-boucle-infinie">Exemples de boucle infinie:</h3>
+<blockquote>
+<p>Tant que la condition (<code>compteur &lt; 5</code>) est vraie , on exécute le bloc (<code>print</code> et <code>compteur +=1</code>).</p>
+</blockquote>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Important
+  </summary>
+  <div class="box-content">
+<p>Il faut <strong>modifier l&rsquo;état de la condition dans la boucle</strong> pour éviter une boucle infinie. Dans l&rsquo;exemple, c&rsquo;est à ça que sert l&rsquo;instruction <code>compteur += 1</code></p>
+  </div>
+</details>
+<h3 id="boucle-infinie">Boucle infinie</h3>
+<p>C&rsquo;est lorsque la boucle ne s&rsquo;arrête jamais. Cela peut arriver principalement dans deux situations:</p>
 <p><strong>Cas 1</strong>: oublier de modifier l&rsquo;état de la condition</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>  <span style="color:#75715e"># température initiale</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> temp <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
@@ -199,68 +233,79 @@ Il faut <strong>modifier l&rsquo;état de la condition dans la boucle</strong> p
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> temp <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Température : </span><span style="color:#e6db74">{</span>temp<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C&#34;</span>)
 </span></span><span style="display:flex;"><span>    temp <span style="color:#f92672">+=</span> <span style="color:#ae81ff">10</span>				<span style="color:#75715e"># Erreur de logique</span></span></span></code></pre></div>
-<h2 id="la-boucle-for-avec-range">La boucle <code>for</code> avec <code>range()</code></h2>
-<p>Utilisée quand <strong>on connaît d’avance</strong> combien de fois répéter.</p>
-<h3 id="syntaxes-">Syntaxes :</h3>
-<h4 id="cas-1">Cas #1</h4>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
-</span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
-<ul>
-<li><code>n</code> est un entier positif.</li>
-<li>Quelque soit <code>n</code>, la boucle sera exécutée <code>n - 1</code> fois.</li>
-</ul>
-<h4 id="exemple--1">Exemple :</h4>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;i =&#34;</span>, i)</span></span></code></pre></div>
-<p>Affiche les valeurs de 0 à 4.</p>
-<h4 id="cas-2">Cas #2</h4>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(début, fin):
-</span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
-<ul>
-<li><code>début</code> : valeur initiale (optionnel, par défaut = 0)</li>
-<li><code>fin</code> : valeur <strong>non incluse</strong></li>
-</ul>
-<h4 id="exemple--2">Exemple :</h4>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>):
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;i =&#34;</span>, i)</span></span></code></pre></div>
-<p>Affiche les valeurs de 1 à 4.</p>
-<h4 id="cas-3">Cas #3</h4>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(début, fin, pas):
-</span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
-<ul>
-<li><code>début</code> : valeur initiale (optionnel, par défaut = 0)</li>
-<li><code>fin</code> : valeur <strong>non incluse</strong></li>
-<li><code>pas</code> : saut entre chaque valeur (optionnel, par défaut = 1)</li>
-</ul>
-<h3 id="exemple--3">Exemple :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>):
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;i =&#34;</span>, i)</span></span></code></pre></div>
-<p>Affiche les valeurs de 0, 2 et 4.</p>
 <h2 id="interrompre-une-boucle">Interrompre une boucle</h2>
 <ul>
 <li><code>break</code> : arrête <strong>immédiatement</strong> la boucle.</li>
 <li><code>continue</code> : saute <strong>à l’itération suivante</strong>.</li>
 </ul>
-<h3 id="exemple-avec-break-">Exemple avec <code>break</code> :</h3>
+<p><strong>Exemple avec <code>break</code></strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>:
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
 </span></span><span style="display:flex;"><span>    print(i)</span></span></code></pre></div>
+<blockquote>
 <p>Affiche 0 à 4. S’arrête à 5.</p>
+</blockquote>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>compteur <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> compteur <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> compteur <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>:
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Valeur :&#34;</span>, compteur)
 </span></span><span style="display:flex;"><span>    compteur <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div>
-<h2 id="à-éviter--pièges-fréquents">À éviter / pièges fréquents</h2>
-<ul>
-<li>Boucle infinie (<code>while</code> sans mise à jour de la condition)</li>
-<li>Utiliser <code>range</code> sans comprendre que la fin est <strong>exclusive</strong></li>
-<li>Oublier l’indentation dans le bloc de la boucle</li>
-</ul>
+<blockquote>
+<p>Affiche :</p>
+</blockquote>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Valeur : 0  
+Valeur : 1  
+Valeur : 2  
+Valeur : 3  
+Valeur : 4  </code></pre></div>
+<h3 id="exemple-avec-continue">Exemple avec <code>continue</code></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">11</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">continue</span>  <span style="color:#75715e"># On saute les multiples de 3</span>
+</span></span><span style="display:flex;"><span>    print(i)</span></span></code></pre></div>
+<blockquote>
+<p>Affiche:</p>
+</blockquote>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>1
+2
+4
+5
+7
+8
+10</code></pre></div>
 <hr>
-<h2 id="exercice-guidé---boucle-for-ou-while-">Exercice guidé - Boucle <code>for</code> ou <code>while</code> ?</h2>
+
+<details class=" box cstyle notices blue expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    À retenir
+  </summary>
+  <div class="box-content">
+<ul>
+<li>Les boucles permettent d’automatiser les calculs et traitements de données.</li>
+<li><code>for</code> avec <code>range()</code> : Utilisée lorsque le nombre de répétitions est connu d&rsquo;avance.
+<ul>
+<li>Équivaut à dire:
+<ul>
+<li>POUR CHAQUE <em>tour de boucle</em> FAIRE&hellip; ou</li>
+<li>POUR CHAQUE <em>valeur d&rsquo;une séquence</em> FAIRE&hellip;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>while</code> : Utilisée lorsqu&rsquo;une condition doit être respectée pour que la boucle s&rsquo;exécute.
+<ul>
+<li>Équivaut à dire: TANT QUE <em>condition est vrai</em> FAIRE&hellip;</li>
+</ul>
+</li>
+</ul>
+  </div>
+</details>
+<hr>
+<h3 id="exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</h3>
+<h2 id="exercice-1---for-ou-while-">Exercice 1 - For ou While ?</h2>
 <p>Pour chacun des contextes suivants, avant d&rsquo;écrire le code, répondez à la question: &ldquo;Quelle boucle devriez-vous utiliser ?&rdquo;:</p>
 <ol>
 <li>Afficher les nombres de 1 à 10</li>
@@ -271,19 +316,26 @@ Il faut <strong>modifier l&rsquo;état de la condition dans la boucle</strong> p
 a) Affiche deux choix : 1-&ldquo;Entrez votre prénom&rdquo; et 2-&ldquo;Quitter le programme&rdquo;
 b) Demande à l&rsquo;utilisateur d&rsquo;entrer son choix (<code>1</code> ou <code>2</code>) et tant qu&rsquo;il choisi l&rsquo;option 1, le programme lui redemande d&rsquo;entrer son prénom. Si c&rsquo;est 2, le programme s&rsquo;arrête (Vous pouvez utiliser <code>break</code> ou afficher un message).</li>
 </ol>
-
-<details open class=" box cstyle notices cyan">
-  <summary class="box-label" tabindex="-1">
-    À retenir
-  </summary>
-  <div class="box-content">
-<ul>
-<li>Les boucles permettent d’automatiser les calculs et traitements de données en science</li>
-<li><code>while</code> = tant qu’une <strong>condition</strong> est vraie. Quand l’utiliser ? Lorsqu&rsquo;on ne connait pas d&rsquo;avance le nombre de répétitions.</li>
-<li><code>for</code> = pour <strong>chaque valeur</strong> dans une séquence. Quand l’utiliser ? Lorsque le nombre de répétitions est connu d&rsquo;avance.</li>
-</ul>
-  </div>
-</details>
+<h3 id="exercice-2--utiliser-while-pour-atteindre-un-objectif">Exercice 2 – Utiliser <code>while</code> pour atteindre un objectif</h3>
+<p>Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
+Écrire un programme qui affiche l’évolution de la température <strong>jusqu’à ce qu’elle atteigne 30 °C</strong>.</p>
+<ol>
+<li>Crée une variable <code>temp</code> avec 20 comme valeur initiale.</li>
+<li>Utilise une boucle <code>while</code> pour vérifier si <code>temp</code> est inférieure à 30.</li>
+<li>À chaque tour, affiche la température.</li>
+<li>Augmente la température de 1.5.</li>
+</ol>
+<h3 id="exercice-3--répéter-une-mesure-fixe-avec-for">Exercice 3 – Répéter une mesure fixe avec <code>for</code></h3>
+<p>On veut afficher les numéros de 10 échantillons : <code>Échantillon 1</code>, <code>Échantillon 2</code>, &hellip;, <code>Échantillon 10</code>.</p>
+<ol>
+<li>Utilise une boucle <code>for</code> avec <code>range(1, 11)</code>.</li>
+<li>À chaque tour, affiche <code>Échantillon</code> suivi du numéro.</li>
+</ol>
+<h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
+<ol>
+<li>Lire la matière sur <a>Listes, chaines et graphiques de base</a></li>
+<li>Faire les <a href="#exercices-à-faire-avant-le-cours">exercices se trouvant à la fin de la leçon 7</a></li>
+</ol>
 
   <footer class="footline">
   </footer>
@@ -341,19 +393,13 @@ b) Demande à l&rsquo;utilisateur d&rsquo;entrer son choix (<code>1</code> ou <c
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables, types de données et algorithme)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Évaluation #1 (20%)</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Évaluation #1 (20%)</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
-            <li class="active parent " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu">
-            <li class="alwaysopen " data-nav-id="/semaine6/atelier/index.html"><a class="padding" href="/semaine6/atelier/index.html">Atelier 6</a><ul id="R-subsections-aaf86cb4e12018cb06c709121633b657" class="collapsible-menu"></ul></li></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="active " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a></li>
             <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Graphiques SciPy et traitement de fichiers CSV avec Pandas</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Évaluation #3 (20%)</a></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet-Partie 1: Analyse et algorithmes</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b> Projet-Partie 3: Représentation graphique avancée</a></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Finalisation et Remise du rapport final</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">**11.** Évaluation #3 (20%)</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Finalisation et Remise du rapport final</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
           </ul>
@@ -373,8 +419,8 @@ b) Demande à l&rsquo;utilisateur d&rsquo;entrer son choix (<code>1</code> ou <c
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1752940267" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752940267" defer></script>
-    <script src="/js/theme.js?1752940267" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753064763" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753064763" defer></script>
+    <script src="/js/theme.min.js?1753064763" defer></script>
   </body>
 </html>

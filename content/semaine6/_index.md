@@ -3,22 +3,46 @@ chapter = true
 pre = "<b>6.</b>"
 title = " Répéter avec `for` et `while`"
 weight = 106
-draft = true
+draft = false
 +++
 
-## Objectifs de la leçon
+## Objectifs
 
 * Comprendre l’utilité des boucles en programmation.
-* Savoir écrire des boucles `while` et `for`.
 * Savoir identifier quand utiliser une boucle `for` vs. `while`.
+* Savoir écrire des boucles `for` et `while`.
 * Interrompre le déroulement d'une boucle.
-* Appliquer les boucles à des cas concrets en sciences.
 
 ---
 
+
 ## À quoi servent les boucles ?
 
-Elles permettent de répéter des instructions plusieurs fois, soit un nombre connu, soit jusqu’à ce qu’une condition soit atteinte.
+Répéter des instructions plusieurs fois, soit un nombre connu (`for`), soit jusqu’à ce qu’une condition soit atteinte (`while`).
+
+## La boucle `for` avec `range()`
+
+Utilisée quand **on connaît d’avance** combien de fois répéter.
+
+### Syntaxe :
+
+```python
+for i in range(début, fin, pas):
+    instructions
+```
+
+* `début` : valeur initiale (optionnel, par défaut = 0)
+* `fin` : valeur **non incluse**
+* `pas` : saut entre chaque valeur (optionnel, par défaut = 1)
+
+**Exemple** :
+
+```python
+for i in range(0, 5):
+    print("i =", i)
+```
+
+> Affiche les valeurs de 0 à 4.
 
 
 ## La boucle `while`
@@ -32,7 +56,7 @@ while condition:
     instructions
 ```
 
-### Exemple :
+**Exemple** :
 
 ```python
 compteur = 0
@@ -41,10 +65,16 @@ while compteur < 5:
     compteur += 1
 ```
 
-Tant que la condition est vraie (`compteur < 5`), on exécute le bloc.  
-Il faut **modifier l'état de la condition dans la boucle** pour éviter une boucle infinie.
+> Tant que la condition (`compteur < 5`) est vraie , on exécute le bloc (`print` et `compteur +=1`).
 
-### Exemples de boucle infinie:
+{{% notice style="accent" title="Important" %}}
+Il faut **modifier l'état de la condition dans la boucle** pour éviter une boucle infinie. Dans l'exemple, c'est à ça que sert l'instruction `compteur += 1`
+{{% /notice %}}
+
+
+### Boucle infinie
+
+C'est lorsque la boucle ne s'arrête jamais. Cela peut arriver principalement dans deux situations:
 
 **Cas 1**: oublier de modifier l'état de la condition
 
@@ -63,71 +93,13 @@ while temp > 0:
     temp += 10				# Erreur de logique
 ```
 
-## La boucle `for` avec `range()`
-
-Utilisée quand **on connaît d’avance** combien de fois répéter.
-
-### Syntaxes :
-
-#### Cas #1
-```python
-for i in range(n):
-    instructions
-```
-
-* `n` est un entier positif.
-* Quelque soit `n`, la boucle sera exécutée `n - 1` fois.
-
-#### Exemple :
-```python
-for i in range(5):
-    print("i =", i)
-```
-
-Affiche les valeurs de 0 à 4.
-
-#### Cas #2
-```python
-for i in range(début, fin):
-    instructions
-```
-
-* `début` : valeur initiale (optionnel, par défaut = 0)
-* `fin` : valeur **non incluse**
-
-#### Exemple :
-```python
-for i in range(1, 5):
-    print("i =", i)
-```
-
-Affiche les valeurs de 1 à 4.
-
-#### Cas #3
-```python
-for i in range(début, fin, pas):
-    instructions
-```
-
-* `début` : valeur initiale (optionnel, par défaut = 0)
-* `fin` : valeur **non incluse**
-* `pas` : saut entre chaque valeur (optionnel, par défaut = 1)
-
-### Exemple :
-```python
-for i in range(0, 5, 2):
-    print("i =", i)
-```
-
-Affiche les valeurs de 0, 2 et 4.
-
 
 ## Interrompre une boucle
 
 * `break` : arrête **immédiatement** la boucle.
 * `continue` : saute **à l’itération suivante**.
 
-### Exemple avec `break` :
+**Exemple avec `break`** :
 
 ```python
 for i in range(10):
@@ -136,7 +108,7 @@ for i in range(10):
     print(i)
 ```
 
-Affiche 0 à 4. S’arrête à 5.
+> Affiche 0 à 4. S’arrête à 5.
 
 ```python
 compteur = 0
@@ -147,16 +119,52 @@ while compteur < 10:
     compteur += 1
 ```
 
+> Affiche : 
+``` 
+Valeur : 0  
+Valeur : 1  
+Valeur : 2  
+Valeur : 3  
+Valeur : 4  
+```
+### Exemple avec `continue`
 
-## À éviter / pièges fréquents
+```python
+for i in range(1, 11):
+    if i % 3 == 0:
+        continue  # On saute les multiples de 3
+    print(i)
+```
 
-* Boucle infinie (`while` sans mise à jour de la condition)
-* Utiliser `range` sans comprendre que la fin est **exclusive**
-* Oublier l’indentation dans le bloc de la boucle
+> Affiche:
+```
+1
+2
+4
+5
+7
+8
+10
+```
 
 ---
 
-## Exercice guidé - Boucle `for` ou `while` ?
+{{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
+* Les boucles permettent d’automatiser les calculs et traitements de données.
+* `for` avec `range()` : Utilisée lorsque le nombre de répétitions est connu d'avance.  
+   * Équivaut à dire:  
+      * POUR CHAQUE *tour de boucle* FAIRE... ou
+      * POUR CHAQUE *valeur d'une séquence* FAIRE...
+* `while` : Utilisée lorsqu'une condition doit être respectée pour que la boucle s'exécute.
+   * Équivaut à dire: TANT QUE *condition est vrai* FAIRE...
+{{% /notice %}}
+
+
+---
+
+### Exercices à faire avant le cours
+
+## Exercice 1 - For ou While ?
 
 Pour chacun des contextes suivants, avant d'écrire le code, répondez à la question: "Quelle boucle devriez-vous utiliser ?":
 
@@ -168,9 +176,27 @@ Pour chacun des contextes suivants, avant d'écrire le code, répondez à la que
    a) Affiche deux choix : 1-"Entrez votre prénom" et 2-"Quitter le programme"
    b) Demande à l'utilisateur d'entrer son choix (`1` ou `2`) et tant qu'il choisi l'option 1, le programme lui redemande d'entrer son prénom. Si c'est 2, le programme s'arrête (Vous pouvez utiliser `break` ou afficher un message).
 
-{{% notice style="cyan" title="À retenir" %}}
-* Les boucles permettent d’automatiser les calculs et traitements de données en science
-* `while` = tant qu’une **condition** est vraie. Quand l’utiliser ? Lorsqu'on ne connait pas d'avance le nombre de répétitions.
-* `for` = pour **chaque valeur** dans une séquence. Quand l’utiliser ? Lorsque le nombre de répétitions est connu d'avance.
-{{% /notice %}}
 
+### Exercice 2 – Utiliser `while` pour atteindre un objectif
+
+Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
+Écrire un programme qui affiche l’évolution de la température **jusqu’à ce qu’elle atteigne 30 °C**.
+
+1. Crée une variable `temp` avec 20 comme valeur initiale.
+2. Utilise une boucle `while` pour vérifier si `temp` est inférieure à 30.
+3. À chaque tour, affiche la température.
+4. Augmente la température de 1.5.
+
+
+### Exercice 3 – Répéter une mesure fixe avec `for`
+
+On veut afficher les numéros de 10 échantillons : `Échantillon 1`, `Échantillon 2`, ..., `Échantillon 10`.
+
+1. Utilise une boucle `for` avec `range(1, 11)`.
+2. À chaque tour, affiche `Échantillon` suivi du numéro.
+
+
+## À faire avant le prochain cours
+
+1. Lire la matière sur [Listes, chaines et graphiques de base](../semaine7/)
+2. Faire les [exercices se trouvant à la fin de la leçon 7](../semaine7/#exercices-à-faire-avant-le-cours)

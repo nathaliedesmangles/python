@@ -233,3 +233,9 @@ pression = 1.6
 
 # ton code ici
 ```
+
+## À faire avant le prochain cours
+
+1. Lire la matière sur [Répéter avec FOR et WHILE](../semaine6/)
+2. Faire les [exercices se trouvant à la fin de la leçon 6](../semaine6/#exercices-à-faire-avant-le-cours)
+

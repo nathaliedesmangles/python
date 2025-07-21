@@ -88,6 +88,18 @@ somme = 0
 for v in valeurs:
     somme += v
 
+
+---
+
+
+### Exercice 4 – Arrêter une boucle avec `break`
+
+Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, **mais arrêter dès qu’il donne une mauvaise réponse**.
+
+1. Simule des réponses avec une variable (par exemple, une bonne réponse = "A").
+2. Utilise une boucle `for` pour passer les questions.
+3. Si la réponse est incorrecte, affiche "Test terminé" et utilise `break`.
+
 print("Somme:", somme)  # Résultat: 100
 ```
 

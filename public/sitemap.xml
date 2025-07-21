@@ -106,6 +106,9 @@
     <loc>https://example.org/semaine5/atelier/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine6/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine8/index.html</loc>
   </url>
   <url>
@@ -152,9 +155,6 @@
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/6_boucles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/solutions_exercices/7_listes/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/9_numpy/index.html</loc>
