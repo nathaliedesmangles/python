@@ -513,8 +513,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences \u003e \rSolutions des ateliers",
-    "content": "Exercice 4 (Semaine 7) But : simuler un test qui s’arrête dès qu’il y a une mauvaise réponse\n# On suppose que les bonnes réponses sont \"A\" # et que l'étudiant fait une erreur à la 4e question reponses = [\"A\", \"A\", \"A\", \"B\", \"A\", \"A\", \"A\", \"A\", \"A\", \"A\"] for i in range(10): \u0026nbsp; print(\"Question\", i + 1) \u0026nbsp; if reponses[i] != \"A\": \u0026nbsp; print(\"Réponse incorrecte. Test terminé.\") \u0026nbsp; break \u0026nbsp; else: \u0026nbsp; print(\"Bonne réponse.\")\rCe que ça fait : Affiche les 3 premières bonnes réponses.\nÀ la 4e question, la réponse est fausse → le test s’arrête avec break.",
-    "description": "Exercice 4 (Semaine 7) But : simuler un test qui s’arrête dès qu’il y a une mauvaise réponse\n# On suppose que les bonnes réponses sont \"A\" # et que l'étudiant fait une erreur à la 4e question reponses = [\"A\", \"A\", \"A\", \"B\", \"A\", \"A\", \"A\", \"A\", \"A\", \"A\"] for i in range(10): \u0026nbsp; print(\"Question\", i + 1) \u0026nbsp; if reponses[i] != \"A\": \u0026nbsp; print(\"Réponse incorrecte. Test terminé.\") \u0026nbsp; break \u0026nbsp; else: \u0026nbsp; print(\"Bonne réponse.",
+    "content": "",
+    "description": "",
     "tags": [],
     "title": " Listes, chaines et graphiques de base",
     "uri": "/solutions_ateliers/7_listes/index.html"

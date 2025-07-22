@@ -5,7 +5,7 @@ weight = 307
 +++
 
 
-
+<!--
 
 
 ## Exercice 4 (Semaine 7)
@@ -53,6 +53,6 @@ for i in range(10):
 * Affiche les 3 premières bonnes réponses.
 
 * À la 4e question, la réponse est fausse → le test s’arrête avec `break`.
-
+-->
 
 
