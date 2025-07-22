@@ -1,6 +1,7 @@
 +++
-title = "Activité 11 - Traitement de résultats de laboratoire"
+title = "Activité 11"
 weight = 111
+draft = true
 +++
 
 

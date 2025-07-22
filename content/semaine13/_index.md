@@ -3,10 +3,10 @@ chapter = true
 pre = "<b>13.</b>"
 title = " Projet-Partie 2: Représentations graphiques de base"
 weight = 113
-draft = true
+draft = false
 +++
 
-
+<!--
 ## Remue-méninges et planification
 
 ```markdown
@@ -82,5 +82,5 @@ draft = true
 
 *(Facultatif – Ajoute tout ce qui pourrait aider à mieux comprendre ton projet.)*
 ```
-
+-->
 

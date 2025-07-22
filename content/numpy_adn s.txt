@@ -1,0 +1,118 @@
+Voici une **leçon concise et ciblée sur `numpy`**, conçue pour des étudiants de première session en sciences de la nature, avec un **focus sur les seules notions utiles** pour le projet d’analyse d’ADN.
+
+---
+
+# 🧠 Leçon : Introduction à `numpy` pour l’analyse d’ADN
+
+## 🎯 Objectif
+
+Comprendre comment utiliser la bibliothèque **`numpy`** pour :
+
+* Calculer des **moyennes** et des **écarts types**
+* Gérer des données manquantes (`np.nan`)
+* Réaliser des calculs simples sur des tableaux numériques
+* Préparer les données pour l’analyse statistique ou graphique
+
+---
+
+## 1. Importer la bibliothèque
+
+```python
+import numpy as np
+```
+
+---
+
+## 2. Créer un tableau de données (`array`)
+
+```python
+scores = np.array([90, 80, 95])
+print(f"Scores : {scores}")
+```
+
+---
+
+## 3. Calculer la moyenne
+
+```python
+moyenne = np.mean(scores)
+print(f"Moyenne : {moyenne}")
+```
+
+---
+
+## 4. Calculer l’écart type (variabilité)
+
+```python
+ecart_type = np.std(scores)
+print(f"Écart type : {ecart_type:.2f}")
+```
+
+---
+
+## 5. Ignorer les valeurs manquantes (`np.nan`)
+
+Quand une valeur est absente ou impossible à calculer (ex. : aucun caractère commun dans l’ADN), on peut la remplacer par `np.nan`.
+
+```python
+scores = np.array([90, np.nan, 85])
+moyenne = np.nanmean(scores)
+print(f"Moyenne (avec nan ignoré) : {moyenne}")
+```
+
+---
+
+## 6. Exemple dans le contexte ADN
+
+Imaginons les scores de correspondance d’un suspect pour trois loci :
+
+```python
+correspondances = np.array([88.0, np.nan, 92.0])
+moyenne = np.nanmean(correspondances)
+print(f"Score moyen : {moyenne:.1f}%")
+```
+
+---
+
+## 7. Comparaison avec des valeurs
+
+Comparer une séquence à un seuil :
+
+```python
+if moyenne >= 90:
+    print(f"Très forte correspondance : {moyenne:.1f}%")
+else:
+    print(f"Correspondance moyenne : {moyenne:.1f}%")
+```
+
+---
+
+## ✍️ Exercices pratiques
+
+### 🔹 Exercice 1 – Moyenne simple
+
+1. Crée un tableau avec les valeurs `[85, 90, 78, 92]`.
+2. Affiche la moyenne et l’écart type avec des f-strings.
+
+---
+
+### 🔹 Exercice 2 – Gestion des `np.nan`
+
+1. Crée un tableau avec les valeurs `[80, np.nan, 88, 92]`.
+2. Calcule et affiche la moyenne **en ignorant** la valeur manquante.
+3. Calcule et affiche l’écart type **en ignorant** la valeur manquante.
+
+---
+
+### 🔹 Exercice 3 – Application ADN
+
+1. Crée trois scores pour un suspect : `np.array([86, np.nan, 94])`.
+2. Calcule et affiche la moyenne de correspondance.
+3. Écris un message conditionnel :
+
+   * Si la moyenne ≥ 90 : "Suspect très compatible"
+   * Sinon : "Compatibilité faible ou moyenne"
+
+---
+
+Souhaitez-vous aussi cette leçon en fichier `.ipynb` prêt à distribuer ?

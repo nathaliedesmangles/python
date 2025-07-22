@@ -1,11 +1,235 @@
 +++
 chapter = true
 pre = "<b>10.</b>"
-title = " Graphiques SciPy et traitement de fichiers CSV avec Pandas"
+title = " Traitement de fichiers CSV avec Pandas et graphiques SciPy "
 weight = 110
-draft = true
+draft = false
 +++
 
+
+## Objectifs
+
+* Lire un tableau contenant des données expérimentales
+* Explorer les données
+* Filtrer les résultats pour donnée ciblée.
+* Comparer des valeurs selon une donnée
+* Utiliser `linregress()` de `scipy.stats` pour la régression linéaire.
+* Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R²
+* Établir une relation entre deux données
+* Interpréter les résultats pour répondre à une question scientifique
+
+---
+
+<!--
+## 1. Importer la bibliothèque
+
+```python
+import pandas as pd
+```
+
+---
+
+## 2. Charger un fichier CSV
+
+```python
+df = pd.read_csv("solubilite.csv")
+```
+
+Ce fichier contient des données expérimentales : pour chaque composé, on indique la **température** et la **quantité dissoute** dans l’eau.
+
+---
+
+## 3. Afficher les premières lignes
+
+```python
+print(df.head())
+```
+
+---
+
+## 4. Afficher les noms de colonnes
+
+```python
+print(df.columns)
+```
+
+---
+
+## 5. Afficher toutes les mesures pour un seul composé
+
+Exemple : tout ce qui concerne le **nitrate de potassium (KNO₃)**
+
+```python
+filtre = df["Composé"] == "KNO3"
+print(df[filtre])
+```
+
+---
+
+## 6. Accéder à une colonne (ex. : températures)
+
+```python
+print(df["Température"])
+```
+
+---
+
+## 7. Moyenne de solubilité pour un composé
+
+```python
+filtre = df["Composé"] == "NaCl"
+moyenne = df[filtre]["Solubilité"].mean()
+print(f"Moyenne de solubilité pour NaCl : {moyenne:.2f} g/100mL")
+```
+
+---
+
+## 8. Boucler sur les composés
+
+```python
+composes = df["Composé"].unique()
+for compose in composes:
+    moyenne = df[df["Composé"] == compose]["Solubilité"].mean()
+    print(f"{compose} : {moyenne:.2f} g/100mL")
+```
+
+---
+
+## 9. Ajouter une colonne calculée
+
+Exemple : ajouter une colonne indiquant si la solubilité est "haute" (> 80) ou "faible"
+
+```python
+df["Évaluation"] = df["Solubilité"] > 80
+print(df)
+```
+
+---
+
+## 1. Importation des bibliothèques
+
+```python
+import numpy as np
+from scipy import stats
+```
+
+---
+
+## 2. Données de solubilité
+
+Supposons qu’on mesure la solubilité (en g/100g d’eau) d’un sel à différentes températures (en °C) :
+
+```python
+temperature = np.array([0, 10, 20, 30, 40, 50])
+solubilite = np.array([14, 18, 23, 28, 35, 42])
+```
+
+---
+
+## 3. Régression linéaire
+
+```python
+resultat = stats.linregress(temperature, solubilite)
+```
+
+---
+
+## 4. Affichage des résultats
+
+```python
+print(f"Pente : {resultat.slope:.2f} g/°C")
+print(f"Ordonnée à l’origine : {resultat.intercept:.2f} g à 0°C")
+print(f"R² : {resultat.rvalue**2:.4f}")
+print(f"Valeur de p : {resultat.pvalue:.4f}")
+```
+
+---
+
+## 5. Interprétation scientifique
+
+```python
+if resultat.rvalue**2 > 0.9:
+    print(f"La température influence fortement la solubilité.")
+elif resultat.rvalue**2 > 0.5:
+    print(f"La température influence modérément la solubilité.")
+else:
+    print(f"La solubilité ne semble pas fortement liée à la température.")
+```
+
+---
+
+## Exercices pratiques Pandas
+
+### Exercice 1 – Chargement et exploration
+
+1. Charge le fichier `solubilite.csv`.
+2. Affiche les premières lignes.
+3. Affiche les noms de colonnes.
+4. Affiche toutes les températures pour le composé `"NaCl"`.
+
+
+### Exercice 2 – Moyenne de solubilité
+
+1. Calcule la moyenne de solubilité pour `"KNO3"`.
+2. Fais de même pour `"NaCl"`.
+3. Compare les deux valeurs avec des f-strings.
+
+
+### Exercice 3 – Boucle sur les composés
+
+1. Affiche la moyenne de solubilité pour chaque composé du fichier.
+2. Indique pour chacun si elle est supérieure à 80 g/100mL.
+
+
+### Exercice 4 – Ajout d’une colonne
+
+1. Crée une colonne `Tendance` qui vaut `"Haute"` si la solubilité est > 80 et `"Faible"` sinon.
+2. Affiche les 10 premières lignes du tableau mis à jour.
+
+
+## Exercices pratiques Scipy
+
+### 🔹 Exercice 1 – Sulfate de cuivre
+
+1. Températures : `[0, 10, 20, 30, 40, 50]`
+2. Solubilité (g/100g eau) : `[23, 27, 32, 37, 44, 51]`
+3. Calcule la régression linéaire.
+4. Affiche les résultats et une conclusion scientifique.
+
+---
+
+### 🔹 Exercice 2 – Comparaison de deux sels
+
+1. Sel A :
+
+   * Température : `[0, 20, 40, 60]`
+   * Solubilité : `[15, 21, 30, 38]`
+
+2. Sel B :
+
+   * Température : `[0, 20, 40, 60]`
+   * Solubilité : `[30, 32, 33, 33.5]`
+
+3. Pour chaque sel :
+
+   * Effectue la régression
+   * Affiche pente, intercept, R²
+   * Déduis quel sel est le plus influencé par la température
+
+---
+
+### 🔹 Exercice 3 – Prévision
+
+1. Utilise les données de l’exemple principal
+2. Calcule la solubilité prévue à 60 °C avec la formule :
+
+```python
+valeur_predite = resultat.slope * 60 + resultat.intercept
+print(f"Solubilité prévue à 60 °C : {valeur_predite:.2f} g/100g d’eau")
+```
+---
+
+==========================================
 
 \## Régression linéaire simple avec SciPy
 
@@ -665,5 +889,16 @@ df = df.sort_values("Valeur", ascending=False)
 print(df)
 ```
 
+-->
+
+### Exercices à faire avant le cours
+
+## À faire avant le prochain cours
+
+> **RAPPEL**: Semaine prochaine c'est le **troisième et dernier examen** (20%)
+
+1. Lire la description du [Projet final](../semaine12/)
+2. Prendre connaissance de la [Grille de correction](../semaine12/grille/)
+3. S'approprier des [Notions à savoir pour réussir le projet](../semaine12/competences_reussite/)
 
 

@@ -1,0 +1,124 @@
+Voici une **leçon essentielle sur `matplotlib`** pour le **projet d’enquête ADN**, destinée à des étudiants de 1re session en sciences de la nature.
+Elle couvre **le strict minimum** pour tracer des graphiques utiles à ce type de projet, en utilisant **uniquement `f-strings` avec `print`** pour les messages.
+
+---
+
+# 🎨 Leçon : Visualiser des données avec `matplotlib`
+
+## 🎯 Objectif
+
+Apprendre à :
+
+* Tracer un graphique simple avec `matplotlib`
+* Visualiser la relation entre deux séries (ex. : température vs solubilité, nombre de loci communs vs probabilité)
+* Ajouter un titre, des étiquettes, une droite de régression
+
+---
+
+## 1. Importer `matplotlib.pyplot`
+
+```python
+import matplotlib.pyplot as plt
+```
+
+---
+
+## 2. Tracer des données (points)
+
+Voici un exemple de données simulées dans le cadre du projet ADN :
+
+```python
+x = [1, 2, 3, 4, 5]
+y = [0.1, 0.3, 0.6, 0.8, 1.0]
+```
+
+Tracer un nuage de points :
+
+```python
+plt.scatter(x, y)
+plt.title("Probabilité selon le nombre de loci communs")
+plt.xlabel("Nombre de loci communs")
+plt.ylabel("Probabilité")
+plt.grid(True)
+plt.show()
+
+print(f"Graphique avec {len(x)} points tracés.")
+```
+
+---
+
+## 3. Tracer une droite de régression
+
+Supposons qu’on a une pente et une ordonnée à l’origine obtenues par régression :
+
+```python
+slope = 0.22
+intercept = -0.05
+```
+
+Créer les valeurs prédites :
+
+```python
+y_pred = [slope * xi + intercept for xi in x]
+```
+
+Tracer la droite **avec** les points :
+
+```python
+plt.scatter(x, y, label="Données réelles")
+plt.plot(x, y_pred, color="red", label="Régression")
+plt.title("Régression linéaire")
+plt.xlabel("Nombre de loci communs")
+plt.ylabel("Probabilité")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+print(f"Droite tracée avec slope={slope:.2f} et intercept={intercept:.2f}.")
+```
+
+---
+
+## 4. Sauvegarder le graphique (optionnel)
+
+```python
+plt.savefig("graphique_adn.png")
+print(f"Graphique sauvegardé dans le fichier graphique_adn.png")
+```
+
+---
+
+## ✍️ Exercices pratiques
+
+### 🔹 Exercice 1 – Lien entre température et solubilité
+
+1. Températures : `[0, 10, 20, 30, 40, 50]`
+2. Solubilités : `[10, 14, 18, 25, 32, 40]`
+3. Trace un nuage de points
+4. Affiche un graphique bien étiqueté
+
+---
+
+### 🔹 Exercice 2 – Loci vs probabilité
+
+1. Nombre de loci communs : `[0, 1, 2, 3, 4, 5]`
+2. Probabilités associées : `[0.01, 0.05, 0.12, 0.30, 0.70, 0.95]`
+3. Trace les points
+4. Ajoute une droite de régression avec une pente de `0.18` et un intercept de `-0.02`
+
+---
+
+### 🔹 Exercice 3 – Préparer un graphique pour un rapport
+
+1. Données :
+
+   * `x = [1, 2, 3, 4, 5]`
+   * `y = [2, 3.8, 5.9, 8.1, 10.1]`
+2. Effectue une régression avec `scipy.stats.linregress()` (vu dans la leçon précédente)
+3. Trace les points et la droite
+4. Ajoute : titre, axes, grille, légende
+5. Sauvegarde le fichier sous le nom `"rapport_solubilite.png"`
+
+---
+
+Souhaitez-vous cette leçon en version `.ipynb` ou `.pdf` prête à distribuer ?

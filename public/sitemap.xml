@@ -67,9 +67,6 @@
     <loc>https://example.org/separateur_section/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/atelier/solution/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/semaine7/dictionnaires/index.html</loc>
   </url>
   <url>
@@ -109,13 +106,22 @@
     <loc>https://example.org/semaine6/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine6/atelier/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine7/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine8/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine11/index.html</loc>
+    <loc>https://example.org/semaine9/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine10/atelier/index.html</loc>
+    <loc>https://example.org/semaine10/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine11/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine12/index.html</loc>
@@ -127,19 +133,25 @@
     <loc>https://example.org/semaine12/competences_reussite/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine13/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine14/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine15/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/projet1/index.html</loc>
+    <loc>https://example.org/afaire/projets/projet1/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/projet2/index.html</loc>
+    <loc>https://example.org/afaire/projets/projet2/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/projet3/index.html</loc>
+    <loc>https://example.org/afaire/projets/projet3/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/projet4/index.html</loc>
+    <loc>https://example.org/afaire/projets/projet4/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/index.html</loc>
@@ -155,6 +167,9 @@
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/6_boucles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_exercices/7_listes/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/9_numpy/index.html</loc>

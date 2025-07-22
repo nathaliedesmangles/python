@@ -5,12 +5,9 @@ weight = 206
 +++
 
 
-
-
-
 ## Exercice 1
 
-### 1. Afficher les nombres de 1 à 10
+a. Afficher les nombres de 1 à 10
 
 * Boucle recommandée : `for`
 * Pourquoi ? Le nombre d’itérations est connu d’avance.
@@ -20,7 +17,7 @@ for i in range(1, 11):
    print(i)
 ```
 
-### 2. Compter jusqu’à 100 par bonds de 10
+b. Compter jusqu’à 100 par bonds de 10
 
 * Boucle recommandée : `for`
 * Pourquoi ? La progression est régulière et le nombre d’itérations est connu.
@@ -30,7 +27,7 @@ for i in range(0, 101, 10):
    print(i)
 ```
 
-### 3. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)
+c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)
 
 * Boucle recommandée : `while`
 * Pourquoi ? On s’arrête quand l’objet atteint le sol, condition dépendante d’un calcul.
@@ -44,7 +41,7 @@ while hauteur > 0:
    hauteur -= vitesse
 ```
 
-### 4. Lire une température jusqu’à ce qu’elle soit < 0 (entrée utilisateur)
+d. Lire une température jusqu’à ce qu’elle soit < 0 (entrée utilisateur)
 
 * Boucle recommandée : `while`
 * Pourquoi ? On ne sait pas combien d’entrées seront nécessaires.
@@ -56,7 +53,7 @@ while temp >= 0:
    temp = float(input("Entrez une température : "))
 ```
 
-### 5. Menu interactif : prénom ou quitter
+e. Menu interactif : prénom ou quitter
 
 * Boucle recommandée : `while` avec `break`
 * Pourquoi ? Boucle indéterminée qui dépend du choix de l’utilisateur.
@@ -87,7 +84,7 @@ But : utiliser une boucle `while` pour augmenter la température jusqu'à 30 �
 temp = 20  # température initiale
 
 while temp < 30:
-   print("Température actuelle :", temp, "°C")
+   print(f"Température actuelle : {temp}°C")
    temp += 1.5  # on augmente de 1.5 °C par heure
 ```
 
@@ -103,13 +100,10 @@ But : afficher les numéros des échantillons de 1 à 10
 
 ```python
 for i in range(1, 11):
-   print("Échantillon", i)
+   print(f"Échantillon {i}")
 ```
 
-### Ce que ça fait :
-
 * Affiche :
-
    ```
    Échantillon 1
    Échantillon 2

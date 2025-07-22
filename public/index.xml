@@ -85,11 +85,32 @@
       <description>Objectifs Comprendre l’utilité des boucles en programmation. Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. Interrompre le déroulement d’une boucle. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).&#xA;La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.&#xA;Syntaxe : for i in range(début, fin, pas): instructions&#xD;début : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :</description>
     </item>
     <item>
+      <title> Listes, chaînes de caractères et graphiques de base</title>
+      <link>https://example.org/semaine7/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine7/index.html</guid>
+      <description>Objectifs d’apprentissage Créer et manipuler des listes de données numériques ou textuelles en Python (ajout, suppression, parcours, calcul de statistiques simples). Accéder, modifier et parcourir les caractères d’une chaîne de caractères. Appliquer des méthodes de traitement de texte pour analyser ou transformer des chaînes de caractères (ex. : mise en minuscules, découpage, recherche, comptage). Exercices à faire avant le cours À faire avant le prochain cours RAPPEL: Semaine prochaine c’est le deuxième examen (25%)</description>
+    </item>
+    <item>
       <title> Évaluation #2 (25%)</title>
       <link>https://example.org/semaine8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine8/index.html</guid>
       <description>Informations ⦁ Date:&#x9;Semaine #8 (Voir le calendrier)&#xA;⦁ Matière: Semaines 5 à 7 inclusivement&#xA;⦁ Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁ Format:&#x9;À confirmer</description>
+    </item>
+    <item>
+      <title> Tableaux NumPy</title>
+      <link>https://example.org/semaine9/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine9/index.html</guid>
+      <description>Objectifs À la fin de cette leçon, vous devrez être capable de :&#xA;Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Exercices à faire avant le cours À faire avant le prochain cours Lire la matière sur Traitement de fichiers CSV (Pandas) et graphiques (SciPy) Faire les exercices se trouvant à la fin de la leçon 10</description>
+    </item>
+    <item>
+      <title> Traitement de fichiers CSV avec Pandas et graphiques SciPy </title>
+      <link>https://example.org/semaine10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine10/index.html</guid>
+      <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Exercices à faire avant le cours À faire avant le prochain cours RAPPEL: Semaine prochaine c’est le troisième et dernier examen (20%)</description>
     </item>
     <item>
       <title> Évaluation #3 (20%)</title>
@@ -103,7 +124,21 @@
       <link>https://example.org/semaine12/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine12/index.html</guid>
-      <description>Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Contraintes techniques Utiliser Python avec Jupyter Notebook (.ipynb) Utiliser le bloc-notes projet_enquete_adn.ipynb et le fichier de données suspects.csv se trouvant sur Moodle. Bibliothèques obligatoires : uniquement pandas, numpy, matplotlib, scipy Utiliser des fonctions personnalisées (def) Respecter les normes de programmation lettrée (sections Markdown, titres, explications) Remise Remettre un seul fichier projet_prenom_nom.</description>
+      <description>Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Projet : Enquête scientifique par analyse d’ADN Contexte Vous êtes le ou la bioinformaticien·ne en charge d’une enquête médico-légale : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.</description>
+    </item>
+    <item>
+      <title> Projet-Partie 2: Représentations graphiques de base</title>
+      <link>https://example.org/semaine13/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine13/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title> Projet-Partie 3: Représentation graphique avancée</title>
+      <link>https://example.org/semaine14/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine14/index.html</guid>
+      <description></description>
     </item>
     <item>
       <title> Finalisation et Remise du rapport final</title>

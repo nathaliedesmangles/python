@@ -5,46 +5,42 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.
-Activité : Courbe de refroidissement d’un liquide Contexte
-Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
-Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.">
+    <meta name="description" content="Exercice 4 – Arrêter une boucle avec break (Semaine 7) Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, mais arrêter dès qu’il donne une mauvaise réponse.
+Aide pas à pas :
+Simule des réponses avec une variable (par exemple, une bonne réponse = “A”). Utilise une boucle for pour passer les questions. Si la réponse est incorrecte, affiche “Test terminé” et utilise break. ===">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Activité 7 :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.
-Activité : Courbe de refroidissement d’un liquide Contexte
-Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
-Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.">
+    <meta name="twitter:description" content="Exercice 4 – Arrêter une boucle avec break (Semaine 7) Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, mais arrêter dès qu’il donne une mauvaise réponse.
+Aide pas à pas :
+Simule des réponses avec une variable (par exemple, une bonne réponse = “A”). Utilise une boucle for pour passer les questions. Si la réponse est incorrecte, affiche “Test terminé” et utilise break. ===">
     <meta property="og:url" content="http://localhost:1313/semaine7/atelier/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content="Activité 7 :: 420-SN1-RE">
-    <meta property="og:description" content="Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.
-Activité : Courbe de refroidissement d’un liquide Contexte
-Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
-Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.">
+    <meta property="og:description" content="Exercice 4 – Arrêter une boucle avec break (Semaine 7) Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, mais arrêter dès qu’il donne une mauvaise réponse.
+Aide pas à pas :
+Simule des réponses avec une variable (par exemple, une bonne réponse = “A”). Utilise une boucle for pour passer les questions. Si la réponse est incorrecte, affiche “Test terminé” et utilise break. ===">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="Activité 7 :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.
-Activité : Courbe de refroidissement d’un liquide Contexte
-Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
-Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.">
-    <meta itemprop="wordCount" content="201">
+    <meta itemprop="description" content="Exercice 4 – Arrêter une boucle avec break (Semaine 7) Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, mais arrêter dès qu’il donne une mauvaise réponse.
+Aide pas à pas :
+Simule des réponses avec une variable (par exemple, une bonne réponse = “A”). Utilise une boucle for pour passer les questions. Si la réponse est incorrecte, affiche “Test terminé” et utilise break. ===">
+    <meta itemprop="wordCount" content="272">
     <title>Activité 7 :: 420-SN1-RE</title>
     <link href="/semaine7/atelier/index.xml" rel="alternate" type="application/rss+xml" title="Activité 7 :: 420-SN1-RE">
-    <link href="/images/logo.png?1752940267" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752940267" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752940267" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752940267" rel="stylesheet">
-    <link href="/css/theme.css?1752940267" rel="stylesheet">
-    <link href="/css/format-html.css?1752940267" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1752940267" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1752940267" defer></script>
-    <script src="/js/lunr/lunr.min.js?1752940267" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1752940267" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1752940267" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1752940267" defer></script>
-    <script src="/js/search.js?1752940267" defer></script>
+    <link href="/images/logo.png?1753199433" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753199433" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753199433" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753199433" rel="stylesheet">
+    <link href="/css/theme.css?1753199433" rel="stylesheet">
+    <link href="/css/format-html.css?1753199433" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753199433" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753199433" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753199433" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753199433" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753199433" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753199433" defer></script>
+    <script src="/js/search.js?1753199433" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -54,7 +50,7 @@ Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichag
       window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1752940267";
+      window.relearn.index_js_url="/searchindex.en.js?1753199433";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -100,7 +96,7 @@ Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichag
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1752940267" rel="stylesheet">
+    <link href="/css/custom.css?1753199433" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine7/atelier/index.html">
     <div id="R-body" class="default-animation">
@@ -116,6 +112,7 @@ Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichag
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
+    <li><a href="#exercice-4--arrêter-une-boucle-avec-break-semaine-7">Exercice 4 – Arrêter une boucle avec <code>break</code> (Semaine 7)</a></li>
     <li><a href="#objectif-">Objectif :</a></li>
     <li><a href="#activité--courbe-de-refroidissement-dun-liquide">Activité : Courbe de refroidissement d’un liquide</a>
       <ul>
@@ -135,7 +132,7 @@ Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichag
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Activité 7</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/dictionnaires/index.html" title="Dictionnaires (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/tableaux_imbriques/index.html" title="Les tableaux imbriqués (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Évaluation #2 (25%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
@@ -159,6 +156,15 @@ Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichag
 
 <h1 id="activité-7">Activité 7</h1>
 
+<h2 id="exercice-4--arrêter-une-boucle-avec-break-semaine-7">Exercice 4 – Arrêter une boucle avec <code>break</code> (Semaine 7)</h2>
+<p>Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, <strong>mais arrêter dès qu’il donne une mauvaise réponse</strong>.</p>
+<p><strong>Aide pas à pas :</strong></p>
+<ol>
+<li>Simule des réponses avec une variable (par exemple, une bonne réponse = &ldquo;A&rdquo;).</li>
+<li>Utilise une boucle <code>for</code> pour passer les questions.</li>
+<li>Si la réponse est incorrecte, affiche &ldquo;Test terminé&rdquo; et utilise <code>break</code>.</li>
+</ol>
+<p>===</p>
 <h2 id="objectif-">Objectif :</h2>
 <p>Utiliser <code>matplotlib</code> pour tracer une courbe représentant l&rsquo;évolution de la température dans le temps, à partir de données expérimentales.</p>
 <hr>
@@ -260,6 +266,8 @@ plt.show()
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
+            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
             <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html">Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
@@ -268,22 +276,24 @@ plt.show()
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables, types de données et algorithme)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Évaluation #1 (20%)</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Évaluation #1 (20%)</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
             <li class="parent " data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu">
             <li class="" data-nav-id="/semaine7/dictionnaires/index.html"><a class="padding" href="/semaine7/dictionnaires/index.html">Dictionnaires</a></li>
+            <li class="" data-nav-id="/semaine7/tableaux_imbriques/index.html"><a class="padding" href="/semaine7/tableaux_imbriques/index.html">Les tableaux imbriqués</a></li>
             <li class="active " data-nav-id="/semaine7/atelier/index.html"><a class="padding" href="/semaine7/atelier/index.html">Activité 7</a></li></ul></li>
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">**8.** Évaluation #2 (25%)</a></li>
             <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Graphiques SciPy et traitement de fichiers CSV avec Pandas</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Traitement de fichiers CSV avec Pandas et graphiques SciPy </a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Évaluation #3 (20%)</a></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet-Partie 1: Analyse et algorithmes</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a><ul id="R-subsections-123a241fcf7a50602c7d825a9ccf5337" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14.</b> Projet-Partie 3: Représentation graphique avancée</a></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b>Finalisation et Remise du rapport final</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Finalisation et Remise du rapport final</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/afaire/index.html"><a class="padding" href="/afaire/index.html">À FAIRE</a><ul id="R-subsections-f7700fe249973dc3b8ce2124c557c9e6" class="collapsible-menu"></ul></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
@@ -301,8 +311,8 @@ plt.show()
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1752940267" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752940267" defer></script>
-    <script src="/js/theme.js?1752940267" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753199433" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753199433" defer></script>
+    <script src="/js/theme.js?1753199433" defer></script>
   </body>
 </html>

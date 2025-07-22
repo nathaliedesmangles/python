@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Consigne du projet final Contexte : Une équipe d’étudiants a participé à un programme d’entraînement visant à améliorer leurs performances en course à pied. Des tests de temps de course (sur une même distance) ont été réalisés avant et après le programme. Vous devez analyser ces données pour déterminer si le programme a été efficace.
+Objectifs : Importer et manipuler les données : Charger les données à partir d’un fichier CSV, puis préparer les données pour l’analyse.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Projet: Analyse de l’impact de l&#39;entraînement sur la performance physique :: 420-SN1-RE">
+    <meta name="twitter:description" content="Consigne du projet final Contexte : Une équipe d’étudiants a participé à un programme d’entraînement visant à améliorer leurs performances en course à pied. Des tests de temps de course (sur une même distance) ont été réalisés avant et après le programme. Vous devez analyser ces données pour déterminer si le programme a été efficace.
+Objectifs : Importer et manipuler les données : Charger les données à partir d’un fichier CSV, puis préparer les données pour l’analyse.">
+    <meta property="og:url" content="https://example.org/afaire/projets/projet3/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Projet: Analyse de l’impact de l&#39;entraînement sur la performance physique :: 420-SN1-RE">
+    <meta property="og:description" content="Consigne du projet final Contexte : Une équipe d’étudiants a participé à un programme d’entraînement visant à améliorer leurs performances en course à pied. Des tests de temps de course (sur une même distance) ont été réalisés avant et après le programme. Vous devez analyser ces données pour déterminer si le programme a été efficace.
+Objectifs : Importer et manipuler les données : Charger les données à partir d’un fichier CSV, puis préparer les données pour l’analyse.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="À FAIRE">
+    <meta itemprop="name" content="Projet: Analyse de l’impact de l&#39;entraînement sur la performance physique :: 420-SN1-RE">
+    <meta itemprop="description" content="Consigne du projet final Contexte : Une équipe d’étudiants a participé à un programme d’entraînement visant à améliorer leurs performances en course à pied. Des tests de temps de course (sur une même distance) ont été réalisés avant et après le programme. Vous devez analyser ces données pour déterminer si le programme a été efficace.
+Objectifs : Importer et manipuler les données : Charger les données à partir d’un fichier CSV, puis préparer les données pour l’analyse.">
+    <meta itemprop="wordCount" content="331">
+    <title>Projet: Analyse de l’impact de l&#39;entraînement sur la performance physique :: 420-SN1-RE</title>
+    <link href="/images/logo.png?1753205300" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753205300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753205300" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753205300" rel="stylesheet">
+    <link href="/css/theme.min.css?1753205300" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753205300" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753205300" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753205300" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753205300" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753205300" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753205300" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753205300" defer></script>
+    <script src="/js/search.min.js?1753205300" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/afaire\/projets\/projet3\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1753205300";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1753205300" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/afaire/projets/projet3/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#consigne-du-projet-final">Consigne du projet final</a>
+      <ul>
+        <li><a href="#contexte-">Contexte :</a></li>
+        <li><a href="#objectifs-">Objectifs :</a></li>
+        <li><a href="#consignes-spécifiques-">Consignes spécifiques :</a></li>
+        <li><a href="#données-">Données :</a></li>
+        <li><a href="#critères-dévaluation-">Critères d’évaluation :</a></li>
+        <li><a href="#format-du-projet-">Format du projet :</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">À FAIRE</span><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Projet: Analyse de l’impact de l&#39;entraînement sur la performance physique</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/afaire/projets/projet2/index.html" title="Projet: Cinétique d'une réaction chimique (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/afaire/projets/projet4/index.html" title="Projet: Analyse de la croissance bactérienne (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable afaire" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="projet-analyse-de-limpact-de-lentraînement-sur-la-performance-physique">Projet: Analyse de l’impact de l&#39;entraînement sur la performance physique</h1>
+
+<h2 id="consigne-du-projet-final">Consigne du projet final</h2>
+<h3 id="contexte-">Contexte :</h3>
+<p>Une équipe d’étudiants a participé à un programme d’entraînement visant à améliorer leurs performances en course à pied. Des tests de temps de course (sur une même distance) ont été réalisés avant et après le programme. Vous devez analyser ces données pour déterminer si le programme a été efficace.</p>
+<h3 id="objectifs-">Objectifs :</h3>
+<ol>
+<li><strong>Importer et manipuler les données</strong> : Charger les données à partir d’un fichier CSV, puis préparer les données pour l’analyse.</li>
+<li><strong>Comparer les performances</strong> avant et après l&rsquo;entraînement.</li>
+<li><strong>Visualiser</strong> les résultats de manière claire et significative.</li>
+<li><strong>Interpréter les résultats</strong> pour conclure sur l’efficacité du programme d’entraînement.</li>
+</ol>
+<hr>
+<h3 id="consignes-spécifiques-">Consignes spécifiques :</h3>
+<ol>
+<li>
+<p><strong>Lecture et traitement des données</strong> :</p>
+<ul>
+<li>Charger les données avec <code>pandas</code>.</li>
+<li>Calculer la différence entre les temps &ldquo;avant&rdquo; et &ldquo;après&rdquo; pour chaque élève.</li>
+<li>Ajouter une colonne <code>&quot;Amélioration&quot;</code> (temps avant - temps après).</li>
+</ul>
+</li>
+<li>
+<p><strong>Création de fonctions</strong> :</p>
+<ul>
+<li>Créez une fonction <code>calculer_amelioration(df)</code> qui retourne les améliorations individuelles et les statistiques globales (moyenne, écart-type).</li>
+<li>Créez une fonction <code>interpreter_resultats(améliorations)</code> qui détermine si l&rsquo;amélioration est significative pour l&rsquo;ensemble des participants.</li>
+</ul>
+</li>
+<li>
+<p><strong>Visualisation avec matplotlib</strong> :</p>
+<ul>
+<li>Diagramme en barres comparant les temps &ldquo;avant&rdquo; et &ldquo;après&rdquo; pour chaque élève.</li>
+<li>Histogramme des améliorations individuelles.</li>
+<li>Option : tracer une ligne horizontale représentant l’amélioration moyenne.</li>
+</ul>
+</li>
+<li>
+<p><strong>Exportation</strong> :</p>
+<ul>
+<li>Exportez un fichier CSV avec les colonnes suivantes : <code>Nom</code>, <code>Avant</code>, <code>Après</code>, <code>Amélioration</code>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="données-">Données :</h3>
+<p>Le fichier <code>problematique_4_course.csv</code> contient les temps de course (en secondes) de plusieurs élèves avant et après un programme d’entraînement.
+Colonnes :</p>
+<ul>
+<li><code>Nom</code></li>
+<li><code>Avant (s)</code></li>
+<li><code>Apres (s)</code></li>
+</ul>
+<h3 id="critères-dévaluation-">Critères d’évaluation :</h3>
+<ul>
+<li><strong>Précision de l’analyse</strong> : Calculs corrects et cohérence des conclusions.</li>
+<li><strong>Qualité du code</strong> : Code clair, bien commenté et bien structuré.</li>
+<li><strong>Visualisation</strong> : Graphiques clairs, bien étiquetés, pertinents.</li>
+<li><strong>Interprétation</strong> : Interprétation logique, soutenue par les données, sur l’efficacité du programme.</li>
+</ul>
+<h3 id="format-du-projet-">Format du projet :</h3>
+<ul>
+<li>
+<p><strong>Durée</strong> : Projet à remettre à la fin de la semaine 15.</p>
+</li>
+<li>
+<p><strong>Livrables</strong> :</p>
+<ol>
+<li>Un fichier <code>.ipynb</code> (notebook Jupyter) avec votre analyse complète.</li>
+<li>Le fichier CSV exporté avec les résultats.</li>
+<li>Une section &ldquo;Conclusion&rdquo; claire dans le notebook ou en fichier PDF séparé.</li>
+</ol>
+</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html">Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables, types de données et algorithme)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Évaluation #1 (20%)</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Traitement de fichiers CSV avec Pandas et graphiques SciPy </a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Évaluation #3 (20%)</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Finalisation et Remise du rapport final</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1753205300" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753205300" defer></script>
+    <script src="/js/theme.min.js?1753205300" defer></script>
+  </body>
+</html>

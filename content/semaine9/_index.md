@@ -3,7 +3,7 @@ chapter = true
 pre = "<b>9.</b>"
 title = " Tableaux NumPy"
 weight = 109
-draft = true
+draft = false
 +++
  
 
@@ -11,36 +11,121 @@ draft = true
 
 À la fin de cette leçon, vous devrez être capable de :
 
-* Utiliser les fonctions de NumPy pour créer des tableaux (1D, 2D)
-* Utiliser les fonctions mathématiques de NumPy pour obtenir des statistiques sur les données
-
+* Créer des tableaux de données à une ou deux dimensions.
+* Calculer des **moyennes** et **écarts types**.
+* Gérer des données **expérimentales incomplètes** (`np.nan`).
+* Comparer des résultats entre éléments ou conditions.
 
 ---
 
-
-## Importer la bibliothèque
-
-Avant d’utiliser NumPy, il faut l’importer au début de votre bloc-notes :
+<!--
+## 1. Importer la bibliothèque
 
 ```python
 import numpy as np
 ```
 
-## Créer un tableau NumPy (`np.array()`)
 
-Un **tableau NumPy** est une structure efficace pour manipuler des séries de données numériques (ex : mesures, positions, températures…).
+## 2. Créer un tableau de données (`array`)
+
+**Tableau 1D**
 
 ```python
-# Créer un tableau à partir d’une liste
-mesures = np.array([3.2, 4.1, 2.9, 5.0])
-print(mesures)
+sol = np.array([32.0, 35.5, 37.2])
+print(f"Solubilités mesurées : {sol}")
 ```
 
-Résultat :
+**Tableau 2D**
 
+* Un **tableau numpy** multidimentionnel c'est un **tableau numpy** qui contient **une liste de listes**.
+
+```python
+matrice = np.array([[1, 2], [3, 4]])
+print(matrice.shape)     # Affiche les dimensions (2 lignes, 2 colonnes)
 ```
-[3.2 4.1 2.9 5. ]
+
+
+## 3. Calculer la moyenne
+
+```python
+moy = np.mean(sol)
+print(f"Moyenne : {moy:.2f} g/100mL")
 ```
+
+
+## 4. Calculer l’écart type
+
+```python
+ecart = np.std(sol)
+print(f"Écart type : {ecart:.2f}")
+```
+
+
+## 5. Ignorer des valeurs manquantes (`np.nan`)
+
+Parfois, une mesure a été oubliée ou mal prise. On utilise `np.nan` pour représenter une valeur manquante :
+
+```python
+sol = np.array([32.0, np.nan, 37.2])
+moy = np.nanmean(sol)
+print(f"Moyenne (sans valeur manquante) : {moy:.2f} g/100mL")
+```
+
+
+## 6. Comparer plusieurs substances
+
+```python
+sol_A = np.array([35.0, 36.5, 38.0])
+sol_B = np.array([15.0, 16.0, 15.5])
+
+moy_A = np.mean(sol_A)
+moy_B = np.mean(sol_B)
+
+print(f"Solubilité moyenne A : {moy_A:.2f}")
+print(f"Solubilité moyenne B : {moy_B:.2f}")
+```
+
+
+## 7. Interprétation conditionnelle
+
+```python
+if moy_A > moy_B:
+    print(f"Le composé A est plus soluble que le composé B.")
+else:
+    print(f"Le composé B est plus soluble ou équivalent à A.")
+```
+
+---
+
+## Exercices pratiques
+
+### Exercice 1 – Moyenne et écart type
+
+1. Crée un tableau avec les valeurs `[20.0, 22.5, 21.0, 23.5]`.
+2. Calcule et affiche la moyenne et l’écart type avec des f-strings.
+
+
+### Exercice 2 – Données incomplètes
+
+1. Crée un tableau : `[18.0, np.nan, 19.5, 20.0]`.
+2. Calcule la moyenne **en ignorant** la valeur manquante.
+3. Affiche un message si la moyenne est supérieure à 19.
+
+
+### Exercice 3 – Comparaison de deux composés
+
+1. Crée deux tableaux :
+
+   * A : `[40.0, 41.5, 42.0]`
+   * B : `[35.0, 36.0, 36.5]`
+2. Calcule les moyennes.
+3. Affiche lequel a la solubilité la plus élevée.
+
+
+
+===========================
+
+
 
 
 ## Fonctions mathématiques utiles
@@ -134,14 +219,12 @@ print(f"Écart-type :{ecart}")
 hauteurs_centrees = hauteurs - moy
 print(f"Hauteurs centrées : {hauteurs_centrees}")
 ```
+-->
 
-## Tableaux multidimensionnels
+### Exercices à faire avant le cours
 
-* Un **tableau numpy** multidimentionnel c'est un **tableau numpy** qui contient **une liste de listes**.
+## À faire avant le prochain cours
 
-```python
-matrice = np.array([[1, 2], [3, 4]])
-print(matrice.shape)     # Affiche les dimensions (2 lignes, 2 colonnes)
-```
-
+1. Lire la matière sur [Traitement de fichiers CSV (Pandas) et graphiques (SciPy)](../semaine10/)
+2. Faire les [exercices se trouvant à la fin de la leçon 10](../semaine10/#exercices-à-faire-avant-le-cours)
 

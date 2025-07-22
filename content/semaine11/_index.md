@@ -1,6 +1,6 @@
 +++
 chapter = true
-pre = "**11.**"
+pre = "<b>11.</b>"
 title = " Évaluation #3 (20%)"
 weight = 111
 +++

@@ -162,19 +162,21 @@ for i in range(1, 11):
 
 ---
 
-### Exercices à faire avant le cours
+## Exercices à faire avant le cours
 
-## Exercice 1 - For ou While ?
+### Exercice 1 - For ou While ?
 
 Pour chacun des contextes suivants, avant d'écrire le code, répondez à la question: "Quelle boucle devriez-vous utiliser ?":
 
-1. Afficher les nombres de 1 à 10
-2. Compter jusqu’à 100 par bonds de 10
-3. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)
-4. Lire une température jusqu’à ce qu’elle soit < 0 (entrée utilisateur)
-5. Écrire un programme qui :
-   a) Affiche deux choix : 1-"Entrez votre prénom" et 2-"Quitter le programme"
-   b) Demande à l'utilisateur d'entrer son choix (`1` ou `2`) et tant qu'il choisi l'option 1, le programme lui redemande d'entrer son prénom. Si c'est 2, le programme s'arrête (Vous pouvez utiliser `break` ou afficher un message).
+a. Afficher les nombres de 1 à 10  
+b. Compter jusqu’à 100 par bonds de 10  
+c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)  
+d. Lire une température jusqu’à ce qu’elle soit < 0 (entrée utilisateur)  
+e. Écrire un programme qui :  
+&nbsp;&nbsp;&nbsp;&nbsp; i. Affiche deux choix :  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. "Entrez votre prénom"  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2."Quitter le programme"  
+&nbsp;&nbsp;&nbsp;&nbsp; ii. Demande à l'utilisateur d'entrer son choix (`1` ou `2`) et tant qu'il choisi l'option 1, le programme lui redemande d'entrer son prénom. Si c'est 2, le programme s'arrête (Vous pouvez utiliser `break` ou afficher un message).  
 
 
 ### Exercice 2 – Utiliser `while` pour atteindre un objectif
@@ -195,6 +197,7 @@ On veut afficher les numéros de 10 échantillons : `Échantillon 1`, `Échantil
 1. Utilise une boucle `for` avec `range(1, 11)`.
 2. À chaque tour, affiche `Échantillon` suivi du numéro.
 
+---
 
 ## À faire avant le prochain cours
 

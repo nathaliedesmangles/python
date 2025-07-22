@@ -26,21 +26,21 @@ Syntaxe : for i in range(début, fin, pas): instructionsdébut : valeur initial
     <meta itemprop="description" content="Objectifs Comprendre l’utilité des boucles en programmation. Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. Interrompre le déroulement d’une boucle. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).
 La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.
 Syntaxe : for i in range(début, fin, pas): instructionsdébut : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :">
-    <meta itemprop="wordCount" content="695">
+    <meta itemprop="wordCount" content="700">
     <title> Répéter avec `for` et `while` :: 420-SN1-RE</title>
     <link href="/semaine6/index.xml" rel="alternate" type="application/rss+xml" title=" Répéter avec `for` et `while` :: 420-SN1-RE">
-    <link href="/images/logo.png?1753064763" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753064763" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753064763" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753064763" rel="stylesheet">
-    <link href="/css/theme.min.css?1753064763" rel="stylesheet">
-    <link href="/css/format-html.min.css?1753064763" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1753064763" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1753064763" defer></script>
-    <script src="/js/lunr/lunr.min.js?1753064763" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1753064763" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1753064763" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1753064763" defer></script>
-    <script src="/js/search.min.js?1753064763" defer></script>
+    <link href="/images/logo.png?1753205300" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753205300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753205300" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753205300" rel="stylesheet">
+    <link href="/css/theme.min.css?1753205300" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753205300" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753205300" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753205300" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753205300" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753205300" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753205300" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753205300" defer></script>
+    <script src="/js/search.min.js?1753205300" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -50,7 +50,7 @@ Syntaxe : for i in range(début, fin, pas): instructionsdébut : valeur initial
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1753064763";
+      window.relearn.index_js_url="/searchindex.en.js?1753205300";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -96,7 +96,7 @@ Syntaxe : for i in range(début, fin, pas): instructionsdébut : valeur initial
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1753064763" rel="stylesheet">
+    <link href="/css/custom.css?1753205300" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine6/index.html">
     <div id="R-body" class="default-animation">
@@ -128,11 +128,11 @@ Syntaxe : for i in range(début, fin, pas): instructionsdébut : valeur initial
     <li><a href="#interrompre-une-boucle">Interrompre une boucle</a>
       <ul>
         <li><a href="#exemple-avec-continue">Exemple avec <code>continue</code></a></li>
-        <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a></li>
       </ul>
     </li>
-    <li><a href="#exercice-1---for-ou-while-">Exercice 1 - For ou While ?</a>
+    <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a>
       <ul>
+        <li><a href="#exercice-1---for-ou-while-">Exercice 1 - For ou While ?</a></li>
         <li><a href="#exercice-2--utiliser-while-pour-atteindre-un-objectif">Exercice 2 – Utiliser <code>while</code> pour atteindre un objectif</a></li>
         <li><a href="#exercice-3--répéter-une-mesure-fixe-avec-for">Exercice 3 – Répéter une mesure fixe avec <code>for</code></a></li>
       </ul>
@@ -151,7 +151,7 @@ Syntaxe : for i in range(début, fin, pas): instructionsdébut : valeur initial
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/atelier/index.html" title="Atelier 5 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Évaluation #2 (25%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/atelier/index.html" title="Atelier 6 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -304,18 +304,18 @@ Valeur : 4  </code></pre></div>
   </div>
 </details>
 <hr>
-<h3 id="exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</h3>
-<h2 id="exercice-1---for-ou-while-">Exercice 1 - For ou While ?</h2>
+<h2 id="exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</h2>
+<h3 id="exercice-1---for-ou-while-">Exercice 1 - For ou While ?</h3>
 <p>Pour chacun des contextes suivants, avant d&rsquo;écrire le code, répondez à la question: &ldquo;Quelle boucle devriez-vous utiliser ?&rdquo;:</p>
-<ol>
-<li>Afficher les nombres de 1 à 10</li>
-<li>Compter jusqu’à 100 par bonds de 10</li>
-<li>Simuler la chute d’un objet de 100 m (baisse de 10 m/s)</li>
-<li>Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)</li>
-<li>Écrire un programme qui :
-a) Affiche deux choix : 1-&ldquo;Entrez votre prénom&rdquo; et 2-&ldquo;Quitter le programme&rdquo;
-b) Demande à l&rsquo;utilisateur d&rsquo;entrer son choix (<code>1</code> ou <code>2</code>) et tant qu&rsquo;il choisi l&rsquo;option 1, le programme lui redemande d&rsquo;entrer son prénom. Si c&rsquo;est 2, le programme s&rsquo;arrête (Vous pouvez utiliser <code>break</code> ou afficher un message).</li>
-</ol>
+<p>a. Afficher les nombres de 1 à 10<br>
+b. Compter jusqu’à 100 par bonds de 10<br>
+c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)<br>
+d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)<br>
+e. Écrire un programme qui :<br>
+     i. Affiche deux choix :<br>
+        1. &ldquo;Entrez votre prénom&rdquo;<br>
+        2.&ldquo;Quitter le programme&rdquo;<br>
+     ii. Demande à l&rsquo;utilisateur d&rsquo;entrer son choix (<code>1</code> ou <code>2</code>) et tant qu&rsquo;il choisi l&rsquo;option 1, le programme lui redemande d&rsquo;entrer son prénom. Si c&rsquo;est 2, le programme s&rsquo;arrête (Vous pouvez utiliser <code>break</code> ou afficher un message).</p>
 <h3 id="exercice-2--utiliser-while-pour-atteindre-un-objectif">Exercice 2 – Utiliser <code>while</code> pour atteindre un objectif</h3>
 <p>Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
 Écrire un programme qui affiche l’évolution de la température <strong>jusqu’à ce qu’elle atteigne 30 °C</strong>.</p>
@@ -331,10 +331,11 @@ b) Demande à l&rsquo;utilisateur d&rsquo;entrer son choix (<code>1</code> ou <c
 <li>Utilise une boucle <code>for</code> avec <code>range(1, 11)</code>.</li>
 <li>À chaque tour, affiche <code>Échantillon</code> suivi du numéro.</li>
 </ol>
+<hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
-<li>Lire la matière sur <a>Listes, chaines et graphiques de base</a></li>
-<li>Faire les <a href="#exercices-à-faire-avant-le-cours">exercices se trouvant à la fin de la leçon 7</a></li>
+<li>Lire la matière sur <a href="/semaine7/index.html">Listes, chaines et graphiques de base</a></li>
+<li>Faire les <a href="/semaine7/index.html#exercices-à-faire-avant-le-cours">exercices se trouvant à la fin de la leçon 7</a></li>
 </ol>
 
   <footer class="footline">
@@ -395,10 +396,16 @@ b) Demande à l&rsquo;utilisateur d&rsquo;entrer son choix (<code>1</code> ou <c
             <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Évaluation #1 (20%)</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
-            <li class="active " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a></li>
+            <li class="active parent " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine6/atelier/index.html"><a class="padding" href="/semaine6/atelier/index.html">Atelier 6</a></li></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">**11.** Évaluation #3 (20%)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Traitement de fichiers CSV avec Pandas et graphiques SciPy </a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Évaluation #3 (20%)</a></li>
             <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
             <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Finalisation et Remise du rapport final</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
@@ -419,8 +426,8 @@ b) Demande à l&rsquo;utilisateur d&rsquo;entrer son choix (<code>1</code> ou <c
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1753064763" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753064763" defer></script>
-    <script src="/js/theme.min.js?1753064763" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753205300" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753205300" defer></script>
+    <script src="/js/theme.min.js?1753205300" defer></script>
   </body>
 </html>

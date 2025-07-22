@@ -1,5 +1,5 @@
 +++
-title = "Grilles d'évaluation critériée"
+title = "Grille d'évaluation critériée"
 weight = 112.1
 draft = false
 +++

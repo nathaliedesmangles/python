@@ -33,14 +33,14 @@
       <link>https://example.org/solutions_ateliers/6_boucles/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/6_boucles/index.html</guid>
-      <description></description>
+      <description>Exercice 1 – Table de multiplication Solution de base (avec boucle for) # Demande à l&#39;usager un nombre entre 1 et 12 n = int(input(&#34;Entrez un nombre entre 1 et 12 : &#34;)) # Vérifie que le nombre est valide if 1 &lt;= n &lt;= 12: for i in range(1, 13): print(f&#34;{i} x {n} = {i * n}&#34;) else: print(&#34;Le nombre doit être entre 1 et 12.&#34;)&#xD;Variante 1 : ordre croissant ou décroissant n = int(input(&#34;Entrez un nombre entre 1 et 12 : &#34;)) if 1 &lt;= n &lt;= 12: ordre = input(&#34;Voulez-vous l’ordre croissant (c) ou décroissant (d) ?</description>
     </item>
     <item>
       <title> Listes, chaines et graphiques de base</title>
       <link>https://example.org/solutions_ateliers/7_listes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/7_listes/index.html</guid>
-      <description></description>
+      <description>## Exercice 4 (Semaine 7)&#xA;**But : simuler un test qui s’arrête dès qu’il y a une mauvaise réponse**&#xA;\\# On suppose que les bonnes réponses sont &#34;A&#34; \\# et que l&#39;étudiant fait une erreur à la 4e question reponses = \\\[&#34;A&#34;, &#34;A&#34;, &#34;A&#34;, &#34;B&#34;, &#34;A&#34;, &#34;A&#34;, &#34;A&#34;, &#34;A&#34;, &#34;A&#34;, &#34;A&#34;] for i in range(10): \&amp;nbsp; print(&#34;Question&#34;, i + 1) \&amp;nbsp; if reponses\\\[i] != &#34;A&#34;: \&amp;nbsp; print(&#34;Réponse incorrecte. Test terminé.&#34;) \&amp;nbsp; break \&amp;nbsp; else: \&amp;nbsp; print(&#34;Bonne réponse.</description>
     </item>
     <item>
       <title> Tableaux NumPy</title>

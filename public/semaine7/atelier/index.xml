@@ -3,7 +3,7 @@
   <channel>
     <title>Activité 7 :: 420-SN1-RE</title>
     <link>http://localhost:1313/semaine7/atelier/index.html</link>
-    <description>Objectif : Utiliser matplotlib pour tracer une courbe représentant l’évolution de la température dans le temps, à partir de données expérimentales.&#xA;Activité : Courbe de refroidissement d’un liquide Contexte&#xA;Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.&#xA;Consignes Importer la bibliothèque matplotlib.pyplot et configurer l’affichage dans Jupyter Notebook.</description>
+    <description>Exercice 4 – Arrêter une boucle avec break (Semaine 7) Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, mais arrêter dès qu’il donne une mauvaise réponse.&#xA;Aide pas à pas :&#xA;Simule des réponses avec une variable (par exemple, une bonne réponse = “A”). Utilise une boucle for pour passer les questions. Si la réponse est incorrecte, affiche “Test terminé” et utilise break. ===</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/semaine7/atelier/index.xml" rel="self" type="application/rss+xml" />

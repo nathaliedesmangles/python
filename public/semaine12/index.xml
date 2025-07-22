@@ -3,12 +3,12 @@
   <channel>
     <title> Projet - Présentation et analyse :: 420-SN1-RE</title>
     <link>https://example.org/semaine12/index.html</link>
-    <description>Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Contraintes techniques Utiliser Python avec Jupyter Notebook (.ipynb) Utiliser le bloc-notes projet_enquete_adn.ipynb et le fichier de données suspects.csv se trouvant sur Moodle. Bibliothèques obligatoires : uniquement pandas, numpy, matplotlib, scipy Utiliser des fonctions personnalisées (def) Respecter les normes de programmation lettrée (sections Markdown, titres, explications) Remise Remettre un seul fichier projet_prenom_nom.</description>
+    <description>Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Projet : Enquête scientifique par analyse d’ADN Contexte Vous êtes le ou la bioinformaticien·ne en charge d’une enquête médico-légale : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine12/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Grilles d&#39;évaluation critériée</title>
+      <title>Grille d&#39;évaluation critériée</title>
       <link>https://example.org/semaine12/grille/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine12/grille/index.html</guid>

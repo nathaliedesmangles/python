@@ -4,6 +4,20 @@ weight = 107
 draft = true
 +++
 
+
+## Exercice 4 – Arrêter une boucle avec `break` (Semaine 7)
+
+Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, **mais arrêter dès qu’il donne une mauvaise réponse**.
+
+**Aide pas à pas :**
+
+1. Simule des réponses avec une variable (par exemple, une bonne réponse = "A").
+2. Utilise une boucle `for` pour passer les questions.
+3. Si la réponse est incorrecte, affiche "Test terminé" et utilise `break`.
+
+
+
+===
 ## Objectif :
 
 Utiliser `matplotlib` pour tracer une courbe représentant l'évolution de la température dans le temps, à partir de données expérimentales.

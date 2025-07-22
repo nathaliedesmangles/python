@@ -128,8 +128,6 @@ else:
 
 > Dans des cellules de Code dans VS Code, testez les exemples des instructions `if`, `elif` et `else`.
 
----
-
 
 {{% notice style="cyan" title="À retenir" groupid="notice-toggle" expanded="false" %}}
 * Les **opérateurs de comparaison** comparent des valeurs.
@@ -233,6 +231,8 @@ pression = 1.6
 
 # ton code ici
 ```
+
+---
 
 ## À faire avant le prochain cours
 

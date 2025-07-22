@@ -43,6 +43,13 @@
       <description>Objectifs de la séance (2h) Comprendre comment fonctionne le débogueur dans PyCharm. Apprendre à utiliser les points d’arrêt (breakpoints), la fenêtre des variables, les options Step Over, Step Into, Evaluate Expression, etc. Réviser les structures conditionnelles (if/elif/else) et les boucles (for, while) en les testant pas à pas. Apprendre à identifier les erreurs logiques classiques en sciences (unités, ordre des opérations, initialisation incorrecte, etc.). Plan de la séance (2h) Temps Activité 0:00-0:15 Introduction au débogueur PyCharm (démonstration) 0:15-0:35 Exemple guidé 1 : if/elif/else – température de changement d’état 0:35-1:00 Exercice 1 : Identifier les erreurs dans un modèle de dilatation thermique 1:00-1:20 Exemple guidé 2 : boucle for – somme des masses d’échantillons 1:20-1:40 Exercice 2 : Corriger une boucle while mal conditionnée (demi-vie radioactive) 1:40-2:00 Défi final : simulation simplifiée de chute libre avec erreur à trouver Outils PyCharm installé.</description>
     </item>
     <item>
+      <title>Calendrier</title>
+      <link>http://localhost:1313/afaire/plancours/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/afaire/plancours/index.html</guid>
+      <description>Voici la version complète mise à jour du plan de cours de Programmation en sciences pour des étudiants de 1re session en sciences de la nature, intégrant toutes tes demandes (pas de création de fonctions, pas de participation évaluée, projet individuel avec données différentes, évaluation 1 bien intégrée dans la semaine 6, etc.).&#xA;Plan de cours – Programmation en sciences (1re session – Sciences de la nature) Durée : 15 semaines Horaire hebdomadaire : 2h40 (3 périodes de 50 minutes incluant 10 min de pause) Structure :</description>
+    </item>
+    <item>
       <title>Écrire un notebook Python bien structuré</title>
       <link>http://localhost:1313/afaire/markdown/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,6 +69,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/afaire/boucler_tableaux2d/index.html</guid>
       <description>Qu’est-ce qu’un tableau 2D ? C’est une liste de listes.&#xA;Exemple d’un tableau 3 lignes × 4 colonnes rempli de 0 :&#xA;tableau = [ [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0] ]&#xD;Chaque sous-liste représente une ligne.&#xA;Boucler sur les lignes (1 niveau) for ligne in tableau: print(ligne)&#xD;➡ On affiche chaque ligne entière.&#xA;Boucler sur chaque élément (2 niveaux) Pour accéder à chaque case du tableau, on utilise deux boucles imbriquées :</description>
+    </item>
+    <item>
+      <title>Présentation du cours (en bref)</title>
+      <link>http://localhost:1313/afaire/anciens/presentation_cours/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/afaire/anciens/presentation_cours/index.html</guid>
+      <description>1. Programmation en sciences (avec Python) Durée : 15 semaines&#xA;Horaire : 1 séance hebdomadaire de 2h40 (50 min démo + 1h50 pratique supervisée)&#xA;Outils : Visual Studio Code, Python, Jupyter Notebook, NumPy, Matplotlib, Pandas&#xA;2. Objectifs du cours Objectif final et du Ministère de l’éducation supérieure Développer des programmes informatiques en vue d’automatiser la résolution de problèmes dans un contexte scientifique Objectifs d’apprentissage Se familiariser avec un langage de programmation.</description>
+    </item>
+    <item>
+      <title>Plan cours 1</title>
+      <link>http://localhost:1313/afaire/plan1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/afaire/plan1/index.html</guid>
+      <description>1. Présentation du cours (~ 45 minutes) Pause 5 minutes&#xA;2. Prise en main de l’environnement de travail - Activité guidée (~ 110 minutes) Étape 1 – Se connecter à votre compte OneDrive du cégep (~ 15 min.) Étape 2 – Organisation des fichiers (~ 15 min.) Pause 5 minutes&#xA;Étape 3 – Découverte de VS Code (~ 30 min.) Étape 4 – Créer et utiliser un Jupyter Notebook (~ 30 min.</description>
     </item>
     <item>
       <title>Maths secondaire 3</title>
