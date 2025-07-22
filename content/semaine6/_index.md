@@ -93,6 +93,11 @@ while temp > 0:
     temp += 10				# Erreur de logique
 ```
 
+#### Arrêter une boucle infinie
+
+> Cliquer dans la case **Arrêter l'exécution des cellules** se trouvant à gauche de la cellule contenant la boucle infinie
+
+![Arrêt d'une boucle infinie dans VS Code Jupyter](./arret_boucle_infinie.png?width=35vw)
 
 ## Interrompre une boucle
 
