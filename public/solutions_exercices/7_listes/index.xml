@@ -3,7 +3,7 @@
   <channel>
     <title> Listes, chaines de caractères et graphiques de base :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/7_listes/index.html</link>
-    <description>Graphiques Exercice 7 Exercice 8 Solution : import matplotlib.pyplot as plt temp = [10, 20, 30, 40, 50] attendu = [2.1, 3.8, 5.6, 7.3, 9.0] mesure = [2.0, 3.9, 5.2, 7.5, 8.8] # Tracé des valeurs attendues (ligne) plt.plot(temp, attendu, &#34;o-k&#34;, label=&#34;Valeurs attendues&#34;) # Tracé des valeurs mesurées (barres) plt.bar(temp, mesure, width=3, alpha=0.5, label=&#34;Valeurs mesurées&#34;, color=&#34;blue&#34;) # Mise en forme plt.xlabel(&#34;Température (°C)&#34;) plt.ylabel(&#34;Concentration (mg/L)&#34;) plt.title(&#34;Concentration mesurée vs attendue&#34;) plt.legend() plt.</description>
+    <description>Listes Exercice 1 : Crée une liste contenant 5 animaux. Affiche chaque animal avec une phrase du type : Voici un/une &lt;animal&gt;&#xD;Exercice 2 : Crée une grille de 5 lignes et 4 colonnes (liste de listes) contenant des chiffres. Affiche tous les chiffres un par un. Exercice 3 : Demande à l’utilisateur d’entrer 3 noms et stocke-les dans une liste. Affiche chaque animal en ordre alphabétique croissant. Affiche chaque animal en ordre alphabétique décroissant.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/7_listes/index.xml" rel="self" type="application/rss+xml" />

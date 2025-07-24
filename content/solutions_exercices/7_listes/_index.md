@@ -82,6 +82,79 @@ for i in range(10):
 * À la 4e question, la réponse est fausse → le test s’arrête avec `break`.
 
 -->
+
+### Listes
+
+#### Exercice 1 :
+
+* Crée une liste contenant 5 animaux. Affiche chaque animal avec une phrase du type :
+```text
+Voici un/une <animal>
+```
+ 
+#### Exercice 2 :
+
+* Crée une grille de 5 lignes et 4 colonnes (liste de listes) contenant des chiffres. 
+* Affiche tous les chiffres un par un.
+
+#### Exercice 3 :
+
+* Demande à l’utilisateur d’entrer 3 noms et stocke-les dans une liste.
+* Affiche chaque animal en ordre alphabétique croissant.  
+* Affiche chaque animal en ordre alphabétique décroissant. 
+
+#### Exercice 4
+
+* Crée une liste de séquences :
+```python
+suspects = [
+    ["A", "T", "C", "G"],
+    ["G", "A", "T", "G"],
+    ["A", "T", "T", "G"]
+]
+```
+* Affiche la 2e base de la 1re séquence.
+* Affiche la dernière base de la 3e séquence.
+
+---
+
+### Chaines de caractères
+
+#### Exercice 5 - Créer une liste de nombres à partir d'une liste de mots
+
+* Utiliser une boucle pour obtenir le nombre de lettres de chaque mot
+* Pour chacun des mots, ajouter son nombre de lettres dans la liste `nb_lettres`.
+
+```python
+mots = ["chlorophylle", "atome", "protéine"]
+nb_lettres = []
+```
+
+#### Exercice 6 - Convertir en ARN
+
+Une séquence d’ADN est "ATGCT".
+
+* Mets-la en minuscules.
+* Remplace les "t" par "u".
+
+---
+
+### Graphiques
+
+#### Exercice 7 – Température dans une journée
+
+* Heures : `[0, 4, 8, 12, 16, 20, 24]`
+* Températures : `[-5, -2, 3, 7, 6, 1, -2]`
+
+Crée un graphique de température en fonction de l’heure.
+
+Ajoute :
+
+* Un titre `"Température en fonction de l’heure"`
+* Les étiquettes `"Heure (h)"` et `"Température (°C)"`
+* Une grille
+
+
 ## Graphiques
 
 ### Exercice 7
