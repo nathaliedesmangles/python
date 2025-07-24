@@ -12,6 +12,7 @@ weight = 103
 * Gérer les entrées (**saisies au clavier**) d'un programme Python.
 * Utiliser des fonctions **prédéfinies**.
 * Définir ses propres fonctions avec `def` (paramètres, `return`, portée locale)
+* Documenter les fonctions personnalisées (`docstring`)
 * Comprendre les messages d'erreurs et à apprendre à déboguer un programme.
 
 ---
@@ -231,6 +232,39 @@ print(x)       # Erreur : x n'existe pas ici
 ```
 ![Erreur de nom](./erreur_name.png?width=35vw)
 
+## Documenter ses fonctions (*docstrings*)
+
+Les ***docstrings*** sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.
+
+**Format standard**
+```python
+def nom_fonction(param):
+    """
+    Description de la fonction.
+
+    Paramètres:
+    - param (type): Description.
+
+    Retour:
+    - type: Description.
+    """
+```
+
+**Exemple** :
+```python
+def addition(a, b):
+    """
+    Calcule la somme de deux nombres.
+
+    Paramètres:
+    a (int, float): Le premier nombre.
+    b (int, float): Le deuxième nombre.
+
+    Retour:
+    int, float: La somme des deux nombres.
+    """
+    return a + b
+```
 
 ## Trouver facilement les sources des erreurs dans nos programmes (débogage)
 
@@ -240,7 +274,7 @@ print(x)       # Erreur : x n'existe pas ici
 
 * **Erreur de syntaxe** : La syntaxe de Python n'est pas respectée. Ex.: `print("Bonjour'`
 * **Erreur d’exécution** : Le mauvais type de données est utilisé. Ex.: `valeur = int("abc")`
-* **Erreur logique** : Les instructions ne correspondent pas à la logique imposée par le problème. Ex.: `aire = longueur + largeur`
+* **Erreur de logique** : Les instructions ne correspondent pas à la logique imposée par le problème. Ex.: `aire = longueur + largeur`
  
 
 ### Quelques habitudes à avoir pour déboguer

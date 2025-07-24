@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique). Accéder à une valeur à partir d’une clé. Ajouter ou modifier une paire clé/valeur dans un dictionnaire. Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Utiliser un dictionnaire pour organiser des données scientifiques, comme des constantes physiques ou des observations par catégorie. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Dictionnaires :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique). Accéder à une valeur à partir d’une clé. Ajouter ou modifier une paire clé/valeur dans un dictionnaire. Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Utiliser un dictionnaire pour organiser des données scientifiques, comme des constantes physiques ou des observations par catégorie. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.">
+    <meta property="og:url" content="https://example.org/semaine7/dictionnaires/dictionnaires/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Dictionnaires :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique). Accéder à une valeur à partir d’une clé. Ajouter ou modifier une paire clé/valeur dans un dictionnaire. Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Utiliser un dictionnaire pour organiser des données scientifiques, comme des constantes physiques ou des observations par catégorie. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content=" Listes, chaînes de caractères et graphiques de base">
+    <meta itemprop="name" content="Dictionnaires :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique). Accéder à une valeur à partir d’une clé. Ajouter ou modifier une paire clé/valeur dans un dictionnaire. Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Utiliser un dictionnaire pour organiser des données scientifiques, comme des constantes physiques ou des observations par catégorie. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.">
+    <meta itemprop="wordCount" content="385">
+    <title>Dictionnaires :: 420-SN1-RE</title>
+    <link href="/images/logo.png?1753397625" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753397625" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753397625" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753397625" rel="stylesheet">
+    <link href="/css/theme.min.css?1753397625" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753397625" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753397625" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753397625" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753397625" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753397625" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753397625" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753397625" defer></script>
+    <script src="/js/search.min.js?1753397625" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/semaine7\/dictionnaires\/dictionnaires\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1753397625";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1753397625" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/semaine7/dictionnaires/dictionnaires/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs">Objectifs</a></li>
+    <li><a href="#quest-ce-quun-dictionnaire">Qu’est-ce qu’un dictionnaire?</a>
+      <ul>
+        <li><a href="#exemple">Exemple</a></li>
+      </ul>
+    </li>
+    <li><a href="#accéder-à-une-valeur-avec-une-clé">Accéder à une valeur avec une clé</a>
+      <ul>
+        <li><a href="#ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</a></li>
+      </ul>
+    </li>
+    <li><a href="#vérifier-si-une-clé-est-présente">Vérifier si une clé est présente</a></li>
+    <li><a href="#parcourir-un-dictionnaire">Parcourir un dictionnaire</a>
+      <ul>
+        <li><a href="#a-les-clés-">a) Les clés :</a></li>
+        <li><a href="#b-les-valeurs-">b) Les valeurs :</a></li>
+        <li><a href="#c-les-paires-clé-valeur-">c) Les paires clé-valeur :</a></li>
+      </ul>
+    </li>
+    <li><a href="#supprimer-une-entrée">Supprimer une entrée</a></li>
+    <li><a href="#utilisation-fréquente-en-sciences">Utilisation fréquente en sciences</a></li>
+    <li><a href="#exercice">Exercice</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine7/index.html"><span itemprop="name"> Listes, chaînes de caractères et graphiques de base</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Dictionnaires</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/index.html" title="Listes, chaînes de caractères et graphiques de base (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Évaluation #2 (25%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine7" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="dictionnaires">Dictionnaires</h1>
+
+<h2 id="objectifs">Objectifs</h2>
+<ul>
+<li><strong>Créer un dictionnaire</strong> simple pour représenter des données associatives (ex. : atome → masse atomique).</li>
+<li><strong>Accéder à une valeur</strong> à partir d’une clé.</li>
+<li><strong>Ajouter ou modifier</strong> une paire clé/valeur dans un dictionnaire.</li>
+<li><strong>Parcourir un dictionnaire</strong> à l’aide d’une boucle <code>for</code>.</li>
+<li><strong>Vérifier la présence</strong> d’une clé avec <code>in</code>.</li>
+<li><strong>Utiliser un dictionnaire pour organiser des données scientifiques</strong>, comme des constantes physiques ou des observations par catégorie.</li>
+</ul>
+<hr>
+<h2 id="quest-ce-quun-dictionnaire">Qu’est-ce qu’un dictionnaire?</h2>
+<p>Un <strong>dictionnaire</strong> est une structure de données qui associe des <strong>clés</strong> à des <strong>valeurs</strong>.
+Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</p>
+<p><strong>Syntaxe de base</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mon_dictionnaire <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clé1&#34;</span>: valeur1,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clé2&#34;</span>: valeur2
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="exemple">Exemple</h3>
+<p>Un dictionnaire contenant les masses molaires de quelques éléments :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;H&#34;</span>: <span style="color:#ae81ff">1.008</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;O&#34;</span>: <span style="color:#ae81ff">15.999</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;C&#34;</span>: <span style="color:#ae81ff">12.011</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h2 id="accéder-à-une-valeur-avec-une-clé">Accéder à une valeur avec une clé</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(masses_molaires[<span style="color:#e6db74">&#34;O&#34;</span>])  <span style="color:#75715e"># Affiche : 15.999</span></span></span></code></pre></div>
+<blockquote>
+<p>Si la clé n’existe pas, Python déclenche une erreur <code>KeyError</code>.</p>
+</blockquote>
+<h3 id="ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</h3>
+<h4 id="ajouter-">Ajouter :</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires[<span style="color:#e6db74">&#34;N&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">14.007</span></span></span></code></pre></div>
+<h4 id="modifier-">Modifier :</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires[<span style="color:#e6db74">&#34;C&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">12.01</span>  <span style="color:#75715e"># Correction</span></span></span></code></pre></div>
+<h2 id="vérifier-si-une-clé-est-présente">Vérifier si une clé est présente</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;H&#34;</span> <span style="color:#f92672">in</span> masses_molaires:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;L’hydrogène est dans le dictionnaire.&#34;</span>)</span></span></code></pre></div>
+<h2 id="parcourir-un-dictionnaire">Parcourir un dictionnaire</h2>
+<h3 id="a-les-clés-">a) Les clés :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> masses_molaires:
+</span></span><span style="display:flex;"><span>    print(element)</span></span></code></pre></div>
+<h3 id="b-les-valeurs-">b) Les valeurs :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> masses_molaires<span style="color:#f92672">.</span>values():
+</span></span><span style="display:flex;"><span>    print(valeur)</span></span></code></pre></div>
+<ul>
+<li><code>.values()</code> permet d’obtenir <strong>uniquement les valeurs</strong> du dictionnaire, sans les clés.</li>
+<li><strong>Utile quand on veut faire un calcul avec les valeurs</strong>, comme une moyenne ou une somme.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> densites<span style="color:#f92672">.</span>values():
+</span></span><span style="display:flex;"><span>    print(valeur)</span></span></code></pre></div>
+<h3 id="c-les-paires-clé-valeur-">c) Les paires clé-valeur :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element, masse <span style="color:#f92672">in</span> masses_molaires<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>element<span style="color:#e6db74">}</span><span style="color:#e6db74"> → </span><span style="color:#e6db74">{</span>masse<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<ul>
+<li><code>.items()</code> permet d’obtenir les couples <strong>clé-valeur</strong> sous forme de paires (appelées aussi tuples en Python).</li>
+<li>Utile quand on veut à la fois le <strong>nom (clé)</strong> et la <strong>valeur associée</strong> pour un affichage ou un traitement.</li>
+</ul>
+<h2 id="supprimer-une-entrée">Supprimer une entrée</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">del</span> masses_molaires[<span style="color:#e6db74">&#34;H&#34;</span>]</span></span></code></pre></div>
+<h2 id="utilisation-fréquente-en-sciences">Utilisation fréquente en sciences</h2>
+<p>Les dictionnaires sont utiles pour :</p>
+<ul>
+<li>Associer des symboles d’éléments à des valeurs (masse molaire, charge, état)</li>
+<li>Regrouper des résultats par échantillon (ex. température par lieu)</li>
+<li>Associer des noms de gènes à leur expression</li>
+</ul>
+<hr>
+<h2 id="exercice">Exercice</h2>
+<p>Crée un dictionnaire <code>densites</code> qui contient la densité (en g/mL) de l’eau, de l’éthanol et du mercure :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>densites <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;eau&#34;</span>: <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;éthanol&#34;</span>: <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;mercure&#34;</span>: <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Puis :</p>
+<ol>
+<li>Affiche la densité du mercure.</li>
+<li>Ajoute la densité de l’huile (0.91 g/mL).</li>
+<li>Affiche toutes les substances et leur densité.</li>
+</ol>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html">Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html">Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables, types de données et algorithme)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Évaluation #1 (20%)</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine7/dictionnaires/dictionnaires/index.html"><a class="padding" href="/semaine7/dictionnaires/dictionnaires/index.html">Dictionnaires</a></li></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Traitement de fichiers CSV avec Pandas et graphiques SciPy </a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Évaluation #3 (20%)</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Finalisation et Remise du rapport final</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1753397625" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753397625" defer></script>
+    <script src="/js/theme.min.js?1753397625" defer></script>
+  </body>
+</html>

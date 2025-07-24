@@ -7,15 +7,13 @@ draft = false
 
 ## Objectifs d’apprentissage
 
-* Utiliser les boucles `for` et `while` pour automatiser des tâches répétitives.
-* Appliquer les boucles à une situation scientifique concrète.
-* Travailler en collaboration pour planifier une solution et tester différents scénarios.
+* Utiliser les boucles `for` et `while` pour afficher une table de multiplication et diverses figures.
 
 ---
 
 ## Exercice 1 – Table de multiplication
 
-> Écrire un programme Python qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.
+* Écrire un programme qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.
 
 **Exemple de sortie :**
 ```
@@ -33,45 +31,45 @@ Entrez un nombre entre 1 et 12 : 7
 
 ## Exercice 2 – Motif croissant simple
 
-* Utilise deux boucles `for` imbriquées.
-* Ne pas utiliser de conditions (`if`).
-* Aucun `input()` n’est requis.
-* Le résultat doit s’afficher exactement comme ci-dessous.
-
-**Affichage attendu :**
+* Écrire un programme qui affiche :
 ```
 1
 12
 123
 ```
+
+* Utiliser deux boucles `for` imbriquées.
+* Ne pas utiliser de conditions (`if`).
+* Aucun `input()` n’est requis.
+* Le résultat doit s’afficher exactement comme ci-dessus.
 
 
 ## Exercice 3 – Motif croissant inversé (triangle renversé)
 
-* Utilise une boucle `for` pour afficher un motif décroissant.
-* Ne pas utiliser de conditions (`if`).
-* Aucun `input()` n’est requis.
-* Le résultat doit s’afficher exactement comme ci-dessous.
-
-**Affichage attendu :**
+* Écrire un programme qui affiche :
 ```
 123
 12
 1
 ```
 
-## Exercice 4 – Triangle inversé symétrique d’étoiles
-
-* Le motif doit être centré.
-* Le nombre d’étoiles par ligne suit la suite : 5, 3, 1 (soit `(2 x i) – 1`).
-* Utilise des boucles pour gérer les espaces et les étoiles.
+* Utiliser une boucle `for` pour afficher un motif décroissant.
 * Ne pas utiliser de conditions (`if`).
 * Aucun `input()` n’est requis.
+* Le résultat doit s’afficher exactement comme ci-dessus.
 
-**Affichage attendu :**
+
+## Exercice 4 – Triangle inversé symétrique d’étoiles
+
+* Écrire un programme qui affiche :
 ```
 *****
  ***
   *
 ```
 
+* Le motif doit être centré.
+* Le nombre d’étoiles par ligne suit la suite : 5, 3, 1 (soit `(2 x i) – 1`).
+* Utilise des boucles pour gérer les espaces et les étoiles.
+* Ne pas utiliser de conditions (`if`).
+* Aucun `input()` n’est requis.

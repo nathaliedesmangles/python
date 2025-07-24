@@ -20,6 +20,145 @@ draft = false
 
 ---
 
+
+
+
+
+---
+
+# Leçon : Régression linéaire simple avec `scipy`
+
+## Objectifs
+
+* Calculer une droite de régression (y = a·x + b)
+* Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur
+* Évaluer la qualité de l’ajustement avec le coefficient de détermination
+
+---
+
+## 1. Importation de la fonction
+
+```python
+from scipy.stats import linregress
+```
+
+---
+
+## 2. Données
+
+On part de deux listes (ou tableaux) de valeurs numériques :
+
+```python
+x = [1, 2, 3, 4, 5]       # Variable indépendante
+y = [2.1, 4.0, 5.9, 8.2, 10.1]  # Variable dépendante
+```
+
+---
+
+## 3. Régression linéaire
+
+### Commande :
+
+```python
+resultats = linregress(x, y)
+```
+
+La fonction retourne un objet contenant :
+
+| Élément     | Signification                |
+| ----------- | ---------------------------- |
+| `slope`     | pente (a)                    |
+| `intercept` | ordonnée à l’origine (b)     |
+| `rvalue`    | coefficient de corrélation   |
+| `pvalue`    | test statistique de validité |
+| `stderr`    | erreur-type sur la pente     |
+
+### Exemple :
+
+```python
+from scipy.stats import linregress
+
+x = [1, 2, 3, 4]
+y = [2.0, 4.1, 6.0, 7.9]
+
+res = linregress(x, y)
+
+print("Pente :", res.slope)
+print("Ordonnée à l’origine :", res.intercept)
+print("r :", res.rvalue)
+print("R² :", res.rvalue**2)
+print("Erreur-type :", res.stderr)
+print("p-valeur :", res.pvalue)
+```
+
+---
+
+## 4. Équation de la droite
+
+L’équation ajustée est :
+
+```
+y = slope * x + intercept
+```
+
+Tu peux l’utiliser pour tracer la droite ou prédire des valeurs.
+
+---
+
+## 5. Évaluer la concordance (qualité de l’ajustement)
+
+### Coefficient de détermination :
+
+```python
+R2 = res.rvalue ** 2
+```
+
+* R² proche de **1** → très bon ajustement
+* R² proche de **0** → pas de relation linéaire
+
+---
+
+## Résumé minimal
+
+| Tâche                  | Syntaxe                              |
+| ---------------------- | ------------------------------------ |
+| Importer               | `from scipy.stats import linregress` |
+| Calculer la régression | `res = linregress(x, y)`             |
+| Obtenir la pente       | `res.slope`                          |
+| Obtenir l’intercept    | `res.intercept`                      |
+| Obtenir R²             | `res.rvalue ** 2`                    |
+| Obtenir l’erreur-type  | `res.stderr`                         |
+| Obtenir la p-valeur    | `res.pvalue`                         |
+
+---
+
+## Exercice guidé
+
+### Exercice – Ajuster une droite
+
+**Énoncé :**
+Pour `x = [0, 1, 2, 3]` et `y = [1, 2.2, 3.9, 6.0]` :
+
+* Calcule la régression linéaire
+* Affiche l’équation de la droite (y = ax + b)
+* Affiche R²
+
+**Solution :**
+
+```python
+from scipy.stats import linregress
+
+x = [0, 1, 2, 3]
+y = [1, 2.2, 3.9, 6.0]
+
+res = linregress(x, y)
+
+print(f"Équation : y = {res.slope:.2f}x + {res.intercept:.2f}")
+print(f"R² = {res.rvalue**2:.4f}")
+```
+
+
+=======================================
 <!--
 ## 1. Importer la bibliothèque
 

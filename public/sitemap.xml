@@ -67,9 +67,6 @@
     <loc>https://example.org/separateur_section/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine7/dictionnaires/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/cours/index.html</loc>
   </url>
   <url>
@@ -110,6 +107,9 @@
   </url>
   <url>
     <loc>https://example.org/semaine7/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine7/dictionnaires/dictionnaires/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine8/index.html</loc>

@@ -1,12 +1,19 @@
 +++
 title = "Dictionnaires"
-weight = 71
-daft = true
+weight = 107.2
+daft = false
 +++
 
-## Objectifs d'apprentissage
+## Objectifs
 
+* **Créer un dictionnaire** simple pour représenter des données associatives (ex. : atome → masse atomique).
+* **Accéder à une valeur** à partir d’une clé.
+* **Ajouter ou modifier** une paire clé/valeur dans un dictionnaire.
+* **Parcourir un dictionnaire** à l’aide d’une boucle `for`.
+* **Vérifier la présence** d’une clé avec `in`.
+* **Utiliser un dictionnaire pour organiser des données scientifiques**, comme des constantes physiques ou des observations par catégorie.
 
+---
 
 ## Qu’est-ce qu’un dictionnaire?
 
@@ -132,38 +139,6 @@ Puis :
 2. Ajoute la densité de l’huile (0.91 g/mL).
 3. Affiche toutes les substances et leur densité.
 
-=======
-
-
-### 🔹 `.items()`
-
-Cette méthode permet d’obtenir **les couples clé-valeur** sous forme de paires (appelées aussi *tuples* en Python).
-
-```python
-for substance, densite in densites.items():
-    print(f"{substance} → {densite} g/mL")
-```
-
-**Résultat :**
-
-```
-eau → 1.0 g/mL
-éthanol → 0.789 g/mL
-mercure → 13.6 g/mL
-```
-
-✅ **Utile quand on veut à la fois le nom (clé)** et **la valeur associée** pour un affichage ou un traitement.
-
----
-
-### 🧪 Résumé visuel
-
-| Expression      | Donne quoi ?                 |
-| --------------- | ---------------------------- |
-| `dico.values()` | Les **valeurs** (seules)     |
-| `dico.items()`  | Les **paires** (clé, valeur) |
-
-Souhaites-tu que je l’intègre à la leçon précédente ou qu'on fasse un petit quiz rapide à choix multiples sur ces notions?
 
 
 

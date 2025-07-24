@@ -3,7 +3,7 @@
   <channel>
     <title> Traitement de fichiers CSV avec Pandas et graphiques SciPy  :: 420-SN1-RE</title>
     <link>https://example.org/semaine10/index.html</link>
-    <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Exercices à faire avant le cours À faire avant le prochain cours RAPPEL: Semaine prochaine c’est le troisième et dernier examen (20%)</description>
+    <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Leçon : Régression linéaire simple avec scipy Objectifs Calculer une droite de régression (y = a·x + b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination 1.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine10/index.xml" rel="self" type="application/rss+xml" />

@@ -7,150 +7,211 @@ draft = false
 +++
 
 
-## Objectifs d'apprentissage
+## Objectifs
 
-1. **Créer et manipuler des listes** de données numériques ou textuelles en Python (ajout, suppression, parcours, calcul de statistiques simples).
-2. **Accéder, modifier et parcourir** les caractères d’une chaîne de caractères.
-3. **Appliquer des méthodes de traitement de texte** pour analyser ou transformer des chaînes de caractères (ex. : mise en minuscules, découpage, recherche, comptage).
-
----
-
-<!--
-## Les **listes** de données
-
-Une **liste** est un contenant qui peut regrouper plusieurs valeurs (appelées *éléments*), dans un ordre donné.
-
-### Création de liste
-
-```python
-nombres = [4, 7, 9, 12]
-notes = [82.5, 76.0, 91.2]
-mots = ["chlorophylle", "atome", "protéine"]
-```
-
-### Accès à un élément
-
-On accède à un élément avec un **indice** (le premier élément a l’indice 0).
-
-```python
-print(nombres[0])  # Affiche 4
-print(mots[2])     # Affiche "protéine"
-```
-
-### Modifier un élément
-
-```python
-nombres[1] = 10  # La liste devient [4, 10, 9, 12]
-```
-
-### Ajouter et retirer un élément
-
-```python
-nombres.append(15)      # Ajoute 15 à la fin
-nombres.remove(10)      # Enlève le 10
-```
-
-### Taille de la liste
-
-```python
-print(len(notes))  # Affiche 3
-```
-
-
-## Parcourir une liste avec `for`
-
-```python
-for note in notes:
-    print(note)
-```
-
-## Quelques traitements courants sur les listes
-
-| Objectif                        | Code Python                   |
-| ------------------------------- | ----------------------------- |
-| Calculer une somme              | `s = sum(notes)`              |
-| Moyenne                         | `m = sum(notes) / len(notes)` |
-| Trouver le max ou le min        | `max(notes)` ou `min(notes)`  |
-| Tester la présence d’un élément | `"atome" in mots`             |
-| Trier une liste                 | `mots.sort()`                 |
-
-
-## Calculs dans une liste avec une boucle `for`
-
-### Calculer une somme
-
-On additionne les valeurs une par une dans une boucle.
-
-```python
-valeurs = [10, 20, 30, 40]
-somme = 0
-
-for v in valeurs:
-    somme += v
-
+* Comprendre ce qu’est une **liste** en Python.
+* Savoir créer, modifier et parcourir une **liste simple**.
+* Manipuler des **listes imbriquées** (listes dans un liste).
+* Appliquer les notions des listes simples sur les chaines de caractères.  
+* Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque `matplotlib`.
+* Connaître les principales **fonctions utiles** pour les **listes/chaines** et **graphiques** de base.
 
 ---
 
+## Qu’est-ce qu’une liste ?
 
-### Exercice 4 – Arrêter une boucle avec `break`
+Une **liste**, c’est un **conteneur** dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).
 
-Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, **mais arrêter dès qu’il donne une mauvaise réponse**.
-
-1. Simule des réponses avec une variable (par exemple, une bonne réponse = "A").
-2. Utilise une boucle `for` pour passer les questions.
-3. Si la réponse est incorrecte, affiche "Test terminé" et utilise `break`.
-
-print("Somme:", somme)  # Résultat: 100
-```
-
-### Calculer une moyenne
-
-Une **moyenne**, c’est la somme divisée par le nombre d’éléments.
+C’est un peu comme une boîte à compartiments.
 
 ```python
-moyenne = somme / len(valeurs)
-print("Moyenne:", moyenne)  # Résultat: 25.0
+ma_liste = [3, 7, 42, 5]
 ```
 
-> Assurez-vous que la liste n’est pas vide avant de faire la division (`len(valeurs) ≠ 0`).
-
-
-### Trouver le minimum et le maximum
-
-On initialise avec le **premier élément** de la liste, puis on compare.
+Chaque élément a une **position** (appelée *indice*).
 
 ```python
-valeurs = [10, 20, 30, 40]
-
-minimum = valeurs[0]
-maximum = valeurs[0]
-
-for v in valeurs:
-    if v < minimum:
-        minimum = v
-    if v > maximum:
-        maximum = v
-
-print("Min:", minimum)  # Résultat: 10
-print("Max:", maximum)  # Résultat: 40
+print(ma_liste[0])  # Affiche 3 (le premier élément)
+print(ma_liste[2])  # Affiche 42
 ```
 
-## Chaînes de caractères (str)
+## Créer et modifier une liste
 
-Une chaîne de caractères est un **texte** (entre guillemets), que l'on peut manipuler comme une suite de lettres ou une **liste** de lettre.
-
-### Déclaration
+### Créer une liste vide
 
 ```python
-message = "Bonjour les biologistes!"
+liste_vide = []
 ```
 
-### Accès par index
+### Ajouter des éléments
 
 ```python
-print(message[0])     # 'B'
+fruits = ["pomme", "banane"]
+fruits.append("cerise")  # ["pomme", "banane", "cerise"]
+```
+
+### Remplacer un élément
+
+```python
+fruits[1] = "poire"  # ["pomme", "poire", "cerise"]
+```
+
+## Parcourir une liste
+
+Avec une boucle `for` :
+
+```python
+for fruit in fruits:
+    print(f"J'aime les {fruit}")
+
+# Affiche:
+J'aime les pomme
+J'aime les poire
+J'aime les cerise
+```
+
+**Explication** : 
+* La variable `fruit` prendra comme valeur, les éléments de la liste `fruits` un à un.
+
+Avec les indices :
+
+```python
+for i in range(len(fruits)):
+    print(f"L'indice {i} contient : {fruits[i]}")
+
+# Affiche:
+L'indice 0 contient : pomme
+L'indice 1 contient : poire
+L'indice 2 contient : cerise
+```
+**Explication** : 
+* `len(fruits)` vaut 3.
+* La variable `i` prendra les valeurs `0, 1 et 2`.
+* `fruits[i]` contient un à un les fruits de la liste `fruits`.
+
+## Fonctions utiles sur les listes simples
+
+| Méthode / Fonction       | Description                                    | Exemple                      |
+| ------------------------ | ---------------------------------------------- | ---------------------------- |
+| `append(valeur)`         | Ajoute un élément à la fin                     | `ma_liste.append(10)`        |
+| `insert(indice, valeur)` | Insère une valeur à une position donnée        | `ma_liste.insert(1, 99)`     |
+| `pop(indice)`            | Retire l’élément à l’indice (ou le dernier)    | `ma_liste.pop()`             |
+| `remove(valeur)`         | Retire la **première** occurrence d'une valeur | `ma_liste.remove(42)`        |
+| `len()`                  | Donne la longueur de la liste                  | `len(ma_liste)`              |
+| `sorted()`               | Trie la liste sans la modifier                 | `sorted(ma_liste)`           |
+| `sort()`*                | Trie la liste en la modifiant                  | `ma_liste.sort()`            |
+| `reverse()`              | Inverse l’ordre des éléments                   | `ma_liste.reverse()`         |
+| `in`                     | Vérifie si un élément est dans la liste        | `"pomme" in fruits` → `True` |
+| `index(valeur)`          | Renvoie l’indice de la première occurrence     | `fruits.index("poire")`      |
+| `count(valeur)`          | Compte combien de fois un élément apparaît     | `fruits.count("poire")`      |
+| `max()`                  | Trouver le max                                 | `max(ma_liste)`              |
+| `min()`                  | Trouver le min                                 | `min(ma_liste)`              |
+| `sum()` 		   | Calculer une somme des éléments		    | `s = sum(ma_liste)`
+
+**Exemple** : Calcul de la moyenne d’une liste de notes
+
+```python
+notes = [85, 90, 78]
+moyenne = sum(notes) / len(notes)
+print(f"Moyenne : {moyenne:.2f}")
+```
+
+{{% notice style="accent" title="*Important" %}}
+* `mots.sort()` utilisé sur une liste de chaines de caractères trie la liste en respectant l’ordre **Unicode**, ce qui fait que les **mots commençant par une majuscule** sont placés **avant ceux en minuscules**.
+
+```python
+mots = ["pomme", "Banane", "abricot", "Orange"]
+mots.sort()
+print(mots)
+
+# Affichage : 
+['Banane', 'Orange', 'abricot', 'pomme']
+```
+{{% /notice %}}
+
+
+## Listes imbriquées
+
+Une **liste imbriquée**, c’est une liste **qui contient d'autres listes**.
+
+**Exemple** : Une liste contenant trois listes
+
+```python
+matrice = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+```
+
+### Accéder à un élément précis
+
+* Il faut préciser les **deux indices**: `[rangée][colonne]`
+```python
+print(matrice[0][2])  # Affiche 3 qui se trouve sur la première rangée (indice 0) et la 3e colonne (indice 2). 
+```
+
+### Parcourir une liste imbriquée
+
+* Il faut utiliser **deux boucles** `for`.
+* La première boucle pour **parcourir chaque rangée une à la fois**.
+* La deuxième boucle (à l'intérieur de la première) pour parcourir les éléments d'une rangée.
+
+```python
+for ligne in matrice:
+    for valeur in ligne:
+        print(valeur)
+```
+
+**Exemple** : afficher une grille 3x3
+
+```python
+grille = [
+    ["X", "O", "X"],
+    ["O", "X", "O"],
+    ["O", "X", "X"]
+]
+
+for ligne in grille:
+    for valeur in ligne:
+        print(valeur)
+
+# Affiche:
+X
+O
+X
+O
+X
+O
+O
+X
+X
+```
+
+---
+
+{{% notice style="blue" title="À retenir (listes)" groupid="notice-toggle" expanded="false" %}}
+* Une liste permet de **stocker plusieurs valeurs**.
+* On accède aux éléments avec des **indices**.
+* Les listes peuvent être **modifiées** facilement.
+* Une liste peut contenir **d'autres listes** → super utile pour représenter des tableaux ou des grilles.
+{{% /notice %}}
+
+---
+
+## Les chaînes de caractères sont des listes
+
+On peut manipuler une chaine de caractère comme une suite de lettres ou une **liste** de lettres.
+
+```python
+message = "Bonjour à tous!"
+print(message[0])     # 'B' (le premier caractère)
 print(message[-1])    # '!' (le dernier caractère)
+print(message[-7])    # 'à' 
 ```
+{{% notice style="cyan" title="Sachez que..." %}}
+Les espaces comptent dans le calcul du nombre de caractères dans une chaine.
+{{% /notice %}}
 
 ### Parcourir une chaîne
 
@@ -162,11 +223,10 @@ for lettre in message:
 ### Longueur d’une chaîne
 
 ```python
-len(message)  # Nombre de caractères
+len(message)  # Nombre de caractères, incluant les espaces
 ```
 
-
-## Traitements utiles sur les chaînes
+### Fonctions utiles sur les chaînes
 
 | Objectif                                     | Code Python                           |
 | -------------------------------------------- | ------------------------------------- |
@@ -178,355 +238,285 @@ len(message)  # Nombre de caractères
 | Trouver la position d’un mot/lettre          | `message.find("bio")`                 |
 | Compter le nombre de fois qu’un mot apparaît | `message.count("e")`                  |
 
-
-## Exemples simples d’utilisation
-
-**À FAIRE: Énoncés es 2 exercices, solutions**
-
-### Exemple 1 : Moyenne des notes
-
-```python
-notes = [89, 73, 94, 85]
-moyenne = sum(notes) / len(notes)
-print("Moyenne:", moyenne)
-```
-
-### Exemple 2 : Nombre de G et C dans une séquence d’ADN
-
-```python
-sequence = "ATGCGGTAAC"
-gc = sequence.count("G") + sequence.count("C")
-pourcentage_gc = gc / len(sequence) * 100
-print("Pourcentage GC:", pourcentage_gc)
-```
-
-de la leçon
-
-Apprendre à tracer des graphiques simples en 2D à partir de données scientifiques à l’aide de la bibliothèque `matplotlib`.
-
-
-
-## Contexte
-
-Les scientifiques visualisent souvent des données sous forme de graphiques pour interpréter plus facilement des tendances, des anomalies ou des corrélations. Python permet de produire des graphiques de haute qualité grâce à la bibliothèque `matplotlib`.
-
-Dans cette leçon, on apprend à créer des graphiques de base : courbe, points, étiquettes et titres. On travaille dans **Jupyter Notebook** à l’intérieur de l’environnement **Anaconda**.
-
-
-## Notions abordées
-
-1. **Importation de la bibliothèque**
-
-   ```python
-   import matplotlib.pyplot as plt
-   ```
-
-2. **Tracé simple d’une courbe**
-
-   ```python
-   x = [0, 1, 2, 3, 4]
-   y = [0, 1, 4, 9, 16]
-   plt.plot(x, y)
-   plt.show()
-   ```
-
-3. **Ajout de titres et étiquettes**
-
-   ```python
-   plt.title("Croissance quadratique")
-   plt.xlabel("Temps (s)")
-   plt.ylabel("Distance (m)")
-   ```
-
-4. **Personnalisation de la courbe**
-
-   * Style de ligne, couleur, marqueur
-
-   ```python
-   plt.plot(x, y, color='green', linestyle='--', marker='o')
-   ```
-
-5. **Tracer plusieurs courbes sur un même graphique**
-
-   ```python
-   plt.plot(x, y, label="objet A")
-   plt.plot(x, [i**1.5 for i in x], label="objet B")
-   plt.legend()
-   ```
-
-6. **Enregistrement du graphique**
-
-   ```python
-   plt.savefig("mon_graphique.png")
-   ```
-
-
-## Exercice pratique
-
-**Titre :** Température d’un liquide en fonction du temps
-**But :** À partir des données fournies, tracer la courbe de température d’un liquide chauffé pendant 10 minutes.
-
-**Données :**
-
-```python
-temps = [0, 2, 4, 6, 8, 10]
-temperature = [20, 35,  fifty, 65, 72, 74]  # Erreur volontaire à corriger
-```
-
-## Résultat attendu
-
-Un graphique clair et lisible du type :
-
-* Titre : Température du liquide en fonction du temps
-* Axe X : Temps (min)
-* Axe Y : Température (°C)
-* Ligne rouge en pointillés avec des cercles
-* Fichier PNG enregistré dans le dossier de travail
----
-
-
-{{% notice style="cyan" title="À retenir" %}}
-* Une **liste** permet de stocker plusieurs valeurs.
-* On peut **ajouter, enlever, parcourir et modifier** les éléments d’une liste.
-* Une **chaîne de caractères** est une séquence de lettres manipulable comme une liste.
-* Il existe de nombreuses **fonctions utiles** pour manipuler du texte (majuscules, recherche, découpage…).
+{{% notice style="blue" title="À retenir (chaines de caractères)" groupid="notice-toggle" expanded="false" %}}
+* Une chaine de caractères se manipule comme une liste simple, dont les éléments sont des caractères (incluant l'espace).  
 {{% /notice %}}
 
 ---
 
-Voici une **leçon essentielle sur `matplotlib` appliquée à l’analyse de solubilité**, destinée à des étudiants de 1re session en sciences de la nature. Elle couvre **juste ce qu’il faut** pour produire des graphiques propres et utiles dans un rapport scientifique (ex. variation de la solubilité d’un sel selon la température). Tous les messages d’affichage utilisent des **f-strings avec `print`**.
+## Visualiser les données avec Matplotlib (graphiques de base)
 
----
+Pour pouvoir visualiser des données sous forme de graphiques, nous utiliserons le module `pyplot` de la bibliothèque `matplotlib`.
 
-# 🧪 Leçon : Visualiser la solubilité avec `matplotlib`
+### Importer `matplotlib.pyplot`
 
-## 🎯 Objectif
-
-Savoir tracer rapidement des graphiques pour :
-
-* Visualiser la **solubilité en fonction de la température**.
-* Comparer plusieurs composés sur le même graphique.
-* Ajouter un titre, des étiquettes d’axes, une légende.
-* (Facultatif) Ajouter des barres d’erreur et sauvegarder une figure.
-
----
-
-## 1. Importer `matplotlib`
+La partie de `matplotlib` qu'on utilise le plus pour créer des graphiques s'appelle `pyplot`.
 
 ```python
 import matplotlib.pyplot as plt
 ```
 
----
+On utilise souvent l’abréviation `plt` pour simplifier l’écriture.
 
-## 2. Données d’exemple : température vs solubilité
+
+### Tracer une courbe simple avec `plot()`
+
+La fonction `plot()` prend deux listes (ou deux tableaux) :
+
+* La première représente l’axe **x**
+* La seconde représente l’axe **y**
 
 ```python
-temperature = [0, 10, 20, 30, 40, 50]
-solubilite = [14, 18, 23, 28, 35, 42]
-print(f"Données chargées : {len(temperature)} points de température et {len(solubilite)} points de solubilité.")
+x = [0, 1, 2, 3, 4]
+y = [0, 1, 4, 9, 16]
+
+plt.plot(x, y)
 ```
 
----
+{{% notice style="cyan" title="Sachez qu'..." %}}
+À ce stade, rien ne s'affiche encore. Il faut une dernière commande pour voir le graphique.
+{{% /notice %}}
 
-## 3. Nuage de points (scatter)
+
+### Afficher le graphique avec `show()`
+
+La commande `show()` sert à **afficher la figure** dans une nouvelle fenêtre.
 
 ```python
-plt.scatter(temperature, solubilite)
-plt.title("Solubilité du sel X en fonction de la température")
-plt.xlabel("Température (°C)")
-plt.ylabel("Solubilité (g/100g d'eau)")
-plt.grid(True)
 plt.show()
-
-print(f"Nuage de points affiché pour {len(temperature)} mesures.")
 ```
 
+**Résultat** : Une courbe représentant les points (0,0), (1,1), (2,4), (3,9), (4,16).
+![Figure 1](./Figure_1.png?width=45vw)
 ---
 
-## 4. Relier les points (courbe simple)
-
-Utile si les mesures suivent un ordre naturel (ici, température croissante).
+### Exemple complet
 
 ```python
-plt.plot(temperature, solubilite, marker="o")
-plt.title("Solubilité du sel X (courbe)")
-plt.xlabel("Température (°C)")
-plt.ylabel("Solubilité (g/100g d'eau)")
-plt.grid(True)
+import matplotlib.pyplot as plt
+
+x = [0, 1, 2, 3, 4]
+y = [0, 1, 4, 9, 16]
+
+plt.plot(x, y)
 plt.show()
-
-print(f"Courbe affichée avec {len(temperature)} points reliés.")
 ```
 
----
-
-## 5. Comparer deux composés sur un même graphique
+### Personnaliser le trait de la courbe (Style de ligne, couleur, marqueur)
 
 ```python
-temp = [0, 20, 40, 60]
-sel_A = [15, 21, 30, 38]
-sel_B = [30, 32, 33, 33.5]
+plt.plot(x, y, color='green', linestyle='--', marker='o')
+```
 
-plt.plot(temp, sel_A, marker="o", label="Sel A")
-plt.plot(temp, sel_B, marker="s", label="Sel B")
-plt.title("Comparaison de solubilité : Sel A vs Sel B")
-plt.xlabel("Température (°C)")
-plt.ylabel("Solubilité (g/100g d'eau)")
+**Résultat**
+![Figure 2](./Figure_2.png?width=45vw)
+
+
+### Options les plus courantes pour la méthode `plt.plot()`
+
+| **Option**           | **Description**                             | **Exemple**              |
+| -------------------- | ------------------------------------------- | ------------------------ |
+| `color` ou `c`       | Couleur de la courbe                        | `color='red'` ou `c='r'` |
+| `linestyle` ou `ls`  | Style de ligne : continue, pointillée, etc. | `ls='--'`                |
+| `linewidth` ou `lw`  | Épaisseur de la ligne                       | `lw=2`                   |
+| `marker`             | Symbole pour marquer les points             | `marker='o'`             |
+| `markersize` ou `ms` | Taille des marqueurs                        | `ms=8`                   |
+| `label`              | Nom de la courbe (pour la légende)          | `label='x²'`             |
+| `alpha`              | Transparence (0 = invisible, 1 = opaque)    | `alpha=0.7`              |
+
+```python
+plt.plot(x, y, color='blue', linestyle='--', marker='o', label='x²', linewidth=2)
 plt.legend()
-plt.grid(True)
+```
+
+Cela trace une courbe en **bleu**, avec une **ligne pointillée**, des **cercles aux points**, une **légende "x²"**, et une **ligne épaisse**.
+
+
+### Ajouter un titre, des étiquettes et une grille
+
+* `plt.title("Courbe de y = x²")` : Ajoute un **titre** au graphique.
+* `plt.xlabel("x")` et `plt.ylabel("y")` : Donnent un **nom à l’axe horizontal** (ici, "x") et un **nom à l’axe vertical** (ici, "y").
+* `plt.grid()` : Affiche une **grille** pour mieux lire les valeurs sur le graphique (optionnel mais utile).
+
+
+```python
+x = [0, 1, 2, 3, 4]
+y = [0, 1, 4, 9, 16]
+
+plt.plot(x, y)
+
+plt.title("Courbe de y = x²")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid()
+
 plt.show()
-
-print(f"Graphique comparatif affiché pour {len(temp)} températures et 2 composés.")
 ```
 
----
+**Résultat**
+![Figure 3](./Figure_3.png?width=45vw)
 
-## 6. Ajouter des barres d’erreur (incertitude expérimentale)
+### Tracer plusieurs courbes sur un même graphique et ajouter une légende
 
-Supposons une incertitude ±2 g/100g.
+* Il suffit d'utiliser autant de `plt.plot()` qu'il y a de courbes à tracer.
+* La fonction `plt.legend()` affiche une **légende** sur le graphique.
+* Elle permet d’**identifier** les courbes ou les éléments tracés, à condition qu’ils aient été nommés avec `label=`.
 
 ```python
-temperature = [0, 10, 20, 30, 40, 50]
-solubilite = [14, 18, 23, 28, 35, 42]
-incertitude = [2, 2, 2, 2, 2, 2]
+x = [0, 1, 2, 3, 4]
+y1 = [0, 1, 4, 9, 16]
+y2 = [0, 2, 3, 4, 8]
 
-plt.errorbar(temperature, solubilite, yerr=incertitude, fmt="o-", capsize=5)
-plt.title("Solubilité avec incertitude expérimentale (±2 g)")
-plt.xlabel("Température (°C)")
-plt.ylabel("Solubilité (g/100g d'eau)")
-plt.grid(True)
+plt.plot(x, y1, label="objet A")
+plt.plot(x, y2, label="objet B")
+
+plt.title("Deux courbes sur le même graphique")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid()
+plt.legend()  # Affiche la légende
+
 plt.show()
-
-print(f"Graphique avec barres d'erreur ±{incertitude[0]} g affiché.")
 ```
 
----
+> Cela ajoutera une petite boîte dans le coin du graphique indiquant "Courbe 1" et "Courbe 2".
 
-## 7. Ajouter une droite de tendance (par régression linéaire)
+**Résultat**
+![Figure 4](./Figure_4.png?width=45vw)
 
-On suppose que vous avez calculé la pente et l’intercept (ex. via `scipy.stats.linregress`).
+
+### Enregistrer un graphique sous forme d'image
+
+La fonction `plt.savefig("figure.png")` **enregistre** le graphique dans un fichier image (ici au format PNG).
+Cela permet de conserver ou partager le graphique même sans afficher la fenêtre graphique.
 
 ```python
-import numpy as np
-from scipy import stats
-
-temperature = np.array([0, 10, 20, 30, 40, 50])
-solubilite = np.array([14, 18, 23, 28, 35, 42])
-
-reg = stats.linregress(temperature, solubilite)
-print(f"Pente : {reg.slope:.2f} g/°C")
-print(f"Intercept : {reg.intercept:.2f} g à 0°C")
-
-solubilite_pred = reg.slope * temperature + reg.intercept
-
-plt.scatter(temperature, solubilite, label="Mesures")
-plt.plot(temperature, solubilite_pred, label="Tendance linéaire")
-plt.title("Solubilité vs Température avec droite de tendance")
-plt.xlabel("Température (°C)")
-plt.ylabel("Solubilité (g/100g d'eau)")
-plt.legend()
-plt.grid(True)
-plt.show()
-
-print(f"Droite de tendance tracée avec R²={reg.rvalue**2:.3f}.")
+plt.plot(x, y)
+plt.savefig("figure.png")
 ```
+
+> Le fichier "figure.png" sera créé dans le même dossier que le fichier `.ipynb`.
+
+
+### Fonctions de base pour les graphiques
+
+| Fonction / Méthode             | Rôle principal                                     | Exemple minimal                |
+| ------------------------------ | -------------------------------------------------- | ------------------------------ |
+| `plt.plot(x, y)`               | Trace une courbe (x, y)                            | `plt.plot(x, y)`               |
+| `plt.scatter(x, y)`            | Trace un nuage de points                           | `plt.scatter(x, y)`            |
+| `plt.bar(x, y)`                | Trace un diagramme à barres                        | `plt.bar(x, y)`                |
+| `plt.hist(data)`               | Trace un histogramme                               | `plt.hist(valeurs)`            |
+| `plt.title("titre")`           | Ajoute un titre au graphique                       | `plt.title("Graphique")`       |
+| `plt.xlabel("nom de l'axe x")` | Ajoute un titre à l’axe des x                      | `plt.xlabel("Temps (s)")`      |
+| `plt.ylabel("nom de l'axe y")` | Ajoute un titre à l’axe des y                      | `plt.ylabel("Vitesse (m/s)")`  |
+| `plt.legend()`                 | Affiche une légende pour les courbes nommées       | `plt.legend()`                 |
+| `plt.grid(True)`               | Affiche une grille                                 | `plt.grid(True)`               |
+| `plt.show()`                   | Affiche le graphique à l’écran (à la fin du tracé) | `plt.show()`                   |
+| `plt.savefig("figure.png")`    | Sauvegarde le graphique en image                   | `plt.savefig("mon_graph.png")` |
+| `plt.figure(figsize=(w, h))`   | Définit la taille du graphique (en pouces)         | `plt.figure(figsize=(8, 4))`   |
+
+{{% notice style="blue" title="À retenir (graphiques simples)" groupid="notice-toggle" expanded="false" %}}
+* **Importer la bibliothèque** : matplotlib.pyplot 
+* **Créer les données** sous forme de **listes** ou de **tableaux NumPy**
+* **Tracer une courbe** avec `plt.plot(x, y)`
+    * `plt.plot()` change selon le type de graphique (voir le tableau [ICI](#fonctions-de-base-pour-les-graphiques)
+    * Il existe des options permettant de personnaliser les couleurs, traits, etc.
+* **Afficher le graphique** avec `plt.show()`.
+* **Ajouter un titre** avec `plt.title("Mon graphique")`
+* **Nommer les axes** avec `plt.xlabel("x")` et `plt.ylabel("y")`
+* **Afficher une grille** pour mieux lire les valeurs avec `plt.grid()`
+* **Ajouter une légende** avec `label="..."` dans `plot()` et `plt.legend()`
+* **Tracer plusieurs courbes sur un même graphique** en appelant plusieurs fois `plt.plot(...)` avant `plt.show()`
+{{% /notice %}}
+
+## Exercices à faire avant le cours
+
+### Listes
+
+#### Exercice 1 :
+
+* Crée une liste contenant 5 animaux. Affiche chaque animal avec une phrase du type :
+```text
+Voici un/une <animal>
+```
+ 
+#### Exercice 2 :
+
+* Crée une grille de 5 lignes et 4 colonnes (liste de listes) contenant des chiffres. 
+* Affiche tous les chiffres un par un.
+
+#### Exercice 3 :
+
+* Demande à l’utilisateur d’entrer 3 noms et stocke-les dans une liste.
+* Affiche chaque animal en ordre alphabétique croissant.  
+* Affiche chaque animal en ordre alphabétique décroissant. 
+
+#### Exercice 4
+
+* Crée une liste de séquences :
+```python
+suspects = [
+    ["A", "T", "C", "G"],
+    ["G", "A", "T", "G"],
+    ["A", "T", "T", "G"]
+]
+```
+* Affiche la 2e base de la 1re séquence.
+* Affiche la dernière base de la 3e séquence.
 
 ---
 
-## 8. Sauvegarder une figure
+### Chaines de caractères
 
-Toujours appeler `plt.savefig()` **avant** `plt.show()` si vous voulez enregistrer le fichier sans le vider dans certains environnements.
+#### Exercice 5 - Créer une liste de nombres à partir d'une liste de mots
+
+* Utiliser une boucle pour obtenir le nombre de lettres de chaque mot
+* Pour chacun des mots, ajouter son nombre de lettres dans la liste `nb_lettres`.
 
 ```python
-plt.scatter(temperature, solubilite)
-plt.title("Solubilité du sel X")
-plt.xlabel("Température (°C)")
-plt.ylabel("Solubilité (g/100g d'eau)")
-plt.grid(True)
-plt.savefig("solubilite_selX.png")
-plt.show()
-
-print(f"Figure sauvegardée sous solubilite_selX.png")
+mots = ["chlorophylle", "atome", "protéine"]
+nb_lettres = []
 ```
+
+#### Exercice 6 - Convertir en ARN
+
+Une séquence d’ADN est "ATGCT".
+
+* Mets-la en minuscules.
+* Remplace les "t" par "u".
 
 ---
 
-## ✍️ Exercices pratiques
+### Graphiques
 
-### 🔹 Exercice 1 – Solubilité simple
+#### Exercice 7 – Température dans une journée
 
-Données :
+* Heures : `[0, 4, 8, 12, 16, 20, 24]`
+* Températures : `[-5, -2, 3, 7, 6, 1, -2]`
+
+Crée un graphique de température en fonction de l’heure.
+
+Ajoute :
+
+* Un titre `"Température en fonction de l’heure"`
+* Les étiquettes `"Heure (h)"` et `"Température (°C)"`
+* Une grille
+
+#### Exercice 8 - Comparaison des valeurs mesurées et attendues
+
+On a mesuré la concentration d’un soluté à différentes températures. Les valeurs **attendues** suivent une loi théorique, tandis que les **valeurs mesurées** viennent d’un capteur.
 
 ```python
-temp = [0, 10, 20, 30, 40, 50]
-sol = [10, 14, 18, 25, 32, 40]
+temp = [10, 20, 30, 40, 50]
+attendu = [2.1, 3.8, 5.6, 7.3, 9.0]
+mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
 ```
 
-Tâches :
-
-1. Trace un nuage de points.
-2. Ajoute un titre et des étiquettes d’axes.
-3. Affiche un `print` confirmant le nombre de points.
+* Affiche les **valeurs attendues** avec `plt.plot(...)` (ligne noire avec des ronds).
+* Affiche les **valeurs mesurées** avec `plt.bar(...)` (barres bleues légèrement transparentes).
+* Ajoute un **titre**, une **légende**, les **étiquettes d’axes** et une **grille**.
 
 ---
-
-### 🔹 Exercice 2 – Courbe + barres d’erreur
-
-Données : mêmes que ci-dessus, incertitude ±1.5 g.
-Tâches :
-
-1. Trace une courbe reliée (points + ligne).
-2. Ajoute des barres d’erreur.
-3. Affiche un message avec l’incertitude utilisée.
-
----
-
-### 🔹 Exercice 3 – Deux sels
-
-Données :
-
-```python
-temp = [0, 20, 40, 60]
-sel_A = [15, 21, 30, 38]
-sel_B = [30, 32, 33, 33.5]
-```
-
-Tâches :
-
-1. Trace les deux séries sur le même graphique (marqueurs différents).
-2. Ajoute une légende.
-3. Imprime un message indiquant lequel semble le plus sensible à la température (inspection visuelle).
-
----
-
-### 🔹 Exercice 4 – Régression + prévision
-
-Données :
-
-```python
-temperature = [0, 10, 20, 30, 40, 50]
-solubilite = [14, 18, 23, 28, 35, 42]
-```
-
-Tâches :
-
-1. Calcule la régression linéaire (`linregress`).
-2. Trace les points + la droite.
-3. Calcule la solubilité prévue à 60 °C.
-4. `print` la valeur prévue avec deux décimales.
-
----
-
-### 🔹 Exercice 5 – Figure pour rapport
-
-Crée un graphique propre (titre, axes, grille, légende) et sauvegarde-le sous `"rapport_solubilite.png"`.
-Affiche ensuite un message confirmant la sauvegarde.
-
----
-
--->
-### Exercices à faire avant le cours
 
 ## À faire avant le prochain cours
 
@@ -534,6 +524,3 @@ Affiche ensuite un message confirmant la sauvegarde.
 
 1. Lire la matière sur [Tableaux NumPy](../semaine9/)
 2. Faire les [exercices se trouvant à la fin de la leçon 9](../semaine9/#exercices-à-faire-avant-le-cours)
-
-
-

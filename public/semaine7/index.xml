@@ -3,16 +3,16 @@
   <channel>
     <title> Listes, chaînes de caractères et graphiques de base :: 420-SN1-RE</title>
     <link>https://example.org/semaine7/index.html</link>
-    <description>Objectifs d’apprentissage Créer et manipuler des listes de données numériques ou textuelles en Python (ajout, suppression, parcours, calcul de statistiques simples). Accéder, modifier et parcourir les caractères d’une chaîne de caractères. Appliquer des méthodes de traitement de texte pour analyser ou transformer des chaînes de caractères (ex. : mise en minuscules, découpage, recherche, comptage). Exercices à faire avant le cours À faire avant le prochain cours RAPPEL: Semaine prochaine c’est le deuxième examen (25%)</description>
+    <description>Objectifs Comprendre ce qu’est une liste en Python. Savoir créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Connaître les principales fonctions utiles pour les listes/chaines et graphiques de base. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dictionnaires</title>
-      <link>https://example.org/semaine7/dictionnaires/index.html</link>
+      <link>https://example.org/semaine7/dictionnaires/dictionnaires/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine7/dictionnaires/index.html</guid>
-      <description>Objectifs d’apprentissage Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.&#xA;Syntaxe de base :&#xA;mon_dictionnaire = { &#34;clé1&#34;: valeur1, &#34;clé2&#34;: valeur2 }&#xD;Exemple Un dictionnaire contenant les masses molaires de quelques éléments :&#xA;masses_molaires = { &#34;H&#34;: 1.008, &#34;O&#34;: 15.</description>
+      <guid>https://example.org/semaine7/dictionnaires/dictionnaires/index.html</guid>
+      <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique). Accéder à une valeur à partir d’une clé. Ajouter ou modifier une paire clé/valeur dans un dictionnaire. Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Utiliser un dictionnaire pour organiser des données scientifiques, comme des constantes physiques ou des observations par catégorie. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.</description>
     </item>
   </channel>
 </rss>

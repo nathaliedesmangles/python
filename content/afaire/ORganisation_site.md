@@ -79,7 +79,7 @@ $ K = °C + 273.15 $
 ```
 > **Exemple 2 à faire à la maison** : Calculer la force gravitationnelle entre deux masses.
 
-
+### Exercices à faire avant le cours
 
 ## À faire avant le prochain cours
 

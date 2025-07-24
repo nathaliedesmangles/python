@@ -158,10 +158,10 @@ for i in range(1, 11):
 * Les boucles permettent d’automatiser les calculs et traitements de données.
 * `for` avec `range()` : Utilisée lorsque le nombre de répétitions est connu d'avance.  
    * Équivaut à dire:  
-      * POUR CHAQUE *tour de boucle* FAIRE... ou
-      * POUR CHAQUE *valeur d'une séquence* FAIRE...
+      * **POUR CHAQUE** *tour de boucle* **FAIRE...** ou
+      * **POUR CHAQUE** *valeur d'une séquence* **FAIRE...**
 * `while` : Utilisée lorsqu'une condition doit être respectée pour que la boucle s'exécute.
-   * Équivaut à dire: TANT QUE *condition est vrai* FAIRE...
+   * Équivaut à dire: **TANT QUE** *condition est vraie* **FAIRE...**
 {{% /notice %}}
 
 

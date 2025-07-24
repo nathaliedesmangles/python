@@ -61,7 +61,7 @@
       <link>https://example.org/semaine3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/index.html</guid>
-      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Gérer les entrées (saisies au clavier) d’un programme Python. Utiliser des fonctions prédéfinies. Définir ses propres fonctions avec def (paramètres, return, portée locale) Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
+      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Gérer les entrées (saisies au clavier) d’un programme Python. Utiliser des fonctions prédéfinies. Définir ses propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
     </item>
     <item>
       <title> Évaluation #1 (20%)</title>
@@ -89,7 +89,7 @@
       <link>https://example.org/semaine7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine7/index.html</guid>
-      <description>Objectifs d’apprentissage Créer et manipuler des listes de données numériques ou textuelles en Python (ajout, suppression, parcours, calcul de statistiques simples). Accéder, modifier et parcourir les caractères d’une chaîne de caractères. Appliquer des méthodes de traitement de texte pour analyser ou transformer des chaînes de caractères (ex. : mise en minuscules, découpage, recherche, comptage). Exercices à faire avant le cours À faire avant le prochain cours RAPPEL: Semaine prochaine c’est le deuxième examen (25%)</description>
+      <description>Objectifs Comprendre ce qu’est une liste en Python. Savoir créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Connaître les principales fonctions utiles pour les listes/chaines et graphiques de base. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.</description>
     </item>
     <item>
       <title> Évaluation #2 (25%)</title>
@@ -110,7 +110,7 @@
       <link>https://example.org/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine10/index.html</guid>
-      <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Exercices à faire avant le cours À faire avant le prochain cours RAPPEL: Semaine prochaine c’est le troisième et dernier examen (20%)</description>
+      <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Leçon : Régression linéaire simple avec scipy Objectifs Calculer une droite de régression (y = a·x + b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination 1.</description>
     </item>
     <item>
       <title> Évaluation #3 (20%)</title>
