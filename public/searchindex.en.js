@@ -401,8 +401,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "02. Variables, types de donnees et algorithme\n03. Saisie au clavier, fonctions et débogage\n05. Décider avec IF-ELIF-ELSE et les opérateurs\n06. Répéter avec FOR et WHILE\n07. Listes, chaines et graphiques de base\n09. Tableaux NumPy\n10. Traitement de fichiers CSV avec Pandas et graphiques scientifiques",
-    "description": "02. Variables, types de donnees et algorithme\n03. Saisie au clavier, fonctions et débogage\n05. Décider avec IF-ELIF-ELSE et les opérateurs\n06. Répéter avec FOR et WHILE\n07. Listes, chaines et graphiques de base\n09. Tableaux NumPy\n10. Traitement de fichiers CSV avec Pandas et graphiques scientifiques",
+    "content": "02. Variables, types de donnees et algorithme\n03. Saisie au clavier, fonctions et débogage\n05. Décider avec IF-ELIF-ELSE et les opérateurs\n06. Répéter avec FOR et WHILE\n07. Listes, chaines et graphiques de base\n09. Tableaux NumPy\n10. Traitement de fichiers CSV et graphiques scientifiques",
+    "description": "02. Variables, types de donnees et algorithme\n03. Saisie au clavier, fonctions et débogage\n05. Décider avec IF-ELIF-ELSE et les opérateurs\n06. Répéter avec FOR et WHILE\n07. Listes, chaines et graphiques de base\n09. Tableaux NumPy\n10. Traitement de fichiers CSV et graphiques scientifiques",
     "tags": [],
     "title": "Solutions des exercices",
     "uri": "/solutions_exercices/index.html"
@@ -445,7 +445,7 @@ var relearn_searchindex = [
     "description": "Listes Exercice 1 animaux = [\"chat\", \"chien\", \"lapin\", \"perroquet\", \"tigre\"] for animal in animaux: print(f\"Voici un/une {animal}\")\rExercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre)\rExercice 3 noms = [] for i in range(3): nom = input(f\"Entrez le nom {i+1} : \") noms.append(nom) print(\"Ordre alphabétique croissant :\") for nom in sorted(noms): print(nom) print(\"Ordre alphabétique décroissant :\") for nom in sorted(noms, reverse=True): print(nom)\rExercice 4 suspects = [ [\"A\", \"T\", \"C\", \"G\"], [\"G\", \"A\", \"T\", \"G\"], [\"A\", \"T\", \"T\", \"G\"] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → G\rChaînes de caractères Exercice 5 mots = [\"chlorophylle\", \"atome\", \"protéine\"] nb_lettres = [] for mot in mots: nb_lettres.",
     "tags": [],
     "title": " Listes, chaines de caractères et graphiques de base",
-    "uri": "/solutions_exercices/7_listes/index.html"
+    "uri": "/solutions_exercices/7_listes_chaines_visualisation/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences \u003e \rSolutions des exercices",
@@ -460,13 +460,13 @@ var relearn_searchindex = [
     "content": "",
     "description": "",
     "tags": [],
-    "title": " Graphiques SciPy et traitement de fichiers CSV avec Pandas",
-    "uri": "/solutions_exercices/10_pandas_graph/index.html"
+    "title": " Traitement de fichiers CSV avec Pandas et graphiques scientifiques",
+    "uri": "/solutions_exercices/10_pandas_graphes_sc/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "02. Variables, types de données et algorithme\n03. Saisie au clavier, fonctions et débogage\n05. Décider avec if-elif-else et les opérateurs\n06. Répéter avec FOR et WHILE\n07. Listes, chaines et graphiques de base\n09. Tableaux NumPy\n10. Graphiques SciPy et fichiers CSV avec Pandas",
-    "description": "02. Variables, types de données et algorithme\n03. Saisie au clavier, fonctions et débogage\n05. Décider avec if-elif-else et les opérateurs\n06. Répéter avec FOR et WHILE\n07. Listes, chaines et graphiques de base\n09. Tableaux NumPy\n10. Graphiques SciPy et fichiers CSV avec Pandas",
+    "content": "02. Variables, types de données et algorithme\n03. Saisie au clavier, fonctions et débogage\n05. Décider avec if-elif-else et les opérateurs\n06. Répéter avec FOR et WHILE\n07. Listes, chaines et graphiques de base\n09. Tableaux NumPy\n10. Traitement de fichiers CSV et graphiques scientifiques",
+    "description": "02. Variables, types de données et algorithme\n03. Saisie au clavier, fonctions et débogage\n05. Décider avec if-elif-else et les opérateurs\n06. Répéter avec FOR et WHILE\n07. Listes, chaines et graphiques de base\n09. Tableaux NumPy\n10. Traitement de fichiers CSV et graphiques scientifiques",
     "tags": [],
     "title": "Solutions des ateliers",
     "uri": "/solutions_ateliers/index.html"
@@ -505,8 +505,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences \u003e \rSolutions des ateliers",
-    "content": "",
-    "description": "",
+    "content": "import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ \"12.3, 16.8, 14.0\", # jour 1 : matin, midi, soir \"11.5, 18.2, 15.4\", \"10.8, 17.6, 14.9\", \"13.0, 19.1, 16.3\", \"14.1, 20.2, 18.5\", \"12.9, 18.7, 16.2\", \"11.7, 17.8, 15.0\" ] # 1. Transformation des chaînes en listes de 3 nombres flottants temperatures = [] for ligne in donnees: morceaux = ligne.split(\",\") valeurs = [float(x.strip()) for x in morceaux] temperatures.append(valeurs) print(\"Liste des températures (liste imbriquée) :\") print(temperatures)\rListe des températures (liste imbriquée) :\r[[12.3, 16.8, 14.0], [11.5, 18.2, 15.4], [10.8, 17.6, 14.9], [13.0, 19.1, 16.3], [14.1, 20.2, 18.5], [12.9, 18.7, 16.2], [11.7, 17.8, 15.0]]\r# 2. Calculs sur les données # Moyenne de chaque jour moyennes_journalières = [] for jour in temperatures: moyenne = sum(jour) / 3 moyennes_journalières.append(moyenne) print(\"Températures moyennes par jour :\") print(moyennes_journalières) # Température maximale valeurs_toutes = [] for jour in temperatures: for t in jour: valeurs_toutes.append(t) temp_max = max(valeurs_toutes) jour_max = valeurs_toutes.index(temp_max) // 3 + 1 print(f\"Température maximale : {temp_max}°C (Jour {jour_max})\") # Moyenne générale moyenne_globale = sum(valeurs_toutes) / len(valeurs_toutes) print(f\"Température moyenne de la semaine : {moyenne_globale:.2f}°C\")\rTempératures moyennes par jour :\r[14.366666666666667, 15.033333333333333, 14.433333333333335, 16.133333333333336, 17.599999999999998, 15.933333333333332, 14.833333333333334]\rTempérature maximale : 20.2°C (Jour 5)\rTempérature moyenne de la semaine : 15.48°C\r# 3. Visualisation avec matplotlib import matplotlib.pyplot as plt jours = [1, 2, 3, 4, 5, 6, 7] plt.plot(jours, moyennes_journalières, marker='o', color='blue', label='Moyenne journalière') plt.title(\"Températures moyennes par jour\") plt.xlabel(\"Jour\") plt.ylabel(\"Température (°C)\") plt.grid() plt.legend() plt.savefig(\"graphique_temperature.png\") plt.show()\r# 4. Exploration des chaînes de caractères (températures de midi) # Recompte des jours où la température de midi dépasse 18°C nb_midi_haut = 0 for ligne in donnees: morceaux = ligne.split(\",\") midi = float(morceaux[1].strip()) if midi \u003e 18: nb_midi_haut += 1 print(f\"Nombre de jours où la température de midi a dépassé 18°C : {nb_midi_haut}\")\rNombre de jours où la température de midi a dépassé 18°C : 4",
+    "description": "import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ \"12.3, 16.8, 14.0\", # jour 1 : matin, midi, soir \"11.5, 18.2, 15.4\", \"10.8, 17.6, 14.9\", \"13.0, 19.1, 16.3\", \"14.1, 20.2, 18.5\", \"12.9, 18.7, 16.2\", \"11.7, 17.8, 15.0\" ] # 1. Transformation des chaînes en listes de 3 nombres flottants temperatures = [] for ligne in donnees: morceaux = ligne.split(\",\") valeurs = [float(x.strip()) for x in morceaux] temperatures.",
     "tags": [],
     "title": " Listes, chaines et graphiques de base",
     "uri": "/solutions_ateliers/7_listes/index.html"
@@ -525,7 +525,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": " Traitement de fichiers CSV avec Pandas et graphiques scientifiques",
-    "uri": "/solutions_ateliers/10_pandas_graph/index.html"
+    "uri": "/solutions_ateliers/10_pandas_graphes_sc/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences",

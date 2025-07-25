@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Listes, chaines de caractères et graphiques de base :: 420-SN1-RE</title>
+    <link>https://example.org/solutions_exercices/7_listes_chaines_visualisation/index.html</link>
+    <description>Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;)&#xD;Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre)&#xD;Exercice 3 noms = [] for i in range(3): nom = input(f&#34;Entrez le nom {i+1} : &#34;) noms.append(nom) print(&#34;Ordre alphabétique croissant :&#34;) for nom in sorted(noms): print(nom) print(&#34;Ordre alphabétique décroissant :&#34;) for nom in sorted(noms, reverse=True): print(nom)&#xD;Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → G&#xD;Chaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/solutions_exercices/7_listes_chaines_visualisation/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

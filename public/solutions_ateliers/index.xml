@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des ateliers :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/index.html</link>
-    <description>02. Variables, types de données et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec if-elif-else et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Graphiques SciPy et fichiers CSV avec Pandas</description>
+    <description>02. Variables, types de données et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec if-elif-else et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Traitement de fichiers CSV et graphiques scientifiques</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_ateliers/index.xml" rel="self" type="application/rss+xml" />
@@ -40,7 +40,7 @@
       <link>https://example.org/solutions_ateliers/7_listes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/7_listes/index.html</guid>
-      <description></description>
+      <description>import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &#34;11.5, 18.2, 15.4&#34;, &#34;10.8, 17.6, 14.9&#34;, &#34;13.0, 19.1, 16.3&#34;, &#34;14.1, 20.2, 18.5&#34;, &#34;12.9, 18.7, 16.2&#34;, &#34;11.7, 17.8, 15.0&#34; ] # 1. Transformation des chaînes en listes de 3 nombres flottants temperatures = [] for ligne in donnees: morceaux = ligne.split(&#34;,&#34;) valeurs = [float(x.strip()) for x in morceaux] temperatures.</description>
     </item>
     <item>
       <title> Tableaux NumPy</title>
@@ -51,9 +51,9 @@
     </item>
     <item>
       <title> Traitement de fichiers CSV avec Pandas et graphiques scientifiques</title>
-      <link>https://example.org/solutions_ateliers/10_pandas_graph/index.html</link>
+      <link>https://example.org/solutions_ateliers/10_pandas_graphes_sc/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/10_pandas_graph/index.html</guid>
+      <guid>https://example.org/solutions_ateliers/10_pandas_graphes_sc/index.html</guid>
       <description></description>
     </item>
   </channel>

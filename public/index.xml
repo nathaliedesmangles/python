@@ -152,14 +152,14 @@
       <link>https://example.org/solutions_exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/index.html</guid>
-      <description>02. Variables, types de donnees et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec IF-ELIF-ELSE et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Traitement de fichiers CSV avec Pandas et graphiques scientifiques</description>
+      <description>02. Variables, types de donnees et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec IF-ELIF-ELSE et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Traitement de fichiers CSV et graphiques scientifiques</description>
     </item>
     <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions_ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/index.html</guid>
-      <description>02. Variables, types de données et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec if-elif-else et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Graphiques SciPy et fichiers CSV avec Pandas</description>
+      <description>02. Variables, types de données et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec if-elif-else et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Traitement de fichiers CSV et graphiques scientifiques</description>
     </item>
   </channel>
 </rss>

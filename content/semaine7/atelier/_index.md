@@ -4,82 +4,86 @@ weight = 107
 draft = true
 +++
 
+## Objectifs
 
-## Exercice 4 – Arrêter une boucle avec `break` (Semaine 7)
-
-Un étudiant répond à un test. Tu veux simuler les questions jusqu’à la question 10, **mais arrêter dès qu’il donne une mauvaise réponse**.
-
-**Aide pas à pas :**
-
-1. Simule des réponses avec une variable (par exemple, une bonne réponse = "A").
-2. Utilise une boucle `for` pour passer les questions.
-3. Si la réponse est incorrecte, affiche "Test terminé" et utilise `break`.
-
-
-
-===
-## Objectif :
-
-Utiliser `matplotlib` pour tracer une courbe représentant l'évolution de la température dans le temps, à partir de données expérimentales.
+* Comprendre et manipuler des **listes simples** et **listes imbriquées**
+* Appliquer les manipulations de listes sur les **chaînes de caractères**
+* Utiliser **matplotlib** pour tracer, **embellir** et **enregistrer** un graphique simple
+* Utiliser des **fonctions utiles** sur les listes et chaînes (`append`, `split`, `len`, `max`, `min`, `sum`, etc.)
 
 ---
 
-## Activité : Courbe de refroidissement d’un liquide
+## Exercice 
 
-**Contexte**
-
-Un laboratoire a mesuré la température d’un liquide en refroidissement toutes les 5 minutes pendant une heure. On souhaite visualiser la courbe de refroidissement pour interpréter le comportement thermique du système.
+Une station météorologique t’a envoyé un fichier `.csv` nommé **`temperatures.csv`**, contenant les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.
 
 
-### Consignes
-
-1. Importer la bibliothèque `matplotlib.pyplot` et configurer l'affichage dans Jupyter Notebook.
-2. Tracer un graphique en ligne (`line plot`) de la température en fonction du temps.
-3. Ajouter un **titre**, des **étiquettes d’axes** et une **grille**.
-4. Ajouter un **point de départ** et un **point final** avec des marqueurs distinctifs.
-5. En bonus : ajouter une ligne horizontale représentant la température ambiante (ex. 22 °C).
-
-**Travail d’équipe** (formative)
-* Discuter des anomalies possibles dans les données.
-* Comment cette courbe pourrait-elle être utilisée pour modéliser un phénomène (loi de Newton du refroidissement, par exemple) ?
-
-### Données fournies
-
-Les données sont fournies sous forme de deux listes Python :
+Tu disposes de la variable suivante :
 
 ```python
-# Temps en minutes
-temps = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
-
-# Température en degrés Celsius
-temperature = [90, 78, 69, 62, 56, 52, 48, 45, 43, 41, 40, 39.5, 39]
+donnees = [
+    "12.3, 16.8, 14.0",  # jour 1 : matin, midi, soir
+    "11.5, 18.2, 15.4",
+    "10.8, 17.6, 14.9",
+    "13.0, 19.1, 16.3",
+    "14.1, 20.2, 18.5",
+    "12.9, 18.7, 16.2",
+    "11.7, 17.8, 15.0"
+]
 ```
 
-<!--
-### Exemple de solution attendue
+#### Étapes à suivre :
 
-```python
-import matplotlib.pyplot as plt
+1. **Extraction et nettoyage des données**
 
-temps = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
-temperature = [90, 78, 69, 62, 56, 52, 48, 45, 43, 41, 40, 39.5, 39]
+   * Transforme chaque chaîne de la liste `donnees` en une **liste de 3 nombres flottants**.
+   * Obtiens ainsi une **liste imbriquée** `temperatures`, contenant 7 sous-listes (une par jour).
 
-plt.figure(figsize=(8, 5))
-plt.plot(temps, temperature, marker='o', linestyle='-', color='blue', label="Température")
-plt.axhline(y=22, color='red', linestyle='--', label='Température ambiante')
+2. **Calculs sur les données**
 
-plt.title("Refroidissement d’un liquide dans le temps")
-plt.xlabel("Temps (minutes)")
-plt.ylabel("Température (°C)")
-plt.grid(True)
-plt.legend()
+   * Calcule la température moyenne de chaque jour, et stocke les résultats dans une **nouvelle liste** `moyennes_journalières`.
+   * Trouve la température **maximale** de toute la semaine et **quel jour** elle a eu lieu.
+   * Calcule la température **moyenne générale** sur l’ensemble de la semaine (toutes les valeurs confondues).
 
-plt.scatter([0], [90], color='green', label='Départ', zorder=5)
-plt.scatter([60], [39], color='black', label='Fin', zorder=5)
+3. **Visualisation avec matplotlib**
 
-plt.legend()
-plt.show()
+   * Crée une figure avec :
+
+     * l’axe X : jours (1 à 7)
+     * l’axe Y : température moyenne journalière
+   * Ajoute un **titre** et des **étiquettes d’axes**
+   * Ajoute une **grille** et une **courbe** bleue avec marqueurs ronds (`'o'`)
+   * **Sauvegarde** le graphique sous le nom `graphique_temperature.png`
+
+4. **Exploration des chaînes de caractères**
+
+   * Affiche le nombre de jours où la température du midi a dépassé **18°C**
+   * Utilise la fonction `split()` pour isoler les températures de midi dans chaque chaîne.
+
+---
+
+### Exemple d’affichage attendu (partiel) :
+
 ```
--->
+Liste des températures (liste imbriquée) :
+[[12.3, 16.8, 14.0], [11.5, 18.2, 15.4], ..., [11.7, 17.8, 15.0]]
 
+Températures moyennes par jour :
+[14.37, 15.03, 14.43, ..., 14.83]
 
+Température maximale : 20.2°C (Jour 5)
+
+Température moyenne de la semaine : 15.01°C
+
+Nombre de jours où la température de midi a dépassé 18°C : 2
+```
+
+---
+
+### Boîte à outils
+
+* `float()` pour convertir un texte en nombre
+* `split(',')` pour découper une chaîne
+* `append()` pour ajouter dans une liste
+* `sum()` et `len()` pour les moyennes
+* `plt.plot()`, `plt.title()`, `plt.xlabel()`, `plt.grid()`, `plt.savefig()`

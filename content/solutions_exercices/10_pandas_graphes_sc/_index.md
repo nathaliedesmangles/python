@@ -1,7 +1,7 @@
 +++
-pre = "**10.**"
+pre = "<b>10.</b>"
 title = " Traitement de fichiers CSV avec Pandas et graphiques scientifiques"
-weight = 310
+weight = 210
 +++
 
 ## 

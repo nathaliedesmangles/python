@@ -1,0 +1,132 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "db5855f8",
+   "metadata": {},
+   "source": [
+    "\n",
+    "# 🔬 Analyse des températures d'une semaine (corrigé, sans compréhension de liste ni CSV)\n",
+    "\n",
+    "Ce notebook travaille avec une liste de chaînes déjà en mémoire. On extrait, analyse et visualise les données météo.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6d278b02",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# Données fournies sous forme de chaînes\n",
+    "donnees = [\n",
+    "    \"12.3, 16.8, 14.0\",\n",
+    "    \"11.5, 18.2, 15.4\",\n",
+    "    \"10.8, 17.6, 14.9\",\n",
+    "    \"13.0, 19.1, 16.3\",\n",
+    "    \"14.1, 20.2, 18.5\",\n",
+    "    \"12.9, 18.7, 16.2\",\n",
+    "    \"11.7, 17.8, 15.0\"\n",
+    "]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ceecb1f7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# Transformation des chaînes en listes de 3 nombres flottants\n",
+    "temperatures = []\n",
+    "for ligne in donnees:\n",
+    "    morceaux = ligne.split(\",\")\n",
+    "    valeurs = [float(x.strip()) for x in morceaux]\n",
+    "    temperatures.append(valeurs)\n",
+    "\n",
+    "print(\"Liste des températures (liste imbriquée) :\")\n",
+    "print(temperatures)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "48de1a50",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# Moyenne de chaque jour\n",
+    "moyennes_journalières = []\n",
+    "for jour in temperatures:\n",
+    "    moyenne = sum(jour) / 3\n",
+    "    moyennes_journalières.append(moyenne)\n",
+    "\n",
+    "print(\"Températures moyennes par jour :\")\n",
+    "print(moyennes_journalières)\n",
+    "\n",
+    "# Température maximale\n",
+    "valeurs_toutes = []\n",
+    "for jour in temperatures:\n",
+    "    for t in jour:\n",
+    "        valeurs_toutes.append(t)\n",
+    "\n",
+    "temp_max = max(valeurs_toutes)\n",
+    "jour_max = valeurs_toutes.index(temp_max) // 3 + 1\n",
+    "\n",
+    "print(f\"Température maximale : {temp_max}°C (Jour {jour_max})\")\n",
+    "\n",
+    "# Moyenne générale\n",
+    "moyenne_globale = sum(valeurs_toutes) / len(valeurs_toutes)\n",
+    "print(f\"Température moyenne de la semaine : {moyenne_globale:.2f}°C\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dc0e9cda",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "jours = [1, 2, 3, 4, 5, 6, 7]\n",
+    "\n",
+    "plt.plot(jours, moyennes_journalières, marker='o', color='blue', label='Moyenne journalière')\n",
+    "plt.title(\"Températures moyennes par jour\")\n",
+    "plt.xlabel(\"Jour\")\n",
+    "plt.ylabel(\"Température (°C)\")\n",
+    "plt.grid()\n",
+    "plt.legend()\n",
+    "plt.savefig(\"graphique_temperature.png\")\n",
+    "plt.show()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "20e42168",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# Recompte des jours où la température de midi dépasse 18°C\n",
+    "nb_midi_haut = 0\n",
+    "\n",
+    "for ligne in donnees:\n",
+    "    morceaux = ligne.split(\",\")\n",
+    "    midi = float(morceaux[1].strip())\n",
+    "    if midi > 18:\n",
+    "        nb_midi_haut += 1\n",
+    "\n",
+    "print(f\"Nombre de jours où la température de midi a dépassé 18°C : {nb_midi_haut}\")\n"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

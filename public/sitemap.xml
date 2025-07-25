@@ -166,13 +166,13 @@
     <loc>https://example.org/solutions_exercices/6_boucles/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/7_listes/index.html</loc>
+    <loc>https://example.org/solutions_exercices/7_listes_chaines_visualisation/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/9_numpy/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/10_pandas_graph/index.html</loc>
+    <loc>https://example.org/solutions_exercices/10_pandas_graphes_sc/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_ateliers/index.html</loc>
@@ -196,7 +196,7 @@
     <loc>https://example.org/solutions_ateliers/9_numpy/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/10_pandas_graph/index.html</loc>
+    <loc>https://example.org/solutions_ateliers/10_pandas_graphes_sc/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>
