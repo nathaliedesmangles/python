@@ -7,8 +7,6 @@ weight = 101
 
 ## Objectifs
 
-À la fin de la leçon, vous devrez être en mesure de :
-
 * Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap)
 * Vous connecter à votre compte OneDrive scolaire.
 * Créer une structure de dossiers pour le cours.

@@ -22,6 +22,10 @@ weight = 10
 
 ## À propos des évaluations
 
+* Faut-il remettre les exercices du cours à faire avant le cours ?
+> **Non**. Ceci dit, si vous voulez augmenter vos chances de réussite, ces exercices vous aideront à identifier très tôt là où vous avez besoin de poser des questions et plus pratiquer.
+
+
 * Faut-il remettre les ateliers ?
 > **Oui**. Il ne sont pas notés, mais ils servent à ce que vous pratiquez et à voir où sont les difficultés des étudiants.
 
@@ -36,6 +40,10 @@ weight = 10
 
 * Puis-je avoir les solutions des ateliers ?
 > **Oui**. Ils sont ajoutés [ICI](../solutions_ateliers) au fur et à mesure.
+
+
+* Puis-je avoir les solutions des évaluations formatives (semaines #4, #8 et #11) ?
+> **Non**, car elles se rapprochent beaucoup des évaluations sommatives.
 
 
 * Quelle date est l'examen ?

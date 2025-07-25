@@ -7,8 +7,6 @@ weight = 102
 
 ## Objectifs
 
-À la fin de la leçon, vous devrez être en mesure de :
-
 * Comprendre l'utilité des **variables** en programmation.
 * Définir et utiliser des variables en Python.
 * Manipuler les **types de base** en Python: `int`, `float`, `str`, `bool`.

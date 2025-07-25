@@ -47,14 +47,14 @@
       <link>https://example.org/semaine1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine1/index.html</guid>
-      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Créer une structure de dossiers pour le cours. Comprendre l’interface de VS Code Ouvrir un dossier et un fichier (.ipynb) dans VS Code. Créer un fichier .ipynb dans VS Code. Écrire et exécuter du code Python simple.</description>
+      <description>Objectifs Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Créer une structure de dossiers pour le cours. Comprendre l’interface de VS Code Ouvrir un dossier et un fichier (.ipynb) dans VS Code. Créer un fichier .ipynb dans VS Code. Écrire et exécuter du code Python simple. Sauvegarder vos fichiers de code. 1. Présentation du cours Cliquez ici pour ouvrir le plan de cours et trouver le quiz interactif</description>
     </item>
     <item>
       <title> Introduction à Python (Variables, types de données et algorithme)</title>
       <link>https://example.org/semaine2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/index.html</guid>
-      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.</description>
+      <description>Objectifs Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.&#xA;Exemples :&#xA;age = 17 nom = &#34;Julie&#34; temperature = 36.</description>
     </item>
     <item>
       <title> Saisie au clavier, fonctions et débogage</title>

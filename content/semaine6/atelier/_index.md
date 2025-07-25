@@ -5,7 +5,7 @@ draft = false
 +++
 
 
-## Objectifs d’apprentissage
+## Objectifs
 
 * Utiliser les boucles `for` et `while` pour afficher une table de multiplication et diverses figures.
 
