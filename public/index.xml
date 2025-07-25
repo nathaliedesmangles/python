@@ -106,11 +106,11 @@
       <description>Objectifs À la fin de cette leçon, vous devrez être capable de :&#xA;Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Exercices à faire avant le cours À faire avant le prochain cours Lire la matière sur Traitement de fichiers CSV (Pandas) et graphiques (SciPy) Faire les exercices se trouvant à la fin de la leçon 10</description>
     </item>
     <item>
-      <title> Traitement de fichiers CSV avec Pandas et graphiques SciPy </title>
+      <title> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques</title>
       <link>https://example.org/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine10/index.html</guid>
-      <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Leçon : Régression linéaire simple avec scipy Objectifs Calculer une droite de régression (y = a·x + b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination 1.</description>
+      <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd&#xD;2.</description>
     </item>
     <item>
       <title> Évaluation #3 (20%)</title>
@@ -152,7 +152,7 @@
       <link>https://example.org/solutions_exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/index.html</guid>
-      <description>02. Variables, types de donnees et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec IF-ELIF-ELSE et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Graphiques SciPy et fichiers CSV avec Pandas</description>
+      <description>02. Variables, types de donnees et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec IF-ELIF-ELSE et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Traitement de fichiers CSV avec Pandas et graphiques scientifiques</description>
     </item>
     <item>
       <title>Solutions des ateliers</title>

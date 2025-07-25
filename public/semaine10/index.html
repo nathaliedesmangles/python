@@ -5,34 +5,34 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Leçon : Régression linéaire simple avec scipy Objectifs Calculer une droite de régression (y = a·x &#43; b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination 1.">
+    <meta name="description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd2.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content=" Traitement de fichiers CSV avec Pandas et graphiques SciPy  :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Leçon : Régression linéaire simple avec scipy Objectifs Calculer une droite de régression (y = a·x &#43; b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination 1.">
+    <meta name="twitter:title" content=" Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd2.">
     <meta property="og:url" content="https://example.org/semaine10/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content=" Traitement de fichiers CSV avec Pandas et graphiques SciPy  :: 420-SN1-RE">
-    <meta property="og:description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Leçon : Régression linéaire simple avec scipy Objectifs Calculer une droite de régression (y = a·x &#43; b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination 1.">
+    <meta property="og:title" content=" Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd2.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content=" Traitement de fichiers CSV avec Pandas et graphiques SciPy  :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Leçon : Régression linéaire simple avec scipy Objectifs Calculer une droite de régression (y = a·x &#43; b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination 1.">
-    <meta itemprop="wordCount" content="434">
-    <title> Traitement de fichiers CSV avec Pandas et graphiques SciPy  :: 420-SN1-RE</title>
-    <link href="/semaine10/index.xml" rel="alternate" type="application/rss+xml" title=" Traitement de fichiers CSV avec Pandas et graphiques SciPy  :: 420-SN1-RE">
-    <link href="/images/logo.png?1753399166" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753399166" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753399166" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753399166" rel="stylesheet">
-    <link href="/css/theme.min.css?1753399166" rel="stylesheet">
-    <link href="/css/format-html.min.css?1753399166" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1753399166" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1753399166" defer></script>
-    <script src="/js/lunr/lunr.min.js?1753399166" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1753399166" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1753399166" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1753399166" defer></script>
-    <script src="/js/search.min.js?1753399166" defer></script>
+    <meta itemprop="name" content=" Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd2.">
+    <meta itemprop="wordCount" content="906">
+    <title> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE</title>
+    <link href="/semaine10/index.xml" rel="alternate" type="application/rss+xml" title=" Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE">
+    <link href="/images/logo.png?1753457360" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753457360" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753457360" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753457360" rel="stylesheet">
+    <link href="/css/theme.min.css?1753457360" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753457360" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753457360" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753457360" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753457360" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753457360" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753457360" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753457360" defer></script>
+    <script src="/js/search.min.js?1753457360" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1753399166";
+      window.relearn.index_js_url="/searchindex.en.js?1753457360";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1753399166" rel="stylesheet">
+    <link href="/css/custom.css?1753457360" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine10/index.html">
     <div id="R-body" class="default-animation">
@@ -105,29 +105,33 @@
 <nav class="TableOfContents">
   <ul>
     <li><a href="#objectifs">Objectifs</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#objectifs-1">Objectifs</a></li>
-    <li><a href="#1-importation-de-la-fonction">1. Importation de la fonction</a></li>
-    <li><a href="#2-données">2. Données</a></li>
-    <li><a href="#3-régression-linéaire">3. Régression linéaire</a>
+    <li><a href="#1-importer-la-bibliothèque">1. Importer la bibliothèque</a></li>
+    <li><a href="#2-charger-un-fichier-csv">2. Charger un fichier CSV</a></li>
+    <li><a href="#3-afficher-les-premières-lignes">3. Afficher les premières lignes</a></li>
+    <li><a href="#4-afficher-les-noms-de-colonnes">4. Afficher les noms de colonnes</a></li>
+    <li><a href="#5-afficher-toutes-les-mesures-pour-un-seul-composé">5. Afficher toutes les mesures pour un seul composé</a></li>
+    <li><a href="#6-accéder-à-une-colonne-ex--températures">6. Accéder à une colonne (ex. : températures)</a></li>
+    <li><a href="#7-moyenne-de-solubilité-pour-un-composé">7. Moyenne de solubilité pour un composé</a></li>
+    <li><a href="#8-boucler-sur-les-composés">8. Boucler sur les composés</a></li>
+    <li><a href="#9-ajouter-une-colonne-calculée">9. Ajouter une colonne calculée</a></li>
+    <li><a href="#importer-la-bibliothèque">Importer la bibliothèque</a></li>
+    <li><a href="#graphique-à-barres">Graphique à barres</a></li>
+    <li><a href="#graphique-avec-barres-derreur">Graphique avec barres d’erreur</a></li>
+    <li><a href="#tracer-une-droite-de-régression">Tracer une droite de régression</a></li>
+    <li><a href="#affichage-propre">Affichage propre</a></li>
+    <li><a href="#résumé-minimal">Résumé minimal</a>
       <ul>
-        <li><a href="#commande-">Commande :</a></li>
-        <li><a href="#exemple-">Exemple :</a></li>
-      </ul>
-    </li>
-    <li><a href="#4-équation-de-la-droite">4. Équation de la droite</a></li>
-    <li><a href="#5-évaluer-la-concordance-qualité-de-lajustement">5. Évaluer la concordance (qualité de l’ajustement)</a>
-      <ul>
-        <li><a href="#coefficient-de-détermination-">Coefficient de détermination :</a></li>
-      </ul>
-    </li>
-    <li><a href="#résumé-minimal">Résumé minimal</a></li>
-    <li><a href="#exercice-guidé">Exercice guidé</a>
-      <ul>
-        <li><a href="#exercice--ajuster-une-droite">Exercice – Ajuster une droite</a></li>
         <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a></li>
+      </ul>
+    </li>
+    <li><a href="#exercices-pratiques-graphiques">Exercices pratiques graphiques</a>
+      <ul>
+        <li><a href="#-exercice-1--sulfate-de-cuivre">🔹 Exercice 1 – Sulfate de cuivre</a></li>
+        <li><a href="#-exercice-2--comparaison-de-deux-sels">🔹 Exercice 2 – Comparaison de deux sels</a></li>
+        <li><a href="#-exercice-3--prévision">🔹 Exercice 3 – Prévision</a></li>
+        <li><a href="#exercice-1--graphique-à-barres">Exercice 1 – Graphique à barres</a></li>
+        <li><a href="#exercice-2--barres-derreur">Exercice 2 – Barres d’erreur</a></li>
+        <li><a href="#exercice-3--droite-de-régression">Exercice 3 – Droite de régression</a></li>
       </ul>
     </li>
     <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
@@ -139,7 +143,7 @@
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Traitement de fichiers CSV avec Pandas et graphiques SciPy </span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine9/index.html" title="Tableaux NumPy (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
@@ -164,7 +168,7 @@
   <header class="headline">
   </header>
 
-<h1 id="traitement-de-fichiers-csv-avec-pandas-et-graphiques-scipy"> Traitement de fichiers CSV avec Pandas et graphiques SciPy </h1>
+<h1 id="traitement-de-fichiers-csv-avec-pandas-et-autres-graphiques-scientifiques"> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques</h1>
 
 <h2 id="objectifs">Objectifs</h2>
 <ul>
@@ -172,1022 +176,311 @@
 <li>Explorer les données</li>
 <li>Filtrer les résultats pour donnée ciblée.</li>
 <li>Comparer des valeurs selon une donnée</li>
-<li>Utiliser <code>linregress()</code> de <code>scipy.stats</code> pour la régression linéaire.</li>
+<li>Tracer un graphique à barres</li>
+<li>Ajouter des barres d’erreur</li>
+<li>Tracer une droite de régression</li>
 <li>Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R²</li>
 <li>Établir une relation entre deux données</li>
 <li>Interpréter les résultats pour répondre à une question scientifique</li>
 </ul>
 <hr>
+<h2 id="1-importer-la-bibliothèque">1. Importer la bibliothèque</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd</span></span></code></pre></div>
 <hr>
-<h1 id="leçon--régression-linéaire-simple-avec-scipy">Leçon : Régression linéaire simple avec <code>scipy</code></h1>
-<h2 id="objectifs-1">Objectifs</h2>
-<ul>
-<li>Calculer une droite de régression (y = a·x + b)</li>
-<li>Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur</li>
-<li>Évaluer la qualité de l’ajustement avec le coefficient de détermination</li>
-</ul>
+<h2 id="2-charger-un-fichier-csv">2. Charger un fichier CSV</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;solubilite.csv&#34;</span>)</span></span></code></pre></div>
+<p>Ce fichier contient des données expérimentales : pour chaque composé, on indique la <strong>température</strong> et la <strong>quantité dissoute</strong> dans l’eau.</p>
 <hr>
-<h2 id="1-importation-de-la-fonction">1. Importation de la fonction</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> linregress</span></span></code></pre></div>
+<h2 id="3-afficher-les-premières-lignes">3. Afficher les premières lignes</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>head())</span></span></code></pre></div>
 <hr>
-<h2 id="2-données">2. Données</h2>
-<p>On part de deux listes (ou tableaux) de valeurs numériques :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]       <span style="color:#75715e"># Variable indépendante</span>
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">4.0</span>, <span style="color:#ae81ff">5.9</span>, <span style="color:#ae81ff">8.2</span>, <span style="color:#ae81ff">10.1</span>]  <span style="color:#75715e"># Variable dépendante</span></span></span></code></pre></div>
+<h2 id="4-afficher-les-noms-de-colonnes">4. Afficher les noms de colonnes</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>columns)</span></span></code></pre></div>
 <hr>
-<h2 id="3-régression-linéaire">3. Régression linéaire</h2>
-<h3 id="commande-">Commande :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>resultats <span style="color:#f92672">=</span> linregress(x, y)</span></span></code></pre></div>
-<p>La fonction retourne un objet contenant :</p>
+<h2 id="5-afficher-toutes-les-mesures-pour-un-seul-composé">5. Afficher toutes les mesures pour un seul composé</h2>
+<p>Exemple : tout ce qui concerne le <strong>nitrate de potassium (KNO₃)</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;KNO3&#34;</span>
+</span></span><span style="display:flex;"><span>print(df[filtre])</span></span></code></pre></div>
+<hr>
+<h2 id="6-accéder-à-une-colonne-ex--températures">6. Accéder à une colonne (ex. : températures)</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df[<span style="color:#e6db74">&#34;Température&#34;</span>])</span></span></code></pre></div>
+<hr>
+<h2 id="7-moyenne-de-solubilité-pour-un-composé">7. Moyenne de solubilité pour un composé</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;NaCl&#34;</span>
+</span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> df[filtre][<span style="color:#e6db74">&#34;Solubilité&#34;</span>]<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne de solubilité pour NaCl : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
+<hr>
+<h2 id="8-boucler-sur-les-composés">8. Boucler sur les composés</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>composes <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>]<span style="color:#f92672">.</span>unique()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> compose <span style="color:#f92672">in</span> composes:
+</span></span><span style="display:flex;"><span>    moyenne <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> compose][<span style="color:#e6db74">&#34;Solubilité&#34;</span>]<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>compose<span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
+<hr>
+<h2 id="9-ajouter-une-colonne-calculée">9. Ajouter une colonne calculée</h2>
+<p>Exemple : ajouter une colonne indiquant si la solubilité est &ldquo;haute&rdquo; (&gt; 80) ou &ldquo;faible&rdquo;</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Évaluation&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Solubilité&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>print(df)</span></span></code></pre></div>
+<hr>
+<h2 id="importer-la-bibliothèque">Importer la bibliothèque</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt</span></span></code></pre></div>
+<h2 id="graphique-à-barres">Graphique à barres</h2>
+<p><strong>Exemple de base :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>noms <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>]
+</span></span><span style="display:flex;"><span>valeurs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>bar(noms, valeurs)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Résultats&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xticks(rotation<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#34;Score&#34;</span>])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 <table>
 <thead>
 <tr>
-<th>Élément</th>
+<th>Fonction</th>
+<th>Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>plt.bar(x, y)</code></td>
+<td>Crée des barres</td>
+</tr>
+<tr>
+<td><code>plt.xticks()</code></td>
+<td>Contrôle les étiquettes sur l’axe x</td>
+</tr>
+<tr>
+<td><code>plt.title()</code></td>
+<td>Ajoute un titre</td>
+</tr>
+<tr>
+<td><code>plt.legend()</code></td>
+<td>Affiche une légende</td>
+</tr>
+</tbody>
+</table>
+<h2 id="graphique-avec-barres-derreur">Graphique avec barres d’erreur</h2>
+<p><strong>Exemple :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">9</span>]
+</span></span><span style="display:flex;"><span>erreurs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.3</span>, <span style="color:#ae81ff">0.6</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>errorbar(x, y, yerr<span style="color:#f92672">=</span>erreurs, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Mesures&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Mesures avec incertitude&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
 <th>Signification</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>slope</code></td>
-<td>pente (a)</td>
+<td><code>yerr</code></td>
+<td>barres d’erreur verticales</td>
 </tr>
 <tr>
-<td><code>intercept</code></td>
-<td>ordonnée à l’origine (b)</td>
+<td><code>xerr</code></td>
+<td>(optionnel) erreurs horizontales</td>
 </tr>
 <tr>
-<td><code>rvalue</code></td>
-<td>coefficient de corrélation</td>
-</tr>
-<tr>
-<td><code>pvalue</code></td>
-<td>test statistique de validité</td>
-</tr>
-<tr>
-<td><code>stderr</code></td>
-<td>erreur-type sur la pente</td>
+<td><code>fmt=&quot;o&quot;</code></td>
+<td>style des points</td>
 </tr>
 </tbody>
 </table>
-<h3 id="exemple-">Exemple :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> linregress
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2.0</span>, <span style="color:#ae81ff">4.1</span>, <span style="color:#ae81ff">6.0</span>, <span style="color:#ae81ff">7.9</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>res <span style="color:#f92672">=</span> linregress(x, y)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Pente :&#34;</span>, res<span style="color:#f92672">.</span>slope)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Ordonnée à l’origine :&#34;</span>, res<span style="color:#f92672">.</span>intercept)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;r :&#34;</span>, res<span style="color:#f92672">.</span>rvalue)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;R² :&#34;</span>, res<span style="color:#f92672">.</span>rvalue<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Erreur-type :&#34;</span>, res<span style="color:#f92672">.</span>stderr)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;p-valeur :&#34;</span>, res<span style="color:#f92672">.</span>pvalue)</span></span></code></pre></div>
 <hr>
-<h2 id="4-équation-de-la-droite">4. Équation de la droite</h2>
-<p>L’équation ajustée est :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>y = slope * x + intercept</code></pre></div>
-<p>Tu peux l’utiliser pour tracer la droite ou prédire des valeurs.</p>
-<hr>
-<h2 id="5-évaluer-la-concordance-qualité-de-lajustement">5. Évaluer la concordance (qualité de l’ajustement)</h2>
-<h3 id="coefficient-de-détermination-">Coefficient de détermination :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>R2 <span style="color:#f92672">=</span> res<span style="color:#f92672">.</span>rvalue <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span></span></span></code></pre></div>
-<ul>
-<li>R² proche de <strong>1</strong> → très bon ajustement</li>
-<li>R² proche de <strong>0</strong> → pas de relation linéaire</li>
-</ul>
-<hr>
+<h2 id="tracer-une-droite-de-régression">Tracer une droite de régression</h2>
+<p><strong>Rappel</strong> : L&rsquo;équation d&rsquo;une droite est <code>y = a·x + b</code></p>
+<p><strong>Exemple :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>])
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">6.1</span>, <span style="color:#ae81ff">8.0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Droite de régression : y = a·x + b</span>
+</span></span><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(x, y, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>y_reg <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> x <span style="color:#f92672">+</span> b
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, <span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Données&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y_reg, <span style="color:#e6db74">&#34;-&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;y = </span><span style="color:#e6db74">{</span>a<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">x + </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h2 id="affichage-propre">Affichage propre</h2>
+<table>
+<thead>
+<tr>
+<th>Fonction</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>plt.show()</code></td>
+<td>Affiche le graphique</td>
+</tr>
+<tr>
+<td><code>plt.grid(True)</code></td>
+<td>Ajoute une grille</td>
+</tr>
+<tr>
+<td><code>plt.tight_layout()</code></td>
+<td>Ajuste l&rsquo;espacement pour éviter le chevauchement</td>
+</tr>
+</tbody>
+</table>
 <h2 id="résumé-minimal">Résumé minimal</h2>
 <table>
 <thead>
 <tr>
 <th>Tâche</th>
-<th>Syntaxe</th>
+<th>Fonction</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Importer</td>
-<td><code>from scipy.stats import linregress</code></td>
+<td>Graphique à barres</td>
+<td><code>plt.bar()</code></td>
 </tr>
 <tr>
-<td>Calculer la régression</td>
-<td><code>res = linregress(x, y)</code></td>
+<td>Barres d’erreur</td>
+<td><code>plt.errorbar()</code></td>
 </tr>
 <tr>
-<td>Obtenir la pente</td>
-<td><code>res.slope</code></td>
+<td>Titre</td>
+<td><code>plt.title()</code></td>
 </tr>
 <tr>
-<td>Obtenir l’intercept</td>
-<td><code>res.intercept</code></td>
+<td>Légende</td>
+<td><code>plt.legend()</code></td>
 </tr>
 <tr>
-<td>Obtenir R²</td>
-<td><code>res.rvalue ** 2</code></td>
+<td>Grille</td>
+<td><code>plt.grid(True)</code></td>
 </tr>
 <tr>
-<td>Obtenir l’erreur-type</td>
-<td><code>res.stderr</code></td>
+<td>Droite de régression</td>
+<td><code>np.polyfit()</code>, <code>plt.plot()</code></td>
 </tr>
 <tr>
-<td>Obtenir la p-valeur</td>
-<td><code>res.pvalue</code></td>
+<td>Affichage final</td>
+<td><code>plt.show()</code>, <code>plt.tight_layout()</code></td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="exercice-guidé">Exercice guidé</h2>
-<h3 id="exercice--ajuster-une-droite">Exercice – Ajuster une droite</h3>
-<p><strong>Énoncé :</strong>
-Pour <code>x = [0, 1, 2, 3]</code> et <code>y = [1, 2.2, 3.9, 6.0]</code> :</p>
-<ul>
-<li>Calcule la régression linéaire</li>
-<li>Affiche l’équation de la droite (y = ax + b)</li>
-<li>Affiche R²</li>
-</ul>
-<p><strong>Solution :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> linregress
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2.2</span>, <span style="color:#ae81ff">3.9</span>, <span style="color:#ae81ff">6.0</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>res <span style="color:#f92672">=</span> linregress(x, y)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Équation : y = </span><span style="color:#e6db74">{</span>res<span style="color:#f92672">.</span>slope<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">x + </span><span style="color:#e6db74">{</span>res<span style="color:#f92672">.</span>intercept<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;R² = </span><span style="color:#e6db74">{</span>res<span style="color:#f92672">.</span>rvalue<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span><span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
-<p>=======================================</p>
-<!--
-## 1. Importer la bibliothèque
-
-```python
-import pandas as pd
-```
-
----
-
-## 2. Charger un fichier CSV
-
-```python
-df = pd.read_csv("solubilite.csv")
-```
-
-Ce fichier contient des données expérimentales : pour chaque composé, on indique la **température** et la **quantité dissoute** dans l’eau.
-
----
-
-## 3. Afficher les premières lignes
-
-```python
-print(df.head())
-```
-
----
-
-## 4. Afficher les noms de colonnes
-
-```python
-print(df.columns)
-```
-
----
-
-## 5. Afficher toutes les mesures pour un seul composé
-
-Exemple : tout ce qui concerne le **nitrate de potassium (KNO₃)**
-
-```python
-filtre = df["Composé"] == "KNO3"
-print(df[filtre])
-```
-
----
-
-## 6. Accéder à une colonne (ex. : températures)
-
-```python
-print(df["Température"])
-```
-
----
-
-## 7. Moyenne de solubilité pour un composé
-
-```python
-filtre = df["Composé"] == "NaCl"
-moyenne = df[filtre]["Solubilité"].mean()
-print(f"Moyenne de solubilité pour NaCl : {moyenne:.2f} g/100mL")
-```
-
----
-
-## 8. Boucler sur les composés
-
-```python
-composes = df["Composé"].unique()
-for compose in composes:
-    moyenne = df[df["Composé"] == compose]["Solubilité"].mean()
-    print(f"{compose} : {moyenne:.2f} g/100mL")
-```
-
----
-
-## 9. Ajouter une colonne calculée
-
-Exemple : ajouter une colonne indiquant si la solubilité est "haute" (> 80) ou "faible"
-
-```python
-df["Évaluation"] = df["Solubilité"] > 80
-print(df)
-```
-
----
-
-## 1. Importation des bibliothèques
-
-```python
-import numpy as np
-from scipy import stats
-```
-
----
-
-## 2. Données de solubilité
-
-Supposons qu’on mesure la solubilité (en g/100g d’eau) d’un sel à différentes températures (en °C) :
-
-```python
-temperature = np.array([0, 10, 20, 30, 40, 50])
-solubilite = np.array([14, 18, 23, 28, 35, 42])
-```
-
----
-
-## 3. Régression linéaire
-
-```python
-resultat = stats.linregress(temperature, solubilite)
-```
-
----
-
-## 4. Affichage des résultats
-
-```python
-print(f"Pente : {resultat.slope:.2f} g/°C")
-print(f"Ordonnée à l’origine : {resultat.intercept:.2f} g à 0°C")
-print(f"R² : {resultat.rvalue**2:.4f}")
-print(f"Valeur de p : {resultat.pvalue:.4f}")
-```
-
----
-
-## 5. Interprétation scientifique
-
-```python
-if resultat.rvalue**2 > 0.9:
-    print(f"La température influence fortement la solubilité.")
-elif resultat.rvalue**2 > 0.5:
-    print(f"La température influence modérément la solubilité.")
-else:
-    print(f"La solubilité ne semble pas fortement liée à la température.")
-```
-
----
-
-## Exercices pratiques Pandas
-
-### Exercice 1 – Chargement et exploration
-
-1. Charge le fichier `solubilite.csv`.
-2. Affiche les premières lignes.
-3. Affiche les noms de colonnes.
-4. Affiche toutes les températures pour le composé `"NaCl"`.
-
-
-### Exercice 2 – Moyenne de solubilité
-
-1. Calcule la moyenne de solubilité pour `"KNO3"`.
-2. Fais de même pour `"NaCl"`.
-3. Compare les deux valeurs avec des f-strings.
-
-
-### Exercice 3 – Boucle sur les composés
-
-1. Affiche la moyenne de solubilité pour chaque composé du fichier.
-2. Indique pour chacun si elle est supérieure à 80 g/100mL.
-
-
-### Exercice 4 – Ajout d’une colonne
-
-1. Crée une colonne `Tendance` qui vaut `"Haute"` si la solubilité est > 80 et `"Faible"` sinon.
-2. Affiche les 10 premières lignes du tableau mis à jour.
-
-
-## Exercices pratiques Scipy
-
-### 🔹 Exercice 1 – Sulfate de cuivre
-
-1. Températures : `[0, 10, 20, 30, 40, 50]`
-2. Solubilité (g/100g eau) : `[23, 27, 32, 37, 44, 51]`
-3. Calcule la régression linéaire.
-4. Affiche les résultats et une conclusion scientifique.
-
----
-
-### 🔹 Exercice 2 – Comparaison de deux sels
-
-1. Sel A :
-
-   * Température : `[0, 20, 40, 60]`
-   * Solubilité : `[15, 21, 30, 38]`
-
-2. Sel B :
-
-   * Température : `[0, 20, 40, 60]`
-   * Solubilité : `[30, 32, 33, 33.5]`
-
-3. Pour chaque sel :
-
-   * Effectue la régression
-   * Affiche pente, intercept, R²
-   * Déduis quel sel est le plus influencé par la température
-
----
-
-### 🔹 Exercice 3 – Prévision
-
-1. Utilise les données de l’exemple principal
-2. Calcule la solubilité prévue à 60 °C avec la formule :
-
-```python
-valeur_predite = resultat.slope * 60 + resultat.intercept
-print(f"Solubilité prévue à 60 °C : {valeur_predite:.2f} g/100g d’eau")
-```
----
-
-==========================================
-
-\## Régression linéaire simple avec SciPy
-
-
-
-\## 1. Importation de la fonction
-
-
-
-```python
-
-from scipy.stats import linregress
-
-```
-
-
-
-\## 2. Données
-
-
-
-On part de deux listes (ou tableaux) de valeurs numériques :
-
-
-
-```python
-
-x = \[1, 2, 3, 4, 5]       # Variable indépendante
-
-y = \[2.1, 4.0, 5.9, 8.2, 10.1]  # Variable dépendante
-
-```
-
-
-
-\## 3. Régression linéaire
-
-
-
-\### Code :
-
-
-
-```python
-
-resultats = linregress(x, y)
-
-```
-
-
-
-La fonction retourne les informations suivantes :
-
-
-
-| Élément     | Signification                |
-
-| ----------- | ---------------------------- |
-
-| `slope`     | pente (a)                    |
-
-| `intercept` | ordonnée à l’origine (b)     |
-
-| `rvalue`    | coefficient de corrélation   |
-
-| `pvalue`    | test statistique de validité |
-
-| `stderr`    | erreur-type sur la pente     |
-
-
-
-\### Exemple :
-
-
-
-```python
-
-from scipy.stats import linregress
-
-
-
-x = \[1, 2, 3, 4]
-
-y = \[2.0, 4.1, 6.0, 7.9]
-
-
-
-res = linregress(x, y)
-
-
-
-print("Pente :", res.slope)
-
-print("Ordonnée à l’origine :", res.intercept)
-
-print("r :", res.rvalue)
-
-print("R² :", res.rvalue\*\*2)
-
-print("Erreur-type :", res.stderr)
-
-print("p-valeur :", res.pvalue)
-
-```
-
-
-
-
-
-\## 4. Équation de la droite
-
-
-
-L’équation ajustée est :
-
-
-
-```
-
-y = slope \* x + intercept
-
-```
-
-
-
-On peut l’utiliser pour tracer la droite ou prédire des valeurs.
-
-
-
-
-
-\## 5. Évaluer la concordance (qualité de l’ajustement)
-
-
-
-\### Coefficient de détermination :
-
-
-
-```python
-
-R2 = res.rvalue \*\* 2
-
-```
-
-
-
-\* R² proche de \*\*1\*\* → très bon ajustement
-
-\* R² proche de \*\*0\*\* → pas de relation linéaire
-
-
-
-
-## Introduction à Pandas
-
-### Importation de la bibliothèque
-
-```python
-import pandas as pd
-```
-
-### Lecture d’un fichier CSV
-
-```python
-df = pd.read_csv("donnees.csv")
-print(df.head())      # Affiche les 5 premières lignes
-```
-
-### Accès à une colonne
-
-```python
-df["Température"]
-```
-
-### Statistiques de base
-
-```python
-df.mean()
-df["pH"].max()
-```
-
-### Filtrage des données
-
-```python
-df[df["Température"] > 25]     # Sélectionne les lignes où la température dépasse 25
-```
-
-### Moyenne par groupe
-
-```python
-df.groupby("Échantillon")["Concentration"].mean()
-```
-
-
-\## Résumé minimal
-
-
-
-| Tâche                  | Syntaxe                              |
-
-| ---------------------- | ------------------------------------ |
-
-| Importer               | `from scipy.stats import linregress` |
-
-| Calculer la régression | `res = linregress(x, y)`             |
-
-| Obtenir la pente       | `res.slope`                          |
-
-| Obtenir l’intercept    | `res.intercept`                      |
-
-| Obtenir R²             | `res.rvalue \*\* 2`                    |
-
-| Obtenir l’erreur-type  | `res.stderr`                         |
-
-| Obtenir la p-valeur    | `res.pvalue`                         |
-
-
-
-
-
-\## Exercice guidé
-
-
-
-\### 🔧 Exercice – Ajuster une droite
-
-
-
-\*\*Énoncé :\*\*
-
-Pour `x = \[0, 1, 2, 3]` et `y = \[1, 2.2, 3.9, 6.0]` :
-
-
-
-\* Calcule la régression linéaire
-
-\* Affiche l’équation de la droite (y = ax + b)
-
-\* Affiche R²
-
-
-
-\*\*Solution :\*\*
-
-
-
-```python
-
-from scipy.stats import linregress
-
-
-
-x = \[0, 1, 2, 3]
-
-y = \[1, 2.2, 3.9, 6.0]
-
-
-
-res = linregress(x, y)
-
-
-
-print(f"Équation : y = {res.slope:.2f}x + {res.intercept:.2f}")
-
-print(f"R² = {res.rvalue\*\*2:.4f}")
-
-```
-
-
-
-
-
----
-
-
-
-\# 🧪 Python scientifique – NumPy avec exercices guidés
-
-
-
----
-
-
-
-\## 📦 1. Importer NumPy
-
-
-
-```python
-
-import numpy as np
-
-```
-
-
-
----
-
-
-
-\## 🔢 2. Créer un tableau NumPy
-
-
-
-\### 📘 Exemple :
-
-
-
-```python
-
-mesures = np.array(\[3.2, 4.1, 2.9, 5.0])
-
-print(mesures)
-
-```
-
-
-
-\### 🧪 Exercice 1 :
-
-
-
-Crée un tableau nommé `temperatures` contenant les valeurs :
-
-`\[21.1, 19.5, 22.3, 20.7, 23.0]`
-
-et affiche-le.
-
-
-
-```python
-
-\# Ton code ici
-
-```
-
-
-
----
-
-
-
-\## 🧮 3. Fonctions mathématiques
-
-
-
-\### 📘 Exemple :
-
-
-
-```python
-
-np.mean(mesures)   # Moyenne
-
-np.std(mesures)    # Écart-type
-
-np.full(4, 0.5)    # \[0.5, 0.5, 0.5, 0.5]
-
-np.linspace(0, 10, 5)  # \[0.  2.5  5.  7.5 10.]
-
-```
-
-
-
-\### 🧪 Exercice 2 :
-
-
-
-Utilise le tableau `temperatures` pour :
-
-
-
-\* Calculer la moyenne
-
-\* Calculer l’écart-type
-
-
-
-```python
-
-\# Ton code ici
-
-```
-
-
-
----
-
-
-
-\### 🧪 Exercice 3 :
-
-
-
-Crée un tableau nommé `barres\_d\_erreur` rempli de `0.5`, de même longueur que `temperatures`.
-
-
-
-```python
-
-\# Ton code ici
-
-```
-
-
-
----
-
-
-
-\### 🧪 Exercice 4 :
-
-
-
-Crée un tableau de 6 valeurs également espacées entre 0 et 100, nommé `x\_positions`.
-
-
-
-```python
-
-\# Ton code ici
-
-```
-
-
-
----
-
-
-
-\## ➗ 4. Opérations vectorielles
-
-
-
-\### 📘 Exemple :
-
-
-
-```python
-
-x = np.array(\[1, 2, 3])
-
-y = np.array(\[4, 5, 6])
-
-
-
-x + y     # \[5 7 9]
-
-x \* 2     # \[2 4 6]
-
-y / 2     # \[2.  2.5 3. ]
-
-```
-
-
-
-\### 🧪 Exercice 5 :
-
-
-
-Crée un tableau `decalage = temperatures - 20`.
-
-Que signifie ce tableau ?
-
-
-
-```python
-
-\# Ton code ici
-
-```
-
-
-
----
-
-
-
-\### 🧪 Exercice 6 :
-
-
-
-Multiplie chaque valeur de `temperatures` par 1.8 et ajoute 32 pour obtenir la température en Fahrenheit.
-
-
-
-```python
-
-\# Ton code ici
-
-```
-
-
-
----
-
-
-
-\### 🧪 Exercice 7 (révision libre) :
-
-
-
-Crée deux tableaux NumPy : `a = \[1, 3, 5, 7]` et `b = \[2, 4, 6, 8]`
-
-Fais les opérations suivantes :
-
-
-
-\* Addition
-
-\* Soustraction
-
-\* Multiplication par un scalaire
-
-
-
-```python
-
-\# Ton code ici
-
-```
-
-* Créer un tableau de données (`DataFrame`)
-* Lire un fichier CSV
-* Parcourir les lignes d’un tableau
-* Faire des calculs sur les colonnes
-* Ajouter une nouvelle colonne
-
----
-
-## 1. Importer Pandas
-
-Avant toute manipulation :
-
-```python
-import pandas as pd
-```
-
-
-## 2. Créer un DataFrame à la main
-
-```python
-data = {
-    "Nom": ["Alice", "Bob", "Chloé"],
-    "Note": [88, 72, 91]
-}
-df = pd.DataFrame(data)
-```
-
-On crée un tableau à partir d’un **dictionnaire** : chaque clé devient une **colonne**.
-
-
-## 3. Lire un fichier CSV
-
-```python
-df = pd.read_csv("fichier.csv")
-```
-
-Le fichier doit être dans le même dossier, ou donner le chemin complet.
-
-
-## 4. Parcourir un DataFrame
-
-### Avec `.iterrows()` :
-
-```python
-for index, row in df.iterrows():
-    print(row["Nom"], row["Note"])
-```
-
-On peut accéder à chaque **ligne** comme un dictionnaire (`row["Nom"]`).
-
-
-## 5. Calculs sur une colonne
-
-| But      | Syntaxe                                   |
-| -------- | ----------------------------------------- |
-| Moyenne  | `df["Note"].mean()`                       |
-| Arrondir | `df["Note"].round(1)`                     |
-| Trier    | `df.sort_values("Note", ascending=False)` |
-
-### Exemple :
-
-```python
-moy = df["Note"].mean()
-print("Moyenne :", moy)
-```
-
-
-## 6. Ajouter une nouvelle colonne
-
-On peut **créer une colonne calculée** à partir des autres.
-
-### Exemple :
-
-```python
-df["Note_sur_10"] = df["Note"] / 10
-```
-
-Cela ajoute une nouvelle colonne au tableau.
-
-
-## Résumé minimal
-
-| Action               | Syntaxe                        |
-| -------------------- | ------------------------------ |
-| Créer un DataFrame   | `pd.DataFrame({...})`          |
-| Lire CSV             | `pd.read_csv("fichier.csv")`   |
-| Parcourir les lignes | `for i, row in df.iterrows():` |
-| Moyenne              | `df["col"].mean()`             |
-| Arrondir             | `df["col"].round(1)`           |
-| Trier                | `df.sort_values("col")`        |
-| Ajouter une colonne  | `df["nouvelle"] = ...`         |
-
----
-
-## Exercices guidés
-
-### Exercice 1 – Lire et afficher
-
-**Énoncé :**
-Lis un fichier `donnees.csv` contenant les colonnes `Nom` et `Valeur`.
-Affiche chaque nom et sa valeur.
-
-**Solution :**
-
-```python
-import pandas as pd
-
-df = pd.read_csv("donnees.csv")
-for i, row in df.iterrows():
-    print(row["Nom"], "→", row["Valeur"])
-```
-
-### Exercice 2 – Calculer une colonne normalisée
-
-**Énoncé :**
-À partir de la colonne `Valeur`, crée une colonne `Valeur_sur_100` qui est `Valeur / 100`.
-
-**Solution :**
-
-```python
-df["Valeur_sur_100"] = df["Valeur"] / 100
-```
-
-
-### Exercice 3 – Trier et afficher
-
-**Énoncé :**
-Trie les données selon la colonne `Valeur` en ordre décroissant et affiche-les.
-
-**Solution :**
-
-```python
-df = df.sort_values("Valeur", ascending=False)
-print(df)
-```
-
--->
 <h3 id="exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</h3>
+<h4 id="pandas">Pandas</h4>
+<h5 id="exercice-1--chargement-et-exploration">Exercice 1 – Chargement et exploration</h5>
+<ol>
+<li>Charge le fichier <code>solubilite.csv</code>.</li>
+<li>Affiche les premières lignes.</li>
+<li>Affiche les noms de colonnes.</li>
+<li>Affiche toutes les températures pour le composé <code>&quot;NaCl&quot;</code>.</li>
+</ol>
+<h5 id="exercice-2--moyenne-de-solubilité">Exercice 2 – Moyenne de solubilité</h5>
+<ol>
+<li>Calcule la moyenne de solubilité pour <code>&quot;KNO3&quot;</code>.</li>
+<li>Fais de même pour <code>&quot;NaCl&quot;</code>.</li>
+<li>Compare les deux valeurs avec des f-strings.</li>
+</ol>
+<h5 id="exercice-3--boucle-sur-les-composés">Exercice 3 – Boucle sur les composés</h5>
+<ol>
+<li>Affiche la moyenne de solubilité pour chaque composé du fichier.</li>
+<li>Indique pour chacun si elle est supérieure à 80 g/100mL.</li>
+</ol>
+<h4 id="exercice-4--ajout-dune-colonne">Exercice 4 – Ajout d’une colonne</h4>
+<ol>
+<li>Crée une colonne <code>Tendance</code> qui vaut <code>&quot;Haute&quot;</code> si la solubilité est &gt; 80 et <code>&quot;Faible&quot;</code> sinon.</li>
+<li>Affiche les 10 premières lignes du tableau mis à jour.</li>
+</ol>
+<h2 id="exercices-pratiques-graphiques">Exercices pratiques graphiques</h2>
+<h3 id="-exercice-1--sulfate-de-cuivre">🔹 Exercice 1 – Sulfate de cuivre</h3>
+<ol>
+<li>Températures : <code>[0, 10, 20, 30, 40, 50]</code></li>
+<li>Solubilité (g/100g eau) : <code>[23, 27, 32, 37, 44, 51]</code></li>
+<li>Calcule la régression linéaire.</li>
+<li>Affiche les résultats et une conclusion scientifique.</li>
+</ol>
+<h3 id="-exercice-2--comparaison-de-deux-sels">🔹 Exercice 2 – Comparaison de deux sels</h3>
+<ol>
+<li>
+<p>Sel A :</p>
+<ul>
+<li>Température : <code>[0, 20, 40, 60]</code></li>
+<li>Solubilité : <code>[15, 21, 30, 38]</code></li>
+</ul>
+</li>
+<li>
+<p>Sel B :</p>
+<ul>
+<li>Température : <code>[0, 20, 40, 60]</code></li>
+<li>Solubilité : <code>[30, 32, 33, 33.5]</code></li>
+</ul>
+</li>
+<li>
+<p>Pour chaque sel :</p>
+<ul>
+<li>Effectue la régression</li>
+<li>Affiche pente, intercept, R²</li>
+<li>Déduis quel sel est le plus influencé par la température</li>
+</ul>
+</li>
+</ol>
+<h3 id="-exercice-3--prévision">🔹 Exercice 3 – Prévision</h3>
+<ol>
+<li>Utilise les données de l’exemple principal</li>
+<li>Calcule la solubilité prévue à 60 °C avec la formule :</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>valeur_predite <span style="color:#f92672">=</span> resultat<span style="color:#f92672">.</span>slope <span style="color:#f92672">*</span> <span style="color:#ae81ff">60</span> <span style="color:#f92672">+</span> resultat<span style="color:#f92672">.</span>intercept
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Solubilité prévue à 60 °C : </span><span style="color:#e6db74">{</span>valeur_predite<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100g d’eau&#34;</span>)</span></span></code></pre></div>
+<hr>
+<h3 id="exercice-1--graphique-à-barres">Exercice 1 – Graphique à barres</h3>
+<p><strong>Énoncé :</strong>
+Affiche un graphique à barres pour les éléments <code>&quot;Fer&quot;</code>, <code>&quot;Cuivre&quot;</code>, <code>&quot;Zinc&quot;</code> avec les valeurs <code>[12, 7, 5]</code>.</p>
+<p><strong>Solution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>elements <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Fer&#34;</span>, <span style="color:#e6db74">&#34;Cuivre&#34;</span>, <span style="color:#e6db74">&#34;Zinc&#34;</span>]
+</span></span><span style="display:flex;"><span>quantites <span style="color:#f92672">=</span> [<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>bar(elements, quantites)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Concentration des métaux&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#34;mg/L&#34;</span>])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h3 id="exercice-2--barres-derreur">Exercice 2 – Barres d’erreur</h3>
+<p><strong>Énoncé :</strong>
+Pour <code>x = [1, 2, 3]</code>, <code>y = [5.1, 5.0, 5.2]</code>, <code>yerr = [0.1, 0.2, 0.15]</code>, trace les points avec barres d’erreur.</p>
+<p><strong>Solution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5.1</span>, <span style="color:#ae81ff">5.0</span>, <span style="color:#ae81ff">5.2</span>]
+</span></span><span style="display:flex;"><span>yerr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">0.15</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>errorbar(x, y, yerr<span style="color:#f92672">=</span>yerr, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Mesures&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Tension mesurée&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h3 id="exercice-3--droite-de-régression">Exercice 3 – Droite de régression</h3>
+<p><strong>Énoncé :</strong>
+Pour <code>x = [0, 1, 2, 3]</code>, <code>y = [1, 2.1, 3.9, 6.0]</code>, trace les points et la droite de régression, avec son équation dans la légende.</p>
+<p><strong>Solution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">3.9</span>, <span style="color:#ae81ff">6.0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(x, y, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, <span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Points&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, a<span style="color:#f92672">*</span>x <span style="color:#f92672">+</span> b, <span style="color:#e6db74">&#34;-&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;y = </span><span style="color:#e6db74">{</span>a<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">x + </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <blockquote>
 <p><strong>RAPPEL</strong>: Semaine prochaine c&rsquo;est le <strong>troisième et dernier examen</strong> (20%)</p>
@@ -1260,7 +553,7 @@ print(df)
             <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
             <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a></li>
-            <li class="active " data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Traitement de fichiers CSV avec Pandas et graphiques SciPy </a></li>
+            <li class="active " data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques</a></li>
             <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Évaluation #3 (20%)</a></li>
             <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
@@ -1285,8 +578,8 @@ print(df)
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1753399166" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753399166" defer></script>
-    <script src="/js/theme.min.js?1753399166" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753457360" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753457360" defer></script>
+    <script src="/js/theme.min.js?1753457360" defer></script>
   </body>
 </html>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Traitement de fichiers CSV avec Pandas et graphiques SciPy  :: 420-SN1-RE</title>
+    <title> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE</title>
     <link>https://example.org/semaine10/index.html</link>
-    <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Utiliser linregress() de scipy.stats pour la régression linéaire. Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique Leçon : Régression linéaire simple avec scipy Objectifs Calculer une droite de régression (y = a·x + b) Extraire la pente, l’ordonnée à l’origine, le R², l’erreur-type et la p-valeur Évaluer la qualité de l’ajustement avec le coefficient de détermination 1.</description>
+    <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd&#xD;2.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine10/index.xml" rel="self" type="application/rss+xml" />

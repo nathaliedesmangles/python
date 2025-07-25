@@ -5,161 +5,109 @@ weight = 207
 draft = false
 +++
 
-<!--
-
-## Exercice 4 
-
-
-
-But : simuler un test qui s’arrête dès qu’il y a une mauvaise réponse
-
-
-
-```python
-
-# On suppose que les bonnes réponses sont "A"
-
-# et que l'étudiant fait une erreur à la 4e question
-
-
-
-reponses = ["A", "A", "A", "B", "A", "A", "A", "A", "A", "A"]
-
-
-
-
-
-
-
-for i in range(10):
-
-
-
-&nbsp;   print("Question", i + 1)
-
-
-
-&nbsp;   if reponses[i] != "A":
-
-
-
-&nbsp;       print("Réponse incorrecte. Test terminé.")
-
-
-
-&nbsp;       break
-
-
-
-&nbsp;   else:
-
-
-
-&nbsp;       print("Bonne réponse.")
-
-
-
-```
-
-
-
-
-
-
-
-### Ce que ça fait :
-
-
-
-
-
-
-
-* Affiche les 3 premières bonnes réponses.
-
-
-
-* À la 4e question, la réponse est fausse → le test s’arrête avec `break`.
-
--->
 
 ### Listes
 
-#### Exercice 1 :
+#### Exercice 1
 
-* Crée une liste contenant 5 animaux. Affiche chaque animal avec une phrase du type :
-```text
-Voici un/une <animal>
+```python
+animaux = ["chat", "chien", "lapin", "perroquet", "tigre"]
+for animal in animaux:
+    print(f"Voici un/une {animal}")
 ```
- 
-#### Exercice 2 :
 
-* Crée une grille de 5 lignes et 4 colonnes (liste de listes) contenant des chiffres. 
-* Affiche tous les chiffres un par un.
+#### Exercice 2
 
-#### Exercice 3 :
+```python
+grille = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+    [13, 14, 15, 16],
+    [17, 18, 19, 20]
+]
 
-* Demande à l’utilisateur d’entrer 3 noms et stocke-les dans une liste.
-* Affiche chaque animal en ordre alphabétique croissant.  
-* Affiche chaque animal en ordre alphabétique décroissant. 
+for ligne in grille:
+    for chiffre in ligne:
+        print(chiffre)
+```
+
+#### Exercice 3
+
+```python
+noms = []
+for i in range(3):
+    nom = input(f"Entrez le nom {i+1} : ")
+    noms.append(nom)
+
+print("Ordre alphabétique croissant :")
+for nom in sorted(noms):
+    print(nom)
+
+print("Ordre alphabétique décroissant :")
+for nom in sorted(noms, reverse=True):
+    print(nom)
+```
 
 #### Exercice 4
 
-* Crée une liste de séquences :
 ```python
 suspects = [
     ["A", "T", "C", "G"],
     ["G", "A", "T", "G"],
     ["A", "T", "T", "G"]
 ]
+
+print(suspects[0][1])  # 2e base de la 1re séquence → T
+print(suspects[2][-1])  # dernière base de la 3e séquence → G
 ```
-* Affiche la 2e base de la 1re séquence.
-* Affiche la dernière base de la 3e séquence.
 
 ---
 
-### Chaines de caractères
+### Chaînes de caractères
 
-#### Exercice 5 - Créer une liste de nombres à partir d'une liste de mots
-
-* Utiliser une boucle pour obtenir le nombre de lettres de chaque mot
-* Pour chacun des mots, ajouter son nombre de lettres dans la liste `nb_lettres`.
+#### Exercice 5
 
 ```python
 mots = ["chlorophylle", "atome", "protéine"]
 nb_lettres = []
+
+for mot in mots:
+    nb_lettres.append(len(mot))
+
+print(nb_lettres)  # [12, 5, 8]
 ```
 
-#### Exercice 6 - Convertir en ARN
+#### Exercice 6
 
-Une séquence d’ADN est "ATGCT".
-
-* Mets-la en minuscules.
-* Remplace les "t" par "u".
-
----
-
-### Graphiques
-
-#### Exercice 7 – Température dans une journée
-
-* Heures : `[0, 4, 8, 12, 16, 20, 24]`
-* Températures : `[-5, -2, 3, 7, 6, 1, -2]`
-
-Crée un graphique de température en fonction de l’heure.
-
-Ajoute :
-
-* Un titre `"Température en fonction de l’heure"`
-* Les étiquettes `"Heure (h)"` et `"Température (°C)"`
-* Une grille
+```python
+adn = "ATGCT"
+arn = adn.lower().replace("t", "u")
+print(arn)  # augcu
+```
 
 
-## Graphiques
+### Graphiques avec matplotlib
 
-### Exercice 7
+#### Exercice 7
 
-### Exercice 8 Solution :
+```python
+import matplotlib.pyplot as plt
+
+heures = [0, 4, 8, 12, 16, 20, 24]
+temperatures = [-5, -2, 3, 7, 6, 1, -2]
+
+plt.plot(heures, temperatures)
+plt.title("Température en fonction de l’heure")
+plt.xlabel("Heure (h)")
+plt.ylabel("Température (°C)")
+plt.grid()
+plt.show()
+```
+
+![Exercice 7](./exercice7.png?width=40vw)
+
+#### Exercice 8
 
 ```python
 import matplotlib.pyplot as plt
@@ -169,18 +117,18 @@ attendu = [2.1, 3.8, 5.6, 7.3, 9.0]
 mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
 
 # Tracé des valeurs attendues (ligne)
-plt.plot(temp, attendu, "o-k", label="Valeurs attendues")
+plt.plot(temp, attendu, "ok-", label="Valeurs attendues")  # o = rond, k = noir, - = ligne
 
 # Tracé des valeurs mesurées (barres)
-plt.bar(temp, mesure, width=3, alpha=0.5, label="Valeurs mesurées", color="blue")
+plt.bar(temp, mesure, color="blue", alpha=0.5, label="Valeurs mesurées")
 
 # Mise en forme
+plt.title("Comparaison des concentrations")
 plt.xlabel("Température (°C)")
-plt.ylabel("Concentration (mg/L)")
-plt.title("Concentration mesurée vs attendue")
+plt.ylabel("Concentration")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-
 plt.show()
 ```
+![Exercice 8](./exercice8.png?width=40vw)

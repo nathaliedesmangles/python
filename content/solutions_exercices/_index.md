@@ -19,5 +19,5 @@ weight = 200
 
 
 [09. Tableaux NumPy](./9_numpy/)  
-[10. Graphiques SciPy et fichiers CSV avec Pandas](./10_scipy/)
+[10. Traitement de fichiers CSV avec Pandas et graphiques scientifiques](./10_pandas_graph)
 
