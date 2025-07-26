@@ -357,7 +357,7 @@ Pour chaque exercice, créez un nouveau notebook (par ex.: `exercice1.ipynb`, `e
 ![Dossier exercices](./dossier-exercices.png?width=25vw)
 {{% /notice %}}
 
-[Bloc-notes de départ](./exercices_intro.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/2_intro/exercices_intro.ipynb)
 
 ## Exercice 1 : Conversion de température
 
