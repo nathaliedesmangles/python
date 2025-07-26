@@ -1,4 +1,6 @@
 +++
+chapter = true
+pre = "<b>* </b>"
 title = "Règlements de classe"
 weight = 30
 +++
@@ -23,3 +25,4 @@ Ton implication est valorisée. La participation active et l’écoute respectue
 ### 5. **Travaille avec rigueur et honnêteté.**
 
 Faire de son mieux, c’est une forme de respect de soi. Le plagiat ou la tricherie nuisent à ton apprentissage réel et à ta crédibilité future.
+

@@ -1,6 +1,6 @@
 +++
 chapter = true
-pre = "<b>FAQ : </b>"
+pre = "<b>* FAQ : </b>"
 title = "Foire Aux Questions"
 weight = 10
 +++

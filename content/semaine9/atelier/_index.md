@@ -1,168 +1,55 @@
 +++
 title = "Activité 9"
 weight = 109
-draft = true
+draft = false
 +++
  
 
-## Objectif
+## Objectifs
 
-Utiliser **NumPy** pour effectuer des calculs sur des données numériques, et **Pandas** pour analyser un fichier CSV contenant des données environnementales.
-
-**Durée** : Entre 45 et 60 minutes, à faire en équipe de 2.
-
----
-
-## Partie 1 – Calculs avec NumPy
-
-1. Crée un tableau NumPy contenant les températures suivantes (en °C) mesurées chaque heure :
-
-```python
-import numpy as np
-
-temperatures = np.array([18.5, 19.0, 20.1, 21.3, 22.8, 23.4, 22.9, 21.0])
-```
-
-2. Calcule et affiche :
-
-   * La température moyenne
-   * L’écart-type
-   * La température maximale
-   * Toutes les températures converties en degrés Fahrenheit (formule : `F = C × 9/5 + 32`)
-
-
-## Partie 2 – Analyse avec Pandas
-
-1. Télécharge le fichier `capteurs.csv` (fourni par l’enseignant), contenant des mesures de capteurs environnementaux :
-
-```
-Heure,Température,Humidité,pH
-08:00,18.5,55,6.8
-09:00,19.0,53,6.9
-10:00,20.1,51,7.0
-11:00,21.3,49,7.1
-12:00,22.8,47,7.1
-13:00,23.4,45,7.2
-14:00,22.9,44,7.3
-15:00,21.0,46,7.2
-```
-
-2. Utilise Pandas pour :
-
-   * Lire le fichier
-   * Afficher les 5 premières lignes
-   * Afficher la moyenne de chaque variable
-   * Trouver à quelle heure la température est la plus élevée
-   * Filtrer les lignes où le pH est supérieur à 7.0
-
-3. Bonus : ajoute une nouvelle colonne `Indice_confort` selon cette règle :
-
-   * Si température ≥ 22 et humidité < 50 → "Élevé"
-   * Sinon → "Modéré"
-
-
-### Résultat attendu (exemples)
-
-```python
-Température moyenne : 21.125 °C
-Températures en Fahrenheit : [65.3 66.2 68.2 ...]
-Heure avec température max : 13:00
-```
-
-<!--
-
-## Solutions
-
-Voici le **corrigé commenté** de l’exercice pratique sur NumPy et Pandas. Il peut être remis à l’enseignant ou utilisé comme rétroaction à la suite de la séance.
+* Création de tableaux à 1D et 2D (`numpy`).
+* Calcul de moyennes et d’écarts types.
+* Gestion de données manquantes (`np.nan`).
+* Comparaison entre conditions expérimentales.
 
 ---
 
-## Corrigé commenté – Exercice : Analyse de données environnementales
+## Exercice : Analyse d’une expérience sur l’effet de la lumière sur la croissance des plantes
 
-### Partie 1 – NumPy
+Une équipe de recherche a mesuré la hauteur (en cm) de jeunes plantes après 10 jours de croissance dans trois conditions lumineuses différentes :
 
-```python
-import numpy as np
+* lumière naturelle,
+* lumière LED blanche,
+* lumière LED rouge.
 
-# Températures mesurées chaque heure
-temperatures = np.array([18.5, 19.0, 20.1, 21.3, 22.8, 23.4, 22.9, 21.0])
+Pour chaque condition, 5 plantes ont été mesurées. Certaines données sont manquantes, car une ou deux plantes n’ont pas survécu. Les données brutes sont les suivantes :
 
-# Température moyenne
-moyenne = np.mean(temperatures)
-print(f"Température moyenne : {moyenne:.2f} °C")  # 21.13 °C
+| Condition   | Plante 1 | Plante 2 | Plante 3 | Plante 4 | Plante 5 |
+| ----------- | -------- | -------- | -------- | -------- | -------- |
+| Naturelle   | 12.5     | 13.1     | 12.9     | 13.0     | 12.8     |
+| LED blanche | 11.2     | 11.6     | np.nan   | 11.5     | 11.3     |
+| LED rouge   | 10.4     | 10.1     | 10.2     | np.nan   | np.nan   |
 
-# Écart-type
-ecart_type = np.std(temperatures)
-print(f"Écart-type : {ecart_type:.2f}")  # environ 1.66
 
-# Température maximale
-max_temp = np.max(temperatures)
-print(f"Température maximale : {max_temp} °C")  # 23.4 °C
+Écris un programme Python qui :
 
-# Conversion en Fahrenheit
-fahrenheit = temperatures * 9 / 5 + 32
-print("Températures en Fahrenheit :", fahrenheit)
-```
+1. **Représente les données sous forme d’un tableau 2D** (à l’aide de `numpy`).
+2. **Calcule la moyenne et l’écart-type** de la hauteur des plantes pour chaque condition, en **ignorant les valeurs manquantes**.
+3. **Compare les hauteurs moyennes** entre les conditions (affiche par exemple la condition ayant la croissance moyenne la plus élevée).
+4. **Affiche un résumé clair**, par exemple :
 
----
-
-### Partie 2 – Pandas
-
-```python
-import pandas as pd
-
-# Lecture du fichier CSV
-df = pd.read_csv("capteurs.csv")
-
-# Affichage des 5 premières lignes
-print(df.head())
-```
-
-#### Moyenne de chaque variable
-
-```python
-print(df.mean(numeric_only=True))  # Affiche moyenne de Température, Humidité, pH
-```
-
-#### Heure avec température maximale
-
-```python
-max_index = df["Température"].idxmax()
-heure_max = df.loc[max_index, "Heure"]
-print(f"Heure avec température maximale : {heure_max}")  # 13:00
-```
-
-#### Filtrage du pH
-
-```python
-ph_eleve = df[df["pH"] > 7.0]
-print(ph_eleve)
-```
-
-#### Ajout d’une colonne « Indice\_confort »
-
-```python
-def calcul_indice(row):
-    if row["Température"] >= 22 and row["Humidité"] < 50:
-        return "Élevé"
-    else:
-        return "Modéré"
-
-df["Indice_confort"] = df.apply(calcul_indice, axis=1)
-print(df[["Heure", "Température", "Humidité", "Indice_confort"]])
-```
+   ```
+   Moyenne (Naturelle) = 12.86 cm, écart-type = 0.22 cm
+   Moyenne (LED blanche) = ...
+   ...
+   Condition avec la plus grande croissance moyenne : Naturelle
+   ```
 
 ---
 
-### Résultat final (extrait)
+### Aide
 
-```
-Heure Température Humidité pH Indice_confort
-12:00     22.8        47   7.1     Élevé
-13:00     23.4        45   7.2     Élevé
-14:00     22.9        44   7.3     Élevé
-15:00     21.0        46   7.2     Modéré
-```
--->
-
-
+* Utilise `numpy.array()` pour construire le tableau.
+* Utilise `np.nanmean()` et `np.nanstd()` pour les calculs.
+* Utilise des f-strings pour formater les sorties.
+* Tu peux créer une liste `conditions = ["Naturelle", "LED blanche", "LED rouge"]` pour faciliter l'affichage.

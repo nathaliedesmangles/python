@@ -118,7 +118,6 @@ La constante PI est aussi disponible via le module math :
 | -------------- | ------------------ | ------------- |
 | `math.pi`        | La constante π     | `math.pi` → `3.14159...`        |
 
->> Pause 5 minutes
 
 
 ## Création de fonction avec `def`
@@ -214,7 +213,7 @@ On aurait aussi pu faire:
 ```python
 print(f"L'aire du rectangle est : {aire_rectangle(5, 2)}") # Appel de la fonction
 ```
->> Pause 5 minutes
+
 
 ### La portée locale des variables
 
@@ -374,6 +373,8 @@ print("Le temps de chute est {temps} secondes.")
 {{% notice style="magenta" title="Appel de fonction" groupid="notice-toggle" expanded="false" %}}
 Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.
 {{% /notice %}}
+
+[Bloc-notes de départ](./exercices_entrees_fn_debug.ipynb)
 
 ## Exercice 1 : La loi d'Ohm
 

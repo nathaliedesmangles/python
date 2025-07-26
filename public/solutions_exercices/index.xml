@@ -12,14 +12,14 @@
       <link>https://example.org/solutions_exercices/2_variables/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/2_variables/index.html</guid>
-      <description>Exercice 1 : Conversion de température # 1. Stocker la température en degrés Celsius temp_celsius = 25 # Exemple : 25 °C # 2. Convertir en Fahrenheit et en Kelvin temp_fahrenheit = (temp_celsius * 9/5) + 32 temp_kelvin = temp_celsius + 273.15 # 3. Afficher les trois valeurs avec des messages clairs print(&#34;Température en Celsius :&#34;, temp_celsius, &#34;°C&#34;) print(&#34;Température en Fahrenheit :&#34;, temp_fahrenheit, &#34;°F&#34;) print(&#34;Température en Kelvin :&#34;, temp_kelvin, &#34;K&#34;)&#xD;Exercice 2 : Calcul de concentration molaire # Données connues m = 10.</description>
+      <description>Exercice 1 : Conversion de température # 1. Stocker la température en degrés Celsius temp_celsius = 25 # Exemple : 25 °C # 2. Convertir en Fahrenheit et en Kelvin temp_fahrenheit = (temp_celsius * 9/5) + 32 temp_kelvin = temp_celsius + 273.15 # 3. Afficher les trois valeurs avec des messages clairs print(&#34;Température en Celsius : {temp_celsius}°C&#34;) print(&#34;Température en Fahrenheit : {temp_fahrenheit}°F&#34;) print(&#34;Température en Kelvin : {temp_kelvin}K&#34;)&#xD;Exercice 2 : Calcul de concentration molaire # Données connues m = 10.</description>
     </item>
     <item>
       <title> Saisie au clavier, fonctions et débogage</title>
       <link>https://example.org/solutions_exercices/3_input_fonctions_debug/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/3_input_fonctions_debug/index.html</guid>
-      <description>Exercice 1 : La loi d’Ohm # Étape 1 : Demander la résistance à l&#39;utilisateur (en ohms) resistance = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Étape 2 : Demander le courant à l&#39;utilisateur (en ampères) courant = float(input(&#34;Entrer le courant en ampères : &#34;)) # Étape 3 : Calculer la tension à l&#39;aide de la formule U = R * I tension = resistance * courant # Étape 4 : Afficher le résultat print(f&#34;La tension est de {tension} V&#34;)&#xD;Exercice 2 : Élément chimique # Demander à l&#39;utilisateur d&#39;entrer le nom d’un élément chimique element = input(&#34;Entrer le nom d&#39;un élément chimique : &#34;) # Afficher le message avec l’élément choisi print(&#34;L’élément choisi est :&#34;, element)&#xD;Exercice 3 : Convertir Celsius en Kelvin # Définition de la fonction def convertir_C_en_K(celsius): kelvin = celsius + 273.</description>
+      <description>Exercice 1 : La loi d’Ohm # Étape 1 : Demander la résistance à l&#39;utilisateur (en ohms) resistance = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Étape 2 : Demander le courant à l&#39;utilisateur (en ampères) courant = float(input(&#34;Entrer le courant en ampères : &#34;)) # Étape 3 : Calculer la tension à l&#39;aide de la formule U = R * I tension = resistance * courant # Étape 4 : Afficher le résultat print(f&#34;La tension est de {tension} V&#34;)&#xD;Exercice 2 : Élément chimique # Demander à l&#39;utilisateur d&#39;entrer le nom d’un élément chimique element = input(&#34;Entrer le nom d&#39;un élément chimique : &#34;) # Afficher le message avec l’élément choisi print(f&#34;L’élément choisi est : {element}&#34;)&#xD;Exercice 3 : Convertir Celsius en Kelvin # Définition de la fonction def convertir_C_en_K(celsius): kelvin = celsius + 273.</description>
     </item>
     <item>
       <title> Décider avec if-elif-else et les opérateurs</title>
@@ -47,7 +47,7 @@
       <link>https://example.org/solutions_exercices/9_numpy/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/9_numpy/index.html</guid>
-      <description></description>
+      <description>## Exercice 1 – Solubilité d’un sel&#xA;**Données** :&#xA;import numpy as np sol = np.array(\[32.0, 35.5, np.nan, 37.2, 39.0])&#xD;### 1. Affiche les valeurs&#xA;print(f&#34;Solubilités : {sol}&#34;)&#xD;### 2. Moyenne sans la valeur manquante&#xA;moyenne = np.nanmean(sol) print(f&#34;Moyenne (sans valeur manquante) : {moyenne:.2f} g/100mL&#34;)&#xD;### 3. Écart type&#xA;ecart = np.nanstd(sol) print(f&#34;Écart type : {ecart:.2f}&#34;)&#xD;## Exercice 2 – Températures journalières&#xA;**Données** :&#xA;temperatures = np.array(\[ &amp;nbsp; \[12.1, 17.3, 14.</description>
     </item>
     <item>
       <title> Traitement de fichiers CSV avec Pandas et graphiques scientifiques</title>

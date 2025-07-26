@@ -3,9 +3,16 @@
   <channel>
     <title> Tableaux NumPy :: 420-SN1-RE</title>
     <link>https://example.org/semaine9/index.html</link>
-    <description>Objectifs À la fin de cette leçon, vous devrez être capable de :&#xA;Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Exercices à faire avant le cours À faire avant le prochain cours Lire la matière sur Traitement de fichiers CSV (Pandas) et graphiques (SciPy) Faire les exercices se trouvant à la fin de la leçon 10</description>
+    <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.array([32.0, 35.5, 37.2]) print(f&#34;Solubilités mesurées : {sol}&#34;)&#xD;Tableau 2D Un tableau numpy multidimentionnel c’est un tableau numpy qui contient une liste de listes. matrice = np.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Activité 9</title>
+      <link>https://example.org/semaine9/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine9/atelier/index.html</guid>
+      <description>Objectifs Création de tableaux à 1D et 2D (numpy). Calcul de moyennes et d’écarts types. Gestion de données manquantes (np.nan). Comparaison entre conditions expérimentales. Exercice : Analyse d’une expérience sur l’effet de la lumière sur la croissance des plantes Une équipe de recherche a mesuré la hauteur (en cm) de jeunes plantes après 10 jours de croissance dans trois conditions lumineuses différentes :&#xA;lumière naturelle, lumière LED blanche, lumière LED rouge.</description>
+    </item>
   </channel>
 </rss>

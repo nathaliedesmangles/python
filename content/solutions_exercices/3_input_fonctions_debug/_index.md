@@ -20,7 +20,7 @@ tension = resistance * courant
 # Étape 4 : Afficher le résultat
 print(f"La tension est de {tension} V")
 ```
----
+
 
 ### Exercice 2 : Élément chimique
 
@@ -29,9 +29,9 @@ print(f"La tension est de {tension} V")
 element = input("Entrer le nom d'un élément chimique : ")
 
 # Afficher le message avec l’élément choisi
-print("L’élément choisi est :", element)
+print(f"L’élément choisi est : {element}")
 ```
----
+
 
 ### Exercice 3 : Convertir Celsius en Kelvin
 
@@ -44,7 +44,7 @@ def convertir_C_en_K(celsius):
 # Affichage et appel de la fonction
 print(f"Une température de 30°C équivaut à {convertir_C_en_K(30)} K")
 ```
----
+
 
 ### Exercice 4 : Calculer une énergie cinétique
 
@@ -56,7 +56,7 @@ def energie_cinetique(m, v):
 # Affichage et appel de la fonction
 print(f"L'énergie cinétique de l'objet est de {energie_cinetique(2.0, 3.0)} joules")  # 9.0 J
 ```
----
+
 
 ### Exercice 5 : Aire d'un cercle
 
@@ -72,7 +72,7 @@ def aire_cercle():
 # Appel de la fonction
 aire_cercle()
 ```
----
+
 
 ### Exercice 6 : Vérifier la portée locale
 
@@ -84,7 +84,6 @@ def tester_variable():
 tester_variable()
 print(f"À l'exterieur de la fonction tu t'appelles : {prenom}")  # NameError: name 'prenom' is not defined attendue
 ```
----
 
 
 ### Exercice 7 : Trouvez les erreurs et corrigez-les

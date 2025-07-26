@@ -16,9 +16,9 @@ temp_fahrenheit = (temp_celsius * 9/5) + 32
 temp_kelvin = temp_celsius + 273.15
 
 # 3. Afficher les trois valeurs avec des messages clairs
-print("Température en Celsius :", temp_celsius, "°C")
-print("Température en Fahrenheit :", temp_fahrenheit, "°F")
-print("Température en Kelvin :", temp_kelvin, "K")
+print("Température en Celsius : {temp_celsius}°C")
+print("Température en Fahrenheit : {temp_fahrenheit}°F")
+print("Température en Kelvin : {temp_kelvin}K")
 ```
 
 ## Exercice 2 : Calcul de concentration molaire
@@ -36,9 +36,9 @@ n = m / M
 C = n / V
 
 # Affichage du résultat
-print("Concentration molaire :", C, "mol/L")
+print(f"Concentration molaire : {C} mol/L")
 ```
----
+
 
 ## Exercice 3 : Vitesse moyenne d’une réaction
 

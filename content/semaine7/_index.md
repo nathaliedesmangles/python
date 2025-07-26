@@ -431,6 +431,8 @@ plt.savefig("figure.png")
 
 ## Exercices à faire avant le cours
 
+[Bloc-notes de départ](./exercices_listes_chaines_graphes.ipynb)
+
 ### Listes
 
 #### Exercice 1 :

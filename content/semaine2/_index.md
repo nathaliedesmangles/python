@@ -169,7 +169,6 @@ print(f"Montant : {montant:^10.2f} $")     # → Montant :   134.87   $
 * `10.2f` → total de 10 caractères, dont 2 après la virgule
 * `<`, `>`, `^` → alignement (gauche, droite, centré)
 
->> Pause 5 minutes
 
 ## Comment décortiquer un problème scientifique en algorithme et le traduire en Python ?
 
@@ -333,7 +332,6 @@ Ces tests montrent que :
 * Le calcul respecte la **loi de Boyle** à température constante.
 * Les résultats sont **cohérents avec l’intuition physique**.
 
->> Pause 5 minutes
 
 {{% notice style="blue" title="À retenir..." groupid="notice-toggle" expanded="false" %}}
 * Une variable garde une **valeur**.
@@ -359,6 +357,8 @@ Pour chaque exercice, créez un nouveau notebook (par ex.: `exercice1.ipynb`, `e
 ![Dossier exercices](./dossier-exercices.png?width=25vw)
 {{% /notice %}}
 
+[Bloc-notes de départ](./exercices_intro.ipynb)
+
 ## Exercice 1 : Conversion de température
 
 Un thermomètre donne des relevés en Fahrenheit, mais vous devez les convertir en Celsius et Kelvin.
@@ -375,9 +375,9 @@ $ K = °C + 273.15 $
 
 **Résultat attendu avec une température de 38°C** :
 ```
-Température en Celsius : 38°C)
-Température en Fahrenheit : 100.4°F)
-Température en Kelvin : 311.15K)
+Température en Celsius : 38°C
+Température en Fahrenheit : 100.4°F
+Température en Kelvin : 311.15K
 ```
 ---
 

@@ -145,7 +145,7 @@ else:
 
 ### Exercices à faire avant le cours
 
-==> Vous pouvez utiliser ce notebook [exercices.ipynb](./exercices.ipynb) pour répondre aux questions
+[Bloc-notes de départ](./exercices_struct_cond.ipynb)
 
 ### Partie 1 – Comprendre les opérateurs de comparaison
 

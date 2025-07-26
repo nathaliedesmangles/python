@@ -47,7 +47,7 @@
       <link>https://example.org/solutions_ateliers/9_numpy/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/9_numpy/index.html</guid>
-      <description></description>
+      <description>import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.</description>
     </item>
     <item>
       <title> Traitement de fichiers CSV avec Pandas et graphiques scientifiques</title>

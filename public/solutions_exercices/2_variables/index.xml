@@ -3,7 +3,7 @@
   <channel>
     <title> Variables, types de données et algorithme :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/2_variables/index.html</link>
-    <description>Exercice 1 : Conversion de température # 1. Stocker la température en degrés Celsius temp_celsius = 25 # Exemple : 25 °C # 2. Convertir en Fahrenheit et en Kelvin temp_fahrenheit = (temp_celsius * 9/5) + 32 temp_kelvin = temp_celsius + 273.15 # 3. Afficher les trois valeurs avec des messages clairs print(&#34;Température en Celsius :&#34;, temp_celsius, &#34;°C&#34;) print(&#34;Température en Fahrenheit :&#34;, temp_fahrenheit, &#34;°F&#34;) print(&#34;Température en Kelvin :&#34;, temp_kelvin, &#34;K&#34;)&#xD;Exercice 2 : Calcul de concentration molaire # Données connues m = 10.</description>
+    <description>Exercice 1 : Conversion de température # 1. Stocker la température en degrés Celsius temp_celsius = 25 # Exemple : 25 °C # 2. Convertir en Fahrenheit et en Kelvin temp_fahrenheit = (temp_celsius * 9/5) + 32 temp_kelvin = temp_celsius + 273.15 # 3. Afficher les trois valeurs avec des messages clairs print(&#34;Température en Celsius : {temp_celsius}°C&#34;) print(&#34;Température en Fahrenheit : {temp_fahrenheit}°F&#34;) print(&#34;Température en Kelvin : {temp_kelvin}K&#34;)&#xD;Exercice 2 : Calcul de concentration molaire # Données connues m = 10.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/2_variables/index.xml" rel="self" type="application/rss+xml" />

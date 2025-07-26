@@ -29,7 +29,7 @@
       <description>1. Comporte-toi comme si tu étais déjà en emploi. Arrive à l’heure, sois prêt à travailler, et respecte les échéances. Ton attitude ici prépare ton avenir professionnel.&#xA;2. Respecte-toi, donc agis avec respect. Ton comportement reflète la manière dont tu te considères. Adopte une attitude calme, polie et attentive envers toi-même, les autres et l’enseignant·e.&#xA;3. Sois présent, mentalement et physiquement. Utilise ton cellulaire seulement pour les besoins du cours. Reste concentré·e pendant les activités, comme tu le ferais dans un contexte de travail.</description>
     </item>
     <item>
-      <title>───────────</title>
+      <title>───────────────────</title>
       <link>https://example.org/separateur_section/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/separateur_section/index.html</guid>
@@ -103,7 +103,7 @@
       <link>https://example.org/semaine9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine9/index.html</guid>
-      <description>Objectifs À la fin de cette leçon, vous devrez être capable de :&#xA;Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Exercices à faire avant le cours À faire avant le prochain cours Lire la matière sur Traitement de fichiers CSV (Pandas) et graphiques (SciPy) Faire les exercices se trouvant à la fin de la leçon 10</description>
+      <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.array([32.0, 35.5, 37.2]) print(f&#34;Solubilités mesurées : {sol}&#34;)&#xD;Tableau 2D Un tableau numpy multidimentionnel c’est un tableau numpy qui contient une liste de listes. matrice = np.</description>
     </item>
     <item>
       <title> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques</title>

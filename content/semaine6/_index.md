@@ -169,6 +169,8 @@ for i in range(1, 11):
 
 ## Exercices à faire avant le cours
 
+[Bloc-notes de départ](./exercices_boucles.ipynb)
+
 ### Exercice 1 - For ou While ?
 
 Pour chacun des contextes suivants, avant d'écrire le code, répondez à la question: "Quelle boucle devriez-vous utiliser ?":
