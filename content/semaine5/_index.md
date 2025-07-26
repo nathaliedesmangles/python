@@ -145,7 +145,7 @@ else:
 
 ### Exercices à faire avant le cours
 
-[Bloc-notes de départ](./exercices_struct_cond.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_struct_cond.ipynb)
 
 ### Partie 1 – Comprendre les opérateurs de comparaison
 

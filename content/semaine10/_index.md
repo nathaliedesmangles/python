@@ -212,6 +212,8 @@ plt.show()
 
 ### Exercices à faire avant le cours
 
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_pandas_barres_reg.ipynb)
+
 #### Pandas
 
 ##### Exercice 1 – Chargement et exploration

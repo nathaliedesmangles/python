@@ -150,7 +150,7 @@ Sans `nanmean`, la fonction `np.mean(sol)` retournerait `nan` car une seule vale
 
 ## Exercices à faire avant le cours
 
-[Bloc-notes de départ](./exercices_numpy.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_numpy.ipynb)
 
 ### Exercice 1 – Solubilité d’un sel
 

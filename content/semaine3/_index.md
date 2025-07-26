@@ -374,7 +374,7 @@ print("Le temps de chute est {temps} secondes.")
 Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.
 {{% /notice %}}
 
-[Bloc-notes de départ](./exercices_entrees_fn_debug.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_entrees_fn_debug.ipynb)
 
 ## Exercice 1 : La loi d'Ohm
 

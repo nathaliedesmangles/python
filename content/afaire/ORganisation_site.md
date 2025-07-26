@@ -72,6 +72,8 @@ weight = 101
 
 >> Pause 5 minutes
 
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_intro.ipynb)
+
 
 ```math
 $ °F = (°C × 9/5) + 32 $  <br> 

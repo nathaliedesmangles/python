@@ -379,7 +379,7 @@ Température en Celsius : 38°C
 Température en Fahrenheit : 100.4°F
 Température en Kelvin : 311.15K
 ```
----
+
 
 ## Exercice 2 : Calcul de concentration molaire
 
@@ -397,7 +397,7 @@ V = 0.25	volume de la solution en litres
 ```
 Concentration molaire : 0.682051282051282 mol/L
 ```
----
+
 
 ## Exercice 3 : Vitesse moyenne d’une réaction
 
@@ -415,7 +415,7 @@ où `[A]` est la concentration du réactif.
 ```
 Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
 ```
----
+
 
 ## Exercice 4 : Distance parcourue
 

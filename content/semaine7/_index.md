@@ -431,7 +431,7 @@ plt.savefig("figure.png")
 
 ## Exercices à faire avant le cours
 
-[Bloc-notes de départ](./exercices_listes_chaines_graphes.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_listes_chaines_graphes.ipynb)
 
 ### Listes
 

@@ -169,7 +169,7 @@ for i in range(1, 11):
 
 ## Exercices à faire avant le cours
 
-[Bloc-notes de départ](./exercices_boucles.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_boucles.ipynb)
 
 ### Exercice 1 - For ou While ?
 
