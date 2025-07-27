@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Dictionnaires et traitement de fichiers CSV :: 420-SN1-RE</title>
+    <link>https://example.org/solutions_exercices/10_dict_fichiers/index.html</link>
+    <description>Exercice 1 – Densités # Création du dictionnaire densites = { &#34;eau&#34;: 1.0, &#34;éthanol&#34;: 0.789, &#34;mercure&#34;: 13.6 } # 1. Affiche la densité du mercure print(f&#34;Densité du mercure : {densites[&#39;mercure&#39;]} g/mL&#34;) # 2. Ajout de la densité de l&#39;huile densites[&#34;huile&#34;] = 0.91 # 3. Affiche toutes les substances et leur densité for substance, densite in densites.items(): print(f&#34;{substance} : {densite} g/mL&#34;)&#xD;Exercice 2 – Chargement et exploration import pandas as pd # 1.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/solutions_exercices/10_dict_fichiers/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -19,5 +19,6 @@ weight = 200
 
 
 [09. Tableaux NumPy](./9_numpy/)  
-[10. Traitement de fichiers CSV et graphiques scientifiques](./10_pandas_graphes_sc)
+[10. Dictionnaires et traitement de fichiers CSV](./10_dict_fichiers)  
+[11. Graphiques avancés et régression linéaire](./11_graphes_regression)
 

@@ -7,12 +7,5 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine7/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Dictionnaires</title>
-      <link>https://example.org/semaine7/dictionnaires/dictionnaires/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine7/dictionnaires/dictionnaires/index.html</guid>
-      <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique). Accéder à une valeur à partir d’une clé. Ajouter ou modifier une paire clé/valeur dans un dictionnaire. Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Utiliser un dictionnaire pour organiser des données scientifiques, comme des constantes physiques ou des observations par catégorie. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.</description>
-    </item>
   </channel>
 </rss>

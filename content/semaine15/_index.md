@@ -1,9 +1,23 @@
 +++
 chapter = true
 pre = "<b>15.</b>"
-title = " Finalisation et Remise du rapport final"
+title = " Évaluation #3 (25%)"
 weight = 115
 draft = false
 +++
 
+
+
+## Informations
+
+* Date:				Semaine #15 (Voir le calendrier)
+* Matière: 		        Semaines 9 à 11 inclusivement
+* Documentation permise: 	1 feuille recto-verso (manuscrite ou imprimée)
+* Format:			À confirmer
+
+
+{{% notice style="accent" title="Important" %}}
 Vous devez remettre votre code sur Moodle : le fichier `projet_prenom_nom.ipynb` au plus tard ce soir à 23h59.
+{{% /notice %}}
+
+

@@ -1,88 +1,76 @@
 +++
-title = "Activité 11"
-weight = 111
-draft = true
+title = "Activité 10"
+weight = 210
+draft = false
 +++
+ 
 
+## Objectifs
 
-## Objectif pédagogique
-
-Apprendre à lire et traiter un fichier contenant des données expérimentales, effectuer des calculs simples, et produire un résumé statistique à l’aide de Python.
-
----
-
-## Exercice 1 : Analyse de données de température
-
-**Contexte** : Un technicien a mesuré la température d’un liquide toutes les 5 minutes pendant 30 minutes. Les données sont enregistrées dans un fichier CSV.
-
-**Étapes :**
-
-1. **Télécharger et lire le fichier `donnees_temp.csv`** fourni par l’enseignant.
-2. **Afficher les données ligne par ligne**, avec mise en forme : « À t = 10 min, T = 25.8 °C »
-3. **Calculer la température moyenne à partir des données lues.**
-4. **Écrire un nouveau fichier `analyse.csv`** qui contient :
-
-   * Une colonne « temps »
-   * Une colonne « température »
-   * Une colonne « écart à la moyenne »
-5. **Bonus** : Tracer les données avec matplotlib (si le temps le permet).
-
-
-**Éléments d’évaluation formative (en équipe)**
-
-* Capacité à extraire et utiliser les données du fichier
-* Respect des bonnes pratiques (indentation, noms de variables, commentaires)
-* Clarté du fichier CSV généré
-* Travail collaboratif dans la répartition des tâches
+1. Lire le fichier CSV.
+2. Organiser les données dans un dictionnaire structuré.
+3. Explorer les données.
+4. Comparer les températures selon les substances et les conditions.
 
 ---
 
-## Exercice 2 : Impact de la température sur le pH de l’eau
+## Exercice
 
-**Contexte :**
-Une équipe d’étudiants en chimie a réalisé une série de mesures du pH d’un échantillon d’eau à différentes températures, à raison de 3 mesures par température. Les données ont été consignées dans un fichier CSV.
+On a réalisé des expériences pour mesurer la température de cristallisation de différentes substances dans plusieurs conditions (pression normale, pression élevée, en solution aqueuse, etc.).
 
-**Contenu du fichier `ph_mesures.csv` :**
+Les données sont enregistrées dans un fichier CSV, sous la forme suivante :
 
+[Fichier à utiliser: cristallisation.csv](./cristallisation.csv)
+
+Contenu :
+
+```csv
+substance,condition,temp_cristallisation
+NaCl,pression_normale,801
+NaCl,en_solution,800
+H2O,pression_normale,0
+H2O,pression_elevee,-1
+Fe,pression_normale,1538
+Fe,en_solution,1530
 ```
-Température (°C),Mesure1,Mesure2,Mesure3
-10,7.12,7.10,7.13
-15,7.05,7.06,7.04
-20,6.98,6.97,6.99
-25,6.92,6.91,6.93
-30,6.85,6.86,6.87
+
+### Instructions
+
+1. **Lire le fichier CSV** `cristallisation.csv` et stocker les données sous forme de dictionnaire ayant la structure suivante :
+
+```python
+{
+    "NaCl": {"pression_normale": 801, "en_solution": 800},
+    "H2O": {"pression_normale": 0, "pression_elevee": -1},
+    "Fe": {"pression_normale": 1538, "en_solution": 1530}
+}
 ```
 
-## Consignes
+2. **Afficher** les températures de cristallisation pour chaque substance dans chaque condition avec une phrase comme :
 
-1. **Lecture du fichier :**
+```text
+NaCl cristallise à 801°C sous pression normale.
+NaCl cristallise à 800°C en solution.
+...
+```
 
-   * Utiliser Python (avec `csv` ou `pandas`) pour lire les données.
+3. **Ajouter** une nouvelle mesure : supposons qu’on a obtenu une température de cristallisation de `-5°C` pour `H2O` dans une nouvelle condition `en_solution`. Ajoutez cette donnée au dictionnaire.
 
-2. **Traitement des données :**
+4. **Vérifiez** si la substance `"Cu"` est présente dans le dictionnaire. Si elle ne l’est pas, affichez : `"Cu n'est pas présent dans les données."`
 
-   * Calculer la moyenne du pH pour chaque température.
-   * Conserver les résultats dans une nouvelle structure de données (liste ou dictionnaire).
+5. **Filtrer** et afficher toutes les substances ayant une température de cristallisation inférieure à `100°C` dans au moins une condition.
 
-3. **Analyse simple :**
+6. **Comparer** les températures de cristallisation d’une même substance selon les conditions expérimentales et afficher la différence maximale observée pour chaque substance, par exemple :
 
-   * Identifier s’il y a une tendance du pH en fonction de la température.
-   * Ajouter une colonne "Moyenne\_pH" aux données.
+```text
+Pour H2O, l’écart maximal est de 5°C entre deux conditions.
+```
 
-4. **Affichage des résultats :**
+---
 
-   * Afficher les résultats dans une table lisible.
-   * Écrire les résultats dans un nouveau fichier CSV : `ph_moyennes.csv`.
+### Extension pour les rapides (facultatif)
 
-5. **Extension (facultative) :**
+Créer une fonction `comparaison_substances(donnees)` qui :
 
-   * Tracer un graphique température vs moyenne du pH à l’aide de `matplotlib`.
-
-**Livrable attendu :**
-Un script Python complet et bien commenté, ainsi qu’un fichier CSV de sortie contenant les moyennes.
-
-**Discussion en équipe (20 minutes) :**
-En petits groupes (2-3), comparer les résultats, discuter de la fiabilité des mesures et de l’impact de la température sur le pH de l’eau. Chaque équipe propose une conclusion en 2-3 phrases à partager au groupe.
-
-
-
+* Compare les températures moyennes de cristallisation de chaque substance.
+* Identifie quelle substance cristallise en moyenne à la température la plus élevée.

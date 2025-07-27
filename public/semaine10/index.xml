@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE</title>
+    <title> Les dictionnaires et le traitement de fichiers textes (CSV) :: 420-SN1-RE</title>
     <link>https://example.org/semaine10/index.html</link>
-    <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd&#xD;2.</description>
+    <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Activité 10</title>
+      <link>https://example.org/semaine10/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine10/atelier/index.html</guid>
+      <description>Objectifs Lire le fichier CSV. Organiser les données dans un dictionnaire structuré. Explorer les données. Comparer les températures selon les substances et les conditions. Exercice On a réalisé des expériences pour mesurer la température de cristallisation de différentes substances dans plusieurs conditions (pression normale, pression élevée, en solution aqueuse, etc.).&#xA;Les données sont enregistrées dans un fichier CSV, sous la forme suivante :&#xA;Fichier à utiliser: cristallisation.csv&#xA;Contenu :&#xA;substance,condition,temp_cristallisation&#xD;NaCl,pression_normale,801&#xD;NaCl,en_solution,800&#xD;H2O,pression_normale,0&#xD;H2O,pression_elevee,-1&#xD;Fe,pression_normale,1538&#xD;Fe,en_solution,1530&#xD;Instructions Lire le fichier CSV cristallisation.</description>
+    </item>
   </channel>
 </rss>

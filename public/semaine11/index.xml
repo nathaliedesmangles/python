@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Évaluation #3 (20%) :: 420-SN1-RE</title>
+    <title> Les graphiques avancés et la regression linéaire :: 420-SN1-RE</title>
     <link>https://example.org/semaine11/index.html</link>
-    <description>Informations Date:&#x9;Semaine #11 (Voir le calendrier) Matière: Semaines 9 et 10 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format:&#x9;À confirmer</description>
+    <description>Tracer un graphique à barres&#xA;Ajouter des barres d’erreur&#xA;Tracer une droite de régression&#xA;Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R²&#xA;Établir une relation entre deux données&#xA;Interpréter les résultats pour répondre à une question scientifique&#xA;Importer la bibliothèque import matplotlib.pyplot as plt&#xD;Graphique à barres Exemple de base :&#xA;noms = [&#34;A&#34;, &#34;B&#34;, &#34;C&#34;] valeurs = [4, 7, 5] plt.bar(noms, valeurs) plt.title(&#34;Résultats&#34;) plt.xticks(rotation=0) plt.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine11/index.xml" rel="self" type="application/rss+xml" />

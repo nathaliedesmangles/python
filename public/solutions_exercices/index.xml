@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des exercices :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/index.html</link>
-    <description>02. Variables, types de donnees et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec IF-ELIF-ELSE et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Traitement de fichiers CSV et graphiques scientifiques</description>
+    <description>02. Variables, types de donnees et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec IF-ELIF-ELSE et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Dictionnaires et traitement de fichiers CSV&#xA;11. Graphiques avancés et régression linéaire</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/index.xml" rel="self" type="application/rss+xml" />
@@ -47,14 +47,14 @@
       <link>https://example.org/solutions_exercices/9_numpy/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/9_numpy/index.html</guid>
-      <description>## Exercice 1 – Solubilité d’un sel&#xA;**Données** :&#xA;import numpy as np sol = np.array(\[32.0, 35.5, np.nan, 37.2, 39.0])&#xD;### 1. Affiche les valeurs&#xA;print(f&#34;Solubilités : {sol}&#34;)&#xD;### 2. Moyenne sans la valeur manquante&#xA;moyenne = np.nanmean(sol) print(f&#34;Moyenne (sans valeur manquante) : {moyenne:.2f} g/100mL&#34;)&#xD;### 3. Écart type&#xA;ecart = np.nanstd(sol) print(f&#34;Écart type : {ecart:.2f}&#34;)&#xD;## Exercice 2 – Températures journalières&#xA;**Données** :&#xA;temperatures = np.array(\[ &amp;nbsp; \[12.1, 17.3, 14.</description>
+      <description>Exercice 1 – Solubilité d’un sel Données :&#xA;import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])&#xD;1. Affiche les valeurs print(f&#34;Solubilités : {sol}&#34;)&#xD;2. Moyenne sans la valeur manquante moyenne = np.nanmean(sol) print(f&#34;Moyenne (sans valeur manquante) : {moyenne:.2f} g/100mL&#34;)&#xD;3. Écart type ecart = np.nanstd(sol) print(f&#34;Écart type : {ecart:.2f}&#34;)&#xD;Exercice 2 – Températures journalières Données :&#xA;temperatures = np.array([ [12.1, 17.3, 14.2], [11.8, 16.9, 13.9], [13.0, 18.1, 15.</description>
     </item>
     <item>
-      <title> Traitement de fichiers CSV avec Pandas et graphiques scientifiques</title>
-      <link>https://example.org/solutions_exercices/10_pandas_graphes_sc/index.html</link>
+      <title> Dictionnaires et traitement de fichiers CSV</title>
+      <link>https://example.org/solutions_exercices/10_dict_fichiers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/10_pandas_graphes_sc/index.html</guid>
-      <description></description>
+      <guid>https://example.org/solutions_exercices/10_dict_fichiers/index.html</guid>
+      <description>Exercice 1 – Densités # Création du dictionnaire densites = { &#34;eau&#34;: 1.0, &#34;éthanol&#34;: 0.789, &#34;mercure&#34;: 13.6 } # 1. Affiche la densité du mercure print(f&#34;Densité du mercure : {densites[&#39;mercure&#39;]} g/mL&#34;) # 2. Ajout de la densité de l&#39;huile densites[&#34;huile&#34;] = 0.91 # 3. Affiche toutes les substances et leur densité for substance, densite in densites.items(): print(f&#34;{substance} : {densite} g/mL&#34;)&#xD;Exercice 2 – Chargement et exploration import pandas as pd # 1.</description>
     </item>
   </channel>
 </rss>

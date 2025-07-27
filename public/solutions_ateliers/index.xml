@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des ateliers :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/index.html</link>
-    <description>02. Variables, types de données et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec if-elif-else et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Traitement de fichiers CSV et graphiques scientifiques</description>
+    <description>02. Variables, types de données et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec if-elif-else et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Dictionnaires et traitement de fichiers CSV&#xA;11. Graphiques avancés et régression linéaire</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_ateliers/index.xml" rel="self" type="application/rss+xml" />
@@ -50,11 +50,11 @@
       <description>import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.</description>
     </item>
     <item>
-      <title> Traitement de fichiers CSV avec Pandas et graphiques scientifiques</title>
-      <link>https://example.org/solutions_ateliers/10_pandas_graphes_sc/index.html</link>
+      <title> Dictionnaires et traitement de fichiers CSV</title>
+      <link>https://example.org/solutions_ateliers/10_dict_fichiers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/10_pandas_graphes_sc/index.html</guid>
-      <description></description>
+      <guid>https://example.org/solutions_ateliers/10_dict_fichiers/index.html</guid>
+      <description># 1. Lecture du fichier CSV import csv donnees = {} with open(&#34;cristallisation.csv&#34;, newline=&#39;&#39;, encoding=&#39;utf-8&#39;) as fichier: lecteur = csv.DictReader(fichier) for ligne in lecteur: substance = ligne[&#34;substance&#34;] condition = ligne[&#34;condition&#34;] temp = float(ligne[&#34;temp_cristallisation&#34;]) if substance not in donnees: donnees[substance] = {} donnees[substance][condition] = temp # 2. Affichage des données for substance in donnees: for condition in donnees[substance]: temp = donnees[substance][condition] print(f&#34;{substance} cristallise à {temp}°C {condition.replace(&#39;_&#39;, &#39; &#39;)}.&#34;) # 3. Ajout d&#39;une nouvelle condition pour H2O donnees[&#34;H2O&#34;][&#34;en_solution&#34;] = -5 # 4.</description>
     </item>
   </channel>
 </rss>

@@ -13,6 +13,7 @@ draft = false
 * Calculer des **moyennes** et **écarts types**.
 * Gérer des données **expérimentales incomplètes** (`np.nan`).
 * Comparer des résultats entre éléments ou conditions.
+* Filtrer des données selon des conditions.
 
 ---
 
@@ -133,6 +134,40 @@ La fonction `np.nanmean()` calcule **la moyenne des éléments en ignorant les v
 Sans `nanmean`, la fonction `np.mean(sol)` retournerait `nan` car une seule valeur `nan` dans la liste contamine le résultat.
 {{% /notice %}}
 
+## Filtrage de données
+
+1. Créer un tableau et afficher uniquement certaines valeurs selon une condition
+
+```python
+array = np.array([2, 5, 7, 1, 8, 3])
+masque = array > 5	# Masquage : valeurs supérieures à 5
+print(f"Masque booléen : {masque}
+valeurs_filtrées = array[masque]
+print(f"Valeurs supérieures à 5 : {valeurs_filtrées}")
+```
+**Sortie attendue :**
+
+```
+Masque booléen : [False False  True False  True False]
+Valeurs supérieures à 5 : [7 8]
+```
+
+2. Comptage conditionnel avec `np.sum`
+
+Compter combien de valeurs respectent un seuil donné.
+
+```python
+array = np.array([3, 7, 4, 6, 2, 9, 5])
+seuil = 5
+nb_valeurs = np.sum(array > seuil)	# Comptage des valeurs > 5
+print(f"Nombre de valeurs supérieures à {seuil} : {nb_valeurs}")
+```
+
+**Sortie attendue :**
+```
+Nombre de valeurs supérieures à 5 : 3
+```
+
 ---
 
 {{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
@@ -228,6 +263,6 @@ Une plante pousse selon ce modèle : sa taille augmente de 2 cm par jour.
 
 ## À faire avant le prochain cours
 
-1. Lire la matière sur [Traitement de fichiers CSV (Pandas) et graphiques](../semaine10/)
+1. Lire la matière sur [Ls dictionnaires et le traitement de fichiers textes (CSV)](../semaine10/)
 2. Faire les [exercices se trouvant à la fin de la leçon 10](../semaine10/#exercices-à-faire-avant-le-cours)
 

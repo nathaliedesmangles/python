@@ -5,34 +5,34 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd2.">
+    <meta name="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content=" Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd2.">
+    <meta name="twitter:title" content=" Les dictionnaires et le traitement de fichiers textes (CSV) :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.">
     <meta property="og:url" content="https://example.org/semaine10/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content=" Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE">
-    <meta property="og:description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd2.">
+    <meta property="og:title" content=" Les dictionnaires et le traitement de fichiers textes (CSV) :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content=" Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd2.">
-    <meta itemprop="wordCount" content="909">
-    <title> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE</title>
-    <link href="/semaine10/index.xml" rel="alternate" type="application/rss+xml" title=" Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques :: 420-SN1-RE">
-    <link href="/images/logo.png?1753553351" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753553351" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753553351" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753553351" rel="stylesheet">
-    <link href="/css/theme.min.css?1753553351" rel="stylesheet">
-    <link href="/css/format-html.min.css?1753553351" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1753553351" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1753553351" defer></script>
-    <script src="/js/lunr/lunr.min.js?1753553351" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1753553351" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1753553351" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1753553351" defer></script>
-    <script src="/js/search.min.js?1753553351" defer></script>
+    <meta itemprop="name" content=" Les dictionnaires et le traitement de fichiers textes (CSV) :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.">
+    <meta itemprop="wordCount" content="860">
+    <title> Les dictionnaires et le traitement de fichiers textes (CSV) :: 420-SN1-RE</title>
+    <link href="/semaine10/index.xml" rel="alternate" type="application/rss+xml" title=" Les dictionnaires et le traitement de fichiers textes (CSV) :: 420-SN1-RE">
+    <link href="/images/logo.png?1753578072" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753578072" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753578072" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753578072" rel="stylesheet">
+    <link href="/css/theme.min.css?1753578072" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753578072" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753578072" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753578072" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753578072" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753578072" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753578072" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753578072" defer></script>
+    <script src="/js/search.min.js?1753578072" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1753553351";
+      window.relearn.index_js_url="/searchindex.en.js?1753578072";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1753553351" rel="stylesheet">
+    <link href="/css/custom.css?1753578072" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine10/index.html">
     <div id="R-body" class="default-animation">
@@ -105,33 +105,53 @@
 <nav class="TableOfContents">
   <ul>
     <li><a href="#objectifs">Objectifs</a></li>
-    <li><a href="#1-importer-la-bibliothèque">1. Importer la bibliothèque</a></li>
-    <li><a href="#2-charger-un-fichier-csv">2. Charger un fichier CSV</a></li>
-    <li><a href="#3-afficher-les-premières-lignes">3. Afficher les premières lignes</a></li>
-    <li><a href="#4-afficher-les-noms-de-colonnes">4. Afficher les noms de colonnes</a></li>
-    <li><a href="#5-afficher-toutes-les-mesures-pour-un-seul-composé">5. Afficher toutes les mesures pour un seul composé</a></li>
-    <li><a href="#6-accéder-à-une-colonne-ex--températures">6. Accéder à une colonne (ex. : températures)</a></li>
-    <li><a href="#7-moyenne-de-solubilité-pour-un-composé">7. Moyenne de solubilité pour un composé</a></li>
-    <li><a href="#8-boucler-sur-les-composés">8. Boucler sur les composés</a></li>
-    <li><a href="#9-ajouter-une-colonne-calculée">9. Ajouter une colonne calculée</a></li>
-    <li><a href="#importer-la-bibliothèque">Importer la bibliothèque</a></li>
-    <li><a href="#graphique-à-barres">Graphique à barres</a></li>
-    <li><a href="#graphique-avec-barres-derreur">Graphique avec barres d’erreur</a></li>
-    <li><a href="#tracer-une-droite-de-régression">Tracer une droite de régression</a></li>
-    <li><a href="#affichage-propre">Affichage propre</a></li>
-    <li><a href="#résumé-minimal">Résumé minimal</a>
+    <li><a href="#quest-ce-quun-dictionnaire">Qu’est-ce qu’un dictionnaire?</a></li>
+    <li><a href="#utilisation-fréquente-en-sciences">Utilisation fréquente en sciences</a>
       <ul>
-        <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a></li>
+        <li><a href="#exemple">Exemple</a></li>
       </ul>
     </li>
-    <li><a href="#exercices-pratiques-graphiques">Exercices pratiques graphiques</a>
+    <li><a href="#accéder-à-une-valeur-avec-une-clé">Accéder à une valeur avec une clé</a></li>
+    <li><a href="#ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</a>
       <ul>
-        <li><a href="#-exercice-1--sulfate-de-cuivre">🔹 Exercice 1 – Sulfate de cuivre</a></li>
-        <li><a href="#-exercice-2--comparaison-de-deux-sels">🔹 Exercice 2 – Comparaison de deux sels</a></li>
-        <li><a href="#-exercice-3--prévision">🔹 Exercice 3 – Prévision</a></li>
-        <li><a href="#exercice-1--graphique-à-barres">Exercice 1 – Graphique à barres</a></li>
-        <li><a href="#exercice-2--barres-derreur">Exercice 2 – Barres d’erreur</a></li>
-        <li><a href="#exercice-3--droite-de-régression">Exercice 3 – Droite de régression</a></li>
+        <li><a href="#ajouter">Ajouter</a></li>
+        <li><a href="#modifier">Modifier</a></li>
+      </ul>
+    </li>
+    <li><a href="#vérifier-si-une-clé-est-présente">Vérifier si une clé est présente</a></li>
+    <li><a href="#parcourir-un-dictionnaire">Parcourir un dictionnaire</a>
+      <ul>
+        <li><a href="#via-les-clés">Via les clés</a></li>
+        <li><a href="#via-les-valeurs">Via les valeurs</a></li>
+        <li><a href="#via-les-paires-clé-valeur-">Via les paires clé-valeur :</a></li>
+      </ul>
+    </li>
+    <li><a href="#supprimer-une-entrée">Supprimer une entrée</a></li>
+    <li><a href="#traitement-de-fichiers-textes-csv">Traitement de fichiers textes (.csv)</a>
+      <ul>
+        <li><a href="#lire-et-écrire-des-fichiers-de-données-csv">Lire et écrire des fichiers de données (.csv)</a></li>
+      </ul>
+    </li>
+    <li><a href="#traitement-de-fichiers-csv-avec-pandas">Traitement de fichiers .csv avec Pandas</a>
+      <ul>
+        <li><a href="#importer-la-bibliothèque">Importer la bibliothèque</a></li>
+      </ul>
+    </li>
+    <li><a href="#charger-un-fichier-csv">Charger un fichier CSV</a></li>
+    <li><a href="#afficher-les-10-premières-lignes">Afficher les 10 premières lignes</a></li>
+    <li><a href="#afficher-les-noms-des-colonnes">Afficher les noms des colonnes</a></li>
+    <li><a href="#afficher-toutes-les-mesures-pour-un-seul-composé">Afficher toutes les mesures pour un seul composé</a></li>
+    <li><a href="#accéder-à-une-colonne-ex--températures">Accéder à une colonne (ex. : Températures)</a></li>
+    <li><a href="#moyenne-de-solubilité-pour-un-composé">Moyenne de solubilité pour un composé</a></li>
+    <li><a href="#boucler-sur-les-composés">Boucler sur les composés</a></li>
+    <li><a href="#ajouter-une-colonne-calculée">Ajouter une colonne calculée</a></li>
+    <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a>
+      <ul>
+        <li><a href="#exercice-1---densités">Exercice 1 - Densités</a></li>
+        <li><a href="#exercice-2--chargement-et-exploration">Exercice 2 – Chargement et exploration</a></li>
+        <li><a href="#exercice-3--moyenne-de-solubilité">Exercice 3 – Moyenne de solubilité</a></li>
+        <li><a href="#exercice-4--boucle-sur-les-composés">Exercice 4 – Boucle sur les composés</a></li>
+        <li><a href="#exercice-5--ajout-dune-colonne">Exercice 5 – Ajout d’une colonne</a></li>
       </ul>
     </li>
     <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
@@ -143,12 +163,12 @@
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Les dictionnaires et le traitement de fichiers textes (CSV)</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine9/atelier/index.html" title="Activité 9 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine11/index.html" title="Évaluation #3 (20%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/atelier/index.html" title="Activité 10 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -168,328 +188,217 @@
   <header class="headline">
   </header>
 
-<h1 id="traitement-de-fichiers-csv-avec-pandas-et-autres-graphiques-scientifiques"> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques</h1>
+<h1 id="les-dictionnaires-et-le-traitement-de-fichiers-textes-csv"> Les dictionnaires et le traitement de fichiers textes (CSV)</h1>
 
 <h2 id="objectifs">Objectifs</h2>
 <ul>
-<li>Lire un tableau contenant des données expérimentales</li>
+<li>Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique)</li>
+<li>Manipuler des données dans un dictionnaire (accès, ajout, rmodification).</li>
+<li>Parcourir un dictionnaire à l’aide d’une boucle <code>for</code>.</li>
+<li>Vérifier la présence d’une clé avec <code>in</code>.</li>
+<li>Lire un fichier csv contenant des données expérimentales</li>
 <li>Explorer les données</li>
 <li>Filtrer les résultats pour donnée ciblée.</li>
 <li>Comparer des valeurs selon une donnée</li>
-<li>Tracer un graphique à barres</li>
-<li>Ajouter des barres d’erreur</li>
-<li>Tracer une droite de régression</li>
-<li>Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R²</li>
-<li>Établir une relation entre deux données</li>
-<li>Interpréter les résultats pour répondre à une question scientifique</li>
 </ul>
 <hr>
-<h2 id="1-importer-la-bibliothèque">1. Importer la bibliothèque</h2>
+<h2 id="quest-ce-quun-dictionnaire">Qu’est-ce qu’un dictionnaire?</h2>
+<p>Un <strong>dictionnaire</strong> est une structure de données qui associe des <strong>clés</strong> à des <strong>valeurs</strong>.
+Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</p>
+<p><strong>Syntaxe de base</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mon_dictionnaire <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clé1&#34;</span>: valeur1,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clé2&#34;</span>: valeur2
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h2 id="utilisation-fréquente-en-sciences">Utilisation fréquente en sciences</h2>
+<p>Les dictionnaires sont utiles pour :</p>
+<ul>
+<li>Associer des symboles d’éléments à des valeurs (masse molaire, charge, état)</li>
+<li>Regrouper des résultats par échantillon (ex. température par lieu)</li>
+<li>Associer des noms de gènes à leur expression</li>
+</ul>
+<h3 id="exemple">Exemple</h3>
+<p>Un dictionnaire contenant les masses molaires de quelques éléments :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;H&#34;</span>: <span style="color:#ae81ff">1.008</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;O&#34;</span>: <span style="color:#ae81ff">15.999</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;C&#34;</span>: <span style="color:#ae81ff">12.011</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h2 id="accéder-à-une-valeur-avec-une-clé">Accéder à une valeur avec une clé</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(masses_molaires[<span style="color:#e6db74">&#34;O&#34;</span>])  <span style="color:#75715e"># Affiche : 15.999</span></span></span></code></pre></div>
+<blockquote>
+<p>Si la clé n’existe pas, Python déclenche une erreur <code>KeyError</code>.</p>
+</blockquote>
+<h2 id="ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</h2>
+<h3 id="ajouter">Ajouter</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires[<span style="color:#e6db74">&#34;N&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">14.007</span></span></span></code></pre></div>
+<h3 id="modifier">Modifier</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires[<span style="color:#e6db74">&#34;C&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">12.01</span>  <span style="color:#75715e"># Correction</span></span></span></code></pre></div>
+<h2 id="vérifier-si-une-clé-est-présente">Vérifier si une clé est présente</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;H&#34;</span> <span style="color:#f92672">in</span> masses_molaires:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;L’hydrogène est dans le dictionnaire.&#34;</span>)</span></span></code></pre></div>
+<h2 id="parcourir-un-dictionnaire">Parcourir un dictionnaire</h2>
+<h3 id="via-les-clés">Via les clés</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> masses_molaires:
+</span></span><span style="display:flex;"><span>    print(element)</span></span></code></pre></div>
+<h3 id="via-les-valeurs">Via les valeurs</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> masses_molaires<span style="color:#f92672">.</span>values():
+</span></span><span style="display:flex;"><span>    print(valeur)</span></span></code></pre></div>
+<ul>
+<li><code>.values()</code> permet d’obtenir <strong>uniquement les valeurs</strong> du dictionnaire, sans les clés.</li>
+<li><strong>Utile quand on veut faire un calcul avec les valeurs</strong>, comme une moyenne ou une somme.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> densites<span style="color:#f92672">.</span>values():
+</span></span><span style="display:flex;"><span>    print(valeur)</span></span></code></pre></div>
+<h3 id="via-les-paires-clé-valeur-">Via les paires clé-valeur :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element, masse <span style="color:#f92672">in</span> masses_molaires<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>element<span style="color:#e6db74">}</span><span style="color:#e6db74"> → </span><span style="color:#e6db74">{</span>masse<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<ul>
+<li><code>.items()</code> permet d’obtenir les couples <strong>clé-valeur</strong> sous forme de paires (appelées aussi tuples en Python).</li>
+<li>Utile quand on veut à la fois le <strong>nom (clé)</strong> et la <strong>valeur associée</strong> pour un affichage ou un traitement.</li>
+</ul>
+<h2 id="supprimer-une-entrée">Supprimer une entrée</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">del</span> masses_molaires[<span style="color:#e6db74">&#34;H&#34;</span>]</span></span></code></pre></div>
+<hr>
+<h2 id="traitement-de-fichiers-textes-csv">Traitement de fichiers textes (.csv)</h2>
+<p>Les fichiers <code>.csv</code> (<em>Comma-Separated Values</em>) permettent de stocker des tableaux de données.</p>
+<p><strong>Exemple de fichier <code>mesures.csv</code> :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>temps,temperature
+0,22.5
+5,24.1
+10,26.3
+15,28.0</code></pre></div>
+<h3 id="lire-et-écrire-des-fichiers-de-données-csv">Lire et écrire des fichiers de données (.csv)</h3>
+<p><strong>Écrire (créer)</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;donnees.csv&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;Nom,Âge</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;Alice,20</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;Bob,22</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<p><strong>Lire un fichier <code>.csv</code></strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Lecture du fichier CSV</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;donnees.csv&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>    contenu <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>    print(contenu)</span></span></code></pre></div>
+<h4 id="pour-des-données-numériques-on-peut-utiliser-numpysavetxt-et-numpyloadtxt">Pour des données <strong>numériques</strong>, on peut utiliser <code>numpy.savetxt()</code> et <code>numpy.loadtxt()</code></h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sauvegarder un tableau</span>
+</span></span><span style="display:flex;"><span>tableau <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]])
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>savetxt(<span style="color:#e6db74">&#34;tableau.csv&#34;</span>, tableau, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Charger un tableau</span>
+</span></span><span style="display:flex;"><span>donnees <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>loadtxt(<span style="color:#e6db74">&#34;tableau.csv&#34;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>)
+</span></span><span style="display:flex;"><span>print(donnees)</span></span></code></pre></div>
+<hr>
+<h2 id="traitement-de-fichiers-csv-avec-pandas">Traitement de fichiers .csv avec Pandas</h2>
+<h3 id="importer-la-bibliothèque">Importer la bibliothèque</h3>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd</span></span></code></pre></div>
-<hr>
-<h2 id="2-charger-un-fichier-csv">2. Charger un fichier CSV</h2>
+<h2 id="charger-un-fichier-csv">Charger un fichier CSV</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;solubilite.csv&#34;</span>)</span></span></code></pre></div>
-<p>Ce fichier contient des données expérimentales : pour chaque composé, on indique la <strong>température</strong> et la <strong>quantité dissoute</strong> dans l’eau.</p>
-<hr>
-<h2 id="3-afficher-les-premières-lignes">3. Afficher les premières lignes</h2>
+<h2 id="afficher-les-10-premières-lignes">Afficher les 10 premières lignes</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>head())</span></span></code></pre></div>
-<hr>
-<h2 id="4-afficher-les-noms-de-colonnes">4. Afficher les noms de colonnes</h2>
+<h2 id="afficher-les-noms-des-colonnes">Afficher les noms des colonnes</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>columns)</span></span></code></pre></div>
-<hr>
-<h2 id="5-afficher-toutes-les-mesures-pour-un-seul-composé">5. Afficher toutes les mesures pour un seul composé</h2>
+<h2 id="afficher-toutes-les-mesures-pour-un-seul-composé">Afficher toutes les mesures pour un seul composé</h2>
 <p>Exemple : tout ce qui concerne le <strong>nitrate de potassium (KNO₃)</strong></p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;KNO3&#34;</span>
 </span></span><span style="display:flex;"><span>print(df[filtre])</span></span></code></pre></div>
-<hr>
-<h2 id="6-accéder-à-une-colonne-ex--températures">6. Accéder à une colonne (ex. : températures)</h2>
+<h2 id="accéder-à-une-colonne-ex--températures">Accéder à une colonne (ex. : Températures)</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df[<span style="color:#e6db74">&#34;Température&#34;</span>])</span></span></code></pre></div>
-<hr>
-<h2 id="7-moyenne-de-solubilité-pour-un-composé">7. Moyenne de solubilité pour un composé</h2>
+<h2 id="moyenne-de-solubilité-pour-un-composé">Moyenne de solubilité pour un composé</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;NaCl&#34;</span>
 </span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> df[filtre][<span style="color:#e6db74">&#34;Solubilité&#34;</span>]<span style="color:#f92672">.</span>mean()
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne de solubilité pour NaCl : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
-<hr>
-<h2 id="8-boucler-sur-les-composés">8. Boucler sur les composés</h2>
+<h2 id="boucler-sur-les-composés">Boucler sur les composés</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>composes <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>]<span style="color:#f92672">.</span>unique()
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> compose <span style="color:#f92672">in</span> composes:
 </span></span><span style="display:flex;"><span>    moyenne <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> compose][<span style="color:#e6db74">&#34;Solubilité&#34;</span>]<span style="color:#f92672">.</span>mean()
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>compose<span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
-<hr>
-<h2 id="9-ajouter-une-colonne-calculée">9. Ajouter une colonne calculée</h2>
+<h2 id="ajouter-une-colonne-calculée">Ajouter une colonne calculée</h2>
 <p>Exemple : ajouter une colonne indiquant si la solubilité est &ldquo;haute&rdquo; (&gt; 80) ou &ldquo;faible&rdquo;</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Évaluation&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Solubilité&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">80</span>
 </span></span><span style="display:flex;"><span>print(df)</span></span></code></pre></div>
 <hr>
-<h2 id="importer-la-bibliothèque">Importer la bibliothèque</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt</span></span></code></pre></div>
-<h2 id="graphique-à-barres">Graphique à barres</h2>
-<p><strong>Exemple de base :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>noms <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>]
-</span></span><span style="display:flex;"><span>valeurs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>bar(noms, valeurs)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Résultats&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xticks(rotation<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#34;Score&#34;</span>])
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Fonction</th>
-<th>Rôle</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>plt.bar(x, y)</code></td>
-<td>Crée des barres</td>
-</tr>
-<tr>
-<td><code>plt.xticks()</code></td>
-<td>Contrôle les étiquettes sur l’axe x</td>
-</tr>
-<tr>
-<td><code>plt.title()</code></td>
-<td>Ajoute un titre</td>
-</tr>
-<tr>
-<td><code>plt.legend()</code></td>
-<td>Affiche une légende</td>
-</tr>
-</tbody>
-</table>
-<h2 id="graphique-avec-barres-derreur">Graphique avec barres d’erreur</h2>
-<p><strong>Exemple :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">9</span>]
-</span></span><span style="display:flex;"><span>erreurs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.3</span>, <span style="color:#ae81ff">0.6</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>errorbar(x, y, yerr<span style="color:#f92672">=</span>erreurs, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Mesures&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Mesures avec incertitude&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Signification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>yerr</code></td>
-<td>barres d’erreur verticales</td>
-</tr>
-<tr>
-<td><code>xerr</code></td>
-<td>(optionnel) erreurs horizontales</td>
-</tr>
-<tr>
-<td><code>fmt=&quot;o&quot;</code></td>
-<td>style des points</td>
-</tr>
-</tbody>
-</table>
+
+<details class=" box cstyle notices blue expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    À retenir
+  </summary>
+  <div class="box-content">
+<ul>
+<li><strong>Dictionnaires</strong> :</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mon_dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;</span>: <span style="color:#ae81ff">5</span>, <span style="color:#e6db74">&#34;b&#34;</span>: <span style="color:#ae81ff">10</span>}
+</span></span><span style="display:flex;"><span>mon_dict[<span style="color:#e6db74">&#34;a&#34;</span>] 				<span style="color:#75715e"># accéder à une valeur</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> clé <span style="color:#f92672">in</span> mon_dict: 			<span style="color:#75715e"># boucle sur les clés</span>
+</span></span><span style="display:flex;"><span>mon_dict<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;clé&#34;</span>, valeur_par_défaut) 	<span style="color:#75715e"># accès sécurisé</span>
+</span></span><span style="display:flex;"><span>mon_dict<span style="color:#f92672">.</span>keys(), <span style="color:#f92672">.</span>values() 		<span style="color:#75715e"># itérations</span></span></span></code></pre></div>
+<ul>
+<li>
+<p><strong>Fichiers .csv  (sans Pandas)</strong>: <code>open()</code>, <code>write()</code>, <code>read()</code>, <code>loadtxt()</code>, <code>savetxt()</code></p>
+</li>
+<li>
+<p><strong>Fichiers .csv  (avec Pandas)</strong>:</p>
+</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;fichier.csv&#34;</span>) 	<span style="color:#75715e"># lecture de fichier</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>head() 			<span style="color:#75715e"># aperçu des premières données</span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;colonne&#34;</span>] 			<span style="color:#75715e"># accès à une colonne</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>loc[<span style="color:#ae81ff">3</span>], df<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">3</span>] 		<span style="color:#75715e"># accès à une ligne</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>mean(), df[<span style="color:#e6db74">&#34;col&#34;</span>]<span style="color:#f92672">.</span>std() 	<span style="color:#75715e"># stats</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>dropna() 			<span style="color:#75715e"># suppression des lignes incomplètes</span>
+</span></span><span style="display:flex;"><span>df[df[<span style="color:#e6db74">&#34;col&#34;</span>] <span style="color:#f92672">&gt;</span> seuil] 		<span style="color:#75715e"># filtrage conditionnel</span></span></span></code></pre></div>
+  </div>
+</details>
 <hr>
-<h2 id="tracer-une-droite-de-régression">Tracer une droite de régression</h2>
-<p><strong>Rappel</strong> : L&rsquo;équation d&rsquo;une droite est <code>y = a·x + b</code></p>
-<p><strong>Exemple :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>])
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">6.1</span>, <span style="color:#ae81ff">8.0</span>])
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Droite de régression : y = a·x + b</span>
-</span></span><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(x, y, <span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>y_reg <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> x <span style="color:#f92672">+</span> b
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, <span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Données&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y_reg, <span style="color:#e6db74">&#34;-&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;y = </span><span style="color:#e6db74">{</span>a<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">x + </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<h2 id="affichage-propre">Affichage propre</h2>
-<table>
-<thead>
-<tr>
-<th>Fonction</th>
-<th>Effet</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>plt.show()</code></td>
-<td>Affiche le graphique</td>
-</tr>
-<tr>
-<td><code>plt.grid(True)</code></td>
-<td>Ajoute une grille</td>
-</tr>
-<tr>
-<td><code>plt.tight_layout()</code></td>
-<td>Ajuste l&rsquo;espacement pour éviter le chevauchement</td>
-</tr>
-</tbody>
-</table>
-<h2 id="résumé-minimal">Résumé minimal</h2>
-<table>
-<thead>
-<tr>
-<th>Tâche</th>
-<th>Fonction</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Graphique à barres</td>
-<td><code>plt.bar()</code></td>
-</tr>
-<tr>
-<td>Barres d’erreur</td>
-<td><code>plt.errorbar()</code></td>
-</tr>
-<tr>
-<td>Titre</td>
-<td><code>plt.title()</code></td>
-</tr>
-<tr>
-<td>Légende</td>
-<td><code>plt.legend()</code></td>
-</tr>
-<tr>
-<td>Grille</td>
-<td><code>plt.grid(True)</code></td>
-</tr>
-<tr>
-<td>Droite de régression</td>
-<td><code>np.polyfit()</code>, <code>plt.plot()</code></td>
-</tr>
-<tr>
-<td>Affichage final</td>
-<td><code>plt.show()</code>, <code>plt.tight_layout()</code></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</h3>
-<p><a href="https://python-a25.netlify.app/blocnotes/exercices_pandas_barres_reg.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
-<h4 id="pandas">Pandas</h4>
-<h5 id="exercice-1--chargement-et-exploration">Exercice 1 – Chargement et exploration</h5>
+<h2 id="exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</h2>
+<p><a href="https://python-a25.netlify.app/blocnotes/exercices_dict_fichiers.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
+<h3 id="exercice-1---densités">Exercice 1 - Densités</h3>
+<p>Crée un dictionnaire <code>densites</code> qui contient la densité (en g/mL) de l’eau, de l’éthanol et du mercure :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>densites <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;eau&#34;</span>: <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;éthanol&#34;</span>: <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;mercure&#34;</span>: <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Puis :</p>
+<ol>
+<li>Affiche la densité du mercure.</li>
+<li>Ajoute la densité de l’huile (0.91 g/mL).</li>
+<li>Affiche toutes les substances et leur densité.</li>
+</ol>
+<h3 id="exercice-2--chargement-et-exploration">Exercice 2 – Chargement et exploration</h3>
+<p><a href="/semaine10/solubilite.csv">Fichier de données: solubilite.csv</a></p>
 <ol>
 <li>Charge le fichier <code>solubilite.csv</code>.</li>
 <li>Affiche les premières lignes.</li>
 <li>Affiche les noms de colonnes.</li>
 <li>Affiche toutes les températures pour le composé <code>&quot;NaCl&quot;</code>.</li>
 </ol>
-<h5 id="exercice-2--moyenne-de-solubilité">Exercice 2 – Moyenne de solubilité</h5>
+<h3 id="exercice-3--moyenne-de-solubilité">Exercice 3 – Moyenne de solubilité</h3>
 <ol>
 <li>Calcule la moyenne de solubilité pour <code>&quot;KNO3&quot;</code>.</li>
 <li>Fais de même pour <code>&quot;NaCl&quot;</code>.</li>
 <li>Compare les deux valeurs avec des f-strings.</li>
 </ol>
-<h5 id="exercice-3--boucle-sur-les-composés">Exercice 3 – Boucle sur les composés</h5>
+<h3 id="exercice-4--boucle-sur-les-composés">Exercice 4 – Boucle sur les composés</h3>
 <ol>
 <li>Affiche la moyenne de solubilité pour chaque composé du fichier.</li>
 <li>Indique pour chacun si elle est supérieure à 80 g/100mL.</li>
 </ol>
-<h4 id="exercice-4--ajout-dune-colonne">Exercice 4 – Ajout d’une colonne</h4>
+<h3 id="exercice-5--ajout-dune-colonne">Exercice 5 – Ajout d’une colonne</h3>
 <ol>
 <li>Crée une colonne <code>Tendance</code> qui vaut <code>&quot;Haute&quot;</code> si la solubilité est &gt; 80 et <code>&quot;Faible&quot;</code> sinon.</li>
 <li>Affiche les 10 premières lignes du tableau mis à jour.</li>
 </ol>
-<h2 id="exercices-pratiques-graphiques">Exercices pratiques graphiques</h2>
-<h3 id="-exercice-1--sulfate-de-cuivre">🔹 Exercice 1 – Sulfate de cuivre</h3>
-<ol>
-<li>Températures : <code>[0, 10, 20, 30, 40, 50]</code></li>
-<li>Solubilité (g/100g eau) : <code>[23, 27, 32, 37, 44, 51]</code></li>
-<li>Calcule la régression linéaire.</li>
-<li>Affiche les résultats et une conclusion scientifique.</li>
-</ol>
-<h3 id="-exercice-2--comparaison-de-deux-sels">🔹 Exercice 2 – Comparaison de deux sels</h3>
-<ol>
-<li>
-<p>Sel A :</p>
-<ul>
-<li>Température : <code>[0, 20, 40, 60]</code></li>
-<li>Solubilité : <code>[15, 21, 30, 38]</code></li>
-</ul>
-</li>
-<li>
-<p>Sel B :</p>
-<ul>
-<li>Température : <code>[0, 20, 40, 60]</code></li>
-<li>Solubilité : <code>[30, 32, 33, 33.5]</code></li>
-</ul>
-</li>
-<li>
-<p>Pour chaque sel :</p>
-<ul>
-<li>Effectue la régression</li>
-<li>Affiche pente, intercept, R²</li>
-<li>Déduis quel sel est le plus influencé par la température</li>
-</ul>
-</li>
-</ol>
-<h3 id="-exercice-3--prévision">🔹 Exercice 3 – Prévision</h3>
-<ol>
-<li>Utilise les données de l’exemple principal</li>
-<li>Calcule la solubilité prévue à 60 °C avec la formule :</li>
-</ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>valeur_predite <span style="color:#f92672">=</span> resultat<span style="color:#f92672">.</span>slope <span style="color:#f92672">*</span> <span style="color:#ae81ff">60</span> <span style="color:#f92672">+</span> resultat<span style="color:#f92672">.</span>intercept
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Solubilité prévue à 60 °C : </span><span style="color:#e6db74">{</span>valeur_predite<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100g d’eau&#34;</span>)</span></span></code></pre></div>
-<hr>
-<h3 id="exercice-1--graphique-à-barres">Exercice 1 – Graphique à barres</h3>
-<p><strong>Énoncé :</strong>
-Affiche un graphique à barres pour les éléments <code>&quot;Fer&quot;</code>, <code>&quot;Cuivre&quot;</code>, <code>&quot;Zinc&quot;</code> avec les valeurs <code>[12, 7, 5]</code>.</p>
-<p><strong>Solution :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>elements <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Fer&#34;</span>, <span style="color:#e6db74">&#34;Cuivre&#34;</span>, <span style="color:#e6db74">&#34;Zinc&#34;</span>]
-</span></span><span style="display:flex;"><span>quantites <span style="color:#f92672">=</span> [<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>bar(elements, quantites)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Concentration des métaux&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#34;mg/L&#34;</span>])
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<h3 id="exercice-2--barres-derreur">Exercice 2 – Barres d’erreur</h3>
-<p><strong>Énoncé :</strong>
-Pour <code>x = [1, 2, 3]</code>, <code>y = [5.1, 5.0, 5.2]</code>, <code>yerr = [0.1, 0.2, 0.15]</code>, trace les points avec barres d’erreur.</p>
-<p><strong>Solution :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5.1</span>, <span style="color:#ae81ff">5.0</span>, <span style="color:#ae81ff">5.2</span>]
-</span></span><span style="display:flex;"><span>yerr <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">0.15</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>errorbar(x, y, yerr<span style="color:#f92672">=</span>yerr, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Mesures&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Tension mesurée&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<h3 id="exercice-3--droite-de-régression">Exercice 3 – Droite de régression</h3>
-<p><strong>Énoncé :</strong>
-Pour <code>x = [0, 1, 2, 3]</code>, <code>y = [1, 2.1, 3.9, 6.0]</code>, trace les points et la droite de régression, avec son équation dans la légende.</p>
-<p><strong>Solution :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">3.9</span>, <span style="color:#ae81ff">6.0</span>])
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(x, y, <span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, <span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Points&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, a<span style="color:#f92672">*</span>x <span style="color:#f92672">+</span> b, <span style="color:#e6db74">&#34;-&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;y = </span><span style="color:#e6db74">{</span>a<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">x + </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
-<blockquote>
-<p><strong>RAPPEL</strong>: Semaine prochaine c&rsquo;est le <strong>troisième et dernier examen</strong> (20%)</p>
-</blockquote>
 <ol>
-<li>Lire la description du <a href="/semaine12/index.html">Projet final</a></li>
-<li>Prendre connaissance de la <a href="/semaine12/grille/index.html">Grille de correction</a></li>
-<li>S&rsquo;approprier des <a href="/semaine12/competences_reussite/index.html">Notions à savoir pour réussir le projet</a></li>
+<li>Lire la matière sur <a href="/semaine11/index.html">Les graphiques avancés et la regression linéaire</a></li>
+<li>Faire les <a href="/semaine11/index.html#exercices-à-faire-avant-le-cours">exercices se trouvant à la fin de la leçon 11</a></li>
 </ol>
 
   <footer class="footline">
@@ -548,18 +457,19 @@ Pour <code>x = [0, 1, 2, 3]</code>, <code>y = [1, 2.1, 3.9, 6.0]</code>, trace l
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables, types de données et algorithme)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Évaluation #1 (20%)</a></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Évaluation #1 (15%)</a></li>
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a><ul id="R-subsections-7ea566d41fb51898f9619db44b97f441" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères et graphiques de base</a></li>
             <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
             <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
-            <li class="active " data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques</a></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Évaluation #3 (20%)</a></li>
+            <li class="active parent " data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Les dictionnaires et le traitement de fichiers textes (CSV)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine10/atelier/index.html"><a class="padding" href="/semaine10/atelier/index.html">Activité 10</a></li></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Les graphiques avancés et la regression linéaire</a></li>
             <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
             <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Finalisation et Remise du rapport final</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation #3 (25%)</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
           </ul>
@@ -579,8 +489,8 @@ Pour <code>x = [0, 1, 2, 3]</code>, <code>y = [1, 2.1, 3.9, 6.0]</code>, trace l
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1753553351" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753553351" defer></script>
-    <script src="/js/theme.min.js?1753553351" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753578072" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753578072" defer></script>
+    <script src="/js/theme.min.js?1753578072" defer></script>
   </body>
 </html>

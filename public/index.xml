@@ -64,7 +64,7 @@
       <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Gérer les entrées (saisies au clavier) d’un programme Python. Utiliser des fonctions prédéfinies. Définir ses propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
     </item>
     <item>
-      <title> Évaluation #1 (20%)</title>
+      <title> Évaluation #1 (15%)</title>
       <link>https://example.org/semaine4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine4/index.html</guid>
@@ -103,21 +103,21 @@
       <link>https://example.org/semaine9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine9/index.html</guid>
-      <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.array([32.0, 35.5, 37.2]) print(f&#34;Solubilités mesurées : {sol}&#34;)&#xD;Tableau 2D Un tableau numpy multidimentionnel c’est un tableau numpy qui contient une liste de listes. matrice = np.</description>
+      <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.array([32.0, 35.5, 37.2]) print(f&#34;Solubilités mesurées : {sol}&#34;)&#xD;Tableau 2D Un tableau numpy multidimentionnel c’est un tableau numpy qui contient une liste de listes.</description>
     </item>
     <item>
-      <title> Traitement de fichiers CSV avec Pandas et autres graphiques scientifiques</title>
+      <title> Les dictionnaires et le traitement de fichiers textes (CSV)</title>
       <link>https://example.org/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine10/index.html</guid>
-      <description>Objectifs Lire un tableau contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Tracer un graphique à barres Ajouter des barres d’erreur Tracer une droite de régression Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Interpréter les résultats pour répondre à une question scientifique 1. Importer la bibliothèque import pandas as pd&#xD;2.</description>
+      <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.</description>
     </item>
     <item>
-      <title> Évaluation #3 (20%)</title>
+      <title> Les graphiques avancés et la regression linéaire</title>
       <link>https://example.org/semaine11/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine11/index.html</guid>
-      <description>Informations Date:&#x9;Semaine #11 (Voir le calendrier) Matière: Semaines 9 et 10 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format:&#x9;À confirmer</description>
+      <description>Tracer un graphique à barres&#xA;Ajouter des barres d’erreur&#xA;Tracer une droite de régression&#xA;Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R²&#xA;Établir une relation entre deux données&#xA;Interpréter les résultats pour répondre à une question scientifique&#xA;Importer la bibliothèque import matplotlib.pyplot as plt&#xD;Graphique à barres Exemple de base :&#xA;noms = [&#34;A&#34;, &#34;B&#34;, &#34;C&#34;] valeurs = [4, 7, 5] plt.bar(noms, valeurs) plt.title(&#34;Résultats&#34;) plt.xticks(rotation=0) plt.</description>
     </item>
     <item>
       <title> Projet - Présentation et analyse</title>
@@ -141,25 +141,25 @@
       <description></description>
     </item>
     <item>
-      <title> Finalisation et Remise du rapport final</title>
+      <title> Évaluation #3 (25%)</title>
       <link>https://example.org/semaine15/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine15/index.html</guid>
-      <description>Vous devez remettre votre code sur Moodle : le fichier projet_prenom_nom.ipynb au plus tard ce soir à 23h59.</description>
+      <description>Informations Date:&#x9;Semaine #15 (Voir le calendrier) Matière: Semaines 9 à 11 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format:&#x9;À confirmer Important&#xD;Vous devez remettre votre code sur Moodle : le fichier projet_prenom_nom.ipynb au plus tard ce soir à 23h59.</description>
     </item>
     <item>
       <title>Solutions des exercices</title>
       <link>https://example.org/solutions_exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/index.html</guid>
-      <description>02. Variables, types de donnees et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec IF-ELIF-ELSE et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Traitement de fichiers CSV et graphiques scientifiques</description>
+      <description>02. Variables, types de donnees et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec IF-ELIF-ELSE et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Dictionnaires et traitement de fichiers CSV&#xA;11. Graphiques avancés et régression linéaire</description>
     </item>
     <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions_ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/index.html</guid>
-      <description>02. Variables, types de données et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec if-elif-else et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Traitement de fichiers CSV et graphiques scientifiques</description>
+      <description>02. Variables, types de données et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec if-elif-else et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Dictionnaires et traitement de fichiers CSV&#xA;11. Graphiques avancés et régression linéaire</description>
     </item>
   </channel>
 </rss>
