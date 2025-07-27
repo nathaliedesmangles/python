@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs À la fin de la leçon, vous devrez être en mesure de :
+Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:
+Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Les fonctions personnalisées :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs À la fin de la leçon, vous devrez être en mesure de :
+Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:
+Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :.">
+    <meta property="og:url" content="https://example.org/semaine3/fonctions_perso/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content=" Les fonctions personnalisées :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs À la fin de la leçon, vous devrez être en mesure de :
+Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:
+Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content=" Les fonctions personnalisées :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs À la fin de la leçon, vous devrez être en mesure de :
+Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:
+Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :.">
+    <meta itemprop="wordCount" content="2053">
+    <title> Les fonctions personnalisées :: 420-SN1-RE</title>
+    <link href="/semaine3/fonctions_perso/index.xml" rel="alternate" type="application/rss+xml" title=" Les fonctions personnalisées :: 420-SN1-RE">
+    <link href="/images/logo.png?1753657972" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753657972" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753657972" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753657972" rel="stylesheet">
+    <link href="/css/theme.min.css?1753657972" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753657972" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753657972" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753657972" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753657972" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753657972" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753657972" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753657972" defer></script>
+    <script src="/js/search.min.js?1753657972" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/semaine3\/fonctions_perso\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1753657972";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1753657972" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/semaine3/fonctions_perso/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs">Objectifs</a></li>
+    <li><a href="#création-de-fonction-avec-def">Création de fonction avec <code>def</code></a>
+      <ul>
+        <li><a href="#comment-créer-et-utiliser-une-fonction-">Comment créer et utiliser une fonction ?</a></li>
+        <li><a href="#la-portée-locale-des-variables">La portée locale des variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#documenter-ses-fonctions-docstrings">Documenter ses fonctions (<em>docstrings</em>)</a>
+      <ul>
+        <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a></li>
+      </ul>
+    </li>
+    <li><a href="#exercice-1--la-loi-dohm">Exercice 1 : La loi d&rsquo;Ohm</a>
+      <ul>
+        <li><a href="#exercice-2--élément-chimique">Exercice 2 : Élément chimique</a></li>
+        <li><a href="#exercice-3--convertir-celsius-en-kelvin">Exercice 3 : Convertir Celsius en Kelvin</a></li>
+        <li><a href="#exercice-4--calculer-une-énergie-cinétique">Exercice 4 : Calculer une énergie cinétique</a></li>
+        <li><a href="#exercice-5--aire-dun-cercle">Exercice 5 : Aire d&rsquo;un cercle</a></li>
+        <li><a href="#exercice-6--vérifier-la-portée-locale">Exercice 6 : Vérifier la portée locale</a></li>
+        <li><a href="#exercice-7--trouvez-les-erreurs-et-corrigez-les">Exercice 7 : Trouvez les erreurs et corrigez les</a></li>
+      </ul>
+    </li>
+    <li><a href="#comment-décortiquer-un-problème-scientifique-en-algorithme-et-le-traduire-en-python-">Comment décortiquer un problème scientifique en algorithme et le traduire en Python ?</a>
+      <ul>
+        <li><a href="#étape-1--lire-et-comprendre-le-problème"><strong>Étape 1 — Lire et comprendre le problème</strong></a></li>
+        <li><a href="#étape-2--identifier-les-variables-et-constantes"><strong>Étape 2 — Identifier les variables et constantes</strong></a></li>
+        <li><a href="#étape-3--choisir-ou-écrire-la-formule"><strong>Étape 3 — Choisir ou écrire la formule</strong></a></li>
+        <li><a href="#étape-4--écrire-un-algorithme-clair"><strong>Étape 4 — Écrire un algorithme clair</strong></a></li>
+        <li><a href="#étape-5--traduire-en-code-python"><strong>Étape 5 — Traduire en code Python</strong></a></li>
+        <li><a href="#étape-6--vérifier-et-tester"><strong>Étape 6 — Vérifier et tester</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine3/index.html"><span itemprop="name"> Algorithme et débogage</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Les fonctions personnalisées</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine3/index.html" title="Algorithme et débogage (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine3/atelier/index.html" title="Atelier 3 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine3" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="les-fonctions-personnalisées"> Les fonctions personnalisées</h1>
+
+<h2 id="objectifs">Objectifs</h2>
+<p>À la fin de la leçon, vous devrez être en mesure de :</p>
+<ul>
+<li>Définir vos propres fonctions avec <code>def</code> (paramètres, <code>return</code>, portée locale)</li>
+<li>Documenter les fonctions personnalisées (<code>docstring</code>)</li>
+</ul>
+<hr>
+<h2 id="création-de-fonction-avec-def">Création de fonction avec <code>def</code></h2>
+<blockquote>
+<p>Une fonction peut:</p>
+<ol>
+<li>Afficher un résultat (ex: <code>print()</code>)</li>
+<li>Retourner un résultat (ex: <code>input()</code>)</li>
+</ol>
+</blockquote>
+<h3 id="comment-créer-et-utiliser-une-fonction-">Comment créer et utiliser une fonction ?</h3>
+<ol>
+<li>On utilise le mot clé <code>def</code>.</li>
+<li>Suivi du nom de la fonction.</li>
+<li>Suivi de parenthèses <code>()</code>.</li>
+<li>Suivi de deux-points <code>:</code>.</li>
+<li>Les instructions de la fonction sont sur les lignes d&rsquo;en dessous, décalées. Ce décalage, permet à Python de reconnaitre le code qui appartient à la fonction et qui sera exécuté lors de son utilisation.
+L&rsquo;absence de ce décalage (<strong>indentation</strong>) provoque l&rsquo;erreur <em><strong>IndentationError</strong></em>.</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">IndentationError</span>: expected an indented block after function definition on line X</span></span></code></pre></div>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Important
+  </summary>
+  <div class="box-content">
+<ul>
+<li>Les règles de <strong>nomenclature des variables</strong>, s&rsquo;appliquent aussi aux noms de fonctions.</li>
+<li>Entre les parenthèses, on peut indiquer des <strong>paramètres ou pas</strong>, mais les <strong>parenthèses sont obligatoires</strong>.</li>
+</ul>
+  </div>
+</details>
+<h4 id="syntaxes-générales">Syntaxes générales</h4>
+<p><strong>Une fonction qui affiche le résultat</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">nom_fonction</span>(param1, param2): <span style="color:#75715e"># &lt;--- Les deux-points </span>
+</span></span><span style="display:flex;"><span>    instructions
+</span></span><span style="display:flex;"><span>    print(résultat) <span style="color:#75715e"># &lt;--- La fonction se termine ici</span></span></span></code></pre></div>
+<p><strong>Exemple</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Définition de la fonction</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">aire_rectangle</span>(longueur, largeur):
+</span></span><span style="display:flex;"><span>    aire <span style="color:#f92672">=</span> longueur <span style="color:#f92672">*</span> largeur
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;L&#39;aire du rectangle de longueur </span><span style="color:#e6db74">{</span>longueur<span style="color:#e6db74">}</span><span style="color:#e6db74"> et de largeur </span><span style="color:#e6db74">{</span>largeur<span style="color:#e6db74">}</span><span style="color:#e6db74"> est </span><span style="color:#e6db74">{</span>aire<span style="color:#e6db74">}</span><span style="color:#e6db74"> cm^2&#34;</span>) </span></span></code></pre></div>
+<blockquote>
+<p>Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et <strong>affiche</strong> l&rsquo;aire.</p>
+</blockquote>
+<p><strong>Une fonction qui retourne le résultat</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">nom_fonction</span>(param1, param2):
+</span></span><span style="display:flex;"><span>    instructions
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> résultat <span style="color:#75715e"># &lt;---- La fonction se termine ici</span></span></span></code></pre></div>
+<p><strong>Exemple</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Définition de la fonction</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">aire_rectangle</span>(longueur, largeur):
+</span></span><span style="display:flex;"><span>    aire <span style="color:#f92672">=</span> longueur <span style="color:#f92672">*</span> largeur
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> aire  </span></span></code></pre></div>
+<blockquote>
+<p>Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et la <strong>retourne</strong>.</p>
+</blockquote>
+<h4 id="le-mot-clé-return">Le mot-clé <code>return</code></h4>
+<ul>
+<li>Il <strong>renvoie un résultat</strong> à l’endroit où la fonction a été utilisée (appelée).</li>
+<li>Dès que <code>return</code> est exécuté, la fonction <strong>s’arrête</strong>.</li>
+</ul>
+<h4 id="appeler-utiliser-une-fonction">Appeler (utiliser) une fonction</h4>
+<p><strong>Utilisation de la fonction <code>aire_rectangle()</code> qui <strong>affiche</strong> l&rsquo;aire</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Appel de la fonction</span>
+</span></span><span style="display:flex;"><span>aire_rectangle(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>)</span></span></code></pre></div>
+<blockquote>
+<p>Les valeurs utilisées entre les parenthèses seront utilisées par la fonction.
+Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.</p>
+</blockquote>
+<p><strong>Utilisation de la fonction <code>aire_rectangle()</code> qui <strong>retourne</strong> l&rsquo;aire</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>surface <span style="color:#f92672">=</span> aire_rectangle(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>) <span style="color:#75715e"># Appel de la fonction</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;L&#39;aire du rectangle est : </span><span style="color:#e6db74">{</span>surface<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<blockquote>
+<p>Notez la différence: Ici, <strong>il faut stocker le résultat de la fonction dans une variable</strong>.</p>
+</blockquote>
+<p>On aurait aussi pu faire:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;L&#39;aire du rectangle est : </span><span style="color:#e6db74">{</span>aire_rectangle(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) <span style="color:#75715e"># Appel de la fonction</span></span></span></code></pre></div>
+<h3 id="la-portée-locale-des-variables">La portée locale des variables</h3>
+<p>Les <strong>variables créées <strong>à l&rsquo;intérieur</strong> d&rsquo;une fonction</strong> (ex: <code>aire</code>) <strong>n’existent que dans la fonction</strong>.</p>
+<p><strong>Exemple</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test</span>():
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>  <span style="color:#f92672">&lt;----</span> On peut utiliser x qu<span style="color:#e6db74">&#39;à l&#39;</span>intérieur de la fonction<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">&lt;----</span> Après cette ligne, x n<span style="color:#e6db74">&#39;existe plus. </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(test())  <span style="color:#75715e"># OK, affiche 10</span>
+</span></span><span style="display:flex;"><span>print(x)       <span style="color:#75715e"># Erreur : x n&#39;existe pas ici</span></span></span></code></pre></div>
+<p><a href="#R-image-11b6ef3387de1cfe486976c2c4ee75e7" class="lightbox-link"><img alt="Erreur de nom" class="lazy lightbox figure-image" loading="lazy" src="./erreur_name.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-11b6ef3387de1cfe486976c2c4ee75e7"><img alt="Erreur de nom" class="lazy lightbox lightbox-image" loading="lazy" src="./erreur_name.png?width=35vw"></a></p>
+<h2 id="documenter-ses-fonctions-docstrings">Documenter ses fonctions (<em>docstrings</em>)</h2>
+<p>Les <em><strong>docstrings</strong></em> sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.</p>
+<p><strong>Format standard</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">nom_fonction</span>(param):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Description de la fonction.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Paramètres:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - param (type): Description.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Retour:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - type: Description.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span></span></span></code></pre></div>
+<p><strong>Exemple</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">addition</span>(a, b):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Calcule la somme de deux nombres.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Paramètres:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    a (int, float): Le premier nombre.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    b (int, float): Le deuxième nombre.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Retour:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    int, float: La somme des deux nombres.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b</span></span></code></pre></div>
+
+<details class=" box cstyle notices cyan expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    À retenir
+  </summary>
+  <div class="box-content">
+<ul>
+<li><code>def</code> : sert à définir une fonction</li>
+<li><em><strong>nom_fonction(paramètres)</strong></em> : Les paramètres sont les variables représentant les données dont la fonction a besoin pour obtenir le résultat.</li>
+<li><code>return</code> : Permet à la fonction de retourner un résultat (<code>resultat = fonction()</code> ou <br> <code>print(fonction())</code>)</li>
+<li><strong>Portée locale</strong> : Signifie que les variables dans une fonction n’existent qu’à l’intérieur de .elle-ci|</li>
+<li>Pour <strong>utiliser une fonction</strong> prédéfinie ou personnalisé, il faut écrire sont nom, les parenthèses et les paramètres si elle en a.</li>
+</ul>
+  </div>
+</details>
+<hr>
+<h3 id="exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</h3>
+
+<details class=" box cstyle notices magenta expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    Appel de fonction
+  </summary>
+  <div class="box-content">
+<p>Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.</p>
+  </div>
+</details>
+<p><a href="https://python-a25.netlify.app/blocnotes/exercices_entrees_fn_debug.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
+<h2 id="exercice-1--la-loi-dohm">Exercice 1 : La loi d&rsquo;Ohm</h2>
+<p>Un technicien de laboratoire vous demande d&rsquo;écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm. Il voudrait pouvoir entrer la valeur de la résistance (en ohms) et la valeur du courant (en ampères), puis obtenir la tension.</p>
+<span class="math align-center">Loi d’Ohm : $ U = R × I $</span>
+<p>Écrire un programme qui :</p>
+<ol>
+<li>Demande à l&rsquo;utilisateur d&rsquo;entrer la valeur de la résistance (en ohms).</li>
+<li>Demande à l&rsquo;utilisateur d&rsquo;entrer la valeur du courant (en ampères).</li>
+<li>Calcule et affiche la tension à l&rsquo;aide d&rsquo;une phrase.</li>
+</ol>
+<p><strong>NB</strong> : Ajoutez des explications en commentaire dans le code.</p>
+<p><strong>Résultat attendu</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Entrer la résistance en ohms : 10
+Entrer le courant en ampères : 2
+La tension est de 20.0 V</code></pre></div>
+<h3 id="exercice-2--élément-chimique">Exercice 2 : Élément chimique</h3>
+<p>Écrire un programme qui :</p>
+<ul>
+<li>Demande à l&rsquo;utilisateur d&rsquo;entrer le nom d’un élément chimique.</li>
+<li>Affiche un message disant &ldquo;L’élément choisi est [nom]&rdquo;</li>
+</ul>
+<p><strong>Exemple d&rsquo;affichage attendu (élément oxygène)</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Entrer le nom d<span style="color:#e6db74">&#39;un élément chimique : oxygène</span>
+</span></span><span style="display:flex;"><span>L<span style="color:#960050;background-color:#1e0010">’</span>élément choisi est : oxygène</span></span></code></pre></div>
+<h3 id="exercice-3--convertir-celsius-en-kelvin">Exercice 3 : Convertir Celsius en Kelvin</h3>
+<p>Crée une fonction nommée <code>convertir_C_en_K</code> qui :</p>
+<ul>
+<li>prend une température en °C en paramètre</li>
+<li>retourne la température en Kelvin (formule : K = C + 273.15)</li>
+</ul>
+<p><strong>Exemple d&rsquo;affichage attendu (30°C)</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Une température de <span style="color:#ae81ff">30</span><span style="color:#960050;background-color:#1e0010">°</span>C équivaut à <span style="color:#ae81ff">303.15</span> K<span style="color:#f92672">.</span></span></span></code></pre></div>
+<h3 id="exercice-4--calculer-une-énergie-cinétique">Exercice 4 : Calculer une énergie cinétique</h3>
+<p>Créez une fonction <code>energie_cinetique(m, v)</code> qui calcule et retourne la valeur de l&rsquo;énergie cinétique d&rsquo;un objet en joules:</p>
+<span class="math align-center">$E_c = \frac{1}{2} \cdot m \cdot v^2$</span>
+<p>où</p>
+<ul>
+<li>m  : La masse de l&rsquo;objet en kilogrammes.</li>
+<li>v  : La vitesse de l&rsquo;objet en mètres par seconde.</li>
+</ul>
+<p><strong>Exemple d&rsquo;affichage attendu avec <code>masse=2.0 kg</code> et <code>vitesse=3.0 m/s</code></strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>L<span style="color:#e6db74">&#39;énergie cinétique de l&#39;</span>objet est de <span style="color:#ae81ff">9.0</span> joules<span style="color:#f92672">.</span></span></span></code></pre></div>
+<h3 id="exercice-5--aire-dun-cercle">Exercice 5 : Aire d&rsquo;un cercle</h3>
+<p>Écrire une fonction <code>aire_cercle()</code> qui :</p>
+<ul>
+<li>Demande à l&rsquo;utilisateur d&rsquo;entrer le rayon du cercle (en cm).</li>
+<li>Calcule l&rsquo;aire du cercle (utilisez le <strong>module math</strong> pour PI et le rayon².)</li>
+<li>Affiche l&rsquo;aire du cercle, arrondie à 2 décimales (utilisez la fonction <code>round</code>).</li>
+</ul>
+<p><strong>Exemple d&rsquo;affichage attendu (rayon de 5 cm)</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Aire du cercle de rayon <span style="color:#ae81ff">5</span> cm : <span style="color:#ae81ff">78.54</span> cm²</span></span></code></pre></div>
+<h3 id="exercice-6--vérifier-la-portée-locale">Exercice 6 : Vérifier la portée locale</h3>
+<p>Crée une fonction <code>tester_variable()</code> qui crée une variable <code>prenom = &quot;votre prénom</code> et l’affiche dans la fonction avec un <code>print</code>.
+Essaye ensuite d’afficher la valeur de <code>prenom</code> <strong>à l’extérieur de la fonction</strong>.</p>
+<p><strong>Exemple d&rsquo;affichage attendu</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">NameError</span>                                 Traceback (most recent call last)
+</span></span><span style="display:flex;"><span>Cell In[<span style="color:#ae81ff">16</span>], line <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">3</span>     print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Dans la fonction tu t&#39;appelles : </span><span style="color:#e6db74">{</span>prenom<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">5</span> tester_variable()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">----&gt;</span> <span style="color:#ae81ff">6</span> print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;À l&#39;exterieur de la fonction tu t&#39;appelles : </span><span style="color:#e6db74">{</span>prenom<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">NameError</span>: name <span style="color:#e6db74">&#39;prenom&#39;</span> <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> defined</span></span></code></pre></div>
+<h3 id="exercice-7--trouvez-les-erreurs-et-corrigez-les">Exercice 7 : Trouvez les erreurs et corrigez les</h3>
+<blockquote>
+<p>Ce programme est censé calculer la surface d’un cône droit à partir du rayon et de la hauteur entrés par l’utilisateur. La formule utilisée est :</p>
+</blockquote>
+<span class="math align-center">$$
+\text{Surface} = \pi \cdot r \cdot (r + \sqrt{r^2 + h^2})
+$$</span>
+<blockquote>
+<p>Toutefois, des erreurs se sont glissées dans le programme. Utilisez des instructions <code>print()</code> pour comprendre les erreurs, puis corrigez-les une à une et exécutez le code après chaque correction avant de passer à l&rsquo;erreur suivante.</p>
+</blockquote>
+<p><strong>Code à déboguer et corriger</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">surface_cone</span>(rayon, hauteur):
+</span></span><span style="display:flex;"><span>    aire_base <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> rayon <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    aire_lateral <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> rayon <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>sqrt(rayon<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> hauteur)
+</span></span><span style="display:flex;"><span>    surface <span style="color:#f92672">=</span> aire_base <span style="color:#f92672">+</span> aire_latérale
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> surface
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez le rayon du cône: &#34;</span>)
+</span></span><span style="display:flex;"><span>h <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez la hauteur du cône: &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> surface_cone(r, h)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La surface totale du cône est de </span><span style="color:#e6db74">{resultat}</span><span style="color:#e6db74"> cm²&#34;</span>)</span></span></code></pre></div>
+<p>====</p>
+<h2 id="comment-décortiquer-un-problème-scientifique-en-algorithme-et-le-traduire-en-python-">Comment décortiquer un problème scientifique en algorithme et le traduire en Python ?</h2>
+<p><strong>Un algorithme</strong>, c’est une suite d’instructions claires pour résoudre un problème.</p>
+<p>Ce processus <strong>crucial</strong>, est la clé pour arriver à écrire un programme sans s&rsquo;arracher les cheveux. On peut le décrire en <strong>6 étapes principales</strong>:</p>
+<ol>
+<li>Lire et comprendre le problème</li>
+<li>Identifier les variables et constantes</li>
+<li>Choisir ou écrire la formule</li>
+<li>Écrire un algorithme clair</li>
+<li>Traduire en code Python</li>
+<li>Vérifier et tester le programme</li>
+</ol>
+<p>Voyons chacune des étapes plus en détails:</p>
+<h3 id="étape-1--lire-et-comprendre-le-problème"><strong>Étape 1 — Lire et comprendre le problème</strong></h3>
+<blockquote>
+<p><strong>Objectif</strong> : Identifier ce qu’on cherche, ce qu’on connaît, et le contexte scientifique.</p>
+</blockquote>
+<ul>
+<li><strong>Question principale</strong> : Que doit-on calculer, prédire ou modéliser ?</li>
+<li><strong>Données</strong> : Quelles sont les grandeurs connues ? (types ? unités ? constantes ?)</li>
+<li><strong>Formule ou loi</strong> : Y a-t-il une relation physique, chimique ou biologique utilisable ?</li>
+<li><strong>Conditions</strong> : Y a-t-il des limites, des cas particuliers ou des hypothèses ?</li>
+</ul>
+<h3 id="étape-2--identifier-les-variables-et-constantes"><strong>Étape 2 — Identifier les variables et constantes</strong></h3>
+<blockquote>
+<p><strong>Objectif</strong> : Repérer les quantités <strong>variables</strong> (entrées ou sorties) et les <strong>constantes</strong>.</p>
+</blockquote>
+<ul>
+<li><strong>Variables d’entrée</strong> : Grandeurs connues fournies par le problème ou l’utilisateur du programme.</li>
+<li><strong>Variable de sortie</strong> : Ce que l’on veut calculer (la réponse).</li>
+<li><strong>Constantes</strong> : Valeurs fixes (ex. : constante des gaz, g, densité de l’eau, etc.).</li>
+</ul>
+<h3 id="étape-3--choisir-ou-écrire-la-formule"><strong>Étape 3 — Choisir ou écrire la formule</strong></h3>
+<blockquote>
+<p><strong>Objectif</strong> : Traduire la relation scientifique en équation.</p>
+</blockquote>
+<ul>
+<li>Identifier la loi scientifique utilisée (ex. : Boyle, loi des gaz, loi de la gravité, etc.)</li>
+<li>Réorganiser si nécessaire pour isoler la variable à calculer.</li>
+</ul>
+<h3 id="étape-4--écrire-un-algorithme-clair"><strong>Étape 4 — Écrire un algorithme clair</strong></h3>
+<blockquote>
+<p><strong>Objectif</strong> : Décrire les étapes logiques <strong>avant</strong> de coder.</p>
+</blockquote>
+<ul>
+<li>Définir ou lire les données (entrées)</li>
+<li>Calculer la sortie (résultat) avec la formule</li>
+<li>Afficher la réponse</li>
+</ul>
+<h3 id="étape-5--traduire-en-code-python"><strong>Étape 5 — Traduire en code Python</strong></h3>
+<blockquote>
+<p><strong>Objectif</strong> : Écrire du code propre et commenté.</p>
+</blockquote>
+<h3 id="étape-6--vérifier-et-tester"><strong>Étape 6 — Vérifier et tester</strong></h3>
+<blockquote>
+<p><strong>Objectif</strong> : Valider que le résultat est cohérent (scientifiquement et informatiquement).</p>
+</blockquote>
+<ul>
+<li>Est-ce que l’unité du résultat est correcte ?</li>
+<li>Est-ce que la valeur semble logique (ex. : une pression double si le volume diminue de moitié) ?</li>
+<li>Tester avec d’autres valeurs pour confirmer.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Exemple 1</strong> : Un gaz occupe un volume de 4,0 L à une pression de 100 kPa. Quelle sera la pression si le volume diminue à 2,0 L (à température constante) ?</p>
+</blockquote>
+<p><strong>Étape 1</strong>: Comprendre le problème</p>
+<ul>
+<li>On doit calculer la pression finale (P2) d&rsquo;un gaz lorsque son volume final (V2) diminue de moitié.</li>
+<li>On connait les volumes initial (V1) et final (V2), la pression initiale (P1).</li>
+<li>On doit donc trouver la pression finale à l&rsquo;aide de la Loi de Boyle (<code>P1 x V1 = P2 x V2</code>)</li>
+</ul>
+<p><strong>Étape 2</strong>: Identifier les variables et constantes</p>
+<ul>
+<li>Variables d’entrée : <code>V1 = 4.0</code>, <code>P1 = 100</code>, <code>V2 = 2.0</code></li>
+<li>Variable de sortie : <code>P2</code></li>
+<li>Constantes : aucune ici</li>
+<li>Type : float (car ce sont des mesures continues)</li>
+</ul>
+<p><strong>Étape 3</strong>: Écrire la formule</p>
+<span class="math align-center">Loi de Boyle : 
+   $P_1 \cdot V_1 = P_2 \cdot V_2$ &nbsp Donc $P_2 = \frac{P_1 \cdot V_1}{V_2}$</span>
+<p><strong>Étape 4</strong>: Écrire un algorithme clair<br>
+<strong>Format 1</strong>: algorithme en phrases simples et claires</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-plaintxt" data-lang="plaintxt"> * Définir les deux volumes V1 et V2 (initial et final) et la pression initiale P1.
+ * Calculer la pression finale à l&#39;aide de la formule P2 = (P1 * V1) / V2.
+ * Afficher la pression finale P2.</code></pre></div>
+<p>Ou
+<strong>Format 2</strong>: algorithme en pseudo-code</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-plaintxt" data-lang="plaintxt">Début
+  Lire V1, P1, V2
+  Calculer P2 = (P1 * V1) / V2
+  Afficher P2
+Fin</code></pre></div>
+<p><strong>Étape 5</strong>: Traduire en Python</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Données d&#39;entrée (float = nombre à virgule)</span>
+</span></span><span style="display:flex;"><span>V1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">4.0</span>  <span style="color:#75715e"># Volume initial en litres</span>
+</span></span><span style="display:flex;"><span>P1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">100.0</span>  <span style="color:#75715e"># Pression initiale en kPa</span>
+</span></span><span style="display:flex;"><span>V2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>  <span style="color:#75715e"># Volume final en litres</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul (loi de Boyle)</span>
+</span></span><span style="display:flex;"><span>P2 <span style="color:#f92672">=</span> (P1 <span style="color:#f92672">*</span> V1) <span style="color:#f92672">/</span> V2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage du résultat</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La pression finale est de </span><span style="color:#e6db74">{P2}</span><span style="color:#e6db74"> kPa&#34;</span>)</span></span></code></pre></div>
+<p><strong>Étape 6</strong>: Vérifier et tester</p>
+<ul>
+<li><strong>Test 1 — Volume initial = Volume final</strong></li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>V1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>
+</span></span><span style="display:flex;"><span>P1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>V2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>
+</span></span><span style="display:flex;"><span>P2 <span style="color:#f92672">=</span> (P1 <span style="color:#f92672">*</span> V1) <span style="color:#f92672">/</span> V2 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">100</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2.0</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2.0</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100.0</span></span></span></code></pre></div>
+<p><strong>Résultat :</strong> <code>P2 = 100.0 kPa</code><br>
+<strong>Interprétation :</strong> Si le volume ne change pas, la pression reste la même.</p>
+<ul>
+<li><strong>Test 2 — Volume final diminué de 4 à 1 L</strong></li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>V1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">4.0</span>
+</span></span><span style="display:flex;"><span>P1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>V2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>
+</span></span><span style="display:flex;"><span>P2 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">100</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">4.0</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">400.0</span></span></span></code></pre></div>
+<p><strong>Résultat :</strong> <code>P2 = 400.0 kPa</code><br>
+<strong>Interprétation :</strong> Si on divise le volume par 4, la pression est <strong>multipliée par 4</strong>.</p>
+<ul>
+<li><strong>Test 3 — Pression initiale réduite à 50 kPa</strong></li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>V1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">4.0</span>
+</span></span><span style="display:flex;"><span>P1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>V2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>
+</span></span><span style="display:flex;"><span>P2 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">50</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">4.0</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2.0</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100.0</span></span></span></code></pre></div>
+<p><strong>Résultat :</strong> <code>P2 = 100.0 kPa</code><br>
+<strong>Interprétation :</strong> Une pression initiale plus faible donne une pression finale plus faible, toutes choses égales par ailleurs.</p>
+<p><strong>Conclusion</strong></p>
+<p>Ces tests montrent que :</p>
+<ul>
+<li>La <strong>pression est inversement proportionnelle au volume</strong> : si le volume diminue, la pression augmente, et inversement.</li>
+<li>Le calcul respecte la <strong>loi de Boyle</strong> à température constante.</li>
+<li>Les résultats sont <strong>cohérents avec l’intuition physique</strong>.</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables et types de données)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Algorithme et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine3/fonctions_perso/index.html"><a class="padding" href="/semaine3/fonctions_perso/index.html"> Les fonctions personnalisées</a></li>
+            <li class="" data-nav-id="/semaine3/atelier/index.html"><a class="padding" href="/semaine3/atelier/index.html">Atelier 3</a></li></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Décider avec `if`, `elif`, `else`, répéter avec `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (20%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec la boucle `for`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/separation_struct_donnees/index.html"><a class="padding" href="/separation_struct_donnees/index.html">===Structures de données===</a></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères, dictionaires et graphiques de base</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10.</b> Traitement de fichiers textes (CSV)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Les graphiques avancés et la regression linéaire</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation #3 (25%)</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1753657972" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753657972" defer></script>
+    <script>
+      window.MathJax = Object.assign( window.MathJax || {}, {
+        tex: {
+          inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+          displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+        },
+        options: {
+          enableMenu: false 
+        }
+      }, JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1753657972"></script>
+    <script src="/js/theme.min.js?1753657972" defer></script>
+  </body>
+</html>

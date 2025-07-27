@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Atelier 4 :: 420-SN1-RE</title>
+    <title>Atelier 5 :: 420-SN1-RE</title>
     <link>https://example.org/semaine4/atelier/index.html</link>
-    <description>Objectifs pédagogiques Utiliser les opérateurs de comparaison et logiques. Utiliser les structures conditionnelles if, elif, else. Travailler avec les types numériques (float, int). Exercice 1 Contexte L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :&#xA;L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse. En autocuiseur, la pression est plus élevée, donc l’eau bout à une température plus élevée.</description>
+    <description>Objectifs Utiliser les opérateurs de comparaison et logiques. Utiliser les structures conditionnelles if, elif, else. Travailler avec les types numériques (float, int). Exercice L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :&#xA;L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse. En autocuiseur, la pression est plus élevée, donc l’eau bout à une température plus élevée.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine4/atelier/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Solution</title>
-      <link>https://example.org/semaine4/atelier/solution/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine4/atelier/solution/index.html</guid>
-      <description>État de l’eau selon température et pression # Demander les données à l&#39;utilisateur temp = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: print(&#34;Pression invalide.</description>
-    </item>
   </channel>
 </rss>

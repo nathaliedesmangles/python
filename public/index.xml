@@ -50,39 +50,46 @@
       <description>Objectifs Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Créer une structure de dossiers pour le cours. Comprendre l’interface de VS Code Ouvrir un dossier et un fichier (.ipynb) dans VS Code. Créer un fichier .ipynb dans VS Code. Écrire et exécuter du code Python simple. Sauvegarder vos fichiers de code. 1. Présentation du cours Cliquez ici pour ouvrir le plan de cours et trouver le quiz interactif</description>
     </item>
     <item>
-      <title> Introduction à Python (Variables, types de données et algorithme)</title>
+      <title> Introduction à Python (Variables et types de données)</title>
       <link>https://example.org/semaine2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/index.html</guid>
-      <description>Objectifs Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.&#xA;Exemples :&#xA;age = 17 nom = &#34;Julie&#34; temperature = 36.</description>
+      <description>Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Variables et types de données de base Une variable est un nom qui désigne une valeur. prenom = &#34;Alice&#34; age = 20 temperature = 25.8&#xD;Bien nommer vos variables: Utiliser des noms significatifs (ex : masse_corps, volume_solution) Commencer par une lettre ou un souligné (_), jamais par un chiffre.</description>
     </item>
     <item>
-      <title> Saisie au clavier, fonctions et débogage</title>
+      <title> Algorithme et débogage</title>
       <link>https://example.org/semaine3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/index.html</guid>
-      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Gérer les entrées (saisies au clavier) d’un programme Python. Utiliser des fonctions prédéfinies. Définir ses propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
+      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Écrire des algorithmes simples et les traduire en Python. Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Trouver facilement les sources des erreurs dans nos programmes (débogage) Déboguer, c’est trouver les causes des erreurs dans le cod, afin de les corriger rapidement.&#xA;Types d’erreurs fréquentes Erreur de syntaxe : La syntaxe de Python n’est pas respectée.</description>
     </item>
     <item>
-      <title> Évaluation #1 (15%)</title>
+      <title> Décider avec `if`, `elif`, `else`, répéter avec `while`</title>
       <link>https://example.org/semaine4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine4/index.html</guid>
-      <description>Informations Date:&#x9;Semaine #4 (Voir le calendrier scolaire) Matière: Semaines 1 à 3 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;Exercices pratiques avec VS Code.</description>
+      <description>Objectifs Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Interrompre le déroulement d’une boucle. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs.</description>
     </item>
     <item>
-      <title> Décider avec `if`, `elif`, `else` et les opérateurs</title>
+      <title> Évaluation #1 (20%)</title>
       <link>https://example.org/semaine5/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine5/index.html</guid>
-      <description>Objectifs Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
+      <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;Exercices pratiques avec VS Code.</description>
     </item>
     <item>
-      <title> Répéter avec `for` et `while`</title>
+      <title> Répéter avec la boucle `for`</title>
       <link>https://example.org/semaine6/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine6/index.html</guid>
-      <description>Objectifs Comprendre l’utilité des boucles en programmation. Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. Interrompre le déroulement d’une boucle. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).&#xA;La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.&#xA;Syntaxe : for i in range(début, fin, pas): instructions&#xD;début : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :</description>
+      <description>Objectifs Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.&#xA;Syntaxe : for i in range(début, fin, pas): instructions&#xD;début : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :&#xA;for i in range(0, 5): print(&#34;i =&#34;, i)&#xD;Affiche les valeurs de 0 à 4.</description>
+    </item>
+    <item>
+      <title>===Structures de données===</title>
+      <link>https://example.org/separation_struct_donnees/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/separation_struct_donnees/index.html</guid>
+      <description></description>
     </item>
     <item>
       <title> Listes, chaînes de caractères, dictionaires et graphiques de base</title>

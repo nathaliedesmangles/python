@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Introduction à Python (Variables, types de données et algorithme) :: 420-SN1-RE</title>
+    <title> Introduction à Python (Variables et types de données) :: 420-SN1-RE</title>
     <link>https://example.org/semaine2/index.html</link>
-    <description>Objectifs Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.&#xA;Exemples :&#xA;age = 17 nom = &#34;Julie&#34; temperature = 36.</description>
+    <description>Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Variables et types de données de base Une variable est un nom qui désigne une valeur. prenom = &#34;Alice&#34; age = 20 temperature = 25.8&#xD;Bien nommer vos variables: Utiliser des noms significatifs (ex : masse_corps, volume_solution) Commencer par une lettre ou un souligné (_), jamais par un chiffre.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine2/index.xml" rel="self" type="application/rss+xml" />

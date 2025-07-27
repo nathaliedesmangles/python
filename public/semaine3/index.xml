@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Saisie au clavier, fonctions et débogage :: 420-SN1-RE</title>
+    <title> Algorithme et débogage :: 420-SN1-RE</title>
     <link>https://example.org/semaine3/index.html</link>
-    <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Gérer les entrées (saisies au clavier) d’un programme Python. Utiliser des fonctions prédéfinies. Définir ses propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Lecture et conversion de données Lire une donnée au clavier La fonction input() permet de lire une donnée saisie au clavier :</description>
+    <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Écrire des algorithmes simples et les traduire en Python. Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Trouver facilement les sources des erreurs dans nos programmes (débogage) Déboguer, c’est trouver les causes des erreurs dans le cod, afin de les corriger rapidement.&#xA;Types d’erreurs fréquentes Erreur de syntaxe : La syntaxe de Python n’est pas respectée.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Les fonctions personnalisées</title>
+      <link>https://example.org/semaine3/fonctions_perso/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/fonctions_perso/index.html</guid>
+      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:&#xA;Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :.</description>
+    </item>
     <item>
       <title>Atelier 3</title>
       <link>https://example.org/semaine3/atelier/index.html</link>

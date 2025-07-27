@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atelier 5 :: 420-SN1-RE</title>
-    <link>https://example.org/semaine5/atelier/index.html</link>
+    <link>http://localhost:1313/semaine5/atelier/index.html</link>
     <description>Objectifs Utiliser les opérateurs de comparaison et logiques. Utiliser les structures conditionnelles if, elif, else. Travailler avec les types numériques (float, int). Exercice L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :&#xA;L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse. En autocuiseur, la pression est plus élevée, donc l’eau bout à une température plus élevée.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine5/atelier/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine5/atelier/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

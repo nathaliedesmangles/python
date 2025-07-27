@@ -79,6 +79,9 @@
     <loc>https://example.org/semaine2/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine3/fonctions_perso/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine2/atelier/index.html</loc>
   </url>
   <url>
@@ -94,10 +97,13 @@
     <loc>https://example.org/semaine5/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine5/atelier/index.html</loc>
+    <loc>https://example.org/semaine4/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine6/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/separation_struct_donnees/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine6/atelier/index.html</loc>

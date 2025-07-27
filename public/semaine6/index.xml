@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Répéter avec `for` et `while` :: 420-SN1-RE</title>
+    <title> Répéter avec la boucle `for` :: 420-SN1-RE</title>
     <link>https://example.org/semaine6/index.html</link>
-    <description>Objectifs Comprendre l’utilité des boucles en programmation. Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. Interrompre le déroulement d’une boucle. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).&#xA;La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.&#xA;Syntaxe : for i in range(début, fin, pas): instructions&#xD;début : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :</description>
+    <description>Objectifs Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.&#xA;Syntaxe : for i in range(début, fin, pas): instructions&#xD;début : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :&#xA;for i in range(0, 5): print(&#34;i =&#34;, i)&#xD;Affiche les valeurs de 0 à 4.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine6/index.xml" rel="self" type="application/rss+xml" />

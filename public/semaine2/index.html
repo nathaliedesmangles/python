@@ -5,42 +5,34 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectifs Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.
-Exemples :
-age = 17 nom = &#34;Julie&#34; temperature = 36.">
+    <meta name="description" content="Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Variables et types de données de base Une variable est un nom qui désigne une valeur. prenom = &#34;Alice&#34; age = 20 temperature = 25.8Bien nommer vos variables: Utiliser des noms significatifs (ex : masse_corps, volume_solution) Commencer par une lettre ou un souligné (_), jamais par un chiffre.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content=" Introduction à Python (Variables, types de données et algorithme) :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectifs Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.
-Exemples :
-age = 17 nom = &#34;Julie&#34; temperature = 36.">
+    <meta name="twitter:title" content=" Introduction à Python (Variables et types de données) :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Variables et types de données de base Une variable est un nom qui désigne une valeur. prenom = &#34;Alice&#34; age = 20 temperature = 25.8Bien nommer vos variables: Utiliser des noms significatifs (ex : masse_corps, volume_solution) Commencer par une lettre ou un souligné (_), jamais par un chiffre.">
     <meta property="og:url" content="https://example.org/semaine2/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content=" Introduction à Python (Variables, types de données et algorithme) :: 420-SN1-RE">
-    <meta property="og:description" content="Objectifs Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.
-Exemples :
-age = 17 nom = &#34;Julie&#34; temperature = 36.">
+    <meta property="og:title" content=" Introduction à Python (Variables et types de données) :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Variables et types de données de base Une variable est un nom qui désigne une valeur. prenom = &#34;Alice&#34; age = 20 temperature = 25.8Bien nommer vos variables: Utiliser des noms significatifs (ex : masse_corps, volume_solution) Commencer par une lettre ou un souligné (_), jamais par un chiffre.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content=" Introduction à Python (Variables, types de données et algorithme) :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectifs Comprendre l’utilité des variables en programmation. Définir et utiliser des variables en Python. Manipuler les types de base en Python: int, float, str, bool. Afficher les résultats de manière claire et lisible. Comprendre le rôle d’un algorithme. Écrire et traduire des algorithmes simples en python. Variables et types de données de base Une variable est un nom qui permet de stocker une valeur pour la réutiliser.
-Exemples :
-age = 17 nom = &#34;Julie&#34; temperature = 36.">
-    <meta itemprop="wordCount" content="1988">
-    <title> Introduction à Python (Variables, types de données et algorithme) :: 420-SN1-RE</title>
-    <link href="/semaine2/index.xml" rel="alternate" type="application/rss+xml" title=" Introduction à Python (Variables, types de données et algorithme) :: 420-SN1-RE">
-    <link href="/images/logo.png?1753638712" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753638712" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753638712" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753638712" rel="stylesheet">
-    <link href="/css/theme.min.css?1753638712" rel="stylesheet">
-    <link href="/css/format-html.min.css?1753638712" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1753638712" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1753638712" defer></script>
-    <script src="/js/lunr/lunr.min.js?1753638712" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1753638712" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1753638712" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1753638712" defer></script>
-    <script src="/js/search.min.js?1753638712" defer></script>
+    <meta itemprop="name" content=" Introduction à Python (Variables et types de données) :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Variables et types de données de base Une variable est un nom qui désigne une valeur. prenom = &#34;Alice&#34; age = 20 temperature = 25.8Bien nommer vos variables: Utiliser des noms significatifs (ex : masse_corps, volume_solution) Commencer par une lettre ou un souligné (_), jamais par un chiffre.">
+    <meta itemprop="wordCount" content="1594">
+    <title> Introduction à Python (Variables et types de données) :: 420-SN1-RE</title>
+    <link href="/semaine2/index.xml" rel="alternate" type="application/rss+xml" title=" Introduction à Python (Variables et types de données) :: 420-SN1-RE">
+    <link href="/images/logo.png?1753657972" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753657972" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753657972" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753657972" rel="stylesheet">
+    <link href="/css/theme.min.css?1753657972" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753657972" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753657972" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753657972" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753657972" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753657972" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753657972" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753657972" defer></script>
+    <script src="/js/search.min.js?1753657972" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -50,7 +42,7 @@ age = 17 nom = &#34;Julie&#34; temperature = 36.">
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1753638712";
+      window.relearn.index_js_url="/searchindex.en.js?1753657972";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -96,7 +88,7 @@ age = 17 nom = &#34;Julie&#34; temperature = 36.">
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1753638712" rel="stylesheet">
+    <link href="/css/custom.css?1753657972" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine2/index.html">
     <div id="R-body" class="default-animation">
@@ -115,16 +107,17 @@ age = 17 nom = &#34;Julie&#34; temperature = 36.">
     <li><a href="#objectifs">Objectifs</a></li>
     <li><a href="#variables-et-types-de-données-de-base">Variables et types de données de base</a>
       <ul>
-        <li><a href="#types-de-données-courants">Types de données courants</a></li>
-        <li><a href="#vérifier-le-type-dune-variable">Vérifier le type d’une variable</a></li>
+        <li><a href="#bien-nommer-vos-variables">Bien nommer vos variables:</a></li>
+        <li><a href="#types-de-base-des-données">Types de base des données</a></li>
+        <li><a href="#conversion-de-type">Conversion de type</a></li>
       </ul>
     </li>
-    <li><a href="#bonnes-pratiques-pour-nommer-des-variables">Bonnes pratiques pour nommer des variables</a></li>
-    <li><a href="#documentation-du-code-les-commentaires">Documentation du code (les commentaires)</a></li>
-    <li><a href="#opérateurs-arithmétiques">Opérateurs arithmétiques</a></li>
-    <li><a href="#expressions-et-priorité-des-opérateurs">Expressions et priorité des opérateurs</a>
+    <li><a href="#lecture-de-données-au-clavier-avec-input">Lecture de données au clavier avec <code>input()</code></a></li>
+    <li><a href="#fonctions-prédéfinies">Fonctions prédéfinies</a>
       <ul>
-        <li><a href="#priorité-ordre-dexécution-des-opérateurs-">Priorité (ordre d’exécution) des opérateurs :</a></li>
+        <li><a href="#quest-ce-quune-fonction-">Qu’est-ce qu’une fonction ?</a></li>
+        <li><a href="#exemples-de-fonctions-prédéfinies">Exemples de fonctions prédéfinies</a></li>
+        <li><a href="#quelques-fonctions-du-module-math">Quelques fonctions du module <code>math</code></a></li>
       </ul>
     </li>
     <li><a href="#affichage-des-données-avec-print-et-les-f-string">Affichage des données avec <em>print</em> et les <em>f-string</em></a>
@@ -132,21 +125,21 @@ age = 17 nom = &#34;Julie&#34; temperature = 36.">
         <li><a href="#les-modificateurs-de-format-numérique">Les modificateurs de format numérique</a></li>
       </ul>
     </li>
-    <li><a href="#comment-décortiquer-un-problème-scientifique-en-algorithme-et-le-traduire-en-python-">Comment décortiquer un problème scientifique en algorithme et le traduire en Python ?</a>
+    <li><a href="#documentation-du-code-les-commentaires">Documentation du code (les commentaires)</a></li>
+    <li><a href="#opérateurs-arithmétiques">Opérateurs arithmétiques</a></li>
+    <li><a href="#expressions-et-priorité-des-opérateurs">Expressions et priorité des opérateurs</a>
       <ul>
-        <li><a href="#étape-1--lire-et-comprendre-le-problème"><strong>Étape 1 — Lire et comprendre le problème</strong></a></li>
-        <li><a href="#étape-2--identifier-les-variables-et-constantes"><strong>Étape 2 — Identifier les variables et constantes</strong></a></li>
-        <li><a href="#étape-3--choisir-ou-écrire-la-formule"><strong>Étape 3 — Choisir ou écrire la formule</strong></a></li>
-        <li><a href="#étape-4--écrire-un-algorithme-clair"><strong>Étape 4 — Écrire un algorithme clair</strong></a></li>
-        <li><a href="#étape-5--traduire-en-code-python"><strong>Étape 5 — Traduire en code Python</strong></a></li>
-        <li><a href="#étape-6--vérifier-et-tester"><strong>Étape 6 — Vérifier et tester</strong></a></li>
+        <li><a href="#priorité-ordre-dexécution-des-opérateurs-">Priorité (ordre d’exécution) des opérateurs :</a></li>
       </ul>
     </li>
     <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a></li>
     <li><a href="#exercice-1--conversion-de-température">Exercice 1 : Conversion de température</a></li>
     <li><a href="#exercice-2--calcul-de-concentration-molaire">Exercice 2 : Calcul de concentration molaire</a></li>
-    <li><a href="#exercice-3--vitesse-moyenne-dune-réaction">Exercice 3 : Vitesse moyenne d’une réaction</a></li>
-    <li><a href="#exercice-4--distance-parcourue">Exercice 4 : Distance parcourue</a></li>
+    <li><a href="#exercice-3--vitesse-moyenne-dune-réaction">Exercice 3 : Vitesse moyenne d’une réaction</a>
+      <ul>
+        <li><a href="#exercice-4--distance-parcourue">Exercice 4 : Distance parcourue</a></li>
+      </ul>
+    </li>
     <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
   </ul>
 </nav>
@@ -156,7 +149,7 @@ age = 17 nom = &#34;Julie&#34; temperature = 36.">
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Introduction à Python (Variables, types de données et algorithme)</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Introduction à Python (Variables et types de données)</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine1/atelier/index.html" title="Atelier 1 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
@@ -181,25 +174,35 @@ age = 17 nom = &#34;Julie&#34; temperature = 36.">
   <header class="headline">
   </header>
 
-<h1 id="introduction-à-python-variables-types-de-données-et-algorithme"> Introduction à Python (Variables, types de données et algorithme)</h1>
+<h1 id="introduction-à-python-variables-et-types-de-données"> Introduction à Python (Variables et types de données)</h1>
 
 <h2 id="objectifs">Objectifs</h2>
 <ul>
-<li>Comprendre l&rsquo;utilité des <strong>variables</strong> en programmation.</li>
-<li>Définir et utiliser des variables en Python.</li>
-<li>Manipuler les <strong>types de base</strong> en Python: <code>int</code>, <code>float</code>, <code>str</code>, <code>bool</code>.</li>
-<li>Afficher les résultats de manière claire et lisible.</li>
-<li>Comprendre le rôle d&rsquo;un algorithme.</li>
-<li>Écrire et traduire des algorithmes simples en python.</li>
+<li>Créer des variables et afficher leurs types (<code>int</code>, <code>float</code>, <code>str</code>, <code>bool</code>).</li>
+<li>Demander une donnée à l&rsquo;utilisateur, la convertir et l’afficher de manière claire et lisible.</li>
+<li>Utiliser diverses fonctions prédéfinies.</li>
+<li>Écrire des programmes simples en python.</li>
 </ul>
 <hr>
 <h2 id="variables-et-types-de-données-de-base">Variables et types de données de base</h2>
-<p>Une <strong>variable</strong> est un nom qui permet de <strong>stocker une valeur</strong> pour la réutiliser.</p>
-<p><strong>Exemples :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">17</span>
-</span></span><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Julie&#34;</span>
-</span></span><span style="display:flex;"><span>temperature <span style="color:#f92672">=</span> <span style="color:#ae81ff">36.6</span></span></span></code></pre></div>
-<h3 id="types-de-données-courants">Types de données courants</h3>
+<ul>
+<li>Une variable est un nom qui <strong>désigne une valeur</strong>.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>prenom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Alice&#34;</span>
+</span></span><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>temperature <span style="color:#f92672">=</span> <span style="color:#ae81ff">25.8</span></span></span></code></pre></div>
+<h3 id="bien-nommer-vos-variables">Bien nommer vos variables:</h3>
+<ul>
+<li>Utiliser des <strong>noms significatifs</strong> (ex : <code>masse_corps</code>, <code>volume_solution</code>)</li>
+<li>Commencer par une <strong>lettre</strong> ou un <strong>souligné (_)</strong>, jamais par un chiffre.</li>
+<li>Éviter les mots réservés de Python (<code>if</code>, <code>for</code>, <code>print</code>, etc.).</li>
+<li>Utiliser des mots séparés par des soulignés (_).</li>
+<li>Utiliser des mots commençants par une lettre majuscule, sauf le premier mot (ex : <code>masseCorps</code>, <code>volumeSolution</code>).</li>
+</ul>
+<p>Mauvais exemples :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">1</span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>       <span style="color:#75715e"># commence par un chiffre → erreur</span>
+</span></span><span style="display:flex;"><span>print <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>       <span style="color:#75715e"># print est un mot réservé → erreur</span></span></span></code></pre></div>
+<h3 id="types-de-base-des-données">Types de base des données</h3>
 <table>
 <thead>
 <tr>
@@ -232,115 +235,181 @@ age = 17 nom = &#34;Julie&#34; temperature = 36.">
 </tbody>
 </table>
 
-<details open class=" box cstyle notices cyan">
+<details open class=" box cstyle notices accent">
   <summary class="box-label" tabindex="-1">
-    Notez que..
+    Attention
   </summary>
   <div class="box-content">
 <p>Pour les données de type à virgule flottante, on utilise le point (<code>.</code>) à la place d&rsquo;une virgule (<code>,</code>).</p>
   </div>
 </details>
-<h3 id="vérifier-le-type-dune-variable">Vérifier le type d’une variable</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">18</span>
-</span></span><span style="display:flex;"><span>type_age <span style="color:#f92672">=</span> type(age)
-</span></span><span style="display:flex;"><span>print(type_age)  <span style="color:#75715e"># &lt;class &#39;int&#39;&gt;</span></span></span></code></pre></div>
-<h2 id="bonnes-pratiques-pour-nommer-des-variables">Bonnes pratiques pour nommer des variables</h2>
+<h3 id="conversion-de-type">Conversion de type</h3>
 <ul>
-<li>Utiliser des <strong>noms significatifs</strong> (ex : <code>masse_corps</code>, <code>volume_solution</code>)</li>
-<li>Commencer par une <strong>lettre</strong> ou un <strong>souligné (_)</strong>, jamais par un chiffre.</li>
-<li>Éviter les mots réservés de Python (<code>if</code>, <code>for</code>, <code>print</code>, etc.).</li>
-<li>Utiliser des mots séparés par des soulignés (_).</li>
-<li>Utiliser des mots commençants par une lettre majuscule, sauf le premier mot (ex : <code>masseCorps</code>, <code>volumeSolution</code>).</li>
+<li>Parfois on a besoin de modifier le type d&rsquo;une données avant de l&rsquo;utiliser. Pour ce faire on utilise des fonctions:
+<ul>
+<li><code>int()</code> pour convertir en nombre entier</li>
+<li><code>float()</code> pour convertir en nombre décimal</li>
+<li><code>str()</code> pour convertir en chaine de caractères</li>
 </ul>
-<p>Mauvais exemples :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">1</span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>       <span style="color:#75715e"># commence par un chiffre → erreur</span>
-</span></span><span style="display:flex;"><span>print <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>       <span style="color:#75715e"># print est un mot réservé → erreur</span></span></span></code></pre></div>
-<h2 id="documentation-du-code-les-commentaires">Documentation du code (les commentaires)</h2>
-<p>On écrit des <strong>commentaires</strong> pour expliquer le code. Python ignore tout ce qui suit <code>#</code> sur une ligne.</p>
-<p><strong>Exemples :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Calcul de l&#39;aire d&#39;un cercle</span>
-</span></span><span style="display:flex;"><span>rayon <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>aire <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span> <span style="color:#f92672">*</span> rayon <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>  <span style="color:#75715e"># formule de l’aire</span></span></span></code></pre></div>
-<h2 id="opérateurs-arithmétiques">Opérateurs arithmétiques</h2>
+</li>
+</ul>
+<p><strong>Exemples</strong>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>age <span style="color:#f92672">=</span> int(<span style="color:#e6db74">&#34;18&#34;</span>)        <span style="color:#75715e"># str vers int</span>
+</span></span><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> float(<span style="color:#e6db74">&#34;22.5&#34;</span>)   <span style="color:#75715e"># str vers float</span>
+</span></span><span style="display:flex;"><span>taxes <span style="color:#f92672">=</span> str(<span style="color:#e6db74">&#34;14.978&#34;</span>)   <span style="color:#75715e"># float vers str</span></span></span></code></pre></div>
+<p>Si on veut connaitre le type d&rsquo;une donnée on utilise <code>type()</code></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>type(<span style="color:#e6db74">&#34;Bonjour&#34;</span>)  <span style="color:#75715e"># str</span>
+</span></span><span style="display:flex;"><span>type(<span style="color:#ae81ff">3.14</span>)       <span style="color:#75715e"># float</span>
+</span></span><span style="display:flex;"><span>type(<span style="color:#ae81ff">42</span>)         <span style="color:#75715e"># int</span></span></span></code></pre></div>
+<h2 id="lecture-de-données-au-clavier-avec-input">Lecture de données au clavier avec <code>input()</code></h2>
+<p>Souvent, les données d&rsquo;un programme proviennent de son utilisateur qui les tape au clavier.
+La <strong>fonction</strong> <code>input()</code> permet de stocker la données dans une variable.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Quel est ton nom ? &#34;</span>)
+</span></span><span style="display:flex;"><span>age <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Quel est ton âge ? &#34;</span>))</span></span></code></pre></div>
+<p>Les données entrées par <code>input()</code> sont <strong>toujours</strong> des chaînes (<code>str</code>). Il faut donc les <strong>convertir</strong> pour faire des calculs :</p>
+<p><strong>Exemple d&rsquo;erreur en cas d&rsquo;oubli de convertir</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>note1 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez la première note&#34;</span>)
+</span></span><span style="display:flex;"><span>note2 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez la deuxième note&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> (note1 <span style="color:#f92672">+</span> note2) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>	<span style="color:#f92672">==&gt;</span> ERREUR</span></span></code></pre></div>
+<p><a href="#R-image-02ea1dfefbddfa4fd9c999c92cb3aa7a" class="lightbox-link"><img alt="Erreur de type" class="lazy lightbox figure-image" loading="lazy" src="/semaine2/erreur_type.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-02ea1dfefbddfa4fd9c999c92cb3aa7a"><img alt="Erreur de type" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine2/erreur_type.png"></a></p>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Important
+  </summary>
+  <div class="box-content">
+<p>L&rsquo;erreur est causée par le fait que la fonction <code>input()</code>, transforme toutes les saisies au clavier en <strong>chaine de caractères (<code>str</code>)</strong>.
+Si on tape au clavier <strong>95</strong> et <strong>98</strong>, pour Python c&rsquo;est <strong>&ldquo;95&rdquo; + &ldquo;98&rdquo;</strong>, ce qui n&rsquo;est pas une opération valide. C&rsquo;est comme essayer de faire &ldquo;Bonjour&rdquo; + &ldquo;Salut&rdquo;.</p>
+  </div>
+</details>
+<blockquote>
+<p>La <strong>conversion des deux notes en entier</strong>, fait en sorte que Python arrive à faire le calcul sans problème.</p>
+</blockquote>
+<h2 id="fonctions-prédéfinies">Fonctions prédéfinies</h2>
+<h3 id="quest-ce-quune-fonction-">Qu’est-ce qu’une fonction ?</h3>
+<ul>
+<li>Une fonction est un <strong>bloc de code réutilisable</strong>. On peut lui donner des <strong>paramètres</strong> (valeurs en entrée) et elle peut renvoyer un <strong>résultat</strong> ou simplement l&rsquo;afficher.</li>
+<li>Si une fonction renvoie un résultat, il devra être <strong>stocké dans une variable</strong> pour être utilisé ailleurs dans le code ou on pourra <strong>utiliser la fonction</strong> directement à l&rsquo;endroit où le résultat est requis.</li>
+</ul>
+
+<details class=" box cstyle notices cyan expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    Analogie dans la vie de tous les jours
+  </summary>
+  <div class="box-content">
+<p>Une fonction est comme une recette qu&rsquo;on peut réutiliser autant de fois que l&rsquo;on veut:</p>
+<ul>
+<li>Les ingrédients : les paramètres.</li>
+<li>La préparation : le corps de la fonction.</li>
+<li>Le résultat final : la valeur retournée ou affichée.
+Utiliser une fonction, c’est suivre la recette avec des ingrédients précis.</li>
+</ul>
+  </div>
+</details>
+<h3 id="exemples-de-fonctions-prédéfinies">Exemples de fonctions prédéfinies</h3>
 <table>
 <thead>
 <tr>
-<th>Opérateur</th>
-<th>Signification</th>
+<th>Fonction</th>
+<th>Utilité</th>
 <th>Exemple</th>
-<th>Résultat</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>+</code></td>
-<td>Addition</td>
-<td><code>3 + 2</code></td>
-<td><code>5</code></td>
+<td><code>print()</code></td>
+<td>Afficher un message</td>
+<td><code>print(&quot;Bonjour !&quot;)</code></td>
 </tr>
 <tr>
-<td><code>-</code></td>
-<td>Soustraction</td>
-<td><code>7 - 4</code></td>
-<td><code>3</code></td>
+<td><code>type()</code></td>
+<td>Afficher le type d’une variable</td>
+<td><code>type(3.5)</code> → <code>&lt;class 'float'&gt;</code></td>
 </tr>
 <tr>
-<td><code>*</code></td>
-<td>Multiplication</td>
-<td><code>5 * 2</code></td>
-<td><code>10</code></td>
+<td><code>input()</code></td>
+<td>Demander une donnée à l’utilisateur</td>
+<td><code>nom = input(&quot;Votre nom :&quot;)</code></td>
 </tr>
 <tr>
-<td><code>/</code></td>
-<td><strong>Division</strong> (résultat décimal)</td>
-<td><code>6 / 2</code></td>
-<td><code>3.0</code></td>
+<td><code>int()</code></td>
+<td>Convertir en entier</td>
+<td><code>val = int(&quot;5&quot;)</code></td>
 </tr>
 <tr>
-<td><code>//</code></td>
-<td><strong>Division entière</strong></td>
-<td><code>7 // 2</code></td>
-<td><code>3</code></td>
+<td><code>float()</code></td>
+<td>Convertir en nombre décimal</td>
+<td><code>val = float(&quot;3.14&quot;)</code></td>
 </tr>
 <tr>
-<td><code>%</code></td>
-<td><strong>Modulo</strong> (reste)</td>
-<td><code>7 % 2</code></td>
-<td><code>1</code></td>
+<td><code>round()</code></td>
+<td>Arrondir un nombre</td>
+<td><code>round(2.718, 2)</code> → <code>2.72</code></td>
 </tr>
 <tr>
-<td><code>**</code></td>
-<td>Puissance</td>
-<td><code>3 ** 2</code></td>
-<td><code>9</code></td>
+<td><code>len()</code></td>
+<td>Compter les éléments d’une chaîne/liste</td>
+<td><code>len(&quot;atomes&quot;)</code> → <code>6</code></td>
 </tr>
 </tbody>
 </table>
-
-<details open class=" box cstyle notices cyan">
-  <summary class="box-label" tabindex="-1">
-    Notez
-  </summary>
-  <div class="box-content">
-<p>Les differents résultats pour les trois types de division (en <strong>gras</strong> dans le tableau).</p>
-<ul>
-<li><a href="http://w3.uqo.ca/adavoust/cours/expressions1.html#Division-et-division-enti%C3%A8re" rel="external" target="_blank">Division et division entière</a></li>
-<li><a href="http://w3.uqo.ca/adavoust/cours/expressions1.html#Division-enti%C3%A8re-et-modulo" rel="external" target="_blank">Division entière et modulo</a></li>
-</ul>
-  </div>
-</details>
-<h2 id="expressions-et-priorité-des-opérateurs">Expressions et priorité des opérateurs</h2>
-<p>Une <strong>expression</strong> est une combinaison de variables, de nombres et d&rsquo;opérateurs.</p>
-<h3 id="priorité-ordre-dexécution-des-opérateurs-">Priorité (ordre d’exécution) des opérateurs :</h3>
-<ol>
-<li><code>()</code> : parenthèses</li>
-<li><code>**</code> : puissance</li>
-<li><code>*</code>, <code>/</code>, <code>//</code>, <code>%</code> : multiplication et division</li>
-<li><code>+</code>, <code>-</code> : addition et soustraction</li>
-</ol>
-<p><strong>Exemple :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>       <span style="color:#75715e"># donne 11, pas 14 !</span>
-</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> (<span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>     <span style="color:#75715e"># donne 14 grâce aux ()</span></span></span></code></pre></div>
+<blockquote>
+<p>On utilise une fonction en l&rsquo;<strong>appelant</strong>. On l&rsquo;appelle en écrivant son nom suivi de parenthèses.</p>
+</blockquote>
+<h3 id="quelques-fonctions-du-module-math">Quelques fonctions du module <code>math</code></h3>
+<p>Pour accéder à des fonctions mathématiques, on utilise le <strong>module <code>math</code></strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math</span></span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Fonction</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>math.sqrt(x)</code></td>
+<td>Racine carrée</td>
+<td><code>math.sqrt(16)</code> → <code>4.0</code></td>
+</tr>
+<tr>
+<td><code>math.pow(x, y)</code></td>
+<td>Puissance</td>
+<td><code>math.pow(2, 3)</code> → <code>8.0</code></td>
+</tr>
+<tr>
+<td><code>math.sin(x)</code></td>
+<td>Sinus (en radians)</td>
+<td><code>math.sin(math.pi / 2)</code> → <code>1.0</code></td>
+</tr>
+<tr>
+<td><code>math.log(x)</code></td>
+<td>Logarithme naturel</td>
+<td><code>math.log(10)</code></td>
+</tr>
+</tbody>
+</table>
+<p>La constante PI est aussi disponible via le module math :</p>
+<table>
+<thead>
+<tr>
+<th>Constante</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>math.pi</code></td>
+<td>La constante π</td>
+<td><code>math.pi</code> → <code>3.14159...</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="affichage-des-données-avec-print-et-les-f-string">Affichage des données avec <em>print</em> et les <em>f-string</em></h2>
 <ul>
 <li>
@@ -421,145 +490,92 @@ age = 17 nom = &#34;Julie&#34; temperature = 36.">
 <li><code>10.2f</code> → total de 10 caractères, dont 2 après la virgule</li>
 <li><code>&lt;</code>, <code>&gt;</code>, <code>^</code> → alignement (gauche, droite, centré)</li>
 </ul>
-<h2 id="comment-décortiquer-un-problème-scientifique-en-algorithme-et-le-traduire-en-python-">Comment décortiquer un problème scientifique en algorithme et le traduire en Python ?</h2>
-<p><strong>Un algorithme</strong>, c’est une suite d’instructions claires pour résoudre un problème.</p>
-<p>Ce processus <strong>crucial</strong>, est la clé pour arriver à écrire un programme sans s&rsquo;arracher les cheveux. On peut le décrire en <strong>6 étapes principales</strong>:</p>
+<h2 id="documentation-du-code-les-commentaires">Documentation du code (les commentaires)</h2>
+<p>On écrit des <strong>commentaires</strong> pour expliquer le code. Python ignore tout ce qui suit <code>#</code> sur une ligne.</p>
+<p><strong>Exemples :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Calcul de l&#39;aire d&#39;un cercle</span>
+</span></span><span style="display:flex;"><span>rayon <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>aire <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span> <span style="color:#f92672">*</span> rayon <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>  <span style="color:#75715e"># formule de l’aire</span></span></span></code></pre></div>
+<h2 id="opérateurs-arithmétiques">Opérateurs arithmétiques</h2>
+<table>
+<thead>
+<tr>
+<th>Opérateur</th>
+<th>Signification</th>
+<th>Exemple</th>
+<th>Résultat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>Addition</td>
+<td><code>3 + 2</code></td>
+<td><code>5</code></td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Soustraction</td>
+<td><code>7 - 4</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiplication</td>
+<td><code>5 * 2</code></td>
+<td><code>10</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><strong>Division</strong> (résultat décimal)</td>
+<td><code>6 / 2</code></td>
+<td><code>3.0</code></td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td><strong>Division entière</strong></td>
+<td><code>7 // 2</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td><strong>Modulo</strong> (reste)</td>
+<td><code>7 % 2</code></td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>Puissance</td>
+<td><code>3 ** 2</code></td>
+<td><code>9</code></td>
+</tr>
+</tbody>
+</table>
+
+<details open class=" box cstyle notices cyan">
+  <summary class="box-label" tabindex="-1">
+    Notez
+  </summary>
+  <div class="box-content">
+<p>Les différents résultats pour les trois types de division (en <strong>gras</strong> dans le tableau).</p>
+<ul>
+<li><a href="http://w3.uqo.ca/adavoust/cours/expressions1.html#Division-et-division-enti%C3%A8re" rel="external" target="_blank">Division et division entière</a></li>
+<li><a href="http://w3.uqo.ca/adavoust/cours/expressions1.html#Division-enti%C3%A8re-et-modulo" rel="external" target="_blank">Division entière et modulo</a></li>
+</ul>
+  </div>
+</details>
+<h2 id="expressions-et-priorité-des-opérateurs">Expressions et priorité des opérateurs</h2>
+<p>Une <strong>expression</strong> est une combinaison de variables, de nombres et d&rsquo;opérateurs.</p>
+<h3 id="priorité-ordre-dexécution-des-opérateurs-">Priorité (ordre d’exécution) des opérateurs :</h3>
 <ol>
-<li>Lire et comprendre le problème</li>
-<li>Identifier les variables et constantes</li>
-<li>Choisir ou écrire la formule</li>
-<li>Écrire un algorithme clair</li>
-<li>Traduire en code Python</li>
-<li>Vérifier et tester le programme</li>
+<li><code>()</code> : parenthèses</li>
+<li><code>**</code> : puissance</li>
+<li><code>*</code>, <code>/</code>, <code>//</code>, <code>%</code> : multiplication et division</li>
+<li><code>+</code>, <code>-</code> : addition et soustraction</li>
 </ol>
-<p>Voyons chacune des étapes plus en détails:</p>
-<h3 id="étape-1--lire-et-comprendre-le-problème"><strong>Étape 1 — Lire et comprendre le problème</strong></h3>
-<blockquote>
-<p><strong>Objectif</strong> : Identifier ce qu’on cherche, ce qu’on connaît, et le contexte scientifique.</p>
-</blockquote>
-<ul>
-<li><strong>Question principale</strong> : Que doit-on calculer, prédire ou modéliser ?</li>
-<li><strong>Données</strong> : Quelles sont les grandeurs connues ? (types ? unités ? constantes ?)</li>
-<li><strong>Formule ou loi</strong> : Y a-t-il une relation physique, chimique ou biologique utilisable ?</li>
-<li><strong>Conditions</strong> : Y a-t-il des limites, des cas particuliers ou des hypothèses ?</li>
-</ul>
-<h3 id="étape-2--identifier-les-variables-et-constantes"><strong>Étape 2 — Identifier les variables et constantes</strong></h3>
-<blockquote>
-<p><strong>Objectif</strong> : Repérer les quantités <strong>variables</strong> (entrées ou sorties) et les <strong>constantes</strong>.</p>
-</blockquote>
-<ul>
-<li><strong>Variables d’entrée</strong> : Grandeurs connues fournies par le problème ou l’utilisateur du programme.</li>
-<li><strong>Variable de sortie</strong> : Ce que l’on veut calculer (la réponse).</li>
-<li><strong>Constantes</strong> : Valeurs fixes (ex. : constante des gaz, g, densité de l’eau, etc.).</li>
-</ul>
-<h3 id="étape-3--choisir-ou-écrire-la-formule"><strong>Étape 3 — Choisir ou écrire la formule</strong></h3>
-<blockquote>
-<p><strong>Objectif</strong> : Traduire la relation scientifique en équation.</p>
-</blockquote>
-<ul>
-<li>Identifier la loi scientifique utilisée (ex. : Boyle, loi des gaz, loi de la gravité, etc.)</li>
-<li>Réorganiser si nécessaire pour isoler la variable à calculer.</li>
-</ul>
-<h3 id="étape-4--écrire-un-algorithme-clair"><strong>Étape 4 — Écrire un algorithme clair</strong></h3>
-<blockquote>
-<p><strong>Objectif</strong> : Décrire les étapes logiques <strong>avant</strong> de coder.</p>
-</blockquote>
-<ul>
-<li>Définir ou lire les données (entrées)</li>
-<li>Calculer la sortie (résultat) avec la formule</li>
-<li>Afficher la réponse</li>
-</ul>
-<h3 id="étape-5--traduire-en-code-python"><strong>Étape 5 — Traduire en code Python</strong></h3>
-<blockquote>
-<p><strong>Objectif</strong> : Écrire du code propre et commenté.</p>
-</blockquote>
-<h3 id="étape-6--vérifier-et-tester"><strong>Étape 6 — Vérifier et tester</strong></h3>
-<blockquote>
-<p><strong>Objectif</strong> : Valider que le résultat est cohérent (scientifiquement et informatiquement).</p>
-</blockquote>
-<ul>
-<li>Est-ce que l’unité du résultat est correcte ?</li>
-<li>Est-ce que la valeur semble logique (ex. : une pression double si le volume diminue de moitié) ?</li>
-<li>Tester avec d’autres valeurs pour confirmer.</li>
-</ul>
-<hr>
-<blockquote>
-<p><strong>Exemple 1</strong> : Un gaz occupe un volume de 4,0 L à une pression de 100 kPa. Quelle sera la pression si le volume diminue à 2,0 L (à température constante) ?</p>
-</blockquote>
-<p><strong>Étape 1</strong>: Comprendre le problème</p>
-<ul>
-<li>On doit calculer la pression finale (P2) d&rsquo;un gaz lorsque son volume final (V2) diminue de moitié.</li>
-<li>On connait les volumes initial (V1) et final (V2), la pression initiale (P1).</li>
-<li>On doit donc trouver la pression finale à l&rsquo;aide de la Loi de Boyle (<code>P1 x V1 = P2 x V2</code>)</li>
-</ul>
-<p><strong>Étape 2</strong>: Identifier les variables et constantes</p>
-<ul>
-<li>Variables d’entrée : <code>V1 = 4.0</code>, <code>P1 = 100</code>, <code>V2 = 2.0</code></li>
-<li>Variable de sortie : <code>P2</code></li>
-<li>Constantes : aucune ici</li>
-<li>Type : float (car ce sont des mesures continues)</li>
-</ul>
-<p><strong>Étape 3</strong>: Écrire la formule</p>
-<span class="math align-center">Loi de Boyle : 
-   $P_1 \cdot V_1 = P_2 \cdot V_2$ &nbsp Donc $P_2 = \frac{P_1 \cdot V_1}{V_2}$</span>
-<p><strong>Étape 4</strong>: Écrire un algorithme clair<br>
-<strong>Format 1</strong>: algorithme en phrases simples et claires</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-plaintxt" data-lang="plaintxt"> * Définir les deux volumes V1 et V2 (initial et final) et la pression initiale P1.
- * Calculer la pression finale à l&#39;aide de la formule P2 = (P1 * V1) / V2.
- * Afficher la pression finale P2.</code></pre></div>
-<p>Ou
-<strong>Format 2</strong>: algorithme en pseudo-code</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-plaintxt" data-lang="plaintxt">Début
-  Lire V1, P1, V2
-  Calculer P2 = (P1 * V1) / V2
-  Afficher P2
-Fin</code></pre></div>
-<p><strong>Étape 5</strong>: Traduire en Python</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Données d&#39;entrée (float = nombre à virgule)</span>
-</span></span><span style="display:flex;"><span>V1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">4.0</span>  <span style="color:#75715e"># Volume initial en litres</span>
-</span></span><span style="display:flex;"><span>P1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">100.0</span>  <span style="color:#75715e"># Pression initiale en kPa</span>
-</span></span><span style="display:flex;"><span>V2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>  <span style="color:#75715e"># Volume final en litres</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul (loi de Boyle)</span>
-</span></span><span style="display:flex;"><span>P2 <span style="color:#f92672">=</span> (P1 <span style="color:#f92672">*</span> V1) <span style="color:#f92672">/</span> V2
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage du résultat</span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La pression finale est de </span><span style="color:#e6db74">{P2}</span><span style="color:#e6db74"> kPa&#34;</span>)</span></span></code></pre></div>
-<p><strong>Étape 6</strong>: Vérifier et tester</p>
-<ul>
-<li><strong>Test 1 — Volume initial = Volume final</strong></li>
-</ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>V1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>
-</span></span><span style="display:flex;"><span>P1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span>V2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>
-</span></span><span style="display:flex;"><span>P2 <span style="color:#f92672">=</span> (P1 <span style="color:#f92672">*</span> V1) <span style="color:#f92672">/</span> V2 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">100</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2.0</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2.0</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100.0</span></span></span></code></pre></div>
-<p><strong>Résultat :</strong> <code>P2 = 100.0 kPa</code><br>
-<strong>Interprétation :</strong> Si le volume ne change pas, la pression reste la même.</p>
-<ul>
-<li><strong>Test 2 — Volume final diminué de 4 à 1 L</strong></li>
-</ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>V1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">4.0</span>
-</span></span><span style="display:flex;"><span>P1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span>V2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>
-</span></span><span style="display:flex;"><span>P2 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">100</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">4.0</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">400.0</span></span></span></code></pre></div>
-<p><strong>Résultat :</strong> <code>P2 = 400.0 kPa</code><br>
-<strong>Interprétation :</strong> Si on divise le volume par 4, la pression est <strong>multipliée par 4</strong>.</p>
-<ul>
-<li><strong>Test 3 — Pression initiale réduite à 50 kPa</strong></li>
-</ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>V1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">4.0</span>
-</span></span><span style="display:flex;"><span>P1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
-</span></span><span style="display:flex;"><span>V2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>
-</span></span><span style="display:flex;"><span>P2 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">50</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">4.0</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2.0</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100.0</span></span></span></code></pre></div>
-<p><strong>Résultat :</strong> <code>P2 = 100.0 kPa</code><br>
-<strong>Interprétation :</strong> Une pression initiale plus faible donne une pression finale plus faible, toutes choses égales par ailleurs.</p>
-<p><strong>Conclusion</strong></p>
-<p>Ces tests montrent que :</p>
-<ul>
-<li>La <strong>pression est inversement proportionnelle au volume</strong> : si le volume diminue, la pression augmente, et inversement.</li>
-<li>Le calcul respecte la <strong>loi de Boyle</strong> à température constante.</li>
-<li>Les résultats sont <strong>cohérents avec l’intuition physique</strong>.</li>
-</ul>
+<p><strong>Exemple :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>       <span style="color:#75715e"># donne 11, pas 14 !</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> (<span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>     <span style="color:#75715e"># donne 14 grâce aux ()</span></span></span></code></pre></div>
 
 <details class=" box cstyle notices blue expand" name="notice-toggle">
   <summary class="box-label">
@@ -580,12 +596,6 @@ Fin</code></pre></div>
 <li>On peut insérer n&rsquo;importe quelle <strong>variable</strong> ou <strong>expression</strong> dans <code>{}</code>.</li>
 </ul>
 </li>
-<li><strong>Avant de coder</strong>:
-<ul>
-<li>Comprendre le problème afin d&rsquo;identifier les variables ou constantes et les formules</li>
-<li>Toujours <em>&ldquo;challenger&rdquo;</em> les résultats obtenus, à l&rsquo;aide de différentes valeurs: &ldquo;Est-ce que ça a du sens scientifiquement ?&rdquo;</li>
-</ul>
-</li>
 </ul>
   </div>
 </details>
@@ -598,9 +608,9 @@ Fin</code></pre></div>
     Organisation des fichiers recommandée&hellip;
   </summary>
   <div class="box-content">
-<p>Pour chaque exercice, créez un nouveau notebook (par ex.: <code>exercice1.ipynb</code>, <code>exercice2.ipynb</code>,&hellip;, <code>exercice4.ipynb</code>) dans un <strong>sous-dossier <code>exercices</code></strong> dans le dossier de la <strong>semaine2</strong>.
-<a href="#R-image-1ae704ae8f42fc871a70dd86690022e1" class="lightbox-link"><img alt="Dossier exercices" class="lazy lightbox figure-image" loading="lazy" src="/semaine2/dossier-exercices.png?width=25vw" style=" height: auto; width: 25vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1ae704ae8f42fc871a70dd86690022e1"><img alt="Dossier exercices" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine2/dossier-exercices.png?width=25vw"></a></p>
+<p>Pour chaque exercice, créez un nouveau notebook (par ex.: <code>exercice1.ipynb</code>, <code>exercice2.ipynb</code>,&hellip;) dans un <strong>sous-dossier <code>exercices</code></strong> dans le dossier de la <strong>semaine2</strong>.
+<a href="#R-image-4eb652881b502a195286ee547ff2bcc4" class="lightbox-link"><img alt="Dossier exercices" class="lazy lightbox figure-image" loading="lazy" src="/semaine2/dossier-exercices.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4eb652881b502a195286ee547ff2bcc4"><img alt="Dossier exercices" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine2/dossier-exercices.png?width=25vw"></a></p>
   </div>
 </details>
 <p><a href="https://python-a25.netlify.app/blocnotes/exercices_intro.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
@@ -634,19 +644,15 @@ V = 0.25	volume de la solution en litres</p>
 <p>où <code>[A]</code> est la concentration du réactif.</p>
 <p><strong>Résultat attendu avec</strong>:  [Réactif A] passe de 0.80 mol/L à 0.20 mol/L en 120 secondes.</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹</code></pre></div>
-<h2 id="exercice-4--distance-parcourue">Exercice 4 : Distance parcourue</h2>
+<h3 id="exercice-4--distance-parcourue">Exercice 4 : Distance parcourue</h3>
 <p>Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.</p>
-<ol>
-<li><strong>Écris l’algorithme en phrases</strong> pour calculer la distance parcourue.</li>
-<li><strong>Implémente l’algorithme en Python</strong>`.</li>
-<li><strong>Affiche la distance parcourue avec une phrase complète.</strong></li>
-</ol>
+<p>*Écris le programme pour calculer la distance parcourue.</p>
 <p><strong>Résultat attendu</strong>:</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Le cycliste a parcouru 4680.0 mètres en 12 minutes.</code></pre></div>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
-<li>Lire la matière sur <a href="/semaine3/index.html">La saisie au clavier, fonctions et débogage</a></li>
+<li>Lire la matière sur <a href="/semaine3/index.html">Algorithme et débogage</a></li>
 <li>Faire les <a href="/semaine3/index.html#exercices-à-faire-avant-le-cours">exercices se trouvant à la fin de la leçon 3</a></li>
 </ol>
 
@@ -704,12 +710,13 @@ V = 0.25	volume de la solution en litres</p>
             <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
             <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="active parent " data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables, types de données et algorithme)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu">
+            <li class="active parent " data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables et types de données)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu">
             <li class="" data-nav-id="/semaine2/atelier/index.html"><a class="padding" href="/semaine2/atelier/index.html">Atelier 2</a></li></ul></li>
-            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Évaluation #1 (15%)</a></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5.</b> Décider avec `if`, `elif`, `else` et les opérateurs</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec `for` et `while`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Algorithme et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Décider avec `if`, `elif`, `else`, répéter avec `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (20%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Répéter avec la boucle `for`</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/separation_struct_donnees/index.html"><a class="padding" href="/separation_struct_donnees/index.html">===Structures de données===</a></li>
             <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Listes, chaînes de caractères, dictionaires et graphiques de base</a></li>
             <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Évaluation #2 (25%)</a></li>
             <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Tableaux NumPy</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
@@ -738,8 +745,8 @@ V = 0.25	volume de la solution en litres</p>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1753638712" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753638712" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753657972" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753657972" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -751,7 +758,7 @@ V = 0.25	volume de la solution en litres</p>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1753638712"></script>
-    <script src="/js/theme.min.js?1753638712" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1753657972"></script>
+    <script src="/js/theme.min.js?1753657972" defer></script>
   </body>
 </html>

@@ -1,0 +1,456 @@
++++
+title = " Les fonctions personnalisées"
+weight = 102.5
+draft = false
++++
+
+## Objectifs 
+
+À la fin de la leçon, vous devrez être en mesure de :
+
+* Définir vos propres fonctions avec `def` (paramètres, `return`, portée locale)
+* Documenter les fonctions personnalisées (`docstring`)
+
+---
+
+## Création de fonction avec `def`
+ 
+> Une fonction peut:
+   > 1. Afficher un résultat (ex: `print()`)
+   > 2. Retourner un résultat (ex: `input()`)
+
+
+### Comment créer et utiliser une fonction ?
+
+1. On utilise le mot clé `def`.
+2. Suivi du nom de la fonction.
+3. Suivi de parenthèses `()`.
+4. Suivi de deux-points `:`.
+5. Les instructions de la fonction sont sur les lignes d'en dessous, décalées. Ce décalage, permet à Python de reconnaitre le code qui appartient à la fonction et qui sera exécuté lors de son utilisation. 
+L'absence de ce décalage (**indentation**) provoque l'erreur ***IndentationError***.
+
+```python
+IndentationError: expected an indented block after function definition on line X
+```
+
+{{% notice style="accent" title="Important" %}}
+* Les règles de **nomenclature des variables**, s'appliquent aussi aux noms de fonctions.
+* Entre les parenthèses, on peut indiquer des **paramètres ou pas**, mais les **parenthèses sont obligatoires**.
+{{% /notice %}}
+
+#### Syntaxes générales
+
+**Une fonction qui affiche le résultat** :
+```python
+def nom_fonction(param1, param2): # <--- Les deux-points 
+    instructions
+    print(résultat) # <--- La fonction se termine ici
+```
+
+**Exemple** :
+
+```python
+# Définition de la fonction
+def aire_rectangle(longueur, largeur):
+    aire = longueur * largeur
+    print(f"L'aire du rectangle de longueur {longueur} et de largeur {largeur} est {aire} cm^2") 
+```
+
+> Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et **affiche** l'aire.
+
+**Une fonction qui retourne le résultat** :
+
+```python
+def nom_fonction(param1, param2):
+    instructions
+    return résultat # <---- La fonction se termine ici
+```
+
+**Exemple** :
+
+```python
+# Définition de la fonction
+def aire_rectangle(longueur, largeur):
+    aire = longueur * largeur
+    return aire  
+```
+
+> Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et la **retourne**.
+
+#### Le mot-clé `return`
+
+* Il **renvoie un résultat** à l’endroit où la fonction a été utilisée (appelée).
+* Dès que `return` est exécuté, la fonction **s’arrête**.
+
+
+#### Appeler (utiliser) une fonction
+
+**Utilisation de la fonction `aire_rectangle()` qui **affiche** l'aire**
+
+```python
+# Appel de la fonction
+aire_rectangle(5, 2)
+```
+> Les valeurs utilisées entre les parenthèses seront utilisées par la fonction.
+> Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.
+
+**Utilisation de la fonction `aire_rectangle()` qui **retourne** l'aire**
+
+```python
+surface = aire_rectangle(5, 2) # Appel de la fonction
+print(f"L'aire du rectangle est : {surface}")
+```
+> Notez la différence: Ici, **il faut stocker le résultat de la fonction dans une variable**.
+
+On aurait aussi pu faire:
+```python
+print(f"L'aire du rectangle est : {aire_rectangle(5, 2)}") # Appel de la fonction
+```
+
+
+### La portée locale des variables
+
+Les **variables créées **à l'intérieur** d'une fonction** (ex: `aire`) **n’existent que dans la fonction**.
+
+**Exemple** :
+
+```python
+def test():
+    x = 10  <---- On peut utiliser x qu'à l'intérieur de la fonction.
+    return x <---- Après cette ligne, x n'existe plus. 
+
+print(test())  # OK, affiche 10
+print(x)       # Erreur : x n'existe pas ici
+```
+![Erreur de nom](./erreur_name.png?width=35vw)
+
+## Documenter ses fonctions (*docstrings*)
+
+Les ***docstrings*** sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.
+
+**Format standard**
+```python
+def nom_fonction(param):
+    """
+    Description de la fonction.
+
+    Paramètres:
+    - param (type): Description.
+
+    Retour:
+    - type: Description.
+    """
+```
+
+**Exemple** :
+```python
+def addition(a, b):
+    """
+    Calcule la somme de deux nombres.
+
+    Paramètres:
+    a (int, float): Le premier nombre.
+    b (int, float): Le deuxième nombre.
+
+    Retour:
+    int, float: La somme des deux nombres.
+    """
+    return a + b
+```
+
+
+{{% notice style="cyan" title="À retenir" groupid="notice-toggle" expanded="false" %}}
+* `def` : sert à définir une fonction 
+* ***nom_fonction(paramètres)*** : Les paramètres sont les variables représentant les données dont la fonction a besoin pour obtenir le résultat.                   
+* `return` : Permet à la fonction de retourner un résultat (`resultat = fonction()` ou <br> `print(fonction())`)
+* **Portée locale** : Signifie que les variables dans une fonction n’existent qu’à l’intérieur de .elle-ci|
+* Pour **utiliser une fonction** prédéfinie ou personnalisé, il faut écrire sont nom, les parenthèses et les paramètres si elle en a.
+{{% /notice %}}
+
+---
+
+### Exercices à faire avant le cours
+
+{{% notice style="magenta" title="Appel de fonction" groupid="notice-toggle" expanded="false" %}}
+Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.
+{{% /notice %}}
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_entrees_fn_debug.ipynb)
+
+## Exercice 1 : La loi d'Ohm
+
+Un technicien de laboratoire vous demande d'écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm. Il voudrait pouvoir entrer la valeur de la résistance (en ohms) et la valeur du courant (en ampères), puis obtenir la tension.
+
+```math
+Loi d’Ohm : $ U = R × I $
+```
+Écrire un programme qui : 
+1. Demande à l'utilisateur d'entrer la valeur de la résistance (en ohms).
+2. Demande à l'utilisateur d'entrer la valeur du courant (en ampères).
+3. Calcule et affiche la tension à l'aide d'une phrase.
+
+**NB** : Ajoutez des explications en commentaire dans le code.
+
+**Résultat attendu** :
+```
+Entrer la résistance en ohms : 10
+Entrer le courant en ampères : 2
+La tension est de 20.0 V
+```
+
+### Exercice 2 : Élément chimique
+
+Écrire un programme qui :
+* Demande à l'utilisateur d'entrer le nom d’un élément chimique.
+* Affiche un message disant "L’élément choisi est \[nom]"
+
+**Exemple d'affichage attendu (élément oxygène)** :
+```python
+Entrer le nom d'un élément chimique : oxygène
+L’élément choisi est : oxygène
+```
+
+### Exercice 3 : Convertir Celsius en Kelvin
+
+Crée une fonction nommée `convertir_C_en_K` qui :
+* prend une température en °C en paramètre
+* retourne la température en Kelvin (formule : K = C + 273.15)
+
+**Exemple d'affichage attendu (30°C)** :
+```python
+Une température de 30°C équivaut à 303.15 K.
+```
+
+### Exercice 4 : Calculer une énergie cinétique
+
+Créez une fonction `energie_cinetique(m, v)` qui calcule et retourne la valeur de l'énergie cinétique d'un objet en joules:
+
+```math
+$E_c = \frac{1}{2} \cdot m \cdot v^2$
+```
+où
+* m  : La masse de l'objet en kilogrammes.
+* v  : La vitesse de l'objet en mètres par seconde.
+
+**Exemple d'affichage attendu avec `masse=2.0 kg` et `vitesse=3.0 m/s`** :
+```python
+L'énergie cinétique de l'objet est de 9.0 joules.
+```
+
+### Exercice 5 : Aire d'un cercle
+
+Écrire une fonction `aire_cercle()` qui :
+* Demande à l'utilisateur d'entrer le rayon du cercle (en cm).
+* Calcule l'aire du cercle (utilisez le **module math** pour PI et le rayon².)
+* Affiche l'aire du cercle, arrondie à 2 décimales (utilisez la fonction `round`).
+
+**Exemple d'affichage attendu (rayon de 5 cm)** :
+```python
+Aire du cercle de rayon 5 cm : 78.54 cm²
+```
+
+### Exercice 6 : Vérifier la portée locale
+
+Crée une fonction `tester_variable()` qui crée une variable `prenom = "votre prénom` et l’affiche dans la fonction avec un `print`.
+Essaye ensuite d’afficher la valeur de `prenom` **à l’extérieur de la fonction**.
+
+**Exemple d'affichage attendu** :
+```python
+NameError                                 Traceback (most recent call last)
+Cell In[16], line 6
+      3     print(f"Dans la fonction tu t'appelles : {prenom}")
+      5 tester_variable()
+----> 6 print(f"À l'exterieur de la fonction tu t'appelles : {prenom}") 
+
+NameError: name 'prenom' is not defined
+```
+
+### Exercice 7 : Trouvez les erreurs et corrigez les
+
+> Ce programme est censé calculer la surface d’un cône droit à partir du rayon et de la hauteur entrés par l’utilisateur. La formule utilisée est :
+```math
+$$
+\text{Surface} = \pi \cdot r \cdot (r + \sqrt{r^2 + h^2})
+$$
+```
+> Toutefois, des erreurs se sont glissées dans le programme. Utilisez des instructions `print()` pour comprendre les erreurs, puis corrigez-les une à une et exécutez le code après chaque correction avant de passer à l'erreur suivante.
+
+**Code à déboguer et corriger** :
+
+```python
+def surface_cone(rayon, hauteur):
+    aire_base = math.pi * rayon ** 2
+    aire_lateral = math.pi * rayon * math.sqrt(rayon**2 + hauteur)
+    surface = aire_base + aire_latérale
+    return surface
+
+r = input("Entrez le rayon du cône: ")
+h = input("Entrez la hauteur du cône: ")
+
+resultat = surface_cone(r, h)
+
+print("La surface totale du cône est de {resultat} cm²")
+```
+====
+## Comment décortiquer un problème scientifique en algorithme et le traduire en Python ?
+
+**Un algorithme**, c’est une suite d’instructions claires pour résoudre un problème.
+
+Ce processus **crucial**, est la clé pour arriver à écrire un programme sans s'arracher les cheveux. On peut le décrire en **6 étapes principales**:
+
+1. Lire et comprendre le problème
+2. Identifier les variables et constantes
+3. Choisir ou écrire la formule
+4. Écrire un algorithme clair
+5. Traduire en code Python
+6. Vérifier et tester le programme
+
+Voyons chacune des étapes plus en détails: 
+
+### **Étape 1 — Lire et comprendre le problème**
+
+> **Objectif** : Identifier ce qu’on cherche, ce qu’on connaît, et le contexte scientifique.
+
+* **Question principale** : Que doit-on calculer, prédire ou modéliser ?
+* **Données** : Quelles sont les grandeurs connues ? (types ? unités ? constantes ?)
+* **Formule ou loi** : Y a-t-il une relation physique, chimique ou biologique utilisable ?
+* **Conditions** : Y a-t-il des limites, des cas particuliers ou des hypothèses ?
+
+
+### **Étape 2 — Identifier les variables et constantes**
+
+> **Objectif** : Repérer les quantités **variables** (entrées ou sorties) et les **constantes**.
+
+* **Variables d’entrée** : Grandeurs connues fournies par le problème ou l’utilisateur du programme.
+* **Variable de sortie** : Ce que l’on veut calculer (la réponse).
+* **Constantes** : Valeurs fixes (ex. : constante des gaz, g, densité de l’eau, etc.).
+
+
+### **Étape 3 — Choisir ou écrire la formule**
+
+> **Objectif** : Traduire la relation scientifique en équation.
+
+* Identifier la loi scientifique utilisée (ex. : Boyle, loi des gaz, loi de la gravité, etc.)
+* Réorganiser si nécessaire pour isoler la variable à calculer.
+
+
+### **Étape 4 — Écrire un algorithme clair**
+
+> **Objectif** : Décrire les étapes logiques **avant** de coder.
+
+* Définir ou lire les données (entrées)
+* Calculer la sortie (résultat) avec la formule
+* Afficher la réponse
+
+
+### **Étape 5 — Traduire en code Python**
+
+> **Objectif** : Écrire du code propre et commenté.
+
+
+### **Étape 6 — Vérifier et tester**
+
+> **Objectif** : Valider que le résultat est cohérent (scientifiquement et informatiquement).
+
+* Est-ce que l’unité du résultat est correcte ?
+* Est-ce que la valeur semble logique (ex. : une pression double si le volume diminue de moitié) ?
+* Tester avec d’autres valeurs pour confirmer.
+
+---
+
+> **Exemple 1** : Un gaz occupe un volume de 4,0 L à une pression de 100 kPa. Quelle sera la pression si le volume diminue à 2,0 L (à température constante) ?
+
+**Étape 1**: Comprendre le problème
+   * On doit calculer la pression finale (P2) d'un gaz lorsque son volume final (V2) diminue de moitié.
+   * On connait les volumes initial (V1) et final (V2), la pression initiale (P1).
+   * On doit donc trouver la pression finale à l'aide de la Loi de Boyle (`P1 x V1 = P2 x V2`)
+
+**Étape 2**: Identifier les variables et constantes
+   * Variables d’entrée : `V1 = 4.0`, `P1 = 100`, `V2 = 2.0`
+   * Variable de sortie : `P2`
+   * Constantes : aucune ici
+   * Type : float (car ce sont des mesures continues)
+
+**Étape 3**: Écrire la formule
+```math
+Loi de Boyle : 
+   $P_1 \cdot V_1 = P_2 \cdot V_2$ &nbsp Donc $P_2 = \frac{P_1 \cdot V_1}{V_2}$
+```
+
+**Étape 4**: Écrire un algorithme clair  
+    **Format 1**: algorithme en phrases simples et claires  
+   ```plaintxt
+    * Définir les deux volumes V1 et V2 (initial et final) et la pression initiale P1.
+    * Calculer la pression finale à l'aide de la formule P2 = (P1 * V1) / V2.
+    * Afficher la pression finale P2.
+   ```
+Ou
+   **Format 2**: algorithme en pseudo-code
+   ```plaintxt
+   Début
+     Lire V1, P1, V2
+     Calculer P2 = (P1 * V1) / V2
+     Afficher P2
+   Fin
+   ```
+
+**Étape 5**: Traduire en Python
+```python
+# Données d'entrée (float = nombre à virgule)
+V1 = 4.0  # Volume initial en litres
+P1 = 100.0  # Pression initiale en kPa
+V2 = 2.0  # Volume final en litres
+
+# Calcul (loi de Boyle)
+P2 = (P1 * V1) / V2
+
+# Affichage du résultat
+print("La pression finale est de {P2} kPa")
+```
+
+**Étape 6**: Vérifier et tester
+
+* **Test 1 — Volume initial = Volume final**
+
+```python
+V1 = 2.0
+P1 = 100
+V2 = 2.0
+P2 = (P1 * V1) / V2 = (100 * 2.0) / 2.0 = 100.0
+```
+
+**Résultat :** `P2 = 100.0 kPa`  
+**Interprétation :** Si le volume ne change pas, la pression reste la même.
+
+* **Test 2 — Volume final diminué de 4 à 1 L**
+
+```python
+V1 = 4.0
+P1 = 100
+V2 = 1.0
+P2 = (100 * 4.0) / 1.0 = 400.0
+```
+
+**Résultat :** `P2 = 400.0 kPa`  
+**Interprétation :** Si on divise le volume par 4, la pression est **multipliée par 4**.
+
+* **Test 3 — Pression initiale réduite à 50 kPa**
+
+```python
+V1 = 4.0
+P1 = 50
+V2 = 2.0
+P2 = (50 * 4.0) / 2.0 = 100.0
+```
+
+**Résultat :** `P2 = 100.0 kPa`  
+**Interprétation :** Une pression initiale plus faible donne une pression finale plus faible, toutes choses égales par ailleurs.
+
+**Conclusion**
+
+Ces tests montrent que :
+
+* La **pression est inversement proportionnelle au volume** : si le volume diminue, la pression augmente, et inversement.
+* Le calcul respecte la **loi de Boyle** à température constante.
+* Les résultats sont **cohérents avec l’intuition physique**.
+

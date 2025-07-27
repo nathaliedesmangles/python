@@ -1,24 +1,18 @@
 +++
 chapter = true
 pre = "<b>6.</b>"
-title = " Répéter avec `for` et `while`"
+title = " Répéter avec la boucle `for`"
 weight = 106
 draft = false
 +++
 
 ## Objectifs
 
-* Comprendre l’utilité des boucles en programmation.
 * Savoir identifier quand utiliser une boucle `for` vs. `while`.
 * Savoir écrire des boucles `for` et `while`.
-* Interrompre le déroulement d'une boucle.
 
 ---
 
-
-## À quoi servent les boucles ?
-
-Répéter des instructions plusieurs fois, soit un nombre connu (`for`), soit jusqu’à ce qu’une condition soit atteinte (`while`).
 
 ## La boucle `for` avec `range()`
 
@@ -45,123 +39,12 @@ for i in range(0, 5):
 > Affiche les valeurs de 0 à 4.
 
 
-## La boucle `while`
-
-Utilisée quand **on ne connaît pas d’avance** combien de fois répéter.
-
-### Syntaxe :
-
-```python
-while condition:
-    instructions
-```
-
-**Exemple** :
-
-```python
-compteur = 0
-while compteur < 5:
-    print("Valeur :", compteur)
-    compteur += 1
-```
-
-> Tant que la condition (`compteur < 5`) est vraie , on exécute le bloc (`print` et `compteur +=1`).
-
-{{% notice style="accent" title="Important" %}}
-Il faut **modifier l'état de la condition dans la boucle** pour éviter une boucle infinie. Dans l'exemple, c'est à ça que sert l'instruction `compteur += 1`
-{{% /notice %}}
-
-
-### Boucle infinie
-
-C'est lorsque la boucle ne s'arrête jamais. Cela peut arriver principalement dans deux situations:
-
-**Cas 1**: oublier de modifier l'état de la condition
-
-```python
-temp = 100  # température initiale
-while temp > 0:
-    print(f"Température : {temp} °C")
-    					# temp n'est pas modifié 
-```
-
-**Cas 1**: oublier de modifier l'état de la condition
-```python
-temp = 100  # température initiale
-while temp > 0:
-    print(f"Température : {temp} °C")
-    temp += 10				# Erreur de logique
-```
-
-#### Arrêter une boucle infinie
-
-> Cliquer dans la case **Arrêter l'exécution des cellules** se trouvant à gauche de la cellule contenant la boucle infinie
-
-![Arrêt d'une boucle infinie dans VS Code Jupyter](./arret_boucle_infinie.png?width=35vw)
-
-## Interrompre une boucle
-
-* `break` : arrête **immédiatement** la boucle.
-* `continue` : saute **à l’itération suivante**.
-
-**Exemple avec `break`** :
-
-```python
-for i in range(10):
-    if i == 5:
-        break
-    print(i)
-```
-
-> Affiche 0 à 4. S’arrête à 5.
-
-```python
-compteur = 0
-while compteur < 10:
-    if compteur == 5:
-        break
-    print("Valeur :", compteur)
-    compteur += 1
-```
-
-> Affiche : 
-``` 
-Valeur : 0  
-Valeur : 1  
-Valeur : 2  
-Valeur : 3  
-Valeur : 4  
-```
-### Exemple avec `continue`
-
-```python
-for i in range(1, 11):
-    if i % 3 == 0:
-        continue  # On saute les multiples de 3
-    print(i)
-```
-
-> Affiche:
-```
-1
-2
-4
-5
-7
-8
-10
-```
-
----
 
 {{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
-* Les boucles permettent d’automatiser les calculs et traitements de données.
 * `for` avec `range()` : Utilisée lorsque le nombre de répétitions est connu d'avance.  
    * Équivaut à dire:  
       * **POUR CHAQUE** *tour de boucle* **FAIRE...** ou
       * **POUR CHAQUE** *valeur d'une séquence* **FAIRE...**
-* `while` : Utilisée lorsqu'une condition doit être respectée pour que la boucle s'exécute.
-   * Équivaut à dire: **TANT QUE** *condition est vraie* **FAIRE...**
 {{% /notice %}}
 
 
