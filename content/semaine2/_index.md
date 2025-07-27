@@ -1,61 +1,35 @@
 +++
 chapter = true
 pre = "<b>2.</b>"
-title = " Introduction à Python (Variables, types de données et algorithme)"
+title = " Introduction à Python (Variables et types de données)"
 weight = 102
 +++
 
 ## Objectifs
 
-* Comprendre l'utilité des **variables** en programmation.
-* Définir et utiliser des variables en Python.
-* Manipuler les **types de base** en Python: `int`, `float`, `str`, `bool`.
-* Afficher les résultats de manière claire et lisible.
-* Comprendre le rôle d'un algorithme.
-* Écrire et traduire des algorithmes simples en python.
+* Créer des variables et afficher leurs types (`int`, `float`, `str`, `bool`).
+* Demander une donnée à l'utilisateur, la convertir et l’afficher de manière claire et lisible.
+* Utiliser diverses fonctions prédéfinies.
+* Écrire des programmes simples en python.
 
 ---
 
 ## Variables et types de données de base
 
-Une **variable** est un nom qui permet de **stocker une valeur** pour la réutiliser.
-
-**Exemples :**
+* Une variable est un nom qui **désigne une valeur**.
 
 ```python
-age = 17
-nom = "Julie"
-temperature = 36.6
+prenom = "Alice"
+age = 20
+temperature = 25.8
 ```
 
-### Types de données courants
-
-| Type    | Exemple          | Description                     |
-| ------- | ---------------- | ------------------------------- |
-| `int`   | `5`, `-3`        | Nombre entier                   |
-| `float` | `3.14`, `-0.5`   | Nombre à virgule flottante      |
-| `str`   | `"Bonjour"` ou `'Bonjour'`    | Chaîne de caractères (`string`)           |
-| `bool`  | `True`, `False`  | Valeur booléenne (vrai ou faux) |
-
-{{% notice style="cyan" title="Notez que.." %}}
-Pour les données de type à virgule flottante, on utilise le point (`.`) à la place d'une virgule (`,`).
-{{% /notice %}}
-
-### Vérifier le type d’une variable
-
-```python
-age = 18
-type_age = type(age)
-print(type_age)  # <class 'int'>
-```
-
-
-## Bonnes pratiques pour nommer des variables
+### Bien nommer vos variables:
 
 * Utiliser des **noms significatifs** (ex : `masse_corps`, `volume_solution`)
-* Commencer par une **lettre** ou un **souligné (\_)**, jamais par un chiffre.
+* Commencer par une **lettre** ou un **souligné (_)**, jamais par un chiffre.
 * Éviter les mots réservés de Python (`if`, `for`, `print`, etc.).
-* Utiliser des mots séparés par des soulignés (\_).
+* Utiliser des mots séparés par des soulignés (_).
 * Utiliser des mots commençants par une lettre majuscule, sauf le premier mot (ex : `masseCorps`, `volumeSolution`).
 
 Mauvais exemples :
@@ -65,55 +39,121 @@ Mauvais exemples :
 print = 8       # print est un mot réservé → erreur
 ```
 
+### Types de base des données
 
-## Documentation du code (les commentaires)
+| Type    | Exemple          | Description                     |
+| ------- | ---------------- | ------------------------------- |
+| `int`   | `5`, `-3`        | Nombre entier                   |
+| `float` | `3.14`, `-0.5`   | Nombre à virgule flottante      |
+| `str`   | `"Bonjour"` ou `'Bonjour'`    | Chaîne de caractères (`string`)           |
+| `bool`  | `True`, `False`  | Valeur booléenne (vrai ou faux) |
 
-On écrit des **commentaires** pour expliquer le code. Python ignore tout ce qui suit `#` sur une ligne.
-
-**Exemples :**
-
-```python
-# Calcul de l'aire d'un cercle
-rayon = 3
-aire = 3.14 * rayon ** 2  # formule de l’aire
-```
-
-
-## Opérateurs arithmétiques
-
-| Opérateur | Signification                   | Exemple  | Résultat |
-| --------- | ------------------------------- | -------- | -------- |
-| `+`       | Addition                        | `3 + 2`  | `5`      |
-| `-`       | Soustraction                    | `7 - 4`  | `3`      |
-| `*`       | Multiplication                  | `5 * 2`  | `10`     |
-| `/`       | **Division** (résultat décimal) | `6 / 2`  | `3.0`    |
-| `//`      | **Division entière**            | `7 // 2` | `3`      |
-| `%`       | **Modulo** (reste)              | `7 % 2`  | `1`      |
-| `**`      | Puissance                       | `3 ** 2` | `9`      |
-
-{{% notice style="cyan" title="Notez" %}}
-Les differents résultats pour les trois types de division (en **gras** dans le tableau).
-* [Division et division entière](http://w3.uqo.ca/adavoust/cours/expressions1.html#Division-et-division-enti%C3%A8re)   
-* [Division entière et modulo](http://w3.uqo.ca/adavoust/cours/expressions1.html#Division-enti%C3%A8re-et-modulo)  
+{{% notice style="accent" title="Attention" %}}
+Pour les données de type à virgule flottante, on utilise le point (`.`) à la place d'une virgule (`,`).
 {{% /notice %}}
 
-## Expressions et priorité des opérateurs
 
-Une **expression** est une combinaison de variables, de nombres et d'opérateurs.
+### Conversion de type
 
-### Priorité (ordre d’exécution) des opérateurs :
+* Parfois on a besoin de modifier le type d'une données avant de l'utiliser. Pour ce faire on utilise des fonctions:
+    * `int()` pour convertir en nombre entier
+    * `float()` pour convertir en nombre décimal
+    * `str()` pour convertir en chaine de caractères
 
-1. `()` : parenthèses
-2. `**` : puissance
-3. `*`, `/`, `//`, `%` : multiplication et division
-4. `+`, `-` : addition et soustraction
+**Exemples**:
+```python
+age = int("18")        # str vers int
+temp = float("22.5")   # str vers float
+taxes = str("14.978")   # float vers str
+```
 
-**Exemple :**
+Si on veut connaitre le type d'une donnée on utilise `type()`
 
 ```python
-resultat = 3 + 4 * 2       # donne 11, pas 14 !
-resultat = (3 + 4) * 2     # donne 14 grâce aux ()
+type("Bonjour")  # str
+type(3.14)       # float
+type(42)         # int
 ```
+
+## Lecture de données au clavier avec `input()`
+
+Souvent, les données d'un programme proviennent de son utilisateur qui les tape au clavier.
+La **fonction** `input()` permet de stocker la données dans une variable.
+
+```python
+nom = input("Quel est ton nom ? ")
+age = int(input("Quel est ton âge ? "))
+```
+
+Les données entrées par `input()` sont **toujours** des chaînes (`str`). Il faut donc les **convertir** pour faire des calculs :
+
+**Exemple d'erreur en cas d'oubli de convertir**
+
+```python
+note1 = input("Entrez la première note")
+note2 = input("Entrez la deuxième note")
+
+moyenne = (note1 + note2) / 2	==> ERREUR
+```
+
+![Erreur de type](./erreur_type.png)
+
+{{% notice style="accent" title="Important" %}}
+L'erreur est causée par le fait que la fonction `input()`, transforme toutes les saisies au clavier en **chaine de caractères (`str`)**.
+Si on tape au clavier **95** et **98**, pour Python c'est **"95" + "98"**, ce qui n'est pas une opération valide. C'est comme essayer de faire "Bonjour" + "Salut".
+{{% /notice %}}
+
+> La **conversion des deux notes en entier**, fait en sorte que Python arrive à faire le calcul sans problème.
+
+
+## Fonctions prédéfinies
+
+### Qu’est-ce qu’une fonction ?
+
+* Une fonction est un **bloc de code réutilisable**. On peut lui donner des **paramètres** (valeurs en entrée) et elle peut renvoyer un **résultat** ou simplement l'afficher. 
+* Si une fonction renvoie un résultat, il devra être **stocké dans une variable** pour être utilisé ailleurs dans le code ou on pourra **utiliser la fonction** directement à l'endroit où le résultat est requis.
+
+{{% notice style="cyan" title="Analogie dans la vie de tous les jours" groupid="notice-toggle" expanded="false" %}}
+Une fonction est comme une recette qu'on peut réutiliser autant de fois que l'on veut:
+- Les ingrédients : les paramètres.
+- La préparation : le corps de la fonction.
+- Le résultat final : la valeur retournée ou affichée.
+Utiliser une fonction, c’est suivre la recette avec des ingrédients précis.
+{{% /notice %}}
+
+### Exemples de fonctions prédéfinies
+
+| Fonction  | Utilité                                 | Exemple                         |
+| --------- | --------------------------------------- | ------------------------------- |
+| `print()` | Afficher un message                     | `print("Bonjour !")`            |
+| `type()`  | Afficher le type d’une variable         | `type(3.5)` → `<class 'float'>` |
+| `input()` | Demander une donnée à l’utilisateur     | `nom = input("Votre nom :")`    |
+| `int()`   | Convertir en entier                     | `val = int("5")`                |
+| `float()` | Convertir en nombre décimal             | `val = float("3.14")`           |
+| `round()` | Arrondir un nombre                      | `round(2.718, 2)` → `2.72`      |
+| `len()`   | Compter les éléments d’une chaîne/liste | `len("atomes")` → `6`           |
+
+> On utilise une fonction en l'**appelant**. On l'appelle en écrivant son nom suivi de parenthèses.
+
+### Quelques fonctions du module `math`
+
+Pour accéder à des fonctions mathématiques, on utilise le **module `math`**.
+
+```python
+import math
+```
+
+| Fonction         | Description        | Exemple                         |
+| ---------------- | ------------------ | ------------------------------- |
+| `math.sqrt(x)`   | Racine carrée      | `math.sqrt(16)` → `4.0`         |
+| `math.pow(x, y)` | Puissance          | `math.pow(2, 3)` → `8.0`        |
+| `math.sin(x)`    | Sinus (en radians) | `math.sin(math.pi / 2)` → `1.0` |
+| `math.log(x)`    | Logarithme naturel | `math.log(10)`                  |
+
+La constante PI est aussi disponible via le module math :
+| Constante      | Description        | Exemple       |               
+| -------------- | ------------------ | ------------- |
+| `math.pi`        | La constante π     | `math.pi` → `3.14159...`        |
 
 
 ## Affichage des données avec *print* et les *f-string*
@@ -153,7 +193,6 @@ Résultat : Sophie a 18 ans.
 
 
 **Exemples** :
-
 ```python
 montant = 134.8678
 print(f"Montant : {montant:.2f} $")        # → Montant : 134.87 $
@@ -164,174 +203,56 @@ print(f"Montant : {montant:^10.2f} $")     # → Montant :   134.87   $
 ```
 
 **Explication** :
-
 * `.2f` → **f** pour "float", **2** pour eux décimales
 * `10.2f` → total de 10 caractères, dont 2 après la virgule
 * `<`, `>`, `^` → alignement (gauche, droite, centré)
 
+## Documentation du code (les commentaires)
 
-## Comment décortiquer un problème scientifique en algorithme et le traduire en Python ?
+On écrit des **commentaires** pour expliquer le code. Python ignore tout ce qui suit `#` sur une ligne.
 
-**Un algorithme**, c’est une suite d’instructions claires pour résoudre un problème.
-
-Ce processus **crucial**, est la clé pour arriver à écrire un programme sans s'arracher les cheveux. On peut le décrire en **6 étapes principales**:
-
-1. Lire et comprendre le problème
-2. Identifier les variables et constantes
-3. Choisir ou écrire la formule
-4. Écrire un algorithme clair
-5. Traduire en code Python
-6. Vérifier et tester le programme
-
-Voyons chacune des étapes plus en détails: 
-
-### **Étape 1 — Lire et comprendre le problème**
-
-> **Objectif** : Identifier ce qu’on cherche, ce qu’on connaît, et le contexte scientifique.
-
-* **Question principale** : Que doit-on calculer, prédire ou modéliser ?
-* **Données** : Quelles sont les grandeurs connues ? (types ? unités ? constantes ?)
-* **Formule ou loi** : Y a-t-il une relation physique, chimique ou biologique utilisable ?
-* **Conditions** : Y a-t-il des limites, des cas particuliers ou des hypothèses ?
-
-
-### **Étape 2 — Identifier les variables et constantes**
-
-> **Objectif** : Repérer les quantités **variables** (entrées ou sorties) et les **constantes**.
-
-* **Variables d’entrée** : Grandeurs connues fournies par le problème ou l’utilisateur du programme.
-* **Variable de sortie** : Ce que l’on veut calculer (la réponse).
-* **Constantes** : Valeurs fixes (ex. : constante des gaz, g, densité de l’eau, etc.).
-
-
-### **Étape 3 — Choisir ou écrire la formule**
-
-> **Objectif** : Traduire la relation scientifique en équation.
-
-* Identifier la loi scientifique utilisée (ex. : Boyle, loi des gaz, loi de la gravité, etc.)
-* Réorganiser si nécessaire pour isoler la variable à calculer.
-
-
-### **Étape 4 — Écrire un algorithme clair**
-
-> **Objectif** : Décrire les étapes logiques **avant** de coder.
-
-* Définir ou lire les données (entrées)
-* Calculer la sortie (résultat) avec la formule
-* Afficher la réponse
-
-
-### **Étape 5 — Traduire en code Python**
-
-> **Objectif** : Écrire du code propre et commenté.
-
-
-### **Étape 6 — Vérifier et tester**
-
-> **Objectif** : Valider que le résultat est cohérent (scientifiquement et informatiquement).
-
-* Est-ce que l’unité du résultat est correcte ?
-* Est-ce que la valeur semble logique (ex. : une pression double si le volume diminue de moitié) ?
-* Tester avec d’autres valeurs pour confirmer.
-
----
-
-> **Exemple 1** : Un gaz occupe un volume de 4,0 L à une pression de 100 kPa. Quelle sera la pression si le volume diminue à 2,0 L (à température constante) ?
-
-**Étape 1**: Comprendre le problème
-   * On doit calculer la pression finale (P2) d'un gaz lorsque son volume final (V2) diminue de moitié.
-   * On connait les volumes initial (V1) et final (V2), la pression initiale (P1).
-   * On doit donc trouver la pression finale à l'aide de la Loi de Boyle (`P1 x V1 = P2 x V2`)
-
-**Étape 2**: Identifier les variables et constantes
-   * Variables d’entrée : `V1 = 4.0`, `P1 = 100`, `V2 = 2.0`
-   * Variable de sortie : `P2`
-   * Constantes : aucune ici
-   * Type : float (car ce sont des mesures continues)
-
-**Étape 3**: Écrire la formule
-```math
-Loi de Boyle : 
-   $P_1 \cdot V_1 = P_2 \cdot V_2$ &nbsp Donc $P_2 = \frac{P_1 \cdot V_1}{V_2}$
-```
-
-**Étape 4**: Écrire un algorithme clair  
-    **Format 1**: algorithme en phrases simples et claires  
-   ```plaintxt
-    * Définir les deux volumes V1 et V2 (initial et final) et la pression initiale P1.
-    * Calculer la pression finale à l'aide de la formule P2 = (P1 * V1) / V2.
-    * Afficher la pression finale P2.
-   ```
-Ou
-   **Format 2**: algorithme en pseudo-code
-   ```plaintxt
-   Début
-     Lire V1, P1, V2
-     Calculer P2 = (P1 * V1) / V2
-     Afficher P2
-   Fin
-   ```
-
-**Étape 5**: Traduire en Python
+**Exemples :**
 ```python
-# Données d'entrée (float = nombre à virgule)
-V1 = 4.0  # Volume initial en litres
-P1 = 100.0  # Pression initiale en kPa
-V2 = 2.0  # Volume final en litres
-
-# Calcul (loi de Boyle)
-P2 = (P1 * V1) / V2
-
-# Affichage du résultat
-print("La pression finale est de {P2} kPa")
+# Calcul de l'aire d'un cercle
+rayon = 3
+aire = 3.14 * rayon ** 2  # formule de l’aire
 ```
 
-**Étape 6**: Vérifier et tester
+## Opérateurs arithmétiques
 
-* **Test 1 — Volume initial = Volume final**
+| Opérateur | Signification                   | Exemple  | Résultat |
+| --------- | ------------------------------- | -------- | -------- |
+| `+`       | Addition                        | `3 + 2`  | `5`      |
+| `-`       | Soustraction                    | `7 - 4`  | `3`      |
+| `*`       | Multiplication                  | `5 * 2`  | `10`     |
+| `/`       | **Division** (résultat décimal) | `6 / 2`  | `3.0`    |
+| `//`      | **Division entière**            | `7 // 2` | `3`      |
+| `%`       | **Modulo** (reste)              | `7 % 2`  | `1`      |
+| `**`      | Puissance                       | `3 ** 2` | `9`      |
+
+{{% notice style="cyan" title="Notez" %}}
+Les différents résultats pour les trois types de division (en **gras** dans le tableau).
+* [Division et division entière](http://w3.uqo.ca/adavoust/cours/expressions1.html#Division-et-division-enti%C3%A8re)   
+* [Division entière et modulo](http://w3.uqo.ca/adavoust/cours/expressions1.html#Division-enti%C3%A8re-et-modulo)  
+{{% /notice %}}
+
+## Expressions et priorité des opérateurs
+
+Une **expression** est une combinaison de variables, de nombres et d'opérateurs.
+
+### Priorité (ordre d’exécution) des opérateurs :
+
+1. `()` : parenthèses
+2. `**` : puissance
+3. `*`, `/`, `//`, `%` : multiplication et division
+4. `+`, `-` : addition et soustraction
+
+**Exemple :**
 
 ```python
-V1 = 2.0
-P1 = 100
-V2 = 2.0
-P2 = (P1 * V1) / V2 = (100 * 2.0) / 2.0 = 100.0
+resultat = 3 + 4 * 2       # donne 11, pas 14 !
+resultat = (3 + 4) * 2     # donne 14 grâce aux ()
 ```
-
-**Résultat :** `P2 = 100.0 kPa`  
-**Interprétation :** Si le volume ne change pas, la pression reste la même.
-
-* **Test 2 — Volume final diminué de 4 à 1 L**
-
-```python
-V1 = 4.0
-P1 = 100
-V2 = 1.0
-P2 = (100 * 4.0) / 1.0 = 400.0
-```
-
-**Résultat :** `P2 = 400.0 kPa`  
-**Interprétation :** Si on divise le volume par 4, la pression est **multipliée par 4**.
-
-* **Test 3 — Pression initiale réduite à 50 kPa**
-
-```python
-V1 = 4.0
-P1 = 50
-V2 = 2.0
-P2 = (50 * 4.0) / 2.0 = 100.0
-```
-
-**Résultat :** `P2 = 100.0 kPa`  
-**Interprétation :** Une pression initiale plus faible donne une pression finale plus faible, toutes choses égales par ailleurs.
-
-**Conclusion**
-
-Ces tests montrent que :
-
-* La **pression est inversement proportionnelle au volume** : si le volume diminue, la pression augmente, et inversement.
-* Le calcul respecte la **loi de Boyle** à température constante.
-* Les résultats sont **cohérents avec l’intuition physique**.
-
 
 {{% notice style="blue" title="À retenir..." groupid="notice-toggle" expanded="false" %}}
 * Une variable garde une **valeur**.
@@ -343,9 +264,6 @@ Ces tests montrent que :
 * De préférence, utiliser des `f-string`.
    * Le `f` vient **juste avant** les guillemets.
    * On peut insérer n'importe quelle **variable** ou **expression** dans `{}`.
-* **Avant de coder**: 
-   * Comprendre le problème afin d'identifier les variables ou constantes et les formules
-   * Toujours *"challenger"* les résultats obtenus, à l'aide de différentes valeurs: "Est-ce que ça a du sens scientifiquement ?"
 {{% /notice %}}
 
 ---
@@ -353,7 +271,7 @@ Ces tests montrent que :
 ## Exercices à faire avant le cours
 
 {{% notice style="magenta" title="Organisation des fichiers recommandée..." groupid="notice-toggle" expanded="false"%}}
-Pour chaque exercice, créez un nouveau notebook (par ex.: `exercice1.ipynb`, `exercice2.ipynb`,..., `exercice4.ipynb`) dans un **sous-dossier `exercices`** dans le dossier de la **semaine2**.
+Pour chaque exercice, créez un nouveau notebook (par ex.: `exercice1.ipynb`, `exercice2.ipynb`,...) dans un **sous-dossier `exercices`** dans le dossier de la **semaine2**.
 ![Dossier exercices](./dossier-exercices.png?width=25vw)
 {{% /notice %}}
 
@@ -380,7 +298,6 @@ Température en Fahrenheit : 100.4°F
 Température en Kelvin : 311.15K
 ```
 
-
 ## Exercice 2 : Calcul de concentration molaire
 
 Un technicien prépare une solution en dissolvant une masse donnée de soluté dans un certain volume de solvant.
@@ -397,7 +314,6 @@ V = 0.25	volume de la solution en litres
 ```
 Concentration molaire : 0.682051282051282 mol/L
 ```
-
 
 ## Exercice 3 : Vitesse moyenne d’une réaction
 
@@ -416,14 +332,11 @@ où `[A]` est la concentration du réactif.
 Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
 ```
 
-
-## Exercice 4 : Distance parcourue
+### Exercice 4 : Distance parcourue
 
 Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.
 
-1. **Écris l’algorithme en phrases** pour calculer la distance parcourue.
-2. **Implémente l’algorithme en Python**`.
-3. **Affiche la distance parcourue avec une phrase complète.**
+*Écris le programme pour calculer la distance parcourue.
 
 **Résultat attendu**:
 ```
@@ -433,6 +346,6 @@ Le cycliste a parcouru 4680.0 mètres en 12 minutes.
 
 ## À faire avant le prochain cours
 
-1. Lire la matière sur [La saisie au clavier, fonctions et débogage](../semaine3/)
+1. Lire la matière sur [Algorithme et débogage](../semaine3/)
 2. Faire les [exercices se trouvant à la fin de la leçon 3](../semaine3/#exercices-à-faire-avant-le-cours)
 
