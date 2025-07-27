@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Les dictionnaires et le traitement de fichiers textes (CSV) :: 420-SN1-RE</title>
+    <title> Traitement de fichiers textes (CSV) :: 420-SN1-RE</title>
     <link>https://example.org/semaine10/index.html</link>
-    <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.</description>
+    <description>Objectifs Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Traitement de fichiers textes (.csv) Les fichiers .csv (Comma-Separated Values) permettent de stocker des tableaux de données.&#xA;Exemple de fichier mesures.csv :&#xA;temps,temperature 0,22.5 5,24.1 10,26.3 15,28.0&#xD;Lire et écrire des fichiers de données (.csv) Écrire (créer) :&#xA;with open(&#34;donnees.csv&#34;, &#34;w&#34;) as f: f.write(&#34;Nom,Âge\n&#34;) f.write(&#34;Alice,20\n&#34;) f.write(&#34;Bob,22\n&#34;)&#xD;Lire un fichier .</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine10/index.xml" rel="self" type="application/rss+xml" />

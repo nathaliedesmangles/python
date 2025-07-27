@@ -85,11 +85,11 @@
       <description>Objectifs Comprendre l’utilité des boucles en programmation. Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. Interrompre le déroulement d’une boucle. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).&#xA;La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.&#xA;Syntaxe : for i in range(début, fin, pas): instructions&#xD;début : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :</description>
     </item>
     <item>
-      <title> Listes, chaînes de caractères et graphiques de base</title>
+      <title> Listes, chaînes de caractères, dictionaires et graphiques de base</title>
       <link>https://example.org/semaine7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine7/index.html</guid>
-      <description>Objectifs Comprendre ce qu’est une liste en Python. Savoir créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Connaître les principales fonctions utiles pour les listes/chaines et graphiques de base. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.</description>
+      <description>Objectifs Comprendre ce qu’est une liste en Python. Savoir créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in.</description>
     </item>
     <item>
       <title> Évaluation #2 (25%)</title>
@@ -106,11 +106,11 @@
       <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.array([32.0, 35.5, 37.2]) print(f&#34;Solubilités mesurées : {sol}&#34;)&#xD;Tableau 2D Un tableau numpy multidimentionnel c’est un tableau numpy qui contient une liste de listes.</description>
     </item>
     <item>
-      <title> Les dictionnaires et le traitement de fichiers textes (CSV)</title>
+      <title> Traitement de fichiers textes (CSV)</title>
       <link>https://example.org/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine10/index.html</guid>
-      <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in. Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs.</description>
+      <description>Objectifs Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Traitement de fichiers textes (.csv) Les fichiers .csv (Comma-Separated Values) permettent de stocker des tableaux de données.&#xA;Exemple de fichier mesures.csv :&#xA;temps,temperature 0,22.5 5,24.1 10,26.3 15,28.0&#xD;Lire et écrire des fichiers de données (.csv) Écrire (créer) :&#xA;with open(&#34;donnees.csv&#34;, &#34;w&#34;) as f: f.write(&#34;Nom,Âge\n&#34;) f.write(&#34;Alice,20\n&#34;) f.write(&#34;Bob,22\n&#34;)&#xD;Lire un fichier .</description>
     </item>
     <item>
       <title> Les graphiques avancés et la regression linéaire</title>

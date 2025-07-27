@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Listes, chaînes de caractères et graphiques de base :: 420-SN1-RE</title>
+    <title> Listes, chaînes de caractères, dictionaires et graphiques de base :: 420-SN1-RE</title>
     <link>https://example.org/semaine7/index.html</link>
-    <description>Objectifs Comprendre ce qu’est une liste en Python. Savoir créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Connaître les principales fonctions utiles pour les listes/chaines et graphiques de base. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.</description>
+    <description>Objectifs Comprendre ce qu’est une liste en Python. Savoir créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine7/index.xml" rel="self" type="application/rss+xml" />
