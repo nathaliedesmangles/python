@@ -61,7 +61,7 @@ $h_{\text{max}}$ : hauteur maximale (en m)
 ## Partie A – Version à compléter
 
 1. Téléchargez le bloc-notes ci-dessous.  
-[Bloc-notes du programme à compléter](./exercice2_partiea.ipynb)
+[Bloc-notes du programme à compléter](https://python-a25.netlify.app/blocnotes/exercice2_partiea.ipynb)
 
 2. Complétez le code
 
@@ -72,7 +72,7 @@ $h_{\text{max}}$ : hauteur maximale (en m)
 Voici une version contenant **plusieurs erreurs** fréquentes à identifier et corriger :
 
 1. Téléchargez le bloc-notes ci-dessous.  
-[Bloc-notes du programme à corriger](./exercice2_partieb.ipynb)
+[Bloc-notes du programme à corriger](https://python-a25.netlify.app/blocnotes/exercice2_partieb.ipynb)
 
 2. **Exécute** le code.
 3. Notez tous les **messages d’erreurs** affichés.
