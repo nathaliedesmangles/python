@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Traitement de fichiers textes (CSV) :: 420-SN1-RE</title>
+    <title> Évaluation #2 (25%) :: 420-SN1-RE</title>
     <link>https://example.org/semaine10/index.html</link>
-    <description>Objectifs Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Traitement de fichiers textes (.csv) Les fichiers .csv (Comma-Separated Values) permettent de stocker des tableaux de données.&#xA;Exemple de fichier mesures.csv :&#xA;temps,temperature 0,22.5 5,24.1 10,26.3 15,28.0&#xD;Lire et écrire des fichiers de données (.csv) Écrire (créer) :&#xA;with open(&#34;donnees.csv&#34;, &#34;w&#34;) as f: f.write(&#34;Nom,Âge\n&#34;) f.write(&#34;Alice,20\n&#34;) f.write(&#34;Bob,22\n&#34;)&#xD;Lire un fichier .</description>
+    <description>Informations ⦁ Date:&#x9;Semaine #8 (Voir le calendrier)&#xA;⦁ Matière: Semaines 5 à 7 inclusivement&#xA;⦁ Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁ Format:&#x9;À confirmer</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Traitement de fichiers textes (CSV)</title>
+      <link>https://example.org/semaine10/_indwex/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine10/_indwex/index.html</guid>
+      <description>Objectifs Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Traitement de fichiers textes (.csv) Les fichiers .csv (Comma-Separated Values) permettent de stocker des tableaux de données.&#xA;Exemple de fichier mesures.csv :&#xA;temps,temperature 0,22.5 5,24.1 10,26.3 15,28.0&#xD;Lire et écrire des fichiers de données (.csv) Écrire (créer) :&#xA;with open(&#34;donnees.csv&#34;, &#34;w&#34;) as f: f.write(&#34;Nom,Âge\n&#34;) f.write(&#34;Alice,20\n&#34;) f.write(&#34;Bob,22\n&#34;)&#xD;Lire un fichier .</description>
+    </item>
     <item>
       <title>Activité 10</title>
       <link>https://example.org/semaine10/atelier/index.html</link>

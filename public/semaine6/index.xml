@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Répéter avec la boucle `for` :: 420-SN1-RE</title>
+    <title> Listes et chaînes de caractères et boucle for :: 420-SN1-RE</title>
     <link>https://example.org/semaine6/index.html</link>
-    <description>Objectifs Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.&#xA;Syntaxe : for i in range(début, fin, pas): instructions&#xD;début : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :&#xA;for i in range(0, 5): print(&#34;i =&#34;, i)&#xD;Affiche les valeurs de 0 à 4.</description>
+    <description>Objectifs À la fin de cette leçon, vous devrez être capable de :&#xA;Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Savoir identifier quand utiliser une boucle for vs. while. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).&#xA;C’est un peu comme une boîte à compartiments.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine6/index.xml" rel="self" type="application/rss+xml" />
@@ -12,7 +12,7 @@
       <link>https://example.org/semaine6/atelier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine6/atelier/index.html</guid>
-      <description>Objectifs Utiliser les boucles for et while pour afficher une table de multiplication et diverses figures. Exercice 1 – Table de multiplication Écrire un programme qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre. Exemple de sortie :&#xA;Entrez un nombre entre 1 et 12 : 7&#xD;1 x 7 = 7&#xD;2 x 7 = 14&#xD;3 x 7 = 21&#xD;.</description>
+      <description>Objectifs Comprendre et manipuler des listes simples et listes imbriquées Appliquer les manipulations de listes sur les chaînes de caractères Dessiner des formes triangulaires à l’aide de la boucle for. Utiliser matplotlib pour tracer, embellir et enregistrer un graphique simple Exercice Une station météorologique t’a envoyé un fichier .csv nommé temperatures.csv, contenant les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.</description>
     </item>
   </channel>
 </rss>

@@ -8,6 +8,13 @@
     <language>en-us</language>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title> Tableaux NumPy</title>
+      <link>https://example.org/semaine8/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/index.html</guid>
+      <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.array([32.0, 35.5, 37.2]) print(f&#34;Solubilités mesurées : {sol}&#34;)&#xD;Tableau 2D Un tableau numpy multidimentionnel c’est un tableau numpy qui contient une liste de listes.</description>
+    </item>
+    <item>
       <title>Foire Aux Questions</title>
       <link>https://example.org/faq/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -61,7 +68,7 @@
       <link>https://example.org/semaine3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/index.html</guid>
-      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Écrire des algorithmes simples et les traduire en Python. Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Trouver facilement les sources des erreurs dans nos programmes (débogage) Déboguer, c’est trouver les causes des erreurs dans le cod, afin de les corriger rapidement.&#xA;Types d’erreurs fréquentes Erreur de syntaxe : La syntaxe de Python n’est pas respectée.</description>
+      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Écrire des algorithmes simples et les traduire en Python. Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Comment décortiquer un problème scientifique en algorithme et le traduire en Python ? Un algorithme, c’est une suite d’instructions claires pour résoudre un problème.&#xA;Ce processus crucial, est la clé pour arriver à écrire un programme sans s’arracher les cheveux.</description>
     </item>
     <item>
       <title> Décider avec `if`, `elif`, `else`, répéter avec `while`</title>
@@ -78,46 +85,32 @@
       <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;Exercices pratiques avec VS Code.</description>
     </item>
     <item>
-      <title> Répéter avec la boucle `for`</title>
+      <title> Listes et chaînes de caractères et boucle for</title>
       <link>https://example.org/semaine6/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine6/index.html</guid>
-      <description>Objectifs Savoir identifier quand utiliser une boucle for vs. while. Savoir écrire des boucles for et while. La boucle for avec range() Utilisée quand on connaît d’avance combien de fois répéter.&#xA;Syntaxe : for i in range(début, fin, pas): instructions&#xD;début : valeur initiale (optionnel, par défaut = 0) fin : valeur non incluse pas : saut entre chaque valeur (optionnel, par défaut = 1) Exemple :&#xA;for i in range(0, 5): print(&#34;i =&#34;, i)&#xD;Affiche les valeurs de 0 à 4.</description>
+      <description>Objectifs À la fin de cette leçon, vous devrez être capable de :&#xA;Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Savoir identifier quand utiliser une boucle for vs. while. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).&#xA;C’est un peu comme une boîte à compartiments.</description>
     </item>
     <item>
-      <title>===Structures de données===</title>
-      <link>https://example.org/separation_struct_donnees/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/separation_struct_donnees/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> Listes, chaînes de caractères, dictionaires et graphiques de base</title>
+      <title> Dictionnaires et graphiques de base</title>
       <link>https://example.org/semaine7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine7/index.html</guid>
-      <description>Objectifs Comprendre ce qu’est une liste en Python. Savoir créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, rmodification). Parcourir un dictionnaire à l’aide d’une boucle for. Vérifier la présence d’une clé avec in.</description>
+      <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Vérifier la présence d’une clé avec in. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</description>
     </item>
     <item>
       <title> Évaluation #2 (25%)</title>
-      <link>https://example.org/semaine8/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine8/index.html</guid>
-      <description>Informations ⦁ Date:&#x9;Semaine #8 (Voir le calendrier)&#xA;⦁ Matière: Semaines 5 à 7 inclusivement&#xA;⦁ Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁ Format:&#x9;À confirmer</description>
-    </item>
-    <item>
-      <title> Tableaux NumPy</title>
-      <link>https://example.org/semaine9/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine9/index.html</guid>
-      <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.array([32.0, 35.5, 37.2]) print(f&#34;Solubilités mesurées : {sol}&#34;)&#xD;Tableau 2D Un tableau numpy multidimentionnel c’est un tableau numpy qui contient une liste de listes.</description>
-    </item>
-    <item>
-      <title> Traitement de fichiers textes (CSV)</title>
       <link>https://example.org/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine10/index.html</guid>
-      <description>Objectifs Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Traitement de fichiers textes (.csv) Les fichiers .csv (Comma-Separated Values) permettent de stocker des tableaux de données.&#xA;Exemple de fichier mesures.csv :&#xA;temps,temperature 0,22.5 5,24.1 10,26.3 15,28.0&#xD;Lire et écrire des fichiers de données (.csv) Écrire (créer) :&#xA;with open(&#34;donnees.csv&#34;, &#34;w&#34;) as f: f.write(&#34;Nom,Âge\n&#34;) f.write(&#34;Alice,20\n&#34;) f.write(&#34;Bob,22\n&#34;)&#xD;Lire un fichier .</description>
+      <description>Informations ⦁ Date:&#x9;Semaine #8 (Voir le calendrier)&#xA;⦁ Matière: Semaines 5 à 7 inclusivement&#xA;⦁ Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁ Format:&#x9;À confirmer</description>
+    </item>
+    <item>
+      <title> Révision</title>
+      <link>https://example.org/semaine9/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine9/index.html</guid>
+      <description>Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. 📘 Plan de la leçon (texte à lire avant le cours) 1. Listes de listes Une liste de listes est une structure 2D (comme une grille de valeurs) :&#xA;grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]&#xD;Accès à un élément :</description>
     </item>
     <item>
       <title> Les graphiques avancés et la regression linéaire</title>

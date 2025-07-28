@@ -8,31 +8,31 @@
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title> Variables, types de données et algorithme</title>
-      <link>https://example.org/solutions_exercices/2_variables/index.html</link>
+      <title> Variables et types de données</title>
+      <link>https://example.org/solutions_exercices/2_variables_types_input_fn/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/2_variables/index.html</guid>
+      <guid>https://example.org/solutions_exercices/2_variables_types_input_fn/index.html</guid>
       <description>Exercice 1 : Conversion de température # 1. Stocker la température en degrés Celsius temp_celsius = 25 # Exemple : 25 °C # 2. Convertir en Fahrenheit et en Kelvin temp_fahrenheit = (temp_celsius * 9/5) + 32 temp_kelvin = temp_celsius + 273.15 # 3. Afficher les trois valeurs avec des messages clairs print(&#34;Température en Celsius : {temp_celsius}°C&#34;) print(&#34;Température en Fahrenheit : {temp_fahrenheit}°F&#34;) print(&#34;Température en Kelvin : {temp_kelvin}K&#34;)&#xD;Exercice 2 : Calcul de concentration molaire # Données connues m = 10.</description>
     </item>
     <item>
       <title> Saisie au clavier, fonctions et débogage</title>
-      <link>https://example.org/solutions_exercices/3_input_fonctions_debug/index.html</link>
+      <link>https://example.org/solutions_exercices/3_algo_debug/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/3_input_fonctions_debug/index.html</guid>
-      <description>Exercice 1 : La loi d’Ohm # Étape 1 : Demander la résistance à l&#39;utilisateur (en ohms) resistance = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Étape 2 : Demander le courant à l&#39;utilisateur (en ampères) courant = float(input(&#34;Entrer le courant en ampères : &#34;)) # Étape 3 : Calculer la tension à l&#39;aide de la formule U = R * I tension = resistance * courant # Étape 4 : Afficher le résultat print(f&#34;La tension est de {tension} V&#34;)&#xD;Exercice 2 : Élément chimique # Demander à l&#39;utilisateur d&#39;entrer le nom d’un élément chimique element = input(&#34;Entrer le nom d&#39;un élément chimique : &#34;) # Afficher le message avec l’élément choisi print(f&#34;L’élément choisi est : {element}&#34;)&#xD;Exercice 3 : Convertir Celsius en Kelvin # Définition de la fonction def convertir_C_en_K(celsius): kelvin = celsius + 273.</description>
+      <guid>https://example.org/solutions_exercices/3_algo_debug/index.html</guid>
+      <description>Exercice 1 : Demi-vie radioactive # Données initiales masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée de l&#39;utilisateur annees = int(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul du nombre de périodes de demi-vie nb_periodes = annees // demi_vie # Calcul de la masse restante masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage du résultat print(f&#34;Après {annees} ans, il reste environ {masse_restante:.2f} g de l&#39;isotope.</description>
     </item>
     <item>
       <title> Décider avec if-elif-else et les opérateurs</title>
-      <link>https://example.org/solutions_exercices/5_if/index.html</link>
+      <link>https://example.org/solutions_exercices/4_if_while/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/5_if/index.html</guid>
+      <guid>https://example.org/solutions_exercices/4_if_while/index.html</guid>
       <description>Partie 1 – Opérateurs de comparaison # 1.1 a = 10 b = 7 print(a &gt; b) # True print(a == 7) # False # 1.2 # Résultats : 5 != 3 # True 8 &lt;= 8 # True 4 &gt; 10 # False 3 == 3 # True&#xD;Partie 2 – Opérateurs logiques # 2.1 (5 &gt; 2) and (7 &lt; 10) # True and True = True (3 !</description>
     </item>
     <item>
       <title> Répéter avec FOR et WHILE</title>
-      <link>https://example.org/solutions_exercices/6_boucles/index.html</link>
+      <link>https://example.org/solutions_exercices/7_listes_chaines_for/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/6_boucles/index.html</guid>
+      <guid>https://example.org/solutions_exercices/7_listes_chaines_for/index.html</guid>
       <description>Exercice 1 a. Afficher les nombres de 1 à 10&#xA;Boucle recommandée : for Pourquoi ? Le nombre d’itérations est connu d’avance. for i in range(1, 11): print(i)&#xD;b. Compter jusqu’à 100 par bonds de 10&#xA;Boucle recommandée : for Pourquoi ? La progression est régulière et le nombre d’itérations est connu. for i in range(0, 101, 10): print(i)&#xD;c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)</description>
     </item>
     <item>

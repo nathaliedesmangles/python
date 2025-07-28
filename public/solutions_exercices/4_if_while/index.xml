@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Décider avec if-elif-else et les opérateurs :: 420-SN1-RE</title>
+    <link>https://example.org/solutions_exercices/4_if_while/index.html</link>
+    <description>Partie 1 – Opérateurs de comparaison # 1.1 a = 10 b = 7 print(a &gt; b) # True print(a == 7) # False # 1.2 # Résultats : 5 != 3 # True 8 &lt;= 8 # True 4 &gt; 10 # False 3 == 3 # True&#xD;Partie 2 – Opérateurs logiques # 2.1 (5 &gt; 2) and (7 &lt; 10) # True and True = True (3 !</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/solutions_exercices/4_if_while/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

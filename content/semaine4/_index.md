@@ -8,9 +8,9 @@ weight = 104
 
 ## Objectifs
 
-* **Identifier et utiliser correctement les opérateurs de comparaison et logiques** pour évaluer des conditions simples en Python.
-* **Écrire des structures conditionnelles (`if`, `elif`, `else`)** pour contrôler le déroulement d’un programme selon différentes situations.
-* **Appliquer les structures conditionnelles** à des contextes scientifiques simples.
+* Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python.
+* Écrire des structures conditionnelles (`if`, `elif`, `else`) pour contrôler le déroulement d’un programme selon différentes situations.
+* Appliquer les structures conditionnelles à des contextes scientifiques simples.
 * Répéter des instructions tant qu'une condition est vraie, avec la boucle `while`.
 * Interrompre le déroulement d'une boucle.
 ---
@@ -347,10 +347,24 @@ pression = 1.6
 # ton code ici
 ```
 
+### Partie 5 - Répéter, mais pas à l'infini
+
+#### Exercice – Utiliser `while` pour atteindre un objectif
+
+Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
+Écrire un programme qui affiche l’évolution de la température **jusqu’à ce qu’elle atteigne 30 °C**.
+
+1. Crée une variable `temp` avec 20 comme valeur initiale.
+2. Utilise une boucle `while` pour vérifier si `temp` est inférieure à 30.
+3. À chaque tour, affiche la température.
+4. Augmente la température de 1.5.
+
 ---
 
 ## À faire avant le prochain cours
 
-1. Lire la matière sur [Répéter avec FOR et WHILE](../semaine6/)
+> **RAPPEL**: Semaine prochaine c'est le **premier examen** (20%)
+
+1. Lire la matière sur [Listes, chaines de caractères et boucle for](../semaine6/)
 2. Faire les [exercices se trouvant à la fin de la leçon 6](../semaine6/#exercices-à-faire-avant-le-cours)
 

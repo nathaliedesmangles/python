@@ -75,25 +75,6 @@ while True:
       print("Choix invalide.")
 ```
 
-
-## Exercice 2
-
-But : utiliser une boucle `while` pour augmenter la température jusqu'à 30 °C
-
-```python
-temp = 20  # température initiale
-
-while temp < 30:
-   print(f"Température actuelle : {temp}°C")
-   temp += 1.5  # on augmente de 1.5 °C par heure
-```
-
-### Ce que ça fait :
-
-* Affiche la température de 20 °C à 28.5 °C (inclus).
-* S’arrête lorsque temp atteint 30 ou plus.
-
-
 ## Exercice 3
 
 But : afficher les numéros des échantillons de 1 à 10
@@ -110,8 +91,3 @@ for i in range(1, 11):
    ...
    Échantillon 10
    ```
-
-
-
-
-

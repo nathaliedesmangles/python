@@ -7,8 +7,7 @@ weight = 102
 
 * Manipuler des variables. 
 * Utiliser des types de données différents.
-* Écrire des algorithmes de problèmes scientifiques.
-* Traduire un algorithme en code.
+* Écrire des programmes scientifiques simples.
 * Afficher des résultats.
 
 ---
@@ -23,9 +22,9 @@ On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce 
 * Ils sont organisés en **2 rangées** de **3 cercles**,
 * La **hauteur du rectangle est 10 cm**, ce qui correspond à **deux diamètres** de cercles (1 par rangée).
 
-a) Identifier les variables, les constantes et les formules nécessaires  
-b) Écrire l'algorithme  
-c) Traduire l'algorithme en Python
+**NB**:
+* Identifier les variables, les constantes et les formules nécessaires  
+
 
 ### Résultat attendu:
 
@@ -49,9 +48,9 @@ où :
 
 On souhaite trouver la quantité de solution qu'il restera après 10 min 15 s
 
-a) Définir les variables, constantes et formules  
-b) Écrire l'algorithme  
-c) Traduire l'algorithme en Python
+**NB**:
+* Identifier les variables, les constantes et les formules nécessaires  
+
 
 **Résultat attendu** :
 
@@ -70,9 +69,9 @@ ii) En déduire quel est le meilleur placement sur 10 ans.
 
 **Hypothèse** : Comme le montant initial est le **même**, on peut le fixer à 100 \$ pour faciliter le calcul de l’écart en **pourcentage** à la fin.
 
-a) Définir les variables, constantes et formules  
-b) Écrire l'algorithme  
-c) Traduire l'algorithme en Python
+**NB**:
+* Identifier les variables, les constantes et les formules nécessaires  
+
 
 **Résultat attendu** (approximatif) :
 

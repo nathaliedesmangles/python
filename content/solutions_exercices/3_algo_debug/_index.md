@@ -5,88 +5,50 @@ weight = 203
 draft = false
 +++
 
-## Exercice 1 : La loi d'Ohm
+
+## Exercice 1 : Demi-vie radioactive
 
 ```python
-# Étape 1 : Demander la résistance à l'utilisateur (en ohms)
-resistance = float(input("Entrer la résistance en ohms : "))
+# Données initiales
+masse_initiale = 100  # en grammes
+demi_vie = 5  # en années
 
-# Étape 2 : Demander le courant à l'utilisateur (en ampères)
-courant = float(input("Entrer le courant en ampères : "))
+# Entrée de l'utilisateur
+annees = int(input("Combien d'années se sont écoulées ? "))
 
-# Étape 3 : Calculer la tension à l'aide de la formule U = R * I
-tension = resistance * courant
+# Calcul du nombre de périodes de demi-vie
+nb_periodes = annees // demi_vie
 
-# Étape 4 : Afficher le résultat
-print(f"La tension est de {tension} V")
+# Calcul de la masse restante
+masse_restante = masse_initiale * (0.5) ** nb_periodes
+
+# Affichage du résultat
+print(f"Après {annees} ans, il reste environ {masse_restante:.2f} g de l'isotope.")
 ```
 
 
-### Exercice 2 : Élément chimique
+
+## Exercice 2 : Croissance bactérienne
 
 ```python
-# Demander à l'utilisateur d'entrer le nom d’un élément chimique
-element = input("Entrer le nom d'un élément chimique : ")
+# Données initiales
+population_initiale = 500
+temps_doublement = 3  # en heures
 
-# Afficher le message avec l’élément choisi
-print(f"L’élément choisi est : {element}")
+# Entrée de l'utilisateur
+heures = int(input("Combien d'heures se sont écoulées ? "))
+
+# Calcul du nombre de périodes de doublement
+nb_periodes = heures // temps_doublement
+
+# Calcul de la population après croissance
+population_finale = population_initiale * (2 ** nb_periodes)
+
+# Affichage du résultat
+print(f"Après {heures} heures, la population est estimée à {population_finale} bactéries.")
 ```
 
-
-### Exercice 3 : Convertir Celsius en Kelvin
-
-```python
-# Définition de la fonction
-def convertir_C_en_K(celsius):
-    kelvin = celsius + 273.15
-    return kelvin    # <---- La fonction se termine ici
-
-# Affichage et appel de la fonction
-print(f"Une température de 30°C équivaut à {convertir_C_en_K(30)} K")
-```
-
-
-### Exercice 4 : Calculer une énergie cinétique
-
-```python
-# Définition de la fonction
-def energie_cinetique(m, v):
-    return 0.5 * m * v**2
-
-# Affichage et appel de la fonction
-print(f"L'énergie cinétique de l'objet est de {energie_cinetique(2.0, 3.0)} joules")  # 9.0 J
-```
-
-
-### Exercice 5 : Aire d'un cercle
-
-```python
-import math
-
-def aire_cercle():
-    rayon = float(input("Entrez le rayon du cercle (en cm) : "))
-    aire = math.pi * rayon ** 2
-    aire_arrondie = round(aire, 2)
-    print(f"Aire du cercle de rayon {rayon} cm : {aire_arrondie} cm²")
-
-# Appel de la fonction
-aire_cercle()
-```
-
-
-### Exercice 6 : Vérifier la portée locale
-
-```python
-def tester_variable():
-    prenom = "Nathalie"
-    print(f"Dans la fonction tu t'appelles : {prenom}")
-
-tester_variable()
-print(f"À l'exterieur de la fonction tu t'appelles : {prenom}")  # NameError: name 'prenom' is not defined attendue
-```
-
-
-### Exercice 7 : Trouvez les erreurs et corrigez-les
+### Exercice 3 : Trouvez les erreurs et corrigez-les
 
 Voici les erreurs dans **l’ordre d’apparition dans le code**, **corrigées une à une**, avec explications :
 
@@ -187,5 +149,3 @@ resultat = surface_cone(r, h)
 
 print(f"La surface totale du cône est de {resultat:.2f} cm²")
 ```
-
- 

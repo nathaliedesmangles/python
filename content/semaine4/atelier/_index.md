@@ -1,17 +1,17 @@
 +++
-title = "Atelier 5"
-weight = 105
+title = "Atelier 4"
+weight = 104
 +++
 
 ## Objectifs
 
 * Utiliser les opérateurs de comparaison et logiques.
 * Utiliser les structures conditionnelles `if`, `elif`, `else`.
-* Travailler avec les types numériques (`float`, `int`).
+* Répéter des instructions jusqu'à un certain moment (condition devient fausse).
 
 ---
 
-## Exercice
+## Exercice 1
 
 L’état physique de l’eau dépend de la température et de la pression. À **pression atmosphérique normale (1 atm)** :
 
@@ -128,3 +128,18 @@ x = afficher_message()
 print(x)  # Affiche : None (car la fonction ne retourne rien)
 ```
 {{% /notice %}}
+
+## Exercice 2  – Table de multiplication
+
+* Écrire un programme qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.
+* utiliser une boucle `while` pour refaire une autre table tant que l’usager le souhaite.
+
+**Exemple de sortie :**
+```
+Entrez un nombre entre 1 et 12 : 7
+1 x 7 = 7
+2 x 7 = 14
+3 x 7 = 21
+...
+12 x 7 = 84
+```

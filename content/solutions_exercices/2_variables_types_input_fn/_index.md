@@ -1,6 +1,6 @@
 +++
 pre = "<b>2.</b>"
-title = " Variables, types de données et algorithme"
+title = " Variables et types de données"
 weight = 202
 draft = false
 +++
@@ -57,7 +57,7 @@ print(f"Vitesse moyenne = {vitesse:.6f} mol L⁻¹ s⁻¹")
 
 ## Exercice 4 : Distance parcourue
 
-### 1. **Algorithme en phrases**
+### 1. **Étapes**
 
 1. Définir la vitesse en m/s
 2. Définir le temps en minutes

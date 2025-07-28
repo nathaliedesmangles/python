@@ -42,31 +42,6 @@ else:
    print("Le nombre doit être entre 1 et 12.")
 ```
 
-### **Variante 2** : recommencer avec boucle `while`
-
-```python
-continuer = "oui"
-
-while continuer.lower() == "oui":
-   n = int(input("Entrez un nombre entre 1 et 12 : "))
-   if 1 <= n <= 12:
-       ordre = input("Ordre croissant (c) ou décroissant (d) ? ")
-       if ordre.lower() == 'c':
-           for i in range(1, 13):
-               print(f"{i} x {n} = {i * n}")
-       elif ordre.lower() == 'd':
-           for i in range(12, 0, -1):
-               print(f"{i} x {n} = {i * n}")
-       else:
-           print("Choix non reconnu.")
-   else:
-       print("Le nombre doit être entre 1 et 12.")
-   
-   continuer = input("Voulez-vous une autre table ? (oui/non) : ")
-```
-
-
-
 
 
 ## Exercice #2 – Motif croissant simple

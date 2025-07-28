@@ -3,17 +3,10 @@
   <channel>
     <title> Algorithme et débogage :: 420-SN1-RE</title>
     <link>https://example.org/semaine3/index.html</link>
-    <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Écrire des algorithmes simples et les traduire en Python. Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Trouver facilement les sources des erreurs dans nos programmes (débogage) Déboguer, c’est trouver les causes des erreurs dans le cod, afin de les corriger rapidement.&#xA;Types d’erreurs fréquentes Erreur de syntaxe : La syntaxe de Python n’est pas respectée.</description>
+    <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Écrire des algorithmes simples et les traduire en Python. Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Comment décortiquer un problème scientifique en algorithme et le traduire en Python ? Un algorithme, c’est une suite d’instructions claires pour résoudre un problème.&#xA;Ce processus crucial, est la clé pour arriver à écrire un programme sans s’arracher les cheveux.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine3/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title> Les fonctions personnalisées</title>
-      <link>https://example.org/semaine3/fonctions_perso/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine3/fonctions_perso/index.html</guid>
-      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:&#xA;Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :.</description>
-    </item>
     <item>
       <title>Atelier 3</title>
       <link>https://example.org/semaine3/atelier/index.html</link>

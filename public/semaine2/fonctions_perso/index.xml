@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Les fonctions personnalisées :: 420-SN1-RE</title>
+    <link>https://example.org/semaine2/fonctions_perso/index.html</link>
+    <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:&#xA;Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine2/fonctions_perso/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

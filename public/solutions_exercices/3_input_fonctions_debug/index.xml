@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Saisie au clavier, fonctions et débogage :: 420-SN1-RE</title>
-    <link>https://example.org/solutions_exercices/3_input_fonctions_debug/index.html</link>
-    <description>Exercice 1 : La loi d’Ohm # Étape 1 : Demander la résistance à l&#39;utilisateur (en ohms) resistance = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Étape 2 : Demander le courant à l&#39;utilisateur (en ampères) courant = float(input(&#34;Entrer le courant en ampères : &#34;)) # Étape 3 : Calculer la tension à l&#39;aide de la formule U = R * I tension = resistance * courant # Étape 4 : Afficher le résultat print(f&#34;La tension est de {tension} V&#34;)&#xD;Exercice 2 : Élément chimique # Demander à l&#39;utilisateur d&#39;entrer le nom d’un élément chimique element = input(&#34;Entrer le nom d&#39;un élément chimique : &#34;) # Afficher le message avec l’élément choisi print(f&#34;L’élément choisi est : {element}&#34;)&#xD;Exercice 3 : Convertir Celsius en Kelvin # Définition de la fonction def convertir_C_en_K(celsius): kelvin = celsius + 273.</description>
+    <link>http://localhost:1313/solutions_exercices/3_input_fonctions_debug/index.html</link>
+    <description>Exercice 1 : Demi-vie radioactive # Données initiales masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée de l&#39;utilisateur annees = int(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul du nombre de périodes de demi-vie nb_periodes = annees // demi_vie # Calcul de la masse restante masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage du résultat print(f&#34;Après {annees} ans, il reste environ {masse_restante:.2f} g de l&#39;isotope.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/solutions_exercices/3_input_fonctions_debug/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/solutions_exercices/3_input_fonctions_debug/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,0 +1,123 @@
+## ✅ **Leçon 1 : Variables, types de données, `input()` et fonctions prédéfinies**
+
+### 🎯 Objectifs
+
+À la fin de cette leçon, vous devez être capable de :
+
+* Créer des variables et comprendre leur rôle.
+* Identifier et utiliser les types de base (`int`, `float`, `str`).
+* Lire une valeur au clavier avec `input()` et convertir son type.
+* Utiliser quelques fonctions prédéfinies utiles (`print`, `len`, `round`, `type`, etc.).
+
+---
+
+### 📘 Contenu de la leçon (à lire avant le cours)
+
+#### 1. Variables
+
+```python
+nom = "Alice"
+age = 20
+```
+
+Une variable est un nom qui **désigne une valeur**.
+
+#### 2. Types de base
+
+```python
+type("Bonjour")  # str
+type(3.14)       # float
+type(42)         # int
+```
+
+#### 3. Conversion de type
+
+```python
+age = int("18")        # str vers int
+temp = float("22.5")   # str vers float
+```
+
+#### 4. Lecture avec `input()`
+
+```python
+nom = input("Quel est ton nom ? ")
+age = int(input("Quel est ton âge ? "))
+```
+
+#### 5. Fonctions prédéfinies utiles
+
+* `print()` : affiche quelque chose
+* `len()` : longueur d'une chaîne ou liste
+* `type()` : type de la variable
+* `round(x, 2)` : arrondi à 2 décimales
+
+---
+
+### 🧪 Exercices pratiques à inclure
+
+* Créer des variables et afficher leurs types.
+* Demander une température à l'utilisateur, la convertir et l’afficher.
+* Utiliser `round()` pour arrondir un calcul.
+* Vérifier si une valeur est bien un `float`.
+
+---
+
+## ✅ **Leçon 2 : Fonctions personnalisées**
+
+### 🎯 Objectifs
+
+À la fin de cette leçon, vous devez être capable de :
+
+* Comprendre le but d’une fonction personnalisée.
+* Écrire une fonction simple avec paramètres.
+* Retourner une valeur avec `return`.
+* Réutiliser ses fonctions dans un programme.
+
+---
+
+### 📘 Contenu de la leçon (à lire avant le cours)
+
+#### 1. Pourquoi écrire des fonctions ?
+
+👉 Pour **éviter de répéter du code**, le **rendre lisible** et **modulable**.
+
+#### 2. Définir une fonction
+
+```python
+def saluer(nom):
+    print(f"Bonjour {nom} !")
+```
+
+#### 3. Appeler une fonction
+
+```python
+saluer("Alice")
+```
+
+#### 4. Fonction avec retour (`return`)
+
+```python
+def carre(x):
+    return x * x
+
+a = carre(3)
+print(a)  # 9
+```
+
+#### 5. Fonction avec plusieurs paramètres
+
+```python
+def convertir_celsius_vers_kelvin(t):
+    return t + 273.15
+```
+
+---
+
+### 🧪 Exercices pratiques à inclure
+
+* Créer une fonction `bonjour(nom)` qui salue l'utilisateur.
+* Écrire une fonction `aire_rectangle(longueur, largeur)` qui retourne l’aire.
+* Demander une température à l’utilisateur, la convertir en Kelvin via une fonction.
+* Écrire une fonction `somme_deux_nombres(a, b)` qui retourne leur somme.
+
+

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Exercice 1 : Demi-vie radioactive # Données initiales masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée de l&#39;utilisateur annees = int(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul du nombre de périodes de demi-vie nb_periodes = annees // demi_vie # Calcul de la masse restante masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage du résultat print(f&#34;Après {annees} ans, il reste environ {masse_restante:.2f} g de l&#39;isotope.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Saisie au clavier, fonctions et débogage :: 420-SN1-RE">
+    <meta name="twitter:description" content="Exercice 1 : Demi-vie radioactive # Données initiales masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée de l&#39;utilisateur annees = int(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul du nombre de périodes de demi-vie nb_periodes = annees // demi_vie # Calcul de la masse restante masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage du résultat print(f&#34;Après {annees} ans, il reste environ {masse_restante:.2f} g de l&#39;isotope.">
+    <meta property="og:url" content="https://example.org/solutions_exercices/3_algo_debug/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content=" Saisie au clavier, fonctions et débogage :: 420-SN1-RE">
+    <meta property="og:description" content="Exercice 1 : Demi-vie radioactive # Données initiales masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée de l&#39;utilisateur annees = int(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul du nombre de périodes de demi-vie nb_periodes = annees // demi_vie # Calcul de la masse restante masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage du résultat print(f&#34;Après {annees} ans, il reste environ {masse_restante:.2f} g de l&#39;isotope.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content=" Saisie au clavier, fonctions et débogage :: 420-SN1-RE">
+    <meta itemprop="description" content="Exercice 1 : Demi-vie radioactive # Données initiales masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée de l&#39;utilisateur annees = int(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul du nombre de périodes de demi-vie nb_periodes = annees // demi_vie # Calcul de la masse restante masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage du résultat print(f&#34;Après {annees} ans, il reste environ {masse_restante:.2f} g de l&#39;isotope.">
+    <meta itemprop="wordCount" content="476">
+    <title> Saisie au clavier, fonctions et débogage :: 420-SN1-RE</title>
+    <link href="/solutions_exercices/3_algo_debug/index.xml" rel="alternate" type="application/rss+xml" title=" Saisie au clavier, fonctions et débogage :: 420-SN1-RE">
+    <link href="/images/logo.png?1753667632" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753667632" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753667632" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753667632" rel="stylesheet">
+    <link href="/css/theme.min.css?1753667632" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753667632" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753667632" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753667632" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753667632" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753667632" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753667632" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753667632" defer></script>
+    <script src="/js/search.min.js?1753667632" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/solutions_exercices\/3_algo_debug\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1753667632";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1753667632" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/solutions_exercices/3_algo_debug/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#exercice-1--demi-vie-radioactive">Exercice 1 : Demi-vie radioactive</a></li>
+    <li><a href="#exercice-2--croissance-bactérienne">Exercice 2 : Croissance bactérienne</a>
+      <ul>
+        <li><a href="#exercice-3--trouvez-les-erreurs-et-corrigez-les">Exercice 3 : Trouvez les erreurs et corrigez-les</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_exercices/index.html"><span itemprop="name">Solutions des exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Saisie au clavier, fonctions et débogage</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/2_variables_types_input_fn/index.html" title="Variables et types de données (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/4_if_while/index.html" title="Décider avec if-elif-else et les opérateurs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable solutions_exercices" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="saisie-au-clavier-fonctions-et-débogage"> Saisie au clavier, fonctions et débogage</h1>
+
+<h2 id="exercice-1--demi-vie-radioactive">Exercice 1 : Demi-vie radioactive</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Données initiales</span>
+</span></span><span style="display:flex;"><span>masse_initiale <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>  <span style="color:#75715e"># en grammes</span>
+</span></span><span style="display:flex;"><span>demi_vie <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>  <span style="color:#75715e"># en années</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Entrée de l&#39;utilisateur</span>
+</span></span><span style="display:flex;"><span>annees <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Combien d&#39;années se sont écoulées ? &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul du nombre de périodes de demi-vie</span>
+</span></span><span style="display:flex;"><span>nb_periodes <span style="color:#f92672">=</span> annees <span style="color:#f92672">//</span> demi_vie
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de la masse restante</span>
+</span></span><span style="display:flex;"><span>masse_restante <span style="color:#f92672">=</span> masse_initiale <span style="color:#f92672">*</span> (<span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">**</span> nb_periodes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage du résultat</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Après </span><span style="color:#e6db74">{</span>annees<span style="color:#e6db74">}</span><span style="color:#e6db74"> ans, il reste environ </span><span style="color:#e6db74">{</span>masse_restante<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g de l&#39;isotope.&#34;</span>)</span></span></code></pre></div>
+<h2 id="exercice-2--croissance-bactérienne">Exercice 2 : Croissance bactérienne</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Données initiales</span>
+</span></span><span style="display:flex;"><span>population_initiale <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>
+</span></span><span style="display:flex;"><span>temps_doublement <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>  <span style="color:#75715e"># en heures</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Entrée de l&#39;utilisateur</span>
+</span></span><span style="display:flex;"><span>heures <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Combien d&#39;heures se sont écoulées ? &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul du nombre de périodes de doublement</span>
+</span></span><span style="display:flex;"><span>nb_periodes <span style="color:#f92672">=</span> heures <span style="color:#f92672">//</span> temps_doublement
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de la population après croissance</span>
+</span></span><span style="display:flex;"><span>population_finale <span style="color:#f92672">=</span> population_initiale <span style="color:#f92672">*</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">**</span> nb_periodes)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage du résultat</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Après </span><span style="color:#e6db74">{</span>heures<span style="color:#e6db74">}</span><span style="color:#e6db74"> heures, la population est estimée à </span><span style="color:#e6db74">{</span>population_finale<span style="color:#e6db74">}</span><span style="color:#e6db74"> bactéries.&#34;</span>)</span></span></code></pre></div>
+<h3 id="exercice-3--trouvez-les-erreurs-et-corrigez-les">Exercice 3 : Trouvez les erreurs et corrigez-les</h3>
+<p>Voici les erreurs dans <strong>l’ordre d’apparition dans le code</strong>, <strong>corrigées une à une</strong>, avec explications :</p>
+<p><strong>1. <code>math</code> n’est pas importé</strong></p>
+<p><strong>Erreur</strong> : <code>NameError: name 'math' is not defined</code></p>
+<p><strong>Correction</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math</span></span></code></pre></div>
+<p>Ajout en haut du script.</p>
+<p><strong>2. Formule de l’aire latérale incorrecte</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>aire_lateral <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> rayon <span style="color:#f92672">*</span> math<span style="color:#f92672">.</span>sqrt(rayon<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> hauteur)</span></span></code></pre></div>
+<p><strong>Erreur</strong> : la formule du cône utilise la <strong>génératrice</strong> ℓ, pas <code>√(rayon² + hauteur)</code>. Et ici, <code>hauteur</code> est encore une <strong>chaîne de caractères</strong> donc cela causera une <strong>erreur de type</strong> plus loin.</p>
+<p>Mais avant d&rsquo;y toucher, corrigeons d’abord l’erreur <strong>suivante plus urgente</strong> :</p>
+<p><strong>3. <code>rayon</code> et <code>hauteur</code> sont des chaînes de caractères</strong></p>
+<p><strong>Erreur</strong> : <code>TypeError: unsupported operand type(s)</code> quand on tente un calcul mathématique sur des <code>str</code>.</p>
+<p><strong>Correction</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>r <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez le rayon du cône: &#34;</span>))
+</span></span><span style="display:flex;"><span>h <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez la hauteur du cône: &#34;</span>))</span></span></code></pre></div>
+<p><strong>4. Mauvais calcul de l’aire latérale</strong></p>
+<p><strong>Erreur mathématique</strong> : La bonne formule est</p>
+<span class="math align-center">$$
+\text{Aire latérale} = \pi r \ell \quad \text{avec } \ell = \sqrt{r^2 + h^2}
+$$</span>
+<p><strong>Correction</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>generatrice <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>sqrt(rayon<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> hauteur<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>aire_laterale <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> rayon <span style="color:#f92672">*</span> generatrice</span></span></code></pre></div>
+<p><strong>5. Mauvais nom de variable <code>aire_latérale</code> au lieu de <code>aire_lateral</code></strong></p>
+<p><strong>Erreur</strong> : <code>NameError: name 'aire_latérale' is not defined</code> (car on utilise un accent non défini)</p>
+<p><strong>Correction</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>surface <span style="color:#f92672">=</span> aire_base <span style="color:#f92672">+</span> aire_lateral</span></span></code></pre></div>
+<p><strong>6. Format incorrect de la dernière <code>print()</code></strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La surface totale du cône est de </span><span style="color:#e6db74">{resultat}</span><span style="color:#e6db74"> cm²&#34;</span>)</span></span></code></pre></div>
+<p><strong>Erreur</strong> : la chaîne affiche <code>{resultat}</code> littéralement.</p>
+<p><strong>Correction</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La surface totale du cône est de </span><span style="color:#e6db74">{</span>resultat<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> cm²&#34;</span>)</span></span></code></pre></div>
+<p>(avec f-string et arrondi à 2 décimales)</p>
+<p><strong>Code final corrigé</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">surface_cone</span>(rayon, hauteur):
+</span></span><span style="display:flex;"><span>    aire_base <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> rayon <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    generatrice <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>sqrt(rayon<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> hauteur<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>    aire_laterale <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> rayon <span style="color:#f92672">*</span> generatrice
+</span></span><span style="display:flex;"><span>    surface <span style="color:#f92672">=</span> aire_base <span style="color:#f92672">+</span> aire_laterale
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> surface
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez le rayon du cône: &#34;</span>))
+</span></span><span style="display:flex;"><span>h <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez la hauteur du cône: &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Rayon saisi:&#34;</span>, r)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hauteur saisie:&#34;</span>, h)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> surface_cone(r, h)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La surface totale du cône est de </span><span style="color:#e6db74">{</span>resultat<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> cm²&#34;</span>)</span></span></code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Tableaux NumPy</a></li>
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables et types de données)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Algorithme et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Décider avec `if`, `elif`, `else`, répéter avec `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (20%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes et chaînes de caractères et boucle for</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Dictionnaires et graphiques de base</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>8.</b> Évaluation #2 (25%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Révision</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Les graphiques avancés et la regression linéaire</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation #3 (25%)</a></li>
+            <li class="parent " data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu">
+            <li class="" data-nav-id="/solutions_exercices/2_variables_types_input_fn/index.html"><a class="padding" href="/solutions_exercices/2_variables_types_input_fn/index.html"><b>2.</b> Variables et types de données</a></li>
+            <li class="active " data-nav-id="/solutions_exercices/3_algo_debug/index.html"><a class="padding" href="/solutions_exercices/3_algo_debug/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a></li>
+            <li class="" data-nav-id="/solutions_exercices/4_if_while/index.html"><a class="padding" href="/solutions_exercices/4_if_while/index.html"><b>5.</b> Décider avec if-elif-else et les opérateurs</a></li>
+            <li class="" data-nav-id="/solutions_exercices/7_listes_chaines_for/index.html"><a class="padding" href="/solutions_exercices/7_listes_chaines_for/index.html"><b>6.</b> Répéter avec FOR et WHILE</a></li>
+            <li class="" data-nav-id="/solutions_exercices/7_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_exercices/7_listes_chaines_visualisation/index.html"><b>7.</b> Listes, chaines de caractères et graphiques de base</a></li>
+            <li class="" data-nav-id="/solutions_exercices/9_numpy/index.html"><a class="padding" href="/solutions_exercices/9_numpy/index.html"><b>9.</b> Tableaux NumPy</a></li>
+            <li class="" data-nav-id="/solutions_exercices/10_dict_fichiers/index.html"><a class="padding" href="/solutions_exercices/10_dict_fichiers/index.html"><b>10.</b> Dictionnaires et traitement de fichiers CSV</a></li></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1753667632" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753667632" defer></script>
+    <script>
+      window.MathJax = Object.assign( window.MathJax || {}, {
+        tex: {
+          inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+          displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+        },
+        options: {
+          enableMenu: false 
+        }
+      }, JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1753667632"></script>
+    <script src="/js/theme.min.js?1753667632" defer></script>
+  </body>
+</html>

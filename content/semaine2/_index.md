@@ -336,7 +336,7 @@ Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
 
 Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.
 
-*Écris le programme pour calculer la distance parcourue.
+* Écris le programme pour calculer la distance parcourue.
 
 **Résultat attendu**:
 ```

@@ -93,3 +93,24 @@ pression = 1.6
 if temperature > 100 and pression > 1.5:
     print("Attention, danger")
 ```
+
+---
+
+### Partie 5 - Répéter, mais pas à l'infini
+
+#### Exercice – Utiliser `while` pour atteindre un objectif
+
+But : utiliser une boucle `while` pour augmenter la température jusqu'à 30 °C
+
+```python
+temp = 20  # température initiale
+
+while temp < 30:
+   print(f"Température actuelle : {temp}°C")
+   temp += 1.5  # on augmente de 1.5 °C par heure
+```
+
+### Ce que ça fait :
+
+* Affiche la température de 20 °C à 28.5 °C (inclus).
+* S’arrête lorsque temp atteint 30 ou plus.

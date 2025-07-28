@@ -25,6 +25,9 @@
     <loc>https://example.org/afaire/boucler_tableaux2d/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine8/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/faq/index.html</loc>
   </url>
   <url>
@@ -79,7 +82,7 @@
     <loc>https://example.org/semaine2/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine3/fonctions_perso/index.html</loc>
+    <loc>https://example.org/semaine2/fonctions_perso/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine2/atelier/index.html</loc>
@@ -94,16 +97,13 @@
     <loc>https://example.org/semaine4/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine5/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/semaine4/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/index.html</loc>
+    <loc>https://example.org/semaine5/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/separation_struct_donnees/index.html</loc>
+    <loc>https://example.org/semaine6/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine6/atelier/index.html</loc>
@@ -112,7 +112,7 @@
     <loc>https://example.org/semaine7/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine8/index.html</loc>
+    <loc>https://example.org/semaine10/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine9/index.html</loc>
@@ -121,7 +121,7 @@
     <loc>https://example.org/semaine9/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine10/index.html</loc>
+    <loc>https://example.org/semaine10/_indwex/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine11/index.html</loc>
@@ -160,16 +160,16 @@
     <loc>https://example.org/solutions_exercices/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/2_variables/index.html</loc>
+    <loc>https://example.org/solutions_exercices/2_variables_types_input_fn/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/3_input_fonctions_debug/index.html</loc>
+    <loc>https://example.org/solutions_exercices/3_algo_debug/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/5_if/index.html</loc>
+    <loc>https://example.org/solutions_exercices/4_if_while/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/6_boucles/index.html</loc>
+    <loc>https://example.org/solutions_exercices/7_listes_chaines_for/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_exercices/7_listes_chaines_visualisation/index.html</loc>

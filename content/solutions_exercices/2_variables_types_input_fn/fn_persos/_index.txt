@@ -1,0 +1,51 @@
+### Exercice 3 : Convertir Celsius en Kelvin
+
+```python
+# Définition de la fonction
+def convertir_C_en_K(celsius):
+    kelvin = celsius + 273.15
+    return kelvin    # <---- La fonction se termine ici
+
+# Affichage et appel de la fonction
+print(f"Une température de 30°C équivaut à {convertir_C_en_K(30)} K")
+```
+
+
+### Exercice 4 : Calculer une énergie cinétique
+
+```python
+# Définition de la fonction
+def energie_cinetique(m, v):
+    return 0.5 * m * v**2
+
+# Affichage et appel de la fonction
+print(f"L'énergie cinétique de l'objet est de {energie_cinetique(2.0, 3.0)} joules")  # 9.0 J
+```
+
+
+### Exercice 5 : Aire d'un cercle
+
+```python
+import math
+
+def aire_cercle():
+    rayon = float(input("Entrez le rayon du cercle (en cm) : "))
+    aire = math.pi * rayon ** 2
+    aire_arrondie = round(aire, 2)
+    print(f"Aire du cercle de rayon {rayon} cm : {aire_arrondie} cm²")
+
+# Appel de la fonction
+aire_cercle()
+```
+
+
+### Exercice 6 : Vérifier la portée locale
+
+```python
+def tester_variable():
+    prenom = "Nathalie"
+    print(f"Dans la fonction tu t'appelles : {prenom}")
+
+tester_variable()
+print(f"À l'exterieur de la fonction tu t'appelles : {prenom}")  # NameError: name 'prenom' is not defined attendue
+```
