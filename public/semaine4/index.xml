@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Décider avec `if`, `elif`, `else`, répéter avec `while` :: 420-SN1-RE</title>
+    <title> Boucles et débogage simple :: 420-SN1-RE</title>
     <link>https://example.org/semaine4/index.html</link>
-    <description>Objectifs Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Interrompre le déroulement d’une boucle. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs.</description>
+    <description>Objectifs Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Répéter des instructions un nombre de fois connu d’avance avec la boucle for. Interrompre le déroulement d’une boucle. Comprendre les messages d’erreurs et découvrir des stratégies simples de débogage. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).&#xA;Boucle while La boucle while répète un bloc tant qu’une condition est vraie.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Atelier 4</title>
-      <link>https://example.org/semaine4/atelier/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine4/atelier/index.html</guid>
-      <description>Objectifs Utiliser les opérateurs de comparaison et logiques. Utiliser les structures conditionnelles if, elif, else. Répéter des instructions jusqu’à un certain moment (condition devient fausse). Exercice 1 L’état physique de l’eau dépend de la température et de la pression. À pression atmosphérique normale (1 atm) :&#xA;L’eau gèle à 0 °C et bout à 100 °C. En altitude, la pression est plus faible, donc l’eau bout à une température plus basse.</description>
-    </item>
   </channel>
 </rss>

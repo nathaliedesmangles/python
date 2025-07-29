@@ -1,7 +1,7 @@
 +++
 chapter = true
-pre = "<b>7.</b>"
-title = " Dictionnaires et graphiques de base"
+pre = "7."
+title = " Tableaux numpy et droite de régression"
 weight = 107
 draft = false
 +++
@@ -9,342 +9,400 @@ draft = false
 
 ## Objectifs
 
-* Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique)
-* Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours).
-* Vérifier la présence d’une clé avec `in`. 
-* Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque `matplotlib`.
+* Créer des tableaux de données à une ou deux dimensions.
+* Calculer des **moyennes** et **écarts types**.
+* Gérer des données **expérimentales incomplètes** (`np.nan`).
+* Comparer des résultats entre éléments ou conditions.
+* Filtrer des données selon des conditions.
+* Tracer un graphique à barres muni d'une barre d'erreur avec `matplotlib`.
+* Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R²
+* Établir une relation entre deux données
 
 ---
 
-## Qu’est-ce qu’un dictionnaire?
 
-Un **dictionnaire** est une structure de données qui associe des **clés** à des **valeurs**.
-Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.
-
-**Syntaxe de base** :
+## Importer la bibliothèque
 
 ```python
-mon_dictionnaire = {
-    "clé1": valeur1,
-    "clé2": valeur2
-}
+import numpy as np
 ```
 
-## Utilisation fréquente en sciences
+## Créer un tableau de données (`array`)
 
-Les dictionnaires sont utiles pour :
+### Tableau 1D
 
-* Associer des symboles d’éléments à des valeurs (masse molaire, charge, état)
-* Regrouper des résultats par échantillon (ex. température par lieu)
-* Associer des noms de gènes à leur expression
+```python
+sol = np.array([32.0, 35.5, 37.2])
+print(f"Solubilités mesurées : {sol}")
+```
+
+### Tableau 2D
+
+* Un **tableau numpy** multidimentionnel c'est un **tableau numpy** qui contient **une liste de listes**.
+
+```python
+matrice = np.array([[1, 2], [3, 4]])
+print(matrice.shape)     # Affiche les dimensions (2 lignes, 2 colonnes)
+```
+
+## Créer des tableaux remplis d’une même valeur
+
+### Rempli de 0
+
+```python
+np.zeros((2, 3))  # Crée un tableau de 2 lignes et 3 colonnes rempli de 0
+```
+
+### Rempli de 1
+
+```python
+np.ones((3, 2))  # Crée un tableau de 3 lignes et 2 colonnes rempli de 1
+```
+
+### Rempli d'une autre valeur
+
+```python
+np.full(4, 0.5)  # Crée un tableau [0.5, 0.5, 0.5, 0.5]
+```
+
+### Rempli de valeurs espacées régulièrement (utile pour les graphiques)
+
+```python
+np.linspace(0, 10, 5)  # Crée un tableau : [ 0.  2.5  5.  7.5 10. ]
+```
+
+## Fonctions statistiques
+
+### Calculer la moyenne des données
+
+```python
+moy = np.mean(sol)
+print(f"Moyenne : {moy:.2f} g/100mL")
+```
+
+
+### Calculer l’écart type des données
+
+```python
+ecart = np.std(sol)
+print(f"Écart type : {ecart:.2f}")
+```
+
+## Opérations vectorielles (rapides et simples)
+
+L’intérêt principal de NumPy : on peut faire des **opérations sur tout un tableau en une seule ligne**.
+
+```python
+x = np.array([1, 2, 3])
+y = np.array([4, 5, 6])
+```
+
+### Addition élément par élément
+
+```python
+x + y    # [5 7 9]
+```
+
+### Soustraction élément par élément
+
+```python
+y - x    # [3 3 3]
+```
+
+### Multiplication par un scalaire
+
+```python
+x * 10   # [10 20 30]
+```
+
+### Division par un scalaire
+
+```python
+y / 2    # [2.  2.5 3. ]
+```
+
+## Ignorer des valeurs manquantes (`np.nan`)
+
+Parfois, une mesure a été oubliée ou mal prise. On utilise `np.nan` pour représenter une valeur manquante :
+
+```python
+sol = np.array([32.0, np.nan, 37.2])
+moy = np.nanmean(sol)
+print(f"Moyenne (sans valeur manquante) : {moy:.2f} g/100mL")
+```
+
+La fonction `np.nanmean()` calcule **la moyenne des éléments en ignorant les valeurs `NaN`** (`Not a Number`), qui représentent généralement des données manquantes ou invalides.
+
+{{% notice style="cyan" title="Notez" %}}
+Sans `nanmean`, la fonction `np.mean(sol)` retournerait `nan` car une seule valeur `nan` dans la liste contamine le résultat.
+{{% /notice %}}
+
+## Filtrage de données
+
+1. Créer un tableau et afficher uniquement certaines valeurs selon une condition
+
+```python
+array = np.array([2, 5, 7, 1, 8, 3])
+masque = array > 5	# Masquage : valeurs supérieures à 5
+print(f"Masque booléen : {masque}
+valeurs_filtrées = array[masque]
+print(f"Valeurs supérieures à 5 : {valeurs_filtrées}")
+```
+**Sortie attendue :**
+
+```
+Masque booléen : [False False  True False  True False]
+Valeurs supérieures à 5 : [7 8]
+```
+
+2. Comptage conditionnel avec `np.sum`
+
+Compter combien de valeurs respectent un seuil donné.
+
+```python
+array = np.array([3, 7, 4, 6, 2, 9, 5])
+seuil = 5
+nb_valeurs = np.sum(array > seuil)	# Comptage des valeurs > 5
+print(f"Nombre de valeurs supérieures à {seuil} : {nb_valeurs}")
+```
+
+**Sortie attendue :**
+```
+Nombre de valeurs supérieures à 5 : 3
+```
+
+---
+
+{{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
+* `import numpy as np` pour utiliser NumPy.
+* `np.array()` crée un tableau de données.
+* `np.zeros()`, `np.ones()`, `np.full()` créent des tableaux remplis.
+* `np.linspace()` génère des valeurs espacées régulièrement.
+* `np.mean()` calcule la moyenne.
+* `np.std()` calcule l’écart type.
+* `np.nanmean()` ignore les données manquantes.
+* Les opérations (`+`, `-`, `*`, `/`) s’appliquent à tout le tableau.
+{{% /notice %}}
+
+
+## Tracer un graphique à barres avec barre d'erreurs
+
+### Importer la bibliothèque
+
+```python
+import matplotlib.pyplot as plt
+```
+
+### Graphique à barres
+
+**Exemple de base :**
+
+```python
+noms = ["A", "B", "C"]
+valeurs = [4, 7, 5]
+
+plt.bar(noms, valeurs)
+plt.title("Résultats")
+plt.xticks(rotation=0)
+plt.legend(["Score"])
+plt.show()
+```
+
+| Fonction        | Rôle                                |
+| --------------- | ----------------------------------- |
+| `plt.bar(x, y)` | Crée des barres                     |
+| `plt.xticks()`  | Contrôle les étiquettes sur l’axe x |
+
+
+### Graphique avec barres d’erreur
+
+**Exemple :**
+
+```python
+x = [1, 2, 3]
+y = [10, 12, 9]
+erreurs = [0.5, 0.3, 0.6]
+
+plt.errorbar(x, y, yerr=erreurs, fmt="o", label="Mesures")
+plt.title("Mesures avec incertitude")
+plt.legend()
+plt.grid(True)
+plt.show()
+```
+
+| Argument  | Signification                    |
+| --------- | -------------------------------- |
+| `yerr`    | barres d’erreur verticales       |
+| `xerr`    | (optionnel) erreurs horizontales |
+| `fmt="o"` | style des points                 |
+
+
+## Tracer une droite de régression
+
+**Rappel** : L'équation d'une droite est `y = a·x + b`
 
 ### Exemple
 
-Un dictionnaire contenant les masses molaires de quelques éléments :
-
 ```python
-masses_molaires = {
-    "H": 1.008,
-    "O": 15.999,
-    "C": 12.011
-}
-```
+import numpy as np
 
-## Accéder à une valeur avec une clé
+x = np.array([1, 2, 3, 4])
+y = np.array([2.1, 4.2, 6.1, 8.0])
 
-```python
-print(masses_molaires["O"])  # Affiche : 15.999
-```
+# Droite de régression : y = a·x + b
 
-> Si la clé n’existe pas, Python déclenche une erreur `KeyError`.
+a, b = np.polyfit(x, y, 1)
+y_reg = a * x + b
 
-## Ajouter ou modifier une valeur
-
-### Ajouter
-
-```python
-masses_molaires["N"] = 14.007
-```
-
-### Modifier
-
-```python
-masses_molaires["C"] = 12.01  # Correction
-```
-
-## Vérifier si une clé est présente
-
-```python
-if "H" in masses_molaires:
-    print("L’hydrogène est dans le dictionnaire.")
-```
-
-## Parcourir un dictionnaire
-
-### Via les clés
-
-```python
-for element in masses_molaires:
-    print(element)
-```
-
-### Via les valeurs
-
-```python
-for valeur in masses_molaires.values():
-    print(valeur)
-```
-
-* `.values()` permet d’obtenir **uniquement les valeurs** du dictionnaire, sans les clés.
-* **Utile quand on veut faire un calcul avec les valeurs**, comme une moyenne ou une somme.
-
-```python
-for valeur in densites.values():
-    print(valeur)
-```
-
-
-### Via les paires clé-valeur :
-
-```python
-for element, masse in masses_molaires.items():
-    print(f"{element} → {masse}")
-```
-
-* `.items()` permet d’obtenir les couples **clé-valeur** sous forme de paires (appelées aussi tuples en Python).
-* Utile quand on veut à la fois le **nom (clé)** et la **valeur associée** pour un affichage ou un traitement.
-
-## Supprimer une entrée
-
-```python
-del masses_molaires["H"]
-```
-
----
-
-## Visualiser les données avec Matplotlib (graphiques de base)
-
-Pour pouvoir visualiser des données sous forme de graphiques, nous utiliserons le module `pyplot` de la bibliothèque `matplotlib`.
-
-### Importer `matplotlib.pyplot`
-
-La partie de `matplotlib` qu'on utilise le plus pour créer des graphiques s'appelle `pyplot`.
-
-```python
-import matplotlib.pyplot as plt
-```
-
-On utilise souvent l’abréviation `plt` pour simplifier l’écriture.
-
-
-### Tracer une courbe simple avec `plot()`
-
-La fonction `plot()` prend deux listes (ou deux tableaux) :
-
-* La première représente l’axe **x**
-* La seconde représente l’axe **y**
-
-```python
-x = [0, 1, 2, 3, 4]
-y = [0, 1, 4, 9, 16]
-
-plt.plot(x, y)
-```
-
-{{% notice style="cyan" title="Sachez qu'..." %}}
-À ce stade, rien ne s'affiche encore. Il faut une dernière commande pour voir le graphique.
-{{% /notice %}}
-
-
-### Afficher le graphique avec `show()`
-
-La commande `show()` sert à **afficher la figure** dans une nouvelle fenêtre.
-
-```python
-plt.show()
-```
-
-**Résultat** : Une courbe représentant les points (0,0), (1,1), (2,4), (3,9), (4,16).
-![Figure 1](./Figure_1.png?width=45vw)
----
-
-### Exemple complet
-
-```python
-import matplotlib.pyplot as plt
-
-x = [0, 1, 2, 3, 4]
-y = [0, 1, 4, 9, 16]
-
-plt.plot(x, y)
-plt.show()
-```
-
-### Personnaliser le trait de la courbe (Style de ligne, couleur, marqueur)
-
-```python
-plt.plot(x, y, color='green', linestyle='--', marker='o')
-```
-
-**Résultat**
-![Figure 2](./Figure_2.png?width=45vw)
-
-
-### Options les plus courantes pour la méthode `plt.plot()`
-
-| **Option**           | **Description**                             | **Exemple**              |
-| -------------------- | ------------------------------------------- | ------------------------ |
-| `color` ou `c`       | Couleur de la courbe                        | `color='red'` ou `c='r'` |
-| `linestyle` ou `ls`  | Style de ligne : continue, pointillée, etc. | `ls='--'`                |
-| `linewidth` ou `lw`  | Épaisseur de la ligne                       | `lw=2`                   |
-| `marker`             | Symbole pour marquer les points             | `marker='o'`             |
-| `markersize` ou `ms` | Taille des marqueurs                        | `ms=8`                   |
-| `label`              | Nom de la courbe (pour la légende)          | `label='x²'`             |
-| `alpha`              | Transparence (0 = invisible, 1 = opaque)    | `alpha=0.7`              |
-
-```python
-plt.plot(x, y, color='blue', linestyle='--', marker='o', label='x²', linewidth=2)
+plt.plot(x, y, "o", label="Données")
+plt.plot(x, y_reg, "-", label=f"y = {a:.2f}x + {b:.2f}")
 plt.legend()
-```
-
-Cela trace une courbe en **bleu**, avec une **ligne pointillée**, des **cercles aux points**, une **légende "x²"**, et une **ligne épaisse**.
-
-### Ajouter un titre, des étiquettes et une grille
-
-* `plt.title("Courbe de y = x²")` : Ajoute un **titre** au graphique.
-* `plt.xlabel("x")` et `plt.ylabel("y")` : Donnent un **nom à l’axe horizontal** (ici, "x") et un **nom à l’axe vertical** (ici, "y").
-* `plt.grid()` : Affiche une **grille** pour mieux lire les valeurs sur le graphique (optionnel mais utile).
-
-
-```python
-x = [0, 1, 2, 3, 4]
-y = [0, 1, 4, 9, 16]
-
-plt.plot(x, y)
-
-plt.title("Courbe de y = x²")
-plt.xlabel("x")
-plt.ylabel("y")
-plt.grid()
-
+plt.grid(True)
 plt.show()
 ```
 
-**Résultat**
-![Figure 3](./Figure_3.png?width=45vw)
+## Affichage propre
 
-### Tracer plusieurs courbes sur un même graphique et ajouter une légende
-
-* Il suffit d'utiliser autant de `plt.plot()` qu'il y a de courbes à tracer.
-* La fonction `plt.legend()` affiche une **légende** sur le graphique.
-* Elle permet d’**identifier** les courbes ou les éléments tracés, à condition qu’ils aient été nommés avec `label=`.
-
-```python
-x = [0, 1, 2, 3, 4]
-y1 = [0, 1, 4, 9, 16]
-y2 = [0, 2, 3, 4, 8]
-
-plt.plot(x, y1, label="objet A")
-plt.plot(x, y2, label="objet B")
-
-plt.title("Deux courbes sur le même graphique")
-plt.xlabel("x")
-plt.ylabel("y")
-plt.grid()
-plt.legend()  # Affiche la légende
-
-plt.show()
-```
-
-> Cela ajoutera une petite boîte dans le coin du graphique indiquant "Courbe 1" et "Courbe 2".
-
-**Résultat**
-![Figure 4](./Figure_4.png?width=45vw)
+| Fonction             | Effet                                            |
+| -------------------- | ------------------------------------------------ |
+| `plt.tight_layout()` | Ajuste l'espacement pour éviter le chevauchement 
 
 
-### Enregistrer un graphique sous forme d'image
 
-La fonction `plt.savefig("figure.png")` **enregistre** le graphique dans un fichier image (ici au format PNG).
-Cela permet de conserver ou partager le graphique même sans afficher la fenêtre graphique.
+## Résumé minimal
+
+| Tâche                | Fonction                           |
+| -------------------- | ---------------------------------- |
+| Graphique à barres   | `plt.bar()`                        |
+| Barres d’erreur      | `plt.errorbar()`                   |
+| Droite de régression | `np.polyfit()`, `plt.plot()`       |
+| Affichage final      | `plt.show()`, `plt.tight_layout()` |
+
+
+---
+
+## Exercices
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_numpy.ipynb)
+
+### Exercice 1 – Solubilité d’un sel
+
+Une solution a été testée à différentes températures. Voici les résultats (en g/100 mL) :
 
 ```python
-plt.plot(x, y)
-plt.savefig("figure.png")
+import numpy as np
+
+sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])
 ```
 
-> Le fichier "figure.png" sera créé dans le même dossier que le fichier `.ipynb`.
+1. Affiche les valeurs de solubilité.
+2. Calcule et affiche la moyenne **en ignorant la valeur manquante**.
+3. Calcule et affiche l’écart type.
 
 
-### Fonctions de base pour les graphiques
+### Exercice 2 – Températures journalières
 
-| Fonction / Méthode             | Rôle principal                                     | Exemple minimal                |
-| ------------------------------ | -------------------------------------------------- | ------------------------------ |
-| `plt.plot(x, y)`               | Trace une courbe (x, y)                            | `plt.plot(x, y)`               |
-| `plt.scatter(x, y)`            | Trace un nuage de points                           | `plt.scatter(x, y)`            |
-| `plt.bar(x, y)`                | Trace un diagramme à barres                        | `plt.bar(x, y)`                |
-| `plt.hist(data)`               | Trace un histogramme                               | `plt.hist(valeurs)`            |
-| `plt.title("titre")`           | Ajoute un titre au graphique                       | `plt.title("Graphique")`       |
-| `plt.xlabel("nom de l'axe x")` | Ajoute un titre à l’axe des x                      | `plt.xlabel("Temps (s)")`      |
-| `plt.ylabel("nom de l'axe y")` | Ajoute un titre à l’axe des y                      | `plt.ylabel("Vitesse (m/s)")`  |
-| `plt.legend()`                 | Affiche une légende pour les courbes nommées       | `plt.legend()`                 |
-| `plt.grid(True)`               | Affiche une grille                                 | `plt.grid(True)`               |
-| `plt.show()`                   | Affiche le graphique à l’écran (à la fin du tracé) | `plt.show()`                   |
-| `plt.savefig("figure.png")`    | Sauvegarde le graphique en image                   | `plt.savefig("mon_graph.png")` |
-| `plt.figure(figsize=(w, h))`   | Définit la taille du graphique (en pouces)         | `plt.figure(figsize=(8, 4))`   |
-
-{{% notice style="blue" title="À retenir (graphiques simples)" groupid="notice-toggle" expanded="false" %}}
-* **Importer la bibliothèque** : matplotlib.pyplot 
-* **Créer les données** sous forme de **listes** ou de **tableaux NumPy**
-* **Tracer une courbe** avec `plt.plot(x, y)`
-    * `plt.plot()` change selon le type de graphique (voir le tableau [ICI](#fonctions-de-base-pour-les-graphiques)
-    * Il existe des options permettant de personnaliser les couleurs, traits, etc.
-* **Afficher le graphique** avec `plt.show()`.
-* **Ajouter un titre** avec `plt.title("Mon graphique")`
-* **Nommer les axes** avec `plt.xlabel("x")` et `plt.ylabel("y")`
-* **Afficher une grille** pour mieux lire les valeurs avec `plt.grid()`
-* **Ajouter une légende** avec `label="..."` dans `plot()` et `plt.legend()`
-* **Tracer plusieurs courbes sur un même graphique** en appelant plusieurs fois `plt.plot(...)` avant `plt.show()`
-{{% /notice %}}
-
-## Exercices à faire avant le cours
-
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_listes_chaines_graphes.ipynb)
-
-
-### Graphiques
-
-#### Exercice 7 – Température dans une journée
-
-* Heures : `[0, 4, 8, 12, 16, 20, 24]`
-* Températures : `[-5, -2, 3, 7, 6, 1, -2]`
-
-Crée un graphique de température en fonction de l’heure.
-
-Ajoute :
-
-* Un titre `"Température en fonction de l’heure"`
-* Les étiquettes `"Heure (h)"` et `"Température (°C)"`
-* Une grille
-
-#### Exercice 8 - Comparaison des valeurs mesurées et attendues
-
-On a mesuré la concentration d’un soluté à différentes températures. Les valeurs **attendues** suivent une loi théorique, tandis que les **valeurs mesurées** viennent d’un capteur.
+Un thermomètre enregistre la température trois fois par jour pendant 7 jours :
 
 ```python
-temp = [10, 20, 30, 40, 50]
-attendu = [2.1, 3.8, 5.6, 7.3, 9.0]
-mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
+temperatures = np.array([
+    [12.1, 17.3, 14.2],
+    [11.8, 16.9, 13.9],
+    [13.0, 18.1, 15.0],
+    [12.5, 17.5, 14.7],
+    [np.nan, 16.0, 14.0],
+    [13.2, 18.0, 15.2],
+    [12.0, 17.0, 14.5]
+])
 ```
 
-* Affiche les **valeurs attendues** avec `plt.plot(...)` (ligne noire avec des ronds).
-* Affiche les **valeurs mesurées** avec `plt.bar(...)` (barres bleues légèrement transparentes).
-* Ajoute un **titre**, une **légende**, les **étiquettes d’axes** et une **grille**.
+1. Quelle est la forme (shape) du tableau ?
+2. Calcule la **moyenne journalière** pour chaque jour.
+3. Calcule la **température moyenne du matin** (1re colonne), en ignorant les données manquantes.
+
+
+### Exercice 3 – Analyse d’ADN
+
+Un test mesure l’intensité de 5 fragments ADN (valeurs arbitraires) pour deux échantillons :
+
+```python
+ech1 = np.array([3.2, 2.8, 4.1, 3.9, 2.5])
+ech2 = np.array([2.9, 3.0, 4.2, 4.0, 2.7])
+```
+
+1. Additionne les deux tableaux pour obtenir un profil combiné.
+2. Calcule la différence entre les deux échantillons.
+3. Calcule la moyenne et l’écart type pour chacun des deux.
+
+
+### Exercice 4 – Pressions dans un cylindre
+
+On mesure la pression (en kPa) à différentes hauteurs (en cm) dans un cylindre :
+
+```python
+hauteur = np.linspace(0, 50, 6)  # [0, 10, 20, 30, 40, 50]
+pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
+```
+
+1. Affiche les hauteurs et les pressions.
+2. Calcule la variation de pression par tranche de 10 cm.
+3. Calcule la moyenne de pression.
+
+
+### Exercice 5 – Croissance d’une plante (modélisation simplifiée)
+
+Une plante pousse selon ce modèle : sa taille augmente de 2 cm par jour.
+
+1. Crée un tableau NumPy qui contient la taille de la plante pendant 10 jours, en partant de 5 cm.
+2. Ajoute 1 cm supplémentaire à chaque valeur pour simuler un apport d’engrais.
+3. Calcule la moyenne de croissance avec et sans engrais.
+
+---
+
+## Atelier
+
+***AJOUTER GRAPHIQUE + DROITE***
+
+## Exercice : Analyse d’une expérience sur l’effet de la lumière sur la croissance des plantes
+
+Une équipe de recherche a mesuré la hauteur (en cm) de jeunes plantes après 10 jours de croissance dans trois conditions lumineuses différentes :
+
+* lumière naturelle,
+* lumière LED blanche,
+* lumière LED rouge.
+
+Pour chaque condition, 5 plantes ont été mesurées. Certaines données sont manquantes, car une ou deux plantes n’ont pas survécu. Les données brutes sont les suivantes :
+
+| Condition   | Plante 1 | Plante 2 | Plante 3 | Plante 4 | Plante 5 |
+| ----------- | -------- | -------- | -------- | -------- | -------- |
+| Naturelle   | 12.5     | 13.1     | 12.9     | 13.0     | 12.8     |
+| LED blanche | 11.2     | 11.6     | np.nan   | 11.5     | 11.3     |
+| LED rouge   | 10.4     | 10.1     | 10.2     | np.nan   | np.nan   |
+
+
+Écris un programme Python qui :
+
+1. **Représente les données sous forme d’un tableau 2D** (à l’aide de `numpy`).
+2. **Calcule la moyenne et l’écart-type** de la hauteur des plantes pour chaque condition, en **ignorant les valeurs manquantes**.
+3. **Compare les hauteurs moyennes** entre les conditions (affiche par exemple la condition ayant la croissance moyenne la plus élevée).
+4. **Affiche un résumé clair**, par exemple :
+
+   ```
+   Moyenne (Naturelle) = 12.86 cm, écart-type = 0.22 cm
+   Moyenne (LED blanche) = ...
+   ...
+   Condition avec la plus grande croissance moyenne : Naturelle
+   ```
+
+### Aide
+
+* Utilise `numpy.array()` pour construire le tableau.
+* Utilise `np.nanmean()` et `np.nanstd()` pour les calculs.
+* Tu peux créer une liste `conditions = ["Naturelle", "LED blanche", "LED rouge"]` pour faciliter l'affichage.
 
 ---
 
 ## À faire avant le prochain cours
 
-> **RAPPEL**: Semaine prochaine c'est le **deuxième examen** (25%)
-
-1. Lire la matière sur [Tableaux NumPy](../semaine9/)
-2. Faire les [exercices se trouvant à la fin de la leçon 9](../semaine9/#exercices-à-faire-avant-le-cours)
+1. Lire la prochaine leçon : [8. Dictionnaires](../semaine8/)
+2. Faire les exercices de la [prochaine leçon :](../semaine8/#exercices)

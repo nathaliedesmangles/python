@@ -22,6 +22,13 @@
       <description>Exercice #1 : Calcul de la force gravitationnelle # Demande du nom de l&#39;objet (chaîne de caractères) nom_objet = input(&#34;Entrez le nom de l&#39;objet : &#34;) # Demande de la masse (nombre décimal) masse = float(input(&#34;Entrez la masse de l&#39;objet en kg : &#34;)) # Déclaration de la constante d&#39;accélération gravitationnelle (en m/s²) ACCELERATION_GRAVITATIONNELLE = 9.8 # constante en majuscules # Calcul de la force force = masse * ACCELERATION_GRAVITATIONNELLE # Affichage du résultat print(f&#34;La force de {nom_objet} de {masse:.</description>
     </item>
     <item>
+      <title>Atelier 4 - Boucles de débogage simple</title>
+      <link>https://example.org/solutions_ateliers/4_boucles_debogage/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_ateliers/4_boucles_debogage/index.html</guid>
+      <description>Exercice 1 : Réaction chimique # Réaction : 1 mL de A + 2 mL de B a_dispo = int(input(&#34;Quantité de A disponible (en mL) : &#34;)) b_dispo = int(input(&#34;Quantité de B disponible (en mL) : &#34;)) nb_reactions = 0 while a_dispo &gt;= 1 and b_dispo &gt;= 2: a_dispo -= 1 b_dispo -= 2 nb_reactions += 1 print(&#34;La réaction a eu lieu&#34;, nb_reactions, &#34;fois.&#34;) print(&#34;Il reste&#34;, a_dispo, &#34;mL de A et&#34;, b_dispo, &#34;mL de B.</description>
+    </item>
+    <item>
       <title> Décider avec if-elif-else et les opérateurs</title>
       <link>https://example.org/solutions_ateliers/5_if/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

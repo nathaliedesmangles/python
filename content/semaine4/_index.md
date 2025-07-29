@@ -1,160 +1,48 @@
 +++
 chapter = true
-pre = "<b>4.</b>"
-title = " Décider avec `if`, `elif`, `else`, répéter avec `while`"
+pre = "4."
+title = " Boucles et débogage simple"
 weight = 104
 +++
 
 
 ## Objectifs
 
-* Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python.
-* Écrire des structures conditionnelles (`if`, `elif`, `else`) pour contrôler le déroulement d’un programme selon différentes situations.
-* Appliquer les structures conditionnelles à des contextes scientifiques simples.
 * Répéter des instructions tant qu'une condition est vraie, avec la boucle `while`.
+* Répéter des instructions un nombre de fois connu d'avance avec la boucle `for`.
 * Interrompre le déroulement d'une boucle.
+* Comprendre les messages d'erreurs et découvrir des stratégies simples de débogage.
+
 ---
-
-
-## Les opérateurs de comparaison
-
-Ces opérateurs permettent de comparer des valeurs. Le résultat est **toujours un booléen** : `True` (vrai) ou `False` (faux).
-
-| Opérateur | Signification        | Exemple  | Résultat |
-| --------- | -------------------- | -------- | -------- |
-| `==`      | égal à               | `5 == 5` | `True`   |
-| `!=`      | différent de         | `3 != 4` | `True`   |
-| `<`       | plus petit que       | `2 < 5`  | `True`   |
-| `<=`      | plus petit ou égal à | `5 <= 5` | `True`   |
-| `>`       | plus grand que       | `7 > 4`  | `True`   |
-| `>=`      | plus grand ou égal à | `6 >= 9` | `False`  |
-
-> Dans une cellule de Code, testez les exemples du tableau.
-
-
-## Les opérateurs logiques
-
-Ils permettent de **combiner plusieurs conditions**.
-
-| Opérateur | Signification            | Exemple               | Résultat |
-| --------- | ------------------------ | --------------------- | -------- |
-| `and`     | et (toutes vraies)       | `(4 < 5) and (6 > 3)` | `True`   |
-| `or`      | ou (au moins une vraie)  | `(4 < 5) or (6 < 3)`  | `True`   |
-| `not`     | négation                 | `not (4 < 5)`         | `False`  |
-
-> Dans une cellule de Code, testez les exemples du tableau.
-
-## Les structures conditionnelles
-
-Elles permettent **d’exécuter un bloc de code seulement si une condition est vraie**.
-
-### L'instruction *if*
-
-> Pour exécuter du code **si une condition est vraie**.
-
-```python
-if condition:
-    # Bloc de code exécuté si la condition est vraie
-```
-
-**Exemple :**
-
-```python
-age = 20
-if age >= 18:
-    print("Majeur")
-```
-
-
-### L'instruction *if*-*else*
-
-> Pour exécuter du code **si une condition est fausse**.
-
-```python
-if condition:
-    # Si la condition est vraie
-else:
-    # Sinon (condition fausse)
-```
-
-**Exemple :**
-
-```python
-age = 16
-if age >= 18:
-    print("Majeur")
-else:
-    print("Mineur")
-```
-
-
-### L'instruction *if*-*elif*-*else*
-
-> Pour tester **plusieurs cas différents** et exécuter du code différent selon le cas.
-
-{{% notice style="accent" title="Important" %}}
-* **Si la condition du `if` est fausse**, un seul `elif` sera exécuté.  
-* **Si et seulement si toutes les conditions** (`if` et tous les `elif`) **sont fausses**, le `else` sera traité.
-{{% /notice %}}
-
-```python
-if condition1:
-    # Si condition1 est vraie
-elif condition2:
-    # Sinon, si condition2 est vraie
-elif condition3:
-    # Sinon, si condition3 est vraie
-else:
-    # Sinon (aucune condition vraie)
-```
-
-**Exemple :**
-
-```python
-note = 85
-
-if note >= 90:
-    print("Excellent")
-elif note >= 75:
-    print("Très bien")
-elif note >= 60:
-    print("Passable")
-else:
-    print("Échec")
-```
-
-{{% notice style="accent" title="Important" %}}
-* **Les deux-points (`:`)** sont obligatoires à la fin des lignes `if`, `elif` et `else`.
-* **L'indentation** est essentielle : elle délimite le bloc de code à exécuter.
-{{% /notice %}}
-
-> Dans des cellules de Code dans VS Code, testez les exemples des instructions `if`, `elif` et `else`.
 
 ## À quoi servent les boucles ?
 
 Répéter des instructions plusieurs fois, soit un nombre connu (`for`), soit jusqu’à ce qu’une condition soit atteinte (`while`).
 
-## La boucle `while`
+## Boucle `while`
 
-Utilisée quand **on ne connaît pas d’avance** combien de fois répéter.
-
-### Syntaxe :
+La boucle `while` répète un bloc **tant qu’une condition est vraie**.
 
 ```python
 while condition:
     instructions
 ```
 
-**Exemple** :
+### Exemple :
+
+**Affiche les minutes jusqu'à l’ébullition (100°C)**
 
 ```python
-compteur = 0
-while compteur < 5:
-    print("Valeur :", compteur)
-    compteur += 1
-```
+temp = 20
+minutes = 0
 
-> Tant que la condition (`compteur < 5`) est vraie , on exécute le bloc (`print` et `compteur +=1`).
+while temp < 100:
+    print(f"Minute {minutes} : {temp} °C")
+    temp += 5
+    minutes += 1
+
+print("Ébullition atteinte !")
+```
 
 {{% notice style="accent" title="Important" %}}
 Il faut **modifier l'état de la condition dans la boucle** pour éviter une boucle infinie. Dans l'exemple, c'est à ça que sert l'instruction `compteur += 1`
@@ -187,6 +75,35 @@ while temp > 0:
 > Cliquer dans la case **Arrêter l'exécution des cellules** se trouvant à gauche de la cellule contenant la boucle infinie
 
 ![Arrêt d'une boucle infinie dans VS Code Jupyter](./arret_boucle_infinie.png?width=35vw)
+
+## Boucle `for`
+
+La boucle `for` est idéale pour **répéter un nombre connu de fois**, ou **parcourir une séquence** (ex : liste, chaîne de caractères, `range()`).
+
+```python
+for élément in séquence:
+    instructions
+```
+
+### La boucle `for` avec `range()`
+
+```python
+for i in range(début, fin, pas):
+    instructions
+```
+
+* `début` : valeur initiale (optionnel, par défaut = 0)
+* `fin` : valeur **non incluse**
+* `pas` : saut entre chaque valeur (optionnel, par défaut = 1)
+
+**Exemple** :
+
+```python
+for i in range(0, 5):
+    print("i =", i)
+```
+
+> Affiche les valeurs de 0 à 4.
 
 ## Interrompre une boucle
 
@@ -241,115 +158,135 @@ for i in range(1, 11):
 10
 ```
 
+## C’est quoi un bogue?
+
+Un **bogue** (ou bug) est une **erreur dans un programme** qui empêche le code de fonctionner comme prévu.
+Il peut être :
+
+* **syntaxique** : le programme ne se lance même pas (ex. oubli de `:` ou de parenthèse);
+* **logique** : le programme fonctionne mais donne un **mauvais résultat**;
+* **d’exécution** : le programme se lance mais plante en cours de route (ex. division par zéro).
+
+## Types d’erreurs fréquentes
+
+| Type d'erreur     | Exemple           | Message typique     |
+| ----------------- | ----------------- | ------------------- |
+| Syntaxe           | `if x = 5:`       | `SyntaxError`       |
+| Typo              | `pritn("Hello")`  | `NameError`         |
+| Zéro              | `10 / 0`          | `ZeroDivisionError` |
+| Type invalide     | `int("chat")`     | `ValueError`        |
+| Oubli de variable | `print(resultat)` | `NameError`         |
+
+### Importance de l’ordre logique
+
+* Un programme **se lit de haut en bas**.
+* Une mauvaise organisation peut conduire à des **résultats erronés**.
+* L’ordre : **entrée → traitement → sortie**
+* Exemple courant d’erreur : utiliser une variable **avant de lui avoir donné une valeur**.
+
+```python
+# Mauvais ordre :
+print(resultat)
+resultat = 5 + 2
+# Erreur : la variable n'existe pas encore
+```
+
+## Techniques de débogage simples
+
+### 1. Lire les messages d’erreur
+
+* **Que dit-il?**
+* **Sur quelle ligne?**
+* **Quel type d’erreur?**
+
+Quand Python rencontre une erreur, il t’affiche un **message d’erreur**. C’est comme un indice pour t’aider.
+
+**Exemple** :
+```python
+val = int(input("Donne un nombre: "))
+print("Le carré est: " val * val)
+```
+
+> `SyntaxError: invalid syntax`
+
+* Le message t’indique une **erreur de syntaxe**. Ici, il manque une **virgule** ou un `+` dans le `print`.
+
+```python
+print("Le carré est:", val * val)
+```
+
+### 2. Ajouter des `print()`
+
+C’est ta **lampe de poche** : affiche les variables pour voir ce qui se passe.
+
+```python
+age = int(input("Âge : "))
+print("DEBUG - âge reçu :", age)
+if age >= 18:
+    print("Majeur")
+```
+
+### 3. Tester petit à petit
+
+N’écris pas tout d’un coup. Teste **par morceaux**.
+
+```python
+# Mauvais
+# tout écrit avant de tester
+
+# Mieux
+# écrire un input → tester
+# ajouter un if → tester
+# ajouter un calcul → tester
+```
+
 {{% notice style="cyan" title="À retenir" groupid="notice-toggle" expanded="false" %}}
-* Les **opérateurs de comparaison** comparent des valeurs.
-* Les **opérateurs logiques** combinent plusieurs conditions.
-* Les **structures conditionnelles** permettent de **réagir à des critères** dans un programme.
-* **Les deux-points (`:`)** sont obligatoires à la fin des lignes `if`, `elif` et `else`.
-* **L'indentation** (souvent 4 espaces) est essentielle : elle délimite le bloc de code à exécuter.
-* Il peut y avoir **autant de `elif` que nécessaire**, mais **un seul `if` et au plus un seul `else`**.
-	* `if` vérifie si une condition est vraie, **si et seulement si c'est le cas**, les instructions en dessous seront exécutées.
-	* `elif` permet de vérifier une autre condition, **si et seulement si la condition du `if` est fausse ET celle du `elif` est vraie**, les instructions en dessous et décalées seront exécutées.
-	* `else` permet de prévoir des instructions à effectuer, **si et seulement si aucune des conditions précédentes n'est vraie**.
-* Les boucles permettent d’automatiser les calculs et traitements de données.
+* Les boucles (`while` et `for`) permettent de **répéter des actions** efficacement.
+* Il est possible d'interrompre le déroulement d'une boucle à l'aide de `break` ou `continue`.
+* L’indentation est **essentielle** pour structurer le code.
 * `while` : Utilisée lorsqu'une condition doit être respectée pour que la boucle s'exécute.
    * Équivaut à dire: **TANT QUE** *condition est vraie* **FAIRE...**
+* `for` avec range() : Utilisée lorsque le nombre de répétitions est connu d’avance.
+   * Équivaut à dire: POUR CHAQUE tour de boucle FAIRE… ou  
+                      POUR CHAQUE valeur d’une séquence FAIRE…
+* **Avant de commencer à coder** c'est très important de comprendre le problème afin d’identifier les variables ou constantes et les formules.
+* Lorsqu'une erreur apparait, bien lire le message d'erreur, utiliser la fonction `print()``à pour suivre l’exécution d’un programme et identifier les bogues.
+* Toujours “challenger” les résultats obtenus, à l’aide de différentes valeurs: “Est-ce que ça a du sens scientifiquement ?”
 {{% /notice %}}
 
 ---
 
-### Exercices à faire avant le cours
+## Exercices
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_struct_cond.ipynb)
 
-### Partie 1 – Comprendre les opérateurs de comparaison
+### Exercice 1 - For ou While ?
 
-**1.1** Quelle sera la sortie du code suivant ?
+Pour chacun des contextes suivants, avant d'écrire le code, répondez à la question: "Quelle boucle devriez-vous utiliser ?":
 
-```python
-a = 10
-b = 7
-print(a > b)
-print(a == 7)
+a. Afficher les nombres de 1 à 10  
+b. Compter jusqu’à 100 par bonds de 10  
+c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)  
+d. Lire une température jusqu’à ce qu’elle soit < 0 (entrée utilisateur)  
+e. Écrire un programme qui demande à l'utilisateur d'entrer un chiffre (1 à 10). Tant qu'il ne tape pas le chiffre `0`, le programme lui redemande d'entrer un chiffre (1 à 10) Sinon (i.e. il a tapé `0`) le programme s'arrête (Vous pouvez utiliser `break` et afficher un message).  
+
+
+### Exercice 2  – Table de multiplication
+
+* Écrire un programme qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.
+* utiliser une boucle `while` pour refaire une autre table tant que l’usager le souhaite.
+
+**Exemple de sortie :**
+```
+Entrez un nombre entre 1 et 12 : 7
+1 x 7 = 7
+2 x 7 = 14
+3 x 7 = 21
+...
+12 x 7 = 84
 ```
 
-**1.2** Complète avec `True` ou `False` :
-
-| Expression | Résultat |
-| ---------- | -------- |
-| `5 != 3`   |          |
-| `8 <= 8`   |          |
-| `4 > 10`   |          |
-| `3 == 3`   |          |
-
----
-
-### Partie 2 – Explorer les opérateurs logiques
-
-**2.1** Écris le résultat de chacune des expressions suivantes :
-
-| Expression             | Résultat |
-| ---------------------- | -------- |
-| `(5 > 2) and (7 < 10)` |          |
-| `(3 != 3) or (6 >= 6)` |          |
-| `not (2 < 5)`          |          |
-
-**2.2** Dans quel cas cette condition sera-t-elle vraie ?
-
-```python
-(temperature > 30) and (humidite < 50)
-```
-
----
-
-### Partie 3 – Lire et prédire des structures conditionnelles
-
-**3.1** Que va afficher ce code si `temp = 10` ?
-
-```python
-if temp > 25:
-    print("Il fait chaud.")
-elif temp > 15:
-    print("Il fait confortable.")
-else:
-    print("Il fait frais.")
-```
-
-**3.2** Le code suivant contient une erreur. Saurais-tu la repérer ?
-
-```python
-if vitesse > 80
-    print("Trop vite !")
-```
-
----
-
-### Partie 4 – Écrire ses propres conditions
-
-**4.1** Complète ce programme pour qu’il affiche :
-
-* `"Solution acide"` si le pH est plus petit que 7
-* `"Solution neutre"` si le pH est égal à 7
-* `"Solution basique"` si le pH est plus grand que 7
-
-```python
-ph = 6.4
-
-# ton code ici
-```
-
-**4.2** Crée une condition `if` qui affiche `"Attention, danger"` seulement si une température dépasse 100 **et** qu'une pression est plus grande que 1.5 atm.
-
-```python
-temperature = 110
-pression = 1.6
-
-# ton code ici
-```
-
-### Partie 5 - Répéter, mais pas à l'infini
-
-#### Exercice – Utiliser `while` pour atteindre un objectif
+### Exercice 3 – Utiliser `while` pour atteindre un objectif
 
 Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
 Écrire un programme qui affiche l’évolution de la température **jusqu’à ce qu’elle atteigne 30 °C**.
@@ -359,12 +296,78 @@ Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
 3. À chaque tour, affiche la température.
 4. Augmente la température de 1.5.
 
+
+### Exercice 4 – Répéter une mesure fixe avec `for`
+
+On veut afficher les numéros de 10 échantillons : `Échantillon 1`, `Échantillon 2`, ..., `Échantillon 10`.
+
+1. Utilise une boucle `for` avec `range(1, 11)`.
+2. À chaque tour, affiche `Échantillon` suivi du numéro.
+
+
+### Exercice 5 - Trouver les erreurs !
+
+Corrige les erreurs dans ce programme pour qu’il fonctionne :
+
+```python
+nom = input("Quel est ton nom?")
+print("Bonjour", name)
+
+age = input("Quel âge as-tu?")
+print("Dans 10 ans, tu auras" age + 10)
+```
+---
+
+## Atelier
+
+### Exercice 1 – Réaction chimique : combien de fois?
+
+Une réaction chimique simple a lieu entre deux réactifs A et B. À chaque cycle, 1 mL de A réagit avec 2 mL de B pour produire un précipité. Vous disposez d’un certain volume de A et de B.
+
+Demander à l’utilisateur combien de millilitres il a de A et de B. Puis, afficher **combien de fois la réaction peut avoir lieu en entier** (sans fractions), et combien de mL de chaque réactif il reste après la dernière réaction complète.
+
+* Utiliser une boucle `while` pour simuler la réaction répétée.
+* À chaque itération, soustraire les volumes requis de A et B.
+* S’arrêter lorsque l’un des réactifs n’est plus suffisant.
+
+**Exemple d’exécution :**
+```
+Quantité de A disponible (en mL) : 10
+Quantité de B disponible (en mL) : 25
+
+La réaction a eu lieu 5 fois.
+Il reste 0 mL de A et 15 mL de B.
+```
+
+### Exercice 2 – Détection de mutation (compteur)
+
+Vous êtes en train d'examiner une longue série d'échantillons au microscope. Chaque échantillon peut être sain (`0`) ou muté (`1`). Vous devez saisir les résultats un à un.
+
+Demander à l’utilisateur combien d’échantillons il va analyser. Ensuite, lui demander un à un les résultats (0 ou 1) et **compter** combien d’échantillons sont mutés. À la fin, afficher le **pourcentage d’échantillons mutés**.
+
+* Utiliser une boucle `for` basée sur le nombre total d’échantillons.
+* Demander à chaque itération : "Échantillon X : sain (0) ou muté (1)?"
+* Accumuler le nombre de mutations.
+* Calculer et afficher le pourcentage.
+
+**Exemple d’exécution :**
+```
+Combien d’échantillons vas-tu analyser? 4
+Échantillon 1 : sain (0) ou muté (1)? 0
+Échantillon 2 : sain (0) ou muté (1)? 1
+Échantillon 3 : sain (0) ou muté (1)? 1
+Échantillon 4 : sain (0) ou muté (1)? 0
+
+2/4 échantillons sont mutés.
+Pourcentage de mutation : 50.0 %
+```
+
 ---
 
 ## À faire avant le prochain cours
 
 > **RAPPEL**: Semaine prochaine c'est le **premier examen** (20%)
 
-1. Lire la matière sur [Listes, chaines de caractères et boucle for](../semaine6/)
-2. Faire les [exercices se trouvant à la fin de la leçon 6](../semaine6/#exercices-à-faire-avant-le-cours)
+1. Lire la prochaine leçon : [6. Listes, chaines et visualisation des données](../semaine6/)
+2. Faire les exercices de la [prochaine leçon :](../semaine6/#exercices)
 

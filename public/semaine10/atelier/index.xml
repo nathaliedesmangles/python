@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Activité 10 :: 420-SN1-RE</title>
-    <link>https://example.org/semaine10/atelier/index.html</link>
-    <description>Objectifs Lire le fichier CSV. Organiser les données dans un dictionnaire structuré. Explorer les données. Comparer les températures selon les substances et les conditions. Exercice On a réalisé des expériences pour mesurer la température de cristallisation de différentes substances dans plusieurs conditions (pression normale, pression élevée, en solution aqueuse, etc.).&#xA;Les données sont enregistrées dans un fichier CSV, sous la forme suivante :&#xA;Fichier à utiliser: cristallisation.csv&#xA;Contenu :&#xA;substance,condition,temp_cristallisation&#xD;NaCl,pression_normale,801&#xD;NaCl,en_solution,800&#xD;H2O,pression_normale,0&#xD;H2O,pression_elevee,-1&#xD;Fe,pression_normale,1538&#xD;Fe,en_solution,1530&#xD;Instructions Lire le fichier CSV cristallisation.</description>
+    <link>http://localhost:1313/semaine10/atelier/index.html</link>
+    <description>Objectifs Lire le fichier CSV. Organiser les données dans un dictionnaire structuré. Explorer les données. Comparer les températures selon les substances et les conditions.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine10/atelier/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine10/atelier/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

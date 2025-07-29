@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="### Exercice 1 - For ou While ?
+Pour chacun des contextes suivants, avant d’écrire le code, répondez à la question: “Quelle boucle devriez-vous utiliser ?”:
+a. Afficher les nombres de 1 à 10
+b. Compter jusqu’à 100 par bonds de 10
+c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)
+d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)
+e. Écrire un programme qui demande à l’utilisateur d’entrer un chiffre (1 à 10).">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="A FAIRE 4-boucles et débogage simple :: 420-SN1-RE">
+    <meta name="twitter:description" content="### Exercice 1 - For ou While ?
+Pour chacun des contextes suivants, avant d’écrire le code, répondez à la question: “Quelle boucle devriez-vous utiliser ?”:
+a. Afficher les nombres de 1 à 10
+b. Compter jusqu’à 100 par bonds de 10
+c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)
+d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)
+e. Écrire un programme qui demande à l’utilisateur d’entrer un chiffre (1 à 10).">
+    <meta property="og:url" content="https://example.org/solutions_exercices/4_boucles_debogage/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="A FAIRE 4-boucles et débogage simple :: 420-SN1-RE">
+    <meta property="og:description" content="### Exercice 1 - For ou While ?
+Pour chacun des contextes suivants, avant d’écrire le code, répondez à la question: “Quelle boucle devriez-vous utiliser ?”:
+a. Afficher les nombres de 1 à 10
+b. Compter jusqu’à 100 par bonds de 10
+c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)
+d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)
+e. Écrire un programme qui demande à l’utilisateur d’entrer un chiffre (1 à 10).">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="A FAIRE 4-boucles et débogage simple :: 420-SN1-RE">
+    <meta itemprop="description" content="### Exercice 1 - For ou While ?
+Pour chacun des contextes suivants, avant d’écrire le code, répondez à la question: “Quelle boucle devriez-vous utiliser ?”:
+a. Afficher les nombres de 1 à 10
+b. Compter jusqu’à 100 par bonds de 10
+c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)
+d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)
+e. Écrire un programme qui demande à l’utilisateur d’entrer un chiffre (1 à 10).">
+    <meta itemprop="wordCount" content="353">
+    <title>A FAIRE 4-boucles et débogage simple :: 420-SN1-RE</title>
+    <link href="/solutions_exercices/4_boucles_debogage/index.xml" rel="alternate" type="application/rss+xml" title="A FAIRE 4-boucles et débogage simple :: 420-SN1-RE">
+    <link href="/images/logo.png?1753755312" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753755312" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753755312" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753755312" rel="stylesheet">
+    <link href="/css/theme.min.css?1753755312" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753755312" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753755312" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753755312" defer></script>
+    <script src="/js/search.min.js?1753755312" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/solutions_exercices\/4_boucles_debogage\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1753755312";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1753755312" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/solutions_exercices/4_boucles_debogage/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_exercices/index.html"><span itemprop="name">Solutions des exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">A FAIRE 4-boucles et débogage simple</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/3_algo_debug/index.html" title="Saisie au clavier, fonctions et débogage (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/4_if_while/index.html" title="Décider avec if-elif-else et les opérateurs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable solutions_exercices" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="a-faire-4-boucles-et-débogage-simple">A FAIRE 4-boucles et débogage simple</h1>
+
+<p>### Exercice 1 - For ou While ?</p>
+<p>Pour chacun des contextes suivants, avant d&rsquo;écrire le code, répondez à la question: &ldquo;Quelle boucle devriez-vous utiliser ?&rdquo;:</p>
+<p>a. Afficher les nombres de 1 à 10</p>
+<p>b. Compter jusqu’à 100 par bonds de 10</p>
+<p>c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)</p>
+<p>d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)</p>
+<p>e. Écrire un programme qui demande à l&rsquo;utilisateur d&rsquo;entrer un chiffre (1 à 10). Tant qu&rsquo;il ne tape pas le chiffre <code>0</code>, le programme lui redemande d&rsquo;entrer un chiffre (1 à 10) Sinon (i.e. il a tapé <code>0</code>) le programme s&rsquo;arrête (Vous pouvez utiliser <code>break</code> et afficher un message).</p>
+<p>### Exercice 2  – Table de multiplication</p>
+<p>* Écrire un programme qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.</p>
+<p>* utiliser une boucle <code>while</code> pour refaire une autre table tant que l’usager le souhaite.</p>
+<p>**Exemple de sortie :**</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Entrez un nombre entre 1 et 12 : 7
+
+1 x 7 = 7
+
+2 x 7 = 14
+
+3 x 7 = 21
+
+...
+
+12 x 7 = 84</code></pre></div>
+<p>### Exercice 3 – Utiliser <code>while</code> pour atteindre un objectif</p>
+<p>Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.</p>
+<p>Écrire un programme qui affiche l’évolution de la température **jusqu’à ce qu’elle atteigne 30 °C**.</p>
+<p>1. Crée une variable <code>temp</code> avec 20 comme valeur initiale.</p>
+<p>2. Utilise une boucle <code>while</code> pour vérifier si <code>temp</code> est inférieure à 30.</p>
+<p>3. À chaque tour, affiche la température.</p>
+<p>4. Augmente la température de 1.5.</p>
+<p>### Exercice 4 – Répéter une mesure fixe avec <code>for</code></p>
+<p>On veut afficher les numéros de 10 échantillons : <code>Échantillon 1</code>, <code>Échantillon 2</code>, &hellip;, <code>Échantillon 10</code>.</p>
+<p>1. Utilise une boucle <code>for</code> avec <code>range(1, 11)</code>.</p>
+<p>2. À chaque tour, affiche <code>Échantillon</code> suivi du numéro.</p>
+<p>### Exercice 5 - Trouver les erreurs !</p>
+<p>Corrige les erreurs dans ce programme pour qu’il fonctionne :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Quel est ton nom?&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Bonjour&#34;</span>, name)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>age <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Quel âge as-tu?&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Dans 10 ans, tu auras&#34;</span> age <span style="color:#f92672">+</span> <span style="color:#ae81ff">10</span>)</span></span></code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (20%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Tableaux numpy et droite de régression</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires et fichier textes (csv)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Révision</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation #3 (25%)</a></li>
+            <li class="parent " data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu">
+            <li class="" data-nav-id="/solutions_exercices/2_variables_types_input_fn/index.html"><a class="padding" href="/solutions_exercices/2_variables_types_input_fn/index.html"><b>2.</b> Variables et types de données</a></li>
+            <li class="" data-nav-id="/solutions_exercices/3_algo_debug/index.html"><a class="padding" href="/solutions_exercices/3_algo_debug/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a></li>
+            <li class="active " data-nav-id="/solutions_exercices/4_boucles_debogage/index.html"><a class="padding" href="/solutions_exercices/4_boucles_debogage/index.html">A FAIRE 4-boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/solutions_exercices/4_if_while/index.html"><a class="padding" href="/solutions_exercices/4_if_while/index.html"><b>5.</b> Décider avec if-elif-else et les opérateurs</a></li>
+            <li class="" data-nav-id="/solutions_exercices/7_listes_chaines_for/index.html"><a class="padding" href="/solutions_exercices/7_listes_chaines_for/index.html"><b>6.</b> Répéter avec FOR et WHILE</a></li>
+            <li class="" data-nav-id="/solutions_exercices/7_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_exercices/7_listes_chaines_visualisation/index.html"><b>7.</b> Listes, chaines de caractères et graphiques de base</a></li>
+            <li class="" data-nav-id="/solutions_exercices/9_numpy/index.html"><a class="padding" href="/solutions_exercices/9_numpy/index.html"><b>9.</b> Tableaux NumPy</a></li>
+            <li class="" data-nav-id="/solutions_exercices/10_dict_fichiers/index.html"><a class="padding" href="/solutions_exercices/10_dict_fichiers/index.html"><b>10.</b> Dictionnaires et traitement de fichiers CSV</a></li></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1753755312" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753755312" defer></script>
+    <script src="/js/theme.min.js?1753755312" defer></script>
+  </body>
+</html>

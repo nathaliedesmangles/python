@@ -5,38 +5,46 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. 📘 Plan de la leçon (texte à lire avant le cours) 1. Listes de listes Une liste de listes est une structure 2D (comme une grille de valeurs) :
-grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
+    <meta name="description" content="AJOUTER GRAPHIQUE
+RAPPEL: Semaine prochaine c’est le deuxième examen (25%)
+Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. Tracer des graphiques Nom du fichier : revisions_eval2.ipynb
+Exercice 1 – Liste de listes 1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Révision :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. 📘 Plan de la leçon (texte à lire avant le cours) 1. Listes de listes Une liste de listes est une structure 2D (comme une grille de valeurs) :
-grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
+    <meta name="twitter:description" content="AJOUTER GRAPHIQUE
+RAPPEL: Semaine prochaine c’est le deuxième examen (25%)
+Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. Tracer des graphiques Nom du fichier : revisions_eval2.ipynb
+Exercice 1 – Liste de listes 1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).">
     <meta property="og:url" content="https://example.org/semaine9/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Révision :: 420-SN1-RE">
-    <meta property="og:description" content="Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. 📘 Plan de la leçon (texte à lire avant le cours) 1. Listes de listes Une liste de listes est une structure 2D (comme une grille de valeurs) :
-grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
+    <meta property="og:description" content="AJOUTER GRAPHIQUE
+RAPPEL: Semaine prochaine c’est le deuxième examen (25%)
+Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. Tracer des graphiques Nom du fichier : revisions_eval2.ipynb
+Exercice 1 – Liste de listes 1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Révision :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. 📘 Plan de la leçon (texte à lire avant le cours) 1. Listes de listes Une liste de listes est une structure 2D (comme une grille de valeurs) :
-grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
-    <meta itemprop="wordCount" content="459">
+    <meta itemprop="description" content="AJOUTER GRAPHIQUE
+RAPPEL: Semaine prochaine c’est le deuxième examen (25%)
+Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. Tracer des graphiques Nom du fichier : revisions_eval2.ipynb
+Exercice 1 – Liste de listes 1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).">
+    <meta itemprop="wordCount" content="299">
     <title> Révision :: 420-SN1-RE</title>
     <link href="/semaine9/index.xml" rel="alternate" type="application/rss+xml" title=" Révision :: 420-SN1-RE">
-    <link href="/images/logo.png?1753667632" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753667632" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753667632" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753667632" rel="stylesheet">
-    <link href="/css/theme.min.css?1753667632" rel="stylesheet">
-    <link href="/css/format-html.min.css?1753667632" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1753667632" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1753667632" defer></script>
-    <script src="/js/search.min.js?1753667632" defer></script>
+    <link href="/images/logo.png?1753755312" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753755312" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753755312" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753755312" rel="stylesheet">
+    <link href="/css/theme.min.css?1753755312" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753755312" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753755312" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753755312" defer></script>
+    <script src="/js/search.min.js?1753755312" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +54,7 @@ grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1753667632";
+      window.relearn.index_js_url="/searchindex.en.js?1753755312";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +100,7 @@ grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1753667632" rel="stylesheet">
+    <link href="/css/custom.css?1753755312" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine9/index.html">
     <div id="R-body" class="default-animation">
@@ -108,11 +116,22 @@ grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#objectifs">Objectifs</a>
+    <li><a href="#objectifs">Objectifs</a></li>
+    <li><a href="#exercice-1--liste-de-listes">Exercice 1 – Liste de listes</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#exercice-2--liste-de-dictionnaires">Exercice 2 – Liste de dictionnaires</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#exercice-3--numpy-2d">Exercice 3 – NumPy 2D</a></li>
+  </ul>
+
+  <ul>
+    <li>
       <ul>
-        <li><a href="#-plan-de-la-leçon-texte-à-lire-avant-le-cours">📘 <strong>Plan de la leçon (texte à lire avant le cours)</strong></a></li>
-        <li><a href="#-carnet-jupyter--version-étudiante">📒 <strong>Carnet Jupyter – Version étudiante</strong></a></li>
-        <li><a href="#-corrigé-version-enseignante">✅ <strong>Corrigé (version enseignante)</strong></a></li>
+        <li><a href="#corrigé">Corrigé</a></li>
       </ul>
     </li>
   </ul>
@@ -126,9 +145,9 @@ grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Révision</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/atelier/index.html" title="Activité 10 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Dictionnaires et fichier textes (csv) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine9/atelier/index.html" title="Activité 9 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/index.html" title="Évaluation #2 (25%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -150,90 +169,46 @@ grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
 
 <h1 id="révision"> Révision</h1>
 
+<p><em><strong>AJOUTER GRAPHIQUE</strong></em></p>
+<blockquote>
+<p><strong>RAPPEL</strong>: Semaine prochaine c&rsquo;est le <strong>deuxième examen</strong> (25%)</p>
+</blockquote>
 <h2 id="objectifs">Objectifs</h2>
 <ul>
 <li>Utiliser des <strong>listes de listes</strong> et des <strong>listes de dictionnaires</strong>.</li>
 <li>Parcourir des structures <strong>imbriquées</strong> avec des boucles <code>for</code> imbriquées.</li>
 <li>Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy.</li>
 <li>Appliquer des <strong>conditions</strong> lors des parcours.</li>
+<li>Tracer des graphiques</li>
 </ul>
 <hr>
-<h3 id="-plan-de-la-leçon-texte-à-lire-avant-le-cours">📘 <strong>Plan de la leçon (texte à lire avant le cours)</strong></h3>
+<p><strong>Nom du fichier</strong> : <code>revisions_eval2.ipynb</code></p>
+<h2 id="exercice-1--liste-de-listes">Exercice 1 – Liste de listes</h2>
+<h1 id="1-crée-une-grille-3x3-contenant-les-nombres-de-1-à-9-sous-forme-de-liste-de-listes">1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).</h1>
+<h1 id="2-affiche-la-valeur-au-centre">2. Affiche la valeur au centre.</h1>
+<h1 id="3-affiche-tous-les-nombres-un-par-un-avec-deux-boucles-for">3. Affiche tous les nombres un par un avec deux boucles for.</h1>
+<p>grille = [
+&hellip;
+]</p>
+<h2 id="exercice-2--liste-de-dictionnaires">Exercice 2 – Liste de dictionnaires</h2>
+<h1 id="on-ta-donné-les-données-suivantes-">On t’a donné les données suivantes :</h1>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>mesures = [
+    {&#34;id&#34;: &#34;E1&#34;, &#34;temp&#34;: 21.3, &#34;pression&#34;: 101.5},
+    {&#34;id&#34;: &#34;E2&#34;, &#34;temp&#34;: 23.0, &#34;pression&#34;: 100.8},
+    {&#34;id&#34;: &#34;E3&#34;, &#34;temp&#34;: 20.8, &#34;pression&#34;: 102.0}
+]</code></pre></div>
+<h1 id="1-affiche-le-nom-de-chaque-échantillon-et-sa-température">1. Affiche le nom de chaque échantillon et sa température.</h1>
+<h1 id="2-affiche-uniquement-les-échantillons-dont-la-température-est-supérieure-à-22-c">2. Affiche uniquement les échantillons dont la température est supérieure à 22 °C.</h1>
 <hr>
-<h4 id="1-listes-de-listes">1. Listes de listes</h4>
-<p>Une <strong>liste de listes</strong> est une structure 2D (comme une grille de valeurs) :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>grille <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>],
-</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>],
-</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>]
-</span></span><span style="display:flex;"><span>]</span></span></code></pre></div>
-<p>Accès à un élément :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(grille[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">2</span>])  <span style="color:#75715e"># Affiche 6</span></span></span></code></pre></div>
-<p>Boucle imbriquée :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> grille:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> ligne:
-</span></span><span style="display:flex;"><span>        print(valeur)</span></span></code></pre></div>
+<h2 id="exercice-3--numpy-2d">Exercice 3 – NumPy 2D</h2>
+<h1 id="crée-un-tableau-numpy-2d-à-partir-de-cette-grille-">Crée un tableau NumPy 2D à partir de cette grille :</h1>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>import numpy as np
+
+tableau = np.array(grille)</code></pre></div>
+<h1 id="1-affiche-la-moyenne-de-chaque-ligne-utilise-une-boucle">1. Affiche la moyenne de chaque ligne (utilise une boucle).</h1>
+<h1 id="2-affiche-tous-les-éléments-supérieurs-à-5">2. Affiche tous les éléments supérieurs à 5.</h1>
 <hr>
-<h4 id="2-liste-de-dictionnaires">2. Liste de dictionnaires</h4>
-<p>Exemple : mesures expérimentales pour différents échantillons.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mesures <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;pH&#34;</span>: <span style="color:#ae81ff">6.8</span>, <span style="color:#e6db74">&#34;temp&#34;</span>: <span style="color:#ae81ff">22.4</span>},
-</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;pH&#34;</span>: <span style="color:#ae81ff">7.1</span>, <span style="color:#e6db74">&#34;temp&#34;</span>: <span style="color:#ae81ff">23.0</span>},
-</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;C&#34;</span>, <span style="color:#e6db74">&#34;pH&#34;</span>: <span style="color:#ae81ff">6.9</span>, <span style="color:#e6db74">&#34;temp&#34;</span>: <span style="color:#ae81ff">22.7</span>}
-</span></span><span style="display:flex;"><span>]</span></span></code></pre></div>
-<p>Parcours :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> echantillon <span style="color:#f92672">in</span> mesures:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>echantillon[<span style="color:#e6db74">&#39;id&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> a un pH de </span><span style="color:#e6db74">{</span>echantillon[<span style="color:#e6db74">&#39;pH&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
-<hr>
-<h4 id="3-boucles-imbriquées-avec-conditions">3. Boucles imbriquées avec conditions</h4>
-<p>Filtrer dans une boucle imbriquée :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> grille:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> ligne:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> valeur <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Valeur paire : </span><span style="color:#e6db74">{</span>valeur<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
-<hr>
-<h3 id="-carnet-jupyter--version-étudiante">📒 <strong>Carnet Jupyter – Version étudiante</strong></h3>
-<p>Nom du fichier : <code>4_revisions_boucles_etudiant.ipynb</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">### Leçon 4 – Révision et boucles imbriquées</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">## 🧪 Exercice 1 – Liste de listes</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Affiche la valeur au centre.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. Affiche tous les nombres un par un avec deux boucles for.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>grille <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
-</span></span><span style="display:flex;"><span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">## 🧪 Exercice 2 – Liste de dictionnaires</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># On t’a donné les données suivantes :</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mesures <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;E1&#34;</span>, <span style="color:#e6db74">&#34;temp&#34;</span>: <span style="color:#ae81ff">21.3</span>, <span style="color:#e6db74">&#34;pression&#34;</span>: <span style="color:#ae81ff">101.5</span>},
-</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;E2&#34;</span>, <span style="color:#e6db74">&#34;temp&#34;</span>: <span style="color:#ae81ff">23.0</span>, <span style="color:#e6db74">&#34;pression&#34;</span>: <span style="color:#ae81ff">100.8</span>},
-</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;E3&#34;</span>, <span style="color:#e6db74">&#34;temp&#34;</span>: <span style="color:#ae81ff">20.8</span>, <span style="color:#e6db74">&#34;pression&#34;</span>: <span style="color:#ae81ff">102.0</span>}
-</span></span><span style="display:flex;"><span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. Affiche le nom de chaque échantillon et sa température.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Affiche uniquement les échantillons dont la température est supérieure à 22 °C.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">## 🧪 Exercice 3 – NumPy 2D (facultatif)</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Crée un tableau NumPy 2D à partir de cette grille :</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>tableau <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array(grille)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. Affiche la moyenne de chaque ligne (utilise une boucle).</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Affiche tous les éléments supérieurs à 5.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span></span></span></code></pre></div>
-<hr>
-<h3 id="-corrigé-version-enseignante">✅ <strong>Corrigé (version enseignante)</strong></h3>
+<h3 id="corrigé">Corrigé</h3>
 <p>Nom du fichier : <code>4_revisions_boucles_corrige.ipynb</code></p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Exercice 1</span>
 </span></span><span style="display:flex;"><span>grille <span style="color:#f92672">=</span> [
@@ -320,23 +295,22 @@ grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Tableaux NumPy</a></li>
             <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
             <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
             <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables et types de données)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Algorithme et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Décider avec `if`, `elif`, `else`, répéter avec `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (20%)</a></li>
-            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes et chaînes de caractères et boucle for</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Dictionnaires et graphiques de base</a></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>8.</b> Évaluation #2 (25%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="active parent " data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Révision</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu">
-            <li class="" data-nav-id="/semaine9/atelier/index.html"><a class="padding" href="/semaine9/atelier/index.html">Activité 9</a></li></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Les graphiques avancés et la regression linéaire</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Tableaux numpy et droite de régression</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires et fichier textes (csv)</a></li>
+            <li class="active " data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Révision</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
             <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
             <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
@@ -360,8 +334,8 @@ grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]Accès à un élément :">
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1753667632" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753667632" defer></script>
-    <script src="/js/theme.min.js?1753667632" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753755312" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753755312" defer></script>
+    <script src="/js/theme.min.js?1753755312" defer></script>
   </body>
 </html>

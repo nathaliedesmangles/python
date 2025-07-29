@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Dictionnaires et graphiques de base :: 420-SN1-RE</title>
+    <title> Tableaux numpy et droite de régression :: 420-SN1-RE</title>
     <link>https://example.org/semaine7/index.html</link>
-    <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Vérifier la présence d’une clé avec in. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</description>
+    <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine7/index.xml" rel="self" type="application/rss+xml" />

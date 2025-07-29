@@ -22,6 +22,13 @@
       <description>Exercice 1 : Demi-vie radioactive # Données initiales masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée de l&#39;utilisateur annees = int(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul du nombre de périodes de demi-vie nb_periodes = annees // demi_vie # Calcul de la masse restante masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage du résultat print(f&#34;Après {annees} ans, il reste environ {masse_restante:.2f} g de l&#39;isotope.</description>
     </item>
     <item>
+      <title>A FAIRE 4-boucles et débogage simple</title>
+      <link>https://example.org/solutions_exercices/4_boucles_debogage/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/4_boucles_debogage/index.html</guid>
+      <description>### Exercice 1 - For ou While ?&#xA;Pour chacun des contextes suivants, avant d’écrire le code, répondez à la question: “Quelle boucle devriez-vous utiliser ?”:&#xA;a. Afficher les nombres de 1 à 10&#xA;b. Compter jusqu’à 100 par bonds de 10&#xA;c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)&#xA;d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)&#xA;e. Écrire un programme qui demande à l’utilisateur d’entrer un chiffre (1 à 10).</description>
+    </item>
+    <item>
       <title> Décider avec if-elif-else et les opérateurs</title>
       <link>https://example.org/solutions_exercices/4_if_while/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

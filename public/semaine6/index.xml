@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Listes et chaînes de caractères et boucle for :: 420-SN1-RE</title>
+    <title> Listes, chaînes et visualisation des données :: 420-SN1-RE</title>
     <link>https://example.org/semaine6/index.html</link>
-    <description>Objectifs À la fin de cette leçon, vous devrez être capable de :&#xA;Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Savoir identifier quand utiliser une boucle for vs. while. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).&#xA;C’est un peu comme une boîte à compartiments.</description>
+    <description>Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).&#xA;C’est un peu comme une boîte à compartiments.&#xA;ma_liste = [3, 7, 42, 5]&#xD;Chaque élément a une position (appelée indice).</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine6/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Atelier 6</title>
-      <link>https://example.org/semaine6/atelier/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine6/atelier/index.html</guid>
-      <description>Objectifs Comprendre et manipuler des listes simples et listes imbriquées Appliquer les manipulations de listes sur les chaînes de caractères Dessiner des formes triangulaires à l’aide de la boucle for. Utiliser matplotlib pour tracer, embellir et enregistrer un graphique simple Exercice Une station météorologique t’a envoyé un fichier .csv nommé temperatures.csv, contenant les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.</description>
-    </item>
   </channel>
 </rss>

@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Introduction à Python (Variables et types de données) :: 420-SN1-RE</title>
+    <title> Variables, types, entrée utilisateur et fonctions prédéfinies :: 420-SN1-RE</title>
     <link>https://example.org/semaine2/index.html</link>
     <description>Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Variables et types de données de base Une variable est un nom qui désigne une valeur. prenom = &#34;Alice&#34; age = 20 temperature = 25.8&#xD;Bien nommer vos variables: Utiliser des noms significatifs (ex : masse_corps, volume_solution) Commencer par une lettre ou un souligné (_), jamais par un chiffre.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine2/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title> Les fonctions personnalisées</title>
-      <link>https://example.org/semaine2/fonctions_perso/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine2/fonctions_perso/index.html</guid>
-      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:&#xA;Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :.</description>
-    </item>
-    <item>
-      <title>Atelier 2</title>
-      <link>https://example.org/semaine2/atelier/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine2/atelier/index.html</guid>
-      <description>Objectifs Manipuler des variables. Utiliser des types de données différents. Écrire des programmes scientifiques simples. Afficher des résultats. Exercice 1 - Calcul de probabilité On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles. Un rectangle contenant 6 cercles isométriques (même taille), Ils sont organisés en 2 rangées de 3 cercles, La hauteur du rectangle est 10 cm, ce qui correspond à deux diamètres de cercles (1 par rangée).</description>
-    </item>
   </channel>
 </rss>

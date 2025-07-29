@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atelier 6 :: 420-SN1-RE</title>
-    <link>https://example.org/semaine6/atelier/index.html</link>
-    <description>Objectifs Comprendre et manipuler des listes simples et listes imbriquées Appliquer les manipulations de listes sur les chaînes de caractères Dessiner des formes triangulaires à l’aide de la boucle for. Utiliser matplotlib pour tracer, embellir et enregistrer un graphique simple Exercice Une station météorologique t’a envoyé un fichier .csv nommé temperatures.csv, contenant les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.</description>
+    <link>http://localhost:1313/semaine6/atelier/index.html</link>
+    <description>Objectifs Comprendre et manipuler des listes simples et listes imbriquées Appliquer les manipulations de listes sur les chaînes de caractères Dessiner des formes triangulaires à l’aide de la boucle for. Utiliser matplotlib pour tracer, embellir et enregistrer un graphique simple</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine6/atelier/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine6/atelier/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

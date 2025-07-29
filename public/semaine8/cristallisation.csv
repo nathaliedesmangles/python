@@ -1,0 +1,7 @@
+﻿substance,condition,temp_cristallisation
+NaCl,pression_normale,801
+NaCl,en_solution,800
+H2O,pression_normale,0
+H2O,pression_elevee,-1
+Fe,pression_normale,1538
+Fe,en_solution,1530

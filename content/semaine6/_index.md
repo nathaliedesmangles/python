@@ -1,19 +1,17 @@
 +++
 chapter = true
 pre = "<b>6.</b>"
-title = " Listes et chaînes de caractères et boucle for"
+title = " Listes, chaînes et visualisation des données"
 weight = 106
 draft = false
 +++
 
 ## Objectifs
 
-À la fin de cette leçon, vous devrez être capable de :
-
 * Créer, modifier et parcourir une **liste simple**.
 * Manipuler des **listes imbriquées** (listes dans un liste).
 * Appliquer les notions des listes simples sur les chaines de caractères. 
-* Savoir identifier quand utiliser une boucle `for` vs. `while`.
+* Créer, afficher, embellir et enregistrer des graphiques simples avec `matplotlib`.
 
 ---
 
@@ -254,45 +252,196 @@ len(message)  # Nombre de caractères, incluant les espaces
 * Une chaine de caractères se manipule comme une liste simple, dont les éléments sont des caractères (incluant l'espace).  
 {{% /notice %}}
 
-## La boucle `for` avec `range()`
 
-Utilisée quand **on connaît d’avance** combien de fois répéter.
+## Visualiser les données avec Matplotlib (graphiques de base)
 
-### Syntaxe :
+Pour pouvoir visualiser des données sous forme de graphiques, nous utiliserons le module `pyplot` de la bibliothèque `matplotlib`.
 
-```python
-for i in range(début, fin, pas):
-    instructions
-```
+### Importer `matplotlib.pyplot`
 
-* `début` : valeur initiale (optionnel, par défaut = 0)
-* `fin` : valeur **non incluse**
-* `pas` : saut entre chaque valeur (optionnel, par défaut = 1)
-
-**Exemple** :
+La partie de `matplotlib` qu'on utilise le plus pour créer des graphiques s'appelle `pyplot`.
 
 ```python
-for i in range(0, 5):
-    print("i =", i)
+import matplotlib.pyplot as plt
 ```
 
-> Affiche les valeurs de 0 à 4.
+On utilise souvent l’abréviation `plt` pour simplifier l’écriture.
 
 
+### Tracer une courbe simple avec `plot()`
 
-{{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
-* `for` avec `range()` : Utilisée lorsque le nombre de répétitions est connu d'avance.  
-   * Équivaut à dire:  
-      * **POUR CHAQUE** *tour de boucle* **FAIRE...** ou
-      * **POUR CHAQUE** *valeur d'une séquence* **FAIRE...**
+La fonction `plot()` prend deux listes (ou deux tableaux) :
+
+* La première représente l’axe **x**
+* La seconde représente l’axe **y**
+
+```python
+x = [0, 1, 2, 3, 4]
+y = [0, 1, 4, 9, 16]
+
+plt.plot(x, y)
+```
+
+{{% notice style="cyan" title="Sachez qu'..." %}}
+À ce stade, rien ne s'affiche encore. Il faut une dernière commande pour voir le graphique.
 {{% /notice %}}
 
 
+### Afficher le graphique avec `show()`
+
+La commande `show()` sert à **afficher la figure** dans une nouvelle fenêtre.
+
+```python
+plt.show()
+```
+
+**Résultat** : Une courbe représentant les points (0,0), (1,1), (2,4), (3,9), (4,16).
+![Figure 1](./Figure_1.png?width=45vw)
 ---
 
-## Exercices à faire avant le cours
+### Exemple complet
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_boucles.ipynb)
+```python
+import matplotlib.pyplot as plt
+
+x = [0, 1, 2, 3, 4]
+y = [0, 1, 4, 9, 16]
+
+plt.plot(x, y)
+plt.show()
+```
+
+### Personnaliser le trait de la courbe (Style de ligne, couleur, marqueur)
+
+```python
+plt.plot(x, y, color='green', linestyle='--', marker='o')
+```
+
+**Résultat**
+![Figure 2](./Figure_2.png?width=45vw)
+
+
+### Options les plus courantes pour la méthode `plt.plot()`
+
+| **Option**           | **Description**                             | **Exemple**              |
+| -------------------- | ------------------------------------------- | ------------------------ |
+| `color` ou `c`       | Couleur de la courbe                        | `color='red'` ou `c='r'` |
+| `linestyle` ou `ls`  | Style de ligne : continue, pointillée, etc. | `ls='--'`                |
+| `linewidth` ou `lw`  | Épaisseur de la ligne                       | `lw=2`                   |
+| `marker`             | Symbole pour marquer les points             | `marker='o'`             |
+| `markersize` ou `ms` | Taille des marqueurs                        | `ms=8`                   |
+| `label`              | Nom de la courbe (pour la légende)          | `label='x²'`             |
+| `alpha`              | Transparence (0 = invisible, 1 = opaque)    | `alpha=0.7`              |
+
+```python
+plt.plot(x, y, color='blue', linestyle='--', marker='o', label='x²', linewidth=2)
+plt.legend()
+```
+
+Cela trace une courbe en **bleu**, avec une **ligne pointillée**, des **cercles aux points**, une **légende "x²"**, et une **ligne épaisse**.
+
+### Ajouter un titre, des étiquettes et une grille
+
+* `plt.title("Courbe de y = x²")` : Ajoute un **titre** au graphique.
+* `plt.xlabel("x")` et `plt.ylabel("y")` : Donnent un **nom à l’axe horizontal** (ici, "x") et un **nom à l’axe vertical** (ici, "y").
+* `plt.grid()` : Affiche une **grille** pour mieux lire les valeurs sur le graphique (optionnel mais utile).
+
+
+```python
+x = [0, 1, 2, 3, 4]
+y = [0, 1, 4, 9, 16]
+
+plt.plot(x, y)
+
+plt.title("Courbe de y = x²")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid()
+
+plt.show()
+```
+
+**Résultat**
+![Figure 3](./Figure_3.png?width=45vw)
+
+### Tracer plusieurs courbes sur un même graphique et ajouter une légende
+
+* Il suffit d'utiliser autant de `plt.plot()` qu'il y a de courbes à tracer.
+* La fonction `plt.legend()` affiche une **légende** sur le graphique.
+* Elle permet d’**identifier** les courbes ou les éléments tracés, à condition qu’ils aient été nommés avec `label=`.
+
+```python
+x = [0, 1, 2, 3, 4]
+y1 = [0, 1, 4, 9, 16]
+y2 = [0, 2, 3, 4, 8]
+
+plt.plot(x, y1, label="objet A")
+plt.plot(x, y2, label="objet B")
+
+plt.title("Deux courbes sur le même graphique")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid()
+plt.legend()  # Affiche la légende
+
+plt.show()
+```
+
+> Cela ajoutera une petite boîte dans le coin du graphique indiquant "Courbe 1" et "Courbe 2".
+
+**Résultat**
+![Figure 4](./Figure_4.png?width=45vw)
+
+
+### Enregistrer un graphique sous forme d'image
+
+La fonction `plt.savefig("figure.png")` **enregistre** le graphique dans un fichier image (ici au format PNG).
+Cela permet de conserver ou partager le graphique même sans afficher la fenêtre graphique.
+
+```python
+plt.plot(x, y)
+plt.savefig("figure.png")
+```
+
+> Le fichier "figure.png" sera créé dans le même dossier que le fichier `.ipynb`.
+
+
+### Fonctions de base pour les graphiques
+
+| Fonction / Méthode             | Rôle principal                                     | Exemple minimal                |
+| ------------------------------ | -------------------------------------------------- | ------------------------------ |
+| `plt.plot(x, y)`               | Trace une courbe (x, y)                            | `plt.plot(x, y)`               |
+| `plt.scatter(x, y)`            | Trace un nuage de points                           | `plt.scatter(x, y)`            |
+| `plt.bar(x, y)`                | Trace un diagramme à barres                        | `plt.bar(x, y)`                |
+| `plt.hist(data)`               | Trace un histogramme                               | `plt.hist(valeurs)`            |
+| `plt.title("titre")`           | Ajoute un titre au graphique                       | `plt.title("Graphique")`       |
+| `plt.xlabel("nom de l'axe x")` | Ajoute un titre à l’axe des x                      | `plt.xlabel("Temps (s)")`      |
+| `plt.ylabel("nom de l'axe y")` | Ajoute un titre à l’axe des y                      | `plt.ylabel("Vitesse (m/s)")`  |
+| `plt.legend()`                 | Affiche une légende pour les courbes nommées       | `plt.legend()`                 |
+| `plt.grid(True)`               | Affiche une grille                                 | `plt.grid(True)`               |
+| `plt.show()`                   | Affiche le graphique à l’écran (à la fin du tracé) | `plt.show()`                   |
+| `plt.savefig("figure.png")`    | Sauvegarde le graphique en image                   | `plt.savefig("mon_graph.png")` |
+| `plt.figure(figsize=(w, h))`   | Définit la taille du graphique (en pouces)         | `plt.figure(figsize=(8, 4))`   |
+
+{{% notice style="blue" title="À retenir (graphiques simples)" groupid="notice-toggle" expanded="false" %}}
+* **Importer la bibliothèque** : matplotlib.pyplot 
+* **Créer les données** sous forme de **listes** ou de **tableaux NumPy**
+* **Tracer une courbe** avec `plt.plot(x, y)`
+    * `plt.plot()` change selon le type de graphique (voir le tableau [ICI](#fonctions-de-base-pour-les-graphiques)
+    * Il existe des options permettant de personnaliser les couleurs, traits, etc.
+* **Afficher le graphique** avec `plt.show()`.
+* **Ajouter un titre** avec `plt.title("Mon graphique")`
+* **Nommer les axes** avec `plt.xlabel("x")` et `plt.ylabel("y")`
+* **Afficher une grille** pour mieux lire les valeurs avec `plt.grid()`
+* **Ajouter une légende** avec `label="..."` dans `plot()` et `plt.legend()`
+* **Tracer plusieurs courbes sur un même graphique** en appelant plusieurs fois `plt.plot(...)` avant `plt.show()`
+{{% /notice %}}
+
+---
+
+## Exercices
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_listes_chaines_graphes.ipynb)
 
 
 ### Listes
@@ -351,33 +500,114 @@ Une séquence d’ADN est "ATGCT".
 
 ---
 
-===
+### Graphiques
 
-### Exercice 1 - For ou While ?
+#### Exercice 7 – Température dans une journée
 
-Pour chacun des contextes suivants, avant d'écrire le code, répondez à la question: "Quelle boucle devriez-vous utiliser ?":
+* Heures : `[0, 4, 8, 12, 16, 20, 24]`
+* Températures : `[-5, -2, 3, 7, 6, 1, -2]`
 
-a. Afficher les nombres de 1 à 10  
-b. Compter jusqu’à 100 par bonds de 10  
-c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)  
-d. Lire une température jusqu’à ce qu’elle soit < 0 (entrée utilisateur)  
-e. Écrire un programme qui :  
-&nbsp;&nbsp;&nbsp;&nbsp; i. Affiche deux choix :  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. "Entrez votre prénom"  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2."Quitter le programme"  
-&nbsp;&nbsp;&nbsp;&nbsp; ii. Demande à l'utilisateur d'entrer son choix (`1` ou `2`) et tant qu'il choisi l'option 1, le programme lui redemande d'entrer son prénom. Si c'est 2, le programme s'arrête (Vous pouvez utiliser `break` ou afficher un message).  
+Crée un graphique de température en fonction de l’heure.
+
+Ajoute :
+
+* Un titre `"Température en fonction de l’heure"`
+* Les étiquettes `"Heure (h)"` et `"Température (°C)"`
+* Une grille
+
+#### Exercice 8 - Comparaison des valeurs mesurées et attendues
+
+On a mesuré la concentration d’un soluté à différentes températures. Les valeurs **attendues** suivent une loi théorique, tandis que les **valeurs mesurées** viennent d’un capteur.
+
+```python
+temp = [10, 20, 30, 40, 50]
+attendu = [2.1, 3.8, 5.6, 7.3, 9.0]
+mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
+```
+
+* Affiche les **valeurs attendues** avec `plt.plot(...)` (ligne noire avec des ronds).
+* Affiche les **valeurs mesurées** avec `plt.bar(...)` (barres bleues légèrement transparentes).
+* Ajoute un **titre**, une **légende**, les **étiquettes d’axes** et une **grille**.
+
+---
+
+## Atelier
+
+### Exercice 
+
+Une station météorologique t’a envoyé un fichier `.csv` nommé **`temperatures.csv`**, contenant les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.
+
+Tu disposes de la variable suivante :
+
+```python
+donnees = [
+    "12.3, 16.8, 14.0",  # jour 1 : matin, midi, soir
+    "11.5, 18.2, 15.4",
+    "10.8, 17.6, 14.9",
+    "13.0, 19.1, 16.3",
+    "14.1, 20.2, 18.5",
+    "12.9, 18.7, 16.2",
+    "11.7, 17.8, 15.0"
+]
+```
+
+### Étapes à suivre :
+
+1. **Extraction et nettoyage des données**
+
+   * Transforme chaque chaîne de la liste `donnees` en une **liste de 3 nombres flottants**.
+   * Obtiens ainsi une **liste imbriquée** `temperatures`, contenant 7 sous-listes (une par jour).
+
+2. **Calculs sur les données**
+
+   * Calcule la température moyenne de chaque jour, et stocke les résultats dans une **nouvelle liste** `moyennes_journalières`.
+   * Trouve la température **maximale** de toute la semaine et **quel jour** elle a eu lieu.
+   * Calcule la température **moyenne générale** sur l’ensemble de la semaine (toutes les valeurs confondues).
+
+3. **Visualisation avec matplotlib**
+
+   * Crée une figure avec :
+
+     * l’axe X : jours (1 à 7)
+     * l’axe Y : température moyenne journalière
+   * Ajoute un **titre** et des **étiquettes d’axes**
+   * Ajoute une **grille** et une **courbe** bleue avec marqueurs ronds (`'o'`)
+   * **Sauvegarde** le graphique sous le nom `graphique_temperature.png`
 
 
-### Exercice 3 – Répéter une mesure fixe avec `for`
+4. **Exploration des chaînes de caractères**
 
-On veut afficher les numéros de 10 échantillons : `Échantillon 1`, `Échantillon 2`, ..., `Échantillon 10`.
+   * Affiche le nombre de jours où la température du midi a dépassé **18°C**
+   * Utilise la fonction `split()` pour isoler les températures de midi dans chaque chaîne.
 
-1. Utilise une boucle `for` avec `range(1, 11)`.
-2. À chaque tour, affiche `Échantillon` suivi du numéro.
+
+### Exemple d’affichage attendu (partiel) :
+
+```
+Liste des températures (liste imbriquée) :
+[[12.3, 16.8, 14.0], [11.5, 18.2, 15.4], ..., [11.7, 17.8, 15.0]]
+
+Températures moyennes par jour :
+[14.37, 15.03, 14.43, ..., 14.83]
+
+Température maximale : 20.2°C (Jour 5)
+
+Température moyenne de la semaine : 15.01°C
+
+Nombre de jours où la température de midi a dépassé 18°C : 2
+```
+
+### Boîte à outils
+
+* `float()` pour convertir un texte en nombre
+* `split(',')` pour découper une chaîne
+* `append()` pour ajouter dans une liste
+* `sum()` et `len()` pour les moyennes
+* `plt.plot()`, `plt.title()`, `plt.xlabel()`, `plt.grid()`, `plt.savefig()`
 
 ---
 
 ## À faire avant le prochain cours
 
-1. Lire la matière sur [Listes, chaines et graphiques de base](../semaine7/)
-2. Faire les [exercices se trouvant à la fin de la leçon 7](../semaine7/#exercices-à-faire-avant-le-cours)
+1. Lire la prochaine leçon : [7. Tableaux numpy et opérations scientifiques](../semaine7/)
+2. Faire les exercices de la [prochaine leçon :](../semaine7/#exercices)

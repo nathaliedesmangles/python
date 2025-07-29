@@ -1,18 +1,132 @@
 +++
 chapter = true
-pre = "<b>3.</b>"
-title = " Algorithme et débogage"
+pre = "3."
+title = " Structures conditionnelles et algorithmes simples"
 weight = 103
 +++
 
 ## Objectifs 
 
-À la fin de la leçon, vous devrez être en mesure de :
-
+* Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python.
+* Appliquer les structures conditionnelles (`if`, `elif`, `else`) à des contextes scientifiques simples.
 * Écrire des algorithmes simples et les traduire en Python.
-* Comprendre les messages d'erreurs et à apprendre à déboguer un programme.
 
 ---
+
+## Les opérateurs de comparaison
+
+Ces opérateurs permettent de comparer des valeurs. Le résultat est **toujours un booléen** : `True` (vrai) ou `False` (faux).
+
+| Opérateur | Signification        | Exemple  | Résultat |
+| --------- | -------------------- | -------- | -------- |
+| `==`      | égal à               | `5 == 5` | `True`   |
+| `!=`      | différent de         | `3 != 4` | `True`   |
+| `<`       | plus petit que       | `2 < 5`  | `True`   |
+| `<=`      | plus petit ou égal à | `5 <= 5` | `True`   |
+| `>`       | plus grand que       | `7 > 4`  | `True`   |
+| `>=`      | plus grand ou égal à | `6 >= 9` | `False`  |
+
+> Dans une cellule de Code, testez les exemples du tableau.
+
+
+## Les opérateurs logiques
+
+Ils permettent de **combiner plusieurs conditions**.
+
+| Opérateur | Signification            | Exemple               | Résultat |
+| --------- | ------------------------ | --------------------- | -------- |
+| `and`     | et (toutes vraies)       | `(4 < 5) and (6 > 3)` | `True`   |
+| `or`      | ou (au moins une vraie)  | `(4 < 5) or (6 < 3)`  | `True`   |
+| `not`     | négation                 | `not (4 < 5)`         | `False`  |
+
+> Dans une cellule de Code, testez les exemples du tableau.
+
+## Les structures conditionnelles
+
+Elles permettent **d’exécuter un bloc de code seulement si une condition est vraie**.
+
+### L'instruction *if*
+
+> Pour exécuter du code **si une condition est vraie**.
+
+```python
+if condition:
+    # Bloc de code exécuté si la condition est vraie
+```
+
+**Exemple :**
+
+```python
+age = 20
+if age >= 18:
+    print("Majeur")
+```
+
+
+### L'instruction *if*-*else*
+
+> Pour exécuter du code **si une condition est fausse**.
+
+```python
+if condition:
+    # Si la condition est vraie
+else:
+    # Sinon (condition fausse)
+```
+
+**Exemple :**
+
+```python
+age = 16
+if age >= 18:
+    print("Majeur")
+else:
+    print("Mineur")
+```
+
+
+### L'instruction *if*-*elif*-*else*
+
+> Pour tester **plusieurs cas différents** et exécuter du code différent selon le cas.
+
+{{% notice style="accent" title="Important" %}}
+* **Si la condition du `if` est fausse**, un seul `elif` sera exécuté.  
+* **Si et seulement si toutes les conditions** (`if` et tous les `elif`) **sont fausses**, le `else` sera traité.
+{{% /notice %}}
+
+```python
+if condition1:
+    # Si condition1 est vraie
+elif condition2:
+    # Sinon, si condition2 est vraie
+elif condition3:
+    # Sinon, si condition3 est vraie
+else:
+    # Sinon (aucune condition vraie)
+```
+
+**Exemple :**
+
+```python
+note = 85
+
+if note >= 90:
+    print("Excellent")
+elif note >= 75:
+    print("Très bien")
+elif note >= 60:
+    print("Passable")
+else:
+    print("Échec")
+```
+
+{{% notice style="accent" title="Important" %}}
+* **Les deux-points (`:`)** sont obligatoires à la fin des lignes `if`, `elif` et `else`.
+* **L'indentation** est essentielle : elle délimite le bloc de code à exécuter.
+{{% /notice %}}
+
+> Dans des cellules de Code dans VS Code, testez les exemples des instructions `if`, `elif` et `else`.
+
 
 ## Comment décortiquer un problème scientifique en algorithme et le traduire en Python ?
 
@@ -173,103 +287,25 @@ Ces tests montrent que :
 * Le calcul respecte la **loi de Boyle** à température constante.
 * Les résultats sont **cohérents avec l’intuition physique**.
 
-
-## Trouver facilement les sources des erreurs dans nos programmes (débogage)
-
-**Déboguer**, c’est trouver les causes des erreurs dans le cod, afin de les corriger rapidement.
-
-### Types d’erreurs fréquentes
-
-* **Erreur de syntaxe** : La syntaxe de Python n'est pas respectée. Ex.: `print("Bonjour'`
-* **Erreur d’exécution** : Le mauvais type de données est utilisé. Ex.: `valeur = int("abc")`
-* **Erreur de logique** : Les instructions ne correspondent pas à la logique imposée par le problème. Ex.: `aire = longueur + largeur`
- 
-
-### Quelques habitudes à avoir pour déboguer
-
-* Lire le message d’erreur affiché
-* Ajouter des ***print()*** pour suivre les valeurs.
-* Corriger les erreurs dans l'**ordre de leur apparition**, car 1 erreur, peut soit en cacher ou être la cause d'autres erreurs.
-* Tester **une ligne à la fois**.
-* Se poser la question : "Est-ce que le résultat est correct ?".
-* Vérifier les types des données avec *type()*.
-
-
-### Exemple de code présentant des erreurs
-
-**Énoncé du problème**
-
-Ce programme est censé calculer le temps nécessaire pour qu’un objet tombe d’une certaine hauteur `h` en chute libre (sans frottement), en utilisant la formule :
-
-```math
-$$
-t = \sqrt{\frac{2h}{g}}
-$$
-où $g = 9.8 \, m/s^2$ est l’accélération gravitationnelle.
-```
-> Malheureusement, le programme contient des erreurs. Utilisez des `print()` pour comprendre ce qui ne fonctionne pas, puis corrigez le code.
-
-**Code à déboguer**
-```python
-import math
-
-def temps_chute(hauteur):
-g = "9.8"
-    t = math.sqrt(2 * hauteur / g)
-    return t
-
-h = input("Entrez la hauteur de chute en mètres: ")
-
-temps = temps_chute(h)
-
-print("Le temps de chute est {temps} secondes.")
-```
-
-{{% notice style="magenta" title="Correction attendue" groupid="notice-toggle" expanded="false" %}}
-**Erreurs intégrées** :
-1. Erreur d'indentation : définition de `g` n'est dans le corps de la fonction.
-2. `g = "9.8"` : valeur gravitationnelle en chaîne de caractères → provoquera une erreur de type.
-3. `input()` retourne une chaîne → doit être convertie en `float()`.
-4. Il manque `f` dans le `print()` final.
-5. Le type de la variable `hauteur` dans `temps_chute()` est incorrect (chaîne).
-```python
-import math
-
-def temps_chute(hauteur):
-    g = 9.8
-
-    # Vérification du type de g
-    print(type(g))
-
-    t = math.sqrt(2 * hauteur / g)
-
-    # vérification de la valeur de t
-    print(f"Temps de chute calculé: {t}")
-
-    return t 
-
-h = float(input("Entrez la hauteur de chute en mètres: "))
-
-# vérification de la valeur de h
-print(f"Hauteur entrée: {h}")
-
-temps = temps_chute(h)
-
-print("Le temps de chute est {temps} secondes.")
-```
-{{% /notice %}}
-
 {{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
+* Les **opérateurs de comparaison** comparent des valeurs.
+* Les **opérateurs logiques** combinent plusieurs conditions.
+* Les **structures conditionnelles** permettent de **réagir à des critères** dans un programme.
+* **Les deux-points (`:`)** sont obligatoires à la fin des lignes `if`, `elif` et `else`.
+* **L'indentation** (souvent 4 espaces) est essentielle : elle délimite le bloc de code à exécuter.
+* Il peut y avoir **autant de `elif` que nécessaire**, mais **un seul `if` et au plus un seul `else`**.
+	* `if` vérifie si une condition est vraie, **si et seulement si c'est le cas**, les instructions en dessous seront exécutées.
+	* `elif` permet de vérifier une autre condition, **si et seulement si la condition du `if` est fausse ET celle du `elif` est vraie**, les instructions en dessous et décalées seront exécutées.
+	* `else` permet de prévoir des instructions à effectuer, **si et seulement si aucune des conditions précédentes n'est vraie**.
+
 * **Avant de coder**: 
     * Comprendre le problème afin d'identifier les variables ou constantes et les formules.
     * Écrire en phrases simples, les étapes principales du programme (l'algorithme).
-* Utiliser la fonction `print()` pour suivre l'exécution d'un programme et identifier les bogues.
-* Toujours *"challenger"* les résultats obtenus, à l'aide de différentes valeurs: "Est-ce que ça a du sens scientifiquement ?"
 {{% /notice %}}
 
 ---
 
-## Exercices à faire avant le cours
+## Exercices
 
 ### Exercice 1 – Temps de demi-vie radioactive
 
@@ -293,7 +329,6 @@ Un échantillon de 100 g d’un isotope a une demi-vie de 5 ans. On souhaite con
 ### Exercice 2 – Taux de croissance d’une population bactérienne
 
 Une colonie de bactéries double toutes les 3 heures si les conditions sont optimales.
-
 Une boîte de Pétri contient 500 bactéries. On souhaite estimer la taille de la population après un certain nombre d’heures.
 
 1. Écris un algorithme pour :
@@ -309,37 +344,132 @@ Une boîte de Pétri contient 500 bactéries. On souhaite estimer la taille de l
 
 2. Traduis ton algorithme en Python.
 
+---
 
-### Exercice 3 : Trouvez les erreurs et corrigez les
+## Atelier 3
 
-> Ce programme est censé calculer la surface d’un cône droit à partir du rayon et de la hauteur entrés par l’utilisateur. La formule utilisée est :
-```math
-$$
-\text{Surface} = \pi \cdot r \cdot (r + \sqrt{r^2 + h^2})
-$$
+### Exercice 1
+
+L’état physique de l’eau dépend de la température et de la pression. À **pression atmosphérique normale (1 atm)** :
+
+* L’eau gèle à 0 °C et bout à 100 °C.
+* En **altitude**, la pression est plus faible, donc l’eau bout à une température plus basse.
+* En **autocuiseur**, la pression est plus élevée, donc l’eau bout à une température plus élevée.
+
+On suppose ici un modèle très simple :
+
+| Pression (atm) | Température d’ébullition (°C) |
+| -------------- | ----------------------------- |
+| 0.5            | 81                            |
+| 1.0            | 100                           |
+| 1.5            | 112                           |
+| 2.0            | 120                           |
+
+Le point de congélation demeure à 0 °C peu importe la pression.
+
+Écris un programme Python qui :
+
+1. Demande à l’utilisateur d’entrer :
+
+   * La **température de l’eau en °C**
+   * La **pression en atm** (choix parmi 0.5, 1.0, 1.5, 2.0)
+
+2. Détermine et affiche l’**état physique de l’eau** : `"solide"`, `"liquide"` ou `"gaz"`.
+
+
+### Exemples de fonctionnements attendus
+
+```text
+Température (°C) : 50
+Pression (atm) : 1.0
+État de l’eau : liquide
 ```
-> Toutefois, des erreurs se sont glissées dans le programme. Utilisez des instructions `print()` pour comprendre les erreurs, puis corrigez-les une à une et exécutez le code après chaque correction avant de passer à l'erreur suivante.
 
-**Code à déboguer et corriger** :
+```text
+Température (°C) : 101
+Pression (atm) : 1.0
+État de l’eau : gaz
+```
+
+```text
+Température (°C) : -5
+Pression (atm) : 2.0
+État de l’eau : solide
+```
+
+### Pistes / rappels
+
+* Utiliser des conditions imbriquées ou combinées (`if ... and ...`, `elif`).
+* Pour simplifier, vous pouvez faire un `if` sur la pression pour définir le point d’ébullition.
+* Utilisez des variables pour stocker les seuils.
+
+### Exemple d’exécution
+
+```
+Température de l'eau en °C : 105
+Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.5
+sÉtat de l’eau : liquide
+L’eau est liquide à cette température et pression.
+```
+
+### Version améliorée
+
+* Gérer des cas d’erreurs (ex. : pression invalide)
+* Afficher une petite phrase plus descriptive selon l’état :
+* *"L’eau est sous forme de vapeur."* ou *"L’eau est liquide à cette température et pression."*
+
+{{% notice style="magenta" title="Gérer des cas d'erreur: Utiliser la valeur None" groupid="notice-toggle" expanded="false" %}}
+
+### Qu’est-ce que `None` en Python ?
+
+* `None` est une **valeur spéciale** en Python.
+* Elle représente **l'absence de valeur** ou **"rien"**.
+
+### Pourquoi utiliser `None` ?
+
+* Pour **vérifier si une variable est encore vide**.
+* Pour **initialiser une variable** sans lui donner de valeur tout de suite.
+* Pour **indiquer qu’une fonction ne retourne rien**.
+
+---
+### Exemple 1 – Vérifier si une variable est vide
 
 ```python
-def surface_cone(rayon, hauteur):
-    aire_base = math.pi * rayon ** 2
-    aire_lateral = math.pi * rayon * math.sqrt(rayon**2 + hauteur)
-    surface = aire_base + aire_latérale
-    return surface
+reponse = None
 
-r = input("Entrez le rayon du cône: ")
-h = input("Entrez la hauteur du cône: ")
-
-resultat = surface_cone(r, h)
-
-print("La surface totale du cône est de {resultat} cm²")
+if reponse is None:
+    print("Aucune réponse reçue.")
 ```
+
+> Attention : on teste `None` avec `is` et non `==` dans les bonnes pratiques Python :
+
+```python
+if variable is None:
+   
+
+### Exemple 2 – Variable vide au départ
+
+```python
+resultat = None  # on ne connaît pas encore le résultat
+
+# plus tard...
+resultat = 42
+```
+
+### Exemple 3 – Fonction sans return
+
+```python
+def afficher_message():
+    print("Bonjour!")
+
+x = afficher_message()
+print(x)  # Affiche : None (car la fonction ne retourne rien)
+```
+{{% /notice %}}
 
 ---
 
 ## À faire avant le prochain cours
 
-1. Lire la matière sur [Décider avec if, elif, else, répéter avec `while`](../semaine4/)
-2. Faire les [exercices se trouvant à la fin de la leçon 4](../semaine4/#exercices-à-faire-avant-le-cours)
+1. Lire la prochaine leçon : [4. Boucles et algorithmes simples](../semaine4/)
+2. Faire les exercices de la [prochaine leçon :](../semaine4/#exercices)

@@ -8,13 +8,6 @@
     <language>en-us</language>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title> Tableaux NumPy</title>
-      <link>https://example.org/semaine8/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine8/index.html</guid>
-      <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.array([32.0, 35.5, 37.2]) print(f&#34;Solubilités mesurées : {sol}&#34;)&#xD;Tableau 2D Un tableau numpy multidimentionnel c’est un tableau numpy qui contient une liste de listes.</description>
-    </item>
-    <item>
       <title>Foire Aux Questions</title>
       <link>https://example.org/faq/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -57,25 +50,25 @@
       <description>Objectifs Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Créer une structure de dossiers pour le cours. Comprendre l’interface de VS Code Ouvrir un dossier et un fichier (.ipynb) dans VS Code. Créer un fichier .ipynb dans VS Code. Écrire et exécuter du code Python simple. Sauvegarder vos fichiers de code. 1. Présentation du cours Cliquez ici pour ouvrir le plan de cours et trouver le quiz interactif</description>
     </item>
     <item>
-      <title> Introduction à Python (Variables et types de données)</title>
+      <title> Variables, types, entrée utilisateur et fonctions prédéfinies</title>
       <link>https://example.org/semaine2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/index.html</guid>
       <description>Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Variables et types de données de base Une variable est un nom qui désigne une valeur. prenom = &#34;Alice&#34; age = 20 temperature = 25.8&#xD;Bien nommer vos variables: Utiliser des noms significatifs (ex : masse_corps, volume_solution) Commencer par une lettre ou un souligné (_), jamais par un chiffre.</description>
     </item>
     <item>
-      <title> Algorithme et débogage</title>
+      <title> Structures conditionnelles et algorithmes simples</title>
       <link>https://example.org/semaine3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/index.html</guid>
-      <description>Objectifs À la fin de la leçon, vous devrez être en mesure de :&#xA;Écrire des algorithmes simples et les traduire en Python. Comprendre les messages d’erreurs et à apprendre à déboguer un programme. Comment décortiquer un problème scientifique en algorithme et le traduire en Python ? Un algorithme, c’est une suite d’instructions claires pour résoudre un problème.&#xA;Ce processus crucial, est la clé pour arriver à écrire un programme sans s’arracher les cheveux.</description>
+      <description>Objectifs Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Appliquer les structures conditionnelles (if, elif, else) à des contextes scientifiques simples. Écrire des algorithmes simples et les traduire en Python. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).&#xA;Opérateur Signification Exemple Résultat == égal à 5 == 5 True !</description>
     </item>
     <item>
-      <title> Décider avec `if`, `elif`, `else`, répéter avec `while`</title>
+      <title> Boucles et débogage simple</title>
       <link>https://example.org/semaine4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine4/index.html</guid>
-      <description>Objectifs Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Écrire des structures conditionnelles (if, elif, else) pour contrôler le déroulement d’un programme selon différentes situations. Appliquer les structures conditionnelles à des contextes scientifiques simples. Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Interrompre le déroulement d’une boucle. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs.</description>
+      <description>Objectifs Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Répéter des instructions un nombre de fois connu d’avance avec la boucle for. Interrompre le déroulement d’une boucle. Comprendre les messages d’erreurs et découvrir des stratégies simples de débogage. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).&#xA;Boucle while La boucle while répète un bloc tant qu’une condition est vraie.</description>
     </item>
     <item>
       <title> Évaluation #1 (20%)</title>
@@ -85,39 +78,46 @@
       <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;Exercices pratiques avec VS Code.</description>
     </item>
     <item>
-      <title> Listes et chaînes de caractères et boucle for</title>
+      <title> Listes, chaînes et visualisation des données</title>
       <link>https://example.org/semaine6/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine6/index.html</guid>
-      <description>Objectifs À la fin de cette leçon, vous devrez être capable de :&#xA;Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Savoir identifier quand utiliser une boucle for vs. while. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).&#xA;C’est un peu comme une boîte à compartiments.</description>
+      <description>Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).&#xA;C’est un peu comme une boîte à compartiments.&#xA;ma_liste = [3, 7, 42, 5]&#xD;Chaque élément a une position (appelée indice).</description>
     </item>
     <item>
-      <title> Dictionnaires et graphiques de base</title>
+      <title> Tableaux numpy et droite de régression</title>
       <link>https://example.org/semaine7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine7/index.html</guid>
-      <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Vérifier la présence d’une clé avec in. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</description>
+      <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.</description>
     </item>
     <item>
-      <title> Évaluation #2 (25%)</title>
-      <link>https://example.org/semaine10/index.html</link>
+      <title> Dictionnaires et fichier textes (csv)</title>
+      <link>https://example.org/semaine8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine10/index.html</guid>
-      <description>Informations ⦁ Date:&#x9;Semaine #8 (Voir le calendrier)&#xA;⦁ Matière: Semaines 5 à 7 inclusivement&#xA;⦁ Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁ Format:&#x9;À confirmer</description>
+      <guid>https://example.org/semaine8/index.html</guid>
+      <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</description>
     </item>
     <item>
       <title> Révision</title>
       <link>https://example.org/semaine9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine9/index.html</guid>
-      <description>Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. 📘 Plan de la leçon (texte à lire avant le cours) 1. Listes de listes Une liste de listes est une structure 2D (comme une grille de valeurs) :&#xA;grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]&#xD;Accès à un élément :</description>
+      <description>AJOUTER GRAPHIQUE&#xA;RAPPEL: Semaine prochaine c’est le deuxième examen (25%)&#xA;Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. Tracer des graphiques Nom du fichier : revisions_eval2.ipynb&#xA;Exercice 1 – Liste de listes 1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).</description>
     </item>
     <item>
-      <title> Les graphiques avancés et la regression linéaire</title>
+      <title> Évaluation #2 (25%)</title>
+      <link>https://example.org/semaine10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine10/index.html</guid>
+      <description>Informations ⦁ Date:&#x9;Semaine #10 (Voir le calendrier)&#xA;⦁ Matière: Semaines 5 à 7 inclusivement&#xA;⦁ Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁ Format:&#x9;À confirmer</description>
+    </item>
+    <item>
+      <title> Fonctions personnalisées</title>
       <link>https://example.org/semaine11/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine11/index.html</guid>
-      <description>Tracer un graphique à barres&#xA;Ajouter des barres d’erreur&#xA;Tracer une droite de régression&#xA;Interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R²&#xA;Établir une relation entre deux données&#xA;Interpréter les résultats pour répondre à une question scientifique&#xA;Importer la bibliothèque import matplotlib.pyplot as plt&#xD;Graphique à barres Exemple de base :&#xA;noms = [&#34;A&#34;, &#34;B&#34;, &#34;C&#34;] valeurs = [4, 7, 5] plt.bar(noms, valeurs) plt.title(&#34;Résultats&#34;) plt.xticks(rotation=0) plt.</description>
+      <description>Objectifs Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:&#xA;Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :. Les instructions de la fonction sont sur les lignes d’en dessous, décalées.</description>
     </item>
     <item>
       <title> Projet - Présentation et analyse</title>

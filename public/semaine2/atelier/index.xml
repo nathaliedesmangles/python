@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atelier 2 :: 420-SN1-RE</title>
-    <link>https://example.org/semaine2/atelier/index.html</link>
+    <link>http://localhost:1313/semaine2/atelier/index.html</link>
     <description>Objectifs Manipuler des variables. Utiliser des types de données différents. Écrire des programmes scientifiques simples. Afficher des résultats. Exercice 1 - Calcul de probabilité On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles. Un rectangle contenant 6 cercles isométriques (même taille), Ils sont organisés en 2 rangées de 3 cercles, La hauteur du rectangle est 10 cm, ce qui correspond à deux diamètres de cercles (1 par rangée).</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine2/atelier/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine2/atelier/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

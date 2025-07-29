@@ -3,16 +3,9 @@
   <channel>
     <title> Révision :: 420-SN1-RE</title>
     <link>https://example.org/semaine9/index.html</link>
-    <description>Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. 📘 Plan de la leçon (texte à lire avant le cours) 1. Listes de listes Une liste de listes est une structure 2D (comme une grille de valeurs) :&#xA;grille = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]&#xD;Accès à un élément :</description>
+    <description>AJOUTER GRAPHIQUE&#xA;RAPPEL: Semaine prochaine c’est le deuxième examen (25%)&#xA;Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. Tracer des graphiques Nom du fichier : revisions_eval2.ipynb&#xA;Exercice 1 – Liste de listes 1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine9/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Activité 9</title>
-      <link>https://example.org/semaine9/atelier/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine9/atelier/index.html</guid>
-      <description>Objectifs Création de tableaux à 1D et 2D (numpy). Calcul de moyennes et d’écarts types. Gestion de données manquantes (np.nan). Comparaison entre conditions expérimentales. Exercice : Analyse d’une expérience sur l’effet de la lumière sur la croissance des plantes Une équipe de recherche a mesuré la hauteur (en cm) de jeunes plantes après 10 jours de croissance dans trois conditions lumineuses différentes :&#xA;lumière naturelle, lumière LED blanche, lumière LED rouge.</description>
-    </item>
   </channel>
 </rss>

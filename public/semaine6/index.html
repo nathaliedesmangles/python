@@ -5,42 +5,42 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectifs À la fin de cette leçon, vous devrez être capable de :
-Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Savoir identifier quand utiliser une boucle for vs. while. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).
-C’est un peu comme une boîte à compartiments.">
+    <meta name="description" content="Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).
+C’est un peu comme une boîte à compartiments.
+ma_liste = [3, 7, 42, 5]Chaque élément a une position (appelée indice).">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content=" Listes et chaînes de caractères et boucle for :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectifs À la fin de cette leçon, vous devrez être capable de :
-Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Savoir identifier quand utiliser une boucle for vs. while. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).
-C’est un peu comme une boîte à compartiments.">
+    <meta name="twitter:title" content=" Listes, chaînes et visualisation des données :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).
+C’est un peu comme une boîte à compartiments.
+ma_liste = [3, 7, 42, 5]Chaque élément a une position (appelée indice).">
     <meta property="og:url" content="https://example.org/semaine6/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content=" Listes et chaînes de caractères et boucle for :: 420-SN1-RE">
-    <meta property="og:description" content="Objectifs À la fin de cette leçon, vous devrez être capable de :
-Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Savoir identifier quand utiliser une boucle for vs. while. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).
-C’est un peu comme une boîte à compartiments.">
+    <meta property="og:title" content=" Listes, chaînes et visualisation des données :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).
+C’est un peu comme une boîte à compartiments.
+ma_liste = [3, 7, 42, 5]Chaque élément a une position (appelée indice).">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content=" Listes et chaînes de caractères et boucle for :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectifs À la fin de cette leçon, vous devrez être capable de :
-Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Savoir identifier quand utiliser une boucle for vs. while. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).
-C’est un peu comme une boîte à compartiments.">
-    <meta itemprop="wordCount" content="1316">
-    <title> Listes et chaînes de caractères et boucle for :: 420-SN1-RE</title>
-    <link href="/semaine6/index.xml" rel="alternate" type="application/rss+xml" title=" Listes et chaînes de caractères et boucle for :: 420-SN1-RE">
-    <link href="/images/logo.png?1753667632" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753667632" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753667632" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753667632" rel="stylesheet">
-    <link href="/css/theme.min.css?1753667632" rel="stylesheet">
-    <link href="/css/format-html.min.css?1753667632" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1753667632" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1753667632" defer></script>
-    <script src="/js/search.min.js?1753667632" defer></script>
+    <meta itemprop="name" content=" Listes, chaînes et visualisation des données :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).
+C’est un peu comme une boîte à compartiments.
+ma_liste = [3, 7, 42, 5]Chaque élément a une position (appelée indice).">
+    <meta itemprop="wordCount" content="2247">
+    <title> Listes, chaînes et visualisation des données :: 420-SN1-RE</title>
+    <link href="/semaine6/index.xml" rel="alternate" type="application/rss+xml" title=" Listes, chaînes et visualisation des données :: 420-SN1-RE">
+    <link href="/images/logo.png?1753755312" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753755312" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753755312" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753755312" rel="stylesheet">
+    <link href="/css/theme.min.css?1753755312" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753755312" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753755312" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753755312" defer></script>
+    <script src="/js/search.min.js?1753755312" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -50,7 +50,7 @@ C’est un peu comme une boîte à compartiments.">
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1753667632";
+      window.relearn.index_js_url="/searchindex.en.js?1753755312";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -96,7 +96,7 @@ C’est un peu comme une boîte à compartiments.">
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1753667632" rel="stylesheet">
+    <link href="/css/custom.css?1753755312" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine6/index.html">
     <div id="R-body" class="default-animation">
@@ -136,17 +136,38 @@ C’est un peu comme une boîte à compartiments.">
         <li><a href="#fonctions-utiles-sur-les-chaînes">Fonctions utiles sur les chaînes</a></li>
       </ul>
     </li>
-    <li><a href="#la-boucle-for-avec-range">La boucle <code>for</code> avec <code>range()</code></a>
+    <li><a href="#visualiser-les-données-avec-matplotlib-graphiques-de-base">Visualiser les données avec Matplotlib (graphiques de base)</a>
       <ul>
-        <li><a href="#syntaxe-">Syntaxe :</a></li>
+        <li><a href="#importer-matplotlibpyplot">Importer <code>matplotlib.pyplot</code></a></li>
+        <li><a href="#tracer-une-courbe-simple-avec-plot">Tracer une courbe simple avec <code>plot()</code></a></li>
+        <li><a href="#afficher-le-graphique-avec-show">Afficher le graphique avec <code>show()</code></a></li>
       </ul>
     </li>
-    <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a>
+    <li><a href="#figure-1figure_1pngwidth45vw"><strong>Résultat</strong> : Une courbe représentant les points (0,0), (1,1), (2,4), (3,9), (4,16).
+<img src="./Figure_1.png?width=45vw" alt="Figure 1"></a>
+      <ul>
+        <li><a href="#exemple-complet">Exemple complet</a></li>
+        <li><a href="#personnaliser-le-trait-de-la-courbe-style-de-ligne-couleur-marqueur">Personnaliser le trait de la courbe (Style de ligne, couleur, marqueur)</a></li>
+        <li><a href="#options-les-plus-courantes-pour-la-méthode-pltplot">Options les plus courantes pour la méthode <code>plt.plot()</code></a></li>
+        <li><a href="#ajouter-un-titre-des-étiquettes-et-une-grille">Ajouter un titre, des étiquettes et une grille</a></li>
+        <li><a href="#tracer-plusieurs-courbes-sur-un-même-graphique-et-ajouter-une-légende">Tracer plusieurs courbes sur un même graphique et ajouter une légende</a></li>
+        <li><a href="#enregistrer-un-graphique-sous-forme-dimage">Enregistrer un graphique sous forme d&rsquo;image</a></li>
+        <li><a href="#fonctions-de-base-pour-les-graphiques">Fonctions de base pour les graphiques</a></li>
+      </ul>
+    </li>
+    <li><a href="#exercices">Exercices</a>
       <ul>
         <li><a href="#listes">Listes</a></li>
         <li><a href="#chaines-de-caractères">Chaines de caractères</a></li>
-        <li><a href="#exercice-1---for-ou-while-">Exercice 1 - For ou While ?</a></li>
-        <li><a href="#exercice-3--répéter-une-mesure-fixe-avec-for">Exercice 3 – Répéter une mesure fixe avec <code>for</code></a></li>
+        <li><a href="#graphiques">Graphiques</a></li>
+      </ul>
+    </li>
+    <li><a href="#atelier">Atelier</a>
+      <ul>
+        <li><a href="#exercice">Exercice</a></li>
+        <li><a href="#étapes-à-suivre-">Étapes à suivre :</a></li>
+        <li><a href="#exemple-daffichage-attendu-partiel-">Exemple d’affichage attendu (partiel) :</a></li>
+        <li><a href="#boîte-à-outils">Boîte à outils</a></li>
       </ul>
     </li>
     <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
@@ -158,12 +179,12 @@ C’est un peu comme une boîte à compartiments.">
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Listes et chaînes de caractères et boucle for</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Listes, chaînes et visualisation des données</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/index.html" title="Évaluation #1 (20%) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/atelier/index.html" title="Atelier 6 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/index.html" title="Tableaux numpy et droite de régression (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -183,15 +204,14 @@ C’est un peu comme une boîte à compartiments.">
   <header class="headline">
   </header>
 
-<h1 id="listes-et-chaînes-de-caractères-et-boucle-for"> Listes et chaînes de caractères et boucle for</h1>
+<h1 id="listes-chaînes-et-visualisation-des-données"> Listes, chaînes et visualisation des données</h1>
 
 <h2 id="objectifs">Objectifs</h2>
-<p>À la fin de cette leçon, vous devrez être capable de :</p>
 <ul>
 <li>Créer, modifier et parcourir une <strong>liste simple</strong>.</li>
 <li>Manipuler des <strong>listes imbriquées</strong> (listes dans un liste).</li>
 <li>Appliquer les notions des listes simples sur les chaines de caractères.</li>
-<li>Savoir identifier quand utiliser une boucle <code>for</code> vs. <code>while</code>.</li>
+<li>Créer, afficher, embellir et enregistrer des graphiques simples avec <code>matplotlib</code>.</li>
 </ul>
 <hr>
 <h2 id="quest-ce-quune-liste-">Qu’est-ce qu’une liste ?</h2>
@@ -477,46 +497,254 @@ C’est un peu comme une boîte à compartiments.">
 </ul>
   </div>
 </details>
-<h2 id="la-boucle-for-avec-range">La boucle <code>for</code> avec <code>range()</code></h2>
-<p>Utilisée quand <strong>on connaît d’avance</strong> combien de fois répéter.</p>
-<h3 id="syntaxe-">Syntaxe :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(début, fin, pas):
-</span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
+<h2 id="visualiser-les-données-avec-matplotlib-graphiques-de-base">Visualiser les données avec Matplotlib (graphiques de base)</h2>
+<p>Pour pouvoir visualiser des données sous forme de graphiques, nous utiliserons le module <code>pyplot</code> de la bibliothèque <code>matplotlib</code>.</p>
+<h3 id="importer-matplotlibpyplot">Importer <code>matplotlib.pyplot</code></h3>
+<p>La partie de <code>matplotlib</code> qu&rsquo;on utilise le plus pour créer des graphiques s&rsquo;appelle <code>pyplot</code>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt</span></span></code></pre></div>
+<p>On utilise souvent l’abréviation <code>plt</code> pour simplifier l’écriture.</p>
+<h3 id="tracer-une-courbe-simple-avec-plot">Tracer une courbe simple avec <code>plot()</code></h3>
+<p>La fonction <code>plot()</code> prend deux listes (ou deux tableaux) :</p>
 <ul>
-<li><code>début</code> : valeur initiale (optionnel, par défaut = 0)</li>
-<li><code>fin</code> : valeur <strong>non incluse</strong></li>
-<li><code>pas</code> : saut entre chaque valeur (optionnel, par défaut = 1)</li>
+<li>La première représente l’axe <strong>x</strong></li>
+<li>La seconde représente l’axe <strong>y</strong></li>
 </ul>
-<p><strong>Exemple</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span>):
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;i =&#34;</span>, i)</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)</span></span></code></pre></div>
+
+<details open class=" box cstyle notices cyan">
+  <summary class="box-label" tabindex="-1">
+    Sachez qu&rsquo;&hellip;
+  </summary>
+  <div class="box-content">
+<p>À ce stade, rien ne s&rsquo;affiche encore. Il faut une dernière commande pour voir le graphique.</p>
+  </div>
+</details>
+<h3 id="afficher-le-graphique-avec-show">Afficher le graphique avec <code>show()</code></h3>
+<p>La commande <code>show()</code> sert à <strong>afficher la figure</strong> dans une nouvelle fenêtre.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h2 id="figure-1figure_1pngwidth45vw"><strong>Résultat</strong> : Une courbe représentant les points (0,0), (1,1), (2,4), (3,9), (4,16).
+<a href="#R-image-3a3cf21adc2efb9f58a46b73dd24d2c1" class="lightbox-link"><img alt="Figure 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_1.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a3cf21adc2efb9f58a46b73dd24d2c1"><img alt="Figure 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_1.png?width=45vw"></a></h2>
+<h3 id="exemple-complet">Exemple complet</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h3 id="personnaliser-le-trait-de-la-courbe-style-de-ligne-couleur-marqueur">Personnaliser le trait de la courbe (Style de ligne, couleur, marqueur)</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;green&#39;</span>, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;--&#39;</span>, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>)</span></span></code></pre></div>
+<p><strong>Résultat</strong>
+<a href="#R-image-d161de9517a9d8ffcfdef2479c054bd4" class="lightbox-link"><img alt="Figure 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_2.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d161de9517a9d8ffcfdef2479c054bd4"><img alt="Figure 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_2.png?width=45vw"></a></p>
+<h3 id="options-les-plus-courantes-pour-la-méthode-pltplot">Options les plus courantes pour la méthode <code>plt.plot()</code></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Option</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Exemple</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>color</code> ou <code>c</code></td>
+<td>Couleur de la courbe</td>
+<td><code>color='red'</code> ou <code>c='r'</code></td>
+</tr>
+<tr>
+<td><code>linestyle</code> ou <code>ls</code></td>
+<td>Style de ligne : continue, pointillée, etc.</td>
+<td><code>ls='--'</code></td>
+</tr>
+<tr>
+<td><code>linewidth</code> ou <code>lw</code></td>
+<td>Épaisseur de la ligne</td>
+<td><code>lw=2</code></td>
+</tr>
+<tr>
+<td><code>marker</code></td>
+<td>Symbole pour marquer les points</td>
+<td><code>marker='o'</code></td>
+</tr>
+<tr>
+<td><code>markersize</code> ou <code>ms</code></td>
+<td>Taille des marqueurs</td>
+<td><code>ms=8</code></td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td>Nom de la courbe (pour la légende)</td>
+<td><code>label='x²'</code></td>
+</tr>
+<tr>
+<td><code>alpha</code></td>
+<td>Transparence (0 = invisible, 1 = opaque)</td>
+<td><code>alpha=0.7</code></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;blue&#39;</span>, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;--&#39;</span>, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;x²&#39;</span>, linewidth<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()</span></span></code></pre></div>
+<p>Cela trace une courbe en <strong>bleu</strong>, avec une <strong>ligne pointillée</strong>, des <strong>cercles aux points</strong>, une <strong>légende &ldquo;x²&rdquo;</strong>, et une <strong>ligne épaisse</strong>.</p>
+<h3 id="ajouter-un-titre-des-étiquettes-et-une-grille">Ajouter un titre, des étiquettes et une grille</h3>
+<ul>
+<li><code>plt.title(&quot;Courbe de y = x²&quot;)</code> : Ajoute un <strong>titre</strong> au graphique.</li>
+<li><code>plt.xlabel(&quot;x&quot;)</code> et <code>plt.ylabel(&quot;y&quot;)</code> : Donnent un <strong>nom à l’axe horizontal</strong> (ici, &ldquo;x&rdquo;) et un <strong>nom à l’axe vertical</strong> (ici, &ldquo;y&rdquo;).</li>
+<li><code>plt.grid()</code> : Affiche une <strong>grille</strong> pour mieux lire les valeurs sur le graphique (optionnel mais utile).</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Courbe de y = x²&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;x&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;y&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<p><strong>Résultat</strong>
+<a href="#R-image-aafa50bf21ac6f3d55a205ca23966efd" class="lightbox-link"><img alt="Figure 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_3.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aafa50bf21ac6f3d55a205ca23966efd"><img alt="Figure 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_3.png?width=45vw"></a></p>
+<h3 id="tracer-plusieurs-courbes-sur-un-même-graphique-et-ajouter-une-légende">Tracer plusieurs courbes sur un même graphique et ajouter une légende</h3>
+<ul>
+<li>Il suffit d&rsquo;utiliser autant de <code>plt.plot()</code> qu&rsquo;il y a de courbes à tracer.</li>
+<li>La fonction <code>plt.legend()</code> affiche une <strong>légende</strong> sur le graphique.</li>
+<li>Elle permet d’<strong>identifier</strong> les courbes ou les éléments tracés, à condition qu’ils aient été nommés avec <code>label=</code>.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>y1 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>]
+</span></span><span style="display:flex;"><span>y2 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">8</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y1, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;objet A&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y2, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;objet B&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Deux courbes sur le même graphique&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;x&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;y&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()  <span style="color:#75715e"># Affiche la légende</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 <blockquote>
-<p>Affiche les valeurs de 0 à 4.</p>
+<p>Cela ajoutera une petite boîte dans le coin du graphique indiquant &ldquo;Courbe 1&rdquo; et &ldquo;Courbe 2&rdquo;.</p>
 </blockquote>
+<p><strong>Résultat</strong>
+<a href="#R-image-04cdad7cdfd168c47e77b9be94f60113" class="lightbox-link"><img alt="Figure 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_4.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-04cdad7cdfd168c47e77b9be94f60113"><img alt="Figure 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_4.png?width=45vw"></a></p>
+<h3 id="enregistrer-un-graphique-sous-forme-dimage">Enregistrer un graphique sous forme d&rsquo;image</h3>
+<p>La fonction <code>plt.savefig(&quot;figure.png&quot;)</code> <strong>enregistre</strong> le graphique dans un fichier image (ici au format PNG).
+Cela permet de conserver ou partager le graphique même sans afficher la fenêtre graphique.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;figure.png&#34;</span>)</span></span></code></pre></div>
+<blockquote>
+<p>Le fichier &ldquo;figure.png&rdquo; sera créé dans le même dossier que le fichier <code>.ipynb</code>.</p>
+</blockquote>
+<h3 id="fonctions-de-base-pour-les-graphiques">Fonctions de base pour les graphiques</h3>
+<table>
+<thead>
+<tr>
+<th>Fonction / Méthode</th>
+<th>Rôle principal</th>
+<th>Exemple minimal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>plt.plot(x, y)</code></td>
+<td>Trace une courbe (x, y)</td>
+<td><code>plt.plot(x, y)</code></td>
+</tr>
+<tr>
+<td><code>plt.scatter(x, y)</code></td>
+<td>Trace un nuage de points</td>
+<td><code>plt.scatter(x, y)</code></td>
+</tr>
+<tr>
+<td><code>plt.bar(x, y)</code></td>
+<td>Trace un diagramme à barres</td>
+<td><code>plt.bar(x, y)</code></td>
+</tr>
+<tr>
+<td><code>plt.hist(data)</code></td>
+<td>Trace un histogramme</td>
+<td><code>plt.hist(valeurs)</code></td>
+</tr>
+<tr>
+<td><code>plt.title(&quot;titre&quot;)</code></td>
+<td>Ajoute un titre au graphique</td>
+<td><code>plt.title(&quot;Graphique&quot;)</code></td>
+</tr>
+<tr>
+<td><code>plt.xlabel(&quot;nom de l'axe x&quot;)</code></td>
+<td>Ajoute un titre à l’axe des x</td>
+<td><code>plt.xlabel(&quot;Temps (s)&quot;)</code></td>
+</tr>
+<tr>
+<td><code>plt.ylabel(&quot;nom de l'axe y&quot;)</code></td>
+<td>Ajoute un titre à l’axe des y</td>
+<td><code>plt.ylabel(&quot;Vitesse (m/s)&quot;)</code></td>
+</tr>
+<tr>
+<td><code>plt.legend()</code></td>
+<td>Affiche une légende pour les courbes nommées</td>
+<td><code>plt.legend()</code></td>
+</tr>
+<tr>
+<td><code>plt.grid(True)</code></td>
+<td>Affiche une grille</td>
+<td><code>plt.grid(True)</code></td>
+</tr>
+<tr>
+<td><code>plt.show()</code></td>
+<td>Affiche le graphique à l’écran (à la fin du tracé)</td>
+<td><code>plt.show()</code></td>
+</tr>
+<tr>
+<td><code>plt.savefig(&quot;figure.png&quot;)</code></td>
+<td>Sauvegarde le graphique en image</td>
+<td><code>plt.savefig(&quot;mon_graph.png&quot;)</code></td>
+</tr>
+<tr>
+<td><code>plt.figure(figsize=(w, h))</code></td>
+<td>Définit la taille du graphique (en pouces)</td>
+<td><code>plt.figure(figsize=(8, 4))</code></td>
+</tr>
+</tbody>
+</table>
 
 <details class=" box cstyle notices blue expand" name="notice-toggle">
   <summary class="box-label">
     <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
-    À retenir
+    À retenir (graphiques simples)
   </summary>
   <div class="box-content">
 <ul>
-<li><code>for</code> avec <code>range()</code> : Utilisée lorsque le nombre de répétitions est connu d&rsquo;avance.
+<li><strong>Importer la bibliothèque</strong> : matplotlib.pyplot</li>
+<li><strong>Créer les données</strong> sous forme de <strong>listes</strong> ou de <strong>tableaux NumPy</strong></li>
+<li><strong>Tracer une courbe</strong> avec <code>plt.plot(x, y)</code>
 <ul>
-<li>Équivaut à dire:
-<ul>
-<li><strong>POUR CHAQUE</strong> <em>tour de boucle</em> <strong>FAIRE&hellip;</strong> ou</li>
-<li><strong>POUR CHAQUE</strong> <em>valeur d&rsquo;une séquence</em> <strong>FAIRE&hellip;</strong></li>
+<li><code>plt.plot()</code> change selon le type de graphique (voir le tableau <a href="/semaine6/index.html#fonctions-de-base-pour-les-graphiques">ICI</a></li>
+<li>Il existe des options permettant de personnaliser les couleurs, traits, etc.</li>
 </ul>
 </li>
-</ul>
-</li>
+<li><strong>Afficher le graphique</strong> avec <code>plt.show()</code>.</li>
+<li><strong>Ajouter un titre</strong> avec <code>plt.title(&quot;Mon graphique&quot;)</code></li>
+<li><strong>Nommer les axes</strong> avec <code>plt.xlabel(&quot;x&quot;)</code> et <code>plt.ylabel(&quot;y&quot;)</code></li>
+<li><strong>Afficher une grille</strong> pour mieux lire les valeurs avec <code>plt.grid()</code></li>
+<li><strong>Ajouter une légende</strong> avec <code>label=&quot;...&quot;</code> dans <code>plot()</code> et <code>plt.legend()</code></li>
+<li><strong>Tracer plusieurs courbes sur un même graphique</strong> en appelant plusieurs fois <code>plt.plot(...)</code> avant <code>plt.show()</code></li>
 </ul>
   </div>
 </details>
 <hr>
-<h2 id="exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</h2>
-<p><a href="https://python-a25.netlify.app/blocnotes/exercices_boucles.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
+<h2 id="exercices">Exercices</h2>
+<p><a href="https://python-a25.netlify.app/blocnotes/exercices_listes_chaines_graphes.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
 <h3 id="listes">Listes</h3>
 <h4 id="exercice-1-">Exercice 1 :</h4>
 <ul>
@@ -563,29 +791,114 @@ C’est un peu comme une boîte à compartiments.">
 <li>Remplace les &ldquo;t&rdquo; par &ldquo;u&rdquo;.</li>
 </ul>
 <hr>
-<p>===</p>
-<h3 id="exercice-1---for-ou-while-">Exercice 1 - For ou While ?</h3>
-<p>Pour chacun des contextes suivants, avant d&rsquo;écrire le code, répondez à la question: &ldquo;Quelle boucle devriez-vous utiliser ?&rdquo;:</p>
-<p>a. Afficher les nombres de 1 à 10<br>
-b. Compter jusqu’à 100 par bonds de 10<br>
-c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)<br>
-d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)<br>
-e. Écrire un programme qui :<br>
-     i. Affiche deux choix :<br>
-        1. &ldquo;Entrez votre prénom&rdquo;<br>
-        2.&ldquo;Quitter le programme&rdquo;<br>
-     ii. Demande à l&rsquo;utilisateur d&rsquo;entrer son choix (<code>1</code> ou <code>2</code>) et tant qu&rsquo;il choisi l&rsquo;option 1, le programme lui redemande d&rsquo;entrer son prénom. Si c&rsquo;est 2, le programme s&rsquo;arrête (Vous pouvez utiliser <code>break</code> ou afficher un message).</p>
-<h3 id="exercice-3--répéter-une-mesure-fixe-avec-for">Exercice 3 – Répéter une mesure fixe avec <code>for</code></h3>
-<p>On veut afficher les numéros de 10 échantillons : <code>Échantillon 1</code>, <code>Échantillon 2</code>, &hellip;, <code>Échantillon 10</code>.</p>
+<h3 id="graphiques">Graphiques</h3>
+<h4 id="exercice-7--température-dans-une-journée">Exercice 7 – Température dans une journée</h4>
+<ul>
+<li>Heures : <code>[0, 4, 8, 12, 16, 20, 24]</code></li>
+<li>Températures : <code>[-5, -2, 3, 7, 6, 1, -2]</code></li>
+</ul>
+<p>Crée un graphique de température en fonction de l’heure.</p>
+<p>Ajoute :</p>
+<ul>
+<li>Un titre <code>&quot;Température en fonction de l’heure&quot;</code></li>
+<li>Les étiquettes <code>&quot;Heure (h)&quot;</code> et <code>&quot;Température (°C)&quot;</code></li>
+<li>Une grille</li>
+</ul>
+<h4 id="exercice-8---comparaison-des-valeurs-mesurées-et-attendues">Exercice 8 - Comparaison des valeurs mesurées et attendues</h4>
+<p>On a mesuré la concentration d’un soluté à différentes températures. Les valeurs <strong>attendues</strong> suivent une loi théorique, tandis que les <strong>valeurs mesurées</strong> viennent d’un capteur.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">50</span>]
+</span></span><span style="display:flex;"><span>attendu <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">3.8</span>, <span style="color:#ae81ff">5.6</span>, <span style="color:#ae81ff">7.3</span>, <span style="color:#ae81ff">9.0</span>]
+</span></span><span style="display:flex;"><span>mesure <span style="color:#f92672">=</span>  [<span style="color:#ae81ff">2.0</span>, <span style="color:#ae81ff">3.9</span>, <span style="color:#ae81ff">5.2</span>, <span style="color:#ae81ff">7.5</span>, <span style="color:#ae81ff">8.8</span>]</span></span></code></pre></div>
+<ul>
+<li>Affiche les <strong>valeurs attendues</strong> avec <code>plt.plot(...)</code> (ligne noire avec des ronds).</li>
+<li>Affiche les <strong>valeurs mesurées</strong> avec <code>plt.bar(...)</code> (barres bleues légèrement transparentes).</li>
+<li>Ajoute un <strong>titre</strong>, une <strong>légende</strong>, les <strong>étiquettes d’axes</strong> et une <strong>grille</strong>.</li>
+</ul>
+<hr>
+<h2 id="atelier">Atelier</h2>
+<h3 id="exercice">Exercice</h3>
+<p>Une station météorologique t’a envoyé un fichier <code>.csv</code> nommé <strong><code>temperatures.csv</code></strong>, contenant les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.</p>
+<p>Tu disposes de la variable suivante :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>donnees <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;12.3, 16.8, 14.0&#34;</span>,  <span style="color:#75715e"># jour 1 : matin, midi, soir</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;11.5, 18.2, 15.4&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;10.8, 17.6, 14.9&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;13.0, 19.1, 16.3&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;14.1, 20.2, 18.5&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;12.9, 18.7, 16.2&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;11.7, 17.8, 15.0&#34;</span>
+</span></span><span style="display:flex;"><span>]</span></span></code></pre></div>
+<h3 id="étapes-à-suivre-">Étapes à suivre :</h3>
 <ol>
-<li>Utilise une boucle <code>for</code> avec <code>range(1, 11)</code>.</li>
-<li>À chaque tour, affiche <code>Échantillon</code> suivi du numéro.</li>
+<li>
+<p><strong>Extraction et nettoyage des données</strong></p>
+<ul>
+<li>Transforme chaque chaîne de la liste <code>donnees</code> en une <strong>liste de 3 nombres flottants</strong>.</li>
+<li>Obtiens ainsi une <strong>liste imbriquée</strong> <code>temperatures</code>, contenant 7 sous-listes (une par jour).</li>
+</ul>
+</li>
+<li>
+<p><strong>Calculs sur les données</strong></p>
+<ul>
+<li>Calcule la température moyenne de chaque jour, et stocke les résultats dans une <strong>nouvelle liste</strong> <code>moyennes_journalières</code>.</li>
+<li>Trouve la température <strong>maximale</strong> de toute la semaine et <strong>quel jour</strong> elle a eu lieu.</li>
+<li>Calcule la température <strong>moyenne générale</strong> sur l’ensemble de la semaine (toutes les valeurs confondues).</li>
+</ul>
+</li>
+<li>
+<p><strong>Visualisation avec matplotlib</strong></p>
+<ul>
+<li>
+<p>Crée une figure avec :</p>
+<ul>
+<li>l’axe X : jours (1 à 7)</li>
+<li>l’axe Y : température moyenne journalière</li>
+</ul>
+</li>
+<li>
+<p>Ajoute un <strong>titre</strong> et des <strong>étiquettes d’axes</strong></p>
+</li>
+<li>
+<p>Ajoute une <strong>grille</strong> et une <strong>courbe</strong> bleue avec marqueurs ronds (<code>'o'</code>)</p>
+</li>
+<li>
+<p><strong>Sauvegarde</strong> le graphique sous le nom <code>graphique_temperature.png</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Exploration des chaînes de caractères</strong></p>
+<ul>
+<li>Affiche le nombre de jours où la température du midi a dépassé <strong>18°C</strong></li>
+<li>Utilise la fonction <code>split()</code> pour isoler les températures de midi dans chaque chaîne.</li>
+</ul>
+</li>
 </ol>
+<h3 id="exemple-daffichage-attendu-partiel-">Exemple d’affichage attendu (partiel) :</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Liste des températures (liste imbriquée) :
+[[12.3, 16.8, 14.0], [11.5, 18.2, 15.4], ..., [11.7, 17.8, 15.0]]
+
+Températures moyennes par jour :
+[14.37, 15.03, 14.43, ..., 14.83]
+
+Température maximale : 20.2°C (Jour 5)
+
+Température moyenne de la semaine : 15.01°C
+
+Nombre de jours où la température de midi a dépassé 18°C : 2</code></pre></div>
+<h3 id="boîte-à-outils">Boîte à outils</h3>
+<ul>
+<li><code>float()</code> pour convertir un texte en nombre</li>
+<li><code>split(',')</code> pour découper une chaîne</li>
+<li><code>append()</code> pour ajouter dans une liste</li>
+<li><code>sum()</code> et <code>len()</code> pour les moyennes</li>
+<li><code>plt.plot()</code>, <code>plt.title()</code>, <code>plt.xlabel()</code>, <code>plt.grid()</code>, <code>plt.savefig()</code></li>
+</ul>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
-<li>Lire la matière sur <a href="/semaine7/index.html">Listes, chaines et graphiques de base</a></li>
-<li>Faire les <a href="/semaine7/index.html#exercices-à-faire-avant-le-cours">exercices se trouvant à la fin de la leçon 7</a></li>
+<li>Lire la prochaine leçon : <a href="/semaine7/index.html">7. Tableaux numpy et opérations scientifiques</a></li>
+<li>Faire les exercices de la <a href="/semaine7/index.html#exercices">prochaine leçon :</a></li>
 </ol>
 
   <footer class="footline">
@@ -636,23 +949,22 @@ e. Écrire un programme qui :<br>
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Tableaux NumPy</a></li>
             <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
             <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
             <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables et types de données)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Algorithme et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Décider avec `if`, `elif`, `else`, répéter avec `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (20%)</a></li>
-            <li class="active parent " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes et chaînes de caractères et boucle for</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu">
-            <li class="" data-nav-id="/semaine6/atelier/index.html"><a class="padding" href="/semaine6/atelier/index.html">Atelier 6</a></li></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Dictionnaires et graphiques de base</a></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>8.</b> Évaluation #2 (25%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Révision</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Les graphiques avancés et la regression linéaire</a></li>
+            <li class="active " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Tableaux numpy et droite de régression</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires et fichier textes (csv)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Révision</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
             <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
             <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
@@ -676,8 +988,8 @@ e. Écrire un programme qui :<br>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1753667632" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753667632" defer></script>
-    <script src="/js/theme.min.js?1753667632" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753755312" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753755312" defer></script>
+    <script src="/js/theme.min.js?1753755312" defer></script>
   </body>
 </html>

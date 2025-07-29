@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Atelier 3 :: 420-SN1-RE</title>
+    <title>Atelier 11 :: 420-SN1-RE</title>
     <link>https://example.org/semaine3/atelier/index.html</link>
     <description>Objectifs Gérer les entrées clavier. Utiliser des fonctions prédéfinies. Définir et utiliser des fonctions. Comprendre et corriger des messages d’erreurs simples. Exercice #1 : Calcul de la force gravitationnelle Écrire une fonction qui:&#xA;Demande à l’utilisateur d’entrer le nom de l’objet (chaîne de caractères). Demande à l’utilisateur d’entrer la masse de l’objet (nombre décimal, en kg). Défini la constante d’accélération gravitationnelle (9,8 m/s²). Calcule la force en utilisant la formule : force = masse * accélération Affiche la force avec une phrase claire, incluant le nom de l’objet et l’unité en N (Newton).</description>
     <generator>Hugo</generator>

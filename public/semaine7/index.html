@@ -5,34 +5,34 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Vérifier la présence d’une clé avec in. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.">
+    <meta name="description" content="Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Importer la bibliothèque import numpy as npCréer un tableau de données (array) Tableau 1D sol = np.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content=" Dictionnaires et graphiques de base :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Vérifier la présence d’une clé avec in. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.">
+    <meta name="twitter:title" content=" Tableaux numpy et droite de régression :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Importer la bibliothèque import numpy as npCréer un tableau de données (array) Tableau 1D sol = np.">
     <meta property="og:url" content="https://example.org/semaine7/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content=" Dictionnaires et graphiques de base :: 420-SN1-RE">
-    <meta property="og:description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Vérifier la présence d’une clé avec in. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.">
+    <meta property="og:title" content=" Tableaux numpy et droite de régression :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Importer la bibliothèque import numpy as npCréer un tableau de données (array) Tableau 1D sol = np.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content=" Dictionnaires et graphiques de base :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Vérifier la présence d’une clé avec in. Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque matplotlib. Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.">
-    <meta itemprop="wordCount" content="1240">
-    <title> Dictionnaires et graphiques de base :: 420-SN1-RE</title>
-    <link href="/semaine7/index.xml" rel="alternate" type="application/rss+xml" title=" Dictionnaires et graphiques de base :: 420-SN1-RE">
-    <link href="/images/logo.png?1753667632" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753667632" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753667632" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753667632" rel="stylesheet">
-    <link href="/css/theme.min.css?1753667632" rel="stylesheet">
-    <link href="/css/format-html.min.css?1753667632" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1753667632" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1753667632" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1753667632" defer></script>
-    <script src="/js/search.min.js?1753667632" defer></script>
+    <meta itemprop="name" content=" Tableaux numpy et droite de régression :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Importer la bibliothèque import numpy as npCréer un tableau de données (array) Tableau 1D sol = np.">
+    <meta itemprop="wordCount" content="1322">
+    <title> Tableaux numpy et droite de régression :: 420-SN1-RE</title>
+    <link href="/semaine7/index.xml" rel="alternate" type="application/rss+xml" title=" Tableaux numpy et droite de régression :: 420-SN1-RE">
+    <link href="/images/logo.png?1753755312" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753755312" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753755312" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753755312" rel="stylesheet">
+    <link href="/css/theme.min.css?1753755312" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753755312" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753755312" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753755312" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753755312" defer></script>
+    <script src="/js/search.min.js?1753755312" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1753667632";
+      window.relearn.index_js_url="/searchindex.en.js?1753755312";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1753667632" rel="stylesheet">
+    <link href="/css/custom.css?1753755312" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine7/index.html">
     <div id="R-body" class="default-animation">
@@ -105,50 +105,64 @@
 <nav class="TableOfContents">
   <ul>
     <li><a href="#objectifs">Objectifs</a></li>
-    <li><a href="#quest-ce-quun-dictionnaire">Qu’est-ce qu’un dictionnaire?</a></li>
-    <li><a href="#utilisation-fréquente-en-sciences">Utilisation fréquente en sciences</a>
+    <li><a href="#importer-la-bibliothèque">Importer la bibliothèque</a></li>
+    <li><a href="#créer-un-tableau-de-données-array">Créer un tableau de données (<code>array</code>)</a>
+      <ul>
+        <li><a href="#tableau-1d">Tableau 1D</a></li>
+        <li><a href="#tableau-2d">Tableau 2D</a></li>
+      </ul>
+    </li>
+    <li><a href="#créer-des-tableaux-remplis-dune-même-valeur">Créer des tableaux remplis d’une même valeur</a>
+      <ul>
+        <li><a href="#rempli-de-0">Rempli de 0</a></li>
+        <li><a href="#rempli-de-1">Rempli de 1</a></li>
+        <li><a href="#rempli-dune-autre-valeur">Rempli d&rsquo;une autre valeur</a></li>
+        <li><a href="#rempli-de-valeurs-espacées-régulièrement-utile-pour-les-graphiques">Rempli de valeurs espacées régulièrement (utile pour les graphiques)</a></li>
+      </ul>
+    </li>
+    <li><a href="#fonctions-statistiques">Fonctions statistiques</a>
+      <ul>
+        <li><a href="#calculer-la-moyenne-des-données">Calculer la moyenne des données</a></li>
+        <li><a href="#calculer-lécart-type-des-données">Calculer l’écart type des données</a></li>
+      </ul>
+    </li>
+    <li><a href="#opérations-vectorielles-rapides-et-simples">Opérations vectorielles (rapides et simples)</a>
+      <ul>
+        <li><a href="#addition-élément-par-élément">Addition élément par élément</a></li>
+        <li><a href="#soustraction-élément-par-élément">Soustraction élément par élément</a></li>
+        <li><a href="#multiplication-par-un-scalaire">Multiplication par un scalaire</a></li>
+        <li><a href="#division-par-un-scalaire">Division par un scalaire</a></li>
+      </ul>
+    </li>
+    <li><a href="#ignorer-des-valeurs-manquantes-npnan">Ignorer des valeurs manquantes (<code>np.nan</code>)</a></li>
+    <li><a href="#filtrage-de-données">Filtrage de données</a></li>
+    <li><a href="#tracer-un-graphique-à-barres-avec-barre-derreurs">Tracer un graphique à barres avec barre d&rsquo;erreurs</a>
+      <ul>
+        <li><a href="#importer-la-bibliothèque-1">Importer la bibliothèque</a></li>
+        <li><a href="#graphique-à-barres">Graphique à barres</a></li>
+        <li><a href="#graphique-avec-barres-derreur">Graphique avec barres d’erreur</a></li>
+      </ul>
+    </li>
+    <li><a href="#tracer-une-droite-de-régression">Tracer une droite de régression</a>
       <ul>
         <li><a href="#exemple">Exemple</a></li>
       </ul>
     </li>
-    <li><a href="#accéder-à-une-valeur-avec-une-clé">Accéder à une valeur avec une clé</a></li>
-    <li><a href="#ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</a>
+    <li><a href="#affichage-propre">Affichage propre</a></li>
+    <li><a href="#résumé-minimal">Résumé minimal</a></li>
+    <li><a href="#exercices">Exercices</a>
       <ul>
-        <li><a href="#ajouter">Ajouter</a></li>
-        <li><a href="#modifier">Modifier</a></li>
+        <li><a href="#exercice-1--solubilité-dun-sel">Exercice 1 – Solubilité d’un sel</a></li>
+        <li><a href="#exercice-2--températures-journalières">Exercice 2 – Températures journalières</a></li>
+        <li><a href="#exercice-3--analyse-dadn">Exercice 3 – Analyse d’ADN</a></li>
+        <li><a href="#exercice-4--pressions-dans-un-cylindre">Exercice 4 – Pressions dans un cylindre</a></li>
+        <li><a href="#exercice-5--croissance-dune-plante-modélisation-simplifiée">Exercice 5 – Croissance d’une plante (modélisation simplifiée)</a></li>
       </ul>
     </li>
-    <li><a href="#vérifier-si-une-clé-est-présente">Vérifier si une clé est présente</a></li>
-    <li><a href="#parcourir-un-dictionnaire">Parcourir un dictionnaire</a>
+    <li><a href="#atelier">Atelier</a></li>
+    <li><a href="#exercice--analyse-dune-expérience-sur-leffet-de-la-lumière-sur-la-croissance-des-plantes">Exercice : Analyse d’une expérience sur l’effet de la lumière sur la croissance des plantes</a>
       <ul>
-        <li><a href="#via-les-clés">Via les clés</a></li>
-        <li><a href="#via-les-valeurs">Via les valeurs</a></li>
-        <li><a href="#via-les-paires-clé-valeur-">Via les paires clé-valeur :</a></li>
-      </ul>
-    </li>
-    <li><a href="#supprimer-une-entrée">Supprimer une entrée</a></li>
-    <li><a href="#visualiser-les-données-avec-matplotlib-graphiques-de-base">Visualiser les données avec Matplotlib (graphiques de base)</a>
-      <ul>
-        <li><a href="#importer-matplotlibpyplot">Importer <code>matplotlib.pyplot</code></a></li>
-        <li><a href="#tracer-une-courbe-simple-avec-plot">Tracer une courbe simple avec <code>plot()</code></a></li>
-        <li><a href="#afficher-le-graphique-avec-show">Afficher le graphique avec <code>show()</code></a></li>
-      </ul>
-    </li>
-    <li><a href="#figure-1figure_1pngwidth45vw"><strong>Résultat</strong> : Une courbe représentant les points (0,0), (1,1), (2,4), (3,9), (4,16).
-<img src="./Figure_1.png?width=45vw" alt="Figure 1"></a>
-      <ul>
-        <li><a href="#exemple-complet">Exemple complet</a></li>
-        <li><a href="#personnaliser-le-trait-de-la-courbe-style-de-ligne-couleur-marqueur">Personnaliser le trait de la courbe (Style de ligne, couleur, marqueur)</a></li>
-        <li><a href="#options-les-plus-courantes-pour-la-méthode-pltplot">Options les plus courantes pour la méthode <code>plt.plot()</code></a></li>
-        <li><a href="#ajouter-un-titre-des-étiquettes-et-une-grille">Ajouter un titre, des étiquettes et une grille</a></li>
-        <li><a href="#tracer-plusieurs-courbes-sur-un-même-graphique-et-ajouter-une-légende">Tracer plusieurs courbes sur un même graphique et ajouter une légende</a></li>
-        <li><a href="#enregistrer-un-graphique-sous-forme-dimage">Enregistrer un graphique sous forme d&rsquo;image</a></li>
-        <li><a href="#fonctions-de-base-pour-les-graphiques">Fonctions de base pour les graphiques</a></li>
-      </ul>
-    </li>
-    <li><a href="#exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</a>
-      <ul>
-        <li><a href="#graphiques">Graphiques</a></li>
+        <li><a href="#aide">Aide</a></li>
       </ul>
     </li>
     <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
@@ -160,12 +174,12 @@
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Dictionnaires et graphiques de base</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Tableaux numpy et droite de régression</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/atelier/index.html" title="Atelier 6 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/index.html" title="Listes, chaînes et visualisation des données (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/index.html" title="Évaluation #2 (25%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Dictionnaires et fichier textes (csv) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -185,352 +199,374 @@
   <header class="headline">
   </header>
 
-<h1 id="dictionnaires-et-graphiques-de-base"> Dictionnaires et graphiques de base</h1>
+<h1 id="tableaux-numpy-et-droite-de-régression"> Tableaux numpy et droite de régression</h1>
 
 <h2 id="objectifs">Objectifs</h2>
 <ul>
-<li>Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique)</li>
-<li>Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours).</li>
-<li>Vérifier la présence d’une clé avec <code>in</code>.</li>
-<li>Créer, afficher, embellir et enregistrer des graphiques simples avec la bibliothèque <code>matplotlib</code>.</li>
+<li>Créer des tableaux de données à une ou deux dimensions.</li>
+<li>Calculer des <strong>moyennes</strong> et <strong>écarts types</strong>.</li>
+<li>Gérer des données <strong>expérimentales incomplètes</strong> (<code>np.nan</code>).</li>
+<li>Comparer des résultats entre éléments ou conditions.</li>
+<li>Filtrer des données selon des conditions.</li>
+<li>Tracer un graphique à barres muni d&rsquo;une barre d&rsquo;erreur avec <code>matplotlib</code>.</li>
+<li>Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R²</li>
+<li>Établir une relation entre deux données</li>
 </ul>
 <hr>
-<h2 id="quest-ce-quun-dictionnaire">Qu’est-ce qu’un dictionnaire?</h2>
-<p>Un <strong>dictionnaire</strong> est une structure de données qui associe des <strong>clés</strong> à des <strong>valeurs</strong>.
-Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</p>
-<p><strong>Syntaxe de base</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mon_dictionnaire <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clé1&#34;</span>: valeur1,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clé2&#34;</span>: valeur2
-</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
-<h2 id="utilisation-fréquente-en-sciences">Utilisation fréquente en sciences</h2>
-<p>Les dictionnaires sont utiles pour :</p>
+<h2 id="importer-la-bibliothèque">Importer la bibliothèque</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np</span></span></code></pre></div>
+<h2 id="créer-un-tableau-de-données-array">Créer un tableau de données (<code>array</code>)</h2>
+<h3 id="tableau-1d">Tableau 1D</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sol <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">32.0</span>, <span style="color:#ae81ff">35.5</span>, <span style="color:#ae81ff">37.2</span>])
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Solubilités mesurées : </span><span style="color:#e6db74">{</span>sol<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<h3 id="tableau-2d">Tableau 2D</h3>
 <ul>
-<li>Associer des symboles d’éléments à des valeurs (masse molaire, charge, état)</li>
-<li>Regrouper des résultats par échantillon (ex. température par lieu)</li>
-<li>Associer des noms de gènes à leur expression</li>
+<li>Un <strong>tableau numpy</strong> multidimentionnel c&rsquo;est un <strong>tableau numpy</strong> qui contient <strong>une liste de listes</strong>.</li>
 </ul>
-<h3 id="exemple">Exemple</h3>
-<p>Un dictionnaire contenant les masses molaires de quelques éléments :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;H&#34;</span>: <span style="color:#ae81ff">1.008</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;O&#34;</span>: <span style="color:#ae81ff">15.999</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;C&#34;</span>: <span style="color:#ae81ff">12.011</span>
-</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
-<h2 id="accéder-à-une-valeur-avec-une-clé">Accéder à une valeur avec une clé</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(masses_molaires[<span style="color:#e6db74">&#34;O&#34;</span>])  <span style="color:#75715e"># Affiche : 15.999</span></span></span></code></pre></div>
-<blockquote>
-<p>Si la clé n’existe pas, Python déclenche une erreur <code>KeyError</code>.</p>
-</blockquote>
-<h2 id="ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</h2>
-<h3 id="ajouter">Ajouter</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires[<span style="color:#e6db74">&#34;N&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">14.007</span></span></span></code></pre></div>
-<h3 id="modifier">Modifier</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires[<span style="color:#e6db74">&#34;C&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">12.01</span>  <span style="color:#75715e"># Correction</span></span></span></code></pre></div>
-<h2 id="vérifier-si-une-clé-est-présente">Vérifier si une clé est présente</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;H&#34;</span> <span style="color:#f92672">in</span> masses_molaires:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;L’hydrogène est dans le dictionnaire.&#34;</span>)</span></span></code></pre></div>
-<h2 id="parcourir-un-dictionnaire">Parcourir un dictionnaire</h2>
-<h3 id="via-les-clés">Via les clés</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> masses_molaires:
-</span></span><span style="display:flex;"><span>    print(element)</span></span></code></pre></div>
-<h3 id="via-les-valeurs">Via les valeurs</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> masses_molaires<span style="color:#f92672">.</span>values():
-</span></span><span style="display:flex;"><span>    print(valeur)</span></span></code></pre></div>
-<ul>
-<li><code>.values()</code> permet d’obtenir <strong>uniquement les valeurs</strong> du dictionnaire, sans les clés.</li>
-<li><strong>Utile quand on veut faire un calcul avec les valeurs</strong>, comme une moyenne ou une somme.</li>
-</ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> densites<span style="color:#f92672">.</span>values():
-</span></span><span style="display:flex;"><span>    print(valeur)</span></span></code></pre></div>
-<h3 id="via-les-paires-clé-valeur-">Via les paires clé-valeur :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element, masse <span style="color:#f92672">in</span> masses_molaires<span style="color:#f92672">.</span>items():
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>element<span style="color:#e6db74">}</span><span style="color:#e6db74"> → </span><span style="color:#e6db74">{</span>masse<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
-<ul>
-<li><code>.items()</code> permet d’obtenir les couples <strong>clé-valeur</strong> sous forme de paires (appelées aussi tuples en Python).</li>
-<li>Utile quand on veut à la fois le <strong>nom (clé)</strong> et la <strong>valeur associée</strong> pour un affichage ou un traitement.</li>
-</ul>
-<h2 id="supprimer-une-entrée">Supprimer une entrée</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">del</span> masses_molaires[<span style="color:#e6db74">&#34;H&#34;</span>]</span></span></code></pre></div>
-<hr>
-<h2 id="visualiser-les-données-avec-matplotlib-graphiques-de-base">Visualiser les données avec Matplotlib (graphiques de base)</h2>
-<p>Pour pouvoir visualiser des données sous forme de graphiques, nous utiliserons le module <code>pyplot</code> de la bibliothèque <code>matplotlib</code>.</p>
-<h3 id="importer-matplotlibpyplot">Importer <code>matplotlib.pyplot</code></h3>
-<p>La partie de <code>matplotlib</code> qu&rsquo;on utilise le plus pour créer des graphiques s&rsquo;appelle <code>pyplot</code>.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt</span></span></code></pre></div>
-<p>On utilise souvent l’abréviation <code>plt</code> pour simplifier l’écriture.</p>
-<h3 id="tracer-une-courbe-simple-avec-plot">Tracer une courbe simple avec <code>plot()</code></h3>
-<p>La fonction <code>plot()</code> prend deux listes (ou deux tableaux) :</p>
-<ul>
-<li>La première représente l’axe <strong>x</strong></li>
-<li>La seconde représente l’axe <strong>y</strong></li>
-</ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>matrice <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]])
+</span></span><span style="display:flex;"><span>print(matrice<span style="color:#f92672">.</span>shape)     <span style="color:#75715e"># Affiche les dimensions (2 lignes, 2 colonnes)</span></span></span></code></pre></div>
+<h2 id="créer-des-tableaux-remplis-dune-même-valeur">Créer des tableaux remplis d’une même valeur</h2>
+<h3 id="rempli-de-0">Rempli de 0</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>zeros((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))  <span style="color:#75715e"># Crée un tableau de 2 lignes et 3 colonnes rempli de 0</span></span></span></code></pre></div>
+<h3 id="rempli-de-1">Rempli de 1</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>ones((<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>))  <span style="color:#75715e"># Crée un tableau de 3 lignes et 2 colonnes rempli de 1</span></span></span></code></pre></div>
+<h3 id="rempli-dune-autre-valeur">Rempli d&rsquo;une autre valeur</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>full(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">0.5</span>)  <span style="color:#75715e"># Crée un tableau [0.5, 0.5, 0.5, 0.5]</span></span></span></code></pre></div>
+<h3 id="rempli-de-valeurs-espacées-régulièrement-utile-pour-les-graphiques">Rempli de valeurs espacées régulièrement (utile pour les graphiques)</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>)  <span style="color:#75715e"># Crée un tableau : [ 0.  2.5  5.  7.5 10. ]</span></span></span></code></pre></div>
+<h2 id="fonctions-statistiques">Fonctions statistiques</h2>
+<h3 id="calculer-la-moyenne-des-données">Calculer la moyenne des données</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>moy <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>mean(sol)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne : </span><span style="color:#e6db74">{</span>moy<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
+<h3 id="calculer-lécart-type-des-données">Calculer l’écart type des données</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ecart <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>std(sol)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Écart type : </span><span style="color:#e6db74">{</span>ecart<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<h2 id="opérations-vectorielles-rapides-et-simples">Opérations vectorielles (rapides et simples)</h2>
+<p>L’intérêt principal de NumPy : on peut faire des <strong>opérations sur tout un tableau en une seule ligne</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>])</span></span></code></pre></div>
+<h3 id="addition-élément-par-élément">Addition élément par élément</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">+</span> y    <span style="color:#75715e"># [5 7 9]</span></span></span></code></pre></div>
+<h3 id="soustraction-élément-par-élément">Soustraction élément par élément</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y <span style="color:#f92672">-</span> x    <span style="color:#75715e"># [3 3 3]</span></span></span></code></pre></div>
+<h3 id="multiplication-par-un-scalaire">Multiplication par un scalaire</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span>   <span style="color:#75715e"># [10 20 30]</span></span></span></code></pre></div>
+<h3 id="division-par-un-scalaire">Division par un scalaire</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>    <span style="color:#75715e"># [2.  2.5 3. ]</span></span></span></code></pre></div>
+<h2 id="ignorer-des-valeurs-manquantes-npnan">Ignorer des valeurs manquantes (<code>np.nan</code>)</h2>
+<p>Parfois, une mesure a été oubliée ou mal prise. On utilise <code>np.nan</code> pour représenter une valeur manquante :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sol <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">32.0</span>, np<span style="color:#f92672">.</span>nan, <span style="color:#ae81ff">37.2</span>])
+</span></span><span style="display:flex;"><span>moy <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>nanmean(sol)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne (sans valeur manquante) : </span><span style="color:#e6db74">{</span>moy<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
+<p>La fonction <code>np.nanmean()</code> calcule <strong>la moyenne des éléments en ignorant les valeurs <code>NaN</code></strong> (<code>Not a Number</code>), qui représentent généralement des données manquantes ou invalides.</p>
 
 <details open class=" box cstyle notices cyan">
   <summary class="box-label" tabindex="-1">
-    Sachez qu&rsquo;&hellip;
+    Notez
   </summary>
   <div class="box-content">
-<p>À ce stade, rien ne s&rsquo;affiche encore. Il faut une dernière commande pour voir le graphique.</p>
+<p>Sans <code>nanmean</code>, la fonction <code>np.mean(sol)</code> retournerait <code>nan</code> car une seule valeur <code>nan</code> dans la liste contamine le résultat.</p>
   </div>
 </details>
-<h3 id="afficher-le-graphique-avec-show">Afficher le graphique avec <code>show()</code></h3>
-<p>La commande <code>show()</code> sert à <strong>afficher la figure</strong> dans une nouvelle fenêtre.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<h2 id="figure-1figure_1pngwidth45vw"><strong>Résultat</strong> : Une courbe représentant les points (0,0), (1,1), (2,4), (3,9), (4,16).
-<a href="#R-image-484dd046308b737afbbf468e24bebb6b" class="lightbox-link"><img alt="Figure 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/Figure_1.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-484dd046308b737afbbf468e24bebb6b"><img alt="Figure 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/Figure_1.png?width=45vw"></a></h2>
-<h3 id="exemple-complet">Exemple complet</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<h3 id="personnaliser-le-trait-de-la-courbe-style-de-ligne-couleur-marqueur">Personnaliser le trait de la courbe (Style de ligne, couleur, marqueur)</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;green&#39;</span>, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;--&#39;</span>, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>)</span></span></code></pre></div>
-<p><strong>Résultat</strong>
-<a href="#R-image-06443be5da31d034d807936d217e97f2" class="lightbox-link"><img alt="Figure 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/Figure_2.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-06443be5da31d034d807936d217e97f2"><img alt="Figure 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/Figure_2.png?width=45vw"></a></p>
-<h3 id="options-les-plus-courantes-pour-la-méthode-pltplot">Options les plus courantes pour la méthode <code>plt.plot()</code></h3>
-<table>
-<thead>
-<tr>
-<th><strong>Option</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Exemple</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>color</code> ou <code>c</code></td>
-<td>Couleur de la courbe</td>
-<td><code>color='red'</code> ou <code>c='r'</code></td>
-</tr>
-<tr>
-<td><code>linestyle</code> ou <code>ls</code></td>
-<td>Style de ligne : continue, pointillée, etc.</td>
-<td><code>ls='--'</code></td>
-</tr>
-<tr>
-<td><code>linewidth</code> ou <code>lw</code></td>
-<td>Épaisseur de la ligne</td>
-<td><code>lw=2</code></td>
-</tr>
-<tr>
-<td><code>marker</code></td>
-<td>Symbole pour marquer les points</td>
-<td><code>marker='o'</code></td>
-</tr>
-<tr>
-<td><code>markersize</code> ou <code>ms</code></td>
-<td>Taille des marqueurs</td>
-<td><code>ms=8</code></td>
-</tr>
-<tr>
-<td><code>label</code></td>
-<td>Nom de la courbe (pour la légende)</td>
-<td><code>label='x²'</code></td>
-</tr>
-<tr>
-<td><code>alpha</code></td>
-<td>Transparence (0 = invisible, 1 = opaque)</td>
-<td><code>alpha=0.7</code></td>
-</tr>
-</tbody>
-</table>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;blue&#39;</span>, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;--&#39;</span>, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;x²&#39;</span>, linewidth<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()</span></span></code></pre></div>
-<p>Cela trace une courbe en <strong>bleu</strong>, avec une <strong>ligne pointillée</strong>, des <strong>cercles aux points</strong>, une <strong>légende &ldquo;x²&rdquo;</strong>, et une <strong>ligne épaisse</strong>.</p>
-<h3 id="ajouter-un-titre-des-étiquettes-et-une-grille">Ajouter un titre, des étiquettes et une grille</h3>
-<ul>
-<li><code>plt.title(&quot;Courbe de y = x²&quot;)</code> : Ajoute un <strong>titre</strong> au graphique.</li>
-<li><code>plt.xlabel(&quot;x&quot;)</code> et <code>plt.ylabel(&quot;y&quot;)</code> : Donnent un <strong>nom à l’axe horizontal</strong> (ici, &ldquo;x&rdquo;) et un <strong>nom à l’axe vertical</strong> (ici, &ldquo;y&rdquo;).</li>
-<li><code>plt.grid()</code> : Affiche une <strong>grille</strong> pour mieux lire les valeurs sur le graphique (optionnel mais utile).</li>
-</ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Courbe de y = x²&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;x&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;y&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><strong>Résultat</strong>
-<a href="#R-image-8cebd371e17a733cda65b0b96e22479c" class="lightbox-link"><img alt="Figure 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/Figure_3.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8cebd371e17a733cda65b0b96e22479c"><img alt="Figure 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/Figure_3.png?width=45vw"></a></p>
-<h3 id="tracer-plusieurs-courbes-sur-un-même-graphique-et-ajouter-une-légende">Tracer plusieurs courbes sur un même graphique et ajouter une légende</h3>
-<ul>
-<li>Il suffit d&rsquo;utiliser autant de <code>plt.plot()</code> qu&rsquo;il y a de courbes à tracer.</li>
-<li>La fonction <code>plt.legend()</code> affiche une <strong>légende</strong> sur le graphique.</li>
-<li>Elle permet d’<strong>identifier</strong> les courbes ou les éléments tracés, à condition qu’ils aient été nommés avec <code>label=</code>.</li>
-</ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
-</span></span><span style="display:flex;"><span>y1 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>]
-</span></span><span style="display:flex;"><span>y2 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">8</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y1, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;objet A&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y2, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;objet B&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Deux courbes sur le même graphique&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;x&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;y&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()  <span style="color:#75715e"># Affiche la légende</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<blockquote>
-<p>Cela ajoutera une petite boîte dans le coin du graphique indiquant &ldquo;Courbe 1&rdquo; et &ldquo;Courbe 2&rdquo;.</p>
-</blockquote>
-<p><strong>Résultat</strong>
-<a href="#R-image-efe7a17c3063d0365e9e031baba86641" class="lightbox-link"><img alt="Figure 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/Figure_4.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-efe7a17c3063d0365e9e031baba86641"><img alt="Figure 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/Figure_4.png?width=45vw"></a></p>
-<h3 id="enregistrer-un-graphique-sous-forme-dimage">Enregistrer un graphique sous forme d&rsquo;image</h3>
-<p>La fonction <code>plt.savefig(&quot;figure.png&quot;)</code> <strong>enregistre</strong> le graphique dans un fichier image (ici au format PNG).
-Cela permet de conserver ou partager le graphique même sans afficher la fenêtre graphique.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;figure.png&#34;</span>)</span></span></code></pre></div>
-<blockquote>
-<p>Le fichier &ldquo;figure.png&rdquo; sera créé dans le même dossier que le fichier <code>.ipynb</code>.</p>
-</blockquote>
-<h3 id="fonctions-de-base-pour-les-graphiques">Fonctions de base pour les graphiques</h3>
-<table>
-<thead>
-<tr>
-<th>Fonction / Méthode</th>
-<th>Rôle principal</th>
-<th>Exemple minimal</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>plt.plot(x, y)</code></td>
-<td>Trace une courbe (x, y)</td>
-<td><code>plt.plot(x, y)</code></td>
-</tr>
-<tr>
-<td><code>plt.scatter(x, y)</code></td>
-<td>Trace un nuage de points</td>
-<td><code>plt.scatter(x, y)</code></td>
-</tr>
-<tr>
-<td><code>plt.bar(x, y)</code></td>
-<td>Trace un diagramme à barres</td>
-<td><code>plt.bar(x, y)</code></td>
-</tr>
-<tr>
-<td><code>plt.hist(data)</code></td>
-<td>Trace un histogramme</td>
-<td><code>plt.hist(valeurs)</code></td>
-</tr>
-<tr>
-<td><code>plt.title(&quot;titre&quot;)</code></td>
-<td>Ajoute un titre au graphique</td>
-<td><code>plt.title(&quot;Graphique&quot;)</code></td>
-</tr>
-<tr>
-<td><code>plt.xlabel(&quot;nom de l'axe x&quot;)</code></td>
-<td>Ajoute un titre à l’axe des x</td>
-<td><code>plt.xlabel(&quot;Temps (s)&quot;)</code></td>
-</tr>
-<tr>
-<td><code>plt.ylabel(&quot;nom de l'axe y&quot;)</code></td>
-<td>Ajoute un titre à l’axe des y</td>
-<td><code>plt.ylabel(&quot;Vitesse (m/s)&quot;)</code></td>
-</tr>
-<tr>
-<td><code>plt.legend()</code></td>
-<td>Affiche une légende pour les courbes nommées</td>
-<td><code>plt.legend()</code></td>
-</tr>
-<tr>
-<td><code>plt.grid(True)</code></td>
-<td>Affiche une grille</td>
-<td><code>plt.grid(True)</code></td>
-</tr>
-<tr>
-<td><code>plt.show()</code></td>
-<td>Affiche le graphique à l’écran (à la fin du tracé)</td>
-<td><code>plt.show()</code></td>
-</tr>
-<tr>
-<td><code>plt.savefig(&quot;figure.png&quot;)</code></td>
-<td>Sauvegarde le graphique en image</td>
-<td><code>plt.savefig(&quot;mon_graph.png&quot;)</code></td>
-</tr>
-<tr>
-<td><code>plt.figure(figsize=(w, h))</code></td>
-<td>Définit la taille du graphique (en pouces)</td>
-<td><code>plt.figure(figsize=(8, 4))</code></td>
-</tr>
-</tbody>
-</table>
+<h2 id="filtrage-de-données">Filtrage de données</h2>
+<ol>
+<li>Créer un tableau et afficher uniquement certaines valeurs selon une condition</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>array <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span>masque <span style="color:#f92672">=</span> array <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5</span>	<span style="color:#75715e"># Masquage : valeurs supérieures à 5</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Masque booléen : </span><span style="color:#e6db74">{</span>masque<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>valeurs_filtrées <span style="color:#f92672">=</span> array[masque]
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Valeurs supérieures à 5 : </span><span style="color:#e6db74">{</span>valeurs_filtrées<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<p><strong>Sortie attendue :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Masque booléen : [False False  True False  True False]
+Valeurs supérieures à 5 : [7 8]</code></pre></div>
+<ol start="2">
+<li>Comptage conditionnel avec <code>np.sum</code></li>
+</ol>
+<p>Compter combien de valeurs respectent un seuil donné.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>array <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">5</span>])
+</span></span><span style="display:flex;"><span>seuil <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>nb_valeurs <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sum(array <span style="color:#f92672">&gt;</span> seuil)	<span style="color:#75715e"># Comptage des valeurs &gt; 5</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Nombre de valeurs supérieures à </span><span style="color:#e6db74">{</span>seuil<span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>nb_valeurs<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<p><strong>Sortie attendue :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Nombre de valeurs supérieures à 5 : 3</code></pre></div>
+<hr>
 
 <details class=" box cstyle notices blue expand" name="notice-toggle">
   <summary class="box-label">
     <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
-    À retenir (graphiques simples)
+    À retenir
   </summary>
   <div class="box-content">
 <ul>
-<li><strong>Importer la bibliothèque</strong> : matplotlib.pyplot</li>
-<li><strong>Créer les données</strong> sous forme de <strong>listes</strong> ou de <strong>tableaux NumPy</strong></li>
-<li><strong>Tracer une courbe</strong> avec <code>plt.plot(x, y)</code>
-<ul>
-<li><code>plt.plot()</code> change selon le type de graphique (voir le tableau <a href="/semaine7/index.html#fonctions-de-base-pour-les-graphiques">ICI</a></li>
-<li>Il existe des options permettant de personnaliser les couleurs, traits, etc.</li>
-</ul>
-</li>
-<li><strong>Afficher le graphique</strong> avec <code>plt.show()</code>.</li>
-<li><strong>Ajouter un titre</strong> avec <code>plt.title(&quot;Mon graphique&quot;)</code></li>
-<li><strong>Nommer les axes</strong> avec <code>plt.xlabel(&quot;x&quot;)</code> et <code>plt.ylabel(&quot;y&quot;)</code></li>
-<li><strong>Afficher une grille</strong> pour mieux lire les valeurs avec <code>plt.grid()</code></li>
-<li><strong>Ajouter une légende</strong> avec <code>label=&quot;...&quot;</code> dans <code>plot()</code> et <code>plt.legend()</code></li>
-<li><strong>Tracer plusieurs courbes sur un même graphique</strong> en appelant plusieurs fois <code>plt.plot(...)</code> avant <code>plt.show()</code></li>
+<li><code>import numpy as np</code> pour utiliser NumPy.</li>
+<li><code>np.array()</code> crée un tableau de données.</li>
+<li><code>np.zeros()</code>, <code>np.ones()</code>, <code>np.full()</code> créent des tableaux remplis.</li>
+<li><code>np.linspace()</code> génère des valeurs espacées régulièrement.</li>
+<li><code>np.mean()</code> calcule la moyenne.</li>
+<li><code>np.std()</code> calcule l’écart type.</li>
+<li><code>np.nanmean()</code> ignore les données manquantes.</li>
+<li>Les opérations (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>) s’appliquent à tout le tableau.</li>
 </ul>
   </div>
 </details>
-<h2 id="exercices-à-faire-avant-le-cours">Exercices à faire avant le cours</h2>
-<p><a href="https://python-a25.netlify.app/blocnotes/exercices_listes_chaines_graphes.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
-<h3 id="graphiques">Graphiques</h3>
-<h4 id="exercice-7--température-dans-une-journée">Exercice 7 – Température dans une journée</h4>
+<h2 id="tracer-un-graphique-à-barres-avec-barre-derreurs">Tracer un graphique à barres avec barre d&rsquo;erreurs</h2>
+<h3 id="importer-la-bibliothèque-1">Importer la bibliothèque</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt</span></span></code></pre></div>
+<h3 id="graphique-à-barres">Graphique à barres</h3>
+<p><strong>Exemple de base :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>noms <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>]
+</span></span><span style="display:flex;"><span>valeurs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>bar(noms, valeurs)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Résultats&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xticks(rotation<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#34;Score&#34;</span>])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Fonction</th>
+<th>Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>plt.bar(x, y)</code></td>
+<td>Crée des barres</td>
+</tr>
+<tr>
+<td><code>plt.xticks()</code></td>
+<td>Contrôle les étiquettes sur l’axe x</td>
+</tr>
+</tbody>
+</table>
+<h3 id="graphique-avec-barres-derreur">Graphique avec barres d’erreur</h3>
+<p><strong>Exemple :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">9</span>]
+</span></span><span style="display:flex;"><span>erreurs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.3</span>, <span style="color:#ae81ff">0.6</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>errorbar(x, y, yerr<span style="color:#f92672">=</span>erreurs, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Mesures&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Mesures avec incertitude&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>yerr</code></td>
+<td>barres d’erreur verticales</td>
+</tr>
+<tr>
+<td><code>xerr</code></td>
+<td>(optionnel) erreurs horizontales</td>
+</tr>
+<tr>
+<td><code>fmt=&quot;o&quot;</code></td>
+<td>style des points</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tracer-une-droite-de-régression">Tracer une droite de régression</h2>
+<p><strong>Rappel</strong> : L&rsquo;équation d&rsquo;une droite est <code>y = a·x + b</code></p>
+<h3 id="exemple">Exemple</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>])
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">6.1</span>, <span style="color:#ae81ff">8.0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Droite de régression : y = a·x + b</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(x, y, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>y_reg <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> x <span style="color:#f92672">+</span> b
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, <span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Données&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y_reg, <span style="color:#e6db74">&#34;-&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;y = </span><span style="color:#e6db74">{</span>a<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">x + </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h2 id="affichage-propre">Affichage propre</h2>
+<table>
+<thead>
+<tr>
+<th>Fonction</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>plt.tight_layout()</code></td>
+<td>Ajuste l&rsquo;espacement pour éviter le chevauchement</td>
+</tr>
+</tbody>
+</table>
+<h2 id="résumé-minimal">Résumé minimal</h2>
+<table>
+<thead>
+<tr>
+<th>Tâche</th>
+<th>Fonction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Graphique à barres</td>
+<td><code>plt.bar()</code></td>
+</tr>
+<tr>
+<td>Barres d’erreur</td>
+<td><code>plt.errorbar()</code></td>
+</tr>
+<tr>
+<td>Droite de régression</td>
+<td><code>np.polyfit()</code>, <code>plt.plot()</code></td>
+</tr>
+<tr>
+<td>Affichage final</td>
+<td><code>plt.show()</code>, <code>plt.tight_layout()</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="exercices">Exercices</h2>
+<p><a href="https://python-a25.netlify.app/blocnotes/exercices_numpy.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
+<h3 id="exercice-1--solubilité-dun-sel">Exercice 1 – Solubilité d’un sel</h3>
+<p>Une solution a été testée à différentes températures. Voici les résultats (en g/100 mL) :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sol <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">32.0</span>, <span style="color:#ae81ff">35.5</span>, np<span style="color:#f92672">.</span>nan, <span style="color:#ae81ff">37.2</span>, <span style="color:#ae81ff">39.0</span>])</span></span></code></pre></div>
+<ol>
+<li>Affiche les valeurs de solubilité.</li>
+<li>Calcule et affiche la moyenne <strong>en ignorant la valeur manquante</strong>.</li>
+<li>Calcule et affiche l’écart type.</li>
+</ol>
+<h3 id="exercice-2--températures-journalières">Exercice 2 – Températures journalières</h3>
+<p>Un thermomètre enregistre la température trois fois par jour pendant 7 jours :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">12.1</span>, <span style="color:#ae81ff">17.3</span>, <span style="color:#ae81ff">14.2</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">11.8</span>, <span style="color:#ae81ff">16.9</span>, <span style="color:#ae81ff">13.9</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">13.0</span>, <span style="color:#ae81ff">18.1</span>, <span style="color:#ae81ff">15.0</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">12.5</span>, <span style="color:#ae81ff">17.5</span>, <span style="color:#ae81ff">14.7</span>],
+</span></span><span style="display:flex;"><span>    [np<span style="color:#f92672">.</span>nan, <span style="color:#ae81ff">16.0</span>, <span style="color:#ae81ff">14.0</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">13.2</span>, <span style="color:#ae81ff">18.0</span>, <span style="color:#ae81ff">15.2</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">12.0</span>, <span style="color:#ae81ff">17.0</span>, <span style="color:#ae81ff">14.5</span>]
+</span></span><span style="display:flex;"><span>])</span></span></code></pre></div>
+<ol>
+<li>Quelle est la forme (shape) du tableau ?</li>
+<li>Calcule la <strong>moyenne journalière</strong> pour chaque jour.</li>
+<li>Calcule la <strong>température moyenne du matin</strong> (1re colonne), en ignorant les données manquantes.</li>
+</ol>
+<h3 id="exercice-3--analyse-dadn">Exercice 3 – Analyse d’ADN</h3>
+<p>Un test mesure l’intensité de 5 fragments ADN (valeurs arbitraires) pour deux échantillons :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ech1 <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">3.2</span>, <span style="color:#ae81ff">2.8</span>, <span style="color:#ae81ff">4.1</span>, <span style="color:#ae81ff">3.9</span>, <span style="color:#ae81ff">2.5</span>])
+</span></span><span style="display:flex;"><span>ech2 <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2.9</span>, <span style="color:#ae81ff">3.0</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">4.0</span>, <span style="color:#ae81ff">2.7</span>])</span></span></code></pre></div>
+<ol>
+<li>Additionne les deux tableaux pour obtenir un profil combiné.</li>
+<li>Calcule la différence entre les deux échantillons.</li>
+<li>Calcule la moyenne et l’écart type pour chacun des deux.</li>
+</ol>
+<h3 id="exercice-4--pressions-dans-un-cylindre">Exercice 4 – Pressions dans un cylindre</h3>
+<p>On mesure la pression (en kPa) à différentes hauteurs (en cm) dans un cylindre :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>hauteur <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">6</span>)  <span style="color:#75715e"># [0, 10, 20, 30, 40, 50]</span>
+</span></span><span style="display:flex;"><span>pression <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">101.3</span>, <span style="color:#ae81ff">100.0</span>, <span style="color:#ae81ff">98.7</span>, <span style="color:#ae81ff">97.5</span>, <span style="color:#ae81ff">96.2</span>, <span style="color:#ae81ff">95.0</span>])</span></span></code></pre></div>
+<ol>
+<li>Affiche les hauteurs et les pressions.</li>
+<li>Calcule la variation de pression par tranche de 10 cm.</li>
+<li>Calcule la moyenne de pression.</li>
+</ol>
+<h3 id="exercice-5--croissance-dune-plante-modélisation-simplifiée">Exercice 5 – Croissance d’une plante (modélisation simplifiée)</h3>
+<p>Une plante pousse selon ce modèle : sa taille augmente de 2 cm par jour.</p>
+<ol>
+<li>Crée un tableau NumPy qui contient la taille de la plante pendant 10 jours, en partant de 5 cm.</li>
+<li>Ajoute 1 cm supplémentaire à chaque valeur pour simuler un apport d’engrais.</li>
+<li>Calcule la moyenne de croissance avec et sans engrais.</li>
+</ol>
+<hr>
+<h2 id="atelier">Atelier</h2>
+<p><em><strong>AJOUTER GRAPHIQUE + DROITE</strong></em></p>
+<h2 id="exercice--analyse-dune-expérience-sur-leffet-de-la-lumière-sur-la-croissance-des-plantes">Exercice : Analyse d’une expérience sur l’effet de la lumière sur la croissance des plantes</h2>
+<p>Une équipe de recherche a mesuré la hauteur (en cm) de jeunes plantes après 10 jours de croissance dans trois conditions lumineuses différentes :</p>
 <ul>
-<li>Heures : <code>[0, 4, 8, 12, 16, 20, 24]</code></li>
-<li>Températures : <code>[-5, -2, 3, 7, 6, 1, -2]</code></li>
+<li>lumière naturelle,</li>
+<li>lumière LED blanche,</li>
+<li>lumière LED rouge.</li>
 </ul>
-<p>Crée un graphique de température en fonction de l’heure.</p>
-<p>Ajoute :</p>
+<p>Pour chaque condition, 5 plantes ont été mesurées. Certaines données sont manquantes, car une ou deux plantes n’ont pas survécu. Les données brutes sont les suivantes :</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Plante 1</th>
+<th>Plante 2</th>
+<th>Plante 3</th>
+<th>Plante 4</th>
+<th>Plante 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Naturelle</td>
+<td>12.5</td>
+<td>13.1</td>
+<td>12.9</td>
+<td>13.0</td>
+<td>12.8</td>
+</tr>
+<tr>
+<td>LED blanche</td>
+<td>11.2</td>
+<td>11.6</td>
+<td>np.nan</td>
+<td>11.5</td>
+<td>11.3</td>
+</tr>
+<tr>
+<td>LED rouge</td>
+<td>10.4</td>
+<td>10.1</td>
+<td>10.2</td>
+<td>np.nan</td>
+<td>np.nan</td>
+</tr>
+</tbody>
+</table>
+<p>Écris un programme Python qui :</p>
+<ol>
+<li>
+<p><strong>Représente les données sous forme d’un tableau 2D</strong> (à l’aide de <code>numpy</code>).</p>
+</li>
+<li>
+<p><strong>Calcule la moyenne et l’écart-type</strong> de la hauteur des plantes pour chaque condition, en <strong>ignorant les valeurs manquantes</strong>.</p>
+</li>
+<li>
+<p><strong>Compare les hauteurs moyennes</strong> entre les conditions (affiche par exemple la condition ayant la croissance moyenne la plus élevée).</p>
+</li>
+<li>
+<p><strong>Affiche un résumé clair</strong>, par exemple :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Moyenne (Naturelle) = 12.86 cm, écart-type = 0.22 cm
+Moyenne (LED blanche) = ...
+...
+Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
+</li>
+</ol>
+<h3 id="aide">Aide</h3>
 <ul>
-<li>Un titre <code>&quot;Température en fonction de l’heure&quot;</code></li>
-<li>Les étiquettes <code>&quot;Heure (h)&quot;</code> et <code>&quot;Température (°C)&quot;</code></li>
-<li>Une grille</li>
-</ul>
-<h4 id="exercice-8---comparaison-des-valeurs-mesurées-et-attendues">Exercice 8 - Comparaison des valeurs mesurées et attendues</h4>
-<p>On a mesuré la concentration d’un soluté à différentes températures. Les valeurs <strong>attendues</strong> suivent une loi théorique, tandis que les <strong>valeurs mesurées</strong> viennent d’un capteur.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">50</span>]
-</span></span><span style="display:flex;"><span>attendu <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">3.8</span>, <span style="color:#ae81ff">5.6</span>, <span style="color:#ae81ff">7.3</span>, <span style="color:#ae81ff">9.0</span>]
-</span></span><span style="display:flex;"><span>mesure <span style="color:#f92672">=</span>  [<span style="color:#ae81ff">2.0</span>, <span style="color:#ae81ff">3.9</span>, <span style="color:#ae81ff">5.2</span>, <span style="color:#ae81ff">7.5</span>, <span style="color:#ae81ff">8.8</span>]</span></span></code></pre></div>
-<ul>
-<li>Affiche les <strong>valeurs attendues</strong> avec <code>plt.plot(...)</code> (ligne noire avec des ronds).</li>
-<li>Affiche les <strong>valeurs mesurées</strong> avec <code>plt.bar(...)</code> (barres bleues légèrement transparentes).</li>
-<li>Ajoute un <strong>titre</strong>, une <strong>légende</strong>, les <strong>étiquettes d’axes</strong> et une <strong>grille</strong>.</li>
+<li>Utilise <code>numpy.array()</code> pour construire le tableau.</li>
+<li>Utilise <code>np.nanmean()</code> et <code>np.nanstd()</code> pour les calculs.</li>
+<li>Tu peux créer une liste <code>conditions = [&quot;Naturelle&quot;, &quot;LED blanche&quot;, &quot;LED rouge&quot;]</code> pour faciliter l&rsquo;affichage.</li>
 </ul>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
-<blockquote>
-<p><strong>RAPPEL</strong>: Semaine prochaine c&rsquo;est le <strong>deuxième examen</strong> (25%)</p>
-</blockquote>
 <ol>
-<li>Lire la matière sur <a href="/semaine9/index.html">Tableaux NumPy</a></li>
-<li>Faire les <a href="/semaine9/index.html#exercices-à-faire-avant-le-cours">exercices se trouvant à la fin de la leçon 9</a></li>
+<li>Lire la prochaine leçon : <a href="/semaine8/index.html">8. Dictionnaires</a></li>
+<li>Faire les exercices de la <a href="/semaine8/index.html#exercices">prochaine leçon :</a></li>
 </ol>
 
   <footer class="footline">
@@ -581,22 +617,22 @@ Cela permet de conserver ou partager le graphique même sans afficher la fenêtr
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8.</b> Tableaux NumPy</a></li>
             <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
             <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
             <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a><ul id="R-subsections-6db614d031e1cac329e6c8b2f083c50f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2.</b> Introduction à Python (Variables et types de données)</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3.</b> Algorithme et débogage</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4.</b> Décider avec `if`, `elif`, `else`, répéter avec `while`</a><ul id="R-subsections-dd44d3bf9424b06ca777f829797a2e8c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a><ul id="R-subsections-20df5992ee4a38745c53049bf1f824d0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (20%)</a></li>
-            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes et chaînes de caractères et boucle for</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
-            <li class="active " data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7.</b> Dictionnaires et graphiques de base</a></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>8.</b> Évaluation #2 (25%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9.</b> Révision</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11.</b> Les graphiques avancés et la regression linéaire</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
+            <li class="active " data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Tableaux numpy et droite de régression</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires et fichier textes (csv)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Révision</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
             <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
             <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
@@ -620,8 +656,8 @@ Cela permet de conserver ou partager le graphique même sans afficher la fenêtr
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1753667632" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753667632" defer></script>
-    <script src="/js/theme.min.js?1753667632" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753755312" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753755312" defer></script>
+    <script src="/js/theme.min.js?1753755312" defer></script>
   </body>
 </html>

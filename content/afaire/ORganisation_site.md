@@ -91,3 +91,6 @@ $ K = °C + 273.15 $
 
 
 Cours en mode atelier guidé (démo), mais juste l'essentiel
+
+1. Lire la prochaine leçon : [6. Listes, chaines et visualisation des données](../semaine6/)
+2. Faire les exercices de la [prochaine leçon :](../semaine6/#exercices)

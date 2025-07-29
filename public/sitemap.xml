@@ -25,9 +25,6 @@
     <loc>https://example.org/afaire/boucler_tableaux2d/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine8/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/faq/index.html</loc>
   </url>
   <url>
@@ -82,22 +79,10 @@
     <loc>https://example.org/semaine2/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine2/fonctions_perso/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine2/atelier/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/semaine3/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine3/atelier/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/semaine4/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine4/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine5/index.html</loc>
@@ -106,25 +91,22 @@
     <loc>https://example.org/semaine6/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/atelier/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/semaine7/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine10/index.html</loc>
+    <loc>https://example.org/semaine8/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine9/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine9/atelier/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine10/_indwex/index.html</loc>
+    <loc>https://example.org/semaine10/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine11/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine3/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine12/index.html</loc>
@@ -166,6 +148,9 @@
     <loc>https://example.org/solutions_exercices/3_algo_debug/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/solutions_exercices/4_boucles_debogage/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/solutions_exercices/4_if_while/index.html</loc>
   </url>
   <url>
@@ -181,9 +166,6 @@
     <loc>https://example.org/solutions_exercices/10_dict_fichiers/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine10/atelier/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/solutions_ateliers/index.html</loc>
   </url>
   <url>
@@ -191,6 +173,9 @@
   </url>
   <url>
     <loc>https://example.org/solutions_ateliers/3_input_fonctions_debug/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_ateliers/4_boucles_debogage/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_ateliers/5_if/index.html</loc>
