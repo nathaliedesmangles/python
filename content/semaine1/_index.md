@@ -200,7 +200,25 @@ Vous devriez maintenant voir un crochet à gauche de cette option.
 
 ---
 
+## Atelier
+
+1. Dans votre dossier `semaine1`, créez un sous-dossier nommé `atelier`.
+
+2. Lancez Visual Studio Code et ouvrez ce dossier.
+
+3. Créez un nouveau fichier Jupyter nommé `atelier1.ipynb`.
+
+4. Dans une première cellule `Markdown`, écrivez un commentaire avec votre **nom**, la **date**, et l’**objectif de l’atelier**.
+
+5. Dans une deuxième cellule `Code`, affichez un message de bienvenue avec print().
+
+```python
+# Message proposé :
+print("Bienvenue dans le cours de programmation en sciences !")
+```
+6. Déposez votre fichier .ipynb sur Moodle, dans la boite de remise prévue à cet effet.
+
 ## À faire avant le prochain cours
 
-1. Lire la matière sur [Introduction à Python](../semaine2/)
-2. Faire les [exercices se trouvant à la fin de la leçon 2](../semaine2/#exercices-à-faire-avant-le-cours)
+1. Lire la prochaine leçon : [2. Variables, types, entrée utilisateur et onction](../semaine2/)
+2. Faire les exercices de la [prochaine leçon :](../semaine2/#exercices)

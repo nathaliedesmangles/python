@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atelier 1 :: 420-SN1-RE</title>
-    <link>https://example.org/semaine1/atelier/index.html</link>
-    <description>Objectifs Se familiariser avec l’environnement de développement. Le système de fichiers Visual Studio Code Jupyter Notebook (Cellules Markdown vs Code) Écrire et exécuter un premier script en python Dans votre dossier semaine1, créez un sous-dossier nommé atelier.&#xA;Lancez Visual Studio Code et ouvrez ce dossier.&#xA;Créez un nouveau fichier Jupyter nommé atelier1.ipynb.&#xA;Dans une première cellule Markdown, écrivez un commentaire avec votre nom, la date, et l’objectif de l’atelier.&#xA;Dans une deuxième cellule Code, affichez un message de bienvenue avec print().</description>
+    <link>http://localhost:1313/semaine1/atelier/index.html</link>
+    <description>Objectifs Se familiariser avec l’environnement de développement. Le système de fichiers Visual Studio Code Jupyter Notebook (Cellules Markdown vs Code) Écrire et exécuter un premier script en python</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine1/atelier/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine1/atelier/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

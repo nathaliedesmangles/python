@@ -10,7 +10,7 @@ draft = false
 ## Informations
 
 ⦁ **Date**:			Semaine #10 (Voir le calendrier)  
-⦁ **Matière**: 		        Semaines 5 à 7 inclusivement  
+⦁ **Matière**: 		        Semaines 6 à 9 inclusivement  
 ⦁ **Documentation permise**: 	1 feuille recto-verso (manuscrite ou imprimée)  
 ⦁ **Format**:			À confirmer
 
