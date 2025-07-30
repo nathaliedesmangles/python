@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "<b>15.</b>"
-title = " Évaluation #3 (25%)"
+title = " Évaluation #3 (20%)"
 weight = 115
 draft = false
 +++

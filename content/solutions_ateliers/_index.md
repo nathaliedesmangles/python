@@ -1,29 +1,22 @@
 +++
-
 chapter = true
-
 pre = " >> "
-
 title = "Solutions des ateliers"
-
 weight = 300
-
+draft = false
 +++
 
 
+[02. Variables, types, entrées et fonctions](./2_variables_types_entree_fn/)  
+[03. Structures conditionnelles](./3_struct_cond/)  
+[04. Boucles et débogage simple](./4_boucles_debogage/)
 
-[02. Variables, types de données et algorithme](./2_variables/)  
-[03. Saisie au clavier, fonctions et débogage](./3_input_fonctions_debug/)
+  
+[06. Listes, chaines et visualisation des données](./6_listes_chaines_visualisation/)  
+[07. Tableaux NumPy et droite de régression](./7_numpy_regression)  
+[08. Dictionnaires et fichiers texte](./8_dict_fichiers/)  
+[09. Révision](./9_revision/)   
+   
 
-
-
-[05. Décider avec if-elif-else et les opérateurs](./5_if/)  
-[06. Répéter avec FOR et WHILE](./6_boucles/)  
-[07. Listes, chaines et graphiques de base](./7_listes_chaines_visualisation)
-
-
-
-[09. Tableaux NumPy](./9_numpy/)  
-[10. Dictionnaires et traitement de fichiers CSV](./10_dict_fichiers)  
-[11. Graphiques avancés et régression linéaire](./11_graphes_regression)
+[11. Fonctions personnalisées](./11_fonctions_perso)
 

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Exercice 1 a. Afficher les nombres de 1 à 10
+Boucle recommandée : for Pourquoi ? Le nombre d’itérations est connu d’avance. for i in range(1, 11): print(i)b. Compter jusqu’à 100 par bonds de 10
+Boucle recommandée : for Pourquoi ? La progression est régulière et le nombre d’itérations est connu. for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Répéter avec FOR et WHILE :: 420-SN1-RE">
+    <meta name="twitter:description" content="Exercice 1 a. Afficher les nombres de 1 à 10
+Boucle recommandée : for Pourquoi ? Le nombre d’itérations est connu d’avance. for i in range(1, 11): print(i)b. Compter jusqu’à 100 par bonds de 10
+Boucle recommandée : for Pourquoi ? La progression est régulière et le nombre d’itérations est connu. for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)">
+    <meta property="og:url" content="https://example.org/solutions_exercices/7_numpy_regression/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content=" Répéter avec FOR et WHILE :: 420-SN1-RE">
+    <meta property="og:description" content="Exercice 1 a. Afficher les nombres de 1 à 10
+Boucle recommandée : for Pourquoi ? Le nombre d’itérations est connu d’avance. for i in range(1, 11): print(i)b. Compter jusqu’à 100 par bonds de 10
+Boucle recommandée : for Pourquoi ? La progression est régulière et le nombre d’itérations est connu. for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content=" Répéter avec FOR et WHILE :: 420-SN1-RE">
+    <meta itemprop="description" content="Exercice 1 a. Afficher les nombres de 1 à 10
+Boucle recommandée : for Pourquoi ? Le nombre d’itérations est connu d’avance. for i in range(1, 11): print(i)b. Compter jusqu’à 100 par bonds de 10
+Boucle recommandée : for Pourquoi ? La progression est régulière et le nombre d’itérations est connu. for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)">
+    <meta itemprop="wordCount" content="246">
+    <title> Répéter avec FOR et WHILE :: 420-SN1-RE</title>
+    <link href="/solutions_exercices/7_numpy_regression/index.xml" rel="alternate" type="application/rss+xml" title=" Répéter avec FOR et WHILE :: 420-SN1-RE">
+    <link href="/images/logo.png?1753906498" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753906498" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753906498" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753906498" rel="stylesheet">
+    <link href="/css/theme.min.css?1753906498" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753906498" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753906498" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753906498" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753906498" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753906498" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753906498" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753906498" defer></script>
+    <script src="/js/search.min.js?1753906498" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/solutions_exercices\/7_numpy_regression\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1753906498";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1753906498" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/solutions_exercices/7_numpy_regression/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#exercice-1">Exercice 1</a></li>
+    <li><a href="#exercice-3">Exercice 3</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_exercices/index.html"><span itemprop="name">Solutions des exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Répéter avec FOR et WHILE</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/6_listes_chaines_visualisation/index.html" title="Décider avec if-elif-else et les opérateurs (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/9_revision/index.html" title="Tableaux NumPy (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable solutions_exercices" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="répéter-avec-for-et-while"> Répéter avec FOR et WHILE</h1>
+
+<h2 id="exercice-1">Exercice 1</h2>
+<p>a. Afficher les nombres de 1 à 10</p>
+<ul>
+<li>Boucle recommandée : <code>for</code></li>
+<li>Pourquoi ? Le nombre d’itérations est connu d’avance.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">11</span>):
+</span></span><span style="display:flex;"><span>   print(i)</span></span></code></pre></div>
+<p>b. Compter jusqu’à 100 par bonds de 10</p>
+<ul>
+<li>Boucle recommandée : <code>for</code></li>
+<li>Pourquoi ? La progression est régulière et le nombre d’itérations est connu.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">101</span>, <span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>   print(i)</span></span></code></pre></div>
+<p>c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)</p>
+<ul>
+<li>Boucle recommandée : <code>while</code></li>
+<li>Pourquoi ? On s’arrête quand l’objet atteint le sol, condition dépendante d’un calcul.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>hauteur <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>vitesse <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> hauteur <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>   print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Hauteur : </span><span style="color:#e6db74">{</span>hauteur<span style="color:#e6db74">}</span><span style="color:#e6db74"> m&#34;</span>)
+</span></span><span style="display:flex;"><span>   hauteur <span style="color:#f92672">-=</span> vitesse</span></span></code></pre></div>
+<p>d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)</p>
+<ul>
+<li>Boucle recommandée : <code>while</code></li>
+<li>Pourquoi ? On ne sait pas combien d’entrées seront nécessaires.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez une température : &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> temp <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>   temp <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez une température : &#34;</span>))</span></span></code></pre></div>
+<p>e. Menu interactif : prénom ou quitter</p>
+<ul>
+<li>Boucle recommandée : <code>while</code> avec <code>break</code></li>
+<li>Pourquoi ? Boucle indéterminée qui dépend du choix de l’utilisateur.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>   print(<span style="color:#e6db74">&#34;1 - Entrez votre prénom&#34;</span>)
+</span></span><span style="display:flex;"><span>   print(<span style="color:#e6db74">&#34;2 - Quitter le programme&#34;</span>)
+</span></span><span style="display:flex;"><span>   choix <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez votre choix : &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">if</span> choix <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1&#34;</span>:
+</span></span><span style="display:flex;"><span>      prenom <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Quel est votre prénom ? &#34;</span>)
+</span></span><span style="display:flex;"><span>      print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Bonjour </span><span style="color:#e6db74">{</span>prenom<span style="color:#e6db74">}</span><span style="color:#e6db74"> !&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">elif</span> choix <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;2&#34;</span>:
+</span></span><span style="display:flex;"><span>      print(<span style="color:#e6db74">&#34;Programme terminé.&#34;</span>)
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>      print(<span style="color:#e6db74">&#34;Choix invalide.&#34;</span>)</span></span></code></pre></div>
+<h2 id="exercice-3">Exercice 3</h2>
+<p>But : afficher les numéros des échantillons de 1 à 10</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">11</span>):
+</span></span><span style="display:flex;"><span>   print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Échantillon </span><span style="color:#e6db74">{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<ul>
+<li>Affiche :
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Échantillon 1
+Échantillon 2
+...
+Échantillon 10</code></pre></div>
+</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (20%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Tableaux numpy et droite de régression</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires et fichier textes (csv)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Révision ou rattrapage</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation #3 (20%)</a></li>
+            <li class="parent " data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu">
+            <li class="" data-nav-id="/solutions_exercices/2_variables_types_entree_fn/index.html"><a class="padding" href="/solutions_exercices/2_variables_types_entree_fn/index.html"><b>2.</b> Variables, types, entrées et fonctions</a></li>
+            <li class="" data-nav-id="/solutions_exercices/3_struct_cond/index.html"><a class="padding" href="/solutions_exercices/3_struct_cond/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a></li>
+            <li class="" data-nav-id="/solutions_exercices/4_boucles_debogage/index.html"><a class="padding" href="/solutions_exercices/4_boucles_debogage/index.html">A FAIRE 4-boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/solutions_exercices/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_exercices/6_listes_chaines_visualisation/index.html"><b>5.</b> Décider avec if-elif-else et les opérateurs</a></li>
+            <li class="active " data-nav-id="/solutions_exercices/7_numpy_regression/index.html"><a class="padding" href="/solutions_exercices/7_numpy_regression/index.html"><b>6.</b> Répéter avec FOR et WHILE</a></li>
+            <li class="" data-nav-id="/solutions_exercices/9_revision/index.html"><a class="padding" href="/solutions_exercices/9_revision/index.html"><b>9.</b> Tableaux NumPy</a></li>
+            <li class="" data-nav-id="/solutions_exercices/8_dict_fichiers/index.html"><a class="padding" href="/solutions_exercices/8_dict_fichiers/index.html"><b>10.</b> Dictionnaires et traitement de fichiers CSV</a></li></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1753906498" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753906498" defer></script>
+    <script src="/js/theme.min.js?1753906498" defer></script>
+  </body>
+</html>

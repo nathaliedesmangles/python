@@ -3,22 +3,22 @@
   <channel>
     <title>Solutions des ateliers :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/index.html</link>
-    <description>02. Variables, types de données et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec if-elif-else et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Dictionnaires et traitement de fichiers CSV&#xA;11. Graphiques avancés et régression linéaire</description>
+    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Tableaux NumPy et droite de régression&#xA;08. Dictionnaires et fichiers texte&#xA;09. Révision&#xA;11. Fonctions personnalisées</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_ateliers/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title> Variables, types de données et algorithme</title>
-      <link>https://example.org/solutions_ateliers/2_variables/index.html</link>
+      <title> Variables, types, entrées et fonction</title>
+      <link>https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/2_variables/index.html</guid>
-      <description>Exercice #1 - Calcul de probabilité a) Identifier les variables, constantes et formules&#xA;Variables d’entrées :&#xA;diametre = hauteur_rect / 2 rayon = diametre / 2 largeur_rect = 3 x diametre aire_rectangle = hauteur_rect x largeur_rect aire_cercle = math.pi x rayon² aire_totale_cercles = 6 x aire_cercle Variable de sortie :&#xA;prob_grise = 1 - (aire_totale_cercles / aire_rectangle) Constantes : la valeur de PI (module math) math.pi&#xA;b) Écrire l’algorithme&#xA;Définir le diamètre et le rayon d’un cercle.</description>
+      <guid>https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.html</guid>
+      <description>Exercice #1 - Quantité restante après évaporation # Constantes q_initiale = 400 # en mL t_minutes = 10 + 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;)&#xD;Résultat attendu :&#xA;Quantité restante après 10.25 minutes : 143.</description>
     </item>
     <item>
       <title> Saisie au clavier, fonctions et débogage</title>
-      <link>https://example.org/solutions_ateliers/3_input_fonctions_debug/index.html</link>
+      <link>https://example.org/solutions_ateliers/3_struct_cond/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/3_input_fonctions_debug/index.html</guid>
+      <guid>https://example.org/solutions_ateliers/3_struct_cond/index.html</guid>
       <description>Exercice #1 : Calcul de la force gravitationnelle # Demande du nom de l&#39;objet (chaîne de caractères) nom_objet = input(&#34;Entrez le nom de l&#39;objet : &#34;) # Demande de la masse (nombre décimal) masse = float(input(&#34;Entrez la masse de l&#39;objet en kg : &#34;)) # Déclaration de la constante d&#39;accélération gravitationnelle (en m/s²) ACCELERATION_GRAVITATIONNELLE = 9.8 # constante en majuscules # Calcul de la force force = masse * ACCELERATION_GRAVITATIONNELLE # Affichage du résultat print(f&#34;La force de {nom_objet} de {masse:.</description>
     </item>
     <item>
@@ -30,38 +30,31 @@
     </item>
     <item>
       <title> Décider avec if-elif-else et les opérateurs</title>
-      <link>https://example.org/solutions_ateliers/5_if/index.html</link>
+      <link>https://example.org/solutions_ateliers/8_dict_fichiers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/5_if/index.html</guid>
+      <guid>https://example.org/solutions_ateliers/8_dict_fichiers/index.html</guid>
       <description>Exercice : État de l’eau selon température et pression # Demander les données à l&#39;utilisateur temp = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: print(&#34;Pression invalide.</description>
     </item>
     <item>
       <title> Répéter avec FOR et WHILE</title>
-      <link>https://example.org/solutions_ateliers/6_boucles/index.html</link>
+      <link>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/6_boucles/index.html</guid>
+      <guid>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</guid>
       <description>Exercice 1 – Table de multiplication Solution de base (avec boucle for) # Demande à l&#39;usager un nombre entre 1 et 12 n = int(input(&#34;Entrez un nombre entre 1 et 12 : &#34;)) # Vérifie que le nombre est valide if 1 &lt;= n &lt;= 12: for i in range(1, 13): print(f&#34;{i} x {n} = {i * n}&#34;) else: print(&#34;Le nombre doit être entre 1 et 12.&#34;)&#xD;Variante 1 : ordre croissant ou décroissant n = int(input(&#34;Entrez un nombre entre 1 et 12 : &#34;)) if 1 &lt;= n &lt;= 12: ordre = input(&#34;Voulez-vous l’ordre croissant (c) ou décroissant (d) ?</description>
     </item>
     <item>
       <title> Listes, chaines et graphiques de base</title>
-      <link>https://example.org/solutions_ateliers/7_listes/index.html</link>
+      <link>https://example.org/solutions_ateliers/7_numpy_regression/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/7_listes/index.html</guid>
+      <guid>https://example.org/solutions_ateliers/7_numpy_regression/index.html</guid>
       <description>import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &#34;11.5, 18.2, 15.4&#34;, &#34;10.8, 17.6, 14.9&#34;, &#34;13.0, 19.1, 16.3&#34;, &#34;14.1, 20.2, 18.5&#34;, &#34;12.9, 18.7, 16.2&#34;, &#34;11.7, 17.8, 15.0&#34; ] # 1. Transformation des chaînes en listes de 3 nombres flottants temperatures = [] for ligne in donnees: morceaux = ligne.split(&#34;,&#34;) valeurs = [float(x.strip()) for x in morceaux] temperatures.</description>
     </item>
     <item>
       <title> Tableaux NumPy</title>
-      <link>https://example.org/solutions_ateliers/9_numpy/index.html</link>
+      <link>https://example.org/solutions_ateliers/9_revision/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/9_numpy/index.html</guid>
+      <guid>https://example.org/solutions_ateliers/9_revision/index.html</guid>
       <description>import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.</description>
-    </item>
-    <item>
-      <title> Dictionnaires et traitement de fichiers CSV</title>
-      <link>https://example.org/solutions_ateliers/10_dict_fichiers/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/10_dict_fichiers/index.html</guid>
-      <description># 1. Lecture du fichier CSV import csv donnees = {} with open(&#34;cristallisation.csv&#34;, newline=&#39;&#39;, encoding=&#39;utf-8&#39;) as fichier: lecteur = csv.DictReader(fichier) for ligne in lecteur: substance = ligne[&#34;substance&#34;] condition = ligne[&#34;condition&#34;] temp = float(ligne[&#34;temp_cristallisation&#34;]) if substance not in donnees: donnees[substance] = {} donnees[substance][condition] = temp # 2. Affichage des données for substance in donnees: for condition in donnees[substance]: temp = donnees[substance][condition] print(f&#34;{substance} cristallise à {temp}°C {condition.replace(&#39;_&#39;, &#39; &#39;)}.&#34;) # 3. Ajout d&#39;une nouvelle condition pour H2O donnees[&#34;H2O&#34;][&#34;en_solution&#34;] = -5 # 4.</description>
     </item>
   </channel>
 </rss>

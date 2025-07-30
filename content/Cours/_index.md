@@ -7,6 +7,10 @@ weight = 100
 
 [Cliquez ici pour entrer votre nom](https://file-attente.netlify.app/)
 
+## Plan de cours
+
+[Plan de cours](./A25_420-SN1-RE_ND.pdf)
+
 ## Calendrier scolaire et répartition des 15 semaines
 
 * [Calendrier scolaire](./CALENDRIER-SCOLAIRE_Automne2025.pdf)
@@ -93,13 +97,13 @@ td[colspan="3"] {
     </tr>
     <tr>
       <td><a href="../semaine4/"><strong>Cours 04</strong></a></td>
-      <td colspan="3"><strong>Évaluation #1 (20%)</strong><br>15 septembre (grp9)<br>17 septembre (grp11)<br>12 septembre (grp10)</td>
+      <td>15 septembre</td>
+      <td>17 septembre</td>
+      <td>12 septembre</td>
     </tr>
     <tr>
       <td><a href="../semaine5/"><strong>Cours 05</strong></a></td>
-      <td>22 septembre</td>
-      <td>24 septembre</td>
-      <td>19 septembre</td>
+      <td colspan="3"><strong>Évaluation #1 (20%)</strong><br>22 septembre (grp9)<br>24 septembre (grp11)<br>19 septembre (grp10)</td>
     </tr>
     <tr>
       <td><a href="../semaine6/"><strong>Cours 06</strong></a></td>
@@ -115,7 +119,9 @@ td[colspan="3"] {
     </tr>
     <tr>
       <td><a href="../semaine8/"><strong>Cours 08</strong></a></td>
-      <td colspan="3"><strong>Évaluation #2 (25%)</strong><br>20 octobre(grp9)<br>22 octobre (grp11)<br>17 octobre (grp10)</td>
+      <td>20 octobre</td>
+      <td>22 octobre</td>
+      <td>17 octobre</td>
     </tr>
     <tr>
       <td><a href="../semaine9/"><strong>Cours 09</strong></a></td>
@@ -125,13 +131,13 @@ td[colspan="3"] {
     </tr>
     <tr>
       <td><a href="../semaine10/"><strong>Cours 10</strong></a></td>
-      <td>3 novembre</td>
-      <td>5 novembre</td>
-      <td>31 octobre</td>
+      <td colspan="3"><strong>Évaluation #2 (25%)</strong><br>3 novembre(grp9)<br>5 novembre (grp11)<br>1 octobre (grp10)</td>
     </tr>
     <tr>
       <td><a href="../semaine11/"><strong>Cours 11</strong></a></td>
-      <td colspan="3"><strong>Évaluation #3 (20%)</strong><br>12 novembre(grp9)<br>14 novembre (grp11)<br>7 novembre (grp10)</td>
+      <td>12 novembre</td>
+      <td>14 novembre</td>
+      <td>7 novembre</td>
     </tr>
     <tr>
       <td><a href="../semaine12/"><strong>Cours 12</strong></a></td>
@@ -154,7 +160,7 @@ td[colspan="3"] {
     <tr>
       <td><a href="../semaine15/"><strong>Cours 15</strong></a></td>
       <td colspan="3">
-        <strong>Remise du projet (35%)</strong><br>
+        <strong>Évaluation #3 (20%) <br>Remise du projet (35%)</strong><br>
 	8 décembre (grp9)<br>10 décembre (grp11)<br>12 décembre (grp10)
       </td>
     </tr>

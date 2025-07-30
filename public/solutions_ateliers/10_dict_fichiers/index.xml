@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Dictionnaires et traitement de fichiers CSV :: 420-SN1-RE</title>
-    <link>https://example.org/solutions_ateliers/10_dict_fichiers/index.html</link>
+    <link>http://localhost:1313/solutions_ateliers/10_dict_fichiers/index.html</link>
     <description># 1. Lecture du fichier CSV import csv donnees = {} with open(&#34;cristallisation.csv&#34;, newline=&#39;&#39;, encoding=&#39;utf-8&#39;) as fichier: lecteur = csv.DictReader(fichier) for ligne in lecteur: substance = ligne[&#34;substance&#34;] condition = ligne[&#34;condition&#34;] temp = float(ligne[&#34;temp_cristallisation&#34;]) if substance not in donnees: donnees[substance] = {} donnees[substance][condition] = temp # 2. Affichage des données for substance in donnees: for condition in donnees[substance]: temp = donnees[substance][condition] print(f&#34;{substance} cristallise à {temp}°C {condition.replace(&#39;_&#39;, &#39; &#39;)}.&#34;) # 3. Ajout d&#39;une nouvelle condition pour H2O donnees[&#34;H2O&#34;][&#34;en_solution&#34;] = -5 # 4.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/solutions_ateliers/10_dict_fichiers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/solutions_ateliers/10_dict_fichiers/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

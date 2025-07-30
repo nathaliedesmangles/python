@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Saisie au clavier, fonctions et débogage :: 420-SN1-RE</title>
-    <link>https://example.org/solutions_exercices/3_algo_debug/index.html</link>
+    <link>http://localhost:1313/solutions_exercices/3_algo_debug/index.html</link>
     <description>Exercice 1 : Demi-vie radioactive # Données initiales masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée de l&#39;utilisateur annees = int(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul du nombre de périodes de demi-vie nb_periodes = annees // demi_vie # Calcul de la masse restante masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage du résultat print(f&#34;Après {annees} ans, il reste environ {masse_restante:.2f} g de l&#39;isotope.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/solutions_exercices/3_algo_debug/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/solutions_exercices/3_algo_debug/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

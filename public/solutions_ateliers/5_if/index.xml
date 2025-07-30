@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Décider avec if-elif-else et les opérateurs :: 420-SN1-RE</title>
-    <link>https://example.org/solutions_ateliers/5_if/index.html</link>
+    <link>http://localhost:1313/solutions_ateliers/5_if/index.html</link>
     <description>Exercice : État de l’eau selon température et pression # Demander les données à l&#39;utilisateur temp = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: print(&#34;Pression invalide.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/solutions_ateliers/5_if/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/solutions_ateliers/5_if/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -40,7 +40,7 @@
       <link>https://example.org/cours/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/cours/index.html</guid>
-      <description>Liste d’attente pour poser des questions Cliquez ici pour entrer votre nom&#xA;Calendrier scolaire et répartition des 15 semaines Calendrier scolaire Répartition des 15 semaines Groupe 09&#xA;(lundi 15h20)&#xD;Groupe 11&#xA;(mercredi 08h00)&#xD;Groupe 10&#xA;(vendredi 15h20)&#xD;Cours 01&#xD;25 août&#xA;Quiz&#xD;27 août&#xA;Quiz&#xD;22 août&#xA;Quiz&#xD;Cours 02&#xD;4 septembre&#xD;3 septembre&#xD;29 août&#xD;Cours 03&#xD;8 septembre&#xD;10 septembre&#xD;5 septembre&#xD;Cours 04&#xD;Évaluation #1 (20%)&#xA;15 septembre (grp9)</description>
+      <description>Liste d’attente pour poser des questions Cliquez ici pour entrer votre nom&#xA;Plan de cours Plan de cours&#xA;Calendrier scolaire et répartition des 15 semaines Calendrier scolaire Répartition des 15 semaines Groupe 09&#xA;(lundi 15h20)&#xD;Groupe 11&#xA;(mercredi 08h00)&#xD;Groupe 10&#xA;(vendredi 15h20)&#xD;Cours 01&#xD;25 août&#xA;Quiz&#xD;27 août&#xA;Quiz&#xD;22 août&#xA;Quiz&#xD;Cours 02&#xD;4 septembre&#xD;3 septembre&#xD;29 août&#xD;Cours 03&#xD;8 septembre&#xD;10 septembre&#xD;5 septembre&#xD;Cours 04&#xD;15 septembre&#xD;17 septembre&#xD;12 septembre&#xD;Cours 05&#xD;Évaluation #1 (20%)</description>
     </item>
     <item>
       <title> Présentation du cours et l&#39;environnement de travail</title>
@@ -99,7 +99,7 @@
       <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</description>
     </item>
     <item>
-      <title> Révision</title>
+      <title> Révision ou rattrapage</title>
       <link>https://example.org/semaine9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine9/index.html</guid>
@@ -141,7 +141,7 @@
       <description></description>
     </item>
     <item>
-      <title> Évaluation #3 (25%)</title>
+      <title> Évaluation #3 (20%)</title>
       <link>https://example.org/semaine15/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine15/index.html</guid>
@@ -152,14 +152,14 @@
       <link>https://example.org/solutions_exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/index.html</guid>
-      <description>02. Variables, types de donnees et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec IF-ELIF-ELSE et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Dictionnaires et traitement de fichiers CSV&#xA;11. Graphiques avancés et régression linéaire</description>
+      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles 04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Tableaux NumPy et droite de régression 08. Dictionnaires et fichiers texte 09. Révision&#xA;11. Fonctions personnalisées</description>
     </item>
     <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions_ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/index.html</guid>
-      <description>02. Variables, types de données et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec if-elif-else et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Dictionnaires et traitement de fichiers CSV&#xA;11. Graphiques avancés et régression linéaire</description>
+      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Tableaux NumPy et droite de régression&#xA;08. Dictionnaires et fichiers texte&#xA;09. Révision&#xA;11. Fonctions personnalisées</description>
     </item>
   </channel>
 </rss>

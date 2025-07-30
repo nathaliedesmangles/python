@@ -281,7 +281,18 @@ resultat = (3 + 4) * 2     # donne 14 grâce aux ()
 
 ## Exercices
 
-### Exercice 1 : Conversion de température
+### Exercice 1 : Distance parcourue
+
+Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.
+
+* Écris le programme pour calculer la distance parcourue.
+
+**Résultat attendu**:
+```
+Le cycliste a parcouru 4680.0 mètres en 12 minutes.
+```
+
+### Exercice 2 : Conversion de température
 
 Un thermomètre donne des relevés en Fahrenheit, mais vous devez les convertir en Celsius et Kelvin.
 
@@ -302,7 +313,7 @@ Température en Fahrenheit : 100.4°F
 Température en Kelvin : 311.15K
 ```
 
-### Exercice 2 : Calcul de concentration molaire
+### Exercice 3 : Calcul de concentration molaire
 
 Un technicien prépare une solution en dissolvant une masse donnée de soluté dans un certain volume de solvant.
 Écrire un programme qui calcule la concentration molaire (mol/L) selon la formule :
@@ -319,7 +330,7 @@ V = 0.25	volume de la solution en litres
 Concentration molaire : 0.682051282051282 mol/L
 ```
 
-### Exercice 3 : Vitesse moyenne d’une réaction
+### Exercice 4 : Vitesse moyenne d’une réaction
 
 Lors d’une expérience de cinétique chimique, on mesure la variation de la concentration d’un réactif au cours du temps.
 Écrire un programme qui calcule la vitesse moyenne de disparition selon :
@@ -336,41 +347,11 @@ où `[A]` est la concentration du réactif.
 Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
 ```
 
-### Exercice 4 : Distance parcourue
-
-Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.
-
-* Écris le programme pour calculer la distance parcourue.
-
-**Résultat attendu**:
-```
-Le cycliste a parcouru 4680.0 mètres en 12 minutes.
-```
 ---
 
 ## Atelier 2
 
-### Exercice 1 - Calcul de probabilité
-
-On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles.
-![Exercice - Calcul de probabilité](./probabilite.png?width=25vw)
-
-
-* Un rectangle contenant **6 cercles isométriques** (même taille),
-* Ils sont organisés en **2 rangées** de **3 cercles**,
-* La **hauteur du rectangle est 10 cm**, ce qui correspond à **deux diamètres** de cercles (1 par rangée).
-
-**NB**:
-* Identifier les variables, les constantes et les formules nécessaires  
-
-
-### Résultat attendu:
-
-```
-Probabilité qu’un point tombe dans la région grise : 0.2119 (soit 21.19 %)
-```
-
-### Exercice #2 - Expérience en chimie
+### Exercice #1 - Expérience en chimie
 
 Un bécher contient 400 mL de solution. La solution s’évapore à raison de 25 mL/min.
 La situation est linéaire : on commence à 400 mL, et on perd 25 mL chaque minute.
@@ -396,32 +377,7 @@ On souhaite trouver la quantité de solution qu'il restera après 10 min 15 s
 Quantité restante après 10.25 minutes : 143.75 mL.
 ```
 
-### Exercice #3 - Calcul d'intérêts simple et composé
-
-* Vous avez deux placements avec **le même montant initial** (qu'on peut appeler `montant`).
-   * **Premier placement** : intérêt **annuel simple** de **3,2 %** pendant **10 ans**.
-   * **Deuxième placement** : intérêt **composé** à **1,6 % tous les 6 mois**, donc **2 fois par an**, pendant **10 ans**.
-
-i) On cherche **l’écart en % entre les deux montants finaux** au bout de 10 ans.  
-ii) En déduire quel est le meilleur placement sur 10 ans.
-
-**Hypothèse** : Comme le montant initial est le **même**, on peut le fixer à 100 \$ pour faciliter le calcul de l’écart en **pourcentage** à la fin.
-
-**NB**:
-* Identifier les variables, les constantes et les formules nécessaires  
-
-
-**Résultat attendu** (approximatif) :
-
-```
-Valeur avec intérêt simple : 132.00 $
-Valeur avec intérêt composé : 134.87 $
-Écart relatif : 2.17 %
-```
-
-### Exercice #4
-
- Calcul de la force gravitationnelle
+### Exercice #2 - Calcul de la force gravitationnelle
 
 Écrire une fonction qui:
 
@@ -447,7 +403,31 @@ La force de la balle de 2.5 Kg est de 24.50 N.
 La force de la voiture de 1000.0 Kg est de 9800.00 N.
 ```
 
-## Exercice #5 : Calcul de la hauteur maximale
+### Exercice #3 - Calcul d'intérêts simple et composé
+
+* Vous avez deux placements avec **le même montant initial** (qu'on peut appeler `montant`).
+   * **Premier placement** : intérêt **annuel simple** de **3,2 %** pendant **10 ans**.
+   * **Deuxième placement** : intérêt **composé** à **1,6 % tous les 6 mois**, donc **2 fois par an**, pendant **10 ans**.
+
+i) On cherche **l’écart en % entre les deux montants finaux** au bout de 10 ans.  
+ii) En déduire quel est le meilleur placement sur 10 ans.
+
+**Hypothèse** : Comme le montant initial est le **même**, on peut le fixer à 100 \$ pour faciliter le calcul de l’écart en **pourcentage** à la fin.
+
+**NB**:
+* Identifier les variables, les constantes et les formules nécessaires  
+
+
+**Résultat attendu** (approximatif) :
+
+```
+Valeur avec intérêt simple : 132.00 $
+Valeur avec intérêt composé : 134.87 $
+Écart relatif : 2.17 %
+```
+
+
+## Exercice #4 - Calcul de la hauteur maximale
 
 Vous voulez aider un·e physicien·ne à calculer la **hauteur maximale** atteinte par un objet lancé verticalement vers le haut avec une certaine vitesse initiale. 
 * Écrire un programme qui demande la **vitesse initiale** au lancement, puis calcule la hauteur maximale atteinte par l’objet (en négligeant la résistance de l’air).
@@ -465,6 +445,26 @@ avec :
 $v$ : vitesse initiale (en m/s) <br>  
 $g$ : accélération gravitationnelle = 9.81 m/s²  <br>
 $h_{\text{max}}$ : hauteur maximale (en m)  
+```
+
+### Exercice 5 - Calcul de probabilité (Facultatif)
+
+On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles.
+![Exercice - Calcul de probabilité](./probabilite.png?width=25vw)
+
+
+* Un rectangle contenant **6 cercles isométriques** (même taille),
+* Ils sont organisés en **2 rangées** de **3 cercles**,
+* La **hauteur du rectangle est 10 cm**, ce qui correspond à **deux diamètres** de cercles (1 par rangée).
+
+**NB**:
+* Identifier les variables, les constantes et les formules nécessaires  
+
+
+### Résultat attendu:
+
+```
+Probabilité qu’un point tombe dans la région grise : 0.2119 (soit 21.19 %)
 ```
 
 

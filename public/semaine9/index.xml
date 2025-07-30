@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Révision :: 420-SN1-RE</title>
+    <title> Révision ou rattrapage :: 420-SN1-RE</title>
     <link>https://example.org/semaine9/index.html</link>
     <description>AJOUTER GRAPHIQUE&#xA;RAPPEL: Semaine prochaine c’est le deuxième examen (25%)&#xA;Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. Tracer des graphiques Nom du fichier : revisions_eval2.ipynb&#xA;Exercice 1 – Liste de listes 1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).</description>
     <generator>Hugo</generator>

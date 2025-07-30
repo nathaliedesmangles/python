@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Saisie au clavier, fonctions et débogage :: 420-SN1-RE</title>
+    <link>https://example.org/solutions_ateliers/3_struct_cond/index.html</link>
+    <description>Exercice #1 : Calcul de la force gravitationnelle # Demande du nom de l&#39;objet (chaîne de caractères) nom_objet = input(&#34;Entrez le nom de l&#39;objet : &#34;) # Demande de la masse (nombre décimal) masse = float(input(&#34;Entrez la masse de l&#39;objet en kg : &#34;)) # Déclaration de la constante d&#39;accélération gravitationnelle (en m/s²) ACCELERATION_GRAVITATIONNELLE = 9.8 # constante en majuscules # Calcul de la force force = masse * ACCELERATION_GRAVITATIONNELLE # Affichage du résultat print(f&#34;La force de {nom_objet} de {masse:.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/solutions_ateliers/3_struct_cond/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

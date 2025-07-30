@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Exercice #1 - Quantité restante après évaporation # Constantes q_initiale = 400 # en mL t_minutes = 10 &#43; 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;)Résultat attendu :
+Quantité restante après 10.25 minutes : 143.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Variables, types, entrées et fonction :: 420-SN1-RE">
+    <meta name="twitter:description" content="Exercice #1 - Quantité restante après évaporation # Constantes q_initiale = 400 # en mL t_minutes = 10 &#43; 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;)Résultat attendu :
+Quantité restante après 10.25 minutes : 143.">
+    <meta property="og:url" content="https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content=" Variables, types, entrées et fonction :: 420-SN1-RE">
+    <meta property="og:description" content="Exercice #1 - Quantité restante après évaporation # Constantes q_initiale = 400 # en mL t_minutes = 10 &#43; 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;)Résultat attendu :
+Quantité restante après 10.25 minutes : 143.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content=" Variables, types, entrées et fonction :: 420-SN1-RE">
+    <meta itemprop="description" content="Exercice #1 - Quantité restante après évaporation # Constantes q_initiale = 400 # en mL t_minutes = 10 &#43; 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;)Résultat attendu :
+Quantité restante après 10.25 minutes : 143.">
+    <meta itemprop="wordCount" content="555">
+    <title> Variables, types, entrées et fonction :: 420-SN1-RE</title>
+    <link href="/solutions_ateliers/2_variables_types_entrees_fn/index.xml" rel="alternate" type="application/rss+xml" title=" Variables, types, entrées et fonction :: 420-SN1-RE">
+    <link href="/images/logo.png?1753906498" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753906498" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753906498" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753906498" rel="stylesheet">
+    <link href="/css/theme.min.css?1753906498" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753906498" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753906498" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753906498" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753906498" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753906498" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753906498" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753906498" defer></script>
+    <script src="/js/search.min.js?1753906498" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/solutions_ateliers\/2_variables_types_entrees_fn\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1753906498";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1753906498" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/solutions_ateliers/2_variables_types_entrees_fn/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#exercice-1---quantité-restante-après-évaporation">Exercice #1 - Quantité restante après évaporation</a></li>
+        <li><a href="#exercice-2---force-gravitationnelle">Exercice #2 - Force gravitationnelle</a></li>
+        <li><a href="#exercice-3---intérêts-simple-et-composé">Exercice #3 - Intérêts simple et composé</a></li>
+        <li><a href="#exercice-4---hauteur-maximale">Exercice #4 - Hauteur maximale</a></li>
+        <li><a href="#exercice-5---probabilité-géométrique-facultatif">Exercice #5 - Probabilité géométrique (Facultatif)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_ateliers/index.html"><span itemprop="name">Solutions des ateliers</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Variables, types, entrées et fonction</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/index.html" title="Solutions des ateliers (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/3_struct_cond/index.html" title="Saisie au clavier, fonctions et débogage (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable solutions_ateliers" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="variables-types-entrées-et-fonction"> Variables, types, entrées et fonction</h1>
+
+<h3 id="exercice-1---quantité-restante-après-évaporation">Exercice #1 - Quantité restante après évaporation</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Constantes</span>
+</span></span><span style="display:flex;"><span>q_initiale <span style="color:#f92672">=</span> <span style="color:#ae81ff">400</span>        <span style="color:#75715e"># en mL</span>
+</span></span><span style="display:flex;"><span>t_minutes <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">15</span><span style="color:#f92672">/</span><span style="color:#ae81ff">60</span>  <span style="color:#75715e"># conversion des 15 s en minutes =&gt; 10.25 minutes</span>
+</span></span><span style="display:flex;"><span>taux_evaporation <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>   <span style="color:#75715e"># en mL/min</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Formule : q(t) = 400 - 25 * t</span>
+</span></span><span style="display:flex;"><span>quantite_restante <span style="color:#f92672">=</span> q_initiale <span style="color:#f92672">-</span> taux_evaporation <span style="color:#f92672">*</span> t_minutes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Quantité restante après </span><span style="color:#e6db74">{</span>t_minutes<span style="color:#e6db74">}</span><span style="color:#e6db74"> minutes : </span><span style="color:#e6db74">{</span>quantite_restante<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> mL.&#34;</span>)</span></span></code></pre></div>
+<p><strong>Résultat attendu</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Quantité restante après 10.25 minutes : 143.75 mL.</code></pre></div>
+<hr>
+<h3 id="exercice-2---force-gravitationnelle">Exercice #2 - Force gravitationnelle</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calcul_force</span>():
+</span></span><span style="display:flex;"><span>    objet <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Nom de l&#39;objet : &#34;</span>)
+</span></span><span style="display:flex;"><span>    masse <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Masse de l&#39;objet (en kg) : &#34;</span>))
+</span></span><span style="display:flex;"><span>    g <span style="color:#f92672">=</span> <span style="color:#ae81ff">9.8</span>  <span style="color:#75715e"># accélération gravitationnelle en m/s²</span>
+</span></span><span style="display:flex;"><span>    force <span style="color:#f92672">=</span> masse <span style="color:#f92672">*</span> g
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La force de la </span><span style="color:#e6db74">{</span>objet<span style="color:#e6db74">}</span><span style="color:#e6db74"> de </span><span style="color:#e6db74">{</span>masse<span style="color:#e6db74">:</span><span style="color:#e6db74">.1f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> Kg est de </span><span style="color:#e6db74">{</span>force<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> N.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tests</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Test 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># &gt;&gt;&gt; balle, 2.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Test 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># &gt;&gt;&gt; voiture, 1000.0</span></span></span></code></pre></div>
+<p><strong>Résultats attendus</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>La force de la balle de 2.5 Kg est de 24.50 N.
+La force de la voiture de 1000.0 Kg est de 9800.00 N.</code></pre></div>
+<hr>
+<h3 id="exercice-3---intérêts-simple-et-composé">Exercice #3 - Intérêts simple et composé</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Montant initial</span>
+</span></span><span style="display:flex;"><span>montant <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Intérêt simple : 3.2 % par an pendant 10 ans</span>
+</span></span><span style="display:flex;"><span>taux_simple <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.032</span>
+</span></span><span style="display:flex;"><span>duree <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>valeur_simple <span style="color:#f92672">=</span> montant <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> taux_simple <span style="color:#f92672">*</span> duree)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Intérêt composé : 1.6 % deux fois par an pendant 10 ans</span>
+</span></span><span style="display:flex;"><span>taux_composé <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.016</span>  <span style="color:#75715e"># tous les 6 mois</span>
+</span></span><span style="display:flex;"><span>periodes <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> duree  <span style="color:#75715e"># 2 fois par an pendant 10 ans</span>
+</span></span><span style="display:flex;"><span>valeur_composée <span style="color:#f92672">=</span> montant <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> taux_composé) <span style="color:#f92672">**</span> periodes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Écart en pourcentage</span>
+</span></span><span style="display:flex;"><span>écart <span style="color:#f92672">=</span> ((valeur_composée <span style="color:#f92672">-</span> valeur_simple) <span style="color:#f92672">/</span> valeur_simple) <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage des résultats</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Valeur avec intérêt simple : </span><span style="color:#e6db74">{</span>valeur_simple<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> $&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Valeur avec intérêt composé : </span><span style="color:#e6db74">{</span>valeur_composée<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> $&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Écart relatif : </span><span style="color:#e6db74">{</span>écart<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> %&#34;</span>)</span></span></code></pre></div>
+<p><strong>Résultats attendus</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Valeur avec intérêt simple : 132.00 $
+Valeur avec intérêt composé : 134.87 $
+Écart relatif : 2.17 %</code></pre></div>
+<hr>
+<h3 id="exercice-4---hauteur-maximale">Exercice #4 - Hauteur maximale</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Demander la vitesse initiale à l&#39;utilisateur</span>
+</span></span><span style="display:flex;"><span>vitesse_initiale <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez la vitesse initiale (en m/s) : &#34;</span>))
+</span></span><span style="display:flex;"><span>g <span style="color:#f92672">=</span> <span style="color:#ae81ff">9.81</span>  <span style="color:#75715e"># accélération gravitationnelle en m/s²</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de la hauteur maximale</span>
+</span></span><span style="display:flex;"><span>h_max <span style="color:#f92672">=</span> (vitesse_initiale <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">/</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> g)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La hauteur maximale atteinte est de </span><span style="color:#e6db74">{</span>h_max<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> mètres.&#34;</span>)</span></span></code></pre></div>
+<p><strong>Test suggestion</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>v = 20 m/s → h ≈ 20.39 m</code></pre></div>
+<hr>
+<h3 id="exercice-5---probabilité-géométrique-facultatif">Exercice #5 - Probabilité géométrique (Facultatif)</h3>
+<p><strong>Hypothèses :</strong></p>
+<ul>
+<li>Le rectangle fait <strong>10 cm</strong> de haut.</li>
+<li>Cela représente <strong>2 diamètres</strong>, donc <strong>diamètre = 5 cm</strong> → rayon = 2.5 cm.</li>
+<li>Chaque cercle a une aire : πr² = π × 2.5² ≈ 19.63 cm²</li>
+<li>Il y a <strong>6 cercles</strong>, donc aire totale des cercles ≈ 6 × 19.63</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dimensions</span>
+</span></span><span style="display:flex;"><span>hauteur <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>diametre <span style="color:#f92672">=</span> hauteur <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>        <span style="color:#75715e"># car 2 diamètres = 10 cm</span>
+</span></span><span style="display:flex;"><span>rayon <span style="color:#f92672">=</span> diametre <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>          <span style="color:#75715e"># donc rayon = 2.5 cm</span>
+</span></span><span style="display:flex;"><span>largeur <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> diametre        <span style="color:#75715e"># 3 cercles côte à côte → largeur = 15 cm</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Aire du rectangle</span>
+</span></span><span style="display:flex;"><span>aire_rectangle <span style="color:#f92672">=</span> largeur <span style="color:#f92672">*</span> hauteur
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Aire totale des 6 cercles</span>
+</span></span><span style="display:flex;"><span>aire_cercle <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> rayon <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>aire_cercles <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span> <span style="color:#f92672">*</span> aire_cercle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Aire grise = tout sauf les cercles</span>
+</span></span><span style="display:flex;"><span>aire_grise <span style="color:#f92672">=</span> aire_rectangle <span style="color:#f92672">-</span> aire_cercles
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Probabilité = aire grise / aire totale</span>
+</span></span><span style="display:flex;"><span>probabilite <span style="color:#f92672">=</span> aire_grise <span style="color:#f92672">/</span> aire_rectangle
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Probabilité qu’un point tombe dans la région grise : </span><span style="color:#e6db74">{</span>probabilite<span style="color:#e6db74">:</span><span style="color:#e6db74">.4f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> (soit </span><span style="color:#e6db74">{</span>probabilite<span style="color:#f92672">*</span><span style="color:#ae81ff">100</span><span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> %)&#34;</span>)</span></span></code></pre></div>
+<p><strong>Résultat attendu</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Probabilité qu’un point tombe dans la région grise : 0.2119 (soit 21.19 %)</code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (20%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Tableaux numpy et droite de régression</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires et fichier textes (csv)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Révision ou rattrapage</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12.</b> Projet - Présentation et analyse</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation #3 (20%)</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu">
+            <li class="active " data-nav-id="/solutions_ateliers/2_variables_types_entrees_fn/index.html"><a class="padding" href="/solutions_ateliers/2_variables_types_entrees_fn/index.html"><b>2.</b> Variables, types, entrées et fonction</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/3_struct_cond/index.html"><a class="padding" href="/solutions_ateliers/3_struct_cond/index.html"><b>3.</b> Saisie au clavier, fonctions et débogage</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/4_boucles_debogage/index.html"><a class="padding" href="/solutions_ateliers/4_boucles_debogage/index.html">Atelier 4 - Boucles de débogage simple</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/8_dict_fichiers/index.html"><a class="padding" href="/solutions_ateliers/8_dict_fichiers/index.html"><b>5.</b> Décider avec if-elif-else et les opérateurs</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_ateliers/6_listes_chaines_visualisation/index.html"><b>6.</b> Répéter avec FOR et WHILE</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/7_numpy_regression/index.html"><a class="padding" href="/solutions_ateliers/7_numpy_regression/index.html"><b>7.</b> Listes, chaines et graphiques de base</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/9_revision/index.html"><a class="padding" href="/solutions_ateliers/9_revision/index.html"><b>9.</b> Tableaux NumPy</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1753906498" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753906498" defer></script>
+    <script src="/js/theme.min.js?1753906498" defer></script>
+  </body>
+</html>

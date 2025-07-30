@@ -3,22 +3,22 @@
   <channel>
     <title>Solutions des exercices :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/index.html</link>
-    <description>02. Variables, types de donnees et algorithme&#xA;03. Saisie au clavier, fonctions et débogage&#xA;05. Décider avec IF-ELIF-ELSE et les opérateurs&#xA;06. Répéter avec FOR et WHILE&#xA;07. Listes, chaines et graphiques de base&#xA;09. Tableaux NumPy&#xA;10. Dictionnaires et traitement de fichiers CSV&#xA;11. Graphiques avancés et régression linéaire</description>
+    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles 04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Tableaux NumPy et droite de régression 08. Dictionnaires et fichiers texte 09. Révision&#xA;11. Fonctions personnalisées</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title> Variables et types de données</title>
-      <link>https://example.org/solutions_exercices/2_variables_types_input_fn/index.html</link>
+      <title> Variables, types, entrées et fonctions</title>
+      <link>https://example.org/solutions_exercices/2_variables_types_entree_fn/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/2_variables_types_input_fn/index.html</guid>
-      <description>Exercice 1 : Conversion de température # 1. Stocker la température en degrés Celsius temp_celsius = 25 # Exemple : 25 °C # 2. Convertir en Fahrenheit et en Kelvin temp_fahrenheit = (temp_celsius * 9/5) + 32 temp_kelvin = temp_celsius + 273.15 # 3. Afficher les trois valeurs avec des messages clairs print(&#34;Température en Celsius : {temp_celsius}°C&#34;) print(&#34;Température en Fahrenheit : {temp_fahrenheit}°F&#34;) print(&#34;Température en Kelvin : {temp_kelvin}K&#34;)&#xD;Exercice 2 : Calcul de concentration molaire # Données connues m = 10.</description>
+      <guid>https://example.org/solutions_exercices/2_variables_types_entree_fn/index.html</guid>
+      <description>Exercice 1 : Distance parcourue # Données vitesse = 6.5 # en m/s temps_minutes = 12 # Conversion du temps en secondes temps_secondes = temps_minutes * 60 # Calcul de la distance distance = vitesse * temps_secondes # Affichage print(f&#34;Le cycliste a parcouru {distance} mètres en {temps_minutes} minutes.&#34;)&#xD;Résultat :&#xA;Le cycliste a parcouru 4680.0 mètres en 12 minutes.&#xD;Exercice 2 : Conversion de température # Donnée temperature_celsius = 38 # Conversions temperature_fahrenheit = (temperature_celsius * 9 / 5) + 32 temperature_kelvin = temperature_celsius + 273.</description>
     </item>
     <item>
       <title> Saisie au clavier, fonctions et débogage</title>
-      <link>https://example.org/solutions_exercices/3_algo_debug/index.html</link>
+      <link>https://example.org/solutions_exercices/3_struct_cond/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/3_algo_debug/index.html</guid>
+      <guid>https://example.org/solutions_exercices/3_struct_cond/index.html</guid>
       <description>Exercice 1 : Demi-vie radioactive # Données initiales masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée de l&#39;utilisateur annees = int(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul du nombre de périodes de demi-vie nb_periodes = annees // demi_vie # Calcul de la masse restante masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage du résultat print(f&#34;Après {annees} ans, il reste environ {masse_restante:.2f} g de l&#39;isotope.</description>
     </item>
     <item>
@@ -30,37 +30,30 @@
     </item>
     <item>
       <title> Décider avec if-elif-else et les opérateurs</title>
-      <link>https://example.org/solutions_exercices/4_if_while/index.html</link>
+      <link>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/4_if_while/index.html</guid>
+      <guid>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</guid>
       <description>Partie 1 – Opérateurs de comparaison # 1.1 a = 10 b = 7 print(a &gt; b) # True print(a == 7) # False # 1.2 # Résultats : 5 != 3 # True 8 &lt;= 8 # True 4 &gt; 10 # False 3 == 3 # True&#xD;Partie 2 – Opérateurs logiques # 2.1 (5 &gt; 2) and (7 &lt; 10) # True and True = True (3 !</description>
     </item>
     <item>
       <title> Répéter avec FOR et WHILE</title>
-      <link>https://example.org/solutions_exercices/7_listes_chaines_for/index.html</link>
+      <link>https://example.org/solutions_exercices/7_numpy_regression/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/7_listes_chaines_for/index.html</guid>
+      <guid>https://example.org/solutions_exercices/7_numpy_regression/index.html</guid>
       <description>Exercice 1 a. Afficher les nombres de 1 à 10&#xA;Boucle recommandée : for Pourquoi ? Le nombre d’itérations est connu d’avance. for i in range(1, 11): print(i)&#xD;b. Compter jusqu’à 100 par bonds de 10&#xA;Boucle recommandée : for Pourquoi ? La progression est régulière et le nombre d’itérations est connu. for i in range(0, 101, 10): print(i)&#xD;c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)</description>
     </item>
     <item>
-      <title> Listes, chaines de caractères et graphiques de base</title>
-      <link>https://example.org/solutions_exercices/7_listes_chaines_visualisation/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/7_listes_chaines_visualisation/index.html</guid>
-      <description>Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;)&#xD;Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre)&#xD;Exercice 3 noms = [] for i in range(3): nom = input(f&#34;Entrez le nom {i+1} : &#34;) noms.append(nom) print(&#34;Ordre alphabétique croissant :&#34;) for nom in sorted(noms): print(nom) print(&#34;Ordre alphabétique décroissant :&#34;) for nom in sorted(noms, reverse=True): print(nom)&#xD;Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → G&#xD;Chaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.</description>
-    </item>
-    <item>
       <title> Tableaux NumPy</title>
-      <link>https://example.org/solutions_exercices/9_numpy/index.html</link>
+      <link>https://example.org/solutions_exercices/9_revision/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/9_numpy/index.html</guid>
+      <guid>https://example.org/solutions_exercices/9_revision/index.html</guid>
       <description>Exercice 1 – Solubilité d’un sel Données :&#xA;import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])&#xD;1. Affiche les valeurs print(f&#34;Solubilités : {sol}&#34;)&#xD;2. Moyenne sans la valeur manquante moyenne = np.nanmean(sol) print(f&#34;Moyenne (sans valeur manquante) : {moyenne:.2f} g/100mL&#34;)&#xD;3. Écart type ecart = np.nanstd(sol) print(f&#34;Écart type : {ecart:.2f}&#34;)&#xD;Exercice 2 – Températures journalières Données :&#xA;temperatures = np.array([ [12.1, 17.3, 14.2], [11.8, 16.9, 13.9], [13.0, 18.1, 15.</description>
     </item>
     <item>
       <title> Dictionnaires et traitement de fichiers CSV</title>
-      <link>https://example.org/solutions_exercices/10_dict_fichiers/index.html</link>
+      <link>https://example.org/solutions_exercices/8_dict_fichiers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_exercices/10_dict_fichiers/index.html</guid>
+      <guid>https://example.org/solutions_exercices/8_dict_fichiers/index.html</guid>
       <description>Exercice 1 – Densités # Création du dictionnaire densites = { &#34;eau&#34;: 1.0, &#34;éthanol&#34;: 0.789, &#34;mercure&#34;: 13.6 } # 1. Affiche la densité du mercure print(f&#34;Densité du mercure : {densites[&#39;mercure&#39;]} g/mL&#34;) # 2. Ajout de la densité de l&#39;huile densites[&#34;huile&#34;] = 0.91 # 3. Affiche toutes les substances et leur densité for substance, densite in densites.items(): print(f&#34;{substance} : {densite} g/mL&#34;)&#xD;Exercice 2 – Chargement et exploration import pandas as pd # 1.</description>
     </item>
   </channel>
