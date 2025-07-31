@@ -168,6 +168,8 @@ Les données sont stockées dans le fichier `.csv` disponible ici : [photosynthe
 2. Ajouter une **droite de régression linéaire** pour chaque espèce.
 3. Sauvegarder le graphique en PNG.
 
+![Nuage - régression](./photosynthese_regression.png?width=45vw)
+
 #### Étape 4 – Recherche par capteur (chaînes et conditions)
 
 1. Demander à l’utilisateur le nom d’un capteur (`input()`).

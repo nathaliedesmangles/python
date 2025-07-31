@@ -5,34 +5,34 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.">
+    <meta name="description" content="Atelier - Étude de la photosynthèse et de la température chez les plantes Étape 1 – Lecture et nettoyage des données import pandas as pd import numpy as np # Lecture du fichier CSV df = pd.read_csv(&#34;photosynthese.csv&#34;) # Affichage des 5 premières lignes print(df.head()) # Nettoyage : suppression des lignes avec valeurs manquantes df_clean = df.dropna(subset=[&#34;Température&#34;, &#34;Taux&#34;]) # Conversion en tableaux NumPy temperature = df_clean[&#34;Température&#34;].to_numpy() taux = df_clean[&#34;Taux&#34;].to_numpy()Étape 2 – Analyse par espèce (dictionnaire) # Création d’un dictionnaire contenant les taux par espèce donnees_par_espece = {} for espece in df_clean[&#34;Espèce&#34;].">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Révision :: 420-SN1-RE">
-    <meta name="twitter:description" content="import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.">
+    <meta name="twitter:description" content="Atelier - Étude de la photosynthèse et de la température chez les plantes Étape 1 – Lecture et nettoyage des données import pandas as pd import numpy as np # Lecture du fichier CSV df = pd.read_csv(&#34;photosynthese.csv&#34;) # Affichage des 5 premières lignes print(df.head()) # Nettoyage : suppression des lignes avec valeurs manquantes df_clean = df.dropna(subset=[&#34;Température&#34;, &#34;Taux&#34;]) # Conversion en tableaux NumPy temperature = df_clean[&#34;Température&#34;].to_numpy() taux = df_clean[&#34;Taux&#34;].to_numpy()Étape 2 – Analyse par espèce (dictionnaire) # Création d’un dictionnaire contenant les taux par espèce donnees_par_espece = {} for espece in df_clean[&#34;Espèce&#34;].">
     <meta property="og:url" content="https://example.org/solutions_ateliers/9_revision/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Révision :: 420-SN1-RE">
-    <meta property="og:description" content="import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.">
+    <meta property="og:description" content="Atelier - Étude de la photosynthèse et de la température chez les plantes Étape 1 – Lecture et nettoyage des données import pandas as pd import numpy as np # Lecture du fichier CSV df = pd.read_csv(&#34;photosynthese.csv&#34;) # Affichage des 5 premières lignes print(df.head()) # Nettoyage : suppression des lignes avec valeurs manquantes df_clean = df.dropna(subset=[&#34;Température&#34;, &#34;Taux&#34;]) # Conversion en tableaux NumPy temperature = df_clean[&#34;Température&#34;].to_numpy() taux = df_clean[&#34;Taux&#34;].to_numpy()Étape 2 – Analyse par espèce (dictionnaire) # Création d’un dictionnaire contenant les taux par espèce donnees_par_espece = {} for espece in df_clean[&#34;Espèce&#34;].">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Révision :: 420-SN1-RE">
-    <meta itemprop="description" content="import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.">
-    <meta itemprop="wordCount" content="104">
+    <meta itemprop="description" content="Atelier - Étude de la photosynthèse et de la température chez les plantes Étape 1 – Lecture et nettoyage des données import pandas as pd import numpy as np # Lecture du fichier CSV df = pd.read_csv(&#34;photosynthese.csv&#34;) # Affichage des 5 premières lignes print(df.head()) # Nettoyage : suppression des lignes avec valeurs manquantes df_clean = df.dropna(subset=[&#34;Température&#34;, &#34;Taux&#34;]) # Conversion en tableaux NumPy temperature = df_clean[&#34;Température&#34;].to_numpy() taux = df_clean[&#34;Taux&#34;].to_numpy()Étape 2 – Analyse par espèce (dictionnaire) # Création d’un dictionnaire contenant les taux par espèce donnees_par_espece = {} for espece in df_clean[&#34;Espèce&#34;].">
+    <meta itemprop="wordCount" content="301">
     <title> Révision :: 420-SN1-RE</title>
     <link href="/solutions_ateliers/9_revision/index.xml" rel="alternate" type="application/rss+xml" title=" Révision :: 420-SN1-RE">
-    <link href="/images/logo.png?1753994179" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753994179" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753994179" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753994179" rel="stylesheet">
-    <link href="/css/theme.min.css?1753994179" rel="stylesheet">
-    <link href="/css/format-html.min.css?1753994179" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1753994179" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1753994179" defer></script>
-    <script src="/js/lunr/lunr.min.js?1753994179" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1753994179" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1753994179" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1753994179" defer></script>
-    <script src="/js/search.min.js?1753994179" defer></script>
+    <link href="/images/logo.png?1753995560" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753995560" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753995560" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753995560" rel="stylesheet">
+    <link href="/css/theme.min.css?1753995560" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753995560" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753995560" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753995560" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753995560" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753995560" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753995560" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753995560" defer></script>
+    <script src="/js/search.min.js?1753995560" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1753994179";
+      window.relearn.index_js_url="/searchindex.en.js?1753995560";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1753994179" rel="stylesheet">
+    <link href="/css/custom.css?1753995560" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_ateliers/9_revision/index.html">
     <div id="R-body" class="default-animation">
@@ -101,7 +101,20 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#atelier---étude-de-la-photosynthèse-et-de-la-température-chez-les-plantes">Atelier - Étude de la photosynthèse et de la température chez les plantes</a>
+      <ul>
+        <li><a href="#étape-1--lecture-et-nettoyage-des-données">Étape 1 – Lecture et nettoyage des données</a></li>
+        <li><a href="#étape-2--analyse-par-espèce-dictionnaire">Étape 2 – Analyse par espèce (dictionnaire)</a></li>
+        <li><a href="#étape-3--analyse-graphique-nuage--régression">Étape 3 – Analyse graphique (nuage + régression)</a></li>
+        <li><a href="#étape-4--recherche-par-capteur">Étape 4 – Recherche par capteur</a></li>
+        <li><a href="#étape-5--exploration-temporelle">Étape 5 – Exploration temporelle</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
@@ -136,37 +149,105 @@
 
 <h1 id="révision"> Révision</h1>
 
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+<h2 id="atelier---étude-de-la-photosynthèse-et-de-la-température-chez-les-plantes">Atelier - Étude de la photosynthèse et de la température chez les plantes</h2>
+<h3 id="étape-1--lecture-et-nettoyage-des-données">Étape 1 – Lecture et nettoyage des données</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 1 : Données expérimentales</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lecture du fichier CSV</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;photosynthese.csv&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># np.nan représente les données manquantes</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage des 5 premières lignes</span>
+</span></span><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>head())
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>donnees <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([
-</span></span><span style="display:flex;"><span>        [<span style="color:#ae81ff">12.5</span>, <span style="color:#ae81ff">13.1</span>, <span style="color:#ae81ff">12.9</span>, <span style="color:#ae81ff">13.0</span>, <span style="color:#ae81ff">12.8</span>],         <span style="color:#75715e"># Naturelle</span>
-</span></span><span style="display:flex;"><span>        [<span style="color:#ae81ff">11.2</span>, <span style="color:#ae81ff">11.6</span>, np<span style="color:#f92672">.</span>nan, <span style="color:#ae81ff">11.5</span>, <span style="color:#ae81ff">11.3</span>],       <span style="color:#75715e"># LED blanche</span>
-</span></span><span style="display:flex;"><span>        [<span style="color:#ae81ff">10.4</span>, <span style="color:#ae81ff">10.1</span>, <span style="color:#ae81ff">10.2</span>, np<span style="color:#f92672">.</span>nan, np<span style="color:#f92672">.</span>nan]      <span style="color:#75715e"># LED rouge</span>
-</span></span><span style="display:flex;"><span>])
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Nettoyage : suppression des lignes avec valeurs manquantes</span>
+</span></span><span style="display:flex;"><span>df_clean <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>dropna(subset<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Température&#34;</span>, <span style="color:#e6db74">&#34;Taux&#34;</span>])
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>conditions <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Naturelle&#34;</span>, <span style="color:#e6db74">&#34;LED blanche&#34;</span>, <span style="color:#e6db74">&#34;LED rouge&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Conversion en tableaux NumPy</span>
+</span></span><span style="display:flex;"><span>temperature <span style="color:#f92672">=</span> df_clean[<span style="color:#e6db74">&#34;Température&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
+</span></span><span style="display:flex;"><span>taux <span style="color:#f92672">=</span> df_clean[<span style="color:#e6db74">&#34;Taux&#34;</span>]<span style="color:#f92672">.</span>to_numpy()</span></span></code></pre></div>
+<hr>
+<h3 id="étape-2--analyse-par-espèce-dictionnaire">Étape 2 – Analyse par espèce (dictionnaire)</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Création d’un dictionnaire contenant les taux par espèce</span>
+</span></span><span style="display:flex;"><span>donnees_par_espece <span style="color:#f92672">=</span> {}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 2 : Calcul des statistiques</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> espece <span style="color:#f92672">in</span> df_clean[<span style="color:#e6db74">&#34;Espèce&#34;</span>]<span style="color:#f92672">.</span>unique():
+</span></span><span style="display:flex;"><span>    valeurs <span style="color:#f92672">=</span> df_clean[df_clean[<span style="color:#e6db74">&#34;Espèce&#34;</span>] <span style="color:#f92672">==</span> espece][<span style="color:#e6db74">&#34;Taux&#34;</span>]<span style="color:#f92672">.</span>to_list()
+</span></span><span style="display:flex;"><span>    donnees_par_espece[espece] <span style="color:#f92672">=</span> valeurs
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>moyennes <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>nanmean(donnees, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>ecarts_types <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>nanstd(donnees, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul des statistiques</span>
+</span></span><span style="display:flex;"><span>resume <span style="color:#f92672">=</span> {}
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> espece, liste <span style="color:#f92672">in</span> donnees_par_espece<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>    tableau <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array(liste)
+</span></span><span style="display:flex;"><span>    resume[espece] <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;moyenne&#34;</span>: np<span style="color:#f92672">.</span>mean(tableau),
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ecart_type&#34;</span>: np<span style="color:#f92672">.</span>std(tableau),
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;n&#34;</span>: len(tableau)
+</span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 3 : Affichage des résultats</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage des résultats</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> espece, infos <span style="color:#f92672">in</span> resume<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>espece<span style="color:#e6db74">}</span><span style="color:#e6db74"> → Moyenne = </span><span style="color:#e6db74">{</span>infos[<span style="color:#e6db74">&#39;moyenne&#39;</span>]<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, Écart-type = </span><span style="color:#e6db74">{</span>infos[<span style="color:#e6db74">&#39;ecart_type&#39;</span>]<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, N = </span><span style="color:#e6db74">{</span>infos[<span style="color:#e6db74">&#39;n&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<hr>
+<h3 id="étape-3--analyse-graphique-nuage--régression">Étape 3 – Analyse graphique (nuage + régression)</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> linregress
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(conditions)):
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne (</span><span style="color:#e6db74">{</span>conditions[i]<span style="color:#e6db74">}</span><span style="color:#e6db74">) = </span><span style="color:#e6db74">{</span>moyennes[i]<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> cm, écart-type = </span><span style="color:#e6db74">{</span>ecarts_types[i]<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> cm&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">6</span>))
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tracé pour chaque espèce</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> espece <span style="color:#f92672">in</span> df_clean[<span style="color:#e6db74">&#34;Espèce&#34;</span>]<span style="color:#f92672">.</span>unique():
+</span></span><span style="display:flex;"><span>    sous_df <span style="color:#f92672">=</span> df_clean[df_clean[<span style="color:#e6db74">&#34;Espèce&#34;</span>] <span style="color:#f92672">==</span> espece]
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">=</span> sous_df[<span style="color:#e6db74">&#34;Température&#34;</span>]
+</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">=</span> sous_df[<span style="color:#e6db74">&#34;Taux&#34;</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 4 : Comparaison des moyennes</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Nuage de points</span>
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>scatter(x, y, label<span style="color:#f92672">=</span>espece)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>indice_max <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>nanargmax(moyennes)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Régression</span>
+</span></span><span style="display:flex;"><span>    slope, intercept, <span style="color:#f92672">*</span>_ <span style="color:#f92672">=</span> linregress(x, y)
+</span></span><span style="display:flex;"><span>    x_range <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(x<span style="color:#f92672">.</span>min(), x<span style="color:#f92672">.</span>max(), <span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>    y_fit <span style="color:#f92672">=</span> slope <span style="color:#f92672">*</span> x_range <span style="color:#f92672">+</span> intercept
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>plot(x_range, y_fit, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Condition avec la plus grande croissance moyenne : </span><span style="color:#e6db74">{</span>conditions[indice_max]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Taux de photosynthèse selon la température&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Température (°C)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Taux (μmol CO₂/m²/s)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sauvegarde</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;photosynthese_plot.png&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<p><a href="#R-image-41f9afb92460dbdbd19d11301fc43960" class="lightbox-link"><img alt="Photosynthèse-régression" class="lazy lightbox figure-image" loading="lazy" src="../../semaine9/photosynthese_regression.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-41f9afb92460dbdbd19d11301fc43960"><img alt="Photosynthèse-régression" class="lazy lightbox lightbox-image" loading="lazy" src="../../semaine9/photosynthese_regression.png?width=45vw"></a></p>
+<hr>
+<h3 id="étape-4--recherche-par-capteur">Étape 4 – Recherche par capteur</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nom_capteur <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez le nom du capteur (ex: capteur-01) : &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Recherche dans les données</span>
+</span></span><span style="display:flex;"><span>selection <span style="color:#f92672">=</span> df_clean[df_clean[<span style="color:#e6db74">&#34;Capteur&#34;</span>] <span style="color:#f92672">==</span> nom_capteur]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> selection<span style="color:#f92672">.</span>empty:
+</span></span><span style="display:flex;"><span>    print(selection[[<span style="color:#e6db74">&#34;Date&#34;</span>, <span style="color:#e6db74">&#34;Température&#34;</span>, <span style="color:#e6db74">&#34;Taux&#34;</span>, <span style="color:#e6db74">&#34;Espèce&#34;</span>]])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Aucune donnée pour ce capteur.&#34;</span>)</span></span></code></pre></div>
+<hr>
+<h3 id="étape-5--exploration-temporelle">Étape 5 – Exploration temporelle</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Calcul du taux moyen par date</span>
+</span></span><span style="display:flex;"><span>moyennes_par_date <span style="color:#f92672">=</span> df_clean<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Date&#34;</span>)[<span style="color:#e6db74">&#34;Taux&#34;</span>]<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(moyennes_par_date)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Courbe</span>
+</span></span><span style="display:flex;"><span>moyennes_par_date<span style="color:#f92672">.</span>plot(marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>, title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Taux moyen par date&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Date&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Taux moyen (μmol CO₂/m²/s)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -263,8 +344,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1753994179" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753994179" defer></script>
-    <script src="/js/theme.min.js?1753994179" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753995560" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753995560" defer></script>
+    <script src="/js/theme.min.js?1753995560" defer></script>
   </body>
 </html>
