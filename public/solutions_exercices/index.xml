@@ -33,7 +33,7 @@
       <link>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</guid>
-      <description></description>
+      <description>### **Listes**&#xA;#### Exercice 1&#xA;animaux = \[&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: &amp;nbsp; print(f&#34;Voici un/une {animal}&#34;)&#xD;#### Exercice 2&#xA;grille = \[ &amp;nbsp; \[1, 2, 3, 4], &amp;nbsp; \[5, 6, 7, 8], &amp;nbsp; \[9, 10, 11, 12], &amp;nbsp; \[13, 14, 15, 16], &amp;nbsp; \[17, 18, 19, 20] ] for ligne in grille: &amp;nbsp; for chiffre in ligne: &amp;nbsp; print(chiffre)&#xD;#### Exercice 3&#xA;noms = \[] for i in range(3): &amp;nbsp; nom = input(f&#34;Entrez le nom {i+1} : &#34;) &amp;nbsp; noms.</description>
     </item>
     <item>
       <title> Tableaux NumPy et droite de régression</title>

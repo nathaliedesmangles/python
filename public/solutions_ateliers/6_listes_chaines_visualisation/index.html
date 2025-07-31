@@ -5,30 +5,34 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="">
+    <meta name="description" content="import matplotlib.pyplot as plt \# Données brutes sous forme de chaînes donnees = \[ &amp;nbsp; &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &amp;nbsp; &#34;11.5, 18.2, 15.4&#34;, &amp;nbsp; &#34;10.8, 17.6, 14.9&#34;, &amp;nbsp; &#34;13.0, 19.1, 16.3&#34;, &amp;nbsp; &#34;14.1, 20.2, 18.5&#34;, &amp;nbsp; &#34;12.9, 18.7, 16.2&#34;, &amp;nbsp; &#34;11.7, 17.8, 15.0&#34; ] \# 1. Extraction et nettoyage temperatures = \[] # liste imbriquée for ligne in donnees: &amp;nbsp; trio = ligne.split(&#34;,&#34;) &amp;nbsp; trio\_float = \[float(valeur.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Listes, chaines et visualisation des données :: 420-SN1-RE">
+    <meta name="twitter:description" content="import matplotlib.pyplot as plt \# Données brutes sous forme de chaînes donnees = \[ &amp;nbsp; &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &amp;nbsp; &#34;11.5, 18.2, 15.4&#34;, &amp;nbsp; &#34;10.8, 17.6, 14.9&#34;, &amp;nbsp; &#34;13.0, 19.1, 16.3&#34;, &amp;nbsp; &#34;14.1, 20.2, 18.5&#34;, &amp;nbsp; &#34;12.9, 18.7, 16.2&#34;, &amp;nbsp; &#34;11.7, 17.8, 15.0&#34; ] \# 1. Extraction et nettoyage temperatures = \[] # liste imbriquée for ligne in donnees: &amp;nbsp; trio = ligne.split(&#34;,&#34;) &amp;nbsp; trio\_float = \[float(valeur.">
     <meta property="og:url" content="https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Listes, chaines et visualisation des données :: 420-SN1-RE">
+    <meta property="og:description" content="import matplotlib.pyplot as plt \# Données brutes sous forme de chaînes donnees = \[ &amp;nbsp; &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &amp;nbsp; &#34;11.5, 18.2, 15.4&#34;, &amp;nbsp; &#34;10.8, 17.6, 14.9&#34;, &amp;nbsp; &#34;13.0, 19.1, 16.3&#34;, &amp;nbsp; &#34;14.1, 20.2, 18.5&#34;, &amp;nbsp; &#34;12.9, 18.7, 16.2&#34;, &amp;nbsp; &#34;11.7, 17.8, 15.0&#34; ] \# 1. Extraction et nettoyage temperatures = \[] # liste imbriquée for ligne in donnees: &amp;nbsp; trio = ligne.split(&#34;,&#34;) &amp;nbsp; trio\_float = \[float(valeur.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Listes, chaines et visualisation des données :: 420-SN1-RE">
+    <meta itemprop="description" content="import matplotlib.pyplot as plt \# Données brutes sous forme de chaînes donnees = \[ &amp;nbsp; &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &amp;nbsp; &#34;11.5, 18.2, 15.4&#34;, &amp;nbsp; &#34;10.8, 17.6, 14.9&#34;, &amp;nbsp; &#34;13.0, 19.1, 16.3&#34;, &amp;nbsp; &#34;14.1, 20.2, 18.5&#34;, &amp;nbsp; &#34;12.9, 18.7, 16.2&#34;, &amp;nbsp; &#34;11.7, 17.8, 15.0&#34; ] \# 1. Extraction et nettoyage temperatures = \[] # liste imbriquée for ligne in donnees: &amp;nbsp; trio = ligne.split(&#34;,&#34;) &amp;nbsp; trio\_float = \[float(valeur.">
+    <meta itemprop="wordCount" content="304">
     <title> Listes, chaines et visualisation des données :: 420-SN1-RE</title>
     <link href="/solutions_ateliers/6_listes_chaines_visualisation/index.xml" rel="alternate" type="application/rss+xml" title=" Listes, chaines et visualisation des données :: 420-SN1-RE">
-    <link href="/images/logo.png?1753926426" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753926426" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753926426" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753926426" rel="stylesheet">
-    <link href="/css/theme.min.css?1753926426" rel="stylesheet">
-    <link href="/css/format-html.min.css?1753926426" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1753926426" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1753926426" defer></script>
-    <script src="/js/lunr/lunr.min.js?1753926426" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1753926426" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1753926426" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1753926426" defer></script>
-    <script src="/js/search.min.js?1753926426" defer></script>
+    <link href="/images/logo.png?1753964554" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753964554" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753964554" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753964554" rel="stylesheet">
+    <link href="/css/theme.min.css?1753964554" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753964554" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753964554" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753964554" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753964554" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753964554" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753964554" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753964554" defer></script>
+    <script src="/js/search.min.js?1753964554" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -38,7 +42,7 @@
       window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1753926426";
+      window.relearn.index_js_url="/searchindex.en.js?1753964554";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -84,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1753926426" rel="stylesheet">
+    <link href="/css/custom.css?1753964554" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_ateliers/6_listes_chaines_visualisation/index.html">
     <div id="R-body" class="default-animation">
@@ -132,6 +136,162 @@
 
 <h1 id="listes-chaines-et-visualisation-des-données"> Listes, chaines et visualisation des données</h1>
 
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># Données brutes sous forme de chaînes</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>donnees <span style="color:#f92672">=</span> \[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   <span style="color:#e6db74">&#34;12.3, 16.8, 14.0&#34;</span>,  <span style="color:#75715e"># jour 1 : matin, midi, soir</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   <span style="color:#e6db74">&#34;11.5, 18.2, 15.4&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   <span style="color:#e6db74">&#34;10.8, 17.6, 14.9&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   <span style="color:#e6db74">&#34;13.0, 19.1, 16.3&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   <span style="color:#e6db74">&#34;14.1, 20.2, 18.5&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   <span style="color:#e6db74">&#34;12.9, 18.7, 16.2&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   <span style="color:#e6db74">&#34;11.7, 17.8, 15.0&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># 1. Extraction et nettoyage</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> \[]  <span style="color:#75715e"># liste imbriquée</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> donnees:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   trio <span style="color:#f92672">=</span> ligne<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   trio\_float <span style="color:#f92672">=</span> \[float(valeur<span style="color:#f92672">.</span>strip()) <span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> trio]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   temperatures<span style="color:#f92672">.</span>append(trio\_float)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Liste des températures (liste imbriquée) :&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(temperatures)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># 2. Calculs sur les données</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># Moyenne par jour</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>moyennes\_journalières <span style="color:#f92672">=</span> \[]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> jour <span style="color:#f92672">in</span> temperatures:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   moyenne <span style="color:#f92672">=</span> sum(jour) <span style="color:#f92672">/</span> len(jour)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   moyennes\_journalières<span style="color:#f92672">.</span>append(moyenne)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">nTempératures moyennes par jour :&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(moyennes\_journalières)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># Température maximale et jour</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>toutes\_valeurs <span style="color:#f92672">=</span> \[temp <span style="color:#66d9ef">for</span> jour <span style="color:#f92672">in</span> temperatures <span style="color:#66d9ef">for</span> temp <span style="color:#f92672">in</span> jour]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>temp\_max <span style="color:#f92672">=</span> max(toutes\_valeurs)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>index\_max <span style="color:#f92672">=</span> toutes\_valeurs<span style="color:#f92672">.</span>index(temp\_max)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>jour\_max <span style="color:#f92672">=</span> index\_max <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">nTempérature maximale : </span><span style="color:#e6db74">{</span>temp<span style="color:#960050;background-color:#1e0010">\</span>_max<span style="color:#e6db74">}</span><span style="color:#e6db74">°C (Jour </span><span style="color:#e6db74">{</span>jour<span style="color:#960050;background-color:#1e0010">\</span>_max<span style="color:#e6db74">}</span><span style="color:#e6db74">)&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># Moyenne globale</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>moyenne\_generale <span style="color:#f92672">=</span> sum(toutes\_valeurs) <span style="color:#f92672">/</span> len(toutes\_valeurs)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Température moyenne de la semaine : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#960050;background-color:#1e0010">\</span>_generale<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">°C&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># 3. Visualisation avec matplotlib</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>jours <span style="color:#f92672">=</span> list(range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">8</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(jours, moyennes\_journalières, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;blue&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Moyenne quotidienne&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Températures moyennes par jour&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Jour&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Température (°C)&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;graphique\_temperature.png&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># 4. Exploration des chaînes de caractères (températures de midi)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nb\_midi\_sup\_18 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> donnees:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   valeurs <span style="color:#f92672">=</span> ligne<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   midi <span style="color:#f92672">=</span> float(valeurs\[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>strip())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   <span style="color:#66d9ef">if</span> midi <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">18</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;       nb\_midi\_sup\_18 <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">nNombre de jours où la température de midi a dépassé 18°C : </span><span style="color:#e6db74">{</span>nb<span style="color:#960050;background-color:#1e0010">\</span>_midi<span style="color:#960050;background-color:#1e0010">\</span>_sup<span style="color:#960050;background-color:#1e0010">\</span>_18<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<hr>
+<p>### Résultat attendu (valeurs approximatives à cause des arrondis) :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Liste des températures (liste imbriquée) :
+
+\[\[12.3, 16.8, 14.0], \[11.5, 18.2, 15.4], ..., \[11.7, 17.8, 15.0]]
+
+
+
+Températures moyennes par jour :
+
+\[14.37, 15.03, 14.43, 16.13, 17.6, 15.93, 14.83]
+
+
+
+Température maximale : 20.2°C (Jour 5)
+
+
+
+Température moyenne de la semaine : 15.47°C
+
+
+
+Nombre de jours où la température de midi a dépassé 18°C : 2</code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -228,8 +388,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1753926426" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753926426" defer></script>
-    <script src="/js/theme.min.js?1753926426" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753964554" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753964554" defer></script>
+    <script src="/js/theme.min.js?1753964554" defer></script>
   </body>
 </html>
