@@ -5,244 +5,140 @@ weight = 206
 +++
 
 
+### **Listes**
 
-
-
-\### \*\*Listes\*\*
-
-
-
-\#### Exercice 1
-
-
+#### Exercice 1
 
 ```python
-
-animaux = \["chat", "chien", "lapin", "perroquet", "tigre"]
+animaux = ["chat", "chien", "lapin", "perroquet", "tigre"]
 
 for animal in animaux:
-
-&nbsp;   print(f"Voici un/une {animal}")
-
+      print(f"Voici un/une {animal}")
 ```
 
+---
 
-
-\#### Exercice 2
-
-
+#### Exercice 2
 
 ```python
-
-grille = \[
-
-&nbsp;   \[1, 2, 3, 4],
-
-&nbsp;   \[5, 6, 7, 8],
-
-&nbsp;   \[9, 10, 11, 12],
-
-&nbsp;   \[13, 14, 15, 16],
-
-&nbsp;   \[17, 18, 19, 20]
-
+grille = [
+           [1, 2, 3, 4],
+           [5, 6, 7, 8],
+           [9, 10, 11, 12],
+           [13, 14, 15, 16],
+           [17, 18, 19, 20]
 ]
 
-
-
 for ligne in grille:
-
-&nbsp;   for chiffre in ligne:
-
-&nbsp;       print(chiffre)
-
+    for chiffre in ligne:
+        print(chiffre)
 ```
 
+---
 
-
-\#### Exercice 3
-
-
+#### Exercice 3
 
 ```python
-
-noms = \[]
+noms = []
 
 for i in range(3):
-
-&nbsp;   nom = input(f"Entrez le nom {i+1} : ")
-
-&nbsp;   noms.append(nom)
-
-
+    nom = input(f"Entrez le nom {i+1} : ")
+    noms.append(nom)
 
 print("Ordre alphabétique croissant :")
 
 for nom in sorted(noms):
-
-&nbsp;   print(nom)
-
-
+    print(nom)
 
 print("Ordre alphabétique décroissant :")
 
 for nom in sorted(noms, reverse=True):
-
-&nbsp;   print(nom)
-
+    print(nom)
 ```
 
+---
 
-
-\#### Exercice 4
-
-
+#### Exercice 4
 
 ```python
-
-suspects = \[
-
-&nbsp;   \["A", "T", "C", "G"],
-
-&nbsp;   \["G", "A", "T", "G"],
-
-&nbsp;   \["A", "T", "T", "G"]
-
+suspects = [
+             ["A", "T", "C", "G"],
+             ["G", "A", "T", "G"],
+             ["A", "T", "T", "G"]
 ]
 
 
-
-print(suspects\[0]\[1])  # 2e base de la 1re séquence → T
-
-print(suspects\[2]\[-1])  # dernière base de la 3e séquence → G
-
+print(suspects[0][1])  # 2e base de la 1re séquence → T
+print(suspects[2][-1])  # dernière base de la 3e séquence → G
 ```
-
-
 
 ---
 
 
+### **Chaînes de caractères**
 
-\### \*\*Chaînes de caractères\*\*
-
-
-
-\#### Exercice 5
-
-
+#### Exercice 5
 
 ```python
+mots = ["chlorophylle", "atome", "protéine"]
 
-mots = \["chlorophylle", "atome", "protéine"]
-
-nb\_lettres = \[]
-
-
+nb_lettres = []
 
 for mot in mots:
+    nb_lettres.append(len(mot))
 
-&nbsp;   nb\_lettres.append(len(mot))
-
-
-
-print(nb\_lettres)  # \[12, 5, 8]
-
+print(nb_lettres)  # [12, 5, 8]
 ```
 
+---
 
-
-\#### Exercice 6
-
-
+#### Exercice 6
 
 ```python
-
 adn = "ATGCT"
-
 arn = adn.lower().replace("t", "u")
-
 print(arn)  # augcu
-
 ```
-
-
 
 ---
 
 
+### **Graphiques avec matplotlib**
 
-\### \*\*Graphiques avec matplotlib\*\*
-
-
-
-\#### Exercice 7
-
-
+#### Exercice 7
 
 ```python
-
 import matplotlib.pyplot as plt
 
-
-
-heures = \[0, 4, 8, 12, 16, 20, 24]
-
-temperatures = \[-5, -2, 3, 7, 6, 1, -2]
-
-
+heures = [0, 4, 8, 12, 16, 20, 24]
+temperatures = [-5, -2, 3, 7, 6, 1, -2]
 
 plt.plot(heures, temperatures)
-
 plt.title("Température en fonction de l’heure")
-
 plt.xlabel("Heure (h)")
-
 plt.ylabel("Température (°C)")
-
 plt.grid()
-
 plt.show()
-
 ```
 
+---
 
-
-\#### Exercice 8
-
-
+#### Exercice 8
 
 ```python
-
 import matplotlib.pyplot as plt
 
-
-
-temp = \[10, 20, 30, 40, 50]
-
-attendu = \[2.1, 3.8, 5.6, 7.3, 9.0]
-
-mesure =  \[2.0, 3.9, 5.2, 7.5, 8.8]
-
-
+temp = [10, 20, 30, 40, 50]
+attendu = [2.1, 3.8, 5.6, 7.3, 9.0]
+mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
 
 plt.plot(temp, attendu, "ok-", label="Valeurs attendues")  # o = rond, k = noir, - = ligne
-
 plt.bar(temp, mesure, color="blue", alpha=0.5, label="Valeurs mesurées")
 
-
-
 plt.title("Comparaison des concentrations")
-
 plt.xlabel("Température (°C)")
-
 plt.ylabel("Concentration")
-
 plt.grid()
-
 plt.legend()
-
 plt.show()
-
 ```
-
