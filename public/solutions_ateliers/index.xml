@@ -22,7 +22,7 @@
       <description># Demander les données à l&#39;utilisateur temperature = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: print(&#34;Pression invalide. Veuillez entrer 0.5, 1.0, 1.</description>
     </item>
     <item>
-      <title>Atelier 4 - Boucles de débogage simple</title>
+      <title> Boucles de débogage simple</title>
       <link>https://example.org/solutions_ateliers/4_boucles_debogage/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/4_boucles_debogage/index.html</guid>

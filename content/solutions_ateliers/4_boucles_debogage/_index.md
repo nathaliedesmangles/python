@@ -1,5 +1,6 @@
 +++
-title = "Atelier 4 - Boucles de débogage simple"
+pre = "4."
+title = " Boucles de débogage simple"
 weight = 304
 +++
 

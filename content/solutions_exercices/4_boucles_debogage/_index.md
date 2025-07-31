@@ -7,120 +7,114 @@ weight = 204
 +++
 
 
+## Exercice 1 – **For ou While ?**
 
+### a. Afficher les nombres de 1 à 10
 
-
-\### Exercice 1 - For ou While ?
-
-
-
-Pour chacun des contextes suivants, avant d'écrire le code, répondez à la question: "Quelle boucle devriez-vous utiliser ?":
-
-
-
-a. Afficher les nombres de 1 à 10  
-
-b. Compter jusqu’à 100 par bonds de 10  
-
-c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)  
-
-d. Lire une température jusqu’à ce qu’elle soit < 0 (entrée utilisateur)  
-
-e. Écrire un programme qui demande à l'utilisateur d'entrer un chiffre (1 à 10). Tant qu'il ne tape pas le chiffre `0`, le programme lui redemande d'entrer un chiffre (1 à 10) Sinon (i.e. il a tapé `0`) le programme s'arrête (Vous pouvez utiliser `break` et afficher un message).  
-
-
-
-
-
-\### Exercice 2  – Table de multiplication
-
-
-
-\* Écrire un programme qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.
-
-\* utiliser une boucle `while` pour refaire une autre table tant que l’usager le souhaite.
-
-
-
-\*\*Exemple de sortie :\*\*
-
-```
-
-Entrez un nombre entre 1 et 12 : 7
-
-1 x 7 = 7
-
-2 x 7 = 14
-
-3 x 7 = 21
-
-...
-
-12 x 7 = 84
-
-```
-
-
-
-\### Exercice 3 – Utiliser `while` pour atteindre un objectif
-
-
-
-Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
-
-Écrire un programme qui affiche l’évolution de la température \*\*jusqu’à ce qu’elle atteigne 30 °C\*\*.
-
-
-
-1\. Crée une variable `temp` avec 20 comme valeur initiale.
-
-2\. Utilise une boucle `while` pour vérifier si `temp` est inférieure à 30.
-
-3\. À chaque tour, affiche la température.
-
-4\. Augmente la température de 1.5.
-
-
-
-
-
-\### Exercice 4 – Répéter une mesure fixe avec `for`
-
-
-
-On veut afficher les numéros de 10 échantillons : `Échantillon 1`, `Échantillon 2`, ..., `Échantillon 10`.
-
-
-
-1\. Utilise une boucle `for` avec `range(1, 11)`.
-
-2\. À chaque tour, affiche `Échantillon` suivi du numéro.
-
-
-
-
-
-\### Exercice 5 - Trouver les erreurs !
-
-
-
-Corrige les erreurs dans ce programme pour qu’il fonctionne :
-
-
+**Boucle : `for`** (on connaît le début et la fin)
 
 ```python
-
-nom = input("Quel est ton nom?")
-
-print("Bonjour", name)
-
-
-
-age = input("Quel âge as-tu?")
-
-print("Dans 10 ans, tu auras" age + 10)
-
+for i in range(1, 11):
+    print(i)
 ```
 
+---
 
+### b. Compter jusqu’à 100 par bonds de 10
 
+**Boucle : `for`**
+
+```python
+for i in range(0, 101, 10):
+    print(i)
+```
+
+---
+
+### c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)
+
+**Boucle : `while`** (on ne connaît pas d’avance le nombre de répétitions, mais on connaît la condition d’arrêt)
+
+```python
+hauteur = 100
+while hauteur > 0:
+    print(f"Hauteur actuelle : {hauteur} m")
+    hauteur -= 10
+```
+
+---
+
+### d. Lire une température jusqu’à ce qu’elle soit < 0
+
+**Boucle : `while`**
+
+```python
+temperature = float(input("Entrez une température : "))
+while temperature >= 0:
+    temperature = float(input("Entrez une température : "))
+print("Température négative détectée. Fin du programme.")
+```
+
+---
+
+### e. Tant que l'utilisateur ne tape pas 0
+
+**Boucle : `while`, avec `break` si nécessaire**
+
+```python
+while True:
+    valeur = int(input("Entrez un chiffre entre 1 et 10 (0 pour quitter) : "))
+    if valeur == 0:
+        print("Fin du programme.")
+        break
+```
+
+---
+
+## Exercice 2 – Table de multiplication avec répétition
+
+```python
+continuer = "oui"
+
+while continuer.lower() == "oui":
+    n = int(input("Entrez un nombre entre 1 et 12 : "))
+    for i in range(1, 13):
+        print(f"{i} x {n} = {i * n}")
+    
+    continuer = input("Voulez-vous une autre table ? (oui/non) : ")
+```
+
+---
+
+## Exercice 3 – Température qui augmente jusqu’à 30 °C
+
+```python
+temp = 20.0
+
+while temp < 30:
+    print(f"Température actuelle : {temp:.1f} °C")
+    temp += 1.5
+```
+
+---
+
+## Exercice 4 – Boucle `for` avec `range`
+
+```python
+for i in range(1, 11):
+    print(f"Échantillon {i}")
+```
+
+---
+
+## Exercice 5 – Corriger les erreurs
+
+### Version corrigée :
+
+```python
+nom = input("Quel est ton nom? ")
+print("Bonjour", nom)
+
+age = int(input("Quel âge as-tu? "))
+print("Dans 10 ans, tu auras", age + 10)
+```

@@ -26,7 +26,7 @@
       <link>https://example.org/solutions_exercices/4_boucles_debogage/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/4_boucles_debogage/index.html</guid>
-      <description>### Exercice 1 - For ou While ?&#xA;Pour chacun des contextes suivants, avant d’écrire le code, répondez à la question: “Quelle boucle devriez-vous utiliser ?”:&#xA;a. Afficher les nombres de 1 à 10&#xA;b. Compter jusqu’à 100 par bonds de 10&#xA;c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)&#xA;d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)&#xA;e. Écrire un programme qui demande à l’utilisateur d’entrer un chiffre (1 à 10).</description>
+      <description>Exercice 1 – For ou While ? a. Afficher les nombres de 1 à 10 Boucle : for (on connaît le début et la fin)&#xA;for i in range(1, 11): print(i)&#xD;b. Compter jusqu’à 100 par bonds de 10 Boucle : for&#xA;for i in range(0, 101, 10): print(i)&#xD;c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s) Boucle : while (on ne connaît pas d’avance le nombre de répétitions, mais on connaît la condition d’arrêt)</description>
     </item>
     <item>
       <title> Décider avec if-elif-else et les opérateurs</title>
