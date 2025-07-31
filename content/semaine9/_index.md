@@ -5,103 +5,98 @@ title = " Révision ou rattrapage"
 weight = 109
 draft = false
 +++
- 
-***AJOUTER GRAPHIQUE***
 
-> **RAPPEL**: Semaine prochaine c'est le **deuxième examen** (25%)
+## Exercice de révision: Étude de la photosynthèse et de la température chez les plantes
 
-## Objectifs
+### Objectifs pédagogiques
 
-* Utiliser des **listes de listes** et des **listes de dictionnaires**.
-* Parcourir des structures **imbriquées** avec des boucles `for` imbriquées.
-* Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy.
-* Appliquer des **conditions** lors des parcours.
-* Tracer des graphiques 
+Cet atelier permet de :
 
----
+* manipuler des **fichiers CSV** avec `pandas` et `numpy`,
+* utiliser des **listes**, **chaînes**, **tableaux NumPy** et **dictionnaires**,
+* produire des **graphiques professionnels** avec `matplotlib`,
+* réaliser une **analyse scientifique complète** d’un jeu de données réel ou simulé,
+* réviser toutes les structures de contrôle (boucles, conditions, fonctions).
 
+### Concepts révisés
 
-**Nom du fichier** : `revisions_eval2.ipynb`
-
-## Exercice 1 – Liste de listes
-
-# 1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).
-# 2. Affiche la valeur au centre.
-# 3. Affiche tous les nombres un par un avec deux boucles for.
-
-grille = [
-    ...
-]
-
-
-## Exercice 2 – Liste de dictionnaires
-# On t’a donné les données suivantes :
-
-```
-mesures = [
-    {"id": "E1", "temp": 21.3, "pression": 101.5},
-    {"id": "E2", "temp": 23.0, "pression": 100.8},
-    {"id": "E3", "temp": 20.8, "pression": 102.0}
-]
-```
-
-# 1. Affiche le nom de chaque échantillon et sa température.
-# 2. Affiche uniquement les échantillons dont la température est supérieure à 22 °C.
+| Compétence Python                     | Présente dans l’atelier  |
+| ------------------------------------- | ------------------------ |
+| Listes, chaînes, boucles, conditions  | ✅                        |
+| Dictionnaires                         | ✅                        |
+| Tableaux NumPy et fonctions `np.*`    | ✅                        |
+| Manipulation de fichiers `.csv`       | ✅ (avec pandas)          |
+| Visualisation avec matplotlib         | ✅                        |
+| Régression linéaire (bonus)           | ✅                        |
+| Fonctions personnalisées (facultatif) | ✅ (à intégrer au besoin) |
 
 ---
 
-## Exercice 3 – NumPy 2D
-# Crée un tableau NumPy 2D à partir de cette grille :
+### Contexte scientifique
 
-```
-import numpy as np
+Un groupe de biologistes a mené une expérience pour étudier l'effet de la **température** sur l’**efficacité de la photosynthèse** chez plusieurs espèces végétales.
 
-tableau = np.array(grille)
-```
-# 1. Affiche la moyenne de chaque ligne (utilise une boucle).
-# 2. Affiche tous les éléments supérieurs à 5.
+Ils ont récolté les données suivantes :
+
+* Température (°C),
+* Taux de photosynthèse (μmol CO₂/m²/s),
+* Espèce (nom),
+* Nom du capteur utilisé (chaîne de caractères),
+* Date de la mesure.
+
+Les données sont stockées dans un fichier `.csv` nommé **`photosynthese.csv`**, dont voici un aperçu :
+
+| Température | Taux | Espèce      | Capteur    | Date       |
+| ----------- | ---- | ----------- | ---------- | ---------- |
+| 22.5        | 18.2 | Arabidopsis | capteur-01 | 2023-06-01 |
+| 24.1        | 19.3 | Arabidopsis | capteur-02 | 2023-06-01 |
+| 28.0        | 20.5 | Maïs        | capteur-03 | 2023-06-02 |
+| ...         | ...  | ...         | ...        | ...        |
 
 ---
 
-### Corrigé
+### Instructions
 
-Nom du fichier : `4_revisions_boucles_corrige.ipynb`
+#### Étape 1 – Lecture et nettoyage des données
 
-```python
-# Exercice 1
-grille = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+1. Charge le fichier CSV avec **`pandas`**.
+2. Vérifie la présence de données manquantes (`NaN`) et nettoie-les si nécessaire.
+3. Transforme les colonnes **Température** et **Taux** en tableaux **NumPy**.
 
-print(grille[1][1])  # Centre = 5
+#### Étape 2 – Analyse par espèce (listes et dictionnaires)
 
-for ligne in grille:
-    for valeur in ligne:
-        print(valeur)
+1. Crée un dictionnaire dont les clés sont les noms des **espèces**, et les valeurs sont des **listes de taux de photosynthèse**.
+2. Calcule pour chaque espèce :
 
-# Exercice 2
-mesures = [
-    {"id": "E1", "temp": 21.3, "pression": 101.5},
-    {"id": "E2", "temp": 23.0, "pression": 100.8},
-    {"id": "E3", "temp": 20.8, "pression": 102.0}
-]
+   * la moyenne,
+   * l’écart-type,
+   * le nombre de mesures.
 
-for echantillon in mesures:
-    print(f"{echantillon['id']} : {echantillon['temp']} °C")
+> Tu peux stocker ces résultats dans un second dictionnaire (`résumé[espèce] = {...}`).
 
-for echantillon in mesures:
-    if echantillon["temp"] > 22:
-        print(f"{echantillon['id']} est chaud (>22 °C)")
+#### Étape 3 – Analyse graphique
 
-# Exercice 3
-import numpy as np
+1. Trace un **nuage de points** température vs taux pour chaque espèce (couleurs différentes).
+2. Ajoute une **droite de régression linéaire** pour chaque espèce.
+3. Sauvegarde le graphique en PNG.
 
-tableau = np.array(grille)
+#### Étape 4 – Recherche par capteur (chaînes et conditions)
 
-for ligne in tableau:
-    print(np.mean(ligne))
+1. Demande à l’utilisateur le nom d’un capteur (`input()`).
+2. Affiche toutes les mesures associées à ce capteur :
 
-print(tableau[tableau > 5])
-```
+   * date, température, taux, espèce.
+
+#### Étape 5 – Exploration temporelle (tri et regroupement)
+
+1. Trie les données par **date**.
+2. Pour chaque date, calcule le **taux moyen global**.
+3. Affiche une **courbe de tendance** (date vs taux moyen).
+
+---
+
+### 📁 Bonus : Fichier CSV simulé
+
+Si tu veux que je génère aussi le fichier **`photosynthese.csv`** et le **notebook corrigé**, je peux te les fournir immédiatement.
+
+Souhaites-tu les fichiers ? Ou une version non corrigée pour les étudiants ?

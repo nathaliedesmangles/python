@@ -103,7 +103,7 @@
       <link>https://example.org/semaine9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine9/index.html</guid>
-      <description>AJOUTER GRAPHIQUE&#xA;RAPPEL: Semaine prochaine c’est le deuxième examen (25%)&#xA;Objectifs Utiliser des listes de listes et des listes de dictionnaires. Parcourir des structures imbriquées avec des boucles for imbriquées. Réutiliser les connaissances sur listes, dictionnaires, et tableaux NumPy. Appliquer des conditions lors des parcours. Tracer des graphiques Nom du fichier : revisions_eval2.ipynb&#xA;Exercice 1 – Liste de listes 1. Crée une grille 3x3 contenant les nombres de 1 à 9 (sous forme de liste de listes).</description>
+      <description>Exercice de révision: Étude de la photosynthèse et de la température chez les plantes Objectifs pédagogiques Cet atelier permet de :&#xA;manipuler des fichiers CSV avec pandas et numpy, utiliser des listes, chaînes, tableaux NumPy et dictionnaires, produire des graphiques professionnels avec matplotlib, réaliser une analyse scientifique complète d’un jeu de données réel ou simulé, réviser toutes les structures de contrôle (boucles, conditions, fonctions). Concepts révisés Compétence Python Présente dans l’atelier Listes, chaînes, boucles, conditions ✅ Dictionnaires ✅ Tableaux NumPy et fonctions np.</description>
     </item>
     <item>
       <title> Évaluation #2 (25%)</title>
