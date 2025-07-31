@@ -1,6 +1,6 @@
 +++
 pre = "<b>9.</b>"
-title = " Tableaux NumPy"
+title = " Révision"
 weight = 209
 +++
 

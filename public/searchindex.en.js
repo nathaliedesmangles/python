@@ -385,18 +385,18 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences \u003e \rSolutions des exercices",
-    "content": "Partie 1 – Opérateurs de comparaison # 1.1 a = 10 b = 7 print(a \u003e b) # True print(a == 7) # False # 1.2 # Résultats : 5 != 3 # True 8 \u003c= 8 # True 4 \u003e 10 # False 3 == 3 # True\rPartie 2 – Opérateurs logiques # 2.1 (5 \u003e 2) and (7 \u003c 10) # True and True = True (3 != 3) or (6 \u003e= 6) # False or True = True not (2 \u003c 5) # not True = False # 2.2 # Cette condition est vraie si : temperature \u003e 30 ET humidite \u003c 50\rPartie 3 – Lire et corriger des conditions # 3.1 temp = 10 if temp \u003e 25: print(\"Il fait chaud.\") elif temp \u003e 15: print(\"Il fait confortable.\") else: print(\"Il fait frais.\") # → affichera ceci # 3.2 # Erreur : il manque les deux-points à la fin du if # Correction : if vitesse \u003e 80: print(\"Trop vite !\")\rPartie 4 – Écrire ses propres conditions # 4.1 ph = 6.4 if ph \u003c 7: print(\"Solution acide\") elif ph == 7: print(\"Solution neutre\") else: print(\"Solution basique\") # 4.2 temperature = 110 pression = 1.6 if temperature \u003e 100 and pression \u003e 1.5: print(\"Attention, danger\")\rPartie 5 - Répéter, mais pas à l’infini Exercice – Utiliser while pour atteindre un objectif But : utiliser une boucle while pour augmenter la température jusqu’à 30 °C\ntemp = 20 # température initiale while temp \u003c 30: print(f\"Température actuelle : {temp}°C\") temp += 1.5 # on augmente de 1.5 °C par heure\rCe que ça fait : Affiche la température de 20 °C à 28.5 °C (inclus). S’arrête lorsque temp atteint 30 ou plus.",
-    "description": "Partie 1 – Opérateurs de comparaison # 1.1 a = 10 b = 7 print(a \u003e b) # True print(a == 7) # False # 1.2 # Résultats : 5 != 3 # True 8 \u003c= 8 # True 4 \u003e 10 # False 3 == 3 # True\rPartie 2 – Opérateurs logiques # 2.1 (5 \u003e 2) and (7 \u003c 10) # True and True = True (3 !",
+    "content": "",
+    "description": "",
     "tags": [],
-    "title": " Décider avec if-elif-else et les opérateurs",
+    "title": " Listes, chaines et visualisation des données",
     "uri": "/solutions_exercices/6_listes_chaines_visualisation/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences \u003e \rSolutions des exercices",
-    "content": "Exercice 1 a. Afficher les nombres de 1 à 10\nBoucle recommandée : for Pourquoi ? Le nombre d’itérations est connu d’avance. for i in range(1, 11): print(i)\rb. Compter jusqu’à 100 par bonds de 10\nBoucle recommandée : for Pourquoi ? La progression est régulière et le nombre d’itérations est connu. for i in range(0, 101, 10): print(i)\rc. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)\nBoucle recommandée : while Pourquoi ? On s’arrête quand l’objet atteint le sol, condition dépendante d’un calcul. hauteur = 100 vitesse = 10 while hauteur \u003e 0: print(f\"Hauteur : {hauteur} m\") hauteur -= vitesse\rd. Lire une température jusqu’à ce qu’elle soit \u003c 0 (entrée utilisateur)\nBoucle recommandée : while Pourquoi ? On ne sait pas combien d’entrées seront nécessaires. temp = float(input(\"Entrez une température : \")) while temp \u003e= 0: temp = float(input(\"Entrez une température : \"))\re. Menu interactif : prénom ou quitter\nBoucle recommandée : while avec break Pourquoi ? Boucle indéterminée qui dépend du choix de l’utilisateur. while True: print(\"1 - Entrez votre prénom\") print(\"2 - Quitter le programme\") choix = input(\"Entrez votre choix : \") if choix == \"1\": prenom = input(\"Quel est votre prénom ? \") print(f\"Bonjour {prenom} !\") elif choix == \"2\": print(\"Programme terminé.\") break else: print(\"Choix invalide.\")\rExercice 3 But : afficher les numéros des échantillons de 1 à 10\nfor i in range(1, 11): print(f\"Échantillon {i}\")\rAffiche : Échantillon 1\rÉchantillon 2\r...\rÉchantillon 10",
-    "description": "Exercice 1 a. Afficher les nombres de 1 à 10\nBoucle recommandée : for Pourquoi ? Le nombre d’itérations est connu d’avance. for i in range(1, 11): print(i)\rb. Compter jusqu’à 100 par bonds de 10\nBoucle recommandée : for Pourquoi ? La progression est régulière et le nombre d’itérations est connu. for i in range(0, 101, 10): print(i)\rc. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)",
+    "content": "",
+    "description": "",
     "tags": [],
-    "title": " Répéter avec FOR et WHILE",
+    "title": " Tableaux NumPy et droite de régression",
     "uri": "/solutions_exercices/7_numpy_regression/index.html"
   },
   {
@@ -404,7 +404,7 @@ var relearn_searchindex = [
     "content": "Exercice 1 – Solubilité d’un sel Données :\nimport numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])\r1. Affiche les valeurs print(f\"Solubilités : {sol}\")\r2. Moyenne sans la valeur manquante moyenne = np.nanmean(sol) print(f\"Moyenne (sans valeur manquante) : {moyenne:.2f} g/100mL\")\r3. Écart type ecart = np.nanstd(sol) print(f\"Écart type : {ecart:.2f}\")\rExercice 2 – Températures journalières Données :\ntemperatures = np.array([ [12.1, 17.3, 14.2], [11.8, 16.9, 13.9], [13.0, 18.1, 15.0], [12.5, 17.5, 14.7], [np.nan, 16.0, 14.0], [13.2, 18.0, 15.2], [12.0, 17.0, 14.5] ])\r1. Forme du tableau print(temperatures.shape) # (7, 3)\r2. Moyenne journalière moyennes_journalieres = np.nanmean(temperatures, axis=1) print(f\"Moyennes par jour : {moyennes_journalieres}\")\r3. Moyenne du matin (colonne 0) moy_matin = np.nanmean(temperatures[:, 0]) print(f\"Moyenne du matin : {moy_matin:.2f} °C\")\rExercice 3 – Analyse d’ADN Données :\nech1 = np.array([3.2, 2.8, 4.1, 3.9, 2.5]) ech2 = np.array([2.9, 3.0, 4.2, 4.0, 2.7])\r1. Profil combiné profil = ech1 + ech2 print(f\"Profil combiné : {profil}\")\r2. Différence diff = ech2 - ech1 print(f\"Différences (éch2 - éch1) : {diff}\")\r3. Moyenne et écart type print(f\"Moyenne éch1 : {np.mean(ech1):.2f}\") print(f\"Écart type éch1 : {np.std(ech1):.2f}\") print(f\"Moyenne éch2 : {np.mean(ech2):.2f}\") print(f\"Écart type éch2 : {np.std(ech2):.2f}\")\rExercice 4 – Pression dans un cylindre Données :\nhauteur = np.linspace(0, 50, 6) # [0, 10, 20, 30, 40, 50] pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])\r1. Affichage print(\"Hauteurs :\", hauteur) print(\"Pressions :\", pression)\r2. Variation de pression variations = pression[:-1] - pression[1:] print(f\"Chutes de pression entre tranches de 10 cm : {variations}\")\r3. Moyenne print(f\"Moyenne des pressions : {np.mean(pression):.2f} kPa\")\rExercice 5 – Croissance d’une plante 1. Taille pendant 10 jours, départ à 5 cm jours = np.arange(10) taille = 5 + jours * 2 print(f\"Taille sans engrais : {taille}\")\r2. Ajout de 1 cm par jour (engrais) taille_engrais = taille + 1 print(f\"Taille avec engrais : {taille_engrais}\")\r3. Moyennes print(f\"Moyenne sans engrais : {np.mean(taille):.2f} cm\") print(f\"Moyenne avec engrais : {np.mean(taille_engrais):.2f} cm\")",
     "description": "Exercice 1 – Solubilité d’un sel Données :\nimport numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])\r1. Affiche les valeurs print(f\"Solubilités : {sol}\")\r2. Moyenne sans la valeur manquante moyenne = np.nanmean(sol) print(f\"Moyenne (sans valeur manquante) : {moyenne:.2f} g/100mL\")\r3. Écart type ecart = np.nanstd(sol) print(f\"Écart type : {ecart:.2f}\")\rExercice 2 – Températures journalières Données :\ntemperatures = np.array([ [12.1, 17.3, 14.2], [11.8, 16.9, 13.9], [13.0, 18.1, 15.",
     "tags": [],
-    "title": " Tableaux NumPy",
+    "title": " Révision",
     "uri": "/solutions_exercices/9_revision/index.html"
   },
   {
@@ -412,8 +412,16 @@ var relearn_searchindex = [
     "content": "Exercice 1 – Densités # Création du dictionnaire densites = { \"eau\": 1.0, \"éthanol\": 0.789, \"mercure\": 13.6 } # 1. Affiche la densité du mercure print(f\"Densité du mercure : {densites['mercure']} g/mL\") # 2. Ajout de la densité de l'huile densites[\"huile\"] = 0.91 # 3. Affiche toutes les substances et leur densité for substance, densite in densites.items(): print(f\"{substance} : {densite} g/mL\")\rExercice 2 – Chargement et exploration import pandas as pd # 1. Charger le fichier df = pd.read_csv(\"solubilite.csv\") # 2. Afficher les premières lignes print(df.head()) # 3. Afficher les noms de colonnes print(df.columns) # 4. Afficher toutes les températures pour le composé \"NaCl\" nacl_temp = df[df[\"Composé\"] == \"NaCl\"][\"Température (°C)\"] print(\"Températures pour NaCl :\") print(nacl_temp)\rExercice 3 – Moyenne de solubilité # 1. Moyenne pour KNO3 moy_kno3 = df[df[\"Composé\"] == \"KNO3\"][\"Solubilité (g/100 mL)\"].mean() # 2. Moyenne pour NaCl moy_nacl = df[df[\"Composé\"] == \"NaCl\"][\"Solubilité (g/100 mL)\"].mean() # 3. Comparaison avec f-strings print(f\"Moyenne de solubilité - KNO3 : {moy_kno3:.2f} g/100 mL\") print(f\"Moyenne de solubilité - NaCl : {moy_nacl:.2f} g/100 mL\")\rExercice 4 – Boucle sur les composés # 1. Moyenne pour chaque composé composés = df[\"Composé\"].unique() for c in composés: moy = df[df[\"Composé\"] == c][\"Solubilité (g/100 mL)\"].mean() # 2. Vérifier si \u003e 80 if moy \u003e 80: etat = \"supérieure à 80\" else: etat = \"inférieure ou égale à 80\" print(f\"{c} : {moy:.2f} g/100 mL ({etat})\")\rExercice 5 – Ajout d’une colonne # 1. Création de la colonne \"Tendance\" df[\"Tendance\"] = df[\"Solubilité (g/100 mL)\"].apply(lambda s: \"Haute\" if s \u003e 80 else \"Faible\") # 2. Affichage des 10 premières lignes print(df.head(10))",
     "description": "Exercice 1 – Densités # Création du dictionnaire densites = { \"eau\": 1.0, \"éthanol\": 0.789, \"mercure\": 13.6 } # 1. Affiche la densité du mercure print(f\"Densité du mercure : {densites['mercure']} g/mL\") # 2. Ajout de la densité de l'huile densites[\"huile\"] = 0.91 # 3. Affiche toutes les substances et leur densité for substance, densite in densites.items(): print(f\"{substance} : {densite} g/mL\")\rExercice 2 – Chargement et exploration import pandas as pd # 1.",
     "tags": [],
-    "title": " Dictionnaires et traitement de fichiers CSV",
+    "title": " Dictionnaires et fichiers texte",
     "uri": "/solutions_exercices/8_dict_fichiers/index.html"
+  },
+  {
+    "breadcrumb": "Programmation en sciences \u003e \rSolutions des exercices",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": " Fonctions personnalisées",
+    "uri": "/solutions_exercices/11_fonctions_perso/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences",
@@ -449,35 +457,43 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences \u003e \rSolutions des ateliers",
-    "content": "Exercice : État de l’eau selon température et pression # Demander les données à l'utilisateur temp = float(input(\"Température de l'eau en °C : \")) pression = float(input(\"Pression en atm (0.5, 1.0, 1.5 ou 2.0) : \")) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: print(\"Pression invalide. Choisissez 0.5, 1.0, 1.5 ou 2.0.\") ebullition = None # Vérifier l’état de l’eau seulement si la pression est valide if ebullition is not None: if temp \u003c 0: etat = \"solide\" message = \"L’eau est sous forme de glace.\" elif temp \u003c ebullition: etat = \"liquide\" message = \"L’eau est liquide à cette température et pression.\" else: etat = \"gaz\" message = \"L’eau est sous forme de vapeur.\" print(f\"→ État de l’eau : {etat}\") print(message)\rExercice 1 – Table de multiplication Recommencer avec boucle while continuer = \"oui\" while continuer.lower() == \"oui\": n = int(input(\"Entrez un nombre entre 1 et 12 : \")) if 1 \u003c= n \u003c= 12: ordre = input(\"Ordre croissant (c) ou décroissant (d) ? \") if ordre.lower() == 'c': for i in range(1, 13): print(f\"{i} x {n} = {i * n}\") elif ordre.lower() == 'd': for i in range(12, 0, -1): print(f\"{i} x {n} = {i * n}\") else: print(\"Choix non reconnu.\") else: print(\"Le nombre doit être entre 1 et 12.\") continuer = input(\"Voulez-vous une autre table ? (oui/non) : \")",
-    "description": "Exercice : État de l’eau selon température et pression # Demander les données à l'utilisateur temp = float(input(\"Température de l'eau en °C : \")) pression = float(input(\"Pression en atm (0.5, 1.0, 1.5 ou 2.0) : \")) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: print(\"Pression invalide.",
+    "content": "",
+    "description": "",
     "tags": [],
-    "title": " Décider avec if-elif-else et les opérateurs",
-    "uri": "/solutions_ateliers/8_dict_fichiers/index.html"
-  },
-  {
-    "breadcrumb": "Programmation en sciences \u003e \rSolutions des ateliers",
-    "content": "Exercice 1 – Table de multiplication Solution de base (avec boucle for) # Demande à l'usager un nombre entre 1 et 12 n = int(input(\"Entrez un nombre entre 1 et 12 : \")) # Vérifie que le nombre est valide if 1 \u003c= n \u003c= 12: for i in range(1, 13): print(f\"{i} x {n} = {i * n}\") else: print(\"Le nombre doit être entre 1 et 12.\")\rVariante 1 : ordre croissant ou décroissant n = int(input(\"Entrez un nombre entre 1 et 12 : \")) if 1 \u003c= n \u003c= 12: ordre = input(\"Voulez-vous l’ordre croissant (c) ou décroissant (d) ? \") if ordre.lower() == 'c': for i in range(1, 13): print(f\"{i} x {n} = {i * n}\") elif ordre.lower() == 'd': for i in range(12, 0, -1): print(f\"{i} x {n} = {i * n}\") else: print(\"Choix non reconnu.\") else: print(\"Le nombre doit être entre 1 et 12.\")\rExercice #2 – Motif croissant simple Affichage attendu :\n1\r12\r123\rfor i in range(1, 4): # i va de 1 à 3 inclusivement for j in range(1, i + 1): # j va de 1 jusqu'à i print(j, end=\"\") # afficher j sans aller à la ligne print() # aller à la ligne après chaque ligne\rExercice #3 - Motif croissant inversé (triangle renversé) Affichage attendu :\n123\r12\r1\rfor i in range(3, 0, -1): # i va de 3 à 1 (inclus) en décrémentant for j in range(1, i + 1): # j va de 1 à i print(j, end=\"\") # afficher j sans retour à la ligne print() # retour à la ligne après chaque ligne\rExercice 4: Triangle inversé symétrique avec des étoiles * Affichage :\n*****\r***\r*\rn = 3 for i in range(n, 0, -1): etoiles = \"*\" * (2 * i - 1) espaces = \" \" * (n - i) print(espaces + etoiles)",
-    "description": "Exercice 1 – Table de multiplication Solution de base (avec boucle for) # Demande à l'usager un nombre entre 1 et 12 n = int(input(\"Entrez un nombre entre 1 et 12 : \")) # Vérifie que le nombre est valide if 1 \u003c= n \u003c= 12: for i in range(1, 13): print(f\"{i} x {n} = {i * n}\") else: print(\"Le nombre doit être entre 1 et 12.\")\rVariante 1 : ordre croissant ou décroissant n = int(input(\"Entrez un nombre entre 1 et 12 : \")) if 1 \u003c= n \u003c= 12: ordre = input(\"Voulez-vous l’ordre croissant (c) ou décroissant (d) ?",
-    "tags": [],
-    "title": " Répéter avec FOR et WHILE",
+    "title": " Listes, chaines et visualisation des données",
     "uri": "/solutions_ateliers/6_listes_chaines_visualisation/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences \u003e \rSolutions des ateliers",
-    "content": "import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ \"12.3, 16.8, 14.0\", # jour 1 : matin, midi, soir \"11.5, 18.2, 15.4\", \"10.8, 17.6, 14.9\", \"13.0, 19.1, 16.3\", \"14.1, 20.2, 18.5\", \"12.9, 18.7, 16.2\", \"11.7, 17.8, 15.0\" ] # 1. Transformation des chaînes en listes de 3 nombres flottants temperatures = [] for ligne in donnees: morceaux = ligne.split(\",\") valeurs = [float(x.strip()) for x in morceaux] temperatures.append(valeurs) print(\"Liste des températures (liste imbriquée) :\") print(temperatures)\rListe des températures (liste imbriquée) :\r[[12.3, 16.8, 14.0], [11.5, 18.2, 15.4], [10.8, 17.6, 14.9], [13.0, 19.1, 16.3], [14.1, 20.2, 18.5], [12.9, 18.7, 16.2], [11.7, 17.8, 15.0]]\r# 2. Calculs sur les données # Moyenne de chaque jour moyennes_journalières = [] for jour in temperatures: moyenne = sum(jour) / 3 moyennes_journalières.append(moyenne) print(\"Températures moyennes par jour :\") print(moyennes_journalières) # Température maximale valeurs_toutes = [] for jour in temperatures: for t in jour: valeurs_toutes.append(t) temp_max = max(valeurs_toutes) jour_max = valeurs_toutes.index(temp_max) // 3 + 1 print(f\"Température maximale : {temp_max}°C (Jour {jour_max})\") # Moyenne générale moyenne_globale = sum(valeurs_toutes) / len(valeurs_toutes) print(f\"Température moyenne de la semaine : {moyenne_globale:.2f}°C\")\rTempératures moyennes par jour :\r[14.366666666666667, 15.033333333333333, 14.433333333333335, 16.133333333333336, 17.599999999999998, 15.933333333333332, 14.833333333333334]\rTempérature maximale : 20.2°C (Jour 5)\rTempérature moyenne de la semaine : 15.48°C\r# 3. Visualisation avec matplotlib import matplotlib.pyplot as plt jours = [1, 2, 3, 4, 5, 6, 7] plt.plot(jours, moyennes_journalières, marker='o', color='blue', label='Moyenne journalière') plt.title(\"Températures moyennes par jour\") plt.xlabel(\"Jour\") plt.ylabel(\"Température (°C)\") plt.grid() plt.legend() plt.savefig(\"graphique_temperature.png\") plt.show()\r# 4. Exploration des chaînes de caractères (températures de midi) # Recompte des jours où la température de midi dépasse 18°C nb_midi_haut = 0 for ligne in donnees: morceaux = ligne.split(\",\") midi = float(morceaux[1].strip()) if midi \u003e 18: nb_midi_haut += 1 print(f\"Nombre de jours où la température de midi a dépassé 18°C : {nb_midi_haut}\")\rNombre de jours où la température de midi a dépassé 18°C : 4",
-    "description": "import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ \"12.3, 16.8, 14.0\", # jour 1 : matin, midi, soir \"11.5, 18.2, 15.4\", \"10.8, 17.6, 14.9\", \"13.0, 19.1, 16.3\", \"14.1, 20.2, 18.5\", \"12.9, 18.7, 16.2\", \"11.7, 17.8, 15.0\" ] # 1. Transformation des chaînes en listes de 3 nombres flottants temperatures = [] for ligne in donnees: morceaux = ligne.split(\",\") valeurs = [float(x.strip()) for x in morceaux] temperatures.",
+    "content": "",
+    "description": "",
     "tags": [],
-    "title": " Listes, chaines et graphiques de base",
+    "title": " Tableaux NumPy et droite de régression",
     "uri": "/solutions_ateliers/7_numpy_regression/index.html"
+  },
+  {
+    "breadcrumb": "Programmation en sciences \u003e \rSolutions des ateliers",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": " Dictionnaires et fichiers texte",
+    "uri": "/solutions_ateliers/8_dict_fichiers/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences \u003e \rSolutions des ateliers",
     "content": "import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [\"Naturelle\", \"LED blanche\", \"LED rouge\"] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f\"Moyenne ({conditions[i]}) = {moyennes[i]:.2f} cm, écart-type = {ecarts_types[i]:.2f} cm\") # Étape 4 : Comparaison des moyennes indice_max = np.nanargmax(moyennes) print(f\"Condition avec la plus grande croissance moyenne : {conditions[indice_max]}\")",
     "description": "import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [\"Naturelle\", \"LED blanche\", \"LED rouge\"] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f\"Moyenne ({conditions[i]}) = {moyennes[i]:.",
     "tags": [],
-    "title": " Tableaux NumPy",
+    "title": " Révision",
     "uri": "/solutions_ateliers/9_revision/index.html"
+  },
+  {
+    "breadcrumb": "Programmation en sciences \u003e \rSolutions des ateliers",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": " Fonctions personnalisées",
+    "uri": "/solutions_ateliers/11_fonctions_perso/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences",

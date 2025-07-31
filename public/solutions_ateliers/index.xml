@@ -29,32 +29,39 @@
       <description>Exercice 1 : Réaction chimique # Réaction : 1 mL de A + 2 mL de B a_dispo = int(input(&#34;Quantité de A disponible (en mL) : &#34;)) b_dispo = int(input(&#34;Quantité de B disponible (en mL) : &#34;)) nb_reactions = 0 while a_dispo &gt;= 1 and b_dispo &gt;= 2: a_dispo -= 1 b_dispo -= 2 nb_reactions += 1 print(&#34;La réaction a eu lieu&#34;, nb_reactions, &#34;fois.&#34;) print(&#34;Il reste&#34;, a_dispo, &#34;mL de A et&#34;, b_dispo, &#34;mL de B.</description>
     </item>
     <item>
-      <title> Décider avec if-elif-else et les opérateurs</title>
-      <link>https://example.org/solutions_ateliers/8_dict_fichiers/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/8_dict_fichiers/index.html</guid>
-      <description>Exercice : État de l’eau selon température et pression # Demander les données à l&#39;utilisateur temp = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: print(&#34;Pression invalide.</description>
-    </item>
-    <item>
-      <title> Répéter avec FOR et WHILE</title>
+      <title> Listes, chaines et visualisation des données</title>
       <link>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</guid>
-      <description>Exercice 1 – Table de multiplication Solution de base (avec boucle for) # Demande à l&#39;usager un nombre entre 1 et 12 n = int(input(&#34;Entrez un nombre entre 1 et 12 : &#34;)) # Vérifie que le nombre est valide if 1 &lt;= n &lt;= 12: for i in range(1, 13): print(f&#34;{i} x {n} = {i * n}&#34;) else: print(&#34;Le nombre doit être entre 1 et 12.&#34;)&#xD;Variante 1 : ordre croissant ou décroissant n = int(input(&#34;Entrez un nombre entre 1 et 12 : &#34;)) if 1 &lt;= n &lt;= 12: ordre = input(&#34;Voulez-vous l’ordre croissant (c) ou décroissant (d) ?</description>
+      <description></description>
     </item>
     <item>
-      <title> Listes, chaines et graphiques de base</title>
+      <title> Tableaux NumPy et droite de régression</title>
       <link>https://example.org/solutions_ateliers/7_numpy_regression/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/7_numpy_regression/index.html</guid>
-      <description>import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &#34;11.5, 18.2, 15.4&#34;, &#34;10.8, 17.6, 14.9&#34;, &#34;13.0, 19.1, 16.3&#34;, &#34;14.1, 20.2, 18.5&#34;, &#34;12.9, 18.7, 16.2&#34;, &#34;11.7, 17.8, 15.0&#34; ] # 1. Transformation des chaînes en listes de 3 nombres flottants temperatures = [] for ligne in donnees: morceaux = ligne.split(&#34;,&#34;) valeurs = [float(x.strip()) for x in morceaux] temperatures.</description>
+      <description></description>
     </item>
     <item>
-      <title> Tableaux NumPy</title>
+      <title> Dictionnaires et fichiers texte</title>
+      <link>https://example.org/solutions_ateliers/8_dict_fichiers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_ateliers/8_dict_fichiers/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title> Révision</title>
       <link>https://example.org/solutions_ateliers/9_revision/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/9_revision/index.html</guid>
       <description>import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.</description>
+    </item>
+    <item>
+      <title> Fonctions personnalisées</title>
+      <link>https://example.org/solutions_ateliers/11_fonctions_perso/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_ateliers/11_fonctions_perso/index.html</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

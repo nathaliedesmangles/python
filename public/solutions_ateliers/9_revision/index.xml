@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Tableaux NumPy :: 420-SN1-RE</title>
+    <title> Révision :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/9_revision/index.html</link>
     <description>import numpy as np # Étape 1 : Données expérimentales # np.nan représente les données manquantes donnees = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], # Naturelle [11.2, 11.6, np.nan, 11.5, 11.3], # LED blanche [10.4, 10.1, 10.2, np.nan, np.nan] # LED rouge ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Étape 2 : Calcul des statistiques moyennes = np.nanmean(donnees, axis=1) ecarts_types = np.nanstd(donnees, axis=1) # Étape 3 : Affichage des résultats for i in range(len(conditions)): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.</description>
     <generator>Hugo</generator>

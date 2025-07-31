@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Répéter avec FOR et WHILE :: 420-SN1-RE</title>
+    <title> Tableaux NumPy et droite de régression :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/7_numpy_regression/index.html</link>
-    <description>Exercice 1 a. Afficher les nombres de 1 à 10&#xA;Boucle recommandée : for Pourquoi ? Le nombre d’itérations est connu d’avance. for i in range(1, 11): print(i)&#xD;b. Compter jusqu’à 100 par bonds de 10&#xA;Boucle recommandée : for Pourquoi ? La progression est régulière et le nombre d’itérations est connu. for i in range(0, 101, 10): print(i)&#xD;c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)</description>
+    <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/7_numpy_regression/index.xml" rel="self" type="application/rss+xml" />

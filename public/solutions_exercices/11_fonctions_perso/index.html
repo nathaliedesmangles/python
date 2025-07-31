@@ -5,26 +5,18 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Consigne du projet final Contexte : Dans ce projet, vous allez analyser l’impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.
-Objectifs Importer et manipuler les données : Vous allez charger les données dans un DataFrame pandas à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.">
+    <meta name="description" content="">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Projet: Effet de la caféine sur la fréquence cardiaque :: 420-SN1-RE">
-    <meta name="twitter:description" content="Consigne du projet final Contexte : Dans ce projet, vous allez analyser l’impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.
-Objectifs Importer et manipuler les données : Vous allez charger les données dans un DataFrame pandas à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.">
-    <meta property="og:url" content="https://example.org/afaire/projets/projet1/index.html">
+    <meta name="twitter:title" content=" Fonctions personnalisées :: 420-SN1-RE">
+    <meta property="og:url" content="https://example.org/solutions_exercices/11_fonctions_perso/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content="Projet: Effet de la caféine sur la fréquence cardiaque :: 420-SN1-RE">
-    <meta property="og:description" content="Consigne du projet final Contexte : Dans ce projet, vous allez analyser l’impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.
-Objectifs Importer et manipuler les données : Vous allez charger les données dans un DataFrame pandas à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.">
+    <meta property="og:title" content=" Fonctions personnalisées :: 420-SN1-RE">
     <meta property="og:locale" content="en_us">
-    <meta property="og:type" content="article">
-    <meta property="article:section" content="À FAIRE">
-    <meta itemprop="name" content="Projet: Effet de la caféine sur la fréquence cardiaque :: 420-SN1-RE">
-    <meta itemprop="description" content="Consigne du projet final Contexte : Dans ce projet, vous allez analyser l’impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.
-Objectifs Importer et manipuler les données : Vous allez charger les données dans un DataFrame pandas à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.">
-    <meta itemprop="wordCount" content="473">
-    <title>Projet: Effet de la caféine sur la fréquence cardiaque :: 420-SN1-RE</title>
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content=" Fonctions personnalisées :: 420-SN1-RE">
+    <title> Fonctions personnalisées :: 420-SN1-RE</title>
+    <link href="/solutions_exercices/11_fonctions_perso/index.xml" rel="alternate" type="application/rss+xml" title=" Fonctions personnalisées :: 420-SN1-RE">
     <link href="/images/logo.png?1753926426" rel="icon" type="image/png">
     <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753926426" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753926426" rel="stylesheet"></noscript>
     <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753926426" rel="stylesheet">
@@ -41,9 +33,9 @@ Objectifs Importer et manipuler les données : Vous allez charger les données d
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/afaire\/projets\/projet1\/index.html';
-      window.relearn.relBasePath='..\/..\/..';
-      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.path='\/solutions_exercices\/11_fonctions_perso\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
       window.relearn.index_js_url="/searchindex.en.js?1753926426";
@@ -94,7 +86,7 @@ Objectifs Importer et manipuler les données : Vous allez charger les données d
     </script>
     <link href="/css/custom.css?1753926426" rel="stylesheet">
   </head>
-  <body class="mobile-support html" data-url="/afaire/projets/projet1/index.html">
+  <body class="mobile-support html" data-url="/solutions_exercices/11_fonctions_perso/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -105,35 +97,20 @@ Objectifs Importer et manipuler les données : Vous allez charger les données d
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-<nav class="TableOfContents">
-  <ul>
-    <li><a href="#consigne-du-projet-final">Consigne du projet final</a>
-      <ul>
-        <li><a href="#contexte-">Contexte :</a></li>
-        <li><a href="#objectifs">Objectifs</a></li>
-        <li><a href="#consignes-spécifiques-">Consignes spécifiques :</a></li>
-        <li><a href="#données-">Données :</a></li>
-        <li><a href="#critères-dévaluation-">Critères d’évaluation :</a></li>
-        <li><a href="#format-du-projet-">Format du projet :</a></li>
-        <li><a href="#ressources-">Ressources :</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+                <div class="topbar-content-wrapper"> 
                 </div>
               </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">À FAIRE</span><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Projet: Effet de la caféine sur la fréquence cardiaque</span><meta itemprop="position" content="3"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_exercices/index.html"><span itemprop="name">Solutions des exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Fonctions personnalisées</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/afaire/boucler_tableaux2d/index.html" title="Boucler sur un tableau 2D (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/8_dict_fichiers/index.html" title="Dictionnaires et fichiers texte (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/afaire/projets/projet2/index.html" title="Projet: Cinétique d'une réaction chimique (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/index.html" title="Solutions des ateliers (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -147,92 +124,14 @@ Objectifs Importer et manipuler les données : Vous allez charger les données d
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable afaire" tabindex="-1">
+      <main id="R-body-inner" class="highlightable solutions_exercices" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
   </header>
 
-<h1 id="projet-effet-de-la-caféine-sur-la-fréquence-cardiaque">Projet: Effet de la caféine sur la fréquence cardiaque</h1>
+<h1 id="fonctions-personnalisées"> Fonctions personnalisées</h1>
 
-<h2 id="consigne-du-projet-final">Consigne du projet final</h2>
-<h3 id="contexte-">Contexte :</h3>
-<p>Dans ce projet, vous allez analyser l&rsquo;impact de la consommation de caféine sur la fréquence cardiaque. Les données collectées concernent la fréquence cardiaque de quatre sujets avant et après consommation de café à des intervalles de 30 minutes.</p>
-<h3 id="objectifs">Objectifs</h3>
-<ol>
-<li><strong>Importer et manipuler les données</strong> : Vous allez charger les données dans un DataFrame <code>pandas</code> à partir du fichier CSV fourni et effectuer un traitement pour extraire les informations pertinentes.</li>
-<li><strong>Analyser la variation</strong> de la fréquence cardiaque après la consommation de café.</li>
-<li><strong>Visualiser</strong> les tendances de la fréquence cardiaque pour chaque sujet avec un graphique linéaire, en mettant en évidence l&rsquo;effet de la consommation de café sur la fréquence cardiaque.</li>
-<li><strong>Faire des comparaisons</strong> entre les sujets et interpréter les résultats. Vous allez calculer des statistiques descriptives (moyenne, écart-type) et identifier les variations notables dans les données.</li>
-<li><strong>Rédiger une conclusion</strong> sur l&rsquo;impact de la caféine sur la fréquence cardiaque, en basant votre analyse sur les résultats obtenus.</li>
-</ol>
-<h3 id="consignes-spécifiques-">Consignes spécifiques :</h3>
-<ol>
-<li>
-<p><strong>Lecture et traitement des données</strong> :</p>
-<ul>
-<li>Importez les données à l&rsquo;aide de <code>pandas</code> et affichez un résumé des données.</li>
-<li>Utilisez <code>numpy</code> pour effectuer des calculs comme la moyenne et l&rsquo;écart-type de la fréquence cardiaque pour chaque sujet avant et après l&rsquo;ingestion de café.</li>
-</ul>
-</li>
-<li>
-<p><strong>Création des fonctions</strong> :</p>
-<ul>
-<li>Créez une fonction <code>variation(frequence)</code> qui calcule les variations de fréquence cardiaque entre les mesures (avant et après).</li>
-<li>Créez une fonction <code>analyser_impact(frequences_avant, frequences_apres)</code> qui retourne la différence moyenne de la fréquence cardiaque et des statistiques de variation.</li>
-</ul>
-</li>
-<li>
-<p><strong>Visualisation</strong> :</p>
-<ul>
-<li>Utilisez <code>matplotlib</code> pour tracer l’évolution de la fréquence cardiaque pour chaque sujet avant et après l’ingestion de café.</li>
-<li>Ajoutez une ligne horizontale pour la fréquence cardiaque moyenne avant consommation et une autre pour la fréquence après consommation.</li>
-</ul>
-</li>
-<li>
-<p><strong>Exportation</strong> :</p>
-<ul>
-<li>Exportez un fichier CSV contenant les résultats de votre analyse, incluant les variations de fréquence cardiaque pour chaque sujet.</li>
-</ul>
-</li>
-</ol>
-<h3 id="données-">Données :</h3>
-<ul>
-<li>
-<p>Le fichier CSV <code>problematique_1_cafeine.csv</code> contient les données à analyser. Il est structuré comme suit :</p>
-<ul>
-<li><code>Sujet</code> : Nom du sujet (A, B, C, D)</li>
-<li><code>Temps (min)</code> : Temps écoulé depuis le début de l’expérience (en minutes)</li>
-<li><code>Frequence (bpm)</code> : Fréquence cardiaque (battements par minute)</li>
-</ul>
-</li>
-</ul>
-<h3 id="critères-dévaluation-">Critères d’évaluation :</h3>
-<ul>
-<li><strong>Précision de l&rsquo;analyse</strong> : Exactitude des calculs et des interprétations statistiques.</li>
-<li><strong>Qualité du code</strong> : Clarté et organisation du code, utilisation adéquate des structures de données (<code>pandas</code>, <code>numpy</code>).</li>
-<li><strong>Visualisation</strong> : Graphiques clairs et pertinents, avec une bonne utilisation de <code>matplotlib</code>.</li>
-<li><strong>Clarté de la conclusion</strong> : Interprétation logique des résultats et conclusion sur l’effet de la caféine sur la fréquence cardiaque.</li>
-</ul>
-<h3 id="format-du-projet-">Format du projet :</h3>
-<ul>
-<li>
-<p><strong>Délai</strong> : Le projet est à rendre dans trois semaines (fin de la semaine 15).</p>
-</li>
-<li>
-<p><strong>Livrables</strong> :</p>
-<ol>
-<li>Un notebook Jupyter contenant le code et les analyses.</li>
-<li>Le fichier CSV exporté avec les résultats.</li>
-<li>Un document PDF ou une section dans le notebook avec la conclusion.</li>
-</ol>
-</li>
-</ul>
-<h3 id="ressources-">Ressources :</h3>
-<ul>
-<li>Pandas : <a href="https://pandas.pydata.org/" rel="external" target="_blank">https://pandas.pydata.org/</a></li>
-<li>Matplotlib : <a href="https://matplotlib.org/" rel="external" target="_blank">https://matplotlib.org/</a></li>
-</ul>
 
   <footer class="footline">
   </footer>
@@ -302,7 +201,15 @@ Objectifs Importer et manipuler les données : Vous allez charger les données d
             <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13.</b> Projet-Partie 2: Représentations graphiques de base</a></li>
             <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html">14. Projet-Partie 3: Représentation graphique avancée</a></li>
             <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation #3 (20%)</a></li>
-            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu">
+            <li class="" data-nav-id="/solutions_exercices/2_variables_types_entree_fn/index.html"><a class="padding" href="/solutions_exercices/2_variables_types_entree_fn/index.html"><b>2.</b> Variables, types, entrées et fonctions</a></li>
+            <li class="" data-nav-id="/solutions_exercices/3_struct_cond/index.html"><a class="padding" href="/solutions_exercices/3_struct_cond/index.html"><b>3.</b> Structures conditionnelles</a></li>
+            <li class="" data-nav-id="/solutions_exercices/4_boucles_debogage/index.html"><a class="padding" href="/solutions_exercices/4_boucles_debogage/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/solutions_exercices/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_exercices/6_listes_chaines_visualisation/index.html"><b>6.</b> Listes, chaines et visualisation des données</a></li>
+            <li class="" data-nav-id="/solutions_exercices/7_numpy_regression/index.html"><a class="padding" href="/solutions_exercices/7_numpy_regression/index.html"><b>7.</b> Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-id="/solutions_exercices/9_revision/index.html"><a class="padding" href="/solutions_exercices/9_revision/index.html"><b>9.</b> Révision</a></li>
+            <li class="" data-nav-id="/solutions_exercices/8_dict_fichiers/index.html"><a class="padding" href="/solutions_exercices/8_dict_fichiers/index.html"><b>10.</b> Dictionnaires et fichiers texte</a></li>
+            <li class="active " data-nav-id="/solutions_exercices/11_fonctions_perso/index.html"><a class="padding" href="/solutions_exercices/11_fonctions_perso/index.html"><b>11.</b> Fonctions personnalisées</a></li></ul></li>
             <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
           </ul>
         </div>

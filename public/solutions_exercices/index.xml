@@ -29,32 +29,39 @@
       <description>Exercice 1 – For ou While ? a. Afficher les nombres de 1 à 10 Boucle : for (on connaît le début et la fin)&#xA;for i in range(1, 11): print(i)&#xD;b. Compter jusqu’à 100 par bonds de 10 Boucle : for&#xA;for i in range(0, 101, 10): print(i)&#xD;c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s) Boucle : while (on ne connaît pas d’avance le nombre de répétitions, mais on connaît la condition d’arrêt)</description>
     </item>
     <item>
-      <title> Décider avec if-elif-else et les opérateurs</title>
+      <title> Listes, chaines et visualisation des données</title>
       <link>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</guid>
-      <description>Partie 1 – Opérateurs de comparaison # 1.1 a = 10 b = 7 print(a &gt; b) # True print(a == 7) # False # 1.2 # Résultats : 5 != 3 # True 8 &lt;= 8 # True 4 &gt; 10 # False 3 == 3 # True&#xD;Partie 2 – Opérateurs logiques # 2.1 (5 &gt; 2) and (7 &lt; 10) # True and True = True (3 !</description>
+      <description></description>
     </item>
     <item>
-      <title> Répéter avec FOR et WHILE</title>
+      <title> Tableaux NumPy et droite de régression</title>
       <link>https://example.org/solutions_exercices/7_numpy_regression/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/7_numpy_regression/index.html</guid>
-      <description>Exercice 1 a. Afficher les nombres de 1 à 10&#xA;Boucle recommandée : for Pourquoi ? Le nombre d’itérations est connu d’avance. for i in range(1, 11): print(i)&#xD;b. Compter jusqu’à 100 par bonds de 10&#xA;Boucle recommandée : for Pourquoi ? La progression est régulière et le nombre d’itérations est connu. for i in range(0, 101, 10): print(i)&#xD;c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)</description>
+      <description></description>
     </item>
     <item>
-      <title> Tableaux NumPy</title>
+      <title> Révision</title>
       <link>https://example.org/solutions_exercices/9_revision/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/9_revision/index.html</guid>
       <description>Exercice 1 – Solubilité d’un sel Données :&#xA;import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])&#xD;1. Affiche les valeurs print(f&#34;Solubilités : {sol}&#34;)&#xD;2. Moyenne sans la valeur manquante moyenne = np.nanmean(sol) print(f&#34;Moyenne (sans valeur manquante) : {moyenne:.2f} g/100mL&#34;)&#xD;3. Écart type ecart = np.nanstd(sol) print(f&#34;Écart type : {ecart:.2f}&#34;)&#xD;Exercice 2 – Températures journalières Données :&#xA;temperatures = np.array([ [12.1, 17.3, 14.2], [11.8, 16.9, 13.9], [13.0, 18.1, 15.</description>
     </item>
     <item>
-      <title> Dictionnaires et traitement de fichiers CSV</title>
+      <title> Dictionnaires et fichiers texte</title>
       <link>https://example.org/solutions_exercices/8_dict_fichiers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/8_dict_fichiers/index.html</guid>
       <description>Exercice 1 – Densités # Création du dictionnaire densites = { &#34;eau&#34;: 1.0, &#34;éthanol&#34;: 0.789, &#34;mercure&#34;: 13.6 } # 1. Affiche la densité du mercure print(f&#34;Densité du mercure : {densites[&#39;mercure&#39;]} g/mL&#34;) # 2. Ajout de la densité de l&#39;huile densites[&#34;huile&#34;] = 0.91 # 3. Affiche toutes les substances et leur densité for substance, densite in densites.items(): print(f&#34;{substance} : {densite} g/mL&#34;)&#xD;Exercice 2 – Chargement et exploration import pandas as pd # 1.</description>
+    </item>
+    <item>
+      <title> Fonctions personnalisées</title>
+      <link>https://example.org/solutions_exercices/11_fonctions_perso/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/11_fonctions_perso/index.html</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

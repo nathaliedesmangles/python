@@ -157,6 +157,9 @@
     <loc>https://example.org/solutions_exercices/8_dict_fichiers/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/solutions_exercices/11_fonctions_perso/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/solutions_ateliers/index.html</loc>
   </url>
   <url>
@@ -169,16 +172,19 @@
     <loc>https://example.org/solutions_ateliers/4_boucles_debogage/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/8_dict_fichiers/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_ateliers/7_numpy_regression/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/solutions_ateliers/8_dict_fichiers/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/solutions_ateliers/9_revision/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_ateliers/11_fonctions_perso/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>

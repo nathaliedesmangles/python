@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Tableaux NumPy :: 420-SN1-RE</title>
+    <title> Révision :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/9_revision/index.html</link>
     <description>Exercice 1 – Solubilité d’un sel Données :&#xA;import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])&#xD;1. Affiche les valeurs print(f&#34;Solubilités : {sol}&#34;)&#xD;2. Moyenne sans la valeur manquante moyenne = np.nanmean(sol) print(f&#34;Moyenne (sans valeur manquante) : {moyenne:.2f} g/100mL&#34;)&#xD;3. Écart type ecart = np.nanstd(sol) print(f&#34;Écart type : {ecart:.2f}&#34;)&#xD;Exercice 2 – Températures journalières Données :&#xA;temperatures = np.array([ [12.1, 17.3, 14.2], [11.8, 16.9, 13.9], [13.0, 18.1, 15.</description>
     <generator>Hugo</generator>
