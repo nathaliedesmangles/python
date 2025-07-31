@@ -122,7 +122,7 @@ def test():
 print(test())  # OK, affiche 10
 print(x)       # Erreur : x n'existe pas ici
 ```
-![Erreur de nom](../fonctions_perso/erreur_name.png?width=35vw)
+![Erreur de nom](./erreur_name.png?width=35vw)
 
 ## Documenter ses fonctions (*docstrings*)
 
@@ -184,7 +184,8 @@ Un technicien de laboratoire vous demande d'écrire un programme Python pour cal
 ```math
 Loi d’Ohm : $ U = R × I $
 ```
-Écrire un programme qui : 
+Le technicien souhaiterait pouvoir réutiliser le programme plus facilement et dans d'autres situations. Pour ce faire, il vous demande d'écrire une fonction qui : 
+
 1. Demande à l'utilisateur d'entrer la valeur de la résistance (en ohms).
 2. Demande à l'utilisateur d'entrer la valeur du courant (en ampères).
 3. Calcule et affiche la tension à l'aide d'une phrase.
@@ -200,13 +201,12 @@ La tension est de 20.0 V
 
 ### Exercice 2 : Élément chimique
 
-Écrire un programme qui :
-* Demande à l'utilisateur d'entrer le nom d’un élément chimique.
-* Affiche un message disant "L’élément choisi est \[nom]"
+Écrire une fonction `element_chm(elt)` qui :
+* Prend en paramètre le nom d’un élément chimique.
+* Affiche un message disant "L’élément choisi est [nom]"
 
 **Exemple d'affichage attendu (élément oxygène)** :
 ```python
-Entrer le nom d'un élément chimique : oxygène
 L’élément choisi est : oxygène
 ```
 
@@ -267,182 +267,67 @@ NameError: name 'prenom' is not defined
 
 ---
 
+## Atelier
+
+
+## Exercice – Calcul de dilution (C₁V₁ = C₂V₂)
+
+En laboratoire, vous devez préparer une solution diluée à partir d'une solution mère plus concentrée. Vous connaissez la formule de dilution :
+
+```
+C₁ × V₁ = C₂ × V₂
+```
+
+Où :
+
+* `C₁` : concentration de la solution mère (mol/L)
+* `V₁` : volume de la solution mère à prélever (L)
+* `C₂` : concentration finale souhaitée (mol/L)
+* `V₂` : volume final de la solution diluée (L)
+
+---
+
+Écrire un programme Python structuré en **plusieurs fonctions** qui permet de :
+
+1. **Lire** les données nécessaires à la dilution (`C1`, `C2`, `V2`) — sans retourner de valeur.
+2. **Calculer et retourner** le volume `V1` de solution mère à prélever (formule : `V1 = (C2 × V2) / C1`).
+3. **Afficher** une phrase qui résume le calcul avec les valeurs fournies.
+
+---
+
+### Consignes
+
+1. Crée une fonction `lire_donnees()` **sans paramètres** qui demande à l’utilisateur :
+
+   * la concentration `C1` de la solution mère (en mol/L),
+   * la concentration `C2` de la solution finale (en mol/L),
+   * le volume final `V2` (en L),
+     et **retourne ces 3 valeurs**.
+
+2. Crée une fonction `calculer_v1(C1, C2, V2)` qui :
+
+   * prend en **paramètres** les trois valeurs,
+   * **retourne** le volume `V1` à prélever (en L).
+
+3. Crée une fonction `afficher_resultat(V1)` qui **affiche** une phrase expliquant le volume de solution mère à utiliser, avec **deux décimales**.
+
+4. Teste le tout dans un petit programme principal.
+
+
+### Exemple d'exécution attendue
+
+```
+--- Programme de dilution ---
+Concentration de la solution mère (mol/L) : 2.0
+Concentration finale souhaitée (mol/L) : 0.5
+Volume final de la solution (L) : 1.0
+Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.
+```
+
+---
+
 > **RAPPEL**: Le **troisième et dernier examen** (20%) et prévu à la **semaine 15**.
 
 1. Lire la description du [Projet final](../semaine12/)
 2. Prendre connaissance de la [Grille de correction](../semaine12/grille/)
 3. S'approprier des [Notions à savoir pour réussir le projet](../semaine12/competences_reussite/)
-
-
-<!--
-## Exercices à faire avant le cours
-
-
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_graphes_barres_reg.ipynb)
-
-
-
-
-
-### Exercice 1 – Sulfate de cuivre
-
-
-
-1. Températures : `[0, 10, 20, 30, 40, 50]`
-
-2. Solubilité (g/100g eau) : `[23, 27, 32, 37, 44, 51]`
-
-3. Calcule la régression linéaire.
-
-4. Affiche les résultats et une conclusion scientifique.
-
-
-
-
-
-### Exercice 2 – Comparaison de deux sels
-
-
-
-1. Sel A :
-
-
-
-   * Température : `[0, 20, 40, 60]`
-
-   * Solubilité : `[15, 21, 30, 38]`
-
-
-
-2. Sel B :
-
-
-
-   * Température : `[0, 20, 40, 60]`
-
-   * Solubilité : `[30, 32, 33, 33.5]`
-
-
-
-3. Pour chaque sel :
-
-
-
-   * Effectue la régression
-
-   * Affiche pente, intercept, R²
-
-   * Déduis quel sel est le plus influencé par la température
-
-
-
-
-
-### Exercice 3 – Prévision
-
-
-
-1. Utilise les données de l’exemple principal
-
-2. Calcule la solubilité prévue à 60 °C avec la formule :
-
-
-
-```python
-valeur_predite = resultat.slope * 60 + resultat.intercept
-print(f"Solubilité prévue à 60 °C : {valeur_predite:.2f} g/100g d’eau")
-```
-
-
-
-### Exercice 1 – Graphique à barres
-
-
-
-**Énoncé :**
-
-Affiche un graphique à barres pour les éléments `"Fer"`, `"Cuivre"`, `"Zinc"` avec les valeurs `[12, 7, 5]`.
-
-
-
-**Solution :**
-
-
-
-```python
-elements = ["Fer", "Cuivre", "Zinc"]
-quantites = [12, 7, 5]
-
-plt.bar(elements, quantites)
-plt.title("Concentration des métaux")
-plt.legend(["mg/L"])
-plt.show()
-```
-
-
-
-
-
-### Exercice 2 – Barres d’erreur
-
-
-
-**Énoncé :**
-
-Pour `x = [1, 2, 3]`, `y = [5.1, 5.0, 5.2]`, `yerr = [0.1, 0.2, 0.15]`, trace les points avec barres d’erreur.
-
-
-
-**Solution :**
-
-
-
-```python
-x = [1, 2, 3]
-y = [5.1, 5.0, 5.2]
-
-yerr = [0.1, 0.2, 0.15]
-
-plt.errorbar(x, y, yerr=yerr, fmt="o", label="Mesures")
-plt.title("Tension mesurée")
-plt.legend()
-plt.grid(True)
-plt.show()
-```
-
-
-
-
-
-### Exercice 3 – Droite de régression
-
-
-
-**Énoncé :**
-
-Pour `x = [0, 1, 2, 3]`, `y = [1, 2.1, 3.9, 6.0]`, trace les points et la droite de régression, avec son équation dans la légende.
-
-
-
-**Solution :**
-
-
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-x = np.array([0, 1, 2, 3])
-y = np.array([1, 2.1, 3.9, 6.0])
-
-a, b = np.polyfit(x, y, 1)
-
-plt.plot(x, y, "o", label="Points")
-plt.plot(x, a*x + b, "-", label=f"y = {a:.2f}x + {b:.2f}")
-plt.grid(True)
-plt.legend()
-plt.tight_layout()
-plt.show()
-```
-
--->

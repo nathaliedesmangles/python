@@ -48,13 +48,13 @@ Voici une liste des **notions, fonctions et méthodes** que vous devez avoir **a
 | **Affichage**                       | `plt.show()`, `plt.grid(True)`, `plt.tight_layout()`                |
 
 
-### E. Statistiques et régression avec SciPy
+### E. Statistiques et régression avec NumPy
 
-| Thème                          | Fonctions / méthodes                                  |
-| ------------------------------ | ----------------------------------------------------- |
-| **Régression linéaire simple** | `from scipy.stats import linregress`                  |
-| **Extraire les résultats**     | `slope`, `intercept`, `r_value`, `std_err`, `p_value` |
-| **Évaluer la concordance**     | `r_value ** 2` pour le coefficient de détermination   |
+| Thème                          | Fonctions / Méthodes utilisées                                   |
+|-------------------------------|------------------------------------------------------------------|
+| **Régression linéaire simple** | `np.polyfit(x, y, deg=1)`                                       |
+| **Extraire les résultats**     | `slope`, `intercept` (avec `np.polyfit`)                                  |
+| **Évaluer la concordance**     | `r_value ** 2` pour le coefficient de détermination (R²)         |
 
 
 ### F. Programmation lettrée et structuration du bloc-notes

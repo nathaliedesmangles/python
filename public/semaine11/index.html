@@ -22,21 +22,21 @@ Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment
     <meta itemprop="name" content=" Fonctions personnalisées :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:
 Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :. Les instructions de la fonction sont sur les lignes d’en dessous, décalées.">
-    <meta itemprop="wordCount" content="1095">
+    <meta itemprop="wordCount" content="1370">
     <title> Fonctions personnalisées :: 420-SN1-RE</title>
     <link href="/semaine11/index.xml" rel="alternate" type="application/rss+xml" title=" Fonctions personnalisées :: 420-SN1-RE">
-    <link href="/images/logo.png?1753976956" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753976956" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753976956" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753976956" rel="stylesheet">
-    <link href="/css/theme.min.css?1753976956" rel="stylesheet">
-    <link href="/css/format-html.min.css?1753976956" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1753976956" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1753976956" defer></script>
-    <script src="/js/lunr/lunr.min.js?1753976956" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1753976956" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1753976956" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1753976956" defer></script>
-    <script src="/js/search.min.js?1753976956" defer></script>
+    <link href="/images/logo.png?1753978931" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753978931" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1753978931" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1753978931" rel="stylesheet">
+    <link href="/css/theme.min.css?1753978931" rel="stylesheet">
+    <link href="/css/format-html.min.css?1753978931" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1753978931" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1753978931" defer></script>
+    <script src="/js/lunr/lunr.min.js?1753978931" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1753978931" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1753978931" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1753978931" defer></script>
+    <script src="/js/search.min.js?1753978931" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +46,7 @@ Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1753976956";
+      window.relearn.index_js_url="/searchindex.en.js?1753978931";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +92,7 @@ Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1753976956" rel="stylesheet">
+    <link href="/css/custom.css?1753978931" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine11/index.html">
     <div id="R-body" class="default-animation">
@@ -127,6 +127,13 @@ Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment
         <li><a href="#exercice-4--calculer-une-énergie-cinétique">Exercice 4 : Calculer une énergie cinétique</a></li>
         <li><a href="#exercice-5--aire-dun-cercle">Exercice 5 : Aire d&rsquo;un cercle</a></li>
         <li><a href="#exercice-6--vérifier-la-portée-locale">Exercice 6 : Vérifier la portée locale</a></li>
+      </ul>
+    </li>
+    <li><a href="#atelier">Atelier</a></li>
+    <li><a href="#exercice--calcul-de-dilution-cv--cv">Exercice – Calcul de dilution (C₁V₁ = C₂V₂)</a>
+      <ul>
+        <li><a href="#consignes">Consignes</a></li>
+        <li><a href="#exemple-dexécution-attendue">Exemple d&rsquo;exécution attendue</a></li>
       </ul>
     </li>
   </ul>
@@ -255,8 +262,8 @@ Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(test())  <span style="color:#75715e"># OK, affiche 10</span>
 </span></span><span style="display:flex;"><span>print(x)       <span style="color:#75715e"># Erreur : x n&#39;existe pas ici</span></span></span></code></pre></div>
-<p><a href="#R-image-a3e5051e049daa21075179f65e4d9fd9" class="lightbox-link"><img alt="Erreur de nom" class="lazy lightbox figure-image" loading="lazy" src="../fonctions_perso/erreur_name.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a3e5051e049daa21075179f65e4d9fd9"><img alt="Erreur de nom" class="lazy lightbox lightbox-image" loading="lazy" src="../fonctions_perso/erreur_name.png?width=35vw"></a></p>
+<p><a href="#R-image-de75526a87296680da77a4c6d2a57612" class="lightbox-link"><img alt="Erreur de nom" class="lazy lightbox figure-image" loading="lazy" src="/semaine11/erreur_name.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-de75526a87296680da77a4c6d2a57612"><img alt="Erreur de nom" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine11/erreur_name.png?width=35vw"></a></p>
 <h2 id="documenter-ses-fonctions-docstrings">Documenter ses fonctions (<em>docstrings</em>)</h2>
 <p>Les <em><strong>docstrings</strong></em> sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.</p>
 <p><strong>Format standard</strong></p>
@@ -315,7 +322,7 @@ Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.</p>
 <h2 id="exercice-1--la-loi-dohm">Exercice 1 : La loi d&rsquo;Ohm</h2>
 <p>Un technicien de laboratoire vous demande d&rsquo;écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm. Il voudrait pouvoir entrer la valeur de la résistance (en ohms) et la valeur du courant (en ampères), puis obtenir la tension.</p>
 <span class="math align-center">Loi d’Ohm : $ U = R × I $</span>
-<p>Écrire un programme qui :</p>
+<p>Le technicien souhaiterait pouvoir réutiliser le programme plus facilement et dans d&rsquo;autres situations. Pour ce faire, il vous demande d&rsquo;écrire une fonction qui :</p>
 <ol>
 <li>Demande à l&rsquo;utilisateur d&rsquo;entrer la valeur de la résistance (en ohms).</li>
 <li>Demande à l&rsquo;utilisateur d&rsquo;entrer la valeur du courant (en ampères).</li>
@@ -327,14 +334,13 @@ Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.</p>
 Entrer le courant en ampères : 2
 La tension est de 20.0 V</code></pre></div>
 <h3 id="exercice-2--élément-chimique">Exercice 2 : Élément chimique</h3>
-<p>Écrire un programme qui :</p>
+<p>Écrire une fonction <code>element_chm(elt)</code> qui :</p>
 <ul>
-<li>Demande à l&rsquo;utilisateur d&rsquo;entrer le nom d’un élément chimique.</li>
+<li>Prend en paramètre le nom d’un élément chimique.</li>
 <li>Affiche un message disant &ldquo;L’élément choisi est [nom]&rdquo;</li>
 </ul>
 <p><strong>Exemple d&rsquo;affichage attendu (élément oxygène)</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Entrer le nom d<span style="color:#e6db74">&#39;un élément chimique : oxygène</span>
-</span></span><span style="display:flex;"><span>L<span style="color:#960050;background-color:#1e0010">’</span>élément choisi est : oxygène</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>L<span style="color:#960050;background-color:#1e0010">’</span>élément choisi est : oxygène</span></span></code></pre></div>
 <h3 id="exercice-3--convertir-celsius-en-kelvin">Exercice 3 : Convertir Celsius en Kelvin</h3>
 <p>Crée une fonction nommée <code>convertir_C_en_K</code> qui :</p>
 <ul>
@@ -374,6 +380,57 @@ Essaye ensuite d’afficher la valeur de <code>prenom</code> <strong>à l’ext�
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">NameError</span>: name <span style="color:#e6db74">&#39;prenom&#39;</span> <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> defined</span></span></code></pre></div>
 <hr>
+<h2 id="atelier">Atelier</h2>
+<h2 id="exercice--calcul-de-dilution-cv--cv">Exercice – Calcul de dilution (C₁V₁ = C₂V₂)</h2>
+<p>En laboratoire, vous devez préparer une solution diluée à partir d&rsquo;une solution mère plus concentrée. Vous connaissez la formule de dilution :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>C₁ × V₁ = C₂ × V₂</code></pre></div>
+<p>Où :</p>
+<ul>
+<li><code>C₁</code> : concentration de la solution mère (mol/L)</li>
+<li><code>V₁</code> : volume de la solution mère à prélever (L)</li>
+<li><code>C₂</code> : concentration finale souhaitée (mol/L)</li>
+<li><code>V₂</code> : volume final de la solution diluée (L)</li>
+</ul>
+<hr>
+<p>Écrire un programme Python structuré en <strong>plusieurs fonctions</strong> qui permet de :</p>
+<ol>
+<li><strong>Lire</strong> les données nécessaires à la dilution (<code>C1</code>, <code>C2</code>, <code>V2</code>) — sans retourner de valeur.</li>
+<li><strong>Calculer et retourner</strong> le volume <code>V1</code> de solution mère à prélever (formule : <code>V1 = (C2 × V2) / C1</code>).</li>
+<li><strong>Afficher</strong> une phrase qui résume le calcul avec les valeurs fournies.</li>
+</ol>
+<hr>
+<h3 id="consignes">Consignes</h3>
+<ol>
+<li>
+<p>Crée une fonction <code>lire_donnees()</code> <strong>sans paramètres</strong> qui demande à l’utilisateur :</p>
+<ul>
+<li>la concentration <code>C1</code> de la solution mère (en mol/L),</li>
+<li>la concentration <code>C2</code> de la solution finale (en mol/L),</li>
+<li>le volume final <code>V2</code> (en L),
+et <strong>retourne ces 3 valeurs</strong>.</li>
+</ul>
+</li>
+<li>
+<p>Crée une fonction <code>calculer_v1(C1, C2, V2)</code> qui :</p>
+<ul>
+<li>prend en <strong>paramètres</strong> les trois valeurs,</li>
+<li><strong>retourne</strong> le volume <code>V1</code> à prélever (en L).</li>
+</ul>
+</li>
+<li>
+<p>Crée une fonction <code>afficher_resultat(V1)</code> qui <strong>affiche</strong> une phrase expliquant le volume de solution mère à utiliser, avec <strong>deux décimales</strong>.</p>
+</li>
+<li>
+<p>Teste le tout dans un petit programme principal.</p>
+</li>
+</ol>
+<h3 id="exemple-dexécution-attendue">Exemple d&rsquo;exécution attendue</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>--- Programme de dilution ---
+Concentration de la solution mère (mol/L) : 2.0
+Concentration finale souhaitée (mol/L) : 0.5
+Volume final de la solution (L) : 1.0
+Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.</code></pre></div>
+<hr>
 <blockquote>
 <p><strong>RAPPEL</strong>: Le <strong>troisième et dernier examen</strong> (20%) et prévu à la <strong>semaine 15</strong>.</p>
 </blockquote>
@@ -382,178 +439,7 @@ Essaye ensuite d’afficher la valeur de <code>prenom</code> <strong>à l’ext�
 <li>Prendre connaissance de la <a href="/semaine12/grille/index.html">Grille de correction</a></li>
 <li>S&rsquo;approprier des <a href="/semaine12/competences_reussite/index.html">Notions à savoir pour réussir le projet</a></li>
 </ol>
-<!--
-## Exercices à faire avant le cours
 
-
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_graphes_barres_reg.ipynb)
-
-
-
-
-
-### Exercice 1 – Sulfate de cuivre
-
-
-
-1. Températures : `[0, 10, 20, 30, 40, 50]`
-
-2. Solubilité (g/100g eau) : `[23, 27, 32, 37, 44, 51]`
-
-3. Calcule la régression linéaire.
-
-4. Affiche les résultats et une conclusion scientifique.
-
-
-
-
-
-### Exercice 2 – Comparaison de deux sels
-
-
-
-1. Sel A :
-
-
-
-   * Température : `[0, 20, 40, 60]`
-
-   * Solubilité : `[15, 21, 30, 38]`
-
-
-
-2. Sel B :
-
-
-
-   * Température : `[0, 20, 40, 60]`
-
-   * Solubilité : `[30, 32, 33, 33.5]`
-
-
-
-3. Pour chaque sel :
-
-
-
-   * Effectue la régression
-
-   * Affiche pente, intercept, R²
-
-   * Déduis quel sel est le plus influencé par la température
-
-
-
-
-
-### Exercice 3 – Prévision
-
-
-
-1. Utilise les données de l’exemple principal
-
-2. Calcule la solubilité prévue à 60 °C avec la formule :
-
-
-
-```python
-valeur_predite = resultat.slope * 60 + resultat.intercept
-print(f"Solubilité prévue à 60 °C : {valeur_predite:.2f} g/100g d’eau")
-```
-
-
-
-### Exercice 1 – Graphique à barres
-
-
-
-**Énoncé :**
-
-Affiche un graphique à barres pour les éléments `"Fer"`, `"Cuivre"`, `"Zinc"` avec les valeurs `[12, 7, 5]`.
-
-
-
-**Solution :**
-
-
-
-```python
-elements = ["Fer", "Cuivre", "Zinc"]
-quantites = [12, 7, 5]
-
-plt.bar(elements, quantites)
-plt.title("Concentration des métaux")
-plt.legend(["mg/L"])
-plt.show()
-```
-
-
-
-
-
-### Exercice 2 – Barres d’erreur
-
-
-
-**Énoncé :**
-
-Pour `x = [1, 2, 3]`, `y = [5.1, 5.0, 5.2]`, `yerr = [0.1, 0.2, 0.15]`, trace les points avec barres d’erreur.
-
-
-
-**Solution :**
-
-
-
-```python
-x = [1, 2, 3]
-y = [5.1, 5.0, 5.2]
-
-yerr = [0.1, 0.2, 0.15]
-
-plt.errorbar(x, y, yerr=yerr, fmt="o", label="Mesures")
-plt.title("Tension mesurée")
-plt.legend()
-plt.grid(True)
-plt.show()
-```
-
-
-
-
-
-### Exercice 3 – Droite de régression
-
-
-
-**Énoncé :**
-
-Pour `x = [0, 1, 2, 3]`, `y = [1, 2.1, 3.9, 6.0]`, trace les points et la droite de régression, avec son équation dans la légende.
-
-
-
-**Solution :**
-
-
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-x = np.array([0, 1, 2, 3])
-y = np.array([1, 2.1, 3.9, 6.0])
-
-a, b = np.polyfit(x, y, 1)
-
-plt.plot(x, y, "o", label="Points")
-plt.plot(x, a*x + b, "-", label=f"y = {a:.2f}x + {b:.2f}")
-plt.grid(True)
-plt.legend()
-plt.tight_layout()
-plt.show()
-```
-
--->
   <footer class="footline">
   </footer>
 </article>
@@ -641,8 +527,8 @@ plt.show()
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1753976956" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753976956" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1753978931" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1753978931" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -654,7 +540,7 @@ plt.show()
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1753976956"></script>
-    <script src="/js/theme.min.js?1753976956" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1753978931"></script>
+    <script src="/js/theme.min.js?1753978931" defer></script>
   </body>
 </html>

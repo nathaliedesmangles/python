@@ -61,7 +61,7 @@
       <link>https://example.org/solutions_exercices/11_fonctions_perso/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/11_fonctions_perso/index.html</guid>
-      <description></description>
+      <description>Exercice 1 : La loi d’Ohm def calculer_tension(): # Demande la résistance à l&#39;utilisateur R = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Demande le courant à l&#39;utilisateur I = float(input(&#34;Entrer le courant en ampères : &#34;)) # Calcule la tension (U = R * I) U = R * I # Affiche le résultat print(f&#34;La tension est de {U} V&#34;) # Appel de la fonction calculer_tension()&#xD;Exercice 2 : Élément chimique def element_chm(elt): # Affiche l&#39;élément chimique choisi print(f&#34;L’élément choisi est : {elt}&#34;) # Exemple d’appel element_chm(&#34;oxygène&#34;)&#xD;Exercice 3 : Convertir Celsius en Kelvin def convertir_C_en_K(celsius): # Conversion en Kelvin kelvin = celsius + 273.</description>
     </item>
   </channel>
 </rss>
