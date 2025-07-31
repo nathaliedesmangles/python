@@ -3,7 +3,7 @@
   <channel>
     <title> Révision ou rattrapage :: 420-SN1-RE</title>
     <link>https://example.org/semaine9/index.html</link>
-    <description>Exercice de révision: Étude de la photosynthèse et de la température chez les plantes Objectifs pédagogiques Cet atelier permet de :&#xA;manipuler des fichiers CSV avec pandas et numpy, utiliser des listes, chaînes, tableaux NumPy et dictionnaires, produire des graphiques professionnels avec matplotlib, réaliser une analyse scientifique complète d’un jeu de données réel ou simulé, réviser toutes les structures de contrôle (boucles, conditions, fonctions). Concepts révisés Compétence Python Présente dans l’atelier Listes, chaînes, boucles, conditions ✅ Dictionnaires ✅ Tableaux NumPy et fonctions np.</description>
+    <description>1. Exercices simples Exercice 1 – Solubilité d’un sel Un technicien a mesuré la solubilité (en g/100 mL) d’un sel à différentes températures. Une des valeurs est manquante.&#xA;import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])&#xD;Affiche toutes les solubilités mesurées. Calcule la moyenne des valeurs disponibles (ignore la valeur manquante). Calcule l’écart type des valeurs disponibles. Interprète : La solubilité semble-t-elle augmenter de façon régulière ? Explique brièvement.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine9/index.xml" rel="self" type="application/rss+xml" />
