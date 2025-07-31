@@ -314,14 +314,13 @@ Un échantillon de 100 g d’un isotope a une demi-vie de 5 ans. On souhaite con
 
 1. Écris un algorithme permettant de :
 
-   * Demander à l’utilisateur combien d’années se sont écoulées.
+   * Demander à l’utilisateur le nombre d’années écoulées.
    * Calculer le nombre de périodes de demi-vie.
-   * Calculer la masse restante à partir de la formule :
-
+   * Calculer la masse restante :
      $$
      \text{masse} = \text{masse initiale} \times \left(\frac{1}{2}\right)^{\text{nb\_periodes}}
      $$
-   * Afficher le résultat.
+   * Si la masse est inférieure à 1 g, afficher un message d’avertissement, sinon, afficher la masse restante normalement.
 
 2. Traduis ton algorithme en Python.
 
@@ -336,13 +335,46 @@ Une boîte de Pétri contient 500 bactéries. On souhaite estimer la taille de l
    * Demander à l’utilisateur le nombre d’heures écoulées.
    * Calculer le nombre de périodes de croissance (périodes de 3 heures).
    * Calculer la population après cette durée avec la formule :
-
      $$
      \text{population} = \text{population initiale} \times 2^{\text{nb\_periodes}}
      $$
    * Afficher la population estimée.
+   * Si la population dépasse 1 000 000 bactéries, afficher un message d’alerte sur la croissance excessive, sinon afficher la population normalement
 
 2. Traduis ton algorithme en Python.
+
+
+
+### Exercice 3 – Température critique d’un liquide
+
+Un liquide ne doit pas dépasser **80 °C** pour rester stable.
+Demander à l’utilisateur la température actuelle du liquide et **afficher un message** selon les cas :
+
+* Si la température est **inférieure à 80**, afficher : « Température sécuritaire. »
+* Si elle est **exactement 80**, afficher : « Limite atteinte. »
+* Si elle est **supérieure à 80**, afficher : « Attention : température critique ! »
+
+
+### Exercice 4 – Classification du pH d’une solution
+
+En chimie, le **pH** permet de savoir si une solution est acide, neutre ou basique.
+Demander à l’utilisateur le **pH** d’une solution (entre 0 et 14), puis afficher :
+
+* « Solution acide » si `pH < 7`
+* « Solution neutre » si `pH == 7`
+* « Solution basique » si `pH > 7`
+* « Valeur de pH invalide » si le pH est en dehors de l’intervalle `[0, 14]`
+
+
+### Exercice 5 – Autorisation d’une réaction chimique
+
+Une réaction chimique ne peut avoir lieu **que si** la température est **entre 25 °C et 45 °C inclusivement**, **et** si le **pH est entre 6 et 8 inclusivement**.
+
+Demander à l’utilisateur la température et le pH, puis afficher :
+
+* « Réaction possible. » si les deux conditions sont remplies,
+* « Conditions non compatibles. » sinon.
+
 
 ---
 
@@ -432,6 +464,7 @@ L’eau est liquide à cette température et pression.
 * Pour **indiquer qu’une fonction ne retourne rien**.
 
 ---
+
 ### Exemple 1 – Vérifier si une variable est vide
 
 ```python
