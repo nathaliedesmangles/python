@@ -1,9 +1,7 @@
 +++
-
-title = "A FAIRE 4-boucles et débogage simple"
-
+pre = "4."
+title = " Boucles et débogage simple"
 weight = 204
-
 +++
 
 

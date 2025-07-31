@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A FAIRE 4-boucles et débogage simple :: 420-SN1-RE</title>
+    <title> Boucles et débogage simple :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/4_boucles_debogage/index.html</link>
     <description>Exercice 1 – For ou While ? a. Afficher les nombres de 1 à 10 Boucle : for (on connaît le début et la fin)&#xA;for i in range(1, 11): print(i)&#xD;b. Compter jusqu’à 100 par bonds de 10 Boucle : for&#xA;for i in range(0, 101, 10): print(i)&#xD;c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s) Boucle : while (on ne connaît pas d’avance le nombre de répétitions, mais on connaît la condition d’arrêt)</description>
     <generator>Hugo</generator>

@@ -22,7 +22,7 @@
       <description>Exercice 1 : Demi-vie radioactive # Constantes masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée utilisateur temps_ecoule = float(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul nb_periodes = temps_ecoule / demi_vie masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage conditionnel if masse_restante &lt; 1: print(f&#34;La masse restante est très faible : {masse_restante:.4f} g. L’isotope est presque entièrement désintégré.&#34;) else: print(f&#34;Masse restante après {temps_ecoule} ans : {masse_restante:.</description>
     </item>
     <item>
-      <title>A FAIRE 4-boucles et débogage simple</title>
+      <title> Boucles et débogage simple</title>
       <link>https://example.org/solutions_exercices/4_boucles_debogage/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/4_boucles_debogage/index.html</guid>
