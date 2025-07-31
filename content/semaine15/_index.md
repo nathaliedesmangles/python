@@ -11,7 +11,7 @@ draft = false
 ## Informations
 
 * Date:				Semaine #15 (Voir le calendrier)
-* Matière: 		        Semaines 11 à 14 inclusivement
+* Matière: 		        Semaines 1 à 14 inclusivement
 * Documentation permise: 	1 feuille recto-verso (manuscrite ou imprimée)
 * Format:			À confirmer
 

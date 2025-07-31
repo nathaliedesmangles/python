@@ -313,8 +313,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "Informations Date:\tSemaine #15 (Voir le calendrier) Matière: Semaines 11 à 14 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format:\tÀ confirmer Important\rVous devez remettre votre code sur Moodle : le fichier projet_prenom_nom.ipynb au plus tard ce soir à 23h59.",
-    "description": "Informations Date:\tSemaine #15 (Voir le calendrier) Matière: Semaines 11 à 14 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format:\tÀ confirmer Important\rVous devez remettre votre code sur Moodle : le fichier projet_prenom_nom.ipynb au plus tard ce soir à 23h59.",
+    "content": "Informations Date:\tSemaine #15 (Voir le calendrier) Matière: Semaines 1 à 14 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format:\tÀ confirmer Important\rVous devez remettre votre code sur Moodle : le fichier projet_prenom_nom.ipynb au plus tard ce soir à 23h59.",
+    "description": "Informations Date:\tSemaine #15 (Voir le calendrier) Matière: Semaines 1 à 14 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format:\tÀ confirmer Important\rVous devez remettre votre code sur Moodle : le fichier projet_prenom_nom.ipynb au plus tard ce soir à 23h59.",
     "tags": [],
     "title": " Évaluation #3 (20%)",
     "uri": "/semaine15/index.html"
