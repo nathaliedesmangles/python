@@ -356,12 +356,11 @@ Une plante pousse selon ce modèle : sa taille augmente de 2 cm par jour.
 1. Crée un tableau NumPy qui contient la taille de la plante pendant 10 jours, en partant de 5 cm.
 2. Ajoute 1 cm supplémentaire à chaque valeur pour simuler un apport d’engrais.
 3. Calcule la moyenne de croissance avec et sans engrais.
+4. Trace la droite de régression linéaire pour le graphique (`plot()`) de la pression en fonction de la hauteur.
 
 ---
 
 ## Atelier
-
-***AJOUTER GRAPHIQUE + DROITE***
 
 ## Exercice : Analyse d’une expérience sur l’effet de la lumière sur la croissance des plantes
 
@@ -386,19 +385,20 @@ Pour chaque condition, 5 plantes ont été mesurées. Certaines données sont ma
 2. **Calcule la moyenne et l’écart-type** de la hauteur des plantes pour chaque condition, en **ignorant les valeurs manquantes**.
 3. **Compare les hauteurs moyennes** entre les conditions (affiche par exemple la condition ayant la croissance moyenne la plus élevée).
 4. **Affiche un résumé clair**, par exemple :
-
    ```
    Moyenne (Naturelle) = 12.86 cm, écart-type = 0.22 cm
    Moyenne (LED blanche) = ...
    ...
    Condition avec la plus grande croissance moyenne : Naturelle
    ```
+5. Affiche le graphique montrant la croissance moyenne par type de lumière, avec **barres d’erreur** représentant l’écart-type.
 
 ### Aide
 
 * Utilise `numpy.array()` pour construire le tableau.
 * Utilise `np.nanmean()` et `np.nanstd()` pour les calculs.
 * Tu peux créer une liste `conditions = ["Naturelle", "LED blanche", "LED rouge"]` pour faciliter l'affichage.
+* Utilise `np.arrange()`, `plt.bar()` et `plt.plt.xticks()` pour construire le graphique.
 
 ---
 

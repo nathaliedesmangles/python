@@ -1,5 +1,5 @@
 +++
-pre = "**6.**"
+pre = "6."
 title = " Listes, chaines et visualisation des données"
 weight = 206
 +++

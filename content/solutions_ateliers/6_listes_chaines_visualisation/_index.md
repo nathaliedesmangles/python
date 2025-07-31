@@ -7,7 +7,6 @@ draft = false
 
 
 ```python
-
 import matplotlib.pyplot as plt
 
 # Données brutes sous forme de chaînes
