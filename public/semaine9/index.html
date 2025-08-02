@@ -5,38 +5,46 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="1. Exercices simples Exercice 1 – Solubilité d’un sel Un technicien a mesuré la solubilité (en g/100 mL) d’un sel à différentes températures. Une des valeurs est manquante.
-import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])Affiche toutes les solubilités mesurées. Calcule la moyenne des valeurs disponibles (ignore la valeur manquante). Calcule l’écart type des valeurs disponibles. Interprète : La solubilité semble-t-elle augmenter de façon régulière ? Explique brièvement.">
+    <meta name="description" content="Bloc-notes de départ
+Fichier à utiliser: conductivite.csv
+Exercice 1 : Neutralisation acide-base (chimie) Notions : conditions, boucles, dictionnaire, fonctions Contexte : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7. Tâche :
+Simule une titration acide-base par paliers de 0.5 mL. Utilise une fonction pH(volume_base) (fourni ou à coder selon une loi empirique simplifiée). Arrête la simulation dès que le pH est compris entre 6.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Révision ou rattrapage :: 420-SN1-RE">
-    <meta name="twitter:description" content="1. Exercices simples Exercice 1 – Solubilité d’un sel Un technicien a mesuré la solubilité (en g/100 mL) d’un sel à différentes températures. Une des valeurs est manquante.
-import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])Affiche toutes les solubilités mesurées. Calcule la moyenne des valeurs disponibles (ignore la valeur manquante). Calcule l’écart type des valeurs disponibles. Interprète : La solubilité semble-t-elle augmenter de façon régulière ? Explique brièvement.">
+    <meta name="twitter:description" content="Bloc-notes de départ
+Fichier à utiliser: conductivite.csv
+Exercice 1 : Neutralisation acide-base (chimie) Notions : conditions, boucles, dictionnaire, fonctions Contexte : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7. Tâche :
+Simule une titration acide-base par paliers de 0.5 mL. Utilise une fonction pH(volume_base) (fourni ou à coder selon une loi empirique simplifiée). Arrête la simulation dès que le pH est compris entre 6.">
     <meta property="og:url" content="https://example.org/semaine9/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Révision ou rattrapage :: 420-SN1-RE">
-    <meta property="og:description" content="1. Exercices simples Exercice 1 – Solubilité d’un sel Un technicien a mesuré la solubilité (en g/100 mL) d’un sel à différentes températures. Une des valeurs est manquante.
-import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])Affiche toutes les solubilités mesurées. Calcule la moyenne des valeurs disponibles (ignore la valeur manquante). Calcule l’écart type des valeurs disponibles. Interprète : La solubilité semble-t-elle augmenter de façon régulière ? Explique brièvement.">
+    <meta property="og:description" content="Bloc-notes de départ
+Fichier à utiliser: conductivite.csv
+Exercice 1 : Neutralisation acide-base (chimie) Notions : conditions, boucles, dictionnaire, fonctions Contexte : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7. Tâche :
+Simule une titration acide-base par paliers de 0.5 mL. Utilise une fonction pH(volume_base) (fourni ou à coder selon une loi empirique simplifiée). Arrête la simulation dès que le pH est compris entre 6.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Révision ou rattrapage :: 420-SN1-RE">
-    <meta itemprop="description" content="1. Exercices simples Exercice 1 – Solubilité d’un sel Un technicien a mesuré la solubilité (en g/100 mL) d’un sel à différentes températures. Une des valeurs est manquante.
-import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])Affiche toutes les solubilités mesurées. Calcule la moyenne des valeurs disponibles (ignore la valeur manquante). Calcule l’écart type des valeurs disponibles. Interprète : La solubilité semble-t-elle augmenter de façon régulière ? Explique brièvement.">
-    <meta itemprop="wordCount" content="767">
+    <meta itemprop="description" content="Bloc-notes de départ
+Fichier à utiliser: conductivite.csv
+Exercice 1 : Neutralisation acide-base (chimie) Notions : conditions, boucles, dictionnaire, fonctions Contexte : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7. Tâche :
+Simule une titration acide-base par paliers de 0.5 mL. Utilise une fonction pH(volume_base) (fourni ou à coder selon une loi empirique simplifiée). Arrête la simulation dès que le pH est compris entre 6.">
+    <meta itemprop="wordCount" content="809">
     <title> Révision ou rattrapage :: 420-SN1-RE</title>
     <link href="/semaine9/index.xml" rel="alternate" type="application/rss+xml" title=" Révision ou rattrapage :: 420-SN1-RE">
-    <link href="/images/logo.png?1754154501" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754154501" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754154501" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1754154501" rel="stylesheet">
-    <link href="/css/theme.min.css?1754154501" rel="stylesheet">
-    <link href="/css/format-html.min.css?1754154501" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1754154501" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1754154501" defer></script>
-    <script src="/js/lunr/lunr.min.js?1754154501" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1754154501" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1754154501" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1754154501" defer></script>
-    <script src="/js/search.min.js?1754154501" defer></script>
+    <link href="/images/logo.png?1754155359" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754155359" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754155359" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1754155359" rel="stylesheet">
+    <link href="/css/theme.min.css?1754155359" rel="stylesheet">
+    <link href="/css/format-html.min.css?1754155359" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1754155359" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1754155359" defer></script>
+    <script src="/js/lunr/lunr.min.js?1754155359" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1754155359" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1754155359" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1754155359" defer></script>
+    <script src="/js/search.min.js?1754155359" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +54,7 @@ import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])Affiche tout
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1754154501";
+      window.relearn.index_js_url="/searchindex.en.js?1754155359";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +100,7 @@ import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])Affiche tout
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1754154501" rel="stylesheet">
+    <link href="/css/custom.css?1754155359" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine9/index.html">
     <div id="R-body" class="default-animation">
@@ -108,15 +116,11 @@ import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])Affiche tout
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#1-exercices-simples">1. Exercices simples</a>
-      <ul>
-        <li><a href="#exercice-1--solubilité-dun-sel">Exercice 1 – Solubilité d’un sel</a></li>
-        <li><a href="#exercice-2--températures-journalières">Exercice 2 – Températures journalières</a></li>
-        <li><a href="#exercice-3--analyse-dadn">Exercice 3 – Analyse d’ADN</a></li>
-        <li><a href="#exercice-4--pression-dans-un-cylindre">Exercice 4 – Pression dans un cylindre</a></li>
-        <li><a href="#exercice-5--croissance-dune-plante">Exercice 5 – Croissance d’une plante</a></li>
-      </ul>
-    </li>
+    <li><a href="#exercice-1--neutralisation-acide-base-chimie">Exercice 1 : Neutralisation acide-base (chimie)</a></li>
+    <li><a href="#exercice-2--série-de-désintégrations-radioactives">Exercice 2 : Série de désintégrations radioactives</a></li>
+    <li><a href="#exercice-3--titrage-par-conductimétrie">Exercice 3 : Titrage par conductimétrie</a></li>
+    <li><a href="#exercice-4--suivi-dun-indicateur-coloré-absorbance">Exercice 4 : Suivi d’un indicateur coloré (absorbance)</a></li>
+    <li><a href="#exercice-5--simulation-de-friction-sur-une-rampe-inclinée-physique">Exercice 5 : Simulation de friction sur une rampe inclinée (physique)</a></li>
     <li><a href="#2-atelier">2. Atelier</a>
       <ul>
         <li><a href="#étude-de-la-photosynthèse-et-de-la-température-chez-les-plantes">Étude de la photosynthèse et de la température chez les plantes</a></li>
@@ -161,66 +165,73 @@ import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])Affiche tout
 
 <h1 id="révision-ou-rattrapage"> Révision ou rattrapage</h1>
 
-<h2 id="1-exercices-simples">1. Exercices simples</h2>
-<h3 id="exercice-1--solubilité-dun-sel">Exercice 1 – Solubilité d’un sel</h3>
-<p>Un technicien a mesuré la <strong>solubilité (en g/100 mL)</strong> d’un sel à différentes températures. Une des valeurs est manquante.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
-</span></span><span style="display:flex;"><span>sol <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">32.0</span>, <span style="color:#ae81ff">35.5</span>, np<span style="color:#f92672">.</span>nan, <span style="color:#ae81ff">37.2</span>, <span style="color:#ae81ff">39.0</span>])</span></span></code></pre></div>
-<ol>
-<li>Affiche toutes les solubilités mesurées.</li>
-<li>Calcule la <strong>moyenne</strong> des valeurs disponibles (ignore la valeur manquante).</li>
-<li>Calcule l’<strong>écart type</strong> des valeurs disponibles.</li>
-<li>Interprète : La solubilité semble-t-elle augmenter de façon régulière ? Explique brièvement.</li>
-</ol>
-<hr>
-<h3 id="exercice-2--températures-journalières">Exercice 2 – Températures journalières</h3>
-<p>Un biologiste a mesuré la température <strong>le matin, à midi et en fin d’après-midi</strong> pendant 7 jours consécutifs.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([
-</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">12.1</span>, <span style="color:#ae81ff">17.3</span>, <span style="color:#ae81ff">14.2</span>],
-</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">11.8</span>, <span style="color:#ae81ff">16.9</span>, <span style="color:#ae81ff">13.9</span>],
-</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">13.0</span>, <span style="color:#ae81ff">18.1</span>, <span style="color:#ae81ff">15.0</span>],
-</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">12.5</span>, <span style="color:#ae81ff">17.5</span>, <span style="color:#ae81ff">14.7</span>],
-</span></span><span style="display:flex;"><span>    [np<span style="color:#f92672">.</span>nan, <span style="color:#ae81ff">16.0</span>, <span style="color:#ae81ff">14.0</span>],
-</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">13.2</span>, <span style="color:#ae81ff">18.0</span>, <span style="color:#ae81ff">15.2</span>],
-</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">12.0</span>, <span style="color:#ae81ff">17.0</span>, <span style="color:#ae81ff">14.5</span>]
-</span></span><span style="display:flex;"><span>])</span></span></code></pre></div>
-<ol>
-<li>Quelle est la <strong>forme</strong> du tableau (<code>shape</code>) ?</li>
-<li>Calcule la <strong>moyenne quotidienne</strong> (pour chaque jour).</li>
-<li>Calcule la <strong>moyenne du matin</strong> (colonne 0), en ignorant la valeur manquante.</li>
-<li>Que peut-on conclure sur la stabilité des températures matinales ?</li>
-</ol>
-<hr>
-<h3 id="exercice-3--analyse-dadn">Exercice 3 – Analyse d’ADN</h3>
-<p>Deux échantillons d’ADN ont été analysés. On a mesuré l’intensité d’un marqueur génétique à 5 loci.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ech1 <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">3.2</span>, <span style="color:#ae81ff">2.8</span>, <span style="color:#ae81ff">4.1</span>, <span style="color:#ae81ff">3.9</span>, <span style="color:#ae81ff">2.5</span>])
-</span></span><span style="display:flex;"><span>ech2 <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2.9</span>, <span style="color:#ae81ff">3.0</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">4.0</span>, <span style="color:#ae81ff">2.7</span>])</span></span></code></pre></div>
-<ol>
-<li>Calcule le <strong>profil combiné</strong> des deux échantillons (somme des valeurs).</li>
-<li>Calcule la <strong>différence point par point</strong> entre les deux échantillons (éch2 - éch1).</li>
-<li>Calcule la <strong>moyenne</strong> et l’<strong>écart type</strong> de chaque échantillon.</li>
-<li>En te basant sur l’écart type, lequel des deux échantillons est le plus homogène ?</li>
-</ol>
-<hr>
-<h3 id="exercice-4--pression-dans-un-cylindre">Exercice 4 – Pression dans un cylindre</h3>
-<p>On mesure la pression (en kPa) dans un cylindre rempli d’un gaz à différentes hauteurs.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>hauteur <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">6</span>)  <span style="color:#75715e"># [0, 10, 20, 30, 40, 50]</span>
-</span></span><span style="display:flex;"><span>pression <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">101.3</span>, <span style="color:#ae81ff">100.0</span>, <span style="color:#ae81ff">98.7</span>, <span style="color:#ae81ff">97.5</span>, <span style="color:#ae81ff">96.2</span>, <span style="color:#ae81ff">95.0</span>])</span></span></code></pre></div>
-<ol>
-<li>Affiche les hauteurs et les pressions correspondantes.</li>
-<li>Calcule la <strong>variation de pression</strong> entre chaque tranche de 10 cm.</li>
-<li>Calcule la <strong>moyenne de la pression</strong> dans le cylindre.</li>
-<li>Que peut-on dire de l’évolution de la pression avec la hauteur ?</li>
-</ol>
-<hr>
-<h3 id="exercice-5--croissance-dune-plante">Exercice 5 – Croissance d’une plante</h3>
-<p>Une plante pousse de façon régulière : <strong>2 cm par jour</strong>. Elle mesure 5 cm au jour 0.</p>
-<ol>
-<li>Crée un tableau représentant la <strong>taille quotidienne de la plante</strong> pendant 10 jours (sans engrais).</li>
-<li>Simule l’effet d’un <strong>engrais</strong> qui augmente la croissance de <strong>1 cm par jour</strong>.</li>
-<li>Calcule la <strong>moyenne</strong> de la taille de la plante <strong>avec et sans engrais</strong>.</li>
-<li>Quel est l’effet de l’engrais en moyenne ? Justifie à l’aide des résultats.</li>
-</ol>
+<p><a href="https://python-a25.netlify.app/blocnotes/exercices_revision.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
+<p><a href="/semaine9/conductivite.csv">Fichier à utiliser: conductivite.csv</a></p>
+<h2 id="exercice-1--neutralisation-acide-base-chimie">Exercice 1 : Neutralisation acide-base (chimie)</h2>
+<p><strong>Notions</strong> : conditions, boucles, dictionnaire, fonctions
+<strong>Contexte</strong> : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7.
+<strong>Tâche</strong> :</p>
+<ul>
+<li>Simule une titration acide-base par paliers de 0.5 mL.</li>
+<li>Utilise une fonction <code>pH(volume_base)</code> (fourni ou à coder selon une loi empirique simplifiée).</li>
+<li>Arrête la simulation dès que le pH est compris entre 6.8 et 7.2.</li>
+<li>Affiche tous les volumes testés avec leur pH.</li>
+</ul>
+<blockquote>
+<p>Variante : Représente les valeurs sur un graphique volume vs pH pour visualiser le point d&rsquo;équivalence.</p>
+</blockquote>
+<h2 id="exercice-2--série-de-désintégrations-radioactives">Exercice 2 : Série de désintégrations radioactives</h2>
+<p><strong>Notions</strong> : boucles, listes, math, NumPy, fonctions
+<strong>Contexte</strong> : Une substance radioactive se désintègre au fil du temps, et on veut modéliser la quantité restante.
+<strong>Tâche</strong> :</p>
+<ul>
+<li>Simule la désintégration d’un isotope avec une demi-vie donnée.</li>
+<li>Crée une fonction <code>quantite_restante(q0, t, demivie)</code> qui retourne la quantité après t secondes.</li>
+<li>Génère et affiche la liste des quantités pour t = 0 à 60 s par pas de 5.</li>
+<li>Trace la courbe avec <code>matplotlib</code>.</li>
+</ul>
+<blockquote>
+<p>Variante : Ajouter un bruit expérimental (± 5%) et comparer avec la courbe théorique.</p>
+</blockquote>
+<h2 id="exercice-3--titrage-par-conductimétrie">Exercice 3 : Titrage par conductimétrie</h2>
+<p><strong>Notions</strong> : dictionnaire, csv, matplotlib, compréhension de données
+<strong>Contexte</strong> : Une série de mesures de conductivité sont enregistrées à chaque ajout de 1 mL de réactif.
+<strong>Tâche</strong> :</p>
+<ul>
+<li>Lis un fichier <code>conductivite.csv</code> contenant deux colonnes : <code>volume</code>, <code>conductivite</code>.</li>
+<li>Affiche les données et trace le graphique.</li>
+<li>Calcule la pente moyenne avant et après l’équivalence pour déterminer approximativement le volume d’équivalence.</li>
+<li>Affiche ce volume estimé.</li>
+</ul>
+<blockquote>
+<p>Variante : Ajouter une estimation par interpolation entre deux points.</p>
+</blockquote>
+<h2 id="exercice-4--suivi-dun-indicateur-coloré-absorbance">Exercice 4 : Suivi d’un indicateur coloré (absorbance)</h2>
+<p><strong>Notions</strong> : fonctions, tableaux NumPy, matplotlib, régression linéaire
+<strong>Contexte</strong> : L’absorbance d’un indicateur est mesurée pour plusieurs concentrations connues (loi de Beer-Lambert).
+<strong>Tâche</strong> :</p>
+<ul>
+<li>Enregistre les valeurs de concentration (mol/L) et d’absorbance dans des tableaux.</li>
+<li>Trace le nuage de points.</li>
+<li>Calcule la pente et l’ordonnée à l’origine de la droite de régression.</li>
+<li>Utilise la droite pour estimer la concentration d’une solution inconnue.</li>
+</ul>
+<blockquote>
+<p>Variante : Ajouter les barres d’erreur sur l’absorbance.</p>
+</blockquote>
+<h2 id="exercice-5--simulation-de-friction-sur-une-rampe-inclinée-physique">Exercice 5 : Simulation de friction sur une rampe inclinée (physique)</h2>
+<p><strong>Notions</strong> : input, conditions, boucles, fonctions, matplotlib
+<strong>Contexte</strong> : Un objet glisse sur une rampe inclinée avec ou sans friction.
+<strong>Tâche</strong> :</p>
+<ul>
+<li>Demande à l’utilisateur l’angle, la masse et le coefficient de friction.</li>
+<li>Calcule la force nette et l’accélération.</li>
+<li>Simule la position et la vitesse sur 10 secondes (delta t = 0.1 s).</li>
+<li>Affiche les positions et trace la courbe position vs temps.</li>
+</ul>
+<blockquote>
+<p>Variante : Comparer les trajectoires avec et sans friction sur un même graphique.</p>
+</blockquote>
 <hr>
 <h2 id="2-atelier">2. Atelier</h2>
 <h3 id="étude-de-la-photosynthèse-et-de-la-température-chez-les-plantes">Étude de la photosynthèse et de la température chez les plantes</h3>
@@ -349,8 +360,8 @@ import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])Affiche tout
 <li>Ajouter une <strong>droite de régression linéaire</strong> pour chaque espèce.</li>
 <li>Sauvegarder le graphique en PNG.</li>
 </ol>
-<p><a href="#R-image-a12873d14bfb815c987736cd4ba06153" class="lightbox-link"><img alt="Nuage - régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/photosynthese_regression.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a12873d14bfb815c987736cd4ba06153"><img alt="Nuage - régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/photosynthese_regression.png?width=45vw"></a></p>
+<p><a href="#R-image-b41d81f5c052a7a1c61031fde166af2d" class="lightbox-link"><img alt="Nuage - régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/photosynthese_regression.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b41d81f5c052a7a1c61031fde166af2d"><img alt="Nuage - régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/photosynthese_regression.png?width=45vw"></a></p>
 <h4 id="étape-4--recherche-par-capteur-chaînes-et-conditions">Étape 4 – Recherche par capteur (chaînes et conditions)</h4>
 <ol>
 <li>
@@ -457,8 +468,8 @@ import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])Affiche tout
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1754154501" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1754154501" defer></script>
-    <script src="/js/theme.min.js?1754154501" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1754155359" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1754155359" defer></script>
+    <script src="/js/theme.min.js?1754155359" defer></script>
   </body>
 </html>

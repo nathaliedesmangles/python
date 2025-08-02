@@ -6,87 +6,84 @@ weight = 109
 draft = false
 +++
 
-## 1. Exercices simples
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_revision.ipynb)
 
-### Exercice 1 – Solubilité d’un sel
+[Fichier à utiliser: conductivite.csv](./conductivite.csv)
 
-Un technicien a mesuré la **solubilité (en g/100 mL)** d’un sel à différentes températures. Une des valeurs est manquante.
 
-```python
-import numpy as np
-sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])
-```
+## Exercice 1 : Neutralisation acide-base (chimie)
 
-1. Affiche toutes les solubilités mesurées.
-2. Calcule la **moyenne** des valeurs disponibles (ignore la valeur manquante).
-3. Calcule l’**écart type** des valeurs disponibles.
-4. Interprète : La solubilité semble-t-elle augmenter de façon régulière ? Explique brièvement.
+**Notions** : conditions, boucles, dictionnaire, fonctions
+**Contexte** : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7.
+**Tâche** :
 
----
+* Simule une titration acide-base par paliers de 0.5 mL.
+* Utilise une fonction `pH(volume_base)` (fourni ou à coder selon une loi empirique simplifiée).
+* Arrête la simulation dès que le pH est compris entre 6.8 et 7.2.
+* Affiche tous les volumes testés avec leur pH.
 
-### Exercice 2 – Températures journalières
+> Variante : Représente les valeurs sur un graphique volume vs pH pour visualiser le point d'équivalence.
 
-Un biologiste a mesuré la température **le matin, à midi et en fin d’après-midi** pendant 7 jours consécutifs.
 
-```python
-temperatures = np.array([
-    [12.1, 17.3, 14.2],
-    [11.8, 16.9, 13.9],
-    [13.0, 18.1, 15.0],
-    [12.5, 17.5, 14.7],
-    [np.nan, 16.0, 14.0],
-    [13.2, 18.0, 15.2],
-    [12.0, 17.0, 14.5]
-])
-```
 
-1. Quelle est la **forme** du tableau (`shape`) ?
-2. Calcule la **moyenne quotidienne** (pour chaque jour).
-3. Calcule la **moyenne du matin** (colonne 0), en ignorant la valeur manquante.
-4. Que peut-on conclure sur la stabilité des températures matinales ?
+## Exercice 2 : Série de désintégrations radioactives
 
----
+**Notions** : boucles, listes, math, NumPy, fonctions
+**Contexte** : Une substance radioactive se désintègre au fil du temps, et on veut modéliser la quantité restante.
+**Tâche** :
 
-### Exercice 3 – Analyse d’ADN
+* Simule la désintégration d’un isotope avec une demi-vie donnée.
+* Crée une fonction `quantite_restante(q0, t, demivie)` qui retourne la quantité après t secondes.
+* Génère et affiche la liste des quantités pour t = 0 à 60 s par pas de 5.
+* Trace la courbe avec `matplotlib`.
 
-Deux échantillons d’ADN ont été analysés. On a mesuré l’intensité d’un marqueur génétique à 5 loci.
+> Variante : Ajouter un bruit expérimental (± 5%) et comparer avec la courbe théorique.
 
-```python
-ech1 = np.array([3.2, 2.8, 4.1, 3.9, 2.5])
-ech2 = np.array([2.9, 3.0, 4.2, 4.0, 2.7])
-```
 
-1. Calcule le **profil combiné** des deux échantillons (somme des valeurs).
-2. Calcule la **différence point par point** entre les deux échantillons (éch2 - éch1).
-3. Calcule la **moyenne** et l’**écart type** de chaque échantillon.
-4. En te basant sur l’écart type, lequel des deux échantillons est le plus homogène ?
 
----
+## Exercice 3 : Titrage par conductimétrie
 
-### Exercice 4 – Pression dans un cylindre
+**Notions** : dictionnaire, csv, matplotlib, compréhension de données
+**Contexte** : Une série de mesures de conductivité sont enregistrées à chaque ajout de 1 mL de réactif.
+**Tâche** :
 
-On mesure la pression (en kPa) dans un cylindre rempli d’un gaz à différentes hauteurs.
+* Lis un fichier `conductivite.csv` contenant deux colonnes : `volume`, `conductivite`.
+* Affiche les données et trace le graphique.
+* Calcule la pente moyenne avant et après l’équivalence pour déterminer approximativement le volume d’équivalence.
+* Affiche ce volume estimé.
 
-```python
-hauteur = np.linspace(0, 50, 6)  # [0, 10, 20, 30, 40, 50]
-pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
-```
+> Variante : Ajouter une estimation par interpolation entre deux points.
 
-1. Affiche les hauteurs et les pressions correspondantes.
-2. Calcule la **variation de pression** entre chaque tranche de 10 cm.
-3. Calcule la **moyenne de la pression** dans le cylindre.
-4. Que peut-on dire de l’évolution de la pression avec la hauteur ?
 
----
 
-### Exercice 5 – Croissance d’une plante
+## Exercice 4 : Suivi d’un indicateur coloré (absorbance)
 
-Une plante pousse de façon régulière : **2 cm par jour**. Elle mesure 5 cm au jour 0.
+**Notions** : fonctions, tableaux NumPy, matplotlib, régression linéaire
+**Contexte** : L’absorbance d’un indicateur est mesurée pour plusieurs concentrations connues (loi de Beer-Lambert).
+**Tâche** :
 
-1. Crée un tableau représentant la **taille quotidienne de la plante** pendant 10 jours (sans engrais).
-2. Simule l’effet d’un **engrais** qui augmente la croissance de **1 cm par jour**.
-3. Calcule la **moyenne** de la taille de la plante **avec et sans engrais**.
-4. Quel est l’effet de l’engrais en moyenne ? Justifie à l’aide des résultats.
+* Enregistre les valeurs de concentration (mol/L) et d’absorbance dans des tableaux.
+* Trace le nuage de points.
+* Calcule la pente et l’ordonnée à l’origine de la droite de régression.
+* Utilise la droite pour estimer la concentration d’une solution inconnue.
+
+> Variante : Ajouter les barres d’erreur sur l’absorbance.
+
+
+
+## Exercice 5 : Simulation de friction sur une rampe inclinée (physique)
+
+**Notions** : input, conditions, boucles, fonctions, matplotlib
+**Contexte** : Un objet glisse sur une rampe inclinée avec ou sans friction.
+**Tâche** :
+
+* Demande à l’utilisateur l’angle, la masse et le coefficient de friction.
+* Calcule la force nette et l’accélération.
+* Simule la position et la vitesse sur 10 secondes (delta t = 0.1 s).
+* Affiche les positions et trace la courbe position vs temps.
+
+> Variante : Comparer les trajectoires avec et sans friction sur un même graphique.
+
 
 ---
 
