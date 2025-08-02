@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/afaire/boucles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/fonctions/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/plan/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/break_continue_liste/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/debogage/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/markdown/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/lecture_ecriture_csv_numpy/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/boucler_tableaux2d/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/faq/index.html</loc>
   </url>
   <url>
@@ -121,18 +97,6 @@
     <loc>https://example.org/semaine15/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/afaire/projets/projet1/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/projets/projet2/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/projets/projet3/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/projets/projet4/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/solutions_exercices/index.html</loc>
   </url>
   <url>
@@ -188,9 +152,6 @@
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/afaire/maths/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/index.html</loc>

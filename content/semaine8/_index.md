@@ -273,6 +273,7 @@ df[df["col"] > seuil] 		# filtrage conditionnel
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_dict_fichiers.ipynb)
 
+[Fichier à utiliser: solubilite.csv](./solubilite.csv)
 
 ### Exercice 1 - Densités
 

@@ -1,8 +1,0 @@
-	2.1 Se connecter à ***OneDrive***  
-	2.2 Comprendre la gestion de fichiers (Explorateur de fichiers)  
-	       - Créer une structure de dossiers pour le cours.  
-	       - Activez l'affichage de l’extension des fichiers dans l'Explorateur.  
-	       - Télécharger un fichier, le retrouver et le placer dans le bon dossier.  
-	2.3 Créer un premier fichier `.ipynb` (***Jupyter Notebook***) sur ***Visual Studio Code***.  
-	2.4 Activer la sauvegarde automatique dans Visual Studio Code.  
-	2.5 Créer et exécuter des cellules (code et texte) avec ***Jupyter Notebook*** dans Visual Studio Code. 
