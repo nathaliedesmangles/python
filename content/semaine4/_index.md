@@ -258,7 +258,7 @@ N’écris pas tout d’un coup. Teste **par morceaux**.
 
 ## Exercices
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_struct_cond.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_boucles.ipynb)
 
 ### Exercice 1 - For ou While ?
 

@@ -281,6 +281,10 @@ resultat = (3 + 4) * 2     # donne 14 grâce aux ()
 
 ## Exercices
 
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_variables_entrees_fonctions.ipynb)
+
+
+
 ### Exercice 1 : Distance parcourue
 
 Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.

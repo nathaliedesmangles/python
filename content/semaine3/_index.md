@@ -307,6 +307,9 @@ Ces tests montrent que :
 
 ## Exercices
 
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_struct_cond.ipynb)
+
+
 ### Exercice 1 – Temps de demi-vie radioactive
 
 Un isotope radioactif se désintègre avec le temps. Sa masse diminue de moitié à chaque période de demi-vie.
