@@ -537,7 +537,7 @@ mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
 
 ### Exercice 
 
-Une station météorologique t’a envoyé un fichier `.csv` nommé **`temperatures.csv`**, contenant les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.
+Une station météorologique t’a envoyé les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.
 
 Tu disposes de la variable suivante :
 
@@ -576,6 +576,7 @@ donnees = [
    * Ajoute une **grille** et une **courbe** bleue avec marqueurs ronds (`'o'`)
    * **Sauvegarde** le graphique sous le nom `graphique_temperature.png`
 
+![Graphique](./graphique_temperature.png?width=45vw)
 
 4. **Exploration des chaînes de caractères**
 

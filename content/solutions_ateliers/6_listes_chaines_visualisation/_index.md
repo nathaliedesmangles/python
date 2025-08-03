@@ -71,6 +71,7 @@ plt.legend()
 plt.savefig("graphique_temperature.png")
 plt.show()
 
+
 # 4. Exploration des chaînes de caractères (températures de midi)
 
 nb_midi_sup_18 = 0
