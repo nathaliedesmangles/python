@@ -320,6 +320,8 @@ print("Dans 10 ans, tu auras" age + 10)
 
 ## Atelier
 
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_boucles.ipynb)
+
 ### Exercice 1 – Réaction chimique : combien de fois?
 
 Une réaction chimique simple a lieu entre deux réactifs A et B. À chaque cycle, 1 mL de A réagit avec 2 mL de B pour produire un précipité. Vous disposez d’un certain volume de A et de B.

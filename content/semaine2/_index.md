@@ -353,7 +353,7 @@ Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
 
 ---
 
-## Atelier 2
+## Atelier
 
 ### Exercice #1 - Expérience en chimie
 

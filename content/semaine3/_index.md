@@ -381,7 +381,10 @@ Demander à l’utilisateur la température et le pH, puis afficher :
 
 ---
 
-## Atelier 3
+## Atelier
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_struct_cond.ipynb)
+
 
 ### Exercice 1
 
