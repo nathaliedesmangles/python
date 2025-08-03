@@ -533,6 +533,8 @@ mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
 
 ## Atelier
 
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_listes_chaines_graphes.ipynb)
+
 ### Exercice 
 
 Une station météorologique t’a envoyé un fichier `.csv` nommé **`temperatures.csv`**, contenant les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.
