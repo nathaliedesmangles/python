@@ -284,7 +284,6 @@ resultat = (3 + 4) * 2     # donne 14 grâce aux ()
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_variables_entrees_fonctions.ipynb)
 
 
-
 ### Exercice 1 : Distance parcourue
 
 Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.
@@ -354,6 +353,8 @@ Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
 ---
 
 ## Atelier
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_variables_entrees_fonctions.ipynb)
 
 ### Exercice #1 - Expérience en chimie
 
