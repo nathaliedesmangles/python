@@ -362,6 +362,8 @@ Une plante pousse selon ce modèle : sa taille augmente de 2 cm par jour.
 
 ## Atelier
 
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_numpy_regression.ipynb)
+
 ## Exercice : Analyse d’une expérience sur l’effet de la lumière sur la croissance des plantes
 
 Une équipe de recherche a mesuré la hauteur (en cm) de jeunes plantes après 10 jours de croissance dans trois conditions lumineuses différentes :
