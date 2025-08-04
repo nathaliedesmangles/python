@@ -89,7 +89,7 @@ draft = false
 
 ## 2. Atelier
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_photosynthese_etudiant.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_revision.ipynb)
 
 ### Étude de la photosynthèse et de la température chez les plantes
 
