@@ -18,21 +18,21 @@
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Dictionnaires et fichier textes (csv) :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.">
-    <meta itemprop="wordCount" content="1097">
+    <meta itemprop="wordCount" content="1063">
     <title> Dictionnaires et fichier textes (csv) :: 420-SN1-RE</title>
     <link href="/semaine8/index.xml" rel="alternate" type="application/rss+xml" title=" Dictionnaires et fichier textes (csv) :: 420-SN1-RE">
-    <link href="/images/logo.png?1754267905" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754267905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754267905" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1754267905" rel="stylesheet">
-    <link href="/css/theme.min.css?1754267905" rel="stylesheet">
-    <link href="/css/format-html.min.css?1754267905" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1754267905" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1754267905" defer></script>
-    <script src="/js/lunr/lunr.min.js?1754267905" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1754267905" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1754267905" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1754267905" defer></script>
-    <script src="/js/search.min.js?1754267905" defer></script>
+    <link href="/images/logo.png?1754273275" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754273275" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754273275" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1754273275" rel="stylesheet">
+    <link href="/css/theme.min.css?1754273275" rel="stylesheet">
+    <link href="/css/format-html.min.css?1754273275" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1754273275" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1754273275" defer></script>
+    <script src="/js/lunr/lunr.min.js?1754273275" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1754273275" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1754273275" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1754273275" defer></script>
+    <script src="/js/search.min.js?1754273275" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1754267905";
+      window.relearn.index_js_url="/searchindex.en.js?1754273275";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1754267905" rel="stylesheet">
+    <link href="/css/custom.css?1754273275" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine8/index.html">
     <div id="R-body" class="default-animation">
@@ -158,7 +158,6 @@
     <li><a href="#exercice">Exercice</a>
       <ul>
         <li><a href="#instructions">Instructions</a></li>
-        <li><a href="#extension-pour-les-rapides-facultatif">Extension pour les rapides (facultatif)</a></li>
       </ul>
     </li>
     <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
@@ -400,10 +399,11 @@ Il permet de stocker des informations organisées, un peu comme un mini-fichier 
 </ol>
 <hr>
 <h2 id="atelier">Atelier</h2>
+<p><a href="https://python-a25.netlify.app/blocnotes/atelier.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
+<p><a href="/semaine8/cristallisation.csv">Fichier à utiliser: cristallisation.csv</a></p>
 <h2 id="exercice">Exercice</h2>
 <p>On a réalisé des expériences pour mesurer la température de cristallisation de différentes substances dans plusieurs conditions (pression normale, pression élevée, en solution aqueuse, etc.).</p>
-<p>Les données sont enregistrées dans un fichier CSV, sous la forme suivante :</p>
-<p><a href="/semaine8/cristallisation.csv">Fichier à utiliser: cristallisation.csv</a></p>
+<p>Les données sont enregistrées dans le fichier CSV.</p>
 <p>Contenu :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-csv" data-lang="csv">substance,condition,temp_cristallisation
 NaCl,pression_normale,801
@@ -442,12 +442,6 @@ Fe,en_solution,1530</code></pre></div>
 </li>
 </ol>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Pour H2O, l’écart maximal est de 5°C entre deux conditions.</span></span></code></pre></div>
-<h3 id="extension-pour-les-rapides-facultatif">Extension pour les rapides (facultatif)</h3>
-<p>Créer une fonction <code>comparaison_substances(donnees)</code> qui :</p>
-<ul>
-<li>Compare les températures moyennes de cristallisation de chaque substance.</li>
-<li>Identifie quelle substance cristallise en moyenne à la température la plus élevée.</li>
-</ul>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <blockquote>
@@ -545,8 +539,8 @@ Fe,en_solution,1530</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1754267905" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1754267905" defer></script>
-    <script src="/js/theme.min.js?1754267905" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1754273275" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1754273275" defer></script>
+    <script src="/js/theme.min.js?1754273275" defer></script>
   </body>
 </html>

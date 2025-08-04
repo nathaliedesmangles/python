@@ -327,13 +327,15 @@ Puis :
 
 ## Atelier
 
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier.ipynb)
+
+[Fichier à utiliser: cristallisation.csv](./cristallisation.csv)
+
 ## Exercice
 
 On a réalisé des expériences pour mesurer la température de cristallisation de différentes substances dans plusieurs conditions (pression normale, pression élevée, en solution aqueuse, etc.).
 
-Les données sont enregistrées dans un fichier CSV, sous la forme suivante :
-
-[Fichier à utiliser: cristallisation.csv](./cristallisation.csv)
+Les données sont enregistrées dans le fichier CSV.
 
 Contenu :
 
@@ -378,13 +380,6 @@ NaCl cristallise à 800°C en solution.
 ```text
 Pour H2O, l’écart maximal est de 5°C entre deux conditions.
 ```
-
-### Extension pour les rapides (facultatif)
-
-Créer une fonction `comparaison_substances(donnees)` qui :
-
-* Compare les températures moyennes de cristallisation de chaque substance.
-* Identifie quelle substance cristallise en moyenne à la température la plus élevée.
 
 ---
 

@@ -89,6 +89,8 @@ draft = false
 
 ## 2. Atelier
 
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_photosynthese_etudiant.ipynb)
+
 ### Étude de la photosynthèse et de la température chez les plantes
 
 Cet atelier permet de :
@@ -110,10 +112,6 @@ Cet atelier permet de :
 | Visualisation avec matplotlib         |
 | Régression linéaire                   |
 | Fonctions personnalisées (facultatif) |
-
-### Notebook de départ
-
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_photosynthese_etudiant.ipynb)
 
 ---
 

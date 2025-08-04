@@ -269,6 +269,8 @@ NameError: name 'prenom' is not defined
 
 ## Atelier
 
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_fonctions_perso.ipynb)
+
 
 ## Exercice – Calcul de dilution (C₁V₁ = C₂V₂)
 
