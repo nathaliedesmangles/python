@@ -327,7 +327,7 @@ Puis :
 
 ## Atelier
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_dict_fichiers.ipynb)
 
 [Fichier à utiliser: cristallisation.csv](./cristallisation.csv)
 
