@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "<b>15.</b>"
-title = " Évaluation #3 (20%)"
+title = " Évaluation intégratrice (30%)"
 weight = 115
 draft = false
 +++
@@ -17,7 +17,7 @@ draft = false
 
 
 {{% notice style="accent" title="Important" %}}
-Vous devez remettre votre code sur Moodle : le fichier `projet_prenom_nom.ipynb` au plus tard ce soir à 23h59.
+Vous devez remettre votre code sur Moodle : le fichier `projet_prenom_nom.ipynb` (**15%**) au plus tard ce soir à 23h59.
 {{% /notice %}}
 
 

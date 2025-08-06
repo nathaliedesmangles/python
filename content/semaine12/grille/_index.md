@@ -4,9 +4,11 @@ weight = 112.1
 draft = false
 +++
 
-## Pondération du projet
+## Pondération du projet (45%)
 
-> **Rappel** : Le projet compte pour **35%** de la note finale du cours.
+> **Rappels** : 
+1. La remise du projet compte pour **15%** de la note finale du cours.
+2. L'évaluation intégratrice compte pour **30%** de la note finale du cours.
 
 
 ## Grille critériée

@@ -4,7 +4,7 @@ chapter = true
 
 pre = "5."
 
-title = " Évaluation #1 (20%)"
+title = " Évaluation #1 (25%)"
 
 weight = 105
 

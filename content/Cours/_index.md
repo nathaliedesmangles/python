@@ -103,7 +103,7 @@ td[colspan="3"] {
     </tr>
     <tr>
       <td><a href="../semaine5/"><strong>Cours 05</strong></a></td>
-      <td colspan="3"><strong>Évaluation #1 (20%)</strong><br>22 septembre (grp9)<br>24 septembre (grp11)<br>19 septembre (grp10)</td>
+      <td colspan="3"><strong>Évaluation #1 (25%)</strong><br>22 septembre (grp9)<br>24 septembre (grp11)<br>19 septembre (grp10)</td>
     </tr>
     <tr>
       <td><a href="../semaine6/"><strong>Cours 06</strong></a></td>
@@ -131,7 +131,7 @@ td[colspan="3"] {
     </tr>
     <tr>
       <td><a href="../semaine10/"><strong>Cours 10</strong></a></td>
-      <td colspan="3"><strong>Évaluation #2 (25%)</strong><br>3 novembre(grp9)<br>5 novembre (grp11)<br>1 octobre (grp10)</td>
+      <td colspan="3"><strong>Évaluation #2 (30%)</strong><br>3 novembre(grp9)<br>5 novembre (grp11)<br>1 octobre (grp10)</td>
     </tr>
     <tr>
       <td><a href="../semaine11/"><strong>Cours 11</strong></a></td>
@@ -160,7 +160,7 @@ td[colspan="3"] {
     <tr>
       <td><a href="../semaine15/"><strong>Cours 15</strong></a></td>
       <td colspan="3">
-        <strong>Évaluation #3 (20%) <br>Remise du projet (35%)</strong><br>
+        <strong>Évaluation intégratrice (30%) <br>Remise du projet (15%)</strong><br>
 	8 décembre (grp9)<br>10 décembre (grp11)<br>12 décembre (grp10)
       </td>
     </tr>

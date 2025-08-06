@@ -40,7 +40,7 @@
       <link>https://example.org/cours/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/cours/index.html</guid>
-      <description>Liste d’attente pour poser des questions Cliquez ici pour entrer votre nom&#xA;Plan de cours Plan de cours&#xA;Calendrier scolaire et répartition des 15 semaines Calendrier scolaire Répartition des 15 semaines Groupe 09&#xA;(lundi 15h20)&#xD;Groupe 11&#xA;(mercredi 08h00)&#xD;Groupe 10&#xA;(vendredi 15h20)&#xD;Cours 01&#xD;25 août&#xA;Quiz&#xD;27 août&#xA;Quiz&#xD;22 août&#xA;Quiz&#xD;Cours 02&#xD;4 septembre&#xD;3 septembre&#xD;29 août&#xD;Cours 03&#xD;8 septembre&#xD;10 septembre&#xD;5 septembre&#xD;Cours 04&#xD;15 septembre&#xD;17 septembre&#xD;12 septembre&#xD;Cours 05&#xD;Évaluation #1 (20%)</description>
+      <description>Liste d’attente pour poser des questions Cliquez ici pour entrer votre nom&#xA;Plan de cours Plan de cours&#xA;Calendrier scolaire et répartition des 15 semaines Calendrier scolaire Répartition des 15 semaines Groupe 09&#xA;(lundi 15h20)&#xD;Groupe 11&#xA;(mercredi 08h00)&#xD;Groupe 10&#xA;(vendredi 15h20)&#xD;Cours 01&#xD;25 août&#xA;Quiz&#xD;27 août&#xA;Quiz&#xD;22 août&#xA;Quiz&#xD;Cours 02&#xD;4 septembre&#xD;3 septembre&#xD;29 août&#xD;Cours 03&#xD;8 septembre&#xD;10 septembre&#xD;5 septembre&#xD;Cours 04&#xD;15 septembre&#xD;17 septembre&#xD;12 septembre&#xD;Cours 05&#xD;Évaluation #1 (25%)</description>
     </item>
     <item>
       <title> Présentation du cours et l&#39;environnement de travail</title>
@@ -71,7 +71,7 @@
       <description>Objectifs Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Répéter des instructions un nombre de fois connu d’avance avec la boucle for. Interrompre le déroulement d’une boucle. Comprendre les messages d’erreurs et découvrir des stratégies simples de débogage. À quoi servent les boucles ? Répéter des instructions plusieurs fois, soit un nombre connu (for), soit jusqu’à ce qu’une condition soit atteinte (while).&#xA;Boucle while La boucle while répète un bloc tant qu’une condition est vraie.</description>
     </item>
     <item>
-      <title> Évaluation #1 (20%)</title>
+      <title> Évaluation #1 (25%)</title>
       <link>https://example.org/semaine5/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine5/index.html</guid>
@@ -106,7 +106,7 @@
       <description>Bloc-notes de départ&#xA;Fichier à utiliser: conductivite.csv&#xA;Exercice 1 : Neutralisation acide-base (chimie) Notions : conditions, boucles, dictionnaire, fonctions Contexte : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7. Tâche :&#xA;Simule une titration acide-base par paliers de 0.5 mL. Utilise une fonction pH(volume_base) (fourni ou à coder selon une loi empirique simplifiée). Arrête la simulation dès que le pH est compris entre 6.</description>
     </item>
     <item>
-      <title> Évaluation #2 (25%)</title>
+      <title> Évaluation #2 (30%)</title>
       <link>https://example.org/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine10/index.html</guid>
@@ -120,32 +120,18 @@
       <description>Objectifs Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:&#xA;Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :. Les instructions de la fonction sont sur les lignes d’en dessous, décalées.</description>
     </item>
     <item>
-      <title> Projet - Présentation et analyse</title>
+      <title> Projet - Présentation, analyse et traduction</title>
       <link>https://example.org/semaine12/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine12/index.html</guid>
       <description>Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Projet : Enquête scientifique par analyse d’ADN Contexte Vous êtes le ou la bioinformaticien·ne en charge d’une enquête médico-légale : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.</description>
     </item>
     <item>
-      <title> Projet-Partie 2: Représentations graphiques de base</title>
-      <link>https://example.org/semaine13/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine13/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> Projet-Partie 3: Représentation graphique avancée</title>
-      <link>https://example.org/semaine14/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine14/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> Évaluation #3 (20%)</title>
+      <title> Évaluation intégratrice (30%)</title>
       <link>https://example.org/semaine15/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine15/index.html</guid>
-      <description>Informations Date:&#x9;Semaine #15 (Voir le calendrier) Matière: Semaines 1 à 14 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format:&#x9;À confirmer Important&#xD;Vous devez remettre votre code sur Moodle : le fichier projet_prenom_nom.ipynb au plus tard ce soir à 23h59.</description>
+      <description>Informations Date:&#x9;Semaine #15 (Voir le calendrier) Matière: Semaines 1 à 14 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format:&#x9;À confirmer Important&#xD;Vous devez remettre votre code sur Moodle : le fichier projet_prenom_nom.ipynb (15%) au plus tard ce soir à 23h59.</description>
     </item>
     <item>
       <title>Solutions des exercices</title>

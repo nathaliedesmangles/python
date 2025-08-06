@@ -41,10 +41,10 @@ weight = 10
 * Puis-je avoir les solutions des ateliers ?
 > **Oui**. Ils sont ajoutés [ICI](../solutions_ateliers) au fur et à mesure.
 
-
-* Puis-je avoir les solutions des évaluations formatives (semaines #4, #8 et #11) ?
+<!--
+* Puis-je avoir les solutions des évaluations formatives (semaines #5, #10 et #15) ?
 > **Non**, car elles se rapprochent beaucoup des évaluations sommatives.
-
+-->
 
 * Quelle date est l'examen ?
 > Voir le **plan de cours** accompagné du **calendrier scolaire/répartition des semaines**.  
@@ -52,21 +52,22 @@ weight = 10
 
 
 * Qu'avons-nous droit pour les examens ?
-> [Évaluation 1](../semaine4/)  
-> [Évaluation 2](../semaine8/)   
-> [Évaluation 3](../semaine11/)       
+> [Évaluation 1](../semaine5/)  
+> [Évaluation 2](../semaine10/)   
+> [Évaluation intégratrice](../semaine15/)       
 
 
 * Combien vaut l'examen ?
-> [Évaluation 1](../semaine4/)  
-> [Évaluation 2](../semaine8/)   
-> [Évaluation 3](../semaine11/)    
+> [Évaluation 1](../semaine5/)  
+> [Évaluation 2](../semaine10/)   
+> [Évaluation intégratrice](../semaine15/)    
 
 
 * Sur quoi portera l'examen ?
-> [Évaluation 1](../semaine4/)  
-> [Évaluation 2](../semaine8/)   
-> [Évaluation 3](../semaine11/)   
+> [Évaluation 1](../semaine5/)  
+> [Évaluation 2](../semaine10/)   
+> [Évaluation intégratrice](../semaine15/)   
 
 * Combien vaut le projet final ?
+> [Informations](../semaine15/)
 > [Grille d'évaluation du projet](../semaine12/grille/)  

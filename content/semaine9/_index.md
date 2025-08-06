@@ -22,7 +22,7 @@ draft = false
 * Arrête la simulation dès que le pH est compris entre 6.8 et 7.2.
 * Affiche tous les volumes testés avec leur pH.
 
-> Variante : Représente les valeurs sur un graphique volume vs pH pour visualiser le point d'équivalence.
+> **Variante** : Représente les valeurs sur un graphique volume vs pH pour visualiser le point d'équivalence.
 
 
 
@@ -37,7 +37,7 @@ draft = false
 * Génère et affiche la liste des quantités pour t = 0 à 60 s par pas de 5.
 * Trace la courbe avec `matplotlib`.
 
-> Variante : Ajouter un bruit expérimental (± 5%) et comparer avec la courbe théorique.
+> **Variante** : Ajouter un bruit expérimental (± 5%) et comparer avec la courbe théorique.
 
 
 
@@ -52,7 +52,7 @@ draft = false
 * Calcule la pente moyenne avant et après l’équivalence pour déterminer approximativement le volume d’équivalence.
 * Affiche ce volume estimé.
 
-> Variante : Ajouter une estimation par interpolation entre deux points.
+> **Variante** : Ajouter une estimation par interpolation entre deux points.
 
 
 
@@ -67,7 +67,7 @@ draft = false
 * Calcule la pente et l’ordonnée à l’origine de la droite de régression.
 * Utilise la droite pour estimer la concentration d’une solution inconnue.
 
-> Variante : Ajouter les barres d’erreur sur l’absorbance.
+> **Variante** : Ajouter les barres d’erreur sur l’absorbance.
 
 
 
@@ -82,7 +82,7 @@ draft = false
 * Simule la position et la vitesse sur 10 secondes (delta t = 0.1 s).
 * Affiche les positions et trace la courbe position vs temps.
 
-> Variante : Comparer les trajectoires avec et sans friction sur un même graphique.
+> **Variante** : Comparer les trajectoires avec et sans friction sur un même graphique.
 
 
 ---

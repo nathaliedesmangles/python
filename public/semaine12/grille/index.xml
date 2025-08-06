@@ -3,7 +3,7 @@
   <channel>
     <title>Grille d&#39;évaluation critériée :: 420-SN1-RE</title>
     <link>https://example.org/semaine12/grille/index.html</link>
-    <description>Pondération du projet Rappel : Le projet compte pour 35% de la note finale du cours.&#xA;Grille critériée Version PDF à téléchargeable&#xA;Volet Critère Excellent (100 %) Satisfaisant (75 %) Partiel (50 %) Insuffisant (0-25 %) /xx 1. Planification Le bloc-notes est structuré avec des objectifs, des étapes claires et une organisation logique Tous les éléments sont présents, bien hiérarchisés et cohérents Présence de la plupart des éléments, organisation générale claire Organisation présente mais confuse ou incomplète Aucune planification apparente /10 2.</description>
+    <description>Pondération du projet (45%) Rappels :&#xA;La remise du projet compte pour 15% de la note finale du cours. L’évaluation intégratrice compte pour 30% de la note finale du cours. Grille critériée Version PDF à téléchargeable&#xA;Volet Critère Excellent (100 %) Satisfaisant (75 %) Partiel (50 %) Insuffisant (0-25 %) /xx 1. Planification Le bloc-notes est structuré avec des objectifs, des étapes claires et une organisation logique Tous les éléments sont présents, bien hiérarchisés et cohérents Présence de la plupart des éléments, organisation générale claire Organisation présente mais confuse ou incomplète Aucune planification apparente /10 2.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine12/grille/index.xml" rel="self" type="application/rss+xml" />

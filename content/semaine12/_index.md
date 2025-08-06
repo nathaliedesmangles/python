@@ -1,7 +1,7 @@
 +++
 chapter = true
-pre = "<b>12.</b>"
-title = " Projet - Présentation et analyse"
+pre = "<b>12-14</b>"
+title = " Projet - Présentation, analyse et traduction"
 weight = 112
 draft = false
 +++
