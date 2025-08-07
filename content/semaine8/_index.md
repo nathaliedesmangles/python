@@ -134,6 +134,14 @@ temps,temperature
 
 **Écrire (créer)** :
 
+Voici comment procéder:
+
+* `with open("donnees.csv", "w") as f` : On ouvre (ou crée) un fichier nommé `donnees.csv` en mode écriture (`"w"`), prêt à y écrire du texte.
+* `f.write("Nom,Âge\n")` : On écrit l'en-tête (les noms de colonnes) dans le fichier.
+* `f.write("Alice,20\n")` : On écrit la première ligne de données.
+* `f.write("Bob,22\n")` : On écrit la deuxième ligne de données.
+
+Le code complet:
 ```python
 with open("donnees.csv", "w") as f:
     f.write("Nom,Âge\n")
@@ -142,6 +150,14 @@ with open("donnees.csv", "w") as f:
 ```
 
 **Lire un fichier `.csv`**
+
+Voici comment procéder :
+
+* `import csv` : On importe le module `csv`, utile pour lire des fichiers CSV.
+* `with open("donnees.csv", "r") as f` : On ouvre le fichier `donnees.csv` en mode lecture (`"r"`).
+* `contenu = f.read()` : On lit tout le contenu du fichier et on le met dans la variable `contenu`.
+* `print(contenu)` : On affiche le contenu du fichier à l’écran.
+
 
 ```python
 # Lecture du fichier CSV
@@ -188,10 +204,27 @@ df = pd.read_csv("solubilite.csv")
 print(df.head())
 ```
 
+### Exemple d'affichage
+
+```
+   Sel          Température               Solubilité
+0  NaCl                  20                     35.7
+1  NaCl                  40                     36.5
+2  NaCl                  60                     37.3
+3  KNO3                  20                     31.6
+4  KNO3                  40                     63.9
+```
+
 ## Afficher les noms des colonnes
 
 ```python
 print(df.columns)
+```
+
+### Exemple d'affichage
+
+```
+Index(['Sel', 'Température', 'Solubilité'], dtype='object')
 ```
 
 ## Afficher toutes les mesures pour un seul composé
@@ -199,8 +232,18 @@ print(df.columns)
 Exemple : tout ce qui concerne le **nitrate de potassium (KNO₃)**
 
 ```python
-filtre = df["Composé"] == "KNO3"
+filtre = df["Sel"] == "KNO3"
 print(df[filtre])
+```
+Le filtre sélectionne les lignes où le composé est exactement "KNO3".
+
+### Exemple d'affichage
+
+```
+      Sel       Température               Solubilité
+3    KNO3                20                     31.6
+4    KNO3                40                     63.9
+5    KNO3                60                     85.5
 ```
 
 ## Accéder à une colonne (ex. : Température)
@@ -209,30 +252,58 @@ print(df[filtre])
 print(df["Température"])
 ```
 
+La commande `print(df["Température"])` affiche toutes les valeurs de la colonne **Température** du tableau de données.
+
 ## Moyenne de solubilité pour un composé
 
 ```python
-filtre = df["Composé"] == "NaCl"
+filtre = df["Sel"] == "NaCl"
 moyenne = df[filtre]["Solubilité"].mean()
 print(f"Moyenne de solubilité pour NaCl : {moyenne:.2f} g/100mL")
 ```
 
+**Explication** : 
+
+* `filtre = df["Sel"] == "NaCl"` : On crée un filtre pour ne garder que les lignes où le sel est **NaCl**.
+* `moyenne = df[filtre]["Solubilité"].mean()` : On calcule la **moyenne** des valeurs de solubilité pour **NaCl** seulement.
+
+
 ## Boucler sur les composés
 
 ```python
-composes = df["Composé"].unique()
+composes = df["Sel"].unique()
 for compose in composes:
-    moyenne = df[df["Composé"] == compose]["Solubilité"].mean()
+    moyenne = df[df["Sel"] == compose]["Solubilité"].mean()
     print(f"{compose} : {moyenne:.2f} g/100mL")
 ```
 
+**Explication** :
+
+* `composes = df["Sel"].unique()` : On récupère la liste des différents sels présents dans la colonne **Sel**.
+* `for compose in composes:` : Pour chaque sel dans cette liste, on calcule la moyenne de la solubilité pour ce sel.
+
+
 ## Ajouter une colonne calculée
 
-Exemple : ajouter une colonne indiquant si la solubilité est "haute" (> 80) ou "faible"
+Exemple : ajouter une colonne indiquant si la solubilité est **supérieure à 80 "True" ou non "False"
 
 ```python
 df["Évaluation"] = df["Solubilité"] > 80
 print(df)
+```
+
+### Exemple d'affichage
+
+La colonne **Évaluation** contient `True` si la solubilité est supérieure à 80, sinon `False`
+
+```
+    Sel  Température (°C)  Solubilité  Évaluation
+0  NaCl                20        35.7       False
+1  NaCl                40        36.5       False
+2  KNO3                20        31.6       False
+3  KNO3                40        63.9       False
+4  KNO3                60        85.5        True
+5  KCl                 80        81.1        True
 ```
 
 ---

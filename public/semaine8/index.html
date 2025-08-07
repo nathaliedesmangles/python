@@ -18,21 +18,21 @@
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Dictionnaires et fichiers texte (csv) :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.">
-    <meta itemprop="wordCount" content="1058">
+    <meta itemprop="wordCount" content="1384">
     <title> Dictionnaires et fichiers texte (csv) :: 420-SN1-RE</title>
     <link href="/semaine8/index.xml" rel="alternate" type="application/rss+xml" title=" Dictionnaires et fichiers texte (csv) :: 420-SN1-RE">
-    <link href="/images/logo.png?1754583428" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754583428" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754583428" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1754583428" rel="stylesheet">
-    <link href="/css/theme.min.css?1754583428" rel="stylesheet">
-    <link href="/css/format-html.min.css?1754583428" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1754583428" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1754583428" defer></script>
-    <script src="/js/lunr/lunr.min.js?1754583428" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1754583428" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1754583428" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1754583428" defer></script>
-    <script src="/js/search.min.js?1754583428" defer></script>
+    <link href="/images/logo.png?1754584926" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754584926" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754584926" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1754584926" rel="stylesheet">
+    <link href="/css/theme.min.css?1754584926" rel="stylesheet">
+    <link href="/css/format-html.min.css?1754584926" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1754584926" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1754584926" defer></script>
+    <script src="/js/lunr/lunr.min.js?1754584926" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1754584926" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1754584926" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1754584926" defer></script>
+    <script src="/js/search.min.js?1754584926" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1754583428";
+      window.relearn.index_js_url="/searchindex.en.js?1754584926";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1754583428" rel="stylesheet">
+    <link href="/css/custom.css?1754584926" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine8/index.html">
     <div id="R-body" class="default-animation">
@@ -138,13 +138,29 @@
       </ul>
     </li>
     <li><a href="#charger-un-fichier-csv">Charger un fichier CSV</a></li>
-    <li><a href="#afficher-les-10-premières-lignes">Afficher les 10 premières lignes</a></li>
-    <li><a href="#afficher-les-noms-des-colonnes">Afficher les noms des colonnes</a></li>
-    <li><a href="#afficher-toutes-les-mesures-pour-un-seul-composé">Afficher toutes les mesures pour un seul composé</a></li>
+    <li><a href="#afficher-les-10-premières-lignes">Afficher les 10 premières lignes</a>
+      <ul>
+        <li><a href="#exemple-daffichage">Exemple d&rsquo;affichage</a></li>
+      </ul>
+    </li>
+    <li><a href="#afficher-les-noms-des-colonnes">Afficher les noms des colonnes</a>
+      <ul>
+        <li><a href="#exemple-daffichage-1">Exemple d&rsquo;affichage</a></li>
+      </ul>
+    </li>
+    <li><a href="#afficher-toutes-les-mesures-pour-un-seul-composé">Afficher toutes les mesures pour un seul composé</a>
+      <ul>
+        <li><a href="#exemple-daffichage-2">Exemple d&rsquo;affichage</a></li>
+      </ul>
+    </li>
     <li><a href="#accéder-à-une-colonne-ex--température">Accéder à une colonne (ex. : Température)</a></li>
     <li><a href="#moyenne-de-solubilité-pour-un-composé">Moyenne de solubilité pour un composé</a></li>
     <li><a href="#boucler-sur-les-composés">Boucler sur les composés</a></li>
-    <li><a href="#ajouter-une-colonne-calculée">Ajouter une colonne calculée</a></li>
+    <li><a href="#ajouter-une-colonne-calculée">Ajouter une colonne calculée</a>
+      <ul>
+        <li><a href="#exemple-daffichage-3">Exemple d&rsquo;affichage</a></li>
+      </ul>
+    </li>
     <li><a href="#exercices">Exercices</a>
       <ul>
         <li><a href="#exercice-1---densités">Exercice 1 - Densités</a></li>
@@ -270,11 +286,26 @@ Il permet de stocker des informations organisées, un peu comme un mini-fichier 
 15,28.0</code></pre></div>
 <h3 id="lire-et-écrire-des-fichiers-de-données-csv">Lire et écrire des fichiers de données (.csv)</h3>
 <p><strong>Écrire (créer)</strong> :</p>
+<p>Voici comment procéder:</p>
+<ul>
+<li><code>with open(&quot;donnees.csv&quot;, &quot;w&quot;) as f</code> : On ouvre (ou crée) un fichier nommé <code>donnees.csv</code> en mode écriture (<code>&quot;w&quot;</code>), prêt à y écrire du texte.</li>
+<li><code>f.write(&quot;Nom,Âge\n&quot;)</code> : On écrit l&rsquo;en-tête (les noms de colonnes) dans le fichier.</li>
+<li><code>f.write(&quot;Alice,20\n&quot;)</code> : On écrit la première ligne de données.</li>
+<li><code>f.write(&quot;Bob,22\n&quot;)</code> : On écrit la deuxième ligne de données.</li>
+</ul>
+<p>Le code complet:</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;donnees.csv&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> f:
 </span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;Nom,Âge</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;Alice,20</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#34;Bob,22</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
 <p><strong>Lire un fichier <code>.csv</code></strong></p>
+<p>Voici comment procéder :</p>
+<ul>
+<li><code>import csv</code> : On importe le module <code>csv</code>, utile pour lire des fichiers CSV.</li>
+<li><code>with open(&quot;donnees.csv&quot;, &quot;r&quot;) as f</code> : On ouvre le fichier <code>donnees.csv</code> en mode lecture (<code>&quot;r&quot;</code>).</li>
+<li><code>contenu = f.read()</code> : On lit tout le contenu du fichier et on le met dans la variable <code>contenu</code>.</li>
+<li><code>print(contenu)</code> : On affiche le contenu du fichier à l’écran.</li>
+</ul>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Lecture du fichier CSV</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
 </span></span><span style="display:flex;"><span>
@@ -299,27 +330,62 @@ Il permet de stocker des informations organisées, un peu comme un mini-fichier 
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;solubilite.csv&#34;</span>)</span></span></code></pre></div>
 <h2 id="afficher-les-10-premières-lignes">Afficher les 10 premières lignes</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>head())</span></span></code></pre></div>
+<h3 id="exemple-daffichage">Exemple d&rsquo;affichage</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>   Sel          Température               Solubilité
+0  NaCl                  20                     35.7
+1  NaCl                  40                     36.5
+2  NaCl                  60                     37.3
+3  KNO3                  20                     31.6
+4  KNO3                  40                     63.9</code></pre></div>
 <h2 id="afficher-les-noms-des-colonnes">Afficher les noms des colonnes</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>columns)</span></span></code></pre></div>
+<h3 id="exemple-daffichage-1">Exemple d&rsquo;affichage</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Index([&#39;Sel&#39;, &#39;Température&#39;, &#39;Solubilité&#39;], dtype=&#39;object&#39;)</code></pre></div>
 <h2 id="afficher-toutes-les-mesures-pour-un-seul-composé">Afficher toutes les mesures pour un seul composé</h2>
 <p>Exemple : tout ce qui concerne le <strong>nitrate de potassium (KNO₃)</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;KNO3&#34;</span>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Sel&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;KNO3&#34;</span>
 </span></span><span style="display:flex;"><span>print(df[filtre])</span></span></code></pre></div>
+<p>Le filtre sélectionne les lignes où le composé est exactement &ldquo;KNO3&rdquo;.</p>
+<h3 id="exemple-daffichage-2">Exemple d&rsquo;affichage</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>      Sel       Température               Solubilité
+3    KNO3                20                     31.6
+4    KNO3                40                     63.9
+5    KNO3                60                     85.5</code></pre></div>
 <h2 id="accéder-à-une-colonne-ex--température">Accéder à une colonne (ex. : Température)</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df[<span style="color:#e6db74">&#34;Température&#34;</span>])</span></span></code></pre></div>
+<p>La commande <code>print(df[&quot;Température&quot;])</code> affiche toutes les valeurs de la colonne <strong>Température</strong> du tableau de données.</p>
 <h2 id="moyenne-de-solubilité-pour-un-composé">Moyenne de solubilité pour un composé</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;NaCl&#34;</span>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Sel&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;NaCl&#34;</span>
 </span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> df[filtre][<span style="color:#e6db74">&#34;Solubilité&#34;</span>]<span style="color:#f92672">.</span>mean()
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne de solubilité pour NaCl : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
+<p><strong>Explication</strong> :</p>
+<ul>
+<li><code>filtre = df[&quot;Sel&quot;] == &quot;NaCl&quot;</code> : On crée un filtre pour ne garder que les lignes où le sel est <strong>NaCl</strong>.</li>
+<li><code>moyenne = df[filtre][&quot;Solubilité&quot;].mean()</code> : On calcule la <strong>moyenne</strong> des valeurs de solubilité pour <strong>NaCl</strong> seulement.</li>
+</ul>
 <h2 id="boucler-sur-les-composés">Boucler sur les composés</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>composes <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>]<span style="color:#f92672">.</span>unique()
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>composes <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Sel&#34;</span>]<span style="color:#f92672">.</span>unique()
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> compose <span style="color:#f92672">in</span> composes:
-</span></span><span style="display:flex;"><span>    moyenne <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> compose][<span style="color:#e6db74">&#34;Solubilité&#34;</span>]<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>    moyenne <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#34;Sel&#34;</span>] <span style="color:#f92672">==</span> compose][<span style="color:#e6db74">&#34;Solubilité&#34;</span>]<span style="color:#f92672">.</span>mean()
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>compose<span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
+<p><strong>Explication</strong> :</p>
+<ul>
+<li><code>composes = df[&quot;Sel&quot;].unique()</code> : On récupère la liste des différents sels présents dans la colonne <strong>Sel</strong>.</li>
+<li><code>for compose in composes:</code> : Pour chaque sel dans cette liste, on calcule la moyenne de la solubilité pour ce sel.</li>
+</ul>
 <h2 id="ajouter-une-colonne-calculée">Ajouter une colonne calculée</h2>
-<p>Exemple : ajouter une colonne indiquant si la solubilité est &ldquo;haute&rdquo; (&gt; 80) ou &ldquo;faible&rdquo;</p>
+<p>Exemple : ajouter une colonne indiquant si la solubilité est **supérieure à 80 &ldquo;True&rdquo; ou non &ldquo;False&rdquo;</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Évaluation&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Solubilité&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">80</span>
 </span></span><span style="display:flex;"><span>print(df)</span></span></code></pre></div>
+<h3 id="exemple-daffichage-3">Exemple d&rsquo;affichage</h3>
+<p>La colonne <strong>Évaluation</strong> contient <code>True</code> si la solubilité est supérieure à 80, sinon <code>False</code></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>    Sel  Température (°C)  Solubilité  Évaluation
+0  NaCl                20        35.7       False
+1  NaCl                40        36.5       False
+2  KNO3                20        31.6       False
+3  KNO3                40        63.9       False
+4  KNO3                60        85.5        True
+5  KCl                 80        81.1        True</code></pre></div>
 <hr>
 
 <details class=" box cstyle notices blue expand" name="notice-toggle">
@@ -535,8 +601,8 @@ Fe,en_solution,1530</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1754583428" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1754583428" defer></script>
-    <script src="/js/theme.min.js?1754583428" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1754584926" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1754584926" defer></script>
+    <script src="/js/theme.min.js?1754584926" defer></script>
   </body>
 </html>
