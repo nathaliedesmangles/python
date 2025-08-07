@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "8."
-title = " Dictionnaires et fichier textes (csv)"
+title = " Dictionnaires et fichiers texte (csv)"
 weight = 108
 draft = false
 +++
@@ -99,11 +99,6 @@ for valeur in masses_molaires.values():
 * `.values()` permet d’obtenir **uniquement les valeurs** du dictionnaire, sans les clés.
 * **Utile quand on veut faire un calcul avec les valeurs**, comme une moyenne ou une somme.
 
-```python
-for valeur in densites.values():
-    print(valeur)
-```
-
 
 ### Via les paires clé-valeur :
 
@@ -121,7 +116,7 @@ for element, masse in masses_molaires.items():
 del masses_molaires["H"]
 ```
 
-## Traitement de fichiers textes (.csv)
+## Traitement de fichiers texte (.csv)
 
 Les fichiers `.csv` (*Comma-Separated Values*) permettent de stocker des tableaux de données.
 
@@ -208,7 +203,7 @@ filtre = df["Composé"] == "KNO3"
 print(df[filtre])
 ```
 
-## Accéder à une colonne (ex. : Températures)
+## Accéder à une colonne (ex. : Température)
 
 ```python
 print(df["Température"])

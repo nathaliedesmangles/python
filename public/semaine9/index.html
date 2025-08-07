@@ -30,21 +30,21 @@ Simule une titration acide-base par paliers de 0.5 mL. Utilise la formule p = 
 Exercice 1 : Neutralisation acide-base (chimie) Notions : conditions, boucles, dictionnaire, fonctions Contexte : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7.
 Tâche :
 Simule une titration acide-base par paliers de 0.5 mL. Utilise la formule p = 3 &#43; 4 x (1 - 2.718^(-0.8 x v)) (à coder, où p est le pH et v le volume).">
-    <meta itemprop="wordCount" content="1029">
+    <meta itemprop="wordCount" content="995">
     <title> Révision ou rattrapage :: 420-SN1-RE</title>
     <link href="/semaine9/index.xml" rel="alternate" type="application/rss+xml" title=" Révision ou rattrapage :: 420-SN1-RE">
-    <link href="/images/logo.png?1754531900" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754531900" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754531900" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1754531900" rel="stylesheet">
-    <link href="/css/theme.min.css?1754531900" rel="stylesheet">
-    <link href="/css/format-html.min.css?1754531900" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1754531900" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1754531900" defer></script>
-    <script src="/js/lunr/lunr.min.js?1754531900" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1754531900" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1754531900" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1754531900" defer></script>
-    <script src="/js/search.min.js?1754531900" defer></script>
+    <link href="/images/logo.png?1754583002" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754583002" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1754583002" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1754583002" rel="stylesheet">
+    <link href="/css/theme.min.css?1754583002" rel="stylesheet">
+    <link href="/css/format-html.min.css?1754583002" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1754583002" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1754583002" defer></script>
+    <script src="/js/lunr/lunr.min.js?1754583002" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1754583002" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1754583002" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1754583002" defer></script>
+    <script src="/js/search.min.js?1754583002" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -54,7 +54,7 @@ Simule une titration acide-base par paliers de 0.5 mL. Utilise la formule p = 
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1754531900";
+      window.relearn.index_js_url="/searchindex.en.js?1754583002";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -100,7 +100,7 @@ Simule une titration acide-base par paliers de 0.5 mL. Utilise la formule p = 
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1754531900" rel="stylesheet">
+    <link href="/css/custom.css?1754583002" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine9/index.html">
     <div id="R-body" class="default-animation">
@@ -121,12 +121,14 @@ Simule une titration acide-base par paliers de 0.5 mL. Utilise la formule p = 
     <li><a href="#exercice-3--titrage-par-conductimétrie">Exercice 3 : Titrage par conductimétrie</a></li>
     <li><a href="#exercice-4--suivi-dun-indicateur-coloré-absorbance">Exercice 4 : Suivi d’un indicateur coloré (absorbance)</a></li>
     <li><a href="#exercice-5--simulation-de-friction-sur-une-rampe-inclinée-physique">Exercice 5 : Simulation de friction sur une rampe inclinée (physique)</a></li>
-    <li><a href="#2-atelier">2. Atelier</a>
+    <li><a href="#2-atelier--effet-de-la-température-sur-le-taux-de-croissance-dune-algue">2. Atelier : Effet de la température sur le taux de croissance d&rsquo;une algue</a>
       <ul>
-        <li><a href="#étude-de-la-photosynthèse-et-de-la-température-chez-les-plantes">Étude de la photosynthèse et de la température chez les plantes</a></li>
-        <li><a href="#concepts-révisés">Concepts révisés</a></li>
-        <li><a href="#contexte-scientifique">Contexte scientifique</a></li>
-        <li><a href="#instructions">Instructions</a></li>
+        <li><a href="#objectif">Objectif</a></li>
+        <li><a href="#aperçu-du-contenu-du-fichier-croissance_alguescsv">Aperçu du contenu du fichier croissance_algues.csv</a></li>
+        <li><a href="#étape-1--lecture-et-préparation-des-donées">Étape 1 – Lecture et préparation des donées</a></li>
+        <li><a href="#étape-2--analyse-par-espèce">Étape 2 – Analyse par espèce</a></li>
+        <li><a href="#étape-3--visualisation">Étape 3 – Visualisation</a></li>
+        <li><a href="#étape-4--recherche-par-capteur">Étape 4 – Recherche par capteur</a></li>
       </ul>
     </li>
   </ul>
@@ -140,7 +142,7 @@ Simule une titration acide-base par paliers de 0.5 mL. Utilise la formule p = 
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Révision ou rattrapage</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Dictionnaires et fichier textes (csv) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Dictionnaires et fichiers texte (csv) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/index.html" title="Évaluation #2 (30%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
@@ -186,8 +188,8 @@ Volume = 2.5 mL --&gt; pH = 6.46
 Volume = 3.0 mL --&gt; pH = 6.64
 Volume = 3.5 mL --&gt; pH = 6.76
 Volume = 4.0 mL --&gt; pH = 6.84</code></pre></div>
-<p><a href="#R-image-e3e0f1d6fdddd88aa1fda6044a78b1dc" class="lightbox-link"><img alt="Graphique exo 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice1.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e3e0f1d6fdddd88aa1fda6044a78b1dc"><img alt="Graphique exo 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice1.png?width=35vw"></a></p>
+<p><a href="#R-image-88cd6ca65e2c2faac2dd1f52273a4c8b" class="lightbox-link"><img alt="Graphique exo 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice1.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-88cd6ca65e2c2faac2dd1f52273a4c8b"><img alt="Graphique exo 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice1.png?width=35vw"></a></p>
 <h2 id="exercice-2--série-de-désintégrations-radioactives">Exercice 2 : Série de désintégrations radioactives</h2>
 <p><strong>Notions</strong> : boucles, listes, math, NumPy, fonctions
 <strong>Contexte</strong> : Une substance radioactive se désintègre au fil du temps, et on veut modéliser la quantité restante.
@@ -203,11 +205,11 @@ Volume = 4.0 mL --&gt; pH = 6.84</code></pre></div>
 </blockquote>
 <p><em><strong>Résultats attendus</strong></em> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Quantités restantes : [np.float64(100.0), np.float64(84.08964152537145), np.float64(70.71067811865476), np.float64(59.46035575013605), np.float64(50.0), np.float64(42.044820762685724), np.float64(35.35533905932738), np.float64(29.730177875068026), np.float64(25.0), np.float64(21.022410381342862), np.float64(17.67766952966369), np.float64(14.865088937534013), np.float64(12.5)]</code></pre></div>
-<p><a href="#R-image-78eff7c66aeb43e2993cf47e14751b5e" class="lightbox-link"><img alt="Graphique exo 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice2.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-78eff7c66aeb43e2993cf47e14751b5e"><img alt="Graphique exo 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice2.png?width=35vw"></a></p>
+<p><a href="#R-image-4b507ecda1912195c6a7ed2137fd377c" class="lightbox-link"><img alt="Graphique exo 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice2.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4b507ecda1912195c6a7ed2137fd377c"><img alt="Graphique exo 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice2.png?width=35vw"></a></p>
 <p><strong>Variante</strong> :
-<a href="#R-image-936639ee8252976030a453a319961762" class="lightbox-link"><img alt="Graphique exo 2 variante" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice2_var.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-936639ee8252976030a453a319961762"><img alt="Graphique exo 2 variante" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice2_var.png?width=35vw"></a></p>
+<a href="#R-image-85636e9714fc40953626e7cc66d98eaa" class="lightbox-link"><img alt="Graphique exo 2 variante" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice2_var.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-85636e9714fc40953626e7cc66d98eaa"><img alt="Graphique exo 2 variante" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice2_var.png?width=35vw"></a></p>
 <h2 id="exercice-3--titrage-par-conductimétrie">Exercice 3 : Titrage par conductimétrie</h2>
 <p><a href="/semaine9/conductivite.csv">Fichier à utiliser: conductivite.csv</a></p>
 <p><strong>Notions</strong> : dictionnaire, csv, matplotlib, compréhension de données
@@ -249,8 +251,8 @@ Volume = 4.0 mL --&gt; pH = 6.84</code></pre></div>
 Pente avant équivalence : -12.20 µS/mL
 Pente après équivalence : 14.11 µS/mL
 Le point d&#39;équivalence est estimé autour de 10-11 mL.</code></pre></div>
-<p><a href="#R-image-edb9aa80235ee93cdc6889b0b73a0acd" class="lightbox-link"><img alt="Graphique exo 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice3.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-edb9aa80235ee93cdc6889b0b73a0acd"><img alt="Graphique exo 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice3.png?width=40vw"></a></p>
+<p><a href="#R-image-3b1abaf1a79319fa9039763c6fe86959" class="lightbox-link"><img alt="Graphique exo 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice3.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3b1abaf1a79319fa9039763c6fe86959"><img alt="Graphique exo 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice3.png?width=40vw"></a></p>
 <p><strong>Variante</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Volume équivalent estimé par interpolation : 10.50 mL</code></pre></div>
 <h2 id="exercice-4--suivi-dun-indicateur-coloré-absorbance">Exercice 4 : Suivi d’un indicateur coloré (absorbance)</h2>
@@ -267,8 +269,8 @@ Le point d&#39;équivalence est estimé autour de 10-11 mL.</code></pre></div>
 <p><em><strong>Résultats attendus</strong></em> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>y = 2.45x + -0.00
 Concentration estimée : 0.226 mol/L</code></pre></div>
-<p><a href="#R-image-a5d336ee217aca2569898aec25fe8c65" class="lightbox-link"><img alt="Graphique exo 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice4.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a5d336ee217aca2569898aec25fe8c65"><img alt="Graphique exo 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice4.png?width=35vw"></a></p>
+<p><a href="#R-image-f5599571b7b990373922f01b7efabead" class="lightbox-link"><img alt="Graphique exo 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice4.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f5599571b7b990373922f01b7efabead"><img alt="Graphique exo 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice4.png?width=35vw"></a></p>
 <h2 id="exercice-5--simulation-de-friction-sur-une-rampe-inclinée-physique">Exercice 5 : Simulation de friction sur une rampe inclinée (physique)</h2>
 <p><strong>Notions</strong> : input, conditions, boucles, fonctions, matplotlib
 <strong>Contexte</strong> : Un objet glisse sur une rampe inclinée avec ou sans friction.
@@ -284,155 +286,90 @@ Concentration estimée : 0.226 mol/L</code></pre></div>
 </blockquote>
 <p><em><strong>Résultats attendus</strong></em> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Accélération nette : 3.21 m/s²</code></pre></div>
-<p><a href="#R-image-ebc2b06dba51aa0a8439c85bb3fe247a" class="lightbox-link"><img alt="Graphique exo 5" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice5.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ebc2b06dba51aa0a8439c85bb3fe247a"><img alt="Graphique exo 5" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice5.png?width=35vw"></a></p>
+<p><a href="#R-image-5aad8dc665a11d367858c9b6fcccb938" class="lightbox-link"><img alt="Graphique exo 5" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice5.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5aad8dc665a11d367858c9b6fcccb938"><img alt="Graphique exo 5" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice5.png?width=35vw"></a></p>
 <p><strong>Variante</strong> :</p>
-<p><a href="#R-image-0b71ee3115311cc023c3f304f2bc3c12" class="lightbox-link"><img alt="Graphique exo 5 variante" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice5_var.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0b71ee3115311cc023c3f304f2bc3c12"><img alt="Graphique exo 5 variante" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice5_var.png?width=35vw"></a></p>
+<p><a href="#R-image-95550c4e10869ebf7b728abc249c03a9" class="lightbox-link"><img alt="Graphique exo 5 variante" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/exercice5_var.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-95550c4e10869ebf7b728abc249c03a9"><img alt="Graphique exo 5 variante" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/exercice5_var.png?width=35vw"></a></p>
 <hr>
-<h2 id="2-atelier">2. Atelier</h2>
+<h2 id="2-atelier--effet-de-la-température-sur-le-taux-de-croissance-dune-algue">2. Atelier : Effet de la température sur le taux de croissance d&rsquo;une algue</h2>
 <p><a href="https://python-a25.netlify.app/blocnotes/atelier_revision.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
-<h3 id="étude-de-la-photosynthèse-et-de-la-température-chez-les-plantes">Étude de la photosynthèse et de la température chez les plantes</h3>
-<p>Cet atelier permet de :</p>
+<p><a href="/semaine9/croissance_algues.csv">Fichier à utiliser: croissance_algues.csv</a></p>
+<h3 id="objectif">Objectif</h3>
+<p>Réviser les compétences clés :</p>
 <ul>
-<li>manipuler des <strong>fichiers CSV</strong> avec <code>pandas</code> et <code>numpy</code>,</li>
-<li>utiliser des <strong>listes</strong>, <strong>chaînes</strong>, <strong>tableaux NumPy</strong> et <strong>dictionnaires</strong>,</li>
-<li>produire des <strong>graphiques professionnels</strong> avec <code>matplotlib</code>,</li>
-<li>réaliser une <strong>analyse scientifique complète</strong> d’un jeu de données réel ou simulé,</li>
-<li>réviser toutes les structures de contrôle (boucles, conditions, fonctions).</li>
+<li><strong>Listes, chaînes, boucles, conditions</strong></li>
+<li><strong>Dictionnaires</strong></li>
+<li><strong>Tableaux NumPy et fonctions <code>np.*</code></strong></li>
+<li><strong>Lecture de fichiers <code>.csv</code> avec <code>pandas</code></strong></li>
+<li><strong>Visualisation de données avec <code>matplotlib</code></strong></li>
+<li><strong>Régression linéaire avec <code>numpy</code></strong></li>
 </ul>
-<h3 id="concepts-révisés">Concepts révisés</h3>
-<table>
-<thead>
-<tr>
-<th>Compétence Python</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Listes, chaînes, boucles, conditions</td>
-</tr>
-<tr>
-<td>Dictionnaires</td>
-</tr>
-<tr>
-<td>Tableaux NumPy et fonctions <code>np.*</code></td>
-</tr>
-<tr>
-<td>Manipulation de fichiers <code>.csv</code></td>
-</tr>
-<tr>
-<td>Visualisation avec matplotlib</td>
-</tr>
-<tr>
-<td>Régression linéaire</td>
-</tr>
-</tbody>
-</table>
 <hr>
-<h3 id="contexte-scientifique">Contexte scientifique</h3>
-<p>Un groupe de biologistes a mené une expérience pour étudier l&rsquo;effet de la <strong>température</strong> sur l’<strong>efficacité de la photosynthèse</strong> chez plusieurs espèces végétales.</p>
-<p>Ils ont récolté les données suivantes :</p>
+<p>Une équipe scientifique a mené une étude pour comprendre comment <strong>la température de l’eau</strong> influence <strong>le taux de croissance</strong> d’une <strong>algue d’eau douce</strong>. Les données ont été collectées avec différents capteurs, à différentes dates, et contiennent les colonnes suivantes :</p>
 <ul>
-<li>Température (°C),</li>
-<li>Taux de photosynthèse (μmol CO₂/m²/s),</li>
-<li>Espèce (nom),</li>
-<li>Nom du capteur utilisé (chaîne de caractères),</li>
-<li>Date de la mesure.</li>
+<li><strong>Température (°C)</strong> : température de l’eau,</li>
+<li><strong>Taux de croissance (mm/jour)</strong> : croissance moyenne de l’algue,</li>
+<li><strong>Espèce</strong> : nom de l’espèce de l’algue,</li>
+<li><strong>Capteur</strong> : nom du capteur utilisé,</li>
+<li><strong>Date</strong> : date de la mesure (YYYY-MM-DD).</li>
 </ul>
-<p>Les données sont stockées dans le fichier <code>.csv</code> disponible ici : <a href="/semaine9/photosynthese.csv">photosynthese.csv</a>, dont voici un aperçu :</p>
-<table>
-<thead>
-<tr>
-<th>Température</th>
-<th>Taux</th>
-<th>Espèce</th>
-<th>Capteur</th>
-<th>Date</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>22.5</td>
-<td>18.2</td>
-<td>Arabidopsis</td>
-<td>capteur-01</td>
-<td>2023-06-01</td>
-</tr>
-<tr>
-<td>24.1</td>
-<td>19.3</td>
-<td>Arabidopsis</td>
-<td>capteur-02</td>
-<td>2023-06-01</td>
-</tr>
-<tr>
-<td>28.0</td>
-<td>20.5</td>
-<td>Maïs</td>
-<td>capteur-03</td>
-<td>2023-06-02</td>
-</tr>
-<tr>
-<td>&hellip;</td>
-<td>&hellip;</td>
-<td>&hellip;</td>
-<td>&hellip;</td>
-<td>&hellip;</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="instructions">Instructions</h3>
-<h4 id="étape-1--lecture-et-nettoyage-des-données">Étape 1 – Lecture et nettoyage des données</h4>
+<p>Les données sont enregistrées dans un fichier CSV nommé : <code>croissance_algues.csv</code>.</p>
+<h3 id="aperçu-du-contenu-du-fichier-croissance_alguescsv">Aperçu du contenu du fichier croissance_algues.csv</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-csv" data-lang="csv">Température,Taux,Espèce,Capteur,Date
+15.0,2.3,Cladophora,Capteur_A,2025-07-01
+18.2,2.9,Cladophora,Capteur_B,2025-07-01
+20.0,3.5,Spirogyra,Capteur_A,2025-07-02
+21.1,3.7,Cladophora,Capteur_C,2025-07-03
+22.5,4.0,Spirogyra,Capteur_A,2025-07-04
+25.0,4.6,Cladophora,Capteur_B,2025-07-04
+26.8,4.9,Spirogyra,Capteur_A,2025-07-05
+28.0,5.1,Cladophora,Capteur_C,2025-07-06
+30.2,5.3,Spirogyra,Capteur_A,2025-07-07
+...</code></pre></div>
+<h3 id="étape-1--lecture-et-préparation-des-donées">Étape 1 – Lecture et préparation des donées</h3>
 <ol>
-<li>Charger le fichier CSV avec <strong><code>pandas</code></strong>.</li>
-<li>Vérifier la présence de données manquantes (<code>NaN</code>) et les nettoyer si nécessaire.</li>
-<li>Transformer les colonnes <strong>Température</strong> et <strong>Taux</strong> en tableaux <strong>NumPy</strong>.</li>
+<li>Lire le fichier avec <code>pandas</code>.</li>
+<li>Vérifier la présence de valeurs manquantes.</li>
+<li>Convertir les colonnes <code>Température</code> et <code>Taux</code> en tableaux NumPy.</li>
 </ol>
-<h4 id="étape-2--analyse-par-espèce-listes-et-dictionnaires">Étape 2 – Analyse par espèce (listes et dictionnaires)</h4>
+<h3 id="étape-2--analyse-par-espèce">Étape 2 – Analyse par espèce</h3>
 <ol>
 <li>
-<p>Créer un dictionnaire dont les clés sont les noms des <strong>espèces</strong>, et les valeurs sont des <strong>listes de taux de photosynthèse</strong>.</p>
+<p>Créer un dictionnaire : <code>{espèce : [liste des taux mesurés]}</code>.</p>
 </li>
 <li>
-<p>Calculer pour chaque espèce :</p>
+<p>Pour chaque espèce, afficher :</p>
 <ul>
-<li>la moyenne,</li>
-<li>l’écart-type,</li>
-<li>le nombre de mesures.</li>
+<li>Le nombre de mesures,</li>
+<li>La moyenne du taux,</li>
+<li>L’écart-type du taux.</li>
 </ul>
 </li>
 </ol>
-<blockquote>
-<p>Vous pouvez stocker ces résultats dans un second dictionnaire (<code>résumé[espèce] = {...}</code>).</p>
-</blockquote>
-<h4 id="étape-3--analyse-graphique">Étape 3 – Analyse graphique</h4>
+<h3 id="étape-3--visualisation">Étape 3 – Visualisation</h3>
 <ol>
-<li>Tracer un <strong>nuage de points</strong> température vs taux pour chaque espèce (couleurs différentes).</li>
-<li>Ajouter une <strong>droite de régression linéaire</strong> pour chaque espèce.</li>
-<li>Sauvegarder le graphique en PNG.</li>
+<li>Afficher un <strong>nuage de points</strong> température vs taux, avec une <strong>couleur différente par espèce</strong>.</li>
+<li>Ajouter une <strong>droite de régression linéaire</strong> pour chaque espèce (utilisez <code>np.polyfit</code> et <code>np.polyval</code>).</li>
+<li>Ajouter une légende, des titres, et sauvegarder le graphique sous le nom <code>croissance_regression.png</code>.</li>
 </ol>
-<p><a href="#R-image-6134a3e74da5ba49305a37b517d54c36" class="lightbox-link"><img alt="Nuage - régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/photosynthese_regression.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6134a3e74da5ba49305a37b517d54c36"><img alt="Nuage - régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/photosynthese_regression.png?width=45vw"></a></p>
-<h4 id="étape-4--recherche-par-capteur-chaînes-et-conditions">Étape 4 – Recherche par capteur (chaînes et conditions)</h4>
+<h3 id="étape-4--recherche-par-capteur">Étape 4 – Recherche par capteur</h3>
 <ol>
-<li>
-<p>Demander à l’utilisateur le nom d’un capteur (<code>input()</code>).</p>
-</li>
-<li>
-<p>Afficher toutes les mesures associées à ce capteur :</p>
-<ul>
-<li>date, température, taux, espèce.</li>
-</ul>
-</li>
+<li>Demander à l’utilisateur d’entrer un nom de capteur (<code>input()</code>).</li>
+<li>Afficher toutes les mesures associées à ce capteur : date, espèce, température et taux.</li>
 </ol>
-<h4 id="étape-5--exploration-temporelle-tri-et-regroupement">Étape 5 – Exploration temporelle (tri et regroupement)</h4>
-<ol>
-<li>Trier les données par <strong>date</strong>.</li>
-<li>Pour chaque date, calculer le <strong>taux moyen global</strong>.</li>
-<li>Afficher une <strong>courbe de tendance</strong> (date vs taux moyen).</li>
-</ol>
+<p><em><strong>Exemple de résultats attendus avec le capteur A</strong></em> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Température    0
+Taux           0
+Espèce         0
+Capteur        0
+Date           0
+dtype: int64
+Résumé par espèce :
+Cladophora -&gt; {&#39;nb&#39;: 26, &#39;moyenne&#39;: np.float64(4.2), &#39;ecart_type&#39;: np.float64(0.9856665062476565)}
+Spirogyra -&gt; {&#39;nb&#39;: 24, &#39;moyenne&#39;: np.float64(4.333333333333333), &#39;ecart_type&#39;: np.float64(0.9218037872683221)}</code></pre></div>
+<p><a href="#R-image-dd74af169954356a6dee0480324a65bf" class="lightbox-link"><img alt="Graphique Croissance_regression" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/croissance_regression.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dd74af169954356a6dee0480324a65bf"><img alt="Graphique Croissance_regression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/croissance_regression.png?width=35vw"></a></p>
 
   <footer class="footline">
   </footer>
@@ -494,7 +431,7 @@ Concentration estimée : 0.226 mol/L</code></pre></div>
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
             <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
             <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Tableaux numpy et droite de régression</a></li>
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires et fichier textes (csv)</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires et fichiers texte (csv)</a></li>
             <li class="active " data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Révision ou rattrapage</a></li>
             <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
             <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
@@ -519,8 +456,8 @@ Concentration estimée : 0.226 mol/L</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1754531900" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1754531900" defer></script>
-    <script src="/js/theme.min.js?1754531900" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1754583002" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1754583002" defer></script>
+    <script src="/js/theme.min.js?1754583002" defer></script>
   </body>
 </html>

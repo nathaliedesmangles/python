@@ -156,92 +156,88 @@ Accélération nette : 3.21 m/s²
 
 ---
 
-## 2. Atelier
+## 2. Atelier : Effet de la température sur le taux de croissance d'une algue
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_revision.ipynb)
 
-### Étude de la photosynthèse et de la température chez les plantes
+[Fichier à utiliser: croissance_algues.csv](./croissance_algues.csv)
 
-Cet atelier permet de :
+### Objectif
 
-* manipuler des **fichiers CSV** avec `pandas` et `numpy`,
-* utiliser des **listes**, **chaînes**, **tableaux NumPy** et **dictionnaires**,
-* produire des **graphiques professionnels** avec `matplotlib`,
-* réaliser une **analyse scientifique complète** d’un jeu de données réel ou simulé,
-* réviser toutes les structures de contrôle (boucles, conditions, fonctions).
+Réviser les compétences clés :
 
-### Concepts révisés
-
-| Compétence Python                     |
-| ------------------------------------- |
-| Listes, chaînes, boucles, conditions  |
-| Dictionnaires                         |
-| Tableaux NumPy et fonctions `np.*`    |
-| Manipulation de fichiers `.csv`       |
-| Visualisation avec matplotlib         |
-| Régression linéaire                   |
+* **Listes, chaînes, boucles, conditions**
+* **Dictionnaires**
+* **Tableaux NumPy et fonctions `np.*`**
+* **Lecture de fichiers `.csv` avec `pandas`**
+* **Visualisation de données avec `matplotlib`**
+* **Régression linéaire avec `numpy`**
 
 ---
 
-### Contexte scientifique
+Une équipe scientifique a mené une étude pour comprendre comment **la température de l’eau** influence **le taux de croissance** d’une **algue d’eau douce**. Les données ont été collectées avec différents capteurs, à différentes dates, et contiennent les colonnes suivantes :
 
-Un groupe de biologistes a mené une expérience pour étudier l'effet de la **température** sur l’**efficacité de la photosynthèse** chez plusieurs espèces végétales.
+* **Température (°C)** : température de l’eau,
+* **Taux de croissance (mm/jour)** : croissance moyenne de l’algue,
+* **Espèce** : nom de l’espèce de l’algue,
+* **Capteur** : nom du capteur utilisé,
+* **Date** : date de la mesure (YYYY-MM-DD).
 
-Ils ont récolté les données suivantes :
+Les données sont enregistrées dans un fichier CSV nommé : `croissance_algues.csv`.
 
-* Température (°C),
-* Taux de photosynthèse (μmol CO₂/m²/s),
-* Espèce (nom),
-* Nom du capteur utilisé (chaîne de caractères),
-* Date de la mesure.
+### Aperçu du contenu du fichier croissance_algues.csv
 
-Les données sont stockées dans le fichier `.csv` disponible ici : [photosynthese.csv](./photosynthese.csv), dont voici un aperçu :
+```csv
+Température,Taux,Espèce,Capteur,Date
+15.0,2.3,Cladophora,Capteur_A,2025-07-01
+18.2,2.9,Cladophora,Capteur_B,2025-07-01
+20.0,3.5,Spirogyra,Capteur_A,2025-07-02
+21.1,3.7,Cladophora,Capteur_C,2025-07-03
+22.5,4.0,Spirogyra,Capteur_A,2025-07-04
+25.0,4.6,Cladophora,Capteur_B,2025-07-04
+26.8,4.9,Spirogyra,Capteur_A,2025-07-05
+28.0,5.1,Cladophora,Capteur_C,2025-07-06
+30.2,5.3,Spirogyra,Capteur_A,2025-07-07
+...
+```
 
-| Température | Taux | Espèce      | Capteur    | Date       |
-| ----------- | ---- | ----------- | ---------- | ---------- |
-| 22.5        | 18.2 | Arabidopsis | capteur-01 | 2023-06-01 |
-| 24.1        | 19.3 | Arabidopsis | capteur-02 | 2023-06-01 |
-| 28.0        | 20.5 | Maïs        | capteur-03 | 2023-06-02 |
-| ...         | ...  | ...         | ...        | ...        |
+### Étape 1 – Lecture et préparation des donées
 
----
+1. Lire le fichier avec `pandas`.
+2. Vérifier la présence de valeurs manquantes.
+3. Convertir les colonnes `Température` et `Taux` en tableaux NumPy.
 
-### Instructions
+### Étape 2 – Analyse par espèce
 
-#### Étape 1 – Lecture et nettoyage des données
+1. Créer un dictionnaire : `{espèce : [liste des taux mesurés]}`.
+2. Pour chaque espèce, afficher :
 
-1. Charger le fichier CSV avec **`pandas`**.
-2. Vérifier la présence de données manquantes (`NaN`) et les nettoyer si nécessaire.
-3. Transformer les colonnes **Température** et **Taux** en tableaux **NumPy**.
+   * Le nombre de mesures,
+   * La moyenne du taux,
+   * L’écart-type du taux.
 
-#### Étape 2 – Analyse par espèce (listes et dictionnaires)
+### Étape 3 – Visualisation
 
-1. Créer un dictionnaire dont les clés sont les noms des **espèces**, et les valeurs sont des **listes de taux de photosynthèse**.
-2. Calculer pour chaque espèce :
+1. Afficher un **nuage de points** température vs taux, avec une **couleur différente par espèce**.
+2. Ajouter une **droite de régression linéaire** pour chaque espèce (utilisez `np.polyfit` et `np.polyval`).
+3. Ajouter une légende, des titres, et sauvegarder le graphique sous le nom `croissance_regression.png`.
 
-   * la moyenne,
-   * l’écart-type,
-   * le nombre de mesures.
+### Étape 4 – Recherche par capteur
 
-> Vous pouvez stocker ces résultats dans un second dictionnaire (`résumé[espèce] = {...}`).
+1. Demander à l’utilisateur d’entrer un nom de capteur (`input()`).
+2. Afficher toutes les mesures associées à ce capteur : date, espèce, température et taux.
 
-#### Étape 3 – Analyse graphique
 
-1. Tracer un **nuage de points** température vs taux pour chaque espèce (couleurs différentes).
-2. Ajouter une **droite de régression linéaire** pour chaque espèce.
-3. Sauvegarder le graphique en PNG.
-
-![Nuage - régression](./photosynthese_regression.png?width=45vw)
-
-#### Étape 4 – Recherche par capteur (chaînes et conditions)
-
-1. Demander à l’utilisateur le nom d’un capteur (`input()`).
-2. Afficher toutes les mesures associées à ce capteur :
-
-   * date, température, taux, espèce.
-
-#### Étape 5 – Exploration temporelle (tri et regroupement)
-
-1. Trier les données par **date**.
-2. Pour chaque date, calculer le **taux moyen global**.
-3. Afficher une **courbe de tendance** (date vs taux moyen).
+***Exemple de résultats attendus avec le capteur A*** :
+```
+Température    0
+Taux           0
+Espèce         0
+Capteur        0
+Date           0
+dtype: int64
+Résumé par espèce :
+Cladophora -> {'nb': 26, 'moyenne': np.float64(4.2), 'ecart_type': np.float64(0.9856665062476565)}
+Spirogyra -> {'nb': 24, 'moyenne': np.float64(4.333333333333333), 'ecart_type': np.float64(0.9218037872683221)}
+```
+![Graphique Croissance_regression](./croissance_regression.png?width=35vw)

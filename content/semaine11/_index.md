@@ -328,7 +328,7 @@ Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.
 
 ---
 
-> **RAPPEL**: Le **troisième et dernier examen** (20%) et prévu à la **semaine 15**.
+> **RAPPEL**: Le **troisième et dernier examen** (30%) et prévu à la **semaine 15**.
 
 1. Lire la description du [Projet final](../semaine12/)
 2. Prendre connaissance de la [Grille de correction](../semaine12/grille/)
