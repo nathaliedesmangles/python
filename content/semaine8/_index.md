@@ -218,7 +218,7 @@ print(df.head(5))
 4  KNO3                  40                     63.9
 ```
 
-**NB** : ``df.head()` affichera **par défaut** les **10** premières lignes.
+**NB** : `df.head()` affichera **par défaut** les **10** premières lignes.
 
 ## Afficher les noms des colonnes
 
