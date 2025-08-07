@@ -217,6 +217,8 @@ plt.show()
 
 ### Graphique avec barres d’erreur
 
+La fonction `plt.errorbar()` permet de tracer des barres d'erreur autour des points d'une courbe, et ici la liste `erreurs = [0.5, 0.3, 0.6]` indique l'incertitude verticale (±) associée à chaque point.
+
 **Exemple :**
 
 ```python
@@ -243,6 +245,13 @@ plt.show()
 ## Tracer une droite de régression
 
 **Rappel** : L'équation d'une droite est `y = a·x + b`
+
+Voici comment obtenir les données de la droite :
+
+* `a, b = np.polyfit(x, y, 1)` : On calcule la droite qui s'ajuste le mieux aux points (régression linéaire) et on récupère sa pente (`a`) et son intercept (`b`).
+* `y_reg = a * x + b` : On utilise la pente et l'intercept pour calculer les valeurs de la droite.
+* `plt.plot(x, y, "o", label="Données")` : On trace les points de données sous forme de cercles.
+* `plt.plot(x, y_reg, "-", label=f"y = {a:.2f}x + {b:.2f}")` : On trace la droite de régression et on affiche son équation.
 
 ### Exemple
 
@@ -274,7 +283,7 @@ plt.show()
 
 
 
-## Résumé minimal
+## Résumé
 
 | Tâche                | Fonction                           |
 | -------------------- | ---------------------------------- |
