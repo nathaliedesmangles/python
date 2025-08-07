@@ -103,7 +103,7 @@
       <link>https://example.org/semaine9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine9/index.html</guid>
-      <description>Bloc-notes de départ&#xA;Fichier à utiliser: conductivite.csv&#xA;Exercice 1 : Neutralisation acide-base (chimie) Notions : conditions, boucles, dictionnaire, fonctions Contexte : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7. Tâche :&#xA;Simule une titration acide-base par paliers de 0.5 mL. Utilise une fonction pH(volume_base) (fourni ou à coder selon une loi empirique simplifiée). Arrête la simulation dès que le pH est compris entre 6.</description>
+      <description>Bloc-notes de départ&#xA;Exercice 1 : Neutralisation acide-base (chimie) Notions : conditions, boucles, dictionnaire, fonctions Contexte : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7.&#xA;Tâche :&#xA;Simule une titration acide-base par paliers de 0.5 mL. Utilise la formule p = 3 + 4 x (1 - 2.718^(-0.8 x v)) (à coder, où p est le pH et v le volume).</description>
     </item>
     <item>
       <title> Évaluation #2 (30%)</title>

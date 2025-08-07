@@ -283,7 +283,7 @@ plt.plot(x, y)
 ```
 
 {{% notice style="cyan" title="Sachez qu'..." %}}
-À ce stade, rien ne s'affiche encore. Il faut une dernière commande pour voir le graphique.
+À ce stade, **rien ne s'affiche encore**. Il faut une dernière commande pour voir le graphique.
 {{% /notice %}}
 
 

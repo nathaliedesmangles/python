@@ -3,7 +3,7 @@
   <channel>
     <title> Révision :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/9_revision/index.html</link>
-    <description>Exercice 1 – Solubilité d’un sel Données :&#xA;import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])&#xD;1. Affiche les valeurs print(f&#34;Solubilités : {sol}&#34;)&#xD;2. Moyenne sans la valeur manquante moyenne = np.nanmean(sol) print(f&#34;Moyenne (sans valeur manquante) : {moyenne:.2f} g/100mL&#34;)&#xD;3. Écart type ecart = np.nanstd(sol) print(f&#34;Écart type : {ecart:.2f}&#34;)&#xD;Exercice 2 – Températures journalières Données :&#xA;temperatures = np.array([ [12.1, 17.3, 14.2], [11.8, 16.9, 13.9], [13.0, 18.1, 15.</description>
+    <description>Exercice 1 : Neutralisation acide-base import matplotlib.pyplot as plt volumes = [] ph_values = [] v = 0 while True: p = 3 + 4 * (1 - 2.718**(-0.8 * v)) #p = ph(v) volumes.append(v) ph_values.append(p) print(f&#34;Volume = {v:.1f} mL --&gt; pH = {p:.2f}&#34;) if 6.8 &lt;= p &lt;= 7.2: break v += 0.5 plt.plot(volumes, ph_values, marker=&#39;o&#39;) plt.xlabel(&#34;Volume de base (mL)&#34;) plt.ylabel(&#34;pH&#34;) plt.title(&#34;Titrage acide-base&#34;) plt.grid(True) plt.show()&#xD;Exercice 2 : Désintégration radioactive import numpy as np import matplotlib.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/9_revision/index.xml" rel="self" type="application/rss+xml" />

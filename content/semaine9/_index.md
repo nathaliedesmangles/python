@@ -8,22 +8,32 @@ draft = false
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_revision.ipynb)
 
-[Fichier à utiliser: conductivite.csv](./conductivite.csv)
-
-
 ## Exercice 1 : Neutralisation acide-base (chimie)
 
 **Notions** : conditions, boucles, dictionnaire, fonctions
 **Contexte** : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7.
-**Tâche** :
 
+**Tâche** :
 * Simule une titration acide-base par paliers de 0.5 mL.
-* Utilise une fonction `pH(volume_base)` (fourni ou à coder selon une loi empirique simplifiée).
+* Utilise la formule `p = 3 + 4 x (1 - 2.718^(-0.8 x v))` (à coder, où `p` est le pH et `v` le volume).
 * Arrête la simulation dès que le pH est compris entre 6.8 et 7.2.
 * Affiche tous les volumes testés avec leur pH.
+* Représente les valeurs sur un graphique volume vs pH pour visualiser le point d'équivalence.
 
-> **Variante** : Représente les valeurs sur un graphique volume vs pH pour visualiser le point d'équivalence.
 
+***Résultats attendus*** :
+```
+Volume = 0.0 mL --> pH = 3.00
+Volume = 0.5 mL --> pH = 4.32
+Volume = 1.0 mL --> pH = 5.20
+Volume = 1.5 mL --> pH = 5.80
+Volume = 2.0 mL --> pH = 6.19
+Volume = 2.5 mL --> pH = 6.46
+Volume = 3.0 mL --> pH = 6.64
+Volume = 3.5 mL --> pH = 6.76
+Volume = 4.0 mL --> pH = 6.84
+```
+![Graphique exo 1](./exercice1.png?width=35vw)
 
 
 ## Exercice 2 : Série de désintégrations radioactives
@@ -39,9 +49,19 @@ draft = false
 
 > **Variante** : Ajouter un bruit expérimental (± 5%) et comparer avec la courbe théorique.
 
+***Résultats attendus*** :
+```
+Quantités restantes : [np.float64(100.0), np.float64(84.08964152537145), np.float64(70.71067811865476), np.float64(59.46035575013605), np.float64(50.0), np.float64(42.044820762685724), np.float64(35.35533905932738), np.float64(29.730177875068026), np.float64(25.0), np.float64(21.022410381342862), np.float64(17.67766952966369), np.float64(14.865088937534013), np.float64(12.5)]
+```
+![Graphique exo 2](./exercice2.png?width=35vw)
+
+**Variante** :
+![Graphique exo 2 variante](./exercice2_var.png?width=35vw)
 
 
 ## Exercice 3 : Titrage par conductimétrie
+
+[Fichier à utiliser: conductivite.csv](./conductivite.csv)
 
 **Notions** : dictionnaire, csv, matplotlib, compréhension de données
 **Contexte** : Une série de mesures de conductivité sont enregistrées à chaque ajout de 1 mL de réactif.
@@ -54,6 +74,41 @@ draft = false
 
 > **Variante** : Ajouter une estimation par interpolation entre deux points.
 
+***Résultats attendus*** :
+```
+volume  conductivite
+0        0           250
+1        1           240
+2        2           228
+3        3           215
+4        4           200
+5        5           185
+6        6           170
+7        7           158
+8        8           145
+9        9           135
+10      10           128
+11      11           133
+12      12           140
+13      13           150
+14      14           165
+15      15           180
+16      16           195
+17      17           210
+18      18           230
+19      19           245
+20      20           260
+
+Pente avant équivalence : -12.20 µS/mL
+Pente après équivalence : 14.11 µS/mL
+Le point d'équivalence est estimé autour de 10-11 mL.
+```
+![Graphique exo 3](./exercice3.png?width=40vw)
+
+**Variante** :
+```
+Volume équivalent estimé par interpolation : 10.50 mL
+```
 
 
 ## Exercice 4 : Suivi d’un indicateur coloré (absorbance)
@@ -66,9 +121,14 @@ draft = false
 * Trace le nuage de points.
 * Calcule la pente et l’ordonnée à l’origine de la droite de régression.
 * Utilise la droite pour estimer la concentration d’une solution inconnue.
+* Ajouter les barres d’erreur sur l’absorbance.
 
-> **Variante** : Ajouter les barres d’erreur sur l’absorbance.
-
+***Résultats attendus*** :
+```
+y = 2.45x + -0.00
+Concentration estimée : 0.226 mol/L
+```
+![Graphique exo 4](./exercice4.png?width=35vw)
 
 
 ## Exercice 5 : Simulation de friction sur une rampe inclinée (physique)
@@ -84,6 +144,15 @@ draft = false
 
 > **Variante** : Comparer les trajectoires avec et sans friction sur un même graphique.
 
+***Résultats attendus*** :
+```
+Accélération nette : 3.21 m/s²
+```
+![Graphique exo 5](./exercice5.png?width=35vw)
+
+**Variante** :
+
+![Graphique exo 5 variante](./exercice5_var.png?width=35vw)
 
 ---
 
@@ -111,7 +180,6 @@ Cet atelier permet de :
 | Manipulation de fichiers `.csv`       |
 | Visualisation avec matplotlib         |
 | Régression linéaire                   |
-| Fonctions personnalisées (facultatif) |
 
 ---
 

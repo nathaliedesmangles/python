@@ -5,164 +5,225 @@ weight = 209
 +++
 
 
-## Exercice 1 – Solubilité d’un sel
+## Exercice 1 : Neutralisation acide-base
+
+```python
+import matplotlib.pyplot as plt
+
+volumes = []
+ph_values = []
+
+v = 0
+while True:
+    p = 3 + 4 * (1 - 2.718**(-0.8 * v)) #p = ph(v)
+    volumes.append(v)
+    ph_values.append(p)
+    print(f"Volume = {v:.1f} mL --> pH = {p:.2f}")
+    if 6.8 <= p <= 7.2:
+        break
+    v += 0.5
+
+plt.plot(volumes, ph_values, marker='o')
+plt.xlabel("Volume de base (mL)")
+plt.ylabel("pH")
+plt.title("Titrage acide-base")
+plt.grid(True)
+plt.show()
+```
 
 
-**Données** :
+## Exercice 2 : Désintégration radioactive
 
 ```python
 import numpy as np
+import matplotlib.pyplot as plt
 
-sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])
+# Données connues
+q0 = 100
+demivie = 20
+temps = np.arange(0, 65, 5)
+quantites = []
+
+for t in temps:
+    q = q0 * 0.5 ** (t / demivie)
+    quantites.append(q)
+
+print("Quantités restantes :", quantites)
+
+# Graphique
+plt.plot(temps, quantites, marker='o')
+plt.xlabel("Temps (s)")
+plt.ylabel("Quantité restante")
+plt.title("Désintégration radioactive")
+plt.grid(True)
+plt.show()
 ```
 
-### 1. Affiche les valeurs
+### Variante
 
 ```python
-print(f"Solubilités : {sol}")
+# Ajout du bruit à la courbe
+np.random.seed(1)  # Pour reproductibilité
+bruit = np.random.uniform(-0.05, 0.05, len(quantites))
+quantites_bruitees = [q * (1 + b) for q, b in zip(quantites, bruit)]
+
+plt.plot(temps, quantites, label="Théorique", marker='o')
+plt.plot(temps, quantites_bruitees, label="Avec bruit (±5%)", marker='x')
+plt.xlabel("Temps (s)")
+plt.ylabel("Quantité restante")
+plt.title("Désintégration radioactive (comparaison)")
+plt.legend()
+plt.grid(True)
+plt.show()
 ```
 
 
-### 2. Moyenne sans la valeur manquante
+## Exercice 3 : Titrage par conductimétrie
 
 ```python
-moyenne = np.nanmean(sol)
-print(f"Moyenne (sans valeur manquante) : {moyenne:.2f} g/100mL")
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("conductivite.csv")
+print(df)
+
+plt.plot(df["volume"], df["conductivite"], marker='o')
+plt.xlabel("Volume (mL)")
+plt.ylabel("Conductivité (µS)")
+plt.title("Titrage par conductimétrie")
+plt.grid(True)
+plt.show()
+
+avant = df[df["volume"] <= 10]
+apres = df[df["volume"] >= 11]
+
+pente_avant = (avant["conductivite"].iloc[-1] - avant["conductivite"].iloc[0]) / (avant["volume"].iloc[-1] - avant["volume"].iloc[0])
+pente_apres = (apres["conductivite"].iloc[-1] - apres["conductivite"].iloc[0]) / (apres["volume"].iloc[-1] - apres["volume"].iloc[0])
+
+print(f"Pente avant équivalence : {pente_avant:.2f} µS/mL")
+print(f"Pente après équivalence : {pente_apres:.2f} µS/mL")
+print("Le point d'équivalence est estimé autour de 10-11 mL.")
 ```
 
-
-### 3. Écart type
+### Variante
 
 ```python
-ecart = np.nanstd(sol)
-print(f"Écart type : {ecart:.2f}")
+# Variante 3
+# Trouver les deux points entourant le changement de pente
+i = df["conductivite"].diff().abs().argmin()
+x1, y1 = df.iloc[i]["volume"], df.iloc[i]["conductivite"]
+x2, y2 = df.iloc[i+1]["volume"], df.iloc[i+1]["conductivite"]
+
+# Interpolation linéaire : x_equiv ≈ x1 + ((7 - y1) / (y2 - y1)) * (x2 - x1)
+x_eq = x1 + ((y1 - y2) / abs(y1 - y2)) * (x2 - x1) / 2
+print(f"Volume équivalent estimé par interpolation : {x_eq:.2f} mL")
 ```
 
-
-## Exercice 2 – Températures journalières
-
-**Données** :
+## Exercice 4 : Loi de Beer-Lambert
 
 ```python
-temperatures = np.array([
-    [12.1, 17.3, 14.2],
-    [11.8, 16.9, 13.9],
-    [13.0, 18.1, 15.0],
-    [12.5, 17.5, 14.7],
-    [np.nan, 16.0, 14.0],
-    [13.2, 18.0, 15.2],
-    [12.0, 17.0, 14.5]
-])
+import numpy as np
+import matplotlib.pyplot as plt
+
+concentrations = np.array([0.00, 0.05, 0.10, 0.15, 0.20, 0.25])
+absorbances = np.array([0.00, 0.12, 0.24, 0.36, 0.49, 0.61])
+
+plt.errorbar(concentrations, absorbances, yerr=0.02, fmt='o')
+plt.xlabel("Concentration (mol/L)")
+plt.ylabel("Absorbance")
+plt.title("Loi de Beer-Lambert")
+plt.grid(True)
+plt.show()
+
+coef = np.polyfit(concentrations, absorbances, 1)
+pente, intercept = coef
+print(f"y = {pente:.2f}x + {intercept:.2f}")
+
+abs_inconnue = 0.55
+conc_inconnue = (abs_inconnue - intercept) / pente
+print(f"Concentration estimée : {conc_inconnue:.3f} mol/L")
 ```
 
+### Variante
 
-### 1. Forme du tableau
-
+Déjà inclus dans la solution de base :
 ```python
-print(temperatures.shape)  # (7, 3)
+plt.errorbar(concentrations, absorbances, yerr=0.02, fmt='o')
 ```
-
-### 2. Moyenne journalière
-
+Mais si on veut définir les barres d’erreur individuellement :
 ```python
-moyennes_journalieres = np.nanmean(temperatures, axis=1)
-print(f"Moyennes par jour : {moyennes_journalieres}")
+erreurs = np.array([0.01, 0.02, 0.015, 0.01, 0.02, 0.015])
+plt.errorbar(concentrations, absorbances, yerr=erreurs, fmt='o', capsize=5)
 ```
-
-### 3. Moyenne du matin (colonne 0)
-
-```python
-moy_matin = np.nanmean(temperatures[:, 0])
-print(f"Moyenne du matin : {moy_matin:.2f} °C")
-```
-
-
-## Exercice 3 – Analyse d’ADN
-
-**Données** :
-
-```python
-ech1 = np.array([3.2, 2.8, 4.1, 3.9, 2.5])
-ech2 = np.array([2.9, 3.0, 4.2, 4.0, 2.7])
-```
-
-### 1. Profil combiné
-
-```python
-profil = ech1 + ech2
-print(f"Profil combiné : {profil}")
-```
-
-
-### 2. Différence
-
-```python
-diff = ech2 - ech1
-print(f"Différences (éch2 - éch1) : {diff}")
-```
-
-
-### 3. Moyenne et écart type
-
-```python
-print(f"Moyenne éch1 : {np.mean(ech1):.2f}")
-print(f"Écart type éch1 : {np.std(ech1):.2f}")
-print(f"Moyenne éch2 : {np.mean(ech2):.2f}")
-print(f"Écart type éch2 : {np.std(ech2):.2f}")
-```
-
-
-## Exercice 4 – Pression dans un cylindre
-
-**Données** :
-
-```python
-hauteur = np.linspace(0, 50, 6)  # [0, 10, 20, 30, 40, 50]
-pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
-```
-
-### 1. Affichage
-
-```python
-print("Hauteurs :", hauteur)
-print("Pressions :", pression)
-```
-
-### 2. Variation de pression
-
-```python
-variations = pression[:-1] - pression[1:]
-print(f"Chutes de pression entre tranches de 10 cm : {variations}")
-```
-
-### 3. Moyenne
-
-```python
-print(f"Moyenne des pressions : {np.mean(pression):.2f} kPa")
-```
-
 
 ## Exercice 5 – Croissance d’une plante
 
-### 1. Taille pendant 10 jours, départ à 5 cm
-
 ```python
-jours = np.arange(10)
-taille = 5 + jours * 2
-print(f"Taille sans engrais : {taille}")
+import numpy as np
+import matplotlib.pyplot as plt
+
+angle = 30
+masse = 2.0
+mu = 0.2
+g = 9.81
+
+theta = np.radians(angle)
+f_pente = masse * g * np.sin(theta)
+f_friction = mu * masse * g * np.cos(theta)
+f_nette = f_pente - f_friction
+a = f_nette / masse
+
+print(f"Accélération nette : {a:.2f} m/s²")
+
+positions = [0]
+vitesses = [0]
+temps = [0]
+
+dt = 0.1
+for i in range(1, 101):
+    t = i * dt
+    v = vitesses[-1] + a * dt
+    x = positions[-1] + v * dt
+    vitesses.append(v)
+    positions.append(x)
+    temps.append(t)
+
+plt.plot(temps, positions)
+plt.xlabel("Temps (s)")
+plt.ylabel("Position (m)")
+plt.title("Mouvement sur une rampe inclinée")
+plt.grid(True)
+plt.show()
 ```
 
-### 2. Ajout de 1 cm par jour (engrais)
+### Variante
 
 ```python
-taille_engrais = taille + 1
-print(f"Taille avec engrais : {taille_engrais}")
+# Variante 5
+# Accélération avec friction
+a_friction = a
+
+# Accélération sans friction
+a_sans = g * np.sin(theta)
+
+# Trajectoire sans friction
+positions_sans = [0]
+v_sans = [0]
+for i in range(1, 101):
+    v = v_sans[-1] + a_sans * dt
+    x = positions_sans[-1] + v * dt
+    v_sans.append(v)
+    positions_sans.append(x)
+
+# Trajectoire avec friction déjà calculée précédemment : positions
+
+# Tracer les deux trajectoires
+plt.plot(temps, positions, label="Avec friction")
+plt.plot(temps, positions_sans, label="Sans friction", linestyle='--')
+plt.xlabel("Temps (s)")
+plt.ylabel("Position (m)")
+plt.title("Rampe inclinée : friction vs sans friction")
+plt.legend()
+plt.grid(True)
+plt.show()
 ```
-
-### 3. Moyennes
-
-```python
-print(f"Moyenne sans engrais : {np.mean(taille):.2f} cm")
-print(f"Moyenne avec engrais : {np.mean(taille_engrais):.2f} cm")
-```
-

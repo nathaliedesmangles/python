@@ -4,127 +4,87 @@ title = " Révision"
 weight = 309
 +++
 
-
-## Atelier - Étude de la photosynthèse et de la température chez les plantes
-
-### Étape 1 – Lecture et nettoyage des données
-
 ```python
+### Étape 1 — Charger les données
 import pandas as pd
-import numpy as np
 
-# Lecture du fichier CSV
 df = pd.read_csv("photosynthese.csv")
-
-# Affichage des 5 premières lignes
 print(df.head())
-
-# Nettoyage : suppression des lignes avec valeurs manquantes
-df_clean = df.dropna(subset=["Température", "Taux"])
-
-# Conversion en tableaux NumPy
-temperature = df_clean["Température"].to_numpy()
-taux = df_clean["Taux"].to_numpy()
 ```
 
----
-
-### Étape 2 – Analyse par espèce (dictionnaire)
-
-```python
-# Création d’un dictionnaire contenant les taux par espèce
-donnees_par_espece = {}
-
-for espece in df_clean["Espèce"].unique():
-    valeurs = df_clean[df_clean["Espèce"] == espece]["Taux"].to_list()
-    donnees_par_espece[espece] = valeurs
-
-# Calcul des statistiques
-resume = {}
-
-for espece, liste in donnees_par_espece.items():
-    tableau = np.array(liste)
-    resume[espece] = {
-        "moyenne": np.mean(tableau),
-        "ecart_type": np.std(tableau),
-        "n": len(tableau)
-    }
-
-# Affichage des résultats
-for espece, infos in resume.items():
-    print(f"{espece} → Moyenne = {infos['moyenne']:.2f}, Écart-type = {infos['ecart_type']:.2f}, N = {infos['n']}")
-```
-
----
-
-### Étape 3 – Analyse graphique (nuage + régression)
+### Étape 2 — Visualiser les courbes
 
 ```python
 import matplotlib.pyplot as plt
-from scipy.stats import linregress
 
-plt.figure(figsize=(8, 6))
+especes = df["espece"].unique()
 
-# Tracé pour chaque espèce
-for espece in df_clean["Espèce"].unique():
-    sous_df = df_clean[df_clean["Espèce"] == espece]
-    x = sous_df["Température"]
-    y = sous_df["Taux"]
+for espece in especes:
+    sous_df = df[df["espece"] == espece]
+    plt.plot(sous_df["temperature"], sous_df["taux_photosynthese"], marker='o', label=f"Espèce {espece}")
 
-    # Nuage de points
-    plt.scatter(x, y, label=espece)
-
-    # Régression
-    slope, intercept, *_ = linregress(x, y)
-    x_range = np.linspace(x.min(), x.max(), 100)
-    y_fit = slope * x_range + intercept
-    plt.plot(x_range, y_fit, linestyle="--")
-
-plt.title("Taux de photosynthèse selon la température")
 plt.xlabel("Température (°C)")
-plt.ylabel("Taux (μmol CO₂/m²/s)")
+plt.ylabel("Taux de photosynthèse (µmol CO₂/m²/s)")
+plt.title("Taux de photosynthèse selon la température")
 plt.legend()
-plt.grid(True)
-plt.tight_layout()
-
-# Sauvegarde
-plt.savefig("photosynthese_plot.png")
+plt.grid()
 plt.show()
 ```
 
-![Photosynthèse-régression](../../semaine9/photosynthese_regression.png?width=45vw)
-
----
-
-### Étape 4 – Recherche par capteur
+### Étape 3 — Trouver la température optimale par espèce
 
 ```python
-nom_capteur = input("Entrez le nom du capteur (ex: capteur-01) : ")
-
-# Recherche dans les données
-selection = df_clean[df_clean["Capteur"] == nom_capteur]
-
-if not selection.empty:
-    print(selection[["Date", "Température", "Taux", "Espèce"]])
-else:
-    print("Aucune donnée pour ce capteur.")
+for espece in especes:
+    sous_df = df[df["espece"] == espece]
+    idx_max = sous_df["taux_photosynthese"].idxmax()
+    temp_opt = sous_df.loc[idx_max, "temperature"]
+    print(f"Température optimale pour l'espèce {espece} : {temp_opt} °C")
 ```
 
----
+### Étape 4 — Calculer la pente moyenne entre 15 °C et 25 °C
 
-### Étape 5 – Exploration temporelle
+Cela donne une idée de la **sensibilité** de la photosynthèse à l’augmentation de température entre 15 °C et 25 °C.
 
 ```python
-# Calcul du taux moyen par date
-moyennes_par_date = df_clean.groupby("Date")["Taux"].mean()
+for espece in especes:
+    sous_df = df[(df["espece"] == espece) & (df["temperature"].isin([15, 25]))]
+    t1, t2 = sous_df["temperature"].values
+    p1, p2 = sous_df["taux_photosynthese"].values
+    pente = (p2 - p1) / (t2 - t1)
+    print(f"Pente moyenne 15-25 °C pour espèce {espece} : {pente:.2f} µmol CO₂/m²/s/°C")
+```
 
-print(moyennes_par_date)
 
-# Courbe
-moyennes_par_date.plot(marker='o', title="Taux moyen par date")
-plt.xlabel("Date")
-plt.ylabel("Taux moyen (μmol CO₂/m²/s)")
-plt.grid(True)
-plt.tight_layout()
+### Étape 5 — Ajuster une régression linéaire simple avec NumPy (sans SciPy)
+
+```python
+import numpy as np
+
+for espece in especes:
+    sous_df = df[df["espece"] == espece]
+    x = sous_df["temperature"].values
+    y = sous_df["taux_photosynthese"].values
+    
+    # Ajustement linéaire
+    a, b = np.polyfit(x, y, deg=1)
+    print(f"Espèce {espece} : y = {a:.2f}x + {b:.2f}")
+    
+    # Tracé
+    plt.plot(x, y, 'o', label=f"Espèce {espece}")
+    plt.plot(x, a*x + b, '--', label=f"Régression {espece}")
+
+plt.xlabel("Température (°C)")
+plt.ylabel("Taux de photosynthèse (µmol CO₂/m²/s)")
+plt.title("Régression linéaire (approximation)")
+plt.legend()
+plt.grid()
 plt.show()
 ```
+
+### Interprétation
+
+* L'espèce **A** atteint un maximum à **25 °C**, puis son efficacité décroît.
+* L'espèce **B** est plus tolérante à la chaleur et performe encore à 35 °C.
+* L'espèce **C** a un taux plus faible, mais réagit de façon similaire à A.
+
+

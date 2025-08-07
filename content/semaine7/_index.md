@@ -207,6 +207,7 @@ plt.xticks(rotation=0)
 plt.legend(["Score"])
 plt.show()
 ```
+![graphique à barres](./graphique_barres.png?width=40vw)
 
 | Fonction        | Rôle                                |
 | --------------- | ----------------------------------- |
@@ -229,6 +230,8 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ```
+
+![graphique à barres d'erreur](./graphique_barres_erreurs.png?width=40vw)
 
 | Argument  | Signification                    |
 | --------- | -------------------------------- |
@@ -258,8 +261,10 @@ plt.plot(x, y, "o", label="Données")
 plt.plot(x, y_reg, "-", label=f"y = {a:.2f}x + {b:.2f}")
 plt.legend()
 plt.grid(True)
+plt.tight_layout()
 plt.show()
 ```
+![graphique droite de régression](./graphique_regression.png?width=40vw)
 
 ## Affichage propre
 

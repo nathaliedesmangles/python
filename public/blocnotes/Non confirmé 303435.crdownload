@@ -1,0 +1,226 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "e15609c0",
+   "metadata": {},
+   "source": [
+    "\n",
+    "# ✅ Solutions - Révision finale en sciences de la nature\n",
+    "\n",
+    "Ce carnet contient les **solutions complètes** aux 5 exercices de révision.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "13ff55a8",
+   "metadata": {},
+   "source": [
+    "## 🔬 Solution Exercice 1 : Neutralisation acide-base"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e14712de",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "def ph(volume_base):\n",
+    "    return 3 + 4 * (1 - 2.718**(-0.8 * volume_base))\n",
+    "\n",
+    "volumes = []\n",
+    "ph_values = []\n",
+    "\n",
+    "v = 0\n",
+    "while True:\n",
+    "    p = ph(v)\n",
+    "    volumes.append(v)\n",
+    "    ph_values.append(p)\n",
+    "    print(f\"Volume = {v:.1f} mL --> pH = {p:.2f}\")\n",
+    "    if 6.8 <= p <= 7.2:\n",
+    "        break\n",
+    "    v += 0.5\n",
+    "\n",
+    "plt.plot(volumes, ph_values, marker='o')\n",
+    "plt.xlabel(\"Volume de base (mL)\")\n",
+    "plt.ylabel(\"pH\")\n",
+    "plt.title(\"Titration acide-base\")\n",
+    "plt.grid(True)\n",
+    "plt.show()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9e2655cb",
+   "metadata": {},
+   "source": [
+    "## ⚛️ Solution Exercice 2 : Désintégration radioactive"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a484001f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "def quantite_restante(q0, t, demivie):\n",
+    "    return q0 * 0.5**(t / demivie)\n",
+    "\n",
+    "temps = np.arange(0, 65, 5)\n",
+    "quantites = [quantite_restante(100, t, 20) for t in temps]\n",
+    "\n",
+    "print(\"Quantités restantes :\", quantites)\n",
+    "\n",
+    "plt.plot(temps, quantites, marker='o')\n",
+    "plt.xlabel(\"Temps (s)\")\n",
+    "plt.ylabel(\"Quantité restante\")\n",
+    "plt.title(\"Désintégration radioactive\")\n",
+    "plt.grid(True)\n",
+    "plt.show()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "22539c4c",
+   "metadata": {},
+   "source": [
+    "## 💧 Solution Exercice 3 : Titrage par conductimétrie"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6cc45fe1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import pandas as pd\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "df = pd.read_csv(\"conductivite.csv\")\n",
+    "print(df)\n",
+    "\n",
+    "plt.plot(df[\"volume\"], df[\"conductivite\"], marker='o')\n",
+    "plt.xlabel(\"Volume (mL)\")\n",
+    "plt.ylabel(\"Conductivité (µS)\")\n",
+    "plt.title(\"Titrage par conductimétrie\")\n",
+    "plt.grid(True)\n",
+    "plt.show()\n",
+    "\n",
+    "avant = df[df[\"volume\"] <= 10]\n",
+    "apres = df[df[\"volume\"] >= 11]\n",
+    "\n",
+    "pente_avant = (avant[\"conductivite\"].iloc[-1] - avant[\"conductivite\"].iloc[0]) / (avant[\"volume\"].iloc[-1] - avant[\"volume\"].iloc[0])\n",
+    "pente_apres = (apres[\"conductivite\"].iloc[-1] - apres[\"conductivite\"].iloc[0]) / (apres[\"volume\"].iloc[-1] - apres[\"volume\"].iloc[0])\n",
+    "\n",
+    "print(f\"Pente avant équivalence : {pente_avant:.2f} µS/mL\")\n",
+    "print(f\"Pente après équivalence : {pente_apres:.2f} µS/mL\")\n",
+    "print(\"Le point d'équivalence est estimé autour de 10-11 mL.\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "be193841",
+   "metadata": {},
+   "source": [
+    "## 🧪 Solution Exercice 4 : Loi de Beer-Lambert"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dd49300c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "concentrations = np.array([0.00, 0.05, 0.10, 0.15, 0.20, 0.25])\n",
+    "absorbances = np.array([0.00, 0.12, 0.24, 0.36, 0.49, 0.61])\n",
+    "\n",
+    "plt.errorbar(concentrations, absorbances, yerr=0.02, fmt='o')\n",
+    "plt.xlabel(\"Concentration (mol/L)\")\n",
+    "plt.ylabel(\"Absorbance\")\n",
+    "plt.title(\"Loi de Beer-Lambert\")\n",
+    "plt.grid(True)\n",
+    "plt.show()\n",
+    "\n",
+    "coef = np.polyfit(concentrations, absorbances, 1)\n",
+    "pente, intercept = coef\n",
+    "print(f\"y = {pente:.2f}x + {intercept:.2f}\")\n",
+    "\n",
+    "abs_inconnue = 0.55\n",
+    "conc_inconnue = (abs_inconnue - intercept) / pente\n",
+    "print(f\"Concentration estimée : {conc_inconnue:.3f} mol/L\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "49e7b9b5",
+   "metadata": {},
+   "source": [
+    "## ⚙️ Solution Exercice 5 : Rampe inclinée avec friction"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7717412e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "angle = 30\n",
+    "masse = 2.0\n",
+    "mu = 0.2\n",
+    "g = 9.81\n",
+    "\n",
+    "theta = np.radians(angle)\n",
+    "f_pente = masse * g * np.sin(theta)\n",
+    "f_friction = mu * masse * g * np.cos(theta)\n",
+    "f_nette = f_pente - f_friction\n",
+    "a = f_nette / masse\n",
+    "\n",
+    "print(f\"Accélération nette : {a:.2f} m/s²\")\n",
+    "\n",
+    "positions = [0]\n",
+    "vitesses = [0]\n",
+    "temps = [0]\n",
+    "\n",
+    "dt = 0.1\n",
+    "for i in range(1, 101):\n",
+    "    t = i * dt\n",
+    "    v = vitesses[-1] + a * dt\n",
+    "    x = positions[-1] + v * dt\n",
+    "    vitesses.append(v)\n",
+    "    positions.append(x)\n",
+    "    temps.append(t)\n",
+    "\n",
+    "plt.plot(temps, positions)\n",
+    "plt.xlabel(\"Temps (s)\")\n",
+    "plt.ylabel(\"Position (m)\")\n",
+    "plt.title(\"Mouvement sur une rampe inclinée\")\n",
+    "plt.grid(True)\n",
+    "plt.show()\n"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
