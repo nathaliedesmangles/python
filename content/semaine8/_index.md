@@ -198,10 +198,13 @@ import pandas as pd
 df = pd.read_csv("solubilite.csv")
 ```
 
-## Afficher les 10 premières lignes
+Le contenu du fichier est stocké dans une variable de type `DataFrame`.
+
+
+## Afficher les 5 premières lignes
 
 ```python
-print(df.head())
+print(df.head(5))
 ```
 
 ### Exemple d'affichage
@@ -214,6 +217,8 @@ print(df.head())
 3  KNO3                  20                     31.6
 4  KNO3                  40                     63.9
 ```
+
+**NB** : ``df.head()` affichera **par défaut** les **10** premières lignes.
 
 ## Afficher les noms des colonnes
 
