@@ -105,7 +105,7 @@ Que la science éclaire vos soupçons… et que votre code résiste à toutes le
 ### 5. Analyse statistique (régression linéaire)
 
 * Choisissez deux loci (ex. : Locus_1 et Locus_2).
-* Utilisez `scipy.stats.linregress()` pour :
+* Utilisez `NumPy` pour :
 
   * Obtenir la pente, l’interception, le R² et l’incertitude sur la pente.
   * Tracer la droite de régression sur un nuage de points (scores par suspect).

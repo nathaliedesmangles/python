@@ -3,7 +3,7 @@
   <channel>
     <title> Révision :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/9_revision/index.html</link>
-    <description>### Étape 1 — Charger les données import pandas as pd df = pd.read_csv(&#34;photosynthese.csv&#34;) print(df.head())&#xD;Étape 2 — Visualiser les courbes import matplotlib.pyplot as plt especes = df[&#34;espece&#34;].unique() for espece in especes: sous_df = df[df[&#34;espece&#34;] == espece] plt.plot(sous_df[&#34;temperature&#34;], sous_df[&#34;taux_photosynthese&#34;], marker=&#39;o&#39;, label=f&#34;Espèce {espece}&#34;) plt.xlabel(&#34;Température (°C)&#34;) plt.ylabel(&#34;Taux de photosynthèse (µmol CO₂/m²/s)&#34;) plt.title(&#34;Taux de photosynthèse selon la température&#34;) plt.legend() plt.grid() plt.show()&#xD;Étape 3 — Trouver la température optimale par espèce for espece in especes: sous_df = df[df[&#34;espece&#34;] == espece] idx_max = sous_df[&#34;taux_photosynthese&#34;].</description>
+    <description>### Étape 1 — Charger les données import pandas as pd df = pd.read_csv(&#34;photosynthese.csv&#34;) print(df.head())&#xD;Étape 2 — Visualiser les courbes import pandas as pd import numpy as np import matplotlib.pyplot as plt # Chargement des données df = pd.read_csv(&#34;photosynthese.csv&#34;) # Étape 1 : Calcul des moyennes et écarts types groupes = df.groupby([&#34;Espèce&#34;, &#34;Température&#34;])[&#34;Taux&#34;] stats = groupes.agg([&#34;mean&#34;, &#34;std&#34;]).reset_index() # Étape 2 : Création du graphique avec barres d&#39;erreur especes = stats[&#34;Espèce&#34;].</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_ateliers/9_revision/index.xml" rel="self" type="application/rss+xml" />
