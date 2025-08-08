@@ -140,22 +140,13 @@ td[colspan="3"] {
       <td>7 novembre</td>
     </tr>
     <tr>
-      <td><a href="../semaine12/"><strong>Cours 12</strong></a></td>
-      <td>17 novembre</td>
-      <td>19 novembre</td>
-      <td>21 novembre</td>
-    </tr>
-    <tr>
-      <td><a href="../semaine13/"><strong>Cours 13</strong></a></td>
-      <td>24 novembre</td>
-      <td>26 novembre</td>
-      <td>28 novembre</td>
-    </tr>
-    <tr>
-      <td><a href="../semaine14/"><strong>Cours 14</strong></a></td>
-      <td>1er décembre</td>
-      <td>3 décembre</td>
-      <td>5 décembre</td>
+      <td><a href="../semaine12/"><strong>Cours 12-14</strong></a></td>
+      <td colspan="3">
+        <strong>Projet final</strong><br>
+        17-24 novembre, 1er décembre (grp9)<br>
+        19-26 novembre, 3 décembre (grp11)<br>
+        21-28 novembre, 5 décembre (grp10)
+      </td>
     </tr>
     <tr>
       <td><a href="../semaine15/"><strong>Cours 15</strong></a></td>
