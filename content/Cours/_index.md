@@ -16,6 +16,10 @@ weight = 100
 * [Calendrier scolaire](./CALENDRIER-SCOLAIRE_Automne2025.pdf)
 * [Répartition des 15 semaines](./CALENDRIER-REPARTITION_Automne2025.pdf)
 
+## Horaire de l'enseignante
+
+* [Horaire](./horaire.html)
+
 ---
 
 <style>

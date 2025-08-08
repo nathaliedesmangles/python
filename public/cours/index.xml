@@ -3,7 +3,7 @@
   <channel>
     <title>Les séances de cours :: 420-SN1-RE</title>
     <link>https://example.org/cours/index.html</link>
-    <description>Liste d’attente pour poser des questions Cliquez ici pour entrer votre nom&#xA;Plan de cours Plan de cours&#xA;Calendrier scolaire et répartition des 15 semaines Calendrier scolaire Répartition des 15 semaines Groupe 09&#xA;(lundi 15h20)&#xD;Groupe 11&#xA;(mercredi 08h00)&#xD;Groupe 10&#xA;(vendredi 15h20)&#xD;Cours 01&#xD;25 août&#xA;Quiz&#xA;Code QR&#xD;27 août&#xA;Quiz&#xA;Code QR&#xD;22 août&#xA;Quiz&#xA;Code QR&#xD;Cours 02&#xD;4 septembre&#xD;3 septembre&#xD;29 août&#xD;Cours 03&#xD;8 septembre&#xD;10 septembre&#xD;5 septembre&#xD;Cours 04&#xD;15 septembre&#xD;17 septembre&#xD;12 septembre&#xD;Cours 05&#xD;Évaluation #1 (25%)</description>
+    <description>Liste d’attente pour poser des questions Cliquez ici pour entrer votre nom&#xA;Plan de cours Plan de cours&#xA;Calendrier scolaire et répartition des 15 semaines Calendrier scolaire Répartition des 15 semaines Horaire de l’enseignante Horaire Groupe 09&#xA;(lundi 15h20)&#xD;Groupe 11&#xA;(mercredi 08h00)&#xD;Groupe 10&#xA;(vendredi 15h20)&#xD;Cours 01&#xD;25 août&#xA;Quiz&#xA;Code QR&#xD;27 août&#xA;Quiz&#xA;Code QR&#xD;22 août&#xA;Quiz&#xA;Code QR&#xD;Cours 02&#xD;4 septembre&#xD;3 septembre&#xD;29 août&#xD;Cours 03&#xD;8 septembre&#xD;10 septembre&#xD;5 septembre&#xD;Cours 04&#xD;15 septembre&#xD;17 septembre&#xD;12 septembre&#xD;Cours 05&#xD;Évaluation #1 (25%)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/cours/index.xml" rel="self" type="application/rss+xml" />
