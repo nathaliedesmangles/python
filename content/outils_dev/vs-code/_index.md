@@ -100,7 +100,7 @@ Pour un script Python ou un bloc-notes Jupyter :
 - Télécharger et installer Python : [Python](Python.org)
 - Télécharger et installer Visual Studio Code : [Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/download)
 - Les **extensions** et **bibliothèques** à installer dans VS Code: Python, Run, Pandas,
-Numpy, Matplotlib, SciPy [Tutoriel pour installer des extensions sur VS Code](https://www.youtube.com/watch?v=AUt8NgwMbOo)
+Numpy, Matplotlib [Tutoriel pour installer des extensions sur VS Code](https://www.youtube.com/watch?v=AUt8NgwMbOo)
 - Installer Jupyter Notebook sur Visual Studio Code (en anglais) : [How to Install Jupyter Notebook in VSCode | Jupyter Notebook in Visual Studio Code (Easy)](https://www.youtube.com/watch?v=xS5ZXOC4e6A&t=45s)
 
 
@@ -122,7 +122,6 @@ Numpy, Matplotlib, SciPy [Tutoriel pour installer des extensions sur VS Code](ht
 * **Jupyter** : bloc-notes Jupyter.
 * **NumPy** : Fonctions mathématiques statistiques.
 * **Matplotlib** : Graphiques.
-* **SciPy** : Fonctions scientifiques et graphiques (ex: droite de régression linéaire)
 * **Pandas** : Traitement de fichiers CSV (extraction et nettoyage des données)
 
 ## Astuces clavier & productivité

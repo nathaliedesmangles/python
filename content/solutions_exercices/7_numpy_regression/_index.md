@@ -77,82 +77,71 @@ print("Écart type éch2 :", np.std(ech2))
 
 ---
 
-### Exercice 4 – Pressions dans un cylindre
 
-Voici la **solution complète de l’exercice 4 – Pressions dans un cylindre**, incluant le **calcul**, l’**affichage**, et la **visualisation graphique avec une droite de régression linéaire** :
-
----
-
-### ✅ Exercice 4 – Pressions dans un cylindre (avec graphique)
+### Exercice 4 – Pressions dans un cylindre (avec graphique)
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.stats import linregress
 
-# Données de l'exercice
+# Données
 hauteur = np.linspace(0, 50, 6)  # [0, 10, 20, 30, 40, 50]
 pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
 
-# 1. Affichage des hauteurs et des pressions
-print("Hauteurs (cm) :", hauteur)
-print("Pressions (kPa) :", pression)
+# 1. Affiche les hauteurs et les pressions
+print("Hauteur (cm) :", hauteur)
+print("Pression (kPa) :", pression)
 
 # 2. Variation de pression par tranche de 10 cm
-variation = np.diff(pression)
-print("Variation de pression (chaque 10 cm) :", variation)
+variation = np.diff(pression)  # différences successives
+print("Variation de pression par 10 cm :", variation)
 
-# 3. Moyenne de la pression
-moyenne = np.mean(pression)
-print("Pression moyenne :", moyenne)
+# 3. Moyenne de pression
+moyenne_pression = np.mean(pression)
+print("Moyenne de pression :", moyenne_pression, "kPa")
 
-# 4. Régression linéaire (pression en fonction de la hauteur)
-slope, intercept, r_value, p_value, std_err = linregress(hauteur, pression)
-pression_modele = slope * hauteur + intercept
+# 4. Régression linéaire pour Pression = a*Hauteur + b
+a, b = np.polyfit(hauteur, pression, 1)
 
-print(f"Pente de la régression : {slope:.3f} kPa/cm")
-print(f"Ordonnée à l'origine : {intercept:.3f} kPa")
-print(f"Coefficient de corrélation r : {r_value:.3f}")
-
-# 5. Graphique avec données et droite de régression
-plt.figure(figsize=(8, 5))
-plt.plot(hauteur, pression, 'o', label="Données mesurées", color='blue')
-plt.plot(hauteur, pression_modele, '-', label=f"Régression linéaire\n(pente = {slope:.2f})", color='red')
+# Tracé
+plt.scatter(hauteur, pression, label="Mesures", color="blue")
+plt.plot(hauteur, a*hauteur + b, label=f"Régression linéaire: y={a:.2f}x+{b:.2f}", color="red")
 plt.xlabel("Hauteur (cm)")
 plt.ylabel("Pression (kPa)")
 plt.title("Pression en fonction de la hauteur")
-plt.grid(True)
 plt.legend()
+plt.grid(True)
 plt.savefig("graphique_pression_regression.png")
 plt.show()
 ```
 
-### Résultat visuel :
+### Points notables
 
-![Graphique](./graphique_pression_regression.png?width=45vw)
-
-Le graphique généré affiche :
-
-* les points mesurés (ronds bleus),
-* la droite de régression (ligne rouge),
-* une légende et des axes clairs.
+* `np.diff()` calcule directement les variations successives.
+* La régression linéaire avec `np.polyfit(x, y, 1)` donne la **pente a** et **l’ordonnée à l’origine b**.
 
 ---
 
 ### Exercice 5 – Croissance d’une plante
 
 ```python
-# 1. Croissance sans engrais
-jours = np.arange(10)
-taille = 5 + jours * 2
-print("Taille sans engrais :", taille)
+# 1. Tableau de la taille de la plante pendant 10 jours (sans engrais)
+jours = np.arange(0, 10)  # Jours 0 à 9
+taille_sans_engrais = 5 + 2 * jours
 
-# 2. Avec engrais (+1 cm)
-taille_engrais = taille + 1
-print("Taille avec engrais :", taille_engrais)
+# 2. Ajout de 1 cm supplémentaire (avec engrais)
+taille_avec_engrais = taille_sans_engrais + 1
 
 # 3. Moyennes
-print("Moyenne sans engrais :", np.mean(taille))
-print("Moyenne avec engrais :", np.mean(taille_engrais))
+moyenne_sans = np.mean(taille_sans_engrais)
+moyenne_avec = np.mean(taille_avec_engrais)
+
+print("Taille sans engrais :", taille_sans_engrais)
+print("Taille avec engrais :", taille_avec_engrais)
+print("Moyenne sans engrais :", moyenne_sans, "cm")
+print("Moyenne avec engrais :", moyenne_avec, "cm")
 ```
 
+#### Point notable
+
+* l’utilisation de `np.arange()` permet de générer les jours facilement, et la croissance est calculée par formule.

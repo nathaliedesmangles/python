@@ -18,39 +18,39 @@ draft = false
 
 ---
 
-# Projet : Enquête scientifique par analyse d’ADN
+## Enquête scientifique par analyse d’ADN
 
-## Contexte
+### Contexte
 
 Vous êtes le ou la bioinformaticien·ne en charge d’une **enquête médico-légale** : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.
 
 Mais votre mission ne s'arrête pas à un simple tri de valeurs : vous devrez aussi **modéliser les relations génétiques** par analyse statistique, **quantifier l’incertitude**, et **présenter vos résultats de manière claire et rigoureuse** à l’aide de Python.
 
 
-## Contraintes techniques
+### Contraintes techniques
 
 * **Fichiers de départ** : Bloc-notes de travail `projet_enquete_adn.ipynb` et le fichier de données contenant les profils ADN `suspects.csv` se trouvant sur Moodle.  
 * **Langage** : Python dans Jupyter Notebook (`.ipynb`).  
-* **Bibliothèques autorisées** : `pandas`, `numpy`, `matplotlib`, `scipy`  
+* **Bibliothèques autorisées** : `pandas`, `numpy` et `matplotlib`  
 * **Programmation lettrée** : structurez votre rapport avec des **sections Markdown**, des **titres explicites**, et des **explications claires**.  
 * **Fonctions personnalisées** : vous devez créer vos propres fonctions à l’aide de `def`, avec paramètres et valeurs retournées, pour automatiser les analyses.  
 * **Normes** : code lisible, modulaire, commenté.
 
 
-## Remise
+### Remise
 
 * Remettre **un seul fichier** : `projet_prenom_nom.ipynb`, toutes cellules **exécutées**.
 * **Facultatif** : joindre une version PDF exportée du bloc-notes.
 
 
-## Rappel : vos superpouvoirs Python
+### Rappel : vos superpouvoirs Python
 
 * Pensez à tester chaque fonction sur des **cas simples** avant de l’appliquer aux données complètes.
 * Utilisez les **cellules Markdown** pour documenter vos choix et expliquer votre démarche.
 * Soyez créatifs·ves, mais rigoureux·ses.
 
 
-## Bonne enquête !
+### Bonne enquête !
 
 Que la science éclaire vos soupçons… et que votre code résiste à toutes les erreurs !
 
@@ -60,7 +60,7 @@ Que la science éclaire vos soupçons… et que votre code résiste à toutes le
 
 ### 1. Élaboration de votre plan de travail
 
-**Avant de coder**, rédigez une **brève stratégie** en Markdown :
+**Avant de coder**, rédigez une **brève stratégie** :
 
 * Quelles sont les étapes de l’enquête ?
 * Quelles fonctions pourriez-vous créer pour structurer votre code (par exemple : comparaison, calcul, affichage graphique, etc.) ?

@@ -361,7 +361,18 @@ pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
 1. Affiche les hauteurs et les pressions.
 2. Calcule la variation de pression par tranche de 10 cm.
 3. Calcule la moyenne de pression.
+4. Trace la droite de régression linéaire pour le graphique (`scatter()`) de la pression en fonction de la hauteur. 
 
+#### Exemple de résultat
+
+```
+Hauteur (cm) : [ 0. 10. 20. 30. 40. 50.]
+Pression (kPa) : [101.3 100.   98.7  97.5  96.2  95. ]
+Variation de pression par 10 cm : [-1.3 -1.3 -1.2 -1.3 -1.2]
+Moyenne de pression : 98.11666666666667 kPa
+```
+
+![Graphique nuage et regression](./graphique_pression_regression.png?width=35vw)
 
 ### Exercice 5 – Croissance d’une plante (modélisation simplifiée)
 
@@ -370,7 +381,6 @@ Une plante pousse selon ce modèle : sa taille augmente de 2 cm par jour.
 1. Crée un tableau NumPy qui contient la taille de la plante pendant 10 jours, en partant de 5 cm.
 2. Ajoute 1 cm supplémentaire à chaque valeur pour simuler un apport d’engrais.
 3. Calcule la moyenne de croissance avec et sans engrais.
-4. Trace la droite de régression linéaire pour le graphique (`plot()`) de la pression en fonction de la hauteur.
 
 ---
 
