@@ -79,9 +79,9 @@ td[colspan="3"] {
   <tbody>
     <tr>
       <td><a href="../semaine1/"><strong>Cours 01</strong></a></td>
-      <td>25 août<br><a href="https://app.wooclap.com/events/SN1GRP09/votes">Quiz</a></td>
-      <td>27 août<br><a href="https://app.wooclap.com/events/SN1GRP11/votes">Quiz</a></td>
-      <td>22 août<br><a href="https://app.wooclap.com/events/SN1GRP10/votes">Quiz</a></td>
+      <td>25 août<br><a href="https://app.wooclap.com/events/SN1GRP09/questions/6844ae29ebdc65de32d517f3">Quiz</a><br><a href="./QR9.png" target="_blank">Code QR</a></td>
+      <td>27 août<br><a href="https://app.wooclap.com/events/SN1GRP11/questions/6844ad8b67842f62ffbc697b">Quiz</a><br><a href="./QR11.png" target="_blank">Code QR</a></td>
+      <td>22 août<br><a href="https://app.wooclap.com/events/SN1GRP10/questions/68448b73ebdc65de32cd8c2e">Quiz</a><br><a href="./QR10.png" target="_blank">Code QR</a></td>
     </tr>
     <tr>
       <td><a href="../semaine2/"><strong>Cours 02</strong></a></td>
