@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>  :: 420-SN1-RE</title>
+    <link>https://example.org/outils_dev/install_env/index.html</link>
+    <description>Prérequis Système Windows 11 Connexion internet active (pour télécharger les composants internes) Installation automatisée de l’environnement Téléchargez le fichier setup_env.exe Il se trouvera dans le dossier Téléchargements.&#xA;Faites un clic-droit dessus, puis choisissez Exécuter en tant qu’administrateur. Lorsque la phrase “Installation silencieuse de Python” s’affiche, cela indique que Python attend que vous confirmiez vouloir poursuivre l’installation de Python. == Installation de Python 3.13.5 et outils associés == Téléchargement de python_installer.exe depuis https://www.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/outils_dev/install_env/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

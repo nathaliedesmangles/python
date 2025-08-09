@@ -49,5 +49,12 @@
       <guid>https://example.org/outils_dev/markdown/index.html</guid>
       <description>Introduction au Markdown dans Jupyter Notebook Markdown est un langage de balisage léger qui vous permet de formater du texte en utilisant une syntaxe simple. Dans Jupyter Notebook, vous pouvez utiliser des cellules Markdown pour ajouter des titres, des listes, des liens, des images, et bien plus encore.&#xA;Comment créer une cellule Markdown Créer une nouvelle cellule : Cliquez sur le bouton “+” dans la barre d’outils pour ajouter une nouvelle cellule.</description>
     </item>
+    <item>
+      <title> </title>
+      <link>https://example.org/outils_dev/install_env/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/install_env/index.html</guid>
+      <description>Prérequis Système Windows 11 Connexion internet active (pour télécharger les composants internes) Installation automatisée de l’environnement Téléchargez le fichier setup_env.exe Il se trouvera dans le dossier Téléchargements.&#xA;Faites un clic-droit dessus, puis choisissez Exécuter en tant qu’administrateur. Lorsque la phrase “Installation silencieuse de Python” s’affiche, cela indique que Python attend que vous confirmiez vouloir poursuivre l’installation de Python. == Installation de Python 3.13.5 et outils associés == Téléchargement de python_installer.exe depuis https://www.</description>
+    </item>
   </channel>
 </rss>

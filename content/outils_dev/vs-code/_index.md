@@ -87,42 +87,6 @@ Pour un script Python ou un bloc-notes Jupyter :
 
 ![Exécuter](./execution-python.png?width=40vw)
 
-## Installer et configurer VS Code pour Python
-
-### 1. Installation de VS Code
-
-**Pour ceux qui ont un système d'exploitation Windows, voici deux fichiers exécutables qui installeront automatiquement VS Code, Python et toutes les librairies nécessaires :** 
-- [Première étape](1-vscode_python.exe)
-- [Deuxième étape](2-libraries_extensions.exe)
-
-**Pour une installation manuelle : voici les liens utiles pour installer les outils de développement (sur votre ordinateur personnel):**
-
-- Télécharger et installer Python : [Python](Python.org)
-- Télécharger et installer Visual Studio Code : [Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/download)
-- Les **extensions** et **bibliothèques** à installer dans VS Code: Python, Run, Pandas,
-Numpy, Matplotlib [Tutoriel pour installer des extensions sur VS Code](https://www.youtube.com/watch?v=AUt8NgwMbOo)
-- Installer Jupyter Notebook sur Visual Studio Code (en anglais) : [How to Install Jupyter Notebook in VSCode | Jupyter Notebook in Visual Studio Code (Easy)](https://www.youtube.com/watch?v=xS5ZXOC4e6A&t=45s)
-
-
-### 2. Installer Python
-
-1. Va sur [https://python.org](https://python.org) > Télécharge et installe Python
-2. Coche **"Add Python to PATH"** avant de cliquer sur "Install Now"
-
-### 3. Installer l’extension Python
-
-1. Dans VS Code, clique sur **Extensions (icône des blocs)** ou `Ctrl+Shift+X`
-2. Recherche **Python**
-3. Clique sur **Installer** (éditeur : Microsoft)
-
-
-#### Extensions utiles
-
-* **Python** (Microsoft) : exécution et débogage.
-* **Jupyter** : bloc-notes Jupyter.
-* **NumPy** : Fonctions mathématiques statistiques.
-* **Matplotlib** : Graphiques.
-* **Pandas** : Traitement de fichiers CSV (extraction et nettoyage des données)
 
 ## Astuces clavier & productivité
 
@@ -134,8 +98,6 @@ Numpy, Matplotlib [Tutoriel pour installer des extensions sur VS Code](https://w
 * **Formatage** : `Ctrl+K Ctrl+F`.
 * **Renommer symboles** : `F2`.
 * **IntelliSense** : suggestions automatiques avec `Ctrl+Space` 
-
-
 
 ---
 

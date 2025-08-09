@@ -1,35 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="66a41d0b-83e2-4609-a4cf-545f5a66b1be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/FAQ/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/FAQ/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/afaire/exercices_debug_sciences.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/content/afaire/exercices_debug_sciences.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine10/Télécharger le notebook corrigé – NumPy exercices guidés (.ipynb)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine10/Télécharger le notebook pour étudiants – NumPy exercices guidés (.ipynb)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine10/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semaine10/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine11/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semaine11/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/Projet_Biodiversite_Python.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semaine12/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/_indexOLD.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/corriger_projets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/corriger_projets_exec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/corriger_projets_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/content/semaine12/corriger_projets_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/donnees_bille_pente 1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/donnees_bille_pente.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/evaluation_sommative_2_corrige.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/evaluation_sommative_2_etudiant.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/fermentation_co2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/grille.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/notions_utiles_necessaires.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/projet_bille_pente.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/projet_integrateur.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/solubilite_sel_temperature.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine12/suspects.csv" beforeDir="false" afterPath="$PROJECT_DIR$/content/semaine12/suspects.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine15/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semaine15/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine5/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semaine5/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine8/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semaine8/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semaine9/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semaine9/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/outils_dev/install_env.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/outils_dev/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/outils_dev/vs-code/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/outils_dev/vs-code/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/FAQ/alternatives/google-colab/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/FAQ/alternatives/google-colab/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/FAQ/alternatives/google-colab/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/FAQ/alternatives/google-colab/index.xml" afterDir="false" />
@@ -41,21 +24,9 @@
       <change beforePath="$PROJECT_DIR$/public/FAQ/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/FAQ/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/FAQ/locaux_python/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/FAQ/locaux_python/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/FAQ/locaux_python/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/FAQ/locaux_python/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/anciens/atelier4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/anciens/atelier4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/anciens/atelier4/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/anciens/atelier4/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/boucler_tableaux2d/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/boucler_tableaux2d/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/boucles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/boucles/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/break_continue_liste/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/break_continue_liste/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/debogage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/debogage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/fonctions/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/fonctions/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/lecture_ecriture_csv_numpy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/lecture_ecriture_csv_numpy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/markdown/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/markdown/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/maths/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/maths/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/organisation_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/organisation_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/plan/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/plan/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/afaire/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/afaire/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/cours/horaire/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/cours/horaire/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/cours/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/cours/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/cours/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/cours/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
@@ -82,78 +53,73 @@
       <change beforePath="$PROJECT_DIR$/public/regles/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/regles/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/search/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/searchindex.en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/searchindex.en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine1/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/atelier/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine1/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/atelier/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine1/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine1/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine10/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine10/atelier/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine10/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine10/atelier/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine10/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine10/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine10/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine11/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine11/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine11/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine11/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine12/corriger_projets_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine12/corriger_projets_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine12/competences_reussite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine12/competences_reussite/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine12/competences_reussite/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine12/competences_reussite/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine12/grille/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine12/grille/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine12/grille/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine12/grille/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine12/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine12/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine12/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine12/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine12/suspects.csv" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine12/suspects.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine13/projet1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine13/projet1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine13/projet2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine13/projet2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine13/projet3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine13/projet3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine13/projet4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine13/projet4/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine15/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine15/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine15/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine15/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine2/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine2/atelier/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine2/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine2/atelier/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine2/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine2/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine3/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine3/atelier/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine3/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine3/atelier/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine3/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine3/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine3/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine4/eval1_formative/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine4/eval1_formative/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine4/eval1_formative/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine4/eval1_formative/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine4/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine4/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine4/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine5/atelier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine5/atelier/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine5/atelier/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine5/atelier/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine5/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine5/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine5/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine6/atelier/solution/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine6/atelier/solution/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semaine7/dictionnaires/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine7/dictionnaires/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine6/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine6/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine6/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine7/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine7/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine7/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine8/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine8/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/semaine8/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine8/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine9/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semaine9/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/semaine9/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/separateur_section/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/separateur_section/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/separateur_section/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/separateur_section/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/10_scipy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/10_scipy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/10_scipy/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/10_scipy/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/2_variables/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/2_variables/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/2_variables/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/2_variables/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/3_input_fonctions_debug/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/3_input_fonctions_debug/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/3_input_fonctions_debug/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/3_input_fonctions_debug/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/5_if/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/5_if/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/5_if/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/5_if/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/6_boucles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/6_boucles/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/6_boucles/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/6_boucles/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/7_listes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/7_listes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/7_listes/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/7_listes/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/9_numpy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/9_numpy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/9_numpy/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/9_numpy/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/11_fonctions_perso/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/11_fonctions_perso/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/11_fonctions_perso/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/11_fonctions_perso/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/2_variables_types_entrees_fn/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/2_variables_types_entrees_fn/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/2_variables_types_entrees_fn/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/2_variables_types_entrees_fn/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/3_struct_cond/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/3_struct_cond/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/3_struct_cond/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/3_struct_cond/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/4_boucles_debogage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/4_boucles_debogage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/4_boucles_debogage/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/4_boucles_debogage/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/6_listes_chaines_visualisation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/6_listes_chaines_visualisation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/6_listes_chaines_visualisation/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/6_listes_chaines_visualisation/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/7_numpy_regression/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/7_numpy_regression/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/7_numpy_regression/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/7_numpy_regression/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/8_dict_fichiers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/8_dict_fichiers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/8_dict_fichiers/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/8_dict_fichiers/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/9_revision/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/9_revision/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/9_revision/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/9_revision/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/solutions_ateliers/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_ateliers/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/10_scipy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/10_scipy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/10_scipy/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/10_scipy/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/2_variables/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/2_variables/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/2_variables/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/2_variables/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/3_input_fonctions_debug/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/3_input_fonctions_debug/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/3_input_fonctions_debug/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/3_input_fonctions_debug/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/5_if/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/5_if/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/5_if/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/5_if/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/6_boucles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/6_boucles/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/6_boucles/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/6_boucles/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/7_listes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/7_listes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/7_listes/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/7_listes/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/9_numpy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/9_numpy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/9_numpy/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/9_numpy/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/11_fonctions_perso/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/11_fonctions_perso/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/11_fonctions_perso/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/11_fonctions_perso/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/2_variables_types_entree_fn/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/2_variables_types_entree_fn/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/2_variables_types_entree_fn/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/2_variables_types_entree_fn/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/3_struct_cond/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/3_struct_cond/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/3_struct_cond/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/3_struct_cond/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/4_boucles_debogage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/4_boucles_debogage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/4_boucles_debogage/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/4_boucles_debogage/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/6_listes_chaines_visualisation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/6_listes_chaines_visualisation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/6_listes_chaines_visualisation/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/6_listes_chaines_visualisation/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/7_numpy_regression/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/7_numpy_regression/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/7_numpy_regression/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/7_numpy_regression/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/8_dict_fichiers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/8_dict_fichiers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/8_dict_fichiers/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/8_dict_fichiers/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/9_revision/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/9_revision/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/solutions_exercices/9_revision/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/9_revision/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/solutions_exercices/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/solutions_exercices/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/solutions_exercices/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
@@ -176,17 +142,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.install_python.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

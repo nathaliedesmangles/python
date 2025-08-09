@@ -1,5 +1,5 @@
 @echo off
-set PYTHON_URL=https://www.python.org/ftp/python/3.12.2/python-3.12.2-amd64.exe
+set PYTHON_URL=https://www.python.org/ftp/python/3.13.5/python-3.13.5-amd64.exe
 set PYTHON_INSTALLER=python_installer.exe
 
 echo Téléchargement de Python...

@@ -20,6 +20,13 @@ weight = 10
 
 ---
 
+## À propos de l'installation des outils
+
+* Est-ce que je peux installer les outils de travail sur vomontre ordinateur personnel (**Windows 11**) ?
+> **Oui**. [Cliquez ICI pour voir comment](../outils_dev/install_env/)
+
+---
+
 ## À propos des évaluations
 
 * Faut-il remettre les exercices du cours à faire avant le cours ?
@@ -68,6 +75,11 @@ weight = 10
 > [Évaluation 2](../semaine10/)   
 > [Évaluation intégratrice](../semaine15/)   
 
+
 * Combien vaut le projet final ?
 > [Informations](../semaine15/)
 > [Grille d'évaluation du projet](../semaine12/grille/)  
+
+## Horaire de l'enseignante
+
+[Horaire](https://python-a25.netlify.app/cours/horaire/)
