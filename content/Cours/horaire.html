@@ -29,6 +29,10 @@
       color: white;
       text-align: center;
     }
+    p {
+      margin: 0;
+    }
+
     .time {
       width: 70px;
       background: #eef3f8;
@@ -45,20 +49,26 @@
       text-align: center;
     }
     .nondispo {
-      background-color: #c0c0c0;
+      background-color: #c0c0c0 !important; // gris
       font-weight: bold; 
     }
     .centre{
-      text-align: center;
+      text-align: center; //
     }
-    .reunion{
-      background-color: #83b2d6; //bleu pale
+    .comitesn{
+      background-color: #8bd683 !important; //vert pale
+    }
+    .reuniondept{
+      background-color: #8bd683 !important; //vert pale
+    }
+    .seecm{
+      background-color: #8bd683 !important; //vert pale  
     }
     .aide420{
-      background-color: #8bd683; //vert
+      background-color: #83b2d6 !important; //bleu 
     }
     .aideprog{
-      background-color: #edad4c; //orange pale
+      background-color: #d6524f !important; //rouge
     }
   </style>
 </head>
@@ -85,7 +95,7 @@
       <td class="nondispo"></td>
       <td class="nondispo"></td>
       <td class="nondispo"></td>
-      <td class="reunion"><div class="event centre">Comité programme <br><small>Sciences de la Nature</small></div></td>
+      <td class="comitesn"><div class="event centre">Comité programme <br><small>Sciences de la Nature</small></div></td>
     </tr>
     <tr>
       <td class="time">08:55</td>
@@ -93,7 +103,7 @@
       <td></td>
       <td><div class="event">420SN1RE-Grp 11 —  B2303</div></td>
       <td></td>
-      <td class="reunion"><div class="event centre">Comité programme <br><small>Sciences de la Nature</small></div></td>
+      <td class="comitesn"><div class="event centre">Comité programme <br><small>Sciences de la Nature</small></div></td>
     </tr>
     <tr>
       <td class="time">09:50</td>
@@ -101,7 +111,7 @@
       <td></td>
       <td><div class="event">420SN1RE-Grp 11 —  B2303</div></td>
       <td></td>
-      <td class="reunion"><div class="event centre">Comité programme <br><small>Sciences de la Nature</small></div></td>
+      <td class="comitesn"><div class="event centre">Comité programme <br><small>Sciences de la Nature</small></div></td>
     </tr>
     <tr>
       <td class="time">10:45</td>
@@ -109,31 +119,31 @@
       <td></td>
       <td><div class="event">420SN1RE-Grp 11 —  B2303</div></td>
       <td></td>
-      <td class="reunion"><div class="event centre">Comité programme <br><small>Sciences de la Nature</small></div></td>
+      <td class="comitesn"><div class="event centre">Comité programme <br><small>Sciences de la Nature</small></div></td>
     </tr>
     <tr>
       <td class="time">11:40</td>
       <td></td>
-      <td></td>
-      <td class="reunion"><div class="event centre">Réunion départementale <br><small>Informatique</small></div></td>
+      <td class="seecm"><div class="event centre">Assemblée Générale<br><small>Syndicat des enseignants</small></div></td>
+      <td class="reuniondept"><div class="event centre">Réunion départementale <br><small>Informatique</small></div></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td class="time">12:35</td>
-      <td></td>
-      <td></td>
-      <td class="reunion"><div class="event centre">Réunion départementale <br><small>Informatique</small></div></td>
-      <td></td>
-      <td></td>
+      <td class="nondispo"></td>
+      <td class="seecm"><div class="event centre">Assemblée Générale<br><small>Syndicat des enseignants</small></div></td>
+      <td class="reuniondept"><div class="event centre">Réunion départementale <br><small>Informatique</small></div></td>
+      <td class="nondispo"></td>
+      <td class="nondispo"></td>
     </tr>
     <tr>
       <td class="time">13:30</td>
+      <td class="nondispo"></td>
+      <td class="seecm"><div class="event centre">Assemblée Générale<br><small>Syndicat des enseignants</small></div></td>
+      <td class="reuniondept"><div class="event centre">Réunion départementale <br><small>Informatique</small></div></td>
       <td></td>
-      <td></td>
-      <td class="reunion"><div class="event centre">Réunion départementale <br><small>Informatique</small></div></td>
-      <td></td>
-      <td></td>
+      <td class="nondispo"></td>
     </tr>
     <tr>
       <td class="time">14:25</td>
@@ -176,7 +186,18 @@
       <td class="nondispo"></td>
     </tr>
   </tbody>
+  <tfoot>
+      <tr>
+        <td colspan="6" style="text-align:left; font-style:italic;">
+.	  <p><span style="color: blue;">En bleu</span> : CAI - Centre d'aide en informatique</p>
+	  <p><span style="color: green;">En vert</span> : environ 1 fois par mois</p>
+	  <p><span style="color: red;">En rouge</span> : 1 semaine sur 3</p>
+	  <p><span style="color: grey;">En gris</span> : pas disponible</p>
+        </td>
+      </tr>
+  </tfoot>
 </table>
+
 
 </body>
 </html>
