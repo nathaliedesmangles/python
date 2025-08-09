@@ -5,7 +5,7 @@ title = "Outils de développement"
 weight = 20
 +++
 
-
+* [Installer les outils de travail](./install_env/)
 * [Se connecter à OneDrive](./oneDrive)
 * [Fichiers et répertoires/dossiers](./fichiers_dossiers)
 * [Utiliser Visual Studio Code (VS Code)](./vs-code)
