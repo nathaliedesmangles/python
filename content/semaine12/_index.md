@@ -3,7 +3,7 @@ chapter = true
 pre = "<b>12-14</b>"
 title = " Projet - Présentation, analyse et traduction"
 weight = 112
-draft = false
+draft = true
 +++
 
 
