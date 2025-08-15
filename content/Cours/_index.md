@@ -5,7 +5,7 @@ weight = 100
 
 ## Liste d'attente pour poser des questions
 
-[Cliquez ici pour entrer votre nom](https://file-attente.netlify.app/)
+[Cliquez ici pour entrer votre nom](https://liste-attente.netlify.app/)
 
 ## Plan de cours
 
