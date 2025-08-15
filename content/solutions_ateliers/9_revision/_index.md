@@ -2,6 +2,7 @@
 pre = "<b>9.</b>"
 title = " Révision"
 weight = 309
+draft = true
 +++
 
 ```python

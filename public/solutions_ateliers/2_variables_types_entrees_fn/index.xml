@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Variables, types, entrées et fonction :: 420-SN1-RE</title>
-    <link>https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.html</link>
+    <link>http://localhost:1313/solutions_ateliers/2_variables_types_entrees_fn/index.html</link>
     <description>Exercice #1 - Quantité restante après évaporation # Constantes q_initiale = 400 # en mL t_minutes = 10 + 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;)&#xD;Résultat attendu :&#xA;Quantité restante après 10.25 minutes : 143.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/solutions_ateliers/2_variables_types_entrees_fn/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

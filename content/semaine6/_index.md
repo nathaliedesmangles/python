@@ -3,7 +3,7 @@ chapter = true
 pre = "<b>6.</b>"
 title = " Listes, chaînes et visualisation des données"
 weight = 106
-draft = false
+draft = true
 +++
 
 ## Objectifs

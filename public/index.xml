@@ -78,48 +78,6 @@
       <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;Exercices pratiques avec VS Code.</description>
     </item>
     <item>
-      <title> Listes, chaînes et visualisation des données</title>
-      <link>https://example.org/semaine6/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine6/index.html</guid>
-      <description>Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Qu’est-ce qu’une liste ? Une liste, c’est un conteneur dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).&#xA;C’est un peu comme une boîte à compartiments.&#xA;ma_liste = [3, 7, 42, 5]&#xD;Chaque élément a une position (appelée indice).</description>
-    </item>
-    <item>
-      <title> Tableaux numpy et droite de régression</title>
-      <link>https://example.org/semaine7/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine7/index.html</guid>
-      <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Importer la bibliothèque import numpy as np&#xD;Créer un tableau de données (array) Tableau 1D sol = np.</description>
-    </item>
-    <item>
-      <title> Dictionnaires et fichiers texte (csv)</title>
-      <link>https://example.org/semaine8/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine8/index.html</guid>
-      <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</description>
-    </item>
-    <item>
-      <title> Révision ou rattrapage</title>
-      <link>https://example.org/semaine9/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine9/index.html</guid>
-      <description>Bloc-notes de départ&#xA;Exercice 1 : Neutralisation acide-base (chimie) Notions : conditions, boucles, dictionnaire, fonctions Contexte : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7.&#xA;Tâche :&#xA;Simule une titration acide-base par paliers de 0.5 mL. Utilise la formule p = 3 + 4 x (1 - 2.718^(-0.8 x v)) (à coder, où p est le pH et v le volume).</description>
-    </item>
-    <item>
-      <title> Évaluation #2 (30%)</title>
-      <link>https://example.org/semaine10/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine10/index.html</guid>
-      <description>Informations ⦁ Date:&#x9;Semaine #10 (Voir le calendrier)&#xA;⦁ Matière: Semaines 6 à 9 inclusivement&#xA;⦁ Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁ Format:&#x9;À confirmer</description>
-    </item>
-    <item>
-      <title> Fonctions personnalisées</title>
-      <link>https://example.org/semaine11/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine11/index.html</guid>
-      <description>Objectifs Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:&#xA;Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :. Les instructions de la fonction sont sur les lignes d’en dessous, décalées.</description>
-    </item>
-    <item>
       <title> Projet - Présentation, analyse et traduction</title>
       <link>https://example.org/semaine12/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -138,14 +96,14 @@
       <link>https://example.org/solutions_exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/index.html</guid>
-      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Tableaux NumPy et droite de régression&#xA;08. Dictionnaires et fichiers texte&#xA;09. Révision&#xA;11. Fonctions personnalisées</description>
+      <description></description>
     </item>
     <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions_ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/index.html</guid>
-      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Tableaux NumPy et droite de régression&#xA;08. Dictionnaires et fichiers texte&#xA;09. Révision&#xA;11. Fonctions personnalisées</description>
+      <description></description>
     </item>
   </channel>
 </rss>

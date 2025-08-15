@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Fonctions personnalisées :: 420-SN1-RE</title>
-    <link>https://example.org/solutions_ateliers/11_fonctions_perso/index.html</link>
+    <link>http://localhost:1313/solutions_ateliers/11_fonctions_perso/index.html</link>
     <description>Exercice : Calcul de dilution (C₁V₁ = C₂V₂) # Fonction qui lit les données d&#39;entrée (sans paramètres) def lire_donnees(): print(&#34;--- Programme de dilution ---&#34;) # Lecture de la concentration de la solution mère C1 = float(input(&#34;Concentration de la solution mère (mol/L) : &#34;)) # Lecture de la concentration finale souhaitée C2 = float(input(&#34;Concentration finale souhaitée (mol/L) : &#34;)) # Lecture du volume final V2 = float(input(&#34;Volume final de la solution (L) : &#34;)) return C1, C2, V2 # Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat) def calculer_v1(C1, C2, V2): # Formule : V1 = (C2 × V2) / C1 V1 = (C2 * V2) / C1 return V1 # Fonction qui affiche le résultat (avec paramètre, ne retourne rien) def afficher_resultat(V1): # Arrondi à 2 décimales V1_arrondi = round(V1, 2) print(f&#34;Il faut prélever {V1_arrondi} L de solution mère pour préparer la solution diluée.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/solutions_ateliers/11_fonctions_perso/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/solutions_ateliers/11_fonctions_perso/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

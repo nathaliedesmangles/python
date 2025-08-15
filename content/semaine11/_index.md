@@ -3,7 +3,7 @@ chapter = true
 pre = "11."
 title = " Fonctions personnalisées"
 weight = 111
-draft = false
+draft = true
 +++
 
 ## Objectifs

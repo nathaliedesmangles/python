@@ -3,7 +3,7 @@ chapter = true
 pre = "7."
 title = " Tableaux numpy et droite de régression"
 weight = 107
-draft = false
+draft = true
 +++
 
 

@@ -3,7 +3,7 @@ chapter = true
 pre = "9."
 title = " Révision ou rattrapage"
 weight = 109
-draft = false
+draft = true
 +++
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_revision.ipynb)

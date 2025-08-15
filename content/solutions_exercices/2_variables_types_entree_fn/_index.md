@@ -2,7 +2,7 @@
 pre = "<b>2.</b>"
 title = " Variables, types, entrées et fonctions"
 weight = 202
-draft = false
+draft = true
 +++
 
 
