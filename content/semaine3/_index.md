@@ -350,34 +350,46 @@ Une boîte de Pétri contient 500 bactéries. On souhaite estimer la taille de l
 
 ### Exercice 3 – Température critique d’un liquide
 
-Un liquide ne doit pas dépasser **80 °C** pour rester stable.
-Demander à l’utilisateur la température actuelle du liquide et **afficher un message** selon les cas :
+Un liquide ne doit pas dépasser 80 °C pour rester stable. 
 
-* Si la température est **inférieure à 80**, afficher : « Température sécuritaire. »
-* Si elle est **exactement 80**, afficher : « Limite atteinte. »
-* Si elle est **supérieure à 80**, afficher : « Attention : température critique ! »
+1. Écris un algorithme pour un programme qui :
+
+* Demande à l’utilisateur la température actuelle du liquide et **afficher un message** selon les cas :
+   * Si la température est **inférieure à 80**, afficher : « Température sécuritaire. »
+   * Si elle est **exactement 80**, afficher : « Limite atteinte. »
+   * Si elle est **supérieure à 80**, afficher : « Attention : température critique ! »
+
+2. Traduis ton algorithme en Python.
+
 
 
 ### Exercice 4 – Classification du pH d’une solution
 
 En chimie, le **pH** permet de savoir si une solution est acide, neutre ou basique.
-Demander à l’utilisateur le **pH** d’une solution (entre 0 et 14), puis afficher :
 
-* « Solution acide » si `pH < 7`
-* « Solution neutre » si `pH == 7`
-* « Solution basique » si `pH > 7`
-* « Valeur de pH invalide » si le pH est en dehors de l’intervalle `[0, 14]`
+1. Écris un algorithme pour un programme qui :
+
+* Demande à l’utilisateur le **pH** d’une solution (entre 0 et 14), puis afficher :
+   * « Solution acide » si `pH < 7`
+   * « Solution neutre » si `pH == 7`
+   * « Solution basique » si `pH > 7`
+   * « Valeur de pH invalide » si le pH est en dehors de l’intervalle `[0, 14]`
+
+2. Traduis ton algorithme en Python.
+
 
 
 ### Exercice 5 – Autorisation d’une réaction chimique
 
 Une réaction chimique ne peut avoir lieu **que si** la température est **entre 25 °C et 45 °C inclusivement**, **et** si le **pH est entre 6 et 8 inclusivement**.
 
-Demander à l’utilisateur la température et le pH, puis afficher :
+1. Écris un algorithme pour un programme qui :
 
-* « Réaction possible. » si les deux conditions sont remplies,
-* « Conditions non compatibles. » sinon.
+   * Demande à l’utilisateur la température et le pH, puis afficher :
+   * « Réaction possible. » si les deux conditions sont remplies,
+   * « Conditions non compatibles. » sinon.
 
+2. Traduis ton algorithme en Python.
 
 ---
 
@@ -385,8 +397,11 @@ Demander à l’utilisateur la température et le pH, puis afficher :
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_struct_cond.ipynb)
 
+{{% notice style="accent" title="Conseils" %}}
+Écrire **l'algorithme** avant de commencer à écrire du code
+{{% /notice %}}
 
-### Exercice 1
+### Exercice
 
 L’état physique de l’eau dépend de la température et de la pression. À **pression atmosphérique normale (1 atm)** :
 
@@ -417,19 +432,19 @@ Le point de congélation demeure à 0 °C peu importe la pression.
 
 ### Exemples de fonctionnements attendus
 
-```text
+```
 Température (°C) : 50
 Pression (atm) : 1.0
 État de l’eau : liquide
 ```
 
-```text
+```
 Température (°C) : 101
 Pression (atm) : 1.0
 État de l’eau : gaz
 ```
 
-```text
+```
 Température (°C) : -5
 Pression (atm) : 2.0
 État de l’eau : solide

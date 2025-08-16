@@ -182,32 +182,35 @@ Résultat : Sophie a 18 ans.
 
 ### Les modificateurs de format numérique
 
-| Objectif                                | Syntaxe           | Exemple de résultat |
-| --------------------------------------- | ----------------- | ------------------- |
-| Afficher **2 décimales**                | `{valeur:.2f}`    | `3.14`              |
-| Afficher **avec des zéros devant**      | `{valeur:06.2f}`  | `003.14`            |
-| **Aligner à droite** sur 10 caractères  | `{valeur:>10.2f}` | `      3.14`        |
-| **Aligner à gauche** sur 10 caractères  | `{valeur:<10.2f}` | `3.14      `        |
-| **Pourcentage** avec 1 décimale         | `{valeur:.1%}`    | `314.2%`            |
-| Format **scientifique** (notation exp.) | `{valeur:.2e}`    | `3.14e+00`          |
-
-
-**Exemples** :
-```python
-montant = 134.8678
-print(f"Montant : {montant:.2f} $")        # → Montant : 134.87 $
-print(f"Montant : {montant:10.2f} $")      # → Montant :     134.87 $
-print(f"Montant : {montant:<10.2f} $")     # → Montant : 134.87     $ 
-print(f"Montant : {montant:>10.2f} $")     # → Montant :     134.87 $
-print(f"Montant : {montant:^10.2f} $")     # → Montant :   134.87   $
-```
+| Objectif                                | Syntaxe           | 
+| --------------------------------------- | ----------------- | 
+| Afficher **2 décimales**                | `{valeur:.2f}`    |
+| Afficher **6 caractères dont 2 décimales, avec des zéros devant**   | `{valeur:06.2f}`  |
+| Afficher **10 caractères dont 2 décimales** et **aligner à droite** | `{valeur:>10.2f}` |
+| **Aligner à gauche** sur 10 caractères dont **2 décimales** | `{valeur:<10.2f}` |
+| **Afficher un pourcentage** avec 1 décimale      | `{valeur:.1%}`    |
+| Affichage **centré** sur 10 caractères et **2 décimales** | `{valeur:^10.2}`    |
+| Format **scientifique** (notation exponentielle) | `{valeur:.2e}`    |
 
 **Explication** :
 * `.2f` → **f** pour "float", **2** pour eux décimales
 * `10.2f` → total de 10 caractères, dont 2 après la virgule
 * `<`, `>`, `^` → alignement (gauche, droite, centré)
 
-Mais on peut aussi utiliser `print()` pour afficher plusieurs choses à la fois, en les séparant avec des **virgules** :
+**Exemples** :
+```python
+montant = 134.8678
+taux = 15
+print(f"Montant : {montant:.2f} $")        # → Montant : 134.87 $
+print(f"Montant : {montant:08.2f} $")      # → Montant :   134.87 $
+print(f"Montant : {montant:>10.2f} $")     # → Montant :     134.87 $
+print(f"Montant : {montant:<10.2f} $")     # → Montant : 134.87     $ 
+print(f"Taux    : {taux:.2%}")             # → Taux : 15.00 %
+print(f"Montant : {montant:^10.2f} $")     # → Montant :   134.87   $
+print(f"Montant : {montant:.2e} $")        # → Montant : 1.35e+02 $
+```
+
+On peut aussi utiliser `print()` pour afficher plusieurs choses à la fois, en les séparant avec des **virgules** :
 
 ```python
 prenom = "Nathalie"

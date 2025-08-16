@@ -296,6 +296,17 @@ Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
 3. À chaque tour, affiche la température.
 4. Augmente la température de 1.5.
 
+**Exemple de sortie** :
+```
+Température : 20.0 °C
+Température : 21.5 °C
+Température : 23.0 °C
+Température : 24.5 °C
+Température : 26.0 °C
+Température : 27.5 °C
+Température : 29.0 °C
+Température : 30.5 °C
+```
 
 ### Exercice 4 – Répéter une mesure fixe avec `for`
 
@@ -304,6 +315,19 @@ On veut afficher les numéros de 10 échantillons : `Échantillon 1`, `Échantil
 1. Utilise une boucle `for` avec `range(1, 11)`.
 2. À chaque tour, affiche `Échantillon` suivi du numéro.
 
+**Exemple de sortie** :
+```
+Échantillon 1
+Échantillon 2
+Échantillon 3
+Échantillon 4
+Échantillon 5
+Échantillon 6
+Échantillon 7
+Échantillon 8
+Échantillon 9
+Échantillon 10
+```
 
 ### Exercice 5 - Trouver les erreurs !
 

@@ -22,21 +22,21 @@ Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
     <meta itemprop="name" content=" Structures conditionnelles et algorithmes simples :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Appliquer les structures conditionnelles (if, elif, else) à des contextes scientifiques simples. Écrire des algorithmes simples et les traduire en Python. Les opérateurs de comparaison Ces opérateurs permettent de comparer des valeurs. Le résultat est toujours un booléen : True (vrai) ou False (faux).
 Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
-    <meta itemprop="wordCount" content="2297">
+    <meta itemprop="wordCount" content="2345">
     <title> Structures conditionnelles et algorithmes simples :: 420-SN1-RE</title>
     <link href="/semaine3/index.xml" rel="alternate" type="application/rss+xml" title=" Structures conditionnelles et algorithmes simples :: 420-SN1-RE">
-    <link href="/images/logo.png?1755293925" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1755293925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1755293925" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1755293925" rel="stylesheet">
-    <link href="/css/theme.min.css?1755293925" rel="stylesheet">
-    <link href="/css/format-html.min.css?1755293925" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1755293925" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1755293925" defer></script>
-    <script src="/js/lunr/lunr.min.js?1755293925" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1755293925" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1755293925" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1755293925" defer></script>
-    <script src="/js/search.min.js?1755293925" defer></script>
+    <link href="/images/logo.png?1755367406" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1755367406" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1755367406" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1755367406" rel="stylesheet">
+    <link href="/css/theme.min.css?1755367406" rel="stylesheet">
+    <link href="/css/format-html.min.css?1755367406" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1755367406" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1755367406" defer></script>
+    <script src="/js/lunr/lunr.min.js?1755367406" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1755367406" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1755367406" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1755367406" defer></script>
+    <script src="/js/search.min.js?1755367406" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +46,7 @@ Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1755293925";
+      window.relearn.index_js_url="/searchindex.en.js?1755367406";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +92,7 @@ Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1755293925" rel="stylesheet">
+    <link href="/css/custom.css?1755367406" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine3/index.html">
     <div id="R-body" class="default-animation">
@@ -139,7 +139,7 @@ Opérateur Signification Exemple Résultat == égal à 5 == 5 True !">
     </li>
     <li><a href="#atelier">Atelier</a>
       <ul>
-        <li><a href="#exercice-1">Exercice 1</a></li>
+        <li><a href="#exercice">Exercice</a></li>
         <li><a href="#exemples-de-fonctionnements-attendus">Exemples de fonctionnements attendus</a></li>
         <li><a href="#pistes--rappels">Pistes / rappels</a></li>
         <li><a href="#exemple-dexécution">Exemple d’exécution</a></li>
@@ -578,33 +578,68 @@ $$</li>
 </li>
 </ol>
 <h3 id="exercice-3--température-critique-dun-liquide">Exercice 3 – Température critique d’un liquide</h3>
-<p>Un liquide ne doit pas dépasser <strong>80 °C</strong> pour rester stable.
-Demander à l’utilisateur la température actuelle du liquide et <strong>afficher un message</strong> selon les cas :</p>
+<p>Un liquide ne doit pas dépasser 80 °C pour rester stable.</p>
+<ol>
+<li>Écris un algorithme pour un programme qui :</li>
+</ol>
+<ul>
+<li>Demande à l’utilisateur la température actuelle du liquide et <strong>afficher un message</strong> selon les cas :
 <ul>
 <li>Si la température est <strong>inférieure à 80</strong>, afficher : « Température sécuritaire. »</li>
 <li>Si elle est <strong>exactement 80</strong>, afficher : « Limite atteinte. »</li>
 <li>Si elle est <strong>supérieure à 80</strong>, afficher : « Attention : température critique ! »</li>
 </ul>
+</li>
+</ul>
+<ol start="2">
+<li>Traduis ton algorithme en Python.</li>
+</ol>
 <h3 id="exercice-4--classification-du-ph-dune-solution">Exercice 4 – Classification du pH d’une solution</h3>
-<p>En chimie, le <strong>pH</strong> permet de savoir si une solution est acide, neutre ou basique.
-Demander à l’utilisateur le <strong>pH</strong> d’une solution (entre 0 et 14), puis afficher :</p>
+<p>En chimie, le <strong>pH</strong> permet de savoir si une solution est acide, neutre ou basique.</p>
+<ol>
+<li>Écris un algorithme pour un programme qui :</li>
+</ol>
+<ul>
+<li>Demande à l’utilisateur le <strong>pH</strong> d’une solution (entre 0 et 14), puis afficher :
 <ul>
 <li>« Solution acide » si <code>pH &lt; 7</code></li>
 <li>« Solution neutre » si <code>pH == 7</code></li>
 <li>« Solution basique » si <code>pH &gt; 7</code></li>
 <li>« Valeur de pH invalide » si le pH est en dehors de l’intervalle <code>[0, 14]</code></li>
 </ul>
+</li>
+</ul>
+<ol start="2">
+<li>Traduis ton algorithme en Python.</li>
+</ol>
 <h3 id="exercice-5--autorisation-dune-réaction-chimique">Exercice 5 – Autorisation d’une réaction chimique</h3>
 <p>Une réaction chimique ne peut avoir lieu <strong>que si</strong> la température est <strong>entre 25 °C et 45 °C inclusivement</strong>, <strong>et</strong> si le <strong>pH est entre 6 et 8 inclusivement</strong>.</p>
-<p>Demander à l’utilisateur la température et le pH, puis afficher :</p>
+<ol>
+<li>
+<p>Écris un algorithme pour un programme qui :</p>
 <ul>
+<li>Demande à l’utilisateur la température et le pH, puis afficher :</li>
 <li>« Réaction possible. » si les deux conditions sont remplies,</li>
 <li>« Conditions non compatibles. » sinon.</li>
 </ul>
+</li>
+<li>
+<p>Traduis ton algorithme en Python.</p>
+</li>
+</ol>
 <hr>
 <h2 id="atelier">Atelier</h2>
 <p><a href="https://python-a25.netlify.app/blocnotes/atelier_struct_cond.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></p>
-<h3 id="exercice-1">Exercice 1</h3>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Conseils
+  </summary>
+  <div class="box-content">
+<p>Écrire <strong>l&rsquo;algorithme</strong> avant de commencer à écrire du code</p>
+  </div>
+</details>
+<h3 id="exercice">Exercice</h3>
 <p>L’état physique de l’eau dépend de la température et de la pression. À <strong>pression atmosphérique normale (1 atm)</strong> :</p>
 <ul>
 <li>L’eau gèle à 0 °C et bout à 100 °C.</li>
@@ -653,15 +688,15 @@ Demander à l’utilisateur le <strong>pH</strong> d’une solution (entre 0 et 
 </li>
 </ol>
 <h3 id="exemples-de-fonctionnements-attendus">Exemples de fonctionnements attendus</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Température (°C) : 50
-</span></span><span style="display:flex;"><span>Pression (atm) : 1.0
-</span></span><span style="display:flex;"><span>État de l’eau : liquide</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Température (°C) : 101
-</span></span><span style="display:flex;"><span>Pression (atm) : 1.0
-</span></span><span style="display:flex;"><span>État de l’eau : gaz</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Température (°C) : -5
-</span></span><span style="display:flex;"><span>Pression (atm) : 2.0
-</span></span><span style="display:flex;"><span>État de l’eau : solide</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Température (°C) : 50
+Pression (atm) : 1.0
+État de l’eau : liquide</code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Température (°C) : 101
+Pression (atm) : 1.0
+État de l’eau : gaz</code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Température (°C) : -5
+Pression (atm) : 2.0
+État de l’eau : solide</code></pre></div>
 <h3 id="pistes--rappels">Pistes / rappels</h3>
 <ul>
 <li>Utiliser des conditions imbriquées ou combinées (<code>if ... and ...</code>, <code>elif</code>).</li>
@@ -808,8 +843,8 @@ L’eau est liquide à cette température et pression.</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1755293925" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1755293925" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1755367406" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1755367406" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -821,7 +856,7 @@ L’eau est liquide à cette température et pression.</code></pre></div>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1755293925"></script>
-    <script src="/js/theme.min.js?1755293925" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1755367406"></script>
+    <script src="/js/theme.min.js?1755367406" defer></script>
   </body>
 </html>
