@@ -13,7 +13,7 @@ draft = true
 * Date:				Semaine #15 (Voir le calendrier)
 * Matière: 		        Semaines 1 à 14 inclusivement
 * Documentation permise: 	1 feuille recto-verso (manuscrite ou imprimée)
-* Format:			À confirmer
+* Format:			Test sur Moodle (théorique + pratique).
 
 
 {{% notice style="accent" title="Important" %}}

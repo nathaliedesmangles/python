@@ -12,7 +12,7 @@ draft = true
 ⦁ **Date**:			Semaine #10 (Voir le calendrier)  
 ⦁ **Matière**: 		        Semaines 6 à 9 inclusivement  
 ⦁ **Documentation permise**: 	1 feuille recto-verso (manuscrite ou imprimée)  
-⦁ **Format**:			À confirmer
+⦁ **Format**:			Test sur Moodle (théorique + pratique).
 
 <!--
 ## Exercice 6 – Motif avec nombres décroissants par ligne

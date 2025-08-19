@@ -62,7 +62,7 @@ while temp > 0:
     					# temp n'est pas modifié 
 ```
 
-**Cas 1**: oublier de modifier l'état de la condition
+**Cas 2**: oublier de modifier l'état de la condition
 ```python
 temp = 100  # température initiale
 while temp > 0:
