@@ -141,7 +141,11 @@ Procédez de la même manière qu'avec l'extension Python, pour installer les bi
 
 [Tutoriel pour installer des extensions sur VS Code](https://www.youtube.com/watch?v=AUt8NgwMbOo)
 
-### 5. Créer un fichier .ipynb et testez le fonctionnement du code suivant:
+### 5. Tester le bon fonctionnement de l'installation
+
+* Ouvrez *Visual Studio Code*.
+* Créez un bloc-notes test. Ex: `test.ipynb`
+* Copiez le code suivant et exécutez-le.
 
 ```python
 import pandas as pd
