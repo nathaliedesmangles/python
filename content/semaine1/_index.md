@@ -27,7 +27,6 @@ Utilisez le **plan de cours** et au besoin les **calendriers scolaires** pour tr
 Vous avez **20 minutes** pour répondre à toutes les questions.
 {{% /notice%}}
 
->> Pause 5 minutes
 
 ## 2. L'environnement de travail - Activité guidée
 
@@ -72,7 +71,6 @@ Si l'extension (.ipynb) du fichier n'apparait pas, cliquez sur **Afficher**>**Af
 
 ![Glisser-Déposer](./gestion_fichiers/glisser-deposer.png?width=30vw)
 
->> Pause 5 minutes
 
 ### **Étape 3** – Découverte de VS Code et utilisation d'un bloc-notes Jupyter
 
@@ -82,31 +80,40 @@ Nous allons travailler avec VS Code, un éditeur de code, et comprendre comment 
 ![Recherche - Ouvrir VS Code](./vscodejupyter/ouvrir-vs-code.png?width=20vw)
 
 2. Lorsque vous ouvrez VS Code pour la première fois, la page d'accueil devrait s'afficher et proposer différentes actions pour démarrer.
+Cliquez sur ***Mark Done*** pour valider l’écran suivant. (***si vous ne voyez pas cet écran, passez directement au point suivant***)
 
-![Accueil VS Code](./vscode-welcome.png?width=50vw)
+![Premiere ouverture VS Code](./vscodejupyter/premiere_ouverture_vscode.png?width=40vw&height=50vw)
 
-3. Identifiez les zones principales
+3. Ouvrir un dossier sur VS Code
+
+* Sélectionnez l’onglet **Explorateur** sur la barre latérale, puis **Ouvrir le dossier**. 
+
+![Accueil VS Code](./vscodejupyter/ouvrir_dossier_prog.png?width=50vw)
+
+* Sélectionnez votre dossier OneDrive, puis ouvrez le dossier que vous avez créé précédemment (**programmation-sciences**).
+
+{{% notice style="cyan" title="Sachez que.." groupid="notice-toggle" expanded="false" %}}
+Il se peut que vous ne voyez pas vos fichiers lorsque vous sélectionnez un dossier de travail.
+Une fois le dossier ouvert, vous devriez voir le fichier sur VS Code dans la partie gauche de votre explorateur de fichier.
+{{% /notice %}}
+
+<!--
+* Sélectionner le menu **Fichier > Ouvrir le dossier…**, choisir le dossier 
+
+![Ouvrir dossier dans VS Code](./vscodejupyter/ouvrir-le-dossier.png?width=35vw)
+
+4. Identifiez les zones principales
 
 ![Accueil VS Code](./vscodejupyter/1_interface_vscode.png?width=50vw)
 
 [Description des zones principales](./outils_dev/vs-code/#interface-principale)
+-->
 
-4. Sélectionnez l’onglet **Explorateur** sur la barre latérale. 
+4. Assurez-vous que le fichier téléchargé et déplacé précédemment se trouve dans le sous-dossier `semaine01-environnement`
 
-5. Sélectionner le menu **Fichier > Ouvrir le dossier…**, choisir le dossier **programmation-sciences**
+5. Cliquez sur le nom du fichier pour l'ouvrir dans l'**Éditeur** (à droite).
 
-![Ouvrir dossier dans VS Code](./vscodejupyter/ouvrir-le-dossier.png?width=35vw)
-
-{{% notice style="cyan" title="Sachez que.." %}}
-Pour ouvrir un dossier vous pouvez aussi aller dans la page d'accueil, cliquer sur le lien **Ouvrir un dossier...**, puis, chercher le dossier à ouvrir:  
-![Ouvrir dossier dans VS Code](./vs-code-ouvrir-dossier.png?width=20vw)
-{{% /notice %}}
-
-6. Assurez-vous que le fichier téléchargé et déplacé précédemment se trouve dans le sous-dossier `semaine01-environnement`
-
-7. Cliquez sur le nom du fichier pour l'ouvrir dans l'**Éditeur** (à droite).
-
-8. Cliquez sur la flèche à droite de la cellule (pour exécuter le code). Vous devriez voir ceci:
+6. Cliquez sur la flèche à droite de la cellule (pour exécuter le code). Vous devriez voir ceci:
 
 ![Bloc-notes ouvert](./vscodejupyter/bloc-notes-ouvert.png?width=50vw)
 
@@ -123,8 +130,7 @@ Pour ouvrir un dossier vous pouvez aussi aller dans la page d'accueil, cliquer s
 
 3. Ajoutez un cellule de type Marquage (***Markdown***)
 
-![Aout cellule md](./vscodejupyter/ajout-cell-md.png?width=35vw)
-
+![Ajout cellule md](./vscodejupyter/ajout-cell-md.png?width=35vw)
 
 4. Ajoutez le contenu suivant:
    ```markdown

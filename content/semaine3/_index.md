@@ -13,6 +13,97 @@ weight = 103
 
 ---
 
+{{% notice style="accent" title="Apprendre par la pratique" %}}
+- **Faites les exercices** en vous aidant des notes de cours ci-dessous.
+- Certains seront fait en classe à titre de démonstration.
+- Les solutions seront disponibles à la fin de la semaine 2.
+{{% /notice %}}
+
+# Exercices
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_struct_cond.ipynb)
+
+
+## Exercice 1 – Temps de demi-vie radioactive
+
+Un isotope radioactif se désintègre avec le temps. Sa masse diminue de moitié à chaque période de demi-vie.
+Un échantillon de 100 g d’un isotope a une demi-vie de 5 ans. On souhaite connaître la masse restante après un certain nombre d’années.
+
+1. Écris un algorithme permettant de :
+
+   * Demander à l’utilisateur le nombre d’années écoulées.
+   * Calculer le nombre de périodes de demi-vie.
+   * Calculer la masse restante :
+     $$
+     \text{masse} = \text{masse initiale} \times \left(\frac{1}{2}\right)^{\text{nb\_periodes}}
+     $$
+   * Si la masse est inférieure à 1 g, afficher un message d’avertissement, sinon, afficher la masse restante normalement.
+
+2. Traduis ton algorithme en Python.
+
+
+## Exercice 2 – Taux de croissance d’une population bactérienne
+
+Une colonie de bactéries double toutes les 3 heures si les conditions sont optimales.
+Une boîte de Pétri contient 500 bactéries. On souhaite estimer la taille de la population après un certain nombre d’heures.
+
+1. Écris un algorithme pour :
+
+   * Demander à l’utilisateur le nombre d’heures écoulées.
+   * Calculer le nombre de périodes de croissance (périodes de 3 heures).
+   * Calculer la population après cette durée avec la formule :
+     $$
+     \text{population} = \text{population initiale} \times 2^{\text{nb\_periodes}}
+     $$
+   * Afficher la population estimée.
+   * Si la population dépasse 1 000 000 bactéries, afficher un message d’alerte sur la croissance excessive, sinon afficher la population normalement
+
+2. Traduis ton algorithme en Python.
+
+
+## Exercice 3 – Température critique d’un liquide
+
+Un liquide ne doit pas dépasser 80 °C pour rester stable. 
+
+1. Écris un algorithme pour un programme qui :
+
+* Demande à l’utilisateur la température actuelle du liquide et **afficher un message** selon les cas :
+   * Si la température est **inférieure à 80**, afficher : « Température sécuritaire. »
+   * Si elle est **exactement 80**, afficher : « Limite atteinte. »
+   * Si elle est **supérieure à 80**, afficher : « Attention : température critique ! »
+
+2. Traduis ton algorithme en Python.
+
+
+## Exercice 4 – Classification du pH d’une solution
+
+En chimie, le **pH** permet de savoir si une solution est acide, neutre ou basique.
+
+1. Écris un algorithme pour un programme qui :
+
+* Demande à l’utilisateur le **pH** d’une solution (entre 0 et 14), puis afficher :
+   * « Solution acide » si `pH < 7`
+   * « Solution neutre » si `pH == 7`
+   * « Solution basique » si `pH > 7`
+   * « Valeur de pH invalide » si le pH est en dehors de l’intervalle `[0, 14]`
+
+2. Traduis ton algorithme en Python.
+
+
+## Exercice 5 – Autorisation d’une réaction chimique
+
+Une réaction chimique ne peut avoir lieu **que si** la température est **entre 25 °C et 45 °C inclusivement**, **et** si le **pH est entre 6 et 8 inclusivement**.
+
+1. Écris un algorithme pour un programme qui :
+
+   * Demande à l’utilisateur la température et le pH, puis afficher :
+   * « Réaction possible. » si les deux conditions sont remplies,
+   * « Conditions non compatibles. » sinon.
+
+2. Traduis ton algorithme en Python.
+
+# Cours
+
 ## Les opérateurs de comparaison
 
 Ces opérateurs permettent de comparer des valeurs. Le résultat est **toujours un booléen** : `True` (vrai) ou `False` (faux).
@@ -302,94 +393,6 @@ Ces tests montrent que :
     * Comprendre le problème afin d'identifier les variables ou constantes et les formules.
     * Écrire en phrases simples, les étapes principales du programme (l'algorithme).
 {{% /notice %}}
-
----
-
-## Exercices
-
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_struct_cond.ipynb)
-
-
-### Exercice 1 – Temps de demi-vie radioactive
-
-Un isotope radioactif se désintègre avec le temps. Sa masse diminue de moitié à chaque période de demi-vie.
-Un échantillon de 100 g d’un isotope a une demi-vie de 5 ans. On souhaite connaître la masse restante après un certain nombre d’années.
-
-1. Écris un algorithme permettant de :
-
-   * Demander à l’utilisateur le nombre d’années écoulées.
-   * Calculer le nombre de périodes de demi-vie.
-   * Calculer la masse restante :
-     $$
-     \text{masse} = \text{masse initiale} \times \left(\frac{1}{2}\right)^{\text{nb\_periodes}}
-     $$
-   * Si la masse est inférieure à 1 g, afficher un message d’avertissement, sinon, afficher la masse restante normalement.
-
-2. Traduis ton algorithme en Python.
-
-
-### Exercice 2 – Taux de croissance d’une population bactérienne
-
-Une colonie de bactéries double toutes les 3 heures si les conditions sont optimales.
-Une boîte de Pétri contient 500 bactéries. On souhaite estimer la taille de la population après un certain nombre d’heures.
-
-1. Écris un algorithme pour :
-
-   * Demander à l’utilisateur le nombre d’heures écoulées.
-   * Calculer le nombre de périodes de croissance (périodes de 3 heures).
-   * Calculer la population après cette durée avec la formule :
-     $$
-     \text{population} = \text{population initiale} \times 2^{\text{nb\_periodes}}
-     $$
-   * Afficher la population estimée.
-   * Si la population dépasse 1 000 000 bactéries, afficher un message d’alerte sur la croissance excessive, sinon afficher la population normalement
-
-2. Traduis ton algorithme en Python.
-
-
-
-### Exercice 3 – Température critique d’un liquide
-
-Un liquide ne doit pas dépasser 80 °C pour rester stable. 
-
-1. Écris un algorithme pour un programme qui :
-
-* Demande à l’utilisateur la température actuelle du liquide et **afficher un message** selon les cas :
-   * Si la température est **inférieure à 80**, afficher : « Température sécuritaire. »
-   * Si elle est **exactement 80**, afficher : « Limite atteinte. »
-   * Si elle est **supérieure à 80**, afficher : « Attention : température critique ! »
-
-2. Traduis ton algorithme en Python.
-
-
-
-### Exercice 4 – Classification du pH d’une solution
-
-En chimie, le **pH** permet de savoir si une solution est acide, neutre ou basique.
-
-1. Écris un algorithme pour un programme qui :
-
-* Demande à l’utilisateur le **pH** d’une solution (entre 0 et 14), puis afficher :
-   * « Solution acide » si `pH < 7`
-   * « Solution neutre » si `pH == 7`
-   * « Solution basique » si `pH > 7`
-   * « Valeur de pH invalide » si le pH est en dehors de l’intervalle `[0, 14]`
-
-2. Traduis ton algorithme en Python.
-
-
-
-### Exercice 5 – Autorisation d’une réaction chimique
-
-Une réaction chimique ne peut avoir lieu **que si** la température est **entre 25 °C et 45 °C inclusivement**, **et** si le **pH est entre 6 et 8 inclusivement**.
-
-1. Écris un algorithme pour un programme qui :
-
-   * Demande à l’utilisateur la température et le pH, puis afficher :
-   * « Réaction possible. » si les deux conditions sont remplies,
-   * « Conditions non compatibles. » sinon.
-
-2. Traduis ton algorithme en Python.
 
 ---
 

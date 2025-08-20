@@ -14,6 +14,85 @@ weight = 102
 
 ---
 
+{{% notice style="accent" title="Apprendre par la pratique" %}}
+- **Faites les exercices** en vous aidant des notes de cours ci-dessous.
+- Certains seront fait en classe à titre de démonstration.
+- Les solutions seront disponibles à la fin de la semaine 2.
+{{% /notice %}}
+
+# Exercices
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_variables_entrees_fonctions.ipynb)
+
+## Exercice 1 : Distance parcourue
+
+Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.
+
+* Écris le programme pour calculer la distance parcourue.
+
+**Résultat attendu**:
+```
+Le cycliste a parcouru 4680.0 mètres en 12 minutes.
+```
+
+## Exercice 2 : Conversion de température
+
+Un thermomètre donne des relevés en Fahrenheit, mais vous devez les convertir en Celsius et Kelvin.
+
+1. Utilisez une variable pour stocker une température en °C.
+2. Convertissez cette température en °F et en K.
+3. Affichez les trois valeurs avec des messages clairs.
+
+**Formules** :
+```math
+$ °F = (°C × 9/5) + 32 $  <br> 
+$ K = °C + 273.15 $
+```
+
+**Résultat attendu avec une température de 38°C** :
+```
+Température en Celsius : 38°C
+Température en Fahrenheit : 100.4°F
+Température en Kelvin : 311.15K
+```
+
+## Exercice 3 : Calcul de concentration molaire
+
+Un technicien prépare une solution en dissolvant une masse donnée de soluté dans un certain volume de solvant.
+Écrire un programme qui calcule la concentration molaire (mol/L) selon la formule :
+```math
+$ C = n / V $ où  $ n = m / M $
+```
+
+**Résultat attendu avec** :  
+m = 10.0 	masse du soluté en grammes  
+M = 58.5	masse molaire du soluté en g/mol (ex. NaCl)  
+V = 0.25	volume de la solution en litres  
+
+```
+Concentration molaire : 0.682051282051282 mol/L
+```
+
+## Exercice 4 : Vitesse moyenne d’une réaction
+
+Lors d’une expérience de cinétique chimique, on mesure la variation de la concentration d’un réactif au cours du temps.
+Écrire un programme qui calcule la vitesse moyenne de disparition selon :
+
+```math
+$ v = \frac{\Delta [A]}{\Delta t} $
+```
+
+où `[A]` est la concentration du réactif.
+
+**Résultat attendu avec**:  \[Réactif A] passe de 0.80 mol/L à 0.20 mol/L en 120 secondes.
+
+```
+Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
+```
+---
+
+# Cours
+
 ## Variables et types de données de base
 
 * Une variable est un nom qui **désigne une valeur**.
@@ -282,84 +361,11 @@ resultat = (3 + 4) * 2     # donne 14 grâce aux ()
 
 ---
 
-## Exercices
-
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_variables_entrees_fonctions.ipynb)
-
-
-### Exercice 1 : Distance parcourue
-
-Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.
-
-* Écris le programme pour calculer la distance parcourue.
-
-**Résultat attendu**:
-```
-Le cycliste a parcouru 4680.0 mètres en 12 minutes.
-```
-
-### Exercice 2 : Conversion de température
-
-Un thermomètre donne des relevés en Fahrenheit, mais vous devez les convertir en Celsius et Kelvin.
-
-1. Utilisez une variable pour stocker une température en °C.
-2. Convertissez cette température en °F et en K.
-3. Affichez les trois valeurs avec des messages clairs.
-
-**Formules** :
-```math
-$ °F = (°C × 9/5) + 32 $  <br> 
-$ K = °C + 273.15 $
-```
-
-**Résultat attendu avec une température de 38°C** :
-```
-Température en Celsius : 38°C
-Température en Fahrenheit : 100.4°F
-Température en Kelvin : 311.15K
-```
-
-### Exercice 3 : Calcul de concentration molaire
-
-Un technicien prépare une solution en dissolvant une masse donnée de soluté dans un certain volume de solvant.
-Écrire un programme qui calcule la concentration molaire (mol/L) selon la formule :
-```math
-$ C = n / V $ où  $ n = m / M $
-```
-
-**Résultat attendu avec** :  
-m = 10.0 	masse du soluté en grammes  
-M = 58.5	masse molaire du soluté en g/mol (ex. NaCl)  
-V = 0.25	volume de la solution en litres  
-
-```
-Concentration molaire : 0.682051282051282 mol/L
-```
-
-### Exercice 4 : Vitesse moyenne d’une réaction
-
-Lors d’une expérience de cinétique chimique, on mesure la variation de la concentration d’un réactif au cours du temps.
-Écrire un programme qui calcule la vitesse moyenne de disparition selon :
-
-```math
-$ v = \frac{\Delta [A]}{\Delta t} $
-```
-
-où `[A]` est la concentration du réactif.
-
-**Résultat attendu avec**:  \[Réactif A] passe de 0.80 mol/L à 0.20 mol/L en 120 secondes.
-
-```
-Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
-```
-
----
-
-## Atelier
+# Atelier
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_variables_entrees_fonctions.ipynb)
 
-### Exercice #1 - Expérience en chimie
+## Exercice #1 - Expérience en chimie
 
 Un bécher contient 400 mL de solution. La solution s’évapore à raison de 25 mL/min.
 La situation est linéaire : on commence à 400 mL, et on perd 25 mL chaque minute.
@@ -385,7 +391,7 @@ On souhaite trouver la quantité de solution qu'il restera après 10 min 15 s
 Quantité restante après 10.25 minutes : 143.75 mL.
 ```
 
-### Exercice #2 - Calcul de la force gravitationnelle
+## Exercice #2 - Calcul de la force gravitationnelle
 
 Écrire une fonction qui:
 
@@ -411,7 +417,7 @@ La force de la balle de 2.5 Kg est de 24.50 N.
 La force de la voiture de 1000.0 Kg est de 9800.00 N.
 ```
 
-### Exercice #3 - Calcul d'intérêts simple et composé
+## Exercice #3 - Calcul d'intérêts simple et composé
 
 * Vous avez deux placements avec **le même montant initial** (qu'on peut appeler `montant`).
    * **Premier placement** : intérêt **annuel simple** de **3,2 %** pendant **10 ans**.
@@ -434,7 +440,6 @@ Valeur avec intérêt composé : 134.87 $
 Écart relatif : 2.17 %
 ```
 
-
 ## Exercice #4 - Calcul de la hauteur maximale
 
 Vous voulez aider un·e physicien·ne à calculer la **hauteur maximale** atteinte par un objet lancé verticalement vers le haut avec une certaine vitesse initiale. 
@@ -455,7 +460,7 @@ $g$ : accélération gravitationnelle = 9.81 m/s²  <br>
 $h_{\text{max}}$ : hauteur maximale (en m)  
 ```
 
-### Exercice 5 - Calcul de probabilité (Facultatif)
+## Exercice 5 - Calcul de probabilité (Facultatif)
 
 On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles.
 ![Exercice - Calcul de probabilité](./probabilite.png?width=25vw)
@@ -469,7 +474,7 @@ On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce 
 * Identifier les variables, les constantes et les formules nécessaires  
 
 
-### Résultat attendu:
+**Résultat attendu** :
 
 ```
 Probabilité qu’un point tombe dans la région grise : 0.2119 (soit 21.19 %)
