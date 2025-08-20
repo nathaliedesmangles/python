@@ -18,6 +18,10 @@ weight = 100
 
 ## Horaire de l'enseignante
 
+{{% notice style="accent" icon="stopwatch" title="Notez bien que..." %}}
+À partir de **18h00** et **les fins de semaine**, je ne réponds pas aux questions envoyées par Teams ou col.net
+{{% /notice %}}
+
 * [Horaire](./horaire.html)
 
 ---

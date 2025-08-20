@@ -54,7 +54,7 @@
       <link>https://example.org/outils_dev/install_env/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/outils_dev/install_env/index.html</guid>
-      <description>Prérequis Système Windows 11 Connexion internet active (pour télécharger les composants internes) Installation automatisée de l’environnement Téléchargez le fichier setup_env.exe Il se trouvera dans le dossier Téléchargements.&#xA;Faites un clic-droit dessus, puis choisissez Exécuter en tant qu’administrateur. Lorsque la phrase “Installation silencieuse de Python” s’affiche, cela indique que Python attend que vous confirmiez vouloir poursuivre l’installation de Python. == Installation de Python 3.13.5 et outils associés == Téléchargement de python_installer.exe depuis https://www.</description>
+      <description>Prérequis Système Windows 11 Connexion internet active (pour télécharger les composants internes) Pour installer manuellement les outils 1. Installer Python a) Va sur https://python.org &gt; Télécharge et installe la dernière version de Python.&#xA;b) Coche “Add Python to PATH” avant de cliquer sur “Install Now”&#xA;2. Installer Visual Studio Code et Jupyter Notebook a) Télécharge et suis les indications pour installer Visual Studio Code : Visual Studio Code&#xA;b) Installer Jupyter Notebook sur Visual Studio Code (en anglais) : How to Install Jupyter Notebook in VSCode</description>
     </item>
   </channel>
 </rss>

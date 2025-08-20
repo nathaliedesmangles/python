@@ -9,6 +9,7 @@ weight = 27
 * Système Windows 11
 * Connexion internet active (pour télécharger les composants internes)
 
+<!--
 ## Installation automatisée de l'environnement
 
 1. Téléchargez le fichier [setup_env.exe](./setup_env.exe)
@@ -45,7 +46,7 @@ plt.show()
 ```
 
 > Si le graphique s'affiche, tout est beau! Vous êtes prêts à utiliser l'environnement.
-
+-->
 <!--
 
 ## Guide d’installation étape par étape
@@ -139,3 +140,20 @@ Procédez de la même manière qu'avec l'extension Python, pour installer les bi
 * **Pandas** : Traitement de fichiers CSV (extraction et nettoyage des données)
 
 [Tutoriel pour installer des extensions sur VS Code](https://www.youtube.com/watch?v=AUt8NgwMbOo)
+
+### 5. Créer un fichier .ipynb et testez le fonctionnement du code suivant:
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = [10,20,30,40,50]
+y = [2.5,4.5,6.5,8.5,4.5]
+
+plt.plot(x,y)
+plt.title("Graphique test")
+plt.show()
+```
+
+> Si le graphique s'affiche, tout est beau! Vous êtes prêts à utiliser l'environnement.
