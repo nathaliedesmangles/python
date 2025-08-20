@@ -152,12 +152,26 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = [10,20,30,40,50]
-y = [2.5,4.5,6.5,8.5,4.5]
+# Données brutes
+x = [10, 20, 30, 40, 50]
+y = [2.5, 4.5, 6.5, 8.5, 4.5]
 
-plt.plot(x,y)
+# Utilisation de Pandas
+df = pd.DataFrame({"x": x, "y": y})
+print("Aperçu du tableau :")
+print(df)
+
+# Utilisation de NumPy
+data_x = np.array(x)
+data_y = np.array(y)
+print("Moyenne de y :", np.mean(data_y))
+
+# Graphique
+plt.plot(x, y, marker="o")
 plt.title("Graphique test")
+plt.xlabel("x")
+plt.ylabel("y")
 plt.show()
 ```
 
-> Si le graphique s'affiche, tout est beau! Vous êtes prêts à utiliser l'environnement.
+> S'il n'y aucun message d'erreur et que le graphique s'affiche, tout est beau! Vous êtes prêts à utiliser l'environnement.
