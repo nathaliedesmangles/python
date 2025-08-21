@@ -16,6 +16,70 @@ draft = true
 * Filtrer les résultats pour donnée ciblée.
 * Comparer des valeurs selon une donnée
 
+{{% notice style="accent" title="Apprendre par la pratique" %}}
+- **Faites les exercices** en vous aidant des notes de cours ci-dessous.
+- Certains seront fait en classe à titre de démonstration.
+- Les solutions seront disponibles à la fin de la semaine prochaine.
+{{% /notice %}}
+
+---
+
+# Exercices
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_dict_fichiers.ipynb)
+
+[Fichier à utiliser: solubilite.csv](./solubilite.csv)
+
+## Exercice 1 - Densités
+
+Crée un dictionnaire `densites` qui contient la densité (en g/mL) de l’eau, de l’éthanol et du mercure :
+
+```python
+densites = {
+    "eau": ...,
+    "éthanol": ...,
+    "mercure": ...
+}
+```
+
+Puis :
+
+1. Affiche la densité du mercure.
+2. Ajoute la densité de l’huile (0.91 g/mL).
+3. Affiche toutes les substances et leur densité.
+
+
+## Exercice 2 – Chargement et exploration
+
+[Fichier de données: solubilite.csv](./solubilite.csv)
+
+1. Charge le fichier `solubilite.csv`.
+2. Affiche les premières lignes.
+3. Affiche les noms de colonnes.
+4. Affiche toutes les températures pour le composé `"NaCl"`.
+
+
+## Exercice 3 – Moyenne de solubilité
+
+1. Calcule la moyenne de solubilité pour `"KNO3"`.
+2. Fais de même pour `"NaCl"`.
+3. Compare les deux valeurs avec des f-strings.
+
+
+## Exercice 4 – Boucle sur les composés
+
+1. Affiche la moyenne de solubilité pour chaque composé du fichier.
+2. Indique pour chacun si elle est supérieure à 80 g/100mL.
+
+
+## Exercice 5 – Ajout d’une colonne
+
+1. Crée une colonne `Tendance` qui vaut `"Haute"` si la solubilité est > 80 et `"Faible"` sinon.
+2. Affiche les 10 premières lignes du tableau mis à jour.
+
+---
+
+# Cours
 
 ## Qu’est-ce qu’un dictionnaire?
 
@@ -312,6 +376,7 @@ La colonne **Évaluation** contient `True` si la solubilité est supérieure à 
 ```
 
 ---
+
 {{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
 * **Dictionnaires** :
 ```python
@@ -340,63 +405,7 @@ df[df["col"] > seuil] 		# filtrage conditionnel
 
 ---
 
-## Exercices
-
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_dict_fichiers.ipynb)
-
-[Fichier à utiliser: solubilite.csv](./solubilite.csv)
-
-### Exercice 1 - Densités
-
-Crée un dictionnaire `densites` qui contient la densité (en g/mL) de l’eau, de l’éthanol et du mercure :
-
-```python
-densites = {
-    "eau": ...,
-    "éthanol": ...,
-    "mercure": ...
-}
-```
-
-Puis :
-
-1. Affiche la densité du mercure.
-2. Ajoute la densité de l’huile (0.91 g/mL).
-3. Affiche toutes les substances et leur densité.
-
-
-### Exercice 2 – Chargement et exploration
-
-[Fichier de données: solubilite.csv](./solubilite.csv)
-
-1. Charge le fichier `solubilite.csv`.
-2. Affiche les premières lignes.
-3. Affiche les noms de colonnes.
-4. Affiche toutes les températures pour le composé `"NaCl"`.
-
-
-### Exercice 3 – Moyenne de solubilité
-
-1. Calcule la moyenne de solubilité pour `"KNO3"`.
-2. Fais de même pour `"NaCl"`.
-3. Compare les deux valeurs avec des f-strings.
-
-
-### Exercice 4 – Boucle sur les composés
-
-1. Affiche la moyenne de solubilité pour chaque composé du fichier.
-2. Indique pour chacun si elle est supérieure à 80 g/100mL.
-
-
-### Exercice 5 – Ajout d’une colonne
-
-1. Crée une colonne `Tendance` qui vaut `"Haute"` si la solubilité est > 80 et `"Faible"` sinon.
-2. Affiche les 10 premières lignes du tableau mis à jour.
-
-
----
-
-## Atelier
+# Atelier
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_dict_fichiers.ipynb)
 

@@ -17,7 +17,7 @@ weight = 102
 {{% notice style="accent" title="Apprendre par la pratique" %}}
 - **Faites les exercices** en vous aidant des notes de cours ci-dessous.
 - Certains seront fait en classe à titre de démonstration.
-- Les solutions seront disponibles à la fin de la semaine 2.
+- Les solutions seront disponibles à la fin de la semaine prochaine.
 {{% /notice %}}
 
 # Exercices

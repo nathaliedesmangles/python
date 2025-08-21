@@ -13,6 +13,111 @@ draft = true
 
 ---
 
+{{% notice style="accent" title="Apprendre par la pratique" %}}
+- **Faites les exercices** en vous aidant des notes de cours ci-dessous.
+- Certains seront fait en classe à titre de démonstration.
+- Les solutions seront disponibles à la fin de la semaine prochaine.
+{{% /notice %}}
+
+# Exercices
+
+{{% notice style="magenta" title="Appel de fonction" groupid="notice-toggle" expanded="false" %}}
+Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.
+{{% /notice %}}
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_fonctions.ipynb)
+
+## Exercice 1 : La loi d'Ohm
+
+Un technicien de laboratoire vous demande d'écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm. Il voudrait pouvoir entrer la valeur de la résistance (en ohms) et la valeur du courant (en ampères), puis obtenir la tension.
+
+```math
+Loi d’Ohm : $ U = R × I $
+```
+Le technicien souhaiterait pouvoir réutiliser le programme plus facilement et dans d'autres situations. Pour ce faire, il vous demande d'écrire une fonction qui : 
+
+1. Demande à l'utilisateur d'entrer la valeur de la résistance (en ohms).
+2. Demande à l'utilisateur d'entrer la valeur du courant (en ampères).
+3. Calcule et affiche la tension à l'aide d'une phrase.
+
+**NB** : Ajoutez des explications en commentaire dans le code.
+
+**Résultat attendu** :
+```
+Entrer la résistance en ohms : 10
+Entrer le courant en ampères : 2
+La tension est de 20.0 V
+```
+
+## Exercice 2 : Élément chimique
+
+Écrire une fonction `element_chm(elt)` qui :
+* Prend en paramètre le nom d’un élément chimique.
+* Affiche un message disant "L’élément choisi est [nom]"
+
+**Exemple d'affichage attendu (élément oxygène)** :
+```python
+L’élément choisi est : oxygène
+```
+
+## Exercice 3 : Convertir Celsius en Kelvin
+
+Crée une fonction nommée `convertir_C_en_K` qui :
+* prend une température en °C en paramètre
+* retourne la température en Kelvin (formule : K = C + 273.15)
+
+**Exemple d'affichage attendu (30°C)** :
+```python
+Une température de 30°C équivaut à 303.15 K.
+```
+
+## Exercice 4 : Calculer une énergie cinétique
+
+Créez une fonction `energie_cinetique(m, v)` qui calcule et retourne la valeur de l'énergie cinétique d'un objet en joules:
+
+```math
+$E_c = \frac{1}{2} \cdot m \cdot v^2$
+```
+où
+* m  : La masse de l'objet en kilogrammes.
+* v  : La vitesse de l'objet en mètres par seconde.
+
+**Exemple d'affichage attendu avec `masse=2.0 kg` et `vitesse=3.0 m/s`** :
+```python
+L'énergie cinétique de l'objet est de 9.0 joules.
+```
+
+## Exercice 5 : Aire d'un cercle
+
+Écrire une fonction `aire_cercle()` qui :
+* Demande à l'utilisateur d'entrer le rayon du cercle (en cm).
+* Calcule l'aire du cercle (utilisez le **module math** pour PI et le rayon².)
+* Affiche l'aire du cercle, arrondie à 2 décimales (utilisez la fonction `round`).
+
+**Exemple d'affichage attendu (rayon de 5 cm)** :
+```python
+Aire du cercle de rayon 5 cm : 78.54 cm²
+```
+
+## Exercice 6 : Vérifier la portée locale
+
+Crée une fonction `tester_variable()` qui crée une variable `prenom = "votre prénom` et l’affiche dans la fonction avec un `print`.
+Essaye ensuite d’afficher la valeur de `prenom` **à l’extérieur de la fonction**.
+
+**Exemple d'affichage attendu** :
+```python
+NameError                                 Traceback (most recent call last)
+Cell In[16], line 6
+      3     print(f"Dans la fonction tu t'appelles : {prenom}")
+      5 tester_variable()
+----> 6 print(f"À l'exterieur de la fonction tu t'appelles : {prenom}") 
+
+NameError: name 'prenom' is not defined
+```
+---
+
+# Cours
+
 ## Création de fonction avec `def`
  
 > Une fonction peut:
@@ -169,105 +274,7 @@ def addition(a, b):
 
 ---
 
-### Exercices
-
-{{% notice style="magenta" title="Appel de fonction" groupid="notice-toggle" expanded="false" %}}
-Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.
-{{% /notice %}}
-
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_fonctions.ipynb)
-
-## Exercice 1 : La loi d'Ohm
-
-Un technicien de laboratoire vous demande d'écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm. Il voudrait pouvoir entrer la valeur de la résistance (en ohms) et la valeur du courant (en ampères), puis obtenir la tension.
-
-```math
-Loi d’Ohm : $ U = R × I $
-```
-Le technicien souhaiterait pouvoir réutiliser le programme plus facilement et dans d'autres situations. Pour ce faire, il vous demande d'écrire une fonction qui : 
-
-1. Demande à l'utilisateur d'entrer la valeur de la résistance (en ohms).
-2. Demande à l'utilisateur d'entrer la valeur du courant (en ampères).
-3. Calcule et affiche la tension à l'aide d'une phrase.
-
-**NB** : Ajoutez des explications en commentaire dans le code.
-
-**Résultat attendu** :
-```
-Entrer la résistance en ohms : 10
-Entrer le courant en ampères : 2
-La tension est de 20.0 V
-```
-
-### Exercice 2 : Élément chimique
-
-Écrire une fonction `element_chm(elt)` qui :
-* Prend en paramètre le nom d’un élément chimique.
-* Affiche un message disant "L’élément choisi est [nom]"
-
-**Exemple d'affichage attendu (élément oxygène)** :
-```python
-L’élément choisi est : oxygène
-```
-
-### Exercice 3 : Convertir Celsius en Kelvin
-
-Crée une fonction nommée `convertir_C_en_K` qui :
-* prend une température en °C en paramètre
-* retourne la température en Kelvin (formule : K = C + 273.15)
-
-**Exemple d'affichage attendu (30°C)** :
-```python
-Une température de 30°C équivaut à 303.15 K.
-```
-
-### Exercice 4 : Calculer une énergie cinétique
-
-Créez une fonction `energie_cinetique(m, v)` qui calcule et retourne la valeur de l'énergie cinétique d'un objet en joules:
-
-```math
-$E_c = \frac{1}{2} \cdot m \cdot v^2$
-```
-où
-* m  : La masse de l'objet en kilogrammes.
-* v  : La vitesse de l'objet en mètres par seconde.
-
-**Exemple d'affichage attendu avec `masse=2.0 kg` et `vitesse=3.0 m/s`** :
-```python
-L'énergie cinétique de l'objet est de 9.0 joules.
-```
-
-### Exercice 5 : Aire d'un cercle
-
-Écrire une fonction `aire_cercle()` qui :
-* Demande à l'utilisateur d'entrer le rayon du cercle (en cm).
-* Calcule l'aire du cercle (utilisez le **module math** pour PI et le rayon².)
-* Affiche l'aire du cercle, arrondie à 2 décimales (utilisez la fonction `round`).
-
-**Exemple d'affichage attendu (rayon de 5 cm)** :
-```python
-Aire du cercle de rayon 5 cm : 78.54 cm²
-```
-
-### Exercice 6 : Vérifier la portée locale
-
-Crée une fonction `tester_variable()` qui crée une variable `prenom = "votre prénom` et l’affiche dans la fonction avec un `print`.
-Essaye ensuite d’afficher la valeur de `prenom` **à l’extérieur de la fonction**.
-
-**Exemple d'affichage attendu** :
-```python
-NameError                                 Traceback (most recent call last)
-Cell In[16], line 6
-      3     print(f"Dans la fonction tu t'appelles : {prenom}")
-      5 tester_variable()
-----> 6 print(f"À l'exterieur de la fonction tu t'appelles : {prenom}") 
-
-NameError: name 'prenom' is not defined
-```
-
----
-
-## Atelier
+# Atelier
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_fonctions_perso.ipynb)
 

@@ -15,6 +15,106 @@ draft = true
 
 ---
 
+{{% notice style="accent" title="Apprendre par la pratique" %}}
+- **Faites les exercices** en vous aidant des notes de cours ci-dessous.
+- Certains seront fait en classe à titre de démonstration.
+- Les solutions seront disponibles à la fin de la semaine 2.
+{{% /notice %}}
+
+# Exercices
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_listes_chaines_graphes.ipynb)
+
+
+## Listes
+
+### Exercice 1 :
+
+* Crée une liste contenant 5 animaux. Affiche chaque animal avec une phrase du type :
+```text
+Voici un/une <animal>
+```
+ 
+### Exercice 2 :
+
+* Crée une grille de 5 lignes et 4 colonnes (liste de listes) contenant des chiffres. 
+* Affiche tous les chiffres un par un.
+
+### Exercice 3 :
+
+* Demande à l’utilisateur d’entrer 3 noms et stocke-les dans une liste.
+* Affiche chaque animal en ordre alphabétique croissant.  
+* Affiche chaque animal en ordre alphabétique décroissant. 
+
+### Exercice 4
+
+* Crée une liste de séquences :
+```python
+suspects = [
+    ["A", "T", "C", "G"],
+    ["G", "A", "T", "G"],
+    ["A", "T", "T", "G"]
+]
+```
+* Affiche la 2e base de la 1re séquence.
+* Affiche la dernière base de la 3e séquence.
+
+---
+
+## Chaines de caractères
+
+### Exercice 5 - Créer une liste de nombres à partir d'une liste de mots
+
+* Utiliser une boucle pour obtenir le nombre de lettres de chaque mot
+* Pour chacun des mots, ajouter son nombre de lettres dans la liste `nb_lettres`.
+
+```python
+mots = ["chlorophylle", "atome", "protéine"]
+nb_lettres = []
+```
+
+### Exercice 6 - Convertir en ARN
+
+Une séquence d’ADN est "ATGCT".
+
+* Mets-la en minuscules.
+* Remplace les "t" par "u".
+
+---
+
+## Graphiques
+
+### Exercice 7 – Température dans une journée
+
+* Heures : `[0, 4, 8, 12, 16, 20, 24]`
+* Températures : `[-5, -2, 3, 7, 6, 1, -2]`
+
+Crée un graphique de température en fonction de l’heure.
+
+Ajoute :
+
+* Un titre `"Température en fonction de l’heure"`
+* Les étiquettes `"Heure (h)"` et `"Température (°C)"`
+* Une grille
+
+### Exercice 8 - Comparaison des valeurs mesurées et attendues
+
+On a mesuré la concentration d’un soluté à différentes températures. Les valeurs **attendues** suivent une loi théorique, tandis que les **valeurs mesurées** viennent d’un capteur.
+
+```python
+temp = [10, 20, 30, 40, 50]
+attendu = [2.1, 3.8, 5.6, 7.3, 9.0]
+mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
+```
+
+* Affiche les **valeurs attendues** avec `plt.plot(...)` (ligne noire avec des ronds).
+* Affiche les **valeurs mesurées** avec `plt.bar(...)` (barres bleues légèrement transparentes).
+* Ajoute un **titre**, une **légende**, les **étiquettes d’axes** et une **grille**.
+
+---
+
+# Cours
+
 ## Qu’est-ce qu’une liste ?
 
 Une **liste**, c’est un **conteneur** dans lequel on peut ranger plusieurs éléments (nombres, chaînes, booléens, etc.).
@@ -439,103 +539,11 @@ plt.savefig("figure.png")
 
 ---
 
-## Exercices
-
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_listes_chaines_graphes.ipynb)
-
-
-### Listes
-
-#### Exercice 1 :
-
-* Crée une liste contenant 5 animaux. Affiche chaque animal avec une phrase du type :
-```text
-Voici un/une <animal>
-```
- 
-#### Exercice 2 :
-
-* Crée une grille de 5 lignes et 4 colonnes (liste de listes) contenant des chiffres. 
-* Affiche tous les chiffres un par un.
-
-#### Exercice 3 :
-
-* Demande à l’utilisateur d’entrer 3 noms et stocke-les dans une liste.
-* Affiche chaque animal en ordre alphabétique croissant.  
-* Affiche chaque animal en ordre alphabétique décroissant. 
-
-#### Exercice 4
-
-* Crée une liste de séquences :
-```python
-suspects = [
-    ["A", "T", "C", "G"],
-    ["G", "A", "T", "G"],
-    ["A", "T", "T", "G"]
-]
-```
-* Affiche la 2e base de la 1re séquence.
-* Affiche la dernière base de la 3e séquence.
-
----
-
-### Chaines de caractères
-
-#### Exercice 5 - Créer une liste de nombres à partir d'une liste de mots
-
-* Utiliser une boucle pour obtenir le nombre de lettres de chaque mot
-* Pour chacun des mots, ajouter son nombre de lettres dans la liste `nb_lettres`.
-
-```python
-mots = ["chlorophylle", "atome", "protéine"]
-nb_lettres = []
-```
-
-#### Exercice 6 - Convertir en ARN
-
-Une séquence d’ADN est "ATGCT".
-
-* Mets-la en minuscules.
-* Remplace les "t" par "u".
-
----
-
-### Graphiques
-
-#### Exercice 7 – Température dans une journée
-
-* Heures : `[0, 4, 8, 12, 16, 20, 24]`
-* Températures : `[-5, -2, 3, 7, 6, 1, -2]`
-
-Crée un graphique de température en fonction de l’heure.
-
-Ajoute :
-
-* Un titre `"Température en fonction de l’heure"`
-* Les étiquettes `"Heure (h)"` et `"Température (°C)"`
-* Une grille
-
-#### Exercice 8 - Comparaison des valeurs mesurées et attendues
-
-On a mesuré la concentration d’un soluté à différentes températures. Les valeurs **attendues** suivent une loi théorique, tandis que les **valeurs mesurées** viennent d’un capteur.
-
-```python
-temp = [10, 20, 30, 40, 50]
-attendu = [2.1, 3.8, 5.6, 7.3, 9.0]
-mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
-```
-
-* Affiche les **valeurs attendues** avec `plt.plot(...)` (ligne noire avec des ronds).
-* Affiche les **valeurs mesurées** avec `plt.bar(...)` (barres bleues légèrement transparentes).
-* Ajoute un **titre**, une **légende**, les **étiquettes d’axes** et une **grille**.
-
----
-
-## Atelier
+# Atelier
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_listes_chaines_graphes.ipynb)
 
-### Exercice 
+## Exercice 
 
 Une station météorologique t’a envoyé les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.
 

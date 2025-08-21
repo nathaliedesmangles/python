@@ -20,6 +20,102 @@ draft = true
 
 ---
 
+{{% notice style="accent" title="Apprendre par la pratique" %}}
+- **Faites les exercices** en vous aidant des notes de cours ci-dessous.
+- Certains seront fait en classe à titre de démonstration.
+- Les solutions seront disponibles à la fin de la semaine 2.
+{{% /notice %}}
+
+# Exercices
+
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_numpy.ipynb)
+
+## Exercice 1 – Solubilité d’un sel
+
+Une solution a été testée à différentes températures. Voici les résultats (en g/100 mL) :
+
+```python
+import numpy as np
+
+sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])
+```
+
+1. Affiche les valeurs de solubilité.
+2. Calcule et affiche la moyenne **en ignorant la valeur manquante**.
+3. Calcule et affiche l’écart type.
+
+
+## Exercice 2 – Températures journalières
+
+Un thermomètre enregistre la température trois fois par jour pendant 7 jours :
+
+```python
+temperatures = np.array([
+    [12.1, 17.3, 14.2],
+    [11.8, 16.9, 13.9],
+    [13.0, 18.1, 15.0],
+    [12.5, 17.5, 14.7],
+    [np.nan, 16.0, 14.0],
+    [13.2, 18.0, 15.2],
+    [12.0, 17.0, 14.5]
+])
+```
+
+1. Quelle est la forme (shape) du tableau ?
+2. Calcule la **moyenne journalière** pour chaque jour.
+3. Calcule la **température moyenne du matin** (1re colonne), en ignorant les données manquantes.
+
+
+## Exercice 3 – Analyse d’ADN
+
+Un test mesure l’intensité de 5 fragments ADN (valeurs arbitraires) pour deux échantillons :
+
+```python
+ech1 = np.array([3.2, 2.8, 4.1, 3.9, 2.5])
+ech2 = np.array([2.9, 3.0, 4.2, 4.0, 2.7])
+```
+
+1. Additionne les deux tableaux pour obtenir un profil combiné.
+2. Calcule la différence entre les deux échantillons.
+3. Calcule la moyenne et l’écart type pour chacun des deux.
+
+
+## Exercice 4 – Pressions dans un cylindre
+
+On mesure la pression (en kPa) à différentes hauteurs (en cm) dans un cylindre :
+
+```python
+hauteur = np.linspace(0, 50, 6)  # [0, 10, 20, 30, 40, 50]
+pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
+```
+
+1. Affiche les hauteurs et les pressions.
+2. Calcule la variation de pression par tranche de 10 cm.
+3. Calcule la moyenne de pression.
+4. Trace la droite de régression linéaire pour le graphique (`scatter()`) de la pression en fonction de la hauteur. 
+
+### Exemple de résultat
+
+```
+Hauteur (cm) : [ 0. 10. 20. 30. 40. 50.]
+Pression (kPa) : [101.3 100.   98.7  97.5  96.2  95. ]
+Variation de pression par 10 cm : [-1.3 -1.3 -1.2 -1.3 -1.2]
+Moyenne de pression : 98.11666666666667 kPa
+```
+
+![Graphique nuage et regression](./graphique_pression_regression.png?width=35vw)
+
+## Exercice 5 – Croissance d’une plante (modélisation simplifiée)
+
+Une plante pousse selon ce modèle : sa taille augmente de 2 cm par jour.
+
+1. Crée un tableau NumPy qui contient la taille de la plante pendant 10 jours, en partant de 5 cm.
+2. Ajoute 1 cm supplémentaire à chaque valeur pour simuler un apport d’engrais.
+3. Calcule la moyenne de croissance avec et sans engrais.
+
+---
+
+# Cours
 
 ## Importer la bibliothèque
 
@@ -292,99 +388,9 @@ plt.show()
 | Droite de régression | `np.polyfit()`, `plt.plot()`       |
 | Affichage final      | `plt.show()`, `plt.tight_layout()` |
 
-
 ---
 
-## Exercices
-
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_numpy.ipynb)
-
-### Exercice 1 – Solubilité d’un sel
-
-Une solution a été testée à différentes températures. Voici les résultats (en g/100 mL) :
-
-```python
-import numpy as np
-
-sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])
-```
-
-1. Affiche les valeurs de solubilité.
-2. Calcule et affiche la moyenne **en ignorant la valeur manquante**.
-3. Calcule et affiche l’écart type.
-
-
-### Exercice 2 – Températures journalières
-
-Un thermomètre enregistre la température trois fois par jour pendant 7 jours :
-
-```python
-temperatures = np.array([
-    [12.1, 17.3, 14.2],
-    [11.8, 16.9, 13.9],
-    [13.0, 18.1, 15.0],
-    [12.5, 17.5, 14.7],
-    [np.nan, 16.0, 14.0],
-    [13.2, 18.0, 15.2],
-    [12.0, 17.0, 14.5]
-])
-```
-
-1. Quelle est la forme (shape) du tableau ?
-2. Calcule la **moyenne journalière** pour chaque jour.
-3. Calcule la **température moyenne du matin** (1re colonne), en ignorant les données manquantes.
-
-
-### Exercice 3 – Analyse d’ADN
-
-Un test mesure l’intensité de 5 fragments ADN (valeurs arbitraires) pour deux échantillons :
-
-```python
-ech1 = np.array([3.2, 2.8, 4.1, 3.9, 2.5])
-ech2 = np.array([2.9, 3.0, 4.2, 4.0, 2.7])
-```
-
-1. Additionne les deux tableaux pour obtenir un profil combiné.
-2. Calcule la différence entre les deux échantillons.
-3. Calcule la moyenne et l’écart type pour chacun des deux.
-
-
-### Exercice 4 – Pressions dans un cylindre
-
-On mesure la pression (en kPa) à différentes hauteurs (en cm) dans un cylindre :
-
-```python
-hauteur = np.linspace(0, 50, 6)  # [0, 10, 20, 30, 40, 50]
-pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
-```
-
-1. Affiche les hauteurs et les pressions.
-2. Calcule la variation de pression par tranche de 10 cm.
-3. Calcule la moyenne de pression.
-4. Trace la droite de régression linéaire pour le graphique (`scatter()`) de la pression en fonction de la hauteur. 
-
-#### Exemple de résultat
-
-```
-Hauteur (cm) : [ 0. 10. 20. 30. 40. 50.]
-Pression (kPa) : [101.3 100.   98.7  97.5  96.2  95. ]
-Variation de pression par 10 cm : [-1.3 -1.3 -1.2 -1.3 -1.2]
-Moyenne de pression : 98.11666666666667 kPa
-```
-
-![Graphique nuage et regression](./graphique_pression_regression.png?width=35vw)
-
-### Exercice 5 – Croissance d’une plante (modélisation simplifiée)
-
-Une plante pousse selon ce modèle : sa taille augmente de 2 cm par jour.
-
-1. Crée un tableau NumPy qui contient la taille de la plante pendant 10 jours, en partant de 5 cm.
-2. Ajoute 1 cm supplémentaire à chaque valeur pour simuler un apport d’engrais.
-3. Calcule la moyenne de croissance avec et sans engrais.
-
----
-
-## Atelier
+# Atelier
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_numpy_regression.ipynb)
 
@@ -419,7 +425,7 @@ Pour chaque condition, 5 plantes ont été mesurées. Certaines données sont ma
    ```
 5. Affiche le graphique montrant la croissance moyenne par type de lumière, avec **barres d’erreur** représentant l’écart-type.
 
-### Aide
+## Aide
 
 * Utilise `numpy.array()` pour construire le tableau.
 * Utilise `np.nanmean()` et `np.nanstd()` pour les calculs.

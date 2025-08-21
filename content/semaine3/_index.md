@@ -16,7 +16,7 @@ weight = 103
 {{% notice style="accent" title="Apprendre par la pratique" %}}
 - **Faites les exercices** en vous aidant des notes de cours ci-dessous.
 - Certains seront fait en classe à titre de démonstration.
-- Les solutions seront disponibles à la fin de la semaine 2.
+- Les solutions seront disponibles à la fin de la semaine pochaine.
 {{% /notice %}}
 
 # Exercices
@@ -396,7 +396,7 @@ Ces tests montrent que :
 
 ---
 
-## Atelier
+# Atelier
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_struct_cond.ipynb)
 
@@ -404,7 +404,7 @@ Ces tests montrent que :
 Écrire **l'algorithme** avant de commencer à écrire du code
 {{% /notice %}}
 
-### Exercice
+## Exercice
 
 L’état physique de l’eau dépend de la température et de la pression. À **pression atmosphérique normale (1 atm)** :
 

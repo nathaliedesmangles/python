@@ -18,7 +18,7 @@ weight = 104
 {{% notice style="accent" title="Apprendre par la pratique" %}}
 - **Faites les exercices** en vous aidant des notes de cours ci-dessous.
 - Certains seront fait en classe à titre de démonstration.
-- Les solutions seront disponibles à la fin de la semaine 2.
+- Les solutions seront disponibles à la fin de la semaine prochaine.
 {{% /notice %}}
 
 # Exercices
@@ -349,11 +349,11 @@ N’écris pas tout d’un coup. Teste **par morceaux**.
 
 ---
 
-## Atelier
+# Atelier
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_boucles.ipynb)
 
-### Exercice 1 – Réaction chimique : combien de fois?
+## Exercice 1 – Réaction chimique : combien de fois?
 
 Une réaction chimique simple a lieu entre deux réactifs A et B. À chaque cycle, 1 mL de A réagit avec 2 mL de B pour produire un précipité. Vous disposez d’un certain volume de A et de B.
 
@@ -372,7 +372,7 @@ La réaction a eu lieu 5 fois.
 Il reste 0 mL de A et 15 mL de B.
 ```
 
-### Exercice 2 – Détection de mutation (compteur)
+## Exercice 2 – Détection de mutation (compteur)
 
 Vous êtes en train d'examiner une longue série d'échantillons au microscope. Chaque échantillon peut être sain (`0`) ou muté (`1`). Vous devez saisir les résultats un à un.
 

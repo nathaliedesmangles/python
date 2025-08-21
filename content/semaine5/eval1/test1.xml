@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Q1 -->
+  <question type="multichoice">
+    <name><text>Type de variable après input()</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Quel est le type de la variable <code>x</code> après l’exécution du code suivant ?<br><br>
+<pre>x = input("Entrez un nombre : ")</pre>]]></text>
+    </questiontext>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="0"><text>int</text></answer>
+    <answer fraction="0"><text>float</text></answer>
+    <answer fraction="100"><text>str</text></answer>
+    <answer fraction="0"><text>bool</text></answer>
+  </question>
+
+  <!-- Q2 -->
+  <question type="shortanswer">
+    <name><text>Conversion chaîne en entier</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Écrire une instruction Python qui convertit la chaîne <code>"42"</code> en entier et l’affecte à une variable <code>n</code>.]]></text>
+    </questiontext>
+    <answer fraction="100"><text>n = int("42")</text></answer>
+  </question>
+
+  <!-- Q3 -->
+  <question type="multichoice">
+    <name><text>Utilisation correcte du module math</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Lequel de ces appels utilise correctement une fonction du module <code>math</code> ?]]></text>
+    </questiontext>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="0"><text>math.squareroot(16)</text></answer>
+    <answer fraction="0"><text>sqrt(16)</text></answer>
+    <answer fraction="100"><text>math.sqrt(16)</text></answer>
+    <answer fraction="0"><text>math.power(2,3)</text></answer>
+  </question>
+
+  <!-- Q4 -->
+  <question type="shortanswer">
+    <name><text>Compléter avec math.sqrt()</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Complétez le code pour afficher la racine carrée du nombre saisi :<br><br>
+<pre>
+import math
+n = float(input("Entrez un nombre : "))
+print( ________ )
+</pre>]]></text>
+    </questiontext>
+    <answer fraction="100"><text>math.sqrt(n)</text></answer>
+  </question>
+
+  <!-- Q5 -->
+  <question type="truefalse">
+    <name><text>elif obligatoire après if</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Dans le code Python, <code>elif</code> est obligatoire après un <code>if</code>.]]></text>
+    </questiontext>
+    <answer fraction="0"><text>true</text></answer>
+    <answer fraction="100"><text>false</text></answer>
+  </question>
+
+  <!-- Q6 -->
+  <question type="multichoice">
+    <name><text>Condition âge</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Que va afficher ce code si l’utilisateur entre <code>18</code> ?<br><br>
+<pre>
+age = int(input("Quel âge avez-vous ? "))
+if age < 18:
+    print("Mineur")
+elif age == 18:
+    print("Tout juste majeur !")
+else:
+    print("Majeur")
+</pre>]]></text>
+    </questiontext>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="0"><text>Mineur</text></answer>
+    <answer fraction="100"><text>Tout juste majeur !</text></answer>
+    <answer fraction="0"><text>Majeur</text></answer>
+    <answer fraction="0"><text>Erreur</text></answer>
+  </question>
+
+  <!-- Q7 -->
+  <question type="shortanswer">
+    <name><text>Boucle for 1 à 10</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Écrire une boucle <code>for</code> qui affiche les entiers de 1 à 10 inclus.]]></text>
+    </questiontext>
+    <answer fraction="100"><text>for i in range(1, 11): print(i)</text></answer>
+  </question>
+
+  <!-- Q8 -->
+  <question type="multichoice">
+    <name><text>Somme de la boucle</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Quel affichage produit ce code ?<br><br>
+<pre>
+somme = 0
+for i in range(1, 5):
+    somme += i
+print(somme)
+</pre>]]></text>
+    </questiontext>
+    <shuffleanswers>true</shuffleanswers>
+    <answer fraction="100"><text>10</text></answer>
+    <answer fraction="0"><text>15</text></answer>
+    <answer fraction="0"><text>5</text></answer>
+    <answer fraction="0"><text>0</text></answer>
+  </question>
+
+  <!-- Q9 -->
+  <question type="essay">
+    <name><text>Table de multiplication</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Complétez le programme suivant pour qu’il affiche la table de multiplication d’un nombre saisi (de 1 à 10) :<br><br>
+<pre>
+n = int(input("Entrez un nombre : "))
+# Compléter ici
+</pre>]]></text>
+    </questiontext>
+  </question>
+
+  <!-- Q10 -->
+  <question type="essay">
+    <name><text>Débogage factorielle</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Le code suivant est censé calculer la factorielle d’un nombre saisi, mais il contient des erreurs. Corrigez-le et expliquez les erreurs.<br><br>
+<pre>
+n = input("Entrez un entier : ")
+fact = 0
+for i in range(1, n+1):
+    fact = fact * i
+print("La factorielle est", fact)
+</pre>]]></text>
+    </questiontext>
+  </question>
+
+  <!-- Q11 -->
+  <question type="essay">
+    <name><text>Pair/impair et somme</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Écrire un programme qui :<br>
+1. Demande un entier positif.<br>
+2. Vérifie s’il est pair ou impair.<br>
+3. Calcule la somme des nombres de 1 à ce nombre inclus.<br>
+4. Affiche le tout de manière claire.]]></text>
+    </questiontext>
+  </question>
+
+</quiz>
