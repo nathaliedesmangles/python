@@ -79,3 +79,36 @@ weight = 21
 17. L’explorateur de fichiers va s’ouvrir dans le dossier contenant les fichiers synchronisés, et la synchronisation va commencer.
 
 > **OneDrive est maintenant prêt à être utilisé !**
+
+## Découvrir la signification des icônes OneDrive
+
+Voici l’information structurée dans un tableau clair :
+
+| **Icône**                                            | **Nom / Description**                                | **Signification**                                                                    | **Action recommandée / Remarques**                                                                                             |
+| ---------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| 🔵 ℹ️ Cercle bleu avec un « i » sur l’icône OneDrive | Icône d’information                                  | Nouveaux messages sur l’utilisation de OneDrive ou sur de nouvelles fonctionnalités. | Sélectionner l’icône pour lire les messages et voir les actions à effectuer.                                                   |
+| 🔴 ❌ Cercle rouge avec croix blanche                 | Icône d’erreur de synchronisation                    | Un fichier ou dossier ne peut pas être synchronisé.                                  | Cliquer sur l’icône OneDrive bleu ou blanc pour en savoir plus. Lire l’article de résolution des problèmes de synchronisation. |
+| 🌫️ ☁️ Nuage gris barré                              | OneDrive non en cours d’exécution                    | Non connecté ou configuration non terminée.                                          | Rechercher et ouvrir l’application OneDrive. Si message d’erreur lié à un compte, dissocier et ressocier.                      |
+| ⏸️ Icône OneDrive en pause                           | OneDrive suspendu                                    | Fichiers non synchronisés.                                                           | Sélectionner l’icône > Plus > Reprendre la synchronisation.                                                                    |
+| 🔄 Icône OneDrive avec flèches circulaires           | Synchronisation en cours                             | Fichiers en cours de chargement ou de mise à jour.                                   | Normal si fichiers en cours de traitement. Si bloqué sur « Traitement des modifications », consulter l’aide.                   |
+| 🚫 ☁️ Nuage rouge avec barre blanche                 | Compte OneDrive bloqué                               | Le compte est figé.                                                                  | Suivre la procédure de déblocage du compte.                                                                                    |
+| ⚠️ Triangle jaune avec point d’exclamation           | Icône d’avertissement                                | Compte nécessite une attention (ex. fichiers bloqués par administrateur).            | Sélectionner l’icône pour lire le message. Peut concerner fichiers Outlook (.pst).                                             |
+| 👥 Icône « Personnes » à côté d’un fichier/dossier   | Fichier partagé                                      | Le fichier ou dossier est partagé avec d’autres.                                     | Modifier ou gérer le partage via OneDrive.                                                                                     |
+| ☁️ Icône de nuage bleu                               | Fichier uniquement en ligne                          | Fichier disponible seulement avec Internet, n’occupe pas d’espace local.             | Nécessite connexion Internet pour ouvrir.                                                                                      |
+| ✅ Cercle vert avec coche (vide)                      | Fichier disponible localement                        | Fichier téléchargé après ouverture, utilisable hors ligne.                           | Peut être remis en ligne uniquement via clic droit > Libérer de l’espace.                                                      |
+| ✅ Cercle vert plein avec coche blanche               | Fichier toujours disponible                          | Fichier marqué « Toujours conserver sur cet appareil ».                              | Toujours accessible hors ligne mais occupe de l’espace.                                                                        |
+| ❌ Icône X gris sur les raccourcis bureau             | Icône de raccourci Windows endommagée (non OneDrive) | Raccourcis Windows corrompus.                                                        | Clic droit sur Bureau > Actualiser, désinstaller applications inutiles puis redémarrer.                                        |
+| 🔒 Icône cadenas                                     | Fichier verrouillé                                   | Paramètres empêchent la synchronisation.                                             | Vérifier restrictions et limitations de OneDrive.                                                                              |
+
+
+## Pourquoi ai-je deux icônes OneDrive ?
+
+### Icônes OneDrive bleues et grise
+
+Si vous vous êtes connecté à l’application de synchronisation OneDrive avec un compte **personnel** et un compte **professionnel ou scolaire**, deux icônes de synchronisation OneDrive s’affichent :
+
+- **Icône bleue** : correspond à votre compte professionnel ou scolaire  
+- **Icône grise** : correspond à votre compte personnel  
+
+👉 [Découvrez comment ajouter un compte dans OneDrive](https://support.microsoft.com/fr-fr/office/comment-ajouter-un-compte-dans-onedrive-31b59063-5a94-4847-b846-c13b9e7635e2)
+
