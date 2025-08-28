@@ -21,7 +21,15 @@ weight = 103
 
 # Exercices
 
+## Fichier de départ à utiliser
+
+1. Cliquez sur le lien pour télécharger le fichier.
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_struct_cond.ipynb)
+2. Enregistrez le fichier dans votre dossier **exercices** de la semaine en cours.
+3. Ouvrez **Visual Studio Code**.
+4. Dans VS Code, recherchez et ouvrez le fichier `exercices_struct_cond.ipynb`
+5. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
+6. Vous pouvez commencer à faire les exercices.
 
 
 ## Exercice 1 – Temps de demi-vie radioactive
