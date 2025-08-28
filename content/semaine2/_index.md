@@ -22,7 +22,15 @@ weight = 102
 
 # Exercices
 
+## Fichier de départ à utiliser
+
+1. Cliquez sur le lien pour télécharger le fichier.
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_variables_entrees_fonctions.ipynb)
+2. Enregistrez le fichier dans votre dossier **exercices** de la semaine en cours.
+3. Ouvrez **Visual Studio Code**.
+4. Dans VS Code, recherchez et ouvrez le fichier `exercices_variables_entrees_fonctions.ipynb`
+5. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
+6. Vous pouvez commencer à faire les exercices.
 
 ## Exercice 1 : Distance parcourue
 
@@ -49,10 +57,10 @@ $ °F = (°C × 9/5) + 32 $  <br>
 $ K = °C + 273.15 $
 ```
 
-**Résultat attendu avec une température de 38°C** :
+**Résultat attendu avec une température de 38C** :
 ```
-Température en Celsius : 38°C
-Température en Fahrenheit : 100.4°F
+Température en Celsius : 38C
+Température en Fahrenheit : 100.4F
 Température en Kelvin : 311.15K
 ```
 
@@ -63,6 +71,10 @@ Un technicien prépare une solution en dissolvant une masse donnée de soluté d
 ```math
 $ C = n / V $ où  $ n = m / M $
 ```
+Où
+`C` : Concentration molaire
+`n` : Nombre de mole de soluté
+`V` : Volume de la solution
 
 **Résultat attendu avec** :  
 m = 10.0 	masse du soluté en grammes  
@@ -82,12 +94,12 @@ Lors d’une expérience de cinétique chimique, on mesure la variation de la co
 $ v = \frac{\Delta [A]}{\Delta t} $
 ```
 
-où `[A]` est la concentration du réactif.
+où `[A]` est la concentration du réactif, ${\Delta [A]}$ la différence entre la concentration finale et initiale et ${\Delta t}$ la variation du temps.
 
 **Résultat attendu avec**:  \[Réactif A] passe de 0.80 mol/L à 0.20 mol/L en 120 secondes.
 
 ```
-Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
+Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
 ```
 ---
 
@@ -95,7 +107,7 @@ Vitesse moyenne = -0.005000 mol L⁻¹ s⁻¹
 
 ## Variables et types de données de base
 
-* Une variable est un nom qui **désigne une valeur**.
+* Une variable est un nom qui **désigne une valeur** et un espace de stockage d'une valeur.
 
 ```python
 prenom = "Alice"
