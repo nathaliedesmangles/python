@@ -405,7 +405,7 @@ Quantité restante après 10.25 minutes : 143.75 mL.
 
 ## Exercice #2 - Calcul de la force gravitationnelle
 
-Écrire une fonction qui:
+Écrire un programme qui:
 
 1. Demande à l’utilisateur d’entrer le nom de l’objet (chaîne de caractères).
 2. Demande à l’utilisateur d’entrer la masse de l’objet (nombre décimal, en kg).
@@ -413,7 +413,7 @@ Quantité restante après 10.25 minutes : 143.75 mL.
 4. Calcule la force en utilisant la formule : `force = masse * accélération`
 5. Affiche la force avec une phrase claire, incluant le nom de l’objet et l’unité en N (Newton).
 
-Testez la fonction avec ces deux cas:  
+Testez le programme avec ces deux cas:  
 
 **Cas #1.** Objet: balle et masse: 2,5 Kg
 

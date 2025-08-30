@@ -2,7 +2,7 @@
 pre = "<b>2.</b>"
 title = " Variables, types, entrées et fonction"
 weight = 302
-draft = true
+draft = false
 +++
 
 
@@ -31,12 +31,11 @@ Quantité restante après 10.25 minutes : 143.75 mL.
 ### Exercice #2 - Force gravitationnelle
 
 ```python
-def calcul_force():
-    objet = input("Nom de l'objet : ")
-    masse = float(input("Masse de l'objet (en kg) : "))
-    g = 9.8  # accélération gravitationnelle en m/s²
-    force = masse * g
-    print(f"La force de la {objet} de {masse:.1f} Kg est de {force:.2f} N.")
+objet = input("Nom de l'objet : ")
+masse = float(input("Masse de l'objet (en kg) : "))
+g = 9.8  # accélération gravitationnelle en m/s²
+force = masse * g
+print(f"La force de la {objet} de {masse:.1f} Kg est de {force:.2f} N.")
 
 # Tests
 # Test 1

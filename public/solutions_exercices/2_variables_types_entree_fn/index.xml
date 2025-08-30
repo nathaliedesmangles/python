@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Variables, types, entrées et fonctions :: 420-SN1-RE</title>
-    <link>http://localhost:1313/solutions_exercices/2_variables_types_entree_fn/index.html</link>
+    <link>https://example.org/solutions_exercices/2_variables_types_entree_fn/index.html</link>
     <description>Exercice 1 : Distance parcourue # Données vitesse = 6.5 # en m/s temps_minutes = 12 # Conversion du temps en secondes temps_secondes = temps_minutes * 60 # Calcul de la distance distance = vitesse * temps_secondes # Affichage print(f&#34;Le cycliste a parcouru {distance} mètres en {temps_minutes} minutes.&#34;)&#xD;Résultat :&#xA;Le cycliste a parcouru 4680.0 mètres en 12 minutes.&#xD;Exercice 2 : Conversion de température # Donnée temperature_celsius = 38 # Conversions temperature_fahrenheit = (temperature_celsius * 9 / 5) + 32 temperature_kelvin = temperature_celsius + 273.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/solutions_exercices/2_variables_types_entree_fn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/solutions_exercices/2_variables_types_entree_fn/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

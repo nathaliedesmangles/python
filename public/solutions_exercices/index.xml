@@ -7,5 +7,12 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Variables, types, entrées et fonctions</title>
+      <link>https://example.org/solutions_exercices/2_variables_types_entree_fn/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/2_variables_types_entree_fn/index.html</guid>
+      <description>Exercice 1 : Distance parcourue # Données vitesse = 6.5 # en m/s temps_minutes = 12 # Conversion du temps en secondes temps_secondes = temps_minutes * 60 # Calcul de la distance distance = vitesse * temps_secondes # Affichage print(f&#34;Le cycliste a parcouru {distance} mètres en {temps_minutes} minutes.&#34;)&#xD;Résultat :&#xA;Le cycliste a parcouru 4680.0 mètres en 12 minutes.&#xD;Exercice 2 : Conversion de température # Donnée temperature_celsius = 38 # Conversions temperature_fahrenheit = (temperature_celsius * 9 / 5) + 32 temperature_kelvin = temperature_celsius + 273.</description>
+    </item>
   </channel>
 </rss>
