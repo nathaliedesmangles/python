@@ -359,7 +359,11 @@ N’écris pas tout d’un coup. Teste **par morceaux**.
 
 # Atelier
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_boucles.ipynb)
+1. Téléchargez le fichier de départ : [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_boucles.ipynb)
+2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 2**.
+3. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
+   * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
+
 
 ## Exercice 1 – Réaction chimique : combien de fois?
 

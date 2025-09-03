@@ -406,7 +406,10 @@ Ces tests montrent que :
 
 # Atelier
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_struct_cond.ipynb)
+1. Téléchargez le fichier de départ : [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_struct_cond.ipynb)
+2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 2**.
+3. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
+   * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
 
 {{% notice style="accent" title="Conseils" %}}
 Écrire **l'algorithme** avant de commencer à écrire du code
