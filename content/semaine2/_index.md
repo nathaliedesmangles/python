@@ -429,28 +429,63 @@ La force de la balle de 2.5 Kg est de 24.50 N.
 La force de la voiture de 1000.0 Kg est de 9800.00 N.
 ```
 
-## Exercice #3 - Calcul d'intérêts simple et composé
+---
 
-* Vous avez deux placements avec **le même montant initial** (qu'on peut appeler `montant`).
-   * **Premier placement** : intérêt **annuel simple** de **3,2 %** pendant **10 ans**.
-   * **Deuxième placement** : intérêt **composé** à **1,6 % tous les 6 mois**, donc **2 fois par an**, pendant **10 ans**.
+## Exercice #3 – Calcul d’intérêts simple et composé
 
-i) On cherche **l’écart en % entre les deux montants finaux** au bout de 10 ans.  
-ii) En déduire quel est le meilleur placement sur 10 ans.
+Un investisseur place **100 \$**. On souhaite comparer deux situations :
 
-**Hypothèse** : Comme le montant initial est le **même**, on peut le fixer à 100 \$ pour faciliter le calcul de l’écart en **pourcentage** à la fin.
+1. **Intérêt simple** :
 
-**NB**:
-* Identifier les variables, les constantes et les formules nécessaires  
+   * Taux : **3,2 % par an**
+   * Durée : **10 ans**
+   * Formule :
 
+     $$
+     V_{\text{simple}} = M \times \big(1 + t \times n\big)
+     $$
 
-**Résultat attendu** (approximatif) :
+     où
 
-```
-Valeur avec intérêt simple : 132.00 $
-Valeur avec intérêt composé : 134.87 $
-Écart relatif : 2.17 %
-```
+     * $M$ = montant initial,
+     * $t$ = taux d’intérêt simple (par an),
+     * $n$ = durée (en années).
+
+2. **Intérêt composé** :
+
+   * Taux : **1,6 % par semestre** (deux fois par an, donc équivalent à 3,2 % par an)
+   * Durée : **10 ans**
+   * Nombre de périodes :
+
+     $$
+     p = 2 \times n
+     $$
+   * Formule :
+
+     $$
+     V_{\text{composé}} = M \times \big(1 + t_c\big)^p
+     $$
+
+     où
+
+     * $M$ = montant initial,
+     * $t_c$ = taux d’intérêt composé par période,
+     * $p$ = nombre total de périodes.
+
+3. **Écart relatif (en %)** entre les deux montants :
+
+   $$
+   \text{Écart} = \frac{V_{\text{composé}} - V_{\text{simple}}}{V_{\text{simple}}} \times 100
+   $$
+
+**Résultats attendus** :
+
+* Valeur avec intérêt simple : **132,00 \$**
+* Valeur avec intérêt composé : **134,87 \$**
+* Écart relatif : **2,17 %**
+
+---
+
 
 ## Exercice #4 - Calcul de la hauteur maximale
 
@@ -472,7 +507,7 @@ $g$ : accélération gravitationnelle = 9.81 m/s²  <br>
 $h_{\text{max}}$ : hauteur maximale (en m)  
 ```
 
-## Exercice 5 - Calcul de probabilité (Facultatif)
+## Exercice 5 - Calcul de probabilité géométrique (Facultatif)
 
 On choisit un point au hasard dans ce rectangle. Calcule la probabilité que ce point se situe dans la région grise, c’est-à-dire en dehors des cercles.
 ![Exercice - Calcul de probabilité](./probabilite.png?width=25vw)

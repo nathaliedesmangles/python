@@ -12,7 +12,7 @@
       <link>https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.html</guid>
-      <description>Exercice #1 - Quantité restante après évaporation # Constantes q_initiale = 400 # en mL t_minutes = 10 + 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;)&#xD;Résultat attendu :&#xA;Quantité restante après 10.25 minutes : 143.</description>
+      <description>Exercice #1 - Expérience en chimie # Constantes q_initiale = 400 # en mL t_minutes = 10 + 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;)&#xD;Résultat attendu :&#xA;Quantité restante après 10.25 minutes : 143.75 mL.</description>
     </item>
   </channel>
 </rss>

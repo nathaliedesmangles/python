@@ -6,7 +6,7 @@ draft = false
 +++
 
 
-### Exercice #1 - Quantité restante après évaporation
+## Exercice #1 - Expérience en chimie
 
 ```python
 # Constantes
@@ -28,7 +28,7 @@ Quantité restante après 10.25 minutes : 143.75 mL.
 
 ---
 
-### Exercice #2 - Force gravitationnelle
+## Exercice #2 - Calcul de la force gravitationnelle
 
 ```python
 objet = input("Nom de l'objet : ")
@@ -53,7 +53,7 @@ La force de la voiture de 1000.0 Kg est de 9800.00 N.
 
 ---
 
-### Exercice #3 - Intérêts simple et composé
+## Exercice #3 - Calcul d'intérêts simple et composé
 
 ```python
 # Montant initial
@@ -88,7 +88,7 @@ Valeur avec intérêt composé : 134.87 $
 
 ---
 
-### Exercice #4 - Hauteur maximale
+### Exercice #4 - Calcul de la hauteur maximale
 
 ```python
 # Demander la vitesse initiale à l'utilisateur
@@ -110,7 +110,7 @@ v = 20 m/s → h ≈ 20.39 m
 
 ---
 
-### Exercice #5 - Probabilité géométrique (Facultatif)
+### Exercice #5 - Calcul de probabilité géométrique (Facultatif)
 
 **Hypothèses :**
 
