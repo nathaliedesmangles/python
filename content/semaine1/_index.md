@@ -88,6 +88,13 @@ Cliquez sur ***Mark Done*** pour valider l’écran suivant. (***si vous ne voye
 
 ![Trust the authors](./vscodejupyter/trust.png?width=40vw)
 
+{{% notice style="accent" title="Important" groupid="notice-toggle" expanded="false" %}}
+Si vous ne cochez pas la case, vous aurez une erreur et vous ne pourrez pas utiliser les fonctionnalités de VS Code 
+![Erreur -Trust the authors](./vscodejupyter/restricted-mode-banner.png?width=40vw)
+{{% /notice %}}
+
+
+
 4. Ouvrir un dossier sur VS Code
 
 * Sélectionnez l’onglet **Explorateur** sur la barre latérale, puis **Ouvrir le dossier**. 
@@ -96,7 +103,7 @@ Cliquez sur ***Mark Done*** pour valider l’écran suivant. (***si vous ne voye
 
 * Sélectionnez votre dossier OneDrive, puis ouvrez le dossier que vous avez créé précédemment (**programmation-sciences**).
 
-{{% notice style="cyan" title="Sachez que.." groupid="notice-toggle" expanded="false" %}}
+{{% notice style="cyan" title="Sachez que..." groupid="notice-toggle" expanded="false" %}}
 Il se peut que vous ne voyez pas vos fichiers lorsque vous sélectionnez un dossier de travail.
 Une fois le dossier ouvert, vous devriez voir le fichier sur VS Code dans la partie gauche de votre explorateur de fichier.
 {{% /notice %}}

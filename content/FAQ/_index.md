@@ -7,7 +7,7 @@ weight = 10
 
 ## Outils et locaux pour pratiquer
 
-- Quel logiciel je peux installer sur mon ordinateur personnel pour pratiquer à la maison ?
+- À part Visual Studio Code, quels autres logiciels je peux installer sur mon ordinateur personnel pour pratiquer à la maison ?
 	* [Alternatives à VS Code](./alternatives)
 - La sauvegarde automatique dans Visual Studio Code.
 	* [Sauvegarde dans VS Code](../environnement_travail/sauvegarde_vsCode)
@@ -17,12 +17,14 @@ weight = 10
 	* [Trucs pratiques pour bien coder](../environnement_travail/trucs_pratiques)
 - Dans quels locaux du cégep, je peux aller pratiquer ?
 	* [Locaux avec Python, VS Code et Jupyter](./locaux_python)
+- Comment déposer un travail sur Moodle ?
+	* [Déposer un travail sur Moodle](./Deposer_un_fichier_dans_Moodle.pdf)
 
 ---
 
 ## À propos de l'installation des outils
 
-* Est-ce que je peux installer les outils de travail sur vomontre ordinateur personnel (**Windows 11**) ?
+* Est-ce que je peux installer les outils de travail sur votre ordinateur personnel (**Windows 11**) ?
 > **Oui**. [Cliquez ICI pour voir comment](../outils_dev/install_env/)
 
 ---
