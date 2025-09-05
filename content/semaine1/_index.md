@@ -123,6 +123,8 @@ Une fois le dossier ouvert, vous devriez voir le fichier sur VS Code dans la par
 
 8. Ensuite, sur les postes du cégep, vous devrez choisir l'environnement Python **ne contenant pas Anaconda**.
 
+![Environnements Python](./vscodejupyter/choix_env_python.png?width=50vw)
+
 
 ### **Étape 4** – Créer un nouveau bloc-notes Jupyter
 
