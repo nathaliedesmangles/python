@@ -82,8 +82,8 @@ print(f"Écart relatif : {écart:.2f} %")
 
 ```
 Valeur avec intérêt simple : 132.00 $
-Valeur avec intérêt composé : 134.87 $
-Écart relatif : 2.17 %
+Valeur avec intérêt composé : 137.36 $
+Écart relatif : 4.06 %
 ```
 
 ---
