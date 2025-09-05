@@ -84,7 +84,11 @@ Cliquez sur ***Mark Done*** pour valider l’écran suivant. (***si vous ne voye
 
 ![Premiere ouverture VS Code](./vscodejupyter/premiere_ouverture_vscode.png?width=40vw&height=50vw)
 
-3. Ouvrir un dossier sur VS Code
+3. Faites confiance aux auteurs, cochez la case**Trust the authors of all files in the parent forlder `OneDrive-College Montmorency`, puis cliquez sur **Yes, I trust the authors**
+
+![Trust the authors](./vscodejupyter/trust.png?width=40vw)
+
+4. Ouvrir un dossier sur VS Code
 
 * Sélectionnez l’onglet **Explorateur** sur la barre latérale, puis **Ouvrir le dossier**. 
 
@@ -109,19 +113,19 @@ Une fois le dossier ouvert, vous devriez voir le fichier sur VS Code dans la par
 [Description des zones principales](./outils_dev/vs-code/#interface-principale)
 -->
 
-4. Assurez-vous que le fichier téléchargé et déplacé précédemment se trouve dans le sous-dossier `semaine01-environnement`
+5. Assurez-vous que le fichier téléchargé et déplacé précédemment se trouve dans le sous-dossier `semaine01-environnement`
 
-5. Cliquez sur le nom du fichier pour l'ouvrir dans l'**Éditeur** (à droite).
+6. Cliquez sur le nom du fichier pour l'ouvrir dans l'**Éditeur** (à droite).
 
-6. Cliquez sur la flèche à droite de la cellule (pour exécuter le code). Vous devriez voir ceci:
+7. Cliquez sur la flèche à droite de la cellule (pour exécuter le code). Vous devriez voir ceci:
 
 ![Bloc-notes ouvert](./vscodejupyter/bloc-notes-ouvert.png?width=50vw)
 
-7. En haut, VS Code vous demande de choisir un **Environnement Python**
+8. En haut, VS Code vous demande de choisir un **Environnement Python**
 
 ![Environnements Python](./vscodejupyter/env_python.png?width=50vw)
 
-8. Ensuite, sur les postes du cégep, vous devrez choisir l'environnement Python **ne contenant pas Anaconda**.
+9. Ensuite, sur les postes du cégep, vous devrez choisir l'environnement Python **ne contenant pas Anaconda**.
 
 ![Environnements Python](./vscodejupyter/choix_env_python.png?width=50vw)
 
