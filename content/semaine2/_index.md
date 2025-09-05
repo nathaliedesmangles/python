@@ -117,17 +117,21 @@ temperature = 25.8
 
 ### Bien nommer vos variables:
 
+* Les nom sont sensibles à la casse (ex: pour python la variable `prenom` et la variable `Prenom` sont **deux variables différentes** pour python 
 * Utiliser des **noms significatifs** (ex : `masse_corps`, `volume_solution`)
 * Commencer par une **lettre** ou un **souligné (_)**, jamais par un chiffre.
 * Éviter les mots réservés de Python (`if`, `for`, `print`, etc.).
 * Utiliser des mots séparés par des soulignés (_).
 * Utiliser des mots commençants par une lettre majuscule, sauf le premier mot (ex : `masseCorps`, `volumeSolution`).
+* Ne jamais mettre de lettres accentuées dans le nom d'une variable.
 
 Mauvais exemples :
 
 ```python
-1age = 20       # commence par un chiffre → erreur
-print = 8       # print est un mot réservé → erreur
+1age = 20       	# commence par un chiffre → erreur
+print = 8       	
+# print est un mot réservé → erreur
+prénom = "Julie"	# Lettre accentuée é
 ```
 
 ### Types de base des données
@@ -483,9 +487,9 @@ Un investisseur place **100 \$**. On souhaite comparer deux situations :
 
 **Résultats attendus** :
 
-* Valeur avec intérêt simple : **132,00 \$**
-* Valeur avec intérêt composé : **134,87 \$**
-* Écart relatif : **2,17 %**
+* Valeur avec intérêt simple : **132.00 \$**
+* Valeur avec intérêt composé : **137.36 \$**
+* Écart relatif : **4.06 %**
 
 ---
 
