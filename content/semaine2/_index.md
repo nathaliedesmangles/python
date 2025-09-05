@@ -284,7 +284,7 @@ Résultat : Sophie a 18 ans.
 | Afficher **10 caractères dont 2 décimales** et **aligner à droite** | `{valeur:>10.2f}` |
 | **Aligner à gauche** sur 10 caractères dont **2 décimales** | `{valeur:<10.2f}` |
 | **Afficher un pourcentage** avec 1 décimale      | `{valeur:.1%}`    |
-| Affichage **centré** sur 10 caractères et **2 décimales** | `{valeur:^10.2}`    |
+| Affichage **centré** sur 10 caractères et **2 décimales** | `{valeur:^10.2f}`    |
 | Format **scientifique** (notation exponentielle) | `{valeur:.2e}`    |
 
 **Explication** :
