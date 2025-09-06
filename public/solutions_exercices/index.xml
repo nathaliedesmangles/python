@@ -14,5 +14,12 @@
       <guid>https://example.org/solutions_exercices/2_variables_types_entree_fn/index.html</guid>
       <description>Exercice 1 : Distance parcourue # Données vitesse = 6.5 # en m/s temps_minutes = 12 # Conversion du temps en secondes temps_secondes = temps_minutes * 60 # Calcul de la distance distance = vitesse * temps_secondes # Affichage print(f&#34;Le cycliste a parcouru {distance} mètres en {temps_minutes} minutes.&#34;)&#xD;Résultat :&#xA;Le cycliste a parcouru 4680.0 mètres en 12 minutes.&#xD;Exercice 2 : Conversion de température # Donnée temperature_celsius = 38 # Conversions temperature_fahrenheit = (temperature_celsius * 9 / 5) + 32 temperature_kelvin = temperature_celsius + 273.</description>
     </item>
+    <item>
+      <title> Structures conditionnelles</title>
+      <link>https://example.org/solutions_exercices/3_struct_cond/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/3_struct_cond/index.html</guid>
+      <description>Exercice 1 : Demi-vie radioactive # Constantes masse_initiale = 100 # en grammes demi_vie = 5 # en années # Entrée utilisateur temps_ecoule = float(input(&#34;Combien d&#39;années se sont écoulées ? &#34;)) # Calcul nb_periodes = temps_ecoule / demi_vie masse_restante = masse_initiale * (0.5) ** nb_periodes # Affichage conditionnel if masse_restante &lt; 1: print(f&#34;La masse restante est très faible : {masse_restante:.4f} g. L’isotope est presque entièrement désintégré.&#34;) else: print(f&#34;Masse restante après {temps_ecoule} ans : {masse_restante:.</description>
+    </item>
   </channel>
 </rss>
