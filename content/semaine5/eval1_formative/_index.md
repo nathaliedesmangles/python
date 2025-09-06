@@ -18,20 +18,13 @@ draft = true
 * Utiliser les types de base (`int`, `float`, `str`, `bool`)
 * Gérer les entrées et les affichages
 * Utiliser des fonctions prédéfinies
-* Créer des fonctions simples (`def`, `param`, `return`)
 * Traduire un algorithme simple
 * Lire et corriger un code erroné
 
 ---
 
-## Instructions
 
-1. Créez un dossier nommé `formatif_nom_prenom`
-2. Enregistrez un fichier `.ipynb` par question : `q1.ipynb`, `q2.ipynb`, etc.
-
----
-
-### **Q1 – Masse d’eau transpirée (15 pts)**
+## **Q1 – Masse d’eau transpirée (15 pts)**
 
 Une plante transpire en moyenne **0,35 litre d’eau par jour**.
 
@@ -43,7 +36,7 @@ Une plante transpire en moyenne **0,35 litre d’eau par jour**.
 
 ---
 
-### **Q2 – Conversion de surface foliaire (15 pts)**
+## **Q2 – Conversion de surface foliaire (15 pts)**
 
 Une feuille a une surface mesurée en **cm²**, mais les données doivent être présentées en **m²**.
 
@@ -55,7 +48,7 @@ Une feuille a une surface mesurée en **cm²**, mais les données doivent être 
 
 ---
 
-### **Q3 – Utilisation de fonctions prédéfinies (10 pts)**
+## **Q3 – Utilisation de fonctions prédéfinies (10 pts)**
 
 Écrivez un programme qui :
 
@@ -65,7 +58,7 @@ Une feuille a une surface mesurée en **cm²**, mais les données doivent être 
 
 ---
 
-### **Q4 – Définir une fonction : densité de plantation (20 pts)**
+## **Q4 – Définir une fonction : densité de plantation (20 pts)**
 
 On souhaite calculer la **densité de plantation** :
 ```math
@@ -80,7 +73,7 @@ $$
 
 ---
 
-### **Q5 – Débogage (15 pts)**
+## **Q5 – Débogage (15 pts)**
 
 Corrigez ce programme en expliquant **chaque correction** dans un commentaire.
 

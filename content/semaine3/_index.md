@@ -49,6 +49,10 @@ Un échantillon de 100 g d’un isotope a une demi-vie de 5 ans. On souhaite con
 
 2. Traduis ton algorithme en Python.
 
+**Résultat attendu avec le nombre d'années égal à 10**
+```
+Masse restante après 10.0 ans : 25.00 g.
+```
 
 ## Exercice 2 – Taux de croissance d’une population bactérienne
 
@@ -68,6 +72,10 @@ Une boîte de Pétri contient 500 bactéries. On souhaite estimer la taille de l
 
 2. Traduis ton algorithme en Python.
 
+**Résultat attendu avec le nombre d'heures égales à 15**
+```
+Population estimée après 15.0 heures : 16000 bactéries.
+```
 
 ## Exercice 3 – Température critique d’un liquide
 
@@ -82,6 +90,12 @@ Un liquide ne doit pas dépasser 80 °C pour rester stable.
 
 2. Traduis ton algorithme en Python.
 
+**Résultat attendu avec les températures de 15; 80 et 100**
+```
+Température sécuritaire.
+Limite atteinte.
+Attention : température critique !
+```
 
 ## Exercice 4 – Classification du pH d’une solution
 
@@ -97,6 +111,14 @@ En chimie, le **pH** permet de savoir si une solution est acide, neutre ou basiq
 
 2. Traduis ton algorithme en Python.
 
+**Résultat attendu avec les pH de 1; 7; 9 et 17**
+```
+Solution acide
+Solution neutre
+Solution basique
+Valeur de pH invalide
+```
+
 
 ## Exercice 5 – Autorisation d’une réaction chimique
 
@@ -109,6 +131,23 @@ Une réaction chimique ne peut avoir lieu **que si** la température est **entre
    * « Conditions non compatibles. » sinon.
 
 2. Traduis ton algorithme en Python.
+
+**Résultat attendu avec une température de 30 et un pH de 7**
+```
+Réaction possible
+```
+
+**Résultat attendu avec une température de 20 et un pH de 7**
+```
+Conditions non compatibles.
+```
+
+**Résultat attendu avec une température de 30 et un pH de 5**
+```
+Conditions non compatibles.
+```
+
+---
 
 # Cours
 

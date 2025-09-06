@@ -50,6 +50,8 @@ else:
     print(f"Population estimée après {heures} heures : {population_finale:.0f} bactéries.")
 ```
 
+
+
 ---
 
 ## Exercice 3 – Température critique d’un liquide
