@@ -21,5 +21,12 @@
       <guid>https://example.org/faq/locaux_python/index.html</guid>
       <description>Locaux où se donne le cours 420-SN1-RE A-3820 B-2302 B-2303 B-3376 B-3410 Autres locaux (à confirmer) * *</description>
     </item>
+    <item>
+      <title>Ajouter un raccourci vers une URL dans Edge</title>
+      <link>https://example.org/faq/raccourci_edge/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/faq/raccourci_edge/index.html</guid>
+      <description>1. Ouvrir Microsoft Edge Cliquez sur le bouton Démarrer de Windows. Tapez Edge et ouvrez l’application Microsoft Edge. 2. Accéder à la page de démarrage Par défaut, Edge ouvre la page Nouvel onglet (Start / Microsoft Start).&#xA;Si ce n’est pas le cas :&#xA;Cliquez sur le menu … (en haut à droite). Sélectionnez Paramètres &gt; Démarrage, page d’accueil et nouveaux onglets. Assurez-vous que Nouvel onglet est bien sélectionné. 3. Ajouter un nouveau raccourci Sur la page d’accueil (nouvel onglet), repérez la section Sites principaux ou Sites rapides (juste sous la barre de recherche Bing).</description>
+    </item>
   </channel>
 </rss>

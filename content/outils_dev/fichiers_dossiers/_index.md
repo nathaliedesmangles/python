@@ -79,6 +79,16 @@ Par défaut, Windows **cache les extensions**. Pour les voir :
 1. Ouvre un dossier
 2. Clique sur **Affichage > Afficher > Extensions de noms de fichiers**
 
+## Rechercher un fichier
+
+**Méthode 1** : Utiliser la barre de recherche de la barre des tâches 
+
+[Méthode 1](https://youtu.be/zoI9sLbn7b0?si=X9kF8jfzlIHU353E)
+
+**Méthode 2** : Utiliser l'Explorateur de fichiers  
+
+[Méthode 2](https://support.microsoft.com/fr-fr/windows/rechercher-vos-fichiers-dans-windows-5c7c8cfe-c289-fae4-f5f8-6b3fdba418d2#:~:text=Recherchez%20vos%20fichiers%20dans%20Windows,au%20lieu%20de%20l'accueil.)
+
 
 ## Bonnes pratiques
 

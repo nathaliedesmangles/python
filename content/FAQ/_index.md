@@ -85,3 +85,10 @@ weight = 10
 ## Horaire de l'enseignante
 
 [Horaire](https://python-a25.netlify.app/cours/horaire/)
+
+## Divers
+
+* [Créer un raccourci vers un site sur Edge](./raccourci_edge/)
+
+* Que signifient les icônes de OneDrive ?
+> [comprendre le sens des icônes](https://python-a25.netlify.app/outils_dev/onedrive/#découvrir-la-signification-des-icônes-onedrive)
