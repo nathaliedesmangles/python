@@ -136,6 +136,11 @@ Une fois le dossier ouvert, vous devriez voir le fichier sur VS Code dans la par
 
 ![Environnements Python](./vscodejupyter/choix_env_python.png?width=50vw)
 
+{{% notice style="cyan" title="Si l'environnement Python n'est plus détecté..." groupid="notice-toggle" expanded="false" %}}
+Parfois, l'environnement Python peut ne plus être détecté. Vous verrez alors `Select Kernel` au lieu de la version de Python, par exemple `Python 3.13.5`. 
+![select Kernel](./vscodejupyter/select_kernel.png?width=30vw)
+Pour corriger le problème, il faut cliquer sur ***Select Kernel***, puis ***Python Environnements*** et sélectionner l'environnement comme au **point 9** ci-dessus.
+{{% /notice %}}
 
 ### **Étape 4** – Créer un nouveau bloc-notes Jupyter
 

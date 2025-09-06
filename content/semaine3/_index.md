@@ -407,7 +407,7 @@ Ces tests montrent que :
 # Atelier
 
 1. Téléchargez le fichier de départ : [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_struct_cond.ipynb)
-2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 2**.
+2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 3**.
 3. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
    * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
 
@@ -475,7 +475,7 @@ Pression (atm) : 2.0
 ```
 Température de l'eau en °C : 105
 Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.5
-sÉtat de l’eau : liquide
+État de l’eau : liquide
 L’eau est liquide à cette température et pression.
 ```
 
