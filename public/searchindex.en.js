@@ -193,8 +193,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "02. Variables, types, entrées et fonctions 03. Structures conditionnelles",
-    "description": "02. Variables, types, entrées et fonctions 03. Structures conditionnelles",
+    "content": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles",
+    "description": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles",
     "tags": [],
     "title": "Solutions des exercices",
     "uri": "/solutions_exercices/index.html"
