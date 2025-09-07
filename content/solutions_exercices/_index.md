@@ -9,9 +9,9 @@ draft = false
 
 
 [02. Variables, types, entrées et fonctions](./2_variables_types_entree_fn/) 
+[03. Structures conditionnelles](./3_struct_cond/) 
 
-<!-- 
-[03. Structures conditionnelles](./3_struct_cond/)  
+<!--  
 [04. Boucles et débogage simple](./4_boucles_debogage/)
 
 

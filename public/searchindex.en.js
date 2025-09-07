@@ -193,8 +193,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "02. Variables, types, entrées et fonctions",
-    "description": "02. Variables, types, entrées et fonctions",
+    "content": "02. Variables, types, entrées et fonctions 03. Structures conditionnelles",
+    "description": "02. Variables, types, entrées et fonctions 03. Structures conditionnelles",
     "tags": [],
     "title": "Solutions des exercices",
     "uri": "/solutions_exercices/index.html"
@@ -217,8 +217,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "02. Variables, types, entrées et fonctions",
-    "description": "02. Variables, types, entrées et fonctions",
+    "content": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles",
+    "description": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles",
     "tags": [],
     "title": "Solutions des ateliers",
     "uri": "/solutions_ateliers/index.html"
@@ -230,6 +230,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": " Variables, types, entrées et fonction",
     "uri": "/solutions_ateliers/2_variables_types_entrees_fn/index.html"
+  },
+  {
+    "breadcrumb": "Programmation en sciences \u003e \rSolutions des ateliers",
+    "content": "# Demander les données à l'utilisateur temperature = float(input(\"Température de l'eau en °C : \")) pression = float(input(\"Pression en atm (0.5, 1.0, 1.5 ou 2.0) : \")) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: print(\"Pression invalide. Veuillez entrer 0.5, 1.0, 1.5 ou 2.0.\") exit() # Déterminer l’état de l’eau if temperature \u003c 0: etat = \"solide\" description = \"L’eau est sous forme de glace.\" elif temperature \u003c ebullition: etat = \"liquide\" description = \"L’eau est liquide à cette température et pression.\" else: etat = \"gaz\" description = \"L’eau est sous forme de vapeur.\" # Affichage print(f\"État de l’eau : {etat}\") print(description)\rExemples de sorties Exemple 1 : Température de l'eau en °C : 50\rPression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0\rÉtat de l’eau : liquide\rL’eau est liquide à cette température et pression.\rExemple 2 : Température de l'eau en °C : 101\rPression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0\rÉtat de l’eau : gaz\rL’eau est sous forme de vapeur.\rExemple 3 : Température de l'eau en °C : -5\rPression en atm (0.5, 1.0, 1.5 ou 2.0) : 2.0\rÉtat de l’eau : solide\rL’eau est sous forme de glace.",
+    "description": "# Demander les données à l'utilisateur temperature = float(input(\"Température de l'eau en °C : \")) pression = float(input(\"Pression en atm (0.5, 1.0, 1.5 ou 2.0) : \")) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: print(\"Pression invalide. Veuillez entrer 0.5, 1.0, 1.",
+    "tags": [],
+    "title": " Structures conditionnelles",
+    "uri": "/solutions_ateliers/3_struct_cond/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences",

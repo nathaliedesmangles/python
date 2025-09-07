@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des ateliers :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/index.html</link>
-    <description>02. Variables, types, entrées et fonctions</description>
+    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_ateliers/index.xml" rel="self" type="application/rss+xml" />
@@ -13,6 +13,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.html</guid>
       <description>Exercice #1 - Expérience en chimie # Constantes q_initiale = 400 # en mL t_minutes = 10 + 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;)&#xD;Résultat attendu :&#xA;Quantité restante après 10.25 minutes : 143.75 mL.</description>
+    </item>
+    <item>
+      <title> Structures conditionnelles</title>
+      <link>https://example.org/solutions_ateliers/3_struct_cond/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_ateliers/3_struct_cond/index.html</guid>
+      <description># Demander les données à l&#39;utilisateur temperature = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: print(&#34;Pression invalide. Veuillez entrer 0.5, 1.0, 1.</description>
     </item>
   </channel>
 </rss>
