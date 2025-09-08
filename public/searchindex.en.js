@@ -169,8 +169,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "Informations Date:\tSemaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:\tTest sur Moodle (théorique + pratique).",
-    "description": "Informations Date:\tSemaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:\tTest sur Moodle (théorique + pratique).",
+    "content": "Informations Date:\tSemaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Durée:\t2h (2h 40 pour les étudiant.e.s du SAA Documentation permise: 3 feuilles recto-verso (manuscrites ou imprimées) Format de l’examen:\tTest sur Moodle (théorique + pratique). un total de 20 questions, un mélange de questions à choix multiples (QCM), de questions à réponse courte (1 ligne) et de questions à trou, 3 questions à développement, où vous devrez écrire un petit programme en Python. L’objectif est de vérifier votre compréhension des notions vues et votre capacité à les appliquer dans de courts exercices pratiques.",
+    "description": "Informations Date:\tSemaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Durée:\t2h (2h 40 pour les étudiant.e.s du SAA Documentation permise: 3 feuilles recto-verso (manuscrites ou imprimées) Format de l’examen:\tTest sur Moodle (théorique + pratique). un total de 20 questions, un mélange de questions à choix multiples (QCM), de questions à réponse courte (1 ligne) et de questions à trou, 3 questions à développement, où vous devrez écrire un petit programme en Python.",
     "tags": [],
     "title": " Évaluation #1 (25%)",
     "uri": "/semaine5/index.html"

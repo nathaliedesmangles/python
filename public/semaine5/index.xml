@@ -3,7 +3,7 @@
   <channel>
     <title> Évaluation #1 (25%) :: 420-SN1-RE</title>
     <link>https://example.org/semaine5/index.html</link>
-    <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;Test sur Moodle (théorique + pratique).</description>
+    <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Durée:&#x9;2h (2h 40 pour les étudiant.e.s du SAA Documentation permise: 3 feuilles recto-verso (manuscrites ou imprimées) Format de l’examen:&#x9;Test sur Moodle (théorique + pratique). un total de 20 questions, un mélange de questions à choix multiples (QCM), de questions à réponse courte (1 ligne) et de questions à trou, 3 questions à développement, où vous devrez écrire un petit programme en Python.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine5/index.xml" rel="self" type="application/rss+xml" />

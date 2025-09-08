@@ -75,7 +75,7 @@
       <link>https://example.org/semaine5/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine5/index.html</guid>
-      <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée) Format de l’examen:&#x9;Test sur Moodle (théorique + pratique).</description>
+      <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Durée:&#x9;2h (2h 40 pour les étudiant.e.s du SAA Documentation permise: 3 feuilles recto-verso (manuscrites ou imprimées) Format de l’examen:&#x9;Test sur Moodle (théorique + pratique). un total de 20 questions, un mélange de questions à choix multiples (QCM), de questions à réponse courte (1 ligne) et de questions à trou, 3 questions à développement, où vous devrez écrire un petit programme en Python.</description>
     </item>
     <item>
       <title>Solutions des exercices</title>
