@@ -10,7 +10,7 @@ weight = 105
 
 * ***Date***:	 		Semaine #5 (Voir le calendrier scolaire)
 * ***Matière***: 		Semaines 1 à 4 inclusivement
-* ***Durée***:			2h (2h 40 pour les étudiant.e.s du SAA
+* ***Durée***:			2h (2h 40 pour les étudiant.e.s du SAA, avec inscription)
 * ***Documentation permise***: 	3 feuilles recto-verso (manuscrites ou imprimées)
 * ***Format de l'examen***:	Test sur Moodle (théorique + pratique).
 	* un total de 20 questions,
