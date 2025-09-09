@@ -49,15 +49,24 @@ e. Écrire un programme qui demande à l'utilisateur d'entrer un chiffre (1 à 1
 * Écrire un programme qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.
 * utiliser une boucle `while` pour refaire une autre table tant que l’usager le souhaite.
 
-**Exemple de sortie :**
-```
-Entrez un nombre entre 1 et 12 : 7
-1 x 7 = 7
-2 x 7 = 14
-3 x 7 = 21
-...
-12 x 7 = 84
-```
+**Algorithme**
+
+a. Demander à l’usager d’entrer un nombre entier **entre 1 et 12**.
+b. Stocker ce nombre dans une variable, par exemple `n`.
+c. Pour afficher la table de multiplication:
+   * Créer une boucle (par exemple `for i in range(1, 13)`) pour calculer et afficher les produits : `i × n`
+   * Le résultat attendu est une table comme :
+     ```
+     1 × 7 = 7
+     2 × 7 = 14
+     ...
+     12 × 7 = 84
+     ```
+d. Après avoir affiché la table, demander à l’usager s’il veut recommencer.
+  * Exemple de question : « Veux-tu afficher une autre table ? (1 = oui, 0 = non) ».
+e. Répéter avec une boucle `while`: Tant que l’usager répond **1**, le programme recommence à l’étape a. Si l’usager répond **0**, le programme se termine.
+
+
 
 ## Exercice 3 – Utiliser `while` pour atteindre un objectif
 
@@ -71,14 +80,13 @@ Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
 
 **Exemple de sortie** :
 ```
-Température : 20.0 °C
-Température : 21.5 °C
-Température : 23.0 °C
-Température : 24.5 °C
-Température : 26.0 °C
-Température : 27.5 °C
-Température : 29.0 °C
-Température : 30.5 °C
+Température actuelle : 20.0 °C
+Température actuelle : 21.5 °C
+Température actuelle : 23.0 °C
+Température actuelle : 24.5 °C
+Température actuelle : 26.0 °C
+Température actuelle : 27.5 °C
+Température actuelle : 29.0 °C
 ```
 
 ## Exercice 4 – Répéter une mesure fixe avec `for`

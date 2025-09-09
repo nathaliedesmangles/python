@@ -2,7 +2,7 @@
 pre = "4."
 title = " Boucles et débogage simple"
 weight = 204
-draft = true
+draft = false
 +++
 
 
@@ -58,6 +58,15 @@ print("Température négative détectée. Fin du programme.")
 
 ### e. Tant que l'utilisateur ne tape pas 0
 
+**Boucle : `while`, sans `break`**
+
+```python
+valeur = int(input("Entrez un chiffre entre 1 et 10 (0 pour quitter) : "))
+while valeur != 0:
+    valeur = int(input("Entrez un chiffre entre 1 et 10 (0 pour quitter) : "))
+print("Fin du programme.")
+```
+
 **Boucle : `while`, avec `break` si nécessaire**
 
 ```python
@@ -69,18 +78,25 @@ while True:
 ```
 
 ---
+## Exercice 2 – Table de multiplication sans répétition
+
+```python
+n = int(input("Entrez un nombre entre 1 et 12 : "))
+for i in range(1, 13):
+    print(f"{i} x {n} = {i * n}")
+```
 
 ## Exercice 2 – Table de multiplication avec répétition
 
 ```python
-continuer = "oui"
+continuer = 1
 
-while continuer.lower() == "oui":
+while continuer != 0:
     n = int(input("Entrez un nombre entre 1 et 12 : "))
     for i in range(1, 13):
         print(f"{i} x {n} = {i * n}")
     
-    continuer = input("Voulez-vous une autre table ? (oui/non) : ")
+    continuer = input("Voulez-vous une autre table ? (1 = oui; 0 = non) : ")
 ```
 
 ---
