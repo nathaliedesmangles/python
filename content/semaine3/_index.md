@@ -16,7 +16,7 @@ weight = 103
 {{% notice style="accent" title="Apprendre par la pratique" %}}
 - **Faites les exercices** en vous aidant des notes de cours ci-dessous.
 - Certains seront fait en classe à titre de démonstration.
-- Les solutions seront disponibles à la fin de la semaine pochaine.
+- Les solutions seront disponibles à la fin de la semaine prochaine.
 {{% /notice %}}
 
 # Exercices
@@ -508,6 +508,8 @@ Pression (atm) : 2.0
 * Utiliser des conditions imbriquées ou combinées (`if ... and ...`, `elif`).
 * Pour simplifier, vous pouvez faire un `if` sur la pression pour définir le point d’ébullition.
 * Utilisez des variables pour stocker les seuils.
+* Utiliser `exit(0)` ou `exit()` pour arrêter le programme lorsqu'une pression invalide est saisie au clavier.
+    * Cela arrêtera Python et provoquera un message d'erreur.
 
 ### Exemple d’exécution
 

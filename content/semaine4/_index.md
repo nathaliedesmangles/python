@@ -51,7 +51,7 @@ e. Écrire un programme qui demande à l'utilisateur d'entrer un chiffre (1 à 1
 
 **Algorithme**
 
-a. Demander à l’usager d’entrer un nombre entier **entre 1 et 12**.
+a. Demander à l’usager d’entrer un nombre entier **entre 1 et 12**.  
 b. Stocker ce nombre dans une variable, par exemple `n`.
 c. Pour afficher la table de multiplication:
    * Créer une boucle (par exemple `for i in range(1, 13)`) pour calculer et afficher les produits : `i × n`
@@ -63,7 +63,7 @@ c. Pour afficher la table de multiplication:
      12 × 7 = 84
      ```
 d. Après avoir affiché la table, demander à l’usager s’il veut recommencer.
-  * Exemple de question : « Veux-tu afficher une autre table ? (1 = oui, 0 = non) ».
+  * Exemple de question : « Veux-tu afficher une autre table ? (1 = oui, 0 = non) ».  
 e. Répéter avec une boucle `while`: Tant que l’usager répond **1**, le programme recommence à l’étape a. Si l’usager répond **0**, le programme se termine.
 
 
@@ -368,7 +368,7 @@ N’écris pas tout d’un coup. Teste **par morceaux**.
 # Atelier
 
 1. Téléchargez le fichier de départ : [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_boucles.ipynb)
-2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 2**.
+2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 4**.
 3. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
    * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
 

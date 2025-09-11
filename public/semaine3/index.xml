@@ -3,7 +3,7 @@
   <channel>
     <title> Structures conditionnelles et algorithmes simples :: 420-SN1-RE</title>
     <link>https://example.org/semaine3/index.html</link>
-    <description>Objectifs Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Appliquer les structures conditionnelles (if, elif, else) à des contextes scientifiques simples. Écrire des algorithmes simples et les traduire en Python. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine pochaine.</description>
+    <description>Objectifs Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Appliquer les structures conditionnelles (if, elif, else) à des contextes scientifiques simples. Écrire des algorithmes simples et les traduire en Python. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine3/index.xml" rel="self" type="application/rss+xml" />
