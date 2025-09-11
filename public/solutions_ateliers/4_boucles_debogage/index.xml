@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Boucles de débogage simple :: 420-SN1-RE</title>
-    <link>http://localhost:1313/solutions_ateliers/4_boucles_debogage/index.html</link>
+    <link>https://example.org/solutions_ateliers/4_boucles_debogage/index.html</link>
     <description>Exercice 1 : Réaction chimique # Réaction : 1 mL de A + 2 mL de B a_dispo = int(input(&#34;Quantité de A disponible (en mL) : &#34;)) b_dispo = int(input(&#34;Quantité de B disponible (en mL) : &#34;)) nb_reactions = 0 while a_dispo &gt;= 1 and b_dispo &gt;= 2: a_dispo -= 1 b_dispo -= 2 nb_reactions += 1 print(&#34;La réaction a eu lieu&#34;, nb_reactions, &#34;fois.&#34;) print(&#34;Il reste&#34;, a_dispo, &#34;mL de A et&#34;, b_dispo, &#34;mL de B.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/solutions_ateliers/4_boucles_debogage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/solutions_ateliers/4_boucles_debogage/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

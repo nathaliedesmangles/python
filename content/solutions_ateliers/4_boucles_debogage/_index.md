@@ -2,7 +2,7 @@
 pre = "4."
 title = " Boucles de débogage simple"
 weight = 304
-draft = true
+draft = false
 +++
 
 
