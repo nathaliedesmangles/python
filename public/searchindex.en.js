@@ -193,16 +193,16 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles 04. Boucles et débogage simple",
-    "description": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles 04. Boucles et débogage simple",
+    "content": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple",
+    "description": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple",
     "tags": [],
     "title": "Solutions des exercices",
     "uri": "/solutions_exercices/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles 04. Boucles et débogage simple",
-    "description": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles 04. Boucles et débogage simple",
+    "content": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple",
+    "description": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple",
     "tags": [],
     "title": "Solutions des ateliers",
     "uri": "/solutions_ateliers/index.html"
