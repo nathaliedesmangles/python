@@ -75,21 +75,28 @@
       <link>https://example.org/semaine5/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine5/index.html</guid>
-      <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Durée:&#x9;2h (2h 40 pour les étudiant.e.s du SAA, avec inscription) Documentation permise: 3 feuilles recto-verso (manuscrites ou imprimées) Format de l’examen:&#x9;Test sur Moodle (théorique + pratique). un total de 20 questions, un mélange de questions à choix multiples (QCM), de questions à réponse courte (1 ligne) et de questions à trou, 3 questions à développement, où vous devrez écrire un petit programme en Python.</description>
+      <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 2 à 4 inclusivement Durée:&#x9;2h (2h 40 pour les étudiant.es du SAA, avec inscription) Documentation permise: 3 feuilles recto-verso (manuscrites ou imprimées) Format de l’examen:&#x9;Test sur Moodle (théorique + pratique). un total de 20 questions, un mélange de questions à choix multiples (QCM), de questions à réponse courte (1 ligne) et de questions à trou, 2 questions à développement, où vous devrez écrire un petit programme en Python.</description>
+    </item>
+    <item>
+      <title> Listes, chaînes et visualisation des données</title>
+      <link>https://example.org/semaine6/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/index.html</guid>
+      <description>Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.</description>
     </item>
     <item>
       <title>Solutions des exercices</title>
       <link>https://example.org/solutions_exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/index.html</guid>
-      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple</description>
+      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données</description>
     </item>
     <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions_ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/index.html</guid>
-      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple</description>
+      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données</description>
     </item>
   </channel>
 </rss>

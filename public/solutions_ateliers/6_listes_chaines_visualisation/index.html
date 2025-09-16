@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &#34;11.5, 18.2, 15.4&#34;, &#34;10.8, 17.6, 14.9&#34;, &#34;13.0, 19.1, 16.3&#34;, &#34;14.1, 20.2, 18.5&#34;, &#34;12.9, 18.7, 16.2&#34;, &#34;11.7, 17.8, 15.0&#34; ] # 1. Extraction et nettoyage temperatures = [] # liste imbriquée for ligne in donnees: trio = ligne.split(&#34;,&#34;) trio_float = [float(valeur.strip()) for valeur in trio] temperatures.append(trio_float) print(&#34;Liste des températures (liste imbriquée) :&#34;) print(temperatures) # 2.">
+    <meta name="description" content="import matplotlib.pyplot as plt # Données temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;] # 1.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Listes, chaines et visualisation des données :: 420-SN1-RE">
-    <meta name="twitter:description" content="import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &#34;11.5, 18.2, 15.4&#34;, &#34;10.8, 17.6, 14.9&#34;, &#34;13.0, 19.1, 16.3&#34;, &#34;14.1, 20.2, 18.5&#34;, &#34;12.9, 18.7, 16.2&#34;, &#34;11.7, 17.8, 15.0&#34; ] # 1. Extraction et nettoyage temperatures = [] # liste imbriquée for ligne in donnees: trio = ligne.split(&#34;,&#34;) trio_float = [float(valeur.strip()) for valeur in trio] temperatures.append(trio_float) print(&#34;Liste des températures (liste imbriquée) :&#34;) print(temperatures) # 2.">
-    <meta property="og:url" content="http://localhost:1313/solutions_ateliers/6_listes_chaines_visualisation/index.html">
+    <meta name="twitter:description" content="import matplotlib.pyplot as plt # Données temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;] # 1.">
+    <meta property="og:url" content="https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Listes, chaines et visualisation des données :: 420-SN1-RE">
-    <meta property="og:description" content="import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &#34;11.5, 18.2, 15.4&#34;, &#34;10.8, 17.6, 14.9&#34;, &#34;13.0, 19.1, 16.3&#34;, &#34;14.1, 20.2, 18.5&#34;, &#34;12.9, 18.7, 16.2&#34;, &#34;11.7, 17.8, 15.0&#34; ] # 1. Extraction et nettoyage temperatures = [] # liste imbriquée for ligne in donnees: trio = ligne.split(&#34;,&#34;) trio_float = [float(valeur.strip()) for valeur in trio] temperatures.append(trio_float) print(&#34;Liste des températures (liste imbriquée) :&#34;) print(temperatures) # 2.">
+    <meta property="og:description" content="import matplotlib.pyplot as plt # Données temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;] # 1.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Listes, chaines et visualisation des données :: 420-SN1-RE">
-    <meta itemprop="description" content="import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &#34;11.5, 18.2, 15.4&#34;, &#34;10.8, 17.6, 14.9&#34;, &#34;13.0, 19.1, 16.3&#34;, &#34;14.1, 20.2, 18.5&#34;, &#34;12.9, 18.7, 16.2&#34;, &#34;11.7, 17.8, 15.0&#34; ] # 1. Extraction et nettoyage temperatures = [] # liste imbriquée for ligne in donnees: trio = ligne.split(&#34;,&#34;) trio_float = [float(valeur.strip()) for valeur in trio] temperatures.append(trio_float) print(&#34;Liste des températures (liste imbriquée) :&#34;) print(temperatures) # 2.">
-    <meta itemprop="wordCount" content="287">
+    <meta itemprop="description" content="import matplotlib.pyplot as plt # Données temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;] # 1.">
+    <meta itemprop="wordCount" content="185">
     <title> Listes, chaines et visualisation des données :: 420-SN1-RE</title>
     <link href="/solutions_ateliers/6_listes_chaines_visualisation/index.xml" rel="alternate" type="application/rss+xml" title=" Listes, chaines et visualisation des données :: 420-SN1-RE">
-    <link href="/images/logo.png?1758028745" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758028745" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758028745" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758028745" rel="stylesheet">
-    <link href="/css/theme.css?1758028745" rel="stylesheet">
-    <link href="/css/format-html.css?1758028745" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1758028745" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1758028745" defer></script>
-    <script src="/js/lunr/lunr.min.js?1758028745" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1758028745" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1758028745" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1758028745" defer></script>
-    <script src="/js/search.js?1758028745" defer></script>
+    <link href="/images/logo.png?1758063137" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758063137" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758063137" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758063137" rel="stylesheet">
+    <link href="/css/theme.min.css?1758063137" rel="stylesheet">
+    <link href="/css/format-html.min.css?1758063137" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1758063137" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1758063137" defer></script>
+    <script src="/js/lunr/lunr.min.js?1758063137" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1758063137" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1758063137" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1758063137" defer></script>
+    <script src="/js/search.min.js?1758063137" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = ``;
+      window.relearn.min = `.min`;
       window.relearn.path='\/solutions_ateliers\/6_listes_chaines_visualisation\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1758028745";
+      window.relearn.index_js_url="/searchindex.en.js?1758063137";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1758028745" rel="stylesheet">
+    <link href="/css/custom.css?1758063137" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_ateliers/6_listes_chaines_visualisation/index.html">
     <div id="R-body" class="default-animation">
@@ -101,16 +101,7 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-<nav class="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#résultat-attendu-valeurs-approximatives-à-cause-des-arrondis-">Résultat attendu (valeurs approximatives à cause des arrondis) :</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+                <div class="topbar-content-wrapper"> 
                 </div>
               </div>
             </div>
@@ -123,7 +114,7 @@
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/4_boucles_debogage/index.html" title="Boucles de débogage simple (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/7_numpy_regression/index.html" title="Tableaux NumPy et droite de régression (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -147,94 +138,54 @@
 
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données brutes sous forme de chaînes</span>
-</span></span><span style="display:flex;"><span>donnees <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;12.3, 16.8, 14.0&#34;</span>,  <span style="color:#75715e"># jour 1 : matin, midi, soir</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;11.5, 18.2, 15.4&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;10.8, 17.6, 14.9&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;13.0, 19.1, 16.3&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;14.1, 20.2, 18.5&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;12.9, 18.7, 16.2&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;11.7, 17.8, 15.0&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">14</span>, <span style="color:#ae81ff">14</span>, <span style="color:#ae81ff">17</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">19</span>],  <span style="color:#75715e"># Ville A</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">22</span>, <span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">21</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">24</span>, <span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">26</span>],  <span style="color:#75715e"># Ville B</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">7</span>],         <span style="color:#75715e"># Ville C</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">14</span>, <span style="color:#ae81ff">15</span>]   <span style="color:#75715e"># Ville D</span>
 </span></span><span style="display:flex;"><span>]
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>villes <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Ville A&#34;</span>, <span style="color:#e6db74">&#34;Ville B&#34;</span>, <span style="color:#e6db74">&#34;Ville C&#34;</span>, <span style="color:#e6db74">&#34;Ville D&#34;</span>]
+</span></span><span style="display:flex;"><span>jours <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Lun&#34;</span>, <span style="color:#e6db74">&#34;Mar&#34;</span>, <span style="color:#e6db74">&#34;Mer&#34;</span>, <span style="color:#e6db74">&#34;Jeu&#34;</span>, <span style="color:#e6db74">&#34;Ven&#34;</span>, <span style="color:#e6db74">&#34;Sam&#34;</span>, <span style="color:#e6db74">&#34;Dim&#34;</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. Extraction et nettoyage</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. Affichage des températures</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(villes)):
+</span></span><span style="display:flex;"><span>    print(villes[i], <span style="color:#e6db74">&#34;:&#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(temperatures[i])):
+</span></span><span style="display:flex;"><span>        print(temperatures[i][j], end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>    print()  <span style="color:#75715e"># retour à la ligne</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> []  <span style="color:#75715e"># liste imbriquée</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Min et max</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(villes)):
+</span></span><span style="display:flex;"><span>    tmax <span style="color:#f92672">=</span> max(temperatures[i])
+</span></span><span style="display:flex;"><span>    tmin <span style="color:#f92672">=</span> min(temperatures[i])
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La température maximale de </span><span style="color:#e6db74">{</span>villes[i]<span style="color:#e6db74">}</span><span style="color:#e6db74"> est </span><span style="color:#e6db74">{</span>tmax<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C&#34;</span>)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La température minimale de </span><span style="color:#e6db74">{</span>villes[i]<span style="color:#e6db74">}</span><span style="color:#e6db74"> est </span><span style="color:#e6db74">{</span>tmin<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> donnees:
-</span></span><span style="display:flex;"><span>     trio <span style="color:#f92672">=</span> ligne<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)
-</span></span><span style="display:flex;"><span>     trio_float <span style="color:#f92672">=</span> [float(valeur<span style="color:#f92672">.</span>strip()) <span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> trio]
-</span></span><span style="display:flex;"><span>     temperatures<span style="color:#f92672">.</span>append(trio_float)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. Classification des températures</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(villes)):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Classification pour </span><span style="color:#e6db74">{</span>villes[i]<span style="color:#e6db74">}</span><span style="color:#e6db74"> :&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(temperatures[i])):
+</span></span><span style="display:flex;"><span>        t <span style="color:#f92672">=</span> temperatures[i][j]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> t <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+</span></span><span style="display:flex;"><span>            print(t, <span style="color:#e6db74">&#34;=&gt; Froide&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">&lt;=</span> t <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">20</span>:
+</span></span><span style="display:flex;"><span>            print(t, <span style="color:#e6db74">&#34;=&gt; Douce&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            print(t, <span style="color:#e6db74">&#34;=&gt; Chaud&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Liste des températures (liste imbriquée) :&#34;</span>)
-</span></span><span style="display:flex;"><span>print(temperatures)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4. Graphique</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(villes)):
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>plot(jours, temperatures[i], label<span style="color:#f92672">=</span>villes[i])
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Calculs sur les données</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Moyenne par jour</span>
-</span></span><span style="display:flex;"><span>moyennes_journalières <span style="color:#f92672">=</span> []
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> jour <span style="color:#f92672">in</span> temperatures:
-</span></span><span style="display:flex;"><span>     moyenne <span style="color:#f92672">=</span> sum(jour) <span style="color:#f92672">/</span> len(jour)
-</span></span><span style="display:flex;"><span>     moyennes_journalières<span style="color:#f92672">.</span>append(moyenne)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Températures moyennes par jour :&#34;</span>)
-</span></span><span style="display:flex;"><span>print(moyennes_journalières)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Température maximale et jour</span>
-</span></span><span style="display:flex;"><span>toutes_valeurs <span style="color:#f92672">=</span> [temp <span style="color:#66d9ef">for</span> jour <span style="color:#f92672">in</span> temperatures <span style="color:#66d9ef">for</span> temp <span style="color:#f92672">in</span> jour]
-</span></span><span style="display:flex;"><span>temp_max <span style="color:#f92672">=</span> max(toutes_valeurs)
-</span></span><span style="display:flex;"><span>index_max <span style="color:#f92672">=</span> toutes_valeurs<span style="color:#f92672">.</span>index(temp_max)
-</span></span><span style="display:flex;"><span>jour_max <span style="color:#f92672">=</span> index_max <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Température maximale : </span><span style="color:#e6db74">{</span>temp_max<span style="color:#e6db74">}</span><span style="color:#e6db74">°C (Jour </span><span style="color:#e6db74">{</span>jour_max<span style="color:#e6db74">}</span><span style="color:#e6db74">)&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Moyenne globale</span>
-</span></span><span style="display:flex;"><span>moyenne_generale <span style="color:#f92672">=</span> sum(toutes_valeurs) <span style="color:#f92672">/</span> len(toutes_valeurs)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Température moyenne de la semaine : </span><span style="color:#e6db74">{</span>moyenne_generale<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">°C&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. Visualisation avec matplotlib</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>jours <span style="color:#f92672">=</span> list(range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">8</span>))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(jours, moyennes_journalières, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;blue&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Moyenne quotidienne&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Températures moyennes par jour&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Températures hebdomadaires&#34;</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Jour&#34;</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Température (°C)&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;graphique_temperature.png&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4. Exploration des chaînes de caractères (températures de midi)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>nb_midi_sup_18 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> donnees:
-</span></span><span style="display:flex;"><span>     valeurs <span style="color:#f92672">=</span> ligne<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>)
-</span></span><span style="display:flex;"><span>     midi <span style="color:#f92672">=</span> float(valeurs[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>strip())
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span> midi <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">18</span>:
-</span></span><span style="display:flex;"><span>         nb_midi_sup_18 <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Nombre de jours où la température de midi a dépassé 18°C : </span><span style="color:#e6db74">{</span>nb_midi_sup_18<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
-<hr>
-<h3 id="résultat-attendu-valeurs-approximatives-à-cause-des-arrondis-">Résultat attendu (valeurs approximatives à cause des arrondis) :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Liste des températures (liste imbriquée) :
-[[12.3, 16.8, 14.0], [11.5, 18.2, 15.4], ..., [11.7, 17.8, 15.0]]
-
-Températures moyennes par jour :
-[14.37, 15.03, 14.43, 16.13, 17.6, 15.93, 14.83]
-
-Température maximale : 20.2°C (Jour 5)
-
-Température moyenne de la semaine : 15.47°C
-
-Nombre de jours où la température de midi a dépassé 18°C : 2</code></pre></div>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;temperatures.png&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -284,36 +235,23 @@ Nombre de jours où la température de midi a dépassé 18°C : 2</code></pre></
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
-            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
             <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
             <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
             <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
             <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
             <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
             <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Tableaux numpy et droite de régression</a></li>
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires et fichiers texte (csv)</a></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Révision ou rattrapage</a></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> Projet - Présentation, analyse et traduction</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="parent " data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu">
             <li class="" data-nav-id="/solutions_ateliers/2_variables_types_entrees_fn/index.html"><a class="padding" href="/solutions_ateliers/2_variables_types_entrees_fn/index.html"><b>2.</b> Variables, types, entrées et fonction</a></li>
             <li class="" data-nav-id="/solutions_ateliers/3_struct_cond/index.html"><a class="padding" href="/solutions_ateliers/3_struct_cond/index.html"><b>3.</b> Structures conditionnelles</a></li>
             <li class="" data-nav-id="/solutions_ateliers/4_boucles_debogage/index.html"><a class="padding" href="/solutions_ateliers/4_boucles_debogage/index.html">4. Boucles de débogage simple</a></li>
-            <li class="active " data-nav-id="/solutions_ateliers/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_ateliers/6_listes_chaines_visualisation/index.html">6. Listes, chaines et visualisation des données</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/7_numpy_regression/index.html"><a class="padding" href="/solutions_ateliers/7_numpy_regression/index.html"><b>7.</b> Tableaux NumPy et droite de régression</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/8_dict_fichiers/index.html"><a class="padding" href="/solutions_ateliers/8_dict_fichiers/index.html">8. Dictionnaires et fichiers texte</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/9_revision/index.html"><a class="padding" href="/solutions_ateliers/9_revision/index.html"><b>9.</b> Révision</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/11_fonctions_perso/index.html"><a class="padding" href="/solutions_ateliers/11_fonctions_perso/index.html"><b>11.</b> Fonctions personnalisées</a></li></ul></li>
+            <li class="active " data-nav-id="/solutions_ateliers/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_ateliers/6_listes_chaines_visualisation/index.html">6. Listes, chaines et visualisation des données</a></li></ul></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
@@ -331,8 +269,8 @@ Nombre de jours où la température de midi a dépassé 18°C : 2</code></pre></
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1758028745" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758028745" defer></script>
-    <script src="/js/theme.js?1758028745" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1758063137" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758063137" defer></script>
+    <script src="/js/theme.min.js?1758063137" defer></script>
   </body>
 </html>

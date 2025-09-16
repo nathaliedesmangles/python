@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des ateliers :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/index.html</link>
-    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple</description>
+    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_ateliers/index.xml" rel="self" type="application/rss+xml" />
@@ -27,6 +27,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/4_boucles_debogage/index.html</guid>
       <description>Exercice 1 : Réaction chimique # Réaction : 1 mL de A + 2 mL de B a_dispo = int(input(&#34;Quantité de A disponible (en mL) : &#34;)) b_dispo = int(input(&#34;Quantité de B disponible (en mL) : &#34;)) nb_reactions = 0 while a_dispo &gt;= 1 and b_dispo &gt;= 2: a_dispo -= 1 b_dispo -= 2 nb_reactions += 1 print(&#34;La réaction a eu lieu&#34;, nb_reactions, &#34;fois.&#34;) print(&#34;Il reste&#34;, a_dispo, &#34;mL de A et&#34;, b_dispo, &#34;mL de B.</description>
+    </item>
+    <item>
+      <title> Listes, chaines et visualisation des données</title>
+      <link>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</guid>
+      <description>import matplotlib.pyplot as plt # Données temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;] # 1.</description>
     </item>
   </channel>
 </rss>

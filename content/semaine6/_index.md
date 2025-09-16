@@ -3,7 +3,7 @@ chapter = true
 pre = "<b>6.</b>"
 title = " Listes, chaînes et visualisation des données"
 weight = 106
-draft = true
+draft = false
 +++
 
 
@@ -40,21 +40,68 @@ draft = true
 
 ### Exercice 1 :
 
-* Crée une liste contenant 5 animaux. Affiche chaque animal avec une phrase du type :
+* Crée une liste contenant 5 animaux. 
+* À l'aide d'une boucle `for`, affiche chaque animal avec une phrase du type :
 ```text
 Voici un/une <animal>
+```
+
+**Exemple de résultat avec la liste** ["chat", "chien", "lapin", "perroquet", "tigre"] :
+```
+Voici un/une chat
+Voici un/une chien
+Voici un/une lapin
+Voici un/une perroquet
+Voici un/une tigre
 ```
  
 ### Exercice 2 :
 
 * Crée une grille de 5 lignes et 4 colonnes (liste de listes) contenant des chiffres. 
-* Affiche tous les chiffres un par un.
+* À l'aide d'une boucle `for`, affiche tous les chiffres un par un.
+
+**Résultat attendu** :
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+```
 
 ### Exercice 3 :
 
-* Demande à l’utilisateur d’entrer 3 prénoms et stocke-les dans une liste.
-* Affiche chaque prénom en ordre alphabétique croissant.  
-* Affiche chaque prénom en ordre alphabétique décroissant. 
+* Demande à l’utilisateur d’entrer 3 prénoms et ajoute-les dans une liste (avec `append()`).
+* Affiche chaque prénom en ordre alphabétique croissant (avec `sorted()`).  
+* Affiche chaque prénom en ordre alphabétique décroissant (avec `sorted()` et `reverse=True`). 
+
+**Exemple de résultat** :
+```
+Ordre alphabétique croissant :
+Alice
+Lise
+Pierre
+Ordre alphabétique décroissant :
+Pierre
+Lise
+Alice
+```
+
 
 ### Exercice 4
 
@@ -66,8 +113,16 @@ suspects = [
     ["A", "T", "T", "G"]
 ]
 ```
-* Affiche la 2e base de la 1re séquence.
-* Affiche la dernière base de la 3e séquence.
+
+* À l'aide des indices `rangée` et `colonne`:
+	* Affiche la 2e base de la 1re séquence.
+	* Affiche la dernière base de la 3e séquence.
+
+**Résultat attendu** :
+```
+T
+G
+```
 
 ---
 
@@ -75,20 +130,31 @@ suspects = [
 
 ### Exercice 5 - Créer une liste de nombres à partir d'une liste de mots
 
-* Utiliser une boucle pour obtenir le nombre de lettres de chaque mot
-* Pour chacun des mots, ajouter son nombre de lettres dans la liste `nb_lettres`.
+* Utiliser une boucle et `len()` pour obtenir le nombre de lettres de chaque mot.
+* Pour chacun des mots, ajouter son nombre de lettres dans la liste `nb_lettres` avec `append()`.
+* Afficher la liste `nb_lettres`.
 
 ```python
 mots = ["chlorophylle", "atome", "protéine"]
 nb_lettres = []
 ```
 
+**Résultat attendu** :
+```
+[12, 5, 8]
+```
+
 ### Exercice 6 - Convertir en ARN
 
 Une séquence d’ADN est "atgct".
 
-* Mets-la en minuscules.
-* Remplace les "T" par "U".
+* Mets-la en majuscules (avec `upper()`).
+* Remplace les "T" par "U" (avec `replace()`).
+
+**Résultat attendu** :
+```
+AUGCU
+```
 
 ---
 
@@ -96,16 +162,19 @@ Une séquence d’ADN est "atgct".
 
 ### Exercice 7 – Température dans une journée
 
-* À partir des deux listes ci-dessous, crée un graphique de la température en fonction de l’heure.
+* À partir des deux listes ci-dessous, crée un graphique de la température en fonction de l’heure. Utilise `plot()` et `show()`
 ```python
 heures = [0, 4, 8, 12, 16, 20, 24]
 temperatures = [-5, -2, 3, 7, 6, 1, -2]
 ```
 
 * Ajoute :
-	* Un titre `"Température en fonction de l’heure"`
-	* Les étiquettes `"Heure (h)"` et `"Température (C)"`
-	* Une grille
+	* Un titre `"Température en fonction de l’heure"`. Utilise `title()`.
+	* Les étiquettes `"Heure (h)"` et `"Température (C)"`. Utilise `xlabel()` et `ylabel()`
+	* Une grille. Utilise `grid()`
+
+**Graphique attendu** :
+![Température heure](./exo7.png?width=40vw)
 
 
 ### Exercice 8 - Comparaison des valeurs mesurées et attendues
@@ -121,6 +190,9 @@ mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
 	* Affiche les **valeurs attendues** avec `plt.plot(...)` (ligne noire avec des ronds).
 	* Affiche les **valeurs mesurées** avec `plt.bar(...)` (barres bleues légèrement transparentes).
 	* Ajoute un **titre**, une **légende**, les **étiquettes d’axes** et une **grille**.
+
+**Graphique attendu** :
+![Température heure](./exo8.png?width=40vw)
 
 ---
 
@@ -571,79 +643,129 @@ plt.savefig("figure.png")
 3. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
    * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
 
+---
+
 ## Exercice 
 
-Une station météorologique t’a envoyé les relevés bruts de températures (en °C) prises 3 fois par jour (matin, midi, soir) pendant 7 jours.
+Un chercheur a mesuré la **température moyenne (°C)** de quatre villes pendant une semaine. Les données sont regroupées dans une **liste de listes**. Vous devez analyser et représenter ces données.
 
-Tu disposes de la variable suivante :
+1. **Les données**
 
-```python
-donnees = [
-    "12.3, 16.8, 14.0",  # jour 1 : matin, midi, soir
-    "11.5, 18.2, 15.4",
-    "10.8, 17.6, 14.9",
-    "13.0, 19.1, 16.3",
-    "14.1, 20.2, 18.5",
-    "12.9, 18.7, 16.2",
-    "11.7, 17.8, 15.0"
-]
+   * Créez une liste `temperatures` contenant les valeurs suivantes (une sous-liste par ville) :
+
+     * Ville A : `[15, 16, 14, 14, 17, 18, 19]`
+     * Ville B : `[22, 23, 21, 20, 24, 25, 26]`
+     * Ville C : `[5, 7, 6, 6, 8, 9, 7]`
+     * Ville D : `[10, 11, 12, 10, 13, 14, 15]`
+
+   * Créez aussi deux listes :
+
+     * `villes = ["Ville A", "Ville B", "Ville C", "Ville D"]`
+     * `jours = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"]`
+
+2. **Afficher les températures**
+
+   * À l’aide de **boucles imbriquées** (`for ... :` dans `for ... :`), affichez les températures de chaque ville.
+   * Exemple attendu :
+
+     ```
+     Ville A : 15 16 14 14 17 18 19
+     Ville B : 22 23 21 20 24 25 26
+     ...
+     ```
+
+3. **Trouver les valeurs extrêmes**
+
+   * Pour chaque ville, utilisez les fonctions `max()` et `min()` pour trouver la température maximale et minimale.
+   * Affichez-les sous forme de phrases complètes, par exemple :
+
+     ```
+     La température maximale de Ville A est 19 C
+     La température minimale de Ville A est 14 C
+     ```
+
+4. **Classer les températures**
+
+   * Pour chaque température de chaque ville, affichez (`if / elif / else`):
+
+     * `"Froide"` si T < 10
+     * `"Douce"` si 10 ≤ T ≤ 20
+     * `"Chaud"` si T > 20
+   
+   * Exemple :
+
+     ```
+     15 => Douce
+     7 => Froide
+     23 => Chaud
+     ```
+
+5. **Tracer un graphique avec matplotlib**
+
+   * Utilisez une boucle pour tracer la courbe des températures de chaque ville (`plt.plot`).
+   * Ajoutez :
+     * Un **titre** : `"Températures hebdomadaires"`
+     * Les étiquettes des axes (`xlabel`, `ylabel`)
+     * Une **grille** (`grid`)
+     * Une **légende** (`legend`)
+   * Sauvegardez le graphique dans un fichier `"temperatures.png"` (`savefig`)
+   * Affichez-le (`show`).
+
+
+
+**Résultats attendus** :
+```
+Ville A : 15 16 14 14 17 18 19 
+Ville B : 22 23 21 20 24 25 26 
+Ville C : 5 7 6 6 8 9 7 
+Ville D : 10 11 12 10 13 14 15 
+La température maximale de Ville A est 19 C
+La température minimale de Ville A est 14 C
+La température maximale de Ville B est 26 C
+La température minimale de Ville B est 20 C
+La température maximale de Ville C est 9 C
+La température minimale de Ville C est 5 C
+La température maximale de Ville D est 15 C
+La température minimale de Ville D est 10 C
+
+Classification pour Ville A :
+15 => Douce
+16 => Douce
+14 => Douce
+14 => Douce
+17 => Douce
+18 => Douce
+19 => Douce
+
+Classification pour Ville B :
+22 => Chaud
+23 => Chaud
+21 => Chaud
+20 => Douce
+24 => Chaud
+25 => Chaud
+26 => Chaud
+
+Classification pour Ville C :
+5 => Froide
+7 => Froide
+6 => Froide
+6 => Froide
+8 => Froide
+9 => Froide
+7 => Froide
+
+Classification pour Ville D :
+10 => Douce
+11 => Douce
+12 => Douce
+10 => Douce
+13 => Douce
+14 => Douce
+15 => Douce
 ```
 
-### Étapes à suivre :
-
-1. **Extraction et nettoyage des données**
-
-   * Transforme chaque chaîne de la liste `donnees` en une **liste de 3 nombres flottants**.
-   * Obtiens ainsi une **liste imbriquée** `temperatures`, contenant 7 sous-listes (une par jour).
-
-2. **Calculs sur les données**
-
-   * Calcule la température moyenne de chaque jour, et stocke les résultats dans une **nouvelle liste** `moyennes_journalières`.
-   * Trouve la température **maximale** de toute la semaine et **quel jour** elle a eu lieu.
-   * Calcule la température **moyenne générale** sur l’ensemble de la semaine (toutes les valeurs confondues).
-
-3. **Visualisation avec matplotlib**
-
-   * Crée une figure avec :
-
-     * l’axe X : jours (1 à 7)
-     * l’axe Y : température moyenne journalière
-   * Ajoute un **titre** et des **étiquettes d’axes**
-   * Ajoute une **grille** et une **courbe** bleue avec marqueurs ronds (`'o'`)
-   * **Sauvegarde** le graphique sous le nom `graphique_temperature.png`
-
-![Graphique](./graphique_temperature.png?width=45vw)
-
-4. **Exploration des chaînes de caractères**
-
-   * Affiche le nombre de jours où la température du midi a dépassé **18°C**
-   * Utilise la fonction `split()` pour isoler les températures de midi dans chaque chaîne.
-
-
-### Exemple d’affichage attendu (partiel) :
-
-```
-Liste des températures (liste imbriquée) :
-[[12.3, 16.8, 14.0], [11.5, 18.2, 15.4], ..., [11.7, 17.8, 15.0]]
-
-Températures moyennes par jour :
-[14.37, 15.03, 14.43, ..., 14.83]
-
-Température maximale : 20.2°C (Jour 5)
-
-Température moyenne de la semaine : 15.01°C
-
-Nombre de jours où la température de midi a dépassé 18°C : 2
-```
-
-### Boîte à outils
-
-* `float()` pour convertir un texte en nombre
-* `split(',')` pour découper une chaîne
-* `append()` pour ajouter dans une liste
-* `sum()` et `len()` pour les moyennes
-* `plt.plot()`, `plt.title()`, `plt.xlabel()`, `plt.grid()`, `plt.savefig()`
-
+![Graphique Temperatures](./temperatures.png?width=40vw)
 ---
 
 ## À faire avant le prochain cours

@@ -2,13 +2,13 @@
 pre = "6."
 title = " Listes, chaines et visualisation des données"
 weight = 206
-draft = true
+draft = false
 +++
 
 
-### **Listes**
+## Listes
 
-#### Exercice 1
+### Exercice 1
 
 ```python
 animaux = ["chat", "chien", "lapin", "perroquet", "tigre"]
@@ -17,9 +17,8 @@ for animal in animaux:
       print(f"Voici un/une {animal}")
 ```
 
----
 
-#### Exercice 2
+### Exercice 2
 
 ```python
 grille = [
@@ -35,31 +34,29 @@ for ligne in grille:
         print(chiffre)
 ```
 
----
 
-#### Exercice 3
+### Exercice 3
 
 ```python
-noms = []
+prenoms = []
 
 for i in range(3):
-    nom = input(f"Entrez le nom {i+1} : ")
-    noms.append(nom)
+    prenom = input(f"Entrez le prénom {i+1} : ")
+    prenoms.append(prenom)
 
 print("Ordre alphabétique croissant :")
 
-for nom in sorted(noms):
-    print(nom)
+for prenom in sorted(prenoms):
+    print(prenom)
 
 print("Ordre alphabétique décroissant :")
 
-for nom in sorted(noms, reverse=True):
-    print(nom)
+for prenom in sorted(prenoms, reverse=True):
+    print(prenom)
 ```
 
----
 
-#### Exercice 4
+### Exercice 4
 
 ```python
 suspects = [
@@ -76,9 +73,9 @@ print(suspects[2][-1])  # dernière base de la 3e séquence → G
 ---
 
 
-### **Chaînes de caractères**
+## Chaînes de caractères
 
-#### Exercice 5
+### Exercice 5
 
 ```python
 mots = ["chlorophylle", "atome", "protéine"]
@@ -91,22 +88,21 @@ for mot in mots:
 print(nb_lettres)  # [12, 5, 8]
 ```
 
----
 
-#### Exercice 6
+### Exercice 6
 
 ```python
-adn = "ATGCT"
-arn = adn.lower().replace("t", "u")
-print(arn)  # augcu
+adn = "atgct"
+arn = adn.upper().replace("T", "U")
+print(arn)  # AUGCU
 ```
 
 ---
 
 
-### **Graphiques avec matplotlib**
+## Graphiques avec matplotlib
 
-#### Exercice 7
+### Exercice 7
 
 ```python
 import matplotlib.pyplot as plt
@@ -117,14 +113,13 @@ temperatures = [-5, -2, 3, 7, 6, 1, -2]
 plt.plot(heures, temperatures)
 plt.title("Température en fonction de l’heure")
 plt.xlabel("Heure (h)")
-plt.ylabel("Température (°C)")
+plt.ylabel("Température (C)")
 plt.grid()
 plt.show()
 ```
 
----
 
-#### Exercice 8
+### Exercice 8
 
 ```python
 import matplotlib.pyplot as plt
@@ -137,7 +132,7 @@ plt.plot(temp, attendu, "ok-", label="Valeurs attendues")  # o = rond, k = noir,
 plt.bar(temp, mesure, color="blue", alpha=0.5, label="Valeurs mesurées")
 
 plt.title("Comparaison des concentrations")
-plt.xlabel("Température (°C)")
+plt.xlabel("Température (C)")
 plt.ylabel("Concentration")
 plt.grid()
 plt.legend()

@@ -67,6 +67,9 @@
     <loc>https://example.org/semaine5/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine6/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine12/grille/index.html</loc>
   </url>
   <url>
@@ -85,6 +88,9 @@
     <loc>https://example.org/solutions_exercices/4_boucles_debogage/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/solutions_ateliers/index.html</loc>
   </url>
   <url>
@@ -95,6 +101,9 @@
   </url>
   <url>
     <loc>https://example.org/solutions_ateliers/4_boucles_debogage/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>

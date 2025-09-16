@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Listes, chaines et visualisation des données :: 420-SN1-RE</title>
-    <link>http://localhost:1313/solutions_ateliers/6_listes_chaines_visualisation/index.html</link>
-    <description>import matplotlib.pyplot as plt # Données brutes sous forme de chaînes donnees = [ &#34;12.3, 16.8, 14.0&#34;, # jour 1 : matin, midi, soir &#34;11.5, 18.2, 15.4&#34;, &#34;10.8, 17.6, 14.9&#34;, &#34;13.0, 19.1, 16.3&#34;, &#34;14.1, 20.2, 18.5&#34;, &#34;12.9, 18.7, 16.2&#34;, &#34;11.7, 17.8, 15.0&#34; ] # 1. Extraction et nettoyage temperatures = [] # liste imbriquée for ligne in donnees: trio = ligne.split(&#34;,&#34;) trio_float = [float(valeur.strip()) for valeur in trio] temperatures.append(trio_float) print(&#34;Liste des températures (liste imbriquée) :&#34;) print(temperatures) # 2.</description>
+    <link>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</link>
+    <description>import matplotlib.pyplot as plt # Données temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;] # 1.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/solutions_ateliers/6_listes_chaines_visualisation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

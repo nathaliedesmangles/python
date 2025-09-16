@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des exercices :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/index.html</link>
-    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple</description>
+    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/index.xml" rel="self" type="application/rss+xml" />
@@ -27,6 +27,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/4_boucles_debogage/index.html</guid>
       <description>Exercice 1 – For ou While ? a. Afficher les nombres de 1 à 10 Boucle : for (on connaît le début et la fin)&#xA;for i in range(1, 11): print(i)&#xD;b. Compter jusqu’à 100 par bonds de 10 Boucle : for&#xA;for i in range(0, 101, 10): print(i)&#xD;c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s) Boucle : while (on ne connaît pas d’avance le nombre de répétitions, mais on connaît la condition d’arrêt)</description>
+    </item>
+    <item>
+      <title> Listes, chaines et visualisation des données</title>
+      <link>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</guid>
+      <description>Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;)&#xD;Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre)&#xD;Exercice 3 prenoms = [] for i in range(3): prenom = input(f&#34;Entrez le prénom {i+1} : &#34;) prenoms.append(prenom) print(&#34;Ordre alphabétique croissant :&#34;) for prenom in sorted(prenoms): print(prenom) print(&#34;Ordre alphabétique décroissant :&#34;) for prenom in sorted(prenoms, reverse=True): print(prenom)&#xD;Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → G&#xD;Chaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.</description>
     </item>
   </channel>
 </rss>
