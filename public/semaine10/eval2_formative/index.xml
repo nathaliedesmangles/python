@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Évaluation formative :: 420-SN1-RE</title>
+    <link>http://localhost:1313/semaine10/eval2_formative/index.html</link>
+    <description>Parfait. Voici un examen formatif structuré exactement comme l’examen sommatif, pour que vos étudiant·es puissent s’y préparer efficacement. Il couvre les mêmes compétences, avec des énoncés différents mais comparables en complexité.&#xA;🧪 Examen formatif – Programmation Python Durée suggérée : 2h – VS Code + 1 feuille de notes autorisée&#xA;🌬️ Question 1 – Conditions et météo (20 pts) On veut interpréter un indice de qualité de l’air (IQA) selon les valeurs suivantes :</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/semaine10/eval2_formative/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

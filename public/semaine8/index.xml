@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Dictionnaires et fichiers texte (csv) :: 420-SN1-RE</title>
-    <link>https://example.org/semaine8/index.html</link>
-    <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Qu’est-ce qu’un dictionnaire? Un dictionnaire est une structure de données qui associe des clés à des valeurs. Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</description>
+    <link>http://localhost:1313/semaine8/index.html</link>
+    <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données Filtrer les résultats pour donnée ciblée. Comparer des valeurs selon une donnée Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine8/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine8/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

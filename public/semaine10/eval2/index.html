@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Voici un **examen pratique de 2 heures** conçu pour évaluer les compétences mentionnées. Il comprend **5 questions progressives**, certaines en lien avec des contextes scientifiques, et couvrant **conditions**, **boucles**, **listes**, **chaînes**, et **matplotlib**. Les étudiants peuvent utiliser **VS Code** et **une feuille de notes recto-verso**.
+# 🔬 Examen pratique – Programmation Python (durée : 2h)
+**Instructions générales :**
+* Répondez directement dans les cellules de code.
+* Nommez le fichier examen\_prenom\_nom.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Évaluation 2 (25%) :: 420-SN1-RE">
+    <meta name="twitter:description" content="Voici un **examen pratique de 2 heures** conçu pour évaluer les compétences mentionnées. Il comprend **5 questions progressives**, certaines en lien avec des contextes scientifiques, et couvrant **conditions**, **boucles**, **listes**, **chaînes**, et **matplotlib**. Les étudiants peuvent utiliser **VS Code** et **une feuille de notes recto-verso**.
+# 🔬 Examen pratique – Programmation Python (durée : 2h)
+**Instructions générales :**
+* Répondez directement dans les cellules de code.
+* Nommez le fichier examen\_prenom\_nom.">
+    <meta property="og:url" content="http://localhost:1313/semaine10/eval2/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Évaluation 2 (25%) :: 420-SN1-RE">
+    <meta property="og:description" content="Voici un **examen pratique de 2 heures** conçu pour évaluer les compétences mentionnées. Il comprend **5 questions progressives**, certaines en lien avec des contextes scientifiques, et couvrant **conditions**, **boucles**, **listes**, **chaînes**, et **matplotlib**. Les étudiants peuvent utiliser **VS Code** et **une feuille de notes recto-verso**.
+# 🔬 Examen pratique – Programmation Python (durée : 2h)
+**Instructions générales :**
+* Répondez directement dans les cellules de code.
+* Nommez le fichier examen\_prenom\_nom.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Évaluation 2 (25%) :: 420-SN1-RE">
+    <meta itemprop="description" content="Voici un **examen pratique de 2 heures** conçu pour évaluer les compétences mentionnées. Il comprend **5 questions progressives**, certaines en lien avec des contextes scientifiques, et couvrant **conditions**, **boucles**, **listes**, **chaînes**, et **matplotlib**. Les étudiants peuvent utiliser **VS Code** et **une feuille de notes recto-verso**.
+# 🔬 Examen pratique – Programmation Python (durée : 2h)
+**Instructions générales :**
+* Répondez directement dans les cellules de code.
+* Nommez le fichier examen\_prenom\_nom.">
+    <meta itemprop="wordCount" content="1600">
+    <title>Évaluation 2 (25%) :: 420-SN1-RE</title>
+    <link href="/semaine10/eval2/index.xml" rel="alternate" type="application/rss+xml" title="Évaluation 2 (25%) :: 420-SN1-RE">
+    <link href="/images/logo.png?1758028745" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758028745" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758028745" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758028745" rel="stylesheet">
+    <link href="/css/theme.css?1758028745" rel="stylesheet">
+    <link href="/css/format-html.css?1758028745" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1758028745" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1758028745" defer></script>
+    <script src="/js/lunr/lunr.min.js?1758028745" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1758028745" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1758028745" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1758028745" defer></script>
+    <script src="/js/search.js?1758028745" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine10\/eval2\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1758028745";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1758028745" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/semaine10/eval2/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine10/index.html"><span itemprop="name"> Évaluation #2 (30%)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Évaluation 2 (25%)</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/index.html" title="Évaluation #2 (30%) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine10/eval2_formative/index.html" title="Évaluation formative (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine10" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="évaluation-2-25">Évaluation 2 (25%)</h1>
+
+<p>Voici un **examen pratique de 2 heures** conçu pour évaluer les compétences mentionnées. Il comprend **5 questions progressives**, certaines en lien avec des contextes scientifiques, et couvrant **conditions**, **boucles**, **listes**, **chaînes**, et **matplotlib**. Les étudiants peuvent utiliser **VS Code** et **une feuille de notes recto-verso**.</p>
+<hr>
+<p># 🔬 Examen pratique – Programmation Python (durée : 2h)</p>
+<p>**Instructions générales :**</p>
+<p>* Répondez directement dans les cellules de code.</p>
+<p>* Nommez le fichier <code>examen\_prenom\_nom.py</code>.</p>
+<p>* Commentez brièvement chaque solution pour expliquer votre raisonnement.</p>
+<p>* Sauvegardez vos figures avec <code>plt.savefig(&quot;nom\_de\_fig.png&quot;)</code> si applicable.</p>
+<hr>
+<p>## 🌡️ Question 1 – Conditions et science (20 pts)</p>
+<p>Un patient subit une série de tests médicaux. Son taux de glucose (en mmol/L) est mesuré. Selon la valeur, une recommandation est donnée :</p>
+<p>| Taux de glucose | Recommandation           |</p>
+<p>| &mdash;&mdash;&mdash;&mdash;&mdash; | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; |</p>
+<p>| &lt; 4.0           | Risque d&rsquo;hypoglycémie    |</p>
+<p>| 4.0 à 7.0       | Normal                   |</p>
+<p>| &gt; 7.0 à 11.0    | Surveillance recommandée |</p>
+<p>| &gt; 11.0          | Diabète possible         |</p>
+<p>**Écrire un programme qui :**</p>
+<p>* demande à l’utilisateur de saisir son taux de glucose (<code>float</code>)</p>
+<p>* affiche la recommandation appropriée à l’aide de <code>if / elif / else</code></p>
+<hr>
+<p>## 🔁 Question 2 – Boucles : simulation de dégradation chimique (25 pts)</p>
+<p>Une substance radioactive perd 12% de sa masse chaque heure. Écrire un programme qui :</p>
+<p>1. demande la masse initiale (ex. 100 g),</p>
+<p>2. affiche pour chaque heure :</p>
+<p>   * l’heure</p>
+<p>   * la masse restante</p>
+<p>3. s’arrête dès que la masse est inférieure à 10% de la masse initiale.</p>
+<p>Utilise une **boucle <code>while</code>**, avec un compteur d’heures.</p>
+<p>**Exemple de sortie :**</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Heure 0 : 100.0 g
+
+Heure 1 : 88.0 g
+
+Heure 2 : 77.44 g
+
+...</code></pre></div>
+<hr>
+<p>## 🧪 Question 3 – Listes, chaînes et génétique (20 pts)</p>
+<p>On analyse une séquence d’ADN représentée par la chaîne :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sequence <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ATGCGATACGCTTGC&#34;</span></span></span></code></pre></div>
+<p>1. Convertis la chaîne en **liste de nucléotides**.</p>
+<p>2. Parcours la liste et compte le **nombre de A, T, G, C**.</p>
+<p>3. Affiche les résultats avec des <code>f-strings</code> comme suit :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>A: 3
+
+T: 4
+
+G: 3
+
+C: 5</code></pre></div>
+<hr>
+<p>## 🧩 Question 4 – Listes imbriquées et moyenne de résultats (20 pts)</p>
+<p>On analyse des résultats d’expériences. Chaque sous-liste contient les résultats d’un groupe d’étudiants :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>groupes <span style="color:#f92672">=</span> \[\[<span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">16</span>], \[<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">20</span>], \[<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">9</span>]]</span></span></code></pre></div>
+<p>1. Affiche la moyenne de chaque groupe, arrondie à 2 décimales.</p>
+<p>2. Affiche le plus haut résultat parmi **tous les groupes**.</p>
+<p>3. Transforme tous les résultats inférieurs à 12 en <code>&quot;Échec&quot;</code> (modifie la liste en place).</p>
+<p>**Exemple de sortie attendue :**</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Moyenne du groupe 1 : 14.67
+
+Moyenne du groupe 2 : 16.67
+
+Moyenne du groupe 3 : 10.00
+
+Meilleure note tous groupes : 20
+
+Liste modifiée : \[\[13, 15, 16], \[12, 18, 20], \[&#39;Échec&#39;, &#39;Échec&#39;, &#39;Échec&#39;]]</code></pre></div>
+<hr>
+<p>## 📊 Question 5 – Visualisation avec matplotlib (15 pts)</p>
+<p>Tu disposes des températures moyennes mensuelles à Montréal (°C) :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mois <span style="color:#f92672">=</span> \[<span style="color:#e6db74">&#34;Jan&#34;</span>, <span style="color:#e6db74">&#34;Fév&#34;</span>, <span style="color:#e6db74">&#34;Mar&#34;</span>, <span style="color:#e6db74">&#34;Avr&#34;</span>, <span style="color:#e6db74">&#34;Mai&#34;</span>, <span style="color:#e6db74">&#34;Juin&#34;</span>, <span style="color:#e6db74">&#34;Juil&#34;</span>, <span style="color:#e6db74">&#34;Août&#34;</span>, <span style="color:#e6db74">&#34;Sep&#34;</span>, <span style="color:#e6db74">&#34;Oct&#34;</span>, <span style="color:#e6db74">&#34;Nov&#34;</span>, <span style="color:#e6db74">&#34;Déc&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> \[<span style="color:#f92672">-</span><span style="color:#ae81ff">9.7</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">7.2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1.2</span>, <span style="color:#ae81ff">6.1</span>, <span style="color:#ae81ff">13.2</span>, <span style="color:#ae81ff">18.3</span>, <span style="color:#ae81ff">21.2</span>, <span style="color:#ae81ff">20.0</span>, <span style="color:#ae81ff">15.3</span>, <span style="color:#ae81ff">8.7</span>, <span style="color:#ae81ff">2.1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">5.3</span>]</span></span></code></pre></div>
+<p>1. Crée un graphique avec les mois sur l’axe des x et les températures sur l’axe des y.</p>
+<p>2. Ajoute :</p>
+<p>   * un **titre**</p>
+<p>   * les **noms des axes**</p>
+<p>   * une **grille**</p>
+<p>3. Sauvegarde le graphique sous le nom <code>temperature\_mtl.png</code>.</p>
+<hr>
+<p>## Barème suggéré (total 100 pts)</p>
+<p>| Compétence évaluée                        | Points |</p>
+<p>| &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash; |</p>
+<p>| Conditions simples et imbriquées          | 20     |</p>
+<p>| Boucle <code>while</code> (structure, arrêt)         | 25     |</p>
+<p>| Listes et chaînes de caractères           | 20     |</p>
+<p>| Listes imbriquées, parcours, modification | 20     |</p>
+<p>| Visualisation matplotlib                  | 15     |</p>
+<hr>
+<p>Voici ce que je vais vous fournir maintenant :</p>
+<hr>
+<p>✅ **1. Corrigé enseignant**</p>
+<p>✅ **2. Grille d’évaluation critériée**</p>
+<p>✅ **3. Contenu prêt à copier-coller dans un fichier <code>.ipynb</code>**</p>
+<p>(titres, énoncés, cellules de code, formaté pour distribution aux étudiants)</p>
+<hr>
+<p>## 📘 1. Corrigé enseignant</p>
+<p>### Question 1 – Conditions</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>glucose <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrez votre taux de glucose (mmol/L) : &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> glucose <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4.0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   print(<span style="color:#e6db74">&#34;Risque d&#39;hypoglycémie&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> glucose <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">7.0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   print(<span style="color:#e6db74">&#34;Normal&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> glucose <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">11.0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   print(<span style="color:#e6db74">&#34;Surveillance recommandée&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   print(<span style="color:#e6db74">&#34;Diabète possible&#34;</span>)</span></span></code></pre></div>
+<hr>
+<p>### Question 2 – Boucle while</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masse\_initiale <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Masse initiale (g) : &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>masse <span style="color:#f92672">=</span> masse\_initiale
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>heure <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> masse <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0.1</span> \<span style="color:#f92672">*</span> masse\_initiale:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Heure </span><span style="color:#e6db74">{</span>heure<span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>masse<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   masse \<span style="color:#f92672">*=</span> <span style="color:#ae81ff">0.88</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   heure <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div>
+<hr>
+<p>### Question 3 – Listes et chaînes</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sequence <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ATGCGATACGCTTGC&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nucleotides <span style="color:#f92672">=</span> list(sequence)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;A: </span><span style="color:#e6db74">{</span>nucleotides<span style="color:#f92672">.</span>count(<span style="color:#e6db74">&#39;A&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;T: </span><span style="color:#e6db74">{</span>nucleotides<span style="color:#f92672">.</span>count(<span style="color:#e6db74">&#39;T&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;G: </span><span style="color:#e6db74">{</span>nucleotides<span style="color:#f92672">.</span>count(<span style="color:#e6db74">&#39;G&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;C: </span><span style="color:#e6db74">{</span>nucleotides<span style="color:#f92672">.</span>count(<span style="color:#e6db74">&#39;C&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<hr>
+<p>### Question 4 – Listes imbriquées</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>groupes <span style="color:#f92672">=</span> \[\[<span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">16</span>], \[<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">20</span>], \[<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">9</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># Moyennes</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i, groupe <span style="color:#f92672">in</span> enumerate(groupes):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   moyenne <span style="color:#f92672">=</span> sum(groupe) <span style="color:#f92672">/</span> len(groupe)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne du groupe </span><span style="color:#e6db74">{</span>i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># Meilleure note</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>meilleure <span style="color:#f92672">=</span> max(\[note <span style="color:#66d9ef">for</span> groupe <span style="color:#f92672">in</span> groupes <span style="color:#66d9ef">for</span> note <span style="color:#f92672">in</span> groupe])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Meilleure note tous groupes : </span><span style="color:#e6db74">{</span>meilleure<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># Remplacement des échecs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(groupes)):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;   <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(groupes\[i])):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;       <span style="color:#66d9ef">if</span> groupes\[i]\[j] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">12</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&amp;</span>nbsp;           groupes\[i]\[j] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Échec&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Liste modifiée :&#34;</span>, groupes)</span></span></code></pre></div>
+<hr>
+<p>### Question 5 – Graphique matplotlib</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mois <span style="color:#f92672">=</span> \[<span style="color:#e6db74">&#34;Jan&#34;</span>, <span style="color:#e6db74">&#34;Fév&#34;</span>, <span style="color:#e6db74">&#34;Mar&#34;</span>, <span style="color:#e6db74">&#34;Avr&#34;</span>, <span style="color:#e6db74">&#34;Mai&#34;</span>, <span style="color:#e6db74">&#34;Juin&#34;</span>, <span style="color:#e6db74">&#34;Juil&#34;</span>, <span style="color:#e6db74">&#34;Août&#34;</span>, <span style="color:#e6db74">&#34;Sep&#34;</span>, <span style="color:#e6db74">&#34;Oct&#34;</span>, <span style="color:#e6db74">&#34;Nov&#34;</span>, <span style="color:#e6db74">&#34;Déc&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> \[<span style="color:#f92672">-</span><span style="color:#ae81ff">9.7</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">7.2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1.2</span>, <span style="color:#ae81ff">6.1</span>, <span style="color:#ae81ff">13.2</span>, <span style="color:#ae81ff">18.3</span>, <span style="color:#ae81ff">21.2</span>, <span style="color:#ae81ff">20.0</span>, <span style="color:#ae81ff">15.3</span>, <span style="color:#ae81ff">8.7</span>, <span style="color:#ae81ff">2.1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">5.3</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(mois, temperatures, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;blue&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Températures moyennes à Montréal&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Mois&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Température (°C)&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;temperature\_mtl.png&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<hr>
+<p>## 📝 2. Grille d’évaluation critériée</p>
+<p>| Compétence               | Critères                                                                  | Points |</p>
+<p>| &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- | &mdash;&mdash; |</p>
+<p>| **Conditions**           | Conditions correctes, bonnes comparaisons, sortie correcte                | /20    |</p>
+<p>| **Boucle while**         | Utilisation correcte de la boucle, bon critère d&rsquo;arrêt, affichage attendu | /25    |</p>
+<p>| **Listes et chaînes**    | Conversion correcte, bon comptage, affichage clair                        | /20    |</p>
+<p>| **Listes imbriquées**    | Parcours, modification conditionnelle, calculs précis                     | /20    |</p>
+<p>| **Graphique matplotlib** | Tracé correct, titres/étiquettes/grille, fichier sauvegardé               | /15    |</p>
+<p>| **TOTAL**                |                                                                           | /100   |</p>
+<hr>
+<p>## 📦 3. Contenu <code>.ipynb</code> pour les étudiants</p>
+<p>Voici le contenu **prêt à copier dans un bloc-notes <code>.ipynb</code>** :</p>
+<hr>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span><span style="color:#f92672">&#34;cells&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;markdown&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# 🔬 Examen pratique – Programmation Python\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\*\*Durée : 2h\*\* – VS Code + feuille de notes recto-verso autorisés.\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\*\*Instructions :\*\*\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;- Répondez directement dans les cellules de code ci-dessous.\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;- Sauvegardez le fichier sous le nom `examen\_nom\_prenom.py`.\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;- Commentez votre code pour expliquer votre raisonnement.\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;- Testez vos programmes avec des valeurs pertinentes.\\n&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;markdown&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;## 🌡️ Question 1 – Conditions et science (20 pts)&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;code&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Écris un programme qui demande un taux de glucose (mmol/L)\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# et affiche une recommandation selon les valeurs suivantes :\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# &lt;4.0 → Hypoglycémie / 4-7 → Normal / 7-11 → Surveillance / &gt;11 → Diabète possible\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Ton code ici :\\n&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;execution\_count&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;outputs&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;markdown&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;## 🔁 Question 2 – Boucles : dégradation chimique (25 pts)&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;code&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Une substance perd 12% par heure. On arrête quand elle atteint moins de 10% de sa masse initiale.\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Affiche l&#39;heure et la masse restante à chaque étape.\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Ton code ici :\\n&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;execution\_count&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;outputs&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;markdown&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;## 🧪 Question 3 – Chaînes et listes (20 pts)&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;code&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# À partir de la chaîne d’ADN suivante, convertis en liste,\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# puis compte le nombre de A, T, G, C.\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;sequence = \\&#34;</span><span style="color:#960050;background-color:#1e0010">ATGCGATACGCTTGC\\</span><span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Ton code ici :\\n&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;execution\_count&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;outputs&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;markdown&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;## 🧩 Question 4 – Listes imbriquées et statistiques (20 pts)&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;code&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;groupes = \[\[13, 15, 16], \[12, 18, 20], \[10, 11, 9]]\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# 1. Affiche la moyenne de chaque groupe\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# 2. Affiche la meilleure note de tous les groupes\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# 3. Remplace les notes &lt; 12 par \\&#34;</span><span style="color:#960050;background-color:#1e0010">Échec\\</span><span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Ton code ici :\\n&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;execution\_count&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;outputs&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;markdown&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;## 📊 Question 5 – Graphique matplotlib (15 pts)&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;cell\_type&#34;</span>: <span style="color:#e6db74">&#34;code&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;metadata&#34;</span>: {},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;import matplotlib.pyplot as plt\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;mois = \[\\&#34;</span><span style="color:#960050;background-color:#1e0010">Jan\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Fév\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Mar\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Avr\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Mai\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Juin\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Juil\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Août\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Sep\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Oct\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Nov\\</span><span style="color:#e6db74">&#34;, \\&#34;</span><span style="color:#960050;background-color:#1e0010">Déc\\</span><span style="color:#e6db74">&#34;]\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;temperatures = \[-9.7, -7.2, -1.2, 6.1, 13.2, 18.3, 21.2, 20.0, 15.3, 8.7, 2.1, -5.3]\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Trace un graphique (ligne) avec les températures par mois.\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Ajoute un titre, des noms d’axes, une grille.\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Sauvegarde le graphique sous le nom \\&#34;</span><span style="color:#960050;background-color:#1e0010">temperature\_mtl.png\\</span><span style="color:#e6db74">&#34;.\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;\\n&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>   <span style="color:#e6db74">&#34;# Ton code ici :\\n&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  ],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;execution\_count&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;outputs&#34;</span>: <span style="color:#960050;background-color:#1e0010">\</span>[]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span><span style="color:#f92672">&#34;metadata&#34;</span>: {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> <span style="color:#f92672">&#34;kernelspec&#34;</span>: {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;display\_name&#34;</span>: <span style="color:#e6db74">&#34;Python 3&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;language&#34;</span>: <span style="color:#e6db74">&#34;python&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;python3&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> <span style="color:#f92672">&#34;language\_info&#34;</span>: {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;python&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;3.10&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span>},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span><span style="color:#f92672">&#34;nbformat&#34;</span>: <span style="color:#ae81ff">4</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;nbsp;</span><span style="color:#f92672">&#34;nbformat\_minor&#34;</span>: <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
+            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Tableaux numpy et droite de régression</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires et fichiers texte (csv)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Révision ou rattrapage</a></li>
+            <li class="parent " data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine10/eval2/index.html"><a class="padding" href="/semaine10/eval2/index.html">Évaluation 2 (25%)</a></li>
+            <li class="" data-nav-id="/semaine10/eval2_formative/index.html"><a class="padding" href="/semaine10/eval2_formative/index.html">Évaluation formative</a></li></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> Projet - Présentation, analyse et traduction</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1758028745" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758028745" defer></script>
+    <script src="/js/theme.js?1758028745" defer></script>
+  </body>
+</html>

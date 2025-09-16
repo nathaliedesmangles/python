@@ -6,6 +6,7 @@ weight = 106
 draft = true
 +++
 
+
 ## Objectifs
 
 * Créer, modifier et parcourir une **liste simple**.
@@ -18,12 +19,21 @@ draft = true
 {{% notice style="accent" title="Apprendre par la pratique" %}}
 - **Faites les exercices** en vous aidant des notes de cours ci-dessous.
 - Certains seront fait en classe à titre de démonstration.
-- Les solutions seront disponibles à la fin de la semaine 2.
+- Les solutions seront disponibles à la fin de la semaine prochaine.
 {{% /notice %}}
+
 
 # Exercices
 
+## Fichier de départ à utiliser
+
+1. Cliquez sur le lien pour télécharger le fichier.
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_listes_chaines_graphes.ipynb)
+2. Enregistrez le fichier dans votre dossier **exercices** de la semaine en cours.
+3. Ouvrez **Visual Studio Code**.
+4. Dans VS Code, recherchez et ouvrez le fichier `exercices_listes_chaines_graphes.ipynb`
+5. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
+6. Vous pouvez commencer à faire les exercices.
 
 
 ## Listes
@@ -42,9 +52,9 @@ Voici un/une <animal>
 
 ### Exercice 3 :
 
-* Demande à l’utilisateur d’entrer 3 noms et stocke-les dans une liste.
-* Affiche chaque animal en ordre alphabétique croissant.  
-* Affiche chaque animal en ordre alphabétique décroissant. 
+* Demande à l’utilisateur d’entrer 3 prénoms et stocke-les dans une liste.
+* Affiche chaque prénom en ordre alphabétique croissant.  
+* Affiche chaque prénom en ordre alphabétique décroissant. 
 
 ### Exercice 4
 
@@ -75,10 +85,10 @@ nb_lettres = []
 
 ### Exercice 6 - Convertir en ARN
 
-Une séquence d’ADN est "ATGCT".
+Une séquence d’ADN est "atgct".
 
 * Mets-la en minuscules.
-* Remplace les "t" par "u".
+* Remplace les "T" par "U".
 
 ---
 
@@ -86,16 +96,17 @@ Une séquence d’ADN est "ATGCT".
 
 ### Exercice 7 – Température dans une journée
 
-* Heures : `[0, 4, 8, 12, 16, 20, 24]`
-* Températures : `[-5, -2, 3, 7, 6, 1, -2]`
+* À partir des deux listes ci-dessous, crée un graphique de la température en fonction de l’heure.
+```python
+heures = [0, 4, 8, 12, 16, 20, 24]
+temperatures = [-5, -2, 3, 7, 6, 1, -2]
+```
 
-Crée un graphique de température en fonction de l’heure.
+* Ajoute :
+	* Un titre `"Température en fonction de l’heure"`
+	* Les étiquettes `"Heure (h)"` et `"Température (C)"`
+	* Une grille
 
-Ajoute :
-
-* Un titre `"Température en fonction de l’heure"`
-* Les étiquettes `"Heure (h)"` et `"Température (°C)"`
-* Une grille
 
 ### Exercice 8 - Comparaison des valeurs mesurées et attendues
 
@@ -106,10 +117,10 @@ temp = [10, 20, 30, 40, 50]
 attendu = [2.1, 3.8, 5.6, 7.3, 9.0]
 mesure =  [2.0, 3.9, 5.2, 7.5, 8.8]
 ```
-
-* Affiche les **valeurs attendues** avec `plt.plot(...)` (ligne noire avec des ronds).
-* Affiche les **valeurs mesurées** avec `plt.bar(...)` (barres bleues légèrement transparentes).
-* Ajoute un **titre**, une **légende**, les **étiquettes d’axes** et une **grille**.
+* Écris un programme qui:
+	* Affiche les **valeurs attendues** avec `plt.plot(...)` (ligne noire avec des ronds).
+	* Affiche les **valeurs mesurées** avec `plt.bar(...)` (barres bleues légèrement transparentes).
+	* Ajoute un **titre**, une **légende**, les **étiquettes d’axes** et une **grille**.
 
 ---
 
@@ -129,8 +140,13 @@ Chaque élément a une **position** (appelée *indice*).
 
 ```python
 print(ma_liste[0])  # Affiche 3 (le premier élément)
-print(ma_liste[2])  # Affiche 42
+print(ma_liste[2])  # Affiche 42 (le 3e élément) 
 ```
+
+{{% notice style="accent" icon="stopwatch" title="Important"%}}
+* Notez le décalage entre **l'indice** 0 et la **position** 1 de l'élément (indice 2; position 3).
+* Cela est dû au fait que les indices commencent **toujours à 0**.
+{{% /notice %}}
 
 ## Créer et modifier une liste
 
@@ -140,14 +156,14 @@ print(ma_liste[2])  # Affiche 42
 liste_vide = []
 ```
 
-### Ajouter des éléments
+### Ajouter des éléments avec append()
 
 ```python
 fruits = ["pomme", "banane"]
 fruits.append("cerise")  # ["pomme", "banane", "cerise"]
 ```
 
-### Remplacer un élément
+### Remplacer un élément en spécifiant son indice
 
 ```python
 fruits[1] = "poire"  # ["pomme", "poire", "cerise"]
@@ -155,21 +171,25 @@ fruits[1] = "poire"  # ["pomme", "poire", "cerise"]
 
 ## Parcourir une liste avec la boucle `for`
 
-La boucle `for` est utilisée quand **on connaît d’avance** combien de fois on doit répéter.
-
-Avec une boucle `for`. La syntaxe générale de la boucle est:
+**Rappel** : La boucle `for` est utilisée quand **on connaît d’avance** combien de fois on doit répéter.
 
 ```python
 for variable in sequence:
     instructions à répéter jusqu'à la fin de la séquence.
 ```
 
+{{% notice style="accent" icon="stopwatch" title="Important"%}}
+* Jusqu'à présent, on a utilisé `range()` pour générer une **séquence de nombre entiers**.
+* À partir de maintenant, la séquence pourra être une **liste (de nombres, de mots, de booléens et de listes)**.
+{{% /notice %}}
+
+
 **Exemple** :
 
 ```python
-fruits = ["pommes", "poires", "cerises"]
+fruits = ["pommes", "poires", "cerises"]	# Une liste contenant 3 noms de fruits
 
-for fruit in fruits:
+for fruit in fruits:	# Pour chaque fruit de la liste fruit**s**
     print(f"J'aime les {fruit}")
 
 # Affiche:
@@ -193,7 +213,7 @@ L'indice 1 contient : poire
 L'indice 2 contient : cerise
 ```
 **Explication** : 
-* La fonction `` génère des nombres entiers de 0 à 2 (qui est le nombre d'éléments dans la liste - 1)
+* La fonction `range()` génère des nombres entiers de 0 à 2 (qui est le nombre d'éléments dans la liste - 1, **car le 1er indice est 0**)
 * `len(fruits)` vaut 3, le nombre d'éléments dans la liste.
 * La variable `i` prendra les valeurs `0, 1 et 2`.
 * `fruits[i]` contient un à un les fruits de la liste `fruits`.
@@ -226,8 +246,10 @@ moyenne = sum(notes) / len(notes)
 print(f"Moyenne : {moyenne:.2f}")
 ```
 
-{{% notice style="accent" title="*Important" %}}
+{{% notice style="accent" icon="stopwatch" title="*Important" %}}
 * `mots.sort()` utilisé sur une liste de chaines de caractères trie la liste en respectant l’ordre **Unicode**, ce qui fait que les **mots commençant par une majuscule** sont placés **avant ceux en minuscules**.
+
+**Exemple** :
 
 ```python
 mots = ["pomme", "Banane", "abricot", "Orange"]
@@ -235,7 +257,7 @@ mots.sort()
 print(mots)
 
 # Affichage : 
-['Banane', 'Orange', 'abricot', 'pomme']
+['Banane', 'Orange', 'abricot', 'pomme']	# Notez les positions des éléments `abricot` et `pomme`
 ```
 {{% /notice %}}
 
@@ -244,28 +266,28 @@ print(mots)
 
 Une **liste imbriquée**, c’est une liste **qui contient d'autres listes**.
 
-**Exemple** : Une liste contenant trois listes
+**Exemple** : Une liste contenant trois listes (en math, on parle de **matrices**)
 
 ```python
 matrice = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+    [1, 2, 3], # 1re liste à l'indice 0 de la liste matrice
+    [4, 5, 6], # 2e liste à l'indice 1 de la liste matrice
+    [7, 8, 9]  # 3e liste à l'indice 2 de la liste matrice
 ]
 ```
 
-### Accéder à un élément précis
+### Accéder à un élément précis via les indices
 
 * Il faut préciser les **deux indices**: `[rangée][colonne]`
 ```python
 print(matrice[0][2])  # Affiche 3 qui se trouve sur la première rangée (indice 0) et la 3e colonne (indice 2). 
 ```
 
-### Parcourir une liste imbriquée
+### Parcourir une liste imbriquée avec la boucle for
 
 * Il faut utiliser **deux boucles** `for`.
 * La première boucle pour **parcourir chaque rangée une à la fois**.
-* La deuxième boucle (à l'intérieur de la première) pour parcourir les éléments d'une rangée.
+* La deuxième boucle (à l'intérieur de la première) pour **parcourir les éléments un à un d'une rangée**.
 
 ```python
 for ligne in matrice:
@@ -303,23 +325,26 @@ X
 {{% notice style="blue" title="À retenir (listes)" groupid="notice-toggle" expanded="false" %}}
 * Une liste permet de **stocker plusieurs valeurs**.
 * On accède aux éléments avec des **indices**.
-* Les listes peuvent être **modifiées** facilement.
+* Le premier élément d'une liste est toujours à l'indice 0.
+* La taille (nombre d'éléments) d'une liste s'obtient avec la fonction `len()` et vaut toujours `denier indice + 1`.
+* Les listes peuvent être **modifiées** facilement à l'aide de fonctions et en ciblant un élément par son/ses indice.s.
 * Une liste peut contenir **d'autres listes** → super utile pour représenter des tableaux ou des grilles.
+* Dans le cas d'une **liste de listes**, les éléments sont accédés en spécifiant les **deux indices (rangée, colonne)**.
 {{% /notice %}}
 
 ---
 
 ## Les chaînes de caractères sont des listes
 
-On peut manipuler une chaine de caractère comme une suite de lettres ou une **liste** de lettres.
+On peut manipuler une chaine de caractère comme une suite de lettres ou une **liste de lettres**.
 
 ```python
 message = "Bonjour à tous!"
 print(message[0])     # 'B' (le premier caractère)
 print(message[-1])    # '!' (le dernier caractère)
-print(message[-7])    # 'à' 
+print(message[-7])    # 'à' (le 7e caractère en partant de la fin)
 ```
-{{% notice style="cyan" title="Sachez que..." %}}
+{{% notice style="accent" icon="stopwatch" title="Important" %}}
 Les espaces comptent dans le calcul du nombre de caractères dans une chaine.
 {{% /notice %}}
 
@@ -365,7 +390,7 @@ La partie de `matplotlib` qu'on utilise le plus pour créer des graphiques s'app
 import matplotlib.pyplot as plt
 ```
 
-On utilise souvent l’abréviation `plt` pour simplifier l’écriture.
+On utilise l’abréviation `plt` pour simplifier l’écriture.
 
 
 ### Tracer une courbe simple avec `plot()`
@@ -440,7 +465,7 @@ plt.legend()
 
 Cela trace une courbe en **bleu**, avec une **ligne pointillée**, des **cercles aux points**, une **légende "x²"**, et une **ligne épaisse**.
 
-### Ajouter un titre, des étiquettes et une grille
+### Ajouter un titre, des étiquettes et une grille avec title(), xlabel(), ylabel() et grid()
 
 * `plt.title("Courbe de y = x²")` : Ajoute un **titre** au graphique.
 * `plt.xlabel("x")` et `plt.ylabel("y")` : Donnent un **nom à l’axe horizontal** (ici, "x") et un **nom à l’axe vertical** (ici, "y").
@@ -493,7 +518,7 @@ plt.show()
 ![Figure 4](./Figure_4.png?width=45vw)
 
 
-### Enregistrer un graphique sous forme d'image
+### Enregistrer un graphique sous forme d'image avec savefig()
 
 La fonction `plt.savefig("figure.png")` **enregistre** le graphique dans un fichier image (ici au format PNG).
 Cela permet de conserver ou partager le graphique même sans afficher la fenêtre graphique.
@@ -541,7 +566,10 @@ plt.savefig("figure.png")
 
 # Atelier
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_listes_chaines_graphes.ipynb)
+1. Téléchargez le fichier de départ : [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_listes_chaines_graphes.ipynb)
+2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 6**.
+3. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
+   * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
 
 ## Exercice 
 

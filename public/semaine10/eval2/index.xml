@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Évaluation 2 (25%) :: 420-SN1-RE</title>
+    <link>http://localhost:1313/semaine10/eval2/index.html</link>
+    <description>Voici un **examen pratique de 2 heures** conçu pour évaluer les compétences mentionnées. Il comprend **5 questions progressives**, certaines en lien avec des contextes scientifiques, et couvrant **conditions**, **boucles**, **listes**, **chaînes**, et **matplotlib**. Les étudiants peuvent utiliser **VS Code** et **une feuille de notes recto-verso**.&#xA;# 🔬 Examen pratique – Programmation Python (durée : 2h)&#xA;**Instructions générales :**&#xA;* Répondez directement dans les cellules de code.&#xA;* Nommez le fichier examen\_prenom\_nom.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/semaine10/eval2/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

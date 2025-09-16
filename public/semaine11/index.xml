@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Fonctions personnalisées :: 420-SN1-RE</title>
-    <link>https://example.org/semaine11/index.html</link>
-    <description>Objectifs Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Création de fonction avec def Une fonction peut:&#xA;Afficher un résultat (ex: print()) Retourner un résultat (ex: input()) Comment créer et utiliser une fonction ? On utilise le mot clé def. Suivi du nom de la fonction. Suivi de parenthèses (). Suivi de deux-points :. Les instructions de la fonction sont sur les lignes d’en dessous, décalées.</description>
+    <link>http://localhost:1313/semaine11/index.html</link>
+    <description>Objectifs Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Appel de fonction&#xD;Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.&#xA;Bloc-notes de départ&#xA;Exercice 1 : La loi d’Ohm Un technicien de laboratoire vous demande d’écrire un programme Python pour calculer la tension (U) en volts selon la loi d’Ohm.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine11/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine11/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

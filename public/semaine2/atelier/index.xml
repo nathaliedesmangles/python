@@ -7,5 +7,12 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/semaine2/atelier/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solution</title>
+      <link>http://localhost:1313/semaine2/atelier/solution/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine2/atelier/solution/index.html</guid>
+      <description>Exercice 1 : conversion de température # Entrez la température en Celsius temp_c = float(input(&#34;Entrez la température en Celsius : &#34;)) # Conversion de la température en Fahrenheit et en Kelvin temp_f = (temp_c * 9/5) + 32 temp_k = temp_c + 273.15 # Affichage des résultats print(&#34;Température en Celsius :&#34;, temp_c, &#34;°C&#34;) print(&#34;Température en Fahrenheit :&#34;, temp_f, &#34;°F&#34;) print(&#34;Température en Kelvin :&#34;, temp_k, &#34;K&#34;)&#xD;Exercice 2 : La loi d’Ohm # Entrez la résistance et le courant resistance = float(input(&#34;Entrer la résistance en ohms : &#34;))&#x9;# Conversion nécessaire courant = float(input(&#34;Entrer le courant en ampères : &#34;))&#x9;# Conversion nécessaire # Calcul de la tension selon la loi d’Ohm tension = courant * resistance # Affichage du résultat print(&#34;La tension est de &#34; + tension + &#34; V&#34;)&#xD;Exercice 3 : Calcul de concentration molaire # Entrer la masse, la masse molaire et le volume masse = float(input(&#34;Masse du soluté (g) : &#34;)) masse_molaire = float(input(&#34;Masse molaire (g/mol) : &#34;)) volume = float(input(&#34;Volume de solution (L) : &#34;)) # Calculs et traitement du résultat n = masse / masse_molaire if volume !</description>
+    </item>
   </channel>
 </rss>
