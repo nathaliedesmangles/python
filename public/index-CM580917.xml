@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmation en sciences :: 420-SN1-RE</title>
+    <link>http://localhost:1313/index.html</link>
+    <description>Description du cours Ce cours permet de se familiariser avec la programmation informatique dans un contexte scientifique et de faire le lien entre les technologies et le domaine des sciences.&#xA;L’élève est introduit à la résolution de problèmes à l’aide d’algorithmes. Il doit traduire les algorithmes en code en utilisant un langage de programmation, tout en vérifiant le bon fonctionnement de son programme. Il traite des données et présente des résultats scientifiques à l’aide de la programmation lettrée.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Foire Aux Questions</title>
+      <link>http://localhost:1313/faq/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/index.html</guid>
+      <description>Outils et locaux pour pratiquer À part Visual Studio Code, quels autres logiciels je peux installer sur mon ordinateur personnel pour pratiquer à la maison ? Alternatives à VS Code La sauvegarde automatique dans Visual Studio Code. Sauvegarde dans VS Code Les raccourcis clavier (copier, coller, couper, enregistrer, etc.) Trucs pratiques pour bien coder Où se trouve les touches pour [, ], {, }, @, &lt;, &gt;, etc. sur un clavier QWERTY.</description>
+    </item>
+    <item>
+      <title>Outils de développement</title>
+      <link>http://localhost:1313/outils_dev/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/outils_dev/index.html</guid>
+      <description>Installer les outils de travail Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports</description>
+    </item>
+    <item>
+      <title>Règlements de classe</title>
+      <link>http://localhost:1313/regles/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/regles/index.html</guid>
+      <description>1. Comporte-toi comme si tu étais déjà en emploi. Arrive à l’heure, sois prêt à travailler, et respecte les échéances. Ton attitude ici prépare ton avenir professionnel.&#xA;2. Respecte-toi, donc agis avec respect. Ton comportement reflète la manière dont tu te considères. Adopte une attitude calme, polie et attentive envers toi-même, les autres et l’enseignant·e.&#xA;3. Sois présent, mentalement et physiquement. Utilise ton cellulaire seulement pour les besoins du cours. Reste concentré·e pendant les activités, comme tu le ferais dans un contexte de travail.</description>
+    </item>
+    <item>
+      <title>───────────────────</title>
+      <link>http://localhost:1313/separateur_section/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/separateur_section/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Les séances de cours</title>
+      <link>http://localhost:1313/cours/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/index.html</guid>
+      <description>Liste d’attente pour poser des questions Cliquez ici pour entrer votre nom&#xA;Plan de cours Plan de cours&#xA;Calendrier scolaire et répartition des 15 semaines Calendrier scolaire Répartition des 15 semaines Horaire de l’enseignante Notez bien que…&#xD;À partir de 18h00 et les fins de semaine, je ne réponds pas aux questions envoyées par Teams ou col.net&#xA;Horaire Groupe 09&#xA;(lundi 15h20)&#xD;Groupe 11&#xA;(mercredi 08h00)&#xD;Groupe 10&#xA;(vendredi 15h20)&#xD;Cours 01&#xD;25 août</description>
+    </item>
+    <item>
+      <title> Présentation du cours et l&#39;environnement de travail</title>
+      <link>http://localhost:1313/semaine1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine1/index.html</guid>
+      <description>Objectifs Comprendre les objectifs du cours et les règlements du collège à respecter (Quiz WooClap) Vous connecter à votre compte OneDrive scolaire. Créer une structure de dossiers pour le cours. Comprendre l’interface de VS Code Ouvrir un dossier et un fichier (.ipynb) dans VS Code. Créer un fichier .ipynb dans VS Code. Écrire et exécuter du code Python simple. Sauvegarder vos fichiers de code. 1. Présentation du cours Cliquez ici pour ouvrir le plan de cours et trouver le quiz interactif</description>
+    </item>
+    <item>
+      <title> Variables, types, entrée utilisateur et fonctions prédéfinies</title>
+      <link>http://localhost:1313/semaine2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine2/index.html</guid>
+      <description>Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.</description>
+    </item>
+    <item>
+      <title> Structures conditionnelles et algorithmes simples</title>
+      <link>http://localhost:1313/semaine3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine3/index.html</guid>
+      <description>Objectifs Identifier et utiliser correctement les opérateurs de comparaison et logiques pour évaluer des conditions simples en Python. Appliquer les structures conditionnelles (if, elif, else) à des contextes scientifiques simples. Écrire des algorithmes simples et les traduire en Python. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.</description>
+    </item>
+    <item>
+      <title> Boucles et débogage simple</title>
+      <link>http://localhost:1313/semaine4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine4/index.html</guid>
+      <description>Objectifs Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Répéter des instructions un nombre de fois connu d’avance avec la boucle for. Interrompre le déroulement d’une boucle. Comprendre les messages d’erreurs et découvrir des stratégies simples de débogage. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.</description>
+    </item>
+    <item>
+      <title> Évaluation #1 (25%)</title>
+      <link>http://localhost:1313/semaine5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine5/index.html</guid>
+      <description>Informations Date:&#x9;Semaine #5 (Voir le calendrier scolaire) Matière: Semaines 1 à 4 inclusivement Durée:&#x9;2h (2h 40 pour les étudiant.e.s du SAA, avec inscription) Documentation permise: 3 feuilles recto-verso (manuscrites ou imprimées) Format de l’examen:&#x9;Test sur Moodle (théorique + pratique). un total de 20 questions, un mélange de questions à choix multiples (QCM), de questions à réponse courte (1 ligne) et de questions à trou, 3 questions à développement, où vous devrez écrire un petit programme en Python.</description>
+    </item>
+    <item>
+      <title>Solutions des exercices</title>
+      <link>http://localhost:1313/solutions_exercices/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solutions_exercices/index.html</guid>
+      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple</description>
+    </item>
+    <item>
+      <title>Solutions des ateliers</title>
+      <link>http://localhost:1313/solutions_ateliers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solutions_ateliers/index.html</guid>
+      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple</description>
+    </item>
+  </channel>
+</rss>

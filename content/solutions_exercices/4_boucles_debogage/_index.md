@@ -96,7 +96,7 @@ while continuer != 0:
     for i in range(1, 13):
         print(f"{i} x {n} = {i * n}")
     
-    continuer = input("Voulez-vous une autre table ? (1 = oui; 0 = non) : ")
+    continuer = int(input("Voulez-vous une autre table ? (1 = oui; 0 = non) : "))
 ```
 
 ---

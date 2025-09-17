@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.133.1">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Répéter des instructions un nombre de fois connu d’avance avec la boucle for. Interrompre le déroulement d’une boucle. Comprendre les messages d’erreurs et découvrir des stratégies simples de débogage. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Boucles et débogage simple :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Répéter des instructions un nombre de fois connu d’avance avec la boucle for. Interrompre le déroulement d’une boucle. Comprendre les messages d’erreurs et découvrir des stratégies simples de débogage. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.">
+    <meta property="og:url" content="http://localhost:1313/semaine4/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content=" Boucles et débogage simple :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Répéter des instructions un nombre de fois connu d’avance avec la boucle for. Interrompre le déroulement d’une boucle. Comprendre les messages d’erreurs et découvrir des stratégies simples de débogage. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content=" Boucles et débogage simple :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Répéter des instructions un nombre de fois connu d’avance avec la boucle for. Interrompre le déroulement d’une boucle. Comprendre les messages d’erreurs et découvrir des stratégies simples de débogage. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.">
+    <meta itemprop="wordCount" content="1857">
+    <title> Boucles et débogage simple :: 420-SN1-RE</title>
+    <link href="/semaine4/index.xml" rel="alternate" type="application/rss+xml" title=" Boucles et débogage simple :: 420-SN1-RE">
+    <link href="/images/logo.png?1757963396" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1757963396" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1757963396" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1757963396" rel="stylesheet">
+    <link href="/css/theme.css?1757963396" rel="stylesheet">
+    <link href="/css/format-html.css?1757963396" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1757963396" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1757963396" defer></script>
+    <script src="/js/lunr/lunr.min.js?1757963396" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1757963396" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1757963396" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1757963396" defer></script>
+    <script src="/js/search.js?1757963396" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine4\/index.html';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1757963396";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1757963396" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/semaine4/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs">Objectifs</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#fichier-de-départ-à-utiliser">Fichier de départ à utiliser</a></li>
+    <li><a href="#exercice-1---for-ou-while-">Exercice 1 - For ou While ?</a></li>
+    <li><a href="#exercice-2---table-de-multiplication">Exercice 2  – Table de multiplication</a></li>
+    <li><a href="#exercice-3--utiliser-while-pour-atteindre-un-objectif">Exercice 3 – Utiliser <code>while</code> pour atteindre un objectif</a></li>
+    <li><a href="#exercice-4--répéter-une-mesure-fixe-avec-for">Exercice 4 – Répéter une mesure fixe avec <code>for</code></a></li>
+    <li><a href="#exercice-5---trouver-les-erreurs-">Exercice 5 - Trouver les erreurs !</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#à-quoi-servent-les-boucles-">À quoi servent les boucles ?</a></li>
+    <li><a href="#boucle-while">Boucle <code>while</code></a>
+      <ul>
+        <li><a href="#exemple-">Exemple :</a></li>
+        <li><a href="#boucle-infinie">Boucle infinie</a></li>
+      </ul>
+    </li>
+    <li><a href="#boucle-for">Boucle <code>for</code></a>
+      <ul>
+        <li><a href="#la-boucle-for-avec-range">La boucle <code>for</code> avec <code>range()</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#interrompre-une-boucle">Interrompre une boucle</a>
+      <ul>
+        <li><a href="#exemple-avec-continue">Exemple avec <code>continue</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#cest-quoi-un-bogue">C’est quoi un bogue?</a></li>
+    <li><a href="#types-derreurs-fréquentes">Types d’erreurs fréquentes</a>
+      <ul>
+        <li><a href="#importance-de-lordre-logique">Importance de l’ordre logique</a></li>
+      </ul>
+    </li>
+    <li><a href="#techniques-de-débogage-simples">Techniques de débogage simples</a>
+      <ul>
+        <li><a href="#1-lire-les-messages-derreur">1. Lire les messages d’erreur</a></li>
+        <li><a href="#2-ajouter-des-print">2. Ajouter des <code>print()</code></a></li>
+        <li><a href="#3-tester-petit-à-petit">3. Tester petit à petit</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#exercice-1--réaction-chimique--combien-de-fois">Exercice 1 – Réaction chimique : combien de fois?</a></li>
+    <li><a href="#exercice-2--détection-de-mutation-compteur">Exercice 2 – Détection de mutation (compteur)</a></li>
+    <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Boucles et débogage simple</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine3/index.html" title="Structures conditionnelles et algorithmes simples (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/index.html" title="Évaluation #1 (25%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine4" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="boucles-et-débogage-simple"> Boucles et débogage simple</h1>
+
+<h2 id="objectifs">Objectifs</h2>
+<ul>
+<li>Répéter des instructions tant qu&rsquo;une condition est vraie, avec la boucle <code>while</code>.</li>
+<li>Répéter des instructions un nombre de fois connu d&rsquo;avance avec la boucle <code>for</code>.</li>
+<li>Interrompre le déroulement d&rsquo;une boucle.</li>
+<li>Comprendre les messages d&rsquo;erreurs et découvrir des stratégies simples de débogage.</li>
+</ul>
+<hr>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Apprendre par la pratique
+  </summary>
+  <div class="box-content">
+<ul>
+<li><strong>Faites les exercices</strong> en vous aidant des notes de cours ci-dessous.</li>
+<li>Certains seront fait en classe à titre de démonstration.</li>
+<li>Les solutions seront disponibles à la fin de la semaine prochaine.</li>
+</ul>
+  </div>
+</details>
+<h1 id="exercices">Exercices</h1>
+<h2 id="fichier-de-départ-à-utiliser">Fichier de départ à utiliser</h2>
+<ol>
+<li>Cliquez sur le lien pour télécharger le fichier.
+<a href="https://python-a25.netlify.app/blocnotes/exercices_boucles.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></li>
+<li>Enregistrez le fichier dans votre dossier <strong>exercices</strong> de la semaine en cours.</li>
+<li>Ouvrez <strong>Visual Studio Code</strong>.</li>
+<li>Dans VS Code, recherchez et ouvrez le fichier <code>exercices_boucles.ipynb</code></li>
+<li>Assurez-vous que le noyau Python (<code>Kernel</code>) soit sélectionné.</li>
+<li>Vous pouvez commencer à faire les exercices.</li>
+</ol>
+<h2 id="exercice-1---for-ou-while-">Exercice 1 - For ou While ?</h2>
+<p>Pour chacun des contextes suivants, avant d&rsquo;écrire le code, répondez à la question: &ldquo;Quelle boucle devriez-vous utiliser ?&rdquo;:</p>
+<p>a. Afficher les nombres de 1 à 10<br>
+b. Compter jusqu’à 100 par bonds de 10<br>
+c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s)<br>
+d. Lire une température jusqu’à ce qu’elle soit &lt; 0 (entrée utilisateur)<br>
+e. Écrire un programme qui demande à l&rsquo;utilisateur d&rsquo;entrer un chiffre (1 à 10). Tant qu&rsquo;il ne tape pas le chiffre <code>0</code>, le programme lui redemande d&rsquo;entrer un chiffre (1 à 10) Sinon (i.e. il a tapé <code>0</code>) le programme s&rsquo;arrête (Vous pouvez utiliser <code>break</code> et afficher un message).</p>
+<h2 id="exercice-2---table-de-multiplication">Exercice 2  – Table de multiplication</h2>
+<ul>
+<li>Écrire un programme qui affiche la table de multiplication d’un nombre donné par l’usager (entre 1 et 12), jusqu’à 12 × ce nombre.</li>
+<li>utiliser une boucle <code>while</code> pour refaire une autre table tant que l’usager le souhaite.</li>
+</ul>
+<p><strong>Algorithme</strong></p>
+<p>a. Demander à l’usager d’entrer un nombre entier <strong>entre 1 et 12</strong>.<br>
+b. Stocker ce nombre dans une variable, par exemple <code>n</code>.
+c. Pour afficher la table de multiplication:</p>
+<ul>
+<li>Créer une boucle (par exemple <code>for i in range(1, 13)</code>) pour calculer et afficher les produits : <code>i × n</code></li>
+<li>Le résultat attendu est une table comme :
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>1 × 7 = 7
+2 × 7 = 14
+...
+12 × 7 = 84</code></pre></div>
+</li>
+</ul>
+<p>d. Après avoir affiché la table, demander à l’usager s’il veut recommencer.</p>
+<ul>
+<li>Exemple de question : « Veux-tu afficher une autre table ? (1 = oui, 0 = non) ».<br>
+e. Répéter avec une boucle <code>while</code>: Tant que l’usager répond <strong>1</strong>, le programme recommence à l’étape a. Si l’usager répond <strong>0</strong>, le programme se termine.</li>
+</ul>
+<h2 id="exercice-3--utiliser-while-pour-atteindre-un-objectif">Exercice 3 – Utiliser <code>while</code> pour atteindre un objectif</h2>
+<p>Une température initiale est de 20 °C. Chaque heure, elle augmente de 1,5 °C.
+Écrire un programme qui affiche l’évolution de la température <strong>jusqu’à ce qu’elle atteigne 30 °C</strong>.</p>
+<ol>
+<li>Crée une variable <code>temp</code> avec 20 comme valeur initiale.</li>
+<li>Utilise une boucle <code>while</code> pour vérifier si <code>temp</code> est inférieure à 30.</li>
+<li>À chaque tour, affiche la température.</li>
+<li>Augmente la température de 1.5.</li>
+</ol>
+<p><strong>Exemple de sortie</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Température actuelle : 20.0 °C
+Température actuelle : 21.5 °C
+Température actuelle : 23.0 °C
+Température actuelle : 24.5 °C
+Température actuelle : 26.0 °C
+Température actuelle : 27.5 °C
+Température actuelle : 29.0 °C</code></pre></div>
+<h2 id="exercice-4--répéter-une-mesure-fixe-avec-for">Exercice 4 – Répéter une mesure fixe avec <code>for</code></h2>
+<p>On veut afficher les numéros de 10 échantillons : <code>Échantillon 1</code>, <code>Échantillon 2</code>, &hellip;, <code>Échantillon 10</code>.</p>
+<ol>
+<li>Utilise une boucle <code>for</code> avec <code>range(1, 11)</code>.</li>
+<li>À chaque tour, affiche <code>Échantillon</code> suivi du numéro.</li>
+</ol>
+<p><strong>Exemple de sortie</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Échantillon 1
+Échantillon 2
+Échantillon 3
+Échantillon 4
+Échantillon 5
+Échantillon 6
+Échantillon 7
+Échantillon 8
+Échantillon 9
+Échantillon 10</code></pre></div>
+<h2 id="exercice-5---trouver-les-erreurs-">Exercice 5 - Trouver les erreurs !</h2>
+<p>Corrige les erreurs dans ce programme pour qu’il fonctionne :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Quel est ton nom?&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Bonjour&#34;</span>, name)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>age <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Quel âge as-tu?&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Dans 10 ans, tu auras&#34;</span> age <span style="color:#f92672">+</span> <span style="color:#ae81ff">10</span>)</span></span></code></pre></div>
+<h1 id="cours">Cours</h1>
+<h2 id="à-quoi-servent-les-boucles-">À quoi servent les boucles ?</h2>
+<p>Répéter des instructions plusieurs fois, soit un nombre connu (<code>for</code>), soit jusqu’à ce qu’une condition soit atteinte (<code>while</code>).</p>
+<h2 id="boucle-while">Boucle <code>while</code></h2>
+<p>La boucle <code>while</code> répète un bloc <strong>tant qu’une condition est vraie</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> condition:
+</span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
+<h3 id="exemple-">Exemple :</h3>
+<p><strong>Affiche les minutes jusqu&rsquo;à l’ébullition (100°C)</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>minutes <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> temp <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Minute </span><span style="color:#e6db74">{</span>minutes<span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>temp<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C&#34;</span>)
+</span></span><span style="display:flex;"><span>    temp <span style="color:#f92672">+=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>    minutes <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Ébullition atteinte !&#34;</span>)</span></span></code></pre></div>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Important
+  </summary>
+  <div class="box-content">
+<p>Il faut <strong>modifier l&rsquo;état de la condition dans la boucle</strong> pour éviter une boucle infinie. Dans l&rsquo;exemple, c&rsquo;est à ça que sert l&rsquo;instruction <code>compteur += 1</code></p>
+  </div>
+</details>
+<h3 id="boucle-infinie">Boucle infinie</h3>
+<p>C&rsquo;est lorsque la boucle ne s&rsquo;arrête jamais. Cela peut arriver principalement dans deux situations:</p>
+<p><strong>Cas 1</strong>: oublier de modifier l&rsquo;état de la condition</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>  <span style="color:#75715e"># température initiale</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> temp <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Température : </span><span style="color:#e6db74">{</span>temp<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C&#34;</span>)
+</span></span><span style="display:flex;"><span>    					<span style="color:#75715e"># temp n&#39;est pas modifié </span></span></span></code></pre></div>
+<p><strong>Cas 2</strong>: oublier de modifier l&rsquo;état de la condition</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>  <span style="color:#75715e"># température initiale</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> temp <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Température : </span><span style="color:#e6db74">{</span>temp<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C&#34;</span>)
+</span></span><span style="display:flex;"><span>    temp <span style="color:#f92672">+=</span> <span style="color:#ae81ff">10</span>				<span style="color:#75715e"># Erreur de logique</span></span></span></code></pre></div>
+<h4 id="arrêter-une-boucle-infinie">Arrêter une boucle infinie</h4>
+<blockquote>
+<p>Cliquer dans la case <strong>Arrêter l&rsquo;exécution des cellules</strong> se trouvant à gauche de la cellule contenant la boucle infinie</p>
+</blockquote>
+<p><a href="#R-image-30e982a9bc7b2be978cdc754e2ae9593" class="lightbox-link"><img alt="Arrêt d&rsquo;une boucle infinie dans VS Code Jupyter" class="lazy lightbox figure-image" loading="lazy" src="/semaine4/arret_boucle_infinie.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-30e982a9bc7b2be978cdc754e2ae9593"><img alt="Arrêt d&rsquo;une boucle infinie dans VS Code Jupyter" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine4/arret_boucle_infinie.png?width=35vw"></a></p>
+<h2 id="boucle-for">Boucle <code>for</code></h2>
+<p>La boucle <code>for</code> est idéale pour <strong>répéter un nombre connu de fois</strong>, ou <strong>parcourir une séquence</strong> (ex : liste, chaîne de caractères, <code>range()</code>).</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> élément <span style="color:#f92672">in</span> séquence:
+</span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
+<h3 id="la-boucle-for-avec-range">La boucle <code>for</code> avec <code>range()</code></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(début, fin, pas):
+</span></span><span style="display:flex;"><span>    instructions</span></span></code></pre></div>
+<ul>
+<li><code>début</code> : valeur initiale (optionnel, par défaut = 0)</li>
+<li><code>fin</code> : valeur <strong>non incluse</strong></li>
+<li><code>pas</code> : saut entre chaque valeur (optionnel, par défaut = 1)</li>
+</ul>
+<p><strong>Exemple</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span>):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;i =&#34;</span>, i)</span></span></code></pre></div>
+<blockquote>
+<p>Affiche les valeurs de 0 à 4.</p>
+</blockquote>
+<h2 id="interrompre-une-boucle">Interrompre une boucle</h2>
+<ul>
+<li><code>break</code> : arrête <strong>immédiatement</strong> la boucle.</li>
+<li><code>continue</code> : saute <strong>à l’itération suivante</strong>.</li>
+</ul>
+<p><strong>Exemple avec <code>break</code></strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>    print(i)</span></span></code></pre></div>
+<blockquote>
+<p>Affiche 0 à 4. S’arrête à 5.</p>
+</blockquote>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>compteur <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> compteur <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> compteur <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Valeur :&#34;</span>, compteur)
+</span></span><span style="display:flex;"><span>    compteur <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div>
+<blockquote>
+<p>Affiche :</p>
+</blockquote>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Valeur : 0  
+Valeur : 1  
+Valeur : 2  
+Valeur : 3  
+Valeur : 4  </code></pre></div>
+<h3 id="exemple-avec-continue">Exemple avec <code>continue</code></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">11</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">continue</span>  <span style="color:#75715e"># On saute les multiples de 3</span>
+</span></span><span style="display:flex;"><span>    print(i)</span></span></code></pre></div>
+<blockquote>
+<p>Affiche:</p>
+</blockquote>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>1
+2
+4
+5
+7
+8
+10</code></pre></div>
+<h2 id="cest-quoi-un-bogue">C’est quoi un bogue?</h2>
+<p>Un <strong>bogue</strong> (ou bug) est une <strong>erreur dans un programme</strong> qui empêche le code de fonctionner comme prévu.
+Il peut être :</p>
+<ul>
+<li><strong>syntaxique</strong> : le programme ne se lance même pas (ex. oubli de <code>:</code> ou de parenthèse);</li>
+<li><strong>logique</strong> : le programme fonctionne mais donne un <strong>mauvais résultat</strong>;</li>
+<li><strong>d’exécution</strong> : le programme se lance mais plante en cours de route (ex. division par zéro).</li>
+</ul>
+<h2 id="types-derreurs-fréquentes">Types d’erreurs fréquentes</h2>
+<table>
+<thead>
+<tr>
+<th>Type d&rsquo;erreur</th>
+<th>Exemple</th>
+<th>Message typique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Syntaxe</td>
+<td><code>if x = 5:</code></td>
+<td><code>SyntaxError</code></td>
+</tr>
+<tr>
+<td>Typo</td>
+<td><code>pritn(&quot;Hello&quot;)</code></td>
+<td><code>NameError</code></td>
+</tr>
+<tr>
+<td>Zéro</td>
+<td><code>10 / 0</code></td>
+<td><code>ZeroDivisionError</code></td>
+</tr>
+<tr>
+<td>Type invalide</td>
+<td><code>int(&quot;chat&quot;)</code></td>
+<td><code>ValueError</code></td>
+</tr>
+<tr>
+<td>Oubli de variable</td>
+<td><code>print(resultat)</code></td>
+<td><code>NameError</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="importance-de-lordre-logique">Importance de l’ordre logique</h3>
+<ul>
+<li>Un programme <strong>se lit de haut en bas</strong>.</li>
+<li>Une mauvaise organisation peut conduire à des <strong>résultats erronés</strong>.</li>
+<li>L’ordre : <strong>entrée → traitement → sortie</strong></li>
+<li>Exemple courant d’erreur : utiliser une variable <strong>avant de lui avoir donné une valeur</strong>.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Mauvais ordre :</span>
+</span></span><span style="display:flex;"><span>print(resultat)
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Erreur : la variable n&#39;existe pas encore</span></span></span></code></pre></div>
+<h2 id="techniques-de-débogage-simples">Techniques de débogage simples</h2>
+<h3 id="1-lire-les-messages-derreur">1. Lire les messages d’erreur</h3>
+<ul>
+<li><strong>Que dit-il?</strong></li>
+<li><strong>Sur quelle ligne?</strong></li>
+<li><strong>Quel type d’erreur?</strong></li>
+</ul>
+<p>Quand Python rencontre une erreur, il t’affiche un <strong>message d’erreur</strong>. C’est comme un indice pour t’aider.</p>
+<p><strong>Exemple</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>val <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Donne un nombre: &#34;</span>))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Le carré est: &#34;</span> val <span style="color:#f92672">*</span> val)</span></span></code></pre></div>
+<blockquote>
+<p><code>SyntaxError: invalid syntax</code></p>
+</blockquote>
+<ul>
+<li>Le message t’indique une <strong>erreur de syntaxe</strong>. Ici, il manque une <strong>virgule</strong> ou un <code>+</code> dans le <code>print</code>.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Le carré est:&#34;</span>, val <span style="color:#f92672">*</span> val)</span></span></code></pre></div>
+<h3 id="2-ajouter-des-print">2. Ajouter des <code>print()</code></h3>
+<p>C’est ta <strong>lampe de poche</strong> : affiche les variables pour voir ce qui se passe.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>age <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Âge : &#34;</span>))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;DEBUG - âge reçu :&#34;</span>, age)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Majeur&#34;</span>)</span></span></code></pre></div>
+<h3 id="3-tester-petit-à-petit">3. Tester petit à petit</h3>
+<p>N’écris pas tout d’un coup. Teste <strong>par morceaux</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Mauvais</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># tout écrit avant de tester</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mieux</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># écrire un input → tester</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ajouter un if → tester</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ajouter un calcul → tester</span></span></span></code></pre></div>
+
+<details class=" box cstyle notices cyan expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    À retenir
+  </summary>
+  <div class="box-content">
+<ul>
+<li>Les boucles (<code>while</code> et <code>for</code>) permettent de <strong>répéter des actions</strong> efficacement.</li>
+<li>Il est possible d&rsquo;interrompre le déroulement d&rsquo;une boucle à l&rsquo;aide de <code>break</code> ou <code>continue</code>.</li>
+<li>L’indentation est <strong>essentielle</strong> pour structurer le code.</li>
+<li><code>while</code> : Utilisée lorsqu&rsquo;une condition doit être respectée pour que la boucle s&rsquo;exécute.
+<ul>
+<li>Équivaut à dire: <strong>TANT QUE</strong> <em>condition est vraie</em> <strong>FAIRE&hellip;</strong></li>
+</ul>
+</li>
+<li><code>for</code> avec range() : Utilisée lorsque le nombre de répétitions est connu d’avance.
+<ul>
+<li>Équivaut à dire: POUR CHAQUE tour de boucle FAIRE… ou<br>
+POUR CHAQUE valeur d’une séquence FAIRE…</li>
+</ul>
+</li>
+<li><strong>Avant de commencer à coder</strong> c&rsquo;est très important de comprendre le problème afin d’identifier les variables ou constantes et les formules.</li>
+<li>Lorsqu&rsquo;une erreur apparait, bien lire le message d&rsquo;erreur, utiliser la fonction `print()``à pour suivre l’exécution d’un programme et identifier les bogues.</li>
+<li>Toujours “challenger” les résultats obtenus, à l’aide de différentes valeurs: “Est-ce que ça a du sens scientifiquement ?”</li>
+</ul>
+  </div>
+</details>
+<hr>
+<h1 id="atelier">Atelier</h1>
+<ol>
+<li>Téléchargez le fichier de départ : <a href="https://python-a25.netlify.app/blocnotes/atelier_boucles.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></li>
+<li>Déplacez-le dans votre dossier prévu pour <strong>l&rsquo;atelier de la semaine 4</strong>.</li>
+<li>Ouvrez votre dossier de travail <code>programmation-sciences</code> <strong>à partir de Visual Studio Code</strong>.
+<ul>
+<li>Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).</li>
+</ul>
+</li>
+</ol>
+<h2 id="exercice-1--réaction-chimique--combien-de-fois">Exercice 1 – Réaction chimique : combien de fois?</h2>
+<p>Une réaction chimique simple a lieu entre deux réactifs A et B. À chaque cycle, 1 mL de A réagit avec 2 mL de B pour produire un précipité. Vous disposez d’un certain volume de A et de B.</p>
+<p>Demander à l’utilisateur combien de millilitres il a de A et de B. Puis, afficher <strong>combien de fois la réaction peut avoir lieu en entier</strong> (sans fractions), et combien de mL de chaque réactif il reste après la dernière réaction complète.</p>
+<ul>
+<li>Utiliser une boucle <code>while</code> pour simuler la réaction répétée.</li>
+<li>À chaque itération, soustraire les volumes requis de A et B.</li>
+<li>S’arrêter lorsque l’un des réactifs n’est plus suffisant.</li>
+</ul>
+<p><strong>Exemple d’exécution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Quantité de A disponible (en mL) : 10
+Quantité de B disponible (en mL) : 25
+
+La réaction a eu lieu 5 fois.
+Il reste 0 mL de A et 15 mL de B.</code></pre></div>
+<h2 id="exercice-2--détection-de-mutation-compteur">Exercice 2 – Détection de mutation (compteur)</h2>
+<p>Vous êtes en train d&rsquo;examiner une longue série d&rsquo;échantillons au microscope. Chaque échantillon peut être sain (<code>0</code>) ou muté (<code>1</code>). Vous devez saisir les résultats un à un.</p>
+<p>Demander à l’utilisateur combien d’échantillons il va analyser. Ensuite, lui demander un à un les résultats (0 ou 1) et <strong>compter</strong> combien d’échantillons sont mutés. À la fin, afficher le <strong>pourcentage d’échantillons mutés</strong>.</p>
+<ul>
+<li>Utiliser une boucle <code>for</code> basée sur le nombre total d’échantillons.</li>
+<li>Demander à chaque itération : &ldquo;Échantillon X : sain (0) ou muté (1)?&rdquo;</li>
+<li>Accumuler le nombre de mutations.</li>
+<li>Calculer et afficher le pourcentage.</li>
+</ul>
+<p><strong>Exemple d’exécution :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Combien d’échantillons vas-tu analyser? 4
+Échantillon 1 : sain (0) ou muté (1)? 0
+Échantillon 2 : sain (0) ou muté (1)? 1
+Échantillon 3 : sain (0) ou muté (1)? 1
+Échantillon 4 : sain (0) ou muté (1)? 0
+
+2/4 échantillons sont mutés.
+Pourcentage de mutation : 50.0 %</code></pre></div>
+<hr>
+<h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
+<blockquote>
+<p><strong>RAPPEL</strong>: Semaine prochaine c&rsquo;est le <strong>premier examen</strong> (20%)</p>
+</blockquote>
+<ol>
+<li>Lire la prochaine leçon : <a>6. Listes, chaines et visualisation des données</a></li>
+<li>Faire les exercices de la <a href="#exercices">prochaine leçon :</a></li>
+</ol>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="active " data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1757963396" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1757963396" defer></script>
+    <script src="/js/theme.js?1757963396" defer></script>
+  </body>
+</html>

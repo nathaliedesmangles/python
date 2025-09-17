@@ -388,8 +388,8 @@ Demander à l’utilisateur combien de millilitres il a de A et de B. Puis, affi
 Quantité de A disponible (en mL) : 10
 Quantité de B disponible (en mL) : 25
 
-La réaction a eu lieu 5 fois.
-Il reste 0 mL de A et 15 mL de B.
+La réaction a eu lieu 10 fois.
+Il reste 0 mL de A et 5 mL de B.
 ```
 
 ## Exercice 2 – Détection de mutation (compteur)

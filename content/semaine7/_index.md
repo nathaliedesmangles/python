@@ -9,7 +9,7 @@ draft = true
 
 ## Objectifs
 
-* Créer des tableaux de données à une ou deux dimensions.
+* Créer des **tableaux de données** à une ou deux dimensions.
 * Calculer des **moyennes** et **écarts types**.
 * Gérer des données **expérimentales incomplètes** (`np.nan`).
 * Comparer des résultats entre éléments ou conditions.
@@ -23,12 +23,21 @@ draft = true
 {{% notice style="accent" title="Apprendre par la pratique" %}}
 - **Faites les exercices** en vous aidant des notes de cours ci-dessous.
 - Certains seront fait en classe à titre de démonstration.
-- Les solutions seront disponibles à la fin de la semaine 2.
+- Les solutions seront disponibles à la fin de la semaine prochaine.
 {{% /notice %}}
 
 # Exercices
 
+## Fichier de départ à utiliser
+
+1. Cliquez sur le lien pour télécharger le fichier.
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_numpy.ipynb)
+2. Enregistrez le fichier dans votre dossier **exercices** de la semaine en cours.
+3. Ouvrez **Visual Studio Code**.
+4. Dans VS Code, recherchez et ouvrez le fichier `exercices_boucles.ipynb`
+5. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
+6. Vous pouvez commencer à faire les exercices.
+
 
 ## Exercice 1 – Solubilité d’un sel
 
@@ -392,7 +401,10 @@ plt.show()
 
 # Atelier
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_numpy_regression.ipynb)
+1. Téléchargez le fichier de départ : [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_numpy_regression.ipynb)
+2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 4**.
+3. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
+   * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
 
 ## Exercice : Analyse d’une expérience sur l’effet de la lumière sur la croissance des plantes
 
