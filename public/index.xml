@@ -89,7 +89,7 @@
       <link>https://example.org/semaine7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine7/index.html</guid>
-      <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R² Établir une relation entre deux données Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous.</description>
+      <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R². Établir une relation entre deux données.</description>
     </item>
     <item>
       <title>Solutions des exercices</title>

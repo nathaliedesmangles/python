@@ -15,8 +15,8 @@ draft = false
 * Comparer des résultats entre éléments ou conditions.
 * Filtrer des données selon des conditions.
 * Tracer un graphique à barres muni d'une barre d'erreur avec `matplotlib`.
-* Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R²
-* Établir une relation entre deux données
+* Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R².
+* Établir une relation entre deux données.
 
 ---
 
@@ -276,7 +276,7 @@ tab_esp = np.linspace(0, 10, 5)  # Crée un tableau : [ 0.  2.5  5.  7.5 10. ]
 
 ## Fonctions statistiques
 
-### Calculer la moyenne des données
+### Calculer la moyenne des données avec np.mean()
 
 ```python
 sol = np.array([32.0, 35.5, 37.2])
@@ -285,7 +285,7 @@ print(f"Moyenne : {moy:.2f} g/100mL")
 ```
 
 
-### Calculer l’écart type des données
+### Calculer l’écart type des données avec np.std()
 
 ```python
 sol = np.array([32.0, 35.5, 37.2])
@@ -558,15 +558,6 @@ Certaines mesures sont manquantes (notées `np.nan`), car une ou deux plantes n�
    * Ajoute un titre et un label pour l’axe des ordonnées (hauteur moyenne en cm).
 
 ![Graphique](./graphique_croissance_lumiere.png?width=45vw)
-
-### Aide
-
-* `numpy.array()` pour créer le tableau.
-* `np.nanmean()` et `np.nanstd()` pour les calculs.
-* `np.arange(len(conditions))` pour créer les positions des barres.
-* `plt.bar()` et `plt.errorbar()` (ou l’argument `yerr`) pour tracer les moyennes avec barres d’erreur.
-* `plt.xticks()` pour afficher correctement les noms des conditions.
-
 
 
 ---
