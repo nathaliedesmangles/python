@@ -211,16 +211,16 @@ Moyenne avec engrais : 15.0 cm
 import numpy as np
 ```
 
-## Créer un tableau de données (`array`)
+## Créer des tableaux de données (`array`)
 
-### Tableau 1D
+### Tableau 1D via un liste et np.array()
 
 ```python
 sol = np.array([32.0, 35.5, 37.2])
 print(f"Solubilités mesurées : {sol}")
 ```
 
-### Tableau 2D
+### Tableau 2D via une liste de listes et np.array()
 
 * Un **tableau numpy** multidimentionnel c'est un **tableau numpy** qui contient **une liste de listes**.
 
@@ -233,33 +233,53 @@ print(matrice.shape)     # Affiche les dimensions (2 lignes, 2 colonnes)
 
 ### Rempli de 0
 
+* `np.zeros(forme)`: créer un tableau rempli uniquement de `0`
+* `forme` = dimensions du tableau (ex. `(2,3)` → 2 lignes, 3 colonnes).
+
+**Exemple** :
 ```python
-np.zeros((2, 3))  # Crée un tableau de 2 lignes et 3 colonnes rempli de 0
+tab_zeros = np.zeros((2, 3))  # Crée un tableau de 2 lignes et 3 colonnes rempli de 0
 ```
 
 ### Rempli de 1
 
+* `np.ones(forme)` : créer un tableau rempli uniquement de `1`.
+* `forme` = dimensions du tableau (ex. `(3,2)` → 3 lignes, 2 colonnes).
+
+**Exemple** :
 ```python
-np.ones((3, 2))  # Crée un tableau de 3 lignes et 2 colonnes rempli de 1
+tab_uns = np.ones((3, 2))  # Crée un tableau de 3 lignes et 2 colonnes rempli de 1
 ```
 
 ### Rempli d'une autre valeur
 
+* `np.full(forme, valeur)` : créer un tableau rempli avec une **valeur choisie**.
+* `forme` = dimensions du tableau (ex. `4` → 1D avec 4 éléments).
+* `valeur` = nombre à répéter (ex. `0.5`).
+
+**Exemple** :
 ```python
-np.full(4, 0.5)  # Crée un tableau [0.5, 0.5, 0.5, 0.5]
+tab_demi = np.full(4, 0.5)  # Crée un tableau [0.5, 0.5, 0.5, 0.5]
 ```
 
 ### Rempli de valeurs espacées régulièrement (utile pour les graphiques)
 
+* `np.linspace(debut, fin, nb)` : créer un tableau de `nb` valeurs **réparties régulièrement** entre `debut` et `fin` (inclus).
+  * `debut` = première valeur.
+  * `fin` = dernière valeur.
+  * `nb` = nombre total de valeurs.
+
 ```python
-np.linspace(0, 10, 5)  # Crée un tableau : [ 0.  2.5  5.  7.5 10. ]
+tab_esp = np.linspace(0, 10, 5)  # Crée un tableau : [ 0.  2.5  5.  7.5 10. ]
 ```
+
 
 ## Fonctions statistiques
 
 ### Calculer la moyenne des données
 
 ```python
+sol = np.array([32.0, 35.5, 37.2])
 moy = np.mean(sol)
 print(f"Moyenne : {moy:.2f} g/100mL")
 ```
@@ -268,6 +288,7 @@ print(f"Moyenne : {moy:.2f} g/100mL")
 ### Calculer l’écart type des données
 
 ```python
+sol = np.array([32.0, 35.5, 37.2])
 ecart = np.std(sol)
 print(f"Écart type : {ecart:.2f}")
 ```
@@ -315,7 +336,7 @@ moy = np.nanmean(sol)
 print(f"Moyenne (sans valeur manquante) : {moy:.2f} g/100mL")
 ```
 
-La fonction `np.nanmean()` calcule **la moyenne des éléments en ignorant les valeurs `NaN`** (`Not a Number`), qui représentent généralement des données manquantes ou invalides.
+* La fonction `np.nanmean()` calcule **la moyenne des éléments en ignorant les valeurs `NaN`** (`Not a Number`), qui représentent généralement des données manquantes ou invalides.
 
 {{% notice style="cyan" title="Notez" %}}
 Sans `nanmean`, la fonction `np.mean(sol)` retournerait `nan` car une seule valeur `nan` dans la liste contamine le résultat.
@@ -326,34 +347,43 @@ Sans `nanmean`, la fonction `np.mean(sol)` retournerait `nan` car une seule vale
 1. Créer un tableau et afficher uniquement certaines valeurs selon une condition
 
 ```python
-array = np.array([2, 5, 7, 1, 8, 3])
-masque = array > 5	# Masquage : valeurs supérieures à 5
-print(f"Masque booléen : {masque}
-valeurs_filtrées = array[masque]
-print(f"Valeurs supérieures à 5 : {valeurs_filtrées}")
-```
-**Sortie attendue :**
+tableau = np.array([2, 5, 7, 1, 8, 3])
+masque = tableau > 5	# Masquage : valeurs supérieures à 5
+print(f"Masque booléen : {masque}")
 
+valeurs_filtrees = tableau[masque]
+print(f"Valeurs supérieures à 5 : {valeurs_filtrees}")
+```
+**Résultat attendu :**
 ```
 Masque booléen : [False False  True False  True False]
 Valeurs supérieures à 5 : [7 8]
 ```
+
+**Explication** :
+* `masque = tableau > 5` : crée une liste de booléen, `True` lorsque la valeur de `tableau` est > 5, `False` sinon.
+* `tableau[masque]` : ne garde que les valeurs dans `tableau` qui sont > 5.
 
 2. Comptage conditionnel avec `np.sum`
 
 Compter combien de valeurs respectent un seuil donné.
 
 ```python
-array = np.array([3, 7, 4, 6, 2, 9, 5])
+tableau = np.array([3, 7, 4, 6, 2, 9, 5])
 seuil = 5
-nb_valeurs = np.sum(array > seuil)	# Comptage des valeurs > 5
+
+nb_valeurs = np.sum(tableau > seuil)	# Comptage des valeurs > 5
 print(f"Nombre de valeurs supérieures à {seuil} : {nb_valeurs}")
 ```
 
-**Sortie attendue :**
+**Résultat attendu** :
 ```
 Nombre de valeurs supérieures à 5 : 3
 ```
+
+**Explication** :
+* `tableau > seuil` : conserve les valeurs dans `tableau` qui sont > 5.
+* `np.sum(tableau > seuil)` : compte le nombre de valeurs dans `tableau` qui sont > 5.
 
 ---
 
