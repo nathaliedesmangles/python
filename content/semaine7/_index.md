@@ -3,7 +3,7 @@ chapter = true
 pre = "7."
 title = " Tableaux numpy et droite de régression"
 weight = 107
-draft = true
+draft = false
 +++
 
 
@@ -41,86 +41,165 @@ draft = true
 
 ## Exercice 1 – Solubilité d’un sel
 
-Une solution a été testée à différentes températures. Voici les résultats (en g/100 mL) :
+On a mesuré la solubilité (en g/100 mL) d’un sel à différentes températures. Les données sont stockées dans un tableau NumPy :
 
 ```python
 import numpy as np
-
 sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])
 ```
 
-1. Affiche les valeurs de solubilité.
-2. Calcule et affiche la moyenne **en ignorant la valeur manquante**.
-3. Calcule et affiche l’écart type.
+1. **Afficher le tableau** `sol` pour visualiser les valeurs de solubilité (remarque : une valeur est manquante et représentée par `np.nan`).
+2. **Calculer la moyenne des solubilités** en ignorant la valeur manquante.
+
+   * Cherche dans NumPy une fonction qui calcule la moyenne en excluant les `NaN`.
+3. **Calculer l’écart type** des valeurs (toujours en ignorant `NaN`).
+
+   * Arrondis le résultat à **2 décimales** avec `round()`.
+   * Affiche ton résultat sous la forme : `Écart type : valeur`.
+
+**Exemple de sortie attendue** :
+```
+Solubilités : [32.  35.5  nan 37.2 39. ]
+Moyenne sans NaN : 35.925
+Écart type : 2.58
+```
 
 
 ## Exercice 2 – Températures journalières
 
-Un thermomètre enregistre la température trois fois par jour pendant 7 jours :
+Un thermomètre a enregistré la température **3 fois par jour (matin, après-midi, soir)** pendant **7 jours consécutifs**.
+Ces données sont stockées dans un tableau NumPy à deux dimensions :
 
 ```python
 temperatures = np.array([
-    [12.1, 17.3, 14.2],
-    [11.8, 16.9, 13.9],
-    [13.0, 18.1, 15.0],
-    [12.5, 17.5, 14.7],
-    [np.nan, 16.0, 14.0],
-    [13.2, 18.0, 15.2],
-    [12.0, 17.0, 14.5]
+    [12.1, 17.3, 14.2],  # Jour 1
+    [11.8, 16.9, 13.9],  # Jour 2
+    [13.0, 18.1, 15.0],  # Jour 3
+    [12.5, 17.5, 14.7],  # Jour 4
+    [np.nan, 16.0, 14.0],# Jour 5 (valeur manquante le matin)
+    [13.2, 18.0, 15.2],  # Jour 6
+    [12.0, 17.0, 14.5]   # Jour 7
 ])
 ```
 
-1. Quelle est la forme (shape) du tableau ?
-2. Calcule la **moyenne journalière** pour chaque jour.
-3. Calcule la **température moyenne du matin** (1re colonne), en ignorant les données manquantes.
+1. **Structure du tableau**
+   * Quelle est la *forme* (`shape`) de ce tableau ?
+   * Combien y a-t-il de lignes et de colonnes ? Que représentent-elles ?
+
+2. **Moyenne par jour**
+   * Calcule la **température moyenne quotidienne** pour chaque jour.
+     *(Indice : tu peux utiliser `np.mean(..., axis=1)`)*
+
+3. **Moyenne du matin**
+   * Calcule la **température moyenne du matin** (1ʳᵉ colonne du tableau).
+   * **Attention** : il y a une donnée manquante (`np.nan`). Comment peux-tu l’ignorer dans ton calcul ?
+     *(Indice : utilise `np.nanmean(...)` sur la colonne du matin)*
+
+
+**Résultats attendus** :
+```
+Forme : (7, 3)
+Moyennes journalières : [14.53333333 14.2        15.36666667 14.9        15.         15.46666667
+ 14.5       ]
+Moyenne du matin : 12.433333333333332
+```
 
 
 ## Exercice 3 – Analyse d’ADN
 
-Un test mesure l’intensité de 5 fragments ADN (valeurs arbitraires) pour deux échantillons :
+On a mesuré l’intensité de **5 fragments d’ADN** (valeurs arbitraires) pour **deux échantillons**. Ces intensités sont stockées dans des tableaux NumPy :
 
 ```python
+import numpy as np
+
 ech1 = np.array([3.2, 2.8, 4.1, 3.9, 2.5])
 ech2 = np.array([2.9, 3.0, 4.2, 4.0, 2.7])
 ```
 
-1. Additionne les deux tableaux pour obtenir un profil combiné.
-2. Calcule la différence entre les deux échantillons.
-3. Calcule la moyenne et l’écart type pour chacun des deux.
+1. **Profil combiné** : additionne directement les deux tableaux `ech1` et `ech2` pour obtenir un nouveau tableau qui représente la somme des intensités fragment par fragment.
+   * **Indice** : tu peux utiliser l’opérateur `+` avec des tableaux NumPy.  
+
+2. **Différences entre échantillons** : calcule la différence `ech1 - ech2`.  
+   * **Indice** : fais attention à l’ordre, car `ech1 - ech2` n’est pas la même chose que `ech2 - ech1`.
+
+3. **Statistiques** :
+   * Calcule la **moyenne** de chaque échantillon (`np.mean`).
+   * Calcule l’**écart type** de chaque échantillon (`np.std`).
+   * Arrondis les résultats à **2 décimales** (`round(..., 2)`).
+
+**Résultats attendus** :
+```
+Profil combiné : [6.1 5.8 8.3 7.9 5.2]
+Différence : [ 0.3 -0.2 -0.1 -0.1 -0.2]
+Moyenne éch1 : 3.3
+Écart type éch1 : 0.62
+Moyenne éch2 : 3.36
+Écart type éch2 : 0.62
+```
 
 
-## Exercice 4 – Pressions dans un cylindre
 
-On mesure la pression (en kPa) à différentes hauteurs (en cm) dans un cylindre :
+## Exercice 4 – Pression en fonction de la hauteur dans un cylindre
+
+On mesure la pression (en kPa) à différentes hauteurs (en cm) dans un cylindre rempli d’air :
 
 ```python
+import numpy as np
+
 hauteur = np.linspace(0, 50, 6)  # [0, 10, 20, 30, 40, 50]
 pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
 ```
 
-1. Affiche les hauteurs et les pressions.
-2. Calcule la variation de pression par tranche de 10 cm.
-3. Calcule la moyenne de pression.
-4. Trace la droite de régression linéaire pour le graphique (`scatter()`) de la pression en fonction de la hauteur. 
+1. **Affichage des données**
+   * Affiche le tableau des hauteurs en cm.
+   * Affiche le tableau des pressions en kPa.
 
-### Exemple de résultat
+2. **Variation de pression**
+   * Calcule la différence de pression entre deux hauteurs consécutives (chaque 10 cm).
+   * Affiche le tableau des variations obtenues.
 
+3. **Moyenne de la pression**
+   * Calcule la moyenne des valeurs de pression.
+   * Affiche-la avec **2 chiffres après la virgule**.
+
+4. **Graphique avec régression linéaire**
+   * Trace un nuage de points (`plt.scatter()`) représentant la pression en fonction de la hauteur.
+   * Ajoute la droite de régression linéaire sur le même graphique.
+   * Mets un titre et des étiquettes aux axes (`plt.xlabel`, `plt.ylabel`).
+
+**Exemple attendu (partiel)** :
 ```
 Hauteur (cm) : [ 0. 10. 20. 30. 40. 50.]
 Pression (kPa) : [101.3 100.   98.7  97.5  96.2  95. ]
 Variation de pression par 10 cm : [-1.3 -1.3 -1.2 -1.3 -1.2]
-Moyenne de pression : 98.11666666666667 kPa
+Moyenne de pression : 98.12 kPa
 ```
-
 ![Graphique nuage et regression](./graphique_pression_regression.png?width=35vw)
+
+
 
 ## Exercice 5 – Croissance d’une plante (modélisation simplifiée)
 
-Une plante pousse selon ce modèle : sa taille augmente de 2 cm par jour.
+On veut modéliser la croissance d’une plante.
+Sans engrais, sa taille **augmente de 2 cm par jour**, en partant d’une taille initiale de **5 cm**.
 
-1. Crée un tableau NumPy qui contient la taille de la plante pendant 10 jours, en partant de 5 cm.
-2. Ajoute 1 cm supplémentaire à chaque valeur pour simuler un apport d’engrais.
-3. Calcule la moyenne de croissance avec et sans engrais.
+1. **Créer un tableau NumPy** qui contient la taille de la plante chaque jour pendant 10 jours (jour 0 à jour 9).   
+   **Indice** : utilise `np.arange()` ou construis le tableau à partir d’une liste.
+2. **Afficher ce tableau** pour vérifier qu’il correspond à la croissance sans engrais.
+3. **Créer un deuxième tableau** où tu ajoutes **+1 cm** à chaque valeur du premier tableau (effet de l’engrais).
+4. **Calculer la moyenne** des tailles de la plante :
+   * une fois **sans engrais**,
+   * une fois **avec engrais**.  
+     **Indice** : utilise la fonction `np.mean()`.
+
+**Résultats attendus** :
+```
+Taille sans engrais : [ 5  7  9 11 13 15 17 19 21 23]
+Taille avec engrais : [ 6  8 10 12 14 16 18 20 22 24]
+Moyenne sans engrais : 14.0 cm
+Moyenne avec engrais : 15.0 cm
+```
+
 
 ---
 
@@ -402,19 +481,20 @@ plt.show()
 # Atelier
 
 1. Téléchargez le fichier de départ : [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_numpy_regression.ipynb)
-2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 4**.
+2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 7**.
 3. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
    * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
 
-## Exercice : Analyse d’une expérience sur l’effet de la lumière sur la croissance des plantes
 
-Une équipe de recherche a mesuré la hauteur (en cm) de jeunes plantes après 10 jours de croissance dans trois conditions lumineuses différentes :
+## Exercice : Effet de la lumière sur la croissance des plantes
 
-* lumière naturelle,
-* lumière LED blanche,
-* lumière LED rouge.
+Une équipe de recherche a étudié l’influence de différents types de lumière sur la croissance de jeunes plantes. Après **10 jours**, la **hauteur (en cm)** de **5 plantes** a été mesurée dans chacune des **trois conditions lumineuses** suivantes :
 
-Pour chaque condition, 5 plantes ont été mesurées. Certaines données sont manquantes, car une ou deux plantes n’ont pas survécu. Les données brutes sont les suivantes :
+* **Lumière naturelle**
+* **Lumière LED blanche**
+* **Lumière LED rouge**
+
+Certaines mesures sont manquantes (notées `np.nan`), car une ou deux plantes n’ont pas survécu. Voici les données brutes :
 
 | Condition   | Plante 1 | Plante 2 | Plante 3 | Plante 4 | Plante 5 |
 | ----------- | -------- | -------- | -------- | -------- | -------- |
@@ -423,26 +503,41 @@ Pour chaque condition, 5 plantes ont été mesurées. Certaines données sont ma
 | LED rouge   | 10.4     | 10.1     | 10.2     | np.nan   | np.nan   |
 
 
-Écris un programme Python qui :
+1. **Représentation des données**
+   * Crée un tableau 2D avec `numpy.array()` contenant les mesures ci-dessus.
+   * Stocke les noms des conditions dans une liste `conditions = ["Naturelle", "LED blanche", "LED rouge"]`.
 
-1. **Représente les données sous forme d’un tableau 2D** (à l’aide de `numpy`).
-2. **Calcule la moyenne et l’écart-type** de la hauteur des plantes pour chaque condition, en **ignorant les valeurs manquantes**.
-3. **Compare les hauteurs moyennes** entre les conditions (affiche par exemple la condition ayant la croissance moyenne la plus élevée).
-4. **Affiche un résumé clair**, par exemple :
-   ```
-   Moyenne (Naturelle) = 12.86 cm, écart-type = 0.22 cm
-   Moyenne (LED blanche) = ...
-   ...
-   Condition avec la plus grande croissance moyenne : Naturelle
-   ```
-5. Affiche le graphique montrant la croissance moyenne par type de lumière, avec **barres d’erreur** représentant l’écart-type.
+2. **Analyse statistique**
+   * Calcule la **moyenne** et l’**écart-type** de la hauteur des plantes pour chaque condition.
+   * Utilise `np.nanmean()` et `np.nanstd()` pour **ignorer les valeurs manquantes** (`np.nan`).
 
-## Aide
+3. **Comparaison entre conditions**
+   * Détermine la condition qui présente la croissance moyenne la plus élevée.
+   * Affiche un résumé clair, par exemple :
+     ```
+     Moyenne (Naturelle) = 12.86 cm, écart-type = 0.22 cm
+     Moyenne (LED blanche) = ...
+     Moyenne (LED rouge) = ...
+     Condition avec la plus grande croissance moyenne : Naturelle
+     ```
 
-* Utilise `numpy.array()` pour construire le tableau.
-* Utilise `np.nanmean()` et `np.nanstd()` pour les calculs.
-* Tu peux créer une liste `conditions = ["Naturelle", "LED blanche", "LED rouge"]` pour faciliter l'affichage.
-* Utilise `np.arrange()`, `plt.bar()` et `plt.plt.xticks()` pour construire le graphique.
+4. **Visualisation graphique**
+   * Représente les moyennes avec un **diagramme en barres** (`plt.bar`).
+   * Ajoute les **barres d’erreur** correspondant aux écarts-types.
+   * Mets les noms des conditions en abscisse avec `plt.xticks()`.
+   * Ajoute un titre et un label pour l’axe des ordonnées (hauteur moyenne en cm).
+
+![Graphique](./graphique_croissance_lumiere.png?width=45vw)
+
+### Aide
+
+* `numpy.array()` pour créer le tableau.
+* `np.nanmean()` et `np.nanstd()` pour les calculs.
+* `np.arange(len(conditions))` pour créer les positions des barres.
+* `plt.bar()` et `plt.errorbar()` (ou l’argument `yerr`) pour tracer les moyennes avec barres d’erreur.
+* `plt.xticks()` pour afficher correctement les noms des conditions.
+
+
 
 ---
 

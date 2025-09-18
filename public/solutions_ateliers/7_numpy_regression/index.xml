@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Tableaux NumPy et droite de régression :: 420-SN1-RE</title>
-    <link>http://localhost:1313/solutions_ateliers/7_numpy_regression/index.html</link>
+    <link>https://example.org/solutions_ateliers/7_numpy_regression/index.html</link>
     <description>Résumé des résultats : Moyenne (Naturelle) = 12.86 cm, écart-type = 0.21 cm Moyenne (LED blanche) = 11.40 cm, écart-type = 0.16 cm Moyenne (LED rouge) = 10.23 cm, écart-type = 0.12 cm Condition avec la plus grande croissance moyenne : Naturelle&#xD;import numpy as np import matplotlib.pyplot as plt # Données avec valeurs manquantes hauteurs = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], [11.2, 11.6, np.nan, 11.5, 11.3], [10.4, 10.1, 10.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/solutions_ateliers/7_numpy_regression/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/solutions_ateliers/7_numpy_regression/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

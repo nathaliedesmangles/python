@@ -464,6 +464,30 @@ import matplotlib.pyplot as plt
 
 On utilise l’abréviation `plt` pour simplifier l’écriture.
 
+{{% notice style="accent" title="Exécuter tout vs seulement la cellule" groupid="notice-toggle" expanded="false" %}}
+
+Lorsque vous travaillez dans un bloc-notes Jupyter (**fichier .ipynb**), vous avez deux façons d’exécuter du code :
+
+## 1. Exécuter la cellule
+- Lance uniquement **la cellule sélectionnée**.  
+- Utile pour tester une portion de code.  
+- Exemple : si vous importez `numpy` dans une cellule mais n’exécutez **que** une autre cellule qui l’utilise, vous obtiendrez une erreur (`NameError: name 'plt' is not defined`).  
+
+![Capture d’écran - Bouton Exécuter la cellule](/images/exec_cell.png?width=30vw)
+
+## 2. Exécuter tout
+- Lance **tout le bloc-notes de haut en bas**.  
+- Assure que tous les imports (`matplotlib`, `numpy`, `pandas`, etc.) sont bien pris en compte avant les instructions suivantes.  
+- Utile avant une remise ou pour vérifier que le bloc-notes fonctionne de façon autonome.  
+
+![Capture d’écran - Bouton Exécuter tout](/images/exec_tout.png?width=30vw)
+
+## Bonnes pratiques
+- Après avoir écrit ou modifié plusieurs cellules, utilisez **Exécuter tout** pour vérifier la cohérence de votre bloc-notes.  
+- Pendant vos tests, utilisez **Exécuter la cellule** pour éviter de tout relancer inutilement.
+{{% /notice %}}
+
+
 
 ### Tracer une courbe simple avec `plot()`
 
@@ -584,7 +608,7 @@ plt.legend()  # Affiche la légende
 plt.show()
 ```
 
-> Cela ajoutera une petite boîte dans le coin du graphique indiquant "Courbe 1" et "Courbe 2".
+> Cela ajoutera une zone dans un coin du graphique indiquant "Courbe 1" et "Courbe 2".
 
 **Résultat**
 ![Figure 4](./Figure_4.png?width=45vw)
@@ -650,24 +674,19 @@ plt.savefig("figure.png")
 Un chercheur a mesuré la **température moyenne (°C)** de quatre villes pendant une semaine. Les données sont regroupées dans une **liste de listes**. Vous devez analyser et représenter ces données.
 
 1. **Les données**
-
    * Créez une liste `temperatures` contenant les valeurs suivantes (une sous-liste par ville) :
-
      * Ville A : `[15, 16, 14, 14, 17, 18, 19]`
      * Ville B : `[22, 23, 21, 20, 24, 25, 26]`
      * Ville C : `[5, 7, 6, 6, 8, 9, 7]`
      * Ville D : `[10, 11, 12, 10, 13, 14, 15]`
 
    * Créez aussi deux listes :
-
      * `villes = ["Ville A", "Ville B", "Ville C", "Ville D"]`
      * `jours = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"]`
 
 2. **Afficher les températures**
-
    * À l’aide de **boucles imbriquées** (`for ... :` dans `for ... :`), affichez les températures de chaque ville.
    * Exemple attendu :
-
      ```
      Ville A : 15 16 14 14 17 18 19
      Ville B : 22 23 21 20 24 25 26
@@ -675,25 +694,20 @@ Un chercheur a mesuré la **température moyenne (°C)** de quatre villes pendan
      ```
 
 3. **Trouver les valeurs extrêmes**
-
    * Pour chaque ville, utilisez les fonctions `max()` et `min()` pour trouver la température maximale et minimale.
    * Affichez-les sous forme de phrases complètes, par exemple :
-
      ```
      La température maximale de Ville A est 19 C
      La température minimale de Ville A est 14 C
      ```
 
 4. **Classer les températures**
-
    * Pour chaque température de chaque ville, affichez (`if / elif / else`):
-
      * `"Froide"` si T < 10
      * `"Douce"` si 10 ≤ T ≤ 20
      * `"Chaud"` si T > 20
    
    * Exemple :
-
      ```
      15 => Douce
      7 => Froide
@@ -701,7 +715,6 @@ Un chercheur a mesuré la **température moyenne (°C)** de quatre villes pendan
      ```
 
 5. **Tracer un graphique avec matplotlib**
-
    * Utilisez une boucle pour tracer la courbe des températures de chaque ville (`plt.plot`).
    * Ajoutez :
      * Un **titre** : `"Températures hebdomadaires"`
@@ -710,7 +723,6 @@ Un chercheur a mesuré la **température moyenne (°C)** de quatre villes pendan
      * Une **légende** (`legend`)
    * Sauvegardez le graphique dans un fichier `"temperatures.png"` (`savefig`)
    * Affichez-le (`show`).
-
 
 
 **Résultats attendus** :

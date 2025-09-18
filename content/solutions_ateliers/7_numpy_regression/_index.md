@@ -2,7 +2,7 @@
 pre = "<b>7.</b>"
 title = " Tableaux NumPy et droite de régression"
 weight = 307
-draft = true
+draft = false
 +++
 
 
@@ -50,7 +50,3 @@ plt.tight_layout()
 plt.savefig("graphique_croissance_lumiere.png")
 plt.show()
 ```
-
-### Résultat visuel
-
-![Graphique](./graphique_croissance_lumiere.png?width=45vw)
