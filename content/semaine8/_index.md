@@ -12,9 +12,9 @@ draft = true
 * Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique)
 * Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours).
 * Lire un fichier csv contenant des données expérimentales
-* Explorer les données
-* Filtrer les résultats pour donnée ciblée.
-* Comparer des valeurs selon une donnée
+* Explorer les données.
+* Filtrer les résultats pour une donnée ciblée.
+* Comparer des valeurs selon une donnée.
 
 {{% notice style="accent" title="Apprendre par la pratique" %}}
 - **Faites les exercices** en vous aidant des notes de cours ci-dessous.
@@ -26,56 +26,163 @@ draft = true
 
 # Exercices
 
+## Fichiers de départ à utiliser
+
+1. Cliquez sur le lien pour télécharger le fichier `.ipynb`:
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_dict_fichiers.ipynb)
+2. Cliquez sur le lien pour télécharger le fichier de données (`.csv`): [solubilite.csv](./solubilite.csv)
+   * Ce fichier de données sera utilisé dans les exercices #2 à #5.
+3. Enregistrez le fichier dans votre dossier **exercices** de la semaine en cours.
+4. Ouvrez **Visual Studio Code**.
+5. Dans VS Code, recherchez et ouvrez le fichier `exercices_dict_fichiers.ipynb`
+6. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
+7. Vous pouvez commencer à faire les exercices.
 
-[Fichier à utiliser: solubilite.csv](./solubilite.csv)
 
-## Exercice 1 - Densités
+## Exercice 1 – Densités
 
-Crée un dictionnaire `densites` qui contient la densité (en g/mL) de l’eau, de l’éthanol et du mercure :
+On veut représenter la densité (en g/mL) de différentes substances à l’aide d’un **dictionnaire**.
 
-```python
-densites = {
-    "eau": ...,
-    "éthanol": ...,
-    "mercure": ...
-}
+1. **Créez** un dictionnaire nommé `densites` qui contient les valeurs suivantes :
+
+   * eau : 1.0
+   * éthanol : 0.79
+   * mercure : 13.6
+
+   Exemple de structure attendue :
+
+   ```python
+   densites = {
+       "eau": 1.0,
+       "éthanol": 0.79,
+       "mercure": 13.6
+   }
+   ```
+
+2. **Affichez** uniquement la densité du mercure. *(Indice : utilise la clé `"mercure"` dans le dictionnaire.)*
+3. **Ajoutez** une nouvelle entrée au dictionnaire pour l’huile, avec une densité de `0.91`. *(Indice : utilise la clé `"huile"` dans le dictionnaire.)*
+4. **Affichez** ensuite toutes les substances et leur densité à l’aide d’une boucle `for` et de `densites.items()`.
+
+**Résultats attendus** :
+```
+Densité du mercure : 13.6 g/mL
+eau : 1.0 g/mL
+éthanol : 0.789 g/mL
+mercure : 13.6 g/mL
+huile : 0.91 g/mL
 ```
 
-Puis :
-
-1. Affiche la densité du mercure.
-2. Ajoute la densité de l’huile (0.91 g/mL).
-3. Affiche toutes les substances et leur densité.
+{{% notice style="orange" title="Rappel" %}}
+* Si l'importation de `pandas` est faite qu'une seule fois, au début de l'exercice #2, utilisez **Exécuter tout** pour éviter l'erreur *`NameError: name 'pd' is not defined`*.
+{{% /notice %}}
 
 
-## Exercice 2 – Chargement et exploration
+## Exercice 2 – Chargement et exploration de données
 
-[Fichier de données: solubilite.csv](./solubilite.csv)
+1. **Charger le fichier CSV**
+   * Utilisez la fonction `pd.read_csv("solubilite.csv")` pour importer les données dans un DataFrame nommé `df`.
 
-1. Charge le fichier `solubilite.csv`.
-2. Affiche les premières lignes.
-3. Affiche les noms de colonnes.
-4. Affiche toutes les températures pour le composé `"NaCl"`.
+2. **Explorer rapidement les données**
+   * Affichez les **5 premières lignes** du DataFrame avec la méthode `.head()`.
+   * Affichez les **10 premières lignes** du DataFrame avec la méthode `.head(10)`.
+
+3. **Identifier la structure du tableau**
+   * Affichez la liste des **noms de colonnes** avec l’attribut `.columns`.
+
+4. **Filtrer les données pour un composé précis**
+   * Sélectionnez toutes les **températures** correspondant au composé `"NaCl"`.
+   * **Indice** : commence par isoler les lignes où la colonne `"Composé"` vaut `"NaCl"`, puis affiche uniquement la colonne `"Température"`.
+
+
+**Résultats attendus** :
+```
+2. Exploration - 5 et 10 premières lignes
+Composé  Température  Solubilité
+0    NaCl            0        35.7
+1    NaCl           20        36.0
+2    NaCl           40        36.5
+3    NaCl           60        37.0
+4    NaCl           80        37.2
+  Composé  Température  Solubilité
+0    NaCl            0        35.7
+1    NaCl           20        36.0
+2    NaCl           40        36.5
+3    NaCl           60        37.0
+4    NaCl           80        37.2
+5    KNO3            0        13.3
+6    KNO3           20        31.6
+7    KNO3           40        63.9
+8    KNO3           60        85.5
+9    KNO3           80       110.0
+
+3. Colonnes
+Index(['Composé', 'Température', 'Solubilité'], dtype='object')
+
+4. Températures de NaCl
+Températures pour NaCl :
+0     0
+1    20
+2    40
+3    60
+4    80
+Name: Température, dtype: int64
+```
 
 
 ## Exercice 3 – Moyenne de solubilité
 
-1. Calcule la moyenne de solubilité pour `"KNO3"`.
-2. Fais de même pour `"NaCl"`.
-3. Compare les deux valeurs avec des f-strings.
+On dispose de données expérimentales de solubilité (en g/100 mL d’eau) pour différents sels à différentes températures.
+
+1. Sélectionne uniquement les valeurs de solubilité correspondant au sel **`"KNO3"`**. *Utilise df[df["Compose"] == "KNO3"*
+2. Calcule la moyenne de ces valeurs à l’aide de `mean()`. Utilise le résultat de la question `1.` avec un filtre sur la colonne "Solubilité".
+3. Répète la même opération pour le sel **`"NaCl"`**.
+4. Affiche un message contenant les deux moyennes.
+
+**Résultats attendus** :
+```
+Moyenne de solubilité - KNO3 : 60.86 g/100 mL
+Moyenne de solubilité - NaCl : 36.48 g/100 mL
+```
 
 
 ## Exercice 4 – Boucle sur les composés
 
-1. Affiche la moyenne de solubilité pour chaque composé du fichier.
-2. Indique pour chacun si elle est supérieure à 80 g/100mL.
+1. Calculez la **moyenne de solubilité** de chaque composé à partir des valeurs disponibles.
+   * Utilisez `.unique()` pour pouvoir cibler tous les composé présents.
+   ***Astuce** : pense à utiliser une boucle pour traiter chaque composé du fichier.*
+2. Affichez le nom du composé suivi de sa moyenne de solubilité. Utilisez `.mean()`.
+3. Indiquez également si cette moyenne est **supérieure à 80 g/100 mL** ou non.
+   *Utilisez `if/else` pour traiter le cas.
 
+**Résultats attendus** :
+```
+NaCl : 36.48 g/100 mL (inférieure ou égale à 80 g/100 mL)
+KNO3 : 60.86 g/100 mL (inférieure ou égale à 80 g/100 mL)
+CaCl2 : 84.50 g/100 mL (supérieure à 80 g/100 mL)
+C12H22O11 : 253.64 g/100 mL (supérieure à 80 g/100 mL)
+```
 
 ## Exercice 5 – Ajout d’une colonne
 
 1. Crée une colonne `Tendance` qui vaut `"Haute"` si la solubilité est > 80 et `"Faible"` sinon.
-2. Affiche les 10 premières lignes du tableau mis à jour.
+   * Utilise `np.where(condition, valeur_si_vrai, valauer_si_faux)`. 
+2. Affiche les 10 premières lignes du tableau mis à jour avec `.head(10)`.
+
+**Résultats attendus** :
+```
+Composé  Température  Solubilité Tendance
+0    NaCl            0        35.7   Faible
+1    NaCl           20        36.0   Faible
+2    NaCl           40        36.5   Faible
+3    NaCl           60        37.0   Faible
+4    NaCl           80        37.2   Faible
+5    KNO3            0        13.3   Faible
+6    KNO3           20        31.6   Faible
+7    KNO3           40        63.9   Faible
+8    KNO3           60        85.5    Haute
+9    KNO3           80       110.0    Haute
+```
+3. Refaites l'exercice, mais en utilisant `df.loc` au lieu de `np.where()` et assure toi que les deux résultats sont les mêmes.
 
 ---
 
@@ -121,7 +228,7 @@ masses_molaires = {
 print(masses_molaires["O"])  # Affiche : 15.999
 ```
 
-> Si la clé n’existe pas, Python déclenche une erreur `KeyError`.
+> Si la clé n’existe pas, Python déclenche une erreur `KeyError`. Exemple: KeyError: 'Fe'
 
 ## Ajouter ou modifier une valeur
 
@@ -267,11 +374,14 @@ Le contenu du fichier est stocké dans une variable de type `DataFrame`.
 
 ## Afficher les 5 premières lignes
 
+**NB** : `df.head()` affichera **par défaut** les **5** premières lignes. Pour afficher un autre nombre de lignes, il faut l'indiquer dans les `()`.
+
 ```python
-print(df.head(5))
+print(df.head())	# 5 premières lignes
+print(df.head(10))	# 10 premières lignes
 ```
 
-### Exemple d'affichage
+### Exemple d'affichage pour df.head()
 
 ```
    Sel          Température               Solubilité
@@ -282,19 +392,14 @@ print(df.head(5))
 4  KNO3                  40                     63.9
 ```
 
-**NB** : `df.head()` affichera **par défaut** les **10** premières lignes.
 
 ## Afficher les noms des colonnes
 
 ```python
 print(df.columns)
-```
-
-### Exemple d'affichage
-
-```
 Index(['Sel', 'Température', 'Solubilité'], dtype='object')
 ```
+
 
 ## Afficher toutes les mesures pour un seul composé
 
@@ -407,9 +512,11 @@ df[df["col"] > seuil] 		# filtrage conditionnel
 
 # Atelier
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_dict_fichiers.ipynb)
-
-[Fichier à utiliser: cristallisation.csv](./cristallisation.csv)
+1. Téléchargez le fichier de départ (`.ipynb`): [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_dict_fichiers.ipynb)
+2. Téléchargez le fichier de données (`.csv`): [cristallisation.csv](./cristallisation.csv)
+3. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 8**.
+4. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
+   * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
 
 ## Exercice
 

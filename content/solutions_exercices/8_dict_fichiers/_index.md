@@ -1,8 +1,8 @@
 +++
-pre = "<b>10.</b>"
+pre = "<b>8.</b>"
 title = " Dictionnaires et fichiers texte"
-weight = 210
-draft = true
+weight = 208
+draft = false
 +++
 
 
@@ -38,12 +38,13 @@ df = pd.read_csv("solubilite.csv")
 
 # 2. Afficher les premières lignes
 print(df.head())
+print(df.head(10))
 
 # 3. Afficher les noms de colonnes
 print(df.columns)
 
 # 4. Afficher toutes les températures pour le composé "NaCl"
-nacl_temp = df[df["Composé"] == "NaCl"]["Température (°C)"]
+nacl_temp = df[df["Composé"] == "NaCl"]["Température"]
 print("Températures pour NaCl :")
 print(nacl_temp)
 ```
@@ -53,10 +54,10 @@ print(nacl_temp)
 
 ```python
 # 1. Moyenne pour KNO3
-moy_kno3 = df[df["Composé"] == "KNO3"]["Solubilité (g/100 mL)"].mean()
+moy_kno3 = df[df["Composé"] == "KNO3"]["Solubilité"].mean()
 
 # 2. Moyenne pour NaCl
-moy_nacl = df[df["Composé"] == "NaCl"]["Solubilité (g/100 mL)"].mean()
+moy_nacl = df[df["Composé"] == "NaCl"]["Solubilité"].mean()
 
 # 3. Comparaison avec f-strings
 print(f"Moyenne de solubilité - KNO3 : {moy_kno3:.2f} g/100 mL")
@@ -71,7 +72,7 @@ print(f"Moyenne de solubilité - NaCl : {moy_nacl:.2f} g/100 mL")
 composés = df["Composé"].unique()
 
 for c in composés:
-    moy = df[df["Composé"] == c]["Solubilité (g/100 mL)"].mean()
+    moy = df[df["Composé"] == c]["Solubilité"].mean()
     
     # 2. Vérifier si > 80
     if moy > 80:
@@ -87,11 +88,23 @@ for c in composés:
 
 ```python
 # 1. Création de la colonne "Tendance"
-df["Tendance"] = df["Solubilité (g/100 mL)"].apply(lambda s: "Haute" if s > 80 else "Faible")
+
+# Avec np.where
+import numpy as np
+
+df["Tendance"] = np.where(df["Solubilité"] > 80, "Haute", "Faible")
 
 # 2. Affichage des 10 premières lignes
 print(df.head(10))
 ```
 
+### Avec df.loc
 
+```python
+# 1. Création de la colonne "Tendance"
+df["Tendance"] = "Faible"
+df.loc[df["Solubilité"] > 80, "Tendance"] = "Haute"
 
+# 2. Affichage des 10 premières lignes
+print(df.head(10))
+```

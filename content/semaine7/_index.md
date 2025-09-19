@@ -138,7 +138,6 @@ Moyenne éch2 : 3.36
 ```
 
 
-
 ## Exercice 4 – Pression en fonction de la hauteur dans un cylindre
 
 On mesure la pression (en kPa) à différentes hauteurs (en cm) dans un cylindre rempli d’air :
@@ -385,6 +384,31 @@ Nombre de valeurs supérieures à 5 : 3
 * `tableau > seuil` : conserve les valeurs dans `tableau` qui sont > 5.
 * `np.sum(tableau > seuil)` : compte le nombre de valeurs dans `tableau` qui sont > 5.
 
+
+
+3. Filtre avec `np.where()`
+
+* `numpy.where(condition, valeur_si_vrai, valeur_si_faux)` permet de créer un tableau (ou une colonne dans un DataFrame) en fonction d’une condition logique.
+
+   * **condition** → un test qui renvoie `True` ou `False` (par exemple : `df["Note"] >= 60`)
+   * **valeur_si_vrai** → ce qui sera écrit quand la condition est vraie (`"Réussi"`)
+   * **valeur_si_faux** → ce qui sera écrit quand la condition est fausse (`"Échoué"`)
+
+Exemple :
+
+```python
+df["Tendance"] = np.where(df["Note"] >= 60, "Réussi", "Échoué")
+```
+
+**Explication**:
+
+Pour chaque ligne :
+
+   * si la note est >= 60 → `"Réussi"`
+   * sinon → `"Échoué"`.
+
+C’est une méthode très rapide car `numpy` applique l’opération directement sur toute la colonne, sans boucle explicite.
+
 ---
 
 {{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
@@ -395,6 +419,7 @@ Nombre de valeurs supérieures à 5 : 3
 * `np.mean()` calcule la moyenne.
 * `np.std()` calcule l’écart type.
 * `np.nanmean()` ignore les données manquantes.
+* `np.where()` filtre des données selon une condition vraie ou fausse.
 * Les opérations (`+`, `-`, `*`, `/`) s’appliquent à tout le tableau.
 {{% /notice %}}
 

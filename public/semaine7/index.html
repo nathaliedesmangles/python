@@ -18,21 +18,21 @@
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Tableaux numpy et droite de régression :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R². Établir une relation entre deux données.">
-    <meta itemprop="wordCount" content="2349">
+    <meta itemprop="wordCount" content="2462">
     <title> Tableaux numpy et droite de régression :: 420-SN1-RE</title>
     <link href="/semaine7/index.xml" rel="alternate" type="application/rss+xml" title=" Tableaux numpy et droite de régression :: 420-SN1-RE">
-    <link href="/images/logo.png?1758204506" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758204506" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758204506" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758204506" rel="stylesheet">
-    <link href="/css/theme.min.css?1758204506" rel="stylesheet">
-    <link href="/css/format-html.min.css?1758204506" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1758204506" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1758204506" defer></script>
-    <script src="/js/lunr/lunr.min.js?1758204506" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1758204506" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1758204506" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1758204506" defer></script>
-    <script src="/js/search.min.js?1758204506" defer></script>
+    <link href="/images/logo.png?1758289942" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758289942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758289942" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758289942" rel="stylesheet">
+    <link href="/css/theme.min.css?1758289942" rel="stylesheet">
+    <link href="/css/format-html.min.css?1758289942" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1758289942" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1758289942" defer></script>
+    <script src="/js/lunr/lunr.min.js?1758289942" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1758289942" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1758289942" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1758289942" defer></script>
+    <script src="/js/search.min.js?1758289942" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1758204506";
+      window.relearn.index_js_url="/searchindex.en.js?1758289942";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1758204506" rel="stylesheet">
+    <link href="/css/custom.css?1758289942" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine7/index.html">
     <div id="R-body" class="default-animation">
@@ -382,8 +382,8 @@ Moyenne éch2 : 3.36
 Pression (kPa) : [101.3 100.   98.7  97.5  96.2  95. ]
 Variation de pression par 10 cm : [-1.3 -1.3 -1.2 -1.3 -1.2]
 Moyenne de pression : 98.12 kPa</code></pre></div>
-<p><a href="#R-image-127b73c6ac75888f4a5673cbff08c44a" class="lightbox-link"><img alt="Graphique nuage et regression" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_pression_regression.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-127b73c6ac75888f4a5673cbff08c44a"><img alt="Graphique nuage et regression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_pression_regression.png?width=35vw"></a></p>
+<p><a href="#R-image-d67c8bbb042d20a6a030f729d42d70db" class="lightbox-link"><img alt="Graphique nuage et regression" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_pression_regression.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d67c8bbb042d20a6a030f729d42d70db"><img alt="Graphique nuage et regression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_pression_regression.png?width=35vw"></a></p>
 <h2 id="exercice-5--croissance-dune-plante-modélisation-simplifiée">Exercice 5 – Croissance d’une plante (modélisation simplifiée)</h2>
 <p>On veut modéliser la croissance d’une plante.
 Sans engrais, sa taille <strong>augmente de 2 cm par jour</strong>, en partant d’une taille initiale de <strong>5 cm</strong>.</p>
@@ -525,6 +525,28 @@ Valeurs supérieures à 5 : [7 8]</code></pre></div>
 <li><code>tableau &gt; seuil</code> : conserve les valeurs dans <code>tableau</code> qui sont &gt; 5.</li>
 <li><code>np.sum(tableau &gt; seuil)</code> : compte le nombre de valeurs dans <code>tableau</code> qui sont &gt; 5.</li>
 </ul>
+<ol start="3">
+<li>Filtre avec <code>np.where()</code></li>
+</ol>
+<ul>
+<li>
+<p><code>numpy.where(condition, valeur_si_vrai, valeur_si_faux)</code> permet de créer un tableau (ou une colonne dans un DataFrame) en fonction d’une condition logique.</p>
+<ul>
+<li><strong>condition</strong> → un test qui renvoie <code>True</code> ou <code>False</code> (par exemple : <code>df[&quot;Note&quot;] &gt;= 60</code>)</li>
+<li><strong>valeur_si_vrai</strong> → ce qui sera écrit quand la condition est vraie (<code>&quot;Réussi&quot;</code>)</li>
+<li><strong>valeur_si_faux</strong> → ce qui sera écrit quand la condition est fausse (<code>&quot;Échoué&quot;</code>)</li>
+</ul>
+</li>
+</ul>
+<p>Exemple :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Tendance&#34;</span>] <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>where(df[<span style="color:#e6db74">&#34;Note&#34;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">60</span>, <span style="color:#e6db74">&#34;Réussi&#34;</span>, <span style="color:#e6db74">&#34;Échoué&#34;</span>)</span></span></code></pre></div>
+<p><strong>Explication</strong>:</p>
+<p>Pour chaque ligne :</p>
+<ul>
+<li>si la note est &gt;= 60 → <code>&quot;Réussi&quot;</code></li>
+<li>sinon → <code>&quot;Échoué&quot;</code>.</li>
+</ul>
+<p>C’est une méthode très rapide car <code>numpy</code> applique l’opération directement sur toute la colonne, sans boucle explicite.</p>
 <hr>
 
 <details class=" box cstyle notices blue expand" name="notice-toggle">
@@ -541,6 +563,7 @@ Valeurs supérieures à 5 : [7 8]</code></pre></div>
 <li><code>np.mean()</code> calcule la moyenne.</li>
 <li><code>np.std()</code> calcule l’écart type.</li>
 <li><code>np.nanmean()</code> ignore les données manquantes.</li>
+<li><code>np.where()</code> filtre des données selon une condition vraie ou fausse.</li>
 <li>Les opérations (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>) s’appliquent à tout le tableau.</li>
 </ul>
   </div>
@@ -558,8 +581,8 @@ Valeurs supérieures à 5 : [7 8]</code></pre></div>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xticks(rotation<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#34;Score&#34;</span>])
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-c6f4b0ace9d409c50594041028bc1083" class="lightbox-link"><img alt="graphique à barres" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_barres.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c6f4b0ace9d409c50594041028bc1083"><img alt="graphique à barres" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_barres.png?width=40vw"></a></p>
+<p><a href="#R-image-7a45649fc8a86a5d9c5ef97246985ed9" class="lightbox-link"><img alt="graphique à barres" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_barres.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a45649fc8a86a5d9c5ef97246985ed9"><img alt="graphique à barres" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_barres.png?width=40vw"></a></p>
 <table>
 <thead>
 <tr>
@@ -590,8 +613,8 @@ Valeurs supérieures à 5 : [7 8]</code></pre></div>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-6b10e68b3117df4178e5644dbb5c48d1" class="lightbox-link"><img alt="graphique à barres d&rsquo;erreur" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_barres_erreurs.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6b10e68b3117df4178e5644dbb5c48d1"><img alt="graphique à barres d&rsquo;erreur" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_barres_erreurs.png?width=40vw"></a></p>
+<p><a href="#R-image-8c4fe458c4b5fdf2a6460a53d4a28796" class="lightbox-link"><img alt="graphique à barres d&rsquo;erreur" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_barres_erreurs.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c4fe458c4b5fdf2a6460a53d4a28796"><img alt="graphique à barres d&rsquo;erreur" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_barres_erreurs.png?width=40vw"></a></p>
 <table>
 <thead>
 <tr>
@@ -640,8 +663,8 @@ Valeurs supérieures à 5 : [7 8]</code></pre></div>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-d71666a8812fd2a74254bbfb6379890e" class="lightbox-link"><img alt="graphique droite de régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_regression.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d71666a8812fd2a74254bbfb6379890e"><img alt="graphique droite de régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_regression.png?width=40vw"></a></p>
+<p><a href="#R-image-d46a1c7ecc1ac24b284deaa014798f96" class="lightbox-link"><img alt="graphique droite de régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_regression.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d46a1c7ecc1ac24b284deaa014798f96"><img alt="graphique droite de régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_regression.png?width=40vw"></a></p>
 <h2 id="affichage-propre">Affichage propre</h2>
 <table>
 <thead>
@@ -778,8 +801,8 @@ Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
 </ul>
 </li>
 </ol>
-<p><a href="#R-image-383599da5e1c8829168b1958d6d3086b" class="lightbox-link"><img alt="Graphique" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_croissance_lumiere.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-383599da5e1c8829168b1958d6d3086b"><img alt="Graphique" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_croissance_lumiere.png?width=45vw"></a></p>
+<p><a href="#R-image-e9f6dadbe7d316be0ab283f0895a5632" class="lightbox-link"><img alt="Graphique" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_croissance_lumiere.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e9f6dadbe7d316be0ab283f0895a5632"><img alt="Graphique" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_croissance_lumiere.png?width=45vw"></a></p>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
@@ -866,8 +889,8 @@ Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1758204506" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758204506" defer></script>
-    <script src="/js/theme.min.js?1758204506" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1758289942" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758289942" defer></script>
+    <script src="/js/theme.min.js?1758289942" defer></script>
   </body>
 </html>
