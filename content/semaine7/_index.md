@@ -343,7 +343,7 @@ Sans `nanmean`, la fonction `np.mean(sol)` retournerait `nan` car une seule vale
 
 ## Filtrage de données
 
-1. Créer un tableau et afficher uniquement certaines valeurs selon une condition
+1. *Créer un tableau et afficher uniquement certaines valeurs selon une condition**
 
 ```python
 tableau = np.array([2, 5, 7, 1, 8, 3])
@@ -363,7 +363,7 @@ Valeurs supérieures à 5 : [7 8]
 * `masque = tableau > 5` : crée une liste de booléen, `True` lorsque la valeur de `tableau` est > 5, `False` sinon.
 * `tableau[masque]` : ne garde que les valeurs dans `tableau` qui sont > 5.
 
-2. Comptage conditionnel avec `np.sum`
+2. **Comptage conditionnel avec `np.sum`**
 
 Compter combien de valeurs respectent un seuil donné.
 
@@ -386,7 +386,7 @@ Nombre de valeurs supérieures à 5 : 3
 
 
 
-3. Filtre avec `np.where()`
+3. **Filtre avec `np.where()`**
 
 * `numpy.where(condition, valeur_si_vrai, valeur_si_faux)` permet de créer un tableau (ou une colonne dans un DataFrame) en fonction d’une condition logique.
 

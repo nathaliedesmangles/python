@@ -182,7 +182,7 @@ Composé  Température  Solubilité Tendance
 8    KNO3           60        85.5    Haute
 9    KNO3           80       110.0    Haute
 ```
-3. Refaites l'exercice, mais en utilisant `df.loc` au lieu de `np.where()` et assure toi que les deux résultats sont les mêmes.
+3. Refaites l'exercice, mais en utilisant `df.loc` au lieu de `np.where()` et assurez vous que les deux résultats sont les mêmes.
 
 ---
 
@@ -193,6 +193,13 @@ Composé  Température  Solubilité Tendance
 Un **dictionnaire** est une structure de données qui associe des **clés** à des **valeurs**.
 Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.
 
+Les dictionnaires sont utiles pour :
+
+* Associer des symboles d’éléments à des valeurs (masse molaire, charge, état).
+* Regrouper des résultats par échantillon (ex. température par lieu).
+* Associer des noms de gènes à leur expression.
+* etc.
+
 **Syntaxe de base** :
 
 ```python
@@ -202,13 +209,14 @@ mon_dictionnaire = {
 }
 ```
 
-## Utilisation fréquente en sciences
+{{% notice style="accent" title="Attention à la casse et aux accents dans les clés" %}}
+* Lorsque vous utilisez les **clés d’un dictionnaire**, il faut respecter exactement l’écriture définie :
+   * La **casse** (majuscules/minuscules) et les **lettres accentuées** comptent :
+     * `"Nom"` et `"nom"` sont considérés comme **deux clés différentes** dans un dictionnaire.
+     * `"Prénom"` et `"Prenom"` ne désignent **pas la même clés** dans un dictionnaire.
+* Si vous obtenez une erreur du type `KeyError`, vérifiez l’orthographe, la casse et les accents du nom utilisé.
+{{% /notice %}}
 
-Les dictionnaires sont utiles pour :
-
-* Associer des symboles d’éléments à des valeurs (masse molaire, charge, état)
-* Regrouper des résultats par échantillon (ex. température par lieu)
-* Associer des noms de gènes à leur expression
 
 ### Exemple
 
@@ -228,43 +236,77 @@ masses_molaires = {
 print(masses_molaires["O"])  # Affiche : 15.999
 ```
 
-> Si la clé n’existe pas, Python déclenche une erreur `KeyError`. Exemple: KeyError: 'Fe'
+> Si la clé n’existe pas, Python déclenche une erreur `KeyError`.
+```python
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+Cell In[2], line 7
+      1 masses_molaires = {
+      2     "H": 1.008,
+      3     "O": 15.999,
+      4     "C": 12.011
+      5 }
+----> 7 print(masses_molaires["Fe"])
+
+KeyError: 'Fe'
+```
 
 ## Ajouter ou modifier une valeur
 
-### Ajouter
+### Ajouter une donnée
 
+**Exemple**: L'azote
 ```python
 masses_molaires["N"] = 14.007
 ```
 
-### Modifier
+### Modifier une valeur
 
+**Exemple**: Le carbone
 ```python
 masses_molaires["C"] = 12.01  # Correction
 ```
 
-## Vérifier si une clé est présente
+## Vérifier si une clé est présente avec *if* et *in*
 
 ```python
 if "H" in masses_molaires:
     print("L’hydrogène est dans le dictionnaire.")
 ```
 
-## Parcourir un dictionnaire
+## Parcourir un dictionnaire à l'aide de *for*
 
 ### Via les clés
+
+**Par défaut**, la boucle `for` parcours les clés (**Elles sont l'équivalent des indices dans les tableaux**)
 
 ```python
 for element in masses_molaires:
     print(element)
 ```
+**Résultat**:
+```
+H
+O
+C
+N
+```
 
-### Via les valeurs
+### Via les valeurs avec .values()
+
+* Pour parcourir les valeurs il faut le préciser à l'aide de `dictionnaire.values()`.
 
 ```python
 for valeur in masses_molaires.values():
     print(valeur)
+```
+
+**Résultat** :
+```
+1.008
+15.999
+12.01
+14.007
 ```
 
 * `.values()` permet d’obtenir **uniquement les valeurs** du dictionnaire, sans les clés.
@@ -273,21 +315,38 @@ for valeur in masses_molaires.values():
 
 ### Via les paires clé-valeur :
 
+* Pour avoir **les deux** (la clé **ET** la valeur associée) il faut préciser **deux variables** dans la boucle `for`.
+
+**Exemple** (variables `element` et `masse`) :
 ```python
 for element, masse in masses_molaires.items():
     print(f"{element} → {masse}")
 ```
 
+**Résultat** :
+```
+H → 1.008
+O → 15.999
+C → 12.01
+N → 14.007
+```
+
 * `.items()` permet d’obtenir les couples **clé-valeur** sous forme de paires (appelées aussi tuples en Python).
 * Utile quand on veut à la fois le **nom (clé)** et la **valeur associée** pour un affichage ou un traitement.
 
-## Supprimer une entrée
+## Supprimer une entrée du dictionnaire avec del
 
 ```python
 del masses_molaires["H"]
 ```
 
-## Traitement de fichiers texte (.csv)
+**Résultat si on affiche le dictionnaire après la suppression**
+```
+{'O': 15.999, 'C': 12.01, 'N': 14.007}
+```
+---
+
+## Traitement de fichiers texte (.csv) avec Pandas
 
 Les fichiers `.csv` (*Comma-Separated Values*) permettent de stocker des tableaux de données.
 
@@ -300,7 +359,7 @@ temps,temperature
 10,26.3
 15,28.0
 ```
-
+<!--
 ### Lire et écrire des fichiers de données (.csv)
 
 **Écrire (créer)** :
@@ -339,7 +398,7 @@ with open("donnees.csv", "r") as f:
     print(contenu)
 ```
 
-#### Pour des données **numériques**, on peut utiliser `numpy.savetxt()` et `numpy.loadtxt()`
+**Pour des données **numériques**, on peut utiliser `numpy.savetxt()` et `numpy.loadtxt()`**
 
 ```python
 import numpy as np
@@ -352,10 +411,8 @@ np.savetxt("tableau.csv", tableau, delimiter=",")
 donnees = np.loadtxt("tableau.csv", delimiter=",")
 print(donnees)
 ```
+-->
 
----
-
-## Traitement de fichiers .csv avec Pandas
 
 ### Importer la bibliothèque
 
@@ -363,25 +420,28 @@ print(donnees)
 import pandas as pd
 ```
 
+* On utilisera l'alias `pd` pour accéder aux fonctionnalités de Pandas.
+
 ## Charger un fichier CSV
 
 ```python
 df = pd.read_csv("solubilite.csv")
 ```
 
-Le contenu du fichier est stocké dans une variable de type `DataFrame`.
+* Le contenu du fichier est stocké dans une variable de type `DataFrame` représentée par `df`.
 
 
-## Afficher les 5 premières lignes
+## Afficher les 5 premières lignes d'un dataframe
 
-**NB** : `df.head()` affichera **par défaut** les **5** premières lignes. Pour afficher un autre nombre de lignes, il faut l'indiquer dans les `()`.
+**NB** : `df.head()` affichera **par défaut** les **5** premières lignes du dataframe. 
+* Pour afficher un autre nombre de lignes, il faut l'indiquer dans les `()`.
 
 ```python
 print(df.head())	# 5 premières lignes
 print(df.head(10))	# 10 premières lignes
 ```
 
-### Exemple d'affichage pour df.head()
+### Exemple d'affichage pour *df.head()*
 
 ```
    Sel          Température               Solubilité
@@ -397,19 +457,30 @@ print(df.head(10))	# 10 premières lignes
 
 ```python
 print(df.columns)
+```
+
+**Résultat** :
+```
 Index(['Sel', 'Température', 'Solubilité'], dtype='object')
 ```
 
+{{% notice style="accent" title="Attention à la casse et aux accents dans les noms de colonnes" %}}
+* Lorsque vous utilisez les **noms de colonnes dans un dataframe**, il faut respecter exactement l’écriture définie :
+   * La **casse** (majuscules/minuscules) et les **lettres accentuées** comptent :
+     * `"Sel"` et `"sel"` sont considérés comme **deux colonnes différentes** dans un dataframe.
+     * `"Solubilité"` et `"Solubilite"` ne désignent **pas la même colonne** dans un dataframe.
+* Si vous obtenez une erreur du type `KeyError`, vérifiez l’orthographe, la casse et les accents du nom utilisé.
+{{% /notice %}}
 
 ## Afficher toutes les mesures pour un seul composé
 
-Exemple : tout ce qui concerne le **nitrate de potassium (KNO₃)**
+**Exemple** : tout ce qui concerne le **nitrate de potassium (KNO₃)**
 
 ```python
 filtre = df["Sel"] == "KNO3"
 print(df[filtre])
 ```
-Le filtre sélectionne les lignes où le composé est exactement "KNO3".
+* Le filtre sélectionne les **lignes où le composé est exactement "KNO3"**.
 
 ### Exemple d'affichage
 
@@ -422,91 +493,113 @@ Le filtre sélectionne les lignes où le composé est exactement "KNO3".
 
 ## Accéder à une colonne (ex. : Température)
 
+* Afficher toutes les valeurs de la colonne **Température** du tableau de données.
+
 ```python
 print(df["Température"])
 ```
+**Résultat** :
+```
+0      0
+1     20
+2     40
+3     60
+4     80
+5      0
+6     20
+7     40
+8     60
+9     80
+10     0
+11    20
+12    40
+13    60
+14    80
+15     0
+16    20
+17    40
+18    60
+19    80
+Name: Température, dtype: int64
+```
 
-La commande `print(df["Température"])` affiche toutes les valeurs de la colonne **Température** du tableau de données.
 
 ## Moyenne de solubilité pour un composé
 
 ```python
-filtre = df["Sel"] == "NaCl"
+filtre = df["Composé"] == "NaCl"
 moyenne = df[filtre]["Solubilité"].mean()
 print(f"Moyenne de solubilité pour NaCl : {moyenne:.2f} g/100mL")
 ```
 
 **Explication** : 
 
-* `filtre = df["Sel"] == "NaCl"` : On crée un filtre pour ne garder que les lignes où le sel est **NaCl**.
+* `filtre = df[""] Composé == "NaCl"` : On crée un filtre pour ne garder que les lignes où le sel est **NaCl**.
 * `moyenne = df[filtre]["Solubilité"].mean()` : On calcule la **moyenne** des valeurs de solubilité pour **NaCl** seulement.
+
+**Résultat** :
+```
+Moyenne de solubilité pour NaCl : 36.48 g/100mL
+```
 
 
 ## Boucler sur les composés
 
 ```python
-composes = df["Sel"].unique()
+composes = df["Composé"].unique()
 for compose in composes:
-    moyenne = df[df["Sel"] == compose]["Solubilité"].mean()
+    moyenne = df[df["Composé"] == compose]["Solubilité"].mean()
     print(f"{compose} : {moyenne:.2f} g/100mL")
 ```
 
 **Explication** :
 
-* `composes = df["Sel"].unique()` : On récupère la liste des différents sels présents dans la colonne **Sel**.
-* `for compose in composes:` : Pour chaque sel dans cette liste, on calcule la moyenne de la solubilité pour ce sel.
+* `composes = df["Composé"].unique()` : On récupère la liste des différents sels présents dans la colonne **Composé**.
+* `for compose in composes:` : Pour chaque composé dans cette liste, on calcule la moyenne de la solubilité.
 
+**Résultat** :
+```
+NaCl : 36.48 g/100mL
+KNO3 : 60.86 g/100mL
+CaCl2 : 84.50 g/100mL
+C12H22O11 : 253.64 g/100mL
+```
 
 ## Ajouter une colonne calculée
 
-Exemple : ajouter une colonne indiquant si la solubilité est **supérieure à 80 "True" ou non "False"
+**Exemple** : ajouter une colonne indiquant si la solubilité est **supérieure à 80 "True" ou non "False"**.
+
+La colonne **Évaluation** aura la valeur `True` si la solubilité est supérieure à 80, `False` sinon.
 
 ```python
 df["Évaluation"] = df["Solubilité"] > 80
 print(df)
 ```
 
-### Exemple d'affichage
-
-La colonne **Évaluation** contient `True` si la solubilité est supérieure à 80, sinon `False`
-
+**Résultat** :
 ```
-    Sel  Température (°C)  Solubilité  Évaluation
-0  NaCl                20        35.7       False
-1  NaCl                40        36.5       False
-2  KNO3                20        31.6       False
-3  KNO3                40        63.9       False
-4  KNO3                60        85.5        True
-5  KCl                 80        81.1        True
+Composé  Température  Solubilité  Évaluation
+0        NaCl            0        35.7       False
+1        NaCl           20        36.0       False
+2        NaCl           40        36.5       False
+3        NaCl           60        37.0       False
+4        NaCl           80        37.2       False
+5        KNO3            0        13.3       False
+6        KNO3           20        31.6       False
+7        KNO3           40        63.9       False
+8        KNO3           60        85.5        True
+9        KNO3           80       110.0        True
+10      CaCl2            0        59.5       False
+11      CaCl2           20        74.5       False
+12      CaCl2           40        83.5        True
+13      CaCl2           60        95.0        True
+14      CaCl2           80       110.0        True
+15  C12H22O11            0       179.2        True
+16  C12H22O11           20       204.0        True
+17  C12H22O11           40       238.0        True
+18  C12H22O11           60       287.0        True
+19  C12H22O11           80       360.0        True
 ```
-
----
-
-{{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
-* **Dictionnaires** :
-```python
-mon_dict = {"a": 5, "b": 10}
-mon_dict["a"] 				# accéder à une valeur
-for clé in mon_dict: 			# boucle sur les clés
-mon_dict.get("clé", valeur_par_défaut) 	# accès sécurisé
-mon_dict.keys(), .values() 		# itérations
-```
-
-* **Fichiers .csv  (sans Pandas)**: `open()`, `write()`, `read()`, `loadtxt()`, `savetxt()` 
-
-* **Fichiers .csv  (avec Pandas)**:
-```python
-import pandas as pd
-pd.read_csv("fichier.csv") 	# lecture de fichier
-df.head() 			# aperçu des premières données
-df["colonne"] 			# accès à une colonne
-df.loc[3], df.iloc[3] 		# accès à une ligne
-df.mean(), df["col"].std() 	# stats
-df.dropna() 			# suppression des lignes incomplètes
-df[df["col"] > seuil] 		# filtrage conditionnel
-```
-{{% /notice %}}
-
 
 ---
 

@@ -105,7 +105,9 @@ Alice
 
 ### Exercice 4
 
-* Crée une liste de séquences :
+On étudie les séquences d’ADN de différents suspects afin de comparer certaines bases. Les séquences sont représentées sous forme de listes imbriquées.
+
+* Crée la liste de séquences pour les 3 suspects:
 ```python
 suspects = [
     ["A", "T", "C", "G"],
