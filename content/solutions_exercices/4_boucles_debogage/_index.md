@@ -124,6 +124,39 @@ for i in range(1, 11):
 
 ## Exercice 5 – Corriger les erreurs
 
+### 1re exécution du code
+
+![Erreur de syntaxe](./erreur1.png?width=40vw)
+
+**Explications** :
+1. Le message dit : ***Erreur de syntaxe** : Syntaxe invalide. Peut-être vous avez oublié une virgule ?*
+2. L’erreur est en lien avec la **syntaxe de print()**
+
+**Correction** : on ajoute une virgule après les guillemets dans `print()`
+![Modif-Erreur de syntaxe](./modif1.png?width=40vw)
+
+### 2e exécution du code
+
+![Erreur de syntaxe](./erreur2.png?width=40vw)
+
+**Explications** :
+1. Le message dit : ***Erreur de nom** : Le nom de la variable 'nom' n'est pas définit*
+2. L’erreur est en lien avec la **le mauvais nom de variable utilisé**
+
+**Correction** : on remplace `name` par `nom` dans le premier `print()`
+![Modif-Erreur de nom](./modif2.png?width=30vw)
+
+### 3e exécution du code
+
+![Erreur de syntaxe](./erreur3.png?width=40vw)
+
+**Explications** :
+1. Le message dit : ***Erreur de type** : On peut seulement concaténer une variable de type str (pas int) à une autre variable de type str.*
+2. L’erreur est en lien avec la **le calcul fait avec la variable `age`**. L'adition est sur une variable `str` et une variable `int`.
+
+**Correction** : on converti l'entrée au clavier (`age`) en entier avec `int()` pour que le calcul puisse se faire dans le `print()`
+![Modif-Erreur de type](./modif3.png?width=40vw)
+
 ### Version corrigée :
 
 ```python
@@ -132,4 +165,9 @@ print("Bonjour", nom)
 
 age = int(input("Quel âge as-tu? "))
 print("Dans 10 ans, tu auras", age + 10)
+```
+**Résultat** :
+```
+Bonjour Nath
+Dans 10 ans tu auras 25 ans
 ```

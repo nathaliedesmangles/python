@@ -6,7 +6,6 @@ weight = 107
 draft = true
 +++
 
-
 ## Objectifs
 
 * Créer des **tableaux de données** à une ou deux dimensions.

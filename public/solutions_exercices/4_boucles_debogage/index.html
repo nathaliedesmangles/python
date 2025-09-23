@@ -26,21 +26,21 @@ for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (
     <meta itemprop="description" content="Exercice 1 – For ou While ? a. Afficher les nombres de 1 à 10 Boucle : for (on connaît le début et la fin)
 for i in range(1, 11): print(i)b. Compter jusqu’à 100 par bonds de 10 Boucle : for
 for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (baisse de 10 m/s) Boucle : while (on ne connaît pas d’avance le nombre de répétitions, mais on connaît la condition d’arrêt)">
-    <meta itemprop="wordCount" content="365">
+    <meta itemprop="wordCount" content="542">
     <title> Boucles et débogage simple :: 420-SN1-RE</title>
     <link href="/solutions_exercices/4_boucles_debogage/index.xml" rel="alternate" type="application/rss+xml" title=" Boucles et débogage simple :: 420-SN1-RE">
-    <link href="/images/logo.png?1758660510" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758660510" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758660510" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758660510" rel="stylesheet">
-    <link href="/css/theme.min.css?1758660510" rel="stylesheet">
-    <link href="/css/format-html.min.css?1758660510" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1758660510" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1758660510" defer></script>
-    <script src="/js/lunr/lunr.min.js?1758660510" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1758660510" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1758660510" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1758660510" defer></script>
-    <script src="/js/search.min.js?1758660510" defer></script>
+    <link href="/images/logo.png?1758669990" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758669990" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758669990" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758669990" rel="stylesheet">
+    <link href="/css/theme.min.css?1758669990" rel="stylesheet">
+    <link href="/css/format-html.min.css?1758669990" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1758669990" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1758669990" defer></script>
+    <script src="/js/lunr/lunr.min.js?1758669990" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1758669990" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1758669990" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1758669990" defer></script>
+    <script src="/js/search.min.js?1758669990" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -50,7 +50,7 @@ for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (
       window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1758660510";
+      window.relearn.index_js_url="/searchindex.en.js?1758669990";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -96,7 +96,7 @@ for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1758660510" rel="stylesheet">
+    <link href="/css/custom.css?1758669990" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_exercices/4_boucles_debogage/index.html">
     <div id="R-body" class="default-animation">
@@ -127,6 +127,9 @@ for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (
     <li><a href="#exercice-4--boucle-for-avec-range">Exercice 4 – Boucle <code>for</code> avec <code>range</code></a></li>
     <li><a href="#exercice-5--corriger-les-erreurs">Exercice 5 – Corriger les erreurs</a>
       <ul>
+        <li><a href="#1re-exécution-du-code">1re exécution du code</a></li>
+        <li><a href="#2e-exécution-du-code">2e exécution du code</a></li>
+        <li><a href="#3e-exécution-du-code">3e exécution du code</a></li>
         <li><a href="#version-corrigée-">Version corrigée :</a></li>
       </ul>
     </li>
@@ -230,12 +233,48 @@ for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Échantillon </span><span style="color:#e6db74">{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
 <hr>
 <h2 id="exercice-5--corriger-les-erreurs">Exercice 5 – Corriger les erreurs</h2>
+<h3 id="1re-exécution-du-code">1re exécution du code</h3>
+<p><a href="#R-image-8f30394daf8777d203b02ba200757d99" class="lightbox-link"><img alt="Erreur de syntaxe" class="lazy lightbox figure-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/erreur1.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f30394daf8777d203b02ba200757d99"><img alt="Erreur de syntaxe" class="lazy lightbox lightbox-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/erreur1.png?width=40vw"></a></p>
+<p><strong>Explications</strong> :</p>
+<ol>
+<li>Le message dit : <em><strong>Erreur de syntaxe</strong> : Syntaxe invalide. Peut-être vous avez oublié une virgule ?</em></li>
+<li>L’erreur est en lien avec la <strong>syntaxe de print()</strong></li>
+</ol>
+<p><strong>Correction</strong> : on ajoute une virgule après les guillemets dans <code>print()</code>
+<a href="#R-image-c4a0790e318f485323c8ca80e86e00e7" class="lightbox-link"><img alt="Modif-Erreur de syntaxe" class="lazy lightbox figure-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/modif1.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c4a0790e318f485323c8ca80e86e00e7"><img alt="Modif-Erreur de syntaxe" class="lazy lightbox lightbox-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/modif1.png?width=40vw"></a></p>
+<h3 id="2e-exécution-du-code">2e exécution du code</h3>
+<p><a href="#R-image-eeeac3ac2da063d0d5f2952f2cb7d8d2" class="lightbox-link"><img alt="Erreur de syntaxe" class="lazy lightbox figure-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/erreur2.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eeeac3ac2da063d0d5f2952f2cb7d8d2"><img alt="Erreur de syntaxe" class="lazy lightbox lightbox-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/erreur2.png?width=40vw"></a></p>
+<p><strong>Explications</strong> :</p>
+<ol>
+<li>Le message dit : <em><strong>Erreur de nom</strong> : Le nom de la variable &rsquo;nom&rsquo; n&rsquo;est pas définit</em></li>
+<li>L’erreur est en lien avec la <strong>le mauvais nom de variable utilisé</strong></li>
+</ol>
+<p><strong>Correction</strong> : on remplace <code>name</code> par <code>nom</code> dans le premier <code>print()</code>
+<a href="#R-image-135d4af4264e75973d26d421dc74ac91" class="lightbox-link"><img alt="Modif-Erreur de nom" class="lazy lightbox figure-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/modif2.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-135d4af4264e75973d26d421dc74ac91"><img alt="Modif-Erreur de nom" class="lazy lightbox lightbox-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/modif2.png?width=30vw"></a></p>
+<h3 id="3e-exécution-du-code">3e exécution du code</h3>
+<p><a href="#R-image-741d567b285910f45c74009676cbfb4c" class="lightbox-link"><img alt="Erreur de syntaxe" class="lazy lightbox figure-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/erreur3.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-741d567b285910f45c74009676cbfb4c"><img alt="Erreur de syntaxe" class="lazy lightbox lightbox-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/erreur3.png?width=40vw"></a></p>
+<p><strong>Explications</strong> :</p>
+<ol>
+<li>Le message dit : <em><strong>Erreur de type</strong> : On peut seulement concaténer une variable de type str (pas int) à une autre variable de type str.</em></li>
+<li>L’erreur est en lien avec la <strong>le calcul fait avec la variable <code>age</code></strong>. L&rsquo;adition est sur une variable <code>str</code> et une variable <code>int</code>.</li>
+</ol>
+<p><strong>Correction</strong> : on converti l&rsquo;entrée au clavier (<code>age</code>) en entier avec <code>int()</code> pour que le calcul puisse se faire dans le <code>print()</code>
+<a href="#R-image-187ec0a0a87a390ad2fe9d045c57de07" class="lightbox-link"><img alt="Modif-Erreur de type" class="lazy lightbox figure-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/modif3.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-187ec0a0a87a390ad2fe9d045c57de07"><img alt="Modif-Erreur de type" class="lazy lightbox lightbox-image" loading="lazy" src="/solutions_exercices/4_boucles_debogage/modif3.png?width=40vw"></a></p>
 <h3 id="version-corrigée-">Version corrigée :</h3>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Quel est ton nom? &#34;</span>)
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Bonjour&#34;</span>, nom)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>age <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Quel âge as-tu? &#34;</span>))
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Dans 10 ans, tu auras&#34;</span>, age <span style="color:#f92672">+</span> <span style="color:#ae81ff">10</span>)</span></span></code></pre></div>
+<p><strong>Résultat</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Bonjour Nath
+Dans 10 ans tu auras 25 ans</code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -321,8 +360,8 @@ for i in range(0, 101, 10): print(i)c. Simuler la chute d’un objet de 100 m (
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1758660510" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758660510" defer></script>
-    <script src="/js/theme.min.js?1758660510" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1758669990" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758669990" defer></script>
+    <script src="/js/theme.min.js?1758669990" defer></script>
   </body>
 </html>
