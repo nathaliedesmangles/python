@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Tableaux numpy et droite de régression :: 420-SN1-RE</title>
-    <link>https://example.org/semaine7/index.html</link>
+    <link>http://localhost:1313/semaine7/index.html</link>
     <description>Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R². Établir une relation entre deux données.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine7/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine7/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

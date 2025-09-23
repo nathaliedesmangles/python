@@ -1,243 +1,354 @@
 +++
 chapter = true
 pre = "9."
-title = " Révision ou rattrapage"
+title = " Lecture et écriture de fichiers textes (avec NumPy, Pandas)"
 weight = 109
 draft = true
 +++
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_revision.ipynb)
+## à faire
+- S8 Dict
+- Les fichiers de données
+- Semaine 11 
+   - enlever Pandas, 
+   - ajouter ici les éléments manquant - filtre
+   - Ajouter (S9) exos de S8 comme Atelier S9 + NumPy load save
+   - ajouter exos avec Dictionnaires dans S8
+- Semaine 7 ajouter exos/Atelier Physique 
+- S'assurer le le cours contient toutes les notions nécessaires
 
-## Exercice 1 : Neutralisation acide-base (chimie)
+## Objectifs
 
-**Notions** : conditions, boucles, dictionnaire, fonctions
-**Contexte** : Un technicien doit ajuster progressivement le volume d’une base versée dans une solution acide pour atteindre un pH proche de 7.
+**Partie 1: Avec NumPy**
+* Lire des données à partir de fichiers `.txt` et `.csv` avec NumPy.
+* Écrire des données dans des fichiers `.txt` et `.csv`.
+* Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques.
 
-**Tâche** :
-* Simule une titration acide-base par paliers de 0.5 mL.
-* Utilise la formule `p = 3 + 4 x (1 - 2.718^(-0.8 x v))` (à coder, où `p` est le pH et `v` le volume).
-* Arrête la simulation dès que le pH est compris entre 6.8 et 7.2.
-* Affiche tous les volumes testés avec leur pH.
-* Représente les valeurs sur un graphique volume vs pH pour visualiser le point d'équivalence.
-
-
-***Résultats attendus*** :
-```
-Volume = 0.0 mL --> pH = 3.00
-Volume = 0.5 mL --> pH = 4.32
-Volume = 1.0 mL --> pH = 5.20
-Volume = 1.5 mL --> pH = 5.80
-Volume = 2.0 mL --> pH = 6.19
-Volume = 2.5 mL --> pH = 6.46
-Volume = 3.0 mL --> pH = 6.64
-Volume = 3.5 mL --> pH = 6.76
-Volume = 4.0 mL --> pH = 6.84
-```
-![Graphique exo 1](./exercice1.png?width=35vw)
-
-
-## Exercice 2 : Série de désintégrations radioactives
-
-**Notions** : boucles, listes, math, NumPy, fonctions
-**Contexte** : Une substance radioactive se désintègre au fil du temps, et on veut modéliser la quantité restante.
-**Tâche** :
-
-* Simule la désintégration d’un isotope avec une demi-vie donnée.
-* Crée une fonction `quantite_restante(q0, t, demivie)` qui retourne la quantité après t secondes.
-* Génère et affiche la liste des quantités pour t = 0 à 60 s par pas de 5.
-* Trace la courbe avec `matplotlib`.
-
-> **Variante** : Ajouter un bruit expérimental (± 5%) et comparer avec la courbe théorique.
-
-***Résultats attendus*** :
-```
-Quantités restantes : [np.float64(100.0), np.float64(84.08964152537145), np.float64(70.71067811865476), np.float64(59.46035575013605), np.float64(50.0), np.float64(42.044820762685724), np.float64(35.35533905932738), np.float64(29.730177875068026), np.float64(25.0), np.float64(21.022410381342862), np.float64(17.67766952966369), np.float64(14.865088937534013), np.float64(12.5)]
-```
-![Graphique exo 2](./exercice2.png?width=35vw)
-
-**Variante** :
-![Graphique exo 2 variante](./exercice2_var.png?width=35vw)
-
-
-## Exercice 3 : Titrage par conductimétrie
-
-[Fichier à utiliser: conductivite.csv](./conductivite.csv)
-
-**Notions** : dictionnaire, csv, matplotlib, compréhension de données
-**Contexte** : Une série de mesures de conductivité sont enregistrées à chaque ajout de 1 mL de réactif.
-**Tâche** :
-
-* Lis un fichier `conductivite.csv` contenant deux colonnes : `volume`, `conductivite`.
-* Affiche les données et trace le graphique.
-* Calcule la pente moyenne avant et après l’équivalence pour déterminer approximativement le volume d’équivalence.
-* Affiche ce volume estimé.
-
-> **Variante** : Ajouter une estimation par interpolation entre deux points.
-
-***Résultats attendus*** :
-```
-volume  conductivite
-0        0           250
-1        1           240
-2        2           228
-3        3           215
-4        4           200
-5        5           185
-6        6           170
-7        7           158
-8        8           145
-9        9           135
-10      10           128
-11      11           133
-12      12           140
-13      13           150
-14      14           165
-15      15           180
-16      16           195
-17      17           210
-18      18           230
-19      19           245
-20      20           260
-
-Pente avant équivalence : -12.20 µS/mL
-Pente après équivalence : 14.11 µS/mL
-Le point d'équivalence est estimé autour de 10-11 mL.
-```
-![Graphique exo 3](./exercice3.png?width=40vw)
-
-**Variante** :
-```
-Volume équivalent estimé par interpolation : 10.50 mL
-```
-
-
-## Exercice 4 : Suivi d’un indicateur coloré (absorbance)
-
-**Notions** : fonctions, tableaux NumPy, matplotlib, régression linéaire
-**Contexte** : L’absorbance d’un indicateur est mesurée pour plusieurs concentrations connues (loi de Beer-Lambert).
-**Tâche** :
-
-* Enregistre les valeurs de concentration (mol/L) et d’absorbance dans des tableaux.
-* Trace le nuage de points.
-* Calcule la pente et l’ordonnée à l’origine de la droite de régression.
-* Utilise la droite pour estimer la concentration d’une solution inconnue.
-* Ajouter les barres d’erreur sur l’absorbance.
-
-***Résultats attendus*** :
-```
-y = 2.45x + -0.00
-Concentration estimée : 0.226 mol/L
-```
-![Graphique exo 4](./exercice4.png?width=35vw)
-
-
-## Exercice 5 : Simulation de friction sur une rampe inclinée (physique)
-
-**Notions** : input, conditions, boucles, fonctions, matplotlib
-**Contexte** : Un objet glisse sur une rampe inclinée avec ou sans friction.
-**Tâche** :
-
-* Demande à l’utilisateur l’angle, la masse et le coefficient de friction.
-* Calcule la force nette et l’accélération.
-* Simule la position et la vitesse sur 10 secondes (delta t = 0.1 s).
-* Affiche les positions et trace la courbe position vs temps.
-
-> **Variante** : Comparer les trajectoires avec et sans friction sur un même graphique.
-
-***Résultats attendus*** :
-```
-Accélération nette : 3.21 m/s²
-```
-![Graphique exo 5](./exercice5.png?width=35vw)
-
-**Variante** :
-
-![Graphique exo 5 variante](./exercice5_var.png?width=35vw)
+**Partie 2: Avec Pandas
+* Lire des fichiers `.csv` et `.txt` en utilisant pandas.
+* Explorer rapidement le contenu des fichiers.
+* Écrire des DataFrames pandas dans des fichiers `.csv` ou `.txt`.
 
 ---
 
-## 2. Atelier : Effet de la température sur le taux de croissance d'une algue
+{{% notice style="accent" title="Apprendre par la pratique" %}}
+- **Faites les exercices** en vous aidant des notes de cours ci-dessous.
+- Certains seront fait en classe à titre de démonstration.
+- Les solutions seront disponibles à la fin de la semaine prochaine.
+{{% /notice %}}
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_revision.ipynb)
 
-[Fichier à utiliser: croissance_algues.csv](./croissance_algues.csv)
+# Exercices
 
-### Objectif
+## Fichiers de départ à utiliser
 
-Réviser les compétences clés :
+1. Cliquez sur le lien pour télécharger les fichiers.  
+[Bloc-notes de départ - NumPy](https://python-a25.netlify.app/blocnotes/exercices_fichiers_np.ipynb)  
+[Bloc-notes de départ - Pandas](https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb)  
+3. Cliquez sur le lien pour télécharger le fichier de données (`.csv`): [temperatures.csv](./temperatures.csv)
+   * Il contient un jeu de données météorologiques prévisibles pour Bâle (France).
+4. Enregistrez les fichiers dans votre dossier **exercices** de la semaine en cours.
+5. Ouvrez **Visual Studio Code**.
+6. Dans VS Code, recherchez et ouvrez les fichiers `exercices_fichiers_np.ipynb` et `exercices_fichiers_pd.ipynb`
+7. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
+8. Vous pouvez commencer à faire les exercices.
 
-* **Listes, chaînes, boucles, conditions**
-* **Dictionnaires**
-* **Tableaux NumPy et fonctions `np.*`**
-* **Lecture de fichiers `.csv` avec `pandas`**
-* **Visualisation de données avec `matplotlib`**
-* **Régression linéaire avec `numpy`**
+## Exercices
+
+### Exercice 1 (NumPy)
+
+* À l'aide de NumPy, créez un fichier `vitesses.txt` avec les valeurs suivantes (4 valeurs par ligne, 3 lignes) :
+
+```
+5.2 6.1 5.8 6.0
+5.5 6.2 6.1 6.3
+5.9 6.0 5.7 6.1
+```
+
+* Lisez ce fichier avec NumPy.
+* Calculez la moyenne de chaque colonne.
+* Écrivez les moyennes dans un nouveau fichier `moyennes.txt`.
+
+## Exercice 2 (NumPy)
+
+* Lisez le fichier CSV `temperatures.csv` avec NumPy.
+* Transformez les températures en degrés Kelvin.
+* Sauvegardez le nouveau fichier en CSV.
+
+## Exercice 3 (Pandas)
+
+1. Téléchargez un fichier `students.csv` contenant les colonnes : `Nom,Âge,Note`.
+2. Lisez-le dans un DataFrame `df_etudiants`.
+3. Affichez les 3 premières lignes.
+4. Affichez le résumé statistique des notes.
+
+## Exercice 4 (Pandas)
+
+1. Ajoutez une colonne `Mention` au DataFrame en fonction de la note :
+
+   * `>= 70` → "Bien"
+   * `>= 50` → "Passable"
+   * `< 50` → "Échec"
+2. Enregistrez le DataFrame dans un fichier `etudiants_mentions.csv`.
+
+## Exercice 5 (Pandas)
+
+1. Ouvrez un fichier `experiment.txt` séparé par des tabulations avec colonnes : `Température`, `Pression`, `Volume`.
+2. Lisez-le dans un DataFrame.
+3. Enregistrez-le sous `experiment_export.txt` en conservant les tabulations.
 
 ---
 
-Une équipe scientifique a mené une étude pour comprendre comment **la température de l’eau** influence **le taux de croissance** d’une **algue d’eau douce**. Les données ont été collectées avec différents capteurs, à différentes dates, et contiennent les colonnes suivantes :
+# Cours
 
-* **Température (°C)** : température de l’eau,
-* **Taux de croissance (mm/jour)** : croissance moyenne de l’algue,
-* **Espèce** : nom de l’espèce de l’algue,
-* **Capteur** : nom du capteur utilisé,
-* **Date** : date de la mesure (YYYY-MM-DD).
+## Pourquoi lire et écrire des fichiers ?
 
-Les données sont enregistrées dans un fichier CSV nommé : `croissance_algues.csv`.
+En sciences, on ne travaille pas toujours avec des données générées dans le programme.
+Souvent, les données proviennent :
 
-### Aperçu du contenu du fichier croissance_algues.csv
+* d’expériences mesurées,
+* de fichiers partagés par d’autres chercheurs,
+* de simulations précédentes.
 
-```csv
-Température,Taux,Espèce,Capteur,Date
-15.0,2.3,Cladophora,Capteur_A,2025-07-01
-18.2,2.9,Cladophora,Capteur_B,2025-07-01
-20.0,3.5,Spirogyra,Capteur_A,2025-07-02
-21.1,3.7,Cladophora,Capteur_C,2025-07-03
-22.5,4.0,Spirogyra,Capteur_A,2025-07-04
-25.0,4.6,Cladophora,Capteur_B,2025-07-04
-26.8,4.9,Spirogyra,Capteur_A,2025-07-05
-28.0,5.1,Cladophora,Capteur_C,2025-07-06
-30.2,5.3,Spirogyra,Capteur_A,2025-07-07
-...
+Pour traiter ces données en Python, les bibliothèques `NumPy` et `Pandas` fournissent des fonctions rapides pour lire et écrire des tableaux.
+
+## 1. Avec NumPy
+
+### Lecture de fichiers
+
+#### 1. Fichiers texte simples (`.txt`)
+
+Supposons que nous avons un fichier `mesures.txt` contenant des valeurs de température (sans en-tête :
+
+```
+20.1 21.3 19.8 22.0
+21.0 22.2 20.5 23.1
 ```
 
-### Étape 1 – Lecture et préparation des donées
+Pour lire ce fichier en NumPy :
 
-1. Lire le fichier avec `pandas`.
-2. Vérifier la présence de valeurs manquantes.
-3. Convertir les colonnes `Température` et `Taux` en tableaux NumPy.
+```python
+import numpy as np
 
-### Étape 2 – Analyse par espèce
+# Lecture du fichier
+donnees = np.loadtxt("mesures.txt")
 
-1. Créer un dictionnaire : `{espèce : [liste des taux mesurés]}`.
-2. Pour chaque espèce, afficher :
-
-   * Le nombre de mesures,
-   * La moyenne du taux,
-   * L’écart-type du taux.
-
-### Étape 3 – Visualisation
-
-1. Afficher un **nuage de points** température vs taux, avec une **couleur différente par espèce**.
-2. Ajouter une **droite de régression linéaire** pour chaque espèce (utilisez `np.polyfit` et `np.polyval`).
-3. Ajouter une légende, des titres, et sauvegarder le graphique sous le nom `croissance_regression.png`.
-
-### Étape 4 – Recherche par capteur
-
-1. Demander à l’utilisateur d’entrer un nom de capteur (`input()`).
-2. Afficher toutes les mesures associées à ce capteur : date, espèce, température et taux.
-
-
-***Exemple de résultats attendus avec le capteur A*** :
+print(donnees)
+print(type(donnees))
 ```
-Température    0
-Taux           0
-Espèce         0
-Capteur        0
-Date           0
-dtype: int64
-Résumé par espèce :
-Cladophora -> {'nb': 26, 'moyenne': np.float64(4.2), 'ecart_type': np.float64(0.9856665062476565)}
-Spirogyra -> {'nb': 24, 'moyenne': np.float64(4.333333333333333), 'ecart_type': np.float64(0.9218037872683221)}
+
+**Explications :**
+
+* `np.loadtxt()` lit un fichier texte et retourne un tableau NumPy.
+* Par défaut, les colonnes sont séparées par des espaces.
+* `donnees` est maintenant un tableau NumPy 2D.
+
+#### 2. Fichiers CSV (`.csv`)
+
+Si les données sont séparées par des virgules (format CSV) :
+
 ```
-![Graphique Croissance_regression](./croissance_regression.png?width=35vw)
+20.1,21.3,19.8,22.0
+21.0,22.2,20.5,23.1
+```
+
+On peut lire le fichier avec :
+
+```python
+donnees = np.loadtxt("mesures.csv", delimiter=",")
+print(donnees)
+```
+
+**Remarque :**
+
+* `delimiter=","` indique que les colonnes sont séparées par des virgules.
+
+Si le fichier contient une première ligne avec des titres de colonnes :
+
+```
+Temp1,Temp2,Temp3,Temp4
+20.1,21.3,19.8,22.0
+21.0,22.2,20.5,23.1
+```
+
+On peut utiliser `np.genfromtxt` :
+
+```python
+donnees = np.genfromtxt("mesures.csv", delimiter=",", skip_header=1)
+print(donnees)
+```
+
+* `skip_header=1` ignore la première ligne.
+* `np.genfromtxt` est plus robuste si le fichier contient des valeurs manquantes.
+
+
+## Écriture de fichiers
+
+### 1. Fichiers texte (`.txt` ou `.csv`)
+
+Pour écrire un tableau NumPy dans un fichier texte :
+
+```python
+import numpy as np
+
+donnees = np.array([[1, 2, 3], [4, 5, 6]])
+
+np.savetxt("resultats.txt", donnees)
+```
+
+* Chaque ligne du tableau devient une ligne dans le fichier.
+* Par défaut, les valeurs sont séparées par un espace.
+
+Pour utiliser un autre séparateur, par exemple une virgule :
+
+```python
+np.savetxt("resultats.csv", donnees, delimiter=",")
+```
+
+**Format et précision des nombres**
+
+Vous pouvez choisir le format des nombres :
+
+```python
+np.savetxt("resultats.csv", donnees, delimiter=",", fmt="%.2f")
+```
+
+* `%.2f` signifie deux chiffres après la virgule.
+
+
+## Conclusion pour NumPy
+
+NumPy permet de manipuler rapidement des fichiers de données scientifiques :
+
+* Lecture simple : `np.loadtxt`
+* Lecture robuste avec en-têtes ou valeurs manquantes : `np.genfromtxt`
+* Écriture : `np.savetxt` avec choix du séparateur et de la précision
+
+---
+
+Parfait ! Voici une leçon complète sur la lecture et l’écriture de fichiers `.csv` et `.txt` avec **pandas**. Je vais structurer la leçon pour des étudiants en sciences de la nature débutants en Python, avec exemples et exercices.
+
+---
+
+## Introduction à pandas
+
+* **pandas** est une bibliothèque Python puissante pour la manipulation et l’analyse de données.
+* Les données sont stockées dans des **DataFrames**, qui ressemblent à des tableaux Excel : lignes × colonnes.
+* pandas simplifie la lecture et l’écriture de fichiers de données.
+
+## Importation de la bibliothèque
+
+```python
+import pandas as pd
+```
+
+## Lecture d’un fichier CSV avec Pandas
+
+Un fichier CSV (Comma-Separated Values) contient des données tabulaires séparées par des virgules (ou parfois par un autre séparateur).
+
+### Exemple de fichier `data.csv`
+
+```text
+Nom,Âge,Poids
+Alice,20,55
+Bob,22,70
+Charlie,19,65
+```
+
+### Lecture avec pandas
+
+```python
+import pandas as pd
+
+# Lire le fichier CSV
+df = pd.read_csv("data.csv")
+
+# Afficher le DataFrame
+print(df)
+```
+
+**Résultat**
+```
+      Nom  Âge  Poids
+0    Alice   20     55
+1      Bob   22     70
+2  Charlie   19     65
+```
+
+> `read_csv()` lit le fichier et crée un DataFrame.
+
+
+### Options utiles de `read_csv`
+
+| Option        | Description                                         |
+| ------------- | --------------------------------------------------- |
+| `sep=";"`     | Séparateur différent de la virgule                  |
+| `header=None` | Pas de ligne d’en-tête dans le fichier              |
+| `names=[...]` | Nommer les colonnes si le fichier n’a pas d’en-tête |
+| `index_col=0` | Utiliser une colonne comme index du DataFrame       |
+
+
+## Lecture d’un fichier texte (`.txt`)
+
+Les fichiers `.txt` peuvent contenir des données séparées par un espace, une tabulation, ou un autre caractère.
+
+### Exemple de fichier `data.txt` (séparateur tabulation)
+
+```text
+Nom    Âge    Poids
+Alice  20     55
+Bob    22     70
+Charlie 19    65
+```
+
+### Lecture avec pandas
+
+```python
+# Lire le fichier texte avec tabulation comme séparateur
+df_txt = pd.read_csv("data.txt", sep="\t")
+
+print(df_txt)
+```
+
+> Pour un fichier `.txt` avec un séparateur autre que la virgule, utilisez `sep`.
+
+## Exploration rapide des données avec Pandas
+
+Une fois le fichier lu, on peut explorer les données :
+
+```python
+# Afficher les 5 premières lignes
+print(df.head())
+
+# Afficher les 5 dernières lignes
+print(df.tail())
+
+# Résumé statistique pour les colonnes numériques
+print(df.describe())
+
+# Informations sur les colonnes et le type de données
+print(df.info())
+```
+
+## Écriture d’un DataFrame dans un fichier
+
+Vous pouvez enregistrer vos données modifiées dans un nouveau fichier CSV ou TXT :
+
+```python
+# Écriture dans un CSV
+df.to_csv("data_export.csv", index=False)  # index=False pour ne pas enregistrer les index
+
+# Écriture dans un TXT avec tabulation
+df.to_csv("data_export.txt", sep="\t", index=False)
+```
+
+> `to_csv()` peut aussi utiliser `sep=";"` pour un séparateur point-virgule, ou d’autres séparateurs selon vos besoins.
+
+
+## Conclusion pour Pandas
+
+* `pd.read_csv()` lit les fichiers CSV et TXT avec des séparateurs personnalisés.
+* `df.to_csv()` permet d’enregistrer les DataFrames dans des fichiers.
+* pandas facilite l’exploration rapide des données avec `head()`, `tail()`, `describe()` et `info()`.
+
+

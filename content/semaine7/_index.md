@@ -3,7 +3,7 @@ chapter = true
 pre = "7."
 title = " Tableaux numpy et droite de régression"
 weight = 107
-draft = false
+draft = true
 +++
 
 
@@ -51,13 +51,13 @@ sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])
 1. **Afficher le tableau** `sol` pour visualiser les valeurs de solubilité (remarque : une valeur est manquante et représentée par `np.nan`).
 2. **Calculer la moyenne des solubilités** en ignorant la valeur manquante.
 
-   * Cherche dans NumPy une fonction qui calcule la moyenne en excluant les `NaN`.
+   * Chercher dans NumPy une fonction qui calcule la moyenne en excluant les `NaN`.
 3. **Calculer l’écart type** des valeurs (toujours en ignorant `NaN`).
 
-   * Arrondis le résultat à **2 décimales** avec `round()`.
-   * Affiche ton résultat sous la forme : `Écart type : valeur`.
+   * Arrondir le résultat à **2 décimales** avec `round()`.
+   * Afficher le résultat sous la forme : `Écart type : valeur`.
 
-**Exemple de sortie attendue** :
+**Résultats attendus** :
 ```
 Solubilités : [32.  35.5  nan 37.2 39. ]
 Moyenne sans NaN : 35.925
@@ -87,13 +87,13 @@ temperatures = np.array([
    * Combien y a-t-il de lignes et de colonnes ? Que représentent-elles ?
 
 2. **Moyenne par jour**
-   * Calcule la **température moyenne quotidienne** pour chaque jour.
-     *(Indice : tu peux utiliser `np.mean(..., axis=1)`)*
+   * Calculer la **température moyenne quotidienne** pour chaque jour.
+     *(Indice : utiliser `np.mean(..., axis=1)`)*
 
 3. **Moyenne du matin**
-   * Calcule la **température moyenne du matin** (1ʳᵉ colonne du tableau).
-   * **Attention** : il y a une donnée manquante (`np.nan`). Comment peux-tu l’ignorer dans ton calcul ?
-     *(Indice : utilise `np.nanmean(...)` sur la colonne du matin)*
+   * Calculer la **température moyenne du matin** (1ʳᵉ colonne du tableau).
+   * **Attention** : il y a une donnée manquante (`np.nan`). Comment l’ignorer dans le calcul ?
+     *(Indice : utiliser `np.nanmean(...)` sur la colonne du matin)*
 
 
 **Résultats attendus** :
@@ -116,16 +116,16 @@ ech1 = np.array([3.2, 2.8, 4.1, 3.9, 2.5])
 ech2 = np.array([2.9, 3.0, 4.2, 4.0, 2.7])
 ```
 
-1. **Profil combiné** : additionne directement les deux tableaux `ech1` et `ech2` pour obtenir un nouveau tableau qui représente la somme des intensités fragment par fragment.
-   * **Indice** : tu peux utiliser l’opérateur `+` avec des tableaux NumPy.  
+1. **Profil combiné** : additionner directement les deux tableaux `ech1` et `ech2` pour obtenir un nouveau tableau qui représente la somme des intensités fragment par fragment.
+   * **Indice** : utiliser l’opérateur `+` avec des tableaux NumPy.  
 
-2. **Différences entre échantillons** : calcule la différence `ech1 - ech2`.  
-   * **Indice** : fais attention à l’ordre, car `ech1 - ech2` n’est pas la même chose que `ech2 - ech1`.
+2. **Différences entre échantillons** : calculer la différence `ech1 - ech2`.  
+   * **Attention** : `ech1 - ech2` n’est pas la même chose que `ech2 - ech1`.
 
 3. **Statistiques** :
-   * Calcule la **moyenne** de chaque échantillon (`np.mean`).
-   * Calcule l’**écart type** de chaque échantillon (`np.std`).
-   * Arrondis les résultats à **2 décimales** (`round(..., 2)`).
+   * Calculer la **moyenne** de chaque échantillon (`np.mean`).
+   * Calculer l’**écart type** de chaque échantillon (`np.std`).
+   * Arrondir les résultats à **2 décimales** (`round(..., 2)`).
 
 **Résultats attendus** :
 ```
@@ -150,21 +150,21 @@ pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
 ```
 
 1. **Affichage des données**
-   * Affiche le tableau des hauteurs en cm.
-   * Affiche le tableau des pressions en kPa.
+   * Afficher le tableau des hauteurs en cm.
+   * Afficher le tableau des pressions en kPa.
 
 2. **Variation de pression**
-   * Calcule la différence de pression entre deux hauteurs consécutives (chaque 10 cm).
-   * Affiche le tableau des variations obtenues.
+   * Calculer la différence de pression entre deux hauteurs consécutives (chaque 10 cm).
+   * Afficher le tableau des variations obtenues.
 
 3. **Moyenne de la pression**
-   * Calcule la moyenne des valeurs de pression.
-   * Affiche-la avec **2 chiffres après la virgule**.
+   * Calculer la moyenne des valeurs de pression.
+   * Afficher la moyenne avec **2 chiffres après la virgule**.
 
 4. **Graphique avec régression linéaire**
-   * Trace un nuage de points (`plt.scatter()`) représentant la pression en fonction de la hauteur.
-   * Ajoute la droite de régression linéaire sur le même graphique.
-   * Mets un titre et des étiquettes aux axes (`plt.xlabel`, `plt.ylabel`).
+   * Tracer un nuage de points (`plt.scatter()`) représentant la pression en fonction de la hauteur.
+   * Ajouter la droite de régression linéaire sur le même graphique.
+   * Mettre un titre et des étiquettes aux axes (`plt.xlabel`, `plt.ylabel`).
 
 **Exemple attendu (partiel)** :
 ```
@@ -183,13 +183,13 @@ On veut modéliser la croissance d’une plante.
 Sans engrais, sa taille **augmente de 2 cm par jour**, en partant d’une taille initiale de **5 cm**.
 
 1. **Créer un tableau NumPy** qui contient la taille de la plante chaque jour pendant 10 jours (jour 0 à jour 9).   
-   **Indice** : utilise `np.arange()` ou construis le tableau à partir d’une liste.
+   **Indice** : utiliser `np.arange()` ou construis le tableau à partir d’une liste.
 2. **Afficher ce tableau** pour vérifier qu’il correspond à la croissance sans engrais.
 3. **Créer un deuxième tableau** où tu ajoutes **+1 cm** à chaque valeur du premier tableau (effet de l’engrais).
 4. **Calculer la moyenne** des tailles de la plante :
    * une fois **sans engrais**,
    * une fois **avec engrais**.  
-     **Indice** : utilise la fonction `np.mean()`.
+     **Indice** : utiliser la fonction `np.mean()`.
 
 **Résultats attendus** :
 ```
@@ -218,6 +218,42 @@ import numpy as np
 sol = np.array([32.0, 35.5, 37.2])
 print(f"Solubilités mesurées : {sol}")
 ```
+
+### Tableau 1D avec np.arrange(début, fin, pas)
+
+La fonction `numpy.arange()` crée un tableau de valeurs également espacées dans un intervalle donné. Elle est similaire à la fonction `range()`, mais retourne **un tableau NumPy au lieu d’une liste**.
+
+* **début** : valeur de départ du tableau (incluse).
+* **fin** : valeur de fin (non incluse).
+* **pas** : pas entre chaque valeur (optionnel, par défaut 1).
+
+**Exemples :**
+1. **Pas par défaut (1) :**
+
+```python
+import numpy as np
+
+arr = np.arange(3, 8)
+print(arr)	# Affiche [3 4 5 6 7]
+```
+
+2. **Avec un pas différent :**
+
+```python
+arr = np.arange(2, 10, 2)
+print(arr)	# Affiche [2 4 6 8]
+```
+
+3. **Avec des nombres décimaux :**
+
+```python
+arr = np.arange(1, 2, 0.2)
+print(arr)	# Affiche [1.  1.2  1.4  1.6  1.8]
+```
+
+> **Remarque** : contrairement à `range()`, `arange()` accepte les pas décimaux.
+
+
 
 ### Tableau 2D via une liste de listes et np.array()
 
@@ -273,9 +309,71 @@ tab_esp = np.linspace(0, 10, 5)  # Crée un tableau : [ 0.  2.5  5.  7.5 10. ]
 ```
 
 
-## Fonctions statistiques
+## Principales fonctions mathématiques et statistiques
 
-### Calculer la moyenne des données avec np.mean()
+{{% notice style="blue" title="Principales fonctions mathématiques de NumPy" groupid="notice-toggle" expanded="false" %}}
+| Catégorie                         | Fonction            | Description                            | Exemple                        |
+| --------------------------------- | ------------------- | -------------------------------------- | ------------------------------ |
+| **Constantes**                    | `np.pi`             | Valeur de π                            | `np.pi → 3.14159…`             |
+|                                   | `np.e`              | Base du logarithme naturel             | `np.e → 2.71828…`              |
+| **Arithmétique de base**          | `np.add(x, y)`      | Addition                               | `np.add(3, 2) → 5`             |
+|                                   | `np.subtract(x, y)` | Soustraction                           | `np.subtract(3, 2) → 1`        |
+|                                   | `np.multiply(x, y)` | Multiplication                         | `np.multiply(3, 2) → 6`        |
+|                                   | `np.divide(x, y)`   | Division                               | `np.divide(6, 2) → 3`          |
+|                                   | `np.power(x, y)`    | Exposant                               | `np.power(2, 3) → 8`           |
+|                                   | `np.mod(x, y)`      | Reste de la division                   | `np.mod(7, 3) → 1`             |
+| **Fonctions trigonométriques**    | `np.sin(x)`         | Sinus (x en radians)                   | `np.sin(np.pi/2) → 1`          |
+|                                   | `np.cos(x)`         | Cosinus                                | `np.cos(0) → 1`                |
+|                                   | `np.tan(x)`         | Tangente                               | `np.tan(np.pi/4) → 1`          |
+|                                   | `np.arcsin(x)`      | Arcsinus                               | `np.arcsin(1) → π/2`           |
+|                                   | `np.arccos(x)`      | Arccosinus                             | `np.arccos(0) → π/2`           |
+|                                   | `np.arctan(x)`      | Arctangente                            | `np.arctan(1) → π/4`           |
+|                                   | `np.arctan2(y, x)`  | Arctangente de y/x en quadrant correct | `np.arctan2(1,1) → π/4`        |
+| **Fonctions hyperboliques**       | `np.sinh(x)`        | Sinus hyperbolique                     | `np.sinh(0) → 0`               |
+|                                   | `np.cosh(x)`        | Cosinus hyperbolique                   | `np.cosh(0) → 1`               |
+|                                   | `np.tanh(x)`        | Tangente hyperbolique                  | `np.tanh(0) → 0`               |
+| **Exponentielles et logarithmes** | `np.exp(x)`         | Exponentielle e^x                      | `np.exp(1) → 2.718…`           |
+|                                   | `np.log(x)`         | Logarithme naturel                     | `np.log(np.e) → 1`             |
+|                                   | `np.log2(x)`        | Log base 2                             | `np.log2(8) → 3`               |
+|                                   | `np.log10(x)`       | Log base 10                            | `np.log10(1000) → 3`           |
+|                                   | `np.expm1(x)`       | e^x - 1 (utile pour petites valeurs)   | `np.expm1(1e-5) → 1.000005e-5` |
+|                                   | `np.log1p(x)`       | ln(1+x)                                | `np.log1p(1e-5) → 0.00001`     |
+| **Racines et valeurs absolues**   | `np.sqrt(x)`        | Racine carrée                          | `np.sqrt(9) → 3`               |
+|                                   | `np.cbrt(x)`        | Racine cubique                         | `np.cbrt(27) → 3`              |
+|                                   | `np.abs(x)`         | Valeur absolue                         | `np.abs(-5) → 5`               |
+|                                   | `np.fabs(x)`        | Valeur absolue flottante               | `np.fabs(-5.2) → 5.2`          |
+| **Arrondi et troncature**         | `np.round(x, n)`    | Arrondi à n décimales                  | `np.round(3.14159,2) → 3.14`   |
+|                                   | `np.floor(x)`       | Arrondi inférieur                      | `np.floor(3.7) → 3`            |
+|                                   | `np.ceil(x)`        | Arrondi supérieur                      | `np.ceil(3.2) → 4`             |
+|                                   | `np.trunc(x)`       | Tronque la partie décimale             | `np.trunc(3.7) → 3`            |
+| **Opérations statistiques**       | `np.mean(x)`        | Moyenne                                | `np.mean([1,2,3]) → 2`         |
+|                                   | `np.median(x)`      | Médiane                                | `np.median([1,2,3]) → 2`       |
+|                                   | `np.std(x)`         | Écart type                             | `np.std([1,2,3]) → 0.816…`     |
+|                                   | `np.var(x)`         | Variance                               | `np.var([1,2,3]) → 0.666…`     |
+|                                   | `np.sum(x)`         | Somme                                  | `np.sum([1,2,3]) → 6`          |
+|                                   | `np.prod(x)`        | Produit                                | `np.prod([1,2,3]) → 6`         |
+|                                   | `np.min(x)`         | Minimum                                | `np.min([1,2,3]) → 1`          |
+|                                   | `np.max(x)`         | Maximum                                | `np.max([1,2,3]) → 3`          |
+{{% /notice %}}
+
+### Quelques exemples
+
+#### 1. Calculer le sinus d'un angle en radian
+
+```python
+import numpy as np
+
+# Definition de l'angle en radians
+angle = np.pi / 2  # 90 degrés en radians
+
+# Calcul du sinus
+sinus = np.sin(angle)
+
+# Afficher le résultat
+print("Sinus de 90 degrés (π/2 radians):", sinus)
+```
+
+#### 2. Calculer la moyenne des données avec np.mean()
 
 ```python
 sol = np.array([32.0, 35.5, 37.2])
@@ -283,8 +381,7 @@ moy = np.mean(sol)
 print(f"Moyenne : {moy:.2f} g/100mL")
 ```
 
-
-### Calculer l’écart type des données avec np.std()
+#### 3. Calculer l’écart type des données avec np.std()
 
 ```python
 sol = np.array([32.0, 35.5, 37.2])
@@ -294,32 +391,32 @@ print(f"Écart type : {ecart:.2f}")
 
 ## Opérations vectorielles (rapides et simples)
 
-L’intérêt principal de NumPy : on peut faire des **opérations sur tout un tableau en une seule ligne**.
+Avec NumPy, on peut faire des **opérations sur tout un tableau en une seule ligne** (sans utiliser de boucle).
 
 ```python
 x = np.array([1, 2, 3])
 y = np.array([4, 5, 6])
 ```
 
-### Addition élément par élément
+### 1. Addition élément par élément
 
 ```python
 x + y    # [5 7 9]
 ```
 
-### Soustraction élément par élément
+### 2. Soustraction élément par élément
 
 ```python
 y - x    # [3 3 3]
 ```
 
-### Multiplication par un scalaire
+### 3. Multiplication par un scalaire
 
 ```python
 x * 10   # [10 20 30]
 ```
 
-### Division par un scalaire
+### 4. Division par un scalaire
 
 ```python
 y / 2    # [2.  2.5 3. ]
@@ -343,7 +440,7 @@ Sans `nanmean`, la fonction `np.mean(sol)` retournerait `nan` car une seule vale
 
 ## Filtrage de données
 
-1. *Créer un tableau et afficher uniquement certaines valeurs selon une condition**
+1. **Créer un tableau et afficher uniquement certaines valeurs selon une condition**
 
 ```python
 tableau = np.array([2, 5, 7, 1, 8, 3])
@@ -385,7 +482,6 @@ Nombre de valeurs supérieures à 5 : 3
 * `np.sum(tableau > seuil)` : compte le nombre de valeurs dans `tableau` qui sont > 5.
 
 
-
 3. **Filtre avec `np.where()`**
 
 * `numpy.where(condition, valeur_si_vrai, valeur_si_faux)` permet de créer un tableau (ou une colonne dans un DataFrame) en fonction d’une condition logique.
@@ -411,20 +507,8 @@ C’est une méthode très rapide car `numpy` applique l’opération directemen
 
 ---
 
-{{% notice style="blue" title="À retenir" groupid="notice-toggle" expanded="false" %}}
-* `import numpy as np` pour utiliser NumPy.
-* `np.array()` crée un tableau de données.
-* `np.zeros()`, `np.ones()`, `np.full()` créent des tableaux remplis.
-* `np.linspace()` génère des valeurs espacées régulièrement.
-* `np.mean()` calcule la moyenne.
-* `np.std()` calcule l’écart type.
-* `np.nanmean()` ignore les données manquantes.
-* `np.where()` filtre des données selon une condition vraie ou fausse.
-* Les opérations (`+`, `-`, `*`, `/`) s’appliquent à tout le tableau.
-{{% /notice %}}
 
-
-## Tracer un graphique à barres avec barre d'erreurs
+## Tracer des graphiques à barres et avec barres d'erreur
 
 ### Importer la bibliothèque
 
@@ -456,10 +540,9 @@ plt.show()
 
 ### Graphique avec barres d’erreur
 
-La fonction `plt.errorbar()` permet de tracer des barres d'erreur autour des points d'une courbe, et ici la liste `erreurs = [0.5, 0.3, 0.6]` indique l'incertitude verticale (±) associée à chaque point.
+La fonction `plt.errorbar()` permet de tracer des barres d'erreur autour des points d'une courbe, et ici la liste `erreurs = [0.5, 0.3, 0.6]` indique **l'incertitude verticale** (±) associée à chaque point.
 
 **Exemple :**
-
 ```python
 x = [1, 2, 3]
 y = [10, 12, 9]
@@ -487,12 +570,11 @@ plt.show()
 
 Voici comment obtenir les données de la droite :
 
-* `a, b = np.polyfit(x, y, 1)` : On calcule la droite qui s'ajuste le mieux aux points (régression linéaire) et on récupère sa pente (`a`) et son intercept (`b`).
-* `y_reg = a * x + b` : On utilise la pente et l'intercept pour calculer les valeurs de la droite.
+* `a, b = np.polyfit(x, y, 1)` : On calcule la droite qui s'ajuste le mieux aux points (régression linéaire) et on récupère sa pente (`a`) et son ordonnée à l'origine (`b`).
+* `y_reg = a * x + b` : On utilise la pente et l'ordonnée pour calculer les valeurs de la droite.
 * `plt.plot(x, y, "o", label="Données")` : On trace les points de données sous forme de cercles.
 * `plt.plot(x, y_reg, "-", label=f"y = {a:.2f}x + {b:.2f}")` : On trace la droite de régression et on affiche son équation.
 
-### Exemple
 
 ```python
 import numpy as np
@@ -509,27 +591,11 @@ plt.plot(x, y, "o", label="Données")
 plt.plot(x, y_reg, "-", label=f"y = {a:.2f}x + {b:.2f}")
 plt.legend()
 plt.grid(True)
-plt.tight_layout()
+plt.tight_layout()	# Ajuste l'espacement pour éviter le chevauchement
 plt.show()
 ```
 ![graphique droite de régression](./graphique_regression.png?width=40vw)
 
-## Affichage propre
-
-| Fonction             | Effet                                            |
-| -------------------- | ------------------------------------------------ |
-| `plt.tight_layout()` | Ajuste l'espacement pour éviter le chevauchement 
-
-
-
-## Résumé
-
-| Tâche                | Fonction                           |
-| -------------------- | ---------------------------------- |
-| Graphique à barres   | `plt.bar()`                        |
-| Barres d’erreur      | `plt.errorbar()`                   |
-| Droite de régression | `np.polyfit()`, `plt.plot()`       |
-| Affichage final      | `plt.show()`, `plt.tight_layout()` |
 
 ---
 

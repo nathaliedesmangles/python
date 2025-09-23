@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "8."
-title = " Dictionnaires et fichiers texte (csv)"
+title = " Dictionnaires"
 weight = 108
 draft = true
 +++
@@ -611,13 +611,19 @@ Composé  Température  Solubilité  Évaluation
 4. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
    * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
 
-## Exercice
+## Objectifs
 
-On a réalisé des expériences pour mesurer la température de cristallisation de différentes substances dans plusieurs conditions (pression normale, pression élevée, en solution aqueuse, etc.).
+* Lire un fichier CSV avec **pandas**.
+* Construire et manipuler un **dictionnaire imbriqué**.
+* Parcourir et mettre à jour les données.
+* Faire des comparaisons numériques.
 
-Les données sont enregistrées dans le fichier CSV.
 
-Contenu :
+## Exercice – Cristallisation
+
+On a mesuré la température de cristallisation de différentes substances dans plusieurs conditions expérimentales (pression normale, pression élevée, en solution aqueuse, etc.). Les résultats sont dans le fichier `cristallisation.csv`.
+
+### Contenu du fichier
 
 ```csv
 substance,condition,temp_cristallisation
@@ -629,37 +635,43 @@ Fe,pression_normale,1538
 Fe,en_solution,1530
 ```
 
-### Instructions
 
-1. **Lire le fichier CSV** `cristallisation.csv` et stocker les données sous forme de dictionnaire ayant la structure suivante :
+1. **Charger** le fichier CSV avec `pandas` et afficher les 5 premières lignes pour vérifier.
 
-```python
-{
-    "NaCl": {"pression_normale": 801, "en_solution": 800},
-    "H2O": {"pression_normale": 0, "pression_elevee": -1},
-    "Fe": {"pression_normale": 1538, "en_solution": 1530}
-}
-```
+2. **Transformer** les données en un dictionnaire imbriqué de la forme :
 
-2. **Afficher** les températures de cristallisation pour chaque substance dans chaque condition avec une phrase comme :
+   ```python
+   {
+       "NaCl": {"pression_normale": 801, "en_solution": 800},
+       "H2O": {"pression_normale": 0, "pression_elevee": -1},
+       "Fe": {"pression_normale": 1538, "en_solution": 1530}
+   }
+   ```
 
-```text
-NaCl cristallise à 801°C sous pression normale.
-NaCl cristallise à 800°C en solution.
-...
-```
+   *(Indice : utilise une boucle sur les lignes du DataFrame avec `iterrows()` ou `itertuples()`.)*
 
-3. **Ajouter** une nouvelle mesure : supposons qu’on a obtenu une température de cristallisation de `-5°C` pour `H2O` dans une nouvelle condition `en_solution`. Ajoutez cette donnée au dictionnaire.
+3. **Parcourir** le dictionnaire et afficher une phrase pour chaque valeur, par exemple :
 
-4. **Vérifiez** si la substance `"Cu"` est présente dans le dictionnaire. Si elle ne l’est pas, affichez : `"Cu n'est pas présent dans les données."`
+   ```text
+   NaCl cristallise à 801°C sous pression normale.
+   NaCl cristallise à 800°C en solution.
+   ```
 
-5. **Filtrer** et afficher toutes les substances ayant une température de cristallisation inférieure à `100°C` dans au moins une condition.
+4. **Ajouter une donnée** : `H2O` cristallise à `-5°C` dans la condition `"en_solution"`. Mets à jour le dictionnaire.
 
-6. **Comparer** les températures de cristallisation d’une même substance selon les conditions expérimentales et afficher la différence maximale observée pour chaque substance, par exemple :
+5. **Vérifier** si la substance `"Cu"` est présente. Si elle ne l’est pas, afficher :
 
-```text
-Pour H2O, l’écart maximal est de 5°C entre deux conditions.
-```
+   ```text
+   Cu n'est pas présent dans les données.
+   ```
+
+6. **Filtrer** et afficher toutes les substances qui ont une température de cristallisation **inférieure à 100°C** dans au moins une condition.
+
+7. **Comparer** les valeurs d’une même substance selon les conditions, et afficher l’écart maximal :
+
+   ```text
+   Pour H2O, l’écart maximal est de 5°C entre deux conditions.
+   ```
 
 ---
 
