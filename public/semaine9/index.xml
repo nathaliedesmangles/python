@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Lecture et écriture de fichiers textes (avec NumPy, Pandas) :: 420-SN1-RE</title>
+    <title> Lecture et écriture de fichiers textes (avec NumPy ou Pandas) :: 420-SN1-RE</title>
     <link>http://localhost:1313/semaine9/index.html</link>
-    <description>à faire S8 Dict Les fichiers de données Semaine 11 enlever Pandas, ajouter ici les éléments manquant - filtre Ajouter (S9) exos de S8 comme Atelier S9 + NumPy load save ajouter exos avec Dictionnaires dans S8 Semaine 7 ajouter exos/Atelier Physique S’assurer le le cours contient toutes les notions nécessaires Objectifs Partie 1: Avec NumPy&#xA;Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .</description>
+    <description>Objectifs Partie 1: Avec NumPy&#xA;Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .txt et .csv. Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques. **Partie 2: Avec Pandas&#xA;Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le contenu des fichiers. Écrire des DataFrames pandas dans des fichiers .csv ou .txt. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/semaine9/index.xml" rel="self" type="application/rss+xml" />

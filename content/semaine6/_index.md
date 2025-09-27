@@ -506,7 +506,7 @@ plt.plot(x, y)
 ```
 
 {{% notice style="cyan" title="Sachez qu'..." %}}
-À ce stade, **rien ne s'affiche encore**. Il faut une dernière commande pour voir le graphique.
+À ce stade, il se peut que **rien ne s'affiche encore**. Il faut une dernière commande pour voir le graphique.
 {{% /notice %}}
 
 
@@ -586,6 +586,17 @@ plt.show()
 
 **Résultat**
 ![Figure 3](./Figure_3.png?width=45vw)
+
+La méthode `grid()` accepte plusieurs paramètres de personnalisation:
+
+| Paramètre     | Description                                                                                               | Valeur par défaut     |
+| ------------- | --------------------------------------------------------------------------------------------------------- | --------------------- |
+| **which**     | Spécifie si les changements s’appliquent aux lignes de grille **majeures**, **mineures** ou **les deux**. | `major`               |
+| **axis**      | Spécifie si les changements s’appliquent à l’axe **x**, **y** ou **les deux**.                            | `both`                |
+| **color**     | Définit la couleur des lignes de la grille.                                                               | *(aucune, à définir)* |
+| **linestyle** | Définit le style des lignes de la grille (par ex. `'-'`, `'--'`, `':'`).                                  | *(aucune, à définir)* |
+| **linewidth** | Définit l’épaisseur des lignes de la grille.                                                              | *(aucune, à définir)* |
+
 
 ### Tracer plusieurs courbes sur un même graphique et ajouter une légende
 

@@ -6,6 +6,18 @@ weight = 107
 draft = true
 +++
 
+## à faire
+- S8 Dict
+- Les fichiers de données
+- Semaine 11 
+   - enlever Pandas, 
+   - ajouter ici les éléments manquant - filtre
+   - Ajouter (S9) exos de S8 comme Atelier S9 + NumPy load save
+   - ajouter exos avec Dictionnaires dans S8 (chimie, courbe de titrage?)
+- Semaine 7 
+   - ajouter exos/Atelier Physique 
+   - S'assurer le cours contient toutes les notions nécessaires
+
 ## Objectifs
 
 * Créer des **tableaux de données** à une ou deux dimensions.
@@ -16,6 +28,11 @@ draft = true
 * Tracer un graphique à barres muni d'une barre d'erreur avec `matplotlib`.
 * Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R².
 * Établir une relation entre deux données.
+
+Comprendre ce qu’est NumPy et pourquoi il est utile en sciences.
+Apprendre à créer et manipuler des tableaux NumPy.
+Utiliser NumPy pour traiter des données physiques et faire des calculs rapides.
+Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces).
 
 ---
 
@@ -33,310 +50,237 @@ draft = true
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_numpy.ipynb)
 2. Enregistrez le fichier dans votre dossier **exercices** de la semaine en cours.
 3. Ouvrez **Visual Studio Code**.
-4. Dans VS Code, recherchez et ouvrez le fichier `exercices_boucles.ipynb`
+4. Dans VS Code, recherchez et ouvrez le fichier `exercices_numpy.ipynb`
 5. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
 6. Vous pouvez commencer à faire les exercices.
 
 
-## Exercice 1 – Solubilité d’un sel
+## Exercice 1 : Chute libre
 
-On a mesuré la solubilité (en g/100 mL) d’un sel à différentes températures. Les données sont stockées dans un tableau NumPy :
+Un objet est lâché sans vitesse initiale d’une hauteur $h = 20 \, m$.
+La position est donnée par :
 
-```python
-import numpy as np
-sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])
-```
+$$
+y(t) = h - \frac{1}{2} g t^2
+$$
 
-1. **Afficher le tableau** `sol` pour visualiser les valeurs de solubilité (remarque : une valeur est manquante et représentée par `np.nan`).
-2. **Calculer la moyenne des solubilités** en ignorant la valeur manquante.
+avec $g = 9.8 \, m/s^2$.
 
-   * Chercher dans NumPy une fonction qui calcule la moyenne en excluant les `NaN`.
-3. **Calculer l’écart type** des valeurs (toujours en ignorant `NaN`).
+Écris un programme qui :
 
-   * Arrondir le résultat à **2 décimales** avec `round()`.
-   * Afficher le résultat sous la forme : `Écart type : valeur`.
-
-**Résultats attendus** :
-```
-Solubilités : [32.  35.5  nan 37.2 39. ]
-Moyenne sans NaN : 35.925
-Écart type : 2.58
-```
+1. Crée un tableau `t` de 0 à 2 secondes (21 valeurs).
+2. Calcule la position `y`.
+3. Affiche les 5 premières valeurs.
 
 
-## Exercice 2 – Températures journalières
+## Exercice 2 : Mouvement rectiligne uniforme
 
-Un thermomètre a enregistré la température **3 fois par jour (matin, après-midi, soir)** pendant **7 jours consécutifs**.
-Ces données sont stockées dans un tableau NumPy à deux dimensions :
+Une voiture roule à $v = 15 \, m/s$.
+La position est donnée par :
 
-```python
-temperatures = np.array([
-    [12.1, 17.3, 14.2],  # Jour 1
-    [11.8, 16.9, 13.9],  # Jour 2
-    [13.0, 18.1, 15.0],  # Jour 3
-    [12.5, 17.5, 14.7],  # Jour 4
-    [np.nan, 16.0, 14.0],# Jour 5 (valeur manquante le matin)
-    [13.2, 18.0, 15.2],  # Jour 6
-    [12.0, 17.0, 14.5]   # Jour 7
-])
-```
+$$
+x(t) = v \cdot t
+$$
 
-1. **Structure du tableau**
-   * Quelle est la *forme* (`shape`) de ce tableau ?
-   * Combien y a-t-il de lignes et de colonnes ? Que représentent-elles ?
+Écris un programme qui :
 
-2. **Moyenne par jour**
-   * Calculer la **température moyenne quotidienne** pour chaque jour.
-     *(Indice : utiliser `np.mean(..., axis=1)`)*
-
-3. **Moyenne du matin**
-   * Calculer la **température moyenne du matin** (1ʳᵉ colonne du tableau).
-   * **Attention** : il y a une donnée manquante (`np.nan`). Comment l’ignorer dans le calcul ?
-     *(Indice : utiliser `np.nanmean(...)` sur la colonne du matin)*
+1. Crée un tableau de temps entre 0 et 10 s (par pas de 0.5).
+2. Calcule la position.
+3. Affiche la dernière valeur (la position après 10 s).
 
 
-**Résultats attendus** :
-```
-Forme : (7, 3)
-Moyennes journalières : [14.53333333 14.2        15.36666667 14.9        15.         15.46666667
- 14.5       ]
-Moyenne du matin : 12.433333333333332
-```
+## Exercice 3 : Énergie cinétique
+
+La formule est :
+
+$$
+E_c = \frac{1}{2} m v^2
+$$
+
+Un objet de masse $m = 2.0 \, kg$ accélère de 0 à 20 m/s.
+
+Écris un programme qui :
+
+1. Crée un tableau de vitesses de 0 à 20 m/s (pas de 2).
+2. Calcule l’énergie cinétique correspondante.
+3. Affiche les résultats.
 
 
-## Exercice 3 – Analyse d’ADN
+## Exercice 4 : Oscillations harmoniques
 
-On a mesuré l’intensité de **5 fragments d’ADN** (valeurs arbitraires) pour **deux échantillons**. Ces intensités sont stockées dans des tableaux NumPy :
+La position d’un oscillateur est donnée par :
 
-```python
-import numpy as np
+$$
+x(t) = A \cos(\omega t)
+$$
 
-ech1 = np.array([3.2, 2.8, 4.1, 3.9, 2.5])
-ech2 = np.array([2.9, 3.0, 4.2, 4.0, 2.7])
-```
+avec $A = 0.1 \, m$, $\omega = 2 \pi \, rad/s$.
 
-1. **Profil combiné** : additionner directement les deux tableaux `ech1` et `ech2` pour obtenir un nouveau tableau qui représente la somme des intensités fragment par fragment.
-   * **Indice** : utiliser l’opérateur `+` avec des tableaux NumPy.  
+Écris un programme qui :
 
-2. **Différences entre échantillons** : calculer la différence `ech1 - ech2`.  
-   * **Attention** : `ech1 - ech2` n’est pas la même chose que `ech2 - ech1`.
-
-3. **Statistiques** :
-   * Calculer la **moyenne** de chaque échantillon (`np.mean`).
-   * Calculer l’**écart type** de chaque échantillon (`np.std`).
-   * Arrondir les résultats à **2 décimales** (`round(..., 2)`).
-
-**Résultats attendus** :
-```
-Profil combiné : [6.1 5.8 8.3 7.9 5.2]
-Différence : [ 0.3 -0.2 -0.1 -0.1 -0.2]
-Moyenne éch1 : 3.3
-Écart type éch1 : 0.62
-Moyenne éch2 : 3.36
-Écart type éch2 : 0.62
-```
-
-
-## Exercice 4 – Pression en fonction de la hauteur dans un cylindre
-
-On mesure la pression (en kPa) à différentes hauteurs (en cm) dans un cylindre rempli d’air :
-
-```python
-import numpy as np
-
-hauteur = np.linspace(0, 50, 6)  # [0, 10, 20, 30, 40, 50]
-pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
-```
-
-1. **Affichage des données**
-   * Afficher le tableau des hauteurs en cm.
-   * Afficher le tableau des pressions en kPa.
-
-2. **Variation de pression**
-   * Calculer la différence de pression entre deux hauteurs consécutives (chaque 10 cm).
-   * Afficher le tableau des variations obtenues.
-
-3. **Moyenne de la pression**
-   * Calculer la moyenne des valeurs de pression.
-   * Afficher la moyenne avec **2 chiffres après la virgule**.
-
-4. **Graphique avec régression linéaire**
-   * Tracer un nuage de points (`plt.scatter()`) représentant la pression en fonction de la hauteur.
-   * Ajouter la droite de régression linéaire sur le même graphique.
-   * Mettre un titre et des étiquettes aux axes (`plt.xlabel`, `plt.ylabel`).
-
-**Exemple attendu (partiel)** :
-```
-Hauteur (cm) : [ 0. 10. 20. 30. 40. 50.]
-Pression (kPa) : [101.3 100.   98.7  97.5  96.2  95. ]
-Variation de pression par 10 cm : [-1.3 -1.3 -1.2 -1.3 -1.2]
-Moyenne de pression : 98.12 kPa
-```
-![Graphique nuage et regression](./graphique_pression_regression.png?width=35vw)
-
-
-
-## Exercice 5 – Croissance d’une plante (modélisation simplifiée)
-
-On veut modéliser la croissance d’une plante.
-Sans engrais, sa taille **augmente de 2 cm par jour**, en partant d’une taille initiale de **5 cm**.
-
-1. **Créer un tableau NumPy** qui contient la taille de la plante chaque jour pendant 10 jours (jour 0 à jour 9).   
-   **Indice** : utiliser `np.arange()` ou construis le tableau à partir d’une liste.
-2. **Afficher ce tableau** pour vérifier qu’il correspond à la croissance sans engrais.
-3. **Créer un deuxième tableau** où tu ajoutes **+1 cm** à chaque valeur du premier tableau (effet de l’engrais).
-4. **Calculer la moyenne** des tailles de la plante :
-   * une fois **sans engrais**,
-   * une fois **avec engrais**.  
-     **Indice** : utiliser la fonction `np.mean()`.
-
-**Résultats attendus** :
-```
-Taille sans engrais : [ 5  7  9 11 13 15 17 19 21 23]
-Taille avec engrais : [ 6  8 10 12 14 16 18 20 22 24]
-Moyenne sans engrais : 14.0 cm
-Moyenne avec engrais : 15.0 cm
-```
+1. Crée un tableau `t` de 0 à 2 s (101 valeurs).
+2. Calcule la position `x(t)`.
+3. Affiche la valeur maximale et minimale de la position. 
 
 
 ---
 
 # Cours
 
+## Pourquoi NumPy ?
+
+* En sciences, nous travaillons souvent avec des données numériques : mesures expérimentales, vecteurs, séries temporelles, etc.
+* En Python de base, on peut utiliser des listes, mais elles sont limitées pour les calculs scientifiques.
+* La **bibliothèque NumPy** (*Numerical Python*) permet de manipuler efficacement des tableaux numériques (***arrays***).
+
 ## Importer la bibliothèque
 
+Avant de d’utiliser les fonctionnalités de NumPy, on doit importer la bibliothèque :
+
 ```python
 import numpy as np
 ```
+Ici, `np` est un **alias** utilisé par convention.
 
-## Créer des tableaux de données (`array`)
 
-### Tableau 1D via un liste et np.array()
+## Créer des tableaux (arrays)
 
-```python
-sol = np.array([32.0, 35.5, 37.2])
-print(f"Solubilités mesurées : {sol}")
-```
-
-### Tableau 1D avec np.arrange(début, fin, pas)
-
-La fonction `numpy.arange()` crée un tableau de valeurs également espacées dans un intervalle donné. Elle est similaire à la fonction `range()`, mais retourne **un tableau NumPy au lieu d’une liste**.
-
-* **début** : valeur de départ du tableau (incluse).
-* **fin** : valeur de fin (non incluse).
-* **pas** : pas entre chaque valeur (optionnel, par défaut 1).
-
-**Exemples :**
-1. **Pas par défaut (1) :**
+### À partir d’une liste Python
 
 ```python
 import numpy as np
 
-arr = np.arange(3, 8)
-print(arr)	# Affiche [3 4 5 6 7]
+v = np.array([2, 4, 6, 8])
+print(v)
 ```
 
-2. **Avec un pas différent :**
+**Résultat** :
+```
+[2 4 6 8]
+```
+
+### Générer rapidement des tableaux numériques
+
+* `np.arange(début, fin, pas)` → nombres régulièrement espacés.
+* `np.linspace(début, fin, n)` → n valeurs également réparties.
+* `np.zeros(n)` → n zéros.
+* `np.ones(n)` → n uns.
+
+Exemples :
 
 ```python
-arr = np.arange(2, 10, 2)
-print(arr)	# Affiche [2 4 6 8]
+x = np.linspace(0, 10, 6)
+print(x)
 ```
 
-3. **Avec des nombres décimaux :**
+**Résultat** :
+```
+[ 0.  2.  4.  6.  8. 10.]
+```
+***AJOUTER EXEMPLES AUTRES FN***
+
+## Opérations vectorisées
+
+Avec NumPy, les **opérations s’appliquent à tout le tableau** (pas besoin de boucles `for`).
 
 ```python
-arr = np.arange(1, 2, 0.2)
-print(arr)	# Affiche [1.  1.2  1.4  1.6  1.8]
+x = np.array([0, 1, 2, 3])
+y = x**2   # chaque élément est mis au carré
+print(y)
 ```
 
-> **Remarque** : contrairement à `range()`, `arange()` accepte les pas décimaux.
+**Résultat** :
+```
+[0 1 4 9]
+```
+
+### Opérations arithmétiques élémentaires
+
+Avec
+`a = np.array([1, 2, 3, 4])` et  
+`b = np.array([10, 20, 30, 40])`
 
 
+| Opération      | Exemple avec NumPy | Description                      | Résultat (vectorisé)    |
+| -------------- | ------------------ | -------------------------------- | ----------------------- |
+| Addition       | `a + b`            | addition élément par élément     | [11 22 33 44]           |
+| Soustraction   | `a - b`            | soustraction élément par élément | [-9 -18 -27 -36]        |
+| Multiplication | `a * b`            | produit élément par élément      | [10 40 90 160]          |
+| Division       | `a / b`            | division élément par élément     | [0.1 0.1 0.1 0.1]       |
+| Puissance      | `a ** 2`           | élève chaque élément au carré    | [1 4 9 16]              |
+| Racine carrée  | `np.sqrt(a)`       | racine carrée de chaque élément  | [1. 1.41421356 1.73205081 2.] |
+| Valeur absolue | `np.abs(a)`        | valeur absolue de chaque élément | [9 18 27 36]            |
 
-### Tableau 2D via une liste de listes et np.array()
 
-* Un **tableau numpy** multidimentionnel c'est un **tableau numpy** qui contient **une liste de listes**.
+## Fonctions mathématiques
 
+NumPy propose beaucoup de fonctions
+
+### 1. Fonctions statistiques
+
+Avec `a = np.array([1, 2, 3, 4])`
+
+| Fonction   | Exemple        | Résultat
+| ---------- | -------------- | ----------------- |
+| Moyenne    | `np.mean(a)`   | 2.5               |
+| Médiane    | `np.median(a)` | 2.5               |
+| Somme      | `np.sum(a)`    | 10                |
+| Produit    | `np.prod(a)`   | 24                |
+| Variance   | `np.var(a)`    | 1.25              |
+| Écart-type | `np.std(a)`    | 1.118033988749895 |
+| Minimum    | `np.min(a)`    | 1                 |
+| Maximum    | `np.max(a)`    | 4                 |
+
+
+### 2. Fonctions logarithmiques et trigonométriques
+
+Avec ` = np.array([1, 2, 3, 4])`
+
+| Fonction           | Exemple          | Résultat                    |
+| ------------------ | ---------------- | --------------------------- |
+| Arrondi            | `np.round(a, 2)` | arrondit à 2 décimales      |
+| Plafond            | `np.ceil(a)`     | arrondi supérieur           |
+| Plancher           | `np.floor(a)`    | arrondi inférieur           |
+| Exponentielle      | `np.exp(a)`      | \$e^x\$ élément par élément |
+| Logarithme naturel | `np.log(a)`      | \$\ln(x)\$                  |
+| Logarithme base 2  | `np.log2(a)`     | \$\log\_{2}(x)\$           |
+| Logarithme base 10 | `np.log10(a)`    | \$\log\_{10}(x)\$           |
+
+| **Exponentielles et logarithmes** | `np.exp(x)`         | Exponentielle e^x                      | `np.exp(1) → 2.718…`           |
+|                                   | `np.expm1(x)`       | e^x - 1 (utile pour petites valeurs)   | `np.expm1(1e-5) → 1.000005e-5` |
+|                                   | `np.log1p(x)`       | ln(1+x)                                | `np.log1p(1e-5) → 0.00001`     |
+
+ | `np.log(np.e) → 1`             |
+ | `np.log2(8) → 3`               |
+| `np.log10(1000) → 3`           |
+
+
+Exemple :
 ```python
-matrice = np.array([[1, 2], [3, 4]])
-print(matrice.shape)     # Affiche les dimensions (2 lignes, 2 colonnes)
+angles = np.linspace(0, np.pi, 4)
+print(np.sin(angles))
 ```
 
-## Créer des tableaux remplis d’une même valeur
+**Principales Fonctions trigonométriques**
 
-### Rempli de 0
+| Fonction                    | Exemple         | Résultat                     |
+| --------------------------- | --------------- | ---------------------------- |
+| Sinus                       | `np.sin(a)`     | sinus élément par élément    |
+| Cosinus                     | `np.cos(a)`     | cosinus élément par élément  |
+| Tangente                    | `np.tan(a)`     | tangente élément par élément |
+| Arcsin                      | `np.arcsin(a)`  | sinus inverse                |
+| Arccos                      | `np.arccos(a)`  | cosinus inverse              |
+| Arctan                      | `np.arctan(a)`  | tangente inverse             |
+| Conversion degrés → radians | `np.deg2rad(a)` | transforme ° en rad          |
+| Conversion radians → degrés | `np.rad2deg(a)` | transforme rad en °          |
 
-* `np.zeros(forme)`: créer un tableau rempli uniquement de `0`
-* `forme` = dimensions du tableau (ex. `(2,3)` → 2 lignes, 3 colonnes).
+### Constantes et autres fonctions utiles
 
-**Exemple** :
-```python
-tab_zeros = np.zeros((2, 3))  # Crée un tableau de 2 lignes et 3 colonnes rempli de 0
-```
-
-### Rempli de 1
-
-* `np.ones(forme)` : créer un tableau rempli uniquement de `1`.
-* `forme` = dimensions du tableau (ex. `(3,2)` → 3 lignes, 2 colonnes).
-
-**Exemple** :
-```python
-tab_uns = np.ones((3, 2))  # Crée un tableau de 3 lignes et 2 colonnes rempli de 1
-```
-
-### Rempli d'une autre valeur
-
-* `np.full(forme, valeur)` : créer un tableau rempli avec une **valeur choisie**.
-* `forme` = dimensions du tableau (ex. `4` → 1D avec 4 éléments).
-* `valeur` = nombre à répéter (ex. `0.5`).
-
-**Exemple** :
-```python
-tab_demi = np.full(4, 0.5)  # Crée un tableau [0.5, 0.5, 0.5, 0.5]
-```
-
-### Rempli de valeurs espacées régulièrement (utile pour les graphiques)
-
-* `np.linspace(debut, fin, nb)` : créer un tableau de `nb` valeurs **réparties régulièrement** entre `debut` et `fin` (inclus).
-  * `debut` = première valeur.
-  * `fin` = dernière valeur.
-  * `nb` = nombre total de valeurs.
-
-```python
-tab_esp = np.linspace(0, 10, 5)  # Crée un tableau : [ 0.  2.5  5.  7.5 10. ]
-```
-
-
-## Principales fonctions mathématiques et statistiques
-
-{{% notice style="blue" title="Principales fonctions mathématiques de NumPy" groupid="notice-toggle" expanded="false" %}}
 | Catégorie                         | Fonction            | Description                            | Exemple                        |
 | --------------------------------- | ------------------- | -------------------------------------- | ------------------------------ |
 | **Constantes**                    | `np.pi`             | Valeur de π                            | `np.pi → 3.14159…`             |
 |                                   | `np.e`              | Base du logarithme naturel             | `np.e → 2.71828…`              |
-| **Arithmétique de base**          | `np.add(x, y)`      | Addition                               | `np.add(3, 2) → 5`             |
-|                                   | `np.subtract(x, y)` | Soustraction                           | `np.subtract(3, 2) → 1`        |
-|                                   | `np.multiply(x, y)` | Multiplication                         | `np.multiply(3, 2) → 6`        |
-|                                   | `np.divide(x, y)`   | Division                               | `np.divide(6, 2) → 3`          |
-|                                   | `np.power(x, y)`    | Exposant                               | `np.power(2, 3) → 8`           |
-|                                   | `np.mod(x, y)`      | Reste de la division                   | `np.mod(7, 3) → 1`             |
-| **Fonctions trigonométriques**    | `np.sin(x)`         | Sinus (x en radians)                   | `np.sin(np.pi/2) → 1`          |
-|                                   | `np.cos(x)`         | Cosinus                                | `np.cos(0) → 1`                |
-|                                   | `np.tan(x)`         | Tangente                               | `np.tan(np.pi/4) → 1`          |
-|                                   | `np.arcsin(x)`      | Arcsinus                               | `np.arcsin(1) → π/2`           |
-|                                   | `np.arccos(x)`      | Arccosinus                             | `np.arccos(0) → π/2`           |
-|                                   | `np.arctan(x)`      | Arctangente                            | `np.arctan(1) → π/4`           |
 |                                   | `np.arctan2(y, x)`  | Arctangente de y/x en quadrant correct | `np.arctan2(1,1) → π/4`        |
-| **Fonctions hyperboliques**       | `np.sinh(x)`        | Sinus hyperbolique                     | `np.sinh(0) → 0`               |
-|                                   | `np.cosh(x)`        | Cosinus hyperbolique                   | `np.cosh(0) → 1`               |
-|                                   | `np.tanh(x)`        | Tangente hyperbolique                  | `np.tanh(0) → 0`               |
-| **Exponentielles et logarithmes** | `np.exp(x)`         | Exponentielle e^x                      | `np.exp(1) → 2.718…`           |
-|                                   | `np.log(x)`         | Logarithme naturel                     | `np.log(np.e) → 1`             |
-|                                   | `np.log2(x)`        | Log base 2                             | `np.log2(8) → 3`               |
-|                                   | `np.log10(x)`       | Log base 10                            | `np.log10(1000) → 3`           |
-|                                   | `np.expm1(x)`       | e^x - 1 (utile pour petites valeurs)   | `np.expm1(1e-5) → 1.000005e-5` |
-|                                   | `np.log1p(x)`       | ln(1+x)                                | `np.log1p(1e-5) → 0.00001`     |
 | **Racines et valeurs absolues**   | `np.sqrt(x)`        | Racine carrée                          | `np.sqrt(9) → 3`               |
 |                                   | `np.cbrt(x)`        | Racine cubique                         | `np.cbrt(27) → 3`              |
 |                                   | `np.abs(x)`         | Valeur absolue                         | `np.abs(-5) → 5`               |
@@ -345,15 +289,39 @@ tab_esp = np.linspace(0, 10, 5)  # Crée un tableau : [ 0.  2.5  5.  7.5 10. ]
 |                                   | `np.floor(x)`       | Arrondi inférieur                      | `np.floor(3.7) → 3`            |
 |                                   | `np.ceil(x)`        | Arrondi supérieur                      | `np.ceil(3.2) → 4`             |
 |                                   | `np.trunc(x)`       | Tronque la partie décimale             | `np.trunc(3.7) → 3`            |
-| **Opérations statistiques**       | `np.mean(x)`        | Moyenne                                | `np.mean([1,2,3]) → 2`         |
-|                                   | `np.median(x)`      | Médiane                                | `np.median([1,2,3]) → 2`       |
-|                                   | `np.std(x)`         | Écart type                             | `np.std([1,2,3]) → 0.816…`     |
-|                                   | `np.var(x)`         | Variance                               | `np.var([1,2,3]) → 0.666…`     |
-|                                   | `np.sum(x)`         | Somme                                  | `np.sum([1,2,3]) → 6`          |
-|                                   | `np.prod(x)`        | Produit                                | `np.prod([1,2,3]) → 6`         |
-|                                   | `np.min(x)`         | Minimum                                | `np.min([1,2,3]) → 1`          |
-|                                   | `np.max(x)`         | Maximum                                | `np.max([1,2,3]) → 3`          |
+
+{{% notice style="blue" title="Principales fonctions mathématiques de NumPy" groupid="notice-toggle" expanded="false" %}}
 {{% /notice %}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 
 ### Quelques exemples
 
@@ -420,6 +388,7 @@ x * 10   # [10 20 30]
 ```python
 y / 2    # [2.  2.5 3. ]
 ```
+-->
 
 ## Ignorer des valeurs manquantes (`np.nan`)
 

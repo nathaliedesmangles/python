@@ -1,21 +1,11 @@
 +++
 chapter = true
 pre = "9."
-title = " Lecture et écriture de fichiers textes (avec NumPy, Pandas)"
+title = " Lecture et écriture de fichiers textes (avec NumPy ou Pandas)"
 weight = 109
 draft = true
 +++
 
-## à faire
-- S8 Dict
-- Les fichiers de données
-- Semaine 11 
-   - enlever Pandas, 
-   - ajouter ici les éléments manquant - filtre
-   - Ajouter (S9) exos de S8 comme Atelier S9 + NumPy load save
-   - ajouter exos avec Dictionnaires dans S8
-- Semaine 7 ajouter exos/Atelier Physique 
-- S'assurer le le cours contient toutes les notions nécessaires
 
 ## Objectifs
 

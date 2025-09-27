@@ -141,7 +141,7 @@ td[colspan="3"] {
 -->
     <tr>
       <td><a href="../semaine10/"><strong>Cours 10</strong></a></td>
-      <td colspan="3"><strong>Évaluation #2 (30%)</strong><br>3 novembre(grp9)<br>5 novembre (grp11)<br>1 octobre (grp10)</td>
+      <td colspan="3"><strong>Évaluation #2 (30%)</strong><br>3 novembre(grp9)<br>5 novembre (grp11)<br>31 octobre (grp10)</td>
     </tr>
 <!--
     <tr>

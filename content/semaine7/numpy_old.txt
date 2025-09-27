@@ -1,0 +1,283 @@
+<!--
+## Exercice 1 – Solubilité d’un sel
+
+On a mesuré la solubilité (en g/100 mL) d’un sel à différentes températures. Les données sont stockées dans un tableau NumPy :
+
+```python
+import numpy as np
+sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0])
+```
+
+1. **Afficher le tableau** `sol` pour visualiser les valeurs de solubilité (remarque : une valeur est manquante et représentée par `np.nan`).
+2. **Calculer la moyenne des solubilités** en ignorant la valeur manquante.
+
+   * Chercher dans NumPy une fonction qui calcule la moyenne en excluant les `NaN`.
+3. **Calculer l’écart type** des valeurs (toujours en ignorant `NaN`).
+
+   * Arrondir le résultat à **2 décimales** avec `round()`.
+   * Afficher le résultat sous la forme : `Écart type : valeur`.
+
+**Résultats attendus** :
+```
+Solubilités : [32.  35.5  nan 37.2 39. ]
+Moyenne sans NaN : 35.925
+Écart type : 2.58
+```
+
+
+## Exercice 2 – Températures journalières
+
+Un thermomètre a enregistré la température **3 fois par jour (matin, après-midi, soir)** pendant **7 jours consécutifs**.
+Ces données sont stockées dans un tableau NumPy à deux dimensions :
+
+```python
+temperatures = np.array([
+    [12.1, 17.3, 14.2],  # Jour 1
+    [11.8, 16.9, 13.9],  # Jour 2
+    [13.0, 18.1, 15.0],  # Jour 3
+    [12.5, 17.5, 14.7],  # Jour 4
+    [np.nan, 16.0, 14.0],# Jour 5 (valeur manquante le matin)
+    [13.2, 18.0, 15.2],  # Jour 6
+    [12.0, 17.0, 14.5]   # Jour 7
+])
+```
+
+1. **Structure du tableau**
+   * Quelle est la *forme* (`shape`) de ce tableau ?
+   * Combien y a-t-il de lignes et de colonnes ? Que représentent-elles ?
+
+2. **Moyenne par jour**
+   * Calculer la **température moyenne quotidienne** pour chaque jour.
+     *(Indice : utiliser `np.mean(..., axis=1)`)*
+
+3. **Moyenne du matin**
+   * Calculer la **température moyenne du matin** (1ʳᵉ colonne du tableau).
+   * **Attention** : il y a une donnée manquante (`np.nan`). Comment l’ignorer dans le calcul ?
+     *(Indice : utiliser `np.nanmean(...)` sur la colonne du matin)*
+
+
+**Résultats attendus** :
+```
+Forme : (7, 3)
+Moyennes journalières : [14.53333333 14.2        15.36666667 14.9        15.         15.46666667
+ 14.5       ]
+Moyenne du matin : 12.433333333333332
+```
+
+
+## Exercice 3 – Analyse d’ADN
+
+On a mesuré l’intensité de **5 fragments d’ADN** (valeurs arbitraires) pour **deux échantillons**. Ces intensités sont stockées dans des tableaux NumPy :
+
+```python
+import numpy as np
+
+ech1 = np.array([3.2, 2.8, 4.1, 3.9, 2.5])
+ech2 = np.array([2.9, 3.0, 4.2, 4.0, 2.7])
+```
+
+1. **Profil combiné** : additionner directement les deux tableaux `ech1` et `ech2` pour obtenir un nouveau tableau qui représente la somme des intensités fragment par fragment.
+   * **Indice** : utiliser l’opérateur `+` avec des tableaux NumPy.  
+
+2. **Différences entre échantillons** : calculer la différence `ech1 - ech2`.  
+   * **Attention** : `ech1 - ech2` n’est pas la même chose que `ech2 - ech1`.
+
+3. **Statistiques** :
+   * Calculer la **moyenne** de chaque échantillon (`np.mean`).
+   * Calculer l’**écart type** de chaque échantillon (`np.std`).
+   * Arrondir les résultats à **2 décimales** (`round(..., 2)`).
+
+**Résultats attendus** :
+```
+Profil combiné : [6.1 5.8 8.3 7.9 5.2]
+Différence : [ 0.3 -0.2 -0.1 -0.1 -0.2]
+Moyenne éch1 : 3.3
+Écart type éch1 : 0.62
+Moyenne éch2 : 3.36
+Écart type éch2 : 0.62
+```
+
+
+## Exercice 4 – Pression en fonction de la hauteur dans un cylindre
+
+On mesure la pression (en kPa) à différentes hauteurs (en cm) dans un cylindre rempli d’air :
+
+```python
+import numpy as np
+
+hauteur = np.linspace(0, 50, 6)  # [0, 10, 20, 30, 40, 50]
+pression = np.array([101.3, 100.0, 98.7, 97.5, 96.2, 95.0])
+```
+
+1. **Affichage des données**
+   * Afficher le tableau des hauteurs en cm.
+   * Afficher le tableau des pressions en kPa.
+
+2. **Variation de pression**
+   * Calculer la différence de pression entre deux hauteurs consécutives (chaque 10 cm).
+   * Afficher le tableau des variations obtenues.
+
+3. **Moyenne de la pression**
+   * Calculer la moyenne des valeurs de pression.
+   * Afficher la moyenne avec **2 chiffres après la virgule**.
+
+4. **Graphique avec régression linéaire**
+   * Tracer un nuage de points (`plt.scatter()`) représentant la pression en fonction de la hauteur.
+   * Ajouter la droite de régression linéaire sur le même graphique.
+   * Mettre un titre et des étiquettes aux axes (`plt.xlabel`, `plt.ylabel`).
+
+**Exemple attendu (partiel)** :
+```
+Hauteur (cm) : [ 0. 10. 20. 30. 40. 50.]
+Pression (kPa) : [101.3 100.   98.7  97.5  96.2  95. ]
+Variation de pression par 10 cm : [-1.3 -1.3 -1.2 -1.3 -1.2]
+Moyenne de pression : 98.12 kPa
+```
+![Graphique nuage et regression](./graphique_pression_regression.png?width=35vw)
+
+
+
+## Exercice 5 – Croissance d’une plante (modélisation simplifiée)
+
+On veut modéliser la croissance d’une plante.
+Sans engrais, sa taille **augmente de 2 cm par jour**, en partant d’une taille initiale de **5 cm**.
+
+1. **Créer un tableau NumPy** qui contient la taille de la plante chaque jour pendant 10 jours (jour 0 à jour 9).   
+   **Indice** : utiliser `np.arange()` ou construis le tableau à partir d’une liste.
+2. **Afficher ce tableau** pour vérifier qu’il correspond à la croissance sans engrais.
+3. **Créer un deuxième tableau** où tu ajoutes **+1 cm** à chaque valeur du premier tableau (effet de l’engrais).
+4. **Calculer la moyenne** des tailles de la plante :
+   * une fois **sans engrais**,
+   * une fois **avec engrais**.  
+     **Indice** : utiliser la fonction `np.mean()`.
+
+**Résultats attendus** :
+```
+Taille sans engrais : [ 5  7  9 11 13 15 17 19 21 23]
+Taille avec engrais : [ 6  8 10 12 14 16 18 20 22 24]
+Moyenne sans engrais : 14.0 cm
+Moyenne avec engrais : 15.0 cm
+```
+-->
+
+====================== COURS =============================
+## Créer des tableaux de données (`array`)
+
+### Tableau 1D via un liste et np.array()
+
+```python
+sol = np.array([32.0, 35.5, 37.2])
+print(f"Solubilités mesurées : {sol}")
+```
+
+### Tableau 1D avec np.arrange(début, fin, pas)
+
+La fonction `numpy.arange()` crée un tableau de valeurs également espacées dans un intervalle donné. Elle est similaire à la fonction `range()`, mais retourne **un tableau NumPy au lieu d’une liste**.
+
+* **début** : valeur de départ du tableau (incluse).
+* **fin** : valeur de fin (non incluse).
+* **pas** : pas entre chaque valeur (optionnel, par défaut 1).
+
+**Exemples :**
+1. **Pas par défaut (1) :**
+
+```python
+import numpy as np
+
+arr = np.arange(3, 8)
+print(arr)	# Affiche [3 4 5 6 7]
+```
+
+2. **Avec un pas différent :**
+
+```python
+arr = np.arange(2, 10, 2)
+print(arr)	# Affiche [2 4 6 8]
+```
+
+3. **Avec des nombres décimaux :**
+
+```python
+arr = np.arange(1, 2, 0.2)
+print(arr)	# Affiche [1.  1.2  1.4  1.6  1.8]
+```
+
+> **Remarque** : contrairement à `range()`, `arange()` accepte les pas décimaux.
+
+
+
+### Tableau 2D via une liste de listes et np.array()
+
+* Un **tableau numpy** multidimentionnel c'est un **tableau numpy** qui contient **une liste de listes**.
+
+```python
+matrice = np.array([[1, 2], [3, 4]])
+print(matrice.shape)     # Affiche les dimensions (2 lignes, 2 colonnes)
+```
+
+## Créer des tableaux remplis d’une même valeur
+
+### Rempli de 0
+
+* `np.zeros(forme)`: créer un tableau rempli uniquement de `0`
+* `forme` = dimensions du tableau (ex. `(2,3)` → 2 lignes, 3 colonnes).
+
+**Exemple** :
+```python
+tab_zeros = np.zeros((2, 3))  # Crée un tableau de 2 lignes et 3 colonnes rempli de 0
+```
+
+### Rempli de 1
+
+* `np.ones(forme)` : créer un tableau rempli uniquement de `1`.
+* `forme` = dimensions du tableau (ex. `(3,2)` → 3 lignes, 2 colonnes).
+
+**Exemple** :
+```python
+tab_uns = np.ones((3, 2))  # Crée un tableau de 3 lignes et 2 colonnes rempli de 1
+```
+
+### Rempli d'une autre valeur
+
+* `np.full(forme, valeur)` : créer un tableau rempli avec une **valeur choisie**.
+* `forme` = dimensions du tableau (ex. `4` → 1D avec 4 éléments).
+* `valeur` = nombre à répéter (ex. `0.5`).
+
+**Exemple** :
+```python
+tab_demi = np.full(4, 0.5)  # Crée un tableau [0.5, 0.5, 0.5, 0.5]
+```
+
+### Rempli de valeurs espacées régulièrement (utile pour les graphiques)
+
+* `np.linspace(debut, fin, nb)` : créer un tableau de `nb` valeurs **réparties régulièrement** entre `debut` et `fin` (inclus).
+  * `debut` = première valeur.
+  * `fin` = dernière valeur.
+  * `nb` = nombre total de valeurs.
+
+```python
+tab_esp = np.linspace(0, 10, 5)  # Crée un tableau : [ 0.  2.5  5.  7.5 10. ]
+
+
+
+```
+
+## 6. Exemple en sciences
+
+Imaginons qu’un objet se déplace avec une vitesse initiale $v_0 = 5 \, m/s$ et une accélération constante $a = 2 \, m/s^2$.
+Sa position est donnée par :
+```math
+$$
+x(t) = v_0 t + \frac{1}{2} a t^2
+$$
+```
+
+En NumPy :
+
+```python
+t = np.linspace(0, 5, 6)   # 6 instants entre 0 et 5 secondes
+v0 = 5
+a = 2
+x = v0*t + 0.5*a*t**2
+print(x)
+```
