@@ -1,7 +1,7 @@
 +++
-pre = "<b>7.</b>"
+pre = "<b>8.</b>"
 title = " Tableaux NumPy et droite de régression"
-weight = 207
+weight = 208
 draft = false
 +++
 

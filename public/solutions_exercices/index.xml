@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des exercices :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/index.html</link>
-    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Tableaux NumPy et droite de régression 08. Dictionnaires et fichiers texte</description>
+    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires 08. Tableaux NumPy et droite de régression</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/index.xml" rel="self" type="application/rss+xml" />

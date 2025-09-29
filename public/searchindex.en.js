@@ -209,8 +209,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple\n06. Listes, chaines et visualisation des données\n07. Tableaux NumPy et droite de régression 08. Dictionnaires et fichiers texte",
-    "description": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple\n06. Listes, chaines et visualisation des données\n07. Tableaux NumPy et droite de régression 08. Dictionnaires et fichiers texte",
+    "content": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple\n06. Listes, chaines et visualisation des données\n07. Dictionnaires 08. Tableaux NumPy et droite de régression",
+    "description": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple\n06. Listes, chaines et visualisation des données\n07. Dictionnaires 08. Tableaux NumPy et droite de régression",
     "tags": [],
     "title": "Solutions des exercices",
     "uri": "/solutions_exercices/index.html"
@@ -265,8 +265,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple\n06. Listes, chaines et visualisation des données\n07. Tableaux NumPy et droite de régression",
-    "description": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple\n06. Listes, chaines et visualisation des données\n07. Tableaux NumPy et droite de régression",
+    "content": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple\n06. Listes, chaines et visualisation des données\n07. Dictionnaires",
+    "description": "02. Variables, types, entrées et fonctions\n03. Structures conditionnelles\n04. Boucles et débogage simple\n06. Listes, chaines et visualisation des données\n07. Dictionnaires",
     "tags": [],
     "title": "Solutions des ateliers",
     "uri": "/solutions_ateliers/index.html"
