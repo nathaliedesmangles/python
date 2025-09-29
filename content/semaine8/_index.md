@@ -6,17 +6,6 @@ weight = 108
 draft = true
 +++
 
-## à faire
-- S8 Dict
-- Les fichiers de données
-- Semaine 11 
-   - enlever Pandas, 
-   - ajouter ici les éléments manquant - filtre
-   - Ajouter (S9) exos de S8 comme Atelier S9 + NumPy load save
-   - ajouter exos avec Dictionnaires dans S8 (chimie, courbe de titrage?)
-- Semaine 7 
-   - ajouter exos/Atelier Physique 
-   - S'assurer le cours contient toutes les notions nécessaires
 
 ## Objectifs
 
@@ -623,5 +612,5 @@ Certaines mesures sont manquantes (notées `np.nan`), car une ou deux plantes n�
 
 ## À faire avant le prochain cours
 
-1. Lire la prochaine leçon : [8. Dictionnaires](../semaine8/)
-2. Faire les exercices de la [prochaine leçon :](../semaine8/#exercices)
+1. Lire la prochaine leçon : [9. Lecture et écriture de fichiers de données](../semaine9/)
+2. Faire les exercices de la [prochaine leçon](../semaine9/#exercices)

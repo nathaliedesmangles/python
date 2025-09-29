@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Lecture et écriture de fichiers de données :: 420-SN1-RE</title>
+    <link>http://localhost:1313/solutions_ateliers/9_fichiers/index.html</link>
+    <description>import pandas as pd import numpy as np import matplotlib.pyplot as plt # Étape 1 - Lecture df = pd.read_csv(&#34;croissance_algues.csv&#34;) # Vérifier les NaN print(df.isna().sum()) df = df.dropna() # Conversion NumPy temperatures = df[&#34;Température&#34;].to_numpy() taux = df[&#34;Taux&#34;].to_numpy() # Étape 2 - Analyse par espèce donnees_par_espece = {} for _, ligne in df.iterrows(): espece = ligne[&#34;Espèce&#34;] taux_val = ligne[&#34;Taux&#34;] if espece not in donnees_par_espece: donnees_par_espece[espece] = [] donnees_par_espece[espece].append(taux_val) resume = {} for espece, valeurs in donnees_par_espece.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/solutions_ateliers/9_fichiers/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

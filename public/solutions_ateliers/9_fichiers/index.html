@@ -5,22 +5,22 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) # Fonction qui lit les données d&#39;entrée (sans paramètres) def lire_donnees(): print(&#34;--- Programme de dilution ---&#34;) # Lecture de la concentration de la solution mère C1 = float(input(&#34;Concentration de la solution mère (mol/L) : &#34;)) # Lecture de la concentration finale souhaitée C2 = float(input(&#34;Concentration finale souhaitée (mol/L) : &#34;)) # Lecture du volume final V2 = float(input(&#34;Volume final de la solution (L) : &#34;)) return C1, C2, V2 # Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat) def calculer_v1(C1, C2, V2): # Formule : V1 = (C2 × V2) / C1 V1 = (C2 * V2) / C1 return V1 # Fonction qui affiche le résultat (avec paramètre, ne retourne rien) def afficher_resultat(V1): # Arrondi à 2 décimales V1_arrondi = round(V1, 2) print(f&#34;Il faut prélever {V1_arrondi} L de solution mère pour préparer la solution diluée.">
+    <meta name="description" content="import pandas as pd import numpy as np import matplotlib.pyplot as plt # Étape 1 - Lecture df = pd.read_csv(&#34;croissance_algues.csv&#34;) # Vérifier les NaN print(df.isna().sum()) df = df.dropna() # Conversion NumPy temperatures = df[&#34;Température&#34;].to_numpy() taux = df[&#34;Taux&#34;].to_numpy() # Étape 2 - Analyse par espèce donnees_par_espece = {} for _, ligne in df.iterrows(): espece = ligne[&#34;Espèce&#34;] taux_val = ligne[&#34;Taux&#34;] if espece not in donnees_par_espece: donnees_par_espece[espece] = [] donnees_par_espece[espece].append(taux_val) resume = {} for espece, valeurs in donnees_par_espece.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content=" Fonctions personnalisées :: 420-SN1-RE">
-    <meta name="twitter:description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) # Fonction qui lit les données d&#39;entrée (sans paramètres) def lire_donnees(): print(&#34;--- Programme de dilution ---&#34;) # Lecture de la concentration de la solution mère C1 = float(input(&#34;Concentration de la solution mère (mol/L) : &#34;)) # Lecture de la concentration finale souhaitée C2 = float(input(&#34;Concentration finale souhaitée (mol/L) : &#34;)) # Lecture du volume final V2 = float(input(&#34;Volume final de la solution (L) : &#34;)) return C1, C2, V2 # Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat) def calculer_v1(C1, C2, V2): # Formule : V1 = (C2 × V2) / C1 V1 = (C2 * V2) / C1 return V1 # Fonction qui affiche le résultat (avec paramètre, ne retourne rien) def afficher_resultat(V1): # Arrondi à 2 décimales V1_arrondi = round(V1, 2) print(f&#34;Il faut prélever {V1_arrondi} L de solution mère pour préparer la solution diluée.">
-    <meta property="og:url" content="http://localhost:1313/solutions_ateliers/11_fonctions_perso/index.html">
+    <meta name="twitter:title" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
+    <meta name="twitter:description" content="import pandas as pd import numpy as np import matplotlib.pyplot as plt # Étape 1 - Lecture df = pd.read_csv(&#34;croissance_algues.csv&#34;) # Vérifier les NaN print(df.isna().sum()) df = df.dropna() # Conversion NumPy temperatures = df[&#34;Température&#34;].to_numpy() taux = df[&#34;Taux&#34;].to_numpy() # Étape 2 - Analyse par espèce donnees_par_espece = {} for _, ligne in df.iterrows(): espece = ligne[&#34;Espèce&#34;] taux_val = ligne[&#34;Taux&#34;] if espece not in donnees_par_espece: donnees_par_espece[espece] = [] donnees_par_espece[espece].append(taux_val) resume = {} for espece, valeurs in donnees_par_espece.">
+    <meta property="og:url" content="http://localhost:1313/solutions_ateliers/9_fichiers/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content=" Fonctions personnalisées :: 420-SN1-RE">
-    <meta property="og:description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) # Fonction qui lit les données d&#39;entrée (sans paramètres) def lire_donnees(): print(&#34;--- Programme de dilution ---&#34;) # Lecture de la concentration de la solution mère C1 = float(input(&#34;Concentration de la solution mère (mol/L) : &#34;)) # Lecture de la concentration finale souhaitée C2 = float(input(&#34;Concentration finale souhaitée (mol/L) : &#34;)) # Lecture du volume final V2 = float(input(&#34;Volume final de la solution (L) : &#34;)) return C1, C2, V2 # Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat) def calculer_v1(C1, C2, V2): # Formule : V1 = (C2 × V2) / C1 V1 = (C2 * V2) / C1 return V1 # Fonction qui affiche le résultat (avec paramètre, ne retourne rien) def afficher_resultat(V1): # Arrondi à 2 décimales V1_arrondi = round(V1, 2) print(f&#34;Il faut prélever {V1_arrondi} L de solution mère pour préparer la solution diluée.">
+    <meta property="og:title" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
+    <meta property="og:description" content="import pandas as pd import numpy as np import matplotlib.pyplot as plt # Étape 1 - Lecture df = pd.read_csv(&#34;croissance_algues.csv&#34;) # Vérifier les NaN print(df.isna().sum()) df = df.dropna() # Conversion NumPy temperatures = df[&#34;Température&#34;].to_numpy() taux = df[&#34;Taux&#34;].to_numpy() # Étape 2 - Analyse par espèce donnees_par_espece = {} for _, ligne in df.iterrows(): espece = ligne[&#34;Espèce&#34;] taux_val = ligne[&#34;Taux&#34;] if espece not in donnees_par_espece: donnees_par_espece[espece] = [] donnees_par_espece[espece].append(taux_val) resume = {} for espece, valeurs in donnees_par_espece.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content=" Fonctions personnalisées :: 420-SN1-RE">
-    <meta itemprop="description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) # Fonction qui lit les données d&#39;entrée (sans paramètres) def lire_donnees(): print(&#34;--- Programme de dilution ---&#34;) # Lecture de la concentration de la solution mère C1 = float(input(&#34;Concentration de la solution mère (mol/L) : &#34;)) # Lecture de la concentration finale souhaitée C2 = float(input(&#34;Concentration finale souhaitée (mol/L) : &#34;)) # Lecture du volume final V2 = float(input(&#34;Volume final de la solution (L) : &#34;)) return C1, C2, V2 # Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat) def calculer_v1(C1, C2, V2): # Formule : V1 = (C2 × V2) / C1 V1 = (C2 * V2) / C1 return V1 # Fonction qui affiche le résultat (avec paramètre, ne retourne rien) def afficher_resultat(V1): # Arrondi à 2 décimales V1_arrondi = round(V1, 2) print(f&#34;Il faut prélever {V1_arrondi} L de solution mère pour préparer la solution diluée.">
-    <meta itemprop="wordCount" content="246">
-    <title> Fonctions personnalisées :: 420-SN1-RE</title>
-    <link href="/solutions_ateliers/11_fonctions_perso/index.xml" rel="alternate" type="application/rss+xml" title=" Fonctions personnalisées :: 420-SN1-RE">
+    <meta itemprop="name" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
+    <meta itemprop="description" content="import pandas as pd import numpy as np import matplotlib.pyplot as plt # Étape 1 - Lecture df = pd.read_csv(&#34;croissance_algues.csv&#34;) # Vérifier les NaN print(df.isna().sum()) df = df.dropna() # Conversion NumPy temperatures = df[&#34;Température&#34;].to_numpy() taux = df[&#34;Taux&#34;].to_numpy() # Étape 2 - Analyse par espèce donnees_par_espece = {} for _, ligne in df.iterrows(): espece = ligne[&#34;Espèce&#34;] taux_val = ligne[&#34;Taux&#34;] if espece not in donnees_par_espece: donnees_par_espece[espece] = [] donnees_par_espece[espece].append(taux_val) resume = {} for espece, valeurs in donnees_par_espece.">
+    <meta itemprop="wordCount" content="206">
+    <title> Lecture et écriture de fichiers de données :: 420-SN1-RE</title>
+    <link href="/solutions_ateliers/9_fichiers/index.xml" rel="alternate" type="application/rss+xml" title=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
     <link href="/images/logo.png?1759152549" rel="icon" type="image/png">
     <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759152549" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759152549" rel="stylesheet"></noscript>
     <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759152549" rel="stylesheet">
@@ -37,7 +37,7 @@
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = ``;
-      window.relearn.path='\/solutions_ateliers\/11_fonctions_perso\/index.html';
+      window.relearn.path='\/solutions_ateliers\/9_fichiers\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
@@ -90,7 +90,7 @@
     </script>
     <link href="/css/custom.css?1759152549" rel="stylesheet">
   </head>
-  <body class="mobile-support html" data-url="/solutions_ateliers/11_fonctions_perso/index.html">
+  <body class="mobile-support html" data-url="/solutions_ateliers/9_fichiers/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -101,17 +101,7 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-<nav class="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#exercice--calcul-de-dilution-cv--cv">Exercice : Calcul de dilution (C₁V₁ = C₂V₂)</a></li>
-        <li><a href="#exemple-de-sortie-si-lutilisateur-entre-20-05-10-">Exemple de sortie (si l’utilisateur entre 2.0, 0.5, 1.0) :</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+                <div class="topbar-content-wrapper"> 
                 </div>
               </div>
             </div>
@@ -119,12 +109,12 @@
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_ateliers/index.html"><span itemprop="name">Solutions des ateliers</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Fonctions personnalisées</span><meta itemprop="position" content="3"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Lecture et écriture de fichiers de données</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/9_fichiers/index.html" title="Lecture et écriture de fichiers de données (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/8_numpy_regression/index.html" title="Tableaux NumPy et droite de régression (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/11_fonctions_perso/index.html" title="Fonctions personnalisées (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -144,59 +134,80 @@
   <header class="headline">
   </header>
 
-<h1 id="fonctions-personnalisées"> Fonctions personnalisées</h1>
+<h1 id="lecture-et-écriture-de-fichiers-de-données"> Lecture et écriture de fichiers de données</h1>
 
-<h3 id="exercice--calcul-de-dilution-cv--cv">Exercice : Calcul de dilution (C₁V₁ = C₂V₂)</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Fonction qui lit les données d&#39;entrée (sans paramètres)</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lire_donnees</span>():
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;--- Programme de dilution ---&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Lecture de la concentration de la solution mère</span>
-</span></span><span style="display:flex;"><span>    C1 <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Concentration de la solution mère (mol/L) : &#34;</span>))
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Lecture de la concentration finale souhaitée</span>
-</span></span><span style="display:flex;"><span>    C2 <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Concentration finale souhaitée (mol/L) : &#34;</span>))
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Lecture du volume final</span>
-</span></span><span style="display:flex;"><span>    V2 <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Volume final de la solution (L) : &#34;</span>))
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> C1, C2, V2
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 1 - Lecture</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;croissance_algues.csv&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat)</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculer_v1</span>(C1, C2, V2):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Formule : V1 = (C2 × V2) / C1</span>
-</span></span><span style="display:flex;"><span>    V1 <span style="color:#f92672">=</span> (C2 <span style="color:#f92672">*</span> V2) <span style="color:#f92672">/</span> C1
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> V1
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Vérifier les NaN</span>
+</span></span><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>isna()<span style="color:#f92672">.</span>sum())
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>dropna()
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Conversion NumPy</span>
+</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Température&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
+</span></span><span style="display:flex;"><span>taux <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Taux&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fonction qui affiche le résultat (avec paramètre, ne retourne rien)</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">afficher_resultat</span>(V1):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Arrondi à 2 décimales</span>
-</span></span><span style="display:flex;"><span>    V1_arrondi <span style="color:#f92672">=</span> round(V1, <span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Il faut prélever </span><span style="color:#e6db74">{</span>V1_arrondi<span style="color:#e6db74">}</span><span style="color:#e6db74"> L de solution mère pour préparer la solution diluée.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 2 - Analyse par espèce</span>
+</span></span><span style="display:flex;"><span>donnees_par_espece <span style="color:#f92672">=</span> {}
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _, ligne <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>iterrows():
+</span></span><span style="display:flex;"><span>    espece <span style="color:#f92672">=</span> ligne[<span style="color:#e6db74">&#34;Espèce&#34;</span>]
+</span></span><span style="display:flex;"><span>    taux_val <span style="color:#f92672">=</span> ligne[<span style="color:#e6db74">&#34;Taux&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> espece <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> donnees_par_espece:
+</span></span><span style="display:flex;"><span>        donnees_par_espece[espece] <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    donnees_par_espece[espece]<span style="color:#f92672">.</span>append(taux_val)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Programme principal</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Étape 1 : Lire les données</span>
-</span></span><span style="display:flex;"><span>    C1, C2, V2 <span style="color:#f92672">=</span> lire_donnees()
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Étape 2 : Calculer le volume à prélever</span>
-</span></span><span style="display:flex;"><span>    V1 <span style="color:#f92672">=</span> calculer_v1(C1, C2, V2)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Étape 3 : Afficher le résultat</span>
-</span></span><span style="display:flex;"><span>    afficher_resultat(V1)
+</span></span><span style="display:flex;"><span>resume <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> espece, valeurs <span style="color:#f92672">in</span> donnees_par_espece<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>    valeurs_np <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array(valeurs)
+</span></span><span style="display:flex;"><span>    resume[espece] <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;nb&#34;</span>: len(valeurs),
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;moyenne&#34;</span>: np<span style="color:#f92672">.</span>mean(valeurs_np),
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ecart_type&#34;</span>: np<span style="color:#f92672">.</span>std(valeurs_np)
+</span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exécution du programme</span>
-</span></span><span style="display:flex;"><span>main()</span></span></code></pre></div>
-<hr>
-<h3 id="exemple-de-sortie-si-lutilisateur-entre-20-05-10-">Exemple de sortie (si l’utilisateur entre 2.0, 0.5, 1.0) :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>--- Programme de dilution ---
-Concentration de la solution mère (mol/L) : 2.0
-Concentration finale souhaitée (mol/L) : 0.5
-Volume final de la solution (L) : 1.0
-Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.</code></pre></div>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Résumé par espèce :&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> espece, stats <span style="color:#f92672">in</span> resume<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>espece<span style="color:#e6db74">}</span><span style="color:#e6db74"> -&gt; </span><span style="color:#e6db74">{</span>stats<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 3 - Graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">6</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>especes <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Espèce&#34;</span>]<span style="color:#f92672">.</span>unique()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> espece <span style="color:#f92672">in</span> especes:
+</span></span><span style="display:flex;"><span>    sous_df <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#34;Espèce&#34;</span>] <span style="color:#f92672">==</span> espece]
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">=</span> sous_df[<span style="color:#e6db74">&#34;Température&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
+</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">=</span> sous_df[<span style="color:#e6db74">&#34;Taux&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>scatter(x, y, label<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>espece<span style="color:#e6db74">}</span><span style="color:#e6db74"> (données)&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Régression linéaire</span>
+</span></span><span style="display:flex;"><span>    coeffs <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(x, y, deg<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    y_pred <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyval(coeffs, x)
+</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>plot(x, y_pred, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>espece<span style="color:#e6db74">}</span><span style="color:#e6db74"> (régression)&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Taux de croissance vs Température&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Température (°C)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Taux de croissance (mm/jour)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;croissance_regression.png&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 4 - Recherche capteur</span>
+</span></span><span style="display:flex;"><span>nom_capteur <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez le nom du capteur : &#34;</span>)
+</span></span><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#34;Capteur&#34;</span>] <span style="color:#f92672">==</span> nom_capteur]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> filtre<span style="color:#f92672">.</span>empty:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Aucune donnée pour ce capteur.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Mesures associées :&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> _, ligne <span style="color:#f92672">in</span> filtre<span style="color:#f92672">.</span>iterrows():
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>ligne[<span style="color:#e6db74">&#39;Date&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> | </span><span style="color:#e6db74">{</span>ligne[<span style="color:#e6db74">&#39;Espèce&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> | </span><span style="color:#e6db74">{</span>ligne[<span style="color:#e6db74">&#39;Température&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C | </span><span style="color:#e6db74">{</span>ligne[<span style="color:#e6db74">&#39;Taux&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> mm/jour&#34;</span>)</span></span></code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -274,8 +285,8 @@ Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.</
             <li class="" data-nav-id="/solutions_ateliers/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_ateliers/6_listes_chaines_visualisation/index.html">6. Listes, chaines et visualisation des données</a></li>
             <li class="" data-nav-id="/solutions_ateliers/7_dictionnaires/index.html"><a class="padding" href="/solutions_ateliers/7_dictionnaires/index.html">7. Dictionnaires</a></li>
             <li class="" data-nav-id="/solutions_ateliers/8_numpy_regression/index.html"><a class="padding" href="/solutions_ateliers/8_numpy_regression/index.html"><b>8.</b> Tableaux NumPy et droite de régression</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/9_fichiers/index.html"><a class="padding" href="/solutions_ateliers/9_fichiers/index.html"><b>9.</b> Lecture et écriture de fichiers de données</a></li>
-            <li class="active " data-nav-id="/solutions_ateliers/11_fonctions_perso/index.html"><a class="padding" href="/solutions_ateliers/11_fonctions_perso/index.html"><b>11.</b> Fonctions personnalisées</a></li></ul></li>
+            <li class="active " data-nav-id="/solutions_ateliers/9_fichiers/index.html"><a class="padding" href="/solutions_ateliers/9_fichiers/index.html"><b>9.</b> Lecture et écriture de fichiers de données</a></li>
+            <li class="" data-nav-id="/solutions_ateliers/11_fonctions_perso/index.html"><a class="padding" href="/solutions_ateliers/11_fonctions_perso/index.html"><b>11.</b> Fonctions personnalisées</a></li></ul></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">

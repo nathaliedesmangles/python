@@ -1,0 +1,9 @@
+## à faire
+- S8 NumPy regression
+- S9 Les fichiers de données
+- S10 eval2 formatif + sommatif
+- Semaine 11 
+   - enlever Pandas, 
+   - ajouter ici les éléments manquant - filtre
+   - Ajouter (S9) exos de S8 comme Atelier S9 + NumPy load save
+   - ajouter exos avec Dictionnaires dans S8 (chimie, courbe de titrage?)
