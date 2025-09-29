@@ -15,8 +15,8 @@ draft = false
 
 [06. Listes, chaines et visualisation des données](./6_listes_chaines_visualisation/)  
 [07. Dictionnaires](./7_dictionnaires)    
-[08. Tableaux NumPy et droite de régression](./8_numpy_regression/)  
-<!--
+<!--[08. Tableaux NumPy et droite de régression](./8_numpy_regression/)  
+
 [09. Révision](./9_fichiers/)
 
 
