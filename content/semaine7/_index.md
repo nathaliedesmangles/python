@@ -36,7 +36,7 @@ draft = false
 ## Fichiers de départ à utiliser
 
 1. Cliquez sur le lien pour télécharger le fichier `.ipynb`:
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_dictionnaies.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_dictionnaires.ipynb)
 2. Enregistrez le fichier dans votre dossier **exercices** de la semaine en cours.
 3. Ouvrez **Visual Studio Code**.
 4. Dans VS Code, recherchez et ouvrez le fichier `exercices_dictionnaires.ipynb`
@@ -454,7 +454,7 @@ Examen 3 → 0.87
 
 # Atelier
 
-1. Téléchargez les fichiers de départ (`.ipynb`): 
+1. Téléchargez les fichiers de départ (`.ipynb`):   
 [Bloc-notes de départ - Physique](https://python-a25.netlify.app/blocnotes/atelier_dictionnaires_physique.ipynb)  
 [Bloc-notes de départ - Math](https://python-a25.netlify.app/blocnotes/atelier_dictionnaires_math.ipynb)  
 2. Déplacez-le dans votre dossier prévu pour **de la semaine en cours**.
