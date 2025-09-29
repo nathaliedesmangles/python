@@ -36,10 +36,17 @@
       <description>import matplotlib.pyplot as plt # Données temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;] # 1.</description>
     </item>
     <item>
-      <title> Tableaux NumPy et droite de régression</title>
-      <link>https://example.org/solutions_ateliers/7_numpy_regression/index.html</link>
+      <title> Dictionnaires</title>
+      <link>https://example.org/solutions_ateliers/7_dictionnaires/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/solutions_ateliers/7_numpy_regression/index.html</guid>
+      <guid>https://example.org/solutions_ateliers/7_dictionnaires/index.html</guid>
+      <description>Exercice - Physique import matplotlib.pyplot as plt # Constante gravitationnelle g = 9.8 # Création des dictionnaires vitesses = {} positions = {} for t in range(6): # temps de 0 à 5 vitesses[t] = g * t positions[t] = 0.5 * g * (t**2) print(&#34;Vitesses :&#34;, vitesses) print(&#34;Positions :&#34;, positions) # Préparation des données pour les graphiques temps = list(vitesses.keys()) valeurs_v = list(vitesses.values()) valeurs_y = list(positions.values()) # Tracé des graphes plt.</description>
+    </item>
+    <item>
+      <title> Tableaux NumPy et droite de régression</title>
+      <link>https://example.org/solutions_ateliers/8_numpy_regression/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_ateliers/8_numpy_regression/index.html</guid>
       <description>Résumé des résultats : Moyenne (Naturelle) = 12.86 cm, écart-type = 0.21 cm Moyenne (LED blanche) = 11.40 cm, écart-type = 0.16 cm Moyenne (LED rouge) = 10.23 cm, écart-type = 0.12 cm Condition avec la plus grande croissance moyenne : Naturelle&#xD;import numpy as np import matplotlib.pyplot as plt # Données avec valeurs manquantes hauteurs = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], [11.2, 11.6, np.nan, 11.5, 11.3], [10.4, 10.1, 10.</description>
     </item>
   </channel>

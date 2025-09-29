@@ -70,6 +70,9 @@
     <loc>https://example.org/semaine6/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine7/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine12/grille/index.html</loc>
   </url>
   <url>
@@ -91,10 +94,10 @@
     <loc>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/7_numpy_regression/index.html</loc>
+    <loc>https://example.org/solutions_exercices/7_dictionnaires/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/8_dict_fichiers/index.html</loc>
+    <loc>https://example.org/solutions_exercices/8_numpy_regression/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions_ateliers/index.html</loc>
@@ -112,7 +115,10 @@
     <loc>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/7_numpy_regression/index.html</loc>
+    <loc>https://example.org/solutions_ateliers/7_dictionnaires/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_ateliers/8_numpy_regression/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>

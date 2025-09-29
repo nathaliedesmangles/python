@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Tableaux NumPy et droite de régression :: 420-SN1-RE</title>
-    <link>https://example.org/solutions_exercices/7_numpy_regression/index.html</link>
+    <link>http://localhost:1313/solutions_exercices/7_numpy_regression/index.html</link>
     <description>Exercice 1 – Solubilité d’un sel import numpy as np sol = np.array([32.0, 35.5, np.nan, 37.2, 39.0]) # 1. Affiche les valeurs de solubilité print(&#34;Solubilités :&#34;, sol) # 2. Moyenne sans NaN moyenne = np.nanmean(sol) print(&#34;Moyenne sans NaN :&#34;, moyenne) # 3. Écart type ecart_type = np.nanstd(sol) print(f&#34;Écart type : {round(ecart_type,2)}&#34; )&#xD;Exercice 2 – Températures journalières temperatures = np.array([ [12.1, 17.3, 14.2], [11.8, 16.9, 13.9], [13.0, 18.1, 15.0], [12.5, 17.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/solutions_exercices/7_numpy_regression/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/solutions_exercices/7_numpy_regression/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

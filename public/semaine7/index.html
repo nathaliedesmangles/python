@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="à faire S8 Dict Les fichiers de données Semaine 11 enlever Pandas, ajouter ici les éléments manquant - filtre Ajouter (S9) exos de S8 comme Atelier S9 &#43; NumPy load save ajouter exos avec Dictionnaires dans S8 (chimie, courbe de titrage?) Semaine 7 ajouter exos/Atelier Physique S’assurer le cours contient toutes les notions nécessaires Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types.">
+    <meta name="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content=" Tableaux numpy et droite de régression :: 420-SN1-RE">
-    <meta name="twitter:description" content="à faire S8 Dict Les fichiers de données Semaine 11 enlever Pandas, ajouter ici les éléments manquant - filtre Ajouter (S9) exos de S8 comme Atelier S9 &#43; NumPy load save ajouter exos avec Dictionnaires dans S8 (chimie, courbe de titrage?) Semaine 7 ajouter exos/Atelier Physique S’assurer le cours contient toutes les notions nécessaires Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types.">
-    <meta property="og:url" content="http://localhost:1313/semaine7/index.html">
+    <meta name="twitter:title" content=" Dictionnaires :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
+    <meta property="og:url" content="https://example.org/semaine7/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content=" Tableaux numpy et droite de régression :: 420-SN1-RE">
-    <meta property="og:description" content="à faire S8 Dict Les fichiers de données Semaine 11 enlever Pandas, ajouter ici les éléments manquant - filtre Ajouter (S9) exos de S8 comme Atelier S9 &#43; NumPy load save ajouter exos avec Dictionnaires dans S8 (chimie, courbe de titrage?) Semaine 7 ajouter exos/Atelier Physique S’assurer le cours contient toutes les notions nécessaires Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types.">
+    <meta property="og:title" content=" Dictionnaires :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content=" Tableaux numpy et droite de régression :: 420-SN1-RE">
-    <meta itemprop="description" content="à faire S8 Dict Les fichiers de données Semaine 11 enlever Pandas, ajouter ici les éléments manquant - filtre Ajouter (S9) exos de S8 comme Atelier S9 &#43; NumPy load save ajouter exos avec Dictionnaires dans S8 (chimie, courbe de titrage?) Semaine 7 ajouter exos/Atelier Physique S’assurer le cours contient toutes les notions nécessaires Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types.">
-    <meta itemprop="wordCount" content="2104">
-    <title> Tableaux numpy et droite de régression :: 420-SN1-RE</title>
-    <link href="/semaine7/index.xml" rel="alternate" type="application/rss+xml" title=" Tableaux numpy et droite de régression :: 420-SN1-RE">
-    <link href="/images/logo.png?1758935886" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758935886" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1758935886" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1758935886" rel="stylesheet">
-    <link href="/css/theme.css?1758935886" rel="stylesheet">
-    <link href="/css/format-html.css?1758935886" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1758935886" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1758935886" defer></script>
-    <script src="/js/lunr/lunr.min.js?1758935886" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1758935886" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1758935886" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1758935886" defer></script>
-    <script src="/js/search.js?1758935886" defer></script>
+    <meta itemprop="name" content=" Dictionnaires :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
+    <meta itemprop="wordCount" content="1627">
+    <title> Dictionnaires :: 420-SN1-RE</title>
+    <link href="/semaine7/index.xml" rel="alternate" type="application/rss+xml" title=" Dictionnaires :: 420-SN1-RE">
+    <link href="/images/logo.png?1759110077" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759110077" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759110077" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759110077" rel="stylesheet">
+    <link href="/css/theme.min.css?1759110077" rel="stylesheet">
+    <link href="/css/format-html.min.css?1759110077" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759110077" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759110077" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759110077" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759110077" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759110077" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759110077" defer></script>
+    <script src="/js/search.min.js?1759110077" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = ``;
+      window.relearn.min = `.min`;
       window.relearn.path='\/semaine7\/index.html';
       window.relearn.relBasePath='..';
       window.relearn.relBaseUri='..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1758935886";
+      window.relearn.index_js_url="/searchindex.en.js?1759110077";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1758935886" rel="stylesheet">
+    <link href="/css/custom.css?1759110077" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine7/index.html">
     <div id="R-body" class="default-animation">
@@ -104,53 +104,52 @@
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#à-faire">à faire</a></li>
     <li><a href="#objectifs">Objectifs</a></li>
   </ul>
 
   <ul>
-    <li><a href="#fichier-de-départ-à-utiliser">Fichier de départ à utiliser</a></li>
-    <li><a href="#exercice-1--chute-libre">Exercice 1 : Chute libre</a></li>
-    <li><a href="#exercice-2--mouvement-rectiligne-uniforme">Exercice 2 : Mouvement rectiligne uniforme</a></li>
-    <li><a href="#exercice-3--énergie-cinétique">Exercice 3 : Énergie cinétique</a></li>
-    <li><a href="#exercice-4--oscillations-harmoniques">Exercice 4 : Oscillations harmoniques</a></li>
+    <li><a href="#objectifs-1">Objectifs</a></li>
+    <li><a href="#fichiers-de-départ-à-utiliser">Fichiers de départ à utiliser</a></li>
+    <li><a href="#exercice-1--créer-un-dictionnaire">Exercice 1 : Créer un dictionnaire</a></li>
+    <li><a href="#exercice-2--extraire-clés-et-valeurs">Exercice 2 : Extraire clés et valeurs</a></li>
+    <li><a href="#exercice-3--parcourir-items">Exercice 3 : Parcourir <code>items()</code></a>
+      <ul>
+        <li><a href="#exercice-4--modifier-et-supprimer">Exercice 4 : Modifier et supprimer</a></li>
+      </ul>
+    </li>
   </ul>
 
   <ul>
-    <li><a href="#pourquoi-numpy-">Pourquoi NumPy ?</a></li>
-    <li><a href="#importer-la-bibliothèque">Importer la bibliothèque</a></li>
-    <li><a href="#créer-des-tableaux-arrays">Créer des tableaux (arrays)</a>
+    <li><a href="#quest-ce-quun-dictionnaire-">Qu’est-ce qu’un dictionnaire ?</a></li>
+    <li><a href="#créer-un-dictionnaire">Créer un dictionnaire</a>
       <ul>
-        <li><a href="#à-partir-dune-liste-python">À partir d’une liste Python</a></li>
-        <li><a href="#générer-rapidement-des-tableaux-numériques">Générer rapidement des tableaux numériques</a></li>
+        <li><a href="#types-autorisés-comme-clés">Types <strong>autorisés</strong> comme clés</a></li>
+        <li><a href="#types-interdits-comme-clés">Types <strong>interdits</strong> comme clés</a></li>
       </ul>
     </li>
-    <li><a href="#opérations-vectorisées">Opérations vectorisées</a>
+    <li><a href="#accéder-à-une-valeur">Accéder à une valeur</a></li>
+    <li><a href="#ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</a></li>
+    <li><a href="#supprimer-une-entrée">Supprimer une entrée</a></li>
+    <li><a href="#parcourir-un-dictionnaire">Parcourir un dictionnaire</a></li>
+    <li><a href="#créer-une-liste-à-partir-dun-dictionnaire">Créer une liste à partir d’un dictionnaire</a>
       <ul>
-        <li><a href="#opérations-arithmétiques-élémentaires">Opérations arithmétiques élémentaires</a></li>
+        <li></li>
       </ul>
     </li>
-    <li><a href="#fonctions-mathématiques">Fonctions mathématiques</a>
-      <ul>
-        <li><a href="#1-fonctions-statistiques">1. Fonctions statistiques</a></li>
-        <li><a href="#2-fonctions-logarithmiques-et-trigonométriques">2. Fonctions logarithmiques et trigonométriques</a></li>
-        <li><a href="#constantes-et-autres-fonctions-utiles">Constantes et autres fonctions utiles</a></li>
-      </ul>
-    </li>
-    <li><a href="#ignorer-des-valeurs-manquantes-npnan">Ignorer des valeurs manquantes (<code>np.nan</code>)</a></li>
-    <li><a href="#filtrage-de-données">Filtrage de données</a></li>
-    <li><a href="#tracer-des-graphiques-à-barres-et-avec-barres-derreur">Tracer des graphiques à barres et avec barres d&rsquo;erreur</a>
-      <ul>
-        <li><a href="#importer-la-bibliothèque-1">Importer la bibliothèque</a></li>
-        <li><a href="#graphique-à-barres">Graphique à barres</a></li>
-        <li><a href="#graphique-avec-barres-derreur">Graphique avec barres d’erreur</a></li>
-      </ul>
-    </li>
-    <li><a href="#tracer-une-droite-de-régression">Tracer une droite de régression</a></li>
+    <li><a href="#récapitulatif">Récapitulatif</a></li>
   </ul>
 
   <ul>
-    <li><a href="#exercice--effet-de-la-lumière-sur-la-croissance-des-plantes">Exercice : Effet de la lumière sur la croissance des plantes</a></li>
+    <li><a href="#exercice---physique-mécanique">Exercice - Physique mécanique</a>
+      <ul>
+        <li><a href="#objectifs-2">Objectifs</a></li>
+      </ul>
+    </li>
+    <li><a href="#exercice---mathématiques">Exercice - Mathématiques</a>
+      <ul>
+        <li><a href="#objectifs-3">Objectifs</a></li>
+      </ul>
+    </li>
     <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
   </ul>
 </nav>
@@ -160,12 +159,12 @@
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Tableaux numpy et droite de régression</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Dictionnaires</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/index.html" title="Listes, chaînes et visualisation des données (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Dictionnaires (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/index.html" title="Solutions des exercices (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -185,43 +184,17 @@
   <header class="headline">
   </header>
 
-<h1 id="tableaux-numpy-et-droite-de-régression"> Tableaux numpy et droite de régression</h1>
+<h1 id="dictionnaires"> Dictionnaires</h1>
 
-<h2 id="à-faire">à faire</h2>
-<ul>
-<li>S8 Dict</li>
-<li>Les fichiers de données</li>
-<li>Semaine 11
-<ul>
-<li>enlever Pandas,</li>
-<li>ajouter ici les éléments manquant - filtre</li>
-<li>Ajouter (S9) exos de S8 comme Atelier S9 + NumPy load save</li>
-<li>ajouter exos avec Dictionnaires dans S8 (chimie, courbe de titrage?)</li>
-</ul>
-</li>
-<li>Semaine 7
-<ul>
-<li>ajouter exos/Atelier Physique</li>
-<li>S&rsquo;assurer le cours contient toutes les notions nécessaires</li>
-</ul>
-</li>
-</ul>
 <h2 id="objectifs">Objectifs</h2>
 <ul>
-<li>Créer des <strong>tableaux de données</strong> à une ou deux dimensions.</li>
-<li>Calculer des <strong>moyennes</strong> et <strong>écarts types</strong>.</li>
-<li>Gérer des données <strong>expérimentales incomplètes</strong> (<code>np.nan</code>).</li>
-<li>Comparer des résultats entre éléments ou conditions.</li>
-<li>Filtrer des données selon des conditions.</li>
-<li>Tracer un graphique à barres muni d&rsquo;une barre d&rsquo;erreur avec <code>matplotlib</code>.</li>
-<li>Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R².</li>
-<li>Établir une relation entre deux données.</li>
+<li>Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique)</li>
+<li>Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours).</li>
+<li>Lire un fichier csv contenant des données expérimentales</li>
+<li>Explorer les données.</li>
+<li>Filtrer les résultats pour une donnée ciblée.</li>
+<li>Comparer des valeurs selon une donnée.</li>
 </ul>
-<p>Comprendre ce qu’est NumPy et pourquoi il est utile en sciences.
-Apprendre à créer et manipuler des tableaux NumPy.
-Utiliser NumPy pour traiter des données physiques et faire des calculs rapides.
-Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces).</p>
-<hr>
 
 <details open class=" box cstyle notices accent">
   <summary class="box-label" tabindex="-1">
@@ -235,752 +208,471 @@ Appliquer NumPy à des situations concrètes en mécanique (cinématique, énerg
 </ul>
   </div>
 </details>
+<hr>
 <h1 id="exercices">Exercices</h1>
-<h2 id="fichier-de-départ-à-utiliser">Fichier de départ à utiliser</h2>
+<h2 id="objectifs-1">Objectifs</h2>
+<ul>
+<li><strong>Créer / accéder / modifier / supprimer</strong> des éléments,</li>
+<li><strong>Parcourir</strong> un dictionnaire,</li>
+<li><strong>Transformer en listes</strong> (<code>keys()</code>, <code>values()</code>, <code>items()</code>),</li>
+<li><strong>Faire des calculs</strong> à partir des valeurs.</li>
+</ul>
+<h2 id="fichiers-de-départ-à-utiliser">Fichiers de départ à utiliser</h2>
 <ol>
-<li>Cliquez sur le lien pour télécharger le fichier.
-<a href="https://python-a25.netlify.app/blocnotes/exercices_numpy.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></li>
+<li>Cliquez sur le lien pour télécharger le fichier <code>.ipynb</code>:
+<a href="https://python-a25.netlify.app/blocnotes/exercices_dictionnaies.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></li>
 <li>Enregistrez le fichier dans votre dossier <strong>exercices</strong> de la semaine en cours.</li>
 <li>Ouvrez <strong>Visual Studio Code</strong>.</li>
-<li>Dans VS Code, recherchez et ouvrez le fichier <code>exercices_numpy.ipynb</code></li>
+<li>Dans VS Code, recherchez et ouvrez le fichier <code>exercices_dictionnaires.ipynb</code></li>
 <li>Assurez-vous que le noyau Python (<code>Kernel</code>) soit sélectionné.</li>
 <li>Vous pouvez commencer à faire les exercices.</li>
 </ol>
-<h2 id="exercice-1--chute-libre">Exercice 1 : Chute libre</h2>
-<p>Un objet est lâché sans vitesse initiale d’une hauteur $h = 20 , m$.
-La position est donnée par :</p>
-<p>$$
-y(t) = h - \frac{1}{2} g t^2
-$$</p>
-<p>avec $g = 9.8 , m/s^2$.</p>
-<p>Écris un programme qui :</p>
+<h2 id="exercice-1--créer-un-dictionnaire">Exercice 1 : Créer un dictionnaire</h2>
+<ul>
+<li>Créer un dictionnaire vide nommé <code>cubes</code>.</li>
+<li>En utilisant une boucle <code>for</code>, ajouter les entiers de 1 à 5 comme <strong>clés</strong>, et leur cube comme <strong>valeurs</strong>.</li>
+<li>Afficher ensuite le dictionnaire.</li>
+</ul>
+<p><strong>Résultat attendu</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Dictionnaire des cubes : {1: 1, 2: 8, 3: 27, 4: 64, 5: 125}</code></pre></div>
+<h2 id="exercice-2--extraire-clés-et-valeurs">Exercice 2 : Extraire clés et valeurs</h2>
+<p>À partir du dictionnaire <code>cubes</code> créé à l’exercice 1 :</p>
 <ol>
-<li>Crée un tableau <code>t</code> de 0 à 2 secondes (21 valeurs).</li>
-<li>Calcule la position <code>y</code>.</li>
-<li>Affiche les 5 premières valeurs.</li>
+<li>Créer une liste <code>cles</code> contenant toutes les clés.</li>
+<li>Créer une liste <code>valeurs</code> contenant toutes les valeurs.</li>
+<li>Afficher les deux listes.</li>
 </ol>
-<h2 id="exercice-2--mouvement-rectiligne-uniforme">Exercice 2 : Mouvement rectiligne uniforme</h2>
-<p>Une voiture roule à $v = 15 , m/s$.
-La position est donnée par :</p>
-<p>$$
-x(t) = v \cdot t
-$$</p>
-<p>Écris un programme qui :</p>
+<p><em>Indice</em> : utiliser <code>list(mon_dict.keys())</code> et <code>list(mon_dict.values())</code>.</p>
+<p><strong>Résultat attendu</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Clés : [1, 2, 3, 4, 5]
+Valeurs : [1, 8, 27, 64, 125]</code></pre></div>
+<h2 id="exercice-3--parcourir-items">Exercice 3 : Parcourir <code>items()</code></h2>
+<p>Toujours avec le dictionnaire <code>cubes</code>, utiliser une boucle <code>for</code> sur <code>cubes.items()</code> pour afficher chaque clé et sa valeur sous la forme :</p>
+<p><strong>Résultat attendu</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Le cube de 1 est 1
+Le cube de 2 est 8
+Le cube de 3 est 27
+Le cube de 4 est 64
+Le cube de 5 est 125</code></pre></div>
+<h3 id="exercice-4--modifier-et-supprimer">Exercice 4 : Modifier et supprimer</h3>
 <ol>
-<li>Crée un tableau de temps entre 0 et 10 s (par pas de 0.5).</li>
-<li>Calcule la position.</li>
-<li>Affiche la dernière valeur (la position après 10 s).</li>
+<li>Ajouter une nouvelle paire <code>6: 216</code> dans le dictionnaire.</li>
+<li>Modifier la valeur associée à la clé <code>3</code> pour qu’elle devienne <code>30</code> (au lieu de <code>27</code>).</li>
+<li>Supprimer la clé <code>1</code> du dictionnaire.</li>
+<li>Afficher le dictionnaire final.</li>
 </ol>
-<h2 id="exercice-3--énergie-cinétique">Exercice 3 : Énergie cinétique</h2>
-<p>La formule est :</p>
-<p>$$
-E_c = \frac{1}{2} m v^2
-$$</p>
-<p>Un objet de masse $m = 2.0 , kg$ accélère de 0 à 20 m/s.</p>
-<p>Écris un programme qui :</p>
-<ol>
-<li>Crée un tableau de vitesses de 0 à 20 m/s (pas de 2).</li>
-<li>Calcule l’énergie cinétique correspondante.</li>
-<li>Affiche les résultats.</li>
-</ol>
-<h2 id="exercice-4--oscillations-harmoniques">Exercice 4 : Oscillations harmoniques</h2>
-<p>La position d’un oscillateur est donnée par :</p>
-<p>$$
-x(t) = A \cos(\omega t)
-$$</p>
-<p>avec $A = 0.1 , m$, $\omega = 2 \pi , rad/s$.</p>
-<p>Écris un programme qui :</p>
-<ol>
-<li>Crée un tableau <code>t</code> de 0 à 2 s (101 valeurs).</li>
-<li>Calcule la position <code>x(t)</code>.</li>
-<li>Affiche la valeur maximale et minimale de la position.</li>
-</ol>
+<p><strong>Résultat attendu</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Dictionnaire final : {2: 8, 3: 30, 4: 64, 5: 125, 6: 216}</code></pre></div>
 <hr>
 <h1 id="cours">Cours</h1>
-<h2 id="pourquoi-numpy-">Pourquoi NumPy ?</h2>
+<h2 id="quest-ce-quun-dictionnaire-">Qu’est-ce qu’un dictionnaire ?</h2>
 <ul>
-<li>En sciences, nous travaillons souvent avec des données numériques : mesures expérimentales, vecteurs, séries temporelles, etc.</li>
-<li>En Python de base, on peut utiliser des listes, mais elles sont limitées pour les calculs scientifiques.</li>
-<li>La <strong>bibliothèque NumPy</strong> (<em>Numerical Python</em>) permet de manipuler efficacement des tableaux numériques (<em><strong>arrays</strong></em>).</li>
+<li><strong>Définition</strong> : un dictionnaire est une structure de données qui associe une <strong>clé</strong> à une <strong>valeur</strong>.</li>
+<li><strong>Image mentale</strong> : c’est comme un <strong>vrai dictionnaire</strong> de langue → chaque mot (clé) a une définition (valeur).</li>
+<li><strong>Syntaxe</strong> :</li>
 </ul>
-<h2 id="importer-la-bibliothèque">Importer la bibliothèque</h2>
-<p>Avant de d’utiliser les fonctionnalités de NumPy, on doit importer la bibliothèque :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np</span></span></code></pre></div>
-<p>Ici, <code>np</code> est un <strong>alias</strong> utilisé par convention.</p>
-<h2 id="créer-des-tableaux-arrays">Créer des tableaux (arrays)</h2>
-<h3 id="à-partir-dune-liste-python">À partir d’une liste Python</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>v <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>])
-</span></span><span style="display:flex;"><span>print(v)</span></span></code></pre></div>
-<p><strong>Résultat</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[2 4 6 8]</code></pre></div>
-<h3 id="générer-rapidement-des-tableaux-numériques">Générer rapidement des tableaux numériques</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mon_dico <span style="color:#f92672">=</span> {clé1: valeur1, clé2: valeur2, <span style="color:#f92672">...</span>}</span></span></code></pre></div>
+<h2 id="créer-un-dictionnaire">Créer un dictionnaire</h2>
+<p><strong>Exemple 1</strong> : concentrations de trois échantillons</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>concentrations <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">1</span>: <span style="color:#ae81ff">0.10</span>,   <span style="color:#75715e"># échantillon 1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">2</span>: <span style="color:#ae81ff">0.15</span>,   <span style="color:#75715e"># échantillon 2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">3</span>: <span style="color:#ae81ff">0.20</span>    <span style="color:#75715e"># échantillon 3</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<blockquote>
+<p>Ici, les clés sont des <strong>entiers</strong> (numéro de l&rsquo;échantillon), et les valeurs sont des nombres à virgule flottante (concentrations).</p>
+</blockquote>
+<p><strong>Exemple 2</strong> : capitales des pays</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>capitales <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Canada&#34;</span>: <span style="color:#e6db74">&#34;Ottawa&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;France&#34;</span>: <span style="color:#e6db74">&#34;Marseille&#34;</span>,	<span style="color:#75715e"># Erreur volontaire</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Japon&#34;</span>: <span style="color:#e6db74">&#34;Tokyo&#34;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<blockquote>
+<p>Ici, les clés sont aussi des <strong>chaînes de caractères</strong> (pays), et les valeurs sont des chaînes (capitales).</p>
+</blockquote>
+<h3 id="types-autorisés-comme-clés">Types <strong>autorisés</strong> comme clés</h3>
 <ul>
-<li><code>np.arange(début, fin, pas)</code> → nombres régulièrement espacés.</li>
-<li><code>np.linspace(début, fin, n)</code> → n valeurs également réparties.</li>
-<li><code>np.zeros(n)</code> → n zéros.</li>
-<li><code>np.ones(n)</code> → n uns.</li>
+<li><strong>Chaînes de caractères</strong> : &ldquo;nom&rdquo;, &ldquo;programme&rdquo;, etc.</li>
+<li><strong>Nombres</strong> : 1, 2.5, -3</li>
+<li><strong>Booléens</strong> : True, False</li>
+<li><strong>Tuples immuables</strong> (ne contenant que des éléments immuables) : (1, 2), (&ldquo;x&rdquo;, &ldquo;y&rdquo;)</li>
 </ul>
-<p>Exemples :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">6</span>)
-</span></span><span style="display:flex;"><span>print(x)</span></span></code></pre></div>
-<p><strong>Résultat</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[ 0.  2.  4.  6.  8. 10.]</code></pre></div>
-<p><em><strong>AJOUTER EXEMPLES AUTRES FN</strong></em></p>
-<h2 id="opérations-vectorisées">Opérations vectorisées</h2>
-<p>Avec NumPy, les <strong>opérations s’appliquent à tout le tableau</strong> (pas besoin de boucles <code>for</code>).</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>   <span style="color:#75715e"># chaque élément est mis au carré</span>
-</span></span><span style="display:flex;"><span>print(y)</span></span></code></pre></div>
-<p><strong>Résultat</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[0 1 4 9]</code></pre></div>
-<h3 id="opérations-arithmétiques-élémentaires">Opérations arithmétiques élémentaires</h3>
-<p>Avec
-<code>a = np.array([1, 2, 3, 4])</code> et<br>
-<code>b = np.array([10, 20, 30, 40])</code></p>
-<table>
-<thead>
-<tr>
-<th>Opération</th>
-<th>Exemple avec NumPy</th>
-<th>Description</th>
-<th>Résultat (vectorisé)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Addition</td>
-<td><code>a + b</code></td>
-<td>addition élément par élément</td>
-<td>[11 22 33 44]</td>
-</tr>
-<tr>
-<td>Soustraction</td>
-<td><code>a - b</code></td>
-<td>soustraction élément par élément</td>
-<td>[-9 -18 -27 -36]</td>
-</tr>
-<tr>
-<td>Multiplication</td>
-<td><code>a * b</code></td>
-<td>produit élément par élément</td>
-<td>[10 40 90 160]</td>
-</tr>
-<tr>
-<td>Division</td>
-<td><code>a / b</code></td>
-<td>division élément par élément</td>
-<td>[0.1 0.1 0.1 0.1]</td>
-</tr>
-<tr>
-<td>Puissance</td>
-<td><code>a ** 2</code></td>
-<td>élève chaque élément au carré</td>
-<td>[1 4 9 16]</td>
-</tr>
-<tr>
-<td>Racine carrée</td>
-<td><code>np.sqrt(a)</code></td>
-<td>racine carrée de chaque élément</td>
-<td>[1. 1.41421356 1.73205081 2.]</td>
-</tr>
-<tr>
-<td>Valeur absolue</td>
-<td><code>np.abs(a)</code></td>
-<td>valeur absolue de chaque élément</td>
-<td>[9 18 27 36]</td>
-</tr>
-</tbody>
-</table>
-<h2 id="fonctions-mathématiques">Fonctions mathématiques</h2>
-<p>NumPy propose beaucoup de fonctions</p>
-<h3 id="1-fonctions-statistiques">1. Fonctions statistiques</h3>
-<p>Avec <code>a = np.array([1, 2, 3, 4])</code></p>
-<table>
-<thead>
-<tr>
-<th>Fonction</th>
-<th>Exemple</th>
-<th>Résultat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Moyenne</td>
-<td><code>np.mean(a)</code></td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>Médiane</td>
-<td><code>np.median(a)</code></td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>Somme</td>
-<td><code>np.sum(a)</code></td>
-<td>10</td>
-</tr>
-<tr>
-<td>Produit</td>
-<td><code>np.prod(a)</code></td>
-<td>24</td>
-</tr>
-<tr>
-<td>Variance</td>
-<td><code>np.var(a)</code></td>
-<td>1.25</td>
-</tr>
-<tr>
-<td>Écart-type</td>
-<td><code>np.std(a)</code></td>
-<td>1.118033988749895</td>
-</tr>
-<tr>
-<td>Minimum</td>
-<td><code>np.min(a)</code></td>
-<td>1</td>
-</tr>
-<tr>
-<td>Maximum</td>
-<td><code>np.max(a)</code></td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<h3 id="2-fonctions-logarithmiques-et-trigonométriques">2. Fonctions logarithmiques et trigonométriques</h3>
-<p>Avec <code> = np.array([1, 2, 3, 4])</code></p>
-<table>
-<thead>
-<tr>
-<th>Fonction</th>
-<th>Exemple</th>
-<th>Résultat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Arrondi</td>
-<td><code>np.round(a, 2)</code></td>
-<td>arrondit à 2 décimales</td>
-</tr>
-<tr>
-<td>Plafond</td>
-<td><code>np.ceil(a)</code></td>
-<td>arrondi supérieur</td>
-</tr>
-<tr>
-<td>Plancher</td>
-<td><code>np.floor(a)</code></td>
-<td>arrondi inférieur</td>
-</tr>
-<tr>
-<td>Exponentielle</td>
-<td><code>np.exp(a)</code></td>
-<td>$e^x$ élément par élément</td>
-</tr>
-<tr>
-<td>Logarithme naturel</td>
-<td><code>np.log(a)</code></td>
-<td>$\ln(x)$</td>
-</tr>
-<tr>
-<td>Logarithme base 2</td>
-<td><code>np.log2(a)</code></td>
-<td>$\log_{2}(x)$</td>
-</tr>
-<tr>
-<td>Logarithme base 10</td>
-<td><code>np.log10(a)</code></td>
-<td>$\log_{10}(x)$</td>
-</tr>
-</tbody>
-</table>
-<p>| <strong>Exponentielles et logarithmes</strong> | <code>np.exp(x)</code>         | Exponentielle e^x                      | <code>np.exp(1) → 2.718…</code>           |
-|                                   | <code>np.expm1(x)</code>       | e^x - 1 (utile pour petites valeurs)   | <code>np.expm1(1e-5) → 1.000005e-5</code> |
-|                                   | <code>np.log1p(x)</code>       | ln(1+x)                                | <code>np.log1p(1e-5) → 0.00001</code>     |</p>
-<p>| <code>np.log(np.e) → 1</code>             |
-| <code>np.log2(8) → 3</code>               |
-| <code>np.log10(1000) → 3</code>           |</p>
-<p>Exemple :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>angles <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, np<span style="color:#f92672">.</span>pi, <span style="color:#ae81ff">4</span>)
-</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>sin(angles))</span></span></code></pre></div>
-<p><strong>Principales Fonctions trigonométriques</strong></p>
-<table>
-<thead>
-<tr>
-<th>Fonction</th>
-<th>Exemple</th>
-<th>Résultat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sinus</td>
-<td><code>np.sin(a)</code></td>
-<td>sinus élément par élément</td>
-</tr>
-<tr>
-<td>Cosinus</td>
-<td><code>np.cos(a)</code></td>
-<td>cosinus élément par élément</td>
-</tr>
-<tr>
-<td>Tangente</td>
-<td><code>np.tan(a)</code></td>
-<td>tangente élément par élément</td>
-</tr>
-<tr>
-<td>Arcsin</td>
-<td><code>np.arcsin(a)</code></td>
-<td>sinus inverse</td>
-</tr>
-<tr>
-<td>Arccos</td>
-<td><code>np.arccos(a)</code></td>
-<td>cosinus inverse</td>
-</tr>
-<tr>
-<td>Arctan</td>
-<td><code>np.arctan(a)</code></td>
-<td>tangente inverse</td>
-</tr>
-<tr>
-<td>Conversion degrés → radians</td>
-<td><code>np.deg2rad(a)</code></td>
-<td>transforme ° en rad</td>
-</tr>
-<tr>
-<td>Conversion radians → degrés</td>
-<td><code>np.rad2deg(a)</code></td>
-<td>transforme rad en °</td>
-</tr>
-</tbody>
-</table>
-<h3 id="constantes-et-autres-fonctions-utiles">Constantes et autres fonctions utiles</h3>
-<table>
-<thead>
-<tr>
-<th>Catégorie</th>
-<th>Fonction</th>
-<th>Description</th>
-<th>Exemple</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Constantes</strong></td>
-<td><code>np.pi</code></td>
-<td>Valeur de π</td>
-<td><code>np.pi → 3.14159…</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>np.e</code></td>
-<td>Base du logarithme naturel</td>
-<td><code>np.e → 2.71828…</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>np.arctan2(y, x)</code></td>
-<td>Arctangente de y/x en quadrant correct</td>
-<td><code>np.arctan2(1,1) → π/4</code></td>
-</tr>
-<tr>
-<td><strong>Racines et valeurs absolues</strong></td>
-<td><code>np.sqrt(x)</code></td>
-<td>Racine carrée</td>
-<td><code>np.sqrt(9) → 3</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>np.cbrt(x)</code></td>
-<td>Racine cubique</td>
-<td><code>np.cbrt(27) → 3</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>np.abs(x)</code></td>
-<td>Valeur absolue</td>
-<td><code>np.abs(-5) → 5</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>np.fabs(x)</code></td>
-<td>Valeur absolue flottante</td>
-<td><code>np.fabs(-5.2) → 5.2</code></td>
-</tr>
-<tr>
-<td><strong>Arrondi et troncature</strong></td>
-<td><code>np.round(x, n)</code></td>
-<td>Arrondi à n décimales</td>
-<td><code>np.round(3.14159,2) → 3.14</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>np.floor(x)</code></td>
-<td>Arrondi inférieur</td>
-<td><code>np.floor(3.7) → 3</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>np.ceil(x)</code></td>
-<td>Arrondi supérieur</td>
-<td><code>np.ceil(3.2) → 4</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>np.trunc(x)</code></td>
-<td>Tronque la partie décimale</td>
-<td><code>np.trunc(3.7) → 3</code></td>
-</tr>
-</tbody>
-</table>
 
-<details open class=" box cstyle notices blue" name="notice-toggle">
+<details open class=" box cstyle notices accent">
   <summary class="box-label" tabindex="-1">
-    Principales fonctions mathématiques de NumPy
-  </summary>
-</details>
-<!--
-
-### Quelques exemples
-
-#### 1. Calculer le sinus d'un angle en radian
-
-```python
-import numpy as np
-
-# Definition de l'angle en radians
-angle = np.pi / 2  # 90 degrés en radians
-
-# Calcul du sinus
-sinus = np.sin(angle)
-
-# Afficher le résultat
-print("Sinus de 90 degrés (π/2 radians):", sinus)
-```
-
-#### 2. Calculer la moyenne des données avec np.mean()
-
-```python
-sol = np.array([32.0, 35.5, 37.2])
-moy = np.mean(sol)
-print(f"Moyenne : {moy:.2f} g/100mL")
-```
-
-#### 3. Calculer l’écart type des données avec np.std()
-
-```python
-sol = np.array([32.0, 35.5, 37.2])
-ecart = np.std(sol)
-print(f"Écart type : {ecart:.2f}")
-```
-
-## Opérations vectorielles (rapides et simples)
-
-Avec NumPy, on peut faire des **opérations sur tout un tableau en une seule ligne** (sans utiliser de boucle).
-
-```python
-x = np.array([1, 2, 3])
-y = np.array([4, 5, 6])
-```
-
-### 1. Addition élément par élément
-
-```python
-x + y    # [5 7 9]
-```
-
-### 2. Soustraction élément par élément
-
-```python
-y - x    # [3 3 3]
-```
-
-### 3. Multiplication par un scalaire
-
-```python
-x * 10   # [10 20 30]
-```
-
-### 4. Division par un scalaire
-
-```python
-y / 2    # [2.  2.5 3. ]
-```
--->
-<h2 id="ignorer-des-valeurs-manquantes-npnan">Ignorer des valeurs manquantes (<code>np.nan</code>)</h2>
-<p>Parfois, une mesure a été oubliée ou mal prise. On utilise <code>np.nan</code> pour représenter une valeur manquante :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sol <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">32.0</span>, np<span style="color:#f92672">.</span>nan, <span style="color:#ae81ff">37.2</span>])
-</span></span><span style="display:flex;"><span>moy <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>nanmean(sol)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne (sans valeur manquante) : </span><span style="color:#e6db74">{</span>moy<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
-<ul>
-<li>La fonction <code>np.nanmean()</code> calcule <strong>la moyenne des éléments en ignorant les valeurs <code>NaN</code></strong> (<code>Not a Number</code>), qui représentent généralement des données manquantes ou invalides.</li>
-</ul>
-
-<details open class=" box cstyle notices cyan">
-  <summary class="box-label" tabindex="-1">
-    Notez
+    Sachez que&hellip;
   </summary>
   <div class="box-content">
-<p>Sans <code>nanmean</code>, la fonction <code>np.mean(sol)</code> retournerait <code>nan</code> car une seule valeur <code>nan</code> dans la liste contamine le résultat.</p>
+<p>En pratique, on utilise <strong>surtout des chaînes de caractères pour la lisibilité</strong>, mais Python permet cette flexibilité.</p>
   </div>
 </details>
-<h2 id="filtrage-de-données">Filtrage de données</h2>
-<ol>
-<li><strong>Créer un tableau et afficher uniquement certaines valeurs selon une condition</strong></li>
-</ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tableau <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">3</span>])
-</span></span><span style="display:flex;"><span>masque <span style="color:#f92672">=</span> tableau <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5</span>	<span style="color:#75715e"># Masquage : valeurs supérieures à 5</span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Masque booléen : </span><span style="color:#e6db74">{</span>masque<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>valeurs_filtrees <span style="color:#f92672">=</span> tableau[masque]
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Valeurs supérieures à 5 : </span><span style="color:#e6db74">{</span>valeurs_filtrees<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
-<p><strong>Résultat attendu :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Masque booléen : [False False  True False  True False]
-Valeurs supérieures à 5 : [7 8]</code></pre></div>
-<p><strong>Explication</strong> :</p>
+<h3 id="types-interdits-comme-clés">Types <strong>interdits</strong> comme clés</h3>
 <ul>
-<li><code>masque = tableau &gt; 5</code> : crée une liste de booléen, <code>True</code> lorsque la valeur de <code>tableau</code> est &gt; 5, <code>False</code> sinon.</li>
-<li><code>tableau[masque]</code> : ne garde que les valeurs dans <code>tableau</code> qui sont &gt; 5.</li>
+<li>Listes (car modifiables)</li>
+<li>Dictionnaires (car modifiables)</li>
+<li>Ensembles (set) (car modifiables)</li>
 </ul>
-<ol start="2">
-<li><strong>Comptage conditionnel avec <code>np.sum</code></strong></li>
-</ol>
-<p>Compter combien de valeurs respectent un seuil donné.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tableau <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">5</span>])
-</span></span><span style="display:flex;"><span>seuil <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+<h2 id="accéder-à-une-valeur">Accéder à une valeur</h2>
+<p>On utilise la clé entre crochets <code>[ ]</code>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(capitales[<span style="color:#e6db74">&#34;Canada&#34;</span>])   <span style="color:#75715e"># Ottawa</span></span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Ottawa</code></pre></div>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Attention
+  </summary>
+  <div class="box-content">
+<p>Si la clé n’existe pas, Python déclenche une erreur <code>KeyError</code>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">---------------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">KeyError</span>                                  Traceback (most recent call last)
+</span></span><span style="display:flex;"><span>Cell In[<span style="color:#ae81ff">3</span>], line <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">----&gt;</span> <span style="color:#ae81ff">1</span> print(capitales[<span style="color:#e6db74">&#34;USA&#34;</span>])
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>nb_valeurs <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sum(tableau <span style="color:#f92672">&gt;</span> seuil)	<span style="color:#75715e"># Comptage des valeurs &gt; 5</span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Nombre de valeurs supérieures à </span><span style="color:#e6db74">{</span>seuil<span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>nb_valeurs<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
-<p><strong>Résultat attendu</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Nombre de valeurs supérieures à 5 : 3</code></pre></div>
-<p><strong>Explication</strong> :</p>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">KeyError</span>: <span style="color:#e6db74">&#39;USA&#39;</span></span></span></code></pre></div>
+  </div>
+</details>
+<p>Pour éviter ça, on peut utiliser la méthode <code>.get()</code> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(capitales<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;USA&#34;</span>, <span style="color:#e6db74">&#34;Inconnu&#34;</span>))   <span style="color:#75715e"># Inconnu</span></span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Inconnu</code></pre></div>
+<h2 id="ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</h2>
+<p>On peut ajouter une nouvelle clé ou modifier une valeur existante.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>capitales[<span style="color:#e6db74">&#34;Mexique&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Mexico&#34;</span>   <span style="color:#75715e"># ajout</span>
+</span></span><span style="display:flex;"><span>capitales[<span style="color:#e6db74">&#34;France&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Paris&#34;</span> <span style="color:#75715e"># modification</span>
+</span></span><span style="display:flex;"><span>print(capitales)</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>{&#39;Canada&#39;: &#39;Ottawa&#39;, &#39;France&#39;: &#39;Paris&#39;, &#39;Japon&#39;: &#39;Tokyo&#39;, &#39;Mexique&#39;: &#39;Mexico&#39;}</code></pre></div>
+<h2 id="supprimer-une-entrée">Supprimer une entrée</h2>
+<p>On utilise le mot-clé <code>del</code>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">del</span> capitales[<span style="color:#e6db74">&#34;France&#34;</span>]
+</span></span><span style="display:flex;"><span>print(capitales)</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>{&#39;Canada&#39;: &#39;Ottawa&#39;, &#39;Japon&#39;: &#39;Tokyo&#39;, &#39;Mexique&#39;: &#39;Mexico&#39;}</code></pre></div>
+<h2 id="parcourir-un-dictionnaire">Parcourir un dictionnaire</h2>
+<p>Souvent, on veut parcourir toutes les clés et valeurs avec <code>.items()</code>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> pays, capitale <span style="color:#f92672">in</span> capitales<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>    print(pays, <span style="color:#e6db74">&#34;→&#34;</span>, capitale)</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Canada → Ottawa
+Japon → Tokyo
+Mexique → Mexico</code></pre></div>
+<blockquote>
+<p><code>.items()</code> retourne <strong>toutes les paires clé-valeur</strong>.</p>
+</blockquote>
+<p>On peut aussi parcourir seulement les clés <code>.keys()</code>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> pays <span style="color:#f92672">in</span> capitales<span style="color:#f92672">.</span>keys():
+</span></span><span style="display:flex;"><span>    print(pays)</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Canada
+Japon
+Mexique</code></pre></div>
+<p>Ou seulement les valeurs avec <code>.values()</code> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> capitale <span style="color:#f92672">in</span> capitales<span style="color:#f92672">.</span>values():
+</span></span><span style="display:flex;"><span>    print(capitale)</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Ottawa
+Tokyo
+Mexico</code></pre></div>
+<h2 id="créer-une-liste-à-partir-dun-dictionnaire">Créer une liste à partir d’un dictionnaire</h2>
+<p>Imaginons que l’on ait relevé les températures d’une ville à différents moments de la journée. On stocke ces données dans un dictionnaire :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Dictionnaire : heure → température (°C)</span>
+</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">6</span>: <span style="color:#ae81ff">12</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">9</span>: <span style="color:#ae81ff">15</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">12</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">15</span>: <span style="color:#ae81ff">22</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">18</span>: <span style="color:#ae81ff">19</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">21</span>: <span style="color:#ae81ff">16</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h4 id="1-créer-une-liste-avec-les-valeurs-du-dictionnaire-avec-list-et-values">1. Créer une liste avec les <strong>valeurs</strong> du dictionnaire avec <code>list()</code> et <code>.values()</code></h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>liste_temp <span style="color:#f92672">=</span> list(temperatures<span style="color:#f92672">.</span>values())
+</span></span><span style="display:flex;"><span>print(liste_temp)</span></span></code></pre></div>
+<p><strong>Résultat :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[12, 15, 20, 22, 19, 16]</code></pre></div>
+<h4 id="2-créer-une-liste-avec-les-clés-du-dictionnaire-avec-list-et-keys">2. Créer une liste avec les <strong>clés</strong> du dictionnaire avec <code>list()</code> et <code>.keys()</code></h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>liste_heures <span style="color:#f92672">=</span> list(temperatures<span style="color:#f92672">.</span>keys())
+</span></span><span style="display:flex;"><span>print(liste_heures)</span></span></code></pre></div>
+<p><strong>Résultat :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[6, 9, 12, 15, 18, 21]</code></pre></div>
+<h4 id="3-construire-une-liste-avec-une-boucle-for">3. Construire une liste avec une boucle <code>for</code></h4>
+<p>On peut aussi parcourir le dictionnaire et remplir une liste à la main :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>liste_temp2 <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> temperatures<span style="color:#f92672">.</span>values():
+</span></span><span style="display:flex;"><span>    liste_temp2<span style="color:#f92672">.</span>append(valeur)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(liste_temp2)</span></span></code></pre></div>
+<p><strong>Résultat :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[12, 15, 20, 22, 19, 16]</code></pre></div>
+<h4 id="4-obtenir-des-couples-clé-valeur-avec-items">4. Obtenir des couples <code>(clé, valeur)</code> avec <code>.items()</code></h4>
+<p>Si on veut garder <strong>l’heure et la température ensemble</strong>, on peut utiliser <code>.items()</code> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>paires <span style="color:#f92672">=</span> list(temperatures<span style="color:#f92672">.</span>items())
+</span></span><span style="display:flex;"><span>print(paires)</span></span></code></pre></div>
+<p><strong>Résultat :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[(6, 12), (9, 15), (12, 20), (15, 22), (18, 19), (21, 16)]</code></pre></div>
+
+<details open class=" box cstyle notices primary">
+  <summary class="box-label" tabindex="-1">
+    À savoir
+  </summary>
+  <div class="box-content">
+<p>Ici, il s&rsquo;agit d&rsquo;une liste de <strong>tuples</strong>. Un <strong>tuple</strong> c&rsquo;est un type de données que nous n&rsquo;étudierons pas dans ce cours.</p>
+  </div>
+</details>
+<h2 id="récapitulatif">Récapitulatif</h2>
 <ul>
-<li><code>tableau &gt; seuil</code> : conserve les valeurs dans <code>tableau</code> qui sont &gt; 5.</li>
-<li><code>np.sum(tableau &gt; seuil)</code> : compte le nombre de valeurs dans <code>tableau</code> qui sont &gt; 5.</li>
-</ul>
-<ol start="3">
-<li><strong>Filtre avec <code>np.where()</code></strong></li>
-</ol>
+<li>Un <strong>dictionnaire</strong> associe une <strong>clé</strong> à une <strong>valeur</strong>.</li>
+<li>Créer : <code>{clé: valeur, ...}</code></li>
+<li>Accéder : <code>mon_dico[clé]</code> ou <code>mon_dico.get(clé)</code></li>
+<li>Ajouter/modifier : <code>mon_dico[clé] = valeur</code></li>
+<li>Supprimer : <code>del mon_dico[clé]</code></li>
+<li>Créer une liste des valeurs : <code>liste_valeurs = list(mon_dico.values())</code></li>
+<li>Créer une liste des clés : <code>liste_clés = list(mon_dico.keys())</code></li>
+<li>Parcourir : boucle <code>for</code>. Une boucle <code>for</code> permet aussi de construire une liste étape par étape
 <ul>
-<li>
-<p><code>numpy.where(condition, valeur_si_vrai, valeur_si_faux)</code> permet de créer un tableau (ou une colonne dans un DataFrame) en fonction d’une condition logique.</p>
-<ul>
-<li><strong>condition</strong> → un test qui renvoie <code>True</code> ou <code>False</code> (par exemple : <code>df[&quot;Note&quot;] &gt;= 60</code>)</li>
-<li><strong>valeur_si_vrai</strong> → ce qui sera écrit quand la condition est vraie (<code>&quot;Réussi&quot;</code>)</li>
-<li><strong>valeur_si_faux</strong> → ce qui sera écrit quand la condition est fausse (<code>&quot;Échoué&quot;</code>)</li>
+<li><code>.values()</code> → liste des valeurs.</li>
+<li><code>.keys()</code> → liste des clés.</li>
+<li><code>.items()</code> → couples (clé, valeur).</li>
 </ul>
 </li>
 </ul>
-<p>Exemple :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Tendance&#34;</span>] <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>where(df[<span style="color:#e6db74">&#34;Note&#34;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">60</span>, <span style="color:#e6db74">&#34;Réussi&#34;</span>, <span style="color:#e6db74">&#34;Échoué&#34;</span>)</span></span></code></pre></div>
-<p><strong>Explication</strong>:</p>
-<p>Pour chaque ligne :</p>
-<ul>
-<li>si la note est &gt;= 60 → <code>&quot;Réussi&quot;</code></li>
-<li>sinon → <code>&quot;Échoué&quot;</code>.</li>
-</ul>
-<p>C’est une méthode très rapide car <code>numpy</code> applique l’opération directement sur toute la colonne, sans boucle explicite.</p>
-<hr>
-<h2 id="tracer-des-graphiques-à-barres-et-avec-barres-derreur">Tracer des graphiques à barres et avec barres d&rsquo;erreur</h2>
-<h3 id="importer-la-bibliothèque-1">Importer la bibliothèque</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt</span></span></code></pre></div>
-<h3 id="graphique-à-barres">Graphique à barres</h3>
-<p><strong>Exemple de base :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>noms <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>]
-</span></span><span style="display:flex;"><span>valeurs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>bar(noms, valeurs)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Résultats&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xticks(rotation<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#34;Score&#34;</span>])
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-19f7c20ad93ca806eefdd0577a35a366" class="lightbox-link"><img alt="graphique à barres" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_barres.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-19f7c20ad93ca806eefdd0577a35a366"><img alt="graphique à barres" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_barres.png?width=40vw"></a></p>
-<table>
-<thead>
-<tr>
-<th>Fonction</th>
-<th>Rôle</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>plt.bar(x, y)</code></td>
-<td>Crée des barres</td>
-</tr>
-<tr>
-<td><code>plt.xticks()</code></td>
-<td>Contrôle les étiquettes sur l’axe x</td>
-</tr>
-</tbody>
-</table>
-<h3 id="graphique-avec-barres-derreur">Graphique avec barres d’erreur</h3>
-<p>La fonction <code>plt.errorbar()</code> permet de tracer des barres d&rsquo;erreur autour des points d&rsquo;une courbe, et ici la liste <code>erreurs = [0.5, 0.3, 0.6]</code> indique <strong>l&rsquo;incertitude verticale</strong> (±) associée à chaque point.</p>
-<p><strong>Exemple :</strong></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">9</span>]
-</span></span><span style="display:flex;"><span>erreurs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.3</span>, <span style="color:#ae81ff">0.6</span>]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>errorbar(x, y, yerr<span style="color:#f92672">=</span>erreurs, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Mesures&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Mesures avec incertitude&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-8b68448fe642d4295582768c052ea51a" class="lightbox-link"><img alt="graphique à barres d&rsquo;erreur" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_barres_erreurs.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8b68448fe642d4295582768c052ea51a"><img alt="graphique à barres d&rsquo;erreur" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_barres_erreurs.png?width=40vw"></a></p>
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Signification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>yerr</code></td>
-<td>barres d’erreur verticales</td>
-</tr>
-<tr>
-<td><code>xerr</code></td>
-<td>(optionnel) erreurs horizontales</td>
-</tr>
-<tr>
-<td><code>fmt=&quot;o&quot;</code></td>
-<td>style des points</td>
-</tr>
-</tbody>
-</table>
-<h2 id="tracer-une-droite-de-régression">Tracer une droite de régression</h2>
-<p><strong>Rappel</strong> : L&rsquo;équation d&rsquo;une droite est <code>y = a·x + b</code></p>
-<p>Voici comment obtenir les données de la droite :</p>
-<ul>
-<li><code>a, b = np.polyfit(x, y, 1)</code> : On calcule la droite qui s&rsquo;ajuste le mieux aux points (régression linéaire) et on récupère sa pente (<code>a</code>) et son ordonnée à l&rsquo;origine (<code>b</code>).</li>
-<li><code>y_reg = a * x + b</code> : On utilise la pente et l&rsquo;ordonnée pour calculer les valeurs de la droite.</li>
-<li><code>plt.plot(x, y, &quot;o&quot;, label=&quot;Données&quot;)</code> : On trace les points de données sous forme de cercles.</li>
-<li><code>plt.plot(x, y_reg, &quot;-&quot;, label=f&quot;y = {a:.2f}x + {b:.2f}&quot;)</code> : On trace la droite de régression et on affiche son équation.</li>
-</ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>])
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">6.1</span>, <span style="color:#ae81ff">8.0</span>])
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Droite de régression : y = a·x + b</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(x, y, <span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>y_reg <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> x <span style="color:#f92672">+</span> b
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, <span style="color:#e6db74">&#34;o&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Données&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y_reg, <span style="color:#e6db74">&#34;-&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;y = </span><span style="color:#e6db74">{</span>a<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">x + </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()	<span style="color:#75715e"># Ajuste l&#39;espacement pour éviter le chevauchement</span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-3682f07e6e7e69d9478ce33c564553e2" class="lightbox-link"><img alt="graphique droite de régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_regression.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3682f07e6e7e69d9478ce33c564553e2"><img alt="graphique droite de régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_regression.png?width=40vw"></a></p>
+<!--
+## Exemples d'applications scientifiques
+
+### Exemple 1 – Concentration de solutions
+
+On veut stocker les concentrations de plusieurs solutions.
+
+```python
+solutions = {
+    "NaCl": 0.10,    # mol/L
+    "HCl": 0.05,
+    "C6H12O6": 0.20
+}
+print("Concentration de NaCl :", solutions["NaCl"], "mol/L")
+```
+```
+Concentration de NaCl : 0.1 mol/L
+```
+
+### Exemple 2 – Comptage d’ADN
+
+On veut compter le nombre de nucléotides dans une séquence.
+
+```python
+sequence = "ATGCGATAC"
+compte = {"A": 0, "T": 0, "C": 0, "G": 0}
+
+for base in sequence:
+    compte[base] += 1	# Ou compte[base] = compte[base] + 1
+
+print(compte)
+```
+```
+{'A': 3, 'T': 2, 'C': 2, 'G': 2}
+```
+
+
+### Exemple 3 – Résultats expérimentaux
+
+Stocker les résultats de quatre étudiants pour trois examen.
+
+```python
+resultats = {
+    "Alice": [0.50, 0.88, 0.92],
+    "Bob": [0.45, 0.77, 0.86],
+    "Chloé": [0.61, 0.69, 0.80],
+    "Julien": [0.51, 0.79, 0.90]
+}
+
+# Moyenne par étudiant
+print("Moyenne par étudiant :")
+for etudiant, notes in resultats.items():
+    total = 0
+    for note in notes:
+        total += note
+    moyenne = total / len(notes)
+    print(f"{etudiant} → {moyenne:.2f}")
+
+# Moyenne par examen
+print("\nMoyenne par examen :")
+nb_examens = len(next(iter(resultats.values())))  # nombre de colonnes
+for i in range(nb_examens):
+    total_examen = 0
+    nb_etudiants = 0
+    for notes in resultats.values():
+        total_examen += notes[i]
+        nb_etudiants += 1
+    moyenne_examen = total_examen / nb_etudiants
+    print(f"Examen {i+1} → {moyenne_examen:.2f}")
+```
+```
+Moyenne par étudiant :
+Alice → 0.77
+Bob → 0.69
+Chloé → 0.70
+Julien → 0.73
+
+Moyenne par examen :
+Examen 1 → 0.52
+Examen 2 → 0.78
+Examen 3 → 0.87
+```
+
+#### Explications
+
+**Moyenne par étudiant** :
+
+* On parcourt chaque clé (nom) et sa liste de notes.
+* On fait la somme des notes puis on divise par le nombre de notes.
+
+**Moyenne par examen** :
+
+* On parcourt les indices i correspondant aux examens.
+* Pour chaque examen, on additionne la note de tous les étudiants et on divise par le nombre d’étudiants.
+-->
 <hr>
 <h1 id="atelier">Atelier</h1>
 <ol>
-<li>Téléchargez le fichier de départ : <a href="https://python-a25.netlify.app/blocnotes/atelier_numpy_regression.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></li>
-<li>Déplacez-le dans votre dossier prévu pour <strong>l&rsquo;atelier de la semaine 7</strong>.</li>
+<li>Téléchargez les fichiers de départ (<code>.ipynb</code>):
+<a href="https://python-a25.netlify.app/blocnotes/atelier_dictionnaires_physique.ipynb" rel="external" target="_blank">Bloc-notes de départ - Physique</a><br>
+<a href="https://python-a25.netlify.app/blocnotes/atelier_dictionnaires_math.ipynb" rel="external" target="_blank">Bloc-notes de départ - Math</a></li>
+<li>Déplacez-le dans votre dossier prévu pour <strong>de la semaine en cours</strong>.</li>
 <li>Ouvrez votre dossier de travail <code>programmation-sciences</code> <strong>à partir de Visual Studio Code</strong>.
 <ul>
 <li>Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).</li>
 </ul>
 </li>
 </ol>
-<h2 id="exercice--effet-de-la-lumière-sur-la-croissance-des-plantes">Exercice : Effet de la lumière sur la croissance des plantes</h2>
-<p>Une équipe de recherche a étudié l’influence de différents types de lumière sur la croissance de jeunes plantes. Après <strong>10 jours</strong>, la <strong>hauteur (en cm)</strong> de <strong>5 plantes</strong> a été mesurée dans chacune des <strong>trois conditions lumineuses</strong> suivantes :</p>
+<h2 id="exercice---physique-mécanique">Exercice - Physique mécanique</h2>
+<h3 id="objectifs-2">Objectifs</h3>
 <ul>
-<li><strong>Lumière naturelle</strong></li>
-<li><strong>Lumière LED blanche</strong></li>
-<li><strong>Lumière LED rouge</strong></li>
+<li>Manipuler des <strong>dictionnaires</strong> en Python (<code>temps → valeur</code>).</li>
+<li>Transformer un dictionnaire en listes triées pour tracer des courbes.</li>
+<li>Tracer <strong>deux courbes</strong> (<code>v(t)</code> et <code>y(t)</code>) sur le même graphe avec <code>plot()</code> et légende.</li>
+<li>Interpréter qualitativement les formes (linéaire vs quadratique).</li>
 </ul>
-<p>Certaines mesures sont manquantes (notées <code>np.nan</code>), car une ou deux plantes n’ont pas survécu. Voici les données brutes :</p>
-<table>
-<thead>
-<tr>
-<th>Condition</th>
-<th>Plante 1</th>
-<th>Plante 2</th>
-<th>Plante 3</th>
-<th>Plante 4</th>
-<th>Plante 5</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Naturelle</td>
-<td>12.5</td>
-<td>13.1</td>
-<td>12.9</td>
-<td>13.0</td>
-<td>12.8</td>
-</tr>
-<tr>
-<td>LED blanche</td>
-<td>11.2</td>
-<td>11.6</td>
-<td>np.nan</td>
-<td>11.5</td>
-<td>11.3</td>
-</tr>
-<tr>
-<td>LED rouge</td>
-<td>10.4</td>
-<td>10.1</td>
-<td>10.2</td>
-<td>np.nan</td>
-<td>np.nan</td>
-</tr>
-</tbody>
-</table>
+<p>On veut représenter l’évolution d’un objet en chute libre (sans frottement).
+La formule de la vitesse est :</p>
+<span class="math align-center">$$
+v(t) = g \cdot t
+$$</span>
+<p>et la formule de la position est :</p>
+<span class="math align-center">$$
+y(t) = \tfrac{1}{2} g \cdot t^2
+$$</span>
+<span class="math align-center">où $ g = 9.8 , m/s^2 $</span>
 <ol>
 <li>
-<p><strong>Représentation des données</strong></p>
+<p><strong>Créer deux dictionnaires vides</strong> <code>vitesses = {}</code> et <code>positions = {}</code>.</p>
+</li>
+<li>
+<p><strong>Définir la constante</strong> <code>g = 9.8</code> (m/s²).</p>
+</li>
+<li>
+<p><strong>Remplir les dictionnaires</strong></p>
 <ul>
-<li>Crée un tableau 2D avec <code>numpy.array()</code> contenant les mesures ci-dessus.</li>
-<li>Stocke les noms des conditions dans une liste <code>conditions = [&quot;Naturelle&quot;, &quot;LED blanche&quot;, &quot;LED rouge&quot;]</code>.</li>
+<li>Pour chaque temps <code>t</code> allant de <code>0</code> à <code>5</code> (inclus), calculez :
+<ul>
+<li><code>v(t) = g * t</code></li>
+<li><code>y(t) = 0.5 * g * t**2</code></li>
+</ul>
+</li>
+<li>Stockez ces valeurs dans les dictionnaires avec <code>t</code> comme clé (ex. <code>vitesses[t] = ...</code>).
+<strong>Indice</strong> : utiliser <code>for t in range(6):</code></li>
 </ul>
 </li>
 <li>
-<p><strong>Analyse statistique</strong></p>
+<p><strong>Vérifier le contenu</strong></p>
 <ul>
-<li>Calcule la <strong>moyenne</strong> et l’<strong>écart-type</strong> de la hauteur des plantes pour chaque condition.</li>
-<li>Utilise <code>np.nanmean()</code> et <code>np.nanstd()</code> pour <strong>ignorer les valeurs manquantes</strong> (<code>np.nan</code>).</li>
+<li>Affichez les dictionnaires (<code>print(vitesses)</code> et <code>print(positions)</code>).</li>
+<li>Vérifiez que les clés apparaissent pour <code>0,1,2,3,4,5</code>.</li>
+</ul>
+<p><strong>Exemple d’attendu (valeurs arrondies)</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>vitesses = {0:0.0, 1:9.8, 2:19.6, 3:29.4, 4:39.2, 5:49.0}
+positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}</code></pre></div>
+</li>
+<li>
+<p><strong>Préparer les listes pour le tracé</strong></p>
+<ul>
+<li>Les dictionnaires ne garantissent pas l’ordre des clés ; créez une <strong>liste triée</strong> des temps (<strong>Indice</strong> : utiliser <code>temps = sorted(vitesses.keys())</code>) :</li>
+<li>Avec une boucle <code>for</code>, construire <strong>deux listes</strong> (<code>valeurs_v</code> et <code>valeurs_y</code>) qui regroupent, dans l’ordre des temps triés (<code>temps</code>), les valeurs de la vitesse et de la position extraites des dictionnaires.</li>
 </ul>
 </li>
 <li>
-<p><strong>Comparaison entre conditions</strong></p>
+<p><strong>Tracer les courbes</strong></p>
 <ul>
-<li>Détermine la condition qui présente la croissance moyenne la plus élevée.</li>
-<li>Affiche un résumé clair, par exemple :
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Moyenne (Naturelle) = 12.86 cm, écart-type = 0.22 cm
-Moyenne (LED blanche) = ...
-Moyenne (LED rouge) = ...
-Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
-</li>
+<li>Importez <code>matplotlib.pyplot as plt</code>.</li>
+<li>Tracez la <strong>vitesse</strong> : <code>plt.plot(temps, valeurs_v, label='Vitesse (m/s)')</code></li>
+<li>Tracez la <strong>position</strong> : <code>plt.plot(temps, valeurs_y, label='Position (m)')</code></li>
+<li>Ajoutez : <code>plt.title(...)</code>, <code>plt.xlabel('Temps (s)')</code>, <code>plt.ylabel('Valeur')</code>, <code>plt.legend()</code>, <code>plt.grid(True)</code> puis <code>plt.show()</code>.</li>
+<li>Sauvegarder le graphique en PNG : <code>plt.savefig('chute_libre.png')</code>.</li>
 </ul>
 </li>
 <li>
-<p><strong>Visualisation graphique</strong></p>
+<p><strong>Interprétation</strong></p>
 <ul>
-<li>Représente les moyennes avec un <strong>diagramme en barres</strong> (<code>plt.bar</code>).</li>
-<li>Ajoute les <strong>barres d’erreur</strong> correspondant aux écarts-types.</li>
-<li>Mets les noms des conditions en abscisse avec <code>plt.xticks()</code>.</li>
-<li>Ajoute un titre et un label pour l’axe des ordonnées (hauteur moyenne en cm).</li>
+<li>Écrivez 2–3 phrases : que montre la pente de <code>v(t)</code> ? Pourquoi <code>y(t)</code> a-t-elle une forme différente ?</li>
 </ul>
 </li>
 </ol>
-<p><a href="#R-image-2bfde4e4350f3c61e2d3ab96c83717d6" class="lightbox-link"><img alt="Graphique" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/graphique_croissance_lumiere.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2bfde4e4350f3c61e2d3ab96c83717d6"><img alt="Graphique" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/graphique_croissance_lumiere.png?width=45vw"></a></p>
+<hr>
+<h2 id="exercice---mathématiques">Exercice - Mathématiques</h2>
+
+<details open class=" box cstyle notices green">
+  <summary class="box-label" tabindex="-1">
+    Information
+  </summary>
+  <div class="box-content">
+<p>Cet exercice utilise les mêmes notions que dans l&rsquo;exercice précédent, mais avec moins d&rsquo;indices.</p>
+  </div>
+</details>
+<h3 id="objectifs-3">Objectifs</h3>
+<ul>
+<li>Utiliser des dictionnaires pour associer <code>x → f(x)</code> et <code>x → f'(x)</code>.</li>
+<li>Tracer <code>f(x)</code> et sa dérivée <code>f'(x)</code> sur la même figure.</li>
+</ul>
+<ol>
+<li>
+<p><strong>Créer deux dictionnaires vides</strong> <code>carres</code> et <code>derivees</code></p>
+</li>
+<li>
+<p><strong>Remplir les dictionnaires</strong> pour x = -5 à +5</p>
+<ul>
+<li>Pour chaque <code>x</code>:
+<ul>
+<li>Calculez <code>f(x) = x**2</code> → stockez dans le dictionnaire <code>carres</code>.</li>
+<li>Calculez <code>f'(x) = 2*x</code> → stockez dans le dictionnaire <code>derivees</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Afficher &amp; vérifier les deux dictionnaires</strong></p>
+<ul>
+<li>Vérifiez la symétrie de <code>carres</code> (même valeur pour <code>x</code> et <code>-x</code>) et l’antisimétrie de <code>derivees</code> (<code>f'(-x) = -f'(x)</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Préparer pour les listes pour le tracé</strong></p>
+<ul>
+<li>Trier les <code>clés</code> de <code>carres</code>.</li>
+<li>Créer <strong>deux listes</strong> (y_carres et y_derivees) contenant, dans l’ordre des x triés, les valeurs de la fonction et de sa dérivée extraites des dictionnaires correspondants.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tracer les deux graphiques sur la même figure</strong></p>
+<ul>
+<li>Ajoutez titre, axes, légende, grille.</li>
+<li>Sauvegarder le graphique en PNG avec le nom <code>quadratique.png</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Interprétation</strong></p>
+<ul>
+<li>Identifiez les points où <code>f'(x) = 0</code>. Que se passe-t-il pour <code>f(x)</code> à ces points (minimum/maximum) ?</li>
+</ul>
+</li>
+</ol>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
-<li>Lire la prochaine leçon : <a href="/semaine8/index.html">8. Dictionnaires</a></li>
-<li>Faire les exercices de la <a href="/semaine8/index.html#exercices">prochaine leçon :</a></li>
+<li>Lire la prochaine leçon : <a>8. Tableaux NumPy et droite de régression</a></li>
+<li>Faire les exercices de la <a href="#exercices">prochaine leçon :</a></li>
 </ol>
 
   <footer class="footline">
@@ -1031,26 +723,18 @@ Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
-            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
             <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
             <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
             <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
             <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
             <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
             <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
-            <li class="active " data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Tableaux numpy et droite de régression</a></li>
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Dictionnaires</a></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Lecture et écriture de fichiers textes (avec NumPy ou Pandas)</a></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> Projet - Présentation, analyse et traduction</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="active " data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
           </ul>
@@ -1070,8 +754,20 @@ Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1758935886" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1758935886" defer></script>
-    <script src="/js/theme.js?1758935886" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1759110077" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759110077" defer></script>
+    <script>
+      window.MathJax = Object.assign( window.MathJax || {}, {
+        tex: {
+          inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+          displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+        },
+        options: {
+          enableMenu: false 
+        }
+      }, JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1759110077"></script>
+    <script src="/js/theme.min.js?1759110077" defer></script>
   </body>
 </html>

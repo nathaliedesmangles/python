@@ -1,0 +1,122 @@
+## Objectifs
+
+* Construire et manipuler un **dictionnaire imbriqué**.
+* Parcourir et mettre à jour les données.
+* Faire des comparaisons numériques.
+
+
+## Exercice – Cristallisation
+
+On a mesuré la température de cristallisation de différentes substances dans plusieurs conditions expérimentales (pression normale, pression élevée, en solution aqueuse, etc.). Les résultats sont dans le fichier `cristallisation.csv`.
+
+### Contenu du fichier
+
+```csv
+substance,condition,temp_cristallisation
+NaCl,pression_normale,801
+NaCl,en_solution,800
+H2O,pression_normale,0
+H2O,pression_elevee,-1
+Fe,pression_normale,1538
+Fe,en_solution,1530
+```
+
+
+1. **Charger** le fichier CSV avec `pandas` et afficher les 5 premières lignes pour vérifier.
+
+2. **Transformer** les données en un dictionnaire imbriqué de la forme :
+
+   ```python
+   {
+       "NaCl": {"pression_normale": 801, "en_solution": 800},
+       "H2O": {"pression_normale": 0, "pression_elevee": -1},
+       "Fe": {"pression_normale": 1538, "en_solution": 1530}
+   }
+   ```
+
+   *(Indice : utilise une boucle sur les lignes du DataFrame avec `iterrows()` ou `itertuples()`.)*
+
+3. **Parcourir** le dictionnaire et afficher une phrase pour chaque valeur, par exemple :
+
+   ```text
+   NaCl cristallise à 801°C sous pression normale.
+   NaCl cristallise à 800°C en solution.
+   ```
+
+4. **Ajouter une donnée** : `H2O` cristallise à `-5°C` dans la condition `"en_solution"`. Mets à jour le dictionnaire.
+
+5. **Vérifier** si la substance `"Cu"` est présente. Si elle ne l’est pas, afficher :
+
+   ```text
+   Cu n'est pas présent dans les données.
+   ```
+
+6. **Filtrer** et afficher toutes les substances qui ont une température de cristallisation **inférieure à 100°C** dans au moins une condition.
+
+7. **Comparer** les valeurs d’une même substance selon les conditions, et afficher l’écart maximal :
+
+   ```text
+   Pour H2O, l’écart maximal est de 5°C entre deux conditions.
+   ```
+-->
+
+
+====SOLUTION =====
+
+# 1. Lecture du fichier CSV
+import csv
+
+donnees = {}
+
+with open("cristallisation.csv", newline='', encoding='utf-8') as fichier:
+    lecteur = csv.DictReader(fichier)
+    for ligne in lecteur:
+        substance = ligne["substance"]
+        condition = ligne["condition"]
+        temp = float(ligne["temp_cristallisation"])
+
+        if substance not in donnees:
+            donnees[substance] = {}
+        donnees[substance][condition] = temp
+
+# 2. Affichage des données
+for substance in donnees:
+    for condition in donnees[substance]:
+        temp = donnees[substance][condition]
+        print(f"{substance} cristallise à {temp}°C {condition.replace('_', ' ')}.")
+
+# 3. Ajout d'une nouvelle condition pour H2O
+donnees["H2O"]["en_solution"] = -5
+
+# 4. Vérification de la présence de "Cu"
+if "Cu" in donnees:
+    print("Cu est présent dans les données.")
+else:
+    print("Cu n'est pas présent dans les données.")
+
+# 5. Filtrage : substances ayant une température < 100°C dans au moins une condition
+print("Substances ayant au moins une température de cristallisation < 100°C :")
+for substance in donnees:
+    for condition in donnees[substance]:
+        if donnees[substance][condition] < 100:
+            print(f"- {substance} ({condition.replace('_', ' ')} : {donnees[substance][condition]}°C)")
+            break  # on passe à la substance suivante
+
+# 6. Comparaison : écart maximal de température pour chaque substance
+print("Écart maximal entre les conditions pour chaque substance :")
+for substance in donnees:
+    temperatures = list(donnees[substance].values())
+    ecart = max(temperatures) - min(temperatures)
+    print(f"Pour {substance}, l’écart maximal est de {ecart:.1f}°C entre deux conditions.")
+
+# 7. (Facultatif) Comparaison moyenne entre substances
+def comparaison_substances(donnees):
+    moyennes = {}
+    for substance in donnees:
+        valeurs = list(donnees[substance].values())
+        moyennes[substance] = sum(valeurs) / len(valeurs)
+
+    substance_max = max(moyennes, key=moyennes.get)
+    print(f"\nSubstance avec la température moyenne de cristallisation la plus élevée : {substance_max} ({moyennes[substance_max]:.1f}°C)")
+
+comparaison_substances(donnees)

@@ -1,0 +1,97 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "3554dbb1",
+   "metadata": {},
+   "source": [
+    "### Exercice 1 – Création d’un dictionnaire\n",
+    "\n",
+    "Crée un dictionnaire appelé `etudiant` qui contient les clés suivantes : `nom`, `programme`, `age`. Attribue des valeurs fictives à chacune des clés et affiche le dictionnaire."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "625da7e4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8b6f4f28",
+   "metadata": {},
+   "source": [
+    "### Exercice 2 – Accéder à une valeur\n",
+    "\n",
+    "À partir du dictionnaire `etudiant`, affiche uniquement le programme de l’étudiant."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c50cce75",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b511d18f",
+   "metadata": {},
+   "source": [
+    "### Exercice 3 – Ajouter une clé\n",
+    "\n",
+    "Ajoute une clé `moyenne` avec une valeur numérique au dictionnaire `etudiant`, puis affiche-le."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "87b68a51",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "28406142",
+   "metadata": {},
+   "source": [
+    "### Exercice 4 – Modifier une valeur\n",
+    "\n",
+    "Change l’âge de l’étudiant dans le dictionnaire `etudiant` pour 19 ans."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c18a02ce",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5f952aff",
+   "metadata": {},
+   "source": [
+    "### Exercice 5 – Parcourir un dictionnaire\n",
+    "\n",
+    "Écris une boucle `for` qui parcourt les clés et valeurs du dictionnaire `etudiant` et les affiche dans la forme : `clé : valeur`."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0525995a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

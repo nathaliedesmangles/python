@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Dictionnaires :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
+    <meta property="og:url" content="http://localhost:1313/semaine7-/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content=" Dictionnaires :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content=" Dictionnaires :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
+    <meta itemprop="wordCount" content="2293">
+    <title> Dictionnaires :: 420-SN1-RE</title>
+    <link href="/semaine7-/index.xml" rel="alternate" type="application/rss+xml" title=" Dictionnaires :: 420-SN1-RE">
+    <link href="/images/logo.png?1759070220" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759070220" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759070220" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759070220" rel="stylesheet">
+    <link href="/css/theme.css?1759070220" rel="stylesheet">
+    <link href="/css/format-html.css?1759070220" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759070220" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759070220" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759070220" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759070220" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759070220" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759070220" defer></script>
+    <script src="/js/search.js?1759070220" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine7-\/index.html';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1759070220";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1759070220" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/semaine7-/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs">Objectifs</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#fichiers-de-départ-à-utiliser">Fichiers de départ à utiliser</a></li>
+    <li><a href="#exercice-1--densités">Exercice 1 – Densités</a></li>
+    <li><a href="#exercice-2--chargement-et-exploration-de-données">Exercice 2 – Chargement et exploration de données</a></li>
+    <li><a href="#exercice-3--moyenne-de-solubilité">Exercice 3 – Moyenne de solubilité</a></li>
+    <li><a href="#exercice-4--boucle-sur-les-composés">Exercice 4 – Boucle sur les composés</a></li>
+    <li><a href="#exercice-5--ajout-dune-colonne">Exercice 5 – Ajout d’une colonne</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#quest-ce-quun-dictionnaire">Qu’est-ce qu’un dictionnaire?</a>
+      <ul>
+        <li><a href="#exemple">Exemple</a></li>
+      </ul>
+    </li>
+    <li><a href="#accéder-à-une-valeur-avec-une-clé">Accéder à une valeur avec une clé</a></li>
+    <li><a href="#ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</a>
+      <ul>
+        <li><a href="#ajouter-une-donnée">Ajouter une donnée</a></li>
+        <li><a href="#modifier-une-valeur">Modifier une valeur</a></li>
+      </ul>
+    </li>
+    <li><a href="#vérifier-si-une-clé-est-présente-avec-if-et-in">Vérifier si une clé est présente avec <em>if</em> et <em>in</em></a></li>
+    <li><a href="#parcourir-un-dictionnaire-à-laide-de-for">Parcourir un dictionnaire à l&rsquo;aide de <em>for</em></a>
+      <ul>
+        <li><a href="#via-les-clés">Via les clés</a></li>
+        <li><a href="#via-les-valeurs-avec-values">Via les valeurs avec .values()</a></li>
+        <li><a href="#via-les-paires-clé-valeur-">Via les paires clé-valeur :</a></li>
+      </ul>
+    </li>
+    <li><a href="#supprimer-une-entrée-du-dictionnaire-avec-del">Supprimer une entrée du dictionnaire avec del</a></li>
+    <li><a href="#traitement-de-fichiers-texte-csv-avec-pandas">Traitement de fichiers texte (.csv) avec Pandas</a>
+      <ul>
+        <li><a href="#importer-la-bibliothèque">Importer la bibliothèque</a></li>
+      </ul>
+    </li>
+    <li><a href="#charger-un-fichier-csv">Charger un fichier CSV</a></li>
+    <li><a href="#afficher-les-5-premières-lignes-dun-dataframe">Afficher les 5 premières lignes d&rsquo;un dataframe</a>
+      <ul>
+        <li><a href="#exemple-daffichage-pour-dfhead">Exemple d&rsquo;affichage pour <em>df.head()</em></a></li>
+      </ul>
+    </li>
+    <li><a href="#afficher-les-noms-des-colonnes">Afficher les noms des colonnes</a></li>
+    <li><a href="#afficher-toutes-les-mesures-pour-un-seul-composé">Afficher toutes les mesures pour un seul composé</a>
+      <ul>
+        <li><a href="#exemple-daffichage">Exemple d&rsquo;affichage</a></li>
+      </ul>
+    </li>
+    <li><a href="#accéder-à-une-colonne-ex--température">Accéder à une colonne (ex. : Température)</a></li>
+    <li><a href="#moyenne-de-solubilité-pour-un-composé">Moyenne de solubilité pour un composé</a></li>
+    <li><a href="#boucler-sur-les-composés">Boucler sur les composés</a></li>
+    <li><a href="#ajouter-une-colonne-calculée">Ajouter une colonne calculée</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#objectifs-1">Objectifs</a></li>
+    <li><a href="#exercice--cristallisation">Exercice – Cristallisation</a>
+      <ul>
+        <li><a href="#contenu-du-fichier">Contenu du fichier</a></li>
+      </ul>
+    </li>
+    <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Dictionnaires</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/index.html" title="Listes, chaînes et visualisation des données (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/index.html" title="Tableaux numpy et droite de régression (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine7-" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="dictionnaires"> Dictionnaires</h1>
+
+<h2 id="objectifs">Objectifs</h2>
+<ul>
+<li>Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique)</li>
+<li>Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours).</li>
+<li>Lire un fichier csv contenant des données expérimentales</li>
+<li>Explorer les données.</li>
+<li>Filtrer les résultats pour une donnée ciblée.</li>
+<li>Comparer des valeurs selon une donnée.</li>
+</ul>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Apprendre par la pratique
+  </summary>
+  <div class="box-content">
+<ul>
+<li><strong>Faites les exercices</strong> en vous aidant des notes de cours ci-dessous.</li>
+<li>Certains seront fait en classe à titre de démonstration.</li>
+<li>Les solutions seront disponibles à la fin de la semaine prochaine.</li>
+</ul>
+  </div>
+</details>
+<hr>
+<h1 id="exercices">Exercices</h1>
+<h2 id="fichiers-de-départ-à-utiliser">Fichiers de départ à utiliser</h2>
+<ol>
+<li>Cliquez sur le lien pour télécharger le fichier <code>.ipynb</code>:
+<a href="https://python-a25.netlify.app/blocnotes/exercices_dict_fichiers.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></li>
+<li>Cliquez sur le lien pour télécharger le fichier de données (<code>.csv</code>): <a href="/semaine7-/solubilite.csv">solubilite.csv</a>
+<ul>
+<li>Ce fichier de données sera utilisé dans les exercices #2 à #5.</li>
+</ul>
+</li>
+<li>Enregistrez le fichier dans votre dossier <strong>exercices</strong> de la semaine en cours.</li>
+<li>Ouvrez <strong>Visual Studio Code</strong>.</li>
+<li>Dans VS Code, recherchez et ouvrez le fichier <code>exercices_dict_fichiers.ipynb</code></li>
+<li>Assurez-vous que le noyau Python (<code>Kernel</code>) soit sélectionné.</li>
+<li>Vous pouvez commencer à faire les exercices.</li>
+</ol>
+<h2 id="exercice-1--densités">Exercice 1 – Densités</h2>
+<p>On veut représenter la densité (en g/mL) de différentes substances à l’aide d’un <strong>dictionnaire</strong>.</p>
+<ol>
+<li>
+<p><strong>Créez</strong> un dictionnaire nommé <code>densites</code> qui contient les valeurs suivantes :</p>
+<ul>
+<li>eau : 1.0</li>
+<li>éthanol : 0.79</li>
+<li>mercure : 13.6</li>
+</ul>
+<p>Exemple de structure attendue :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>densites <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;eau&#34;</span>: <span style="color:#ae81ff">1.0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;éthanol&#34;</span>: <span style="color:#ae81ff">0.79</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;mercure&#34;</span>: <span style="color:#ae81ff">13.6</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Affichez</strong> uniquement la densité du mercure. <em>(Indice : utilise la clé <code>&quot;mercure&quot;</code> dans le dictionnaire.)</em></p>
+</li>
+<li>
+<p><strong>Ajoutez</strong> une nouvelle entrée au dictionnaire pour l’huile, avec une densité de <code>0.91</code>. <em>(Indice : utilise la clé <code>&quot;huile&quot;</code> dans le dictionnaire.)</em></p>
+</li>
+<li>
+<p><strong>Affichez</strong> ensuite toutes les substances et leur densité à l’aide d’une boucle <code>for</code> et de <code>densites.items()</code>.</p>
+</li>
+</ol>
+<p><strong>Résultats attendus</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Densité du mercure : 13.6 g/mL
+eau : 1.0 g/mL
+éthanol : 0.789 g/mL
+mercure : 13.6 g/mL
+huile : 0.91 g/mL</code></pre></div>
+
+<details open class=" box cstyle notices orange">
+  <summary class="box-label" tabindex="-1">
+    Rappel
+  </summary>
+  <div class="box-content">
+<ul>
+<li>Si l&rsquo;importation de <code>pandas</code> est faite qu&rsquo;une seule fois, au début de l&rsquo;exercice #2, utilisez <strong>Exécuter tout</strong> pour éviter l&rsquo;erreur <em><code>NameError: name 'pd' is not defined</code></em>.</li>
+</ul>
+  </div>
+</details>
+<h2 id="exercice-2--chargement-et-exploration-de-données">Exercice 2 – Chargement et exploration de données</h2>
+<ol>
+<li>
+<p><strong>Charger le fichier CSV</strong></p>
+<ul>
+<li>Utilisez la fonction <code>pd.read_csv(&quot;solubilite.csv&quot;)</code> pour importer les données dans un DataFrame nommé <code>df</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Explorer rapidement les données</strong></p>
+<ul>
+<li>Affichez les <strong>5 premières lignes</strong> du DataFrame avec la méthode <code>.head()</code>.</li>
+<li>Affichez les <strong>10 premières lignes</strong> du DataFrame avec la méthode <code>.head(10)</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Identifier la structure du tableau</strong></p>
+<ul>
+<li>Affichez la liste des <strong>noms de colonnes</strong> avec l’attribut <code>.columns</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Filtrer les données pour un composé précis</strong></p>
+<ul>
+<li>Sélectionnez toutes les <strong>températures</strong> correspondant au composé <code>&quot;NaCl&quot;</code>.</li>
+<li><strong>Indice</strong> : commence par isoler les lignes où la colonne <code>&quot;Composé&quot;</code> vaut <code>&quot;NaCl&quot;</code>, puis affiche uniquement la colonne <code>&quot;Température&quot;</code>.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Résultats attendus</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>2. Exploration - 5 et 10 premières lignes
+Composé  Température  Solubilité
+0    NaCl            0        35.7
+1    NaCl           20        36.0
+2    NaCl           40        36.5
+3    NaCl           60        37.0
+4    NaCl           80        37.2
+  Composé  Température  Solubilité
+0    NaCl            0        35.7
+1    NaCl           20        36.0
+2    NaCl           40        36.5
+3    NaCl           60        37.0
+4    NaCl           80        37.2
+5    KNO3            0        13.3
+6    KNO3           20        31.6
+7    KNO3           40        63.9
+8    KNO3           60        85.5
+9    KNO3           80       110.0
+
+3. Colonnes
+Index([&#39;Composé&#39;, &#39;Température&#39;, &#39;Solubilité&#39;], dtype=&#39;object&#39;)
+
+4. Températures de NaCl
+Températures pour NaCl :
+0     0
+1    20
+2    40
+3    60
+4    80
+Name: Température, dtype: int64</code></pre></div>
+<h2 id="exercice-3--moyenne-de-solubilité">Exercice 3 – Moyenne de solubilité</h2>
+<p>On dispose de données expérimentales de solubilité (en g/100 mL d’eau) pour différents sels à différentes températures.</p>
+<ol>
+<li>Sélectionne uniquement les valeurs de solubilité correspondant au sel <strong><code>&quot;KNO3&quot;</code></strong>. <em>Utilise df[df[&ldquo;Compose&rdquo;] == &ldquo;KNO3&rdquo;</em></li>
+<li>Calcule la moyenne de ces valeurs à l’aide de <code>mean()</code>. Utilise le résultat de la question <code>1.</code> avec un filtre sur la colonne &ldquo;Solubilité&rdquo;.</li>
+<li>Répète la même opération pour le sel <strong><code>&quot;NaCl&quot;</code></strong>.</li>
+<li>Affiche un message contenant les deux moyennes.</li>
+</ol>
+<p><strong>Résultats attendus</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Moyenne de solubilité - KNO3 : 60.86 g/100 mL
+Moyenne de solubilité - NaCl : 36.48 g/100 mL</code></pre></div>
+<h2 id="exercice-4--boucle-sur-les-composés">Exercice 4 – Boucle sur les composés</h2>
+<ol>
+<li>Calculez la <strong>moyenne de solubilité</strong> de chaque composé à partir des valeurs disponibles.
+<ul>
+<li>Utilisez <code>.unique()</code> pour pouvoir cibler tous les composé présents.
+<em><strong>Astuce</strong> : pense à utiliser une boucle pour traiter chaque composé du fichier.</em></li>
+</ul>
+</li>
+<li>Affichez le nom du composé suivi de sa moyenne de solubilité. Utilisez <code>.mean()</code>.</li>
+<li>Indiquez également si cette moyenne est <strong>supérieure à 80 g/100 mL</strong> ou non.
+*Utilisez <code>if/else</code> pour traiter le cas.</li>
+</ol>
+<p><strong>Résultats attendus</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>NaCl : 36.48 g/100 mL (inférieure ou égale à 80 g/100 mL)
+KNO3 : 60.86 g/100 mL (inférieure ou égale à 80 g/100 mL)
+CaCl2 : 84.50 g/100 mL (supérieure à 80 g/100 mL)
+C12H22O11 : 253.64 g/100 mL (supérieure à 80 g/100 mL)</code></pre></div>
+<h2 id="exercice-5--ajout-dune-colonne">Exercice 5 – Ajout d’une colonne</h2>
+<ol>
+<li>Crée une colonne <code>Tendance</code> qui vaut <code>&quot;Haute&quot;</code> si la solubilité est &gt; 80 et <code>&quot;Faible&quot;</code> sinon.
+<ul>
+<li>Utilise <code>np.where(condition, valeur_si_vrai, valauer_si_faux)</code>.</li>
+</ul>
+</li>
+<li>Affiche les 10 premières lignes du tableau mis à jour avec <code>.head(10)</code>.</li>
+</ol>
+<p><strong>Résultats attendus</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Composé  Température  Solubilité Tendance
+0    NaCl            0        35.7   Faible
+1    NaCl           20        36.0   Faible
+2    NaCl           40        36.5   Faible
+3    NaCl           60        37.0   Faible
+4    NaCl           80        37.2   Faible
+5    KNO3            0        13.3   Faible
+6    KNO3           20        31.6   Faible
+7    KNO3           40        63.9   Faible
+8    KNO3           60        85.5    Haute
+9    KNO3           80       110.0    Haute</code></pre></div>
+<ol start="3">
+<li>Refaites l&rsquo;exercice, mais en utilisant <code>df.loc</code> au lieu de <code>np.where()</code> et assurez vous que les deux résultats sont les mêmes.</li>
+</ol>
+<hr>
+<h1 id="cours">Cours</h1>
+<h2 id="quest-ce-quun-dictionnaire">Qu’est-ce qu’un dictionnaire?</h2>
+<p>Un <strong>dictionnaire</strong> est une structure de données qui associe des <strong>clés</strong> à des <strong>valeurs</strong>.
+Il permet de stocker des informations organisées, un peu comme un mini-fichier Excel, mais avec des étiquettes personnalisées au lieu d’indices numériques.</p>
+<p>Les dictionnaires sont utiles pour :</p>
+<ul>
+<li>Associer des symboles d’éléments à des valeurs (masse molaire, charge, état).</li>
+<li>Regrouper des résultats par échantillon (ex. température par lieu).</li>
+<li>Associer des noms de gènes à leur expression.</li>
+<li>etc.</li>
+</ul>
+<p><strong>Syntaxe de base</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mon_dictionnaire <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clé1&#34;</span>: valeur1,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;clé2&#34;</span>: valeur2
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Attention à la casse et aux accents dans les clés
+  </summary>
+  <div class="box-content">
+<ul>
+<li>Lorsque vous utilisez les <strong>clés d’un dictionnaire</strong>, il faut respecter exactement l’écriture définie :
+<ul>
+<li>La <strong>casse</strong> (majuscules/minuscules) et les <strong>lettres accentuées</strong> comptent :
+<ul>
+<li><code>&quot;Nom&quot;</code> et <code>&quot;nom&quot;</code> sont considérés comme <strong>deux clés différentes</strong> dans un dictionnaire.</li>
+<li><code>&quot;Prénom&quot;</code> et <code>&quot;Prenom&quot;</code> ne désignent <strong>pas la même clés</strong> dans un dictionnaire.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Si vous obtenez une erreur du type <code>KeyError</code>, vérifiez l’orthographe, la casse et les accents du nom utilisé.</li>
+</ul>
+  </div>
+</details>
+<h3 id="exemple">Exemple</h3>
+<p>Un dictionnaire contenant les masses molaires de quelques éléments :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;H&#34;</span>: <span style="color:#ae81ff">1.008</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;O&#34;</span>: <span style="color:#ae81ff">15.999</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;C&#34;</span>: <span style="color:#ae81ff">12.011</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h2 id="accéder-à-une-valeur-avec-une-clé">Accéder à une valeur avec une clé</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(masses_molaires[<span style="color:#e6db74">&#34;O&#34;</span>])  <span style="color:#75715e"># Affiche : 15.999</span></span></span></code></pre></div>
+<blockquote>
+<p>Si la clé n’existe pas, Python déclenche une erreur <code>KeyError</code>.</p>
+</blockquote>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">---------------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">KeyError</span>                                  Traceback (most recent call last)
+</span></span><span style="display:flex;"><span>Cell In[<span style="color:#ae81ff">2</span>], line <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">1</span> masses_molaires <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">2</span>     <span style="color:#e6db74">&#34;H&#34;</span>: <span style="color:#ae81ff">1.008</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">3</span>     <span style="color:#e6db74">&#34;O&#34;</span>: <span style="color:#ae81ff">15.999</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">4</span>     <span style="color:#e6db74">&#34;C&#34;</span>: <span style="color:#ae81ff">12.011</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">5</span> }
+</span></span><span style="display:flex;"><span><span style="color:#f92672">----&gt;</span> <span style="color:#ae81ff">7</span> print(masses_molaires[<span style="color:#e6db74">&#34;Fe&#34;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">KeyError</span>: <span style="color:#e6db74">&#39;Fe&#39;</span></span></span></code></pre></div>
+<h2 id="ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</h2>
+<h3 id="ajouter-une-donnée">Ajouter une donnée</h3>
+<p><strong>Exemple</strong>: L&rsquo;azote</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires[<span style="color:#e6db74">&#34;N&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">14.007</span></span></span></code></pre></div>
+<h3 id="modifier-une-valeur">Modifier une valeur</h3>
+<p><strong>Exemple</strong>: Le carbone</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>masses_molaires[<span style="color:#e6db74">&#34;C&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">12.01</span>  <span style="color:#75715e"># Correction</span></span></span></code></pre></div>
+<h2 id="vérifier-si-une-clé-est-présente-avec-if-et-in">Vérifier si une clé est présente avec <em>if</em> et <em>in</em></h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;H&#34;</span> <span style="color:#f92672">in</span> masses_molaires:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;L’hydrogène est dans le dictionnaire.&#34;</span>)</span></span></code></pre></div>
+<h2 id="parcourir-un-dictionnaire-à-laide-de-for">Parcourir un dictionnaire à l&rsquo;aide de <em>for</em></h2>
+<h3 id="via-les-clés">Via les clés</h3>
+<p><strong>Par défaut</strong>, la boucle <code>for</code> parcours les clés (<strong>Elles sont l&rsquo;équivalent des indices dans les tableaux</strong>)</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> masses_molaires:
+</span></span><span style="display:flex;"><span>    print(element)</span></span></code></pre></div>
+<p><strong>Résultat</strong>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>H
+O
+C
+N</code></pre></div>
+<h3 id="via-les-valeurs-avec-values">Via les valeurs avec .values()</h3>
+<ul>
+<li>Pour parcourir les valeurs il faut le préciser à l&rsquo;aide de <code>dictionnaire.values()</code>.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> valeur <span style="color:#f92672">in</span> masses_molaires<span style="color:#f92672">.</span>values():
+</span></span><span style="display:flex;"><span>    print(valeur)</span></span></code></pre></div>
+<p><strong>Résultat</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>1.008
+15.999
+12.01
+14.007</code></pre></div>
+<ul>
+<li><code>.values()</code> permet d’obtenir <strong>uniquement les valeurs</strong> du dictionnaire, sans les clés.</li>
+<li><strong>Utile quand on veut faire un calcul avec les valeurs</strong>, comme une moyenne ou une somme.</li>
+</ul>
+<h3 id="via-les-paires-clé-valeur-">Via les paires clé-valeur :</h3>
+<ul>
+<li>Pour avoir <strong>les deux</strong> (la clé <strong>ET</strong> la valeur associée) il faut préciser <strong>deux variables</strong> dans la boucle <code>for</code>.</li>
+</ul>
+<p><strong>Exemple</strong> (variables <code>element</code> et <code>masse</code>) :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element, masse <span style="color:#f92672">in</span> masses_molaires<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>element<span style="color:#e6db74">}</span><span style="color:#e6db74"> → </span><span style="color:#e6db74">{</span>masse<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<p><strong>Résultat</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>H → 1.008
+O → 15.999
+C → 12.01
+N → 14.007</code></pre></div>
+<ul>
+<li><code>.items()</code> permet d’obtenir les couples <strong>clé-valeur</strong> sous forme de paires (appelées aussi tuples en Python).</li>
+<li>Utile quand on veut à la fois le <strong>nom (clé)</strong> et la <strong>valeur associée</strong> pour un affichage ou un traitement.</li>
+</ul>
+<h2 id="supprimer-une-entrée-du-dictionnaire-avec-del">Supprimer une entrée du dictionnaire avec del</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">del</span> masses_molaires[<span style="color:#e6db74">&#34;H&#34;</span>]</span></span></code></pre></div>
+<p><strong>Résultat si on affiche le dictionnaire après la suppression</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>{&#39;O&#39;: 15.999, &#39;C&#39;: 12.01, &#39;N&#39;: 14.007}</code></pre></div>
+<hr>
+<h2 id="traitement-de-fichiers-texte-csv-avec-pandas">Traitement de fichiers texte (.csv) avec Pandas</h2>
+<p>Les fichiers <code>.csv</code> (<em>Comma-Separated Values</em>) permettent de stocker des tableaux de données.</p>
+<p><strong>Exemple de fichier <code>mesures.csv</code> :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>temps,temperature
+0,22.5
+5,24.1
+10,26.3
+15,28.0</code></pre></div>
+<!--
+### Lire et écrire des fichiers de données (.csv)
+
+**Écrire (créer)** :
+
+Voici comment procéder:
+
+* `with open("donnees.csv", "w") as f` : On ouvre (ou crée) un fichier nommé `donnees.csv` en mode écriture (`"w"`), prêt à y écrire du texte.
+* `f.write("Nom,Âge\n")` : On écrit l'en-tête (les noms de colonnes) dans le fichier.
+* `f.write("Alice,20\n")` : On écrit la première ligne de données.
+* `f.write("Bob,22\n")` : On écrit la deuxième ligne de données.
+
+Le code complet:
+```python
+with open("donnees.csv", "w") as f:
+    f.write("Nom,Âge\n")
+    f.write("Alice,20\n")
+    f.write("Bob,22\n")
+```
+
+**Lire un fichier `.csv`**
+
+Voici comment procéder :
+
+* `import csv` : On importe le module `csv`, utile pour lire des fichiers CSV.
+* `with open("donnees.csv", "r") as f` : On ouvre le fichier `donnees.csv` en mode lecture (`"r"`).
+* `contenu = f.read()` : On lit tout le contenu du fichier et on le met dans la variable `contenu`.
+* `print(contenu)` : On affiche le contenu du fichier à l’écran.
+
+
+```python
+# Lecture du fichier CSV
+import csv
+
+with open("donnees.csv", "r") as f:
+    contenu = f.read()
+    print(contenu)
+```
+
+**Pour des données **numériques**, on peut utiliser `numpy.savetxt()` et `numpy.loadtxt()`**
+
+```python
+import numpy as np
+
+# Sauvegarder un tableau
+tableau = np.array([[1, 2], [3, 4]])
+np.savetxt("tableau.csv", tableau, delimiter=",")
+
+# Charger un tableau
+donnees = np.loadtxt("tableau.csv", delimiter=",")
+print(donnees)
+```
+-->
+<h3 id="importer-la-bibliothèque">Importer la bibliothèque</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd</span></span></code></pre></div>
+<ul>
+<li>On utilisera l&rsquo;alias <code>pd</code> pour accéder aux fonctionnalités de Pandas.</li>
+</ul>
+<h2 id="charger-un-fichier-csv">Charger un fichier CSV</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;solubilite.csv&#34;</span>)</span></span></code></pre></div>
+<ul>
+<li>Le contenu du fichier est stocké dans une variable de type <code>DataFrame</code> représentée par <code>df</code>.</li>
+</ul>
+<h2 id="afficher-les-5-premières-lignes-dun-dataframe">Afficher les 5 premières lignes d&rsquo;un dataframe</h2>
+<p><strong>NB</strong> : <code>df.head()</code> affichera <strong>par défaut</strong> les <strong>5</strong> premières lignes du dataframe.</p>
+<ul>
+<li>Pour afficher un autre nombre de lignes, il faut l&rsquo;indiquer dans les <code>()</code>.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>head())	<span style="color:#75715e"># 5 premières lignes</span>
+</span></span><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>))	<span style="color:#75715e"># 10 premières lignes</span></span></span></code></pre></div>
+<h3 id="exemple-daffichage-pour-dfhead">Exemple d&rsquo;affichage pour <em>df.head()</em></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>   Sel          Température               Solubilité
+0  NaCl                  20                     35.7
+1  NaCl                  40                     36.5
+2  NaCl                  60                     37.3
+3  KNO3                  20                     31.6
+4  KNO3                  40                     63.9</code></pre></div>
+<h2 id="afficher-les-noms-des-colonnes">Afficher les noms des colonnes</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>columns)</span></span></code></pre></div>
+<p><strong>Résultat</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Index([&#39;Sel&#39;, &#39;Température&#39;, &#39;Solubilité&#39;], dtype=&#39;object&#39;)</code></pre></div>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Attention à la casse et aux accents dans les noms de colonnes
+  </summary>
+  <div class="box-content">
+<ul>
+<li>Lorsque vous utilisez les <strong>noms de colonnes dans un dataframe</strong>, il faut respecter exactement l’écriture définie :
+<ul>
+<li>La <strong>casse</strong> (majuscules/minuscules) et les <strong>lettres accentuées</strong> comptent :
+<ul>
+<li><code>&quot;Sel&quot;</code> et <code>&quot;sel&quot;</code> sont considérés comme <strong>deux colonnes différentes</strong> dans un dataframe.</li>
+<li><code>&quot;Solubilité&quot;</code> et <code>&quot;Solubilite&quot;</code> ne désignent <strong>pas la même colonne</strong> dans un dataframe.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Si vous obtenez une erreur du type <code>KeyError</code>, vérifiez l’orthographe, la casse et les accents du nom utilisé.</li>
+</ul>
+  </div>
+</details>
+<h2 id="afficher-toutes-les-mesures-pour-un-seul-composé">Afficher toutes les mesures pour un seul composé</h2>
+<p><strong>Exemple</strong> : tout ce qui concerne le <strong>nitrate de potassium (KNO₃)</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Sel&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;KNO3&#34;</span>
+</span></span><span style="display:flex;"><span>print(df[filtre])</span></span></code></pre></div>
+<ul>
+<li>Le filtre sélectionne les <strong>lignes où le composé est exactement &ldquo;KNO3&rdquo;</strong>.</li>
+</ul>
+<h3 id="exemple-daffichage">Exemple d&rsquo;affichage</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>      Sel       Température               Solubilité
+3    KNO3                20                     31.6
+4    KNO3                40                     63.9
+5    KNO3                60                     85.5</code></pre></div>
+<h2 id="accéder-à-une-colonne-ex--température">Accéder à une colonne (ex. : Température)</h2>
+<ul>
+<li>Afficher toutes les valeurs de la colonne <strong>Température</strong> du tableau de données.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(df[<span style="color:#e6db74">&#34;Température&#34;</span>])</span></span></code></pre></div>
+<p><strong>Résultat</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>0      0
+1     20
+2     40
+3     60
+4     80
+5      0
+6     20
+7     40
+8     60
+9     80
+10     0
+11    20
+12    40
+13    60
+14    80
+15     0
+16    20
+17    40
+18    60
+19    80
+Name: Température, dtype: int64</code></pre></div>
+<h2 id="moyenne-de-solubilité-pour-un-composé">Moyenne de solubilité pour un composé</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;NaCl&#34;</span>
+</span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> df[filtre][<span style="color:#e6db74">&#34;Solubilité&#34;</span>]<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne de solubilité pour NaCl : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
+<p><strong>Explication</strong> :</p>
+<ul>
+<li><code>filtre = df[&quot;&quot;] Composé == &quot;NaCl&quot;</code> : On crée un filtre pour ne garder que les lignes où le sel est <strong>NaCl</strong>.</li>
+<li><code>moyenne = df[filtre][&quot;Solubilité&quot;].mean()</code> : On calcule la <strong>moyenne</strong> des valeurs de solubilité pour <strong>NaCl</strong> seulement.</li>
+</ul>
+<p><strong>Résultat</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Moyenne de solubilité pour NaCl : 36.48 g/100mL</code></pre></div>
+<h2 id="boucler-sur-les-composés">Boucler sur les composés</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>composes <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Composé&#34;</span>]<span style="color:#f92672">.</span>unique()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> compose <span style="color:#f92672">in</span> composes:
+</span></span><span style="display:flex;"><span>    moyenne <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#34;Composé&#34;</span>] <span style="color:#f92672">==</span> compose][<span style="color:#e6db74">&#34;Solubilité&#34;</span>]<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>compose<span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
+<p><strong>Explication</strong> :</p>
+<ul>
+<li><code>composes = df[&quot;Composé&quot;].unique()</code> : On récupère la liste des différents sels présents dans la colonne <strong>Composé</strong>.</li>
+<li><code>for compose in composes:</code> : Pour chaque composé dans cette liste, on calcule la moyenne de la solubilité.</li>
+</ul>
+<p><strong>Résultat</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>NaCl : 36.48 g/100mL
+KNO3 : 60.86 g/100mL
+CaCl2 : 84.50 g/100mL
+C12H22O11 : 253.64 g/100mL</code></pre></div>
+<h2 id="ajouter-une-colonne-calculée">Ajouter une colonne calculée</h2>
+<p><strong>Exemple</strong> : ajouter une colonne indiquant si la solubilité est <strong>supérieure à 80 &ldquo;True&rdquo; ou non &ldquo;False&rdquo;</strong>.</p>
+<p>La colonne <strong>Évaluation</strong> aura la valeur <code>True</code> si la solubilité est supérieure à 80, <code>False</code> sinon.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Évaluation&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Solubilité&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>print(df)</span></span></code></pre></div>
+<p><strong>Résultat</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Composé  Température  Solubilité  Évaluation
+0        NaCl            0        35.7       False
+1        NaCl           20        36.0       False
+2        NaCl           40        36.5       False
+3        NaCl           60        37.0       False
+4        NaCl           80        37.2       False
+5        KNO3            0        13.3       False
+6        KNO3           20        31.6       False
+7        KNO3           40        63.9       False
+8        KNO3           60        85.5        True
+9        KNO3           80       110.0        True
+10      CaCl2            0        59.5       False
+11      CaCl2           20        74.5       False
+12      CaCl2           40        83.5        True
+13      CaCl2           60        95.0        True
+14      CaCl2           80       110.0        True
+15  C12H22O11            0       179.2        True
+16  C12H22O11           20       204.0        True
+17  C12H22O11           40       238.0        True
+18  C12H22O11           60       287.0        True
+19  C12H22O11           80       360.0        True</code></pre></div>
+<hr>
+<h1 id="atelier">Atelier</h1>
+<ol>
+<li>Téléchargez le fichier de départ (<code>.ipynb</code>): <a href="https://python-a25.netlify.app/blocnotes/atelier_dict_fichiers.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></li>
+<li>Téléchargez le fichier de données (<code>.csv</code>): <a href="/semaine7-/cristallisation.csv">cristallisation.csv</a></li>
+<li>Déplacez-le dans votre dossier prévu pour <strong>l&rsquo;atelier de la semaine 8</strong>.</li>
+<li>Ouvrez votre dossier de travail <code>programmation-sciences</code> <strong>à partir de Visual Studio Code</strong>.
+<ul>
+<li>Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).</li>
+</ul>
+</li>
+</ol>
+<h2 id="objectifs-1">Objectifs</h2>
+<ul>
+<li>Lire un fichier CSV avec <strong>pandas</strong>.</li>
+<li>Construire et manipuler un <strong>dictionnaire imbriqué</strong>.</li>
+<li>Parcourir et mettre à jour les données.</li>
+<li>Faire des comparaisons numériques.</li>
+</ul>
+<h2 id="exercice--cristallisation">Exercice – Cristallisation</h2>
+<p>On a mesuré la température de cristallisation de différentes substances dans plusieurs conditions expérimentales (pression normale, pression élevée, en solution aqueuse, etc.). Les résultats sont dans le fichier <code>cristallisation.csv</code>.</p>
+<h3 id="contenu-du-fichier">Contenu du fichier</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-csv" data-lang="csv">substance,condition,temp_cristallisation
+NaCl,pression_normale,801
+NaCl,en_solution,800
+H2O,pression_normale,0
+H2O,pression_elevee,-1
+Fe,pression_normale,1538
+Fe,en_solution,1530</code></pre></div>
+<ol>
+<li>
+<p><strong>Charger</strong> le fichier CSV avec <code>pandas</code> et afficher les 5 premières lignes pour vérifier.</p>
+</li>
+<li>
+<p><strong>Transformer</strong> les données en un dictionnaire imbriqué de la forme :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;NaCl&#34;</span>: {<span style="color:#e6db74">&#34;pression_normale&#34;</span>: <span style="color:#ae81ff">801</span>, <span style="color:#e6db74">&#34;en_solution&#34;</span>: <span style="color:#ae81ff">800</span>},
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;H2O&#34;</span>: {<span style="color:#e6db74">&#34;pression_normale&#34;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#34;pression_elevee&#34;</span>: <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>},
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Fe&#34;</span>: {<span style="color:#e6db74">&#34;pression_normale&#34;</span>: <span style="color:#ae81ff">1538</span>, <span style="color:#e6db74">&#34;en_solution&#34;</span>: <span style="color:#ae81ff">1530</span>}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p><em>(Indice : utilise une boucle sur les lignes du DataFrame avec <code>iterrows()</code> ou <code>itertuples()</code>.)</em></p>
+</li>
+<li>
+<p><strong>Parcourir</strong> le dictionnaire et afficher une phrase pour chaque valeur, par exemple :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>NaCl cristallise à 801°C sous pression normale.
+</span></span><span style="display:flex;"><span>NaCl cristallise à 800°C en solution.</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Ajouter une donnée</strong> : <code>H2O</code> cristallise à <code>-5°C</code> dans la condition <code>&quot;en_solution&quot;</code>. Mets à jour le dictionnaire.</p>
+</li>
+<li>
+<p><strong>Vérifier</strong> si la substance <code>&quot;Cu&quot;</code> est présente. Si elle ne l’est pas, afficher :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Cu n&#39;est pas présent dans les données.</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Filtrer</strong> et afficher toutes les substances qui ont une température de cristallisation <strong>inférieure à 100°C</strong> dans au moins une condition.</p>
+</li>
+<li>
+<p><strong>Comparer</strong> les valeurs d’une même substance selon les conditions, et afficher l’écart maximal :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Pour H2O, l’écart maximal est de 5°C entre deux conditions.</span></span></code></pre></div>
+</li>
+</ol>
+<hr>
+<h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
+<blockquote>
+<p>Semaine prochaine est une révision</p>
+</blockquote>
+<ol>
+<li>Lire la prochaine leçon : <a href="/semaine9/index.html">9. Révision</a></li>
+<li>Faire les exercices de la <a href="/semaine9/index.html#exercices">prochaine leçon :</a></li>
+</ol>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
+            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a></li>
+            <li class="active " data-nav-id="/semaine7-/index.html"><a class="padding" href="/semaine7-/index.html">7. Dictionnaires</a></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">8. Tableaux numpy et droite de régression</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Lecture et écriture de fichiers textes (avec NumPy ou Pandas)</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> Projet - Présentation, analyse et traduction</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1759070220" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759070220" defer></script>
+    <script src="/js/theme.js?1759070220" defer></script>
+  </body>
+</html>

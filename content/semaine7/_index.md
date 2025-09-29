@@ -1,40 +1,20 @@
 +++
 chapter = true
 pre = "7."
-title = " Tableaux numpy et droite de régression"
+title = " Dictionnaires"
 weight = 107
-draft = true
+draft = false
 +++
-
-## à faire
-- S8 Dict
-- Les fichiers de données
-- Semaine 11 
-   - enlever Pandas, 
-   - ajouter ici les éléments manquant - filtre
-   - Ajouter (S9) exos de S8 comme Atelier S9 + NumPy load save
-   - ajouter exos avec Dictionnaires dans S8 (chimie, courbe de titrage?)
-- Semaine 7 
-   - ajouter exos/Atelier Physique 
-   - S'assurer le cours contient toutes les notions nécessaires
+ 
 
 ## Objectifs
 
-* Créer des **tableaux de données** à une ou deux dimensions.
-* Calculer des **moyennes** et **écarts types**.
-* Gérer des données **expérimentales incomplètes** (`np.nan`).
-* Comparer des résultats entre éléments ou conditions.
-* Filtrer des données selon des conditions.
-* Tracer un graphique à barres muni d'une barre d'erreur avec `matplotlib`.
-* Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R².
-* Établir une relation entre deux données.
-
-Comprendre ce qu’est NumPy et pourquoi il est utile en sciences.
-Apprendre à créer et manipuler des tableaux NumPy.
-Utiliser NumPy pour traiter des données physiques et faire des calculs rapides.
-Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces).
-
----
+* Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique)
+* Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours).
+* Lire un fichier csv contenant des données expérimentales
+* Explorer les données.
+* Filtrer les résultats pour une donnée ciblée.
+* Comparer des valeurs selon une donnée.
 
 {{% notice style="accent" title="Apprendre par la pratique" %}}
 - **Faites les exercices** en vous aidant des notes de cours ci-dessous.
@@ -42,586 +22,549 @@ Appliquer NumPy à des situations concrètes en mécanique (cinématique, énerg
 - Les solutions seront disponibles à la fin de la semaine prochaine.
 {{% /notice %}}
 
+---
+
 # Exercices
 
-## Fichier de départ à utiliser
+## Objectifs
 
-1. Cliquez sur le lien pour télécharger le fichier.
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_numpy.ipynb)
+* **Créer / accéder / modifier / supprimer** des éléments,
+* **Parcourir** un dictionnaire,
+* **Transformer en listes** (`keys()`, `values()`, `items()`),
+* **Faire des calculs** à partir des valeurs.
+
+## Fichiers de départ à utiliser
+
+1. Cliquez sur le lien pour télécharger le fichier `.ipynb`:
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_dictionnaies.ipynb)
 2. Enregistrez le fichier dans votre dossier **exercices** de la semaine en cours.
 3. Ouvrez **Visual Studio Code**.
-4. Dans VS Code, recherchez et ouvrez le fichier `exercices_numpy.ipynb`
+4. Dans VS Code, recherchez et ouvrez le fichier `exercices_dictionnaires.ipynb`
 5. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
 6. Vous pouvez commencer à faire les exercices.
 
 
-## Exercice 1 : Chute libre
+## Exercice 1 : Créer un dictionnaire
 
-Un objet est lâché sans vitesse initiale d’une hauteur $h = 20 \, m$.
-La position est donnée par :
+* Créer un dictionnaire vide nommé `cubes`.
+* En utilisant une boucle `for`, ajouter les entiers de 1 à 5 comme **clés**, et leur cube comme **valeurs**.
+* Afficher ensuite le dictionnaire.
 
-$$
-y(t) = h - \frac{1}{2} g t^2
-$$
-
-avec $g = 9.8 \, m/s^2$.
-
-Écris un programme qui :
-
-1. Crée un tableau `t` de 0 à 2 secondes (21 valeurs).
-2. Calcule la position `y`.
-3. Affiche les 5 premières valeurs.
+**Résultat attendu** :
+```
+Dictionnaire des cubes : {1: 1, 2: 8, 3: 27, 4: 64, 5: 125}
+```
 
 
-## Exercice 2 : Mouvement rectiligne uniforme
+## Exercice 2 : Extraire clés et valeurs
 
-Une voiture roule à $v = 15 \, m/s$.
-La position est donnée par :
+À partir du dictionnaire `cubes` créé à l’exercice 1 :
 
-$$
-x(t) = v \cdot t
-$$
+1. Créer une liste `cles` contenant toutes les clés.
+2. Créer une liste `valeurs` contenant toutes les valeurs.
+3. Afficher les deux listes.
 
-Écris un programme qui :
+*Indice* : utiliser `list(mon_dict.keys())` et `list(mon_dict.values())`.
 
-1. Crée un tableau de temps entre 0 et 10 s (par pas de 0.5).
-2. Calcule la position.
-3. Affiche la dernière valeur (la position après 10 s).
-
-
-## Exercice 3 : Énergie cinétique
-
-La formule est :
-
-$$
-E_c = \frac{1}{2} m v^2
-$$
-
-Un objet de masse $m = 2.0 \, kg$ accélère de 0 à 20 m/s.
-
-Écris un programme qui :
-
-1. Crée un tableau de vitesses de 0 à 20 m/s (pas de 2).
-2. Calcule l’énergie cinétique correspondante.
-3. Affiche les résultats.
+**Résultat attendu** :
+```
+Clés : [1, 2, 3, 4, 5]
+Valeurs : [1, 8, 27, 64, 125]
+```
 
 
-## Exercice 4 : Oscillations harmoniques
+## Exercice 3 : Parcourir `items()`
 
-La position d’un oscillateur est donnée par :
+Toujours avec le dictionnaire `cubes`, utiliser une boucle `for` sur `cubes.items()` pour afficher chaque clé et sa valeur sous la forme :
 
-$$
-x(t) = A \cos(\omega t)
-$$
+**Résultat attendu** :
+```
+Le cube de 1 est 1
+Le cube de 2 est 8
+Le cube de 3 est 27
+Le cube de 4 est 64
+Le cube de 5 est 125
+```
 
-avec $A = 0.1 \, m$, $\omega = 2 \pi \, rad/s$.
 
-Écris un programme qui :
+### Exercice 4 : Modifier et supprimer
 
-1. Crée un tableau `t` de 0 à 2 s (101 valeurs).
-2. Calcule la position `x(t)`.
-3. Affiche la valeur maximale et minimale de la position. 
+1. Ajouter une nouvelle paire `6: 216` dans le dictionnaire.
+2. Modifier la valeur associée à la clé `3` pour qu’elle devienne `30` (au lieu de `27`).
+3. Supprimer la clé `1` du dictionnaire.
+4. Afficher le dictionnaire final.
 
+
+**Résultat attendu** :
+```
+Dictionnaire final : {2: 8, 3: 30, 4: 64, 5: 125, 6: 216}
+```
 
 ---
 
 # Cours
 
-## Pourquoi NumPy ?
+## Qu’est-ce qu’un dictionnaire ?
 
-* En sciences, nous travaillons souvent avec des données numériques : mesures expérimentales, vecteurs, séries temporelles, etc.
-* En Python de base, on peut utiliser des listes, mais elles sont limitées pour les calculs scientifiques.
-* La **bibliothèque NumPy** (*Numerical Python*) permet de manipuler efficacement des tableaux numériques (***arrays***).
-
-## Importer la bibliothèque
-
-Avant de d’utiliser les fonctionnalités de NumPy, on doit importer la bibliothèque :
+* **Définition** : un dictionnaire est une structure de données qui associe une **clé** à une **valeur**.
+* **Image mentale** : c’est comme un **vrai dictionnaire** de langue → chaque mot (clé) a une définition (valeur).
+* **Syntaxe** :
 
 ```python
-import numpy as np
+mon_dico = {clé1: valeur1, clé2: valeur2, ...}
 ```
-Ici, `np` est un **alias** utilisé par convention.
 
+## Créer un dictionnaire
 
-## Créer des tableaux (arrays)
-
-### À partir d’une liste Python
+**Exemple 1** : concentrations de trois échantillons
 
 ```python
-import numpy as np
-
-v = np.array([2, 4, 6, 8])
-print(v)
+concentrations = {
+    1: 0.10,   # échantillon 1
+    2: 0.15,   # échantillon 2
+    3: 0.20    # échantillon 3
+}
 ```
 
-**Résultat** :
-```
-[2 4 6 8]
-```
+> Ici, les clés sont des **entiers** (numéro de l'échantillon), et les valeurs sont des nombres à virgule flottante (concentrations).
 
-### Générer rapidement des tableaux numériques
-
-* `np.arange(début, fin, pas)` → nombres régulièrement espacés.
-* `np.linspace(début, fin, n)` → n valeurs également réparties.
-* `np.zeros(n)` → n zéros.
-* `np.ones(n)` → n uns.
-
-Exemples :
+**Exemple 2** : capitales des pays
 
 ```python
-x = np.linspace(0, 10, 6)
-print(x)
+capitales = {
+    "Canada": "Ottawa",
+    "France": "Marseille",	# Erreur volontaire
+    "Japon": "Tokyo"
+}
 ```
 
-**Résultat** :
-```
-[ 0.  2.  4.  6.  8. 10.]
-```
-***AJOUTER EXEMPLES AUTRES FN***
+> Ici, les clés sont aussi des **chaînes de caractères** (pays), et les valeurs sont des chaînes (capitales).
 
-## Opérations vectorisées
+### Types **autorisés** comme clés 
 
-Avec NumPy, les **opérations s’appliquent à tout le tableau** (pas besoin de boucles `for`).
+* **Chaînes de caractères** : "nom", "programme", etc.
+* **Nombres** : 1, 2.5, -3
+* **Booléens** : True, False
+* **Tuples immuables** (ne contenant que des éléments immuables) : (1, 2), ("x", "y")
 
-```python
-x = np.array([0, 1, 2, 3])
-y = x**2   # chaque élément est mis au carré
-print(y)
-```
-
-**Résultat** :
-```
-[0 1 4 9]
-```
-
-### Opérations arithmétiques élémentaires
-
-Avec
-`a = np.array([1, 2, 3, 4])` et  
-`b = np.array([10, 20, 30, 40])`
-
-
-| Opération      | Exemple avec NumPy | Description                      | Résultat (vectorisé)    |
-| -------------- | ------------------ | -------------------------------- | ----------------------- |
-| Addition       | `a + b`            | addition élément par élément     | [11 22 33 44]           |
-| Soustraction   | `a - b`            | soustraction élément par élément | [-9 -18 -27 -36]        |
-| Multiplication | `a * b`            | produit élément par élément      | [10 40 90 160]          |
-| Division       | `a / b`            | division élément par élément     | [0.1 0.1 0.1 0.1]       |
-| Puissance      | `a ** 2`           | élève chaque élément au carré    | [1 4 9 16]              |
-| Racine carrée  | `np.sqrt(a)`       | racine carrée de chaque élément  | [1. 1.41421356 1.73205081 2.] |
-| Valeur absolue | `np.abs(a)`        | valeur absolue de chaque élément | [9 18 27 36]            |
-
-
-## Fonctions mathématiques
-
-NumPy propose beaucoup de fonctions
-
-### 1. Fonctions statistiques
-
-Avec `a = np.array([1, 2, 3, 4])`
-
-| Fonction   | Exemple        | Résultat
-| ---------- | -------------- | ----------------- |
-| Moyenne    | `np.mean(a)`   | 2.5               |
-| Médiane    | `np.median(a)` | 2.5               |
-| Somme      | `np.sum(a)`    | 10                |
-| Produit    | `np.prod(a)`   | 24                |
-| Variance   | `np.var(a)`    | 1.25              |
-| Écart-type | `np.std(a)`    | 1.118033988749895 |
-| Minimum    | `np.min(a)`    | 1                 |
-| Maximum    | `np.max(a)`    | 4                 |
-
-
-### 2. Fonctions logarithmiques et trigonométriques
-
-Avec ` = np.array([1, 2, 3, 4])`
-
-| Fonction           | Exemple          | Résultat                    |
-| ------------------ | ---------------- | --------------------------- |
-| Arrondi            | `np.round(a, 2)` | arrondit à 2 décimales      |
-| Plafond            | `np.ceil(a)`     | arrondi supérieur           |
-| Plancher           | `np.floor(a)`    | arrondi inférieur           |
-| Exponentielle      | `np.exp(a)`      | \$e^x\$ élément par élément |
-| Logarithme naturel | `np.log(a)`      | \$\ln(x)\$                  |
-| Logarithme base 2  | `np.log2(a)`     | \$\log\_{2}(x)\$           |
-| Logarithme base 10 | `np.log10(a)`    | \$\log\_{10}(x)\$           |
-
-| **Exponentielles et logarithmes** | `np.exp(x)`         | Exponentielle e^x                      | `np.exp(1) → 2.718…`           |
-|                                   | `np.expm1(x)`       | e^x - 1 (utile pour petites valeurs)   | `np.expm1(1e-5) → 1.000005e-5` |
-|                                   | `np.log1p(x)`       | ln(1+x)                                | `np.log1p(1e-5) → 0.00001`     |
-
- | `np.log(np.e) → 1`             |
- | `np.log2(8) → 3`               |
-| `np.log10(1000) → 3`           |
-
-
-Exemple :
-```python
-angles = np.linspace(0, np.pi, 4)
-print(np.sin(angles))
-```
-
-**Principales Fonctions trigonométriques**
-
-| Fonction                    | Exemple         | Résultat                     |
-| --------------------------- | --------------- | ---------------------------- |
-| Sinus                       | `np.sin(a)`     | sinus élément par élément    |
-| Cosinus                     | `np.cos(a)`     | cosinus élément par élément  |
-| Tangente                    | `np.tan(a)`     | tangente élément par élément |
-| Arcsin                      | `np.arcsin(a)`  | sinus inverse                |
-| Arccos                      | `np.arccos(a)`  | cosinus inverse              |
-| Arctan                      | `np.arctan(a)`  | tangente inverse             |
-| Conversion degrés → radians | `np.deg2rad(a)` | transforme ° en rad          |
-| Conversion radians → degrés | `np.rad2deg(a)` | transforme rad en °          |
-
-### Constantes et autres fonctions utiles
-
-| Catégorie                         | Fonction            | Description                            | Exemple                        |
-| --------------------------------- | ------------------- | -------------------------------------- | ------------------------------ |
-| **Constantes**                    | `np.pi`             | Valeur de π                            | `np.pi → 3.14159…`             |
-|                                   | `np.e`              | Base du logarithme naturel             | `np.e → 2.71828…`              |
-|                                   | `np.arctan2(y, x)`  | Arctangente de y/x en quadrant correct | `np.arctan2(1,1) → π/4`        |
-| **Racines et valeurs absolues**   | `np.sqrt(x)`        | Racine carrée                          | `np.sqrt(9) → 3`               |
-|                                   | `np.cbrt(x)`        | Racine cubique                         | `np.cbrt(27) → 3`              |
-|                                   | `np.abs(x)`         | Valeur absolue                         | `np.abs(-5) → 5`               |
-|                                   | `np.fabs(x)`        | Valeur absolue flottante               | `np.fabs(-5.2) → 5.2`          |
-| **Arrondi et troncature**         | `np.round(x, n)`    | Arrondi à n décimales                  | `np.round(3.14159,2) → 3.14`   |
-|                                   | `np.floor(x)`       | Arrondi inférieur                      | `np.floor(3.7) → 3`            |
-|                                   | `np.ceil(x)`        | Arrondi supérieur                      | `np.ceil(3.2) → 4`             |
-|                                   | `np.trunc(x)`       | Tronque la partie décimale             | `np.trunc(3.7) → 3`            |
-
-{{% notice style="blue" title="Principales fonctions mathématiques de NumPy" groupid="notice-toggle" expanded="false" %}}
+{{% notice style="accent"  title="Sachez que..." %}}
+En pratique, on utilise **surtout des chaînes de caractères pour la lisibilité**, mais Python permet cette flexibilité.
 {{% /notice %}}
 
+### Types **interdits** comme clés
+
+* Listes (car modifiables)
+* Dictionnaires (car modifiables)
+* Ensembles (set) (car modifiables)
 
 
+## Accéder à une valeur
+
+On utilise la clé entre crochets `[ ]`.
+
+```python
+print(capitales["Canada"])   # Ottawa
+```
+
+```
+Ottawa
+```
+
+{{% notice style="accent"  title=Attention %}}
+Si la clé n’existe pas, Python déclenche une erreur `KeyError`.
+```python
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+Cell In[3], line 1
+----> 1 print(capitales["USA"])
+
+KeyError: 'USA'
+```
+{{% /notice %}}
+
+Pour éviter ça, on peut utiliser la méthode `.get()` :
+
+```python
+print(capitales.get("USA", "Inconnu"))   # Inconnu
+```
+```
+Inconnu
+```
 
 
+## Ajouter ou modifier une valeur
+
+On peut ajouter une nouvelle clé ou modifier une valeur existante.
+
+```python
+capitales["Mexique"] = "Mexico"   # ajout
+capitales["France"] = "Paris" # modification
+print(capitales)
+```
+
+```
+{'Canada': 'Ottawa', 'France': 'Paris', 'Japon': 'Tokyo', 'Mexique': 'Mexico'}
+```
+
+## Supprimer une entrée
+
+On utilise le mot-clé `del`.
+
+```python
+del capitales["France"]
+print(capitales)
+```
+
+```
+{'Canada': 'Ottawa', 'Japon': 'Tokyo', 'Mexique': 'Mexico'}
+```
+
+## Parcourir un dictionnaire
+
+Souvent, on veut parcourir toutes les clés et valeurs avec `.items()`.
+
+```python
+for pays, capitale in capitales.items():
+    print(pays, "→", capitale)
+```
+
+```
+Canada → Ottawa
+Japon → Tokyo
+Mexique → Mexico
+```
+
+> `.items()` retourne **toutes les paires clé-valeur**.
+
+On peut aussi parcourir seulement les clés `.keys()`:
+
+```python
+for pays in capitales.keys():
+    print(pays)
+```
+
+```
+Canada
+Japon
+Mexique
+```
+
+Ou seulement les valeurs avec `.values()` :
+
+```python
+for capitale in capitales.values():
+    print(capitale)
+```
+
+```
+Ottawa
+Tokyo
+Mexico
+```
 
 
+## Créer une liste à partir d’un dictionnaire
+
+Imaginons que l’on ait relevé les températures d’une ville à différents moments de la journée. On stocke ces données dans un dictionnaire :
+
+```python
+# Dictionnaire : heure → température (°C)
+temperatures = {
+    6: 12,
+    9: 15,
+    12: 20,
+    15: 22,
+    18: 19,
+    21: 16
+}
+```
+
+#### 1. Créer une liste avec les **valeurs** du dictionnaire avec `list()` et `.values()`
+
+```python
+liste_temp = list(temperatures.values())
+print(liste_temp)
+```
+
+**Résultat :**
+```
+[12, 15, 20, 22, 19, 16]
+```
+
+#### 2. Créer une liste avec les **clés** du dictionnaire avec `list()` et `.keys()`
 
 
+```python
+liste_heures = list(temperatures.keys())
+print(liste_heures)
+```
+
+**Résultat :**
+```
+[6, 9, 12, 15, 18, 21]
+```
 
 
+#### 3. Construire une liste avec une boucle `for`
 
+On peut aussi parcourir le dictionnaire et remplir une liste à la main :
 
+```python
+liste_temp2 = []
+for valeur in temperatures.values():
+    liste_temp2.append(valeur)
 
+print(liste_temp2)
+```
 
+**Résultat :**
+```
+[12, 15, 20, 22, 19, 16]
+```
 
+#### 4. Obtenir des couples `(clé, valeur)` avec `.items()`
 
+Si on veut garder **l’heure et la température ensemble**, on peut utiliser `.items()` :
 
+```python
+paires = list(temperatures.items())
+print(paires)
+```
 
+**Résultat :**
+```
+[(6, 12), (9, 15), (12, 20), (15, 22), (18, 19), (21, 16)]
+```
+{{% notice style="primary"  title="À savoir" %}}
+Ici, il s'agit d'une liste de **tuples**. Un **tuple** c'est un type de données que nous n'étudierons pas dans ce cours.
+{{% /notice %}}
 
+## Récapitulatif
 
-
-
-
-
-
-
+* Un **dictionnaire** associe une **clé** à une **valeur**.
+* Créer : `{clé: valeur, ...}`
+* Accéder : `mon_dico[clé]` ou `mon_dico.get(clé)`
+* Ajouter/modifier : `mon_dico[clé] = valeur`
+* Supprimer : `del mon_dico[clé]`
+* Créer une liste des valeurs : `liste_valeurs = list(mon_dico.values())`
+* Créer une liste des clés : `liste_clés = list(mon_dico.keys())`
+* Parcourir : boucle `for`. Une boucle `for` permet aussi de construire une liste étape par étape
+  * `.values()` → liste des valeurs.
+  * `.keys()` → liste des clés.
+  * `.items()` → couples (clé, valeur).
 
 
 <!--
+## Exemples d'applications scientifiques
 
-### Quelques exemples
+### Exemple 1 – Concentration de solutions
 
-#### 1. Calculer le sinus d'un angle en radian
-
-```python
-import numpy as np
-
-# Definition de l'angle en radians
-angle = np.pi / 2  # 90 degrés en radians
-
-# Calcul du sinus
-sinus = np.sin(angle)
-
-# Afficher le résultat
-print("Sinus de 90 degrés (π/2 radians):", sinus)
-```
-
-#### 2. Calculer la moyenne des données avec np.mean()
+On veut stocker les concentrations de plusieurs solutions.
 
 ```python
-sol = np.array([32.0, 35.5, 37.2])
-moy = np.mean(sol)
-print(f"Moyenne : {moy:.2f} g/100mL")
+solutions = {
+    "NaCl": 0.10,    # mol/L
+    "HCl": 0.05,
+    "C6H12O6": 0.20
+}
+print("Concentration de NaCl :", solutions["NaCl"], "mol/L")
+```
+```
+Concentration de NaCl : 0.1 mol/L
 ```
 
-#### 3. Calculer l’écart type des données avec np.std()
+### Exemple 2 – Comptage d’ADN
+
+On veut compter le nombre de nucléotides dans une séquence.
 
 ```python
-sol = np.array([32.0, 35.5, 37.2])
-ecart = np.std(sol)
-print(f"Écart type : {ecart:.2f}")
+sequence = "ATGCGATAC"
+compte = {"A": 0, "T": 0, "C": 0, "G": 0}
+
+for base in sequence:
+    compte[base] += 1	# Ou compte[base] = compte[base] + 1
+
+print(compte)
+```
+```
+{'A': 3, 'T': 2, 'C': 2, 'G': 2}
 ```
 
-## Opérations vectorielles (rapides et simples)
 
-Avec NumPy, on peut faire des **opérations sur tout un tableau en une seule ligne** (sans utiliser de boucle).
+### Exemple 3 – Résultats expérimentaux
+
+Stocker les résultats de quatre étudiants pour trois examen.
 
 ```python
-x = np.array([1, 2, 3])
-y = np.array([4, 5, 6])
+resultats = {
+    "Alice": [0.50, 0.88, 0.92],
+    "Bob": [0.45, 0.77, 0.86],
+    "Chloé": [0.61, 0.69, 0.80],
+    "Julien": [0.51, 0.79, 0.90]
+}
+
+# Moyenne par étudiant
+print("Moyenne par étudiant :")
+for etudiant, notes in resultats.items():
+    total = 0
+    for note in notes:
+        total += note
+    moyenne = total / len(notes)
+    print(f"{etudiant} → {moyenne:.2f}")
+
+# Moyenne par examen
+print("\nMoyenne par examen :")
+nb_examens = len(next(iter(resultats.values())))  # nombre de colonnes
+for i in range(nb_examens):
+    total_examen = 0
+    nb_etudiants = 0
+    for notes in resultats.values():
+        total_examen += notes[i]
+        nb_etudiants += 1
+    moyenne_examen = total_examen / nb_etudiants
+    print(f"Examen {i+1} → {moyenne_examen:.2f}")
+```
+```
+Moyenne par étudiant :
+Alice → 0.77
+Bob → 0.69
+Chloé → 0.70
+Julien → 0.73
+
+Moyenne par examen :
+Examen 1 → 0.52
+Examen 2 → 0.78
+Examen 3 → 0.87
 ```
 
-### 1. Addition élément par élément
+#### Explications
 
-```python
-x + y    # [5 7 9]
-```
+**Moyenne par étudiant** :
 
-### 2. Soustraction élément par élément
+* On parcourt chaque clé (nom) et sa liste de notes.
+* On fait la somme des notes puis on divise par le nombre de notes.
 
-```python
-y - x    # [3 3 3]
-```
+**Moyenne par examen** :
 
-### 3. Multiplication par un scalaire
-
-```python
-x * 10   # [10 20 30]
-```
-
-### 4. Division par un scalaire
-
-```python
-y / 2    # [2.  2.5 3. ]
-```
+* On parcourt les indices i correspondant aux examens.
+* Pour chaque examen, on additionne la note de tous les étudiants et on divise par le nombre d’étudiants.
 -->
-
-## Ignorer des valeurs manquantes (`np.nan`)
-
-Parfois, une mesure a été oubliée ou mal prise. On utilise `np.nan` pour représenter une valeur manquante :
-
-```python
-sol = np.array([32.0, np.nan, 37.2])
-moy = np.nanmean(sol)
-print(f"Moyenne (sans valeur manquante) : {moy:.2f} g/100mL")
-```
-
-* La fonction `np.nanmean()` calcule **la moyenne des éléments en ignorant les valeurs `NaN`** (`Not a Number`), qui représentent généralement des données manquantes ou invalides.
-
-{{% notice style="cyan" title="Notez" %}}
-Sans `nanmean`, la fonction `np.mean(sol)` retournerait `nan` car une seule valeur `nan` dans la liste contamine le résultat.
-{{% /notice %}}
-
-## Filtrage de données
-
-1. **Créer un tableau et afficher uniquement certaines valeurs selon une condition**
-
-```python
-tableau = np.array([2, 5, 7, 1, 8, 3])
-masque = tableau > 5	# Masquage : valeurs supérieures à 5
-print(f"Masque booléen : {masque}")
-
-valeurs_filtrees = tableau[masque]
-print(f"Valeurs supérieures à 5 : {valeurs_filtrees}")
-```
-**Résultat attendu :**
-```
-Masque booléen : [False False  True False  True False]
-Valeurs supérieures à 5 : [7 8]
-```
-
-**Explication** :
-* `masque = tableau > 5` : crée une liste de booléen, `True` lorsque la valeur de `tableau` est > 5, `False` sinon.
-* `tableau[masque]` : ne garde que les valeurs dans `tableau` qui sont > 5.
-
-2. **Comptage conditionnel avec `np.sum`**
-
-Compter combien de valeurs respectent un seuil donné.
-
-```python
-tableau = np.array([3, 7, 4, 6, 2, 9, 5])
-seuil = 5
-
-nb_valeurs = np.sum(tableau > seuil)	# Comptage des valeurs > 5
-print(f"Nombre de valeurs supérieures à {seuil} : {nb_valeurs}")
-```
-
-**Résultat attendu** :
-```
-Nombre de valeurs supérieures à 5 : 3
-```
-
-**Explication** :
-* `tableau > seuil` : conserve les valeurs dans `tableau` qui sont > 5.
-* `np.sum(tableau > seuil)` : compte le nombre de valeurs dans `tableau` qui sont > 5.
-
-
-3. **Filtre avec `np.where()`**
-
-* `numpy.where(condition, valeur_si_vrai, valeur_si_faux)` permet de créer un tableau (ou une colonne dans un DataFrame) en fonction d’une condition logique.
-
-   * **condition** → un test qui renvoie `True` ou `False` (par exemple : `df["Note"] >= 60`)
-   * **valeur_si_vrai** → ce qui sera écrit quand la condition est vraie (`"Réussi"`)
-   * **valeur_si_faux** → ce qui sera écrit quand la condition est fausse (`"Échoué"`)
-
-Exemple :
-
-```python
-df["Tendance"] = np.where(df["Note"] >= 60, "Réussi", "Échoué")
-```
-
-**Explication**:
-
-Pour chaque ligne :
-
-   * si la note est >= 60 → `"Réussi"`
-   * sinon → `"Échoué"`.
-
-C’est une méthode très rapide car `numpy` applique l’opération directement sur toute la colonne, sans boucle explicite.
-
----
-
-
-## Tracer des graphiques à barres et avec barres d'erreur
-
-### Importer la bibliothèque
-
-```python
-import matplotlib.pyplot as plt
-```
-
-### Graphique à barres
-
-**Exemple de base :**
-
-```python
-noms = ["A", "B", "C"]
-valeurs = [4, 7, 5]
-
-plt.bar(noms, valeurs)
-plt.title("Résultats")
-plt.xticks(rotation=0)
-plt.legend(["Score"])
-plt.show()
-```
-![graphique à barres](./graphique_barres.png?width=40vw)
-
-| Fonction        | Rôle                                |
-| --------------- | ----------------------------------- |
-| `plt.bar(x, y)` | Crée des barres                     |
-| `plt.xticks()`  | Contrôle les étiquettes sur l’axe x |
-
-
-### Graphique avec barres d’erreur
-
-La fonction `plt.errorbar()` permet de tracer des barres d'erreur autour des points d'une courbe, et ici la liste `erreurs = [0.5, 0.3, 0.6]` indique **l'incertitude verticale** (±) associée à chaque point.
-
-**Exemple :**
-```python
-x = [1, 2, 3]
-y = [10, 12, 9]
-erreurs = [0.5, 0.3, 0.6]
-
-plt.errorbar(x, y, yerr=erreurs, fmt="o", label="Mesures")
-plt.title("Mesures avec incertitude")
-plt.legend()
-plt.grid(True)
-plt.show()
-```
-
-![graphique à barres d'erreur](./graphique_barres_erreurs.png?width=40vw)
-
-| Argument  | Signification                    |
-| --------- | -------------------------------- |
-| `yerr`    | barres d’erreur verticales       |
-| `xerr`    | (optionnel) erreurs horizontales |
-| `fmt="o"` | style des points                 |
-
-
-## Tracer une droite de régression
-
-**Rappel** : L'équation d'une droite est `y = a·x + b`
-
-Voici comment obtenir les données de la droite :
-
-* `a, b = np.polyfit(x, y, 1)` : On calcule la droite qui s'ajuste le mieux aux points (régression linéaire) et on récupère sa pente (`a`) et son ordonnée à l'origine (`b`).
-* `y_reg = a * x + b` : On utilise la pente et l'ordonnée pour calculer les valeurs de la droite.
-* `plt.plot(x, y, "o", label="Données")` : On trace les points de données sous forme de cercles.
-* `plt.plot(x, y_reg, "-", label=f"y = {a:.2f}x + {b:.2f}")` : On trace la droite de régression et on affiche son équation.
-
-
-```python
-import numpy as np
-
-x = np.array([1, 2, 3, 4])
-y = np.array([2.1, 4.2, 6.1, 8.0])
-
-# Droite de régression : y = a·x + b
-
-a, b = np.polyfit(x, y, 1)
-y_reg = a * x + b
-
-plt.plot(x, y, "o", label="Données")
-plt.plot(x, y_reg, "-", label=f"y = {a:.2f}x + {b:.2f}")
-plt.legend()
-plt.grid(True)
-plt.tight_layout()	# Ajuste l'espacement pour éviter le chevauchement
-plt.show()
-```
-![graphique droite de régression](./graphique_regression.png?width=40vw)
-
 
 ---
 
 # Atelier
 
-1. Téléchargez le fichier de départ : [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_numpy_regression.ipynb)
-2. Déplacez-le dans votre dossier prévu pour **l'atelier de la semaine 7**.
+1. Téléchargez les fichiers de départ (`.ipynb`): 
+[Bloc-notes de départ - Physique](https://python-a25.netlify.app/blocnotes/atelier_dictionnaires_physique.ipynb)  
+[Bloc-notes de départ - Math](https://python-a25.netlify.app/blocnotes/atelier_dictionnaires_math.ipynb)  
+2. Déplacez-le dans votre dossier prévu pour **de la semaine en cours**.
 3. Ouvrez votre dossier de travail `programmation-sciences` **à partir de Visual Studio Code**.
    * Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
 
 
-## Exercice : Effet de la lumière sur la croissance des plantes
+## Exercice - Physique mécanique
 
-Une équipe de recherche a étudié l’influence de différents types de lumière sur la croissance de jeunes plantes. Après **10 jours**, la **hauteur (en cm)** de **5 plantes** a été mesurée dans chacune des **trois conditions lumineuses** suivantes :
+### Objectifs
 
-* **Lumière naturelle**
-* **Lumière LED blanche**
-* **Lumière LED rouge**
+* Manipuler des **dictionnaires** en Python (`temps → valeur`).
+* Transformer un dictionnaire en listes triées pour tracer des courbes.
+* Tracer **deux courbes** (`v(t)` et `y(t)`) sur le même graphe avec `plot()` et légende.
+* Interpréter qualitativement les formes (linéaire vs quadratique).
 
-Certaines mesures sont manquantes (notées `np.nan`), car une ou deux plantes n’ont pas survécu. Voici les données brutes :
+On veut représenter l’évolution d’un objet en chute libre (sans frottement).
+La formule de la vitesse est :
+```math
+$$
+v(t) = g \cdot t
+$$
+```
+et la formule de la position est :
+```math
+$$
+y(t) = \tfrac{1}{2} g \cdot t^2
+$$
+```
 
-| Condition   | Plante 1 | Plante 2 | Plante 3 | Plante 4 | Plante 5 |
-| ----------- | -------- | -------- | -------- | -------- | -------- |
-| Naturelle   | 12.5     | 13.1     | 12.9     | 13.0     | 12.8     |
-| LED blanche | 11.2     | 11.6     | np.nan   | 11.5     | 11.3     |
-| LED rouge   | 10.4     | 10.1     | 10.2     | np.nan   | np.nan   |
+```math
+où $ g = 9.8 , m/s^2 $
+```
 
+1. **Créer deux dictionnaires vides** `vitesses = {}` et `positions = {}`.
 
-1. **Représentation des données**
-   * Crée un tableau 2D avec `numpy.array()` contenant les mesures ci-dessus.
-   * Stocke les noms des conditions dans une liste `conditions = ["Naturelle", "LED blanche", "LED rouge"]`.
+2. **Définir la constante** `g = 9.8` (m/s²).
 
-2. **Analyse statistique**
-   * Calcule la **moyenne** et l’**écart-type** de la hauteur des plantes pour chaque condition.
-   * Utilise `np.nanmean()` et `np.nanstd()` pour **ignorer les valeurs manquantes** (`np.nan`).
+3. **Remplir les dictionnaires**
+   * Pour chaque temps `t` allant de `0` à `5` (inclus), calculez :
+     * `v(t) = g * t`
+     * `y(t) = 0.5 * g * t**2`
+   * Stockez ces valeurs dans les dictionnaires avec `t` comme clé (ex. `vitesses[t] = ...`).
+   **Indice** : utiliser `for t in range(6):`
 
-3. **Comparaison entre conditions**
-   * Détermine la condition qui présente la croissance moyenne la plus élevée.
-   * Affiche un résumé clair, par exemple :
+4. **Vérifier le contenu**
+   * Affichez les dictionnaires (`print(vitesses)` et `print(positions)`).
+   * Vérifiez que les clés apparaissent pour `0,1,2,3,4,5`.
+
+   **Exemple d’attendu (valeurs arrondies)** :
      ```
-     Moyenne (Naturelle) = 12.86 cm, écart-type = 0.22 cm
-     Moyenne (LED blanche) = ...
-     Moyenne (LED rouge) = ...
-     Condition avec la plus grande croissance moyenne : Naturelle
+     vitesses = {0:0.0, 1:9.8, 2:19.6, 3:29.4, 4:39.2, 5:49.0}
+     positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}
      ```
 
-4. **Visualisation graphique**
-   * Représente les moyennes avec un **diagramme en barres** (`plt.bar`).
-   * Ajoute les **barres d’erreur** correspondant aux écarts-types.
-   * Mets les noms des conditions en abscisse avec `plt.xticks()`.
-   * Ajoute un titre et un label pour l’axe des ordonnées (hauteur moyenne en cm).
+5. **Préparer les listes pour le tracé**
+   * Les dictionnaires ne garantissent pas l’ordre des clés ; créez une **liste triée** des temps (**Indice** : utiliser `temps = sorted(vitesses.keys())`) :
+   * Avec une boucle `for`, construire **deux listes** (`valeurs_v` et `valeurs_y`) qui regroupent, dans l’ordre des temps triés (`temps`), les valeurs de la vitesse et de la position extraites des dictionnaires.
 
-![Graphique](./graphique_croissance_lumiere.png?width=45vw)
+6. **Tracer les courbes**
+   * Importez `matplotlib.pyplot as plt`.
+   * Tracez la **vitesse** : `plt.plot(temps, valeurs_v, label='Vitesse (m/s)')`
+   * Tracez la **position** : `plt.plot(temps, valeurs_y, label='Position (m)')`
+   * Ajoutez : `plt.title(...)`, `plt.xlabel('Temps (s)')`, `plt.ylabel('Valeur')`, `plt.legend()`, `plt.grid(True)` puis `plt.show()`.
+   * Sauvegarder le graphique en PNG : `plt.savefig('chute_libre.png')`.
+
+7. **Interprétation**
+   * Écrivez 2–3 phrases : que montre la pente de `v(t)` ? Pourquoi `y(t)` a-t-elle une forme différente ?
+
+---
+
+## Exercice - Mathématiques
+
+{{% notice style="green" title="Information" %}}
+Cet exercice utilise les mêmes notions que dans l'exercice précédent, mais avec moins d'indices.
+{{% /notice %}}
+
+
+### Objectifs
+
+* Utiliser des dictionnaires pour associer `x → f(x)` et `x → f'(x)`.
+* Tracer `f(x)` et sa dérivée `f'(x)` sur la même figure.
+
+
+1. **Créer deux dictionnaires vides** `carres` et `derivees`
+
+2. **Remplir les dictionnaires** pour x = -5 à +5
+   * Pour chaque `x`:
+     * Calculez `f(x) = x**2` → stockez dans le dictionnaire `carres`.
+     * Calculez `f'(x) = 2*x` → stockez dans le dictionnaire `derivees`.
+
+3. **Afficher & vérifier les deux dictionnaires**
+   * Vérifiez la symétrie de `carres` (même valeur pour `x` et `-x`) et l’antisimétrie de `derivees` (`f'(-x) = -f'(x)`).
+
+4. **Préparer pour les listes pour le tracé**
+   * Trier les `clés` de `carres`.
+   * Créer **deux listes** (y_carres et y_derivees) contenant, dans l’ordre des x triés, les valeurs de la fonction et de sa dérivée extraites des dictionnaires correspondants.
+
+5. **Tracer les deux graphiques sur la même figure**
+   * Ajoutez titre, axes, légende, grille.
+   * Sauvegarder le graphique en PNG avec le nom `quadratique.png`.
+
+6. **Interprétation**
+   * Identifiez les points où `f'(x) = 0`. Que se passe-t-il pour `f(x)` à ces points (minimum/maximum) ?
 
 
 ---
 
 ## À faire avant le prochain cours
 
-1. Lire la prochaine leçon : [8. Dictionnaires](../semaine8/)
+
+1. Lire la prochaine leçon : [8. Tableaux NumPy et droite de régression](../semaine8/)
 2. Faire les exercices de la [prochaine leçon :](../semaine8/#exercices)
