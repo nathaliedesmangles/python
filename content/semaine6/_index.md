@@ -295,30 +295,195 @@ L'indice 2 contient : cerise
 
 ## Fonctions utiles sur les listes simples
 
-| Méthode / Fonction       | Description                                    | Exemple                      |
-| ------------------------ | ---------------------------------------------- | ---------------------------- |
-| `append(valeur)`         | Ajoute un élément à la fin                     | `ma_liste.append(10)`        |
-| `insert(indice, valeur)` | Insère une valeur à une position donnée        | `ma_liste.insert(1, 99)`     |
-| `pop(indice)`            | Retire l’élément à l’indice (ou le dernier)    | `ma_liste.pop()`             |
-| `remove(valeur)`         | Retire la **première** occurrence d'une valeur | `ma_liste.remove(42)`        |
-| `len()`                  | Donne la longueur de la liste                  | `len(ma_liste)`              |
-| `sorted()`               | Trie la liste sans la modifier                 | `sorted(ma_liste)`           |
-| `sort()`*                | Trie la liste en la modifiant                  | `ma_liste.sort()`            |
-| `reverse()`              | Inverse l’ordre des éléments                   | `ma_liste.reverse()`         |
-| `in`                     | Vérifie si un élément est dans la liste        | `"pomme" in fruits` → `True` |
-| `index(valeur)`          | Renvoie l’indice de la première occurrence     | `fruits.index("poire")`      |
-| `count(valeur)`          | Compte combien de fois un élément apparaît     | `fruits.count("poire")`      |
-| `max()`                  | Trouver le max                                 | `max(ma_liste)`              |
-| `min()`                  | Trouver le min                                 | `min(ma_liste)`              |
-| `sum()` 		   | Calculer une somme des éléments		    | `s = sum(ma_liste)`
+| Méthode / Fonction       | Description                                    | 
+| ------------------------ | ---------------------------------------------- | 
+| `append(valeur)`         | Ajoute un élément à la fin                     | 
+| `insert(indice, valeur)` | Insère une valeur à une position donnée        |
+| `pop(indice)`            | Retire l’élément à l’indice (ou le dernier)    | 
+| `remove(valeur)`         | Retire la **première** occurrence d'une valeur | 
+| `len()`                  | Donne la longueur de la liste                  | 
+| `sorted()`               | Trie la liste sans la modifier                 | 
+| `sort()`*                | Trie la liste en la modifiant                  | 
+| `reverse()`              | Inverse l’ordre des éléments                   | 
+| `in`                     | Vérifie si un élément est dans la liste        | 
+| `index(valeur)`          | Renvoie l’indice de la première occurrence     | 
+| `count(valeur)`          | Compte combien de fois un élément apparaît     | 
+| `max()`                  | Trouver le max                                 | 
+| `min()`                  | Trouver le min                                 | 
+| `sum()` 		   | Calculer une somme des éléments		    | 
 
-**Exemple** : Calcul de la moyenne d’une liste de notes
+{{% notice style="green" title="Exemples avec les fonctions utiles pour les listes simples" groupid="notice-toggle" expanded="false" %}}
+### `append(valeur)`
+
+Ajoute un élément à la fin de la liste.
+
+```python
+nombres = [1, 2, 3]
+nombres.append(4)
+print(nombres)   # [1, 2, 3, 4]
+```
+
+---
+
+### `insert(indice, valeur)`
+
+Insère une valeur à une position donnée.
+
+```python
+nombres = [1, 2, 3]
+nombres.insert(1, 99)  
+print(nombres)   # [1, 99, 2, 3]
+```
+
+---
+
+### `pop(indice)`
+
+Retire l’élément à l’indice donné (ou le dernier si rien n’est précisé).
+
+```python
+nombres = [1, 2, 3]
+nombres.pop()      
+print(nombres)   # [1, 2]  (le dernier élément a été enlevé)
+nombres.pop(0)    
+print(nombres)   # [2]     (le premier élément a été enlevé)
+```
+
+---
+
+### `remove(valeur)`
+
+Retire la **première occurrence** d'une valeur.
+
+```python
+nombres = [1, 2, 3, 2]
+nombres.remove(2)  
+print(nombres)   # [1, 3, 2]
+```
+
+---
+
+### `len(liste)`
+
+Donne la longueur (nombre d’éléments) de la liste.
+
+```python
+nombres = [10, 20, 30]
+print(len(nombres))  # 3
+```
+
+---
+
+### `sorted(liste)`
+
+Renvoie une nouvelle liste triée **sans modifier** la liste originale.
+
+```python
+nombres = [3, 1, 2]
+print(sorted(nombres))  # [1, 2, 3]
+print(nombres)          # [3, 1, 2] (pas modifiée)
+```
+
+---
+
+### `sort()`
+
+Trie la liste **en la modifiant directement**.
+
+```python
+nombres = [3, 1, 2]
+nombres.sort()
+print(nombres)   # [1, 2, 3]
+```
+
+---
+
+### `reverse()`
+
+Inverse l’ordre des éléments de la liste.
+
+```python
+nombres = [1, 2, 3]
+nombres.reverse()
+print(nombres)   # [3, 2, 1]
+```
+
+---
+
+### `in`
+
+Vérifie si un élément est présent dans la liste.
+
+```python
+fruits = ["pomme", "banane", "poire"]
+print("pomme" in fruits)   # True
+print("raisin" in fruits)  # False
+```
+
+---
+
+### `index(valeur)`
+
+Donne l’indice de la **première occurrence** d’une valeur.
+
+```python
+fruits = ["pomme", "banane", "poire", "banane"]
+print(fruits.index("banane"))  # 1
+```
+
+---
+
+### `count(valeur)`
+
+Compte combien de fois une valeur apparaît dans la liste.
+
+```python
+fruits = ["pomme", "banane", "poire", "banane"]
+print(fruits.count("banane"))  # 2
+```
+
+---
+
+### `max(liste)`
+
+Trouve le maximum de la liste (numérique ou alphabétique).
+
+```python
+nombres = [5, 8, 2, 10]
+print(max(nombres))  # 10
+```
+
+---
+
+### `min(liste)`
+
+Trouve le minimum de la liste.
+
+```python
+nombres = [5, 8, 2, 10]
+print(min(nombres))  # 2
+```
+
+---
+
+### `sum(liste)`
+
+Calcul de la somme des éléments (seulement si ce sont des nombres).
+
+```python
+nombres = [5, 8, 2, 10]
+print(sum(nombres))  # 25
+```
+
+Calcul de la moyenne d’une liste de notes
 
 ```python
 notes = [85, 90, 78]
 moyenne = sum(notes) / len(notes)
 print(f"Moyenne : {moyenne:.2f}")
 ```
+{{% /notice %}}
+
 
 {{% notice style="accent" icon="stopwatch" title="*Important" %}}
 * `mots.sort()` utilisé sur une liste de chaines de caractères trie la liste en respectant l’ordre **Unicode**, ce qui fait que les **mots commençant par une majuscule** sont placés **avant ceux en minuscules**.
@@ -336,7 +501,7 @@ print(mots)
 {{% /notice %}}
 
 
-## Listes imbriquées
+## Listes imbriquées (notion avancée)
 
 Une **liste imbriquée**, c’est une liste **qui contient d'autres listes**.
 
@@ -393,6 +558,50 @@ O
 X
 X
 ```
+{{% notice style="green" title="Afficher les colonnes d'une liste de listes" groupid="notice-toggle" expanded="false" %}}
+### Exemple simple
+
+```python
+# Grille = liste de listes (3 lignes x 4 colonnes)
+grille = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10,11,12]
+]
+
+# Affichage par colonnes
+for col in range(len(grille[0])):  # nombre de colonnes
+    colonne = []		   # une liste vide pour y ajouter les éléments des colonnes
+    for ligne in grille:	   # Pour chaque ligne (sous liste) de la grille, on ajoute l'élément de la colonne
+        colonne.append(ligne[col])
+    print(colonne)
+```
+
+**Résultat :**
+```
+[1, 5, 9]
+[2, 6, 10]
+[3, 7, 11]
+[4, 8, 12]
+```
+
+---
+
+### Avec `zip()` (plus "pythonique")
+
+```python
+for colonne in zip(*grille):
+    print(list(colonne))
+```
+
+Donne exactement le même résultat.
+`zip(*grille)` transposera automatiquement les lignes en colonnes.
+
+
+### Avec la bibliothèque (module) NumPy (dans une prochaine leçon)
+À suivre...
+{{% /notice  %}}
+
 
 ---
 
@@ -441,11 +650,114 @@ len(message)  # Nombre de caractères, incluant les espaces
 | -------------------------------------------- | ------------------------------------- |
 | Passer en minuscules                         | `message.lower()`                     |
 | Passer en majuscules                         | `message.upper()`                     |
-| Enlever les espaces autour                   | `mssage.strip()`                      |
+| Enlever les espaces autour                   | `message.strip()`                     |
 | Séparer une chaîne en morceaux               | `message.split(" ")`                  |
 | Remplacer un mot                             | `message.replace("Bonjour", "Salut")` |
 | Trouver la position d’un mot/lettre          | `message.find("bio")`                 |
 | Compter le nombre de fois qu’un mot apparaît | `message.count("e")`                  |
+| Assembler en une seule chaîne de caractères  | `message.joint(chaine ou liste)`
+
+{{% notice style="green" title="Exemples avec les fonctions utiles pour les chaines" groupid="notice-toggle" expanded="false" %}}
+### `lower()`
+
+Passe tout le texte en **minuscules**.
+
+```python
+message = "Bonjour Les Amis"
+print(message.lower())  
+# "bonjour les amis"
+```
+
+---
+
+### `upper()`
+
+Passe tout le texte en **majuscules**.
+
+```python
+message = "Bonjour Les Amis"
+print(message.upper())  
+# "BONJOUR LES AMIS"
+```
+
+---
+
+### `strip()`
+
+Enlève les espaces (ou tabulations, sauts de ligne) au **début et à la fin**.
+
+```python
+message = "   Bonjour   "
+print(message.strip())  
+# "Bonjour"
+```
+
+---
+
+### `split(séparateur)`
+
+Découpe une chaîne en **morceaux** (liste de mots), selon un séparateur.
+
+```python
+message = "pomme,banane,poire"
+print(message.split(","))  
+# ["pomme", "banane", "poire"]
+
+phrase = "Bonjour les amis"
+print(phrase.split(" "))  
+# ["Bonjour", "les", "amis"]
+```
+
+---
+
+### `replace(ancien, nouveau)`
+
+Remplace une partie du texte par une autre.
+
+```python
+message = "Bonjour tout le monde"
+print(message.replace("Bonjour", "Salut"))  
+# "Salut tout le monde"
+```
+
+---
+
+### `find(sous_chaine)`
+
+Trouve la **position (indice)** de la première occurrence.
+Renvoie `-1` si le mot n’est pas trouvé.
+
+```python
+message = "biologie et chimie"
+print(message.find("bio"))   # 0 (commence à l’indice 0)
+print(message.find("chimie"))  # 11
+print(message.find("physique"))  # -1 (absent)
+```
+
+---
+
+### `count(sous_chaine)`
+
+Compte combien de fois une sous-chaîne apparaît.
+
+```python
+message = "pomme et poire et pomme"
+print(message.count("pomme"))  # 2
+print(message.count("e"))      # 4
+```
+
+---
+
+### `joint(chaine)`
+
+Une chaîne de caractères doit être spécifiée comme **séparateur**.
+
+```python
+mots = ["Bonjour", "langage", "Python"]
+phrase = " ".join(mots)	  # séparateur est l'espace
+print(phrase)	# Bonjour langage Python
+```
+{{% /notice %}}
 
 {{% notice style="blue" title="À retenir (chaines de caractères)" groupid="notice-toggle" expanded="false" %}}
 * Une chaine de caractères se manipule comme une liste simple, dont les éléments sont des caractères (incluant l'espace).  

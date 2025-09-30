@@ -22,9 +22,9 @@ jours = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"]
 
 # 1. Affichage des températures
 for i in range(len(villes)):
-    print(villes[i], ":", end=" ")
+    print(villes[i], ":", end=" ")	# end permet d'ajouter un espace au lieu d'un saut de ligne entre les villes
     for j in range(len(temperatures[i])):
-        print(temperatures[i][j], end=" ")
+        print(temperatures[i][j], end=" ") # end permet d'ajouter un espace au lieu d'un saut de ligne
     print()  # retour à la ligne
 
 # 2. Min et max

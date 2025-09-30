@@ -18,21 +18,21 @@
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Listes, chaînes et visualisation des données :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.">
-    <meta itemprop="wordCount" content="3185">
+    <meta itemprop="wordCount" content="3818">
     <title> Listes, chaînes et visualisation des données :: 420-SN1-RE</title>
     <link href="/semaine6/index.xml" rel="alternate" type="application/rss+xml" title=" Listes, chaînes et visualisation des données :: 420-SN1-RE">
-    <link href="/images/logo.png?1759198254" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759198254" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759198254" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759198254" rel="stylesheet">
-    <link href="/css/theme.min.css?1759198254" rel="stylesheet">
-    <link href="/css/format-html.min.css?1759198254" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1759198254" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1759198254" defer></script>
-    <script src="/js/lunr/lunr.min.js?1759198254" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1759198254" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1759198254" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1759198254" defer></script>
-    <script src="/js/search.min.js?1759198254" defer></script>
+    <link href="/images/logo.png?1759274394" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759274394" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759274394" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759274394" rel="stylesheet">
+    <link href="/css/theme.min.css?1759274394" rel="stylesheet">
+    <link href="/css/format-html.min.css?1759274394" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759274394" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759274394" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759274394" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759274394" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759274394" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759274394" defer></script>
+    <script src="/js/search.min.js?1759274394" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1759198254";
+      window.relearn.index_js_url="/searchindex.en.js?1759274394";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1759198254" rel="stylesheet">
+    <link href="/css/custom.css?1759274394" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine6/index.html">
     <div id="R-body" class="default-animation">
@@ -142,7 +142,7 @@
     </li>
     <li><a href="#parcourir-une-liste-avec-la-boucle-for">Parcourir une liste avec la boucle <code>for</code></a></li>
     <li><a href="#fonctions-utiles-sur-les-listes-simples">Fonctions utiles sur les listes simples</a></li>
-    <li><a href="#listes-imbriquées">Listes imbriquées</a>
+    <li><a href="#listes-imbriquées-notion-avancée">Listes imbriquées (notion avancée)</a>
       <ul>
         <li><a href="#accéder-à-un-élément-précis-via-les-indices">Accéder à un élément précis via les indices</a></li>
         <li><a href="#parcourir-une-liste-imbriquée-avec-la-boucle-for">Parcourir une liste imbriquée avec la boucle for</a></li>
@@ -360,8 +360,8 @@ G</code></pre></div>
 </li>
 </ul>
 <p><strong>Graphique attendu</strong> :
-<a href="#R-image-9e3b91f94297e08c3282da8a24559db2" class="lightbox-link"><img alt="Température heure" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/exo7.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e3b91f94297e08c3282da8a24559db2"><img alt="Température heure" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/exo7.png?width=40vw"></a></p>
+<a href="#R-image-0fa6f9c2bb207437adccca592ae6b591" class="lightbox-link"><img alt="Température heure" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/exo7.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0fa6f9c2bb207437adccca592ae6b591"><img alt="Température heure" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/exo7.png?width=40vw"></a></p>
 <h3 id="exercice-8---comparaison-des-valeurs-mesurées-et-attendues">Exercice 8 - Comparaison des valeurs mesurées et attendues</h3>
 <p>On a mesuré la concentration d’un soluté à différentes températures. Les valeurs <strong>attendues</strong> suivent une loi théorique, tandis que les <strong>valeurs mesurées</strong> viennent d’un capteur.</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">50</span>]
@@ -377,8 +377,8 @@ G</code></pre></div>
 </li>
 </ul>
 <p><strong>Graphique attendu</strong> :
-<a href="#R-image-007ce0bd031df6048f7e6d83d8d7f030" class="lightbox-link"><img alt="Température heure" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/exo8.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-007ce0bd031df6048f7e6d83d8d7f030"><img alt="Température heure" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/exo8.png?width=40vw"></a></p>
+<a href="#R-image-4d48e911c25dce2bb42c0472a427076b" class="lightbox-link"><img alt="Température heure" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/exo8.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4d48e911c25dce2bb42c0472a427076b"><img alt="Température heure" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/exo8.png?width=40vw"></a></p>
 <hr>
 <h1 id="cours">Cours</h1>
 <h2 id="quest-ce-quune-liste-">Qu’est-ce qu’une liste ?</h2>
@@ -461,86 +461,159 @@ G</code></pre></div>
 <tr>
 <th>Méthode / Fonction</th>
 <th>Description</th>
-<th>Exemple</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>append(valeur)</code></td>
 <td>Ajoute un élément à la fin</td>
-<td><code>ma_liste.append(10)</code></td>
 </tr>
 <tr>
 <td><code>insert(indice, valeur)</code></td>
 <td>Insère une valeur à une position donnée</td>
-<td><code>ma_liste.insert(1, 99)</code></td>
 </tr>
 <tr>
 <td><code>pop(indice)</code></td>
 <td>Retire l’élément à l’indice (ou le dernier)</td>
-<td><code>ma_liste.pop()</code></td>
 </tr>
 <tr>
 <td><code>remove(valeur)</code></td>
 <td>Retire la <strong>première</strong> occurrence d&rsquo;une valeur</td>
-<td><code>ma_liste.remove(42)</code></td>
 </tr>
 <tr>
 <td><code>len()</code></td>
 <td>Donne la longueur de la liste</td>
-<td><code>len(ma_liste)</code></td>
 </tr>
 <tr>
 <td><code>sorted()</code></td>
 <td>Trie la liste sans la modifier</td>
-<td><code>sorted(ma_liste)</code></td>
 </tr>
 <tr>
 <td><code>sort()</code>*</td>
 <td>Trie la liste en la modifiant</td>
-<td><code>ma_liste.sort()</code></td>
 </tr>
 <tr>
 <td><code>reverse()</code></td>
 <td>Inverse l’ordre des éléments</td>
-<td><code>ma_liste.reverse()</code></td>
 </tr>
 <tr>
 <td><code>in</code></td>
 <td>Vérifie si un élément est dans la liste</td>
-<td><code>&quot;pomme&quot; in fruits</code> → <code>True</code></td>
 </tr>
 <tr>
 <td><code>index(valeur)</code></td>
 <td>Renvoie l’indice de la première occurrence</td>
-<td><code>fruits.index(&quot;poire&quot;)</code></td>
 </tr>
 <tr>
 <td><code>count(valeur)</code></td>
 <td>Compte combien de fois un élément apparaît</td>
-<td><code>fruits.count(&quot;poire&quot;)</code></td>
 </tr>
 <tr>
 <td><code>max()</code></td>
 <td>Trouver le max</td>
-<td><code>max(ma_liste)</code></td>
 </tr>
 <tr>
 <td><code>min()</code></td>
 <td>Trouver le min</td>
-<td><code>min(ma_liste)</code></td>
 </tr>
 <tr>
 <td><code>sum()</code></td>
 <td>Calculer une somme des éléments</td>
-<td><code>s = sum(ma_liste)</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Exemple</strong> : Calcul de la moyenne d’une liste de notes</p>
+
+<details class=" box cstyle notices green expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    Exemples avec les fonctions utiles pour les listes simples
+  </summary>
+  <div class="box-content">
+<h3 id="appendvaleur"><code>append(valeur)</code></h3>
+<p>Ajoute un élément à la fin de la liste.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>nombres<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>print(nombres)   <span style="color:#75715e"># [1, 2, 3, 4]</span></span></span></code></pre></div>
+<hr>
+<h3 id="insertindice-valeur"><code>insert(indice, valeur)</code></h3>
+<p>Insère une valeur à une position donnée.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>nombres<span style="color:#f92672">.</span>insert(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">99</span>)  
+</span></span><span style="display:flex;"><span>print(nombres)   <span style="color:#75715e"># [1, 99, 2, 3]</span></span></span></code></pre></div>
+<hr>
+<h3 id="popindice"><code>pop(indice)</code></h3>
+<p>Retire l’élément à l’indice donné (ou le dernier si rien n’est précisé).</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>nombres<span style="color:#f92672">.</span>pop()      
+</span></span><span style="display:flex;"><span>print(nombres)   <span style="color:#75715e"># [1, 2]  (le dernier élément a été enlevé)</span>
+</span></span><span style="display:flex;"><span>nombres<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">0</span>)    
+</span></span><span style="display:flex;"><span>print(nombres)   <span style="color:#75715e"># [2]     (le premier élément a été enlevé)</span></span></span></code></pre></div>
+<hr>
+<h3 id="removevaleur"><code>remove(valeur)</code></h3>
+<p>Retire la <strong>première occurrence</strong> d&rsquo;une valeur.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>nombres<span style="color:#f92672">.</span>remove(<span style="color:#ae81ff">2</span>)  
+</span></span><span style="display:flex;"><span>print(nombres)   <span style="color:#75715e"># [1, 3, 2]</span></span></span></code></pre></div>
+<hr>
+<h3 id="lenliste"><code>len(liste)</code></h3>
+<p>Donne la longueur (nombre d’éléments) de la liste.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>]
+</span></span><span style="display:flex;"><span>print(len(nombres))  <span style="color:#75715e"># 3</span></span></span></code></pre></div>
+<hr>
+<h3 id="sortedliste"><code>sorted(liste)</code></h3>
+<p>Renvoie une nouvelle liste triée <strong>sans modifier</strong> la liste originale.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>print(sorted(nombres))  <span style="color:#75715e"># [1, 2, 3]</span>
+</span></span><span style="display:flex;"><span>print(nombres)          <span style="color:#75715e"># [3, 1, 2] (pas modifiée)</span></span></span></code></pre></div>
+<hr>
+<h3 id="sort"><code>sort()</code></h3>
+<p>Trie la liste <strong>en la modifiant directement</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>nombres<span style="color:#f92672">.</span>sort()
+</span></span><span style="display:flex;"><span>print(nombres)   <span style="color:#75715e"># [1, 2, 3]</span></span></span></code></pre></div>
+<hr>
+<h3 id="reverse"><code>reverse()</code></h3>
+<p>Inverse l’ordre des éléments de la liste.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>nombres<span style="color:#f92672">.</span>reverse()
+</span></span><span style="display:flex;"><span>print(nombres)   <span style="color:#75715e"># [3, 2, 1]</span></span></span></code></pre></div>
+<hr>
+<h3 id="in"><code>in</code></h3>
+<p>Vérifie si un élément est présent dans la liste.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;pomme&#34;</span>, <span style="color:#e6db74">&#34;banane&#34;</span>, <span style="color:#e6db74">&#34;poire&#34;</span>]
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;pomme&#34;</span> <span style="color:#f92672">in</span> fruits)   <span style="color:#75715e"># True</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;raisin&#34;</span> <span style="color:#f92672">in</span> fruits)  <span style="color:#75715e"># False</span></span></span></code></pre></div>
+<hr>
+<h3 id="indexvaleur"><code>index(valeur)</code></h3>
+<p>Donne l’indice de la <strong>première occurrence</strong> d’une valeur.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;pomme&#34;</span>, <span style="color:#e6db74">&#34;banane&#34;</span>, <span style="color:#e6db74">&#34;poire&#34;</span>, <span style="color:#e6db74">&#34;banane&#34;</span>]
+</span></span><span style="display:flex;"><span>print(fruits<span style="color:#f92672">.</span>index(<span style="color:#e6db74">&#34;banane&#34;</span>))  <span style="color:#75715e"># 1</span></span></span></code></pre></div>
+<hr>
+<h3 id="countvaleur"><code>count(valeur)</code></h3>
+<p>Compte combien de fois une valeur apparaît dans la liste.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;pomme&#34;</span>, <span style="color:#e6db74">&#34;banane&#34;</span>, <span style="color:#e6db74">&#34;poire&#34;</span>, <span style="color:#e6db74">&#34;banane&#34;</span>]
+</span></span><span style="display:flex;"><span>print(fruits<span style="color:#f92672">.</span>count(<span style="color:#e6db74">&#34;banane&#34;</span>))  <span style="color:#75715e"># 2</span></span></span></code></pre></div>
+<hr>
+<h3 id="maxliste"><code>max(liste)</code></h3>
+<p>Trouve le maximum de la liste (numérique ou alphabétique).</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span>print(max(nombres))  <span style="color:#75715e"># 10</span></span></span></code></pre></div>
+<hr>
+<h3 id="minliste"><code>min(liste)</code></h3>
+<p>Trouve le minimum de la liste.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span>print(min(nombres))  <span style="color:#75715e"># 2</span></span></span></code></pre></div>
+<hr>
+<h3 id="sumliste"><code>sum(liste)</code></h3>
+<p>Calcul de la somme des éléments (seulement si ce sont des nombres).</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span>print(sum(nombres))  <span style="color:#75715e"># 25</span></span></span></code></pre></div>
+<p>Calcul de la moyenne d’une liste de notes</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>notes <span style="color:#f92672">=</span> [<span style="color:#ae81ff">85</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">78</span>]
 </span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> sum(notes) <span style="color:#f92672">/</span> len(notes)
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne : </span><span style="color:#e6db74">{</span>moyenne<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+  </div>
+</details>
 
 <details open class=" box cstyle notices accent">
   <summary class="box-label" tabindex="-1">
@@ -560,7 +633,7 @@ G</code></pre></div>
 </span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;Banane&#39;</span>, <span style="color:#e6db74">&#39;Orange&#39;</span>, <span style="color:#e6db74">&#39;abricot&#39;</span>, <span style="color:#e6db74">&#39;pomme&#39;</span>]	<span style="color:#75715e"># Notez les positions des éléments `abricot` et `pomme`</span></span></span></code></pre></div>
   </div>
 </details>
-<h2 id="listes-imbriquées">Listes imbriquées</h2>
+<h2 id="listes-imbriquées-notion-avancée">Listes imbriquées (notion avancée)</h2>
 <p>Une <strong>liste imbriquée</strong>, c’est une liste <strong>qui contient d&rsquo;autres listes</strong>.</p>
 <p><strong>Exemple</strong> : Une liste contenant trois listes (en math, on parle de <strong>matrices</strong>)</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>matrice <span style="color:#f92672">=</span> [
@@ -603,6 +676,42 @@ G</code></pre></div>
 </span></span><span style="display:flex;"><span>O
 </span></span><span style="display:flex;"><span>X
 </span></span><span style="display:flex;"><span>X</span></span></code></pre></div>
+
+<details class=" box cstyle notices green expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    Afficher les colonnes d&rsquo;une liste de listes
+  </summary>
+  <div class="box-content">
+<h3 id="exemple-simple">Exemple simple</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Grille = liste de listes (3 lignes x 4 colonnes)</span>
+</span></span><span style="display:flex;"><span>grille <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">11</span>,<span style="color:#ae81ff">12</span>]
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage par colonnes</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> col <span style="color:#f92672">in</span> range(len(grille[<span style="color:#ae81ff">0</span>])):  <span style="color:#75715e"># nombre de colonnes</span>
+</span></span><span style="display:flex;"><span>    colonne <span style="color:#f92672">=</span> []		   <span style="color:#75715e"># une liste vide pour y ajouter les éléments des colonnes</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> grille:	   <span style="color:#75715e"># Pour chaque ligne (sous liste) de la grille, on ajoute l&#39;élément de la colonne</span>
+</span></span><span style="display:flex;"><span>        colonne<span style="color:#f92672">.</span>append(ligne[col])
+</span></span><span style="display:flex;"><span>    print(colonne)</span></span></code></pre></div>
+<p><strong>Résultat :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[1, 5, 9]
+[2, 6, 10]
+[3, 7, 11]
+[4, 8, 12]</code></pre></div>
+<hr>
+<h3 id="avec-zip-plus-pythonique">Avec <code>zip()</code> (plus &ldquo;pythonique&rdquo;)</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> colonne <span style="color:#f92672">in</span> zip(<span style="color:#f92672">*</span>grille):
+</span></span><span style="display:flex;"><span>    print(list(colonne))</span></span></code></pre></div>
+<p>Donne exactement le même résultat.
+<code>zip(*grille)</code> transposera automatiquement les lignes en colonnes.</p>
+<h3 id="avec-la-bibliothèque-module-numpy-dans-une-prochaine-leçon">Avec la bibliothèque (module) NumPy (dans une prochaine leçon)</h3>
+<p>À suivre&hellip;</p>
+  </div>
+</details>
 <hr>
 
 <details class=" box cstyle notices blue expand" name="notice-toggle">
@@ -663,7 +772,7 @@ G</code></pre></div>
 </tr>
 <tr>
 <td>Enlever les espaces autour</td>
-<td><code>mssage.strip()</code></td>
+<td><code>message.strip()</code></td>
 </tr>
 <tr>
 <td>Séparer une chaîne en morceaux</td>
@@ -681,8 +790,74 @@ G</code></pre></div>
 <td>Compter le nombre de fois qu’un mot apparaît</td>
 <td><code>message.count(&quot;e&quot;)</code></td>
 </tr>
+<tr>
+<td>Assembler en une seule chaîne de caractères</td>
+<td><code>message.joint(chaine ou liste)</code></td>
+</tr>
 </tbody>
 </table>
+
+<details class=" box cstyle notices green expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    Exemples avec les fonctions utiles pour les chaines
+  </summary>
+  <div class="box-content">
+<h3 id="lower"><code>lower()</code></h3>
+<p>Passe tout le texte en <strong>minuscules</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour Les Amis&#34;</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>lower())  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># &#34;bonjour les amis&#34;</span></span></span></code></pre></div>
+<hr>
+<h3 id="upper"><code>upper()</code></h3>
+<p>Passe tout le texte en <strong>majuscules</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour Les Amis&#34;</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>upper())  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># &#34;BONJOUR LES AMIS&#34;</span></span></span></code></pre></div>
+<hr>
+<h3 id="strip"><code>strip()</code></h3>
+<p>Enlève les espaces (ou tabulations, sauts de ligne) au <strong>début et à la fin</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;   Bonjour   &#34;</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>strip())  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># &#34;Bonjour&#34;</span></span></span></code></pre></div>
+<hr>
+<h3 id="splitséparateur"><code>split(séparateur)</code></h3>
+<p>Découpe une chaîne en <strong>morceaux</strong> (liste de mots), selon un séparateur.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pomme,banane,poire&#34;</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;,&#34;</span>))  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># [&#34;pomme&#34;, &#34;banane&#34;, &#34;poire&#34;]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>phrase <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour les amis&#34;</span>
+</span></span><span style="display:flex;"><span>print(phrase<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34; &#34;</span>))  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># [&#34;Bonjour&#34;, &#34;les&#34;, &#34;amis&#34;]</span></span></span></code></pre></div>
+<hr>
+<h3 id="replaceancien-nouveau"><code>replace(ancien, nouveau)</code></h3>
+<p>Remplace une partie du texte par une autre.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour tout le monde&#34;</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;Bonjour&#34;</span>, <span style="color:#e6db74">&#34;Salut&#34;</span>))  
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># &#34;Salut tout le monde&#34;</span></span></span></code></pre></div>
+<hr>
+<h3 id="findsous_chaine"><code>find(sous_chaine)</code></h3>
+<p>Trouve la <strong>position (indice)</strong> de la première occurrence.
+Renvoie <code>-1</code> si le mot n’est pas trouvé.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;biologie et chimie&#34;</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#34;bio&#34;</span>))   <span style="color:#75715e"># 0 (commence à l’indice 0)</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#34;chimie&#34;</span>))  <span style="color:#75715e"># 11</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#34;physique&#34;</span>))  <span style="color:#75715e"># -1 (absent)</span></span></span></code></pre></div>
+<hr>
+<h3 id="countsous_chaine"><code>count(sous_chaine)</code></h3>
+<p>Compte combien de fois une sous-chaîne apparaît.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pomme et poire et pomme&#34;</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>count(<span style="color:#e6db74">&#34;pomme&#34;</span>))  <span style="color:#75715e"># 2</span>
+</span></span><span style="display:flex;"><span>print(message<span style="color:#f92672">.</span>count(<span style="color:#e6db74">&#34;e&#34;</span>))      <span style="color:#75715e"># 4</span></span></span></code></pre></div>
+<hr>
+<h3 id="jointchaine"><code>joint(chaine)</code></h3>
+<p>Une chaîne de caractères doit être spécifiée comme <strong>séparateur</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mots <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Bonjour&#34;</span>, <span style="color:#e6db74">&#34;langage&#34;</span>, <span style="color:#e6db74">&#34;Python&#34;</span>]
+</span></span><span style="display:flex;"><span>phrase <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">.</span>join(mots)	  <span style="color:#75715e"># séparateur est l&#39;espace</span>
+</span></span><span style="display:flex;"><span>print(phrase)	<span style="color:#75715e"># Bonjour langage Python</span></span></span></code></pre></div>
+  </div>
+</details>
 
 <details class=" box cstyle notices blue expand" name="notice-toggle">
   <summary class="box-label">
@@ -715,16 +890,16 @@ G</code></pre></div>
 <li>Utile pour tester une portion de code.</li>
 <li>Exemple : si vous importez <code>numpy</code> dans une cellule mais n’exécutez <strong>que</strong> une autre cellule qui l’utilise, vous obtiendrez une erreur (<code>NameError: name 'plt' is not defined</code>).</li>
 </ul>
-<p><a href="#R-image-cb5e5130a82fc91f805e091f774490af" class="lightbox-link"><img alt="Capture d’écran - Bouton Exécuter la cellule" class="lazy lightbox figure-image" loading="lazy" src="/images/exec_cell.png?width=30vw" style=" height: auto; width: 30vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cb5e5130a82fc91f805e091f774490af"><img alt="Capture d’écran - Bouton Exécuter la cellule" class="lazy lightbox lightbox-image" loading="lazy" src="/images/exec_cell.png?width=30vw"></a></p>
+<p><a href="#R-image-37a0c99a5a151b7c2066662c44e3e910" class="lightbox-link"><img alt="Capture d’écran - Bouton Exécuter la cellule" class="lazy lightbox figure-image" loading="lazy" src="/images/exec_cell.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-37a0c99a5a151b7c2066662c44e3e910"><img alt="Capture d’écran - Bouton Exécuter la cellule" class="lazy lightbox lightbox-image" loading="lazy" src="/images/exec_cell.png?width=30vw"></a></p>
 <h2 id="2-exécuter-tout">2. Exécuter tout</h2>
 <ul>
 <li>Lance <strong>tout le bloc-notes de haut en bas</strong>.</li>
 <li>Assure que tous les imports (<code>matplotlib</code>, <code>numpy</code>, <code>pandas</code>, etc.) sont bien pris en compte avant les instructions suivantes.</li>
 <li>Utile avant une remise ou pour vérifier que le bloc-notes fonctionne de façon autonome.</li>
 </ul>
-<p><a href="#R-image-bee7d45040f3735fa4e8f1135b6ef484" class="lightbox-link"><img alt="Capture d’écran - Bouton Exécuter tout" class="lazy lightbox figure-image" loading="lazy" src="/images/exec_tout.png?width=30vw" style=" height: auto; width: 30vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bee7d45040f3735fa4e8f1135b6ef484"><img alt="Capture d’écran - Bouton Exécuter tout" class="lazy lightbox lightbox-image" loading="lazy" src="/images/exec_tout.png?width=30vw"></a></p>
+<p><a href="#R-image-d62ca074a60183411c16a715bc8ad61d" class="lightbox-link"><img alt="Capture d’écran - Bouton Exécuter tout" class="lazy lightbox figure-image" loading="lazy" src="/images/exec_tout.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d62ca074a60183411c16a715bc8ad61d"><img alt="Capture d’écran - Bouton Exécuter tout" class="lazy lightbox lightbox-image" loading="lazy" src="/images/exec_tout.png?width=30vw"></a></p>
 <h2 id="bonnes-pratiques">Bonnes pratiques</h2>
 <ul>
 <li>Après avoir écrit ou modifié plusieurs cellules, utilisez <strong>Exécuter tout</strong> pour vérifier la cohérence de votre bloc-notes.</li>
@@ -755,8 +930,8 @@ G</code></pre></div>
 <p>La commande <code>show()</code> sert à <strong>afficher la figure</strong> dans une nouvelle fenêtre.</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 <h2 id="figure-1figure_1pngwidth45vw"><strong>Résultat</strong> : Une courbe représentant les points (0,0), (1,1), (2,4), (3,9), (4,16).
-<a href="#R-image-e4b4ecc91bb930c3ab77e255b074e985" class="lightbox-link"><img alt="Figure 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_1.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e4b4ecc91bb930c3ab77e255b074e985"><img alt="Figure 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_1.png?width=45vw"></a></h2>
+<a href="#R-image-58c739825f1fda2d851b2e867bd6e1ed" class="lightbox-link"><img alt="Figure 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_1.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-58c739825f1fda2d851b2e867bd6e1ed"><img alt="Figure 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_1.png?width=45vw"></a></h2>
 <h3 id="exemple-complet">Exemple complet</h3>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
 </span></span><span style="display:flex;"><span>
@@ -768,8 +943,8 @@ G</code></pre></div>
 <h3 id="personnaliser-le-trait-de-la-courbe-style-de-ligne-couleur-marqueur">Personnaliser le trait de la courbe (Style de ligne, couleur, marqueur)</h3>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;green&#39;</span>, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;--&#39;</span>, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>)</span></span></code></pre></div>
 <p><strong>Résultat</strong>
-<a href="#R-image-a5ca991ebc993eae56a3c086726d3e9c" class="lightbox-link"><img alt="Figure 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_2.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a5ca991ebc993eae56a3c086726d3e9c"><img alt="Figure 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_2.png?width=45vw"></a></p>
+<a href="#R-image-42917daca17813272ba20a33c1484715" class="lightbox-link"><img alt="Figure 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_2.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-42917daca17813272ba20a33c1484715"><img alt="Figure 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_2.png?width=45vw"></a></p>
 <h3 id="options-les-plus-courantes-pour-la-méthode-pltplot">Options les plus courantes pour la méthode <code>plt.plot()</code></h3>
 <table>
 <thead>
@@ -838,8 +1013,8 @@ G</code></pre></div>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 <p><strong>Résultat</strong>
-<a href="#R-image-fd29b8ba2cf66535a070bc47f7056441" class="lightbox-link"><img alt="Figure 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_3.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fd29b8ba2cf66535a070bc47f7056441"><img alt="Figure 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_3.png?width=45vw"></a></p>
+<a href="#R-image-c5f9c74672c09ff1ed13119a06ca851c" class="lightbox-link"><img alt="Figure 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_3.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c5f9c74672c09ff1ed13119a06ca851c"><img alt="Figure 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_3.png?width=45vw"></a></p>
 <p>La méthode <code>grid()</code> accepte plusieurs paramètres de personnalisation:</p>
 <table>
 <thead>
@@ -901,8 +1076,8 @@ G</code></pre></div>
 <p>Cela ajoutera une zone dans un coin du graphique indiquant &ldquo;Courbe 1&rdquo; et &ldquo;Courbe 2&rdquo;.</p>
 </blockquote>
 <p><strong>Résultat</strong>
-<a href="#R-image-a0b753f917740530ee6511b024ee5298" class="lightbox-link"><img alt="Figure 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_4.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0b753f917740530ee6511b024ee5298"><img alt="Figure 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_4.png?width=45vw"></a></p>
+<a href="#R-image-08dbdab8f947ebedc6d30b37d345d88c" class="lightbox-link"><img alt="Figure 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/Figure_4.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-08dbdab8f947ebedc6d30b37d345d88c"><img alt="Figure 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/Figure_4.png?width=45vw"></a></p>
 <h3 id="enregistrer-un-graphique-sous-forme-dimage-avec-savefig">Enregistrer un graphique sous forme d&rsquo;image avec savefig()</h3>
 <p>La fonction <code>plt.savefig(&quot;figure.png&quot;)</code> <strong>enregistre</strong> le graphique dans un fichier image (ici au format PNG).
 Cela permet de conserver ou partager le graphique même sans afficher la fenêtre graphique.</p>
@@ -1150,8 +1325,8 @@ Classification pour Ville D :
 13 =&gt; Douce
 14 =&gt; Douce
 15 =&gt; Douce</code></pre></div>
-<h2 id="graphique-temperaturestemperaturespngwidth40vw"><a href="#R-image-2bc22a938335ecfe0efa343432c5a8f2" class="lightbox-link"><img alt="Graphique Temperatures" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/temperatures.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2bc22a938335ecfe0efa343432c5a8f2"><img alt="Graphique Temperatures" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/temperatures.png?width=40vw"></a></h2>
+<h2 id="graphique-temperaturestemperaturespngwidth40vw"><a href="#R-image-3a6bad7124c4aab1969b3edb8f857970" class="lightbox-link"><img alt="Graphique Temperatures" class="lazy lightbox figure-image" loading="lazy" src="/semaine6/temperatures.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a6bad7124c4aab1969b3edb8f857970"><img alt="Graphique Temperatures" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine6/temperatures.png?width=40vw"></a></h2>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
 <li>Lire la prochaine leçon : <a href="/semaine7/index.html">7. Tableaux numpy et opérations scientifiques</a></li>
@@ -1218,7 +1393,9 @@ Classification pour Ville D :
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
             <li class="active parent " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu">
             <li class="" data-nav-id="/semaine6/atelier/index.html"><a class="padding" href="/semaine6/atelier/index.html">Atelier - Version pas à pas</a></li>
-            <li class="" data-nav-id="/semaine6/solution/index.html"><a class="padding" href="/semaine6/solution/index.html">Atelier - Version pas à pas (solution)</a></li></ul></li>
+            <li class="" data-nav-id="/semaine6/solution/index.html"><a class="padding" href="/semaine6/solution/index.html">Atelier - Version pas à pas (solution)</a></li>
+            <li class="" data-nav-id="/semaine6/exercices/index.html"><a class="padding" href="/semaine6/exercices/index.html">Exercices - Boucles imbriquées avec une liste de listes</a></li>
+            <li class="" data-nav-id="/semaine6/print_end/index.html"><a class="padding" href="/semaine6/print_end/index.html">print et end</a></li></ul></li>
             <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
@@ -1239,8 +1416,8 @@ Classification pour Ville D :
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1759198254" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759198254" defer></script>
-    <script src="/js/theme.min.js?1759198254" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1759274394" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759274394" defer></script>
+    <script src="/js/theme.min.js?1759274394" defer></script>
   </body>
 </html>
