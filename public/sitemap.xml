@@ -70,6 +70,12 @@
     <loc>https://example.org/semaine6/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine6/atelier/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine6/solution/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine7/index.html</loc>
   </url>
   <url>

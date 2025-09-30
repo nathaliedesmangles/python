@@ -441,7 +441,7 @@ len(message)  # Nombre de caractères, incluant les espaces
 | -------------------------------------------- | ------------------------------------- |
 | Passer en minuscules                         | `message.lower()`                     |
 | Passer en majuscules                         | `message.upper()`                     |
-| Enlever les espaces autour                   | `texte.strip()`                       |
+| Enlever les espaces autour                   | `mssage.strip()`                      |
 | Séparer une chaîne en morceaux               | `message.split(" ")`                  |
 | Remplacer un mot                             | `message.replace("Bonjour", "Salut")` |
 | Trouver la position d’un mot/lettre          | `message.find("bio")`                 |

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Atelier 6 :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine6/atelier/index.html</link>
-    <description>Objectifs Comprendre et manipuler des listes simples et listes imbriquées Appliquer les manipulations de listes sur les chaînes de caractères Dessiner des formes triangulaires à l’aide de la boucle for. Utiliser matplotlib pour tracer, embellir et enregistrer un graphique simple</description>
+    <title>Atelier - Version pas à pas :: 420-SN1-RE</title>
+    <link>https://example.org/semaine6/atelier/index.html</link>
+    <description>Exercice Un chercheur a mesuré la température moyenne (°C) de quatre villes pendant une semaine. Les données sont regroupées dans une liste de listes. Vous devez analyser et représenter ces données.&#xA;1. Les données Créez une liste temperatures contenant les valeurs suivantes (une sous-liste par ville) :&#xA;Ville A : [15, 16, 14, 14, 17, 18, 19] Ville B : [22, 23, 21, 20, 24, 25, 26] Ville C : [5, 7, 6, 6, 8, 9, 7] Ville D : [10, 11, 12, 10, 13, 14, 15] Créez aussi deux listes :</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine6/atelier/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine6/atelier/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

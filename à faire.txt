@@ -1,4 +1,5 @@
 ## à faire
+- S7 demo : ajout images code
 - S8 NumPy regression
 - S9 Les fichiers de données
 - S10 eval2 formatif + sommatif

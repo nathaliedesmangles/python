@@ -1,0 +1,87 @@
+Voici un **tableau récapitulatif des opérations vectorisées de NumPy** (non exhaustif, mais couvrant l’essentiel pour un cours en sciences de la nature).
+
+Projet bio cellulaire: disctionnaire des ACG, découper en allèles
+physique mécanique : énergie auto vs bycliquette
+
+---
+
+## 1. **Opérations arithmétiques élémentaires**
+
+Avec
+a = np.array([1, 2, 3, 4])
+b = np.array([10, 20, 30, 40])
+
+
+| Opération      | Exemple avec NumPy | Description                      | Résultat (vectorisé)    |
+| -------------- | ------------------ | -------------------------------- | ----------------------- |
+| Addition       | `a + b`            | addition élément par élément     | [11 22 33 44]           |
+| Soustraction   | `a - b`            | soustraction élément par élément | [-9 -18 -27 -36]        |
+| Multiplication | `a * b`            | produit élément par élément      | [10 40 90 160]          |
+| Division       | `a / b`            | division élément par élément     | [0.1 0.1 0.1 0.1]       |
+| Puissance      | `a ** 2`           | élève chaque élément au carré    | [1 4 9 16]              |
+| Racine carrée  | `np.sqrt(a)`       | racine carrée de chaque élément  | [1. 1.41421356 1.73205081 2.] |
+| Valeur absolue | `np.abs(a)`        | valeur absolue de chaque élément | [9 18 27 36]            |
+
+---
+
+## 2. **Opérations statistiques**
+
+| Fonction   | Exemple        | Résultat            |
+| ---------- | -------------- | ------------------- |
+| Moyenne    | `np.mean(a)`   | moyenne des valeurs |
+| Médiane    | `np.median(a)` | médiane             |
+| Somme      | `np.sum(a)`    | somme totale        |
+| Produit    | `np.prod(a)`   | produit total       |
+| Variance   | `np.var(a)`    | variance            |
+| Écart-type | `np.std(a)`    | écart-type          |
+| Minimum    | `np.min(a)`    | valeur minimale     |
+| Maximum    | `np.max(a)`    | valeur maximale     |
+| Argmin     | `np.argmin(a)` | indice du min       |
+| Argmax     | `np.argmax(a)` | indice du max       |
+
+---
+
+## 3. **Fonctions trigonométriques**
+
+| Fonction                    | Exemple         | Résultat                     |
+| --------------------------- | --------------- | ---------------------------- |
+| Sinus                       | `np.sin(a)`     | sinus élément par élément    |
+| Cosinus                     | `np.cos(a)`     | cosinus élément par élément  |
+| Tangente                    | `np.tan(a)`     | tangente élément par élément |
+| Arcsin                      | `np.arcsin(a)`  | sinus inverse                |
+| Arccos                      | `np.arccos(a)`  | cosinus inverse              |
+| Arctan                      | `np.arctan(a)`  | tangente inverse             |
+| Conversion degrés → radians | `np.deg2rad(a)` | transforme ° en rad          |
+| Conversion radians → degrés | `np.rad2deg(a)` | transforme rad en °          |
+
+---
+
+## 4. **Opérations logiques & comparaison**
+
+| Opération         | Exemple         | Résultat                 |
+| ----------------- | --------------- | ------------------------ |
+| Égalité           | `a == b`        | tableau de booléens      |
+| Différence        | `a != b`        | tableau de booléens      |
+| Inférieur         | `a < b`         | tableau de booléens      |
+| Supérieur         | `a > b`         | tableau de booléens      |
+| Inférieur ou égal | `a <= b`        | tableau de booléens      |
+| Supérieur ou égal | `a >= b`        | tableau de booléens      |
+| Tout vrai         | `np.all(a > 0)` | `True` si tous positifs  |
+| Au moins un vrai  | `np.any(a < 0)` | `True` si un est négatif |
+
+---
+
+## 5. **Autres fonctions utiles**
+
+| Fonction           | Exemple          | Résultat                    |
+| ------------------ | ---------------- | --------------------------- |
+| Arrondi            | `np.round(a, 2)` | arrondit à 2 décimales      |
+| Plafond            | `np.ceil(a)`     | arrondi supérieur           |
+| Plancher           | `np.floor(a)`    | arrondi inférieur           |
+| Exponentielle      | `np.exp(a)`      | \$e^x\$ élément par élément |
+| Logarithme naturel | `np.log(a)`      | \$\ln(x)\$                  |
+| Logarithme base 10 | `np.log10(a)`    | \$\log\_{10}(x)\$           |
+
+---
+
+👉 Voulez-vous que je fasse une **version PDF imprimable du tableau** pour vos étudiants (une seule page, claire et compacte) ?

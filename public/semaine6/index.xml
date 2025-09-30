@@ -7,5 +7,19 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Atelier - Version pas à pas</title>
+      <link>https://example.org/semaine6/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/atelier/index.html</guid>
+      <description>Exercice Un chercheur a mesuré la température moyenne (°C) de quatre villes pendant une semaine. Les données sont regroupées dans une liste de listes. Vous devez analyser et représenter ces données.&#xA;1. Les données Créez une liste temperatures contenant les valeurs suivantes (une sous-liste par ville) :&#xA;Ville A : [15, 16, 14, 14, 17, 18, 19] Ville B : [22, 23, 21, 20, 24, 25, 26] Ville C : [5, 7, 6, 6, 8, 9, 7] Ville D : [10, 11, 12, 10, 13, 14, 15] Créez aussi deux listes :</description>
+    </item>
+    <item>
+      <title>Atelier - Version pas à pas (solution)</title>
+      <link>https://example.org/semaine6/solution/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/solution/index.html</guid>
+      <description>1. Les données # Données des températures temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;]&#xD;2.</description>
+    </item>
   </channel>
 </rss>

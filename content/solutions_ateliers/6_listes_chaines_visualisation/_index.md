@@ -36,7 +36,8 @@ for i in range(len(villes)):
 
 # 3. Classification des températures
 for i in range(len(villes)):
-    print(f"\nClassification pour {villes[i]} :")
+    print()
+    print(f"Classification pour {villes[i]} :")
     for j in range(len(temperatures[i])):
         t = temperatures[i][j]
         if t < 10:
