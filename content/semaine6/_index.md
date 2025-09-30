@@ -655,7 +655,7 @@ len(message)  # Nombre de caractères, incluant les espaces
 | Remplacer un mot                             | `message.replace("Bonjour", "Salut")` |
 | Trouver la position d’un mot/lettre          | `message.find("bio")`                 |
 | Compter le nombre de fois qu’un mot apparaît | `message.count("e")`                  |
-| Assembler en une seule chaîne de caractères  | `message.joint(chaine ou liste)`
+| Assembler en une seule chaîne de caractères  | `message.join(chaine)`
 
 {{% notice style="green" title="Exemples avec les fonctions utiles pour les chaines" groupid="notice-toggle" expanded="false" %}}
 ### `lower()`
@@ -748,7 +748,7 @@ print(message.count("e"))      # 4
 
 ---
 
-### `joint(chaine)`
+### `join(chaine)`
 
 Une chaîne de caractères doit être spécifiée comme **séparateur**.
 
