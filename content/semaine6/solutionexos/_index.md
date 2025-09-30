@@ -1,7 +1,7 @@
 +++
 title = "Exercices - Boucles imbriquées avec une liste de listes (solutions)"
 weight = 106.4
-draft = true
+draft = false
 +++
 
 
