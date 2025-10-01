@@ -3,7 +3,7 @@
   <channel>
     <title>Outils de développement :: 420-SN1-RE</title>
     <link>https://example.org/outils_dev/index.html</link>
-    <description>Installer les outils de travail Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports</description>
+    <description>Installer les outils de travail Installer les matplotlib, numpy et pandas Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/outils_dev/index.xml" rel="self" type="application/rss+xml" />
@@ -55,6 +55,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/outils_dev/install_env/index.html</guid>
       <description>Prérequis Système Windows 11 Connexion internet active (pour télécharger les composants internes) Pour installer manuellement les outils 1. Installer Python a) Va sur https://python.org &gt; Télécharge et installe la dernière version de Python.&#xA;b) Coche “Add Python to PATH” avant de cliquer sur “Install Now”&#xA;2. Installer Visual Studio Code et Jupyter Notebook a) Télécharge et suis les indications pour installer Visual Studio Code : Visual Studio Code&#xA;b) Installer Jupyter Notebook sur Visual Studio Code (en anglais) : How to Install Jupyter Notebook in VSCode</description>
+    </item>
+    <item>
+      <title>Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows)</title>
+      <link>https://example.org/outils_dev/extensions/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/extensions/index.html</guid>
+      <description>1. Vérifier que Python est installé Clique sur le menu Démarrer de Windows. Tape python et vérifie qu’il apparaît dans la liste. Si rien n’apparaît → il faut installer Python depuis le site officiel : https://www.python.org/downloads/windows/ (prendre la dernière version stable, cocher Add Python to PATH pendant l’installation). 2. Ouvrir Visual Studio Code Lancer Visual Studio Code. Ouvrir votre dossier ou fichier .ipynb de travail. 3. Ouvrir le terminal dans VS Code Dans le menu en haut, cliquer sur Terminal → Nouveau terminal.</description>
     </item>
   </channel>
 </rss>

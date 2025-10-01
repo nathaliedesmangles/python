@@ -6,6 +6,7 @@ weight = 20
 +++
 
 * [Installer les outils de travail](./install_env/)
+* [Installer les matplotlib, numpy et pandas](./extensions/)
 * [Se connecter à OneDrive](./oneDrive)
 * [Fichiers et répertoires/dossiers](./fichiers_dossiers)
 * [Utiliser Visual Studio Code (VS Code)](./vs-code)

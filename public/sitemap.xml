@@ -43,6 +43,9 @@
     <loc>https://example.org/outils_dev/install_env/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/outils_dev/extensions/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/regles/index.html</loc>
   </url>
   <url>
