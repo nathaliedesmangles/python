@@ -89,7 +89,7 @@
       <link>https://example.org/semaine7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine7/index.html</guid>
-      <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.</description>
+      <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Fichier .ipynb pour la démonstration en classe Fichier utilisé pour la démonstration&#xA;Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous.</description>
     </item>
     <item>
       <title>Solutions des exercices</title>

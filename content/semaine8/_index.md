@@ -230,6 +230,7 @@ print(np.diff(x))	# Résultat : [ 5 10 ]
 
 > Utile en physique : vitesse ≈ variation de position / variation de temps.
 
+
 ## Opérations vectorisées
 
 Avec NumPy, on peut appliquer directement les **opérations mathématiques** sur un tableau **sans utiliser de boucle**.
@@ -240,6 +241,8 @@ x = 3 * t**2   # applique la formule à chaque valeur. Ex: 3*0^2=0; 3*1^2=3 et 3
 
 print(x)	# Résultat : [ 0  3 12]
 ```
+
+
 
 ## Fonctions NumPy utiles en sciences
 
@@ -338,32 +341,6 @@ print("Ordonnée à l'origine =", b)
 
 {{% notice style="blue" title="Principales fonctions mathématiques de NumPy" groupid="notice-toggle" expanded="false" %}}
 {{% /notice %}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

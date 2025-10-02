@@ -16,6 +16,12 @@ draft = false
 * Filtrer les résultats pour une donnée ciblée.
 * Comparer des valeurs selon une donnée.
 
+## Fichier .ipynb pour la démonstration en classe
+
+[Fichier utilisé pour la démonstration](https://python-a25.netlify.app/blocnotes/demo_dictionnaires.ipynb)
+
+---
+
 {{% notice style="accent" title="Apprendre par la pratique" %}}
 - **Faites les exercices** en vous aidant des notes de cours ci-dessous.
 - Certains seront fait en classe à titre de démonstration.
