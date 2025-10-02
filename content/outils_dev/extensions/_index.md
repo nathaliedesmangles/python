@@ -29,6 +29,8 @@ weight = 28
 
 ### 4. Installer matplotlib
 
+![Matplotlib](./matplotlib.jpg?width=30vw)
+
 1. Dans le terminal, taper la commande suivante puis sur **Entrée** :
 
    ```bash
@@ -63,6 +65,8 @@ weight = 28
 
 **NumPy**
 
+![NumPy](./numpy.jpg?width=20vw)
+
 1. Dans une cellule, écrire :
 
    ```python
@@ -75,6 +79,10 @@ weight = 28
 3. Les données entre `[ ]` s'affichent → numpy est bien installé !
 
 **Pandas**
+
+![Pandas](./pandas.jpg?width=30vw)
+
+1. Dans une cellule, écrire :
 
   ```python
   import pandas as pd

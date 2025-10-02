@@ -1,7 +1,7 @@
 +++
 chapter = true
 pre = "8."
-title = " Tableaux numpy et droite de régression"
+title = " Tableaux NumPy et droite de régression"
 weight = 108
 draft = true
 +++
@@ -9,19 +9,12 @@ draft = true
 
 ## Objectifs
 
-* Créer des **tableaux de données** à une ou deux dimensions.
-* Calculer des **moyennes** et **écarts types**.
-* Gérer des données **expérimentales incomplètes** (`np.nan`).
-* Comparer des résultats entre éléments ou conditions.
-* Filtrer des données selon des conditions.
-* Tracer un graphique à barres muni d'une barre d'erreur avec `matplotlib`.
-* Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R².
-* Établir une relation entre deux données.
+* Comprendre ce qu’est NumPy et pourquoi il est utile en sciences.
+* Apprendre à créer et manipuler des tableaux NumPy.
+* Utiliser NumPy pour traiter des données physiques et faire des calculs rapides.
+* Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces).
+* Modéliser une relation entre deux données à l'aide d'une droite de régression linéaire.
 
-Comprendre ce qu’est NumPy et pourquoi il est utile en sciences.
-Apprendre à créer et manipuler des tableaux NumPy.
-Utiliser NumPy pour traiter des données physiques et faire des calculs rapides.
-Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces).
 
 ---
 
@@ -44,151 +37,235 @@ Appliquer NumPy à des situations concrètes en mécanique (cinématique, énerg
 6. Vous pouvez commencer à faire les exercices.
 
 
-## Exercice 1 : Chute libre
+---
 
-Un objet est lâché sans vitesse initiale d’une hauteur $h = 20 \, m$.
-La position est donnée par :
+# Exercices 
 
-$$
-y(t) = h - \frac{1}{2} g t^2
-$$
+## Exercice 1 : Chute libre verticale
 
-avec $g = 9.8 \, m/s^2$.
+Un objet est lâché d’une hauteur ( h = 20 , m ) sans vitesse initiale.   
+La formule de la position est :
+```math
+$$ y(t) = h - \frac{1}{2} g t^2	$$ 
+```
+où 
+```math
+$ g = 9.8 m/s^2 $
+```
 
-Écris un programme qui :
-
-1. Crée un tableau `t` de 0 à 2 secondes (21 valeurs).
-2. Calcule la position `y`.
-3. Affiche les 5 premières valeurs.
+1. **Importer NumPy** avec l’instruction `import numpy as np`.
+2. Créer un tableau `t` allant de 0 à 2 secondes, avec 21 valeurs également espacées (`np.linspace`).
+3. Calculer la position `y` avec la formule ci-dessus.
+4. Afficher les **5 premières valeurs de `y`** avec `print(y[:5])`.
 
 
 ## Exercice 2 : Mouvement rectiligne uniforme
 
-Une voiture roule à $v = 15 \, m/s$.
-La position est donnée par :
-
+Une voiture roule à vitesse constante (v = 15 , m/s). Sa position est donnée par :
+```math
 $$
 x(t) = v \cdot t
 $$
+```
 
-Écris un programme qui :
 
-1. Crée un tableau de temps entre 0 et 10 s (par pas de 0.5).
-2. Calcule la position.
-3. Affiche la dernière valeur (la position après 10 s).
+1. Crée un tableau `t` allant de 0 à 10 secondes avec un pas de 0.5 (`np.arange`).
+2. Calcule la position `x` pour chaque valeur de `t`.
+3. Affiche la **dernière valeur de `x`** pour connaître la position au bout de 10 s.
 
 
 ## Exercice 3 : Énergie cinétique
 
-La formule est :
-
+La formule de l’énergie cinétique est :
+```math
 $$
 E_c = \frac{1}{2} m v^2
 $$
+```
+Un objet de masse (m = 2.0 , kg) accélère de 0 à 20 m/s.
 
-Un objet de masse $m = 2.0 \, kg$ accélère de 0 à 20 m/s.
-
-Écris un programme qui :
-
-1. Crée un tableau de vitesses de 0 à 20 m/s (pas de 2).
-2. Calcule l’énergie cinétique correspondante.
-3. Affiche les résultats.
+1. Crée un tableau `v` des vitesses de 0 à 20 m/s avec un pas de 2 (`np.arange`).
+2. Applique la formule pour calculer `Ec`.
+3. Affiche le tableau des énergies cinétiques obtenues.
+4. Vérifie la valeur maximale avec `np.max(Ec)`.
 
 
 ## Exercice 4 : Oscillations harmoniques
 
 La position d’un oscillateur est donnée par :
-
+```math
 $$
 x(t) = A \cos(\omega t)
 $$
+```
+avec
+```math 
+A = 0.1 m et 
+$\omega = 2 \pi rad/s $
+```
 
-avec $A = 0.1 \, m$, $\omega = 2 \pi \, rad/s$.
 
-Écris un programme qui :
-
-1. Crée un tableau `t` de 0 à 2 s (101 valeurs).
-2. Calcule la position `x(t)`.
-3. Affiche la valeur maximale et minimale de la position. 
-
+1. Crée un tableau `t` de 0 à 2 secondes avec 101 valeurs (`np.linspace`).
+2. Calcule la position `x` en appliquant la formule.
+3. Utilise `np.max(x)` et `np.min(x)` pour trouver les extrêmes de l’oscillation.
+4. Vérifie que les résultats correspondent bien à (A) et (-A).
 
 ---
 
 # Cours
 
-## Pourquoi NumPy ?
-
-* En sciences, nous travaillons souvent avec des données numériques : mesures expérimentales, vecteurs, séries temporelles, etc.
-* En Python de base, on peut utiliser des listes, mais elles sont limitées pour les calculs scientifiques.
-* La **bibliothèque NumPy** (*Numerical Python*) permet de manipuler efficacement des tableaux numériques (***arrays***).
-
-## Importer la bibliothèque
-
-Avant de d’utiliser les fonctionnalités de NumPy, on doit importer la bibliothèque :
-
-```python
-import numpy as np
-```
-Ici, `np` est un **alias** utilisé par convention.
+*NumPy* est une bibliothèque Python conçue pour manipuler des données numériques sous forme de **tableaux (arrays)**. Elle est particulièrement utile pour appliquer rapidement des **formules** sur plusieurs valeurs.
 
 
-## Créer des tableaux (arrays)
+## Création de tableaux 
 
-### À partir d’une liste Python
+**1. Avec `np.array()`**
+
+* `np.array([valeurs])` → créer un tableau à partir d’une liste.
 
 ```python
 import numpy as np
+liste = [2, 4, 6]
 
-v = np.array([2, 4, 6, 8])
-print(v)
+v = np.array(liste)
+print(v) 	# Résultat : [2 4 6]
 ```
 
-**Résultat** :
-```
-[2 4 6 8]
-```
+**2. Avec `np.arange()`**
 
-### Générer rapidement des tableaux numériques
-
-* `np.arange(début, fin, pas)` → nombres régulièrement espacés.
-* `np.linspace(début, fin, n)` → n valeurs également réparties.
-* `np.zeros(n)` → n zéros.
-* `np.ones(n)` → n uns.
-
-Exemples :
+* `np.arange(debut, fin, pas)` → créer des valeurs espacées régulièrement.
 
 ```python
-x = np.linspace(0, 10, 6)
-print(x)
+t = np.arange(0, 5, 1)  # de 0 à 4 inclus
+print(t)	# Résultat : [0 1 2 3 4]
 ```
 
-**Résultat** :
+
+**3. Avec `np.linspace()`**
+
+* `np.linspace(debut, fin, nombre)` → créer un nombre fixe de valeurs entre deux bornes.
+
+```python
+t = np.linspace(0, 10, 5)
+print(t) # Résultat : [ 0.  2.5  5.  7.5 10. ]
 ```
-[ 0.  2.  4.  6.  8. 10.]
+
+**4. Avec `np.ones(n)`**
+
+* `np.ones(n)` → créer un tableau NumPy de `n` **1**
+
+```python
+u = np.ones(4)
+print(u)	# Résultat : [1. 1. 1. 1.]
 ```
-***AJOUTER EXEMPLES AUTRES FN***
+
+
+**5. Avec `np.zeros()`**
+
+* `np.zeros(n)` → créer un tableau NumPy de `n` **0**
+
+```python
+z = np.zeros(3)
+print(z)	# Résultat : [0. 0. 0.]
+```
+
+## Fonctions mathématiques (statistiques, trigonométriques et logarithmiques)
+
+**1. Racine carrée de chaque élément: `np.sqrt()`**
+
+```python
+x = np.array([4, 9, 16])
+print(np.sqrt(x))	# Résultat : [2. 3. 4.]
+```
+
+
+**2. Sinus et cosinus : `np.sin()` et `np.cos()`**
+
+```python
+angles = np.array([0, np.pi/2, np.pi])
+print(np.sin(angles))  # Résultat : [0. 1. 0.]
+print(np.cos(angles))  # Résultat : [ 1. 0. -1.]
+```
+
+**3. Exponentielle de chaque élément: `np.exp()`**
+
+```python
+x = np.array([0, 1, 2])
+print(np.exp(x))	# Résultat : [1. 2.71828183 7.3890561 ]
+```
+
+
+**4. Logarithme naturel de chaque élément : `np.log()`**
+
+```python
+x = np.array([1, np.e, np.e**2])
+print(np.log(x))
+# Résultat : [0. 1. 2.]
+```
+
+
+**5. Valeurs maximale ou minimale d'un tableau NumPy :  `np.max()` et `np.min()`**
+
+```python
+data = np.array([3, 7, 2, 9])
+print(np.max(data))  # Résultat : 9
+print(np.min(data))  # Résultat : 2
+```
+
+
+**6. Moyenne des valeurs du tableau : `np.mean()`**
+
+```python
+notes = np.array([80, 90, 100])
+print(np.mean(notes))	# Résultat : 90.0
+```
+
+
+**7. Différences entre les éléments consécutifs du tableau : `np.diff()`**
+
+```python
+x = np.array([0, 5, 15])
+print(np.diff(x))	# Résultat : [ 5 10 ]
+```
+
+> Utile en physique : vitesse ≈ variation de position / variation de temps.
 
 ## Opérations vectorisées
 
-Avec NumPy, les **opérations s’appliquent à tout le tableau** (pas besoin de boucles `for`).
+Avec NumPy, on peut appliquer directement les **opérations mathématiques** sur un tableau **sans utiliser de boucle**.
 
 ```python
-x = np.array([0, 1, 2, 3])
-y = x**2   # chaque élément est mis au carré
-print(y)
+t = np.array([0, 1, 2])
+x = 3 * t**2   # applique la formule à chaque valeur. Ex: 3*0^2=0; 3*1^2=3 et 3*2^2=12
+
+print(x)	# Résultat : [ 0  3 12]
 ```
 
-**Résultat** :
-```
-[0 1 4 9]
-```
+## Fonctions NumPy utiles en sciences
 
-### Opérations arithmétiques élémentaires
+| Fonction                              | Description                                                                        |
+| ------------------------------------- | ---------------------------------------------------------------------------------- |
+| `np.array()`                          | Crée un tableau NumPy à partir d’une liste Python.                                 |
+| `np.arange(debut, fin, pas)`          | Crée des valeurs espacées régulièrement avec un pas fixe.                          |
+| `np.linspace(debut, fin, nb_valeurs)` | Crée un nombre fixé de valeurs également espacées.                                 |
+| `np.ones(n)`                          | Crée un tableau rempli de 1.                                                       |
+| `np.zeros(n)`                         | Crée un tableau rempli de 0.                                                       |
+| `np.sqrt(x)`                          | Racine carrée de chaque élément.                                                   |
+| `np.sin(x)` / `np.cos(x)`             | Valeurs trigonométriques (radians).                                                |
+| `np.exp(x)`                           | Exponentielle de chaque élément.                                                   |
+| `np.log(x)`                           | Logarithme naturel de chaque élément.                                              |
+| `np.max(x)` / `np.min(x)`             | Valeur maximale ou minimale du tableau.                                            |
+| `np.mean(x)`                          | Moyenne des valeurs.                                                               |
+| `np.diff(x)`                          | Différences entre éléments consécutifs (utile pour vitesse ou dérivées).           |
+| `np.polyfit(x, y, deg)`               | Ajuste un polynôme de degré `deg` (utile pour régression linéaire ou quadratique). |
 
-Avec
-`a = np.array([1, 2, 3, 4])` et  
-`b = np.array([10, 20, 30, 40])`
-
+| Fonction   | Exemple        | Résultat
+| ---------- | -------------- | ----------------- |
+| Médiane    | `np.median(a)` | 2.5               |
+| Somme      | `np.sum(a)`    | 10                |
+| Produit    | `np.prod(a)`   | 24                |
+| Variance   | `np.var(a)`    | 1.25              |
+| Écart-type | `np.std(a)`    | 1.118033988749895 |
 
 | Opération      | Exemple avec NumPy | Description                      | Résultat (vectorisé)    |
 | -------------- | ------------------ | -------------------------------- | ----------------------- |
@@ -200,62 +277,16 @@ Avec
 | Racine carrée  | `np.sqrt(a)`       | racine carrée de chaque élément  | [1. 1.41421356 1.73205081 2.] |
 | Valeur absolue | `np.abs(a)`        | valeur absolue de chaque élément | [9 18 27 36]            |
 
-
-## Fonctions mathématiques
-
-NumPy propose beaucoup de fonctions
-
-### 1. Fonctions statistiques
-
-Avec `a = np.array([1, 2, 3, 4])`
-
-| Fonction   | Exemple        | Résultat
-| ---------- | -------------- | ----------------- |
-| Moyenne    | `np.mean(a)`   | 2.5               |
-| Médiane    | `np.median(a)` | 2.5               |
-| Somme      | `np.sum(a)`    | 10                |
-| Produit    | `np.prod(a)`   | 24                |
-| Variance   | `np.var(a)`    | 1.25              |
-| Écart-type | `np.std(a)`    | 1.118033988749895 |
-| Minimum    | `np.min(a)`    | 1                 |
-| Maximum    | `np.max(a)`    | 4                 |
-
-
-### 2. Fonctions logarithmiques et trigonométriques
-
-Avec ` = np.array([1, 2, 3, 4])`
-
 | Fonction           | Exemple          | Résultat                    |
 | ------------------ | ---------------- | --------------------------- |
 | Arrondi            | `np.round(a, 2)` | arrondit à 2 décimales      |
 | Plafond            | `np.ceil(a)`     | arrondi supérieur           |
 | Plancher           | `np.floor(a)`    | arrondi inférieur           |
-| Exponentielle      | `np.exp(a)`      | \$e^x\$ élément par élément |
-| Logarithme naturel | `np.log(a)`      | \$\ln(x)\$                  |
 | Logarithme base 2  | `np.log2(a)`     | \$\log\_{2}(x)\$           |
 | Logarithme base 10 | `np.log10(a)`    | \$\log\_{10}(x)\$           |
 
-| **Exponentielles et logarithmes** | `np.exp(x)`         | Exponentielle e^x                      | `np.exp(1) → 2.718…`           |
-|                                   | `np.expm1(x)`       | e^x - 1 (utile pour petites valeurs)   | `np.expm1(1e-5) → 1.000005e-5` |
-|                                   | `np.log1p(x)`       | ln(1+x)                                | `np.log1p(1e-5) → 0.00001`     |
-
- | `np.log(np.e) → 1`             |
- | `np.log2(8) → 3`               |
-| `np.log10(1000) → 3`           |
-
-
-Exemple :
-```python
-angles = np.linspace(0, np.pi, 4)
-print(np.sin(angles))
-```
-
-**Principales Fonctions trigonométriques**
-
 | Fonction                    | Exemple         | Résultat                     |
 | --------------------------- | --------------- | ---------------------------- |
-| Sinus                       | `np.sin(a)`     | sinus élément par élément    |
-| Cosinus                     | `np.cos(a)`     | cosinus élément par élément  |
 | Tangente                    | `np.tan(a)`     | tangente élément par élément |
 | Arcsin                      | `np.arcsin(a)`  | sinus inverse                |
 | Arccos                      | `np.arccos(a)`  | cosinus inverse              |
@@ -263,21 +294,47 @@ print(np.sin(angles))
 | Conversion degrés → radians | `np.deg2rad(a)` | transforme ° en rad          |
 | Conversion radians → degrés | `np.rad2deg(a)` | transforme rad en °          |
 
-### Constantes et autres fonctions utiles
-
 | Catégorie                         | Fonction            | Description                            | Exemple                        |
 | --------------------------------- | ------------------- | -------------------------------------- | ------------------------------ |
 | **Constantes**                    | `np.pi`             | Valeur de π                            | `np.pi → 3.14159…`             |
 |                                   | `np.e`              | Base du logarithme naturel             | `np.e → 2.71828…`              |
 |                                   | `np.arctan2(y, x)`  | Arctangente de y/x en quadrant correct | `np.arctan2(1,1) → π/4`        |
-| **Racines et valeurs absolues**   | `np.sqrt(x)`        | Racine carrée                          | `np.sqrt(9) → 3`               |
 |                                   | `np.cbrt(x)`        | Racine cubique                         | `np.cbrt(27) → 3`              |
 |                                   | `np.abs(x)`         | Valeur absolue                         | `np.abs(-5) → 5`               |
 |                                   | `np.fabs(x)`        | Valeur absolue flottante               | `np.fabs(-5.2) → 5.2`          |
-| **Arrondi et troncature**         | `np.round(x, n)`    | Arrondi à n décimales                  | `np.round(3.14159,2) → 3.14`   |
-|                                   | `np.floor(x)`       | Arrondi inférieur                      | `np.floor(3.7) → 3`            |
-|                                   | `np.ceil(x)`        | Arrondi supérieur                      | `np.ceil(3.2) → 4`             |
 |                                   | `np.trunc(x)`       | Tronque la partie décimale             | `np.trunc(3.7) → 3`            |
+
+
+## Régression linéaire avec NumPy (`np.polyfit()`)
+
+On peut ajuster une **droite** à des données expérimentales pour modéliser une relation entre deux données (exemple : loi de Newton, vitesse moyenne).
+
+
+```python
+t = np.array([0, 1, 2, 3])
+x = np.array([0, 2, 4.1, 6.2])
+a, b = np.polyfit(t, x, 1)
+print("Pente =", a, "Ordonnée =", b)
+# Résultat attendu : Pente ≈ 2.05 (vitesse), Ordonnée ≈ 0.02
+```
+
+
+```python
+import numpy as np
+
+# Données expérimentales (temps et position)
+t = np.array([0, 1, 2, 3, 4])
+x = np.array([0, 2.1, 4.2, 6.1, 8.2])
+
+# Ajustement linéaire (y = a*t + b)
+a, b = np.polyfit(t, x, 1)
+print("Pente (vitesse) =", a)
+print("Ordonnée à l'origine =", b)
+```
+
+> Ici, la **pente correspond à la vitesse moyenne**.
+
+
 
 {{% notice style="blue" title="Principales fonctions mathématiques de NumPy" groupid="notice-toggle" expanded="false" %}}
 {{% /notice %}}

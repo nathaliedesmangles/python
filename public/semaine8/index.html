@@ -5,34 +5,34 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R². Établir une relation entre deux données.">
+    <meta name="description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données physiques et faire des calculs rapides. Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces). Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content=" Tableaux numpy et droite de régression :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R². Établir une relation entre deux données.">
+    <meta name="twitter:title" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données physiques et faire des calculs rapides. Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces). Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous.">
     <meta property="og:url" content="http://localhost:1313/semaine8/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
-    <meta property="og:title" content=" Tableaux numpy et droite de régression :: 420-SN1-RE">
-    <meta property="og:description" content="Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R². Établir une relation entre deux données.">
+    <meta property="og:title" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données physiques et faire des calculs rapides. Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces). Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content=" Tableaux numpy et droite de régression :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectifs Créer des tableaux de données à une ou deux dimensions. Calculer des moyennes et écarts types. Gérer des données expérimentales incomplètes (np.nan). Comparer des résultats entre éléments ou conditions. Filtrer des données selon des conditions. Tracer un graphique à barres muni d’une barre d’erreur avec matplotlib. Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R². Établir une relation entre deux données.">
-    <meta itemprop="wordCount" content="2055">
-    <title> Tableaux numpy et droite de régression :: 420-SN1-RE</title>
-    <link href="/semaine8/index.xml" rel="alternate" type="application/rss+xml" title=" Tableaux numpy et droite de régression :: 420-SN1-RE">
-    <link href="/images/logo.png?1759284200" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759284200" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759284200" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759284200" rel="stylesheet">
-    <link href="/css/theme.css?1759284200" rel="stylesheet">
-    <link href="/css/format-html.css?1759284200" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1759284200" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1759284200" defer></script>
-    <script src="/js/lunr/lunr.min.js?1759284200" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1759284200" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1759284200" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1759284200" defer></script>
-    <script src="/js/search.js?1759284200" defer></script>
+    <meta itemprop="name" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données physiques et faire des calculs rapides. Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces). Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous.">
+    <meta itemprop="wordCount" content="2311">
+    <title> Tableaux NumPy et droite de régression :: 420-SN1-RE</title>
+    <link href="/semaine8/index.xml" rel="alternate" type="application/rss+xml" title=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
+    <link href="/images/logo.png?1759436038" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759436038" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759436038" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759436038" rel="stylesheet">
+    <link href="/css/theme.css?1759436038" rel="stylesheet">
+    <link href="/css/format-html.css?1759436038" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759436038" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759436038" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759436038" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759436038" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759436038" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759436038" defer></script>
+    <script src="/js/search.js?1759436038" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1759284200";
+      window.relearn.index_js_url="/searchindex.en.js?1759436038";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1759284200" rel="stylesheet">
+    <link href="/css/custom.css?1759436038" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine8/index.html">
     <div id="R-body" class="default-animation">
@@ -109,38 +109,26 @@
 
   <ul>
     <li><a href="#fichier-de-départ-à-utiliser">Fichier de départ à utiliser</a></li>
-    <li><a href="#exercice-1--chute-libre">Exercice 1 : Chute libre</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#exercice-1--chute-libre-verticale">Exercice 1 : Chute libre verticale</a></li>
     <li><a href="#exercice-2--mouvement-rectiligne-uniforme">Exercice 2 : Mouvement rectiligne uniforme</a></li>
     <li><a href="#exercice-3--énergie-cinétique">Exercice 3 : Énergie cinétique</a></li>
     <li><a href="#exercice-4--oscillations-harmoniques">Exercice 4 : Oscillations harmoniques</a></li>
   </ul>
 
   <ul>
-    <li><a href="#pourquoi-numpy-">Pourquoi NumPy ?</a></li>
-    <li><a href="#importer-la-bibliothèque">Importer la bibliothèque</a></li>
-    <li><a href="#créer-des-tableaux-arrays">Créer des tableaux (arrays)</a>
-      <ul>
-        <li><a href="#à-partir-dune-liste-python">À partir d’une liste Python</a></li>
-        <li><a href="#générer-rapidement-des-tableaux-numériques">Générer rapidement des tableaux numériques</a></li>
-      </ul>
-    </li>
-    <li><a href="#opérations-vectorisées">Opérations vectorisées</a>
-      <ul>
-        <li><a href="#opérations-arithmétiques-élémentaires">Opérations arithmétiques élémentaires</a></li>
-      </ul>
-    </li>
-    <li><a href="#fonctions-mathématiques">Fonctions mathématiques</a>
-      <ul>
-        <li><a href="#1-fonctions-statistiques">1. Fonctions statistiques</a></li>
-        <li><a href="#2-fonctions-logarithmiques-et-trigonométriques">2. Fonctions logarithmiques et trigonométriques</a></li>
-        <li><a href="#constantes-et-autres-fonctions-utiles">Constantes et autres fonctions utiles</a></li>
-      </ul>
-    </li>
+    <li><a href="#création-de-tableaux">Création de tableaux</a></li>
+    <li><a href="#fonctions-mathématiques-statistiques-trigonométriques-et-logarithmiques">Fonctions mathématiques (statistiques, trigonométriques et logarithmiques)</a></li>
+    <li><a href="#opérations-vectorisées">Opérations vectorisées</a></li>
+    <li><a href="#fonctions-numpy-utiles-en-sciences">Fonctions NumPy utiles en sciences</a></li>
+    <li><a href="#régression-linéaire-avec-numpy-nppolyfit">Régression linéaire avec NumPy (<code>np.polyfit()</code>)</a></li>
     <li><a href="#ignorer-des-valeurs-manquantes-npnan">Ignorer des valeurs manquantes (<code>np.nan</code>)</a></li>
     <li><a href="#filtrage-de-données">Filtrage de données</a></li>
     <li><a href="#tracer-des-graphiques-à-barres-et-avec-barres-derreur">Tracer des graphiques à barres et avec barres d&rsquo;erreur</a>
       <ul>
-        <li><a href="#importer-la-bibliothèque-1">Importer la bibliothèque</a></li>
+        <li><a href="#importer-la-bibliothèque">Importer la bibliothèque</a></li>
         <li><a href="#graphique-à-barres">Graphique à barres</a></li>
         <li><a href="#graphique-avec-barres-derreur">Graphique avec barres d’erreur</a></li>
       </ul>
@@ -159,7 +147,7 @@
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Tableaux numpy et droite de régression</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Tableaux NumPy et droite de régression</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/index.html" title="Dictionnaires (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
@@ -184,23 +172,16 @@
   <header class="headline">
   </header>
 
-<h1 id="tableaux-numpy-et-droite-de-régression"> Tableaux numpy et droite de régression</h1>
+<h1 id="tableaux-numpy-et-droite-de-régression"> Tableaux NumPy et droite de régression</h1>
 
 <h2 id="objectifs">Objectifs</h2>
 <ul>
-<li>Créer des <strong>tableaux de données</strong> à une ou deux dimensions.</li>
-<li>Calculer des <strong>moyennes</strong> et <strong>écarts types</strong>.</li>
-<li>Gérer des données <strong>expérimentales incomplètes</strong> (<code>np.nan</code>).</li>
-<li>Comparer des résultats entre éléments ou conditions.</li>
-<li>Filtrer des données selon des conditions.</li>
-<li>Tracer un graphique à barres muni d&rsquo;une barre d&rsquo;erreur avec <code>matplotlib</code>.</li>
-<li>Tracer une droite de régression et interpréter la pente, l’ordonnée à l’origine et le coefficient de détermination R².</li>
-<li>Établir une relation entre deux données.</li>
+<li>Comprendre ce qu’est NumPy et pourquoi il est utile en sciences.</li>
+<li>Apprendre à créer et manipuler des tableaux NumPy.</li>
+<li>Utiliser NumPy pour traiter des données physiques et faire des calculs rapides.</li>
+<li>Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces).</li>
+<li>Modéliser une relation entre deux données à l&rsquo;aide d&rsquo;une droite de régression linéaire.</li>
 </ul>
-<p>Comprendre ce qu’est NumPy et pourquoi il est utile en sciences.
-Apprendre à créer et manipuler des tableaux NumPy.
-Utiliser NumPy pour traiter des données physiques et faire des calculs rapides.
-Appliquer NumPy à des situations concrètes en mécanique (cinématique, énergie, forces).</p>
 <hr>
 
 <details open class=" box cstyle notices accent">
@@ -226,99 +207,226 @@ Appliquer NumPy à des situations concrètes en mécanique (cinématique, énerg
 <li>Assurez-vous que le noyau Python (<code>Kernel</code>) soit sélectionné.</li>
 <li>Vous pouvez commencer à faire les exercices.</li>
 </ol>
-<h2 id="exercice-1--chute-libre">Exercice 1 : Chute libre</h2>
-<p>Un objet est lâché sans vitesse initiale d’une hauteur $h = 20 , m$.
-La position est donnée par :</p>
-<p>$$
-y(t) = h - \frac{1}{2} g t^2
-$$</p>
-<p>avec $g = 9.8 , m/s^2$.</p>
-<p>Écris un programme qui :</p>
+<hr>
+<h1 id="exercices-1">Exercices</h1>
+<h2 id="exercice-1--chute-libre-verticale">Exercice 1 : Chute libre verticale</h2>
+<p>Un objet est lâché d’une hauteur ( h = 20 , m ) sans vitesse initiale.<br>
+La formule de la position est :</p>
+<span class="math align-center">$$ y(t) = h - \frac{1}{2} g t^2	$$ </span>
+<p>où</p>
+<span class="math align-center">$ g = 9.8 m/s^2 $</span>
 <ol>
-<li>Crée un tableau <code>t</code> de 0 à 2 secondes (21 valeurs).</li>
-<li>Calcule la position <code>y</code>.</li>
-<li>Affiche les 5 premières valeurs.</li>
+<li><strong>Importer NumPy</strong> avec l’instruction <code>import numpy as np</code>.</li>
+<li>Créer un tableau <code>t</code> allant de 0 à 2 secondes, avec 21 valeurs également espacées (<code>np.linspace</code>).</li>
+<li>Calculer la position <code>y</code> avec la formule ci-dessus.</li>
+<li>Afficher les <strong>5 premières valeurs de <code>y</code></strong> avec <code>print(y[:5])</code>.</li>
 </ol>
 <h2 id="exercice-2--mouvement-rectiligne-uniforme">Exercice 2 : Mouvement rectiligne uniforme</h2>
-<p>Une voiture roule à $v = 15 , m/s$.
-La position est donnée par :</p>
-<p>$$
+<p>Une voiture roule à vitesse constante (v = 15 , m/s). Sa position est donnée par :</p>
+<span class="math align-center">$$
 x(t) = v \cdot t
-$$</p>
-<p>Écris un programme qui :</p>
+$$</span>
 <ol>
-<li>Crée un tableau de temps entre 0 et 10 s (par pas de 0.5).</li>
-<li>Calcule la position.</li>
-<li>Affiche la dernière valeur (la position après 10 s).</li>
+<li>Crée un tableau <code>t</code> allant de 0 à 10 secondes avec un pas de 0.5 (<code>np.arange</code>).</li>
+<li>Calcule la position <code>x</code> pour chaque valeur de <code>t</code>.</li>
+<li>Affiche la <strong>dernière valeur de <code>x</code></strong> pour connaître la position au bout de 10 s.</li>
 </ol>
 <h2 id="exercice-3--énergie-cinétique">Exercice 3 : Énergie cinétique</h2>
-<p>La formule est :</p>
-<p>$$
+<p>La formule de l’énergie cinétique est :</p>
+<span class="math align-center">$$
 E_c = \frac{1}{2} m v^2
-$$</p>
-<p>Un objet de masse $m = 2.0 , kg$ accélère de 0 à 20 m/s.</p>
-<p>Écris un programme qui :</p>
+$$</span>
+<p>Un objet de masse (m = 2.0 , kg) accélère de 0 à 20 m/s.</p>
 <ol>
-<li>Crée un tableau de vitesses de 0 à 20 m/s (pas de 2).</li>
-<li>Calcule l’énergie cinétique correspondante.</li>
-<li>Affiche les résultats.</li>
+<li>Crée un tableau <code>v</code> des vitesses de 0 à 20 m/s avec un pas de 2 (<code>np.arange</code>).</li>
+<li>Applique la formule pour calculer <code>Ec</code>.</li>
+<li>Affiche le tableau des énergies cinétiques obtenues.</li>
+<li>Vérifie la valeur maximale avec <code>np.max(Ec)</code>.</li>
 </ol>
 <h2 id="exercice-4--oscillations-harmoniques">Exercice 4 : Oscillations harmoniques</h2>
 <p>La position d’un oscillateur est donnée par :</p>
-<p>$$
+<span class="math align-center">$$
 x(t) = A \cos(\omega t)
-$$</p>
-<p>avec $A = 0.1 , m$, $\omega = 2 \pi , rad/s$.</p>
-<p>Écris un programme qui :</p>
+$$</span>
+<p>avec</p>
+<span class="math align-center">A = 0.1 m et 
+$\omega = 2 \pi rad/s $</span>
 <ol>
-<li>Crée un tableau <code>t</code> de 0 à 2 s (101 valeurs).</li>
-<li>Calcule la position <code>x(t)</code>.</li>
-<li>Affiche la valeur maximale et minimale de la position.</li>
+<li>Crée un tableau <code>t</code> de 0 à 2 secondes avec 101 valeurs (<code>np.linspace</code>).</li>
+<li>Calcule la position <code>x</code> en appliquant la formule.</li>
+<li>Utilise <code>np.max(x)</code> et <code>np.min(x)</code> pour trouver les extrêmes de l’oscillation.</li>
+<li>Vérifie que les résultats correspondent bien à (A) et (-A).</li>
 </ol>
 <hr>
 <h1 id="cours">Cours</h1>
-<h2 id="pourquoi-numpy-">Pourquoi NumPy ?</h2>
+<p><em>NumPy</em> est une bibliothèque Python conçue pour manipuler des données numériques sous forme de <strong>tableaux (arrays)</strong>. Elle est particulièrement utile pour appliquer rapidement des <strong>formules</strong> sur plusieurs valeurs.</p>
+<h2 id="création-de-tableaux">Création de tableaux</h2>
+<p><strong>1. Avec <code>np.array()</code></strong></p>
 <ul>
-<li>En sciences, nous travaillons souvent avec des données numériques : mesures expérimentales, vecteurs, séries temporelles, etc.</li>
-<li>En Python de base, on peut utiliser des listes, mais elles sont limitées pour les calculs scientifiques.</li>
-<li>La <strong>bibliothèque NumPy</strong> (<em>Numerical Python</em>) permet de manipuler efficacement des tableaux numériques (<em><strong>arrays</strong></em>).</li>
+<li><code>np.array([valeurs])</code> → créer un tableau à partir d’une liste.</li>
 </ul>
-<h2 id="importer-la-bibliothèque">Importer la bibliothèque</h2>
-<p>Avant de d’utiliser les fonctionnalités de NumPy, on doit importer la bibliothèque :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np</span></span></code></pre></div>
-<p>Ici, <code>np</code> est un <strong>alias</strong> utilisé par convention.</p>
-<h2 id="créer-des-tableaux-arrays">Créer des tableaux (arrays)</h2>
-<h3 id="à-partir-dune-liste-python">À partir d’une liste Python</h3>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>v <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>])
-</span></span><span style="display:flex;"><span>print(v)</span></span></code></pre></div>
-<p><strong>Résultat</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[2 4 6 8]</code></pre></div>
-<h3 id="générer-rapidement-des-tableaux-numériques">Générer rapidement des tableaux numériques</h3>
+</span></span><span style="display:flex;"><span>v <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array(liste)
+</span></span><span style="display:flex;"><span>print(v) 	<span style="color:#75715e"># Résultat : [2 4 6]</span></span></span></code></pre></div>
+<p><strong>2. Avec <code>np.arange()</code></strong></p>
 <ul>
-<li><code>np.arange(début, fin, pas)</code> → nombres régulièrement espacés.</li>
-<li><code>np.linspace(début, fin, n)</code> → n valeurs également réparties.</li>
-<li><code>np.zeros(n)</code> → n zéros.</li>
-<li><code>np.ones(n)</code> → n uns.</li>
+<li><code>np.arange(debut, fin, pas)</code> → créer des valeurs espacées régulièrement.</li>
 </ul>
-<p>Exemples :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">6</span>)
-</span></span><span style="display:flex;"><span>print(x)</span></span></code></pre></div>
-<p><strong>Résultat</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[ 0.  2.  4.  6.  8. 10.]</code></pre></div>
-<p><em><strong>AJOUTER EXEMPLES AUTRES FN</strong></em></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>t <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1</span>)  <span style="color:#75715e"># de 0 à 4 inclus</span>
+</span></span><span style="display:flex;"><span>print(t)	<span style="color:#75715e"># Résultat : [0 1 2 3 4]</span></span></span></code></pre></div>
+<p><strong>3. Avec <code>np.linspace()</code></strong></p>
+<ul>
+<li><code>np.linspace(debut, fin, nombre)</code> → créer un nombre fixe de valeurs entre deux bornes.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>t <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>print(t) <span style="color:#75715e"># Résultat : [ 0.  2.5  5.  7.5 10. ]</span></span></span></code></pre></div>
+<p><strong>4. Avec <code>np.ones(n)</code></strong></p>
+<ul>
+<li><code>np.ones(n)</code> → créer un tableau NumPy de <code>n</code> <strong>1</strong></li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>u <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>ones(<span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>print(u)	<span style="color:#75715e"># Résultat : [1. 1. 1. 1.]</span></span></span></code></pre></div>
+<p><strong>5. Avec <code>np.zeros()</code></strong></p>
+<ul>
+<li><code>np.zeros(n)</code> → créer un tableau NumPy de <code>n</code> <strong>0</strong></li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>z <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>print(z)	<span style="color:#75715e"># Résultat : [0. 0. 0.]</span></span></span></code></pre></div>
+<h2 id="fonctions-mathématiques-statistiques-trigonométriques-et-logarithmiques">Fonctions mathématiques (statistiques, trigonométriques et logarithmiques)</h2>
+<p><strong>1. Racine carrée de chaque élément: <code>np.sqrt()</code></strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>])
+</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>sqrt(x))	<span style="color:#75715e"># Résultat : [2. 3. 4.]</span></span></span></code></pre></div>
+<p><strong>2. Sinus et cosinus : <code>np.sin()</code> et <code>np.cos()</code></strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>angles <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, np<span style="color:#f92672">.</span>pi<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>pi])
+</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>sin(angles))  <span style="color:#75715e"># Résultat : [0. 1. 0.]</span>
+</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>cos(angles))  <span style="color:#75715e"># Résultat : [ 1. 0. -1.]</span></span></span></code></pre></div>
+<p><strong>3. Exponentielle de chaque élément: <code>np.exp()</code></strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>exp(x))	<span style="color:#75715e"># Résultat : [1. 2.71828183 7.3890561 ]</span></span></span></code></pre></div>
+<p><strong>4. Logarithme naturel de chaque élément : <code>np.log()</code></strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, np<span style="color:#f92672">.</span>e, np<span style="color:#f92672">.</span>e<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>log(x))
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Résultat : [0. 1. 2.]</span></span></span></code></pre></div>
+<p><strong>5. Valeurs maximale ou minimale d&rsquo;un tableau NumPy :  <code>np.max()</code> et <code>np.min()</code></strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">9</span>])
+</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>max(data))  <span style="color:#75715e"># Résultat : 9</span>
+</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>min(data))  <span style="color:#75715e"># Résultat : 2</span></span></span></code></pre></div>
+<p><strong>6. Moyenne des valeurs du tableau : <code>np.mean()</code></strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>notes <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">100</span>])
+</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>mean(notes))	<span style="color:#75715e"># Résultat : 90.0</span></span></span></code></pre></div>
+<p><strong>7. Différences entre les éléments consécutifs du tableau : <code>np.diff()</code></strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">15</span>])
+</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>diff(x))	<span style="color:#75715e"># Résultat : [ 5 10 ]</span></span></span></code></pre></div>
+<blockquote>
+<p>Utile en physique : vitesse ≈ variation de position / variation de temps.</p>
+</blockquote>
 <h2 id="opérations-vectorisées">Opérations vectorisées</h2>
-<p>Avec NumPy, les <strong>opérations s’appliquent à tout le tableau</strong> (pas besoin de boucles <code>for</code>).</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])
-</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>   <span style="color:#75715e"># chaque élément est mis au carré</span>
-</span></span><span style="display:flex;"><span>print(y)</span></span></code></pre></div>
-<p><strong>Résultat</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[0 1 4 9]</code></pre></div>
-<h3 id="opérations-arithmétiques-élémentaires">Opérations arithmétiques élémentaires</h3>
-<p>Avec
-<code>a = np.array([1, 2, 3, 4])</code> et<br>
-<code>b = np.array([10, 20, 30, 40])</code></p>
+<p>Avec NumPy, on peut appliquer directement les <strong>opérations mathématiques</strong> sur un tableau <strong>sans utiliser de boucle</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>t <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> t<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>   <span style="color:#75715e"># applique la formule à chaque valeur. Ex: 3*0^2=0; 3*1^2=3 et 3*2^2=12</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(x)	<span style="color:#75715e"># Résultat : [ 0  3 12]</span></span></span></code></pre></div>
+<h2 id="fonctions-numpy-utiles-en-sciences">Fonctions NumPy utiles en sciences</h2>
+<table>
+<thead>
+<tr>
+<th>Fonction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>np.array()</code></td>
+<td>Crée un tableau NumPy à partir d’une liste Python.</td>
+</tr>
+<tr>
+<td><code>np.arange(debut, fin, pas)</code></td>
+<td>Crée des valeurs espacées régulièrement avec un pas fixe.</td>
+</tr>
+<tr>
+<td><code>np.linspace(debut, fin, nb_valeurs)</code></td>
+<td>Crée un nombre fixé de valeurs également espacées.</td>
+</tr>
+<tr>
+<td><code>np.ones(n)</code></td>
+<td>Crée un tableau rempli de 1.</td>
+</tr>
+<tr>
+<td><code>np.zeros(n)</code></td>
+<td>Crée un tableau rempli de 0.</td>
+</tr>
+<tr>
+<td><code>np.sqrt(x)</code></td>
+<td>Racine carrée de chaque élément.</td>
+</tr>
+<tr>
+<td><code>np.sin(x)</code> / <code>np.cos(x)</code></td>
+<td>Valeurs trigonométriques (radians).</td>
+</tr>
+<tr>
+<td><code>np.exp(x)</code></td>
+<td>Exponentielle de chaque élément.</td>
+</tr>
+<tr>
+<td><code>np.log(x)</code></td>
+<td>Logarithme naturel de chaque élément.</td>
+</tr>
+<tr>
+<td><code>np.max(x)</code> / <code>np.min(x)</code></td>
+<td>Valeur maximale ou minimale du tableau.</td>
+</tr>
+<tr>
+<td><code>np.mean(x)</code></td>
+<td>Moyenne des valeurs.</td>
+</tr>
+<tr>
+<td><code>np.diff(x)</code></td>
+<td>Différences entre éléments consécutifs (utile pour vitesse ou dérivées).</td>
+</tr>
+<tr>
+<td><code>np.polyfit(x, y, deg)</code></td>
+<td>Ajuste un polynôme de degré <code>deg</code> (utile pour régression linéaire ou quadratique).</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Fonction</th>
+<th>Exemple</th>
+<th>Résultat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Médiane</td>
+<td><code>np.median(a)</code></td>
+<td>2.5</td>
+</tr>
+<tr>
+<td>Somme</td>
+<td><code>np.sum(a)</code></td>
+<td>10</td>
+</tr>
+<tr>
+<td>Produit</td>
+<td><code>np.prod(a)</code></td>
+<td>24</td>
+</tr>
+<tr>
+<td>Variance</td>
+<td><code>np.var(a)</code></td>
+<td>1.25</td>
+</tr>
+<tr>
+<td>Écart-type</td>
+<td><code>np.std(a)</code></td>
+<td>1.118033988749895</td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
@@ -373,63 +481,6 @@ $$</p>
 </tr>
 </tbody>
 </table>
-<h2 id="fonctions-mathématiques">Fonctions mathématiques</h2>
-<p>NumPy propose beaucoup de fonctions</p>
-<h3 id="1-fonctions-statistiques">1. Fonctions statistiques</h3>
-<p>Avec <code>a = np.array([1, 2, 3, 4])</code></p>
-<table>
-<thead>
-<tr>
-<th>Fonction</th>
-<th>Exemple</th>
-<th>Résultat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Moyenne</td>
-<td><code>np.mean(a)</code></td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>Médiane</td>
-<td><code>np.median(a)</code></td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>Somme</td>
-<td><code>np.sum(a)</code></td>
-<td>10</td>
-</tr>
-<tr>
-<td>Produit</td>
-<td><code>np.prod(a)</code></td>
-<td>24</td>
-</tr>
-<tr>
-<td>Variance</td>
-<td><code>np.var(a)</code></td>
-<td>1.25</td>
-</tr>
-<tr>
-<td>Écart-type</td>
-<td><code>np.std(a)</code></td>
-<td>1.118033988749895</td>
-</tr>
-<tr>
-<td>Minimum</td>
-<td><code>np.min(a)</code></td>
-<td>1</td>
-</tr>
-<tr>
-<td>Maximum</td>
-<td><code>np.max(a)</code></td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<h3 id="2-fonctions-logarithmiques-et-trigonométriques">2. Fonctions logarithmiques et trigonométriques</h3>
-<p>Avec <code> = np.array([1, 2, 3, 4])</code></p>
 <table>
 <thead>
 <tr>
@@ -455,16 +506,6 @@ $$</p>
 <td>arrondi inférieur</td>
 </tr>
 <tr>
-<td>Exponentielle</td>
-<td><code>np.exp(a)</code></td>
-<td>$e^x$ élément par élément</td>
-</tr>
-<tr>
-<td>Logarithme naturel</td>
-<td><code>np.log(a)</code></td>
-<td>$\ln(x)$</td>
-</tr>
-<tr>
 <td>Logarithme base 2</td>
 <td><code>np.log2(a)</code></td>
 <td>$\log_{2}(x)$</td>
@@ -476,16 +517,6 @@ $$</p>
 </tr>
 </tbody>
 </table>
-<p>| <strong>Exponentielles et logarithmes</strong> | <code>np.exp(x)</code>         | Exponentielle e^x                      | <code>np.exp(1) → 2.718…</code>           |
-|                                   | <code>np.expm1(x)</code>       | e^x - 1 (utile pour petites valeurs)   | <code>np.expm1(1e-5) → 1.000005e-5</code> |
-|                                   | <code>np.log1p(x)</code>       | ln(1+x)                                | <code>np.log1p(1e-5) → 0.00001</code>     |</p>
-<p>| <code>np.log(np.e) → 1</code>             |
-| <code>np.log2(8) → 3</code>               |
-| <code>np.log10(1000) → 3</code>           |</p>
-<p>Exemple :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>angles <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, np<span style="color:#f92672">.</span>pi, <span style="color:#ae81ff">4</span>)
-</span></span><span style="display:flex;"><span>print(np<span style="color:#f92672">.</span>sin(angles))</span></span></code></pre></div>
-<p><strong>Principales Fonctions trigonométriques</strong></p>
 <table>
 <thead>
 <tr>
@@ -495,16 +526,6 @@ $$</p>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Sinus</td>
-<td><code>np.sin(a)</code></td>
-<td>sinus élément par élément</td>
-</tr>
-<tr>
-<td>Cosinus</td>
-<td><code>np.cos(a)</code></td>
-<td>cosinus élément par élément</td>
-</tr>
 <tr>
 <td>Tangente</td>
 <td><code>np.tan(a)</code></td>
@@ -537,7 +558,6 @@ $$</p>
 </tr>
 </tbody>
 </table>
-<h3 id="constantes-et-autres-fonctions-utiles">Constantes et autres fonctions utiles</h3>
 <table>
 <thead>
 <tr>
@@ -567,12 +587,6 @@ $$</p>
 <td><code>np.arctan2(1,1) → π/4</code></td>
 </tr>
 <tr>
-<td><strong>Racines et valeurs absolues</strong></td>
-<td><code>np.sqrt(x)</code></td>
-<td>Racine carrée</td>
-<td><code>np.sqrt(9) → 3</code></td>
-</tr>
-<tr>
 <td></td>
 <td><code>np.cbrt(x)</code></td>
 <td>Racine cubique</td>
@@ -591,24 +605,6 @@ $$</p>
 <td><code>np.fabs(-5.2) → 5.2</code></td>
 </tr>
 <tr>
-<td><strong>Arrondi et troncature</strong></td>
-<td><code>np.round(x, n)</code></td>
-<td>Arrondi à n décimales</td>
-<td><code>np.round(3.14159,2) → 3.14</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>np.floor(x)</code></td>
-<td>Arrondi inférieur</td>
-<td><code>np.floor(3.7) → 3</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>np.ceil(x)</code></td>
-<td>Arrondi supérieur</td>
-<td><code>np.ceil(3.2) → 4</code></td>
-</tr>
-<tr>
 <td></td>
 <td><code>np.trunc(x)</code></td>
 <td>Tronque la partie décimale</td>
@@ -616,6 +612,26 @@ $$</p>
 </tr>
 </tbody>
 </table>
+<h2 id="régression-linéaire-avec-numpy-nppolyfit">Régression linéaire avec NumPy (<code>np.polyfit()</code>)</h2>
+<p>On peut ajuster une <strong>droite</strong> à des données expérimentales pour modéliser une relation entre deux données (exemple : loi de Newton, vitesse moyenne).</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>t <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4.1</span>, <span style="color:#ae81ff">6.2</span>])
+</span></span><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(t, x, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Pente =&#34;</span>, a, <span style="color:#e6db74">&#34;Ordonnée =&#34;</span>, b)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Résultat attendu : Pente ≈ 2.05 (vitesse), Ordonnée ≈ 0.02</span></span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données expérimentales (temps et position)</span>
+</span></span><span style="display:flex;"><span>t <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>])
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">6.1</span>, <span style="color:#ae81ff">8.2</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ajustement linéaire (y = a*t + b)</span>
+</span></span><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(t, x, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Pente (vitesse) =&#34;</span>, a)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Ordonnée à l&#39;origine =&#34;</span>, b)</span></span></code></pre></div>
+<blockquote>
+<p>Ici, la <strong>pente correspond à la vitesse moyenne</strong>.</p>
+</blockquote>
 
 <details open class=" box cstyle notices blue" name="notice-toggle">
   <summary class="box-label" tabindex="-1">
@@ -765,7 +781,7 @@ Valeurs supérieures à 5 : [7 8]</code></pre></div>
 <p>C’est une méthode très rapide car <code>numpy</code> applique l’opération directement sur toute la colonne, sans boucle explicite.</p>
 <hr>
 <h2 id="tracer-des-graphiques-à-barres-et-avec-barres-derreur">Tracer des graphiques à barres et avec barres d&rsquo;erreur</h2>
-<h3 id="importer-la-bibliothèque-1">Importer la bibliothèque</h3>
+<h3 id="importer-la-bibliothèque">Importer la bibliothèque</h3>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt</span></span></code></pre></div>
 <h3 id="graphique-à-barres">Graphique à barres</h3>
 <p><strong>Exemple de base :</strong></p>
@@ -777,8 +793,8 @@ Valeurs supérieures à 5 : [7 8]</code></pre></div>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xticks(rotation<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#34;Score&#34;</span>])
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-0056628c3154b5e7dbdc38118d014e8a" class="lightbox-link"><img alt="graphique à barres" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_barres.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0056628c3154b5e7dbdc38118d014e8a"><img alt="graphique à barres" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_barres.png?width=40vw"></a></p>
+<p><a href="#R-image-ef0c2689f5b97be8c0365c06f6875cab" class="lightbox-link"><img alt="graphique à barres" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_barres.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ef0c2689f5b97be8c0365c06f6875cab"><img alt="graphique à barres" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_barres.png?width=40vw"></a></p>
 <table>
 <thead>
 <tr>
@@ -809,8 +825,8 @@ Valeurs supérieures à 5 : [7 8]</code></pre></div>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-3ad9b6414a4616bfe8e3e0668a3c1c38" class="lightbox-link"><img alt="graphique à barres d&rsquo;erreur" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_barres_erreurs.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3ad9b6414a4616bfe8e3e0668a3c1c38"><img alt="graphique à barres d&rsquo;erreur" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_barres_erreurs.png?width=40vw"></a></p>
+<p><a href="#R-image-e2dd79fcfb2089e2e1c9faf0991499f6" class="lightbox-link"><img alt="graphique à barres d&rsquo;erreur" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_barres_erreurs.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e2dd79fcfb2089e2e1c9faf0991499f6"><img alt="graphique à barres d&rsquo;erreur" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_barres_erreurs.png?width=40vw"></a></p>
 <table>
 <thead>
 <tr>
@@ -858,8 +874,8 @@ Valeurs supérieures à 5 : [7 8]</code></pre></div>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()	<span style="color:#75715e"># Ajuste l&#39;espacement pour éviter le chevauchement</span>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-de75fca6e49eff5635937ab906552a08" class="lightbox-link"><img alt="graphique droite de régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_regression.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-de75fca6e49eff5635937ab906552a08"><img alt="graphique droite de régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_regression.png?width=40vw"></a></p>
+<p><a href="#R-image-389e8725beec09458e198460754ece89" class="lightbox-link"><img alt="graphique droite de régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_regression.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-389e8725beec09458e198460754ece89"><img alt="graphique droite de régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_regression.png?width=40vw"></a></p>
 <hr>
 <h1 id="atelier">Atelier</h1>
 <ol>
@@ -954,8 +970,8 @@ Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
 </ul>
 </li>
 </ol>
-<p><a href="#R-image-3101835612b9f7bd9c88dc0f54725eb3" class="lightbox-link"><img alt="Graphique" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=45vw" style=" height: auto; width: 45vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3101835612b9f7bd9c88dc0f54725eb3"><img alt="Graphique" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=45vw"></a></p>
+<p><a href="#R-image-fe39769a0fc027c7f5297f039eb04877" class="lightbox-link"><img alt="Graphique" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=45vw" style=" height: auto; width: 45vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fe39769a0fc027c7f5297f039eb04877"><img alt="Graphique" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=45vw"></a></p>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
@@ -1025,7 +1041,7 @@ Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
             <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
-            <li class="active " data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux numpy et droite de régression</a></li>
+            <li class="active " data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
             <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Lecture et écriture de fichiers textes (avec NumPy ou Pandas)</a></li>
             <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
@@ -1050,8 +1066,20 @@ Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1759284200" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759284200" defer></script>
-    <script src="/js/theme.js?1759284200" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1759436038" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759436038" defer></script>
+    <script>
+      window.MathJax = Object.assign( window.MathJax || {}, {
+        tex: {
+          inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+          displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+        },
+        options: {
+          enableMenu: false 
+        }
+      }, JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1759436038"></script>
+    <script src="/js/theme.js?1759436038" defer></script>
   </body>
 </html>
