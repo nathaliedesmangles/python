@@ -573,4 +573,4 @@ Cet exercice utilise les mêmes notions que dans l'exercice précédent, mais av
 
 
 1. Lire la prochaine leçon : [8. Tableaux NumPy et droite de régression](../semaine8/)
-2. Faire les exercices de la [prochaine leçon :](../semaine8/#exercices)
+2. Faire les exercices de la prochaine leçon <!--[prochaine leçon :](../semaine8/#exercices)  A MODIFIER -->

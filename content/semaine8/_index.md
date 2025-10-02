@@ -24,7 +24,6 @@ draft = true
 - Les solutions seront disponibles à la fin de la semaine prochaine.
 {{% /notice %}}
 
-# Exercices
 
 ## Fichier de départ à utiliser
 
