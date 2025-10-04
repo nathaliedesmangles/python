@@ -30,10 +30,10 @@ draft = false
 
 ## Fichier de départ à utiliser
 
-1. Cliquez sur le lien pour télécharger le fichier : [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_numpy.ipynb)  
+1. Cliquez sur le lien pour télécharger le fichier : [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_numpy_reg.ipynb)  
 2. Enregistrez-le dans votre dossier **exercices** de la semaine en cours.  
 3. Ouvrez **Visual Studio Code**.  
-4. Recherchez et ouvrez le fichier `exercices_numpy.ipynb`.  
+4. Recherchez et ouvrez le fichier `exercices_numpy_reg.ipynb`.  
 5. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.  
 6. Vous pouvez commencer les exercices.
 
