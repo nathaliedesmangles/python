@@ -29,7 +29,7 @@ weight = 28
 
 ### 4. Installer matplotlib
 
-![Matplotlib](./matplotlib.jpg?width=30vw)
+![Matplotlib](../matplotlib.jpg?width=30vw)
 
 1. Dans le terminal, taper la commande suivante puis sur **Entrée** :
 
@@ -65,7 +65,7 @@ weight = 28
 
 **NumPy**
 
-![NumPy](./numpy.jpg?width=20vw)
+![NumPy](../numpy.jpg?width=20vw)
 
 1. Dans une cellule, écrire :
 
@@ -80,7 +80,7 @@ weight = 28
 
 **Pandas**
 
-![Pandas](./pandas.jpg?width=30vw)
+![Pandas](../pandas.jpg?width=30vw)
 
 1. Dans une cellule, écrire :
 

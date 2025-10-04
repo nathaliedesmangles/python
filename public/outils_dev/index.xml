@@ -3,7 +3,7 @@
   <channel>
     <title>Outils de développement :: 420-SN1-RE</title>
     <link>https://example.org/outils_dev/index.html</link>
-    <description>Installer les outils de travail Installer les matplotlib, numpy et pandas Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports</description>
+    <description>Installer les outils de travail Windows - Installer matplotlib, numpy et pandas MacOS - Installer matplotlib, numpy et pandas Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/outils_dev/index.xml" rel="self" type="application/rss+xml" />
@@ -58,10 +58,17 @@
     </item>
     <item>
       <title>Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows)</title>
-      <link>https://example.org/outils_dev/extensions/index.html</link>
+      <link>https://example.org/outils_dev/extensions/windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/extensions/index.html</guid>
+      <guid>https://example.org/outils_dev/extensions/windows/index.html</guid>
       <description>1. Vérifier que Python est installé Clique sur le menu Démarrer de Windows. Tape python et vérifie qu’il apparaît dans la liste. Si rien n’apparaît → il faut installer Python depuis le site officiel : https://www.python.org/downloads/windows/ (prendre la dernière version stable, cocher Add Python to PATH pendant l’installation). 2. Ouvrir Visual Studio Code Lancer Visual Studio Code. Ouvrir votre dossier ou fichier .ipynb de travail. 3. Ouvrir le terminal dans VS Code Dans le menu en haut, cliquer sur Terminal → Nouveau terminal.</description>
+    </item>
+    <item>
+      <title>Installer un module (ex. Matplotlib) dans Visual Studio Code (MacOS)</title>
+      <link>https://example.org/outils_dev/extensions/macos/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/extensions/macos/index.html</guid>
+      <description>Python et VS Code déjà installés ?&#xD;Vous pouvez aller directement à l’étape 4.&#xA;Étape 1 : Installer Python sur MacOS Ouvrez Safari et allez sur https://www.python.org/downloads Cliquez sur “Download Python” (la version recommandée). Ouvrez le fichier .pkg téléchargé et suivez les étapes d’installation. Vérifiez l’installation : Ouvrez Terminal (dans Applications &gt; Utilitaires). Tapez : python3 --version → vous devriez voir quelque chose comme Python 3.13.7. Étape 2 : Installer Visual Studio Code Allez sur https://code.</description>
     </item>
   </channel>
 </rss>

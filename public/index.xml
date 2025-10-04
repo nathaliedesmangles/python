@@ -19,7 +19,7 @@
       <link>https://example.org/outils_dev/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/outils_dev/index.html</guid>
-      <description>Installer les outils de travail Installer les matplotlib, numpy et pandas Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports</description>
+      <description>Installer les outils de travail Windows - Installer matplotlib, numpy et pandas MacOS - Installer matplotlib, numpy et pandas Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports</description>
     </item>
     <item>
       <title>Règlements de classe</title>
@@ -90,6 +90,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine7/index.html</guid>
       <description>Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Fichier .ipynb pour la démonstration en classe Fichier utilisé pour la démonstration&#xA;Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous.</description>
+    </item>
+    <item>
+      <title> Tableaux NumPy et droite de régression</title>
+      <link>https://example.org/semaine8/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/index.html</guid>
+      <description>Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration&#xA;Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous.</description>
     </item>
     <item>
       <title>Solutions des exercices</title>

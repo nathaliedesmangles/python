@@ -1,6 +1,6 @@
 Voici un **tableau récapitulatif des opérations vectorisées de NumPy** (non exhaustif, mais couvrant l’essentiel pour un cours en sciences de la nature).
 
-Projet bio cellulaire: disctionnaire des ACG, découper en allèles
+Projet bio cellulaire: dictionnaire des ACG, découper en allèles
 physique mécanique : énergie auto vs bycliquette
 
 ---

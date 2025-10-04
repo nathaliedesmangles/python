@@ -4,6 +4,7 @@ weight = 12
 +++
 
 
+
 ### Locaux où se donne le cours 420-SN1-RE
 
 * A-3820
@@ -14,5 +15,5 @@ weight = 12
 
 ### Autres locaux (à confirmer)
 
-*
-*
+* B-3369
+* 

@@ -1,0 +1,354 @@
+Parfait ! Voici la version **Markdown standard** avec une petite phrase d’introduction pour chaque exemple :
+
+````markdown
+# Exercices
+
+> 💡 **Graphiques**  
+> Le choix des **couleurs**, des **marqueurs** et des **styles de traits** est libre.  
+> Vous pouvez vous amuser à changer la mise en forme.
+
+---
+
+### Exercice 1 : Chute libre verticale et régression linéaire
+
+Un objet est lâché d’une hauteur **h = 20 m** sans vitesse initiale.  
+La formule de la position est :
+
+$$
+y(t) = h - \tfrac{1}{2} g t^2
+$$
+
+avec $ g = 9.8 \, m/s^2$
+
+1. Importez NumPy et Matplotlib.  
+2. Définissez les deux constantes `g` et `h`.  
+3. Créez un tableau `t` de 0 à 2 secondes avec 21 valeurs (`np.linspace(0, 2, 21)`).  
+4. Calculez la position `y` avec la formule ci-dessus.  
+5. Affichez les **5 premières valeurs** de `y` (`y[:5]`).  
+6. Tracez le graphique de la position (`y`) en fonction du temps (`plt.plot(t, y)`).  
+7. Ajoutez une **droite de régression linéaire** sur la portion `0.5 ≤ t ≤ 1.5` :  
+
+   ```python
+   masque = (t >= 0.5) & (t <= 1.5)
+   coef = np.polyfit(t[masque], y[masque], 1)
+   droite = np.polyval(coef, t)
+   plt.plot(t, droite)
+````
+
+**Résultats** :
+
+```
+5 premières valeurs de y : [20.    19.951 19.804 19.559 19.216]
+```
+
+![graphique 1](./graphe_exo1.png)
+
+---
+
+## Exercice 2 : Mouvement rectiligne uniforme et régression linéaire
+
+Une voiture roule à vitesse constante **v = 15 m/s**.
+Sa position est donnée par :
+
+$$
+x(t) = v \cdot t
+$$
+
+1. Définissez la vitesse constante (`v = 15`).
+2. Créez un tableau `t` allant de 0 à 10 s avec un pas de 0.5 (`np.arange(0, 10.5, 0.5)`).
+3. Calculez la position `x` avec la formule ci-dessus.
+4. Affichez la **dernière valeur de `x`** (`x[-1]`).
+5. Tracez la position en fonction du temps (`plt.plot(t, x)`).
+6. Ajoutez une **droite de régression linéaire** pour vérifier que la relation est bien proportionnelle.
+
+**Résultats** :
+
+```
+Dernière position : 150.0
+```
+
+![graphique 2](./graphe_exo2.png)
+
+---
+
+## Exercice 3 : Énergie cinétique et barres d’erreur
+
+La formule de l'énergie cinétique est :
+
+$$
+E_c = \tfrac{1}{2} m v^2
+$$
+
+Un objet de masse **m = 2.0 kg** accélère de 0 à 20 m/s.
+
+1. Créez un tableau `v` de 0 à 20 avec un pas de 2 (`np.arange`).
+2. Calculez `Ec`.
+3. Affichez les énergies calculées.
+4. Vérifiez la valeur maximale avec `np.max(Ec)`.
+5. Affichez les **3 dernières valeurs** et la **sous-plage 2–8 m/s**.
+6. Tracez un **graphique à barres** des énergies en fonction de la vitesse, en ajoutant des **barres d’erreur** (±5%).
+
+   ```python
+   erreurs = 0.05 * Ec
+   plt.bar(v, Ec, yerr=erreurs)
+   ```
+
+**Résultats** :
+
+```
+Énergies : [  0.   4.  16.  36.  64. 100. 144. 196. 256. 324. 400.]
+Max : 400.0
+Trois dernières : [256. 324. 400.]
+Vitesses 2–8 : [2 4 6 8]
+Énergies : [ 4. 16. 36. 64.]
+```
+
+![graphique 3](./graphe_exo3.png)
+
+---
+
+### Exercice 4 : Oscillations harmoniques
+
+La position d’un oscillateur est donnée par :
+
+$$
+x(t) = A \cos(\omega t)
+$$
+
+avec $A = 0.1 , m$ et $\omega = 2 \pi , rad/s$
+
+1. Créez un tableau `t` de 0 à 2 s avec 101 valeurs (`np.linspace`).
+2. Calculez la position `x`.
+3. Trouvez les valeurs extrêmes (`np.max`, `np.min`).
+4. Tracez le graphique de l’oscillation.
+
+**Résultats** :
+
+```
+Max : 0.1
+Min : -0.1
+```
+
+![graphique 4](./graphe_exo4.png)
+
+---
+
+# Cours
+
+*NumPy* est une bibliothèque Python conçue pour manipuler des données numériques sous forme de **tableaux (arrays)**. Elle est particulièrement utile pour appliquer rapidement des **formules** sur plusieurs valeurs.
+
+## 1. Création de tableaux
+
+```python
+import numpy as np
+
+# Créer un tableau à partir d’une liste
+a = np.array([1, 2, 3])       # → [1 2 3]
+
+# Créer des valeurs espacées régulièrement
+b = np.arange(0, 5, 1)        # → [0 1 2 3 4]
+
+# Créer un nombre fixé de valeurs également espacées
+c = np.linspace(0, 1, 5)      # → [0.   0.25 0.5  0.75 1. ]
+
+# Créer un tableau rempli de 1
+d = np.ones(3)                # → [1. 1. 1.]
+
+# Créer un tableau rempli de 0
+e = np.zeros(3)               # → [0. 0. 0.]
+```
+
+## 2. Opérations arithmétiques
+
+```python
+a = np.array([1, 2, 3, 4])
+b = np.array([10, 20, 30, 40])
+
+# Addition élément par élément
+a + b    # → [11 22 33 44]
+
+# Soustraction élément par élément
+a - b    # → [-9 -18 -27 -36]
+
+# Multiplication élément par élément
+a * b    # → [10 40 90 160]
+
+# Division élément par élément
+a / b    # → [0.1 0.1 0.1 0.1]
+
+# Puissance élément par élément
+a ** 2   # → [ 1  4  9 16]
+
+# Valeur absolue
+np.abs([-3, -5])   # → [3 5]
+```
+
+## 3. Statistiques
+
+```python
+x = np.array([1, 2, 3, 4])
+
+# Valeur maximale
+np.max(x)    # → 4
+
+# Valeur minimale
+np.min(x)    # → 1
+
+# Moyenne
+np.mean(x)   # → 2.5
+
+# Médiane
+np.median(x) # → 2.5
+
+# Somme
+np.sum(x)    # → 10
+
+# Produit
+np.prod(x)   # → 24
+
+# Variance
+np.var(x)    # → 1.25
+
+# Écart-type
+np.std(x)    # → 1.118...
+```
+
+## 4. Fonctions mathématiques
+
+```python
+# Racine carrée
+np.sqrt([4, 9])    # → [2. 3.]
+
+# Racine cubique
+np.cbrt(27)        # → 3.0
+
+# Exponentielle
+np.exp(1)          # → 2.718...
+
+# Logarithme naturel
+np.log(np.e)       # → 1.0
+
+# Logarithme base 2
+np.log2(8)         # → 3.0
+
+# Logarithme base 10
+np.log10(1000)     # → 3.0
+```
+
+## 5. Arrondis
+
+```python
+y = np.array([3.14159, 2.71828])
+
+# Arrondi à 2 décimales
+np.round(y, 2)   # → [3.14 2.72]
+
+# Arrondi supérieur
+np.ceil(y)       # → [4. 3.]
+
+# Arrondi inférieur
+np.floor(y)      # → [3. 2.]
+
+# Tronquer la partie décimale
+np.trunc(y)      # → [3. 2.]
+```
+
+## 6. Trigonométrie
+
+```python
+# Sinus
+np.sin(np.pi/2)   # → 1.0
+
+# Cosinus
+np.cos(0)         # → 1.0
+
+# Tangente
+np.tan(np.pi/4)   # → 1.0
+
+# Sinus inverse
+np.arcsin(1)      # → 1.5707... (≈ π/2)
+
+# Cosinus inverse
+np.arccos(0)      # → 1.5707...
+
+# Tangente inverse
+np.arctan(1)      # → 0.7853... (≈ π/4)
+
+# Arctangente avec quadrant correct
+np.arctan2(1,1)   # → 0.7853... (≈ π/4)
+
+# Conversion degrés → radians
+np.deg2rad(180)   # → 3.14159...
+
+# Conversion radians → degrés
+np.rad2deg(np.pi) # → 180.0
+```
+
+## 7. Divers
+
+```python
+# Différences entre éléments consécutifs
+np.diff([1, 3, 6, 10])    # → [2 3 4]
+
+# Ajustement polynômial (régression linéaire)
+x = np.array([0, 1, 2])
+y = np.array([1, 3, 5])
+np.polyfit(x, y, 1)       # → [2. 1.]  (pente=2, intercept=1)
+```
+
+## 8. Constantes
+
+```python
+# Valeur de π
+np.pi   # → 3.14159...
+
+# Base du logarithme naturel
+np.e    # → 2.71828...
+```
+
+
+
+# Tableau récapitulatif des fonctions et opérations NumPy
+
+| Catégorie                    | Fonction / Opération               | Description                                               |
+| ---------------------------- | ---------------------------------- | --------------------------------------------------------- |
+| **Création de tableaux**     | `np.array()`                       | Crée un tableau NumPy à partir d’une liste Python.        |
+|                              | `np.arange(debut, fin, pas)`       | Crée des valeurs espacées régulièrement avec un pas fixe. |
+|                              | `np.linspace(debut, fin, n)`       | Crée un nombre fixé de valeurs également espacées.        |
+|                              | `np.ones(n)`                       | Crée un tableau rempli de 1.                              |
+|                              | `np.zeros(n)`                      | Crée un tableau rempli de 0.                              |
+| **Opérations arithmétiques** | `a + b`, `a - b`, `a * b`, `a / b` | Opérations élément par élément.                           |
+|                              | `a ** 2`                           | Élève chaque élément au carré.                            |
+|                              | `np.abs(a)` / `np.fabs(a)`         | Valeur absolue entière ou flottante.                      |
+| **Statistiques**             | `np.max(x)` / `np.min(x)`          | Valeur maximale ou minimale du tableau.                   |
+|                              | `np.mean(x)`                       | Moyenne des valeurs.                                      |
+|                              | `np.median(x)`                     | Médiane.                                                  |
+|                              | `np.sum(x)`                        | Somme des valeurs.                                        |
+|                              | `np.prod(x)`                       | Produit des valeurs.                                      |
+|                              | `np.var(x)`                        | Variance.                                                 |
+|                              | `np.std(x)`                        | Écart-type.                                               |
+| **Fonctions mathématiques**  | `np.sqrt(x)`                       | Racine carrée.                                            |
+|                              | `np.cbrt(x)`                       | Racine cubique.                                           |
+|                              | `np.exp(x)`                        | Exponentielle.                                            |
+|                              | `np.log(x)`                        | Logarithme naturel.                                       |
+|                              | `np.log2(x)`                       | Logarithme en base 2.                                     |
+|                              | `np.log10(x)`                      | Logarithme en base 10.                                    |
+| **Arrondis**                 | `np.round(x, n)`                   | Arrondit à `n` décimales.                                 |
+|                              | `np.ceil(x)`                       | Plafond (arrondi supérieur).                              |
+|                              | `np.floor(x)`                      | Plancher (arrondi inférieur).                             |
+|                              | `np.trunc(x)`                      | Tronque la partie décimale.                               |
+| **Trigonométrie**            | `np.sin(x)` / `np.cos(x)`          | Sinus et cosinus (en radians).                            |
+|                              | `np.tan(x)`                        | Tangente.                                                 |
+|                              | `np.arcsin(x)` / `np.arccos(x)`    | Sinus et cosinus inverses.                                |
+|                              | `np.arctan(x)`                     | Tangente inverse.                                         |
+|                              | `np.arctan2(y,x)`                  | Arctangente de `y/x` avec quadrant correct.               |
+|                              | `np.deg2rad(x)` / `np.rad2deg(x)`  | Conversion degrés ↔ radians.                              |
+| **Divers**                   | `np.diff(x)`                       | Différences entre éléments consécutifs.                   |
+|                              | `np.polyfit(x, y, deg)`            | Ajuste un polynôme (régression).                          |
+| **Constantes**               | `np.pi`                            | Constante π.                                              |
+|                              | `np.e`                             | Constante e (base du log).                                |
+
+---
+
+
+<!--

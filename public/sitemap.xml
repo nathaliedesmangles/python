@@ -43,7 +43,10 @@
     <loc>https://example.org/outils_dev/install_env/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/extensions/index.html</loc>
+    <loc>https://example.org/outils_dev/extensions/windows/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/outils_dev/extensions/macos/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/regles/index.html</loc>
@@ -89,6 +92,9 @@
   </url>
   <url>
     <loc>https://example.org/semaine7/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine8/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine12/grille/index.html</loc>

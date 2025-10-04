@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="1. Vérifier que Python est installé Clique sur le menu Démarrer de Windows. Tape python et vérifie qu’il apparaît dans la liste. Si rien n’apparaît → il faut installer Python depuis le site officiel : https://www.python.org/downloads/windows/ (prendre la dernière version stable, cocher Add Python to PATH pendant l’installation). 2. Ouvrir Visual Studio Code Lancer Visual Studio Code. Ouvrir votre dossier ou fichier .ipynb de travail. 3. Ouvrir le terminal dans VS Code Dans le menu en haut, cliquer sur Terminal → Nouveau terminal.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows) :: 420-SN1-RE">
+    <meta name="twitter:description" content="1. Vérifier que Python est installé Clique sur le menu Démarrer de Windows. Tape python et vérifie qu’il apparaît dans la liste. Si rien n’apparaît → il faut installer Python depuis le site officiel : https://www.python.org/downloads/windows/ (prendre la dernière version stable, cocher Add Python to PATH pendant l’installation). 2. Ouvrir Visual Studio Code Lancer Visual Studio Code. Ouvrir votre dossier ou fichier .ipynb de travail. 3. Ouvrir le terminal dans VS Code Dans le menu en haut, cliquer sur Terminal → Nouveau terminal.">
+    <meta property="og:url" content="https://example.org/outils_dev/extensions/windows/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows) :: 420-SN1-RE">
+    <meta property="og:description" content="1. Vérifier que Python est installé Clique sur le menu Démarrer de Windows. Tape python et vérifie qu’il apparaît dans la liste. Si rien n’apparaît → il faut installer Python depuis le site officiel : https://www.python.org/downloads/windows/ (prendre la dernière version stable, cocher Add Python to PATH pendant l’installation). 2. Ouvrir Visual Studio Code Lancer Visual Studio Code. Ouvrir votre dossier ou fichier .ipynb de travail. 3. Ouvrir le terminal dans VS Code Dans le menu en haut, cliquer sur Terminal → Nouveau terminal.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows) :: 420-SN1-RE">
+    <meta itemprop="description" content="1. Vérifier que Python est installé Clique sur le menu Démarrer de Windows. Tape python et vérifie qu’il apparaît dans la liste. Si rien n’apparaît → il faut installer Python depuis le site officiel : https://www.python.org/downloads/windows/ (prendre la dernière version stable, cocher Add Python to PATH pendant l’installation). 2. Ouvrir Visual Studio Code Lancer Visual Studio Code. Ouvrir votre dossier ou fichier .ipynb de travail. 3. Ouvrir le terminal dans VS Code Dans le menu en haut, cliquer sur Terminal → Nouveau terminal.">
+    <meta itemprop="wordCount" content="326">
+    <title>Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows) :: 420-SN1-RE</title>
+    <link href="/outils_dev/extensions/windows/index.xml" rel="alternate" type="application/rss+xml" title="Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows) :: 420-SN1-RE">
+    <link href="/images/logo.png?1759541542" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759541542" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759541542" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759541542" rel="stylesheet">
+    <link href="/css/theme.min.css?1759541542" rel="stylesheet">
+    <link href="/css/format-html.min.css?1759541542" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759541542" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759541542" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759541542" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759541542" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759541542" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759541542" defer></script>
+    <script src="/js/search.min.js?1759541542" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/outils_dev\/extensions\/windows\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1759541542";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1759541542" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/outils_dev/extensions/windows/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-vérifier-que-python-est-installé">1. Vérifier que Python est installé</a></li>
+        <li><a href="#2-ouvrir-visual-studio-code">2. Ouvrir Visual Studio Code</a></li>
+        <li><a href="#3-ouvrir-le-terminal-dans-vs-code">3. Ouvrir le terminal dans VS Code</a></li>
+        <li><a href="#4-installer-matplotlib">4. Installer matplotlib</a></li>
+        <li><a href="#5-vérifier-linstallation">5. Vérifier l’installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#problèmes-fréquents">Problèmes fréquents</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/outils_dev/index.html"><span itemprop="name">Outils de développement</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows)</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/outils_dev/install_env/index.html" title="(🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/outils_dev/extensions/macos/index.html" title="Installer un module (ex. Matplotlib) dans Visual Studio Code (MacOS) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable outils_dev" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="installer-un-module-ex-matplotlib-dans-visual-studio-code-windows">Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows)</h1>
+
+<h3 id="1-vérifier-que-python-est-installé">1. Vérifier que Python est installé</h3>
+<ol>
+<li>Clique sur le menu <strong>Démarrer</strong> de Windows.</li>
+<li>Tape <code>python</code> et vérifie qu’il apparaît dans la liste.</li>
+<li>Si rien n’apparaît → il faut installer Python depuis le site officiel :
+<ul>
+<li><a href="https://www.python.org/downloads/" rel="external" target="_blank">https://www.python.org/downloads/windows/</a>
+(prendre la dernière version stable, cocher <strong>Add Python to PATH</strong> pendant l’installation).</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-ouvrir-visual-studio-code">2. Ouvrir Visual Studio Code</h3>
+<ol>
+<li>Lancer <strong>Visual Studio Code</strong>.</li>
+<li>Ouvrir votre dossier ou fichier <code>.ipynb</code> de travail.</li>
+</ol>
+<h3 id="3-ouvrir-le-terminal-dans-vs-code">3. Ouvrir le terminal dans VS Code</h3>
+<ol>
+<li>Dans le menu en haut, cliquer sur <strong>Terminal → Nouveau terminal</strong>.
+(le terminal apparaît en bas de la fenêtre).</li>
+</ol>
+<p><a href="#R-image-6b0756d168188ca428db6f4113532040" class="lightbox-link"><img alt="Terminal" class="lazy lightbox figure-image" loading="lazy" src="/outils_dev/extensions/windows/terminal.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6b0756d168188ca428db6f4113532040"><img alt="Terminal" class="lazy lightbox lightbox-image" loading="lazy" src="/outils_dev/extensions/windows/terminal.png?width=40vw"></a></p>
+<h3 id="4-installer-matplotlib">4. Installer matplotlib</h3>
+<p><a href="#R-image-7f2ca7f8a7268b5c05967d21eaf5e5e5" class="lightbox-link"><img alt="Matplotlib" class="lazy lightbox figure-image" loading="lazy" src="../matplotlib.jpg?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7f2ca7f8a7268b5c05967d21eaf5e5e5"><img alt="Matplotlib" class="lazy lightbox lightbox-image" loading="lazy" src="../matplotlib.jpg?width=30vw"></a></p>
+<ol>
+<li>
+<p>Dans le terminal, taper la commande suivante puis sur <strong>Entrée</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install matplotlib</span></span></code></pre></div>
+</li>
+<li>
+<p>Attendre la fin du téléchargement (quelques secondes).</p>
+</li>
+<li>
+<p>Si tout va bien, un message confirme l’installation.</p>
+</li>
+</ol>
+
+<details open class=" box cstyle notices cyan">
+  <summary class="box-label" tabindex="-1">
+    Autres modules (Numpy, pandas)
+  </summary>
+  <div class="box-content">
+<ul>
+<li>Vous pouvez faire la même commande pour installer les bibliothèques <em>NumPy</em> et <em>Pandas</em>.</li>
+<li>Vous pouvez aussi installer les trois bibliothèques en une seule commande:
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install matplotlib numpy pandas</span></span></code></pre></div>
+</li>
+<li>Pour vérifier les installation, voir le point 5. ci-dessous.</li>
+</ul>
+  </div>
+</details>
+<h3 id="5-vérifier-linstallation">5. Vérifier l’installation</h3>
+<p><strong>Matplotlib</strong></p>
+<ol>
+<li>
+<p>Dans un fichier Python, écrire :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+</li>
+<li>
+<p>Exécuter le programme (bouton ▶️).</p>
+</li>
+<li>
+<p>Le graphique s&rsquo;affiche → matplotlib est bien installé !</p>
+</li>
+</ol>
+<p><strong>NumPy</strong></p>
+<p><a href="#R-image-1881d7b67c5b596fba1f508545f0d676" class="lightbox-link"><img alt="NumPy" class="lazy lightbox figure-image" loading="lazy" src="../numpy.jpg?width=20vw" style=" height: auto; width: 20vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1881d7b67c5b596fba1f508545f0d676"><img alt="NumPy" class="lazy lightbox lightbox-image" loading="lazy" src="../numpy.jpg?width=20vw"></a></p>
+<ol>
+<li>
+<p>Dans une cellule, écrire :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>arr <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(arr)</span></span></code></pre></div>
+</li>
+<li>
+<p>Exécuter le programme (bouton ▶️).</p>
+</li>
+<li>
+<p>Les données entre <code>[ ]</code> s&rsquo;affichent → numpy est bien installé !</p>
+</li>
+</ol>
+<p><strong>Pandas</strong></p>
+<p><a href="#R-image-26541c4eb180eebbff5b6396fb13b230" class="lightbox-link"><img alt="Pandas" class="lazy lightbox figure-image" loading="lazy" src="../pandas.jpg?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-26541c4eb180eebbff5b6396fb13b230"><img alt="Pandas" class="lazy lightbox lightbox-image" loading="lazy" src="../pandas.jpg?width=30vw"></a></p>
+<ol>
+<li>Dans une cellule, écrire :</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;voiture&#34;</span>: [<span style="color:#e6db74">&#34;BMW&#34;</span>, <span style="color:#e6db74">&#34;Volvo&#34;</span>, <span style="color:#e6db74">&#34;Ford&#34;</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;annee&#34;</span>: [<span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">2017</span>, <span style="color:#ae81ff">2022</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>vehicules <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(vehicules)</span></span></code></pre></div>
+<ol start="2">
+<li>Exécuter le programme (bouton ▶️).</li>
+<li>Les données tabulaires apparaîssent → pandas est bien installé !</li>
+</ol>
+<hr>
+<h2 id="problèmes-fréquents">Problèmes fréquents</h2>
+<ul>
+<li><strong>Message &ldquo;pip n’est pas reconnu&rdquo;</strong> → Python n’est pas installé correctement ou l’option <em><strong>Add to PATH</strong></em> a été oubliée → réinstaller Python en cochant cette option.</li>
+<li><strong>Pas le bon interpréteur Python</strong> → En bas à droite de VS Code, vérifier que c’est bien la version de Python installée.</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu">
+            <li class="" data-nav-id="/outils_dev/onedrive/index.html"><a class="padding" href="/outils_dev/onedrive/index.html">Connexion à OneDrive – Compte scolaire</a></li>
+            <li class="" data-nav-id="/outils_dev/fichiers_dossiers/index.html"><a class="padding" href="/outils_dev/fichiers_dossiers/index.html">Fichiers et répertoires (dossiers)</a></li>
+            <li class="alwaysopen " data-nav-id="/outils_dev/vs-code/index.html"><a class="padding" href="/outils_dev/vs-code/index.html">Utilisation de VS Code </a><ul id="R-subsections-f2060e120a11e14e08d58d8162e76852" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/jupyter/index.html"><a class="padding" href="/outils_dev/jupyter/index.html">Jupyter Notebook </a></li>
+            <li class="" data-nav-id="/outils_dev/trucs_pratiques/index.html"><a class="padding" href="/outils_dev/trucs_pratiques/index.html">Astuces, touches spéciales et &#43;</a></li>
+            <li class="" data-nav-id="/outils_dev/markdown/index.html"><a class="padding" href="/outils_dev/markdown/index.html">MarkDown </a></li>
+            <li class="" data-nav-id="/outils_dev/install_env/index.html"><a class="padding" href="/outils_dev/install_env/index.html">Installation de l'environnement sur Windows 11 </a></li>
+            <li class="active " data-nav-id="/outils_dev/extensions/windows/index.html"><a class="padding" href="/outils_dev/extensions/windows/index.html">Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows)</a></li>
+            <li class="" data-nav-id="/outils_dev/extensions/macos/index.html"><a class="padding" href="/outils_dev/extensions/macos/index.html">Installer un module (ex. Matplotlib) dans Visual Studio Code (MacOS)</a></li></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1759541542" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759541542" defer></script>
+    <script src="/js/theme.min.js?1759541542" defer></script>
+  </body>
+</html>

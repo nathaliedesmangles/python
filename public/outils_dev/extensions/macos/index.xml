@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installer un module (ex. Matplotlib) dans Visual Studio Code (MacOS) :: 420-SN1-RE</title>
+    <link>https://example.org/outils_dev/extensions/macos/index.html</link>
+    <description>Python et VS Code déjà installés ?&#xD;Vous pouvez aller directement à l’étape 4.&#xA;Étape 1 : Installer Python sur MacOS Ouvrez Safari et allez sur https://www.python.org/downloads Cliquez sur “Download Python” (la version recommandée). Ouvrez le fichier .pkg téléchargé et suivez les étapes d’installation. Vérifiez l’installation : Ouvrez Terminal (dans Applications &gt; Utilitaires). Tapez : python3 --version → vous devriez voir quelque chose comme Python 3.13.7. Étape 2 : Installer Visual Studio Code Allez sur https://code.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/outils_dev/extensions/macos/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

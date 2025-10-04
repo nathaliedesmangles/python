@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows) :: 420-SN1-RE</title>
-    <link>https://example.org/outils_dev/extensions/index.html</link>
+    <link>http://localhost:1313/outils_dev/extensions/index.html</link>
     <description>1. Vérifier que Python est installé Clique sur le menu Démarrer de Windows. Tape python et vérifie qu’il apparaît dans la liste. Si rien n’apparaît → il faut installer Python depuis le site officiel : https://www.python.org/downloads/windows/ (prendre la dernière version stable, cocher Add Python to PATH pendant l’installation). 2. Ouvrir Visual Studio Code Lancer Visual Studio Code. Ouvrir votre dossier ou fichier .ipynb de travail. 3. Ouvrir le terminal dans VS Code Dans le menu en haut, cliquer sur Terminal → Nouveau terminal.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/outils_dev/extensions/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/outils_dev/extensions/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
