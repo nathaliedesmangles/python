@@ -19,6 +19,10 @@ draft = true
 * Explorer rapidement le contenu des fichiers.
 * Écrire des DataFrames pandas dans des fichiers `.csv` ou `.txt`.
 
+## Fichier .ipynb pour la démo en classe
+
+[Fichier utilisé pour la démonstration](https://python-a25.netlify.app/blocnotes/demo_fichiers.ipynb)
+
 ---
 
 {{% notice style="accent" title="Apprendre par la pratique" %}}

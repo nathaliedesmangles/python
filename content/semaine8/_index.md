@@ -16,7 +16,7 @@ draft = false
 
 ## Fichier .ipynb pour la démo en classe
 
-[Fichier utilisé pour la démonstration](./blocnotes/demo_numpy_reg.ipynb)
+[Fichier utilisé pour la démonstration](https://python-a25.netlify.app/blocnotes/demo_numpy_reg.ipynb)
 
 ---
 
