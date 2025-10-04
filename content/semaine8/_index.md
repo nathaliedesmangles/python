@@ -484,7 +484,7 @@ Coefficient de détermination R² = 0.997
 # Atelier
 
 1. Téléchargez les fichiers de départ (.ipynb):
-[Bloc-notes de départ](./blocnotes/atelier_numpy_regression.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_numpy_regression.ipynb)
 2. Déplacez-le dans votre dossier prévu pour de la semaine en cours.
 3. Ouvrez votre dossier de travail programmation-sciences à partir de Visual Studio Code.
 	* Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
@@ -510,6 +510,7 @@ Moyenne (LED rouge) = 10.23 cm, écart-type = 0.12 cm
 Condition avec la plus grande croissance moyenne : Naturelle
 ```
 ![Graphique1](./graphique_croissance_lumiere.png?width=35vw)
+
 
 ## Exercice 2 : distance parcourue par un chariot en fonction du temps
 
