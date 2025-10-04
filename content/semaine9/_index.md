@@ -14,7 +14,7 @@ draft = true
 * Écrire des données dans des fichiers `.txt` et `.csv`.
 * Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques.
 
-**Partie 2: Avec Pandas
+**Partie 2: Avec Pandas**
 * Lire des fichiers `.csv` et `.txt` en utilisant pandas.
 * Explorer rapidement le contenu des fichiers.
 * Écrire des DataFrames pandas dans des fichiers `.csv` ou `.txt`.

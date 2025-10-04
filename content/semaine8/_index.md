@@ -16,7 +16,7 @@ draft = false
 
 ## Fichier .ipynb pour la démo en classe
 
-[Fichier utilisé pour la démonstration](./demo_nympy_reg.ipynb)
+[Fichier utilisé pour la démonstration](./blocnotes/demo_numpy_reg.ipynb)
 
 ---
 
@@ -153,8 +153,8 @@ Min : -0.1
 ```python
 import numpy as np
 liste = [2, 4, 6]
-v = np.array(liste)
-print(v)  # Résultat : [2 4 6]
+t = np.array(liste)
+print(t)  # Résultat : [2 4 6]
 ```
 
 **2. Avec `np.arange()`** → créer des valeurs espacées régulièrement.
@@ -174,15 +174,15 @@ print(t)  # Résultat : [0.  2.5  5.  7.5 10.]
 **4. Avec `np.ones(n)`** → créer un tableau de `n` uns.
 
 ```python
-u = np.ones(4)
-print(u)  # Résultat : [1. 1. 1. 1.]
+t = np.ones(4)
+print(t)  # Résultat : [1. 1. 1. 1.]
 ```
 
 **5. Avec `np.zeros(n)`** → créer un tableau de `n` zéros.
 
 ```python
-z = np.zeros(3)
-print(z)  # Résultat : [0. 0. 0.]
+t = np.zeros(3)
+print(t)  # Résultat : [0. 0. 0.]
 ```
 
 
@@ -191,43 +191,44 @@ print(z)  # Résultat : [0. 0. 0.]
 **1. Racine carrée : `np.sqrt()`**
 
 ```python
-x = np.array([4, 9, 16])
-print(np.sqrt(x))  # Résultat : [2. 3. 4.]
+t = np.array([4, 9, 16])
+print(np.sqrt(t))  # Résultat : [2. 3. 4.]
 ```
 
 **2. Racine cubique : `np.cbrt()`**
 
 ```python
-x = np.array([27, 64, 216])
-print(np.cbrt(x))        # Résultat : array([3., 4., 6.])
+t = np.array([27, 64, 216])
+print(np.cbrt(t))        # Résultat : array([3., 4., 6.])
 ```
 
 **3. Exponentielle : `np.exp()`**
 
 ```python
-x = np.array([0, 1, 2])
-print(np.exp(x))  	# Résultat : [1. 2.71828183 7.3890561]
+t = np.array([0, 1, 2])
+print(np.exp(t))  	# Résultat : [1. 2.71828183 7.3890561]
 ```
 
 **4. Logarithme naturel : `np.log()`**
 
 ```python
-x = np.array([1, np.e, np.e**2])
-print(np.log(x))  	# Résultat : [ 0. 1. 2.]
+t = np.array([1, np.e, np.e**2])
+print(np.log(t))  	# Résultat : [ 0. 1. 2.]
 ```
 
 **5. Logarithme base 2 : `np.log2()`**
 
 ```python
-x = np.array([1, 2, 4, 8])
-print(np.log2(arr))	# Résultat : [ 0.  1.  2.  3. ]
+t = np.array([1, 2, 4, 8])
+print(np.log2(t))	# Résultat : [ 0.  1.  2.  3. ]
 ```
 
 
 **6. Logarithme base 10 : `np.log10()`**
+
 ```python
-x = np.array([1, 10, 100, 0.1])
-print(np.log10(x))	# Résultat : [ 0.   1.   2.  -1. ]
+t = np.array([1, 10, 100, 0.1])
+print(np.log10(t))	# Résultat : [ 0.   1.   2.  -1. ]
 ```
 
 ## Fonctions statistiques
@@ -235,106 +236,104 @@ print(np.log10(x))	# Résultat : [ 0.   1.   2.  -1. ]
 **1. Somme : `np.sum()`**
 
 ```python
-data = np.array([3, 7, 2, 9])
-print(np.sum(data))    # → 21
+t = np.array([3, 7, 2, 9])
+print(np.sum(t))    # 3 + 7 + 2 + 9 → 21
 ```
 
 **2. Produit : `np.prod()`**
+
 ```python
-data = np.array([3, 7, 2, 9])
-print(np.prod(data))  # → 378
+t = np.array([3, 7, 2, 9])
+print(np.prod(t))  # 3 * 7 * 2 * 9 → 378
 ```
 
 **3. Valeur max/min : `np.max()` / `np.min()`**
 
 ```python
-data = np.array([3, 7, 2, 9])
-print(np.max(data))  # 9
-print(np.min(data))  # 2
+t = np.array([3, 7, 2, 9])
+print(np.max(t))  # 9
+print(np.min(t))  # 2
 ```
 
 **4. Moyenne : `np.mean()`**
 
 ```python
-notes = np.array([80, 90, 100])
-print(np.mean(notes))  # 90.0
+t = np.array([80, 90, 100])
+print(np.mean(t))  # (80 + 90 + 100)/3 → 90.0
 ```
 
 **5. Médiane : `np.median()`**
+
 ```python
-x = np.array([1, 2, 3, 4])
-print(np.median(x))	# → 2.5
+t = np.array([1, 2, 3, 4])
+print(np.median(t))	# (4 + 1)/2 → 2.5
 ```
 
 **6. Variance : `np.var()`**
 
 ```python
-np.var(x)    # → 1.25
+t = np.array([1, 2, 3, 4])
+print(np.var(t))    	# somme des carrés des écarts à la moyenne → 1.25
 ```
 
 **7. Écart-type : `np.std()`**
 
 ```python
-np.std(x)    # → 1.118...
+t = np.array([1, 2, 3, 4])
+print(np.std(t))    	# racine carrée de la variance → 1.118...
 ```
 
 ## Fonctions trigonométriques
 
-## 6. Trigonométrie
-
-```python
-# Sinus
-np.sin(np.pi/2)   # → 1.0
-
-# Cosinus
-np.cos(0)         # → 1.0
-
-# Tangente
-np.tan(np.pi/4)   # → 1.0
-
-# Sinus inverse
-np.arcsin(1)      # → 1.5707... (≈ π/2)
-
-# Cosinus inverse
-np.arccos(0)      # → 1.5707...
-
-# Tangente inverse
-np.arctan(1)      # → 0.7853... (≈ π/4)
-
-# Arctangente avec quadrant correct
-np.arctan2(1,1)   # → 0.7853... (≈ π/4)
-
-# Conversion degrés → radians
-np.deg2rad(180)   # → 3.14159...
-
-# Conversion radians → degrés
-np.rad2deg(np.pi) # → 180.0
-```
-
-
-**2. Sinus et cosinus : `np.sin()` et `np.cos()`**
+**1. Sinus, cosinus et tangente : `np.sin()`, `np.cos()` et `tan()`**
 
 ```python
 angles = np.array([0, np.pi/2, np.pi])
 print(np.sin(angles))  # Résultat : [0. 1. 0.]
 print(np.cos(angles))  # Résultat : [1. 0. -1.]
+print(np.tan(angles))	# Résultat : [ 0.00000000e+00  1.63312394e+16 -1.22464680e-16]
 ```
 
 
-
-**7. Différences consécutives : `np.diff()`**
+**2. Sinus, cosinus et tangente inverses : `np.arcsin()`, `np.arccos()` et `np.arctan()`**
 
 ```python
-x = np.array([0, 5, 15])
-print(np.diff(x))  # [5 10]
+t = np.array([1, -1, 0.1])	
+print(np.arcsin(t))	# Résultat : [ 1.57079633 -1.57079633  0.10016742]
+print(np.arccos(t))	# Résultat : [0.         3.14159265 1.47062891]
+print(np.arctan(t))	# Résultat : [ 0.78539816 -0.78539816  0.09966865]
+```
+
+**3. Conversion degrés → radians : `np.deg2rad()`**
+
+```python
+t = np.array([90, 180, 270, 360])
+print(np.deg2rad(t))	# Résultat : [1.57079633 3.14159265 4.71238898 6.28318531]
+```
+
+**4. Conversion radians → degrés : `np.rad2deg()`**
+
+```python
+t = np.array([np.pi/2, np.pi, 1.5*np.pi, 2*np.pi])
+print(np.rad2deg(t))	# Résultat : [ 90. 180. 270. 360.]
+```
+
+
+## Différences consécutives : `np.diff()`
+
+```python
+t = np.array([0, 5, 15])
+print(np.diff(t))  # [5 10]
 ```
 
 > Utile en physique : vitesse ≈ variation de position / variation de temps.
 
----
 
 ## Opérations vectorisées
 
+* Lorsque vous effectuez une **opération arithmétique** (comme l'addition, la soustraction, la multiplication) entre **deux tableaux NumPy de même forme**, l'opération s'applique **automatiquement** à chaque paire d'éléments correspondants. 
+
+**Exemple** :
 ```python
 t = np.array([0, 1, 2])
 x = 3 * t**2  # applique la formule à chaque valeur
@@ -365,62 +364,132 @@ a ** 2   # → [ 1  4  9 16]
 # Valeur absolue
 np.abs([-3, -5])   # → [3 5]
 ```
----
+
 
 ## Régression linéaire avec NumPy (`np.polyfit()`)
 
+###  Pourquoi parler de régression linéaire ?
+
+En sciences, on mesure souvent **deux grandeurs liées entre elles**, par exemple :
+
+* la température et la solubilité d’un sel,
+* le temps et la distance parcourue,
+* la concentration et l’absorbance d’une solution.
+
+On veut savoir **s’il existe une relation linéaire** entre ces grandeurs, c’est-à-dire une **droite** du type :
+
+$$
+y = a x + b
+$$
+
+où :
+
+* **x** = variable indépendante (qu’on choisit ou mesure, comme le temps)
+* **y** = variable dépendante (qui dépend de x, comme la distance)
+* **a** = pente de la droite
+* **b** = ordonnée à l’origine (valeur de y quand x = 0)
+
+
+### Trouver la droite de régression avec NumPy
+
+La fonction la plus simple à utiliser est **`numpy.polyfit()`**.
+Elle ajuste une droite (ou un polynôme) aux points expérimentaux.
+
 ```python
-t = np.array([0, 1, 2, 3])
-x = np.array([0, 2, 4.1, 6.2])
-a, b = np.polyfit(t, x, 
-````
+import numpy as np
+
+# Données expérimentales
+x = np.array([0, 1, 2, 3, 4, 5])
+y = np.array([0.1, 1.2, 2.0, 2.9, 4.1, 5.0])
+
+# Calcul de la droite de régression (degré 1 = droite)
+a, b = np.polyfit(x, y, 1)
+
+print("Pente a =", round(a,2))
+print("Ordonnée à l’origine b =", round(b,2))
+```
+
+**Résultat**  :
+```
+Pente a = 0.97
+Ordonnée à l’origine b = 0.11
+```
+
+La droite obtenue est donc :
+$
+y = 0.97x + 0.11
+$
 
 
-1.
+### Tracer la droite et les points expérimentaux
 
-print("Pente =", a, "Ordonnée =", b)
-
-# Résultat attendu : Pente ≈ 2.05, Ordonnée ≈ 0.02
-
-````
-
-```python
-# Exemple complet
-t = np.array([0, 1, 2, 3, 4])
-x = np.array([0, 2.1, 4.2, 6.1, 8.2])
-a, b = np.polyfit(t, x, 1)
-print("Pente (vitesse) =", a)
-print("Ordonnée à l'origine =", b)
-````
-
-> La **pente** correspond à la vitesse moyenne.
-
----
-
-## Tracer une droite de régression
+On peut visualiser le tout avec **Matplotlib** :
 
 ```python
 import matplotlib.pyplot as plt
-import numpy as np
 
-x = np.array([1, 2, 3, 4])
-y = np.array([2.1, 4.2, 6.1, 8.0])
+# Calcul des valeurs prédites par la droite
+y_pred = a * x + b
 
-# Droite de régression
-a, b = np.polyfit(x, y, 1)
-y_reg = a * x + b
+# Tracé d'un nuage de points et la droite
+plt.scatter(x, y, color='blue', label='Données expérimentales')
+plt.plot(x, y_pred, color='red', label='Droite de régression')
 
-plt.plot(x, y, "o", label="Données")
-plt.plot(x, y_reg, "-", label=f"y = {a:.2f}x + {b:.2f}")
+plt.xlabel("x (variable indépendante)")
+plt.ylabel("y (variable dépendante)")
+plt.title("Régression linéaire avec NumPy")
 plt.legend()
-plt.grid(True)
-plt.tight_layout()
 plt.show()
 ```
 
+![Graphe régression](./graphe_reg.png?width=35vw)
+
+**Interprétation :**
+
+* Les points bleus représentent vos données mesurées.
+* La ligne rouge montre la tendance générale (le modèle linéaire).
+
+
+### Évaluer la qualité de la régression
+
+Pour savoir si la droite correspond bien aux données, on peut calculer le **coefficient de corrélation R²**.
+Plus R² est proche de **1**, meilleure est la correspondance.
+
+```python
+# Calcul de R²
+y_moy = np.mean(y)
+ss_tot = np.sum((y - y_moy)**2)
+ss_res = np.sum((y - y_pred)**2)
+r2 = 1 - (ss_res / ss_tot)
+
+print("Coefficient de détermination R² =", round(r2,3))
+```
+
+```
+Coefficient de détermination R² = 0.997
+```
+
+### Résumé
+
+| Étape | Fonction NumPy            | Rôle                                       |
+| ----- | ------------------------- | ------------------------------------------ |
+| 1     | `np.polyfit(x, y, 1)`     | Trouver la pente et l’ordonnée à l’origine |
+| 2     | `y_pred = a*x + b`                 | Calculer les valeurs prédites              |
+| 3     | `np.mean()` et `np.sum()` | Calculer R²                                |
+| 4     | `plt.plot(x,y_pred)`       | Tracer les données et la droite            |
+
+
 ---
 
-# Atelier : Effet de la lumière sur la croissance des plantes
+# Atelier
+
+1. Téléchargez les fichiers de départ (.ipynb):
+[Bloc-notes de départ](./blocnotes/atelier_numpy_regression.ipynb)
+2. Déplacez-le dans votre dossier prévu pour de la semaine en cours.
+3. Ouvrez votre dossier de travail programmation-sciences à partir de Visual Studio Code.
+	* Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb).
+
+## Exercice 1 : Effet de la lumière sur la croissance des plantes
 
 | Condition   | Plante 1 | Plante 2 | Plante 3 | Plante 4 | Plante 5 |
 | ----------- | -------- | -------- | -------- | -------- | -------- |
@@ -432,6 +501,43 @@ plt.show()
 2. Calculez la **moyenne** et l’**écart-type** pour chaque condition avec `np.nanmean()` et `np.nanstd()`.
 3. Identifiez la condition avec la plus grande croissance moyenne.
 4. Représentez les moyennes avec un **diagramme en barres** et **barres d’erreur** correspondant aux écarts-types.
+
+**Résultats** :
+```
+Moyenne (Naturelle) = 12.86 cm, écart-type = 0.21 cm  
+Moyenne (LED blanche) = 11.40 cm, écart-type = 0.16 cm  
+Moyenne (LED rouge) = 10.23 cm, écart-type = 0.12 cm  
+Condition avec la plus grande croissance moyenne : Naturelle
+```
+![Graphique1](./graphique_croissance_lumiere.png?width=35vw)
+
+## Exercice 2 : distance parcourue par un chariot en fonction du temps
+
+On mesure la distance parcourue par un chariot en fonction du temps.
+
+| Temps (s) | Distance (m) |
+| --------: | -----------: |
+|         0 |            0 |
+|         1 |          0.9 |
+|         2 |          1.8 |
+|         3 |          2.9 |
+|         4 |          4.1 |
+
+1. Saisir ces données dans deux tableaux NumPy.
+2. Calculer la droite de régression ( y = ax + b ).
+3. Tracer le graphique (points + droite).
+4. Calculer R².
+5. Interpréter la pente : que représente-t-elle physiquement ?
+
+*Indice :* La pente correspond à la **vitesse moyenne** du chariot.
+
+**Résultat** :
+```
+Pente a = 1.02 m/s
+Ordonnée à l’origine b = -0.01 m
+Coefficient de détermination R² = 0.999
+```
+![Graphique2](./graphique_distance_chariot.png?width=35vw)
 
 ---
 

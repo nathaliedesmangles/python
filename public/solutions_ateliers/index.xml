@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des ateliers :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/index.html</link>
-    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires</description>
+    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires&#xA;08. Tableaux NumPy et droite de régression linéaire</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_ateliers/index.xml" rel="self" type="application/rss+xml" />
@@ -47,7 +47,7 @@
       <link>https://example.org/solutions_ateliers/8_numpy_regression/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/8_numpy_regression/index.html</guid>
-      <description>Résumé des résultats : Moyenne (Naturelle) = 12.86 cm, écart-type = 0.21 cm Moyenne (LED blanche) = 11.40 cm, écart-type = 0.16 cm Moyenne (LED rouge) = 10.23 cm, écart-type = 0.12 cm Condition avec la plus grande croissance moyenne : Naturelle&#xD;import numpy as np import matplotlib.pyplot as plt # Données avec valeurs manquantes hauteurs = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], [11.2, 11.6, np.nan, 11.5, 11.3], [10.4, 10.1, 10.</description>
+      <description>Exercice 1 import numpy as np import matplotlib.pyplot as plt # Données avec valeurs manquantes hauteurs = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], [11.2, 11.6, np.nan, 11.5, 11.3], [10.4, 10.1, 10.2, np.nan, np.nan] ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Moyenne et écart-type en ignorant les données manquantes (NaN) moyennes = np.nanmean(hauteurs, axis=1) ecarts_type = np.nanstd(hauteurs, axis=1) # Affichage du résumé # Pour chaque hauteur: conditions; moyennes et écarts-type for i in range(3): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.</description>
     </item>
   </channel>
 </rss>
