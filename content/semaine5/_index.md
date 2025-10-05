@@ -17,3 +17,10 @@ weight = 105
 	* un mélange de questions à choix multiples (QCM), de questions à réponse courte (1 ligne) et de questions à trou,
 	* 2 questions à développement, où vous devrez écrire un petit programme en Python.
 		* L’objectif est de vérifier votre compréhension des notions vues et votre capacité à les appliquer dans de courts exercices pratiques.
+
+
+## Aide pour la préparation de vos feuilles de notes
+
+[Guide - Questions à se poser (version Word](./Questions_Feuille_de_notes_Examen1.docx))  
+[Guide - Questions à se poser (version PDF](./Questions_Feuille_de_notes_Examen1.pdf))
+
