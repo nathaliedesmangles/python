@@ -220,10 +220,6 @@ NumPy permet de manipuler rapidement des fichiers de données scientifiques :
 
 ---
 
-Parfait ! Voici une leçon complète sur la lecture et l’écriture de fichiers `.csv` et `.txt` avec **pandas**. Je vais structurer la leçon pour des étudiants en sciences de la nature débutants en Python, avec exemples et exercices.
-
----
-
 ## Introduction à pandas
 
 * **pandas** est une bibliothèque Python puissante pour la manipulation et l’analyse de données.
@@ -299,12 +295,14 @@ Charlie 19    65
 
 ```python
 # Lire le fichier texte avec tabulation comme séparateur
-df_txt = pd.read_csv("data.txt", sep="\t")
+df_txt = pd.read_csv("data.txt", sep="\t")	# \t = tabulation
 
 print(df_txt)
 ```
 
-> Pour un fichier `.txt` avec un séparateur autre que la virgule, utilisez `sep`.
+> Pour un fichier `.txt` avec un séparateur autre que la virgule, utilisez `sep`. 
+> Dans le code précédent `sep="\t"`, signifie que le séparateur est la tabulation (touche `tab` du clavier)
+
 
 ## Exploration rapide des données avec Pandas
 
@@ -323,6 +321,7 @@ print(df.describe())
 # Informations sur les colonnes et le type de données
 print(df.info())
 ```
+
 
 ## Écriture d’un DataFrame dans un fichier
 

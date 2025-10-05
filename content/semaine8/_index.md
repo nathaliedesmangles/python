@@ -365,6 +365,90 @@ a ** 2   # → [ 1  4  9 16]
 np.abs([-3, -5])   # → [3 5]
 ```
 
+## Ignorer des valeurs manquantes dans les données (`np.nan`)
+
+Parfois, une mesure a été oubliée ou mal prise. On utilise `np.nan` pour représenter une valeur manquante.
+
+* La fonction `np.nanmean()` calcule **la moyenne des éléments en ignorant les valeurs `NaN`** (`Not a Number`), qui représentent généralement des données manquantes ou invalides.
+
+```python
+sol = np.array([32.0, np.nan, 37.2])
+moy = np.nanmean(sol)
+print(f"Moyenne (sans valeur manquante) : {moy:.2f} g/100mL")
+````
+
+{{% notice style="cyan" title="Sachez que..." %}}
+*  Sans `nanmean`, la fonction `np.mean(sol)` retournerait `nan` car une seule valeur `nan` dans la liste contamine le résultat.
+* il existe d'autres fonctions statistiques qui ne tiennent pas compte des valeurs manquantes, par exemple: `np.nansum()`, `np.nanmedian()`, `np.nanstd()`, etc.
+{{% /notice %}}
+
+
+## Filtrage de données
+
+### 1. Créer un tableau et afficher uniquement certaines valeurs selon une condition
+
+```python
+tableau = np.array([2, 5, 7, 1, 8, 3])
+masque = tableau > 5  # Masquage : valeurs supérieures à 5
+print(f"Masque booléen : {masque}")
+
+valeurs_filtrees = tableau[masque]
+print(f"Valeurs supérieures à 5 : {valeurs_filtrees}")
+```
+
+**Résultat attendu :**
+Masque booléen : `[False False True False True False]`
+Valeurs supérieures à 5 : `[7 8]`
+
+**Explication :**
+
+* `masque = tableau > 5` : crée une liste de booléens, `True` lorsque la valeur de `tableau` est > 5, `False` sinon.
+* `tableau[masque]` : ne garde que les valeurs dans `tableau` qui sont > 5.
+
+
+### 2. Comptage conditionnel avec `np.sum`
+
+Compter combien de valeurs respectent un seuil donné.
+
+```python
+tableau = np.array([3, 7, 4, 6, 2, 9, 5])
+seuil = 5
+nb_valeurs = np.sum(tableau > seuil)  # Comptage des valeurs > 5
+print(f"Nombre de valeurs supérieures à {seuil} : {nb_valeurs}")
+```
+
+**Résultat attendu :**
+Nombre de valeurs supérieures à 5 : 3
+
+**Explication :**
+
+* `tableau > seuil` : crée un masque booléen des valeurs > 5.
+* `np.sum(tableau > seuil)` : compte le nombre de valeurs `True` dans le masque.
+
+
+### 3. Filtre avec `np.where()`
+
+`numpy.where(condition, valeur_si_vrai, valeur_si_faux)` permet de créer un tableau (ou une colonne dans un DataFrame) en fonction d’une condition logique.
+
+* **condition** → un test qui renvoie `True` ou `False` (ex. : `df["Note"] >= 60`)
+* **valeur_si_vrai** → ce qui sera écrit quand la condition est vraie (`"Réussi"`)
+* **valeur_si_faux** → ce qui sera écrit quand la condition est fausse (`"Échoué"`)
+
+Exemple :
+
+```python
+df["Tendance"] = np.where(df["Note"] >= 60, "Réussi", "Échoué")
+```
+
+**Explication :**
+
+Pour chaque ligne :
+
+* si la note est >= 60 → `"Réussi"`
+* sinon → `"Échoué"`
+
+C’est une méthode très rapide car `numpy` applique l’opération directement sur toute la colonne, sans boucle explicite.
+
 
 ## Régression linéaire avec NumPy (`np.polyfit()`)
 

@@ -22,21 +22,21 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
     <meta itemprop="name" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration
 Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous.">
-    <meta itemprop="wordCount" content="1980">
+    <meta itemprop="wordCount" content="2373">
     <title> Tableaux NumPy et droite de régression :: 420-SN1-RE</title>
     <link href="/semaine8/index.xml" rel="alternate" type="application/rss+xml" title=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
-    <link href="/images/logo.png?1759685736" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759685736" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759685736" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759685736" rel="stylesheet">
-    <link href="/css/theme.min.css?1759685736" rel="stylesheet">
-    <link href="/css/format-html.min.css?1759685736" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1759685736" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1759685736" defer></script>
-    <script src="/js/lunr/lunr.min.js?1759685736" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1759685736" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1759685736" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1759685736" defer></script>
-    <script src="/js/search.min.js?1759685736" defer></script>
+    <link href="/images/logo.png?1759689811" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759689811" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759689811" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759689811" rel="stylesheet">
+    <link href="/css/theme.min.css?1759689811" rel="stylesheet">
+    <link href="/css/format-html.min.css?1759689811" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759689811" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759689811" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759689811" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759689811" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759689811" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759689811" defer></script>
+    <script src="/js/search.min.js?1759689811" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +46,7 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1759685736";
+      window.relearn.index_js_url="/searchindex.en.js?1759689811";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +92,7 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1759685736" rel="stylesheet">
+    <link href="/css/custom.css?1759689811" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine8/index.html">
     <div id="R-body" class="default-animation">
@@ -133,6 +133,14 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
     <li><a href="#opérations-vectorisées">Opérations vectorisées</a>
       <ul>
         <li><a href="#opérations-arithmétiques">Opérations arithmétiques</a></li>
+      </ul>
+    </li>
+    <li><a href="#ignorer-des-valeurs-manquantes-dans-les-données-npnan">Ignorer des valeurs manquantes dans les données (<code>np.nan</code>)</a></li>
+    <li><a href="#filtrage-de-données">Filtrage de données</a>
+      <ul>
+        <li><a href="#1-créer-un-tableau-et-afficher-uniquement-certaines-valeurs-selon-une-condition">1. Créer un tableau et afficher uniquement certaines valeurs selon une condition</a></li>
+        <li><a href="#2-comptage-conditionnel-avec-npsum">2. Comptage conditionnel avec <code>np.sum</code></a></li>
+        <li><a href="#3-filtre-avec-npwhere">3. Filtre avec <code>np.where()</code></a></li>
       </ul>
     </li>
     <li><a href="#régression-linéaire-avec-numpy-nppolyfit">Régression linéaire avec NumPy (<code>np.polyfit()</code>)</a>
@@ -243,8 +251,8 @@ La formule de la position est :</p>
 </ol>
 <p><strong>Résultats</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>5 premières valeurs de y : [20.    19.951 19.804 19.559 19.216]</code></pre></div>
-<p><a href="#R-image-d0a2c8f9d78e03aa6c682a17f6a3f7d6" class="lightbox-link"><img alt="Graphique 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d0a2c8f9d78e03aa6c682a17f6a3f7d6"><img alt="Graphique 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw"></a></p>
+<p><a href="#R-image-d412c4e932767bc85010e2681416d9c2" class="lightbox-link"><img alt="Graphique 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d412c4e932767bc85010e2681416d9c2"><img alt="Graphique 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw"></a></p>
 <h3 id="exercice-2--mouvement-rectiligne-uniforme-et-régression-linéaire">Exercice 2 : Mouvement rectiligne uniforme et régression linéaire</h3>
 <p>Une voiture roule à vitesse constante <strong>v = 15 m/s</strong>. Sa position est donnée par :</p>
 <p>$$
@@ -260,8 +268,8 @@ $$</p>
 </ol>
 <p><strong>Résultats</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Dernière position : 150.0</code></pre></div>
-<p><a href="#R-image-50613547d1f4696c8f54b000ba7f9f0f" class="lightbox-link"><img alt="Graphique 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-50613547d1f4696c8f54b000ba7f9f0f"><img alt="Graphique 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw"></a></p>
+<p><a href="#R-image-4363417b28af92a8e56323896b2f2ef9" class="lightbox-link"><img alt="Graphique 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4363417b28af92a8e56323896b2f2ef9"><img alt="Graphique 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw"></a></p>
 <h3 id="exercice-3--énergie-cinétique-et-barres-derreur">Exercice 3 : Énergie cinétique et barres d’erreur</h3>
 <p>La formule de l&rsquo;énergie cinétique est :</p>
 <p>$$
@@ -287,8 +295,8 @@ Max : 400.0
 Trois dernières : [256. 324. 400.]
 Vitesses 2–8 : [2 4 6 8]
 Énergies : [ 4. 16. 36. 64.]</code></pre></div>
-<p><a href="#R-image-f1a5e7447edeefcbdf5ba842abfa315a" class="lightbox-link"><img alt="Graphique 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f1a5e7447edeefcbdf5ba842abfa315a"><img alt="Graphique 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw"></a></p>
+<p><a href="#R-image-18c240a370dbe224b0aaf38601b92fcb" class="lightbox-link"><img alt="Graphique 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-18c240a370dbe224b0aaf38601b92fcb"><img alt="Graphique 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw"></a></p>
 <h3 id="exercice-4--oscillations-harmoniques">Exercice 4 : Oscillations harmoniques</h3>
 <p>La position d’un oscillateur est donnée par :</p>
 <p>$$
@@ -304,8 +312,8 @@ $$</p>
 <p><strong>Résultats</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Max : 0.1
 Min : -0.1</code></pre></div>
-<p><a href="#R-image-adcd151517ae72b760c3abf492176f17" class="lightbox-link"><img alt="Graphique 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-adcd151517ae72b760c3abf492176f17"><img alt="Graphique 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw"></a></p>
+<p><a href="#R-image-8c9b8d0a69bb66689f19b741174ea54c" class="lightbox-link"><img alt="Graphique 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c9b8d0a69bb66689f19b741174ea54c"><img alt="Graphique 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw"></a></p>
 <hr>
 <h1 id="cours">Cours</h1>
 <p><em>NumPy</em> est une bibliothèque Python pour manipuler des données numériques sous forme de <strong>tableaux (arrays)</strong>. Elle permet de faire des <strong>calculs rapides</strong> sur plusieurs valeurs.</p>
@@ -421,6 +429,71 @@ Min : -0.1</code></pre></div>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Valeur absolue</span>
 </span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>abs([<span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>])   <span style="color:#75715e"># → [3 5]</span></span></span></code></pre></div>
+<h2 id="ignorer-des-valeurs-manquantes-dans-les-données-npnan">Ignorer des valeurs manquantes dans les données (<code>np.nan</code>)</h2>
+<p>Parfois, une mesure a été oubliée ou mal prise. On utilise <code>np.nan</code> pour représenter une valeur manquante.</p>
+<ul>
+<li>La fonction <code>np.nanmean()</code> calcule <strong>la moyenne des éléments en ignorant les valeurs <code>NaN</code></strong> (<code>Not a Number</code>), qui représentent généralement des données manquantes ou invalides.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sol <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">32.0</span>, np<span style="color:#f92672">.</span>nan, <span style="color:#ae81ff">37.2</span>])
+</span></span><span style="display:flex;"><span>moy <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>nanmean(sol)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Moyenne (sans valeur manquante) : </span><span style="color:#e6db74">{</span>moy<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> g/100mL&#34;</span>)</span></span></code></pre></div>
+
+<details open class=" box cstyle notices cyan">
+  <summary class="box-label" tabindex="-1">
+    Sachez que&hellip;
+  </summary>
+  <div class="box-content">
+<ul>
+<li>Sans <code>nanmean</code>, la fonction <code>np.mean(sol)</code> retournerait <code>nan</code> car une seule valeur <code>nan</code> dans la liste contamine le résultat.</li>
+<li>il existe d&rsquo;autres fonctions statistiques qui ne tiennent pas compte des valeurs manquantes, par exemple: <code>np.nansum()</code>, <code>np.nanmedian()</code>, <code>np.nanstd()</code>, etc.</li>
+</ul>
+  </div>
+</details>
+<h2 id="filtrage-de-données">Filtrage de données</h2>
+<h3 id="1-créer-un-tableau-et-afficher-uniquement-certaines-valeurs-selon-une-condition">1. Créer un tableau et afficher uniquement certaines valeurs selon une condition</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tableau <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span>masque <span style="color:#f92672">=</span> tableau <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5</span>  <span style="color:#75715e"># Masquage : valeurs supérieures à 5</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Masque booléen : </span><span style="color:#e6db74">{</span>masque<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>valeurs_filtrees <span style="color:#f92672">=</span> tableau[masque]
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Valeurs supérieures à 5 : </span><span style="color:#e6db74">{</span>valeurs_filtrees<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<p><strong>Résultat attendu :</strong>
+Masque booléen : <code>[False False True False True False]</code>
+Valeurs supérieures à 5 : <code>[7 8]</code></p>
+<p><strong>Explication :</strong></p>
+<ul>
+<li><code>masque = tableau &gt; 5</code> : crée une liste de booléens, <code>True</code> lorsque la valeur de <code>tableau</code> est &gt; 5, <code>False</code> sinon.</li>
+<li><code>tableau[masque]</code> : ne garde que les valeurs dans <code>tableau</code> qui sont &gt; 5.</li>
+</ul>
+<h3 id="2-comptage-conditionnel-avec-npsum">2. Comptage conditionnel avec <code>np.sum</code></h3>
+<p>Compter combien de valeurs respectent un seuil donné.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tableau <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">5</span>])
+</span></span><span style="display:flex;"><span>seuil <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>nb_valeurs <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sum(tableau <span style="color:#f92672">&gt;</span> seuil)  <span style="color:#75715e"># Comptage des valeurs &gt; 5</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Nombre de valeurs supérieures à </span><span style="color:#e6db74">{</span>seuil<span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>nb_valeurs<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<p><strong>Résultat attendu :</strong>
+Nombre de valeurs supérieures à 5 : 3</p>
+<p><strong>Explication :</strong></p>
+<ul>
+<li><code>tableau &gt; seuil</code> : crée un masque booléen des valeurs &gt; 5.</li>
+<li><code>np.sum(tableau &gt; seuil)</code> : compte le nombre de valeurs <code>True</code> dans le masque.</li>
+</ul>
+<h3 id="3-filtre-avec-npwhere">3. Filtre avec <code>np.where()</code></h3>
+<p><code>numpy.where(condition, valeur_si_vrai, valeur_si_faux)</code> permet de créer un tableau (ou une colonne dans un DataFrame) en fonction d’une condition logique.</p>
+<ul>
+<li><strong>condition</strong> → un test qui renvoie <code>True</code> ou <code>False</code> (ex. : <code>df[&quot;Note&quot;] &gt;= 60</code>)</li>
+<li><strong>valeur_si_vrai</strong> → ce qui sera écrit quand la condition est vraie (<code>&quot;Réussi&quot;</code>)</li>
+<li><strong>valeur_si_faux</strong> → ce qui sera écrit quand la condition est fausse (<code>&quot;Échoué&quot;</code>)</li>
+</ul>
+<p>Exemple :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Tendance&#34;</span>] <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>where(df[<span style="color:#e6db74">&#34;Note&#34;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">60</span>, <span style="color:#e6db74">&#34;Réussi&#34;</span>, <span style="color:#e6db74">&#34;Échoué&#34;</span>)</span></span></code></pre></div>
+<p><strong>Explication :</strong></p>
+<p>Pour chaque ligne :</p>
+<ul>
+<li>si la note est &gt;= 60 → <code>&quot;Réussi&quot;</code></li>
+<li>sinon → <code>&quot;Échoué&quot;</code></li>
+</ul>
+<p>C’est une méthode très rapide car <code>numpy</code> applique l’opération directement sur toute la colonne, sans boucle explicite.</p>
 <h2 id="régression-linéaire-avec-numpy-nppolyfit">Régression linéaire avec NumPy (<code>np.polyfit()</code>)</h2>
 <h3 id="pourquoi-parler-de-régression-linéaire-">Pourquoi parler de régression linéaire ?</h3>
 <p>En sciences, on mesure souvent <strong>deux grandeurs liées entre elles</strong>, par exemple :</p>
@@ -477,8 +550,8 @@ $</p>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Régression linéaire avec NumPy&#34;</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-5a258bb51be6db84d60ff5c740e6706f" class="lightbox-link"><img alt="Graphe régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5a258bb51be6db84d60ff5c740e6706f"><img alt="Graphe régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw"></a></p>
+<p><a href="#R-image-922713ffecf275ee4e110bb9dbcbe808" class="lightbox-link"><img alt="Graphe régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-922713ffecf275ee4e110bb9dbcbe808"><img alt="Graphe régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw"></a></p>
 <p><strong>Interprétation :</strong></p>
 <ul>
 <li>Les points bleus représentent vos données mesurées.</li>
@@ -589,8 +662,8 @@ Plus R² est proche de <strong>1</strong>, meilleure est la correspondance.</p>
 Moyenne (LED blanche) = 11.40 cm, écart-type = 0.16 cm  
 Moyenne (LED rouge) = 10.23 cm, écart-type = 0.12 cm  
 Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
-<p><a href="#R-image-4ebb39790f3d9cb3b5bef0c213a55846" class="lightbox-link"><img alt="Graphique1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4ebb39790f3d9cb3b5bef0c213a55846"><img alt="Graphique1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw"></a></p>
+<p><a href="#R-image-6c4432be1f1bcec60674ec2d3d1438f9" class="lightbox-link"><img alt="Graphique1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6c4432be1f1bcec60674ec2d3d1438f9"><img alt="Graphique1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw"></a></p>
 <h2 id="exercice-2--distance-parcourue-par-un-chariot-en-fonction-du-temps">Exercice 2 : distance parcourue par un chariot en fonction du temps</h2>
 <p>On mesure la distance parcourue par un chariot en fonction du temps.</p>
 <table>
@@ -635,8 +708,8 @@ Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Pente a = 1.02 m/s
 Ordonnée à l’origine b = -0.01 m
 Coefficient de détermination R² = 0.999</code></pre></div>
-<p><a href="#R-image-59e5fec44f52d5abedcd69dcb434d287" class="lightbox-link"><img alt="Graphique2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-59e5fec44f52d5abedcd69dcb434d287"><img alt="Graphique2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw"></a></p>
+<p><a href="#R-image-84c8d308b60b4b458688129000ed97f7" class="lightbox-link"><img alt="Graphique2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-84c8d308b60b4b458688129000ed97f7"><img alt="Graphique2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw"></a></p>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
@@ -725,8 +798,8 @@ Coefficient de détermination R² = 0.999</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1759685736" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759685736" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1759689811" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759689811" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -738,7 +811,7 @@ Coefficient de détermination R² = 0.999</code></pre></div>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1759685736"></script>
-    <script src="/js/theme.min.js?1759685736" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1759689811"></script>
+    <script src="/js/theme.min.js?1759689811" defer></script>
   </body>
 </html>
