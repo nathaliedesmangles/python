@@ -2,24 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Évaluation #2 (30%) :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine10/index.html</link>
-    <description>Informations ⦁ Date:&#x9;Semaine #10 (Voir le calendrier)&#xA;⦁ Matière: Semaines 6 à 9 inclusivement&#xA;⦁ Documentation permise: 1 feuille recto-verso (manuscrite ou imprimée)&#xA;⦁ Format:&#x9;Test sur Moodle (théorique + pratique).</description>
+    <link>https://example.org/semaine10/index.html</link>
+    <description>Informations ⦁ Date:&#x9;Semaine #10 (Voir le calendrier)&#xA;⦁ Durée:&#x9;2h (2h40 pour les étudiants au SAA)&#xA;⦁ Matière: Semaines 6 à 9 inclusivement&#xA;⦁ Documentation permise: 3 feuilles recto-verso (manuscrites ou imprimées)&#xA;⦁ Format:&#x9;Test sur Moodle (théorique + pratique).&#xA;⦁ Nombre de questions:&#x9;À VENIR&#xA;Aide pour la préparation de vos feuilles de notes Guide - Questions à se poser (version Word)&#xA;Guide - Questions à se poser (version PDF)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine10/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Évaluation 2 (25%)</title>
-      <link>http://localhost:1313/semaine10/eval2/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine10/eval2/index.html</guid>
-      <description>Voici un **examen pratique de 2 heures** conçu pour évaluer les compétences mentionnées. Il comprend **5 questions progressives**, certaines en lien avec des contextes scientifiques, et couvrant **conditions**, **boucles**, **listes**, **chaînes**, et **matplotlib**. Les étudiants peuvent utiliser **VS Code** et **une feuille de notes recto-verso**.&#xA;# 🔬 Examen pratique – Programmation Python (durée : 2h)&#xA;**Instructions générales :**&#xA;* Répondez directement dans les cellules de code.&#xA;* Nommez le fichier examen\_prenom\_nom.</description>
-    </item>
-    <item>
-      <title>Évaluation formative</title>
-      <link>http://localhost:1313/semaine10/eval2_formative/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine10/eval2_formative/index.html</guid>
-      <description>Parfait. Voici un examen formatif structuré exactement comme l’examen sommatif, pour que vos étudiant·es puissent s’y préparer efficacement. Il couvre les mêmes compétences, avec des énoncés différents mais comparables en complexité.&#xA;🧪 Examen formatif – Programmation Python Durée suggérée : 2h – VS Code + 1 feuille de notes autorisée&#xA;🌬️ Question 1 – Conditions et météo (20 pts) On veut interpréter un indice de qualité de l’air (IQA) selon les valeurs suivantes :</description>
-    </item>
+    <atom:link href="https://example.org/semaine10/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -3,16 +3,25 @@ chapter = true
 pre = "10."
 title = " Évaluation #2 (30%)"
 weight = 110
-draft = true
+draft = false
 +++
 
 
 ## Informations
 
-⦁ **Date**:			Semaine #10 (Voir le calendrier)  
+⦁ **Date**:			Semaine #10 (Voir le calendrier)   
+⦁ **Durée**:			2h (2h40 pour les étudiants au SAA)  
 ⦁ **Matière**: 		        Semaines 6 à 9 inclusivement  
-⦁ **Documentation permise**: 	1 feuille recto-verso (manuscrite ou imprimée)  
-⦁ **Format**:			Test sur Moodle (théorique + pratique).
+⦁ **Documentation permise**: 	3 feuilles recto-verso (manuscrites ou imprimées)  
+⦁ **Format**:			Test sur Moodle (théorique + pratique).  
+⦁ **Nombre de questions**:	À VENIR
+
+
+## Aide pour la préparation de vos feuilles de notes
+
+[Guide - Questions à se poser (version Word](./Questions_Feuille_de_notes_Examen2.docx))  
+[Guide - Questions à se poser (version PDF](./Questions_Feuille_de_notes_Examen2.pdf))
+
 
 <!--
 ## Exercice 6 – Motif avec nombres décroissants par ligne
