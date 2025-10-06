@@ -22,21 +22,21 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
     <meta itemprop="name" content=" Dictionnaires :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Fichier .ipynb pour la démonstration en classe Fichier utilisé pour la démonstration
 Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous.">
-    <meta itemprop="wordCount" content="1638">
+    <meta itemprop="wordCount" content="1643">
     <title> Dictionnaires :: 420-SN1-RE</title>
     <link href="/semaine7/index.xml" rel="alternate" type="application/rss+xml" title=" Dictionnaires :: 420-SN1-RE">
-    <link href="/images/logo.png?1759689811" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759689811" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759689811" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759689811" rel="stylesheet">
-    <link href="/css/theme.min.css?1759689811" rel="stylesheet">
-    <link href="/css/format-html.min.css?1759689811" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1759689811" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1759689811" defer></script>
-    <script src="/js/lunr/lunr.min.js?1759689811" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1759689811" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1759689811" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1759689811" defer></script>
-    <script src="/js/search.min.js?1759689811" defer></script>
+    <link href="/images/logo.png?1759785039" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759785039" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759785039" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759785039" rel="stylesheet">
+    <link href="/css/theme.min.css?1759785039" rel="stylesheet">
+    <link href="/css/format-html.min.css?1759785039" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759785039" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759785039" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759785039" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759785039" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759785039" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759785039" defer></script>
+    <script src="/js/search.min.js?1759785039" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +46,7 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1759689811";
+      window.relearn.index_js_url="/searchindex.en.js?1759785039";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +92,7 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1759689811" rel="stylesheet">
+    <link href="/css/custom.css?1759785039" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine7/index.html">
     <div id="R-body" class="default-animation">
@@ -150,11 +150,13 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
         <li><a href="#objectifs-2">Objectifs</a></li>
       </ul>
     </li>
+    <li><a href="#graphe---mécaniquechute_librepngwidth35wv"><img src="./chute_libre.png?width=35wv" alt="Graphe - Mécanique"></a></li>
     <li><a href="#exercice---mathématiques">Exercice - Mathématiques</a>
       <ul>
         <li><a href="#objectifs-3">Objectifs</a></li>
       </ul>
     </li>
+    <li><a href="#graphe---mathquadratiquepngwidth35wv"><img src="./quadratique.png?width=35wv" alt="Graphe - Math"></a></li>
     <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
   </ul>
 </nav>
@@ -598,7 +600,7 @@ positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}</code></pre></div>
 <p><strong>Préparer les listes pour le tracé</strong></p>
 <ul>
 <li>Les dictionnaires ne garantissent pas l’ordre des clés ; créez une <strong>liste triée</strong> des temps (<strong>Indice</strong> : utiliser <code>temps = sorted(vitesses.keys())</code>) :</li>
-<li>Avec une boucle <code>for</code>, construire <strong>deux listes</strong> (<code>valeurs_v</code> et <code>valeurs_y</code>) qui regroupent, dans l’ordre des temps triés (<code>temps</code>), les valeurs de la vitesse et de la position extraites des dictionnaires.</li>
+<li>Avec une boucle <code>for</code> ou avec la fonction <code>list</code>, construire <strong>deux listes</strong> (<code>valeurs_v</code> et <code>valeurs_y</code>) qui regroupent, dans l’ordre des temps triés (<code>temps</code>), les valeurs de la vitesse et de la position extraites des dictionnaires.</li>
 </ul>
 </li>
 <li>
@@ -618,7 +620,8 @@ positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}</code></pre></div>
 </ul>
 </li>
 </ol>
-<hr>
+<h2 id="graphe---mécaniquechute_librepngwidth35wv"><a href="#R-image-56293111c9935c2b33b71b085c8f390c" class="lightbox-link"><img alt="Graphe - Mécanique" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/chute_libre.png?width=35wv" style=" height: auto; width: 35wv;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56293111c9935c2b33b71b085c8f390c"><img alt="Graphe - Mécanique" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/chute_libre.png?width=35wv"></a></h2>
 <h2 id="exercice---mathématiques">Exercice - Mathématiques</h2>
 
 <details open class=" box cstyle notices green">
@@ -676,7 +679,8 @@ positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}</code></pre></div>
 </ul>
 </li>
 </ol>
-<hr>
+<h2 id="graphe---mathquadratiquepngwidth35wv"><a href="#R-image-04478240b8830f2359b6ec4d0a3df2b0" class="lightbox-link"><img alt="Graphe - Math" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/quadratique.png?width=35wv" style=" height: auto; width: 35wv;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-04478240b8830f2359b6ec4d0a3df2b0"><img alt="Graphe - Math" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/quadratique.png?width=35wv"></a></h2>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
 <li>Lire la prochaine leçon : <a href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
@@ -764,8 +768,8 @@ positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1759689811" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759689811" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1759785039" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759785039" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -777,7 +781,7 @@ positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}</code></pre></div>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1759689811"></script>
-    <script src="/js/theme.min.js?1759689811" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1759785039"></script>
+    <script src="/js/theme.min.js?1759785039" defer></script>
   </body>
 </html>

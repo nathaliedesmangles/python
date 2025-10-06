@@ -26,21 +26,21 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
     <meta itemprop="description" content="Objectifs Partie 1: Avec NumPy
 Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .txt et .csv. Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques. Partie 2: Avec Pandas
 Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le contenu des fichiers. Écrire des DataFrames pandas dans des fichiers .csv ou .txt. Fichier .">
-    <meta itemprop="wordCount" content="1123">
+    <meta itemprop="wordCount" content="1584">
     <title> Lecture et écriture de fichiers textes (avec NumPy ou Pandas) :: 420-SN1-RE</title>
     <link href="/semaine9/index.xml" rel="alternate" type="application/rss+xml" title=" Lecture et écriture de fichiers textes (avec NumPy ou Pandas) :: 420-SN1-RE">
-    <link href="/images/logo.png?1759689799" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759689799" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759689799" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759689799" rel="stylesheet">
-    <link href="/css/theme.css?1759689799" rel="stylesheet">
-    <link href="/css/format-html.css?1759689799" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1759689799" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1759689799" defer></script>
-    <script src="/js/lunr/lunr.min.js?1759689799" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1759689799" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1759689799" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1759689799" defer></script>
-    <script src="/js/search.js?1759689799" defer></script>
+    <link href="/images/logo.png?1759785022" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759785022" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759785022" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759785022" rel="stylesheet">
+    <link href="/css/theme.css?1759785022" rel="stylesheet">
+    <link href="/css/format-html.css?1759785022" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759785022" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759785022" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759785022" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759785022" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759785022" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759785022" defer></script>
+    <script src="/js/search.js?1759785022" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -50,7 +50,7 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1759689799";
+      window.relearn.index_js_url="/searchindex.en.js?1759785022";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -96,7 +96,7 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1759689799" rel="stylesheet">
+    <link href="/css/custom.css?1759785022" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine9/index.html">
     <div id="R-body" class="default-animation">
@@ -121,12 +121,12 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
     <li><a href="#exercices-1">Exercices</a>
       <ul>
         <li><a href="#exercice-1-numpy">Exercice 1 (NumPy)</a></li>
+        <li><a href="#exercice-2-numpy">Exercice 2 (NumPy)</a></li>
+        <li><a href="#exercice-3-pandas">Exercice 3 (Pandas)</a></li>
+        <li><a href="#exercice-4-pandas">Exercice 4 (Pandas)</a></li>
+        <li><a href="#exercice-5-pandas">Exercice 5 (Pandas)</a></li>
       </ul>
     </li>
-    <li><a href="#exercice-2-numpy">Exercice 2 (NumPy)</a></li>
-    <li><a href="#exercice-3-pandas">Exercice 3 (Pandas)</a></li>
-    <li><a href="#exercice-4-pandas">Exercice 4 (Pandas)</a></li>
-    <li><a href="#exercice-5-pandas">Exercice 5 (Pandas)</a></li>
   </ul>
 
   <ul>
@@ -224,69 +224,218 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
 </ul>
   </div>
 </details>
+<p>Téléchargez un fichier students.csv contenant les colonnes : Nom,Âge,Note.</p>
 <h1 id="exercices">Exercices</h1>
 <h2 id="fichiers-de-départ-à-utiliser">Fichiers de départ à utiliser</h2>
 <ol>
-<li>Cliquez sur le lien pour télécharger les fichiers.<br>
+<li>
+<p>Cliquez sur le lien pour télécharger les fichiers.<br>
 <a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_np.ipynb" rel="external" target="_blank">Bloc-notes de départ - NumPy</a><br>
-<a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb" rel="external" target="_blank">Bloc-notes de départ - Pandas</a></li>
-<li>Cliquez sur le lien pour télécharger le fichier de données (<code>.csv</code>): <a href="/semaine9/temperatures.csv">temperatures.csv</a>
+<a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb" rel="external" target="_blank">Bloc-notes de départ - Pandas</a></p>
+</li>
+<li>
+<p>Cliquez sur le lien pour télécharger le fichier de données (<code>.csv</code>): <a href="/semaine9/temperatures.csv">temperatures.csv</a></p>
 <ul>
 <li>Il contient un jeu de données météorologiques prévisibles pour Bâle (France).</li>
 </ul>
 </li>
-<li>Enregistrez les fichiers dans votre dossier <strong>exercices</strong> de la semaine en cours.</li>
-<li>Ouvrez <strong>Visual Studio Code</strong>.</li>
-<li>Dans VS Code, recherchez et ouvrez les fichiers <code>exercices_fichiers_np.ipynb</code> et <code>exercices_fichiers_pd.ipynb</code></li>
-<li>Assurez-vous que le noyau Python (<code>Kernel</code>) soit sélectionné.</li>
-<li>Vous pouvez commencer à faire les exercices.</li>
+<li>
+<p>Cliquez sur le lien pour télécharger le fichier de données (<code>.txt</code>): <a href="/semaine9/experience.txt">experience.txt</a></p>
+</li>
+<li>
+<p>Enregistrez les fichiers dans votre dossier <strong>exercices</strong> de la semaine en cours <strong>(au même endroit que votre fichier .ipynb)</strong>.</p>
+</li>
+<li>
+<p>Ouvrez <strong>Visual Studio Code</strong>.</p>
+</li>
+<li>
+<p>Dans VS Code, recherchez et ouvrez les fichiers <code>exercices_fichiers_np.ipynb</code> et <code>exercices_fichiers_pd.ipynb</code>.</p>
+</li>
+<li>
+<p>Assurez-vous que le noyau Python (<code>Kernel</code>) soit sélectionné.</p>
+</li>
+<li>
+<p>Vous pouvez commencer à faire les exercices.</p>
+</li>
 </ol>
 <h2 id="exercices-1">Exercices</h2>
 <h3 id="exercice-1-numpy">Exercice 1 (NumPy)</h3>
-<ul>
-<li>À l&rsquo;aide de NumPy, créez un fichier <code>vitesses.txt</code> avec les valeurs suivantes (4 valeurs par ligne, 3 lignes) :</li>
-</ul>
+<p><strong>Objectif :</strong> À l&rsquo;aide de NumPy, créez un fichier <code>vitesses.txt</code> avec les valeurs suivantes (4 valeurs par ligne, 3 lignes) :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>5.2 6.1 5.8 6.0
 5.5 6.2 6.1 6.3
 5.9 6.0 5.7 6.1</code></pre></div>
-<ul>
-<li>Lisez ce fichier avec NumPy.</li>
-<li>Calculez la moyenne de chaque colonne.</li>
-<li>Écrivez les moyennes dans un nouveau fichier <code>moyennes.txt</code>.</li>
-</ul>
-<h2 id="exercice-2-numpy">Exercice 2 (NumPy)</h2>
-<ul>
-<li>Lisez le fichier CSV <code>temperatures.csv</code> avec NumPy.</li>
-<li>Transformez les températures en degrés Kelvin.</li>
-<li>Sauvegardez le nouveau fichier en CSV.</li>
-</ul>
-<h2 id="exercice-3-pandas">Exercice 3 (Pandas)</h2>
-<ol>
-<li>Téléchargez un fichier <code>students.csv</code> contenant les colonnes : <code>Nom,Âge,Note</code>.</li>
-<li>Lisez-le dans un DataFrame <code>df_etudiants</code>.</li>
-<li>Affichez les 3 premières lignes.</li>
-<li>Affichez le résumé statistique des notes.</li>
-</ol>
-<h2 id="exercice-4-pandas">Exercice 4 (Pandas)</h2>
+<p><strong>Étapes</strong> :</p>
 <ol>
 <li>
-<p>Ajoutez une colonne <code>Mention</code> au DataFrame en fonction de la note :</p>
+<p><strong>Créer le tableau de données</strong></p>
 <ul>
-<li><code>&gt;= 70</code> → &ldquo;Bien&rdquo;</li>
-<li><code>&gt;= 50</code> → &ldquo;Passable&rdquo;</li>
-<li><code>&lt; 50</code> → &ldquo;Échec&rdquo;</li>
+<li>Utilisez <code>np.array()</code> pour créer un tableau 2D contenant les vitesses.</li>
+<li>Chaque ligne du tableau correspond à une ligne dans le fichier texte.</li>
 </ul>
 </li>
 <li>
-<p>Enregistrez le DataFrame dans un fichier <code>etudiants_mentions.csv</code>.</p>
+<p><strong>Enregistrer le tableau dans un fichier</strong></p>
+<ul>
+<li>Utilisez <code>np.savetxt()</code> pour écrire le tableau dans un fichier <code>vitesses.txt</code>.</li>
+<li>Vérifiez le format des nombres (par exemple <code>fmt=&quot;%.2f&quot;</code> pour 2 décimales).</li>
+</ul>
+</li>
+<li>
+<p><strong>Lire le fichier avec NumPy</strong></p>
+<ul>
+<li>Utilisez <code>np.loadtxt()</code> pour lire les données à partir du fichier créé.</li>
+<li>Vérifiez que le tableau lu a bien la même forme que le tableau original.</li>
+</ul>
+</li>
+<li>
+<p><strong>Calculer la moyenne de chaque colonne</strong></p>
+<ul>
+<li>Utilisez <code>np.mean(..., axis=0)</code> pour obtenir les moyennes colonne par colonne.</li>
+</ul>
+</li>
+<li>
+<p><strong>Enregistrer les moyennes dans un nouveau fichier</strong></p>
+<ul>
+<li>Utilisez <code>np.savetxt()</code> pour écrire les moyennes dans <code>moyennes.txt</code>.</li>
+<li>Vérifiez le contenu du fichier après écriture.</li>
+</ul>
 </li>
 </ol>
-<h2 id="exercice-5-pandas">Exercice 5 (Pandas)</h2>
+<p><strong>Résultats</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Moyennes enregistrées : [5.53333333 6.1        5.86666667 6.13333333]</code></pre></div>
+<h3 id="exercice-2-numpy">Exercice 2 (NumPy)</h3>
+<p><strong>Objectif :</strong> lire un fichier CSV (<code>temperatures.csv</code>), manipuler les données et sauvegarder les résultats.</p>
 <ol>
-<li>Ouvrez un fichier <code>experiment.txt</code> séparé par des tabulations avec colonnes : <code>Température</code>, <code>Pression</code>, <code>Volume</code>.</li>
-<li>Lisez-le dans un DataFrame.</li>
-<li>Enregistrez-le sous <code>experiment_export.txt</code> en conservant les tabulations.</li>
+<li>
+<p><strong>Lire le fichier CSV <code>temperatures.csv</code></strong></p>
+<ul>
+<li>Vérifiez le séparateur utilisé dans le fichier (généralement <code>,</code>) et utilisez <code>delimiter=&quot;,&quot;</code> dans <code>np.loadtxt()</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Conversion en Kelvin</strong></p>
+<ul>
+<li>Pour convertir des degrés Celsius en Kelvin, ajoutez 273.15 à toutes les valeurs du tableau.</li>
+<li>NumPy permet d’effectuer cette opération sur tout le tableau en une seule instruction.</li>
+</ul>
+</li>
+<li>
+<p><strong>Enregistrer les données converties</strong></p>
+<ul>
+<li>Utilisez <code>np.savetxt()</code> avec <code>delimiter=&quot;,&quot;</code> pour créer un <strong>nouveau</strong> fichier CSV (ex: <code>temperature_K.csv</code>).</li>
+<li>Choisissez un format de nombres lisible (<code>fmt=&quot;%.2f&quot;</code> par exemple).</li>
+</ul>
+</li>
 </ol>
+<p><strong>Résultats</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code></code></pre></div>
+<h3 id="exercice-3-pandas">Exercice 3 (Pandas)</h3>
+<p><strong>Objectif :</strong> lire un fichier CSV dans un DataFrame et explorer les données.</p>
+<ol>
+<li>
+<p><strong>Lire le fichier CSV <code>etudiants.csv</code></strong></p>
+<ul>
+<li>Utilisez <code>pd.read_csv(&quot;etudiants.csv&quot;)</code> pour créer un DataFrame <code>df_etudiants</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Afficher un aperçu des données</strong></p>
+<ul>
+<li><code>df_etudiants.head(3)</code> montre les 3 premières lignes.</li>
+<li>Utile pour vérifier que le fichier a été lu correctement.</li>
+</ul>
+</li>
+<li>
+<p><strong>Résumé statistique</strong></p>
+<ul>
+<li><code>df_etudiants[&quot;Note&quot;].describe()</code> fournit la moyenne, l’écart-type, le minimum, le maximum, etc.</li>
+<li>Permet de comprendre rapidement la distribution des notes.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Résultats</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Nom  Âge  Note
+0    Alice   20    85
+1      Bob   21    67
+2  Charlie   19    45
+count    10.000000
+mean     66.200000
+std      15.061356
+min      45.000000
+25%      55.750000
+50%      65.500000
+75%      75.000000
+max      91.000000
+Name: Note, dtype: float64</code></pre></div>
+<h3 id="exercice-4-pandas">Exercice 4 (Pandas)</h3>
+<p><strong>Objectif :</strong> créer une nouvelle colonne conditionnelle et sauvegarder le résultat.</p>
+<ol>
+<li>
+<p><strong>Dans le DataFrame <strong>df_etudiants</strong>, ajouter la colonne <code>Mention</code></strong></p>
+<ul>
+<li>
+<p>Ajoutez une colonne <strong>Mention</strong> au DataFrame en fonction de la note, avec les conditions :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>* note &gt;= 70 → &#34;Bien&#34; 
+* note &gt;= 50 → &#34;Passable&#34; 
+* note &lt; 50 → &#34;Échec&#34;</code></pre></div>
+</li>
+<li>
+<p>Examinez la valeur de chaque note.</p>
+</li>
+<li>
+<p>Selon l’intervalle, attribuez la mention : &ldquo;Bien&rdquo;, &ldquo;Passable&rdquo;, &ldquo;Échec&rdquo;.</p>
+</li>
+<li>
+<p>Vous pouvez utiliser <code>np.where()</code> pour appliquer les conditions à tout le DataFrame.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Enregistrer le DataFrame</strong></p>
+<ul>
+<li>Utilisez <code>df_etudiants.to_csv(&quot;etudiants_mentions.csv&quot;, index=False)</code> pour sauvegarder.</li>
+<li>Vérifiez le fichier créé pour voir la nouvelle colonne.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Résultats</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"></code></pre></div>
+<h3 id="exercice-5-pandas">Exercice 5 (Pandas)</h3>
+<p><strong>Objectif :</strong> lire un fichier texte tabulé et le réexporter en conservant la structure.</p>
+<ol>
+<li>
+<p><strong>Lire le fichier <code>experience.txt</code></strong></p>
+<ul>
+<li>Utilisez <code>pd.read_csv(&quot;experience.txt&quot;, sep=&quot;\t&quot;)</code> pour indiquer que les colonnes sont séparées par des tabulations (<code>\t</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Vérifier les données</strong></p>
+<ul>
+<li>Utilisez <code>df.head()</code> pour visualiser quelques lignes et vérifier que toutes les colonnes sont correctement lues.</li>
+</ul>
+</li>
+<li>
+<p><strong>Réexporter le fichier</strong></p>
+<ul>
+<li>Utilisez <code>df.to_csv(&quot;experience_export.txt&quot;, sep=&quot;\t&quot;, index=False)</code> pour sauvegarder en conservant les tabulations.</li>
+<li>Vérifiez le fichier exporté pour vous assurer que la structure est respectée.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Résultats</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Fichier &#39;experience_export.txt&#39; enregistré avec tabulations.
+   Température  Pression  Volume
+0         25.0      1.01    10.5
+1         30.0      1.05    11.0
+2         35.0      1.10    11.5
+3         40.0      1.15    12.0
+4         45.0      1.20    12.5
+5         50.0      1.25    13.0
+6         55.0      1.30    13.5
+7         60.0      1.35    14.0
+8         65.0      1.40    14.5
+9         70.0      1.45    15.0</code></pre></div>
 <hr>
 <h1 id="cours">Cours</h1>
 <h2 id="pourquoi-lire-et-écrire-des-fichiers-">Pourquoi lire et écrire des fichiers ?</h2>
@@ -559,8 +708,8 @@ Dans le code précédent <code>sep=&quot;\t&quot;</code>, signifie que le sépar
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1759689799" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759689799" defer></script>
-    <script src="/js/theme.js?1759689799" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1759785022" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759785022" defer></script>
+    <script src="/js/theme.js?1759785022" defer></script>
   </body>
 </html>

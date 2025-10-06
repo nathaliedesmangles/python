@@ -32,6 +32,8 @@ draft = true
 {{% /notice %}}
 
 
+Téléchargez un fichier students.csv contenant les colonnes : Nom,Âge,Note.
+
 # Exercices
 
 ## Fichiers de départ à utiliser
@@ -41,56 +43,158 @@ draft = true
 [Bloc-notes de départ - Pandas](https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb)  
 3. Cliquez sur le lien pour télécharger le fichier de données (`.csv`): [temperatures.csv](./temperatures.csv)
    * Il contient un jeu de données météorologiques prévisibles pour Bâle (France).
-4. Enregistrez les fichiers dans votre dossier **exercices** de la semaine en cours.
-5. Ouvrez **Visual Studio Code**.
-6. Dans VS Code, recherchez et ouvrez les fichiers `exercices_fichiers_np.ipynb` et `exercices_fichiers_pd.ipynb`
-7. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
-8. Vous pouvez commencer à faire les exercices.
+4. Cliquez sur le lien pour télécharger le fichier de données (`.txt`): [experience.txt](./experience.txt)
+
+5. Enregistrez les fichiers dans votre dossier **exercices** de la semaine en cours **(au même endroit que votre fichier .ipynb)**.
+6. Ouvrez **Visual Studio Code**.
+7. Dans VS Code, recherchez et ouvrez les fichiers `exercices_fichiers_np.ipynb` et `exercices_fichiers_pd.ipynb`.
+8. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
+9. Vous pouvez commencer à faire les exercices.
 
 ## Exercices
 
 ### Exercice 1 (NumPy)
 
-* À l'aide de NumPy, créez un fichier `vitesses.txt` avec les valeurs suivantes (4 valeurs par ligne, 3 lignes) :
-
+**Objectif :** À l'aide de NumPy, créez un fichier `vitesses.txt` avec les valeurs suivantes (4 valeurs par ligne, 3 lignes) :
 ```
 5.2 6.1 5.8 6.0
 5.5 6.2 6.1 6.3
 5.9 6.0 5.7 6.1
 ```
 
-* Lisez ce fichier avec NumPy.
-* Calculez la moyenne de chaque colonne.
-* Écrivez les moyennes dans un nouveau fichier `moyennes.txt`.
+**Étapes** :
 
-## Exercice 2 (NumPy)
+1. **Créer le tableau de données**
+   * Utilisez `np.array()` pour créer un tableau 2D contenant les vitesses.
+   * Chaque ligne du tableau correspond à une ligne dans le fichier texte.
 
-* Lisez le fichier CSV `temperatures.csv` avec NumPy.
-* Transformez les températures en degrés Kelvin.
-* Sauvegardez le nouveau fichier en CSV.
+2. **Enregistrer le tableau dans un fichier**
+   * Utilisez `np.savetxt()` pour écrire le tableau dans un fichier `vitesses.txt`.
+   * Vérifiez le format des nombres (par exemple `fmt="%.2f"` pour 2 décimales).
 
-## Exercice 3 (Pandas)
+3. **Lire le fichier avec NumPy**
+   * Utilisez `np.loadtxt()` pour lire les données à partir du fichier créé.
+   * Vérifiez que le tableau lu a bien la même forme que le tableau original.
 
-1. Téléchargez un fichier `students.csv` contenant les colonnes : `Nom,Âge,Note`.
-2. Lisez-le dans un DataFrame `df_etudiants`.
-3. Affichez les 3 premières lignes.
-4. Affichez le résumé statistique des notes.
+4. **Calculer la moyenne de chaque colonne**
+   * Utilisez `np.mean(..., axis=0)` pour obtenir les moyennes colonne par colonne.
 
-## Exercice 4 (Pandas)
+5. **Enregistrer les moyennes dans un nouveau fichier**
+   * Utilisez `np.savetxt()` pour écrire les moyennes dans `moyennes.txt`.
+   * Vérifiez le contenu du fichier après écriture.
 
-1. Ajoutez une colonne `Mention` au DataFrame en fonction de la note :
+**Résultats** :
+```
+Moyennes enregistrées : [5.53333333 6.1        5.86666667 6.13333333]
+```
 
-   * `>= 70` → "Bien"
-   * `>= 50` → "Passable"
-   * `< 50` → "Échec"
-2. Enregistrez le DataFrame dans un fichier `etudiants_mentions.csv`.
+### Exercice 2 (NumPy)
 
-## Exercice 5 (Pandas)
+**Objectif :** lire un fichier CSV (`temperatures.csv`), manipuler les données et sauvegarder les résultats.
 
-1. Ouvrez un fichier `experiment.txt` séparé par des tabulations avec colonnes : `Température`, `Pression`, `Volume`.
-2. Lisez-le dans un DataFrame.
-3. Enregistrez-le sous `experiment_export.txt` en conservant les tabulations.
+1. **Lire le fichier CSV `temperatures.csv`**
+   * Vérifiez le séparateur utilisé dans le fichier (généralement `,`) et utilisez `delimiter=","` dans `np.loadtxt()`.
 
+2. **Conversion en Kelvin**
+   * Pour convertir des degrés Celsius en Kelvin, ajoutez 273.15 à toutes les valeurs du tableau.
+   * NumPy permet d’effectuer cette opération sur tout le tableau en une seule instruction.
+
+3. **Enregistrer les données converties**
+   * Utilisez `np.savetxt()` avec `delimiter=","` pour créer un **nouveau** fichier CSV (ex: `temperature_K.csv`).
+   * Choisissez un format de nombres lisible (`fmt="%.2f"` par exemple).
+
+**Résultats** :
+```
+```
+
+### Exercice 3 (Pandas)
+
+**Objectif :** lire un fichier CSV dans un DataFrame et explorer les données.
+
+1. **Lire le fichier CSV `etudiants.csv`**
+   * Utilisez `pd.read_csv("etudiants.csv")` pour créer un DataFrame `df_etudiants`.
+
+2. **Afficher un aperçu des données**
+   * `df_etudiants.head(3)` montre les 3 premières lignes.
+   * Utile pour vérifier que le fichier a été lu correctement.
+
+3. **Résumé statistique**
+   * `df_etudiants["Note"].describe()` fournit la moyenne, l’écart-type, le minimum, le maximum, etc.
+   * Permet de comprendre rapidement la distribution des notes.
+
+**Résultats** :
+```
+Nom  Âge  Note
+0    Alice   20    85
+1      Bob   21    67
+2  Charlie   19    45
+count    10.000000
+mean     66.200000
+std      15.061356
+min      45.000000
+25%      55.750000
+50%      65.500000
+75%      75.000000
+max      91.000000
+Name: Note, dtype: float64
+```
+
+
+### Exercice 4 (Pandas)
+
+**Objectif :** créer une nouvelle colonne conditionnelle et sauvegarder le résultat.
+
+1. **Dans le DataFrame **df_etudiants**, ajouter la colonne `Mention`**
+
+   * Ajoutez une colonne **Mention** au DataFrame en fonction de la note, avec les conditions : 
+
+     ```
+     * note >= 70 → "Bien" 
+     * note >= 50 → "Passable" 
+     * note < 50 → "Échec"
+     ```
+
+   * Examinez la valeur de chaque note.
+   * Selon l’intervalle, attribuez la mention : "Bien", "Passable", "Échec".
+   * Vous pouvez utiliser `np.where()` pour appliquer les conditions à tout le DataFrame.
+
+2. **Enregistrer le DataFrame**
+   * Utilisez `df_etudiants.to_csv("etudiants_mentions.csv", index=False)` pour sauvegarder.
+   * Vérifiez le fichier créé pour voir la nouvelle colonne.
+
+**Résultats** :
+```python
+```
+
+### Exercice 5 (Pandas)
+
+**Objectif :** lire un fichier texte tabulé et le réexporter en conservant la structure.
+
+1. **Lire le fichier `experience.txt`**
+   * Utilisez `pd.read_csv("experience.txt", sep="\t")` pour indiquer que les colonnes sont séparées par des tabulations (`\t`).
+
+2. **Vérifier les données**
+   * Utilisez `df.head()` pour visualiser quelques lignes et vérifier que toutes les colonnes sont correctement lues.
+
+3. **Réexporter le fichier**
+   * Utilisez `df.to_csv("experience_export.txt", sep="\t", index=False)` pour sauvegarder en conservant les tabulations.
+   * Vérifiez le fichier exporté pour vous assurer que la structure est respectée.
+
+**Résultats** :
+```
+Fichier 'experience_export.txt' enregistré avec tabulations.
+   Température  Pression  Volume
+0         25.0      1.01    10.5
+1         30.0      1.05    11.0
+2         35.0      1.10    11.5
+3         40.0      1.15    12.0
+4         45.0      1.20    12.5
+5         50.0      1.25    13.0
+6         55.0      1.30    13.5
+7         60.0      1.35    14.0
+8         65.0      1.40    14.5
+9         70.0      1.45    15.0
+```
 ---
 
 # Cours

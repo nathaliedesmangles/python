@@ -518,7 +518,7 @@ où $ g = 9.8 , m/s^2 $
 
 5. **Préparer les listes pour le tracé**
    * Les dictionnaires ne garantissent pas l’ordre des clés ; créez une **liste triée** des temps (**Indice** : utiliser `temps = sorted(vitesses.keys())`) :
-   * Avec une boucle `for`, construire **deux listes** (`valeurs_v` et `valeurs_y`) qui regroupent, dans l’ordre des temps triés (`temps`), les valeurs de la vitesse et de la position extraites des dictionnaires.
+   * Avec une boucle `for` ou avec la fonction `list`, construire **deux listes** (`valeurs_v` et `valeurs_y`) qui regroupent, dans l’ordre des temps triés (`temps`), les valeurs de la vitesse et de la position extraites des dictionnaires.
 
 6. **Tracer les courbes**
    * Importez `matplotlib.pyplot as plt`.
@@ -530,6 +530,7 @@ où $ g = 9.8 , m/s^2 $
 7. **Interprétation**
    * Écrivez 2–3 phrases : que montre la pente de `v(t)` ? Pourquoi `y(t)` a-t-elle une forme différente ?
 
+![Graphe - Mécanique](./chute_libre.png?width=35wv)
 ---
 
 ## Exercice - Mathématiques
@@ -566,7 +567,7 @@ Cet exercice utilise les mêmes notions que dans l'exercice précédent, mais av
 6. **Interprétation**
    * Identifiez les points où `f'(x) = 0`. Que se passe-t-il pour `f(x)` à ces points (minimum/maximum) ?
 
-
+![Graphe - Math](./quadratique.png?width=35wv)
 ---
 
 ## À faire avant le prochain cours

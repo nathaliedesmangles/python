@@ -58,6 +58,8 @@ print(df_etudiants["Note"].describe())
 ```
 
 
+
+
 ## Exercice 4 (Pandas)
 
 ```python
