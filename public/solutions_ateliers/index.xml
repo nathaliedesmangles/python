@@ -40,7 +40,7 @@
       <link>https://example.org/solutions_ateliers/7_dictionnaires/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/7_dictionnaires/index.html</guid>
-      <description>Exercice - Physique import matplotlib.pyplot as plt # Constante gravitationnelle g = 9.8 # Création des dictionnaires vitesses = {} positions = {} for t in range(6): # temps de 0 à 5 vitesses[t] = g * t positions[t] = 0.5 * g * (t**2) print(&#34;Vitesses :&#34;, vitesses) print(&#34;Positions :&#34;, positions) # Préparation des données pour les graphiques temps = list(vitesses.keys()) valeurs_v = list(vitesses.values()) valeurs_y = list(positions.values()) # Tracé des graphes plt.</description>
+      <description>Exercice - Physique import matplotlib.pyplot as plt # 1. Constante gravitationnelle g = 9.8 # m/s² # 2. Création des dictionnaires vitesses = {} positions = {} # 3. Remplir les dictionnaires avec les formules physiques for t in range(6): # de 0 à 5 secondes vitesses[t] = g * t positions[t] = 0.5 * g * (t**2) # 4. Vérifier le contenu print(&#34;Vitesses :&#34;, vitesses) print(&#34;Positions :&#34;, positions)&#xD;Résultat attendu :</description>
     </item>
     <item>
       <title> Tableaux NumPy et droite de régression</title>
