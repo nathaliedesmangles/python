@@ -3,7 +3,7 @@
   <channel>
     <title> Lecture et écriture de fichiers de données :: 420-SN1-RE</title>
     <link>http://localhost:1313/solutions_exercices/9_fichiers/index.html</link>
-    <description>Exercice 1 (NumPy) import numpy as np vitesses = np.array([ [5.2, 6.1, 5.8, 6.0], [5.5, 6.2, 6.1, 6.3], [5.9, 6.0, 5.7, 6.1] ]) np.savetxt(&#34;vitesses.txt&#34;, vitesses, fmt=&#34;%.2f&#34;) # Lire le fichier donnees = np.loadtxt(&#34;vitesses.txt&#34;) # Calcul des moyennes par colonne moyennes = np.mean(donnees, axis=0) # Sauvegarder le fichier des moyennes np.savetxt(&#34;moyennes.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print(&#34;Moyennes enregistrées :&#34;, moyennes)&#xD;Exercice 2 (NumPy) import numpy as np # Lecture du fichier CSV (températures en °C) temperatures = np.</description>
+    <description>Exercice 1 (NumPy) import numpy as np vitesses = np.array([ [5.2, 6.1, 5.8, 6.0], [5.5, 6.2, 6.1, 6.3], [5.9, 6.0, 5.7, 6.1] ]) np.savetxt(&#34;vitesses.txt&#34;, vitesses, fmt=&#34;%.2f&#34;) # Lire le fichier donnees = np.loadtxt(&#34;vitesses.txt&#34;) # Calcul des moyennes par colonne moyennes = np.mean(donnees, axis=0) # Sauvegarder le fichier des moyennes np.savetxt(&#34;moyennes.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print(&#34;Moyennes enregistrées :&#34;, moyennes)&#xD;Exercice 2 (NumPy) import numpy as np # 1. Lecture du fichier CSV (avec en-tête) # On lit seulement la colonne numérique (températures) # et on ignore la première ligne qui contient les titres.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/solutions_exercices/9_fichiers/index.xml" rel="self" type="application/rss+xml" />

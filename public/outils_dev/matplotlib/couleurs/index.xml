@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphiques Matplotlib - Codes de couleurs :: 420-SN1-RE</title>
+    <link>https://example.org/outils_dev/matplotlib/couleurs/index.html</link>
+    <description>Les couleurs et Matplotlib Matplotlib permet d’utiliser des abréviations d’une seule lettre pour les couleurs les plus courantes dans les tracés (plot, scatter, etc.). Voici la liste complète :&#xA;Lettre Couleur en anglais Couleur affichée b blue 🔵 bleu g green 🟢 vert r red 🔴 rouge c cyan 🟦 cyan (bleu clair) m magenta 🟣 magenta / fuchsia y yellow 🟡 jaune k black ⚫ noir w white ⚪ blanc Exemple d’utilisation import matplotlib.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/outils_dev/matplotlib/couleurs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

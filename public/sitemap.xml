@@ -46,6 +46,12 @@
     <loc>https://example.org/outils_dev/extensions/windows/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/outils_dev/matplotlib/axes/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/outils_dev/matplotlib/couleurs/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/outils_dev/extensions/macos/index.html</loc>
   </url>
   <url>

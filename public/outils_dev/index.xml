@@ -3,7 +3,7 @@
   <channel>
     <title>Outils de développement :: 420-SN1-RE</title>
     <link>https://example.org/outils_dev/index.html</link>
-    <description>Installer les outils de travail Windows - Installer matplotlib, numpy et pandas MacOS - Installer matplotlib, numpy et pandas Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports</description>
+    <description>Installer les outils de travail&#xA;Windows - Installer matplotlib, numpy et pandas&#xA;MacOS - Installer matplotlib, numpy et pandas&#xA;Se connecter à OneDrive&#xA;Fichiers et répertoires/dossiers&#xA;Utiliser Visual Studio Code (VS Code)&#xA;Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter&#xA;Astuces et touches spéciales&#xA;Markdown pour les rapports&#xA;Faire croiser les axes à l’origine (0,0)&#xA;Graphiques Matplotlib - Codes de couleurs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/outils_dev/index.xml" rel="self" type="application/rss+xml" />
@@ -62,6 +62,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/outils_dev/extensions/windows/index.html</guid>
       <description>1. Vérifier que Python est installé Clique sur le menu Démarrer de Windows. Tape python et vérifie qu’il apparaît dans la liste. Si rien n’apparaît → il faut installer Python depuis le site officiel : https://www.python.org/downloads/windows/ (prendre la dernière version stable, cocher Add Python to PATH pendant l’installation). 2. Ouvrir Visual Studio Code Lancer Visual Studio Code. Ouvrir votre dossier ou fichier .ipynb de travail. 3. Ouvrir le terminal dans VS Code Dans le menu en haut, cliquer sur Terminal → Nouveau terminal.</description>
+    </item>
+    <item>
+      <title>Faire croiser les axes à l’origine (0,0)</title>
+      <link>https://example.org/outils_dev/matplotlib/axes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/matplotlib/axes/index.html</guid>
+      <description>1. Rappel : les axes par défaut Quand tu fais un graphique avec Matplotlib, les axes sont placés autour du graphique, pas au centre.&#xA;Exemple :&#xA;import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show()&#xD;Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).&#xA;2. Les spines, c’est quoi ? Les spines sont les lignes qui forment les axes du graphique :</description>
+    </item>
+    <item>
+      <title>Graphiques Matplotlib - Codes de couleurs</title>
+      <link>https://example.org/outils_dev/matplotlib/couleurs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/outils_dev/matplotlib/couleurs/index.html</guid>
+      <description>Les couleurs et Matplotlib Matplotlib permet d’utiliser des abréviations d’une seule lettre pour les couleurs les plus courantes dans les tracés (plot, scatter, etc.). Voici la liste complète :&#xA;Lettre Couleur en anglais Couleur affichée b blue 🔵 bleu g green 🟢 vert r red 🔴 rouge c cyan 🟦 cyan (bleu clair) m magenta 🟣 magenta / fuchsia y yellow 🟡 jaune k black ⚫ noir w white ⚪ blanc Exemple d’utilisation import matplotlib.</description>
     </item>
     <item>
       <title>Installer un module (ex. Matplotlib) dans Visual Studio Code (MacOS)</title>

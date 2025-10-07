@@ -36,16 +36,35 @@ print("Moyennes enregistrées :", moyennes)
 ```python
 import numpy as np
 
-# Lecture du fichier CSV (températures en °C)
-temperatures = np.loadtxt("temperatures.csv", delimiter=",")
+# 1. Lecture du fichier CSV (avec en-tête)
 
-# Conversion en Kelvin
-temperatures_K = temperatures + 273.15
+# On lit seulement la colonne numérique (températures)
+# et on ignore la première ligne qui contient les titres.
+temperatures_C = np.genfromtxt("temperatures.csv",
+                               delimiter=",",
+                               skip_header=1,
+                               usecols=1)
 
-# Sauvegarde en CSV
-np.savetxt("temperatures_kelvin.csv", temperatures_K, delimiter=",", fmt="%.2f")
-print("Fichier 'temperatures_kelvin.csv' enregistré.")
+print("Températures en °C :")
+print(temperatures_C)
+
+# 2. Conversion en Kelvin
+# NumPy permet de faire l’opération sur tout le tableau d’un coup.
+temperatures_K = temperatures_C + 273.15
+
+print("\nTempératures converties en K :")
+print(temperatures_K)
+
+# 3. Enregistrement dans un nouveau fichier CSV
+# On crée un fichier 'temperature_K.csv' avec 2 décimales.
+np.savetxt("temperature_K.csv",
+           temperatures_K,
+           delimiter=",",
+           fmt="%.2f",
+           header="temperature_K",
+           comments="")
 ```
+
 
 ## Exercice 3 (Pandas)
 
@@ -63,18 +82,28 @@ print(df_etudiants["Note"].describe())
 ## Exercice 4 (Pandas)
 
 ```python
+import pandas as pd
 import numpy as np
 
-conditions = [
-    df_etudiants["Note"] >= 70,
-    (df_etudiants["Note"] >= 50) & (df_etudiants["Note"] < 70),
-    df_etudiants["Note"] < 50
-]
-mentions = ["Bien", "Passable", "Échec"]
+# 1. Lecture du fichier CSV contenant les étudiants
+df_etudiants = pd.read_csv("students.csv")
 
-df_etudiants["Mention"] = np.select(conditions, mentions)
+# Affichage du DataFrame original
+print("=== Données originales ===")
+print(df_etudiants)
+
+# 2. Création de la colonne 'Mention' selon la note
+df_etudiants["Mention"] = np.where(
+    df_etudiants["Note"] >= 70, "Bien",
+    np.where(df_etudiants["Note"] >= 50, "Passable", "Échec")
+)
+
+# Affichage du DataFrame mis à jour
+print("\n=== Données avec mentions ===")
+print(df_etudiants)
+
+# 3. Sauvegarde du DataFrame dans un nouveau fichier CSV
 df_etudiants.to_csv("etudiants_mentions.csv", index=False)
-print("Fichier 'etudiants_mentions.csv' enregistré.")
 ```
 
 ## Exercice 5 (Pandas)

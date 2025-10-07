@@ -25,8 +25,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "Installer les outils de travail Windows - Installer matplotlib, numpy et pandas MacOS - Installer matplotlib, numpy et pandas Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports",
-    "description": "Installer les outils de travail Windows - Installer matplotlib, numpy et pandas MacOS - Installer matplotlib, numpy et pandas Se connecter à OneDrive Fichiers et répertoires/dossiers Utiliser Visual Studio Code (VS Code) Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter Astuces et touches spéciales Markdown pour les rapports",
+    "content": "Installer les outils de travail\nWindows - Installer matplotlib, numpy et pandas\nMacOS - Installer matplotlib, numpy et pandas\nSe connecter à OneDrive\nFichiers et répertoires/dossiers\nUtiliser Visual Studio Code (VS Code)\nSauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter\nAstuces et touches spéciales\nMarkdown pour les rapports\nFaire croiser les axes à l’origine (0,0)\nGraphiques Matplotlib - Codes de couleurs",
+    "description": "Installer les outils de travail\nWindows - Installer matplotlib, numpy et pandas\nMacOS - Installer matplotlib, numpy et pandas\nSe connecter à OneDrive\nFichiers et répertoires/dossiers\nUtiliser Visual Studio Code (VS Code)\nSauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter\nAstuces et touches spéciales\nMarkdown pour les rapports\nFaire croiser les axes à l’origine (0,0)\nGraphiques Matplotlib - Codes de couleurs",
     "tags": [],
     "title": "Outils de développement",
     "uri": "/outils_dev/index.html"
@@ -118,6 +118,22 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows)",
     "uri": "/outils_dev/extensions/windows/index.html"
+  },
+  {
+    "breadcrumb": "Programmation en sciences \u003e \rOutils de développement",
+    "content": "1. Rappel : les axes par défaut Quand tu fais un graphique avec Matplotlib, les axes sont placés autour du graphique, pas au centre.\nExemple :\nimport matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show()\rRésultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).\n2. Les spines, c’est quoi ? Les spines sont les lignes qui forment les axes du graphique :\n'left' : axe vertical gauche 'bottom' : axe horizontal bas 'right' : axe vertical droit 'top' : axe horizontal haut On peut les déplacer, colorer ou masquer facilement.\n3. Faire croiser les axes à (0,0) Voici le code le plus simple :\nimport matplotlib.pyplot as plt import numpy as np # Données simples x = np.linspace(-5, 5, 100) y = x**2 # Création de la figure et du repère fig, ax = plt.subplots() ax.plot(x, y) # Déplacer les axes au centre ax.spines['left'].set_position('zero') # axe vertical à x = 0 ax.spines['bottom'].set_position('zero') # axe horizontal à y = 0 # Masquer les spines inutiles ax.spines['right'].set_color('none') ax.spines['top'].set_color('none') plt.show()\rRésultat attendu :\nLes axes x et y se croisent à l’origine. C’est souvent ce qu’on veut en mathématiques ou en physique. Explications sur fig, ax = plt.subplots()\rQu’est-ce que fig et ax ? Élément Rôle fig la figure = la feuille blanche ax les axes = le repère où on trace fig, ax = plt.subplots() ax.plot(x, y) plt.show()\rPourquoi pas juste plt.plot() ? plt.plot() → rapide, automatique, peu de contrôle. plt.subplots() → plus précis : on peut déplacer les axes, ajouter des flèches, etc. À retenir Action Commande Déplacer l’axe vertical à x=0 ax.spines['left'].set_position('zero') Déplacer l’axe horizontal à y=0 ax.spines['bottom'].set_position('zero') Cacher les spines inutiles ax.spines['top'].set_color('none') et ax.spines['right'].set_color('none')",
+    "description": "1. Rappel : les axes par défaut Quand tu fais un graphique avec Matplotlib, les axes sont placés autour du graphique, pas au centre.\nExemple :\nimport matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show()\rRésultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).\n2. Les spines, c’est quoi ? Les spines sont les lignes qui forment les axes du graphique :",
+    "tags": [],
+    "title": "Faire croiser les axes à l’origine (0,0)",
+    "uri": "/outils_dev/matplotlib/axes/index.html"
+  },
+  {
+    "breadcrumb": "Programmation en sciences \u003e \rOutils de développement",
+    "content": "Les couleurs et Matplotlib Matplotlib permet d’utiliser des abréviations d’une seule lettre pour les couleurs les plus courantes dans les tracés (plot, scatter, etc.). Voici la liste complète :\nLettre Couleur en anglais Couleur affichée b blue 🔵 bleu g green 🟢 vert r red 🔴 rouge c cyan 🟦 cyan (bleu clair) m magenta 🟣 magenta / fuchsia y yellow 🟡 jaune k black ⚫ noir w white ⚪ blanc Exemple d’utilisation import matplotlib.pyplot as plt x = [0, 1, 2, 3] y = [0, 1, 4, 9] plt.plot(x, y, 'r--') # ligne rouge en pointillés plt.show()\rIci :\n'r' = red '--' = ligne pointillée À retenir Ces lettres ne couvrent que les couleurs de base. Vous pouvez aussi utiliser : des noms complets : 'orange', 'lime', 'navy', 'purple'… ou des codes hexadécimaux : '#FF5733' ou même des valeurs RVB (Rouge Vert Bleu): (0.1, 0.5, 0.8) (entre 0 et 1) Il existe plusieurs sites web qui donnent les noms, les codes hexadécimaux et les valeurs RVB. En voici un: Noms des couleurs Codes hexadécimaux Valeurs RVB",
+    "description": "Les couleurs et Matplotlib Matplotlib permet d’utiliser des abréviations d’une seule lettre pour les couleurs les plus courantes dans les tracés (plot, scatter, etc.). Voici la liste complète :\nLettre Couleur en anglais Couleur affichée b blue 🔵 bleu g green 🟢 vert r red 🔴 rouge c cyan 🟦 cyan (bleu clair) m magenta 🟣 magenta / fuchsia y yellow 🟡 jaune k black ⚫ noir w white ⚪ blanc Exemple d’utilisation import matplotlib.",
+    "tags": [],
+    "title": "Graphiques Matplotlib - Codes de couleurs",
+    "uri": "/outils_dev/matplotlib/couleurs/index.html"
   },
   {
     "breadcrumb": "Programmation en sciences \u003e \rOutils de développement",

@@ -21,18 +21,18 @@
     <meta itemprop="wordCount" content="326">
     <title>Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows) :: 420-SN1-RE</title>
     <link href="/outils_dev/extensions/windows/index.xml" rel="alternate" type="application/rss+xml" title="Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows) :: 420-SN1-RE">
-    <link href="/images/logo.png?1759786891" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759786891" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759786891" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759786891" rel="stylesheet">
-    <link href="/css/theme.min.css?1759786891" rel="stylesheet">
-    <link href="/css/format-html.min.css?1759786891" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1759786891" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1759786891" defer></script>
-    <script src="/js/lunr/lunr.min.js?1759786891" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1759786891" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1759786891" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1759786891" defer></script>
-    <script src="/js/search.min.js?1759786891" defer></script>
+    <link href="/images/logo.png?1759874766" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759874766" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759874766" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759874766" rel="stylesheet">
+    <link href="/css/theme.min.css?1759874766" rel="stylesheet">
+    <link href="/css/format-html.min.css?1759874766" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759874766" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759874766" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759874766" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759874766" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759874766" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759874766" defer></script>
+    <script src="/js/search.min.js?1759874766" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1759786891";
+      window.relearn.index_js_url="/searchindex.en.js?1759874766";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1759786891" rel="stylesheet">
+    <link href="/css/custom.css?1759874766" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/outils_dev/extensions/windows/index.html">
     <div id="R-body" class="default-animation">
@@ -128,7 +128,7 @@
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/outils_dev/install_env/index.html" title="(🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/outils_dev/extensions/macos/index.html" title="Installer un module (ex. Matplotlib) dans Visual Studio Code (MacOS) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/outils_dev/matplotlib/axes/index.html" title="Faire croiser les axes à l’origine (0,0) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -171,11 +171,11 @@
 <li>Dans le menu en haut, cliquer sur <strong>Terminal → Nouveau terminal</strong>.
 (le terminal apparaît en bas de la fenêtre).</li>
 </ol>
-<p><a href="#R-image-11d7202af8045ac68e10cdb439efb898" class="lightbox-link"><img alt="Terminal" class="lazy lightbox figure-image" loading="lazy" src="/outils_dev/extensions/windows/terminal.png?width=40vw" style=" height: auto; width: 40vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-11d7202af8045ac68e10cdb439efb898"><img alt="Terminal" class="lazy lightbox lightbox-image" loading="lazy" src="/outils_dev/extensions/windows/terminal.png?width=40vw"></a></p>
+<p><a href="#R-image-392f27d7546658001ec6262df8d337b0" class="lightbox-link"><img alt="Terminal" class="lazy lightbox figure-image" loading="lazy" src="/outils_dev/extensions/windows/terminal.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-392f27d7546658001ec6262df8d337b0"><img alt="Terminal" class="lazy lightbox lightbox-image" loading="lazy" src="/outils_dev/extensions/windows/terminal.png?width=40vw"></a></p>
 <h3 id="4-installer-matplotlib">4. Installer matplotlib</h3>
-<p><a href="#R-image-b06192d1a7a543cf8d3bcdf9403768d9" class="lightbox-link"><img alt="Matplotlib" class="lazy lightbox figure-image" loading="lazy" src="../matplotlib.jpg?width=30vw" style=" height: auto; width: 30vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b06192d1a7a543cf8d3bcdf9403768d9"><img alt="Matplotlib" class="lazy lightbox lightbox-image" loading="lazy" src="../matplotlib.jpg?width=30vw"></a></p>
+<p><a href="#R-image-46a39a16d714b44cddebd12b93d6660a" class="lightbox-link"><img alt="Matplotlib" class="lazy lightbox figure-image" loading="lazy" src="../matplotlib.jpg?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-46a39a16d714b44cddebd12b93d6660a"><img alt="Matplotlib" class="lazy lightbox lightbox-image" loading="lazy" src="../matplotlib.jpg?width=30vw"></a></p>
 <ol>
 <li>
 <p>Dans le terminal, taper la commande suivante puis sur <strong>Entrée</strong> :</p>
@@ -221,8 +221,8 @@
 </li>
 </ol>
 <p><strong>NumPy</strong></p>
-<p><a href="#R-image-d2135363d4d4fee7dbabdf9f4826489d" class="lightbox-link"><img alt="NumPy" class="lazy lightbox figure-image" loading="lazy" src="../numpy.jpg?width=20vw" style=" height: auto; width: 20vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d2135363d4d4fee7dbabdf9f4826489d"><img alt="NumPy" class="lazy lightbox lightbox-image" loading="lazy" src="../numpy.jpg?width=20vw"></a></p>
+<p><a href="#R-image-1ef2fec61a2019aed47229d9aed32987" class="lightbox-link"><img alt="NumPy" class="lazy lightbox figure-image" loading="lazy" src="../numpy.jpg?width=20vw" style=" height: auto; width: 20vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1ef2fec61a2019aed47229d9aed32987"><img alt="NumPy" class="lazy lightbox lightbox-image" loading="lazy" src="../numpy.jpg?width=20vw"></a></p>
 <ol>
 <li>
 <p>Dans une cellule, écrire :</p>
@@ -239,8 +239,8 @@
 </li>
 </ol>
 <p><strong>Pandas</strong></p>
-<p><a href="#R-image-40a3120be4d1ccc2b36676f9f743d0f7" class="lightbox-link"><img alt="Pandas" class="lazy lightbox figure-image" loading="lazy" src="../pandas.jpg?width=30vw" style=" height: auto; width: 30vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-40a3120be4d1ccc2b36676f9f743d0f7"><img alt="Pandas" class="lazy lightbox lightbox-image" loading="lazy" src="../pandas.jpg?width=30vw"></a></p>
+<p><a href="#R-image-af1763a541f68084c30d1af533925965" class="lightbox-link"><img alt="Pandas" class="lazy lightbox figure-image" loading="lazy" src="../pandas.jpg?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-af1763a541f68084c30d1af533925965"><img alt="Pandas" class="lazy lightbox lightbox-image" loading="lazy" src="../pandas.jpg?width=30vw"></a></p>
 <ol>
 <li>Dans une cellule, écrire :</li>
 </ol>
@@ -323,6 +323,8 @@
             <li class="" data-nav-id="/outils_dev/markdown/index.html"><a class="padding" href="/outils_dev/markdown/index.html">MarkDown </a></li>
             <li class="" data-nav-id="/outils_dev/install_env/index.html"><a class="padding" href="/outils_dev/install_env/index.html">Installation de l'environnement sur Windows 11 </a></li>
             <li class="active " data-nav-id="/outils_dev/extensions/windows/index.html"><a class="padding" href="/outils_dev/extensions/windows/index.html">Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows)</a></li>
+            <li class="" data-nav-id="/outils_dev/matplotlib/axes/index.html"><a class="padding" href="/outils_dev/matplotlib/axes/index.html">Faire croiser les axes à l’origine (0,0)</a></li>
+            <li class="" data-nav-id="/outils_dev/matplotlib/couleurs/index.html"><a class="padding" href="/outils_dev/matplotlib/couleurs/index.html">Graphiques Matplotlib - Codes de couleurs</a></li>
             <li class="" data-nav-id="/outils_dev/extensions/macos/index.html"><a class="padding" href="/outils_dev/extensions/macos/index.html">Installer un module (ex. Matplotlib) dans Visual Studio Code (MacOS)</a></li></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
             <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
@@ -355,8 +357,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1759786891" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759786891" defer></script>
-    <script src="/js/theme.min.js?1759786891" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1759874766" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759874766" defer></script>
+    <script src="/js/theme.min.js?1759874766" defer></script>
   </body>
 </html>

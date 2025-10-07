@@ -26,21 +26,21 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
     <meta itemprop="description" content="Objectifs Partie 1: Avec NumPy
 Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .txt et .csv. Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques. Partie 2: Avec Pandas
 Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le contenu des fichiers. Écrire des DataFrames pandas dans des fichiers .csv ou .txt. Fichier .">
-    <meta itemprop="wordCount" content="1584">
+    <meta itemprop="wordCount" content="1861">
     <title> Lecture et écriture de fichiers textes (avec NumPy ou Pandas) :: 420-SN1-RE</title>
     <link href="/semaine9/index.xml" rel="alternate" type="application/rss+xml" title=" Lecture et écriture de fichiers textes (avec NumPy ou Pandas) :: 420-SN1-RE">
-    <link href="/images/logo.png?1759785022" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759785022" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759785022" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759785022" rel="stylesheet">
-    <link href="/css/theme.css?1759785022" rel="stylesheet">
-    <link href="/css/format-html.css?1759785022" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1759785022" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1759785022" defer></script>
-    <script src="/js/lunr/lunr.min.js?1759785022" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1759785022" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1759785022" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1759785022" defer></script>
-    <script src="/js/search.js?1759785022" defer></script>
+    <link href="/images/logo.png?1759874642" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759874642" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759874642" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759874642" rel="stylesheet">
+    <link href="/css/theme.css?1759874642" rel="stylesheet">
+    <link href="/css/format-html.css?1759874642" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759874642" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759874642" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759874642" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759874642" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759874642" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759874642" defer></script>
+    <script src="/js/search.js?1759874642" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -50,7 +50,7 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1759785022";
+      window.relearn.index_js_url="/searchindex.en.js?1759874642";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -96,7 +96,7 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1759785022" rel="stylesheet">
+    <link href="/css/custom.css?1759874642" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine9/index.html">
     <div id="R-body" class="default-animation">
@@ -131,17 +131,14 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
 
   <ul>
     <li><a href="#pourquoi-lire-et-écrire-des-fichiers-">Pourquoi lire et écrire des fichiers ?</a></li>
-    <li><a href="#1-avec-numpy">1. Avec NumPy</a>
+    <li><a href="#1-lecture-et-écriture-avec-numpy">1. Lecture et écriture avec NumPy</a>
       <ul>
         <li><a href="#lecture-de-fichiers">Lecture de fichiers</a></li>
+        <li><a href="#option-1--utiliser-npgenfromtxt-plus-robuste">Option 1 : Utiliser <code>np.genfromtxt()</code> (plus robuste)</a></li>
+        <li><a href="#écriture-de-fichiers">Écriture de fichiers</a></li>
       </ul>
     </li>
-    <li><a href="#écriture-de-fichiers">Écriture de fichiers</a>
-      <ul>
-        <li><a href="#1-fichiers-texte-txt-ou-csv">1. Fichiers texte (<code>.txt</code> ou <code>.csv</code>)</a></li>
-      </ul>
-    </li>
-    <li><a href="#conclusion-pour-numpy">Conclusion pour NumPy</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
     <li><a href="#introduction-à-pandas">Introduction à pandas</a></li>
     <li><a href="#importation-de-la-bibliothèque">Importation de la bibliothèque</a></li>
     <li><a href="#lecture-dun-fichier-csv-avec-pandas">Lecture d’un fichier CSV avec Pandas</a>
@@ -224,39 +221,28 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
 </ul>
   </div>
 </details>
-<p>Téléchargez un fichier students.csv contenant les colonnes : Nom,Âge,Note.</p>
 <h1 id="exercices">Exercices</h1>
 <h2 id="fichiers-de-départ-à-utiliser">Fichiers de départ à utiliser</h2>
 <ol>
-<li>
-<p>Cliquez sur le lien pour télécharger les fichiers.<br>
+<li>Cliquez sur le lien pour télécharger les fichiers.<br>
 <a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_np.ipynb" rel="external" target="_blank">Bloc-notes de départ - NumPy</a><br>
-<a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb" rel="external" target="_blank">Bloc-notes de départ - Pandas</a></p>
-</li>
-<li>
-<p>Cliquez sur le lien pour télécharger le fichier de données (<code>.csv</code>): <a href="/semaine9/temperatures.csv">temperatures.csv</a></p>
+<a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb" rel="external" target="_blank">Bloc-notes de départ - Pandas</a></li>
+<li>Télécharger le fichier de données (<code>.csv</code>): <a href="/semaine9/temperatures.csv">temperatures.csv</a>
 <ul>
 <li>Il contient un jeu de données météorologiques prévisibles pour Bâle (France).</li>
 </ul>
 </li>
-<li>
-<p>Cliquez sur le lien pour télécharger le fichier de données (<code>.txt</code>): <a href="/semaine9/experience.txt">experience.txt</a></p>
+<li>Téléchargez le fichier de données (<code>.csv</code>): <a href="/semaine9/etudiants.csv">etudiants.csv</a>
+<ul>
+<li>Il contenant 3 colonnes : <code>Nom,Âge,Note</code>.</li>
+</ul>
 </li>
-<li>
-<p>Enregistrez les fichiers dans votre dossier <strong>exercices</strong> de la semaine en cours <strong>(au même endroit que votre fichier .ipynb)</strong>.</p>
-</li>
-<li>
-<p>Ouvrez <strong>Visual Studio Code</strong>.</p>
-</li>
-<li>
-<p>Dans VS Code, recherchez et ouvrez les fichiers <code>exercices_fichiers_np.ipynb</code> et <code>exercices_fichiers_pd.ipynb</code>.</p>
-</li>
-<li>
-<p>Assurez-vous que le noyau Python (<code>Kernel</code>) soit sélectionné.</p>
-</li>
-<li>
-<p>Vous pouvez commencer à faire les exercices.</p>
-</li>
+<li>Cliquer sur le lien du fichier de données (<code>.txt</code>): <a href="/semaine9/experience.txt">experience.txt</a>. Une fois ouvert, faites un clic-droit et choisir <em><strong>Enregistrer sous</strong></em> pour enregistrer le fichier dans votre dossier <strong>exercices</strong>.</li>
+<li>Enregistrez les fichiers dans votre dossier <strong>exercices</strong> de la semaine en cours <strong>(au même endroit que votre fichier .ipynb)</strong>.</li>
+<li>Ouvrez <strong>Visual Studio Code</strong>.</li>
+<li>Dans VS Code, recherchez et ouvrez les fichiers <code>exercices_fichiers_np.ipynb</code> et <code>exercices_fichiers_pd.ipynb</code>.</li>
+<li>Assurez-vous que le noyau Python (<code>Kernel</code>) soit sélectionné.</li>
+<li>Vous pouvez commencer à faire les exercices.</li>
 </ol>
 <h2 id="exercices-1">Exercices</h2>
 <h3 id="exercice-1-numpy">Exercice 1 (NumPy)</h3>
@@ -264,7 +250,6 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>5.2 6.1 5.8 6.0
 5.5 6.2 6.1 6.3
 5.9 6.0 5.7 6.1</code></pre></div>
-<p><strong>Étapes</strong> :</p>
 <ol>
 <li>
 <p><strong>Créer le tableau de données</strong></p>
@@ -309,7 +294,7 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
 <li>
 <p><strong>Lire le fichier CSV <code>temperatures.csv</code></strong></p>
 <ul>
-<li>Vérifiez le séparateur utilisé dans le fichier (généralement <code>,</code>) et utilisez <code>delimiter=&quot;,&quot;</code> dans <code>np.loadtxt()</code>.</li>
+<li>Vérifiez le séparateur utilisé dans le fichier (généralement <code>,</code>) et utilisez <code>delimiter=&quot;,&quot;</code> dans <code>np.genfromtxt()</code>.</li>
 </ul>
 </li>
 <li>
@@ -324,11 +309,16 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
 <ul>
 <li>Utilisez <code>np.savetxt()</code> avec <code>delimiter=&quot;,&quot;</code> pour créer un <strong>nouveau</strong> fichier CSV (ex: <code>temperature_K.csv</code>).</li>
 <li>Choisissez un format de nombres lisible (<code>fmt=&quot;%.2f&quot;</code> par exemple).</li>
+<li>Vérifier le contenu du fichier <code>temperature_K.csv</code> (données en K).</li>
 </ul>
 </li>
 </ol>
 <p><strong>Résultats</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Températures en °C :
+[2.31 2.37 2.43 ... 1.92 1.96 1.68]
+
+Températures converties en K :
+[275.46 275.52 275.58 ... 275.07 275.11 274.83]</code></pre></div>
 <h3 id="exercice-3-pandas">Exercice 3 (Pandas)</h3>
 <p><strong>Objectif :</strong> lire un fichier CSV dans un DataFrame et explorer les données.</p>
 <ol>
@@ -386,7 +376,8 @@ Name: Note, dtype: float64</code></pre></div>
 <p>Selon l’intervalle, attribuez la mention : &ldquo;Bien&rdquo;, &ldquo;Passable&rdquo;, &ldquo;Échec&rdquo;.</p>
 </li>
 <li>
-<p>Vous pouvez utiliser <code>np.where()</code> pour appliquer les conditions à tout le DataFrame.</p>
+<p>Vous pouvez utiliser <code>np.where()</code> pour appliquer les conditions à tout le DataFrame.
+* <a href="http://localhost:1313/semaine8/#3-filtre-avec-npwhere" rel="external" target="_blank"><strong>Rappel sur np.where()</strong></a></p>
 </li>
 </ul>
 </li>
@@ -399,7 +390,31 @@ Name: Note, dtype: float64</code></pre></div>
 </li>
 </ol>
 <p><strong>Résultats</strong> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Données originales
+       Nom  Âge  Note
+0    Alice   20    85
+1      Bob   21    67
+2  Charlie   19    45
+3    David   22    72
+4     Emma   20    58
+5    Fiona   21    49
+6   George   23    91
+7   Hannah   20    76
+8      Ian   22    64
+9    Julia   19    55
+
+Données avec mentions
+       Nom  Âge  Note   Mention
+0    Alice   20    85      Bien
+1      Bob   21    67  Passable
+2  Charlie   19    45     Échec
+3    David   22    72      Bien
+4     Emma   20    58  Passable
+5    Fiona   21    49     Échec
+6   George   23    91      Bien
+7   Hannah   20    76      Bien
+8      Ian   22    64  Passable
+9    Julia   19    55  Passable</code></pre></div>
 <h3 id="exercice-5-pandas">Exercice 5 (Pandas)</h3>
 <p><strong>Objectif :</strong> lire un fichier texte tabulé et le réexporter en conservant la structure.</p>
 <ol>
@@ -446,14 +461,14 @@ Souvent, les données proviennent :</p>
 <li>de fichiers partagés par d’autres chercheurs,</li>
 <li>de simulations précédentes.</li>
 </ul>
-<p>Pour traiter ces données en Python, les bibliothèques <code>NumPy</code> et <code>Pandas</code> fournissent des fonctions rapides pour lire et écrire des tableaux.</p>
-<h2 id="1-avec-numpy">1. Avec NumPy</h2>
+<p>Pour traiter ces données en Python, les bibliothèques <code>NumPy</code> et <code>Pandas</code> fournissent des fonctions rapides pour <strong>lire</strong> et <strong>écrire</strong> des tableaux numériques.</p>
+<h2 id="1-lecture-et-écriture-avec-numpy">1. Lecture et écriture avec NumPy</h2>
 <h3 id="lecture-de-fichiers">Lecture de fichiers</h3>
-<h4 id="1-fichiers-texte-simples-txt">1. Fichiers texte simples (<code>.txt</code>)</h4>
-<p>Supposons que nous avons un fichier <code>mesures.txt</code> contenant des valeurs de température (sans en-tête :</p>
+<h4 id="fichiers-texte-simples-txt">Fichiers texte simples (<code>.txt</code>)</h4>
+<p>Supposons que nous avons un fichier <code>mesures.txt</code> contenant des valeurs de température (sans en-tête) :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>20.1 21.3 19.8 22.0
 21.0 22.2 20.5 23.1</code></pre></div>
-<p>Pour lire ce fichier en NumPy :</p>
+<p>Lecture en NumPy :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Lecture du fichier</span>
@@ -465,57 +480,106 @@ Souvent, les données proviennent :</p>
 <ul>
 <li><code>np.loadtxt()</code> lit un fichier texte et retourne un tableau NumPy.</li>
 <li>Par défaut, les colonnes sont séparées par des espaces.</li>
-<li><code>donnees</code> est maintenant un tableau NumPy 2D.</li>
+<li><code>donnees</code> est un tableau NumPy 2D (lignes × colonnes).</li>
 </ul>
-<h4 id="2-fichiers-csv-csv">2. Fichiers CSV (<code>.csv</code>)</h4>
-<p>Si les données sont séparées par des virgules (format CSV) :</p>
+<h4 id="fichiers-csv-csv">Fichiers CSV (<code>.csv</code>)</h4>
+<p>Si les données sont séparées par des virgules :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>20.1,21.3,19.8,22.0
 21.0,22.2,20.5,23.1</code></pre></div>
 <p>On peut lire le fichier avec :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>donnees <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>loadtxt(<span style="color:#e6db74">&#34;mesures.csv&#34;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>)
 </span></span><span style="display:flex;"><span>print(donnees)</span></span></code></pre></div>
-<p><strong>Remarque :</strong></p>
+<p><strong>Remarque :</strong>
+<code>delimiter=&quot;,&quot;</code> indique que les colonnes sont séparées par des virgules.</p>
+<h3 id="option-1--utiliser-npgenfromtxt-plus-robuste">Option 1 : Utiliser <code>np.genfromtxt()</code> (plus robuste)</h3>
+<p>Si ton fichier contient :</p>
 <ul>
-<li><code>delimiter=&quot;,&quot;</code> indique que les colonnes sont séparées par des virgules.</li>
+<li>une <strong>première ligne d’en-têtes</strong>,</li>
+<li>des <strong>valeurs manquantes</strong>,</li>
+<li>ou des <strong>colonnes non numériques</strong> (comme des dates),</li>
 </ul>
-<p>Si le fichier contient une première ligne avec des titres de colonnes :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Temp1,Temp2,Temp3,Temp4
-20.1,21.3,19.8,22.0
-21.0,22.2,20.5,23.1</code></pre></div>
-<p>On peut utiliser <code>np.genfromtxt</code> :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>donnees <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>genfromtxt(<span style="color:#e6db74">&#34;mesures.csv&#34;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>, skip_header<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>print(donnees)</span></span></code></pre></div>
+<p>alors <code>np.loadtxt()</code> échouera.
+Dans ce cas, on utilise <code>np.genfromtxt()</code>.</p>
+<p>Exemple :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>timestamp,temperature
+2021-01-01 00:00:00,20.1
+2021-01-01 01:00:00,21.3
+2021-01-01 02:00:00,19.8</code></pre></div>
+<p>Lecture uniquement de la colonne numérique :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lecture en sautant la première ligne et en lisant la 2e colonne</span>
+</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>genfromtxt(<span style="color:#e6db74">&#34;temperatures.csv&#34;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>, skip_header<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, usecols<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Conversion en Kelvin</span>
+</span></span><span style="display:flex;"><span>temperatures_K <span style="color:#f92672">=</span> temperatures <span style="color:#f92672">+</span> <span style="color:#ae81ff">273.15</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sauvegarde dans un nouveau fichier</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>savetxt(<span style="color:#e6db74">&#34;temperatures_kelvin.csv&#34;</span>, temperatures_K, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%.2f</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Fichier &#39;temperatures_kelvin.csv&#39; enregistré.&#34;</span>)</span></span></code></pre></div>
+<p><strong>Explications :</strong></p>
 <ul>
-<li><code>skip_header=1</code> ignore la première ligne.</li>
-<li><code>np.genfromtxt</code> est plus robuste si le fichier contient des valeurs manquantes.</li>
+<li><code>skip_header=1</code> : ignore la première ligne contenant les titres.</li>
+<li><code>usecols=1</code> : lit seulement la colonne d’indice 1 (ici, les températures).</li>
+<li><code>np.genfromtxt()</code> : accepte les fichiers mixtes (texte + nombres) et les valeurs manquantes.</li>
 </ul>
-<h2 id="écriture-de-fichiers">Écriture de fichiers</h2>
-<h3 id="1-fichiers-texte-txt-ou-csv">1. Fichiers texte (<code>.txt</code> ou <code>.csv</code>)</h3>
+<h4 id="exemple-avancé-avec-plusieurs-types-de-données">Exemple avancé avec plusieurs types de données</h4>
+<p>Si on veut <strong>conserver les dates</strong> et les températures :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>genfromtxt(<span style="color:#e6db74">&#34;temperatures.csv&#34;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>, dtype<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, encoding<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, names<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dates <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;timestamp&#39;</span>]
+</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;temperature&#39;</span>]
+</span></span><span style="display:flex;"><span>temperatures_K <span style="color:#f92672">=</span> temperatures <span style="color:#f92672">+</span> <span style="color:#ae81ff">273.15</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Combine dates et températures converties</span>
+</span></span><span style="display:flex;"><span>output <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>column_stack((dates, temperatures_K))
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>savetxt(<span style="color:#e6db74">&#34;temperatures_kelvin.csv&#34;</span>, output, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">,</span><span style="color:#e6db74">%.2f</span><span style="color:#e6db74">&#34;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>, header<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;timestamp,temperature_K&#34;</span>, comments<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)</span></span></code></pre></div>
+<h3 id="écriture-de-fichiers">Écriture de fichiers</h3>
+<h4 id="fichiers-texte-txt-ou-csv">Fichiers texte (<code>.txt</code> ou <code>.csv</code>)</h4>
 <p>Pour écrire un tableau NumPy dans un fichier texte :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>donnees <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>]])
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>savetxt(<span style="color:#e6db74">&#34;resultats.txt&#34;</span>, donnees)</span></span></code></pre></div>
 <ul>
 <li>Chaque ligne du tableau devient une ligne dans le fichier.</li>
 <li>Par défaut, les valeurs sont séparées par un espace.</li>
 </ul>
-<p>Pour utiliser un autre séparateur, par exemple une virgule :</p>
+<p>Pour un séparateur différent :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>savetxt(<span style="color:#e6db74">&#34;resultats.csv&#34;</span>, donnees, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>)</span></span></code></pre></div>
-<p><strong>Format et précision des nombres</strong></p>
-<p>Vous pouvez choisir le format des nombres :</p>
+<p><strong>Format et précision des nombres</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>savetxt(<span style="color:#e6db74">&#34;resultats.csv&#34;</span>, donnees, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%.2f</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
 <ul>
-<li><code>%.2f</code> signifie deux chiffres après la virgule.</li>
+<li><code>%.2f</code> : deux chiffres après la virgule.</li>
 </ul>
-<h2 id="conclusion-pour-numpy">Conclusion pour NumPy</h2>
-<p>NumPy permet de manipuler rapidement des fichiers de données scientifiques :</p>
-<ul>
-<li>Lecture simple : <code>np.loadtxt</code></li>
-<li>Lecture robuste avec en-têtes ou valeurs manquantes : <code>np.genfromtxt</code></li>
-<li>Écriture : <code>np.savetxt</code> avec choix du séparateur et de la précision</li>
-</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p><code>NumPy</code> permet de lire et d’écrire facilement des données scientifiques :</p>
+<table>
+<thead>
+<tr>
+<th>Tâche</th>
+<th>Fonction</th>
+<th>Usage typique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lecture simple</td>
+<td><code>np.loadtxt()</code></td>
+<td>fichiers purement numériques</td>
+</tr>
+<tr>
+<td>Lecture robuste</td>
+<td><code>np.genfromtxt()</code></td>
+<td>fichiers avec texte, en-têtes, valeurs manquantes</td>
+</tr>
+<tr>
+<td>Écriture</td>
+<td><code>np.savetxt()</code></td>
+<td>export en <code>.txt</code> ou <code>.csv</code></td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2 id="introduction-à-pandas">Introduction à pandas</h2>
 <ul>
@@ -708,8 +772,8 @@ Dans le code précédent <code>sep=&quot;\t&quot;</code>, signifie que le sépar
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1759785022" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759785022" defer></script>
-    <script src="/js/theme.js?1759785022" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1759874642" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759874642" defer></script>
+    <script src="/js/theme.js?1759874642" defer></script>
   </body>
 </html>

@@ -32,7 +32,6 @@ draft = true
 {{% /notice %}}
 
 
-Téléchargez un fichier students.csv contenant les colonnes : Nom,Âge,Note.
 
 # Exercices
 
@@ -41,15 +40,16 @@ Téléchargez un fichier students.csv contenant les colonnes : Nom,Âge,Note.
 1. Cliquez sur le lien pour télécharger les fichiers.  
 [Bloc-notes de départ - NumPy](https://python-a25.netlify.app/blocnotes/exercices_fichiers_np.ipynb)  
 [Bloc-notes de départ - Pandas](https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb)  
-3. Cliquez sur le lien pour télécharger le fichier de données (`.csv`): [temperatures.csv](./temperatures.csv)
+3. Télécharger le fichier de données (`.csv`): [temperatures.csv](./temperatures.csv)
    * Il contient un jeu de données météorologiques prévisibles pour Bâle (France).
-4. Cliquez sur le lien pour télécharger le fichier de données (`.txt`): [experience.txt](./experience.txt)
-
-5. Enregistrez les fichiers dans votre dossier **exercices** de la semaine en cours **(au même endroit que votre fichier .ipynb)**.
-6. Ouvrez **Visual Studio Code**.
-7. Dans VS Code, recherchez et ouvrez les fichiers `exercices_fichiers_np.ipynb` et `exercices_fichiers_pd.ipynb`.
-8. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
-9. Vous pouvez commencer à faire les exercices.
+4. Téléchargez le fichier de données (`.csv`): [etudiants.csv](./etudiants.csv)
+   * Il contenant 3 colonnes : `Nom,Âge,Note`.
+5. Cliquer sur le lien du fichier de données (`.txt`): [experience.txt](./experience.txt). Une fois ouvert, faites un clic-droit et choisir ***Enregistrer sous*** pour enregistrer le fichier dans votre dossier **exercices**.
+6. Enregistrez les fichiers dans votre dossier **exercices** de la semaine en cours **(au même endroit que votre fichier .ipynb)**.
+7. Ouvrez **Visual Studio Code**.
+8. Dans VS Code, recherchez et ouvrez les fichiers `exercices_fichiers_np.ipynb` et `exercices_fichiers_pd.ipynb`.
+9. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
+10. Vous pouvez commencer à faire les exercices.
 
 ## Exercices
 
@@ -61,8 +61,6 @@ Téléchargez un fichier students.csv contenant les colonnes : Nom,Âge,Note.
 5.5 6.2 6.1 6.3
 5.9 6.0 5.7 6.1
 ```
-
-**Étapes** :
 
 1. **Créer le tableau de données**
    * Utilisez `np.array()` pour créer un tableau 2D contenant les vitesses.
@@ -93,7 +91,7 @@ Moyennes enregistrées : [5.53333333 6.1        5.86666667 6.13333333]
 **Objectif :** lire un fichier CSV (`temperatures.csv`), manipuler les données et sauvegarder les résultats.
 
 1. **Lire le fichier CSV `temperatures.csv`**
-   * Vérifiez le séparateur utilisé dans le fichier (généralement `,`) et utilisez `delimiter=","` dans `np.loadtxt()`.
+   * Vérifiez le séparateur utilisé dans le fichier (généralement `,`) et utilisez `delimiter=","` dans `np.genfromtxt()`.
 
 2. **Conversion en Kelvin**
    * Pour convertir des degrés Celsius en Kelvin, ajoutez 273.15 à toutes les valeurs du tableau.
@@ -102,9 +100,15 @@ Moyennes enregistrées : [5.53333333 6.1        5.86666667 6.13333333]
 3. **Enregistrer les données converties**
    * Utilisez `np.savetxt()` avec `delimiter=","` pour créer un **nouveau** fichier CSV (ex: `temperature_K.csv`).
    * Choisissez un format de nombres lisible (`fmt="%.2f"` par exemple).
+   * Vérifier le contenu du fichier `temperature_K.csv` (données en K).
 
 **Résultats** :
 ```
+Températures en °C :
+[2.31 2.37 2.43 ... 1.92 1.96 1.68]
+
+Températures converties en K :
+[275.46 275.52 275.58 ... 275.07 275.11 274.83]
 ```
 
 ### Exercice 3 (Pandas)
@@ -157,13 +161,39 @@ Name: Note, dtype: float64
    * Examinez la valeur de chaque note.
    * Selon l’intervalle, attribuez la mention : "Bien", "Passable", "Échec".
    * Vous pouvez utiliser `np.where()` pour appliquer les conditions à tout le DataFrame.
+   	* [**Rappel sur np.where()**](http://localhost:1313/semaine8/#3-filtre-avec-npwhere)
 
 2. **Enregistrer le DataFrame**
    * Utilisez `df_etudiants.to_csv("etudiants_mentions.csv", index=False)` pour sauvegarder.
    * Vérifiez le fichier créé pour voir la nouvelle colonne.
 
 **Résultats** :
-```python
+```
+Données originales
+       Nom  Âge  Note
+0    Alice   20    85
+1      Bob   21    67
+2  Charlie   19    45
+3    David   22    72
+4     Emma   20    58
+5    Fiona   21    49
+6   George   23    91
+7   Hannah   20    76
+8      Ian   22    64
+9    Julia   19    55
+
+Données avec mentions
+       Nom  Âge  Note   Mention
+0    Alice   20    85      Bien
+1      Bob   21    67  Passable
+2  Charlie   19    45     Échec
+3    David   22    72      Bien
+4     Emma   20    58  Passable
+5    Fiona   21    49     Échec
+6   George   23    91      Bien
+7   Hannah   20    76      Bien
+8      Ian   22    64  Passable
+9    Julia   19    55  Passable
 ```
 
 ### Exercice 5 (Pandas)
@@ -208,22 +238,23 @@ Souvent, les données proviennent :
 * de fichiers partagés par d’autres chercheurs,
 * de simulations précédentes.
 
-Pour traiter ces données en Python, les bibliothèques `NumPy` et `Pandas` fournissent des fonctions rapides pour lire et écrire des tableaux.
+Pour traiter ces données en Python, les bibliothèques `NumPy` et `Pandas` fournissent des fonctions rapides pour **lire** et **écrire** des tableaux numériques.
 
-## 1. Avec NumPy
+
+## 1. Lecture et écriture avec NumPy
 
 ### Lecture de fichiers
 
-#### 1. Fichiers texte simples (`.txt`)
+#### Fichiers texte simples (`.txt`)
 
-Supposons que nous avons un fichier `mesures.txt` contenant des valeurs de température (sans en-tête :
+Supposons que nous avons un fichier `mesures.txt` contenant des valeurs de température (sans en-tête) :
 
 ```
 20.1 21.3 19.8 22.0
 21.0 22.2 20.5 23.1
 ```
 
-Pour lire ce fichier en NumPy :
+Lecture en NumPy :
 
 ```python
 import numpy as np
@@ -239,11 +270,12 @@ print(type(donnees))
 
 * `np.loadtxt()` lit un fichier texte et retourne un tableau NumPy.
 * Par défaut, les colonnes sont séparées par des espaces.
-* `donnees` est maintenant un tableau NumPy 2D.
+* `donnees` est un tableau NumPy 2D (lignes × colonnes).
 
-#### 2. Fichiers CSV (`.csv`)
 
-Si les données sont séparées par des virgules (format CSV) :
+#### Fichiers CSV (`.csv`)
+
+Si les données sont séparées par des virgules :
 
 ```
 20.1,21.3,19.8,22.0
@@ -258,31 +290,72 @@ print(donnees)
 ```
 
 **Remarque :**
+`delimiter=","` indique que les colonnes sont séparées par des virgules.
 
-* `delimiter=","` indique que les colonnes sont séparées par des virgules.
 
-Si le fichier contient une première ligne avec des titres de colonnes :
+### Option 1 : Utiliser `np.genfromtxt()` (plus robuste)
+
+Si ton fichier contient :
+
+* une **première ligne d’en-têtes**,
+* des **valeurs manquantes**,
+* ou des **colonnes non numériques** (comme des dates),
+
+alors `np.loadtxt()` échouera.
+Dans ce cas, on utilise `np.genfromtxt()`.
+
+Exemple :
 
 ```
-Temp1,Temp2,Temp3,Temp4
-20.1,21.3,19.8,22.0
-21.0,22.2,20.5,23.1
+timestamp,temperature
+2021-01-01 00:00:00,20.1
+2021-01-01 01:00:00,21.3
+2021-01-01 02:00:00,19.8
 ```
 
-On peut utiliser `np.genfromtxt` :
+Lecture uniquement de la colonne numérique :
 
 ```python
-donnees = np.genfromtxt("mesures.csv", delimiter=",", skip_header=1)
-print(donnees)
+import numpy as np
+
+# Lecture en sautant la première ligne et en lisant la 2e colonne
+temperatures = np.genfromtxt("temperatures.csv", delimiter=",", skip_header=1, usecols=1)
+
+# Conversion en Kelvin
+temperatures_K = temperatures + 273.15
+
+# Sauvegarde dans un nouveau fichier
+np.savetxt("temperatures_kelvin.csv", temperatures_K, delimiter=",", fmt="%.2f")
+print("Fichier 'temperatures_kelvin.csv' enregistré.")
 ```
 
-* `skip_header=1` ignore la première ligne.
-* `np.genfromtxt` est plus robuste si le fichier contient des valeurs manquantes.
+**Explications :**
+
+* `skip_header=1` : ignore la première ligne contenant les titres.
+* `usecols=1` : lit seulement la colonne d’indice 1 (ici, les températures).
+* `np.genfromtxt()` : accepte les fichiers mixtes (texte + nombres) et les valeurs manquantes.
 
 
-## Écriture de fichiers
+#### Exemple avancé avec plusieurs types de données
 
-### 1. Fichiers texte (`.txt` ou `.csv`)
+Si on veut **conserver les dates** et les températures :
+
+```python
+data = np.genfromtxt("temperatures.csv", delimiter=",", dtype=None, encoding=None, names=True)
+
+dates = data['timestamp']
+temperatures = data['temperature']
+temperatures_K = temperatures + 273.15
+
+# Combine dates et températures converties
+output = np.column_stack((dates, temperatures_K))
+np.savetxt("temperatures_kelvin.csv", output, fmt="%s,%.2f", delimiter=",", header="timestamp,temperature_K", comments="")
+```
+
+
+### Écriture de fichiers
+
+#### Fichiers texte (`.txt` ou `.csv`)
 
 Pour écrire un tableau NumPy dans un fichier texte :
 
@@ -290,37 +363,36 @@ Pour écrire un tableau NumPy dans un fichier texte :
 import numpy as np
 
 donnees = np.array([[1, 2, 3], [4, 5, 6]])
-
 np.savetxt("resultats.txt", donnees)
 ```
 
 * Chaque ligne du tableau devient une ligne dans le fichier.
 * Par défaut, les valeurs sont séparées par un espace.
 
-Pour utiliser un autre séparateur, par exemple une virgule :
+Pour un séparateur différent :
 
 ```python
 np.savetxt("resultats.csv", donnees, delimiter=",")
 ```
 
-**Format et précision des nombres**
-
-Vous pouvez choisir le format des nombres :
+**Format et précision des nombres** :
 
 ```python
 np.savetxt("resultats.csv", donnees, delimiter=",", fmt="%.2f")
 ```
 
-* `%.2f` signifie deux chiffres après la virgule.
+* `%.2f` : deux chiffres après la virgule.
 
 
-## Conclusion pour NumPy
+## Conclusion
 
-NumPy permet de manipuler rapidement des fichiers de données scientifiques :
+`NumPy` permet de lire et d’écrire facilement des données scientifiques :
 
-* Lecture simple : `np.loadtxt`
-* Lecture robuste avec en-têtes ou valeurs manquantes : `np.genfromtxt`
-* Écriture : `np.savetxt` avec choix du séparateur et de la précision
+| Tâche           | Fonction          | Usage typique                                     |
+| --------------- | ----------------- | ------------------------------------------------- |
+| Lecture simple  | `np.loadtxt()`    | fichiers purement numériques                      |
+| Lecture robuste | `np.genfromtxt()` | fichiers avec texte, en-têtes, valeurs manquantes |
+| Écriture        | `np.savetxt()`    | export en `.txt` ou `.csv`                        |
 
 ---
 
