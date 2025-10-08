@@ -27,7 +27,6 @@ moyennes = np.mean(donnees, axis=0)
 
 # Sauvegarder le fichier des moyennes
 np.savetxt("moyennes.txt", moyennes, fmt="%.2f")
-print("Moyennes enregistrées :", moyennes)
 ```
 
 
@@ -52,7 +51,8 @@ print(temperatures_C)
 # NumPy permet de faire l’opération sur tout le tableau d’un coup.
 temperatures_K = temperatures_C + 273.15
 
-print("\nTempératures converties en K :")
+print()
+print("Températures converties en K :")
 print(temperatures_K)
 
 # 3. Enregistrement dans un nouveau fichier CSV
@@ -71,11 +71,10 @@ np.savetxt("temperature_K.csv",
 ```python
 import pandas as pd
 
-df_etudiants = pd.read_csv("students.csv")
+df_etudiants = pd.read_csv("etudiants.csv")
 print(df_etudiants.head(3))
 print(df_etudiants["Note"].describe())
 ```
-
 
 
 
@@ -86,10 +85,10 @@ import pandas as pd
 import numpy as np
 
 # 1. Lecture du fichier CSV contenant les étudiants
-df_etudiants = pd.read_csv("students.csv")
+df_etudiants = pd.read_csv("etudiants.csv")
 
 # Affichage du DataFrame original
-print("=== Données originales ===")
+print("Données originales")
 print(df_etudiants)
 
 # 2. Création de la colonne 'Mention' selon la note
@@ -99,7 +98,7 @@ df_etudiants["Mention"] = np.where(
 )
 
 # Affichage du DataFrame mis à jour
-print("\n=== Données avec mentions ===")
+print("Données avec mentions")
 print(df_etudiants)
 
 # 3. Sauvegarde du DataFrame dans un nouveau fichier CSV

@@ -378,12 +378,19 @@ print(len(nombres))  # 3
 
 Renvoie une nouvelle liste triée **sans modifier** la liste originale.
 
+**En ordre croissant (par défaut)** :
 ```python
 nombres = [3, 1, 2]
 print(sorted(nombres))  # [1, 2, 3]
 print(nombres)          # [3, 1, 2] (pas modifiée)
 ```
 
+**En ordre décroisant**:
+```python
+nombres = [5, 1, 4, 3, 2]
+nombres_decr = sorted(nombres, reverse=True)
+print(nombres_decr )  # [5, 4, 3, 2, 1]
+```
 ---
 
 ### `sort()`

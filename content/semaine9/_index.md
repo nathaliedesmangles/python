@@ -18,6 +18,7 @@ draft = true
 * Lire des fichiers `.csv` et `.txt` en utilisant pandas.
 * Explorer rapidement le contenu des fichiers.
 * Écrire des DataFrames pandas dans des fichiers `.csv` ou `.txt`.
+* Manipuler les données lues sous forme de DataFrames Pandas pour faire des calculs scientifiques.
 
 ## Fichier .ipynb pour la démo en classe
 
@@ -63,22 +64,34 @@ draft = true
 ```
 
 1. **Créer le tableau de données**
+   * Utilisez **une liste de 3 listes** pour stocker les vitesses.
+     ``` 
+     [
+       [5.2, 6.1, 5.8, 6.0],
+       [5.5, 6.2, 6.1, 6.3],
+       [5.9, 6.0, 5.7, 6.1]
+     ]
+     ```
    * Utilisez `np.array()` pour créer un tableau 2D contenant les vitesses.
-   * Chaque ligne du tableau correspond à une ligne dans le fichier texte.
 
 2. **Enregistrer le tableau dans un fichier**
-   * Utilisez `np.savetxt()` pour écrire le tableau dans un fichier `vitesses.txt`.
-   * Vérifiez le format des nombres (par exemple `fmt="%.2f"` pour 2 décimales).
+   * Utilisez `np.savetxt("nom_fichier.ext", tableau_numpy, format)` pour écrire le tableau dans un fichier `vitesses.txt`.  
+		* Pour appliquer le format des nombres, par exemple pour 2 décimales, remplacez ***format*** par `fmt="%.2f"`.
 
 3. **Lire le fichier avec NumPy**
-   * Utilisez `np.loadtxt()` pour lire les données à partir du fichier créé.
-   * Vérifiez que le tableau lu a bien la même forme que le tableau original.
+   * Utilisez `np.loadtxt()` pour lire les données à partir du fichier créé précédemment.
+   * Affichez les données lues et vérifiez que le tableau lu a bien la même forme que le tableau original.
+   ```
+   [[5.2 6.1 5.8 6. ]
+    [5.5 6.2 6.1 6.3]
+    [5.9 6.  5.7 6.1]]
+   ```
 
 4. **Calculer la moyenne de chaque colonne**
    * Utilisez `np.mean(..., axis=0)` pour obtenir les moyennes colonne par colonne.
 
 5. **Enregistrer les moyennes dans un nouveau fichier**
-   * Utilisez `np.savetxt()` pour écrire les moyennes dans `moyennes.txt`.
+   * Utilisez `np.savetxt()` pour écrire les moyennes dans un fichier nommé `moyennes.txt`.
    * Vérifiez le contenu du fichier après écriture.
 
 **Résultats** :
@@ -91,11 +104,11 @@ Moyennes enregistrées : [5.53333333 6.1        5.86666667 6.13333333]
 **Objectif :** lire un fichier CSV (`temperatures.csv`), manipuler les données et sauvegarder les résultats.
 
 1. **Lire le fichier CSV `temperatures.csv`**
-   * Vérifiez le séparateur utilisé dans le fichier (généralement `,`) et utilisez `delimiter=","` dans `np.genfromtxt()`.
+   * Vérifiez le séparateur utilisé dans le fichier (généralement `,`) et utilisez `delimiter=","`, `skip_heade=1` et `usecols=1` dans `np.genfromtxt()`.
 
 2. **Conversion en Kelvin**
    * Pour convertir des degrés Celsius en Kelvin, ajoutez 273.15 à toutes les valeurs du tableau.
-   * NumPy permet d’effectuer cette opération sur tout le tableau en une seule instruction.
+     * **Astuces** : NumPy permet d’effectuer cette opération sur tout le tableau en une seule instruction (sans boucle).
 
 3. **Enregistrer les données converties**
    * Utilisez `np.savetxt()` avec `delimiter=","` pour créer un **nouveau** fichier CSV (ex: `temperature_K.csv`).
@@ -119,12 +132,11 @@ Températures converties en K :
    * Utilisez `pd.read_csv("etudiants.csv")` pour créer un DataFrame `df_etudiants`.
 
 2. **Afficher un aperçu des données**
-   * `df_etudiants.head(3)` montre les 3 premières lignes.
-   * Utile pour vérifier que le fichier a été lu correctement.
+   * `df_etudiants.head(3)` montre les 3 premières lignes. Utile pour vérifier que le fichier a été lu correctement.
 
 3. **Résumé statistique**
-   * `df_etudiants["Note"].describe()` fournit la moyenne, l’écart-type, le minimum, le maximum, etc.
-   * Permet de comprendre rapidement la distribution des notes.
+   * `df_etudiants["Note"].describe()` fournit la moyenne, l’écart-type, le minimum, le maximum, etc. Permet de comprendre rapidement la distribution des notes.
+
 
 **Résultats** :
 ```
@@ -275,6 +287,8 @@ print(type(donnees))
 
 #### Fichiers CSV (`.csv`)
 
+Un fichier CSV (*Comma-Separated Values*) contient des données tabulaires séparées par des virgules (ou parfois par un autre séparateur).
+
 Si les données sont séparées par des virgules :
 
 ```
@@ -398,9 +412,10 @@ np.savetxt("resultats.csv", donnees, delimiter=",", fmt="%.2f")
 
 ## Introduction à pandas
 
-* **pandas** est une bibliothèque Python puissante pour la manipulation et l’analyse de données.
-* Les données sont stockées dans des **DataFrames**, qui ressemblent à des tableaux Excel : lignes × colonnes.
-* pandas simplifie la lecture et l’écriture de fichiers de données.
+
+* Pandas est conçu pour manipuler des tableaux hétérogènes (colonnes de types différents).
+* C’est l’outil de référence pour les fichiers de données expérimentales complexes (ex. : plusieurs variables, unités, dates).
+* Pandas simplifie la lecture et l’écriture de fichiers de données.
 
 ## Importation de la bibliothèque
 
@@ -409,8 +424,6 @@ import pandas as pd
 ```
 
 ## Lecture d’un fichier CSV avec Pandas
-
-Un fichier CSV (Comma-Separated Values) contient des données tabulaires séparées par des virgules (ou parfois par un autre séparateur).
 
 ### Exemple de fichier `data.csv`
 
