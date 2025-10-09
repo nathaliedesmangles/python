@@ -227,8 +227,6 @@ print(capitales)
 
 ## Parcourir un dictionnaire
 
-### Différence entre **variable** et **séquence** dans la boucle `for`
-
 {{% notice style="accent"  title="Rappel sur la boucle for" %}}
 ### Syntaxe générale de la boucle for
 `for variable in séquence:`
