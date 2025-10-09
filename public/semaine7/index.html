@@ -22,21 +22,21 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
     <meta itemprop="name" content=" Dictionnaires :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Créer un dictionnaire simple pour représenter des données associatives (ex. : atome → masse atomique) Manipuler des données dans un dictionnaire (accès, ajout, modification, parcours). Lire un fichier csv contenant des données expérimentales Explorer les données. Filtrer les résultats pour une donnée ciblée. Comparer des valeurs selon une donnée. Fichier .ipynb pour la démonstration en classe Fichier utilisé pour la démonstration
 Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous.">
-    <meta itemprop="wordCount" content="1643">
+    <meta itemprop="wordCount" content="1812">
     <title> Dictionnaires :: 420-SN1-RE</title>
     <link href="/semaine7/index.xml" rel="alternate" type="application/rss+xml" title=" Dictionnaires :: 420-SN1-RE">
-    <link href="/images/logo.png?1759969962" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759969962" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759969962" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759969962" rel="stylesheet">
-    <link href="/css/theme.min.css?1759969962" rel="stylesheet">
-    <link href="/css/format-html.min.css?1759969962" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1759969962" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1759969962" defer></script>
-    <script src="/js/lunr/lunr.min.js?1759969962" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1759969962" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1759969962" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1759969962" defer></script>
-    <script src="/js/search.min.js?1759969962" defer></script>
+    <link href="/images/logo.png?1759972185" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759972185" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759972185" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759972185" rel="stylesheet">
+    <link href="/css/theme.min.css?1759972185" rel="stylesheet">
+    <link href="/css/format-html.min.css?1759972185" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1759972185" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759972185" defer></script>
+    <script src="/js/lunr/lunr.min.js?1759972185" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759972185" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759972185" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1759972185" defer></script>
+    <script src="/js/search.min.js?1759972185" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +46,7 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1759969962";
+      window.relearn.index_js_url="/searchindex.en.js?1759972185";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +92,7 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1759969962" rel="stylesheet">
+    <link href="/css/custom.css?1759972185" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine7/index.html">
     <div id="R-body" class="default-animation">
@@ -135,7 +135,11 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
     <li><a href="#accéder-à-une-valeur">Accéder à une valeur</a></li>
     <li><a href="#ajouter-ou-modifier-une-valeur">Ajouter ou modifier une valeur</a></li>
     <li><a href="#supprimer-une-entrée">Supprimer une entrée</a></li>
-    <li><a href="#parcourir-un-dictionnaire">Parcourir un dictionnaire</a></li>
+    <li><a href="#parcourir-un-dictionnaire">Parcourir un dictionnaire</a>
+      <ul>
+        <li><a href="#différence-entre-variable-et-séquence-dans-la-boucle-for">Différence entre <strong>variable</strong> et <strong>séquence</strong> dans la boucle <code>for</code></a></li>
+      </ul>
+    </li>
     <li><a href="#créer-une-liste-à-partir-dun-dictionnaire">Créer une liste à partir d’un dictionnaire</a>
       <ul>
         <li></li>
@@ -357,27 +361,59 @@ Le cube de 5 est 125</code></pre></div>
 </span></span><span style="display:flex;"><span>print(capitales)</span></span></code></pre></div>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>{&#39;Canada&#39;: &#39;Ottawa&#39;, &#39;Japon&#39;: &#39;Tokyo&#39;, &#39;Mexique&#39;: &#39;Mexico&#39;}</code></pre></div>
 <h2 id="parcourir-un-dictionnaire">Parcourir un dictionnaire</h2>
-<p>Souvent, on veut parcourir toutes les clés et valeurs avec <code>.items()</code>.</p>
+<h3 id="différence-entre-variable-et-séquence-dans-la-boucle-for">Différence entre <strong>variable</strong> et <strong>séquence</strong> dans la boucle <code>for</code></h3>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Rappel sur la boucle for
+  </summary>
+  <div class="box-content">
+<h3 id="syntaxe-générale-de-la-boucle-for">Syntaxe générale de la boucle for</h3>
+<p><code>for variable in séquence:</code></p>
+<p>Dans une boucle <code>for</code>, la <strong>séquence</strong> est l’ensemble des éléments à parcourir.
+La <strong>variable</strong> sert simplement à <strong>recevoir chaque élément</strong> de cette séquence, un à la fois.</p>
+  </div>
+</details>
+<ol>
+<li>Si on veut parcourir toutes les <strong>clés</strong> et <strong>valeurs</strong> on utilise <code>.items()</code>.</li>
+</ol>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> pays, capitale <span style="color:#f92672">in</span> capitales<span style="color:#f92672">.</span>items():
 </span></span><span style="display:flex;"><span>    print(pays, <span style="color:#e6db74">&#34;→&#34;</span>, capitale)</span></span></code></pre></div>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Canada → Ottawa
 Japon → Tokyo
 Mexique → Mexico</code></pre></div>
-<blockquote>
-<p><code>.items()</code> retourne <strong>toutes les paires clé-valeur</strong>.</p>
-</blockquote>
-<p>On peut aussi parcourir seulement les clés <code>.keys()</code>:</p>
+<ul>
+<li><code>.items()</code> retourne <strong>toutes les paires clé-valeur</strong>.</li>
+<li><code>capitales.items()</code> → c’est <strong>la séquence</strong>, c’est-à-dire <strong>toutes les clés ET toutes les valeurs</strong> du dictionnaire.</li>
+<li><code>pays</code> → c’est la <strong>variable</strong> qui prend <strong>une clé à la fois</strong> pendant le parcours.</li>
+<li><code>capitale</code> → c’est la <strong>variable</strong> qui prend <strong>une valeur à la fois</strong> pendant le parcours.</li>
+</ul>
+<ol start="2">
+<li>Si on veut parcourir seulement les <strong>clés</strong> on utilise <code>.keys()</code>:</li>
+</ol>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> pays <span style="color:#f92672">in</span> capitales<span style="color:#f92672">.</span>keys():
 </span></span><span style="display:flex;"><span>    print(pays)</span></span></code></pre></div>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Canada
 Japon
 Mexique</code></pre></div>
-<p>Ou seulement les valeurs avec <code>.values()</code> :</p>
+<ul>
+<li><code>.keys()</code> retourne <strong>toutes les clés</strong> du dictionnaire.</li>
+<li><code>capitales.keys()</code> → c’est <strong>la séquence</strong>, c’est-à-dire <strong>toutes les clés</strong> du dictionnaire.</li>
+<li><code>pays</code> → c’est la <strong>variable</strong> qui prend <strong>une clé à la fois</strong> pendant le parcours.</li>
+</ul>
+<ol start="3">
+<li>Si on veut parcourir seulement les <strong>valeurs</strong> on utilise <code>.values()</code> :</li>
+</ol>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> capitale <span style="color:#f92672">in</span> capitales<span style="color:#f92672">.</span>values():
 </span></span><span style="display:flex;"><span>    print(capitale)</span></span></code></pre></div>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Ottawa
 Tokyo
 Mexico</code></pre></div>
+<ul>
+<li><code>.values()</code> retourne <strong>toutes les valeurs</strong> du dictionnaire.</li>
+<li><code>capitales.values()</code> → c’est <strong>la séquence</strong>, c’est-à-dire <strong>toutes les valeurs</strong> du dictionnaire.</li>
+<li><code>capitale</code> → c’est la <strong>variable</strong> qui prend <strong>une valeur à la fois</strong> pendant le parcours.</li>
+</ul>
 <h2 id="créer-une-liste-à-partir-dun-dictionnaire">Créer une liste à partir d’un dictionnaire</h2>
 <p>Imaginons que l’on ait relevé les températures d’une ville à différents moments de la journée. On stocke ces données dans un dictionnaire :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Dictionnaire : heure → température (°C)</span>
@@ -620,8 +656,8 @@ positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}</code></pre></div>
 </ul>
 </li>
 </ol>
-<h2 id="graphe---mécaniquechute_librepngwidth35wv"><a href="#R-image-cb20ad43c4cbba8965bc829b1fc5f9a3" class="lightbox-link"><img alt="Graphe - Mécanique" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/chute_libre.png?width=35wv" style=" height: auto; width: 35wv;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cb20ad43c4cbba8965bc829b1fc5f9a3"><img alt="Graphe - Mécanique" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/chute_libre.png?width=35wv"></a></h2>
+<h2 id="graphe---mécaniquechute_librepngwidth35wv"><a href="#R-image-9e7bd51bef6b4377bb62ef40b4a51553" class="lightbox-link"><img alt="Graphe - Mécanique" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/chute_libre.png?width=35wv" style=" height: auto; width: 35wv;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e7bd51bef6b4377bb62ef40b4a51553"><img alt="Graphe - Mécanique" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/chute_libre.png?width=35wv"></a></h2>
 <h2 id="exercice---mathématiques">Exercice - Mathématiques</h2>
 
 <details open class=" box cstyle notices green">
@@ -679,8 +715,8 @@ positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}</code></pre></div>
 </ul>
 </li>
 </ol>
-<h2 id="graphe---mathquadratiquepngwidth35wv"><a href="#R-image-2ff1f5f6d1dfd880135f9533c6e8866d" class="lightbox-link"><img alt="Graphe - Math" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/quadratique.png?width=35wv" style=" height: auto; width: 35wv;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2ff1f5f6d1dfd880135f9533c6e8866d"><img alt="Graphe - Math" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/quadratique.png?width=35wv"></a></h2>
+<h2 id="graphe---mathquadratiquepngwidth35wv"><a href="#R-image-516c5dc5f6f526a25a2b7c7511357252" class="lightbox-link"><img alt="Graphe - Math" class="lazy lightbox figure-image" loading="lazy" src="/semaine7/quadratique.png?width=35wv" style=" height: auto; width: 35wv;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-516c5dc5f6f526a25a2b7c7511357252"><img alt="Graphe - Math" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine7/quadratique.png?width=35wv"></a></h2>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
 <li>Lire la prochaine leçon : <a href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
@@ -768,8 +804,8 @@ positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1759969962" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759969962" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1759972185" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759972185" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -781,7 +817,7 @@ positions = {0:0.0, 1:4.9, 2:19.6, 3:44.1, 4:78.4, 5:122.5}</code></pre></div>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1759969962"></script>
-    <script src="/js/theme.min.js?1759969962" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1759972185"></script>
+    <script src="/js/theme.min.js?1759972185" defer></script>
   </body>
 </html>

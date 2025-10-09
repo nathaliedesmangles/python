@@ -227,7 +227,17 @@ print(capitales)
 
 ## Parcourir un dictionnaire
 
-Souvent, on veut parcourir toutes les clés et valeurs avec `.items()`.
+### Différence entre **variable** et **séquence** dans la boucle `for`
+
+{{% notice style="accent"  title="Rappel sur la boucle for" %}}
+### Syntaxe générale de la boucle for
+`for variable in séquence:`
+
+Dans une boucle `for`, la **séquence** est l’ensemble des éléments à parcourir.
+La **variable** sert simplement à **recevoir chaque élément** de cette séquence, un à la fois.
+{{% /notice %}}
+
+1. Si on veut parcourir toutes les **clés** et **valeurs** on utilise `.items()`.
 
 ```python
 for pays, capitale in capitales.items():
@@ -240,9 +250,13 @@ Japon → Tokyo
 Mexique → Mexico
 ```
 
-> `.items()` retourne **toutes les paires clé-valeur**.
+* `.items()` retourne **toutes les paires clé-valeur**.
+* `capitales.items()` → c’est **la séquence**, c’est-à-dire **toutes les clés ET toutes les valeurs** du dictionnaire.
+* `pays` → c’est la **variable** qui prend **une clé à la fois** pendant le parcours.
+* `capitale` → c’est la **variable** qui prend **une valeur à la fois** pendant le parcours.
 
-On peut aussi parcourir seulement les clés `.keys()`:
+
+2. Si on veut parcourir seulement les **clés** on utilise `.keys()`:
 
 ```python
 for pays in capitales.keys():
@@ -255,18 +269,26 @@ Japon
 Mexique
 ```
 
-Ou seulement les valeurs avec `.values()` :
+* `.keys()` retourne **toutes les clés** du dictionnaire.
+* `capitales.keys()` → c’est **la séquence**, c’est-à-dire **toutes les clés** du dictionnaire.
+* `pays` → c’est la **variable** qui prend **une clé à la fois** pendant le parcours.
+
+
+3. Si on veut parcourir seulement les **valeurs** on utilise `.values()` :
 
 ```python
 for capitale in capitales.values():
     print(capitale)
 ```
-
 ```
 Ottawa
 Tokyo
 Mexico
 ```
+
+* `.values()` retourne **toutes les valeurs** du dictionnaire.
+* `capitales.values()` → c’est **la séquence**, c’est-à-dire **toutes les valeurs** du dictionnaire.
+* `capitale` → c’est la **variable** qui prend **une valeur à la fois** pendant le parcours.
 
 
 ## Créer une liste à partir d’un dictionnaire

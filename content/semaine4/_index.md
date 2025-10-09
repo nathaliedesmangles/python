@@ -190,9 +190,12 @@ while temp > 0:
 La boucle `for` est idéale pour **répéter un nombre connu de fois**, ou **parcourir une séquence** (ex : liste, chaîne de caractères, `range()`).
 
 ```python
-for élément in séquence:
+for variable in séquence:
     instructions
 ```
+
+Dans une boucle `for`, la **séquence** est l’ensemble des éléments à parcourir.
+La **variable** sert simplement à **recevoir chaque élément** de cette séquence, un à la fois.
 
 ### La boucle `for` avec `range()`
 
