@@ -12,6 +12,7 @@ draft = false
 * Comprendre ce qu’est NumPy et pourquoi il est utile en sciences.
 * Apprendre à créer et manipuler des tableaux NumPy.
 * Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides.
+* Visualiser graphiquement l’incertitude ou la variabilité des mesures à l'aide de barres d'erreur.
 * Modéliser une relation entre deux données à l'aide d'une droite de régression linéaire.
 
 ## Fichier .ipynb pour la démo en classe
@@ -383,9 +384,81 @@ print(f"Moyenne (sans valeur manquante) : {moy:.2f} g/100mL")
 {{% /notice %}}
 
 
-## Filtrage de données
+## Découpage et filtrage de données dans un tableau NumPy
 
-### 1. Créer un tableau et afficher uniquement certaines valeurs selon une condition
+Lorsqu’on travaille avec des tableaux NumPy, on utilise les **crochets `[]`** pour accéder à certaines valeurs ou parties du tableau.
+C’est ce qu’on appelle l’**indexation** et le **slicing (tranches)**.
+
+### Découpage (`slicing`)
+
+Soit le tableau `t = np.array([10, 20, 30, 40, 50])`
+
+#### 1. Tranches `[start:end]`
+
+* `t[début:fin]` retourne les éléments du tableau **de l’indice `début` inclus** jusqu’à **`fin` exclu**.
+* Cela permet d’extraire une **portion du tableau**.
+
+```python
+print(t[1:4])  # éléments d'indice 1, 2 et 3
+```
+Résultat :
+```
+[20 30 40]
+```
+
+#### 2. Tranches avec pas `[début:fin:pas]`
+
+On peut aussi spécifier un **pas** (bond).
+
+* `t[début:fin:pas]` retourne un élément sur `pas`.
+
+Exemple :
+
+```python
+print(t[0:5:2])  # un élément sur deux
+```
+
+Résultat :
+```
+[10 30 50]
+```
+
+
+#### 3. Omettre les bornes
+
+* `t[:fin]` → du début jusqu’à `fin-1`.
+* `t[début:]` → de `début` jusqu’à la fin.
+* `t[:]` → tout le tableau (copie).
+
+Exemple :
+
+```python
+print(t[:3])   # [10 20 30]
+print(t[2:])   # [30 40 50]
+print(t[:])    # [10 20 30 40 50]
+```
+
+
+## Récapitulatif
+
+| Syntaxe       | Description                                                                                         |
+| ------------- | --------------------------------------------------------------------------------------------------- |
+| `a[i]`        | Accède à l’élément à l’index `i` (comme en Python, le premier élément est à l’index `0`).           |
+| `a[i:j]`      | Sélectionne les éléments de l’index `i` inclus jusqu’à `j` exclus.                                  |
+| `a[i:j:k]`    | Sélectionne les éléments de l’index `i` jusqu’à `j` exclus, en sautant de `k` en `k`.               |
+| `a[:j]`       | Sélectionne les éléments du début jusqu’à `j` exclus.                                               |
+| `a[i:]`       | Sélectionne les éléments de l’index `i` jusqu’à la fin.                                             |
+| `a[:]`        | Sélectionne tous les éléments du tableau.                                                           |
+| `a[-1]`       | Accède au **dernier élément**.                                                                      |
+| `a[-k:]`      | Sélectionne les `k` derniers éléments.                                                              |
+| `a[:, i]`     | Sélectionne la **colonne `i`** dans un tableau 2D.                                                  |
+| `a[i, :]`     | Sélectionne la **ligne `i`** dans un tableau 2D.                                                    |
+| `a[m:n, p:q]` | Sélectionne une **sous-matrice** allant des lignes `m` à `n` (exclu) et colonnes `p` à `q` (exclu). |
+
+
+### Filtrage
+
+#### 1. Accéder à uniquement certaines valeurs d'un tableau, selon une condition
 
 ```python
 tableau = np.array([2, 5, 7, 1, 8, 3])
@@ -406,7 +479,7 @@ Valeurs supérieures à 5 : `[7 8]`
 * `tableau[masque]` : ne garde que les valeurs dans `tableau` qui sont > 5.
 
 
-### 2. Comptage conditionnel avec `np.sum`
+#### 2. Comptage conditionnel avec `np.sum`
 
 Compter combien de valeurs respectent un seuil donné.
 
@@ -448,6 +521,35 @@ Pour chaque ligne :
 * sinon → `"Échoué"`
 
 C’est une méthode très rapide car `numpy` applique l’opération directement sur toute la colonne, sans boucle explicite.
+
+## Graphique avec barres d’erreur 
+
+Les **barres d’erreur** servent à montrer **l’incertitude** des mesures.
+Elles indiquent à quel point les données sont précises.
+
+```python
+# Données simulées : moyenne et incertitude
+x = np.array([1, 2, 3, 4, 5])               # numéros d’échantillons
+y = np.array([2.1, 2.5, 3.0, 2.7, 3.2])     # valeurs mesurées
+erreur = np.array([0.2, 0.3, 0.15, 0.25, 0.2])  # incertitudes
+
+# Tracé
+plt.errorbar(x, y, yerr=erreur, fmt='o', capsize=5, color='royalblue', ecolor='black')
+plt.xlabel("Échantillon")
+plt.ylabel("Valeur mesurée")
+plt.title("Graphique avec barres d’erreur")
+plt.grid(True)
+plt.show()
+```
+
+![graphique avec barres d'erreur](./graphe_barres_err.png?width=35vw)
+
+### Explications 
+
+* **`yerr=erreur`** → indique la longueur des barres d’erreur verticales.
+* **`fmt='o'`** → forme des points (ici des cercles).
+* **`capsize=5`** → ajoute un petit “chapeau” au bout des barres.
+* **`ecolor='black'`** → couleur des barres d’erreur.
 
 
 ## Régression linéaire avec NumPy (`np.polyfit()`)
