@@ -1,0 +1,191 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "c424a1e5",
+   "metadata": {},
+   "source": [
+    "\n",
+    "# 🧪 Atelier : Analyse de la qualité de l’eau d’une rivière\n",
+    "\n",
+    "## Objectif\n",
+    "Dans cet atelier, tu vas apprendre à **lire, nettoyer, analyser et enregistrer** des données environnementales à l’aide de **NumPy** et **Pandas**.\n",
+    "\n",
+    "Contexte scientifique :  \n",
+    "Un groupe d’étudiants en sciences environnementales surveille la qualité de l’eau d’une rivière.  \n",
+    "Les mesures (température, pH, concentration en oxygène, turbidité) ont été recueillies à différents points de la rivière.  \n",
+    "Certaines données sont manquantes et doivent être traitées avant l’analyse.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "13e2740a",
+   "metadata": {},
+   "source": [
+    "\n",
+    "## Partie 1 — Lecture de fichiers avec NumPy\n",
+    "\n",
+    "### Étapes\n",
+    "1. Ouvre et examine le fichier `river_data.txt` (espaces comme séparateurs).  \n",
+    "2. Utilise `np.loadtxt()` pour le lire.  \n",
+    "3. Affiche le tableau et vérifie sa forme.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f7f3c338",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import numpy as np\n",
+    "\n",
+    "# Lecture du fichier texte\n",
+    "# (Complète le code)\n",
+    "data = np.loadtxt(\"river_data.txt\")  # <-- à adapter selon le séparateur\n",
+    "\n",
+    "print(data[:5])  # aperçu des premières lignes\n",
+    "print(\"Forme du tableau :\", data.shape)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f2d81302",
+   "metadata": {},
+   "source": [
+    "\n",
+    "## Partie 2 — Lecture de fichiers avec Pandas\n",
+    "\n",
+    "### Étapes\n",
+    "1. Ouvre le fichier `river_quality.csv` avec `pd.read_csv()`.  \n",
+    "2. Affiche les premières lignes avec `.head()`.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c23b9d4d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import pandas as pd\n",
+    "\n",
+    "# Lecture du fichier CSV\n",
+    "df = pd.read_csv(\"river_quality.csv\")\n",
+    "\n",
+    "# Affichage des premières lignes\n",
+    "df.head()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c1165742",
+   "metadata": {},
+   "source": [
+    "\n",
+    "## Partie 3 — Nettoyage des données manquantes\n",
+    "\n",
+    "Certaines valeurs sont manquantes dans le fichier CSV.  \n",
+    "Tu dois les identifier et les remplacer.\n",
+    "\n",
+    "### Étapes\n",
+    "1. Vérifie les valeurs manquantes avec `pd.isna(df)` ou `df.isnull().sum()`  \n",
+    "2. Remplace-les par la **moyenne de la colonne** avec `fillna()`\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5f333420",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# Vérification des valeurs manquantes\n",
+    "df.isnull().sum()\n",
+    "\n",
+    "# Remplacement des valeurs manquantes par la moyenne\n",
+    "df_filled = df.fillna(df.mean(numeric_only=True))\n",
+    "\n",
+    "df_filled.head()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b2b2c6c9",
+   "metadata": {},
+   "source": [
+    "\n",
+    "## Partie 4 — Ajout d’une colonne conditionnelle\n",
+    "\n",
+    "Nous voulons indiquer si la qualité de l’eau est **Bonne**, **Moyenne** ou **Mauvaise** selon la concentration en oxygène dissous (O2).\n",
+    "\n",
+    "| O2 (mg/L) | Mention |\n",
+    "|------------|----------|\n",
+    "| ≥ 8.0 | Bonne |\n",
+    "| ≥ 5.0 | Moyenne |\n",
+    "| < 5.0 | Mauvaise |\n",
+    "\n",
+    "👉 Utilise `np.where()` pour créer une nouvelle colonne `\"Qualité\"` dans le DataFrame.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1d1f1e30",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# Création d'une nouvelle colonne avec np.where()\n",
+    "df_filled[\"Qualité\"] = np.where(df_filled[\"O2\"] >= 8, \"Bonne\",\n",
+    "                                np.where(df_filled[\"O2\"] >= 5, \"Moyenne\", \"Mauvaise\"))\n",
+    "\n",
+    "df_filled.head()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c5e855f6",
+   "metadata": {},
+   "source": [
+    "\n",
+    "## Partie 5 — Sauvegarde du fichier nettoyé\n",
+    "\n",
+    "Sauvegarde le DataFrame final dans un **nouveau fichier CSV** nommé `river_quality_clean.csv` sans l’index.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7d3da2fa",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# Sauvegarde du fichier final\n",
+    "df_filled.to_csv(\"river_quality_clean.csv\", index=False)\n",
+    "print(\"✅ Fichier nettoyé enregistré sous 'river_quality_clean.csv'\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5cca5174",
+   "metadata": {},
+   "source": [
+    "\n",
+    "## 💡 Pour aller plus loin\n",
+    "\n",
+    "1. Crée une colonne `\"Température_K\"` qui convertit les températures (°C → K).  \n",
+    "2. Filtre uniquement les échantillons où le pH est entre **6.5 et 8.5** (eau neutre).  \n",
+    "3. Calcule la moyenne du pH et de la température.  \n",
+    "4. Représente graphiquement (avec matplotlib) la température en fonction du point d’échantillonnage.\n"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

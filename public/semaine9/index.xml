@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Lecture et écriture de fichiers textes (avec NumPy ou Pandas) :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine9/index.html</link>
+    <title> Lecture et écriture de fichiers textes (avec NumPy et Pandas) :: 420-SN1-RE</title>
+    <link>https://example.org/semaine9/index.html</link>
     <description>Objectifs Partie 1: Avec NumPy&#xA;Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .txt et .csv. Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques. Partie 2: Avec Pandas&#xA;Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le contenu des fichiers. Écrire des DataFrames pandas dans des fichiers .csv ou .txt. Manipuler les données lues sous forme de DataFrames Pandas pour faire des calculs scientifiques.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine9/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine9/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

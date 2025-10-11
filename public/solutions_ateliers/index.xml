@@ -49,5 +49,12 @@
       <guid>https://example.org/solutions_ateliers/8_numpy_regression/index.html</guid>
       <description>Exercice 1 import numpy as np import matplotlib.pyplot as plt # Données avec valeurs manquantes hauteurs = np.array([ [12.5, 13.1, 12.9, 13.0, 12.8], [11.2, 11.6, np.nan, 11.5, 11.3], [10.4, 10.1, 10.2, np.nan, np.nan] ]) conditions = [&#34;Naturelle&#34;, &#34;LED blanche&#34;, &#34;LED rouge&#34;] # Moyenne et écart-type en ignorant les données manquantes (NaN) moyennes = np.nanmean(hauteurs, axis=1) ecarts_type = np.nanstd(hauteurs, axis=1) # Affichage du résumé # Pour chaque hauteur: conditions; moyennes et écarts-type for i in range(3): print(f&#34;Moyenne ({conditions[i]}) = {moyennes[i]:.</description>
     </item>
+    <item>
+      <title> Lecture et écriture de fichiers de données</title>
+      <link>https://example.org/solutions_ateliers/9_fichiers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_ateliers/9_fichiers/index.html</guid>
+      <description>import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.</description>
+    </item>
   </channel>
 </rss>

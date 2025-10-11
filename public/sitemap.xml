@@ -103,6 +103,9 @@
     <loc>https://example.org/semaine8/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine9/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine10/index.html</loc>
   </url>
   <url>
@@ -152,6 +155,9 @@
   </url>
   <url>
     <loc>https://example.org/solutions_ateliers/8_numpy_regression/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_ateliers/9_fichiers/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>

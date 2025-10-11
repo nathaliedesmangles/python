@@ -99,6 +99,13 @@
       <description>Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration&#xA;Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous.</description>
     </item>
     <item>
+      <title> Lecture et écriture de fichiers textes (avec NumPy et Pandas)</title>
+      <link>https://example.org/semaine9/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine9/index.html</guid>
+      <description>Objectifs Partie 1: Avec NumPy&#xA;Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .txt et .csv. Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques. Partie 2: Avec Pandas&#xA;Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le contenu des fichiers. Écrire des DataFrames pandas dans des fichiers .csv ou .txt. Manipuler les données lues sous forme de DataFrames Pandas pour faire des calculs scientifiques.</description>
+    </item>
+    <item>
       <title> Évaluation #2 (30%)</title>
       <link>https://example.org/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

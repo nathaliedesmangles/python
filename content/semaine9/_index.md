@@ -1,9 +1,9 @@
 +++
 chapter = true
 pre = "9."
-title = " Lecture et écriture de fichiers textes (avec NumPy ou Pandas)"
+title = " Lecture et écriture de fichiers textes (avec NumPy et Pandas)"
 weight = 109
-draft = true
+draft = false
 +++
 
 
@@ -45,12 +45,14 @@ draft = true
    * Il contient un jeu de données météorologiques prévisibles pour Bâle (France).
 4. Téléchargez le fichier de données (`.csv`): [etudiants.csv](./etudiants.csv)
    * Il contenant 3 colonnes : `Nom,Âge,Note`.
-5. Cliquer sur le lien du fichier de données (`.txt`): [experience.txt](./experience.txt). Une fois ouvert, faites un clic-droit et choisir ***Enregistrer sous*** pour enregistrer le fichier dans votre dossier **exercices**.
-6. Enregistrez les fichiers dans votre dossier **exercices** de la semaine en cours **(au même endroit que votre fichier .ipynb)**.
-7. Ouvrez **Visual Studio Code**.
-8. Dans VS Code, recherchez et ouvrez les fichiers `exercices_fichiers_np.ipynb` et `exercices_fichiers_pd.ipynb`.
-9. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
-10. Vous pouvez commencer à faire les exercices.
+5. Téléchargez le fichier de données (`.csv`): [solubilite_sel.csv](./solubilite_sel.csv)
+   * Il contenant 2 colonnes : `temperature,solubilite`.
+6. Cliquer sur le lien du fichier de données (`.txt`): [experience.txt](./experience.txt). Une fois ouvert, faites un clic-droit et choisir ***Enregistrer sous*** pour enregistrer le fichier dans votre dossier **exercices**.
+7. Enregistrez les fichiers dans votre dossier **exercices** de la semaine en cours **(au même endroit que votre fichier .ipynb)**.
+8. Ouvrez **Visual Studio Code**.
+9. Dans VS Code, recherchez et ouvrez les fichiers `exercices_fichiers_np.ipynb` et `exercices_fichiers_pd.ipynb`.
+10. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
+11. Vous pouvez commencer à faire les exercices.
 
 ## Exercices
 
@@ -92,7 +94,13 @@ draft = true
 
 5. **Enregistrer les moyennes dans un nouveau fichier**
    * Utilisez `np.savetxt()` pour écrire les moyennes dans un fichier nommé `moyennes.txt`.
-   * Vérifiez le contenu du fichier après écriture.
+   * Vérifiez le contenu du fichier après écriture. Vous devriez voir ceci : 
+   ```
+   5.53
+   6.10
+   5.87
+   6.13
+   ```
 
 **Résultats** :
 ```
@@ -113,7 +121,9 @@ Moyennes enregistrées : [5.53333333 6.1        5.86666667 6.13333333]
 3. **Enregistrer les données converties**
    * Utilisez `np.savetxt()` avec `delimiter=","` pour créer un **nouveau** fichier CSV (ex: `temperature_K.csv`).
    * Choisissez un format de nombres lisible (`fmt="%.2f"` par exemple).
-   * Vérifier le contenu du fichier `temperature_K.csv` (données en K).
+   * Vérifier le contenu du fichier `temperature_K.csv` (données en K). Vous devriez voir ceci (partiel):
+   
+   ![Températures en K](./tempK_csv.png?width=15vw&height=25vw)
 
 **Résultats** :
 ```
@@ -138,22 +148,26 @@ Températures converties en K :
    * `df_etudiants["Note"].describe()` fournit la moyenne, l’écart-type, le minimum, le maximum, etc. Permet de comprendre rapidement la distribution des notes.
 
 
-**Résultats** :
-```
-Nom  Âge  Note
-0    Alice   20    85
-1      Bob   21    67
-2  Charlie   19    45
-count    10.000000
-mean     66.200000
-std      15.061356
-min      45.000000
-25%      55.750000
-50%      65.500000
-75%      75.000000
-max      91.000000
-Name: Note, dtype: float64
-```
+**Résultats** :  
+   **Pour df_etudiants.head(3)**
+   ```
+        Nom    Âge    Note
+   0   Aurélie  20    85
+   1   Claude   21    67
+   2   Charlie  19    45
+   ```
+   **Pour df_etudiants["Note"].describe()**
+   ```
+   count    10.000000
+   mean     66.200000
+   std      15.061356
+   min      45.000000
+   25%      55.750000
+   50%      65.500000
+   75%      75.000000
+   max      91.000000
+   Name: Note, dtype: float64
+   ```
 
 
 ### Exercice 4 (Pandas)
@@ -170,11 +184,9 @@ Name: Note, dtype: float64
      * note < 50 → "Échec"
      ```
 
-   * Examinez la valeur de chaque note.
-   * Selon l’intervalle, attribuez la mention : "Bien", "Passable", "Échec".
-   * Vous pouvez utiliser `np.where()` pour appliquer les conditions à tout le DataFrame.
-   	* [**Rappel sur np.where()**](http://localhost:1313/semaine8/#3-filtre-avec-npwhere)
-
+   * Selon l’intervalle, attribuez la mention : "Bien", "Passable", "Échec".  
+		* Utilisez 2 `np.where()` pour appliquer les conditions à tout le DataFrame.<br>[Rappel sur np.where()](http://localhost:1313/semaine8/#3-filtre-avec-npwhere)
+		* Ex: `df_etudiants["Mention"] = np.where(Si_note_>=70, "Bien", np.where(si_note_>=50, "Passable", "Échec"))`
 2. **Enregistrer le DataFrame**
    * Utilisez `df_etudiants.to_csv("etudiants_mentions.csv", index=False)` pour sauvegarder.
    * Vérifiez le fichier créé pour voir la nouvelle colonne.
@@ -183,8 +195,8 @@ Name: Note, dtype: float64
 ```
 Données originales
        Nom  Âge  Note
-0    Alice   20    85
-1      Bob   21    67
+0  Aurélie   20    85
+1   Claude   21    67
 2  Charlie   19    45
 3    David   22    72
 4     Emma   20    58
@@ -196,8 +208,8 @@ Données originales
 
 Données avec mentions
        Nom  Âge  Note   Mention
-0    Alice   20    85      Bien
-1      Bob   21    67  Passable
+0  Aurélie   20    85      Bien
+1   Claude   21    67  Passable
 2  Charlie   19    45     Échec
 3    David   22    72      Bien
 4     Emma   20    58  Passable
@@ -237,6 +249,60 @@ Fichier 'experience_export.txt' enregistré avec tabulations.
 8         65.0      1.40    14.5
 9         70.0      1.45    15.0
 ```
+
+
+### Exercice 6 (Pandas)
+
+Lors d’une expérience de chimie, on a mesuré la **solubilité d’un sel (en g/100 mL d’eau)** à différentes températures.
+Certaines mesures ont été perdues pendant l’enregistrement, et apparaissent comme **valeurs manquantes** (`NaN`) dans le fichier.
+
+Les données suivantes ont été enregistrées dans le fichier `solubilite_sel.csv` :
+
+```csv
+temperature,solubilite
+0,32.0
+10,34.1
+20,NaN
+30,37.5
+40,38.8
+50,NaN
+60,42.0
+```
+
+1. **Lire** le fichier `solubilite_sel.csv` à l’aide de pandas et afficher son contenu.
+2. **Vérifier la présence** de valeurs manquantes.  Utilisez `df.isna()` ou `df.isnull()` pour identifier les cellules vides.
+3. **Compter** le nombre total de valeurs manquantes dans le tableau (`df.isna().sum().sum()`).
+4. **Remplacer** les valeurs manquantes par la moyenne des autres valeurs mesurées. Utilisez  `df['colonne'].fillna(df['colonne'].mean())`  
+5. **Afficher le nouveau tableau** et vérifier qu’il ne contient plus de valeurs manquantes.
+6. **Tracer un graphique** (`plot()`) de la **solubilité** en fonction de la **température** pour visualiser le résultat.
+
+**Résultats** :
+
+```
+Valeurs manquantes :
+   temperature  solubilite
+0        False       False
+1        False       False
+2        False        True
+3        False       False
+4        False       False
+5        False        True
+6        False       False
+Nombre total de NaN : 2
+
+Données après traitement :
+   temperature  solubilite
+0            0       32.00
+1           10       34.10
+2           20       36.88
+3           30       37.50
+4           40       38.80
+5           50       36.88
+6           60       42.00
+```
+
+![Solubilité vs température](./solubilite_temp.png?width=35vw)
+
 ---
 
 # Cours
@@ -527,10 +593,181 @@ df.to_csv("data_export.txt", sep="\t", index=False)
 > `to_csv()` peut aussi utiliser `sep=";"` pour un séparateur point-virgule, ou d’autres séparateurs selon vos besoins.
 
 
-## Conclusion pour Pandas
+## Conclusion pour la lecture et l'écriture de fichiers avec Pandas
 
 * `pd.read_csv()` lit les fichiers CSV et TXT avec des séparateurs personnalisés.
 * `df.to_csv()` permet d’enregistrer les DataFrames dans des fichiers.
 * pandas facilite l’exploration rapide des données avec `head()`, `tail()`, `describe()` et `info()`.
+
+
+## Gestion des valeurs manquantes avec Pandas
+
+Quand on travaille avec des données expérimentales, il arrive qu’une mesure soit **absente** (oubliée, perdue, ou invalide).
+Dans un tableau pandas, une valeur manquante est notée **`NaN`** (Not a Number).
+
+### 1. Détecter les valeurs manquantes : `pd.isna()` ou `pd.isnull()`
+
+Ces deux fonctions font **exactement la même chose**. On peut utiliser l’une ou l’autre.
+
+
+```python
+import pandas as pd
+
+# Données expérimentale (dictionnaire)
+data = {
+         'temp': [0, 10, 20, 30], 
+         'solubilite': [32.0, 34.1, , 37.5]
+       }
+# Dictionnaire converti en dataframe
+df = pd.DataFrame(data)
+print(df)
+```
+
+| temp | solubilite |
+| ---- | ---------- |
+| 0    | 32.0       |
+| 10   | 34.1       |
+| 20   | **NaN**        |
+| 30   | 37.5       |
+
+#### Utilisation de `.isna()`
+
+```python
+df.isna()
+```
+
+#### Utilisation de `.isnull()`
+```python
+df.isnull()
+```
+
+> Résultat identique à `df.isna()`, renvoie un tableau de **valeurs booléennes** (`True` si la cellule est vide, `False` sinon) :
+
+| temp  | solubilite |
+| ----- | ---------- |
+| False | False      |
+| False | False      |
+| False | **True**       |
+| False | False      |
+
+{{% notice style="Cyan" title="Information" %}}
+Pour le reste des exemples, on utilisera `isna()`, mais on pourrait aussi le faire avec `.isnull()`.
+{{% /notice %}}
+
+### 2. Compter les valeurs manquantes : `df.isna().sum()`
+
+```python
+df.isna().sum()
+```
+
+> donne le **nombre de valeurs manquantes par colonne et le type (ici `int64`)** :
+
+```
+temp          0
+solubilite    1
+dtype: int64
+```
+
+**Astuce** : Pour savoir le **nombre total** de valeurs manquantes dans tout le tableau :
+
+```python
+df.isna().sum().sum()	# Résultat : 1
+```
+
+
+### 3. Remplacer les valeurs manquantes : `fillna()`
+
+Si on veut **remplir** les valeurs manquantes par une valeur choisie (par exemple, la moyenne), on peut utiliser :
+
+```python
+moyenne = df['solubilite'].mean()
+df['solubilite'] = df['solubilite'].fillna(moyenne)
+```
+
+> Ici, toutes les cases vides de la colonne `solubilite` sont remplacées par la moyenne des valeurs existantes.
+
+
+## Résumé pour la gestion des valeurs manquantes
+
+| Objectif                                            | Fonction                | Exemple             | Résultat           |
+| --------------------------------------------------- | ----------------------- | ------------------- | ------------------ |
+| Vérifier si une valeur est manquante                | `pd.isna()`             | `df.isna()`         | True / False       |
+| Idem (synonyme)                                     | `pd.isnull()`           | `df.isnull()`       | True / False       |
+| Compter le nombre de valeurs manquantes par colonne | `df.isna().sum()`       | —                   | nombre par colonne |
+| Compter le total des valeurs manquantes             | `df.isna().sum().sum()` | —                   | total              |
+| Remplacer les valeurs manquantes                    | `fillna()`              | `df.fillna(valeur)` | Tableau sans NaN   |
+
+
+---
+
+# Atelier
+
+1. Téléchargez les fichiers de départ (.ipynb):
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/atelier_fichiers.ipynb)
+2. Téléchargez les fichiers de données:[eau.txt](./eau.txt) et [eau_riviere.csv](./eau_riviere.csv)
+3. Déplacez-les dans votre dossier prévu pour de la semaine en cours.
+4. Ouvrez votre dossier de travail programmation-sciences à partir de Visual Studio Code.
+	* Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb, .txt, .csv).
+
+
+## Exercice - Analyse de la qualité de l’eau d’une rivière
+
+* Un groupe d’étudiants en sciences environnementales surveille la qualité de l’eau d’une rivière.  
+* Les mesures (**température**, **pH**, **concentration en oxygène**, **turbidité**) ont été recueillies à différents points de la rivière.  
+* Certaines données sont **manquantes** et doivent être traitées avant l’analyse.
+* Afin de les aider dans l'analyse des données recueillies, ils vous demandent de :
+	* Lire et écrire des fichiers `.txt` et `.csv` avec **NumPy** et **pandas**.
+	* Nettoyer les valeurs manquantes.
+	* Ajouter des colonnes dérivées (`Qualite`, `Alerte`).
+	* Enregistrer les résultats nettoyés.
+	* (optionnel) Visualiser graphiquement des données. 
+
+### Quelques rappels pédagogiques rapides
+
+* `np.loadtxt()` convient pour les fichiers **purement numériques** et sans en-têtes.
+* `np.genfromtxt()` est plus tolérant (en-têtes, missing).
+* `pandas.read_csv()` lit automatiquement les en-têtes et conserve les types.
+* `df.isna().sum()` permet d’identifier où se trouvent les valeurs manquantes.
+* `df.fillna(...)` remplace les NaN.
+* `np.where()` permettent d’ajouter des colonnes conditionnelles de façon vectorisée (rapide).
+
+
+### PARTIE 1 — Lecture et écriture avec NumPy
+
+   * Lire le fichier `eau.txt` sachant qu'il ne contient que des valeurs numériques sans en-têtes, délimitées par un espace.
+   * Calculer la moyenne de chaque **colonne** avec `np.mean()` ou `np.nanmean()`.
+   * Sauvegarder les moyennes avec le format `fmt="%.2f"` dans un fichier texte `moyennes_eau.txt`. 
+
+### PARTIE 2 — Lecture et nettoyage avec pandas
+
+   * Lire le fichier `eau_riviere.csv` avec `pd.read_csv()`.
+   * Détecter les valeurs manquantes avec `.isna()`.
+   * Remplacer les manquantes par la moyenne de la colonne correspondante avec `.fillna()`.
+   * Ajouter la colonne `Qualite` selon la oncentration dans la colonne `Oxygene` (**Astuce**: Utilisez `np.where()`):
+
+     * `Oxygene >= 8.0` → `"Bonne"`
+     * `7.5 <= Oxygene < 8.0` → `"Moyenne"`
+     * `Oxygene < 7.5` → `"Faible"`
+   * Ajouter la colonne `Alerte` : Contenant `"Attention"` si `pH < 7.0`, sinon `"OK"`. **Astuce**: Utilisez `np.where()`.
+   * Sauvegarder le DataFrame nettoyé dans un fichier `eau_riviere_nettoyee.csv`.
+
+
+### PARTIE 3 — Visualisation graphique (optionnel)
+
+* À partir du DataFrame Pandas, tracez un graphique en barres des valeurs d’oxygène par site, avec des barres d’erreur représentant ±0.2 mg/L d’incertitude.
+* Ajoutez les titres et les étiquettes d’axes.
+* Personnalisez les couleurs selon la qualité.
+
+![Oxygène par site](./oxygene_sites.png?width=35vw)
+
+---
+
+## À faire avant le prochain cours
+
+> **RAPPEL**: Semaine prochaine c'est le **deuxième examen** (30%)
+
+1. Lire la prochaine leçon : [11. Fonctions personnalisées](../semaine11/)
+2. Faire les exercices de la [prochaine leçon](../semaine11/#exercices)
+
 
 

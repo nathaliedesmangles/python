@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="import pandas as pd import numpy as np import matplotlib.pyplot as plt # Étape 1 - Lecture df = pd.read_csv(&#34;croissance_algues.csv&#34;) # Vérifier les NaN print(df.isna().sum()) df = df.dropna() # Conversion NumPy temperatures = df[&#34;Température&#34;].to_numpy() taux = df[&#34;Taux&#34;].to_numpy() # Étape 2 - Analyse par espèce donnees_par_espece = {} for _, ligne in df.iterrows(): espece = ligne[&#34;Espèce&#34;] taux_val = ligne[&#34;Taux&#34;] if espece not in donnees_par_espece: donnees_par_espece[espece] = [] donnees_par_espece[espece].append(taux_val) resume = {} for espece, valeurs in donnees_par_espece.">
+    <meta name="description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <meta name="twitter:description" content="import pandas as pd import numpy as np import matplotlib.pyplot as plt # Étape 1 - Lecture df = pd.read_csv(&#34;croissance_algues.csv&#34;) # Vérifier les NaN print(df.isna().sum()) df = df.dropna() # Conversion NumPy temperatures = df[&#34;Température&#34;].to_numpy() taux = df[&#34;Taux&#34;].to_numpy() # Étape 2 - Analyse par espèce donnees_par_espece = {} for _, ligne in df.iterrows(): espece = ligne[&#34;Espèce&#34;] taux_val = ligne[&#34;Taux&#34;] if espece not in donnees_par_espece: donnees_par_espece[espece] = [] donnees_par_espece[espece].append(taux_val) resume = {} for espece, valeurs in donnees_par_espece.">
-    <meta property="og:url" content="http://localhost:1313/solutions_ateliers/9_fichiers/index.html">
+    <meta name="twitter:description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.">
+    <meta property="og:url" content="https://example.org/solutions_ateliers/9_fichiers/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <meta property="og:description" content="import pandas as pd import numpy as np import matplotlib.pyplot as plt # Étape 1 - Lecture df = pd.read_csv(&#34;croissance_algues.csv&#34;) # Vérifier les NaN print(df.isna().sum()) df = df.dropna() # Conversion NumPy temperatures = df[&#34;Température&#34;].to_numpy() taux = df[&#34;Taux&#34;].to_numpy() # Étape 2 - Analyse par espèce donnees_par_espece = {} for _, ligne in df.iterrows(): espece = ligne[&#34;Espèce&#34;] taux_val = ligne[&#34;Taux&#34;] if espece not in donnees_par_espece: donnees_par_espece[espece] = [] donnees_par_espece[espece].append(taux_val) resume = {} for espece, valeurs in donnees_par_espece.">
+    <meta property="og:description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <meta itemprop="description" content="import pandas as pd import numpy as np import matplotlib.pyplot as plt # Étape 1 - Lecture df = pd.read_csv(&#34;croissance_algues.csv&#34;) # Vérifier les NaN print(df.isna().sum()) df = df.dropna() # Conversion NumPy temperatures = df[&#34;Température&#34;].to_numpy() taux = df[&#34;Taux&#34;].to_numpy() # Étape 2 - Analyse par espèce donnees_par_espece = {} for _, ligne in df.iterrows(): espece = ligne[&#34;Espèce&#34;] taux_val = ligne[&#34;Taux&#34;] if espece not in donnees_par_espece: donnees_par_espece[espece] = [] donnees_par_espece[espece].append(taux_val) resume = {} for espece, valeurs in donnees_par_espece.">
-    <meta itemprop="wordCount" content="206">
+    <meta itemprop="description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.">
+    <meta itemprop="wordCount" content="290">
     <title> Lecture et écriture de fichiers de données :: 420-SN1-RE</title>
     <link href="/solutions_ateliers/9_fichiers/index.xml" rel="alternate" type="application/rss+xml" title=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <link href="/images/logo.png?1759971706" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759971706" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759971706" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759971706" rel="stylesheet">
-    <link href="/css/theme.css?1759971706" rel="stylesheet">
-    <link href="/css/format-html.css?1759971706" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1759971706" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1759971706" defer></script>
-    <script src="/js/lunr/lunr.min.js?1759971706" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1759971706" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1759971706" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1759971706" defer></script>
-    <script src="/js/search.js?1759971706" defer></script>
+    <link href="/images/logo.png?1760218981" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760218981" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760218981" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1760218981" rel="stylesheet">
+    <link href="/css/theme.min.css?1760218981" rel="stylesheet">
+    <link href="/css/format-html.min.css?1760218981" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1760218981" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1760218981" defer></script>
+    <script src="/js/lunr/lunr.min.js?1760218981" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1760218981" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1760218981" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1760218981" defer></script>
+    <script src="/js/search.min.js?1760218981" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = ``;
+      window.relearn.min = `.min`;
       window.relearn.path='\/solutions_ateliers\/9_fichiers\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1759971706";
+      window.relearn.index_js_url="/searchindex.en.js?1760218981";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1759971706" rel="stylesheet">
+    <link href="/css/custom.css?1760218981" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_ateliers/9_fichiers/index.html">
     <div id="R-body" class="default-animation">
@@ -114,7 +114,7 @@
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/8_numpy_regression/index.html" title="Tableaux NumPy et droite de régression (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/11_fonctions_perso/index.html" title="Fonctions personnalisées (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -136,78 +136,100 @@
 
 <h1 id="lecture-et-écriture-de-fichiers-de-données"> Lecture et écriture de fichiers de données</h1>
 
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># PARTIE 1 — Lecture et écriture avec NumPy</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace)</span>
+</span></span><span style="display:flex;"><span>donnees_np <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>genfromtxt(<span style="color:#e6db74">&#34;eau.txt&#34;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; &#34;</span>, skip_header<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Données brutes (NumPy)&#34;</span>)
+</span></span><span style="display:flex;"><span>print(donnees_np)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de la moyenne pour chaque colonne</span>
+</span></span><span style="display:flex;"><span>moyennes <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>nanmean(donnees_np, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Moyennes des paramètres&#34;</span>)
+</span></span><span style="display:flex;"><span>print(moyennes)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sauvegarde des moyennes dans un fichier texte</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>savetxt(<span style="color:#e6db74">&#34;moyennes_eau.txt&#34;</span>, moyennes, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%.2f</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Fichier &#39;moyennes_eau.txt&#39; sauvegardé.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># PARTIE 2 — Lecture et nettoyage avec pandas</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lecture du fichier CSV &#34;eau_riviere.csv&#34;</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;eau_riviere.csv&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Données initiales (pandas)&#34;</span>)
+</span></span><span style="display:flex;"><span>print(df)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Détection des valeurs manquantes</span>
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Valeurs manquantes par colonne&#34;</span>)
+</span></span><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>isna()<span style="color:#f92672">.</span>sum())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remplacement des valeurs manquantes par la moyenne de la colonne</span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Temperature&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Temperature&#34;</span>]<span style="color:#f92672">.</span>fillna(df[<span style="color:#e6db74">&#34;Temperature&#34;</span>]<span style="color:#f92672">.</span>mean())
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;pH&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;pH&#34;</span>]<span style="color:#f92672">.</span>fillna(df[<span style="color:#e6db74">&#34;pH&#34;</span>]<span style="color:#f92672">.</span>mean())
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Oxygene&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Oxygene&#34;</span>]<span style="color:#f92672">.</span>fillna(df[<span style="color:#e6db74">&#34;Oxygene&#34;</span>]<span style="color:#f92672">.</span>mean())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># OU pour tout le DataFrame d’un coup</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># df = df.fillna(df.mean(numeric_only=True))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Données après remplissage des NaN&#34;</span>)
+</span></span><span style="display:flex;"><span>print(df)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ajout de la colonne &#39;Qualite&#39; selon la concentration en oxygène</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Règles :</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># - Oxygène &gt;= 8.0 → &#34;Bonne&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># - 7.5 &lt;= Oxygène &lt; 8.0 → &#34;Moyenne&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># - Oxygène &lt; 7.5 → &#34;Faible&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Qualite&#34;</span>] <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>where(
+</span></span><span style="display:flex;"><span>    df[<span style="color:#e6db74">&#34;Oxygene&#34;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">8.0</span>, <span style="color:#e6db74">&#34;Bonne&#34;</span>,
+</span></span><span style="display:flex;"><span>    np<span style="color:#f92672">.</span>where(
+</span></span><span style="display:flex;"><span>        (df[<span style="color:#e6db74">&#34;Oxygene&#34;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">7.5</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#34;Oxygene&#34;</span>] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">8.0</span>), <span style="color:#e6db74">&#34;Moyenne&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Faible&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ajout de la colonne &#39;Alerte&#39; selon le pH</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Si pH &lt; 7.0 → &#34;Attention&#34;, sinon &#34;OK&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Alerte&#34;</span>] <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>where(df[<span style="color:#e6db74">&#34;pH&#34;</span>] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">7.0</span>, <span style="color:#e6db74">&#34;Attention&#34;</span>, <span style="color:#e6db74">&#34;OK&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Données finales avec colonnes dérivées&#34;</span>)
+</span></span><span style="display:flex;"><span>print(df)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sauvegarde finale du fichier nettoyé</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>to_csv(<span style="color:#e6db74">&#34;eau_riviere_nettoyee.csv&#34;</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Fichier &#39;eau_riviere_nettoyee.csv&#39; sauvegardé avec succès.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># PARTIE 3 — Visualisation graphique (Optionnel)</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 1 - Lecture</span>
-</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;croissance_algues.csv&#34;</span>)
+</span></span><span style="display:flex;"><span>erreur <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>
+</span></span><span style="display:flex;"><span>couleurs <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Qualite&#34;</span>]<span style="color:#f92672">.</span>map({<span style="color:#e6db74">&#34;Bonne&#34;</span>: <span style="color:#e6db74">&#34;skyblue&#34;</span>, <span style="color:#e6db74">&#34;Moyenne&#34;</span>: <span style="color:#e6db74">&#34;gold&#34;</span>, <span style="color:#e6db74">&#34;Faible&#34;</span>: <span style="color:#e6db74">&#34;salmon&#34;</span>})
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Vérifier les NaN</span>
-</span></span><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>isna()<span style="color:#f92672">.</span>sum())
-</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>dropna()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Conversion NumPy</span>
-</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Température&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
-</span></span><span style="display:flex;"><span>taux <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Taux&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 2 - Analyse par espèce</span>
-</span></span><span style="display:flex;"><span>donnees_par_espece <span style="color:#f92672">=</span> {}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _, ligne <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>iterrows():
-</span></span><span style="display:flex;"><span>    espece <span style="color:#f92672">=</span> ligne[<span style="color:#e6db74">&#34;Espèce&#34;</span>]
-</span></span><span style="display:flex;"><span>    taux_val <span style="color:#f92672">=</span> ligne[<span style="color:#e6db74">&#34;Taux&#34;</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> espece <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> donnees_par_espece:
-</span></span><span style="display:flex;"><span>        donnees_par_espece[espece] <span style="color:#f92672">=</span> []
-</span></span><span style="display:flex;"><span>    donnees_par_espece[espece]<span style="color:#f92672">.</span>append(taux_val)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>resume <span style="color:#f92672">=</span> {}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> espece, valeurs <span style="color:#f92672">in</span> donnees_par_espece<span style="color:#f92672">.</span>items():
-</span></span><span style="display:flex;"><span>    valeurs_np <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array(valeurs)
-</span></span><span style="display:flex;"><span>    resume[espece] <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;nb&#34;</span>: len(valeurs),
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;moyenne&#34;</span>: np<span style="color:#f92672">.</span>mean(valeurs_np),
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ecart_type&#34;</span>: np<span style="color:#f92672">.</span>std(valeurs_np)
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Résumé par espèce :&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> espece, stats <span style="color:#f92672">in</span> resume<span style="color:#f92672">.</span>items():
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>espece<span style="color:#e6db74">}</span><span style="color:#e6db74"> -&gt; </span><span style="color:#e6db74">{</span>stats<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 3 - Graphique</span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">6</span>))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>especes <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Espèce&#34;</span>]<span style="color:#f92672">.</span>unique()
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> espece <span style="color:#f92672">in</span> especes:
-</span></span><span style="display:flex;"><span>    sous_df <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#34;Espèce&#34;</span>] <span style="color:#f92672">==</span> espece]
-</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">=</span> sous_df[<span style="color:#e6db74">&#34;Température&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
-</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">=</span> sous_df[<span style="color:#e6db74">&#34;Taux&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
-</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>scatter(x, y, label<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>espece<span style="color:#e6db74">}</span><span style="color:#e6db74"> (données)&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Régression linéaire</span>
-</span></span><span style="display:flex;"><span>    coeffs <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(x, y, deg<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>    y_pred <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyval(coeffs, x)
-</span></span><span style="display:flex;"><span>    plt<span style="color:#f92672">.</span>plot(x, y_pred, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>espece<span style="color:#e6db74">}</span><span style="color:#e6db74"> (régression)&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Taux de croissance vs Température&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Température (°C)&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Taux de croissance (mm/jour)&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;croissance_regression.png&#34;</span>)
-</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 4 - Recherche capteur</span>
-</span></span><span style="display:flex;"><span>nom_capteur <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Entrez le nom du capteur : &#34;</span>)
-</span></span><span style="display:flex;"><span>filtre <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#34;Capteur&#34;</span>] <span style="color:#f92672">==</span> nom_capteur]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> filtre<span style="color:#f92672">.</span>empty:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Aucune donnée pour ce capteur.&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Mesures associées :&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> _, ligne <span style="color:#f92672">in</span> filtre<span style="color:#f92672">.</span>iterrows():
-</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>ligne[<span style="color:#e6db74">&#39;Date&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> | </span><span style="color:#e6db74">{</span>ligne[<span style="color:#e6db74">&#39;Espèce&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> | </span><span style="color:#e6db74">{</span>ligne[<span style="color:#e6db74">&#39;Température&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> °C | </span><span style="color:#e6db74">{</span>ligne[<span style="color:#e6db74">&#39;Taux&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> mm/jour&#34;</span>)</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>bar(df[<span style="color:#e6db74">&#34;Site&#34;</span>], df[<span style="color:#e6db74">&#34;Oxygene&#34;</span>], yerr<span style="color:#f92672">=</span>erreur, capsize<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, color<span style="color:#f92672">=</span>couleurs)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Concentration en oxygène dissous dans la rivière&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Site d&#39;échantillonnage&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Oxygène (mg/L)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;y&#34;</span>, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--&#34;</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -257,26 +279,21 @@
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
-            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
             <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
             <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
             <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
             <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
             <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
             <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
             <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Lecture et écriture de fichiers textes (avec NumPy ou Pandas)</a></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> Projet - Présentation, analyse et traduction</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Lecture et écriture de fichiers textes (avec NumPy et Pandas)</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="parent " data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu">
             <li class="" data-nav-id="/solutions_ateliers/2_variables_types_entrees_fn/index.html"><a class="padding" href="/solutions_ateliers/2_variables_types_entrees_fn/index.html"><b>2.</b> Variables, types, entrées et fonction</a></li>
@@ -285,8 +302,7 @@
             <li class="" data-nav-id="/solutions_ateliers/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_ateliers/6_listes_chaines_visualisation/index.html">6. Listes, chaines et visualisation des données</a></li>
             <li class="" data-nav-id="/solutions_ateliers/7_dictionnaires/index.html"><a class="padding" href="/solutions_ateliers/7_dictionnaires/index.html">7. Dictionnaires</a></li>
             <li class="" data-nav-id="/solutions_ateliers/8_numpy_regression/index.html"><a class="padding" href="/solutions_ateliers/8_numpy_regression/index.html"><b>8.</b> Tableaux NumPy et droite de régression</a></li>
-            <li class="active " data-nav-id="/solutions_ateliers/9_fichiers/index.html"><a class="padding" href="/solutions_ateliers/9_fichiers/index.html"><b>9.</b> Lecture et écriture de fichiers de données</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/11_fonctions_perso/index.html"><a class="padding" href="/solutions_ateliers/11_fonctions_perso/index.html"><b>11.</b> Fonctions personnalisées</a></li></ul></li>
+            <li class="active " data-nav-id="/solutions_ateliers/9_fichiers/index.html"><a class="padding" href="/solutions_ateliers/9_fichiers/index.html"><b>9.</b> Lecture et écriture de fichiers de données</a></li></ul></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
@@ -304,8 +320,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1759971706" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759971706" defer></script>
-    <script src="/js/theme.js?1759971706" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1760218981" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1760218981" defer></script>
+    <script src="/js/theme.min.js?1760218981" defer></script>
   </body>
 </html>

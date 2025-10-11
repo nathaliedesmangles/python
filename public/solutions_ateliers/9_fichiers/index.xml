@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Lecture et écriture de fichiers de données :: 420-SN1-RE</title>
-    <link>http://localhost:1313/solutions_ateliers/9_fichiers/index.html</link>
-    <description>import pandas as pd import numpy as np import matplotlib.pyplot as plt # Étape 1 - Lecture df = pd.read_csv(&#34;croissance_algues.csv&#34;) # Vérifier les NaN print(df.isna().sum()) df = df.dropna() # Conversion NumPy temperatures = df[&#34;Température&#34;].to_numpy() taux = df[&#34;Taux&#34;].to_numpy() # Étape 2 - Analyse par espèce donnees_par_espece = {} for _, ligne in df.iterrows(): espece = ligne[&#34;Espèce&#34;] taux_val = ligne[&#34;Taux&#34;] if espece not in donnees_par_espece: donnees_par_espece[espece] = [] donnees_par_espece[espece].append(taux_val) resume = {} for espece, valeurs in donnees_par_espece.</description>
+    <link>https://example.org/solutions_ateliers/9_fichiers/index.html</link>
+    <description>import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/solutions_ateliers/9_fichiers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/solutions_ateliers/9_fichiers/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -113,3 +113,37 @@ df = pd.read_csv("experiment.txt", sep="\t")
 df.to_csv("experiment_export.txt", sep="\t", index=False)
 print("Fichier 'experiment_export.txt' enregistré avec tabulations.")
 ```
+
+## Exercice 6 (Pandas)
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Lecture du fichier CSV
+df = pd.read_csv("solubilite_sel.csv")
+
+# Vérification des valeurs manquantes
+print("Valeurs manquantes :")
+print(df.isna())
+
+# Nombre total de valeurs manquantes
+print("Nombre total de NaN :", df.isna().sum().sum())
+
+# Remplacement des NaN par la moyenne
+moyenne = df['solubilite'].mean(skipna=True)
+df['solubilite'] = df['solubilite'].fillna(moyenne)
+
+# Vérification après remplacement
+print("\nDonnées après traitement :")
+print(df)
+
+# Visualisation
+plt.plot(df['temperature'], df['solubilite'], marker='o')
+plt.xlabel("Température (°C)")
+plt.ylabel("Solubilité (g/100 mL)")
+plt.title("Solubilité d’un sel en fonction de la température")
+plt.show()
+```
+
+
