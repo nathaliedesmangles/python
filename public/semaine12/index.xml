@@ -8,6 +8,13 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/semaine12/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title> Projet - Présentation, analyse et traduction</title>
+      <link>http://localhost:1313/semaine12/_old/v2/_index---copie/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine12/_old/v2/_index---copie/index.html</guid>
+      <description>Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Enquête scientifique par analyse d’ADN Contexte Vous êtes le ou la bioinformaticien·ne en charge d’une enquête médico-légale : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.</description>
+    </item>
+    <item>
       <title>exercices préparatoires progressifs</title>
       <link>http://localhost:1313/semaine12/_old/v2/exercices_preparatoires/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

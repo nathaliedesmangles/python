@@ -3,7 +3,7 @@
   <channel>
     <title> Tableaux NumPy et droite de régression :: 420-SN1-RE</title>
     <link>https://example.org/semaine8/index.html</link>
-    <description>Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1: base Bloc-note 2: base Bloc-note 3: base</description>
+    <description>Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1&#xA;Sujets couverts…&#xD;Création de tableaux (np.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine8/index.xml" rel="self" type="application/rss+xml" />

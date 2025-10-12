@@ -5,34 +5,38 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1: base Bloc-note 2: base Bloc-note 3: base">
+    <meta name="description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1
+Sujets couverts…Création de tableaux (np.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
-    <meta name="twitter:description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1: base Bloc-note 2: base Bloc-note 3: base">
+    <meta name="twitter:description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1
+Sujets couverts…Création de tableaux (np.">
     <meta property="og:url" content="https://example.org/semaine8/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
-    <meta property="og:description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1: base Bloc-note 2: base Bloc-note 3: base">
+    <meta property="og:description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1
+Sujets couverts…Création de tableaux (np.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
-    <meta itemprop="description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1: base Bloc-note 2: base Bloc-note 3: base">
-    <meta itemprop="wordCount" content="2952">
+    <meta itemprop="description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1
+Sujets couverts…Création de tableaux (np.">
+    <meta itemprop="wordCount" content="2943">
     <title> Tableaux NumPy et droite de régression :: 420-SN1-RE</title>
     <link href="/semaine8/index.xml" rel="alternate" type="application/rss+xml" title=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
-    <link href="/images/logo.png?1760302026" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760302026" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760302026" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1760302026" rel="stylesheet">
-    <link href="/css/theme.min.css?1760302026" rel="stylesheet">
-    <link href="/css/format-html.min.css?1760302026" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1760302026" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1760302026" defer></script>
-    <script src="/js/lunr/lunr.min.js?1760302026" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1760302026" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1760302026" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1760302026" defer></script>
-    <script src="/js/search.min.js?1760302026" defer></script>
+    <link href="/images/logo.png?1760303180" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760303180" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760303180" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1760303180" rel="stylesheet">
+    <link href="/css/theme.min.css?1760303180" rel="stylesheet">
+    <link href="/css/format-html.min.css?1760303180" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1760303180" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1760303180" defer></script>
+    <script src="/js/lunr/lunr.min.js?1760303180" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1760303180" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1760303180" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1760303180" defer></script>
+    <script src="/js/search.min.js?1760303180" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +46,7 @@
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1760302026";
+      window.relearn.index_js_url="/searchindex.en.js?1760303180";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +92,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1760302026" rel="stylesheet">
+    <link href="/css/custom.css?1760303180" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine8/index.html">
     <div id="R-body" class="default-animation">
@@ -106,9 +110,6 @@
   <ul>
     <li><a href="#objectifs">Objectifs</a></li>
     <li><a href="#fichiers-ipynb-pour-la-démo-en-classe">Fichiers .ipynb pour la démo en classe</a></li>
-    <li><a href="#bloc-notes-1--demo_numpy_creation_fonctionsipynb"><strong>Bloc-notes 1 – <code>demo_numpy_creation_fonctions.ipynb</code></strong></a></li>
-    <li><a href="#bloc-notes-2--demo_numpy_operations_nanipynb"><strong>Bloc-notes 2 – <code>demo_numpy_operations_nan.ipynb</code></strong></a></li>
-    <li><a href="#bloc-notes-3--demo_numpy_filtrage_graphiquesipynb"><strong>Bloc-notes 3 – <code>demo_numpy_filtrage_graphiques.ipynb</code></strong></a></li>
     <li><a href="#fichier-de-départ-à-utiliser">Fichier de départ à utiliser</a></li>
   </ul>
 
@@ -210,10 +211,14 @@
 <li>Modéliser une relation entre deux données à l&rsquo;aide d&rsquo;une droite de régression linéaire.</li>
 </ul>
 <h2 id="fichiers-ipynb-pour-la-démo-en-classe">Fichiers .ipynb pour la démo en classe</h2>
-<p><a href="https://python-a25.netlify.app/blocnotes/demo_numpy_creation_fonctions.ipynb" rel="external" target="_blank">Bloc-note 1: base</a>
-<a href="https://python-a25.netlify.app/blocnotes/demo_numpy_operations_nan.ipynb" rel="external" target="_blank">Bloc-note 2: base</a>
-<a href="https://python-a25.netlify.app/blocnotes/demo_numpy_filtrage_graphiques.ipynb" rel="external" target="_blank">Bloc-note 3: base</a></p>
-<h2 id="bloc-notes-1--demo_numpy_creation_fonctionsipynb"><strong>Bloc-notes 1 – <code>demo_numpy_creation_fonctions.ipynb</code></strong></h2>
+<p><a href="https://python-a25.netlify.app/blocnotes/demo_numpy_creation_fonctions.ipynb" rel="external" target="_blank"><strong>Bloc-note 1</strong></a><br>
+
+<details class=" box cstyle notices cyan expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    Sujets couverts&hellip;
+  </summary>
+  <div class="box-content">
 <ul>
 <li>Création de tableaux (<code>np.array</code>, <code>np.arange</code>, <code>np.linspace</code>, <code>np.ones</code>, <code>np.zeros</code>)</li>
 <li>Fonctions mathématiques (<code>np.sqrt</code>, <code>np.cbrt</code>, <code>np.exp</code>, <code>np.log</code>, <code>np.log2</code>, <code>np.log10</code>)</li>
@@ -222,14 +227,32 @@
 <li>Différences consécutives (<code>np.diff</code>)</li>
 <li>Opérations vectorisées et arithmétiques élément par élément</li>
 </ul>
-<h2 id="bloc-notes-2--demo_numpy_operations_nanipynb"><strong>Bloc-notes 2 – <code>demo_numpy_operations_nan.ipynb</code></strong></h2>
+  </div>
+</details></p>
+<p><a href="https://python-a25.netlify.app/blocnotes/demo_numpy_operations_nan.ipynb" rel="external" target="_blank"><strong>Bloc-note 2</strong></a><br>
+
+<details class=" box cstyle notices cyan expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    Sujets couverts&hellip;
+  </summary>
+  <div class="box-content">
 <ul>
 <li>Ignorer des valeurs manquantes (<code>np.nan</code>, <code>np.nanmean</code>, <code>np.nansum</code>, etc.)</li>
 <li>Découpage et slicing simple (<code>[début:fin]</code>, <code>[début:fin:pas]</code>, <code>[:]</code>).</li>
 <li>Récapitulatif des syntaxes de slicing et indexation pour 1D et 2D.</li>
 <li>Exercices simples sur NaN et slicing.</li>
 </ul>
-<h2 id="bloc-notes-3--demo_numpy_filtrage_graphiquesipynb"><strong>Bloc-notes 3 – <code>demo_numpy_filtrage_graphiques.ipynb</code></strong></h2>
+  </div>
+</details></p>
+<p>[<strong>Bloc-note 3</strong>https://python-a25.netlify.app/blocnotes/demo_numpy_filtrage_graphiques.ipynb)<br>
+
+<details class=" box cstyle notices cyan expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    Sujets couverts&hellip;
+  </summary>
+  <div class="box-content">
 <ul>
 <li>Filtrage de données avec conditions (<code>tableau[condition]</code>, <code>np.sum(condition)</code>)</li>
 <li>Filtrage avec <code>np.where()</code></li>
@@ -237,6 +260,8 @@
 <li>Régression linéaire (<code>np.polyfit</code>) et coefficient de détermination <code>R²</code></li>
 <li>Exercices pour manipuler filtres, graphiques et régression</li>
 </ul>
+  </div>
+</details></p>
 <hr>
 
 <details open class=" box cstyle notices accent">
@@ -286,8 +311,8 @@ La formule de la position est :</p>
 </ol>
 <p><strong>Résultats</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>5 premières valeurs de y : [20.    19.951 19.804 19.559 19.216]</code></pre></div>
-<p><a href="#R-image-4c657c2597731f78dc7eb344495a9ba0" class="lightbox-link"><img alt="Graphique 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c657c2597731f78dc7eb344495a9ba0"><img alt="Graphique 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw"></a></p>
+<p><a href="#R-image-06cbfbe159170db1bf2669fce896d5ba" class="lightbox-link"><img alt="Graphique 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-06cbfbe159170db1bf2669fce896d5ba"><img alt="Graphique 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw"></a></p>
 <h3 id="exercice-2--mouvement-rectiligne-uniforme-et-régression-linéaire">Exercice 2 : Mouvement rectiligne uniforme et régression linéaire</h3>
 <p>Une voiture roule à vitesse constante <strong>v = 15 m/s</strong>. Sa position est donnée par :</p>
 <p>$$
@@ -303,8 +328,8 @@ $$</p>
 </ol>
 <p><strong>Résultats</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Dernière position : 150.0</code></pre></div>
-<p><a href="#R-image-813eae1fa23edcaccb416c514decd71f" class="lightbox-link"><img alt="Graphique 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-813eae1fa23edcaccb416c514decd71f"><img alt="Graphique 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw"></a></p>
+<p><a href="#R-image-8c0ac2e3e82693fafee664069cc7a6ec" class="lightbox-link"><img alt="Graphique 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c0ac2e3e82693fafee664069cc7a6ec"><img alt="Graphique 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw"></a></p>
 <h3 id="exercice-3--énergie-cinétique-et-barres-derreur">Exercice 3 : Énergie cinétique et barres d’erreur</h3>
 <p>La formule de l&rsquo;énergie cinétique est :</p>
 <p>$$
@@ -330,8 +355,8 @@ Max : 400.0
 Trois dernières : [256. 324. 400.]
 Vitesses 2–8 : [2 4 6 8]
 Énergies : [ 4. 16. 36. 64.]</code></pre></div>
-<p><a href="#R-image-85176fdd261aaae0c6ba2b793d83bb79" class="lightbox-link"><img alt="Graphique 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-85176fdd261aaae0c6ba2b793d83bb79"><img alt="Graphique 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw"></a></p>
+<p><a href="#R-image-a2a221134bc05d8b135d06f915edeadc" class="lightbox-link"><img alt="Graphique 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2a221134bc05d8b135d06f915edeadc"><img alt="Graphique 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw"></a></p>
 <h3 id="exercice-4--oscillations-harmoniques">Exercice 4 : Oscillations harmoniques</h3>
 <p>La position d’un oscillateur est donnée par :</p>
 <p>$$
@@ -347,8 +372,8 @@ $$</p>
 <p><strong>Résultats</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Max : 0.1
 Min : -0.1</code></pre></div>
-<p><a href="#R-image-3d5bb26071b9b26a12d532a3c88a7496" class="lightbox-link"><img alt="Graphique 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3d5bb26071b9b26a12d532a3c88a7496"><img alt="Graphique 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw"></a></p>
+<p><a href="#R-image-4fc8b6a415e03dcb77b69f8466f10542" class="lightbox-link"><img alt="Graphique 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4fc8b6a415e03dcb77b69f8466f10542"><img alt="Graphique 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw"></a></p>
 <hr>
 <h1 id="cours">Cours</h1>
 <p><em>NumPy</em> est une bibliothèque Python pour manipuler des données numériques sous forme de <strong>tableaux (arrays)</strong>. Elle permet de faire des <strong>calculs rapides</strong> sur plusieurs valeurs.</p>
@@ -631,8 +656,8 @@ Elles indiquent à quel point les données sont précises.</p>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Graphique avec barres d’erreur&#34;</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-6b53d0076edfa1537929a25a9ed79df7" class="lightbox-link"><img alt="graphique avec barres d&rsquo;erreur" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_barres_err.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6b53d0076edfa1537929a25a9ed79df7"><img alt="graphique avec barres d&rsquo;erreur" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_barres_err.png?width=35vw"></a></p>
+<p><a href="#R-image-694282b55690d1db0c1ae1898191922e" class="lightbox-link"><img alt="graphique avec barres d&rsquo;erreur" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_barres_err.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-694282b55690d1db0c1ae1898191922e"><img alt="graphique avec barres d&rsquo;erreur" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_barres_err.png?width=35vw"></a></p>
 <h3 id="explications">Explications</h3>
 <ul>
 <li><strong><code>yerr=erreur</code></strong> → indique la longueur des barres d’erreur verticales.</li>
@@ -696,8 +721,8 @@ $</p>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Régression linéaire avec NumPy&#34;</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-8889a4137df15ad5e08492d05809cab0" class="lightbox-link"><img alt="Graphe régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8889a4137df15ad5e08492d05809cab0"><img alt="Graphe régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw"></a></p>
+<p><a href="#R-image-dda63dd8b644cf748e0cfd5f9de32de7" class="lightbox-link"><img alt="Graphe régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dda63dd8b644cf748e0cfd5f9de32de7"><img alt="Graphe régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw"></a></p>
 <p><strong>Interprétation :</strong></p>
 <ul>
 <li>Les points bleus représentent vos données mesurées.</li>
@@ -820,8 +845,8 @@ $$</p>
 Moyenne (LED blanche) = 11.40 cm, écart-type = 0.16 cm  
 Moyenne (LED rouge) = 10.23 cm, écart-type = 0.12 cm  
 Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
-<p><a href="#R-image-a2417f32ece7482147adfa71c19722b0" class="lightbox-link"><img alt="Graphique1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2417f32ece7482147adfa71c19722b0"><img alt="Graphique1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw"></a></p>
+<p><a href="#R-image-c9ff3a276dd4f9af93170c03266a4029" class="lightbox-link"><img alt="Graphique1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c9ff3a276dd4f9af93170c03266a4029"><img alt="Graphique1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw"></a></p>
 <h2 id="exercice-2--distance-parcourue-par-un-chariot-en-fonction-du-temps">Exercice 2 : distance parcourue par un chariot en fonction du temps</h2>
 <p>On mesure la distance parcourue par un chariot en fonction du temps.</p>
 <table>
@@ -866,8 +891,8 @@ Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Pente a = 1.02 m/s
 Ordonnée à l’origine b = -0.01 m
 Coefficient de détermination R² = 0.999</code></pre></div>
-<p><a href="#R-image-5e2484752f2cfc43fc2f2ce63fe8c71f" class="lightbox-link"><img alt="Graphique2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5e2484752f2cfc43fc2f2ce63fe8c71f"><img alt="Graphique2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw"></a></p>
+<p><a href="#R-image-bfc5c2a4e856f2d9d17ba022d2ecfadf" class="lightbox-link"><img alt="Graphique2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bfc5c2a4e856f2d9d17ba022d2ecfadf"><img alt="Graphique2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw"></a></p>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
@@ -957,8 +982,8 @@ Coefficient de détermination R² = 0.999</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1760302026" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1760302026" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1760303180" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1760303180" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -970,7 +995,7 @@ Coefficient de détermination R² = 0.999</code></pre></div>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1760302026"></script>
-    <script src="/js/theme.min.js?1760302026" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1760303180"></script>
+    <script src="/js/theme.min.js?1760303180" defer></script>
   </body>
 </html>

@@ -17,36 +17,32 @@ draft = false
 
 ## Fichiers .ipynb pour la démo en classe
 
-[Bloc-note 1: base](https://python-a25.netlify.app/blocnotes/demo_numpy_creation_fonctions.ipynb)
-[Bloc-note 2: base](https://python-a25.netlify.app/blocnotes/demo_numpy_operations_nan.ipynb)
-[Bloc-note 3: base](https://python-a25.netlify.app/blocnotes/demo_numpy_filtrage_graphiques.ipynb)
-
-## **Bloc-notes 1 – `demo_numpy_creation_fonctions.ipynb`**
-
+[**Bloc-note 1**](https://python-a25.netlify.app/blocnotes/demo_numpy_creation_fonctions.ipynb)  
+{{% notice style="cyan" title="Sujets couverts..." groupid="notice-toggle" expanded="false" %}}
 * Création de tableaux (`np.array`, `np.arange`, `np.linspace`, `np.ones`, `np.zeros`)
 * Fonctions mathématiques (`np.sqrt`, `np.cbrt`, `np.exp`, `np.log`, `np.log2`, `np.log10`)
 * Fonctions statistiques (`np.sum`, `np.prod`, `np.max`, `np.min`, `np.mean`, `np.median`, `np.var`, `np.std`)
 * Fonctions trigonométriques (`np.sin`, `np.cos`, `np.tan`, `np.arcsin`, `np.arccos`, `np.arctan`, `np.deg2rad`, `np.rad2deg`)
 * Différences consécutives (`np.diff`)
 * Opérations vectorisées et arithmétiques élément par élément
+{{% /notice %}}
 
-
-## **Bloc-notes 2 – `demo_numpy_operations_nan.ipynb`**
-
+[**Bloc-note 2**](https://python-a25.netlify.app/blocnotes/demo_numpy_operations_nan.ipynb)  
+{{% notice style="cyan" title="Sujets couverts..." groupid="notice-toggle" expanded="false" %}}
 * Ignorer des valeurs manquantes (`np.nan`, `np.nanmean`, `np.nansum`, etc.)
 * Découpage et slicing simple (`[début:fin]`, `[début:fin:pas]`, `[:]`).
 * Récapitulatif des syntaxes de slicing et indexation pour 1D et 2D.
 * Exercices simples sur NaN et slicing.
+{{% /notice %}}
 
-
-## **Bloc-notes 3 – `demo_numpy_filtrage_graphiques.ipynb`**
-
+[**Bloc-note 3**https://python-a25.netlify.app/blocnotes/demo_numpy_filtrage_graphiques.ipynb)  
+{{% notice style="cyan" title="Sujets couverts..." groupid="notice-toggle" expanded="false" %}}
 * Filtrage de données avec conditions (`tableau[condition]`, `np.sum(condition)`)
 * Filtrage avec `np.where()`
 * Graphiques avec barres d’erreur (`plt.errorbar`)
 * Régression linéaire (`np.polyfit`) et coefficient de détermination `R²`
 * Exercices pour manipuler filtres, graphiques et régression
-
+{{% /notice %}}
 
 ---
 
