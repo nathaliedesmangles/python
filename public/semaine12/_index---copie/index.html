@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Enquête scientifique par analyse d’ADN Contexte Vous êtes le ou la bioinformaticien·ne en charge d’une enquête médico-légale : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Projet - Présentation, analyse et traduction :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Enquête scientifique par analyse d’ADN Contexte Vous êtes le ou la bioinformaticien·ne en charge d’une enquête médico-légale : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.">
+    <meta property="og:url" content="http://localhost:1313/semaine12/_index---copie/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content=" Projet - Présentation, analyse et traduction :: 420-SN1-RE">
+    <meta property="og:description" content="Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Enquête scientifique par analyse d’ADN Contexte Vous êtes le ou la bioinformaticien·ne en charge d’une enquête médico-légale : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content=" Projet - Présentation, analyse et traduction">
+    <meta itemprop="name" content=" Projet - Présentation, analyse et traduction :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Enquête scientifique par analyse d’ADN Contexte Vous êtes le ou la bioinformaticien·ne en charge d’une enquête médico-légale : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.">
+    <meta itemprop="wordCount" content="605">
+    <title> Projet - Présentation, analyse et traduction :: 420-SN1-RE</title>
+    <link href="/images/logo.png?1760275881" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760275881" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760275881" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1760275881" rel="stylesheet">
+    <link href="/css/theme.css?1760275881" rel="stylesheet">
+    <link href="/css/format-html.css?1760275881" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1760275881" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1760275881" defer></script>
+    <script src="/js/lunr/lunr.min.js?1760275881" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1760275881" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1760275881" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1760275881" defer></script>
+    <script src="/js/search.js?1760275881" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine12\/_index---copie\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1760275881";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1760275881" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/semaine12/_index---copie/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectifs">Objectifs</a></li>
+    <li><a href="#enquête-scientifique-par-analyse-dadn">Enquête scientifique par analyse d’ADN</a>
+      <ul>
+        <li><a href="#contexte">Contexte</a></li>
+        <li><a href="#contraintes-techniques">Contraintes techniques</a></li>
+        <li><a href="#remise">Remise</a></li>
+        <li><a href="#rappel--vos-superpouvoirs-python">Rappel : vos superpouvoirs Python</a></li>
+        <li><a href="#bonne-enquête-">Bonne enquête !</a></li>
+      </ul>
+    </li>
+    <li><a href="#étapes-de-votre-enquête-guide-progressif">Étapes de votre enquête (guide progressif)</a>
+      <ul>
+        <li><a href="#1-élaboration-de-votre-plan-de-travail">1. Élaboration de votre plan de travail</a></li>
+        <li><a href="#2-chargement-et-nettoyage-des-données">2. Chargement et nettoyage des données</a></li>
+        <li><a href="#3-calculs-de-correspondance">3. Calculs de correspondance</a></li>
+        <li><a href="#4-résumé-et-visualisation-des-résultats">4. Résumé et visualisation des résultats</a></li>
+        <li><a href="#5-analyse-statistique-régression-linéaire">5. Analyse statistique (régression linéaire)</a></li>
+        <li><a href="#6-interprétation-scientifique">6. Interprétation scientifique</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine12/index.html"><span itemprop="name"> Projet - Présentation, analyse et traduction</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Projet - Présentation, analyse et traduction</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine12/index.html" title="Projet - Présentation, analyse et traduction (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine12/_old/v2/exercices_preparatoires/index.html" title="exercices préparatoires progressifs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine12" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="projet---présentation-analyse-et-traduction"> Projet - Présentation, analyse et traduction</h1>
+
+<h2 id="objectifs">Objectifs</h2>
+<ul>
+<li>Présentation du projet</li>
+<li>Présentation de la grille de correction</li>
+<li>Analyse préliminaire du projet (activité guidée):
+<ul>
+<li>Comprendre le problème</li>
+<li>Identifier les variables (types), constantes, formules, fonctions, etc.</li>
+<li>Élaborer les algorithmes</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="enquête-scientifique-par-analyse-dadn">Enquête scientifique par analyse d’ADN</h2>
+<h3 id="contexte">Contexte</h3>
+<p>Vous êtes le ou la bioinformaticien·ne en charge d’une <strong>enquête médico-légale</strong> : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.</p>
+<p>Mais votre mission ne s&rsquo;arrête pas à un simple tri de valeurs : vous devrez aussi <strong>modéliser les relations génétiques</strong> par analyse statistique, <strong>quantifier l’incertitude</strong>, et <strong>présenter vos résultats de manière claire et rigoureuse</strong> à l’aide de Python.</p>
+<h3 id="contraintes-techniques">Contraintes techniques</h3>
+<ul>
+<li><strong>Fichiers de départ</strong> : Bloc-notes de travail <code>projet_enquete_adn.ipynb</code> et le fichier de données contenant les profils ADN <code>suspects.csv</code> se trouvant sur Moodle.</li>
+<li><strong>Langage</strong> : Python dans Jupyter Notebook (<code>.ipynb</code>).</li>
+<li><strong>Bibliothèques autorisées</strong> : <code>pandas</code>, <code>numpy</code> et <code>matplotlib</code></li>
+<li><strong>Programmation lettrée</strong> : structurez votre rapport avec des <strong>sections Markdown</strong>, des <strong>titres explicites</strong>, et des <strong>explications claires</strong>.</li>
+<li><strong>Fonctions personnalisées</strong> : vous devez créer vos propres fonctions à l’aide de <code>def</code>, avec paramètres et valeurs retournées, pour automatiser les analyses.</li>
+<li><strong>Normes</strong> : code lisible, modulaire, commenté.</li>
+</ul>
+<h3 id="remise">Remise</h3>
+<ul>
+<li>Remettre <strong>un seul fichier</strong> : <code>projet_prenom_nom.ipynb</code>, toutes cellules <strong>exécutées</strong>.</li>
+<li><strong>Facultatif</strong> : joindre une version PDF exportée du bloc-notes.</li>
+</ul>
+<h3 id="rappel--vos-superpouvoirs-python">Rappel : vos superpouvoirs Python</h3>
+<ul>
+<li>Pensez à tester chaque fonction sur des <strong>cas simples</strong> avant de l’appliquer aux données complètes.</li>
+<li>Utilisez les <strong>cellules Markdown</strong> pour documenter vos choix et expliquer votre démarche.</li>
+<li>Soyez créatifs·ves, mais rigoureux·ses.</li>
+</ul>
+<h3 id="bonne-enquête-">Bonne enquête !</h3>
+<p>Que la science éclaire vos soupçons… et que votre code résiste à toutes les erreurs !</p>
+<hr>
+<h2 id="étapes-de-votre-enquête-guide-progressif">Étapes de votre enquête (guide progressif)</h2>
+<h3 id="1-élaboration-de-votre-plan-de-travail">1. Élaboration de votre plan de travail</h3>
+<p><strong>Avant de coder</strong>, rédigez une <strong>brève stratégie</strong> :</p>
+<ul>
+<li>Quelles sont les étapes de l’enquête ?</li>
+<li>Quelles fonctions pourriez-vous créer pour structurer votre code (par exemple : comparaison, calcul, affichage graphique, etc.) ?</li>
+<li>Dans quel ordre allez-vous procéder ?</li>
+</ul>
+<blockquote>
+<p>Cette planification peut évoluer en cours de route, mais elle doit être claire dès le départ.</p>
+</blockquote>
+<h3 id="2-chargement-et-nettoyage-des-données">2. Chargement et nettoyage des données</h3>
+<ul>
+<li>Importez les bibliothèques autorisées.</li>
+<li>Chargez le fichier <code>suspects.csv</code>.</li>
+<li>Observez la structure des données.</li>
+<li>Identifiez les <strong>caractères manquants</strong> (ex. <code>?</code>) et préparez vos fonctions pour gérer ces cas lors des comparaisons.</li>
+</ul>
+<blockquote>
+<p>Créez une fonction pour comparer deux séquences ADN et calculer le <strong>pourcentage de correspondance</strong> malgré les caractères ambigus.</p>
+</blockquote>
+<h3 id="3-calculs-de-correspondance">3. Calculs de correspondance</h3>
+<ul>
+<li>
+<p>Pour chaque suspect et pour chaque locus, <strong>comparez sa séquence</strong> avec celle trouvée sur la scène de crime.</p>
+</li>
+<li>
+<p>Calculez :</p>
+<ul>
+<li>Le <strong>taux de correspondance par locus</strong> (en %)</li>
+<li>La <strong>moyenne globale de correspondance</strong></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Créez des fonctions réutilisables pour ces calculs. Par exemple : <code>calculer_correspondance(sequence1, sequence2)</code>, <code>analyser_suspects(df)</code>…</p>
+</blockquote>
+<h3 id="4-résumé-et-visualisation-des-résultats">4. Résumé et visualisation des résultats</h3>
+<ul>
+<li>
+<p>Présentez les <strong>taux de correspondance</strong> dans un <strong>tableau synthèse</strong> (DataFrame).</p>
+</li>
+<li>
+<p><strong>Identifiez les suspects</strong> ayant les correspondances les plus élevées.</p>
+</li>
+<li>
+<p>Représentez les résultats avec :</p>
+<ul>
+<li>Un <strong>diagramme à barres</strong> (correspondance par locus, par suspect)</li>
+<li>Des <strong>barres d’erreur</strong> illustrant l’incertitude estimée (±5 %)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Créez une fonction pour générer ces graphiques à partir d’un DataFrame.</p>
+</blockquote>
+<h3 id="5-analyse-statistique-régression-linéaire">5. Analyse statistique (régression linéaire)</h3>
+<ul>
+<li>
+<p>Choisissez deux loci (ex. : Locus_1 et Locus_2).</p>
+</li>
+<li>
+<p>Utilisez <code>NumPy</code> pour :</p>
+<ul>
+<li>Obtenir la pente, l’interception, le R² et l’incertitude sur la pente.</li>
+<li>Tracer la droite de régression sur un nuage de points (scores par suspect).</li>
+<li>Afficher l&rsquo;équation de la droite et l’erreur sur la pente.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Vous pouvez créer une fonction comme <code>analyser_relation_loci(df, locus1, locus2)</code>.</p>
+</blockquote>
+<h3 id="6-interprétation-scientifique">6. Interprétation scientifique</h3>
+<p>Dans une section Markdown :</p>
+<ul>
+<li>
+<p><strong>Concluez</strong> sur les suspects les plus probables.</p>
+</li>
+<li>
+<p>Discutez de :</p>
+<ul>
+<li>La <strong>qualité des données</strong></li>
+<li>L&rsquo;impact des <strong>caractères manquants</strong></li>
+<li>La <strong>valeur explicative</strong> de vos analyses statistiques</li>
+<li>D’éventuelles <strong>améliorations</strong> (plus de loci, meilleure qualité des échantillons, approches bioinformatiques plus avancées…)</li>
+</ul>
+</li>
+</ul>
+<!--
+
+==================
+
+# Enquête scientifique par analyse d’ADN
+
+## Contexte
+
+Une scène de crime a été découverte dans un laboratoire. Des échantillons biologiques (contenant de l’ADN partiel) ont été récupérés sur place, mais les séquences sont **incomplètes ou partiellement contaminées**.
+
+Les enquêteurs ont recueilli l’ADN de 4 suspects. L’équipe médico-légale a analysé **trois loci distincts** (zones de l’ADN) pour chaque individu. Vous avez été mandaté pour **identifier le ou les suspects les plus susceptibles de correspondre à l’échantillon retrouvé**.
+
+Mais l’enquête ne s’arrête pas là : afin de renforcer l’analyse, vous devez également **évaluer la cohérence des correspondances entre loci** grâce à des **méthodes statistiques (régression linéaire)** et tenir compte de **l’incertitude biologique dans les séquences.**
+
+
+## Tâche attendue
+
+Votre mission, à supposer que vous l'acceptiez 😬, consiste à analyser des données scientifiques à l’aide de **Python**, afin d’en extraire des résultats fiables, illustrés par des graphiques clairs et rigoureux.
+
+Comme toujours, si vous ou l’un de vos collègues échouez dans cette tâche ou générez des erreurs d’exécution, l’enseignante niera toute responsabilité 😉.
+Ce bloc-notes pourrait bien s’autodétruire en cas de fautes de syntaxe critiques.
+
+Bonne chance... et que la science soit avec vous ! 😉
+
+Dans votre **rapport scientifique interactif** vous devrez:
+
+### 1. Nettoyer, analyser et structurer les données ADN
+
+* Comparer les séquences des suspects à celles de la scène de crime malgré les caractères manquants (`?`).
+* Calculer les pourcentages de correspondance pour chaque locus et la moyenne globale.
+
+### 2. Présenter vos résultats
+
+* Générer un tableau synthèse des taux de correspondance.
+* Identifier le ou les suspects les plus proches du profil génétique.
+
+### 3. Représenter les données avec des graphiques clairs
+
+* Créer un **diagramme à barres** montrant la correspondance pour chaque locus et chaque suspect.
+* Ajouter des **barres d’erreur** illustrant une incertitude estimée (ex: ±5 %).
+
+### 4. Utiliser la régression linéaire (scipy)
+
+* Évaluer la relation entre les scores de deux loci (ex. : `Locus_1` vs `Locus_2`).
+* Tracer la **droite de régression** avec l’équation et l’incertitude sur la pente.
+
+### 5. Discuter de vos résultats
+
+* Interprétez vos résultats avec rigueur.
+* Distinguez les suspects potentiels, discutez les limites méthodologiques et biologiques.
+* Proposez des pistes pour améliorer la précision de l’analyse.
+
+## Bonus (facultatif)
+
+Ajoutez une courte section **“Limites biologiques et bioinformatiques”** :
+
+* Quelles erreurs pourraient exister dans un contexte réel ?
+* Pourquoi la correspondance ADN n’est-elle pas une preuve absolue ?
+-->
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
+            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Lecture et écriture de fichiers textes (avec NumPy et Pandas)</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="parent " data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> Projet - Présentation, analyse et traduction</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine12/_index---copie/index.html"><a class="padding" href="/semaine12/_index---copie/index.html"><b>12-14</b> Projet - Présentation, analyse et traduction</a></li>
+            <li class="" data-nav-id="/semaine12/_old/v2/exercices_preparatoires/index.html"><a class="padding" href="/semaine12/_old/v2/exercices_preparatoires/index.html">exercices préparatoires progressifs</a></li>
+            <li class="" data-nav-id="/semaine12/grille/index.html"><a class="padding" href="/semaine12/grille/index.html">Grille d&#39;évaluation critériée</a></li>
+            <li class="" data-nav-id="/semaine12/_old/v1/notions_utiles_necessaires/index.html"><a class="padding" href="/semaine12/_old/v1/notions_utiles_necessaires/index.html">Notions et outils nécessaires pour réussir le projet</a></li>
+            <li class="" data-nav-id="/semaine12/competences_reussite/index.html"><a class="padding" href="/semaine12/competences_reussite/index.html">Notions nécessaires pour réussir le projet</a></li>
+            <li class="" data-nav-id="/semaine12/_old/v1/projet_integrateur/index.html"><a class="padding" href="/semaine12/_old/v1/projet_integrateur/index.html">Projet intégrateur</a></li></ul></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1760275881" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1760275881" defer></script>
+    <script src="/js/theme.js?1760275881" defer></script>
+  </body>
+</html>

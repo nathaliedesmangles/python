@@ -26,21 +26,21 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
     <meta itemprop="description" content="Objectifs Partie 1: Avec NumPy
 Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .txt et .csv. Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques. Partie 2: Avec Pandas
 Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le contenu des fichiers. Écrire des DataFrames pandas dans des fichiers .csv ou .txt. Manipuler les données lues sous forme de DataFrames Pandas pour faire des calculs scientifiques.">
-    <meta itemprop="wordCount" content="2874">
+    <meta itemprop="wordCount" content="3414">
     <title> Lecture et écriture de fichiers textes (avec NumPy et Pandas) :: 420-SN1-RE</title>
     <link href="/semaine9/index.xml" rel="alternate" type="application/rss+xml" title=" Lecture et écriture de fichiers textes (avec NumPy et Pandas) :: 420-SN1-RE">
-    <link href="/images/logo.png?1760221346" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760221346" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760221346" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1760221346" rel="stylesheet">
-    <link href="/css/theme.min.css?1760221346" rel="stylesheet">
-    <link href="/css/format-html.min.css?1760221346" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1760221346" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1760221346" defer></script>
-    <script src="/js/lunr/lunr.min.js?1760221346" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1760221346" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1760221346" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1760221346" defer></script>
-    <script src="/js/search.min.js?1760221346" defer></script>
+    <link href="/images/logo.png?1760302026" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760302026" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760302026" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1760302026" rel="stylesheet">
+    <link href="/css/theme.min.css?1760302026" rel="stylesheet">
+    <link href="/css/format-html.min.css?1760302026" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1760302026" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1760302026" defer></script>
+    <script src="/js/lunr/lunr.min.js?1760302026" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1760302026" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1760302026" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1760302026" defer></script>
+    <script src="/js/search.min.js?1760302026" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -50,7 +50,7 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1760221346";
+      window.relearn.index_js_url="/searchindex.en.js?1760302026";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -96,7 +96,7 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1760221346" rel="stylesheet">
+    <link href="/css/custom.css?1760302026" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine9/index.html">
     <div id="R-body" class="default-animation">
@@ -126,6 +126,9 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
         <li><a href="#exercice-4-pandas">Exercice 4 (Pandas)</a></li>
         <li><a href="#exercice-5-pandas">Exercice 5 (Pandas)</a></li>
         <li><a href="#exercice-6-pandas">Exercice 6 (Pandas)</a></li>
+        <li><a href="#exercice-7-pandas">Exercice 7 (Pandas)</a></li>
+        <li><a href="#exercice-8-pandas-et-numpy">Exercice 8 (Pandas et NumPy)</a></li>
+        <li><a href="#exercice-9-pandas">Exercice 9 (Pandas)</a></li>
       </ul>
     </li>
   </ul>
@@ -166,6 +169,9 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
       </ul>
     </li>
     <li><a href="#résumé-pour-la-gestion-des-valeurs-manquantes">Résumé pour la gestion des valeurs manquantes</a></li>
+    <li><a href="#sélection-de-données-dans-un-dataframe-avec-iloc">Sélection de données dans un DataFrame avec <code>iloc</code></a></li>
+    <li><a href="#conversion-dune-colonne-ou-n-dataframe-en-tableau-numpy-avec-to_numpy">Conversion d&rsquo;une colonne ou n DataFrame en tableau NumPy avec <code>.to_numpy()</code></a></li>
+    <li><a href="#parcourir-les-lignes-dun-dataframe-avec-iterrows">Parcourir les lignes d&rsquo;un DataFrame avec <code>.iterrows()</code></a></li>
   </ul>
 
   <ul>
@@ -246,25 +252,20 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
 <h1 id="exercices">Exercices</h1>
 <h2 id="fichiers-de-départ-à-utiliser">Fichiers de départ à utiliser</h2>
 <ol>
-<li>Cliquez sur le lien pour télécharger les fichiers.<br>
-<a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_np.ipynb" rel="external" target="_blank">Bloc-notes de départ - NumPy</a><br>
-<a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb" rel="external" target="_blank">Bloc-notes de départ - Pandas</a></li>
-<li>Télécharger le fichier de données (<code>.csv</code>): <a href="/semaine9/temperatures.csv">temperatures.csv</a>
+<li>Cliquez sur les liens pour télécharger les fichiers (<code>.ipynb</code>, <code>.csv</code> et <code>.txt</code>).<br>
+<a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_np.ipynb" rel="external" target="_blank"><strong>Bloc-notes de départ - NumPy</strong></a><br>
+<a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb" rel="external" target="_blank"><strong>Bloc-notes de départ - Pandas</strong></a><br>
+<strong>Fichiers de donnnées</strong> :
 <ul>
-<li>Il contient un jeu de données météorologiques prévisibles pour Bâle (France).</li>
+<li><a href="/semaine9/temperatures.csv"><strong>temperatures.csv</strong></a> : données météorologiques prévisibles pour Bâle (France).<br></li>
+<li><a href="/semaine9/etudiants.csv"><strong>etudiants.csv</strong></a> : 3 colonnes : <code>Nom,Âge,Note</code>.<br></li>
+<li><a href="/semaine9/solubilite_sel.csv"><strong>solubilite_sel.csv</strong></a> : 2 colonnes : <code>temperature,solubilite</code>.<br></li>
+<li><a href="/semaine9/plantes.csv"><strong>plantes.csv</strong></a> : 3 colonnes : <code>Nom,Hauteur_cm,Teneur_eau_%</code>.<br></li>
+<li><a href="/semaine9/solutions.csv"><strong>solutions.csv</strong></a> : 2 colonnes : <code>Temp_C,Concentration_mol_L</code>.<br></li>
+<li><a href="/semaine9/mineraux.csv"><strong>mineraux.csv</strong></a> : 2 colonnes : <code>Nom,Densité</code>.<br></li>
+<li><a href="/semaine9/experience.txt"><strong>experience.txt</strong></a>. Une fois ouvert, faites un clic-droit et choisir <em><strong>Enregistrer sous</strong></em> pour enregistrer le fichier dans votre dossier <strong>exercices</strong>.</li>
 </ul>
 </li>
-<li>Téléchargez le fichier de données (<code>.csv</code>): <a href="/semaine9/etudiants.csv">etudiants.csv</a>
-<ul>
-<li>Il contenant 3 colonnes : <code>Nom,Âge,Note</code>.</li>
-</ul>
-</li>
-<li>Téléchargez le fichier de données (<code>.csv</code>): <a href="/semaine9/solubilite_sel.csv">solubilite_sel.csv</a>
-<ul>
-<li>Il contenant 2 colonnes : <code>temperature,solubilite</code>.</li>
-</ul>
-</li>
-<li>Cliquer sur le lien du fichier de données (<code>.txt</code>): <a href="/semaine9/experience.txt">experience.txt</a>. Une fois ouvert, faites un clic-droit et choisir <em><strong>Enregistrer sous</strong></em> pour enregistrer le fichier dans votre dossier <strong>exercices</strong>.</li>
 <li>Enregistrez les fichiers dans votre dossier <strong>exercices</strong> de la semaine en cours <strong>(au même endroit que votre fichier .ipynb)</strong>.</li>
 <li>Ouvrez <strong>Visual Studio Code</strong>.</li>
 <li>Dans VS Code, recherchez et ouvrez les fichiers <code>exercices_fichiers_np.ipynb</code> et <code>exercices_fichiers_pd.ipynb</code>.</li>
@@ -357,8 +358,8 @@ Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le conte
 <li>Choisissez un format de nombres lisible (<code>fmt=&quot;%.2f&quot;</code> par exemple).</li>
 <li>Vérifier le contenu du fichier <code>temperature_K.csv</code> (données en K). Vous devriez voir ceci (partiel):</li>
 </ul>
-<p><a href="#R-image-4942022d5e1007a8b5c0538f71e8a3dc" class="lightbox-link"><img alt="Températures en K" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/tempK_csv.png?width=15vw&height=25vw" style=" height: 25vw; width: 15vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4942022d5e1007a8b5c0538f71e8a3dc"><img alt="Températures en K" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/tempK_csv.png?width=15vw&height=25vw"></a></p>
+<p><a href="#R-image-11a3860546ab3dace4cd25e32632ac38" class="lightbox-link"><img alt="Températures en K" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/tempK_csv.png?width=15vw&height=25vw" style=" height: 25vw; width: 15vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-11a3860546ab3dace4cd25e32632ac38"><img alt="Températures en K" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/tempK_csv.png?width=15vw&height=25vw"></a></p>
 </li>
 </ol>
 <p><strong>Résultats</strong> :</p>
@@ -537,8 +538,68 @@ Données après traitement :
 4           40       38.80
 5           50       36.88
 6           60       42.00</code></pre></div>
-<p><a href="#R-image-706bfc711293c4fade03386ca7cd077c" class="lightbox-link"><img alt="Solubilité vs température" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/solubilite_temp.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-706bfc711293c4fade03386ca7cd077c"><img alt="Solubilité vs température" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/solubilite_temp.png?width=35vw"></a></p>
+<p><a href="#R-image-a34bead9218e5bdc6599dabf6b983597" class="lightbox-link"><img alt="Solubilité vs température" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/solubilite_temp.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a34bead9218e5bdc6599dabf6b983597"><img alt="Solubilité vs température" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/solubilite_temp.png?width=35vw"></a></p>
+<h3 id="exercice-7-pandas">Exercice 7 (Pandas)</h3>
+<p>Cet exercice vous fait naviguer dans un tableau avant d’en extraire ou comparer des valeurs.</p>
+<ol>
+<li>Lire le fichier <code>plantes.csv</code> contenant les colonnes <code>Nom</code>, <code>Hauteur_cm</code>, <code>Teneur_eau_%</code>.</li>
+<li>Afficher la 5e ligne complète.</li>
+<li>Afficher uniquement la colonne de la hauteur.</li>
+<li>Afficher les 3 premières plantes et leurs deux premières colonnes.</li>
+</ol>
+<p><strong>Résultats</strong>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>5e ligne complète :
+Nom             Bambou
+Hauteur_cm         180
+Teneur_eau_%        75
+Name: 4, dtype: object
+
+Colonne Hauteur_cm :
+0     45
+1     30
+2     12
+3     28
+4    180
+5     25
+6     35
+Name: Hauteur_cm, dtype: int64
+
+3 premières plantes, 2 premières colonnes :
+        Nom  Hauteur_cm
+0   Fougère          45
+1  Orchidée          30
+2    Cactus          12</code></pre></div>
+<h3 id="exercice-8-pandas-et-numpy">Exercice 8 (Pandas et NumPy)</h3>
+<p>Cet exercice prépare à faire des analyses et régressions à partir de données réelles.</p>
+<ol>
+<li>Lire un fichier <code>solutions.csv</code> contenant des colonnes <code>Temp_C</code> et <code>Concentration_mol_L</code>.</li>
+<li>Convertir ces deux colonnes en tableaux NumPy.</li>
+<li>Calculer la moyenne et l’écart-type de la concentration.</li>
+<li>Créer un graphique <code>Temp_C</code> vs <code>Concentration_mol_L</code> avec <code>plt.plot()</code>.</li>
+</ol>
+<p><strong>Résultats</strong>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code> Concentration moyenne : 0.1742857142857143
+Écart-type : 0.05447335989982177</code></pre></div>
+<p><a href="#R-image-4571477d9c858221a450909104288e8b" class="lightbox-link"><img alt="Tempéraure vs Concentration" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/temp_conc.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4571477d9c858221a450909104288e8b"><img alt="Tempéraure vs Concentration" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/temp_conc.png?width=35vw"></a></p>
+<h3 id="exercice-9-pandas">Exercice 9 (Pandas)</h3>
+<p>Cet exercice aide à comprendre comment analyser chaque ligne d’un jeu de données et enrichir le tableau.</p>
+<ol>
+<li>Lire le fichier <code>minéraux.csv</code> contenant les colonnes <code>Nom</code> et <code>Densité</code>.</li>
+<li>Parcourir le DataFrame avec <code>.iterrows()</code>.</li>
+<li>Afficher <code>&quot;léger&quot;</code> si la densité &lt; 3, sinon <code>&quot;lourd&quot;</code>.</li>
+<li>Ajouter une nouvelle colonne <code>Catégorie</code> contenant ces valeurs, puis affiche le tableau final.</li>
+</ol>
+<p><strong>Résultats</strong>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>        Nom  Densité Catégorie
+0    Quartz     2.65     léger
+1    Galène     7.50     lourd
+2   Calcite     2.71     léger
+3    Pyrite     5.02     lourd
+4     Gypse     2.30     léger
+5  Hématite     5.25     lourd
+6      Mica     2.83     léger</code></pre></div>
 <hr>
 <h1 id="cours">Cours</h1>
 <h2 id="pourquoi-lire-et-écrire-des-fichiers-">Pourquoi lire et écrire des fichiers ?</h2>
@@ -915,6 +976,85 @@ dtype: int64</code></pre></div>
 </tr>
 </tbody>
 </table>
+<h2 id="sélection-de-données-dans-un-dataframe-avec-iloc">Sélection de données dans un DataFrame avec <code>iloc</code></h2>
+<ul>
+<li>
+<p><code>iloc</code> permet de <strong>sélectionner des <strong>lignes</strong> ou des <strong>colonnes</strong> selon leur position (index numérique)</strong> plutôt que leur nom.</p>
+</li>
+<li>
+<p>C’est pratique quand on ne connaît pas les noms des colonnes ou qu’on veut simplement accéder à une portion du tableau.</p>
+<ul>
+<li><code>df.iloc[0]</code> → première ligne</li>
+<li><code>df.iloc[:, 1]</code> → toute la 2ᵉ colonne</li>
+<li><code>df.iloc[2:5, 0:2]</code> → lignes 2 à 4 et colonnes 0 et 1</li>
+</ul>
+</li>
+</ul>
+<p><strong>Exemple</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Espèce&#34;</span>: [<span style="color:#e6db74">&#34;Truite&#34;</span>, <span style="color:#e6db74">&#34;Saumon&#34;</span>, <span style="color:#e6db74">&#34;Perchaude&#34;</span>, <span style="color:#e6db74">&#34;Brochet&#34;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Longueur_cm&#34;</span>: [<span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">52</span>, <span style="color:#ae81ff">27</span>, <span style="color:#ae81ff">61</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Masse_g&#34;</span>: [<span style="color:#ae81ff">450</span>, <span style="color:#ae81ff">1500</span>, <span style="color:#ae81ff">320</span>, <span style="color:#ae81ff">2200</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>poissons <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affiche la 2e ligne (index 1)</span>
+</span></span><span style="display:flex;"><span>print(poissons<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affiche la première colonne</span>
+</span></span><span style="display:flex;"><span>print(poissons<span style="color:#f92672">.</span>iloc[:, <span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affiche les 2 premières lignes et colonnes</span>
+</span></span><span style="display:flex;"><span>print(poissons<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">2</span>])</span></span></code></pre></div>
+<h2 id="conversion-dune-colonne-ou-n-dataframe-en-tableau-numpy-avec-to_numpy">Conversion d&rsquo;une colonne ou n DataFrame en tableau NumPy avec <code>.to_numpy()</code></h2>
+<ul>
+<li><code>.to_numpy()</code> transforme une <strong>colonne ou un DataFrame en tableau NumPy</strong>, ce qui permet d’utiliser les fonctions mathématiques rapides de NumPy (<code>mean</code>, <code>std</code>, <code>polyfit</code>, etc.).</li>
+</ul>
+<p><strong>Exemple</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Température_C&#34;</span>: [<span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">23</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Taux_croissance&#34;</span>: [<span style="color:#ae81ff">1.2</span>, <span style="color:#ae81ff">1.8</span>, <span style="color:#ae81ff">2.3</span>, <span style="color:#ae81ff">2.9</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>plantes <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Convertir en tableau NumPy</span>
+</span></span><span style="display:flex;"><span>t <span style="color:#f92672">=</span> plantes[<span style="color:#e6db74">&#34;Température_C&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> plantes[<span style="color:#e6db74">&#34;Taux_croissance&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calculs avec NumPy</span>
+</span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>mean(r)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Croissance moyenne :&#34;</span>, moyenne)</span></span></code></pre></div>
+<h2 id="parcourir-les-lignes-dun-dataframe-avec-iterrows">Parcourir les lignes d&rsquo;un DataFrame avec <code>.iterrows()</code></h2>
+<ul>
+<li><code>.iterrows()</code> permet de <strong>parcourir chaque ligne d’un DataFrame</strong> dans une boucle <code>for</code>.</li>
+<li>C’est utile pour faire des vérifications ou des calculs ligne par ligne.</li>
+<li>Chaque itération retourne :
+<ul>
+<li>l’<strong>index de la ligne</strong></li>
+<li>la <strong>ligne elle-même</strong> (comme une mini-série Pandas)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Exemple</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Échantillon&#34;</span>: [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;pH&#34;</span>: [<span style="color:#ae81ff">6.5</span>, <span style="color:#ae81ff">7.2</span>, <span style="color:#ae81ff">8.1</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>eau <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> index, ligne <span style="color:#f92672">in</span> eau<span style="color:#f92672">.</span>iterrows():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> ligne[<span style="color:#e6db74">&#34;pH&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">7</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Échantillon </span><span style="color:#e6db74">{</span>ligne[<span style="color:#e6db74">&#39;Échantillon&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> : basique&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Échantillon </span><span style="color:#e6db74">{</span>ligne[<span style="color:#e6db74">&#39;Échantillon&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74"> : acide ou neutre&#34;</span>)</span></span></code></pre></div>
 <hr>
 <h1 id="atelier">Atelier</h1>
 <ol>
@@ -990,8 +1130,8 @@ dtype: int64</code></pre></div>
 <li>Ajoutez les titres et les étiquettes d’axes.</li>
 <li>Personnalisez les couleurs selon la qualité.</li>
 </ul>
-<p><a href="#R-image-63600859297fdf899543880f21eed331" class="lightbox-link"><img alt="Oxygène par site" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/oxygene_sites.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-63600859297fdf899543880f21eed331"><img alt="Oxygène par site" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/oxygene_sites.png?width=35vw"></a></p>
+<p><a href="#R-image-b36ca25d4d14a66dfcebf76848328f4b" class="lightbox-link"><img alt="Oxygène par site" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/oxygene_sites.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b36ca25d4d14a66dfcebf76848328f4b"><img alt="Oxygène par site" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/oxygene_sites.png?width=35vw"></a></p>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <blockquote>
@@ -1084,8 +1224,8 @@ dtype: int64</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1760221346" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1760221346" defer></script>
-    <script src="/js/theme.min.js?1760221346" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1760302026" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1760302026" defer></script>
+    <script src="/js/theme.min.js?1760302026" defer></script>
   </body>
 </html>

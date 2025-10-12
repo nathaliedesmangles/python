@@ -38,21 +38,22 @@ draft = false
 
 ## Fichiers de départ à utiliser
 
-1. Cliquez sur le lien pour télécharger les fichiers.  
-[Bloc-notes de départ - NumPy](https://python-a25.netlify.app/blocnotes/exercices_fichiers_np.ipynb)  
-[Bloc-notes de départ - Pandas](https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb)  
-3. Télécharger le fichier de données (`.csv`): [temperatures.csv](./temperatures.csv)
-   * Il contient un jeu de données météorologiques prévisibles pour Bâle (France).
-4. Téléchargez le fichier de données (`.csv`): [etudiants.csv](./etudiants.csv)
-   * Il contenant 3 colonnes : `Nom,Âge,Note`.
-5. Téléchargez le fichier de données (`.csv`): [solubilite_sel.csv](./solubilite_sel.csv)
-   * Il contenant 2 colonnes : `temperature,solubilite`.
-6. Cliquer sur le lien du fichier de données (`.txt`): [experience.txt](./experience.txt). Une fois ouvert, faites un clic-droit et choisir ***Enregistrer sous*** pour enregistrer le fichier dans votre dossier **exercices**.
-7. Enregistrez les fichiers dans votre dossier **exercices** de la semaine en cours **(au même endroit que votre fichier .ipynb)**.
-8. Ouvrez **Visual Studio Code**.
-9. Dans VS Code, recherchez et ouvrez les fichiers `exercices_fichiers_np.ipynb` et `exercices_fichiers_pd.ipynb`.
-10. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
-11. Vous pouvez commencer à faire les exercices.
+1. Cliquez sur les liens pour télécharger les fichiers (`.ipynb`, `.csv` et `.txt`).  
+[**Bloc-notes de départ - NumPy**](https://python-a25.netlify.app/blocnotes/exercices_fichiers_np.ipynb)  
+[**Bloc-notes de départ - Pandas**](https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb)  
+**Fichiers de donnnées** :   
+	* [**temperatures.csv**](./temperatures.csv) : données météorologiques prévisibles pour Bâle (France).<br>
+	* [**etudiants.csv**](./etudiants.csv) : 3 colonnes : `Nom,Âge,Note`.<br>
+	* [**solubilite_sel.csv**](./solubilite_sel.csv) : 2 colonnes : `temperature,solubilite`.<br>
+	* [**plantes.csv**](./plantes.csv) : 3 colonnes : `Nom,Hauteur_cm,Teneur_eau_%`.<br>
+	* [**solutions.csv**](./solutions.csv) : 2 colonnes : `Temp_C,Concentration_mol_L`.<br>
+	* [**mineraux.csv**](./mineraux.csv) : 2 colonnes : `Nom,Densité`.<br>
+	* [**experience.txt**](./experience.txt). Une fois ouvert, faites un clic-droit et choisir ***Enregistrer sous*** pour enregistrer le fichier dans votre dossier **exercices**.
+2. Enregistrez les fichiers dans votre dossier **exercices** de la semaine en cours **(au même endroit que votre fichier .ipynb)**.
+3. Ouvrez **Visual Studio Code**.
+4. Dans VS Code, recherchez et ouvrez les fichiers `exercices_fichiers_np.ipynb` et `exercices_fichiers_pd.ipynb`.
+5. Assurez-vous que le noyau Python (`Kernel`) soit sélectionné.
+6. Vous pouvez commencer à faire les exercices.
 
 ## Exercices
 
@@ -277,7 +278,6 @@ temperature,solubilite
 6. **Tracer un graphique** (`plot()`) de la **solubilité** en fonction de la **température** pour visualiser le résultat.
 
 **Résultats** :
-
 ```
 Valeurs manquantes :
    temperature  solubilite
@@ -302,6 +302,80 @@ Données après traitement :
 ```
 
 ![Solubilité vs température](./solubilite_temp.png?width=35vw)
+
+### Exercice 7 (Pandas)
+
+Cet exercice vous fait naviguer dans un tableau avant d’en extraire ou comparer des valeurs.
+
+1. Lire le fichier `plantes.csv` contenant les colonnes `Nom`, `Hauteur_cm`, `Teneur_eau_%`.
+2. Afficher la 5e ligne complète.
+3. Afficher uniquement la colonne de la hauteur.
+4. Afficher les 3 premières plantes et leurs deux premières colonnes.
+
+**Résultats**:
+```
+5e ligne complète :
+Nom             Bambou
+Hauteur_cm         180
+Teneur_eau_%        75
+Name: 4, dtype: object
+
+Colonne Hauteur_cm :
+0     45
+1     30
+2     12
+3     28
+4    180
+5     25
+6     35
+Name: Hauteur_cm, dtype: int64
+
+3 premières plantes, 2 premières colonnes :
+        Nom  Hauteur_cm
+0   Fougère          45
+1  Orchidée          30
+2    Cactus          12
+```
+
+### Exercice 8 (Pandas et NumPy)
+
+Cet exercice prépare à faire des analyses et régressions à partir de données réelles.
+
+1. Lire un fichier `solutions.csv` contenant des colonnes `Temp_C` et `Concentration_mol_L`.
+2. Convertir ces deux colonnes en tableaux NumPy.
+3. Calculer la moyenne et l’écart-type de la concentration.
+4. Créer un graphique `Temp_C` vs `Concentration_mol_L` avec `plt.plot()`.
+
+**Résultats**:
+```
+ Concentration moyenne : 0.1742857142857143
+Écart-type : 0.05447335989982177
+```
+![Tempéraure vs Concentration](./temp_conc.png?width=35vw)
+
+
+### Exercice 9 (Pandas)
+
+Cet exercice aide à comprendre comment analyser chaque ligne d’un jeu de données et enrichir le tableau.
+
+1. Lire le fichier `minéraux.csv` contenant les colonnes `Nom` et `Densité`.
+2. Parcourir le DataFrame avec `.iterrows()`.
+3. Afficher `"léger"` si la densité < 3, sinon `"lourd"`.
+4. Ajouter une nouvelle colonne `Catégorie` contenant ces valeurs, puis affiche le tableau final.
+
+
+**Résultats**:
+```
+        Nom  Densité Catégorie
+0    Quartz     2.65     léger
+1    Galène     7.50     lourd
+2   Calcite     2.71     léger
+3    Pyrite     5.02     lourd
+4     Gypse     2.30     léger
+5  Hématite     5.25     lourd
+6      Mica     2.83     léger
+```
+
 
 ---
 
@@ -697,6 +771,89 @@ df['solubilite'] = df['solubilite'].fillna(moyenne)
 | Compter le total des valeurs manquantes             | `df.isna().sum().sum()` | —                   | total              |
 | Remplacer les valeurs manquantes                    | `fillna()`              | `df.fillna(valeur)` | Tableau sans NaN   |
 
+
+## Sélection de données dans un DataFrame avec `iloc`
+
+* `iloc` permet de **sélectionner des **lignes** ou des **colonnes** selon leur position (index numérique)** plutôt que leur nom.
+* C’est pratique quand on ne connaît pas les noms des colonnes ou qu’on veut simplement accéder à une portion du tableau.
+
+	* `df.iloc[0]` → première ligne
+	* `df.iloc[:, 1]` → toute la 2ᵉ colonne
+	* `df.iloc[2:5, 0:2]` → lignes 2 à 4 et colonnes 0 et 1
+
+**Exemple** :
+```python
+import pandas as pd
+
+data = {
+    "Espèce": ["Truite", "Saumon", "Perchaude", "Brochet"],
+    "Longueur_cm": [35, 52, 27, 61],
+    "Masse_g": [450, 1500, 320, 2200]
+}
+
+poissons = pd.DataFrame(data)
+
+# Affiche la 2e ligne (index 1)
+print(poissons.iloc[1])
+
+# Affiche la première colonne
+print(poissons.iloc[:, 0])
+
+# Affiche les 2 premières lignes et colonnes
+print(poissons.iloc[0:2, 0:2])
+```
+
+## Conversion d'une colonne ou n DataFrame en tableau NumPy avec `.to_numpy()`
+
+* `.to_numpy()` transforme une **colonne ou un DataFrame en tableau NumPy**, ce qui permet d’utiliser les fonctions mathématiques rapides de NumPy (`mean`, `std`, `polyfit`, etc.).
+
+**Exemple** :
+
+```python
+import pandas as pd
+import numpy as np
+
+data = {
+    "Température_C": [15, 18, 20, 23],
+    "Taux_croissance": [1.2, 1.8, 2.3, 2.9]
+}
+plantes = pd.DataFrame(data)
+
+# Convertir en tableau NumPy
+t = plantes["Température_C"].to_numpy()
+r = plantes["Taux_croissance"].to_numpy()
+
+# Calculs avec NumPy
+moyenne = np.mean(r)
+print("Croissance moyenne :", moyenne)
+```
+
+
+## Parcourir les lignes d'un DataFrame avec `.iterrows()`
+
+* `.iterrows()` permet de **parcourir chaque ligne d’un DataFrame** dans une boucle `for`. 
+* C’est utile pour faire des vérifications ou des calculs ligne par ligne.
+* Chaque itération retourne :
+	* l’**index de la ligne**
+	* la **ligne elle-même** (comme une mini-série Pandas)
+
+**Exemple** : 
+
+```python
+import pandas as pd
+
+data = {
+    "Échantillon": ["A", "B", "C"],
+    "pH": [6.5, 7.2, 8.1]
+}
+eau = pd.DataFrame(data)
+
+for index, ligne in eau.iterrows():
+    if ligne["pH"] > 7:
+        print(f"Échantillon {ligne['Échantillon']} : basique")
+    else:
+        print(f"Échantillon {ligne['Échantillon']} : acide ou neutre")
+```
 
 ---
 

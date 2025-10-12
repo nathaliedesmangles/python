@@ -146,4 +146,82 @@ plt.title("Solubilité d’un sel en fonction de la température")
 plt.show()
 ```
 
+## Exercice 7 (Pandas)
+
+```python
+import pandas as pd
+
+# Lecture du fichier CSV
+plantes = pd.read_csv("plantes.csv")
+
+# 1. Affiche la 5e ligne (index 4 car on commence à 0)
+print("5e ligne complète :")
+print(plantes.iloc[4])
+
+# 2. Affiche uniquement la colonne de la hauteur
+print()
+print("Colonne Hauteur_cm :")
+print(plantes.iloc[:, 1])  # colonne à l'index 1
+
+# 3. Affiche les 3 premières lignes et les 2 premières colonnes
+print()
+print("3 premières plantes, 2 premières colonnes :")
+print(plantes.iloc[0:3, 0:2])
+```
+
+## Exercice 8 (Pandas et NumPy)
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Lecture du fichier
+solutions = pd.read_csv("solutions.csv")
+
+# 1. Conversion en tableaux NumPy
+T = solutions["Temp_C"].to_numpy()
+C = solutions["Concentration_mol_L"].to_numpy()
+
+# 2. Calcul de la moyenne et de l’écart-type
+moyenne = np.mean(C)
+ecart_type = np.std(C)
+
+print("Concentration moyenne :", moyenne)
+print("Écart-type :", ecart_type)
+
+# 3. Graphique de concentration en fonction de la température
+plt.plot(T, C, "o-", label="Données expérimentales")
+plt.xlabel("Température (°C)")
+plt.ylabel("Concentration (mol/L)")
+plt.title("Variation de la concentration avec la température")
+plt.legend()
+plt.show()
+```
+
+
+## Exercice 9 (Pandas)
+
+```python
+import pandas as pd
+
+# Lecture du fichier
+mineraux = pd.read_csv("mineraux.csv")
+
+# Liste vide pour stocker les catégories
+categories = []
+
+# 1-2. Parcours du DataFrame et classification
+for index, ligne in mineraux.iterrows():
+    if ligne["Densité"] < 3:
+        categories.append("léger")
+    else:
+        categories.append("lourd")
+
+# 3. Ajout d'une nouvelle colonne
+mineraux["Catégorie"] = categories
+
+# Affiche le tableau final
+print(mineraux)
+```
 

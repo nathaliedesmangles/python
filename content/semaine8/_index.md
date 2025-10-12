@@ -15,9 +15,38 @@ draft = false
 * Visualiser graphiquement l’incertitude ou la variabilité des mesures à l'aide de barres d'erreur.
 * Modéliser une relation entre deux données à l'aide d'une droite de régression linéaire.
 
-## Fichier .ipynb pour la démo en classe
+## Fichiers .ipynb pour la démo en classe
 
-[Fichier utilisé pour la démonstration](https://python-a25.netlify.app/blocnotes/demo_numpy_reg.ipynb)
+[Bloc-note 1: base](https://python-a25.netlify.app/blocnotes/demo_numpy_creation_fonctions.ipynb)
+[Bloc-note 2: base](https://python-a25.netlify.app/blocnotes/demo_numpy_operations_nan.ipynb)
+[Bloc-note 3: base](https://python-a25.netlify.app/blocnotes/demo_numpy_filtrage_graphiques.ipynb)
+
+## **Bloc-notes 1 – `demo_numpy_creation_fonctions.ipynb`**
+
+* Création de tableaux (`np.array`, `np.arange`, `np.linspace`, `np.ones`, `np.zeros`)
+* Fonctions mathématiques (`np.sqrt`, `np.cbrt`, `np.exp`, `np.log`, `np.log2`, `np.log10`)
+* Fonctions statistiques (`np.sum`, `np.prod`, `np.max`, `np.min`, `np.mean`, `np.median`, `np.var`, `np.std`)
+* Fonctions trigonométriques (`np.sin`, `np.cos`, `np.tan`, `np.arcsin`, `np.arccos`, `np.arctan`, `np.deg2rad`, `np.rad2deg`)
+* Différences consécutives (`np.diff`)
+* Opérations vectorisées et arithmétiques élément par élément
+
+
+## **Bloc-notes 2 – `demo_numpy_operations_nan.ipynb`**
+
+* Ignorer des valeurs manquantes (`np.nan`, `np.nanmean`, `np.nansum`, etc.)
+* Découpage et slicing simple (`[début:fin]`, `[début:fin:pas]`, `[:]`).
+* Récapitulatif des syntaxes de slicing et indexation pour 1D et 2D.
+* Exercices simples sur NaN et slicing.
+
+
+## **Bloc-notes 3 – `demo_numpy_filtrage_graphiques.ipynb`**
+
+* Filtrage de données avec conditions (`tableau[condition]`, `np.sum(condition)`)
+* Filtrage avec `np.where()`
+* Graphiques avec barres d’erreur (`plt.errorbar`)
+* Régression linéaire (`np.polyfit`) et coefficient de détermination `R²`
+* Exercices pour manipuler filtres, graphiques et régression
+
 
 ---
 
@@ -393,7 +422,7 @@ C’est ce qu’on appelle l’**indexation** et le **slicing (tranches)**.
 
 Soit le tableau `t = np.array([10, 20, 30, 40, 50])`
 
-#### 1. Tranches `[start:end]`
+#### 1. Tranches `[début:fin]`
 
 * `t[début:fin]` retourne les éléments du tableau **de l’indice `début` inclus** jusqu’à **`fin` exclu**.
 * Cela permet d’extraire une **portion du tableau**.
@@ -638,8 +667,21 @@ plt.show()
 
 ### Évaluer la qualité de la régression
 
-Pour savoir si la droite correspond bien aux données, on peut calculer le **coefficient de corrélation R²**.
+Pour savoir si la droite correspond bien aux données, on peut calculer le **coefficient de détermination R²**.
 Plus R² est proche de **1**, meilleure est la correspondance.
+$$
+  0 \le R^2 \le 1
+$$
+
+  * ( R² = 1 ) → le modèle explique **toute** la variation de ( y )
+  * ( R² = 0 ) → le modèle **n’explique rien**
+
+**Formule du coefficient R²** : 
+$$
+R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}
+$$
+
+**Avec Python** : 
 
 ```python
 # Calcul de R²

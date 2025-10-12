@@ -1,0 +1,259 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "e0ecb700",
+   "metadata": {},
+   "source": [
+    "\n",
+    "# 📈 Demo NumPy – Carnet 3 (version étudiante)\n",
+    "## Graphiques et régression linéaire\n",
+    "Ce carnet te permettra de pratiquer :\n",
+    "- la création de graphiques avec `matplotlib`,\n",
+    "- l’ajout de barres d’erreur,\n",
+    "- la personnalisation d’un graphique,\n",
+    "- et la régression linéaire avec NumPy.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3fe383cf",
+   "metadata": {},
+   "source": [
+    "\n",
+    "## 1. Création d’un graphique simple\n",
+    "On utilise la bibliothèque **Matplotlib** pour représenter les données.  \n",
+    "La fonction la plus utilisée est `plt.plot()`.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "41bd342a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "x = np.array([0, 1, 2, 3, 4, 5])\n",
+    "y = np.array([0, 1, 4, 9, 16, 25])\n",
+    "\n",
+    "plt.plot(x, y, marker='o')\n",
+    "plt.title(\"Carré de x\")\n",
+    "plt.xlabel(\"x\")\n",
+    "plt.ylabel(\"x²\")\n",
+    "plt.show()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fbc15236",
+   "metadata": {},
+   "source": [
+    "\n",
+    "💡 **Astuce :**  \n",
+    "- `marker='o'` ajoute des points visibles.  \n",
+    "- Tu peux aussi utiliser `plt.scatter(x, y)` pour un nuage de points.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ef2b1676",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# 🧠 Exercice :\n",
+    "# Crée un graphique représentant y = 2x + 1 pour x = 0 à 10.\n",
+    "\n",
+    "# Ton code ici ↓\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1da9c553",
+   "metadata": {},
+   "source": [
+    "\n",
+    "## 2. Ajout de barres d’erreur\n",
+    "Les barres d’erreur indiquent l’incertitude sur les mesures.  \n",
+    "On les ajoute avec la fonction `plt.errorbar()`.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "74154c4d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "x = np.array([1, 2, 3, 4, 5])\n",
+    "y = np.array([2.1, 4.3, 5.8, 8.2, 10.1])\n",
+    "erreur = np.array([0.2, 0.3, 0.2, 0.4, 0.3])\n",
+    "\n",
+    "plt.errorbar(x, y, yerr=erreur, fmt='o', capsize=5)\n",
+    "plt.title(\"Mesures expérimentales avec barres d’erreur\")\n",
+    "plt.xlabel(\"x\")\n",
+    "plt.ylabel(\"y mesuré\")\n",
+    "plt.show()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "28f9e6cf",
+   "metadata": {},
+   "source": [
+    "\n",
+    "💡 **Astuce :**  \n",
+    "- `yerr` = hauteur des barres d’erreur.  \n",
+    "- `fmt='o'` = points, `capsize` = taille des barres horizontales.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "95ca6b17",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# 🔧 Exercice :\n",
+    "# Trace un graphique avec des barres d’erreur de ton choix.\n",
+    "\n",
+    "# Ton code ici ↓\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d24dad40",
+   "metadata": {},
+   "source": [
+    "\n",
+    "## 3. Personnalisation du graphique\n",
+    "On peut ajouter un titre, des axes et une légende.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0667d008",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "x = np.linspace(0, 10, 50)\n",
+    "y1 = x\n",
+    "y2 = x**2\n",
+    "\n",
+    "plt.plot(x, y1, label=\"y = x\")\n",
+    "plt.plot(x, y2, label=\"y = x²\")\n",
+    "plt.title(\"Comparaison de deux fonctions\")\n",
+    "plt.xlabel(\"x\")\n",
+    "plt.ylabel(\"Valeur de y\")\n",
+    "plt.legend()\n",
+    "plt.grid(True)\n",
+    "plt.show()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e36ed20c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# 🧩 Exercice :\n",
+    "# Crée deux courbes (linéaire et cubique) sur le même graphique, avec titre et légende.\n",
+    "\n",
+    "# Ton code ici ↓\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "661a7141",
+   "metadata": {},
+   "source": [
+    "\n",
+    "## 4. Régression linéaire avec NumPy\n",
+    "On peut estimer une droite de tendance avec `np.polyfit()` et `np.polyval()`.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "94c0a5fd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# Données\n",
+    "x = np.array([0, 1, 2, 3, 4, 5])\n",
+    "y = np.array([0.1, 2.0, 3.9, 6.1, 8.2, 10.1])\n",
+    "\n",
+    "# Calcul de la droite y = a*x + b\n",
+    "a, b = np.polyfit(x, y, 1)\n",
+    "print(f\"Pente a = {a:.2f}, Ordonnée à l’origine b = {b:.2f}\")\n",
+    "\n",
+    "# Valeurs prédites\n",
+    "y_pred = np.polyval([a, b], x)\n",
+    "\n",
+    "# Tracé\n",
+    "plt.scatter(x, y, label=\"Données\")\n",
+    "plt.plot(x, y_pred, color='red', label=f\"Régression : y = {a:.2f}x + {b:.2f}\")\n",
+    "plt.title(\"Régression linéaire avec NumPy\")\n",
+    "plt.xlabel(\"x\")\n",
+    "plt.ylabel(\"y\")\n",
+    "plt.legend()\n",
+    "plt.show()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7baa64d2",
+   "metadata": {},
+   "source": [
+    "\n",
+    "💡 **Astuce :**\n",
+    "- `np.polyfit(x, y, 1)` → calcule les coefficients d’une droite.  \n",
+    "- `np.polyval()` → évalue la droite pour chaque x.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f0cf432b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "# 🧮 Exercice :\n",
+    "# Reprends les données ci-dessous et trace la droite de régression correspondante.\n",
+    "\n",
+    "x = np.array([1, 2, 3, 4, 5, 6])\n",
+    "y = np.array([2.5, 4.8, 7.1, 9.2, 11.0, 13.3])\n",
+    "\n",
+    "# Ton code ici ↓\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

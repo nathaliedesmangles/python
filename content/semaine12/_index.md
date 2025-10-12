@@ -1,188 +1,180 @@
 +++
 chapter = true
 pre = "<b>12-14</b>"
-title = " Projet - Présentation, analyse et traduction"
+title = " Projet Enquête ADN - Identifier le coupable"
 weight = 112
 draft = true
 +++
 
 
-## Objectifs
+## Objectifs de la séance
 
-* Présentation du projet
+* Présentation du projet (généralités)
+* Présentation de la partie 1
 * Présentation de la grille de correction
-* Analyse préliminaire du projet (activité guidée):
-	* Comprendre le problème
-	* Identifier les variables (types), constantes, formules, fonctions, etc.
-	* Élaborer les algorithmes
+* Travailler sur la partie 1
+
+
+## Fichiers fournis (sur Moodle)
+
+* Les **fichiers CSV complets** (`adn_suspects.csv` et `adn_scene.csv`).
+	* Contiennent des **valeurs de données plausibles biologiquement** (en paires de bases).
+	* Le **contexte cohérent** pour 10 suspects.
+* Le bloc-notes (`projet_ADN.ipynb`) de départ à utiliser.
+
+
+## Objectifs du projet
+
+### Partie 1 - Préparation des données et identification
+
+**Nettoyer les données**
+
+   * Charger les deux fichiers `.csv`.
+   * Détecter et remplir les valeurs manquantes (`NaN`) à l’aide des moyennes de colonnes.
+
+**Comparer les profils ADN**
+
+   * Calculer la **différence absolue moyenne** entre chaque suspect et l’échantillon trouvé.
+   * Identifier le **suspect ayant la plus petite différence moyenne**.
+
+### Partie 2 - Visualisation des résultats
+
+**Visualiser les résultats**
+
+   * Créer un **graphique en barres** comparant les trois loci du coupable et de l’échantillon.
+   * Ajouter des **barres d’erreur** simulant l'incertitude expérimentale (±2 pb).
+   * Tracer une **régression linéaire** entre les loci du suspect et ceux de la scène.
+
+### Partie 3 - Présentation des résultats
+
+**Communiquer les résultats**
+
+   * Enregistrer dans un fichier texte le nom du coupable et son score de similarité (`resultats_adn.txt`).
+   * Mise en forme du bloc-notes (ajout de commentaires pertinents, ).
 
 ---
 
-## Enquête scientifique par analyse d’ADN
+## Contexte 
 
-### Contexte
+Une scène de crime a été découverte dans un laboratoire de biologie cellulaire.
+Sur une pipette abandonnée, un fragment d’ADN a été trouvé.
+Le laboratoire a séquencé **trois loci génétiques** (L1, L2, L3) — des régions variables entre individus.
 
-Vous êtes le ou la bioinformaticien·ne en charge d’une **enquête médico-légale** : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.
+Les profils ADN de **10 suspects** ont été enregistrés. Cependant, certaines mesures contiennent des **valeurs manquantes** (erreurs d’électrophorèse).
+Votre rôle sera de comparer l’ADN trouvé sur la scène à celui des suspects afin d’**identifier le coupable le plus probable**.
 
-Mais votre mission ne s'arrête pas à un simple tri de valeurs : vous devrez aussi **modéliser les relations génétiques** par analyse statistique, **quantifier l’incertitude**, et **présenter vos résultats de manière claire et rigoureuse** à l’aide de Python.
+## Exemple de données
 
+## Fichier 1 — `adn_suspects.csv`
 
-### Contraintes techniques
+| Nom     | L1  | L2  | L3  |
+| ------- | --- | --- | --- |
+| André   | 210 | 320 | 415 |
+| Benoit  | 198 | 305 | NaN |
+| Chloé   | 205 | 315 | 420 |
+| David   | 212 | 318 | 417 |
+| Emma    | 208 | NaN | 419 |
+| Félix   | 207 | 319 | 415 |
+| Gabriel | NaN | 317 | 416 |
+| Hugo    | 199 | 312 | 410 |
+| Inès    | 215 | 325 | 421 |
+| Jade    | 206 | 316 | NaN |
 
-* **Fichiers de départ** : Bloc-notes de travail `projet_enquete_adn.ipynb` et le fichier de données contenant les profils ADN `suspects.csv` se trouvant sur Moodle.  
-* **Langage** : Python dans Jupyter Notebook (`.ipynb`).  
-* **Bibliothèques autorisées** : `pandas`, `numpy` et `matplotlib`  
-* **Programmation lettrée** : structurez votre rapport avec des **sections Markdown**, des **titres explicites**, et des **explications claires**.  
-* **Fonctions personnalisées** : vous devez créer vos propres fonctions à l’aide de `def`, avec paramètres et valeurs retournées, pour automatiser les analyses.  
-* **Normes** : code lisible, modulaire, commenté.
-
-
-### Remise
-
-* Remettre **un seul fichier** : `projet_prenom_nom.ipynb`, toutes cellules **exécutées**.
-* **Facultatif** : joindre une version PDF exportée du bloc-notes.
-
-
-### Rappel : vos superpouvoirs Python
-
-* Pensez à tester chaque fonction sur des **cas simples** avant de l’appliquer aux données complètes.
-* Utilisez les **cellules Markdown** pour documenter vos choix et expliquer votre démarche.
-* Soyez créatifs·ves, mais rigoureux·ses.
+> *Les valeurs représentent des longueurs de fragments d’ADN en paires de bases (pb).*
 
 
-### Bonne enquête !
+## Fichier 2 — `adn_scene.csv`
 
-Que la science éclaire vos soupçons… et que votre code résiste à toutes les erreurs !
+| Echantillon | L1  | L2  | L3  |
+| ----------- | --- | --- | --- |
+| ADN_trouvé  | 208 | 317 | 418 |
+
+
+
+
 
 ---
 
-## Étapes de votre enquête (guide progressif)
-
-### 1. Élaboration de votre plan de travail
-
-**Avant de coder**, rédigez une **brève stratégie** :
-
-* Quelles sont les étapes de l’enquête ?
-* Quelles fonctions pourriez-vous créer pour structurer votre code (par exemple : comparaison, calcul, affichage graphique, etc.) ?
-* Dans quel ordre allez-vous procéder ?
-
-> Cette planification peut évoluer en cours de route, mais elle doit être claire dès le départ.
 
 
-### 2. Chargement et nettoyage des données
+## Notions travaillées
 
-* Importez les bibliothèques autorisées.
-* Chargez le fichier `suspects.csv`.
-* Observez la structure des données.
-* Identifiez les **caractères manquants** (ex. `?`) et préparez vos fonctions pour gérer ces cas lors des comparaisons.
-
-> Créez une fonction pour comparer deux séquences ADN et calculer le **pourcentage de correspondance** malgré les caractères ambigus.
-
-
-### 3. Calculs de correspondance
-
-* Pour chaque suspect et pour chaque locus, **comparez sa séquence** avec celle trouvée sur la scène de crime.
-* Calculez :
-
-  * Le **taux de correspondance par locus** (en %)
-  * La **moyenne globale de correspondance**
-
-> Créez des fonctions réutilisables pour ces calculs. Par exemple : `calculer_correspondance(sequence1, sequence2)`, `analyser_suspects(df)`…
+| Notion Python                 | Application dans le projet                  |
+| ----------------------------- | ------------------------------------------- |
+| Lecture/écriture de fichiers  | `pd.read_csv()`, `open()`                   |
+| Gestion de données manquantes | `pd.isna()`, `fillna()`                     |
+| Boucles et dictionnaires      | Calcul des scores                           |
+| NumPy                         | Moyennes, différences absolues, `polyfit()` |
+| Matplotlib                    | `bar()`, `errorbar()`, titres, légendes     |
+| Régression linéaire           | `np.polyfit()` et `np.polyval()`            |
 
 
-### 4. Résumé et visualisation des résultats
 
-* Présentez les **taux de correspondance** dans un **tableau synthèse** (DataFrame).
-* **Identifiez les suspects** ayant les correspondances les plus élevées.
-* Représentez les résultats avec :
+## Régression linéaire
 
-  * Un **diagramme à barres** (correspondance par locus, par suspect)
-  * Des **barres d’erreur** illustrant l’incertitude estimée (±5 %)
+Pour le coupable présumé, ajoute une **régression linéaire** pour visualiser la correspondance entre les loci du suspect et ceux de la scène :
 
-> Créez une fonction pour générer ces graphiques à partir d’un DataFrame.
-
-
-### 5. Analyse statistique (régression linéaire)
-
-* Choisissez deux loci (ex. : Locus_1 et Locus_2).
-* Utilisez `NumPy` pour :
-
-  * Obtenir la pente, l’interception, le R² et l’incertitude sur la pente.
-  * Tracer la droite de régression sur un nuage de points (scores par suspect).
-  * Afficher l'équation de la droite et l’erreur sur la pente.
-
-> Vous pouvez créer une fonction comme `analyser_relation_loci(df, locus1, locus2)`.
+```python
+x = np.array(scene)
+y = np.array(suspect)
+a, b = np.polyfit(x, y, 1)
+plt.plot(x, y, 'o', label='Données')
+plt.plot(x, a*x + b, '-', label=f"Régression : y = {a:.2f}x + {b:.2f}")
+plt.xlabel("ADN scène (pb)")
+plt.ylabel(f"ADN {coupable} (pb)")
+plt.legend()
+plt.show()
+```
 
 
-### 6. Interprétation scientifique
+## Livrables
 
-Dans une section Markdown :
+* Script ou notebook complet (`projet_adn_prenomNom.ipynb`)
+* Graphiques clairs avec titres et légendes
+* Fichier `resultats_adn.txt`
+* Brève **conclusion écrite** (5 lignes max) :
+	* Indiquer qui est le suspect le plus probable et pourquoi ?
 
-* **Concluez** sur les suspects les plus probables.
-* Discutez de :
+## Exemple de code de base
 
-  * La **qualité des données**
-  * L'impact des **caractères manquants**
-  * La **valeur explicative** de vos analyses statistiques
-  * D’éventuelles **améliorations** (plus de loci, meilleure qualité des échantillons, approches bioinformatiques plus avancées…)
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Lecture des fichiers CSV
+suspects = pd.read_csv("adn_suspects.csv")
+scene = pd.read_csv("adn_scene.csv").iloc[0, 1:].to_numpy()
+
+# Nettoyage des données (remplir les NaN par les moyennes)
+suspects = suspects.fillna(suspects.mean(numeric_only=True))
+
+# Comparaison entre chaque suspect et l'échantillon
+scores = {}
+for i, row in suspects.iterrows():
+    diff = np.abs(row[1:].to_numpy() - scene)
+    scores[row["Nom"]] = diff.mean()
+
+# Identifier le suspect le plus proche
+coupable = min(scores, key=scores.get)
+print("Scores de ressemblance :", scores)
+print("Coupable probable :", coupable)
+
+# Graphique comparatif
+suspect = suspects[suspects["Nom"] == coupable].iloc[0, 1:].to_numpy()
+loci = ["L1", "L2", "L3"]
+
+plt.bar(loci, suspect, yerr=2, label=coupable, alpha=0.6)
+plt.bar(loci, scene, yerr=2, label="ADN scène", alpha=0.6)
+plt.ylabel("Longueur du fragment (pb)")
+plt.title(f"Comparaison ADN : scène vs {coupable}")
+plt.legend()
+plt.show()
+
+# Sauvegarde du résultat
+with open("resultats_adn.txt", "w") as f:
+    f.write(f"Coupable probable : {coupable}\n")
+    f.write(f"Scores de similarité : {scores}\n")
+```
 
 
-<!--
-
-==================
-
-# Enquête scientifique par analyse d’ADN
-
-## Contexte
-
-Une scène de crime a été découverte dans un laboratoire. Des échantillons biologiques (contenant de l’ADN partiel) ont été récupérés sur place, mais les séquences sont **incomplètes ou partiellement contaminées**.
-
-Les enquêteurs ont recueilli l’ADN de 4 suspects. L’équipe médico-légale a analysé **trois loci distincts** (zones de l’ADN) pour chaque individu. Vous avez été mandaté pour **identifier le ou les suspects les plus susceptibles de correspondre à l’échantillon retrouvé**.
-
-Mais l’enquête ne s’arrête pas là : afin de renforcer l’analyse, vous devez également **évaluer la cohérence des correspondances entre loci** grâce à des **méthodes statistiques (régression linéaire)** et tenir compte de **l’incertitude biologique dans les séquences.**
-
-
-## Tâche attendue
-
-Votre mission, à supposer que vous l'acceptiez 😬, consiste à analyser des données scientifiques à l’aide de **Python**, afin d’en extraire des résultats fiables, illustrés par des graphiques clairs et rigoureux.
-
-Comme toujours, si vous ou l’un de vos collègues échouez dans cette tâche ou générez des erreurs d’exécution, l’enseignante niera toute responsabilité 😉.
-Ce bloc-notes pourrait bien s’autodétruire en cas de fautes de syntaxe critiques.
-
-Bonne chance... et que la science soit avec vous ! 😉
-
-Dans votre **rapport scientifique interactif** vous devrez:
-
-### 1. Nettoyer, analyser et structurer les données ADN
-
-* Comparer les séquences des suspects à celles de la scène de crime malgré les caractères manquants (`?`).
-* Calculer les pourcentages de correspondance pour chaque locus et la moyenne globale.
-
-### 2. Présenter vos résultats
-
-* Générer un tableau synthèse des taux de correspondance.
-* Identifier le ou les suspects les plus proches du profil génétique.
-
-### 3. Représenter les données avec des graphiques clairs
-
-* Créer un **diagramme à barres** montrant la correspondance pour chaque locus et chaque suspect.
-* Ajouter des **barres d’erreur** illustrant une incertitude estimée (ex: ±5 %).
-
-### 4. Utiliser la régression linéaire (scipy)
-
-* Évaluer la relation entre les scores de deux loci (ex. : `Locus_1` vs `Locus_2`).
-* Tracer la **droite de régression** avec l’équation et l’incertitude sur la pente.
-
-### 5. Discuter de vos résultats
-
-* Interprétez vos résultats avec rigueur.
-* Distinguez les suspects potentiels, discutez les limites méthodologiques et biologiques.
-* Proposez des pistes pour améliorer la précision de l’analyse.
-
-## Bonus (facultatif)
-
-Ajoutez une courte section **“Limites biologiques et bioinformatiques”** :
-
-* Quelles erreurs pourraient exister dans un contexte réel ?
-* Pourquoi la correspondance ADN n’est-elle pas une preuve absolue ?
--->

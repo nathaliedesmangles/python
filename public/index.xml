@@ -96,7 +96,7 @@
       <link>https://example.org/semaine8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine8/index.html</guid>
-      <description>Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration</description>
+      <description>Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1: base Bloc-note 2: base Bloc-note 3: base</description>
     </item>
     <item>
       <title> Lecture et écriture de fichiers textes (avec NumPy et Pandas)</title>
