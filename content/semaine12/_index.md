@@ -27,20 +27,13 @@ draft = true
 
 ### Partie 1 - Préparation des données et identification
 
-**Nettoyer les données**
+* Afficher et nettoyer les données
+* Comparer les profils ADN
 
-   * Charger les deux fichiers `.csv`.
-   * Détecter et remplir les valeurs manquantes (`NaN`) à l’aide des moyennes de colonnes.
-
-**Comparer les profils ADN**
-
-   * Calculer la **différence absolue moyenne** entre chaque suspect et l’échantillon trouvé.
-   * Identifier le **suspect ayant la plus petite différence moyenne**.
-
-### Partie 2 - Visualisation des résultats
+### Partie 2 - Identification du suspect et visualisation des résultats
 
 **Visualiser les résultats**
-
+   * Identifier le **suspect ayant la plus petite différence moyenne**.
    * Créer un **graphique en barres** comparant les trois loci du coupable et de l’échantillon.
    * Ajouter des **barres d’erreur** simulant l'incertitude expérimentale (±2 pb).
    * Tracer une **régression linéaire** entre les loci du suspect et ceux de la scène.
@@ -145,6 +138,8 @@ import matplotlib.pyplot as plt
 # Lecture des fichiers CSV
 suspects = pd.read_csv("adn_suspects.csv")
 scene = pd.read_csv("adn_scene.csv").iloc[0, 1:].to_numpy()
+
+
 
 # Nettoyage des données (remplir les NaN par les moyennes)
 suspects = suspects.fillna(suspects.mean(numeric_only=True))

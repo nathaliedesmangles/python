@@ -35,7 +35,7 @@ draft = false
 * Exercices simples sur NaN et slicing.
 {{% /notice %}}
 
-[**Bloc-note 3**https://python-a25.netlify.app/blocnotes/demo_numpy_filtrage_graphiques.ipynb)  
+[**Bloc-note 3**](https://python-a25.netlify.app/blocnotes/demo_numpy_filtrage_graphiques.ipynb)  
 {{% notice style="cyan" title="Sujets couverts..." groupid="notice-toggle" expanded="false" %}}
 * Filtrage de données avec conditions (`tableau[condition]`, `np.sum(condition)`)
 * Filtrage avec `np.where()`
