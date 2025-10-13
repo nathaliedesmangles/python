@@ -15,11 +15,12 @@ draft = false
 
 [06. Listes, chaines et visualisation des données](./6_listes_chaines_visualisation/)  
 [07. Dictionnaires](./7_dictionnaires)   
-[08. Tableaux NumPy et droite de régression linéaire](./8_numpy_regression/) 
-<!--  
+[08. Tableaux NumPy et droite de régression linéaire](./8_numpy_regression/)  
+
+ 
 [09. Lecture et écriture de fichiers de données](./9_fichiers/)
 
-
+<!-- 
 
 [11. Fonctions personnalisées](./11_fonctions_perso)
 

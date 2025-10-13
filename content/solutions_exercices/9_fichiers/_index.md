@@ -2,7 +2,7 @@
 pre = "<b>9.</b>"
 title = " Lecture et écriture de fichiers de données"
 weight = 209
-draft = true
+draft = false
 +++
 
 

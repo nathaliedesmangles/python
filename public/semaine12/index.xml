@@ -3,7 +3,7 @@
   <channel>
     <title> Projet Enquête ADN - Identifier le coupable :: 420-SN1-RE</title>
     <link>http://localhost:1313/semaine12/index.html</link>
-    <description>Objectifs de la séance Présentation du projet (généralités) Présentation de la partie 1 Présentation de la grille de correction Travailler sur la partie 1 Fichiers fournis (sur Moodle) Les fichiers CSV complets (adn_suspects.csv et adn_scene.csv). Contiennent des valeurs de données plausibles biologiquement (en paires de bases). Le contexte cohérent pour 10 suspects. Le bloc-notes (projet_ADN.ipynb) de départ à utiliser. Objectifs du projet Partie 1 - Préparation des données et identification Nettoyer les données</description>
+    <description>Objectifs de la séance Présentation du projet (généralités) Présentation de la partie 1 Présentation de la grille de correction Travailler sur la partie 1 Fichiers fournis (sur Moodle) Les fichiers CSV complets (adn_suspects.csv et adn_scene.csv). Contiennent des valeurs de données plausibles biologiquement (en paires de bases). Le contexte cohérent pour 10 suspects. Le bloc-notes (projet_ADN.ipynb) de départ à utiliser. Objectifs du projet Partie 1 - Préparation des données et identification Afficher et nettoyer les données Comparer les profils ADN Partie 2 - Identification du suspect et visualisation des résultats Visualiser les résultats</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/semaine12/index.xml" rel="self" type="application/rss+xml" />

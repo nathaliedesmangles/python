@@ -41,7 +41,7 @@ draft = false
 1. Cliquez sur les liens pour télécharger les fichiers (`.ipynb`, `.csv` et `.txt`).  
 [**Bloc-notes de départ - NumPy**](https://python-a25.netlify.app/blocnotes/exercices_fichiers_np.ipynb)  
 [**Bloc-notes de départ - Pandas**](https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb)  
-**Fichiers de donnnées** :   
+**Fichiers de données** :   
 	* [**temperatures.csv**](./temperatures.csv) : données météorologiques prévisibles pour Bâle (France).<br>
 	* [**etudiants.csv**](./etudiants.csv) : 3 colonnes : `Nom,Âge,Note`.<br>
 	* [**solubilite_sel.csv**](./solubilite_sel.csv) : 2 colonnes : `temperature,solubilite`.<br>
