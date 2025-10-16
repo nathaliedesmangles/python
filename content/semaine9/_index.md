@@ -341,9 +341,9 @@ Name: Hauteur_cm, dtype: int64
 
 Cet exercice prépare à faire des analyses et régressions à partir de données réelles.
 
-1. Lire un fichier `solutions.csv` contenant des colonnes `Temp_C` et `Concentration_mol_L`.
-2. Convertir ces deux colonnes en tableaux NumPy.
-3. Calculer la moyenne et l’écart-type de la concentration.
+1. Avec **Pandas**, lire le fichier `solutions.csv` contenant des colonnes `Temp_C` et `Concentration_mol_L`.
+2. Convertir ces deux colonnes en tableaux NumPy avec `.to_numpy()`.
+3. Calculer la moyenne et l’écart-type de la concentration avec les fonctions appropriées de **NumPy** (pas Pandas).
 4. Créer un graphique `Temp_C` vs `Concentration_mol_L` avec `plt.plot()`.
 
 **Résultats**:
@@ -359,8 +359,8 @@ Cet exercice prépare à faire des analyses et régressions à partir de donnée
 Cet exercice aide à comprendre comment analyser chaque ligne d’un jeu de données et enrichir le tableau.
 
 1. Lire le fichier `minéraux.csv` contenant les colonnes `Nom` et `Densité`.
-2. Parcourir le DataFrame avec `.iterrows()`.
-3. Afficher `"léger"` si la densité < 3, sinon `"lourd"`.
+2. Parcourir le DataFrame **ligne par ligne** avec `.iterrows()`.
+3. Afficher `"léger"` si la densité < 3, sinon `"lourd"`. Utiliser `if-else`.
 4. Ajouter une nouvelle colonne `Catégorie` contenant ces valeurs, puis affiche le tableau final.
 
 
@@ -803,7 +803,7 @@ print(poissons.iloc[:, 0])
 print(poissons.iloc[0:2, 0:2])
 ```
 
-## Conversion d'une colonne ou n DataFrame en tableau NumPy avec `.to_numpy()`
+## Conversion d'une colonne ou un DataFrame en tableau NumPy avec `.to_numpy()`
 
 * `.to_numpy()` transforme une **colonne ou un DataFrame en tableau NumPy**, ce qui permet d’utiliser les fonctions mathématiques rapides de NumPy (`mean`, `std`, `polyfit`, etc.).
 
