@@ -22,21 +22,21 @@ Sujets couverts…Création de tableaux (np.">
     <meta itemprop="name" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1
 Sujets couverts…Création de tableaux (np.">
-    <meta itemprop="wordCount" content="2943">
+    <meta itemprop="wordCount" content="3042">
     <title> Tableaux NumPy et droite de régression :: 420-SN1-RE</title>
     <link href="/semaine8/index.xml" rel="alternate" type="application/rss+xml" title=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
-    <link href="/images/logo.png?1760626715" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760626715" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760626715" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1760626715" rel="stylesheet">
-    <link href="/css/theme.min.css?1760626715" rel="stylesheet">
-    <link href="/css/format-html.min.css?1760626715" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1760626715" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1760626715" defer></script>
-    <script src="/js/lunr/lunr.min.js?1760626715" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1760626715" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1760626715" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1760626715" defer></script>
-    <script src="/js/search.min.js?1760626715" defer></script>
+    <link href="/images/logo.png?1760797204" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760797204" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1760797204" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1760797204" rel="stylesheet">
+    <link href="/css/theme.min.css?1760797204" rel="stylesheet">
+    <link href="/css/format-html.min.css?1760797204" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1760797204" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1760797204" defer></script>
+    <script src="/js/lunr/lunr.min.js?1760797204" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1760797204" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1760797204" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1760797204" defer></script>
+    <script src="/js/search.min.js?1760797204" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +46,7 @@ Sujets couverts…Création de tableaux (np.">
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1760626715";
+      window.relearn.index_js_url="/searchindex.en.js?1760797204";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +92,7 @@ Sujets couverts…Création de tableaux (np.">
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1760626715" rel="stylesheet">
+    <link href="/css/custom.css?1760797204" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine8/index.html">
     <div id="R-body" class="default-animation">
@@ -303,16 +303,16 @@ La formule de la position est :</p>
 <li>Ajoutez une <strong>droite de régression linéaire</strong> sur la portion <code>0.5 ≤ t ≤ 1.5</code> :
 <ul>
 <li>masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5)</li>
-<li>coef = np.polyfit(t[masque], y[masque], 1)</li>
-<li>droite = np.polyval(coef, t)</li>
+<li>pente, origine = np.polyfit(t[masque], y[masque], 1)</li>
+<li>droite = pente * t + origine</li>
 <li>plt.plot(t, droite)</li>
 </ul>
 </li>
 </ol>
 <p><strong>Résultats</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>5 premières valeurs de y : [20.    19.951 19.804 19.559 19.216]</code></pre></div>
-<p><a href="#R-image-4e3023e091ca55b9f32adb8dfc2cf30b" class="lightbox-link"><img alt="Graphique 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e3023e091ca55b9f32adb8dfc2cf30b"><img alt="Graphique 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw"></a></p>
+<p><a href="#R-image-5112d43c894e59c29bc4357386960148" class="lightbox-link"><img alt="Graphique 1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5112d43c894e59c29bc4357386960148"><img alt="Graphique 1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo1.png?width=35vw"></a></p>
 <h3 id="exercice-2--mouvement-rectiligne-uniforme-et-régression-linéaire">Exercice 2 : Mouvement rectiligne uniforme et régression linéaire</h3>
 <p>Une voiture roule à vitesse constante <strong>v = 15 m/s</strong>. Sa position est donnée par :</p>
 <p>$$
@@ -328,8 +328,8 @@ $$</p>
 </ol>
 <p><strong>Résultats</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Dernière position : 150.0</code></pre></div>
-<p><a href="#R-image-c659cfbe7ab254743c165c703b6fac92" class="lightbox-link"><img alt="Graphique 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c659cfbe7ab254743c165c703b6fac92"><img alt="Graphique 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw"></a></p>
+<p><a href="#R-image-e4bf4079e54f612a39b71388127b5fa5" class="lightbox-link"><img alt="Graphique 2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e4bf4079e54f612a39b71388127b5fa5"><img alt="Graphique 2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo2.png?width=35vw"></a></p>
 <h3 id="exercice-3--énergie-cinétique-et-barres-derreur">Exercice 3 : Énergie cinétique et barres d’erreur</h3>
 <p>La formule de l&rsquo;énergie cinétique est :</p>
 <p>$$
@@ -355,8 +355,8 @@ Max : 400.0
 Trois dernières : [256. 324. 400.]
 Vitesses 2–8 : [2 4 6 8]
 Énergies : [ 4. 16. 36. 64.]</code></pre></div>
-<p><a href="#R-image-b3f925f027538cf6f0dc8b124922ef54" class="lightbox-link"><img alt="Graphique 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b3f925f027538cf6f0dc8b124922ef54"><img alt="Graphique 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw"></a></p>
+<p><a href="#R-image-55139d3fe5749583f9f3ebe90b55f054" class="lightbox-link"><img alt="Graphique 3" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-55139d3fe5749583f9f3ebe90b55f054"><img alt="Graphique 3" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo3.png?width=35vw"></a></p>
 <h3 id="exercice-4--oscillations-harmoniques">Exercice 4 : Oscillations harmoniques</h3>
 <p>La position d’un oscillateur est donnée par :</p>
 <p>$$
@@ -372,8 +372,8 @@ $$</p>
 <p><strong>Résultats</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Max : 0.1
 Min : -0.1</code></pre></div>
-<p><a href="#R-image-14d526a279c9b7e384890cc116c0d63d" class="lightbox-link"><img alt="Graphique 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-14d526a279c9b7e384890cc116c0d63d"><img alt="Graphique 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw"></a></p>
+<p><a href="#R-image-5c197fab4ac8ec1593e007648c6834fe" class="lightbox-link"><img alt="Graphique 4" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5c197fab4ac8ec1593e007648c6834fe"><img alt="Graphique 4" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_exo4.png?width=35vw"></a></p>
 <hr>
 <h1 id="cours">Cours</h1>
 <p><em>NumPy</em> est une bibliothèque Python pour manipuler des données numériques sous forme de <strong>tableaux (arrays)</strong>. Elle permet de faire des <strong>calculs rapides</strong> sur plusieurs valeurs.</p>
@@ -626,21 +626,29 @@ Nombre de valeurs supérieures à 5 : 3</p>
 <li><code>np.sum(tableau &gt; seuil)</code> : compte le nombre de valeurs <code>True</code> dans le masque.</li>
 </ul>
 <h3 id="3-filtre-avec-npwhere">3. Filtre avec <code>np.where()</code></h3>
-<p><code>numpy.where(condition, valeur_si_vrai, valeur_si_faux)</code> permet de créer un tableau (ou une colonne dans un DataFrame) en fonction d’une condition logique.</p>
+<p><code>numpy.where(condition, valeur_si_vrai, valeur_si_faux)</code> permet de créer un <strong>nouveau tableau</strong> selon une condition logique appliquée à un autre tableau.</p>
+<p>Un groupe d’étudiants a obtenu les notes suivantes :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>notes <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">45</span>, <span style="color:#ae81ff">78</span>, <span style="color:#ae81ff">59</span>, <span style="color:#ae81ff">92</span>, <span style="color:#ae81ff">61</span>, <span style="color:#ae81ff">33</span>])</span></span></code></pre></div>
+<p>On veut créer un tableau indiquant <strong>&ldquo;Réussi&rdquo;</strong> ou <strong>&ldquo;Échoué&rdquo;</strong> selon la note (seuil : 60 %).</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>where(notes <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">60</span>, <span style="color:#e6db74">&#34;Réussi&#34;</span>, <span style="color:#e6db74">&#34;Échoué&#34;</span>)
+</span></span><span style="display:flex;"><span>print(resultat)</span></span></code></pre></div>
+<p><strong>Sortie :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[&#39;Échoué&#39; &#39;Réussi&#39; &#39;Échoué&#39; &#39;Réussi&#39; &#39;Réussi&#39; &#39;Échoué&#39;]</code></pre></div>
+<p>** Explication** :</p>
 <ul>
-<li><strong>condition</strong> → un test qui renvoie <code>True</code> ou <code>False</code> (ex. : <code>df[&quot;Note&quot;] &gt;= 60</code>)</li>
-<li><strong>valeur_si_vrai</strong> → ce qui sera écrit quand la condition est vraie (<code>&quot;Réussi&quot;</code>)</li>
-<li><strong>valeur_si_faux</strong> → ce qui sera écrit quand la condition est fausse (<code>&quot;Échoué&quot;</code>)</li>
+<li><code>notes &gt;= 60</code> crée un <strong>tableau booléen</strong> :
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[False, True, False, True, True, False]</code></pre></div>
+</li>
+<li><code>np.where()</code> choisit <code>&quot;Réussi&quot;</code> si la condition est <code>True</code>, sinon <code>&quot;Échoué&quot;</code>.</li>
 </ul>
-<p>Exemple :</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Tendance&#34;</span>] <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>where(df[<span style="color:#e6db74">&#34;Note&#34;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">60</span>, <span style="color:#e6db74">&#34;Réussi&#34;</span>, <span style="color:#e6db74">&#34;Échoué&#34;</span>)</span></span></code></pre></div>
-<p><strong>Explication :</strong></p>
-<p>Pour chaque ligne :</p>
-<ul>
-<li>si la note est &gt;= 60 → <code>&quot;Réussi&quot;</code></li>
-<li>sinon → <code>&quot;Échoué&quot;</code></li>
-</ul>
-<p>C’est une méthode très rapide car <code>numpy</code> applique l’opération directement sur toute la colonne, sans boucle explicite.</p>
+<h4 id="variante--classer-les-performances">Variante : Classer les performances</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>niveau <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>where(notes <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">85</span>, <span style="color:#e6db74">&#34;Excellent&#34;</span>,
+</span></span><span style="display:flex;"><span>          np<span style="color:#f92672">.</span>where(notes <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">60</span>, <span style="color:#e6db74">&#34;Réussi&#34;</span>, <span style="color:#e6db74">&#34;Échoué&#34;</span>))
+</span></span><span style="display:flex;"><span>print(niveau)</span></span></code></pre></div>
+<p><strong>Résultat :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[&#39;Échoué&#39; &#39;Réussi&#39; &#39;Échoué&#39; &#39;Excellent&#39; &#39;Réussi&#39; &#39;Échoué&#39;]</code></pre></div>
 <h2 id="graphique-avec-barres-derreur">Graphique avec barres d’erreur</h2>
 <p>Les <strong>barres d’erreur</strong> servent à montrer <strong>l’incertitude</strong> des mesures.
 Elles indiquent à quel point les données sont précises.</p>
@@ -656,11 +664,13 @@ Elles indiquent à quel point les données sont précises.</p>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Graphique avec barres d’erreur&#34;</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-eb68f25042d7fde0757d5996fe5ef4e0" class="lightbox-link"><img alt="graphique avec barres d&rsquo;erreur" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_barres_err.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb68f25042d7fde0757d5996fe5ef4e0"><img alt="graphique avec barres d&rsquo;erreur" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_barres_err.png?width=35vw"></a></p>
+<p><a href="#R-image-d235e9a5ff08f60a5c9cd345da257701" class="lightbox-link"><img alt="graphique avec barres d&rsquo;erreur" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_barres_err.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d235e9a5ff08f60a5c9cd345da257701"><img alt="graphique avec barres d&rsquo;erreur" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_barres_err.png?width=35vw"></a></p>
 <h3 id="explications">Explications</h3>
 <ul>
+<li><strong><code>plt.errorbar()</code></strong> → La fonction permettant de spécifier les longueurs/largeurs des barres d&rsquo;erreur.</li>
 <li><strong><code>yerr=erreur</code></strong> → indique la longueur des barres d’erreur verticales.</li>
+<li>Si on veut des barres d&rsquo;erreur horizontales: <strong><code>xerr=erreur</code></strong> → indique la longueur des barres d’erreur horizontales.</li>
 <li><strong><code>fmt='o'</code></strong> → forme des points (ici des cercles).</li>
 <li><strong><code>capsize=5</code></strong> → ajoute un petit “chapeau” au bout des barres.</li>
 <li><strong><code>ecolor='black'</code></strong> → couleur des barres d’erreur.</li>
@@ -721,8 +731,8 @@ $</p>
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Régression linéaire avec NumPy&#34;</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-aee760406f5bec1f7b870dd610d0f7f9" class="lightbox-link"><img alt="Graphe régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-aee760406f5bec1f7b870dd610d0f7f9"><img alt="Graphe régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw"></a></p>
+<p><a href="#R-image-69097e95a687ad1c8614e6f74dcabaa7" class="lightbox-link"><img alt="Graphe régression" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-69097e95a687ad1c8614e6f74dcabaa7"><img alt="Graphe régression" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphe_reg.png?width=35vw"></a></p>
 <p><strong>Interprétation :</strong></p>
 <ul>
 <li>Les points bleus représentent vos données mesurées.</li>
@@ -742,6 +752,12 @@ $$</p>
 $$
 R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}
 $$</p>
+<p>Où :<br>
+$y_{i}$ sont les valeurs expérimentales observées<br>
+$\hat{y}_i$ sont les valeurs prédites par le modèle<br>
+$\bar{y}$  est la moyenne des valeurs observées<br>
+${\sum (y_i - \hat{y}_i)^2}$ est la somme des carrés des résidus<br>
+${\sum (y_i - \bar{y})^2}$  est la somme totale des carrés</p>
 <p><strong>Avec Python</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Calcul de R²</span>
 </span></span><span style="display:flex;"><span>y_moy <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>mean(y)
@@ -845,8 +861,8 @@ $$</p>
 Moyenne (LED blanche) = 11.40 cm, écart-type = 0.16 cm  
 Moyenne (LED rouge) = 10.23 cm, écart-type = 0.12 cm  
 Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
-<p><a href="#R-image-3c2f570df1b7c0c2228da16ec011efdf" class="lightbox-link"><img alt="Graphique1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3c2f570df1b7c0c2228da16ec011efdf"><img alt="Graphique1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw"></a></p>
+<p><a href="#R-image-9daa18e9847541b34a911dca9347adcb" class="lightbox-link"><img alt="Graphique1" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9daa18e9847541b34a911dca9347adcb"><img alt="Graphique1" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_croissance_lumiere.png?width=35vw"></a></p>
 <h2 id="exercice-2--distance-parcourue-par-un-chariot-en-fonction-du-temps">Exercice 2 : distance parcourue par un chariot en fonction du temps</h2>
 <p>On mesure la distance parcourue par un chariot en fonction du temps.</p>
 <table>
@@ -891,8 +907,8 @@ Condition avec la plus grande croissance moyenne : Naturelle</code></pre></div>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Pente a = 1.02 m/s
 Ordonnée à l’origine b = -0.01 m
 Coefficient de détermination R² = 0.999</code></pre></div>
-<p><a href="#R-image-e7765ff5b7ce57e6191956978fc4048c" class="lightbox-link"><img alt="Graphique2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e7765ff5b7ce57e6191956978fc4048c"><img alt="Graphique2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw"></a></p>
+<p><a href="#R-image-02d127f7201db09f4e3bfd6095603d9b" class="lightbox-link"><img alt="Graphique2" class="lazy lightbox figure-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-02d127f7201db09f4e3bfd6095603d9b"><img alt="Graphique2" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine8/graphique_distance_chariot.png?width=35vw"></a></p>
 <hr>
 <h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
 <ol>
@@ -982,8 +998,8 @@ Coefficient de détermination R² = 0.999</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1760626715" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1760626715" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1760797204" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1760797204" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -995,7 +1011,7 @@ Coefficient de détermination R² = 0.999</code></pre></div>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1760626715"></script>
-    <script src="/js/theme.min.js?1760626715" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1760797204"></script>
+    <script src="/js/theme.min.js?1760797204" defer></script>
   </body>
 </html>

@@ -82,7 +82,7 @@ ss_res = np.sum((distance - distance_predite)**2)
 r2 = 1 - (ss_res / ss_tot)
 print(f"Coefficient de détermination R² = {r2:.3f}")
 
-# Tracé du graphique
+# Tracé du graphique (nuage de points) et de la droite
 plt.scatter(temps, distance, color='blue', label='Données expérimentales')
 plt.plot(temps, distance_predite, color='red', label='Droite de régression')
 

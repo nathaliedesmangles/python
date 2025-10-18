@@ -84,8 +84,8 @@ avec $ g = 9.8 m/s^2 $
 6. Tracez le graphique de la position (`plt.plot(t, y)`).  
 7. Ajoutez une **droite de régression linéaire** sur la portion `0.5 ≤ t ≤ 1.5` :  
 	* masque = (t >= 0.5) & (t <= 1.5)
-	* coef = np.polyfit(t[masque], y[masque], 1)
-	* droite = np.polyval(coef, t)
+	* pente, origine = np.polyfit(t[masque], y[masque], 1)
+	* droite = pente * t + origine
 	* plt.plot(t, droite)
 
 **Résultats** :
@@ -526,26 +526,50 @@ Nombre de valeurs supérieures à 5 : 3
 
 ### 3. Filtre avec `np.where()`
 
-`numpy.where(condition, valeur_si_vrai, valeur_si_faux)` permet de créer un tableau (ou une colonne dans un DataFrame) en fonction d’une condition logique.
+`numpy.where(condition, valeur_si_vrai, valeur_si_faux)` permet de créer un **nouveau tableau** selon une condition logique appliquée à un autre tableau.
 
-* **condition** → un test qui renvoie `True` ou `False` (ex. : `df["Note"] >= 60`)
-* **valeur_si_vrai** → ce qui sera écrit quand la condition est vraie (`"Réussi"`)
-* **valeur_si_faux** → ce qui sera écrit quand la condition est fausse (`"Échoué"`)
-
-Exemple :
+Un groupe d’étudiants a obtenu les notes suivantes :
 
 ```python
-df["Tendance"] = np.where(df["Note"] >= 60, "Réussi", "Échoué")
+import numpy as np
+
+notes = np.array([45, 78, 59, 92, 61, 33])
 ```
 
-**Explication :**
+On veut créer un tableau indiquant **"Réussi"** ou **"Échoué"** selon la note (seuil : 60 %).
 
-Pour chaque ligne :
+```python
+resultat = np.where(notes >= 60, "Réussi", "Échoué")
+print(resultat)
+```
 
-* si la note est >= 60 → `"Réussi"`
-* sinon → `"Échoué"`
+**Sortie :**
+```
+['Échoué' 'Réussi' 'Échoué' 'Réussi' 'Réussi' 'Échoué']
+```
 
-C’est une méthode très rapide car `numpy` applique l’opération directement sur toute la colonne, sans boucle explicite.
+
+** Explication** :
+* `notes >= 60` crée un **tableau booléen** :
+  ```
+  [False, True, False, True, True, False]
+  ```
+* `np.where()` choisit `"Réussi"` si la condition est `True`, sinon `"Échoué"`.
+
+
+#### Variante : Classer les performances
+
+```python
+niveau = np.where(notes >= 85, "Excellent",
+          np.where(notes >= 60, "Réussi", "Échoué"))
+print(niveau)
+```
+
+**Résultat :**
+```
+['Échoué' 'Réussi' 'Échoué' 'Excellent' 'Réussi' 'Échoué']
+```
+
 
 ## Graphique avec barres d’erreur 
 
@@ -571,7 +595,9 @@ plt.show()
 
 ### Explications 
 
+* **`plt.errorbar()`** → La fonction permettant de spécifier les longueurs/largeurs des barres d'erreur.
 * **`yerr=erreur`** → indique la longueur des barres d’erreur verticales.
+* Si on veut des barres d'erreur horizontales: **`xerr=erreur`** → indique la longueur des barres d’erreur horizontales.
 * **`fmt='o'`** → forme des points (ici des cercles).
 * **`capsize=5`** → ajoute un petit “chapeau” au bout des barres.
 * **`ecolor='black'`** → couleur des barres d’erreur.
@@ -676,6 +702,13 @@ $$
 $$
 R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}
 $$
+
+Où :  
+$y_{i}\$ sont les valeurs expérimentales observées  
+$\hat{y}_i\$ sont les valeurs prédites par le modèle  
+$\bar{y}$  est la moyenne des valeurs observées  
+${\sum (y_i - \hat{y}_i)^2}$ est la somme des carrés des résidus  
+${\sum (y_i - \bar{y})^2}$  est la somme totale des carrés
 
 **Avec Python** : 
 

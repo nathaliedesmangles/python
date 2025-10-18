@@ -19,6 +19,13 @@ draft = false
 
 ## Aide pour la préparation de vos feuilles de notes
 
+### Quel est le rôle des feuilles de notes
+
+**Le rôle d’une feuille de notes** : 
+* **ce n’est pas** un document où l’on copie tout le cours, mais **c'est un outil d’aide à la réflexion**. 
+* Une bonne feuille de notes doit permettre de **retrouver rapidement** une structure, une syntaxe ou un concept clé pendant l’examen. 
+* L’accent est mis sur la **clarté**, **l’organisation** et la **personnalisation du contenu**.
+
 [Guide - Questions à se poser (version Word](./Questions_Feuille_de_notes_Examen2.docx))  
 [Guide - Questions à se poser (version PDF](./Questions_Feuille_de_notes_Examen2.pdf))
 
