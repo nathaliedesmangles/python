@@ -47,7 +47,7 @@
       <link>https://example.org/solutions_exercices/8_numpy_regression/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/8_numpy_regression/index.html</guid>
-      <description>Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) coef = np.</description>
+      <description>Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) pente, ordonnee = np.</description>
     </item>
     <item>
       <title> Lecture et écriture de fichiers de données</title>

@@ -33,12 +33,12 @@ indice_max = np.argmax(moyennes)
 print(f"Condition avec la plus grande croissance moyenne : {conditions[indice_max]}")
 
 # Graphique
-x = np.arange(len(conditions))
-plt.figure(figsize=(8, 5))
+x = np.arange(len(conditions)) 
+plt.figure(figsize=(8, 5))p
 
 # Traçage du graphique à barres et barres d'erreur
 plt.bar(x, moyennes, yerr=ecarts_type, capsize=8, color=["green", "gray", "red"])
-plt.xticks(x, conditions)
+plt.xticks(x, conditions) # pour afficher les conditions au lieu des valeurs, sur l'axe x
 
 plt.ylabel("Hauteur moyenne (cm)")
 plt.title("Effet de la lumière sur la croissance des plantes")

@@ -26,8 +26,8 @@ print("5 premières valeurs de y :", y[:5])
 
 # Régression linéaire entre 0.5s et 1.5s
 masque = (t >= 0.5) & (t <= 1.5)
-coef = np.polyfit(t[masque], y[masque], 1)  # degré 1
-droite = np.polyval(coef, t)
+pente, ordonnee = np.polyfit(t[masque], y[masque], 1)  # degré 1
+droite = pente * t + ordonnee
 
 # Graphique
 plt.plot(t, y, 'bo-', label="Chute libre")
@@ -58,8 +58,8 @@ x = v * t
 print("Dernière position :", x[-1])
 
 # Régression linéaire
-coef = np.polyfit(t, x, 1)
-droite = np.polyval(coef, t)
+a, b = np.polyfit(t, x, 1)
+droite = a * t + b
 
 # Graphique
 plt.plot(t, x, 'bo', label="Position calculée")

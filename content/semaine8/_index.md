@@ -605,7 +605,7 @@ plt.show()
 * **`capsize=5`** → ajoute un petit “chapeau” au bout des barres.
 * **`ecolor='black'`** → couleur des barres d’erreur.
 
-**NB**: `plt.xticks(x, tetxte)` # pour afficher du texte au lieu des valeurs, sur l'axe x
+**NB**: `plt.xticks(x, texte)` # pour afficher du texte au lieu des valeurs, sur l'axe x
 
 ## Régression linéaire avec NumPy (`np.polyfit()`)
 
