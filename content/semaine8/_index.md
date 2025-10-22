@@ -227,22 +227,22 @@ print(np.sqrt(t))  # Résultat : [2. 3. 4.]
 t = np.array([27, 64, 216])
 print(np.cbrt(t))        # Résultat : array([3., 4., 6.])
 ```
-
+<!--
 **3. Exponentielle : `np.exp()`**
 
 ```python
 t = np.array([0, 1, 2])
 print(np.exp(t))  	# Résultat : [1. 2.71828183 7.3890561]
 ```
-
-**4. Logarithme naturel : `np.log()`**
+-->
+**3. Logarithme naturel : `np.log()`**
 
 ```python
 t = np.array([1, np.e, np.e**2])
 print(np.log(t))  	# Résultat : [ 0. 1. 2.]
 ```
 
-**5. Logarithme base 2 : `np.log2()`**
+**4. Logarithme base 2 : `np.log2()`**
 
 ```python
 t = np.array([1, 2, 4, 8])
@@ -250,7 +250,7 @@ print(np.log2(t))	# Résultat : [ 0.  1.  2.  3. ]
 ```
 
 
-**6. Logarithme base 10 : `np.log10()`**
+**5. Logarithme base 10 : `np.log10()`**
 
 ```python
 t = np.array([1, 10, 100, 0.1])
@@ -396,6 +396,9 @@ np.abs([-3, -5])   # → [3 5]
 Parfois, une mesure a été oubliée ou mal prise. On utilise `np.nan` pour représenter une valeur manquante.
 
 * La fonction `np.nanmean()` calcule **la moyenne des éléments en ignorant les valeurs `NaN`** (`Not a Number`), qui représentent généralement des données manquantes ou invalides.
+* L'option axis permet de spécifier l'axe sur lequel se fait la moyenne:
+	* axix = 0 -> la colonne (vertical)
+	* axix = 1 -> la rangée (horizontal)
 
 ```python
 sol = np.array([32.0, np.nan, 37.2])
