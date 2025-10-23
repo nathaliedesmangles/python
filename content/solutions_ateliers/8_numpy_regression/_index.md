@@ -98,4 +98,4 @@ plt.show()
 
 * La pente (1.02 m/s) correspond à la vitesse moyenne du chariot.
 * Le R² ≈ 1.0 indique que le mouvement est quasiment parfaitement linéaire, donc le chariot avance à vitesse constante.
-* L’ordonnée à l’origine (-0.01 m) est très petite : le chariot part pratiquement du point zéro.
+* L’ordonnée à l’origine (-0.10 m) est très petite : le chariot part pratiquement du point zéro.

@@ -882,6 +882,32 @@ plt.legend()
 
 Cela trace une courbe en **bleu**, avec une **ligne pointillée**, des **cercles aux points**, une **légende "x²"**, et une **ligne épaisse**.
 
+
+{{% notice style="cyan" title="Colorer chaque point manuellement" groupid="notice-toggle" expanded="false" %}}
+On peut utiliser une boucle et tracer chaque point avec une couleur différente :
+
+```python
+import matplotlib.pyplot as plt
+
+x = [0, 1, 2, 3, 4]
+y = [2, 4, 1, 3, 5]
+couleurs = ['r', 'g', 'b', 'orange', 'purple']
+
+for i in range(len(x)):
+    plt.plot(x[i], y[i], 'o', color=couleurs[i])
+    
+plt.xlabel("Abscisses")
+plt.ylabel("Ordonnées")
+plt.title("Colorer chaque point manuellement")
+plt.grid(True)
+
+plt.show()
+```
+
+* Ici, on trace chaque point séparément ('o' pour le marqueur circulaire).
+![Couleurs différentes](./points_couleurs.png?width=35vw)
+{{% /notice %}}
+
 ### Ajouter un titre, des étiquettes et une grille avec title(), xlabel(), ylabel() et grid()
 
 * `plt.title("Courbe de y = x²")` : Ajoute un **titre** au graphique.
