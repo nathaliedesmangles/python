@@ -541,6 +541,8 @@ notes = np.array([45, 78, 59, 92, 61, 33])
 
 On veut créer un tableau indiquant **"Réussi"** ou **"Échoué"** selon la note (seuil : 60 %).
 
+* **Équivalent à `if...else...`**
+
 ```python
 resultat = np.where(notes >= 60, "Réussi", "Échoué")
 print(resultat)
@@ -560,17 +562,17 @@ print(resultat)
 * `np.where()` choisit `"Réussi"` si la condition est `True`, sinon `"Échoué"`.
 
 
-#### Variante : Classer les performances
+* **Équivalent à `if...elif...else`**
 
 ```python
-niveau = np.where(notes >= 85, "Excellent",
-          np.where(notes >= 60, "Réussi", "Échoué"))
+niveau = np.where(notes >= 60, "Réussi",
+          np.where(notes >= 50, "Passable", "Échoué"))
 print(niveau)
 ```
 
 **Résultat :**
 ```
-['Échoué' 'Réussi' 'Échoué' 'Excellent' 'Réussi' 'Échoué']
+['Échoué' 'Réussi' 'Passable' 'Réussi' 'Réussi' 'Échoué']
 ```
 
 
