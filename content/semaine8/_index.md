@@ -798,7 +798,7 @@ On mesure la distance parcourue par un chariot en fonction du temps.
 **Résultat** :
 ```
 Pente a = 1.02 m/s
-Ordonnée à l’origine b = -0.01 m
+Ordonnée à l’origine b = -0.10 m
 Coefficient de détermination R² = 0.999
 ```
 ![Graphique2](./graphique_distance_chariot.png?width=35vw)
