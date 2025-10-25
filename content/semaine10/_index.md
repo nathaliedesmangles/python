@@ -36,6 +36,6 @@ draft = false
 
 ### Fiches de révision
 
-[Fiches - Révision (version Word](./Fiches_Revision_Examen2.docx))
-[Fiches - Révision (version Word](./Fiches_Revisions_Examen2.pdf))
+[Fiches - Révision (version Word)](./Fiches_Revision_Examen2.docx)  
+[Fiches - Révision (version PDF)](./Fiches_Revisions_Examen2.pdf)
 
