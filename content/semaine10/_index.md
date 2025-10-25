@@ -12,7 +12,7 @@ draft = false
 
 ⦁ **Date**:			Semaine #10 (Voir le calendrier)  
 ⦁ **Durée**:			2h (2h40 pour les étudiants au SAA)  
-⦁ **Matière**: 		        Semaines 6 à 8 inclusivement (Pas la semaine 9)
+⦁ **Matière**: 		        Semaines 6 à 8 inclusivement (Pas la semaine 9)  
 ⦁ **Documentation permise**: 	3 feuilles recto-verso (manuscrites ou imprimées)  
 ⦁ **Format**:			Test sur Moodle (théorique + pratique).  
 ⦁ **Nombre de questions**:	27
