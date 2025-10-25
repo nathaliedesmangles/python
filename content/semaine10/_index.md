@@ -11,10 +11,10 @@ draft = false
 
 ⦁ **Date**:			Semaine #10 (Voir le calendrier)   
 ⦁ **Durée**:			2h (2h40 pour les étudiants au SAA)  
-⦁ **Matière**: 		        Semaines 6 à 9 inclusivement  
+⦁ **Matière**: 		        Semaines 6 à 8 inclusivement (Pas la semaine 9)
 ⦁ **Documentation permise**: 	3 feuilles recto-verso (manuscrites ou imprimées)  
 ⦁ **Format**:			Test sur Moodle (théorique + pratique).  
-⦁ **Nombre de questions**:	À VENIR
+⦁ **Nombre de questions**:	25
 
 
 ## Aide pour la préparation de vos feuilles de notes
@@ -30,8 +30,7 @@ draft = false
 [Guide - Questions à se poser (version PDF](./Questions_Feuille_de_notes_Examen2.pdf))
 
 
-### Fiches de révision (À VENIR)
-<!--
+### Fiches de révision
+
 [Fiches - Révision (version Word](./Fiches_Revision_Examen2.docx))
 [Fiches - Révision (version Word](./Fiches_Revisions_Examen2.pdf))
--->

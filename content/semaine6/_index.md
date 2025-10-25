@@ -243,6 +243,21 @@ fruits.append("cerise")  # ["pomme", "banane", "cerise"]
 fruits[1] = "poire"  # ["pomme", "poire", "cerise"]
 ```
 
+### Supprimer la **première occurrence** d’un élément
+
+```python
+fruits = ["pomme", "poire", "cerise", "poire"]
+fruits.remove("poire")	# ["pomme", "cerise", "poire"] Seul "poire" à l'indice 1 sera supprimé
+```
+
+### Supprimer un élément selon son indice
+
+```python
+fruits = ["pomme", "cerise", "poire"]
+fruits.pop(1)	# ["pomme", "poire"] "cerise" à l'indice 1 sera supprimé
+```
+
+
 ## Parcourir une liste avec la boucle `for`
 
 **Rappel** : La boucle `for` est utilisée quand **on connaît d’avance** combien de fois on doit répéter.
