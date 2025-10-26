@@ -5,34 +5,34 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.">
+    <meta name="description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <meta name="twitter:description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.">
+    <meta name="twitter:description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.">
     <meta property="og:url" content="https://example.org/solutions_ateliers/9_fichiers/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <meta property="og:description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.">
+    <meta property="og:description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <meta itemprop="description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.">
-    <meta itemprop="wordCount" content="290">
+    <meta itemprop="description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.">
+    <meta itemprop="wordCount" content="246">
     <title> Lecture et écriture de fichiers de données :: 420-SN1-RE</title>
     <link href="/solutions_ateliers/9_fichiers/index.xml" rel="alternate" type="application/rss+xml" title=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <link href="/images/logo.png?1761420188" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761420188" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761420188" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1761420188" rel="stylesheet">
-    <link href="/css/theme.min.css?1761420188" rel="stylesheet">
-    <link href="/css/format-html.min.css?1761420188" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1761420188" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1761420188" defer></script>
-    <script src="/js/lunr/lunr.min.js?1761420188" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1761420188" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1761420188" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1761420188" defer></script>
-    <script src="/js/search.min.js?1761420188" defer></script>
+    <link href="/images/logo.png?1761522949" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761522949" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761522949" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1761522949" rel="stylesheet">
+    <link href="/css/theme.min.css?1761522949" rel="stylesheet">
+    <link href="/css/format-html.min.css?1761522949" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1761522949" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1761522949" defer></script>
+    <script src="/js/lunr/lunr.min.js?1761522949" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1761522949" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1761522949" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1761522949" defer></script>
+    <script src="/js/search.min.js?1761522949" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1761420188";
+      window.relearn.index_js_url="/searchindex.en.js?1761522949";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1761420188" rel="stylesheet">
+    <link href="/css/custom.css?1761522949" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_ateliers/9_fichiers/index.html">
     <div id="R-body" class="default-animation">
@@ -139,28 +139,7 @@
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># PARTIE 1 — Lecture et écriture avec NumPy</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace)</span>
-</span></span><span style="display:flex;"><span>donnees_np <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>genfromtxt(<span style="color:#e6db74">&#34;eau.txt&#34;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; &#34;</span>, skip_header<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Données brutes (NumPy)&#34;</span>)
-</span></span><span style="display:flex;"><span>print(donnees_np)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de la moyenne pour chaque colonne</span>
-</span></span><span style="display:flex;"><span>moyennes <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>nanmean(donnees_np, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print()
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Moyennes des paramètres&#34;</span>)
-</span></span><span style="display:flex;"><span>print(moyennes)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sauvegarde des moyennes dans un fichier texte</span>
-</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>savetxt(<span style="color:#e6db74">&#34;moyennes_eau.txt&#34;</span>, moyennes, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%.2f</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>print()
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Fichier &#39;moyennes_eau.txt&#39; sauvegardé.&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># PARTIE 2 — Lecture et nettoyage avec pandas</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># PARTIE 1 — Lecture et nettoyage avec pandas</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Lecture du fichier CSV &#34;eau_riviere.csv&#34;</span>
 </span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;eau_riviere.csv&#34;</span>)
@@ -217,10 +196,13 @@
 </span></span><span style="display:flex;"><span>print()
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Fichier &#39;eau_riviere_nettoyee.csv&#39; sauvegardé avec succès.&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># PARTIE 3 — Visualisation graphique (Optionnel)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># PARTIE 2 — Visualisation graphique (Optionnel)</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Graphique 1</span>
 </span></span><span style="display:flex;"><span>erreur <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>
 </span></span><span style="display:flex;"><span>couleurs <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Qualite&#34;</span>]<span style="color:#f92672">.</span>map({<span style="color:#e6db74">&#34;Bonne&#34;</span>: <span style="color:#e6db74">&#34;skyblue&#34;</span>, <span style="color:#e6db74">&#34;Moyenne&#34;</span>: <span style="color:#e6db74">&#34;gold&#34;</span>, <span style="color:#e6db74">&#34;Faible&#34;</span>: <span style="color:#e6db74">&#34;salmon&#34;</span>})
 </span></span><span style="display:flex;"><span>
@@ -229,6 +211,15 @@
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Site d&#39;échantillonnage&#34;</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Oxygène (mg/L)&#34;</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;y&#34;</span>, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--&#34;</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Graphique 2</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>scatter(df[<span style="color:#e6db74">&#34;Site&#34;</span>], df[<span style="color:#e6db74">&#34;Oxygene&#34;</span>])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Concentration en oxygène dissous dans la rivière&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Site d&#39;échantillonnage&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Oxygène (mg/L)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 
   <footer class="footline">
@@ -292,7 +283,8 @@
             <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
             <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Lecture et écriture de fichiers textes (avec NumPy et Pandas)</a></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Manipulation de données dans un fichier (avec Pandas)</a></li>
+            <li class="" data-nav-id="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
             <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="parent " data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu">
@@ -320,8 +312,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1761420188" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1761420188" defer></script>
-    <script src="/js/theme.min.js?1761420188" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1761522949" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1761522949" defer></script>
+    <script src="/js/theme.min.js?1761522949" defer></script>
   </body>
 </html>

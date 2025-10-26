@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="description" content="Objectif Lire un fichier CSV contenant des données expérimentales. Nettoyer et sauvegarder un nouveau fichier corrigé. Manipuler un DataFrame Pandas (sélection, ajout, statistiques). Transformer les colonnes en tableaux NumPy pour des calculs scientifiques. Visualiser les données sous forme de nuage de points. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration
+Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content=" Manipulation de données dans un fichier texte (avec Pandas) :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectif Lire un fichier CSV contenant des données expérimentales. Nettoyer et sauvegarder un nouveau fichier corrigé. Manipuler un DataFrame Pandas (sélection, ajout, statistiques). Transformer les colonnes en tableaux NumPy pour des calculs scientifiques. Visualiser les données sous forme de nuage de points. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration
+Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
+    <meta property="og:url" content="http://localhost:1313/semaine9/_index2/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content=" Manipulation de données dans un fichier texte (avec Pandas) :: 420-SN1-RE">
+    <meta property="og:description" content="Objectif Lire un fichier CSV contenant des données expérimentales. Nettoyer et sauvegarder un nouveau fichier corrigé. Manipuler un DataFrame Pandas (sélection, ajout, statistiques). Transformer les colonnes en tableaux NumPy pour des calculs scientifiques. Visualiser les données sous forme de nuage de points. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration
+Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Semaine9s">
+    <meta itemprop="name" content=" Manipulation de données dans un fichier texte (avec Pandas) :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectif Lire un fichier CSV contenant des données expérimentales. Nettoyer et sauvegarder un nouveau fichier corrigé. Manipuler un DataFrame Pandas (sélection, ajout, statistiques). Transformer les colonnes en tableaux NumPy pour des calculs scientifiques. Visualiser les données sous forme de nuage de points. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration
+Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
+    <meta itemprop="wordCount" content="2261">
+    <title> Manipulation de données dans un fichier texte (avec Pandas) :: 420-SN1-RE</title>
+    <link href="/images/logo.png?1761519828" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761519828" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761519828" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1761519828" rel="stylesheet">
+    <link href="/css/theme.css?1761519828" rel="stylesheet">
+    <link href="/css/format-html.css?1761519828" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1761519828" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1761519828" defer></script>
+    <script src="/js/lunr/lunr.min.js?1761519828" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1761519828" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1761519828" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1761519828" defer></script>
+    <script src="/js/search.js?1761519828" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine9\/_index2\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1761519828";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+    <link href="/css/custom.css?1761519828" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/semaine9/_index2/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#objectif">Objectif</a></li>
+    <li><a href="#fichier-ipynb-pour-la-démo-en-classe">Fichier .ipynb pour la démo en classe</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#fichiers-de-départ-à-utiliser">Fichiers de départ à utiliser</a>
+      <ul>
+        <li><a href="#exercice-3-pandas">Exercice 3 (Pandas)</a></li>
+        <li><a href="#exercice-4-pandas">Exercice 4 (Pandas)</a></li>
+        <li><a href="#exercice-5-pandas">Exercice 5 (Pandas)</a></li>
+        <li><a href="#exercice-6-pandas">Exercice 6 (Pandas)</a></li>
+        <li><a href="#exercice-7-pandas">Exercice 7 (Pandas)</a></li>
+        <li><a href="#exercice-8-pandas-et-numpy">Exercice 8 (Pandas et NumPy)</a></li>
+        <li><a href="#exercice-9-pandas">Exercice 9 (Pandas)</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#gestion-de-fichiers">Gestion de fichiers</a>
+      <ul>
+        <li><a href="#lecture-dun-fichier-csv-avec-pandasread_csv">Lecture d’un fichier CSV avec <code>pandas.read_csv()</code></a></li>
+        <li><a href="#lecture-du-fichier-avec-pandas">Lecture du fichier avec Pandas</a></li>
+        <li><a href="#gestion-des-lignes-contenant-des-valeurs-manquantes-avec-isna-et-dropna">Gestion des lignes contenant des valeurs manquantes avec <code>isna()</code> et <code>dropna()</code></a></li>
+        <li><a href="#suppression-de-lignes-contenant-des-valeurs-manquantes-avec-dropna">Suppression de lignes contenant des valeurs manquantes avec <code>dropna()</code></a></li>
+        <li><a href="#remplacement-des-valeurs-manquantes-avec-fillna">Remplacement des valeurs manquantes avec <code>fillna()</code></a></li>
+        <li><a href="#exportation-dun-fichier-nettoyé-avec-to_csv">Exportation d’un fichier nettoyé avec <code>to_csv()</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#manipulation-dun-dataframe">Manipulation d&rsquo;un DataFrame</a>
+      <ul>
+        <li><a href="#sélection-dune-colonne">Sélection d’une colonne</a></li>
+        <li><a href="#création-de-nouvelles-colonnes">Création de nouvelles colonnes</a></li>
+        <li><a href="#affichage-et-statistiques-de-base">Affichage et statistiques de base</a></li>
+      </ul>
+    </li>
+    <li><a href="#conversion-dune-colonne-du-dataframe-en-tableaux-numpy-avec-to_numpy">Conversion d&rsquo;une colonne du DataFrame en tableaux NumPy avec <code>.to_numpy()</code></a></li>
+    <li><a href="#visualisation--graphique-en-nuage-de-points-avec-pltscatter">Visualisation : graphique en nuage de points avec <code>plt.scatter()</code></a></li>
+    <li><a href="#à-retenir">À retenir</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#exercice---analyse-de-la-qualité-de-leau-dune-rivière">Exercice - Analyse de la qualité de l’eau d’une rivière</a>
+      <ul>
+        <li><a href="#partie-1--lecture-et-nettoyage-avec-pandas">PARTIE 1 — Lecture et nettoyage avec pandas</a></li>
+        <li><a href="#partie-2--visualisation-graphique-optionnel">PARTIE 2 — Visualisation graphique (optionnel)</a></li>
+      </ul>
+    </li>
+    <li><a href="#à-faire-avant-le-prochain-cours">À faire avant le prochain cours</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine9/index.html"><span itemprop="name">Semaine9s</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Manipulation de données dans un fichier texte (avec Pandas)</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine9/index.html" title="Semaine9s (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine9" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="manipulation-de-données-dans-un-fichier-texte-avec-pandas"> Manipulation de données dans un fichier texte (avec Pandas)</h1>
+
+<h2 id="objectif">Objectif</h2>
+<ol>
+<li>Lire un fichier CSV contenant des données expérimentales.</li>
+<li>Nettoyer et sauvegarder un nouveau fichier corrigé.</li>
+<li>Manipuler un <strong>DataFrame</strong> Pandas (sélection, ajout, statistiques).</li>
+<li>Transformer les colonnes en <strong>tableaux NumPy</strong> pour des calculs scientifiques.</li>
+<li>Visualiser les données sous forme de <strong>nuage de points</strong>.</li>
+</ol>
+<h2 id="fichier-ipynb-pour-la-démo-en-classe">Fichier .ipynb pour la démo en classe</h2>
+<p><a href="https://python-a25.netlify.app/blocnotes/demo_pandas.ipynb" rel="external" target="_blank">Fichier utilisé pour la démonstration</a></p>
+<hr>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Apprendre par la pratique
+  </summary>
+  <div class="box-content">
+<ul>
+<li><strong>Faites les exercices</strong> en vous aidant des notes de cours ci-dessous.</li>
+<li>Certains seront fait en classe à titre de démonstration.</li>
+<li>Les solutions seront disponibles à la fin de la semaine prochaine.</li>
+</ul>
+  </div>
+</details>
+<hr>
+<h1 id="exercices">Exercices</h1>
+<h2 id="fichiers-de-départ-à-utiliser">Fichiers de départ à utiliser</h2>
+<p><a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb" rel="external" target="_blank"><strong>Bloc-notes de départ - Pandas</strong></a></p>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Exercices #1 et #2
+  </summary>
+  <div class="box-content">
+<p>Les exercices #1 et #2 utilisaient NumPy pour la lecture/écriture de fichiers et ils ont été retirés de la leçon.</p>
+  </div>
+</details>
+<h3 id="exercice-3-pandas">Exercice 3 (Pandas)</h3>
+<p><strong>Objectif :</strong> lire un fichier CSV dans un DataFrame et explorer les données.</p>
+<ol>
+<li>
+<p><strong>Lire le fichier CSV <code>etudiants.csv</code></strong></p>
+<ul>
+<li>Utilisez <code>pd.read_csv(&quot;etudiants.csv&quot;)</code> pour créer un DataFrame <code>df_etudiants</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Afficher un aperçu des données</strong></p>
+<ul>
+<li><code>df_etudiants.head(3)</code> montre les 3 premières lignes. Utile pour vérifier que le fichier a été lu correctement.</li>
+</ul>
+</li>
+<li>
+<p><strong>Résumé statistique</strong></p>
+<ul>
+<li><code>df_etudiants[&quot;Note&quot;].describe()</code> fournit la moyenne, l’écart-type, le minimum, le maximum, etc. Permet de comprendre rapidement la distribution des notes.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Résultats</strong> :<br>
+<strong>Pour df_etudiants.head(3)</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>     Nom    Âge    Note
+0   Aurélie  20    85
+1   Claude   21    67
+2   Charlie  19    45</code></pre></div>
+<p><strong>Pour df_etudiants[&ldquo;Note&rdquo;].describe()</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>count    10.000000
+mean     66.200000
+std      15.061356
+min      45.000000
+25%      55.750000
+50%      65.500000
+75%      75.000000
+max      91.000000
+Name: Note, dtype: float64</code></pre></div>
+<h3 id="exercice-4-pandas">Exercice 4 (Pandas)</h3>
+<p><strong>Objectif :</strong> créer une nouvelle colonne conditionnelle et sauvegarder le résultat.</p>
+<ol>
+<li>
+<p><strong>Dans le DataFrame <strong>df_etudiants</strong>, ajouter la colonne <code>Mention</code></strong></p>
+<ul>
+<li>
+<p>Ajoutez une colonne <strong>Mention</strong> au DataFrame en fonction de la note, avec les conditions :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>* note &gt;= 70 → &#34;Bien&#34; 
+* note &gt;= 50 → &#34;Passable&#34; 
+* note &lt; 50 → &#34;Échec&#34;</code></pre></div>
+</li>
+<li>
+<p>Selon l’intervalle, attribuez la mention : &ldquo;Bien&rdquo;, &ldquo;Passable&rdquo;, &ldquo;Échec&rdquo;.</p>
+<ul>
+<li>Utilisez 2 <code>np.where()</code> pour appliquer les conditions à tout le DataFrame.<br><a href="http://localhost:1313/semaine8/#3-filtre-avec-npwhere" rel="external" target="_blank">Rappel sur np.where()</a></li>
+<li>Ex: <code>df_etudiants[&quot;Mention&quot;] = np.where(Si_note_&gt;=70, &quot;Bien&quot;, np.where(si_note_&gt;=50, &quot;Passable&quot;, &quot;Échec&quot;))</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Enregistrer le DataFrame</strong></p>
+<ul>
+<li>Utilisez <code>df_etudiants.to_csv(&quot;etudiants_mentions.csv&quot;, index=False)</code> pour sauvegarder.</li>
+<li>Vérifiez le fichier créé pour voir la nouvelle colonne.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Résultats</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Données originales
+       Nom  Âge  Note
+0  Aurélie   20    85
+1   Claude   21    67
+2  Charlie   19    45
+3    David   22    72
+4     Emma   20    58
+5    Fiona   21    49
+6   George   23    91
+7   Hannah   20    76
+8      Ian   22    64
+9    Julia   19    55
+
+Données avec mentions
+       Nom  Âge  Note   Mention
+0  Aurélie   20    85      Bien
+1   Claude   21    67  Passable
+2  Charlie   19    45     Échec
+3    David   22    72      Bien
+4     Emma   20    58  Passable
+5    Fiona   21    49     Échec
+6   George   23    91      Bien
+7   Hannah   20    76      Bien
+8      Ian   22    64  Passable
+9    Julia   19    55  Passable</code></pre></div>
+<h3 id="exercice-5-pandas">Exercice 5 (Pandas)</h3>
+<p><strong>Objectif :</strong> lire un fichier texte tabulé et le réexporter en conservant la structure.</p>
+<ol>
+<li>
+<p><strong>Lire le fichier <code>experience.txt</code></strong></p>
+<ul>
+<li>Utilisez <code>pd.read_csv(&quot;experience.txt&quot;, sep=&quot;\t&quot;)</code> pour indiquer que les colonnes sont séparées par des tabulations (<code>\t</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Vérifier les données</strong></p>
+<ul>
+<li>Utilisez <code>df.head()</code> pour visualiser quelques lignes et vérifier que toutes les colonnes sont correctement lues.</li>
+</ul>
+</li>
+<li>
+<p><strong>Réexporter le fichier</strong></p>
+<ul>
+<li>Utilisez <code>df.to_csv(&quot;experience_export.txt&quot;, sep=&quot;\t&quot;, index=False)</code> pour sauvegarder en conservant les tabulations.</li>
+<li>Vérifiez le fichier exporté pour vous assurer que la structure est respectée.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Résultats</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Fichier &#39;experience_export.txt&#39; enregistré avec tabulations.
+   Température  Pression  Volume
+0         25.0      1.01    10.5
+1         30.0      1.05    11.0
+2         35.0      1.10    11.5
+3         40.0      1.15    12.0
+4         45.0      1.20    12.5
+5         50.0      1.25    13.0
+6         55.0      1.30    13.5
+7         60.0      1.35    14.0
+8         65.0      1.40    14.5
+9         70.0      1.45    15.0</code></pre></div>
+<h3 id="exercice-6-pandas">Exercice 6 (Pandas)</h3>
+<p>Lors d’une expérience de chimie, on a mesuré la <strong>solubilité d’un sel (en g/100 mL d’eau)</strong> à différentes températures.
+Certaines mesures ont été perdues pendant l’enregistrement, et apparaissent comme <strong>valeurs manquantes</strong> (<code>NaN</code>) dans le fichier.</p>
+<p>Les données suivantes ont été enregistrées dans le fichier <code>solubilite_sel.csv</code> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-csv" data-lang="csv">temperature,solubilite
+0,32.0
+10,34.1
+20,NaN
+30,37.5
+40,38.8
+50,NaN
+60,42.0</code></pre></div>
+<ol>
+<li><strong>Lire</strong> le fichier <code>solubilite_sel.csv</code> à l’aide de pandas et afficher son contenu.</li>
+<li><strong>Vérifier la présence</strong> de valeurs manquantes.  Utilisez <code>df.isna()</code> ou <code>df.isnull()</code> pour identifier les cellules vides.</li>
+<li><strong>Compter</strong> le nombre total de valeurs manquantes dans le tableau (<code>df.isna().sum().sum()</code>).</li>
+<li><strong>Remplacer</strong> les valeurs manquantes par la moyenne des autres valeurs mesurées. Utilisez  <code>df['colonne'].fillna(df['colonne'].mean())</code></li>
+<li><strong>Afficher le nouveau tableau</strong> et vérifier qu’il ne contient plus de valeurs manquantes.</li>
+<li><strong>Tracer un graphique</strong> (<code>plot()</code>) de la <strong>solubilité</strong> en fonction de la <strong>température</strong> pour visualiser le résultat.</li>
+</ol>
+<p><strong>Résultats</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Valeurs manquantes :
+   temperature  solubilite
+0        False       False
+1        False       False
+2        False        True
+3        False       False
+4        False       False
+5        False        True
+6        False       False
+Nombre total de NaN : 2
+
+Données après traitement :
+   temperature  solubilite
+0            0       32.00
+1           10       34.10
+2           20       36.88
+3           30       37.50
+4           40       38.80
+5           50       36.88
+6           60       42.00</code></pre></div>
+<p><a href="#R-image-55484bb58a63a4903e6c20c197c8a360" class="lightbox-link"><img alt="Solubilité vs température" class="lazy lightbox figure-image" loading="lazy" src="./solubilite_temp.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-55484bb58a63a4903e6c20c197c8a360"><img alt="Solubilité vs température" class="lazy lightbox lightbox-image" loading="lazy" src="./solubilite_temp.png?width=35vw"></a></p>
+<h3 id="exercice-7-pandas">Exercice 7 (Pandas)</h3>
+<p>Cet exercice vous fait naviguer dans un tableau avant d’en extraire ou comparer des valeurs.</p>
+<ol>
+<li>Lire le fichier <code>plantes.csv</code> contenant les colonnes <code>Nom</code>, <code>Hauteur_cm</code>, <code>Teneur_eau_%</code>.</li>
+<li>Afficher la 5e ligne complète.</li>
+<li>Afficher uniquement la colonne de la hauteur.</li>
+<li>Afficher les 3 premières plantes et leurs deux premières colonnes.</li>
+</ol>
+<p><strong>Résultats</strong>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>5e ligne complète :
+Nom             Bambou
+Hauteur_cm         180
+Teneur_eau_%        75
+Name: 4, dtype: object
+
+Colonne Hauteur_cm :
+0     45
+1     30
+2     12
+3     28
+4    180
+5     25
+6     35
+Name: Hauteur_cm, dtype: int64
+
+3 premières plantes, 2 premières colonnes :
+        Nom  Hauteur_cm
+0   Fougère          45
+1  Orchidée          30
+2    Cactus          12</code></pre></div>
+<h3 id="exercice-8-pandas-et-numpy">Exercice 8 (Pandas et NumPy)</h3>
+<p>Cet exercice prépare à faire des analyses et régressions à partir de données réelles.</p>
+<ol>
+<li>Avec <strong>Pandas</strong>, lire le fichier <code>solutions.csv</code> contenant des colonnes <code>Temp_C</code> et <code>Concentration_mol_L</code>.</li>
+<li>Convertir ces deux colonnes en tableaux NumPy avec <code>.to_numpy()</code>.</li>
+<li>Calculer la moyenne et l’écart-type de la concentration avec les fonctions appropriées de <strong>NumPy</strong> (pas Pandas).</li>
+<li>Créer un graphique <code>Temp_C</code> vs <code>Concentration_mol_L</code> avec <code>plt.plot()</code>.</li>
+</ol>
+<p><strong>Résultats</strong>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code> Concentration moyenne : 0.1742857142857143
+Écart-type : 0.05447335989982177</code></pre></div>
+<p><a href="#R-image-5e087f674ff609be2da2fca020126ed4" class="lightbox-link"><img alt="Tempéraure vs Concentration" class="lazy lightbox figure-image" loading="lazy" src="./temp_conc.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5e087f674ff609be2da2fca020126ed4"><img alt="Tempéraure vs Concentration" class="lazy lightbox lightbox-image" loading="lazy" src="./temp_conc.png?width=35vw"></a></p>
+<h3 id="exercice-9-pandas">Exercice 9 (Pandas)</h3>
+<p>Cet exercice aide à comprendre comment analyser chaque ligne d’un jeu de données et enrichir le tableau.</p>
+<ol>
+<li>Lire le fichier <code>minéraux.csv</code> contenant les colonnes <code>Nom</code> et <code>Densité</code>.</li>
+<li>Parcourir le DataFrame <strong>ligne par ligne</strong> avec <code>.iterrows()</code>.</li>
+<li>Afficher <code>&quot;léger&quot;</code> si la densité &lt; 3, sinon <code>&quot;lourd&quot;</code>. Utiliser <code>if-else</code>.</li>
+<li>Ajouter une nouvelle colonne <code>Catégorie</code> contenant ces valeurs, puis affiche le tableau final.</li>
+</ol>
+<p><strong>Résultats</strong>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>        Nom  Densité Catégorie
+0    Quartz     2.65     léger
+1    Galène     7.50     lourd
+2   Calcite     2.71     léger
+3    Pyrite     5.02     lourd
+4     Gypse     2.30     léger
+5  Hématite     5.25     lourd
+6      Mica     2.83     léger</code></pre></div>
+<hr>
+<h1 id="cours">Cours</h1>
+<h2 id="gestion-de-fichiers">Gestion de fichiers</h2>
+<h3 id="lecture-dun-fichier-csv-avec-pandasread_csv">Lecture d’un fichier CSV avec <code>pandas.read_csv()</code></h3>
+<p>Le format <strong>CSV</strong> (<em>Comma-Separated Values</em>) est couramment utilisé pour exporter des données depuis des logiciels comme Excel, Logger Pro ou Capstone.</p>
+<p>Exemple :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-csv" data-lang="csv">x;v
+0,00;0,00
+0,02;		&lt;-- Valeur manquante
+0,04;0,60
+0,06;0,82
+0,08;0,96
+0,10;1,05
+0,12;1,18
+0,14;1,26
+0,16;		&lt;-- Valeur manquante
+0,18;1,42
+0,20;1,50	</code></pre></div>
+<p>→ Ce fichier utilise <strong>le point-virgule (;)</strong> comme séparateur et <strong>la virgule (,)</strong> comme séparateur décimal (format canadien-français).</p>
+<h3 id="lecture-du-fichier-avec-pandas">Lecture du fichier avec Pandas</h3>
+<ul>
+<li>Lorsqu&rsquo;on lit un fichier <em>.csv</em> avec Pandas, le contenu est stocké dans une variable de type <em><strong>DataFrame</strong></em>.</li>
+<li>Un <em><strong>DataFrame</strong></em> est un tableau de données à deux dimensions (colonnes et lignes).</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lecture du fichier avec le bon séparateur et la bonne convention décimale</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;donnees.csv&#34;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;;&#34;</span>, decimal<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>)
+</span></span><span style="display:flex;"><span>df</span></span></code></pre></div>
+<p><strong>Paramètres importants :</strong></p>
+<ul>
+<li><code>delimiter=&quot;;&quot;</code> → indique que les valeurs sont séparées par des points-virgules.</li>
+<li><code>decimal=&quot;,&quot;</code> → indique que la virgule est utilisée pour les décimales.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>	x	v
+0	0.00	0.00
+1	0.02	NaN	&lt;-- Valeur manquante
+2	0.04	0.60
+3	0.06	0.82
+4	0.08	0.96
+5	0.10	1.05
+6	0.12	1.18
+7	0.14	1.26
+8	0.16	NaN	&lt;-- Valeur manquante
+9	0.18	1.42
+10	0.20	1.50</code></pre></div>
+<h3 id="gestion-des-lignes-contenant-des-valeurs-manquantes-avec-isna-et-dropna">Gestion des lignes contenant des valeurs manquantes avec <code>isna()</code> et <code>dropna()</code></h3>
+<p>Quand on travaille avec des données expérimentales, il arrive qu’une mesure soit <strong>absente</strong> (oubliée, perdue, ou invalide).
+Dans un tableau pandas, une valeur manquante est notée <strong><code>NaN</code></strong> (<em>Not a Number</em>).</p>
+<p><strong>Utilisation de <code>.isna()</code></strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>isna()</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>	x	v
+0	False	False
+1	False	True	&lt;-- Valeur manquante
+2	False	False
+3	False	False
+4	False	False
+5	False	False
+6	False	False
+7	False	False
+8	False	True	&lt;-- Valeur manquante
+9	False	False
+10	False	False</code></pre></div>
+<blockquote>
+<p>On peut aussi utiliser la fonction <code>df.isnull()</code>. Au lieu de <em><strong>NaN</strong></em> elle renvoie un tableau de <strong>valeurs booléennes</strong> (<code>True</code> si la cellule est vide, <code>False</code> sinon) :</p>
+</blockquote>
+<h3 id="suppression-de-lignes-contenant-des-valeurs-manquantes-avec-dropna">Suppression de lignes contenant des valeurs manquantes avec <code>dropna()</code></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df_corrige <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>dropna()</span></span></code></pre></div>
+<h3 id="remplacement-des-valeurs-manquantes-avec-fillna">Remplacement des valeurs manquantes avec <code>fillna()</code></h3>
+<p>Au lieu de supprimer les lignes contenant des valeurs manquantes, on peut remplacer les valeurs manquantes par une valeur choisie (par exemple, la moyenne) :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;v&#34;</span>]<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;v&#34;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;v&#34;</span>]<span style="color:#f92672">.</span>fillna(moyenne)</span></span></code></pre></div>
+<blockquote>
+<p>Ici, toutes les cases vides de la colonne <code>v</code> sont remplacées par la moyenne des valeurs existantes.</p>
+</blockquote>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>x,v
+0.0,0.0
+0.02,0.9766666666666666	&lt;-- Moyenne
+0.04,0.6
+0.06,0.82
+0.08,0.96
+0.1,1.05
+0.12,1.18
+0.14,1.26
+0.16,0.9766666666666666	&lt;-- Moyenne
+0.18,1.42
+0.2,1.5</code></pre></div>
+<h3 id="exportation-dun-fichier-nettoyé-avec-to_csv">Exportation d’un fichier nettoyé avec <code>to_csv()</code></h3>
+<p>Une fois les données vérifiées et nettoyées, on peut les sauvegarder dans un nouveau fichier plus « propre » (ex. : avec des points pour les décimales).</p>
+<p>Si on veut sauvegarder un fichier <strong>corrigé</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Exportation du fichier corrigé</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>to_csv(<span style="color:#e6db74">&#34;donnees_corrigees.csv&#34;</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)</span></span></code></pre></div>
+<ul>
+<li>Les colonnes numériques sont automatiquement converties en <em><strong>float</strong></em> python (le point pour les décimales)</li>
+<li><code>index=False</code> empêche Pandas d’ajouter une colonne de numéros de ligne.</li>
+</ul>
+<p><strong>IMPORTANT</strong> : Le fichier source <strong>reste intact</strong>, on ne modifie jamais le fichier original. C’est une bonne pratique de <strong>ne jamais écraser le fichier original</strong> pour conserver une trace des données brutes.</p>
+<h2 id="manipulation-dun-dataframe">Manipulation d&rsquo;un DataFrame</h2>
+<h3 id="sélection-dune-colonne">Sélection d’une colonne</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Accès à une colonne</span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;x&#34;</span>]	<span style="color:#75715e"># Données de la colonne x</span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;v&#34;</span>] <span style="color:#75715e"># Données de la colonne v</span></span></span></code></pre></div>
+<p>On peut aussi accéder à <strong>plusieurs colonnes</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[[<span style="color:#e6db74">&#34;x&#34;</span>, <span style="color:#e6db74">&#34;v&#34;</span>]]	<span style="color:#75715e"># Seulement les données des 2 colonnes</span></span></span></code></pre></div>
+<h3 id="création-de-nouvelles-colonnes">Création de nouvelles colonnes</h3>
+<p>Exemple : calcul de l’étirement d’un ressort à partir de la position et de la position d’équilibre.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x_eq <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.125</span>  <span style="color:#75715e"># position d’équilibre du ressort</span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;e&#34;</span>] <span style="color:#f92672">=</span> x_eq <span style="color:#f92672">-</span> df[<span style="color:#e6db74">&#34;x&#34;</span>]  <span style="color:#75715e"># nouvelle colonne &#34;e&#34;</span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;de&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.002</span>  <span style="color:#75715e"># même incertitude pour toutes les mesures</span></span></span></code></pre></div>
+<h3 id="affichage-et-statistiques-de-base">Affichage et statistiques de base</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Afficher les 5 premières lignes</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>head()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Afficher les 10 premières lignes</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Afficher les 5 dernières lignes</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>tail()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Afficher les 10 dernières lignes</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>tail(<span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Informations sur les colonnes et le type de données</span>
+</span></span><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>info())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Obtenir un résumé statistique (Nombre de valeurs par colonne, moyenne, écart-type, etc.)</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>describe()</span></span></code></pre></div>
+<p>Résultat typique :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>	x	v	E
+count	11.000000	11.000000	11.000000
+mean	0.100000	0.976667	0.138757
+std	0.066332	0.414488	0.083847
+min	0.000000	0.000000	0.000000
+25%	0.050000	0.890000	0.099625
+50%	0.100000	0.976667	0.119235
+75%	0.150000	1.220000	0.186250
+max	0.200000	1.500000	0.281250</code></pre></div>
+<h2 id="conversion-dune-colonne-du-dataframe-en-tableaux-numpy-avec-to_numpy">Conversion d&rsquo;une colonne du DataFrame en tableaux NumPy avec <code>.to_numpy()</code></h2>
+<p>Parfois, on veut faire des calculs mathématiques rapides sur une colonne (ex. : calcul d’énergie, moyenne, écart-type, etc.).
+Pour cela, on peut convertir une colonne en <strong>tableau NumPy</strong>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Conversion d’une colonne en tableau NumPy</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;x&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
+</span></span><span style="display:flex;"><span>v <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;v&#34;</span>]<span style="color:#f92672">.</span>to_numpy()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple de calcul</span>
+</span></span><span style="display:flex;"><span>v_moy <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>mean(v)
+</span></span><span style="display:flex;"><span>v_moy</span></span></code></pre></div>
+<ul>
+<li>Ensuite, on peut utiliser les fonctionnalités de NumPy sur les données (converties en tableaux).</li>
+</ul>
+<h2 id="visualisation--graphique-en-nuage-de-points-avec-pltscatter">Visualisation : graphique en nuage de points avec <code>plt.scatter()</code></h2>
+<p>Pour visualiser la relation entre deux grandeurs physiques (ex. position et vitesse) :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>scatter(df[<span style="color:#e6db74">&#34;x&#34;</span>], df[<span style="color:#e6db74">&#34;v&#34;</span>], color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;blue&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Données expérimentales&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Position x (m)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Vitesse v (m/s)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Vitesse en fonction de la position&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<ul>
+<li>Chaque point correspond à une mesure expérimentale.</li>
+</ul>
+<p><a href="#R-image-6783461601295da31eebe12ee545dfba" class="lightbox-link"><img alt="Nuage" class="lazy lightbox figure-image" loading="lazy" src="./nuage.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6783461601295da31eebe12ee545dfba"><img alt="Nuage" class="lazy lightbox lightbox-image" loading="lazy" src="./nuage.png?width=35vw"></a></p>
+<h2 id="à-retenir">À retenir</h2>
+<table>
+<thead>
+<tr>
+<th>Étape</th>
+<th>Fonction</th>
+<th>Objectif principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lecture de fichier</td>
+<td><code>read_csv()</code></td>
+<td>Importer les données expérimentales</td>
+</tr>
+<tr>
+<td>Affichage du df</td>
+<td><code>head()</code>, <code>tail()</code></td>
+<td>Par défaut 5 lignes</td>
+</tr>
+<tr>
+<td>Infos et statistiques</td>
+<td><code>info()</code>, <code>describe()</code></td>
+<td>Noms, types et statistiques des colonnes</td>
+</tr>
+<tr>
+<td>Nettoyage et exportation</td>
+<td><code>to_csv()</code></td>
+<td>Créer un fichier compatible avec Python</td>
+</tr>
+<tr>
+<td>Manipulation de colonnes</td>
+<td><code>DataFrame[&quot;col&quot;]</code></td>
+<td>Ajouter, modifier ou analyser les données</td>
+</tr>
+<tr>
+<td>Conversion en tableau</td>
+<td><code>to_numpy()</code></td>
+<td>Calculs scientifiques rapides</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Étape</th>
+<th>Fonction</th>
+<th>Résultat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vérifier si une valeur est manquante</td>
+<td><code>isna()</code></td>
+<td>True / False</td>
+</tr>
+<tr>
+<td>Compter le nombre de valeurs manquantes par colonne</td>
+<td><code>isna().sum()</code></td>
+<td>nombre par colonne</td>
+</tr>
+<tr>
+<td>Compter le total des valeurs manquantes</td>
+<td><code>isna().sum().sum()</code></td>
+<td>total</td>
+</tr>
+<tr>
+<td>Remplacer les valeurs manquantes</td>
+<td><code>fillna()</code></td>
+<td>Tableau sans NaN</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="atelier">Atelier</h1>
+<ol>
+<li>Téléchargez les fichiers de départ (.ipynb):
+<a href="https://python-a25.netlify.app/blocnotes/atelier_fichiers.ipynb" rel="external" target="_blank">Bloc-notes de départ</a></li>
+<li>Téléchargez le fichier de données:<a href="./eau_riviere.csv">eau_riviere.csv</a></li>
+<li>Déplacez-les dans votre dossier prévu pour de la semaine en cours.</li>
+<li>Ouvrez votre dossier de travail programmation-sciences à partir de Visual Studio Code.
+<ul>
+<li>Vous devriez voir votre structure de dossiers et vos fichiers (.ipynb, .txt, .csv).</li>
+</ul>
+</li>
+</ol>
+<h2 id="exercice---analyse-de-la-qualité-de-leau-dune-rivière">Exercice - Analyse de la qualité de l’eau d’une rivière</h2>
+<ul>
+<li>Un groupe d’étudiants en sciences environnementales surveille la qualité de l’eau d’une rivière.</li>
+<li>Les mesures (<strong>température</strong>, <strong>pH</strong>, <strong>concentration en oxygène</strong>, <strong>turbidité</strong>) ont été recueillies à différents points de la rivière.</li>
+<li>Certaines données sont <strong>manquantes</strong> et doivent être traitées avant l’analyse.</li>
+<li>Afin de les aider dans l&rsquo;analyse des données recueillies, ils vous demandent de :
+<ul>
+<li>Lire et écrire des fichiers .csv` avec <strong>pandas</strong>.</li>
+<li>Nettoyer les valeurs manquantes.</li>
+<li>Ajouter des colonnes dérivées (<code>Qualite</code>, <code>Alerte</code>).</li>
+<li>Enregistrer les résultats nettoyés.</li>
+<li>(optionnel) Visualiser graphiquement des données.</li>
+</ul>
+</li>
+</ul>
+<h3 id="partie-1--lecture-et-nettoyage-avec-pandas">PARTIE 1 — Lecture et nettoyage avec pandas</h3>
+<ul>
+<li>
+<p>Lire le fichier <code>eau_riviere.csv</code> avec <code>pd.read_csv()</code>.</p>
+</li>
+<li>
+<p>Détecter les valeurs manquantes avec <code>.isna()</code>.</p>
+</li>
+<li>
+<p>Remplacer les manquantes par la moyenne de la colonne correspondante avec <code>.fillna()</code>.</p>
+</li>
+<li>
+<p>Ajouter la colonne <code>Qualite</code> selon la concentration dans la colonne <code>Oxygene</code> (<strong>Astuce</strong>: Utilisez <code>np.where()</code>):</p>
+<ul>
+<li><code>Oxygene &gt;= 8.0</code> → <code>&quot;Bonne&quot;</code></li>
+<li><code>7.5 &lt;= Oxygene &lt; 8.0</code> → <code>&quot;Moyenne&quot;</code></li>
+<li><code>Oxygene &lt; 7.5</code> → <code>&quot;Faible&quot;</code></li>
+</ul>
+</li>
+<li>
+<p>Ajouter la colonne <code>Alerte</code> : Contenant <code>&quot;Attention&quot;</code> si <code>pH &lt; 7.0</code>, sinon <code>&quot;OK&quot;</code>. <strong>Astuce</strong>: Utilisez <code>np.where()</code>.</p>
+</li>
+<li>
+<p>Sauvegarder le DataFrame nettoyé dans un fichier <code>eau_riviere_nettoyee.csv</code>.</p>
+</li>
+</ul>
+<h3 id="partie-2--visualisation-graphique-optionnel">PARTIE 2 — Visualisation graphique (optionnel)</h3>
+<ul>
+<li>À partir du DataFrame Pandas, tracez 2 graphiques</li>
+</ul>
+<p><strong>Graphique #1</strong></p>
+<ul>
+<li>Avec barre d&rsquo;erreurs sur les valeurs d’oxygène par site, avec des barres d’erreur représentant ±0.2 mg/L d’incertitude.</li>
+<li>Ajoutez les titres et les étiquettes d’axes.</li>
+<li>Personnalisez les couleurs selon la qualité.</li>
+</ul>
+<p><a href="#R-image-48df88727fe8b7495ee5a498f677bc9b" class="lightbox-link"><img alt="Oxygène par site" class="lazy lightbox figure-image" loading="lazy" src="./oxygene_sites.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-48df88727fe8b7495ee5a498f677bc9b"><img alt="Oxygène par site" class="lazy lightbox lightbox-image" loading="lazy" src="./oxygene_sites.png?width=35vw"></a></p>
+<p><strong>Graphique #2</strong> -  Nuage de points des valeurs d’oxygène par site</p>
+<p><a href="#R-image-761c9b3337c326dfade138247b3b0cb5" class="lightbox-link"><img alt="Oxygène par site" class="lazy lightbox figure-image" loading="lazy" src="./oxygene_sites_nuage.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-761c9b3337c326dfade138247b3b0cb5"><img alt="Oxygène par site" class="lazy lightbox lightbox-image" loading="lazy" src="./oxygene_sites_nuage.png?width=35vw"></a></p>
+<!--
+# Atelier
+
+**Solution :**
+
+```python
+import pandas as pd
+
+df = pd.read_csv("donnees_ressort.csv", delimiter=";", decimal=",")
+print(df.head())
+```
+```python
+x_eq = 0.125
+df["e"] = x_eq - df["x"]
+df.head()
+```
+
+```python
+import numpy as np
+
+v = df["v"].to_numpy()
+v_moy = np.mean(v)
+print("Vitesse moyenne =", v_moy, "m/s")
+```
+
+
+```python
+import matplotlib.pyplot as plt
+
+plt.scatter(df["x"], df["v"], color="purple")
+plt.xlabel("Position x (m)")
+plt.ylabel("Vitesse v (m/s)")
+plt.title("Vitesse en fonction de la position")
+plt.show()
+```
+```python
+print(df.describe())
+v_max = df["v"].max()
+print("Vitesse maximale :", v_max, "m/s")
+```
+
+
+```python
+df.to_csv("donnees_corrigees.csv", index=False)
+```
+
+## Exercice
+
+1. Lecture et affichage d’un fichier CSV
+
+Un fichier nommé `donnees_ressort.csv` contient les colonnes `x;v`.
+Lis ce fichier dans un DataFrame Pandas et affiche les 5 premières lignes.
+
+2. Ajout d’une colonne calculée
+
+La position d’équilibre du ressort est `x_eq = 0.125 m`.
+Ajoute une colonne `"e"` correspondant à l’étirement du ressort (`x_eq - x`).
+
+3. Conversion d’une colonne en tableau NumPy
+
+Transforme la colonne `"v"` en tableau NumPy, puis calcule sa moyenne.
+
+4. Création d’un graphique
+
+Trace la vitesse `v` en fonction de la position `x` sous forme de nuage de points.
+
+5. Exploration statistique
+
+Affiche les statistiques descriptives du DataFrame (`min`, `max`, `moyenne`, etc.) et identifie la plus grande vitesse mesurée.
+
+6. Exportation d’un fichier corrigé
+
+Enregistre le DataFrame (avec la nouvelle colonne `e`) sous le nom `donnees_corrigees.csv`.
+-->
+<hr>
+<h2 id="à-faire-avant-le-prochain-cours">À faire avant le prochain cours</h2>
+<blockquote>
+<p><strong>RAPPEL</strong>: Semaine prochaine c&rsquo;est le <strong>deuxième examen</strong> (30%)</p>
+</blockquote>
+<ol>
+<li>Lire la prochaine leçon : <a href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+<li>Faire les exercices de la <a href="/semaine11/index.html#exercices">prochaine leçon</a></li>
+</ol>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
+            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
+            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-id="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.5 Culture générale (pour Physique mécanique)</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> Projet Enquête ADN - Identifier le coupable</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">Semaine9s</a><ul id="R-subsections-1f01a70d85857b8ac721c011c139e3af" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine9/_index2/index.html"><a class="padding" href="/semaine9/_index2/index.html">9. Manipulation de données dans un fichier texte (avec Pandas)</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1761519828" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1761519828" defer></script>
+    <script src="/js/theme.js?1761519828" defer></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+# PARTIE 1 — Lecture et écriture avec NumPy
+
+# Lecture du fichier texte "eau.txt" (valeurs numériques sans en-têtes, délimitées par un espace)
+donnees_np = np.genfromtxt("eau.txt", delimiter=" ", skip_header=1)
+
+print("Données brutes (NumPy)")
+print(donnees_np)
+
+# Calcul de la moyenne pour chaque colonne
+moyennes = np.nanmean(donnees_np, axis=0)
+
+print()
+print("Moyennes des paramètres")
+print(moyennes)
+
+# Sauvegarde des moyennes dans un fichier texte
+np.savetxt("moyennes_eau.txt", moyennes, fmt="%.2f")
+print()
+print("Fichier 'moyennes_eau.txt' sauvegardé.")

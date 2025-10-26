@@ -99,11 +99,18 @@
       <description>Objectifs Comprendre ce qu’est NumPy et pourquoi il est utile en sciences. Apprendre à créer et manipuler des tableaux NumPy. Utiliser NumPy pour traiter des données scientifiques et faire des calculs rapides. Visualiser graphiquement l’incertitude ou la variabilité des mesures à l’aide de barres d’erreur. Modéliser une relation entre deux données à l’aide d’une droite de régression linéaire. Fichiers .ipynb pour la démo en classe Bloc-note 1&#xA;Sujets couverts…&#xD;Création de tableaux (np.</description>
     </item>
     <item>
-      <title> Lecture et écriture de fichiers textes (avec NumPy et Pandas)</title>
+      <title> Manipulation de données dans un fichier (avec Pandas)</title>
       <link>https://example.org/semaine9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine9/index.html</guid>
-      <description>Objectifs Partie 1: Avec NumPy&#xA;Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .txt et .csv. Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques. Partie 2: Avec Pandas&#xA;Lire des fichiers .csv et .txt en utilisant pandas. Explorer rapidement le contenu des fichiers. Écrire des DataFrames pandas dans des fichiers .csv ou .txt. Manipuler les données lues sous forme de DataFrames Pandas pour faire des calculs scientifiques.</description>
+      <description>Objectif Lire un fichier CSV contenant des données expérimentales. Nettoyer et sauvegarder un nouveau fichier corrigé. Manipuler un DataFrame Pandas (sélection, ajout, statistiques). Transformer les colonnes en tableaux NumPy pour des calculs scientifiques. Visualiser les données sous forme de nuage de points. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration&#xA;Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.</description>
+    </item>
+    <item>
+      <title> Culture générale (pour Physique mécanique)</title>
+      <link>https://example.org/semaine95/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine95/index.html</guid>
+      <description>Objectifs Avec NumPy&#xA;Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .txt et .csv. Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques. Avec Pandas&#xA;Sélection et parcours des données dans un DataFrame Avec SciPy&#xA;Utiliser le module scipy.stats pour calculer une régression linéaire. Extraire la pente, l’ordonnée à l’origine et le coefficient de corrélation. Tracer la droite de régression sur un nuage de points avec matplotlib.</description>
     </item>
     <item>
       <title> Évaluation #2 (30%)</title>

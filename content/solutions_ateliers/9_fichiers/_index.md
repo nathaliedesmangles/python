@@ -9,28 +9,7 @@ draft = false
 import numpy as np
 import pandas as pd
 
-# PARTIE 1 — Lecture et écriture avec NumPy
-
-# Lecture du fichier texte "eau.txt" (valeurs numériques sans en-têtes, délimitées par un espace)
-donnees_np = np.genfromtxt("eau.txt", delimiter=" ", skip_header=1)
-
-print("Données brutes (NumPy)")
-print(donnees_np)
-
-# Calcul de la moyenne pour chaque colonne
-moyennes = np.nanmean(donnees_np, axis=0)
-
-print()
-print("Moyennes des paramètres")
-print(moyennes)
-
-# Sauvegarde des moyennes dans un fichier texte
-np.savetxt("moyennes_eau.txt", moyennes, fmt="%.2f")
-print()
-print("Fichier 'moyennes_eau.txt' sauvegardé.")
-
-
-# PARTIE 2 — Lecture et nettoyage avec pandas
+# PARTIE 1 — Lecture et nettoyage avec pandas
 
 # Lecture du fichier CSV "eau_riviere.csv"
 df = pd.read_csv("eau_riviere.csv")
@@ -87,10 +66,13 @@ df.to_csv("eau_riviere_nettoyee.csv", index=False)
 print()
 print("Fichier 'eau_riviere_nettoyee.csv' sauvegardé avec succès.")
 
-# PARTIE 3 — Visualisation graphique (Optionnel)
+
+
+# PARTIE 2 — Visualisation graphique (Optionnel)
 
 import matplotlib.pyplot as plt
 
+# Graphique 1
 erreur = 0.2
 couleurs = df["Qualite"].map({"Bonne": "skyblue", "Moyenne": "gold", "Faible": "salmon"})
 
@@ -99,5 +81,14 @@ plt.title("Concentration en oxygène dissous dans la rivière")
 plt.xlabel("Site d'échantillonnage")
 plt.ylabel("Oxygène (mg/L)")
 plt.grid(axis="y", linestyle="--", alpha=0.7)
+plt.show()
+
+
+# Graphique 2
+plt.scatter(df["Site"], df["Oxygene"])
+plt.title("Concentration en oxygène dissous dans la rivière")
+plt.xlabel("Site d'échantillonnage")
+plt.ylabel("Oxygène (mg/L)")
+plt.grid()
 plt.show()
 ```

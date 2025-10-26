@@ -54,7 +54,7 @@
       <link>https://example.org/solutions_ateliers/9_fichiers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/9_fichiers/index.html</guid>
-      <description>import numpy as np import pandas as pd # PARTIE 1 — Lecture et écriture avec NumPy # Lecture du fichier texte &#34;eau.txt&#34; (valeurs numériques sans en-têtes, délimitées par un espace) donnees_np = np.genfromtxt(&#34;eau.txt&#34;, delimiter=&#34; &#34;, skip_header=1) print(&#34;Données brutes (NumPy)&#34;) print(donnees_np) # Calcul de la moyenne pour chaque colonne moyennes = np.nanmean(donnees_np, axis=0) print() print(&#34;Moyennes des paramètres&#34;) print(moyennes) # Sauvegarde des moyennes dans un fichier texte np.savetxt(&#34;moyennes_eau.txt&#34;, moyennes, fmt=&#34;%.2f&#34;) print() print(&#34;Fichier &#39;moyennes_eau.</description>
+      <description>import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.</description>
     </item>
   </channel>
 </rss>
