@@ -1,11 +1,11 @@
 +++
 pre = "<b>9.</b>"
-title = " Lecture et écriture de fichiers de données"
+title = " Manipulation de données dans un fichier (avec Pandas)"
 weight = 209
 draft = false
 +++
 
-
+<!--
 ## Exercice 1 (NumPy)
 
 ```python
@@ -65,6 +65,7 @@ np.savetxt("temperature_K.csv",
            comments="")
 ```
 
+-->
 
 ## Exercice 3 (Pandas)
 

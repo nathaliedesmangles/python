@@ -50,11 +50,11 @@
       <description>Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) pente, ordonnee = np.</description>
     </item>
     <item>
-      <title> Lecture et écriture de fichiers de données</title>
+      <title> Manipulation de données dans un fichier (avec Pandas)</title>
       <link>https://example.org/solutions_exercices/9_fichiers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/9_fichiers/index.html</guid>
-      <description>Exercice 1 (NumPy) import numpy as np vitesses = np.array([ [5.2, 6.1, 5.8, 6.0], [5.5, 6.2, 6.1, 6.3], [5.9, 6.0, 5.7, 6.1] ]) np.savetxt(&#34;vitesses.txt&#34;, vitesses, fmt=&#34;%.2f&#34;) # Lire le fichier donnees = np.loadtxt(&#34;vitesses.txt&#34;) # Calcul des moyennes par colonne moyennes = np.mean(donnees, axis=0) # Sauvegarder le fichier des moyennes np.savetxt(&#34;moyennes.txt&#34;, moyennes, fmt=&#34;%.2f&#34;)&#xD;Exercice 2 (NumPy) import numpy as np # 1. Lecture du fichier CSV (avec en-tête) # On lit seulement la colonne numérique (températures) # et on ignore la première ligne qui contient les titres.</description>
+      <description>Exercice 3 (Pandas) import pandas as pd df_etudiants = pd.read_csv(&#34;etudiants.csv&#34;) print(df_etudiants.head(3)) print(df_etudiants[&#34;Note&#34;].describe())&#xD;Exercice 4 (Pandas) import pandas as pd import numpy as np # 1. Lecture du fichier CSV contenant les étudiants df_etudiants = pd.read_csv(&#34;etudiants.csv&#34;) # Affichage du DataFrame original print(&#34;Données originales&#34;) print(df_etudiants) # 2. Création de la colonne &#39;Mention&#39; selon la note df_etudiants[&#34;Mention&#34;] = np.where( df_etudiants[&#34;Note&#34;] &gt;= 70, &#34;Bien&#34;, np.where(df_etudiants[&#34;Note&#34;] &gt;= 50, &#34;Passable&#34;, &#34;Échec&#34;) ) # Affichage du DataFrame mis à jour print(&#34;Données avec mentions&#34;) print(df_etudiants) # 3.</description>
     </item>
   </channel>
 </rss>
