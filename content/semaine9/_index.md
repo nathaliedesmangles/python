@@ -240,6 +240,8 @@ Cet exercice prépare à faire des analyses et régressions à partir de donnée
 
 Le format **CSV** (*Comma-Separated Values*) est couramment utilisé pour exporter des données depuis des logiciels comme Excel, Logger Pro ou Capstone.
 
+Téléchargez le fichier de données [**donnees.csv**](.donnees.csv)  
+
 Exemple :
 
 ```csv
@@ -388,6 +390,8 @@ df[["x", "v"]]	# Seulement les données des 2 colonnes
 ```
 
 ### Création de nouvelles colonnes
+
+Pour ajouter un colonne dans un DataFrame, on utilise la syntaxe  `df["nom_nouvelle_colonne"] = valeur_pour_toutes_les_lignes`
 
 Exemple : calcul de l’étirement d’un ressort à partir de la position et de la position d’équilibre.
 

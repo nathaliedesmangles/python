@@ -752,7 +752,7 @@ Renvoie `-1` si le mot n’est pas trouvé.
 ```python
 message = "biologie et chimie"
 print(message.find("bio"))   # 0 (commence à l’indice 0)
-print(message.find("chimie"))  # 11
+print(message.find("chimie"))  # 12
 print(message.find("physique"))  # -1 (absent)
 ```
 
@@ -765,7 +765,7 @@ Compte combien de fois une sous-chaîne apparaît.
 ```python
 message = "pomme et poire et pomme"
 print(message.count("pomme"))  # 2
-print(message.count("e"))      # 4
+print(message.count("e"))      # 5
 ```
 
 ---
