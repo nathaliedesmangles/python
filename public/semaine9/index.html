@@ -22,21 +22,21 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
     <meta itemprop="name" content=" Manipulation de données dans un fichier (avec Pandas) :: 420-SN1-RE">
     <meta itemprop="description" content="Objectif Lire un fichier CSV contenant des données expérimentales. Nettoyer et sauvegarder un nouveau fichier corrigé. Manipuler un DataFrame Pandas (sélection, ajout, statistiques). Transformer les colonnes en tableaux NumPy pour des calculs scientifiques. Visualiser les données sous forme de nuage de points. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration
 Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.">
-    <meta itemprop="wordCount" content="2078">
+    <meta itemprop="wordCount" content="2086">
     <title> Manipulation de données dans un fichier (avec Pandas) :: 420-SN1-RE</title>
     <link href="/semaine9/index.xml" rel="alternate" type="application/rss+xml" title=" Manipulation de données dans un fichier (avec Pandas) :: 420-SN1-RE">
-    <link href="/images/logo.png?1761530216" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761530216" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761530216" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1761530216" rel="stylesheet">
-    <link href="/css/theme.min.css?1761530216" rel="stylesheet">
-    <link href="/css/format-html.min.css?1761530216" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1761530216" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1761530216" defer></script>
-    <script src="/js/lunr/lunr.min.js?1761530216" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1761530216" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1761530216" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1761530216" defer></script>
-    <script src="/js/search.min.js?1761530216" defer></script>
+    <link href="/images/logo.png?1761599562" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761599562" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761599562" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1761599562" rel="stylesheet">
+    <link href="/css/theme.min.css?1761599562" rel="stylesheet">
+    <link href="/css/format-html.min.css?1761599562" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1761599562" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1761599562" defer></script>
+    <script src="/js/lunr/lunr.min.js?1761599562" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1761599562" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1761599562" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1761599562" defer></script>
+    <script src="/js/search.min.js?1761599562" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -46,7 +46,7 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1761530216";
+      window.relearn.index_js_url="/searchindex.en.js?1761599562";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -92,7 +92,7 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1761530216" rel="stylesheet">
+    <link href="/css/custom.css?1761599562" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine9/index.html">
     <div id="R-body" class="default-animation">
@@ -217,7 +217,11 @@ Apprendre par la pratiqueFaites les exercices en vous aidant des notes de cours
 <hr>
 <h1 id="exercices">Exercices</h1>
 <h2 id="fichiers-de-départ-à-utiliser">Fichiers de départ à utiliser</h2>
-<p><a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb" rel="external" target="_blank"><strong>Bloc-notes de départ - Pandas</strong></a></p>
+<p><a href="https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb" rel="external" target="_blank"><strong>Bloc-notes de départ - Pandas</strong></a><br>
+<a href="/semaine9/etudiants.csv">Fichier etudiants.csv</a><br>
+<a href="/semaine9/experience.txt">Fichier experience.txt</a><br>
+<a href="/semaine9/solubilite_sel.csv">Fichier solubilite_sel.csv</a><br>
+<a href="/semaine9/solutions.csv">Fichier solutions.csv</a></p>
 
 <details open class=" box cstyle notices accent">
   <summary class="box-label" tabindex="-1">
@@ -401,8 +405,8 @@ Données après traitement :
 4           40       38.80
 5           50       36.88
 6           60       42.00</code></pre></div>
-<p><a href="#R-image-513d9b5fda6942267ebc16992261b9bc" class="lightbox-link"><img alt="Solubilité vs température" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/solubilite_temp.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-513d9b5fda6942267ebc16992261b9bc"><img alt="Solubilité vs température" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/solubilite_temp.png?width=35vw"></a></p>
+<p><a href="#R-image-6f42d276d96251e70b680c939cdd0038" class="lightbox-link"><img alt="Solubilité vs température" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/solubilite_temp.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6f42d276d96251e70b680c939cdd0038"><img alt="Solubilité vs température" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/solubilite_temp.png?width=35vw"></a></p>
 <h3 id="exercice-8-pandas-et-numpy">Exercice 8 (Pandas et NumPy)</h3>
 <p>Cet exercice prépare à faire des analyses et régressions à partir de données réelles.</p>
 <ol>
@@ -414,8 +418,8 @@ Données après traitement :
 <p><strong>Résultats</strong>:</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code> Concentration moyenne : 0.1742857142857143
 Écart-type : 0.05447335989982177</code></pre></div>
-<p><a href="#R-image-05c2e6275558723df5c899f4d235db85" class="lightbox-link"><img alt="Tempéraure vs Concentration" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/temp_conc.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-05c2e6275558723df5c899f4d235db85"><img alt="Tempéraure vs Concentration" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/temp_conc.png?width=35vw"></a></p>
+<p><a href="#R-image-adb21acf1bc6ab5aa8a198a8a2194972" class="lightbox-link"><img alt="Tempéraure vs Concentration" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/temp_conc.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-adb21acf1bc6ab5aa8a198a8a2194972"><img alt="Tempéraure vs Concentration" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/temp_conc.png?width=35vw"></a></p>
 <hr>
 <h1 id="cours">Cours</h1>
 <h2 id="gestion-de-fichiers">Gestion de fichiers</h2>
@@ -581,8 +585,8 @@ Pour cela, on peut convertir une colonne en <strong>tableau NumPy</strong>.</p>
 <ul>
 <li>Chaque point correspond à une mesure expérimentale.</li>
 </ul>
-<p><a href="#R-image-463b20a9fa70ffe006df7ccddf680cb9" class="lightbox-link"><img alt="Nuage" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/nuage.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-463b20a9fa70ffe006df7ccddf680cb9"><img alt="Nuage" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/nuage.png?width=35vw"></a></p>
+<p><a href="#R-image-d6c1ce520d50fca68b7c92958ac6bec9" class="lightbox-link"><img alt="Nuage" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/nuage.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d6c1ce520d50fca68b7c92958ac6bec9"><img alt="Nuage" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/nuage.png?width=35vw"></a></p>
 <h2 id="à-retenir">À retenir</h2>
 <table>
 <thead>
@@ -720,11 +724,11 @@ Pour cela, on peut convertir une colonne en <strong>tableau NumPy</strong>.</p>
 <li>Ajoutez les titres et les étiquettes d’axes.</li>
 <li>Personnalisez les couleurs selon la qualité.</li>
 </ul>
-<p><a href="#R-image-23cca57fccda0fab03e8a08b34b982ce" class="lightbox-link"><img alt="Oxygène par site" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/oxygene_sites.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-23cca57fccda0fab03e8a08b34b982ce"><img alt="Oxygène par site" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/oxygene_sites.png?width=35vw"></a></p>
+<p><a href="#R-image-b63a64a43bb7704876967428086a1c1e" class="lightbox-link"><img alt="Oxygène par site" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/oxygene_sites.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b63a64a43bb7704876967428086a1c1e"><img alt="Oxygène par site" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/oxygene_sites.png?width=35vw"></a></p>
 <p><strong>Graphique #2</strong> -  Nuage de points des valeurs d’oxygène par site</p>
-<p><a href="#R-image-94a848c4fc2086274861e8d8105b4319" class="lightbox-link"><img alt="Oxygène par site" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/oxygene_sites_nuage.png?width=35vw" style=" height: auto; width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-94a848c4fc2086274861e8d8105b4319"><img alt="Oxygène par site" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/oxygene_sites_nuage.png?width=35vw"></a></p>
+<p><a href="#R-image-ed255fd0aed8c2bebbdaa280c38779e2" class="lightbox-link"><img alt="Oxygène par site" class="lazy lightbox figure-image" loading="lazy" src="/semaine9/oxygene_sites_nuage.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed255fd0aed8c2bebbdaa280c38779e2"><img alt="Oxygène par site" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine9/oxygene_sites_nuage.png?width=35vw"></a></p>
 <!--
 # Atelier
 
@@ -892,8 +896,8 @@ Enregistre le DataFrame (avec la nouvelle colonne `e`) sous le nom `donnees_corr
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1761530216" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1761530216" defer></script>
-    <script src="/js/theme.min.js?1761530216" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1761599562" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1761599562" defer></script>
+    <script src="/js/theme.min.js?1761599562" defer></script>
   </body>
 </html>

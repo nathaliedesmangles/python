@@ -33,6 +33,10 @@ draft = false
 ## Fichiers de départ à utiliser
 
 [**Bloc-notes de départ - Pandas**](https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb)  
+[Fichier etudiants.csv](./etudiants.csv)  
+[Fichier experience.txt](./experience.txt)  
+[Fichier solubilite_sel.csv](./solubilite_sel.csv)  
+[Fichier solutions.csv](./solutions.csv)  
 
 {{% notice style="accent" title="Exercices #1 et #2" %}}
 * Les exercices #1 et #2 utilisaient NumPy pour la lecture/écriture de fichiers.  
