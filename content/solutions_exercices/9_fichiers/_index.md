@@ -78,7 +78,6 @@ print(df_etudiants["Note"].describe())
 ```
 
 
-
 ## Exercice 4 (Pandas)
 
 ```python
@@ -110,9 +109,9 @@ df_etudiants.to_csv("etudiants_mentions.csv", index=False)
 
 ```python
 
-df = pd.read_csv("experiment.txt", sep="\t")
-df.to_csv("experiment_export.txt", sep="\t", index=False)
-print("Fichier 'experiment_export.txt' enregistré avec tabulations.")
+df = pd.read_csv("experience.txt", sep="\t")
+df.to_csv("experience_export.txt", sep="\t", index=False)
+print("Fichier 'experience_export.txt' enregistré avec tabulations.")
 ```
 
 ## Exercice 6 (Pandas)
@@ -132,11 +131,12 @@ print(df.isna())
 print("Nombre total de NaN :", df.isna().sum().sum())
 
 # Remplacement des NaN par la moyenne
-moyenne = df['solubilite'].mean(skipna=True)
+moyenne = df['solubilite'].mean()
 df['solubilite'] = df['solubilite'].fillna(moyenne)
 
 # Vérification après remplacement
-print("\nDonnées après traitement :")
+print()
+print("Données après traitement :")
 print(df)
 
 # Visualisation
@@ -147,28 +147,6 @@ plt.title("Solubilité d’un sel en fonction de la température")
 plt.show()
 ```
 
-## Exercice 7 (Pandas)
-
-```python
-import pandas as pd
-
-# Lecture du fichier CSV
-plantes = pd.read_csv("plantes.csv")
-
-# 1. Affiche la 5e ligne (index 4 car on commence à 0)
-print("5e ligne complète :")
-print(plantes.iloc[4])
-
-# 2. Affiche uniquement la colonne de la hauteur
-print()
-print("Colonne Hauteur_cm :")
-print(plantes.iloc[:, 1])  # colonne à l'index 1
-
-# 3. Affiche les 3 premières lignes et les 2 premières colonnes
-print()
-print("3 premières plantes, 2 premières colonnes :")
-print(plantes.iloc[0:3, 0:2])
-```
 
 ## Exercice 8 (Pandas et NumPy)
 
@@ -198,31 +176,5 @@ plt.ylabel("Concentration (mol/L)")
 plt.title("Variation de la concentration avec la température")
 plt.legend()
 plt.show()
-```
-
-
-## Exercice 9 (Pandas)
-
-```python
-import pandas as pd
-
-# Lecture du fichier
-mineraux = pd.read_csv("mineraux.csv")
-
-# Liste vide pour stocker les catégories
-categories = []
-
-# 1-2. Parcours du DataFrame et classification
-for index, ligne in mineraux.iterrows():
-    if ligne["Densité"] < 3:
-        categories.append("léger")
-    else:
-        categories.append("lourd")
-
-# 3. Ajout d'une nouvelle colonne
-mineraux["Catégorie"] = categories
-
-# Affiche le tableau final
-print(mineraux)
 ```
 

@@ -35,7 +35,9 @@ draft = false
 [**Bloc-notes de départ - Pandas**](https://python-a25.netlify.app/blocnotes/exercices_fichiers_pd.ipynb)  
 
 {{% notice style="accent" title="Exercices #1 et #2" %}}
-Les exercices #1 et #2 utilisaient NumPy pour la lecture/écriture de fichiers et ils ont été retirés de la leçon.
+* Les exercices #1 et #2 utilisaient NumPy pour la lecture/écriture de fichiers.  
+* Les exercices #7 et #9 utilisaient des notions de Pandas avancées (`iloc` et `iterrows`). 
+* Ces 4 exercices ont été retirés de la leçon.
 {{% /notice %}}
 
 ### Exercice 3 (Pandas)
@@ -206,39 +208,6 @@ Données après traitement :
 
 ![Solubilité vs température](./solubilite_temp.png?width=35vw)
 
-### Exercice 7 (Pandas)
-
-Cet exercice vous fait naviguer dans un tableau avant d’en extraire ou comparer des valeurs.
-
-1. Lire le fichier `plantes.csv` contenant les colonnes `Nom`, `Hauteur_cm`, `Teneur_eau_%`.
-2. Afficher la 5e ligne complète.
-3. Afficher uniquement la colonne de la hauteur.
-4. Afficher les 3 premières plantes et leurs deux premières colonnes.
-
-**Résultats**:
-```
-5e ligne complète :
-Nom             Bambou
-Hauteur_cm         180
-Teneur_eau_%        75
-Name: 4, dtype: object
-
-Colonne Hauteur_cm :
-0     45
-1     30
-2     12
-3     28
-4    180
-5     25
-6     35
-Name: Hauteur_cm, dtype: int64
-
-3 premières plantes, 2 premières colonnes :
-        Nom  Hauteur_cm
-0   Fougère          45
-1  Orchidée          30
-2    Cactus          12
-```
 
 ### Exercice 8 (Pandas et NumPy)
 
@@ -255,29 +224,6 @@ Cet exercice prépare à faire des analyses et régressions à partir de donnée
 Écart-type : 0.05447335989982177
 ```
 ![Tempéraure vs Concentration](./temp_conc.png?width=35vw)
-
-
-### Exercice 9 (Pandas)
-
-Cet exercice aide à comprendre comment analyser chaque ligne d’un jeu de données et enrichir le tableau.
-
-1. Lire le fichier `minéraux.csv` contenant les colonnes `Nom` et `Densité`.
-2. Parcourir le DataFrame **ligne par ligne** avec `.iterrows()`.
-3. Afficher `"léger"` si la densité < 3, sinon `"lourd"`. Utiliser `if-else`.
-4. Ajouter une nouvelle colonne `Catégorie` contenant ces valeurs, puis affiche le tableau final.
-
-
-**Résultats**:
-```
-        Nom  Densité Catégorie
-0    Quartz     2.65     léger
-1    Galène     7.50     lourd
-2   Calcite     2.71     léger
-3    Pyrite     5.02     lourd
-4     Gypse     2.30     léger
-5  Hématite     5.25     lourd
-6      Mica     2.83     léger
-```
 
 
 ---
