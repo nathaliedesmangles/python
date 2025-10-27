@@ -29,7 +29,16 @@ ecarts_type = np.nanstd(hauteurs, axis=1)
 for i in range(3):
     print(f"Moyenne ({conditions[i]}) = {moyennes[i]:.2f} cm, écart-type = {ecarts_type[i]:.2f} cm")
 
-indice_max = np.argmax(moyennes)
+# Identification de l'indice de la plus grande hauteur moyenne
+indice_max = 0      # On suppose que le premier élément (indice 0) est le plus grand
+valeur_max = moyennes[0]     # On suppose donc que la première hauteur est la plus grande         
+
+# Boucle pour trouver la plus grande hauteur et son indice
+for i in range(1, len(moyennes)):
+    if moyennes[i] > valeur_max:
+        valeur_max = moyennes[i]
+        indice_max = i
+
 print(f"Condition avec la plus grande croissance moyenne : {conditions[indice_max]}")
 
 # Graphique
