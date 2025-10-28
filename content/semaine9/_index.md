@@ -240,7 +240,7 @@ Cet exercice prépare à faire des analyses et régressions à partir de donnée
 
 Le format **CSV** (*Comma-Separated Values*) est couramment utilisé pour exporter des données depuis des logiciels comme Excel, Logger Pro ou Capstone.
 
-Téléchargez le fichier de données [**donnees.csv**](.donnees.csv)  
+Téléchargez le fichier de données [**donnees.csv**](./donnees.csv)  
 
 Exemple :
 
