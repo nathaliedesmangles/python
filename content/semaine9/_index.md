@@ -331,7 +331,7 @@ max	0.200000	1.500000	0.281250
 ```
 
 
-## Gestion des lignes contenant des valeurs manquantes avec `isna()` et `dropna()`
+## Gestion des valeurs manquantes *NaN* avec `isna()`, `dropna()` et `fillna()`
 
 Quand on travaille avec des données expérimentales, il arrive qu’une mesure soit **absente** (oubliée, perdue, ou invalide).
 Dans un tableau pandas, une valeur manquante est notée **`NaN`** (*Not a Number*).
@@ -358,8 +358,6 @@ df.isna()
 
 
 > On peut aussi utiliser la fonction `df.isnull()`. Au lieu de ***NaN*** elle renvoie un tableau de **valeurs booléennes** (`True` si la cellule est vide, `False` sinon) :
-
-## Gestion des valeurs manquantes *NaN*
 
 ### Suppression de lignes contenant des valeurs manquantes avec `dropna()`
 
