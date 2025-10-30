@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des ateliers :: 420-SN1-RE</title>
     <link>https://example.org/solutions_ateliers/index.html</link>
-    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires&#xA;08. Tableaux NumPy et droite de régression linéaire&#xA;09. Lecture et écriture de fichiers de données</description>
+    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires&#xA;08. Tableaux NumPy et droite de régression linéaire&#xA;09. Manipulation des données avec Pandas&#xA;11. Fonctions personnalisées</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_ateliers/index.xml" rel="self" type="application/rss+xml" />
@@ -55,6 +55,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/9_fichiers/index.html</guid>
       <description>import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.</description>
+    </item>
+    <item>
+      <title> Fonctions personnalisées</title>
+      <link>https://example.org/solutions_ateliers/11_fonctions_perso/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_ateliers/11_fonctions_perso/index.html</guid>
+      <description>Exercice : Calcul de dilution (C₁V₁ = C₂V₂) def lire_donnees(): &#34;&#34;&#34; Lit les données nécessaires au calcul d’une dilution. Cette fonction demande à l’utilisateur : - la concentration de la solution mère (C1, en mol/L), - la concentration finale souhaitée (C2, en mol/L), - le volume final de la solution (V2, en L). Returns: tuple: Un triplet (C1, C2, V2) contenant les valeurs saisies par l’utilisateur. Exemple : &gt;&gt;&gt; C1, C2, V2 = lire_donnees() --- Programme de dilution --- Concentration de la solution mère (mol/L) : 1.</description>
     </item>
   </channel>
 </rss>

@@ -124,14 +124,14 @@
       <link>https://example.org/solutions_exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/index.html</guid>
-      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires 08. Tableaux NumPy et droite de régression&#xA;09. Lecture et écriture de fichiers de données</description>
+      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires 08. Tableaux NumPy et droite de régression&#xA;09. Manipulation des données avec Pandas&#xA;11. Fonctions personnalisées</description>
     </item>
     <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions_ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_ateliers/index.html</guid>
-      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires&#xA;08. Tableaux NumPy et droite de régression linéaire&#xA;09. Lecture et écriture de fichiers de données</description>
+      <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires&#xA;08. Tableaux NumPy et droite de régression linéaire&#xA;09. Manipulation des données avec Pandas&#xA;11. Fonctions personnalisées</description>
     </item>
   </channel>
 </rss>

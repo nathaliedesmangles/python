@@ -142,6 +142,9 @@
     <loc>https://example.org/solutions_exercices/9_fichiers/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/solutions_exercices/11_fonctions_perso/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/solutions_ateliers/index.html</loc>
   </url>
   <url>
@@ -164,6 +167,9 @@
   </url>
   <url>
     <loc>https://example.org/solutions_ateliers/9_fichiers/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/solutions_ateliers/11_fonctions_perso/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>

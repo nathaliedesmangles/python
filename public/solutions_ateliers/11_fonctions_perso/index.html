@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.126.3">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) # Fonction qui lit les données d&#39;entrée (sans paramètres) def lire_donnees(): print(&#34;--- Programme de dilution ---&#34;) # Lecture de la concentration de la solution mère C1 = float(input(&#34;Concentration de la solution mère (mol/L) : &#34;)) # Lecture de la concentration finale souhaitée C2 = float(input(&#34;Concentration finale souhaitée (mol/L) : &#34;)) # Lecture du volume final V2 = float(input(&#34;Volume final de la solution (L) : &#34;)) return C1, C2, V2 # Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat) def calculer_v1(C1, C2, V2): # Formule : V1 = (C2 × V2) / C1 V1 = (C2 * V2) / C1 return V1 # Fonction qui affiche le résultat (avec paramètre, ne retourne rien) def afficher_resultat(V1): # Arrondi à 2 décimales V1_arrondi = round(V1, 2) print(f&#34;Il faut prélever {V1_arrondi} L de solution mère pour préparer la solution diluée.">
+    <meta name="description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) def lire_donnees(): &#34;&#34;&#34; Lit les données nécessaires au calcul d’une dilution. Cette fonction demande à l’utilisateur : - la concentration de la solution mère (C1, en mol/L), - la concentration finale souhaitée (C2, en mol/L), - le volume final de la solution (V2, en L). Returns: tuple: Un triplet (C1, C2, V2) contenant les valeurs saisies par l’utilisateur. Exemple : &gt;&gt;&gt; C1, C2, V2 = lire_donnees() --- Programme de dilution --- Concentration de la solution mère (mol/L) : 1.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Fonctions personnalisées :: 420-SN1-RE">
-    <meta name="twitter:description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) # Fonction qui lit les données d&#39;entrée (sans paramètres) def lire_donnees(): print(&#34;--- Programme de dilution ---&#34;) # Lecture de la concentration de la solution mère C1 = float(input(&#34;Concentration de la solution mère (mol/L) : &#34;)) # Lecture de la concentration finale souhaitée C2 = float(input(&#34;Concentration finale souhaitée (mol/L) : &#34;)) # Lecture du volume final V2 = float(input(&#34;Volume final de la solution (L) : &#34;)) return C1, C2, V2 # Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat) def calculer_v1(C1, C2, V2): # Formule : V1 = (C2 × V2) / C1 V1 = (C2 * V2) / C1 return V1 # Fonction qui affiche le résultat (avec paramètre, ne retourne rien) def afficher_resultat(V1): # Arrondi à 2 décimales V1_arrondi = round(V1, 2) print(f&#34;Il faut prélever {V1_arrondi} L de solution mère pour préparer la solution diluée.">
-    <meta property="og:url" content="http://localhost:1313/solutions_ateliers/11_fonctions_perso/index.html">
+    <meta name="twitter:description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) def lire_donnees(): &#34;&#34;&#34; Lit les données nécessaires au calcul d’une dilution. Cette fonction demande à l’utilisateur : - la concentration de la solution mère (C1, en mol/L), - la concentration finale souhaitée (C2, en mol/L), - le volume final de la solution (V2, en L). Returns: tuple: Un triplet (C1, C2, V2) contenant les valeurs saisies par l’utilisateur. Exemple : &gt;&gt;&gt; C1, C2, V2 = lire_donnees() --- Programme de dilution --- Concentration de la solution mère (mol/L) : 1.">
+    <meta property="og:url" content="https://example.org/solutions_ateliers/11_fonctions_perso/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Fonctions personnalisées :: 420-SN1-RE">
-    <meta property="og:description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) # Fonction qui lit les données d&#39;entrée (sans paramètres) def lire_donnees(): print(&#34;--- Programme de dilution ---&#34;) # Lecture de la concentration de la solution mère C1 = float(input(&#34;Concentration de la solution mère (mol/L) : &#34;)) # Lecture de la concentration finale souhaitée C2 = float(input(&#34;Concentration finale souhaitée (mol/L) : &#34;)) # Lecture du volume final V2 = float(input(&#34;Volume final de la solution (L) : &#34;)) return C1, C2, V2 # Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat) def calculer_v1(C1, C2, V2): # Formule : V1 = (C2 × V2) / C1 V1 = (C2 * V2) / C1 return V1 # Fonction qui affiche le résultat (avec paramètre, ne retourne rien) def afficher_resultat(V1): # Arrondi à 2 décimales V1_arrondi = round(V1, 2) print(f&#34;Il faut prélever {V1_arrondi} L de solution mère pour préparer la solution diluée.">
+    <meta property="og:description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) def lire_donnees(): &#34;&#34;&#34; Lit les données nécessaires au calcul d’une dilution. Cette fonction demande à l’utilisateur : - la concentration de la solution mère (C1, en mol/L), - la concentration finale souhaitée (C2, en mol/L), - le volume final de la solution (V2, en L). Returns: tuple: Un triplet (C1, C2, V2) contenant les valeurs saisies par l’utilisateur. Exemple : &gt;&gt;&gt; C1, C2, V2 = lire_donnees() --- Programme de dilution --- Concentration de la solution mère (mol/L) : 1.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Fonctions personnalisées :: 420-SN1-RE">
-    <meta itemprop="description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) # Fonction qui lit les données d&#39;entrée (sans paramètres) def lire_donnees(): print(&#34;--- Programme de dilution ---&#34;) # Lecture de la concentration de la solution mère C1 = float(input(&#34;Concentration de la solution mère (mol/L) : &#34;)) # Lecture de la concentration finale souhaitée C2 = float(input(&#34;Concentration finale souhaitée (mol/L) : &#34;)) # Lecture du volume final V2 = float(input(&#34;Volume final de la solution (L) : &#34;)) return C1, C2, V2 # Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat) def calculer_v1(C1, C2, V2): # Formule : V1 = (C2 × V2) / C1 V1 = (C2 * V2) / C1 return V1 # Fonction qui affiche le résultat (avec paramètre, ne retourne rien) def afficher_resultat(V1): # Arrondi à 2 décimales V1_arrondi = round(V1, 2) print(f&#34;Il faut prélever {V1_arrondi} L de solution mère pour préparer la solution diluée.">
-    <meta itemprop="wordCount" content="246">
+    <meta itemprop="description" content="Exercice : Calcul de dilution (C₁V₁ = C₂V₂) def lire_donnees(): &#34;&#34;&#34; Lit les données nécessaires au calcul d’une dilution. Cette fonction demande à l’utilisateur : - la concentration de la solution mère (C1, en mol/L), - la concentration finale souhaitée (C2, en mol/L), - le volume final de la solution (V2, en L). Returns: tuple: Un triplet (C1, C2, V2) contenant les valeurs saisies par l’utilisateur. Exemple : &gt;&gt;&gt; C1, C2, V2 = lire_donnees() --- Programme de dilution --- Concentration de la solution mère (mol/L) : 1.">
+    <meta itemprop="wordCount" content="393">
     <title> Fonctions personnalisées :: 420-SN1-RE</title>
     <link href="/solutions_ateliers/11_fonctions_perso/index.xml" rel="alternate" type="application/rss+xml" title=" Fonctions personnalisées :: 420-SN1-RE">
-    <link href="/images/logo.png?1761522635" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761522635" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761522635" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1761522635" rel="stylesheet">
-    <link href="/css/theme.css?1761522635" rel="stylesheet">
-    <link href="/css/format-html.css?1761522635" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1761522635" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1761522635" defer></script>
-    <script src="/js/lunr/lunr.min.js?1761522635" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1761522635" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1761522635" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1761522635" defer></script>
-    <script src="/js/search.js?1761522635" defer></script>
+    <link href="/images/logo.png?1761840331" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761840331" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1761840331" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1761840331" rel="stylesheet">
+    <link href="/css/theme.min.css?1761840331" rel="stylesheet">
+    <link href="/css/format-html.min.css?1761840331" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1761840331" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1761840331" defer></script>
+    <script src="/js/lunr/lunr.min.js?1761840331" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1761840331" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1761840331" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1761840331" defer></script>
+    <script src="/js/search.min.js?1761840331" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = ``;
+      window.relearn.min = `.min`;
       window.relearn.path='\/solutions_ateliers\/11_fonctions_perso\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1761522635";
+      window.relearn.index_js_url="/searchindex.en.js?1761840331";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1761522635" rel="stylesheet">
+    <link href="/css/custom.css?1761840331" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_ateliers/11_fonctions_perso/index.html">
     <div id="R-body" class="default-animation">
@@ -104,12 +104,8 @@
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#exercice--calcul-de-dilution-cv--cv">Exercice : Calcul de dilution (C₁V₁ = C₂V₂)</a></li>
-        <li><a href="#exemple-de-sortie-si-lutilisateur-entre-20-05-10-">Exemple de sortie (si l’utilisateur entre 2.0, 0.5, 1.0) :</a></li>
-      </ul>
-    </li>
+    <li><a href="#exercice--calcul-de-dilution-cv--cv">Exercice : Calcul de dilution (C₁V₁ = C₂V₂)</a></li>
+    <li><a href="#exemple-de-sortie-si-lutilisateur-entre-20-05-10-">Exemple de sortie (si l’utilisateur entre 2.0, 0.5, 1.0) :</a></li>
   </ul>
 </nav>
                 </div>
@@ -146,52 +142,90 @@
 
 <h1 id="fonctions-personnalisées"> Fonctions personnalisées</h1>
 
-<h3 id="exercice--calcul-de-dilution-cv--cv">Exercice : Calcul de dilution (C₁V₁ = C₂V₂)</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Fonction qui lit les données d&#39;entrée (sans paramètres)</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lire_donnees</span>():
+<h2 id="exercice--calcul-de-dilution-cv--cv">Exercice : Calcul de dilution (C₁V₁ = C₂V₂)</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lire_donnees</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Lit les données nécessaires au calcul d’une dilution.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Cette fonction demande à l’utilisateur :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      - la concentration de la solution mère (C1, en mol/L),
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      - la concentration finale souhaitée (C2, en mol/L),
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      - le volume final de la solution (V2, en L).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Returns:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        tuple: Un triplet (C1, C2, V2) contenant les valeurs saisies par l’utilisateur.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Exemple :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt;&gt;&gt; C1, C2, V2 = lire_donnees()
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        --- Programme de dilution ---
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Concentration de la solution mère (mol/L) : 1.0
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Concentration finale souhaitée (mol/L) : 0.2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Volume final de la solution (L) : 0.5
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        # Retourne (1.0, 0.2, 0.5)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;--- Programme de dilution ---&#34;</span>)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Lecture de la concentration de la solution mère</span>
 </span></span><span style="display:flex;"><span>    C1 <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Concentration de la solution mère (mol/L) : &#34;</span>))
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Lecture de la concentration finale souhaitée</span>
 </span></span><span style="display:flex;"><span>    C2 <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Concentration finale souhaitée (mol/L) : &#34;</span>))
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Lecture du volume final</span>
 </span></span><span style="display:flex;"><span>    V2 <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Volume final de la solution (L) : &#34;</span>))
-</span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> C1, C2, V2
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fonction qui calcule V1 à partir de C1, C2 et V2 (avec paramètres, retourne un résultat)</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculer_v1</span>(C1, C2, V2):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Formule : V1 = (C2 × V2) / C1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Calcule le volume de solution mère à prélever pour réaliser une dilution.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Utilise la formule : V1 = (C2 × V2) / C1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        C1 (float): Concentration de la solution mère (mol/L).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        C2 (float): Concentration finale souhaitée (mol/L).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        V2 (float): Volume final de la solution (L).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Returns:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        float: Le volume de solution mère à prélever (V1, en L).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Exemple :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt;&gt;&gt; calculer_v1(1.0, 0.2, 0.5)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        0.1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    V1 <span style="color:#f92672">=</span> (C2 <span style="color:#f92672">*</span> V2) <span style="color:#f92672">/</span> C1
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> V1
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fonction qui affiche le résultat (avec paramètre, ne retourne rien)</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">afficher_resultat</span>(V1):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Arrondi à 2 décimales</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Affiche le volume de solution mère à prélever.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    La valeur est arrondie à deux décimales pour plus de clarté.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        V1 (float): Volume calculé de solution mère à prélever (en L).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Affiche :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Un message indiquant le volume nécessaire pour préparer la solution diluée.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Exemple :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt;&gt;&gt; afficher_resultat(0.1)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Il faut prélever 0.1 L de solution mère pour préparer la solution diluée.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    V1_arrondi <span style="color:#f92672">=</span> round(V1, <span style="color:#ae81ff">2</span>)
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Il faut prélever </span><span style="color:#e6db74">{</span>V1_arrondi<span style="color:#e6db74">}</span><span style="color:#e6db74"> L de solution mère pour préparer la solution diluée.&#34;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Programme principal</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Étape 1 : Lire les données</span>
-</span></span><span style="display:flex;"><span>    C1, C2, V2 <span style="color:#f92672">=</span> lire_donnees()
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Étape 2 : Calculer le volume à prélever</span>
-</span></span><span style="display:flex;"><span>    V1 <span style="color:#f92672">=</span> calculer_v1(C1, C2, V2)
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Étape 3 : Afficher le résultat</span>
-</span></span><span style="display:flex;"><span>    afficher_resultat(V1)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exécution du programme</span>
-</span></span><span style="display:flex;"><span>main()</span></span></code></pre></div>
-<hr>
-<h3 id="exemple-de-sortie-si-lutilisateur-entre-20-05-10-">Exemple de sortie (si l’utilisateur entre 2.0, 0.5, 1.0) :</h3>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 1 : Lire les données</span>
+</span></span><span style="display:flex;"><span>C1, C2, V2 <span style="color:#f92672">=</span> lire_donnees()
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 2 : Calculer le volume à prélever</span>
+</span></span><span style="display:flex;"><span>V1 <span style="color:#f92672">=</span> calculer_v1(C1, C2, V2)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Étape 3 : Afficher le résultat</span>
+</span></span><span style="display:flex;"><span>afficher_resultat(V1)</span></span></code></pre></div>
+<h2 id="exemple-de-sortie-si-lutilisateur-entre-20-05-10-">Exemple de sortie (si l’utilisateur entre 2.0, 0.5, 1.0) :</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>--- Programme de dilution ---
 Concentration de la solution mère (mol/L) : 2.0
 Concentration finale souhaitée (mol/L) : 0.5
@@ -246,27 +280,22 @@ Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.</
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
-            <li class="" data-nav-id="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
             <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
             <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
             <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
             <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
             <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
             <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
             <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
             <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
-            <li class="" data-nav-id="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
             <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Manipulation de données dans un fichier (avec Pandas)</a></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> Projet Enquête ADN - Identifier le coupable</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="" data-nav-id="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
             <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
             <li class="parent " data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu">
             <li class="" data-nav-id="/solutions_ateliers/2_variables_types_entrees_fn/index.html"><a class="padding" href="/solutions_ateliers/2_variables_types_entrees_fn/index.html"><b>2.</b> Variables, types, entrées et fonction</a></li>
@@ -294,8 +323,8 @@ Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.</
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1761522635" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1761522635" defer></script>
-    <script src="/js/theme.js?1761522635" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1761840331" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1761840331" defer></script>
+    <script src="/js/theme.min.js?1761840331" defer></script>
   </body>
 </html>

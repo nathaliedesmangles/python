@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Fonctions personnalisées :: 420-SN1-RE</title>
-    <link>http://localhost:1313/solutions_exercices/11_fonctions_perso/index.html</link>
-    <description>Exercice 1 : La loi d’Ohm def calculer_tension(): # Demande la résistance à l&#39;utilisateur R = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Demande le courant à l&#39;utilisateur I = float(input(&#34;Entrer le courant en ampères : &#34;)) # Calcule la tension (U = R * I) U = R * I # Affiche le résultat print(f&#34;La tension est de {U} V&#34;) # Appel de la fonction calculer_tension()&#xD;Exercice 2 : Élément chimique def element_chm(elt): # Affiche l&#39;élément chimique choisi print(f&#34;L’élément choisi est : {elt}&#34;) # Exemple d’appel element_chm(&#34;oxygène&#34;)&#xD;Exercice 3 : Convertir Celsius en Kelvin def convertir_C_en_K(celsius): # Conversion en Kelvin kelvin = celsius + 273.</description>
+    <link>https://example.org/solutions_exercices/11_fonctions_perso/index.html</link>
+    <description>Exercice 1 : La loi d’Ohm def calculer_tension(): &#34;&#34;&#34; Calcule la tension électrique à partir de la résistance et du courant. Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères), puis applique la loi d&#39;Ohm : U = R * I. Affiche la tension calculée à l&#39;écran. Exemple : &gt;&gt;&gt; calculer_tension() Entrer la résistance en ohms : 10 Entrer le courant en ampères : 2 La tension est de 20.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/solutions_exercices/11_fonctions_perso/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/solutions_exercices/11_fonctions_perso/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

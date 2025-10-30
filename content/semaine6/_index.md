@@ -327,6 +327,69 @@ L'indice 2 contient : cerise
 | `min()`                  | Trouver le min                                 | 
 | `sum()` 		   | Calculer une somme des éléments		    | 
 
+<!--
+Très bonne question — c’est une confusion classique 👇
+
+---
+
+### 🔹 `liste.sort()`
+
+* **Méthode d’objet liste** (elle appartient directement aux objets de type `list`)
+* **Trie la liste en place**, c’est-à-dire qu’elle **modifie la liste existante**
+* **Ne retourne rien** → elle renvoie `None`
+
+```python
+nombres = [3, 1, 4, 2]
+nombres.sort()     # trie la liste en place
+print(nombres)     # [1, 2, 3, 4]
+print(type(nombres.sort()))  # NoneType → la méthode ne retourne rien
+```
+
+➡️ Comme elle ne retourne rien, **écrire `liste = liste.sort()` remplace ta liste par `None`**, ce qui casse tout :
+
+```python
+liste = [3, 1, 2]
+liste = liste.sort()   # ERREUR logique : liste devient None
+print(liste)           # affiche None
+```
+
+---
+
+### 🔹 `sorted(liste)`
+
+* **Fonction intégrée (built-in)**, pas une méthode d’objet
+* **Ne modifie pas la liste d’origine**
+* **Retourne une nouvelle liste triée**
+
+```python
+nombres = [3, 1, 4, 2]
+nombres_triees = sorted(nombres)
+print(nombres)          # [3, 1, 4, 2]  (inchangée)
+print(nombres_triees)   # [1, 2, 3, 4]
+```
+
+---
+
+### 🔸 Résumé
+
+| Méthode / Fonction | Modifie la liste originale ? | Retourne une nouvelle liste ? | Valeur de retour |
+| ------------------ | ---------------------------- | ----------------------------- | ---------------- |
+| `liste.sort()`     | ✅ Oui                        | ❌ Non                         | `None`           |
+| `sorted(liste)`    | ❌ Non                        | ✅ Oui                         | Liste triée      |
+
+---
+
+### 💡 Quand utiliser quoi ?
+
+* Si tu **veux trier la liste elle-même**, pour la réutiliser triée → `liste.sort()`
+* Si tu **veux garder l’ordre original**, mais avoir une **copie triée** → `sorted(liste)`
+
+---
+
+Souhaites-tu que je te montre aussi comment trier avec une clé (`key=`) ou dans l’ordre inverse (`reverse=True`) avec ces deux fonctions ?
+
+-->
+
 {{% notice style="green" title="Exemples avec les fonctions utiles pour les listes simples" groupid="notice-toggle" expanded="false" %}}
 ### `append(valeur)`
 

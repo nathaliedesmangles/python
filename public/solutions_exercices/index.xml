@@ -3,7 +3,7 @@
   <channel>
     <title>Solutions des exercices :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/index.html</link>
-    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires 08. Tableaux NumPy et droite de régression&#xA;09. Lecture et écriture de fichiers de données</description>
+    <description>02. Variables, types, entrées et fonctions&#xA;03. Structures conditionnelles&#xA;04. Boucles et débogage simple&#xA;06. Listes, chaines et visualisation des données&#xA;07. Dictionnaires 08. Tableaux NumPy et droite de régression&#xA;09. Manipulation des données avec Pandas&#xA;11. Fonctions personnalisées</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/index.xml" rel="self" type="application/rss+xml" />
@@ -55,6 +55,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions_exercices/9_fichiers/index.html</guid>
       <description>Exercice 3 (Pandas) import pandas as pd df_etudiants = pd.read_csv(&#34;etudiants.csv&#34;) print(df_etudiants.head(3)) print(df_etudiants[&#34;Note&#34;].describe())&#xD;Exercice 4 (Pandas) import pandas as pd import numpy as np # 1. Lecture du fichier CSV contenant les étudiants df_etudiants = pd.read_csv(&#34;etudiants.csv&#34;) # Affichage du DataFrame original print(&#34;Données originales&#34;) print(df_etudiants) # 2. Création de la colonne &#39;Mention&#39; selon la note df_etudiants[&#34;Mention&#34;] = np.where( df_etudiants[&#34;Note&#34;] &gt;= 70, &#34;Bien&#34;, np.where(df_etudiants[&#34;Note&#34;] &gt;= 50, &#34;Passable&#34;, &#34;Échec&#34;) ) # Affichage du DataFrame mis à jour print(&#34;Données avec mentions&#34;) print(df_etudiants) # 3.</description>
+    </item>
+    <item>
+      <title> Fonctions personnalisées</title>
+      <link>https://example.org/solutions_exercices/11_fonctions_perso/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions_exercices/11_fonctions_perso/index.html</guid>
+      <description>Exercice 1 : La loi d’Ohm def calculer_tension(): &#34;&#34;&#34; Calcule la tension électrique à partir de la résistance et du courant. Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères), puis applique la loi d&#39;Ohm : U = R * I. Affiche la tension calculée à l&#39;écran. Exemple : &gt;&gt;&gt; calculer_tension() Entrer la résistance en ohms : 10 Entrer le courant en ampères : 2 La tension est de 20.</description>
     </item>
   </channel>
 </rss>

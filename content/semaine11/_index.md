@@ -22,10 +22,11 @@ draft = true
 # Exercices
 
 {{% notice style="magenta" title="Appel de fonction" groupid="notice-toggle" expanded="false" %}}
-Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.
+* Ajoutez un Docstring pour chacune des fonctions créées.
+* Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.
 {{% /notice %}}
 
-[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_fonctions.ipynb)
+[Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_fonctions_perso.ipynb)
 
 ## Exercice 1 : La loi d'Ohm
 
@@ -34,13 +35,12 @@ Un technicien de laboratoire vous demande d'écrire un programme Python pour cal
 ```math
 Loi d’Ohm : $ U = R × I $
 ```
-Le technicien souhaiterait pouvoir réutiliser le programme plus facilement et dans d'autres situations. Pour ce faire, il vous demande d'écrire une fonction qui : 
+Le technicien souhaiterait pouvoir réutiliser le programme plus facilement et dans d'autres situations. Pour ce faire, il vous demande d'écrire une fonction `loi_ohm()` qui : 
 
 1. Demande à l'utilisateur d'entrer la valeur de la résistance (en ohms).
 2. Demande à l'utilisateur d'entrer la valeur du courant (en ampères).
 3. Calcule et affiche la tension à l'aide d'une phrase.
 
-**NB** : Ajoutez des explications en commentaire dans le code.
 
 **Résultat attendu** :
 ```
@@ -62,7 +62,7 @@ L’élément choisi est : oxygène
 
 ## Exercice 3 : Convertir Celsius en Kelvin
 
-Crée une fonction nommée `convertir_C_en_K` qui :
+Crée une fonction nommée `convertir_C_en_K(C)` qui :
 * prend une température en °C en paramètre
 * retourne la température en Kelvin (formule : K = C + 273.15)
 
@@ -119,13 +119,6 @@ NameError: name 'prenom' is not defined
 # Cours
 
 ## Création de fonction avec `def`
- 
-> Une fonction peut:
-   > 1. Afficher un résultat (ex: `print()`)
-   > 2. Retourner un résultat (ex: `input()`)
-
-
-### Comment créer et utiliser une fonction ?
 
 1. On utilise le mot clé `def`.
 2. Suivi du nom de la fonction.
@@ -143,9 +136,16 @@ IndentationError: expected an indented block after function definition on line X
 * Entre les parenthèses, on peut indiquer des **paramètres ou pas**, mais les **parenthèses sont obligatoires**.
 {{% /notice %}}
 
-#### Syntaxes générales
+## Catégories de fonctions
+ 
+> Une fonction peut:
+   > 1. Afficher un résultat (ex: `print()`)
+   > 2. Retourner un ou plusieurs résultats (ex: `input()` et `np.polyfit()`)
 
-**Une fonction qui affiche le résultat** :
+
+### Syntaxes générales
+
+**1. Fonction qui affiche le résultat** :
 ```python
 def nom_fonction(param1, param2): # <--- Les deux-points 
     instructions
@@ -163,7 +163,7 @@ def aire_rectangle(longueur, largeur):
 
 > Cette fonction reçoit deux valeurs (longueur et largeur du rectangle), calcule l’aire du rectangle et **affiche** l'aire.
 
-**Une fonction qui retourne le résultat** :
+**2. Fonction qui retourne le résultat** :
 
 ```python
 def nom_fonction(param1, param2):
@@ -184,13 +184,31 @@ def aire_rectangle(longueur, largeur):
 
 #### Le mot-clé `return`
 
-* Il **renvoie un résultat** à l’endroit où la fonction a été utilisée (appelée).
+* Il **renvoie un ou plusieurs résultats** à l’endroit où la fonction a été utilisée (appelée).
 * Dès que `return` est exécuté, la fonction **s’arrête**.
+
+
+##### Retourner plusieurs résultats avec `return`
+
+* Une fonction peut **retourner plusieurs valeurs** en même temps.
+* En Python, cela se fait en séparant les valeurs par des virgules après le mot-clé `return`.
+	* Exemple que vous connaissez: `a, b = np.ployfit()`
+* Les valeurs sont alors renvoyées sous la forme d’un **tuple** `(valeur1, valeur2, ..., valeurX)`.
+
+**Exemple** :
+
+```python
+def calculer_statistiques(notes):
+    moyenne = sum(notes) / len(notes)
+    minimum = min(notes)
+    maximum = max(notes)
+    return moyenne, minimum, maximum
+```
 
 
 #### Appeler (utiliser) une fonction
 
-**Utilisation de la fonction `aire_rectangle()` qui **affiche** l'aire**
+**Exemple 1** : Utilisation de la fonction `aire_rectangle()` qui **affiche** l'aire
 
 ```python
 # Appel de la fonction
@@ -199,7 +217,7 @@ aire_rectangle(5, 2)
 > Les valeurs utilisées entre les parenthèses seront utilisées par la fonction.
 > Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.
 
-**Utilisation de la fonction `aire_rectangle()` qui **retourne** l'aire**
+**Exemple 2** : Utilisation de la fonction `aire_rectangle()` qui **retourne** l'aire
 
 ```python
 surface = aire_rectangle(5, 2) # Appel de la fonction
@@ -211,6 +229,14 @@ On aurait aussi pu faire:
 ```python
 print(f"L'aire du rectangle est : {aire_rectangle(5, 2)}") # Appel de la fonction
 ```
+
+**Exemple 3** : Utilisation de la fonction `calculer_statistiques()` qui **retourne** la moyenne, le min et le max des notes
+
+```python
+moy, min_note, max_note = calculer_statistiques([72, 85, 90, 65, 100])	# Appel de la fonction
+print(moy, min_note, max_note)
+```
+> Ici, **il faut stocker les trois résultats de la fonction dans trois variables différentes**.
 
 
 ### La portée locale des variables
@@ -229,9 +255,10 @@ print(x)       # Erreur : x n'existe pas ici
 ```
 ![Erreur de nom](./erreur_name.png?width=35vw)
 
-## Documenter ses fonctions (*docstrings*)
 
-Les ***docstrings*** sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.
+## Documenter les fonctions (*docstrings*)
+
+Les ***docstrings*** `""" """` sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.
 
 **Format standard**
 ```python
@@ -267,9 +294,9 @@ def addition(a, b):
 {{% notice style="cyan" title="À retenir" groupid="notice-toggle" expanded="false" %}}
 * `def` : sert à définir une fonction 
 * ***nom_fonction(paramètres)*** : Les paramètres sont les variables représentant les données dont la fonction a besoin pour obtenir le résultat.                   
-* `return` : Permet à la fonction de retourner un résultat (`resultat = fonction()` ou <br> `print(fonction())`)
+* `return` : Permet à la fonction de retourner un ou plusieurs résultats (`resultat = fonction()` ou <br> `print(fonction())` ou `resultat1, resultat2 = fonction()`)
 * **Portée locale** : Signifie que les variables dans une fonction n’existent qu’à l’intérieur de .elle-ci|
-* Pour **utiliser une fonction** prédéfinie ou personnalisé, il faut écrire sont nom, les parenthèses et les paramètres si elle en a.
+* Pour **utiliser une fonction** prédéfinie ou personnalisé, il faut écrire son nom, les parenthèses et les paramètres si elle en a. Si la fonction retourne un ou plusieurs résultats, il faut les stocker dans des variables afin de pouvoir les utiliser dans le programme. 
 {{% /notice %}}
 
 ---
@@ -294,36 +321,30 @@ Où :
 * `C₂` : concentration finale souhaitée (mol/L)
 * `V₂` : volume final de la solution diluée (L)
 
----
 
 Écrire un programme Python structuré en **plusieurs fonctions** qui permet de :
 
-1. **Lire** les données nécessaires à la dilution (`C1`, `C2`, `V2`) — sans retourner de valeur.
-2. **Calculer et retourner** le volume `V1` de solution mère à prélever (formule : `V1 = (C2 × V2) / C1`).
-3. **Afficher** une phrase qui résume le calcul avec les valeurs fournies.
 
----
-
-### Consignes
-
-1. Crée une fonction `lire_donnees()` **sans paramètres** qui demande à l’utilisateur :
+1. Créer une fonction `lire_donnees()` **sans paramètres** qui demande à l’utilisateur :
 
    * la concentration `C1` de la solution mère (en mol/L),
    * la concentration `C2` de la solution finale (en mol/L),
    * le volume final `V2` (en L),
      et **retourne ces 3 valeurs**.
 
-2. Crée une fonction `calculer_v1(C1, C2, V2)` qui :
+2. Créer une fonction `calculer_v1(C1, C2, V2)` qui :
 
    * prend en **paramètres** les trois valeurs,
    * **retourne** le volume `V1` à prélever (en L).
 
-3. Crée une fonction `afficher_resultat(V1)` qui **affiche** une phrase expliquant le volume de solution mère à utiliser, avec **deux décimales**.
+3. Créer une fonction `afficher_resultat(V1)` qui **affiche** une phrase expliquant le volume de solution mère à utiliser, avec **deux décimales**.
 
-4. Teste le tout dans un petit programme principal.
+4. Tester le tout en utilisant les fonctions créées dans un petit programme qui:
+	i. **Lit** les données nécessaires à la dilution (`C1`, `C2`, `V2`) — sans retourner de valeur.
+	ii. **Calcule et retourne** le volume `V1` de solution mère à prélever (formule : `V1 = (C2 × V2) / C1`).
+	iii. **Affiche** une phrase qui résume le calcul avec les valeurs fournies.
 
-
-### Exemple d'exécution attendue
+## Exemple de résultats attendus
 
 ```
 --- Programme de dilution ---
@@ -337,6 +358,8 @@ Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.
 
 > **RAPPEL**: Le **troisième et dernier examen** (30%) et prévu à la **semaine 15**.
 
+<!--
 1. Lire la description du [Projet final](../semaine12/)
 2. Prendre connaissance de la [Grille de correction](../semaine12/grille/)
 3. S'approprier des [Notions à savoir pour réussir le projet](../semaine12/competences_reussite/)
+-->

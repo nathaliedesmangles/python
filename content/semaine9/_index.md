@@ -438,6 +438,79 @@ max	0.200000	1.500000	0.281250
 ```
 
 
+### Les opérateurs logiques (ET, OU, NON) sur les colonnes
+
+Quand on veut tester une condition sur une colonne, on écrit :
+
+```python
+df["Colonne"] > 10
+```
+
+Cela retourne une **série de booléens** (`True` ou `False`) pour chaque ligne.
+
+Exemple :
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    "T": [12, 25, 8, 30],
+    "vitesse": [2.5, 3.1, 1.8, 4.0]
+})
+print(df["T"] > 10)
+```
+
+Résultat :
+
+```
+0     True
+1     True
+2    False
+3     True
+Name: T, dtype: bool
+```
+
+
+### Combiner plusieurs conditions
+
+En Pandas, on **combine** les tests logiques avec les opérateurs :
+
+| Opération logique | Symbole Python pour Pandas | Exemple d’utilisation                  | 
+| ----------------- | -------------------------- | -------------------------------------- | 
+| ET logique        | `&`                        | `(df["T"] > 10) & (df["vitesse"] < 3)` |
+| OU logique        | `\|`                        | `(df["T"] > 10) \| (df["vitesse"] < 3)` |
+| NON logique       | `~`                        | `~(df["T"] > 10)`                      |
+
+{{% notice style="accent" title="Important" %}}
+* Il faut toujours mettre **chaque condition entre parenthèses**.
+* On ne peut pas utiliser `and`, `or`, `not` sur des séries Pandas.
+{{% /notice %}}
+
+
+#### Exemple
+
+```python
+# Sélectionner les lignes où la température est > 10 ET la vitesse < 3
+filtre = (df["T"] > 10) & (df["vitesse"] < 3)
+resultat = df[filtre]
+print(resultat)
+```
+
+**Résultat** :
+```
+     T  vitesse
+0  12      2.5
+```
+
+Autre exemple :
+
+```python
+# OU logique : température < 10 OU vitesse > 3
+filtre = (df["T"] < 10) | (df["vitesse"] > 3)
+df_filtre = df[filtre]
+```
+
+
 ## Conversion d'une colonne du DataFrame en tableaux NumPy avec `.to_numpy()`
 
 Parfois, on veut faire des calculs mathématiques rapides sur une colonne (ex. : calcul d’énergie, moyenne, écart-type, etc.).
@@ -480,14 +553,15 @@ plt.show()
 
 ## À retenir
 
-| Étape                    | Fonction               | Objectif principal                               |
-| ------------------------ | ---------------------- | ------------------------------------------------ |
-| Lecture de fichier       | `read_csv()`           | Importer les données expérimentales              |
-| Affichage du df          | `head()`, `tail()`     | Par défaut 5 lignes                              |
-| Infos et statistiques    | `info()`, `describe()` | Noms, types et statistiques des colonnes         |
-| Nettoyage et exportation | `to_csv()`             | Créer un fichier compatible avec Python          |
-| Manipulation de colonnes | `DataFrame["col"]`     | Ajouter, modifier ou analyser les données        |
-| Conversion en tableau    | `to_numpy()`           | Calculs scientifiques rapides                    |
+| Étape                           | Fonction                 | Objectif principal                               |
+| ------------------------------- | ------------------------ | ------------------------------------------------ |
+| Lecture de fichier              | `read_csv()`             | Importer les données expérimentales              |
+| Affichage du df                 | `head()`, `tail()`       | Par défaut 5 lignes                              |
+| Infos et statistiques           | `info()`, `describe()`   | Noms, types et statistiques des colonnes         |
+| Nettoyage et exportation        | `to_csv()`               | Créer un fichier compatible avec Python          |
+| Manipulation de colonnes        | `DataFrame["col"]`       | Ajouter, modifier ou analyser les données        |
+| Tests logiques sur les colonnes | ET `&`, OU `\|`, NON `~` | Combiner des tests logiques. <br>Chaque condition **doit** être entre parenthèses       |
+| Conversion en tableau           | `to_numpy()`             | Calculs scientifiques rapides                    |
 
 | Étape                                               | Fonction             | Résultat           |
 | --------------------------------------------------- | -------------------- | ------------------ |
