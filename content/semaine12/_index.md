@@ -15,12 +15,12 @@ draft = true
 * Travailler sur la partie 1
 
 
-## Fichiers fournis (sur Moodle)
+## Fichiers fournis
 
 * Les **fichiers CSV complets** (`adn_suspects.csv` et `adn_scene.csv`).
 	* Contiennent des **valeurs de données plausibles biologiquement** (en paires de bases).
 	* Le **contexte cohérent** pour 10 suspects.
-* Le bloc-notes (`projet_ADN.ipynb`) de départ à utiliser.
+* Le bloc-notes de départ à utiliser `projet_ADN.ipynb`.
 
 
 ## Objectifs du projet
