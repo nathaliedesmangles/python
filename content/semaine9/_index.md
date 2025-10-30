@@ -294,7 +294,44 @@ df
 10	0.20	1.50
 ```
 
-### Gestion des lignes contenant des valeurs manquantes avec `isna()` et `dropna()`
+## Affichage et statistiques de base
+
+```python
+# Afficher les 5 premières lignes
+df.head()
+
+# Afficher les 10 premières lignes
+df.head(10)
+
+# Afficher les 5 dernières lignes
+df.tail()
+
+# Afficher les 10 dernières lignes
+df.tail(10)
+
+# Informations sur les colonnes et le type de données
+print(df.info())
+
+# Obtenir un résumé statistique (Nombre de valeurs par colonne, moyenne, écart-type, etc.)
+df.describe()
+```
+
+Résultat typique :
+
+```
+	x	v	E
+count	11.000000	11.000000	11.000000
+mean	0.100000	0.976667	0.138757
+std	0.066332	0.414488	0.083847
+min	0.000000	0.000000	0.000000
+25%	0.050000	0.890000	0.099625
+50%	0.100000	0.976667	0.119235
+75%	0.150000	1.220000	0.186250
+max	0.200000	1.500000	0.281250
+```
+
+
+## Gestion des lignes contenant des valeurs manquantes avec `isna()` et `dropna()`
 
 Quand on travaille avec des données expérimentales, il arrive qu’une mesure soit **absente** (oubliée, perdue, ou invalide).
 Dans un tableau pandas, une valeur manquante est notée **`NaN`** (*Not a Number*).
@@ -322,6 +359,7 @@ df.isna()
 
 > On peut aussi utiliser la fonction `df.isnull()`. Au lieu de ***NaN*** elle renvoie un tableau de **valeurs booléennes** (`True` si la cellule est vide, `False` sinon) :
 
+## Gestion des valeurs manquantes *NaN*
 
 ### Suppression de lignes contenant des valeurs manquantes avec `dropna()`
 
@@ -356,7 +394,7 @@ x,v
 ```
 
 
-### Exportation d’un fichier nettoyé avec `to_csv()`
+## Exportation d’un fichier nettoyé avec `to_csv()`
 
 Une fois les données vérifiées et nettoyées, on peut les sauvegarder dans un nouveau fichier plus « propre » (ex. : avec des points pour les décimales).
 
@@ -400,43 +438,6 @@ x_eq = 0.125  # position d’équilibre du ressort
 df["e"] = x_eq - df["x"]  # nouvelle colonne "e"
 df["de"] = 0.002  # même incertitude pour toutes les mesures
 ```
-
-### Affichage et statistiques de base
-
-```python
-# Afficher les 5 premières lignes
-df.head()
-
-# Afficher les 10 premières lignes
-df.head(10)
-
-# Afficher les 5 dernières lignes
-df.tail()
-
-# Afficher les 10 dernières lignes
-df.tail(10)
-
-# Informations sur les colonnes et le type de données
-print(df.info())
-
-# Obtenir un résumé statistique (Nombre de valeurs par colonne, moyenne, écart-type, etc.)
-df.describe()
-```
-
-Résultat typique :
-
-```
-	x	v	E
-count	11.000000	11.000000	11.000000
-mean	0.100000	0.976667	0.138757
-std	0.066332	0.414488	0.083847
-min	0.000000	0.000000	0.000000
-25%	0.050000	0.890000	0.099625
-50%	0.100000	0.976667	0.119235
-75%	0.150000	1.220000	0.186250
-max	0.200000	1.500000	0.281250
-```
-
 
 ### Les opérateurs logiques (ET, OU, NON) sur les colonnes
 
