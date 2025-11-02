@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Évaluation intégratrice (30%) :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine15/index.html</link>
-    <description>Informations Date:&#x9;Semaine #15 (Voir le calendrier) Matière: Principalement le projet et les semaines 6 à 14 inclusivement Documentation permise: 3 feuilles recto-verso (manuscrite ou imprimée) Format:&#x9;Test sur Moodle (théorique + pratique). Nombre de questions:&#x9;À VENIR Aide pour la préparation de vos feuilles de notes Quel est le rôle des feuilles de notes Le rôle d’une feuille de notes :&#xA;ce n’est pas un document où l’on copie tout le cours, mais c’est un outil d’aide à la réflexion.</description>
+    <link>https://example.org/semaine15/index.html</link>
+    <description>Informations Date:&#x9;Semaine #15 (Voir le calendrier) Matière: Principalement le projet et les semaines 6 à 14 inclusivement Documentation permise: 3 feuilles recto-verso (manuscrite ou imprimée) Format:&#x9;Test sur Moodle (théorique + pratique). Nombre de questions:&#x9;À VENIR Aide pour la préparation de vos feuilles de notes Quel est le rôle des feuilles de notes Le rôle d’une feuille de notes :&#xA;Ce n’est pas un document où l’on copie tout le cours, mais c’est un outil d’aide à la réflexion.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine15/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine15/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

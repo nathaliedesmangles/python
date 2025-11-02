@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notions nécessaires pour réussir le projet :: 420-SN1-RE</title>
-    <link>https://example.org/semaine12/competences_reussite/index.html</link>
+    <link>http://localhost:1313/semaine12/competences_reussite/index.html</link>
     <description>Voici une liste des notions, fonctions et méthodes que vous devez avoir apprises avant de faire le projet ADN. Elle couvre la programmation de base, les bibliothèques scientifiques et les compétences analytiques spécifiques au projet.&#xA;A. Programmation de base en Python Thème Notions, fonctions, méthodes Variables &amp; types int, float, str, bool, list, dict Structures de contrôle if, elif, else, for, while, break, continue Fonctions personnalisées def, return, paramètres et portée locale Manipulation de chaînes str.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine12/competences_reussite/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine12/competences_reussite/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

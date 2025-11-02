@@ -1,0 +1,13 @@
+Étapes lecture fichier à création fichier
+
+Fichier brut (.csv ou .txt)
+        ↓
+Lecture avec pandas ou NumPy
+        ↓
+Nettoyage des données (NaN, conversions)
+        ↓
+Calculs statistiques (moyennes, écarts, conditions)
+        ↓
+Visualisation (graphiques, régression)
+        ↓
+Exportation du résultat (CSV ou graphique)

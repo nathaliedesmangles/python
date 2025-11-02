@@ -27,6 +27,7 @@ weight = 105
 * **ce n’est pas** un document où l’on copie tout le cours, mais **c'est un outil d’aide à la réflexion**. 
 * Une bonne feuille de notes doit permettre de **retrouver rapidement** une structure, une syntaxe ou un concept clé pendant l’examen. 
 * L’accent est mis sur la **clarté**, **l’organisation** et la **personnalisation du contenu**.
+* Chaque étudiant.e **DOIT avoir ses propres feuilles**. Tout partage de feuilles sera considéré comme du **plagiat**.
 
 
 [Guide - Questions à se poser (version Word](./Questions_Feuille_de_notes_Examen1.docx))  

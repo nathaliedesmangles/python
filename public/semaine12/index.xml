@@ -1,53 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Projet Enquête ADN - Identifier le coupable :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine12/index.html</link>
-    <description>Objectifs de la séance Présentation du projet (généralités) Présentation de la partie 1 Présentation de la grille de correction Travailler sur la partie 1 Fichiers fournis (sur Moodle) Les fichiers CSV complets (adn_suspects.csv et adn_scene.csv). Contiennent des valeurs de données plausibles biologiquement (en paires de bases). Le contexte cohérent pour 10 suspects. Le bloc-notes (projet_ADN.ipynb) de départ à utiliser. Objectifs du projet Partie 1 - Préparation des données et identification Afficher et nettoyer les données Comparer les profils ADN Partie 2 - Identification du suspect et visualisation des résultats Visualiser les résultats</description>
+    <title> 🧬 Projet intégrateur — L’ADN du coupable :: 420-SN1-RE</title>
+    <link>https://example.org/semaine12/index.html</link>
+    <description>Informations générales Durée : 3 semaines (en classe)&#xA;Pondération : 15 % de la note finale&#xA;Thème scientifique : biologie moléculaire et identification génétique&#xA;Résumé des compétences évaluées Lecture et traitement de fichiers scientifiques (pandas) Calculs et modélisation numériques (numpy) Représentations graphiques (matplotlib) Logique algorithmique et tri (boucle for) Communication scientifique et analyse critique Fichiers fournis sur Moodle adn_suspects.csv — contient les données de 150 suspects (nom et valeurs de 3 loci).</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine12/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title> Projet - Présentation, analyse et traduction</title>
-      <link>http://localhost:1313/semaine12/_old/v2/_index---copie/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine12/_old/v2/_index---copie/index.html</guid>
-      <description>Objectifs Présentation du projet Présentation de la grille de correction Analyse préliminaire du projet (activité guidée): Comprendre le problème Identifier les variables (types), constantes, formules, fonctions, etc. Élaborer les algorithmes Enquête scientifique par analyse d’ADN Contexte Vous êtes le ou la bioinformaticien·ne en charge d’une enquête médico-légale : votre rôle est d’identifier, à partir de données génétiques partielles, le ou les suspects les plus compatibles avec un échantillon d’ADN trouvé sur une scène de crime.</description>
-    </item>
-    <item>
-      <title>exercices préparatoires progressifs</title>
-      <link>http://localhost:1313/semaine12/_old/v2/exercices_preparatoires/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine12/_old/v2/exercices_preparatoires/index.html</guid>
-      <description>Parfait ! Voici une série d’exercices préparatoires progressifs, organisés par bloc de compétences, pour bien préparer tes étudiant·es au projet ADN.&#xA;🔁 Bloc A – Programmation de base en Python 🧪 Exercice A1 — Comparaison de deux séquences # Complète la fonction pour comparer deux séquences de même longueur. # Un caractère &#34;?&#34; agit comme un joker qui compte toujours comme une correspondance. def comparer(seq1, seq2): correspondance = 0 for a, b in zip(seq1, seq2): if a == b or a == &#34;?</description>
-    </item>
-    <item>
-      <title>Grille d&#39;évaluation critériée</title>
-      <link>http://localhost:1313/semaine12/grille/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine12/grille/index.html</guid>
-      <description>Pondération du projet (45%) Rappels :&#xA;La remise du projet compte pour 15% de la note finale du cours. L’évaluation intégratrice compte pour 30% de la note finale du cours. Grille critériée Version PDF à téléchargeable&#xA;Volet Critère Excellent (100 %) Satisfaisant (75 %) Partiel (50 %) Insuffisant (0-25 %) /xx 1. Planification Le bloc-notes est structuré avec des objectifs, des étapes claires et une organisation logique Tous les éléments sont présents, bien hiérarchisés et cohérents Présence de la plupart des éléments, organisation générale claire Organisation présente mais confuse ou incomplète Aucune planification apparente /10 2.</description>
-    </item>
-    <item>
-      <title>Notions et outils nécessaires pour réussir le projet</title>
-      <link>http://localhost:1313/semaine12/_old/v1/notions_utiles_necessaires/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine12/_old/v1/notions_utiles_necessaires/index.html</guid>
-      <description>Voici une liste complète et structurée de toutes les notions, fonctions et méthodes que les étudiant·es doivent avoir apprises avant de faire le projet ADN. Elle couvre la programmation de base, les bibliothèques scientifiques et les compétences analytiques spécifiques au projet.&#xA;🧠 Notions et outils nécessaires pour réussir le projet 🧾 A. Programmation de base en Python Thème Notions, fonctions, méthodes Variables &amp; types int, float, str, bool, list, dict Structures de contrôle if, elif, else, for, while, break, continue Fonctions personnalisées def, return, paramètres et portée locale Manipulation de chaînes str.</description>
-    </item>
-    <item>
-      <title>Notions nécessaires pour réussir le projet</title>
-      <link>http://localhost:1313/semaine12/competences_reussite/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine12/competences_reussite/index.html</guid>
-      <description>Voici une liste des notions, fonctions et méthodes que vous devez avoir apprises avant de faire le projet ADN. Elle couvre la programmation de base, les bibliothèques scientifiques et les compétences analytiques spécifiques au projet.&#xA;A. Programmation de base en Python Thème Notions, fonctions, méthodes Variables &amp; types int, float, str, bool, list, dict Structures de contrôle if, elif, else, for, while, break, continue Fonctions personnalisées def, return, paramètres et portée locale Manipulation de chaînes str.</description>
-    </item>
-    <item>
-      <title>Projet intégrateur</title>
-      <link>http://localhost:1313/semaine12/_old/v1/projet_integrateur/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine12/_old/v1/projet_integrateur/index.html</guid>
-      <description>Voici l’énoncé du projet mis à jour avec les nouveaux éléments (régression linéaire, barres d’erreur, incertitudes), tout en conservant le thème d’enquête ADN.&#xA;🕵️‍♀️ Projet intégrateur – Enquête scientifique par analyse d’ADN Programmation scientifique en Python — Valeur : 40 % 🔎 Contexte Une scène de crime a été découverte dans un laboratoire. Des échantillons biologiques (contenant de l’ADN partiel) ont été récupérés sur place, mais les séquences sont incomplètes ou partiellement contaminées.</description>
-    </item>
+    <atom:link href="https://example.org/semaine12/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

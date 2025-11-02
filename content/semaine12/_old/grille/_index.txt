@@ -1,7 +1,7 @@
 +++
 title = "Grille d'évaluation critériée"
 weight = 112.1
-draft = false
+draft = true
 +++
 
 ## Pondération du projet (45%)

@@ -127,6 +127,20 @@
       <description>Objectifs Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Appel de fonction&#xD;Ajoutez un Docstring pour chacune des fonctions créées. Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.</description>
     </item>
     <item>
+      <title> 🧬 Projet intégrateur — L’ADN du coupable</title>
+      <link>https://example.org/semaine12/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine12/index.html</guid>
+      <description>Informations générales Durée : 3 semaines (en classe)&#xA;Pondération : 15 % de la note finale&#xA;Thème scientifique : biologie moléculaire et identification génétique&#xA;Résumé des compétences évaluées Lecture et traitement de fichiers scientifiques (pandas) Calculs et modélisation numériques (numpy) Représentations graphiques (matplotlib) Logique algorithmique et tri (boucle for) Communication scientifique et analyse critique Fichiers fournis sur Moodle adn_suspects.csv — contient les données de 150 suspects (nom et valeurs de 3 loci).</description>
+    </item>
+    <item>
+      <title> Évaluation intégratrice (30%)</title>
+      <link>https://example.org/semaine15/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine15/index.html</guid>
+      <description>Informations Date:&#x9;Semaine #15 (Voir le calendrier) Matière: Principalement le projet et les semaines 6 à 14 inclusivement Documentation permise: 3 feuilles recto-verso (manuscrite ou imprimée) Format:&#x9;Test sur Moodle (théorique + pratique). Nombre de questions:&#x9;À VENIR Aide pour la préparation de vos feuilles de notes Quel est le rôle des feuilles de notes Le rôle d’une feuille de notes :&#xA;Ce n’est pas un document où l’on copie tout le cours, mais c’est un outil d’aide à la réflexion.</description>
+    </item>
+    <item>
       <title>Solutions des exercices</title>
       <link>https://example.org/solutions_exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -1,175 +1,279 @@
 +++
 chapter = true
 pre = "<b>12-14</b>"
-title = " Projet Enquête ADN - Identifier le coupable"
+title = " 🧬 Projet intégrateur — L’ADN du coupable"
 weight = 112
-draft = true
+draft = false
 +++
 
 
-## Objectifs de la séance
+## Informations générales
 
-* Présentation du projet (généralités)
-* Présentation de la partie 1
-* Présentation de la grille de correction
-* Travailler sur la partie 1
-
-
-## Fichiers fournis
-
-* Les **fichiers CSV complets** (`adn_suspects.csv` et `adn_scene.csv`).
-	* Contiennent des **valeurs de données plausibles biologiquement** (en paires de bases).
-	* Le **contexte cohérent** pour 10 suspects.
-* Le bloc-notes de départ à utiliser `projet_ADN.ipynb`.
+> **Durée :** 3 semaines (en classe)  
+> **Pondération :** 15 % de la note finale  
+> **Thème scientifique :** biologie moléculaire et identification génétique  
 
 
-## Objectifs du projet
+## Résumé des compétences évaluées
 
-### Partie 1 - Préparation des données et identification
-
-* Afficher et nettoyer les données
-* Comparer les profils ADN
-
-### Partie 2 - Identification du suspect et visualisation des résultats
-
-**Visualiser les résultats**
-   * Identifier le **suspect ayant la plus petite différence moyenne**.
-   * Créer un **graphique en barres** comparant les trois loci du coupable et de l’échantillon.
-   * Ajouter des **barres d’erreur** simulant l'incertitude expérimentale (±2 pb).
-   * Tracer une **régression linéaire** entre les loci du suspect et ceux de la scène.
-
-### Partie 3 - Présentation des résultats
-
-**Communiquer les résultats**
-
-   * Enregistrer dans un fichier texte le nom du coupable et son score de similarité (`resultats_adn.txt`).
-   * Mise en forme du bloc-notes (ajout de commentaires pertinents, ).
-
----
-
-## Contexte 
-
-Une scène de crime a été découverte dans un laboratoire de biologie cellulaire.
-Sur une pipette abandonnée, un fragment d’ADN a été trouvé.
-Le laboratoire a séquencé **trois loci génétiques** (L1, L2, L3) — des régions variables entre individus.
-
-Les profils ADN de **10 suspects** ont été enregistrés. Cependant, certaines mesures contiennent des **valeurs manquantes** (erreurs d’électrophorèse).
-Votre rôle sera de comparer l’ADN trouvé sur la scène à celui des suspects afin d’**identifier le coupable le plus probable**.
-
-## Exemple de données
-
-## Fichier 1 — `adn_suspects.csv`
-
-| Nom     | L1  | L2  | L3  |
-| ------- | --- | --- | --- |
-| André   | 210 | 320 | 415 |
-| Benoit  | 198 | 305 | NaN |
-| Chloé   | 205 | 315 | 420 |
-| David   | 212 | 318 | 417 |
-| Emma    | 208 | NaN | 419 |
-| Félix   | 207 | 319 | 415 |
-| Gabriel | NaN | 317 | 416 |
-| Hugo    | 199 | 312 | 410 |
-| Inès    | 215 | 325 | 421 |
-| Jade    | 206 | 316 | NaN |
-
-> *Les valeurs représentent des longueurs de fragments d’ADN en paires de bases (pb).*
+* Lecture et traitement de fichiers scientifiques (`pandas`)
+* Calculs et modélisation numériques (`numpy`)
+* Représentations graphiques (`matplotlib`)
+* Logique algorithmique et tri (boucle `for`)
+* Communication scientifique et analyse critique
 
 
-## Fichier 2 — `adn_scene.csv`
+## Fichiers fournis sur Moodle
 
-| Echantillon | L1  | L2  | L3  |
-| ----------- | --- | --- | --- |
-| ADN_trouvé  | 208 | 317 | 418 |
+- `adn_suspects.csv` — contient les données de 150 suspects (nom et valeurs de 3 loci).  
+- `adn_crime.csv` — contient les 3 valeurs de l’ADN trouvé sur la scène du crime.  
+- `projet_adn_etudiant.ipynb` - Le bloc-notes de départ à utiliser.  
+- `grille_correction_adn_coupable.pdf` - La grille de correction du projet.
 
 
+## Fichiers à remettre sur Moodle
 
+* `projet_prenom_nom.ipynb` - Le bloc-notes complété avec votre code.
+* `adn_suspects_corrige.csv` - contient les données nettoyées pour les 150 suspects.  
+* `resultats.csv` - contient les données des 10 premiers suspects.  
+* Les 3 graphiques :
+	* `graphique_top10_3loci.png` - Top 10 des suspects les plus proches (3 loci)  
+	* `graphique_regression_locus1_locus2.png` - Corrélation entre Locus1 et Locus2  
+	* `graphique_bruit_locus1.png` - Effet du bruit expérimental sur les valeurs du Locus1
+
+
+## Bibliothèques autorisées et contraintes pédagogiques
+
+* Numpy
+* Pandas
+* Matplotlib.pyplot
+
+* <b style="color:red;">Aucune fonction non apprise dans le cours n'est autorisée. Toute fonction ou méthode ne faisant pas partie du cours sera considérée comme du plagiat.</b>
+
+{{% notice style="red" icon="warning" style="warning" title="Remises hebdomadaires" %}}
+* Afin de suivre votre avancée, **à chaque fin de cours, avant de quitter**, vous devez déposer votre fichier .ipynb sur Moodle.
+* Une remise manquante entrainera une **pénalité de 10%/jours de retard (tel que prescrit par la PIEA article 7.4.2)**.
+* La remise finale sur Moodle doit être faite **au plus tard la veille de l'examen 3 (semaine 15)**. En cas de non respect de ce délai, une **pénalité de 10%/jours de retard** sera aussi appliquée, **après quatre jours de retard**, sans égard aux congés, la **note de 0** sera attribuée. 
+* Seule la dernière remise sera évaluée.
+{{% /notice %}}
+
+
+## Grille d’évaluation
+
+| Section                                 | Critères                                                                                      | Pts    |
+| --------------------------------------- | --------------------------------------------------------------------------------------------- | :------: |
+| **1. Lecture et nettoyage des données** | Lecture correcte des fichiers CSV. <br>Calculs de moyennes et écart-types.<br> remplacement des NaN | 10
+| **2. Calculs et logique de tri**        | Distance euclidienne correcte.<br> Respect des contraintes.<br> Tri manuel avec boucles. | 20 
+| **3. Visualisations scientifiques**     | Graphique en barres (Top 10).<br>Scatter + droite de régression.<br>Mise en forme claire. | 20
+| **4. Modélisation & bruit** | 4ᵉ locus estimé. <br>Bruit expérimental simulé.<br>Export `resultats.csv` réussi.   | 25
+| **5. Rapport scientifique**             | Interprétation, clarté, rigueur et conclusion cohérente.<br> Commentaires clairs, exécution sans erreur.    | 25
 
 
 ---
 
+## Quelques définitions
 
+{{% notice style="green" title="Locus / Loci et Distances euclidiennes (3D, 4D)" groupid="notice-toggle" expanded="false" %}}
+ 1. Un **locus** (pluriel **loci**) désigne **l’emplacement précis d’un gène ou d’une séquence d’ADN sur un chromosome**.  
+ 
+ **Contexte biologique :**  
+ * Chaque individu possède deux copies de chaque locus (une d’origine maternelle et une d’origine paternelle).  
+ * Un même locus peut contenir **plusieurs versions d’un gène**, appelées **allèles**.  
+ * L’analyse de plusieurs loci permet de **comparer les profils ADN** de différents individus, comme dans les enquêtes criminelles ou les tests de filiation.  
+ 
 
-## Notions travaillées
+2. La **distance euclidienne** mesure **la différence numérique entre deux ensembles de valeurs**, souvent utilisées pour **comparer des profils génétiques** ou **des séquences d’ADN**.
+ 
+ **Formule mathématique) (pour **`n`** loci) :**
+```math
+ $$
+ d = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \ldots + (x_n - y_n)^2}
+ $$
+```
+ où chaque $(x_i\)$ et $(y_i\)$ représente la valeur d’un même locus chez deux individus.
 
-| Notion Python                 | Application dans le projet                  |
-| ----------------------------- | ------------------------------------------- |
-| Lecture/écriture de fichiers  | `pd.read_csv()`, `open()`                   |
-| Gestion de données manquantes | `pd.isna()`, `fillna()`                     |
-| Boucles et dictionnaires      | Calcul des scores                           |
-| NumPy                         | Moyennes, différences absolues, `polyfit()` |
-| Matplotlib                    | `bar()`, `errorbar()`, titres, légendes     |
-| Régression linéaire           | `np.polyfit()` et `np.polyval()`            |
+3. Une **distance 3D** est une comparaison dans un espace à **trois dimensions**, correspondant ici aux trois premiers loci (`Locus1`, `Locus2`, `Locus3`).  
+Chaque suspect est représenté par un point dans cet espace, et la **distance euclidienne** entre le suspect et le profil du crime est donnée par :
 
-
-
-## Régression linéaire
-
-Pour le coupable présumé, ajoute une **régression linéaire** pour visualiser la correspondance entre les loci du suspect et ceux de la scène :
-
-```python
-x = np.array(scene)
-y = np.array(suspect)
-a, b = np.polyfit(x, y, 1)
-plt.plot(x, y, 'o', label='Données')
-plt.plot(x, a*x + b, '-', label=f"Régression : y = {a:.2f}x + {b:.2f}")
-plt.xlabel("ADN scène (pb)")
-plt.ylabel(f"ADN {coupable} (pb)")
-plt.legend()
-plt.show()
+```math
+$$
+d_{3D} = \sqrt{(L1_s - L1_c)^2 + (L2_s - L2_c)^2 + (L3_s - L3_c)^2}
+$$
 ```
 
+**Interprétation**:
 
-## Livrables
+ * Une **petite distance euclidienne** → profils ADN **très similaires**.    
+ * Une **grande distance** → profils **différents**.   
 
-* Script ou notebook complet (`projet_adn_prenomNom.ipynb`)
-* Graphiques clairs avec titres et légendes
-* Fichier `resultats_adn.txt`
-* Brève **conclusion écrite** (5 lignes max) :
-	* Indiquer qui est le suspect le plus probable et pourquoi ?
+Dans ce projet, chaque locus ADN varie entre **0,40 et 0,70**, donc une différence maximale d’environ **0,30 par locus**.  
+La distance totale (3 loci) peut ainsi varier entre **0,00 et ~0,52** :
 
-## Exemple de code de base
-
-```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# Lecture des fichiers CSV
-suspects = pd.read_csv("adn_suspects.csv")
-scene = pd.read_csv("adn_scene.csv").iloc[0, 1:].to_numpy()
+| Distance (3D) | Interprétation |
+|----------------|----------------|
+| **d < 0.10** | Profils presque identiques — suspect très probable |
+| **0.10 ≤ d < 0.20** | Profils similaires — suspect plausible |
+| **0.20 ≤ d < 0.30** | Profils différents — faible probabilité |
+| **d ≥ 0.30** | Profils incompatibles — suspects distincts |
 
 
+4. Lorsqu’on ajoute un **4ᵉ locus estimé** (`Locus4_estime`) grâce à une régression linéaire,  
+on travaille alors dans un espace à **quatre dimensions** :
 
-# Nettoyage des données (remplir les NaN par les moyennes)
-suspects = suspects.fillna(suspects.mean(numeric_only=True))
-
-# Comparaison entre chaque suspect et l'échantillon
-scores = {}
-for i, row in suspects.iterrows():
-    diff = np.abs(row[1:].to_numpy() - scene)
-    scores[row["Nom"]] = diff.mean()
-
-# Identifier le suspect le plus proche
-coupable = min(scores, key=scores.get)
-print("Scores de ressemblance :", scores)
-print("Coupable probable :", coupable)
-
-# Graphique comparatif
-suspect = suspects[suspects["Nom"] == coupable].iloc[0, 1:].to_numpy()
-loci = ["L1", "L2", "L3"]
-
-plt.bar(loci, suspect, yerr=2, label=coupable, alpha=0.6)
-plt.bar(loci, scene, yerr=2, label="ADN scène", alpha=0.6)
-plt.ylabel("Longueur du fragment (pb)")
-plt.title(f"Comparaison ADN : scène vs {coupable}")
-plt.legend()
-plt.show()
-
-# Sauvegarde du résultat
-with open("resultats_adn.txt", "w") as f:
-    f.write(f"Coupable probable : {coupable}\n")
-    f.write(f"Scores de similarité : {scores}\n")
+```math
+$$
+d_{4D} = \sqrt{(L1_s - L1_c)^2 + (L2_s - L2_c)^2 + (L3_s - L3_c)^2 + (L4_s - L4_c)^2}
+$$
 ```
 
+ **Interprétation possible :**  
+
+| Observation | Interprétation possible |
+|--------------|------------------------|
+| **d₄D < d₃D** | La modélisation affine (corrélation entre loci) **renforce la similarité** : le suspect devient encore plus compatible avec le profil du crime. |
+| **d₄D ≈ d₃D** | Le 4ᵉ locus estimé **n’apporte pas d’information nouvelle** : la modélisation ne modifie pas la conclusion. |
+| **d₄D > d₃D** | L’ajout du 4ᵉ locus **augmente l’écart global** : le modèle révèle une incohérence génétique ou une surestimation. |
+
+5. Le **bruit** est généré avec une loi normale centrée sur 0 (sans biais).
+
+* Chaque valeur du locus est donc légèrement modifiée dans une plage typique de ±0,01.
+* Cela correspond à une incertitude de mesure de ±1 % à ±2 %.
+
+ **Interprétation possible :**  
+
+| Comparaison                | Interprétation                                                                                                            |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **d_bruitée ≈ d_initiale** | Le modèle est **robuste** : le bruit n’affecte pas la conclusion, le suspect reste le même.                               |
+| **d_bruitée < d_initiale** | Le bruit a **réduit légèrement l’écart** : le modèle semble même un peu plus cohérent (effet aléatoire non significatif). |
+| **d_bruitée > d_initiale** | Le bruit **augmente la distance** : les écarts sont amplifiés, le modèle est plus sensible aux variations.                | 
+
+{{% /notice %}}
+
+
+## Objectifs généraux
+
+* Identifier le suspect dont le profil génétique est le plus proche de l’échantillon d’ADN retrouvé sur la scène de crime.  
+* Effectuer l’analyse à partir de **données réelles simulées** pour 150 suspects et 3 loci d’ADN.  
+* Utiliser les outils de **programmation scientifique en Python** (avec `numpy`, `pandas`, `matplotlib`).
+
+
+## Étapes du projet
+
+### 1. Lecture et exploration des données
+
+1. Lire les fichiers CSV (`;` comme séparateur, `,` pour décimales).  
+2. Afficher le nombre de suspects.  
+3. Calculer et afficher la **moyenne** et **l’écart-type** pour chaque locus.  
+4. Remplacer les valeurs manquantes par la moyenne correspondante.  
+5. Sauvegarder les données nettoyées dans un fichier nommé `adn_suspects_corrige.csv`.
+
+
+### 2. Calcul des distances ADN (3 loci = 3D)
+
+1. Extraire et afficher les valeurs des 3 loci sous forme de tableaux NumPy.  
+2. Calculer et afficher la **distance euclidienne** entre chaque suspect et le profil du crime.  
+3. Créer deux listes :  
+   - `noms` (noms des suspects)  
+   - `distances` (valeurs des distances)
+4. **Trier** les deux listes (boucles imbriquées + échanges entre listes).
+5. Afficher le **top 5 des suspects les plus proches**.
+6. Créer un **graphique en barres** affichant le **top 10 des suspects** avec barres d’erreur ±5 %.
+	* Titre: "Top 10 des suspects les plus proches (3 loci)"
+	* Étiquette de l'axe x: il n'y a pas d'étiquette
+	* Étiquette de l'axe y: "Distance ADN (u.a.)"
+	* Nom du fichier : `graphique_top10_3loci.png`
+7. Créer un **nuage de points** (`scatter`) pour `Locus1` vs `Locus2`. Ajouter une **droite de régression linéaire** avec `np.polyfit()` et `plt.plot()`.
+	* Titre: "Corrélation entre Locus1 et Locus2"
+	* Étiquette de l'axe x: "Locus2"
+	* Étiquette de l'axe y: "Locus1"
+	* Nom du fichier : `graphique_regression_locus1_locus2.png`
+
+<!--
+```python
+for i in range(len(distances) - 1):
+    for j in range(i + 1, len(distances)):
+        if distances[j] < distances[i]:
+            tmp = distances[i]
+            distances[i] = distances[j]
+            distances[j] = tmp
+
+            tmp_nom = noms[i]
+            noms[i] = noms[j]
+            noms[j] = tmp_nom
+```
+-->
+
+### 4. Ajout d'un 4e loci
+
+#### a) 4ᵉ locus estimé par régression linéaire
+
+1. Calculer les coefficients `a` et `b` avec `np.polyfit(Locus1, Locus2, 1)`.
+2. Créer une nouvelle colonne : `Locus4_estime = a * Locus1 + b`.
+3. Estimer aussi `Locus4` du crime à l'aide des 3 ADN trouvés sur la scène de crime.
+4. Recalculer et afficher les **distances à 4 loci (4D)**.
+
+
+#### b) Bruit expérimental (incertitude de mesure)
+
+1. Simuler un bruit aléatoire gaussien :
+
+   ```python
+   bruit = np.random.normal(0, 0.01, len(suspects_corrige))
+   ```
+2. Créer `Locus1_bruite = Locus1 + bruit`.
+3. Créer un **nuage de points** (`scatter`) pour `Locus1` vs `Locus1_bruite`. 
+	* Titre: "Effet du bruit expérimental sur les valeurs du Locus1"
+	* Étiquette de l'axe x: "Locus1"
+	* Étiquette de l'axe y: "Locus1_bruite"
+	* Nom du fichier : `graphique_bruit_locus1.png`
+4. Recalculer les distances 3D avec `Locus1_bruite`.
+5. Refaire un **tri** et afficher le **top 5 bruité**.
+
+
+#### c) Exporter les résultats
+
+1. Extraire les 10 premiers suspects triés (noms + distances).
+2. Créer un DataFrame `resultats` avec ces données.
+3. Exporter dans `resultats.csv`
+
+
+<!--
+   ```python
+   resultats.to_csv("resultats.csv", sep=";", decimal=",", index=False)
+   ```
+--> 
+
+
+### 5. Rapport scientifique
+
+Rédiger une conclusion (10-15 lignes) incluant :
+
+#### Éléments à inclure dans la conclusion du rapport
+
+* a) **Objectif du projet**
+
+  * Rappeler brièvement la tâche principale : identifier le suspect dont le profil est le plus proche de celui du crime.
+  * Mentionner les outils utilisés (NumPy, Pandas, Matplotlib).
+
+* b) **Résultats principaux**
+
+  * Indiquer quel suspect présente la plus petite distance.
+  * Donner la valeur de la distance minimale (arrondie à 2 ou 3 décimales).
+  * Mentionner le rang ou les 5 suspects les plus proches (Top 5).
+
+* c) **Analyse des distances**
+
+  * Comparer la plus petite distance avec les autres pour montrer l’écart.
+  * Dire si la différence est claire ou si plusieurs suspects ont des valeurs proches.
+  * Si applicable, comparer les résultats avant et après l’ajout du 4ᵉ locus.
+
+* d) **Effet des variantes**
+
+  * **4ᵉ locus estimé :** préciser si cela change ou confirme le classement.
+  * **Bruit expérimental :** dire si les résultats restent similaires ou non.
+
+* e) **Graphiques**
+
+  * Citer les trois graphiques produits (barres du Top 10, nuages de points avec droite de régression).
+  * Indiquer brièvement ce qu’ils permettent de visualiser.
 

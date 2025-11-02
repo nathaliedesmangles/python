@@ -1,13 +1,16 @@
 +++
-title = "Notions nécessaires pour réussir le projet"
-weight = 112.3
+title = "Notions et outils nécessaires pour réussir le projet"
+weight = 112
+draft = true
 +++
 
-Voici une liste des **notions, fonctions et méthodes** que vous devez avoir **apprises avant de faire le projet ADN**. Elle couvre la programmation de base, les bibliothèques scientifiques et les compétences analytiques spécifiques au projet.
+Voici une **liste complète et structurée** de toutes les **notions, fonctions et méthodes** que les étudiant·es doivent avoir **apprises avant de faire le projet ADN**. Elle couvre la programmation de base, les bibliothèques scientifiques et les compétences analytiques spécifiques au projet.
 
+---
 
+## 🧠 **Notions et outils nécessaires pour réussir le projet**
 
-### A. Programmation de base en Python
+### 🧾 **A. Programmation de base en Python**
 
 | Thème                           | Notions, fonctions, méthodes                                             |
 | ------------------------------- | ------------------------------------------------------------------------ |
@@ -16,9 +19,11 @@ Voici une liste des **notions, fonctions et méthodes** que vous devez avoir **a
 | **Fonctions personnalisées**    | `def`, `return`, paramètres et portée locale                             |
 | **Manipulation de chaînes**     | `str.lower()`, `str.replace()`, `in`, `==`, slicing, boucles sur chaînes |
 | **Listes & tableaux imbriqués** | accès à un élément, boucles imbriquées, conditions dans les listes       |
+| **Gestion des erreurs simples** | (optionnel) `try/except` pour éviter les crashs en cas d’erreur          |
 
+---
 
-### B. Manipulation de données avec Pandas
+### 📊 **B. Manipulation de données avec Pandas**
 
 | Thème                      | Fonctions / méthodes                    |
 | -------------------------- | --------------------------------------- |
@@ -28,8 +33,9 @@ Voici une liste des **notions, fonctions et méthodes** que vous devez avoir **a
 | **Calculs sur colonnes**   | `.mean()`, `.round()`, `.sort_values()` |
 | **Créer des colonnes**     | `df["nouvelle_colonne"] = ...`          |
 
+---
 
-### C. NumPy pour le calcul scientifique
+### 🧮 **C. NumPy pour le calcul scientifique**
 
 | Thème                        | Fonctions / méthodes                                  |
 | ---------------------------- | ----------------------------------------------------- |
@@ -37,8 +43,9 @@ Voici une liste des **notions, fonctions et méthodes** que vous devez avoir **a
 | **Fonctions mathématiques**  | `np.mean()`, `np.std()`, `np.full()`, `np.linspace()` |
 | **Opérations vectorielles**  | tableau ± valeur, `array1 + array2`, etc.             |
 
+---
 
-### D. Visualisation avec Matplotlib
+### 📈 **D. Visualisation avec Matplotlib**
 
 | Thème                               | Fonctions / méthodes                                                |
 | ----------------------------------- | ------------------------------------------------------------------- |
@@ -47,17 +54,19 @@ Voici une liste des **notions, fonctions et méthodes** que vous devez avoir **a
 | **Tracer une droite de régression** | `plt.plot(...)`, affichage de l’équation                            |
 | **Affichage**                       | `plt.show()`, `plt.grid(True)`, `plt.tight_layout()`                |
 
+---
 
-### E. Statistiques et régression avec NumPy
+### 📐 **E. Statistiques et régression avec SciPy**
 
-| Thème                          | Fonctions / Méthodes utilisées                                   |
-|-------------------------------|------------------------------------------------------------------|
-| **Régression linéaire simple** | `np.polyfit(x, y, deg=1)`                                       |
-| **Extraire les résultats**     | `slope`, `intercept` (avec `np.polyfit`)                                  |
-| **Évaluer la concordance**     | `r_value ** 2` pour le coefficient de détermination (R²)         |
+| Thème                          | Fonctions / méthodes                                  |
+| ------------------------------ | ----------------------------------------------------- |
+| **Régression linéaire simple** | `from scipy.stats import linregress`                  |
+| **Extraire les résultats**     | `slope`, `intercept`, `r_value`, `std_err`, `p_value` |
+| **Évaluer la concordance**     | `r_value ** 2` pour le coefficient de détermination   |
 
+---
 
-### F. Programmation lettrée et structuration du bloc-notes
+### 📓 **F. Programmation lettrée et structuration du notebook**
 
 | Thème                     | Pratiques attendues                                          |
 | ------------------------- | ------------------------------------------------------------ |
@@ -68,10 +77,18 @@ Voici une liste des **notions, fonctions et méthodes** que vous devez avoir **a
 
 ---
 
-## Résumé des compétences transversales
+## 🧪 Résumé des compétences transversales
 
-* Analyser un problème scientifique
-* Choisir les bons outils (librairie, type de graphique)
-* Représenter des incertitudes et des relations mathématiques
-* Interpréter les résultats dans un contexte réaliste
-* Produire un rapport structuré, scientifique et rigoureux
+* 💡 Analyser un problème scientifique
+* 🧰 Choisir les bons outils (librairie, type de graphique)
+* 📈 Représenter des incertitudes et des relations mathématiques
+* 🧑‍🔬 Interpréter les résultats dans un contexte réaliste
+* 🧹 Produire un rapport structuré, scientifique et rigoureux
+
+---
+
+Souhaites-tu maintenant :
+
+* 📄 Une **fiche synthèse imprimable** (Word ou PDF) pour les étudiants ?
+* 💡 Des **exercices préparatoires** pour pratiquer chaque bloc avant le projet ?
+* 🎓 Un **autoévaluation guidée** à remettre avant le projet ?
