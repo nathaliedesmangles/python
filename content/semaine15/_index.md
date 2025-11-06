@@ -16,6 +16,9 @@ draft = false
 * **Format**:			Test sur Moodle (théorique + pratique).
 * **Nombre de questions**:	À VENIR
 
+{{% notice style="accent" title="Important" icon="warning" %}}
+**Aucun cellulaire** sera permis pendant l'examen. Pour vous connecter à Moodle et *SafeExam Browser* vous devrez déjà connaitre **votre code permanent**.
+{{% /notice %}}
 
 ## Aide pour la préparation de vos feuilles de notes
 

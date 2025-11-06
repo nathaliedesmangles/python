@@ -5,6 +5,10 @@ title = "Règlements de classe"
 weight = 30
 +++
 
+### Qu'est-ce que le Cégep ?
+
+* CEGEP c'est l'acronyme de "Collège d'enseignement général et **professionnel**"
+
 
 ### 1. **Comporte-toi comme si tu étais déjà en emploi.**
 
@@ -17,6 +21,11 @@ Ton comportement reflète la manière dont tu te considères. Adopte une attitud
 ### 3. **Sois présent, mentalement et physiquement.**
 
 Utilise ton cellulaire seulement pour les besoins du cours. Reste concentré·e pendant les activités, comme tu le ferais dans un contexte de travail.
+
+{{% notice style="accent" title="Démos + Examens" icon="skull-crossbones" %}}
+Les cellulaires ne sont pas permis pendant que l'enseignante <u>présente la matière, ni pendant les examens</u>. Vous devrez les laisser dans vos sacs fermés.
+Tout accès au cellulaire, sans permission préalable, entrainera la **sortie de l'étudiant.e** et/ou la **note de 0** à l'évaluation en cours.
+{{% /notice %}}
 
 ### 4. **Ose poser des questions, mais aussi écouter.**
 
