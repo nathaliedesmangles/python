@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Locaux avec Python :: 420-SN1-RE</title>
-    <link>https://example.org/faq/locaux_python/index.html</link>
+    <link>/faq/locaux_python/index.html</link>
     <description>Locaux où se donne le cours 420-SN1-RE A-3820 B-2302 B-2303 B-3376 B-3410 Autres locaux (à confirmer) B-3369</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/faq/locaux_python/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/faq/locaux_python/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

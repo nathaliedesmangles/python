@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Dictionnaires :: 420-SN1-RE</title>
-    <link>https://example.org/solutions_ateliers/7_dictionnaires/index.html</link>
-    <description>Exercice - Physique import matplotlib.pyplot as plt # 1. Constante gravitationnelle g = 9.8 # m/s² # 2. Création des dictionnaires vitesses = {} positions = {} # 3. Remplir les dictionnaires avec les formules physiques for t in range(6): # de 0 à 5 secondes vitesses[t] = g * t positions[t] = 0.5 * g * (t**2) # 4. Vérifier le contenu print(&#34;Vitesses :&#34;, vitesses) print(&#34;Positions :&#34;, positions)&#xD;Résultat attendu :&#xA;Vitesses : {0: 0.0, 1: 9.8, 2: 19.6, 3: 29.4, 4: 39.2, 5: 49.0}&#xD;Positions : {0: 0.0, 1: 4.9, 2: 19.6, 3: 44.1, 4: 78.4, 5: 122.5}&#xD;5. Préparation des données pour les graphiques # Clés triées pour garantir l&#39;ordre temps = sorted(vitesses.keys()) # Extraction des valeurs à partir des clés triées valeurs_v = [vitesses[t] for t in temps] valeurs_y = [positions[t] for t in temps]&#xD;(Remarque : on aurait aussi pu utiliser list(vitesses.values()) directement, mais ici on garantit que les deux listes suivent exactement le même ordre.)</description>
+    <link>/solutions_ateliers/7_dictionnaires/index.html</link>
+    <description>Exercice - Physique import matplotlib.pyplot as plt # 1. Constante gravitationnelle g = 9.8 # m/s² # 2. Création des dictionnaires vitesses = {} positions = {} # 3. Remplir les dictionnaires avec les formules physiques for t in range(6): # de 0 à 5 secondes vitesses[t] = g * t positions[t] = 0.5 * g * (t**2) # 4. Vérifier le contenu print(&#34;Vitesses :&#34;, vitesses) print(&#34;Positions :&#34;, positions) Résultat attendu :&#xA;Vitesses : {0: 0.0, 1: 9.8, 2: 19.6, 3: 29.4, 4: 39.2, 5: 49.0}&#xD;Positions : {0: 0.0, 1: 4.9, 2: 19.6, 3: 44.1, 4: 78.4, 5: 122.5} 5. Préparation des données pour les graphiques # Clés triées pour garantir l&#39;ordre temps = sorted(vitesses.keys()) # Extraction des valeurs à partir des clés triées valeurs_v = [vitesses[t] for t in temps] valeurs_y = [positions[t] for t in temps] (Remarque : on aurait aussi pu utiliser list(vitesses.values()) directement, mais ici on garantit que les deux listes suivent exactement le même ordre.)</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/solutions_ateliers/7_dictionnaires/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/solutions_ateliers/7_dictionnaires/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

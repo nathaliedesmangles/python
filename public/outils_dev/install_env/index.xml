@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>  :: 420-SN1-RE</title>
-    <link>https://example.org/outils_dev/install_env/index.html</link>
+    <link>/outils_dev/install_env/index.html</link>
     <description>Prérequis Système Windows 11 Connexion internet active (pour télécharger les composants internes) Pour installer manuellement les outils 1. Installer Python a) Va sur https://python.org &gt; Télécharge et installe la dernière version de Python.&#xA;b) Coche “Add Python to PATH” avant de cliquer sur “Install Now”</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/outils_dev/install_env/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/outils_dev/install_env/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

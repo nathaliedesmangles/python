@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Foire Aux Questions :: 420-SN1-RE</title>
-    <link>https://example.org/faq/index.html</link>
+    <link>/faq/index.html</link>
     <description>Outils et locaux pour pratiquer À part Visual Studio Code, quels autres logiciels je peux installer sur mon ordinateur personnel pour pratiquer à la maison ? Alternatives à VS Code La sauvegarde automatique dans Visual Studio Code. Sauvegarde dans VS Code Les raccourcis clavier (copier, coller, couper, enregistrer, etc.) Trucs pratiques pour bien coder Où se trouve les touches pour [, ], {, }, @, &lt;, &gt;, etc. sur un clavier QWERTY. Trucs pratiques pour bien coder Dans quels locaux du cégep, je peux aller pratiquer ? Locaux avec Python, VS Code et Jupyter Comment déposer un travail sur Moodle ? Déposer un travail sur Moodle À propos de l’installation des outils Est-ce que je peux installer les outils de travail sur votre ordinateur personnel (Windows 11) ? Oui. Cliquez ICI pour voir comment</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/faq/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/faq/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alternatives à VS Code</title>
-      <link>https://example.org/faq/alternatives/index.html</link>
+      <link>/faq/alternatives/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/faq/alternatives/index.html</guid>
+      <guid>/faq/alternatives/index.html</guid>
       <description>Deux alternatives populaires Si vous cherchez une alternative simple et accessible à VS Code avec Jupyter, Google Colab est une excellente option. Colab est un environnement de notebooks en ligne gratuit, offert par Google, qui ne nécessite aucune installation. Il vous permet d’écrire et d’exécuter du code Python directement dans votre navigateur, tout en profitant d’un accès facile à des bibliothèques scientifiques populaires comme NumPy, pandas, ou matplotlib. C’est l’outil idéal pour débuter en programmation scientifique ou collaborer à distance, puisqu’il s’intègre à Google Drive et permet de partager vos notebooks aussi facilement qu’un document Google Docs.</description>
     </item>
     <item>
       <title>Locaux avec Python</title>
-      <link>https://example.org/faq/locaux_python/index.html</link>
+      <link>/faq/locaux_python/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/faq/locaux_python/index.html</guid>
+      <guid>/faq/locaux_python/index.html</guid>
       <description>Locaux où se donne le cours 420-SN1-RE A-3820 B-2302 B-2303 B-3376 B-3410 Autres locaux (à confirmer) B-3369</description>
     </item>
     <item>
       <title>Ajouter un raccourci vers une URL dans Edge</title>
-      <link>https://example.org/faq/raccourci_edge/index.html</link>
+      <link>/faq/raccourci_edge/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/faq/raccourci_edge/index.html</guid>
+      <guid>/faq/raccourci_edge/index.html</guid>
       <description>1. Ouvrir Microsoft Edge Cliquez sur le bouton Démarrer de Windows. Tapez Edge et ouvrez l’application Microsoft Edge. 2. Accéder à la page de démarrage Par défaut, Edge ouvre la page Nouvel onglet (Start / Microsoft Start).&#xA;Si ce n’est pas le cas :&#xA;Cliquez sur le menu … (en haut à droite). Sélectionnez Paramètres &gt; Démarrage, page d’accueil et nouveaux onglets. Assurez-vous que Nouvel onglet est bien sélectionné. 3. Ajouter un nouveau raccourci Sur la page d’accueil (nouvel onglet), repérez la section Sites principaux ou Sites rapides (juste sous la barre de recherche Bing).</description>
     </item>
   </channel>

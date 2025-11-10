@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atelier - Version pas à pas (solution) :: 420-SN1-RE</title>
-    <link>https://example.org/semaine6/solution/index.html</link>
-    <description>1. Les données # Données des températures temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;]&#xD;2. Afficher les températures for i in range(len(villes)): print(villes[i], &#34;:&#34;, end=&#34; &#34;) for t in temperatures[i]: print(t,&#34; &#34;)&#x9;# les températures séparées par un espace print() # retour à la ligne&#xD;Résultat attendu :&#xA;Ville A : 15 16 14 14 17 18 19 Ville B : 22 23 21 20 24 25 26 Ville C : 5 7 6 6 8 9 7 Ville D : 10 11 12 10 13 14 15 3. Trouver les valeurs extrêmes (min et max) Étape 3a. Ville A seulement</description>
+    <link>/semaine6/solution/index.html</link>
+    <description>1. Les données # Données des températures temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;] 2. Afficher les températures for i in range(len(villes)): print(villes[i], &#34;:&#34;, end=&#34; &#34;) for t in temperatures[i]: print(t,&#34; &#34;)&#x9;# les températures séparées par un espace print() # retour à la ligne Résultat attendu :&#xA;Ville A : 15 16 14 14 17 18 19 Ville B : 22 23 21 20 24 25 26 Ville C : 5 7 6 6 8 9 7 Ville D : 10 11 12 10 13 14 15 3. Trouver les valeurs extrêmes (min et max) Étape 3a. Ville A seulement</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/semaine6/solution/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/semaine6/solution/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

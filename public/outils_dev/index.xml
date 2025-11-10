@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Outils de développement :: 420-SN1-RE</title>
-    <link>https://example.org/outils_dev/index.html</link>
+    <link>/outils_dev/index.html</link>
     <description>Installer les outils de travail&#xA;Windows - Installer matplotlib, numpy et pandas&#xA;MacOS - Installer matplotlib, numpy et pandas&#xA;Se connecter à OneDrive&#xA;Fichiers et répertoires/dossiers&#xA;Utiliser Visual Studio Code (VS Code)&#xA;Sauvegarde dans VS Code Déboguer dans VS Code Utiliser un bloc-note Jupyter&#xA;Astuces et touches spéciales&#xA;Markdown pour les rapports&#xA;Faire croiser les axes à l’origine (0,0)&#xA;Graphiques Matplotlib - Codes de couleurs</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/outils_dev/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/outils_dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Connexion à OneDrive – Compte scolaire</title>
-      <link>https://example.org/outils_dev/onedrive/index.html</link>
+      <link>/outils_dev/onedrive/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/onedrive/index.html</guid>
+      <guid>/outils_dev/onedrive/index.html</guid>
       <description>Cliquer sur la petite flèche à droite du menu des applications dans la barre des tâches de Windows afin de faire apparaître les applications masquées.&#xA;Effectuer un clic droit sur le logo de OneDrive (s’il n’est pas connecté, il apparaît grisé et barré).&#xA;Cliquer sur « Se connecter ».</description>
     </item>
     <item>
       <title>Fichiers et répertoires (dossiers)</title>
-      <link>https://example.org/outils_dev/fichiers_dossiers/index.html</link>
+      <link>/outils_dev/fichiers_dossiers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/fichiers_dossiers/index.html</guid>
+      <guid>/outils_dev/fichiers_dossiers/index.html</guid>
       <description>Qu’est-ce qu’un fichier et un dossier ? Fichier : Un document ou un programme (ex. : texte, image, tableur). Exemples : rapport.docx, photo.jpg, budget.xlsx&#xA;Dossier (ou répertoire) : Contenant qui regroupe des fichiers et d’autres dossiers. Exemple : le dossier Documents contient des fichiers Word, PDF, etc.&#xA;L’explorateur de fichiers Ouvrir l’explorateur : Raccourci clavier : Windows + E Ou clique sur l’icône 📁 dans la barre des tâches Principales zones : Volet de navigation à gauche : accès rapide à Ce PC, Téléchargements, Documents, etc. Zone principale : affiche le contenu du dossier sélectionné Barre d’adresse : montre le chemin du dossier actuel (ex. : Ce PC &gt; Documents &gt; Travaux) Barre d’outils : bouton pour créer, renommer, copier, coller, supprimer… Créer et organiser ses fichiers Créer un dossier : Clique droit dans un espace vide Sélectionne Nouveau &gt; Dossier Nomme le dossier (ex. : Projet Science) Renommer un fichier ou dossier : Clique droit &gt; Renommer Ou clique lentement deux fois sur le nom Déplacer un fichier : Glisser-déposer vers un autre dossier Ou : Copier (Ctrl + C) &gt; Coller (Ctrl + V) dans l’autre dossier Ou : Couper (Ctrl + X) &gt; Coller (Ctrl + V) pour le déplacer Supprimer : Sélectionner l’élément &gt; touche Suppr Ou clic droit &gt; Supprimer Chemin d’accès Un chemin indique l’emplacement d’un fichier.</description>
     </item>
     <item>
       <title> </title>
-      <link>https://example.org/outils_dev/vs-code/index.html</link>
+      <link>/outils_dev/vs-code/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/vs-code/index.html</guid>
+      <guid>/outils_dev/vs-code/index.html</guid>
       <description>Installation &amp; premier lancement Aller sur le site officiel : https://code.visualstudio.com Cliquer sur Download for Windows Lancer le fichier téléchargé (VSCodeSetup.exe) Accepter les conditions → clique sur Suivant plusieurs fois Cocher “Add to PATH” si disponible Cliquer sur Installer Lorsque l’installation est terminée, cliquer sur le raccourci Visual Studio Code dans le menu Démarrer ou cherche “Visual Studio Code” dans la barre de recherche Tu devrais voir l’écran d’accueil (Bienvenue ou Welcome)</description>
     </item>
     <item>
       <title> </title>
-      <link>https://example.org/outils_dev/jupyter/index.html</link>
+      <link>/outils_dev/jupyter/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/jupyter/index.html</guid>
+      <guid>/outils_dev/jupyter/index.html</guid>
       <description>Tutoriel pour VS Code et Jupyter Notebook Voici un fichier qui vous expliquera comment utiliser jupyter notebook dans VS Code : Tutoriel pour utiliser Jupyter avec VS Code&#xA;Blocs-notes Jupyter dans VS Code Jupyter (anciennement IPython Notebook) est un projet open source qui vous permet de combiner facilement du texte Markdown et du code source Python exécutable sur un canevas appelé notebook.&#xA;Visual Studio Code prend en charge l’utilisation des blocs-notes Jupyter en mode natif et via des fichiers de code Python.</description>
     </item>
     <item>
       <title>Astuces, touches spéciales et &#43;</title>
-      <link>https://example.org/outils_dev/trucs_pratiques/index.html</link>
+      <link>/outils_dev/trucs_pratiques/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/trucs_pratiques/index.html</guid>
-      <description>Cette page rassemble une série de petits détails importants pour bien débuter en programmation. Ces astuces visent à rendre l’utilisation du clavier et de l’environnement plus fluide, surtout en contexte de cours avec Jupyter Notebook.&#xA;Raccourcis clavier utiles Copier, couper, coller Ctrl + C : Copie la sélection. Ctrl + X : Coupe la sélection (la sélection sera effacée, mais pourra être collée). Ctrl + V : Colle le contenu précédemment copié ou coupé. Astuce&#xD;Si aucun texte n’est sélectionné, Ctrl + C ou Ctrl + X agit sur toute la ligne courante. Cela permet de déplacer rapidement du code sans avoir à sélectionner manuellement.</description>
+      <guid>/outils_dev/trucs_pratiques/index.html</guid>
+      <description>Cette page rassemble une série de petits détails importants pour bien débuter en programmation. Ces astuces visent à rendre l’utilisation du clavier et de l’environnement plus fluide, surtout en contexte de cours avec Jupyter Notebook.&#xA;Raccourcis clavier utiles Copier, couper, coller Ctrl + C : Copie la sélection. Ctrl + X : Coupe la sélection (la sélection sera effacée, mais pourra être collée). Ctrl + V : Colle le contenu précédemment copié ou coupé. Astuce Si aucun texte n’est sélectionné, Ctrl + C ou Ctrl + X agit sur toute la ligne courante. Cela permet de déplacer rapidement du code sans avoir à sélectionner manuellement.</description>
     </item>
     <item>
       <title> </title>
-      <link>https://example.org/outils_dev/markdown/index.html</link>
+      <link>/outils_dev/markdown/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/markdown/index.html</guid>
+      <guid>/outils_dev/markdown/index.html</guid>
       <description>Introduction au Markdown dans Jupyter Notebook Markdown est un langage de balisage léger qui vous permet de formater du texte en utilisant une syntaxe simple. Dans Jupyter Notebook, vous pouvez utiliser des cellules Markdown pour ajouter des titres, des listes, des liens, des images, et bien plus encore.&#xA;Comment créer une cellule Markdown Créer une nouvelle cellule : Cliquez sur le bouton “+” dans la barre d’outils pour ajouter une nouvelle cellule. Changer le type de cellule : Cliquez sur le menu déroulant “Code” dans la barre d’outils et sélectionnez “Markdown”. Vous pouvez également utiliser le raccourci clavier Esc puis M. Écrire du texte en Markdown : Tapez votre texte en utilisant la syntaxe Markdown. Exécuter la cellule : Appuyez sur Shift + Enter pour exécuter la cellule et afficher le texte formaté. Les bases du Markdown Titres et sous-titres:</description>
     </item>
     <item>
       <title> </title>
-      <link>https://example.org/outils_dev/install_env/index.html</link>
+      <link>/outils_dev/install_env/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/install_env/index.html</guid>
+      <guid>/outils_dev/install_env/index.html</guid>
       <description>Prérequis Système Windows 11 Connexion internet active (pour télécharger les composants internes) Pour installer manuellement les outils 1. Installer Python a) Va sur https://python.org &gt; Télécharge et installe la dernière version de Python.&#xA;b) Coche “Add Python to PATH” avant de cliquer sur “Install Now”</description>
     </item>
     <item>
       <title>Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows)</title>
-      <link>https://example.org/outils_dev/extensions/windows/index.html</link>
+      <link>/outils_dev/extensions/windows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/extensions/windows/index.html</guid>
+      <guid>/outils_dev/extensions/windows/index.html</guid>
       <description>1. Vérifier que Python est installé Clique sur le menu Démarrer de Windows. Tape python et vérifie qu’il apparaît dans la liste. Si rien n’apparaît → il faut installer Python depuis le site officiel : https://www.python.org/downloads/windows/ (prendre la dernière version stable, cocher Add Python to PATH pendant l’installation). 2. Ouvrir Visual Studio Code Lancer Visual Studio Code. Ouvrir votre dossier ou fichier .ipynb de travail. 3. Ouvrir le terminal dans VS Code Dans le menu en haut, cliquer sur Terminal → Nouveau terminal. (le terminal apparaît en bas de la fenêtre).</description>
     </item>
     <item>
       <title>Faire croiser les axes à l’origine (0,0)</title>
-      <link>https://example.org/outils_dev/matplotlib/axes/index.html</link>
+      <link>/outils_dev/matplotlib/axes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/matplotlib/axes/index.html</guid>
-      <description>1. Rappel : les axes par défaut Quand tu fais un graphique avec Matplotlib, les axes sont placés autour du graphique, pas au centre.&#xA;Exemple :&#xA;import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show()&#xD;Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).</description>
+      <guid>/outils_dev/matplotlib/axes/index.html</guid>
+      <description>1. Rappel : les axes par défaut Quand tu fais un graphique avec Matplotlib, les axes sont placés autour du graphique, pas au centre.&#xA;Exemple :&#xA;import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show() Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).&#xA;2. Les spines, c’est quoi ? Les spines sont les lignes qui forment les axes du graphique :</description>
     </item>
     <item>
       <title>Graphiques Matplotlib - Codes de couleurs</title>
-      <link>https://example.org/outils_dev/matplotlib/couleurs/index.html</link>
+      <link>/outils_dev/matplotlib/couleurs/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/matplotlib/couleurs/index.html</guid>
-      <description>Les couleurs et Matplotlib Matplotlib permet d’utiliser des abréviations d’une seule lettre pour les couleurs les plus courantes dans les tracés (plot, scatter, etc.). Voici la liste complète :&#xA;Lettre Couleur en anglais Couleur affichée b blue 🔵 bleu g green 🟢 vert r red 🔴 rouge c cyan 🟦 cyan (bleu clair) m magenta 🟣 magenta / fuchsia y yellow 🟡 jaune k black ⚫ noir w white ⚪ blanc Exemple d’utilisation import matplotlib.pyplot as plt x = [0, 1, 2, 3] y = [0, 1, 4, 9] plt.plot(x, y, &#39;r--&#39;) # ligne rouge en pointillés plt.show()&#xD;Ici :</description>
+      <guid>/outils_dev/matplotlib/couleurs/index.html</guid>
+      <description>Les couleurs et Matplotlib Matplotlib permet d’utiliser des abréviations d’une seule lettre pour les couleurs les plus courantes dans les tracés (plot, scatter, etc.). Voici la liste complète :&#xA;Lettre Couleur en anglais Couleur affichée b blue 🔵 bleu g green 🟢 vert r red 🔴 rouge c cyan 🟦 cyan (bleu clair) m magenta 🟣 magenta / fuchsia y yellow 🟡 jaune k black ⚫ noir w white ⚪ blanc Exemple d’utilisation import matplotlib.pyplot as plt x = [0, 1, 2, 3] y = [0, 1, 4, 9] plt.plot(x, y, &#39;r--&#39;) # ligne rouge en pointillés plt.show() Ici :</description>
     </item>
     <item>
       <title>Installer un module (ex. Matplotlib) dans Visual Studio Code (MacOS)</title>
-      <link>https://example.org/outils_dev/extensions/macos/index.html</link>
+      <link>/outils_dev/extensions/macos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/extensions/macos/index.html</guid>
-      <description>Python et VS Code déjà installés ?&#xD;Vous pouvez aller directement à l’étape 4.&#xA;Étape 1 : Installer Python sur MacOS Ouvrez Safari et allez sur https://www.python.org/downloads Cliquez sur “Download Python” (la version recommandée). Ouvrez le fichier .pkg téléchargé et suivez les étapes d’installation. Vérifiez l’installation : Ouvrez Terminal (dans Applications &gt; Utilitaires). Tapez : python3 --version → vous devriez voir quelque chose comme Python 3.13.7. Étape 2 : Installer Visual Studio Code Allez sur https://code.visualstudio.com Téléchargez la version Mac et installez-la. Ouvrez VS Code et installez l’extension Python : Cliquez sur l’icône des extensions (à gauche, en forme de blocs). Recherchez “Python” et installez celle de Microsoft. Étape 3 : Créer un projet Python Créez un dossier sur votre Mac (ex. : programmation-sciences) Dans VS Code, allez dans Fichier → Ouvrir un dossier et sélectionnez ce dossier. Créez un nouveau fichier : test.ipynb Étape 4 : Installer matplotlib (ou autre bibliothèque)</description>
+      <guid>/outils_dev/extensions/macos/index.html</guid>
+      <description>Python et VS Code déjà installés ? Vous pouvez aller directement à l’étape 4.&#xA;Étape 1 : Installer Python sur MacOS Ouvrez Safari et allez sur https://www.python.org/downloads Cliquez sur “Download Python” (la version recommandée). Ouvrez le fichier .pkg téléchargé et suivez les étapes d’installation. Vérifiez l’installation : Ouvrez Terminal (dans Applications &gt; Utilitaires). Tapez : python3 --version → vous devriez voir quelque chose comme Python 3.13.7. Étape 2 : Installer Visual Studio Code Allez sur https://code.visualstudio.com Téléchargez la version Mac et installez-la. Ouvrez VS Code et installez l’extension Python : Cliquez sur l’icône des extensions (à gauche, en forme de blocs). Recherchez “Python” et installez celle de Microsoft. Étape 3 : Créer un projet Python Créez un dossier sur votre Mac (ex. : programmation-sciences) Dans VS Code, allez dans Fichier → Ouvrir un dossier et sélectionnez ce dossier. Créez un nouveau fichier : test.ipynb Étape 4 : Installer matplotlib (ou autre bibliothèque)</description>
     </item>
   </channel>
 </rss>

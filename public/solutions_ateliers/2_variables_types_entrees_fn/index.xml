@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Variables, types, entrées et fonction :: 420-SN1-RE</title>
-    <link>https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.html</link>
-    <description>Exercice #1 - Expérience en chimie # Constantes q_initiale = 400 # en mL t_minutes = 10 + 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;)&#xD;Résultat attendu :&#xA;Quantité restante après 10.25 minutes : 143.75 mL.&#xD;Exercice #2 - Calcul de la force gravitationnelle objet = input(&#34;Nom de l&#39;objet : &#34;) masse = float(input(&#34;Masse de l&#39;objet (en kg) : &#34;)) g = 9.8 # accélération gravitationnelle en m/s² force = masse * g print(f&#34;La force de la {objet} de {masse:.1f} Kg est de {force:.2f} N.&#34;) # Tests # Test 1 # &gt;&gt;&gt; balle, 2.5 # Test 2 # &gt;&gt;&gt; voiture, 1000.0&#xD;Résultats attendus :</description>
+    <link>/solutions_ateliers/2_variables_types_entrees_fn/index.html</link>
+    <description>Exercice #1 - Expérience en chimie # Constantes q_initiale = 400 # en mL t_minutes = 10 + 15/60 # conversion des 15 s en minutes =&gt; 10.25 minutes taux_evaporation = 25 # en mL/min # Formule : q(t) = 400 - 25 * t quantite_restante = q_initiale - taux_evaporation * t_minutes print(f&#34;Quantité restante après {t_minutes} minutes : {quantite_restante:.2f} mL.&#34;) Résultat attendu :&#xA;Quantité restante après 10.25 minutes : 143.75 mL. Exercice #2 - Calcul de la force gravitationnelle objet = input(&#34;Nom de l&#39;objet : &#34;) masse = float(input(&#34;Masse de l&#39;objet (en kg) : &#34;)) g = 9.8 # accélération gravitationnelle en m/s² force = masse * g print(f&#34;La force de la {objet} de {masse:.1f} Kg est de {force:.2f} N.&#34;) # Tests # Test 1 # &gt;&gt;&gt; balle, 2.5 # Test 2 # &gt;&gt;&gt; voiture, 1000.0 Résultats attendus :</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/solutions_ateliers/2_variables_types_entrees_fn/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

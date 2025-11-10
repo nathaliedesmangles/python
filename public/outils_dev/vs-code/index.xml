@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>  :: 420-SN1-RE</title>
-    <link>https://example.org/outils_dev/vs-code/index.html</link>
+    <link>/outils_dev/vs-code/index.html</link>
     <description>Installation &amp; premier lancement Aller sur le site officiel : https://code.visualstudio.com Cliquer sur Download for Windows Lancer le fichier téléchargé (VSCodeSetup.exe) Accepter les conditions → clique sur Suivant plusieurs fois Cocher “Add to PATH” si disponible Cliquer sur Installer Lorsque l’installation est terminée, cliquer sur le raccourci Visual Studio Code dans le menu Démarrer ou cherche “Visual Studio Code” dans la barre de recherche Tu devrais voir l’écran d’accueil (Bienvenue ou Welcome)</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/outils_dev/vs-code/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/outils_dev/vs-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Déboguer dans VS Code</title>
-      <link>https://example.org/outils_dev/vs-code/debogueur/index.html</link>
+      <link>/outils_dev/vs-code/debogueur/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/vs-code/debogueur/index.html</guid>
+      <guid>/outils_dev/vs-code/debogueur/index.html</guid>
       <description>Extensions de débogage VS Code prend en charge le débogage pour Node.js et peut déboguer JavaScript, TypeScript, et d’autres langages compilés en JavaScript. Pour d’autres langages et environnements d’exécution, il existe des extensions de débogage dans le Marketplace de VS Code.&#xA;Par exemple pour Python:&#xA;Le débogueur est un outil utile qui vous permet d’inspecter le flux d’exécution de votre code et d’identifier plus facilement les erreurs, ainsi que d’explorer comment vos variables et données changent au fur et à mesure que votre programme s’exécute.</description>
     </item>
     <item>
       <title>Sauvegarde dans VS Code</title>
-      <link>https://example.org/outils_dev/vs-code/sauvegarde/index.html</link>
+      <link>/outils_dev/vs-code/sauvegarde/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils_dev/vs-code/sauvegarde/index.html</guid>
-      <description>Sur cette page, vous trouverez les étapes pour sauvegarder vos programmes dans VS Code.&#xA;Sauvegarde automatique Si un rond est présent à droit du nom du fichier dans l’onglet en haut, c’est que votre travail n’est PAS sauvegardé (comme dans l’exemple ci-dessous).&#xA;Pour ACTIVER la sauvegarde automatique, allez dans fichier, puis cliquez sur Enregistrement automatique.</description>
+      <guid>/outils_dev/vs-code/sauvegarde/index.html</guid>
+      <description>Sur cette page, vous trouverez les étapes pour sauvegarder vos programmes dans VS Code.&#xA;Sauvegarde automatique Si un rond est présent à droit du nom du fichier dans l’onglet en haut, c’est que votre travail n’est PAS sauvegardé (comme dans l’exemple ci-dessous).&#xA;Pour ACTIVER la sauvegarde automatique, allez dans fichier, puis cliquez sur Enregistrement automatique.&#xA;Vous devriez maintenant voir un crochet à gauche de cette option.</description>
     </item>
   </channel>
 </rss>

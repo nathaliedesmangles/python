@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bonnes pratiques, documentation, débogage :: 420-SN1-RE</title>
-    <link>http://localhost:1313/debogage/index.html</link>
-    <description>Objectifs Adopter des pratiques de codage claires et lisibles Comprendre l’utilité des commentaires et de la documentation Apprendre des méthodes simples pour détecter et corriger des erreurs Se préparer à lire et améliorer du code existant Pourquoi adopter de bonnes pratiques? Un programme fonctionnel n’est pas forcément un programme lisible ou facile à maintenir. Les bonnes pratiques rendent le code :&#xA;Plus facile à comprendre pour soi-même et pour les autres Plus simple à déboguer Moins susceptible de contenir des erreurs Quelques bonnes pratiques essentielles a.</description>
+    <link>//localhost:1313/debogage/index.html</link>
+    <description>Objectifs Adopter des pratiques de codage claires et lisibles Comprendre l’utilité des commentaires et de la documentation Apprendre des méthodes simples pour détecter et corriger des erreurs Se préparer à lire et améliorer du code existant Pourquoi adopter de bonnes pratiques? Un programme fonctionnel n’est pas forcément un programme lisible ou facile à maintenir. Les bonnes pratiques rendent le code :&#xA;Plus facile à comprendre pour soi-même et pour les autres Plus simple à déboguer Moins susceptible de contenir des erreurs Quelques bonnes pratiques essentielles a. Clarté des noms de variables&#xA;Utilisez des noms qui ont du sens :</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/debogage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/debogage/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

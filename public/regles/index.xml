@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Règlements de classe :: 420-SN1-RE</title>
-    <link>https://example.org/regles/index.html</link>
+    <link>/regles/index.html</link>
     <description>Qu’est-ce que le Cégep ? CEGEP c’est l’acronyme de “Collège d’enseignement général et professionnel” 1. Comporte-toi comme si tu étais déjà en emploi. Arrive à l’heure, sois prêt à travailler, et respecte les échéances. Ton attitude ici prépare ton avenir professionnel.&#xA;2. Respecte-toi, donc agis avec respect. Ton comportement reflète la manière dont tu te considères. Adopte une attitude calme, polie et attentive envers toi-même, les autres et l’enseignant·e.&#xA;3. Sois présent, mentalement et physiquement. Utilise ton cellulaire seulement pour les besoins du cours. Reste concentré·e pendant les activités, comme tu le ferais dans un contexte de travail.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/regles/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/regles/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

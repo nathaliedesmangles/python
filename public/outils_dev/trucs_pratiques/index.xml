@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Astuces, touches spéciales et &#43; :: 420-SN1-RE</title>
-    <link>https://example.org/outils_dev/trucs_pratiques/index.html</link>
-    <description>Cette page rassemble une série de petits détails importants pour bien débuter en programmation. Ces astuces visent à rendre l’utilisation du clavier et de l’environnement plus fluide, surtout en contexte de cours avec Jupyter Notebook.&#xA;Raccourcis clavier utiles Copier, couper, coller Ctrl + C : Copie la sélection. Ctrl + X : Coupe la sélection (la sélection sera effacée, mais pourra être collée). Ctrl + V : Colle le contenu précédemment copié ou coupé. Astuce&#xD;Si aucun texte n’est sélectionné, Ctrl + C ou Ctrl + X agit sur toute la ligne courante. Cela permet de déplacer rapidement du code sans avoir à sélectionner manuellement.</description>
+    <link>/outils_dev/trucs_pratiques/index.html</link>
+    <description>Cette page rassemble une série de petits détails importants pour bien débuter en programmation. Ces astuces visent à rendre l’utilisation du clavier et de l’environnement plus fluide, surtout en contexte de cours avec Jupyter Notebook.&#xA;Raccourcis clavier utiles Copier, couper, coller Ctrl + C : Copie la sélection. Ctrl + X : Coupe la sélection (la sélection sera effacée, mais pourra être collée). Ctrl + V : Colle le contenu précédemment copié ou coupé. Astuce Si aucun texte n’est sélectionné, Ctrl + C ou Ctrl + X agit sur toute la ligne courante. Cela permet de déplacer rapidement du code sans avoir à sélectionner manuellement.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/outils_dev/trucs_pratiques/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/outils_dev/trucs_pratiques/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

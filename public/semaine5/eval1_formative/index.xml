@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Evaluation formative :: 420-SN1-RE</title>
-    <link>http://localhost:1313/semaine5/eval1_formative/index.html</link>
+    <link>//localhost:1313/semaine5/eval1_formative/index.html</link>
     <description>Informations générales Durée : 2h&#xA;Outils autorisés : VS Code, feuille de notes personnelle.&#xA;Interdits : Internet, site du cours, IA, etc.&#xA;Objectifs évalués Comprendre l’utilité des variables Utiliser les types de base (int, float, str, bool) Gérer les entrées et les affichages Utiliser des fonctions prédéfinies Traduire un algorithme simple Lire et corriger un code erroné Q1 – Masse d’eau transpirée (15 pts) Une plante transpire en moyenne 0,35 litre d’eau par jour.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine5/eval1_formative/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/semaine5/eval1_formative/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

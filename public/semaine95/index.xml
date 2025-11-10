@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Culture générale (pour Physique mécanique) :: 420-SN1-RE</title>
-    <link>https://example.org/semaine95/index.html</link>
+    <link>/semaine95/index.html</link>
     <description>Objectifs Avec NumPy&#xA;Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .txt et .csv. Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques. Avec Pandas&#xA;Sélection et parcours des données dans un DataFrame Avec SciPy&#xA;Utiliser le module scipy.stats pour calculer une régression linéaire. Extraire la pente, l’ordonnée à l’origine et le coefficient de corrélation. Tracer la droite de régression sur un nuage de points avec matplotlib. Aller plus loin avec le module NumPy Pourquoi lire et écrire des fichiers ? En sciences, on ne travaille pas toujours avec des données générées dans le programme. Souvent, les données proviennent :</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/semaine95/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/semaine95/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Boucles et débogage simple :: 420-SN1-RE</title>
-    <link>https://example.org/semaine4/index.html</link>
-    <description>Objectifs Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Répéter des instructions un nombre de fois connu d’avance avec la boucle for. Interrompre le déroulement d’une boucle. Comprendre les messages d’erreurs et découvrir des stratégies simples de débogage. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Fichier de départ à utiliser Cliquez sur le lien pour télécharger le fichier. Bloc-notes de départ Enregistrez le fichier dans votre dossier exercices de la semaine en cours. Ouvrez Visual Studio Code. Dans VS Code, recherchez et ouvrez le fichier exercices_boucles.ipynb Assurez-vous que le noyau Python (Kernel) soit sélectionné. Vous pouvez commencer à faire les exercices. Exercice 1 - For ou While ? Pour chacun des contextes suivants, avant d’écrire le code, répondez à la question: “Quelle boucle devriez-vous utiliser ?”:</description>
+    <link>/semaine4/index.html</link>
+    <description>Objectifs Répéter des instructions tant qu’une condition est vraie, avec la boucle while. Répéter des instructions un nombre de fois connu d’avance avec la boucle for. Interrompre le déroulement d’une boucle. Comprendre les messages d’erreurs et découvrir des stratégies simples de débogage. Apprendre par la pratique Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Fichier de départ à utiliser Cliquez sur le lien pour télécharger le fichier. Bloc-notes de départ Enregistrez le fichier dans votre dossier exercices de la semaine en cours. Ouvrez Visual Studio Code. Dans VS Code, recherchez et ouvrez le fichier exercices_boucles.ipynb Assurez-vous que le noyau Python (Kernel) soit sélectionné. Vous pouvez commencer à faire les exercices. Exercice 1 - For ou While ? Pour chacun des contextes suivants, avant d’écrire le code, répondez à la question: “Quelle boucle devriez-vous utiliser ?”:</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/semaine4/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

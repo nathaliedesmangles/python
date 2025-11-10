@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exercices - Boucles imbriquées avec une liste de listes (solutions) :: 420-SN1-RE</title>
-    <link>https://example.org/semaine6/solutionexos/index.html</link>
-    <description>Niveau 1 – Manipuler et afficher Exercice 1 : Liste d’animaux animaux = [[&#34;chat&#34;, &#34;chien&#34;], [&#34;lion&#34;, &#34;tigre&#34;], [&#34;souris&#34;, &#34;rat&#34;]] for sous_liste in animaux: # on parcourt les sous-listes for animal in sous_liste: # on parcourt chaque animal dans la sous-liste print(animal, &#34; &#34;)&#x9;# un espace sépare le noms des animaux print() # saut de ligne après chaque sous-liste&#xD;Explication :</description>
+    <link>/semaine6/solutionexos/index.html</link>
+    <description>Niveau 1 – Manipuler et afficher Exercice 1 : Liste d’animaux animaux = [[&#34;chat&#34;, &#34;chien&#34;], [&#34;lion&#34;, &#34;tigre&#34;], [&#34;souris&#34;, &#34;rat&#34;]] for sous_liste in animaux: # on parcourt les sous-listes for animal in sous_liste: # on parcourt chaque animal dans la sous-liste print(animal, &#34; &#34;)&#x9;# un espace sépare le noms des animaux print() # saut de ligne après chaque sous-liste Explication :</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/semaine6/solutionexos/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/semaine6/solutionexos/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

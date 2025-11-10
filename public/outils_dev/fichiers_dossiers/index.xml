@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fichiers et répertoires (dossiers) :: 420-SN1-RE</title>
-    <link>https://example.org/outils_dev/fichiers_dossiers/index.html</link>
+    <link>/outils_dev/fichiers_dossiers/index.html</link>
     <description>Qu’est-ce qu’un fichier et un dossier ? Fichier : Un document ou un programme (ex. : texte, image, tableur). Exemples : rapport.docx, photo.jpg, budget.xlsx&#xA;Dossier (ou répertoire) : Contenant qui regroupe des fichiers et d’autres dossiers. Exemple : le dossier Documents contient des fichiers Word, PDF, etc.&#xA;L’explorateur de fichiers Ouvrir l’explorateur : Raccourci clavier : Windows + E Ou clique sur l’icône 📁 dans la barre des tâches Principales zones : Volet de navigation à gauche : accès rapide à Ce PC, Téléchargements, Documents, etc. Zone principale : affiche le contenu du dossier sélectionné Barre d’adresse : montre le chemin du dossier actuel (ex. : Ce PC &gt; Documents &gt; Travaux) Barre d’outils : bouton pour créer, renommer, copier, coller, supprimer… Créer et organiser ses fichiers Créer un dossier : Clique droit dans un espace vide Sélectionne Nouveau &gt; Dossier Nomme le dossier (ex. : Projet Science) Renommer un fichier ou dossier : Clique droit &gt; Renommer Ou clique lentement deux fois sur le nom Déplacer un fichier : Glisser-déposer vers un autre dossier Ou : Copier (Ctrl + C) &gt; Coller (Ctrl + V) dans l’autre dossier Ou : Couper (Ctrl + X) &gt; Coller (Ctrl + V) pour le déplacer Supprimer : Sélectionner l’élément &gt; touche Suppr Ou clic droit &gt; Supprimer Chemin d’accès Un chemin indique l’emplacement d’un fichier.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/outils_dev/fichiers_dossiers/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/outils_dev/fichiers_dossiers/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

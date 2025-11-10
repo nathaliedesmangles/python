@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alternatives à VS Code :: 420-SN1-RE</title>
-    <link>https://example.org/faq/alternatives/index.html</link>
+    <link>/faq/alternatives/index.html</link>
     <description>Deux alternatives populaires Si vous cherchez une alternative simple et accessible à VS Code avec Jupyter, Google Colab est une excellente option. Colab est un environnement de notebooks en ligne gratuit, offert par Google, qui ne nécessite aucune installation. Il vous permet d’écrire et d’exécuter du code Python directement dans votre navigateur, tout en profitant d’un accès facile à des bibliothèques scientifiques populaires comme NumPy, pandas, ou matplotlib. C’est l’outil idéal pour débuter en programmation scientifique ou collaborer à distance, puisqu’il s’intègre à Google Drive et permet de partager vos notebooks aussi facilement qu’un document Google Docs.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/faq/alternatives/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/faq/alternatives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

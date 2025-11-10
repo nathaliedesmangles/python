@@ -1,46 +1,59 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+<html lang="fr" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
+    <meta name="generator" content="Relearn 8.2.0+9cac649a184a2967957ef9bbececf9402192846c">
     <meta name="description" content="1. Rappel : les axes par défaut Quand tu fais un graphique avec Matplotlib, les axes sont placés autour du graphique, pas au centre.
 Exemple :
-import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show()Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).">
+import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show() Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).
+2. Les spines, c’est quoi ? Les spines sont les lignes qui forment les axes du graphique :">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Faire croiser les axes à l’origine (0,0) :: 420-SN1-RE">
     <meta name="twitter:description" content="1. Rappel : les axes par défaut Quand tu fais un graphique avec Matplotlib, les axes sont placés autour du graphique, pas au centre.
 Exemple :
-import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show()Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).">
-    <meta property="og:url" content="https://example.org/outils_dev/matplotlib/axes/index.html">
+import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show() Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).
+2. Les spines, c’est quoi ? Les spines sont les lignes qui forment les axes du graphique :">
+    <meta property="og:url" content="/outils_dev/matplotlib/axes/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content="Faire croiser les axes à l’origine (0,0) :: 420-SN1-RE">
     <meta property="og:description" content="1. Rappel : les axes par défaut Quand tu fais un graphique avec Matplotlib, les axes sont placés autour du graphique, pas au centre.
 Exemple :
-import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show()Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).">
-    <meta property="og:locale" content="en_us">
+import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show() Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).
+2. Les spines, c’est quoi ? Les spines sont les lignes qui forment les axes du graphique :">
+    <meta property="og:locale" content="fr">
     <meta property="og:type" content="website">
     <meta itemprop="name" content="Faire croiser les axes à l’origine (0,0) :: 420-SN1-RE">
     <meta itemprop="description" content="1. Rappel : les axes par défaut Quand tu fais un graphique avec Matplotlib, les axes sont placés autour du graphique, pas au centre.
 Exemple :
-import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show()Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).">
+import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y = x**2 plt.plot(x, y) plt.show() Résultat : Les axes sont en bas et à gauche, et ils ne passent pas par (0,0).
+2. Les spines, c’est quoi ? Les spines sont les lignes qui forment les axes du graphique :">
     <meta itemprop="wordCount" content="293">
     <title>Faire croiser les axes à l’origine (0,0) :: 420-SN1-RE</title>
     <link href="/outils_dev/matplotlib/axes/index.xml" rel="alternate" type="application/rss+xml" title="Faire croiser les axes à l’origine (0,0) :: 420-SN1-RE">
-    <link href="/images/logo.png?1762782779" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762782779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762782779" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762782779" rel="stylesheet">
-    <link href="/css/theme.min.css?1762782779" rel="stylesheet">
-    <link href="/css/format-html.min.css?1762782779" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1762782779" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1762782779" defer></script>
-    <script src="/js/search.min.js?1762782779" defer></script>
+    <link href="/images/logo.png?1762817295" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1762817295" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1762817295" defer></script>
+    <script src="/js/search-lunr.min.js?1762817295" defer></script>
+    <script src="/js/search.min.js?1762817295" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1762817295";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.fr.min.js?1762817295" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762817295" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762817295" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762817295" rel="stylesheet">
+    <link href="/css/theme.min.css?1762817295" rel="stylesheet">
+    <link href="/css/format-html.min.css?1762817295" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -48,9 +61,7 @@ import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y
       window.relearn.path='\/outils_dev\/matplotlib\/axes\/index.html';
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/example.org';
-      window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1762782779";
+      window.relearn.absBaseUri='';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -59,6 +70,15 @@ import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y
       window.relearn.getItem = (s,n) => {return s.getItem(n)};
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
       // variant stuff
       window.relearn.themevariants = [ 'auto' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -86,17 +106,8 @@ import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-      // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
-      window.T_Reset_view = `Reset view`;
-      window.T_View_reset = `View reset!`;
-      window.T_No_results_found = `No results found for "{0}"`;
-      window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1762782779" rel="stylesheet">
+    <link href="/css/custom.css?1762817295" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/outils_dev/matplotlib/axes/index.html">
     <div id="R-body" class="default-animation">
@@ -105,9 +116,11 @@ import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y
         <div class="topbar-wrapper">
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
-            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -122,17 +135,17 @@ import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/outils_dev/index.html"><span itemprop="name">Outils de développement</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Faire croiser les axes à l’origine (0,0)</span><meta itemprop="position" content="3"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/outils_dev/index.html"><span itemprop="name">Outils de développement</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Faire croiser les axes à l’origine (0,0)</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/outils_dev/extensions/windows/index.html" title="Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><a href="/outils_dev/extensions/windows/index.html" title="Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/outils_dev/matplotlib/couleurs/index.html" title="Graphiques Matplotlib - Codes de couleurs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><a href="/outils_dev/matplotlib/couleurs/index.html" title="Graphiques Matplotlib - Codes de couleurs (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
                   <div class="topbar-area topbar-area-more" data-area="more">
@@ -146,11 +159,224 @@ import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable outils_dev" tabindex="-1">
         <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="faire-croiser-les-axes-à-lorigine-00">Faire croiser les axes à l’origine (0,0)</h1>
+
+<h2 id="1-rappel--les-axes-par-défaut">1. Rappel : les axes par défaut</h2>
+<p>Quand tu fais un graphique avec Matplotlib, les axes sont placés <strong>autour</strong> du graphique, pas au centre.</p>
+<p>Exemple :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<p><strong>Résultat</strong> :
+Les axes sont en bas et à gauche, et ils <strong>ne passent pas par (0,0)</strong>.</p>
+<p><a href="#R-image-2bd0da8db4afb63ec19af60750aabdd4" class="lightbox-link"><img alt="Axes par défaut" class="lazy lightbox figure-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_defaut.png?width=30vw" style="height: auto;width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2bd0da8db4afb63ec19af60750aabdd4"><img alt="Axes par défaut" class="lazy lightbox lightbox-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_defaut.png?width=30vw"></a></p>
+<h2 id="2-les-spines-cest-quoi-">2. Les <em>spines</em>, c’est quoi ?</h2>
+<p>Les <em>spines</em> sont les <strong>lignes qui forment les axes du graphique</strong> :</p>
+<ul>
+<li><code>'left'</code> : axe vertical gauche</li>
+<li><code>'bottom'</code> : axe horizontal bas</li>
+<li><code>'right'</code> : axe vertical droit</li>
+<li><code>'top'</code> : axe horizontal haut</li>
+</ul>
+<p>On peut les <strong>déplacer</strong>, <strong>colorer</strong> ou <strong>masquer</strong> facilement.</p>
+<h2 id="3-faire-croiser-les-axes-à-00">3. Faire croiser les axes à (0,0)</h2>
+<p>Voici le code le plus simple :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données simples</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Création de la figure et du repère</span>
+</span></span><span style="display:flex;"><span>fig, ax <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>subplots()
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Déplacer les axes au centre</span>
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>spines[<span style="color:#e6db74">&#39;left&#39;</span>]<span style="color:#f92672">.</span>set_position(<span style="color:#e6db74">&#39;zero&#39;</span>)     <span style="color:#75715e"># axe vertical à x = 0</span>
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>spines[<span style="color:#e6db74">&#39;bottom&#39;</span>]<span style="color:#f92672">.</span>set_position(<span style="color:#e6db74">&#39;zero&#39;</span>)   <span style="color:#75715e"># axe horizontal à y = 0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Masquer les spines inutiles</span>
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>spines[<span style="color:#e6db74">&#39;right&#39;</span>]<span style="color:#f92672">.</span>set_color(<span style="color:#e6db74">&#39;none&#39;</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>spines[<span style="color:#e6db74">&#39;top&#39;</span>]<span style="color:#f92672">.</span>set_color(<span style="color:#e6db74">&#39;none&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<p><strong>Résultat attendu :</strong></p>
+<ul>
+<li>Les axes x et y se croisent à l’origine.</li>
+<li>C’est souvent ce qu’on veut en mathématiques ou en physique.</li>
+</ul>
+<p><a href="#R-image-3898e388874817c6def975f630ab7d5b" class="lightbox-link"><img alt="Axes décalés" class="lazy lightbox figure-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_decales.png?width=30vw" style="height: auto;width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3898e388874817c6def975f630ab7d5b"><img alt="Axes décalés" class="lazy lightbox lightbox-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_decales.png?width=30vw"></a></p>
+
+<details class=" box cstyle notices cyan expand" name="notice-toggle">
+  <summary class="box-label">
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> 
+    Explications sur <code>fig, ax = plt.subplots()</code>
+  </summary>
+  <div class="box-content">
+<h3 id="quest-ce-que-fig-et-ax-">Qu&rsquo;est-ce que fig et ax ?</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Élément</th>
+          <th>Rôle</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>fig</code></td>
+          <td>la <strong>figure</strong> = la feuille blanche</td>
+      </tr>
+      <tr>
+          <td><code>ax</code></td>
+          <td>les <strong>axes</strong> = le repère où on trace</td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fig, ax <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>subplots()
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h3 id="pourquoi-pas-juste-pltplot-">Pourquoi pas juste <code>plt.plot()</code> ?</h3>
+<ul>
+<li><code>plt.plot()</code> → rapide, automatique, peu de contrôle.</li>
+<li><code>plt.subplots()</code> → plus précis : on peut déplacer les axes, ajouter des flèches, etc.</li>
+</ul>
+  </div>
+</details>
+<h2 id="à-retenir">À retenir</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Commande</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Déplacer l’axe vertical à x=0</td>
+          <td><code>ax.spines['left'].set_position('zero')</code></td>
+      </tr>
+      <tr>
+          <td>Déplacer l’axe horizontal à y=0</td>
+          <td><code>ax.spines['bottom'].set_position('zero')</code></td>
+      </tr>
+      <tr>
+          <td>Cacher les spines inutiles</td>
+          <td><code>ax.spines['top'].set_color('none')</code> et <code>ax.spines['right'].set_color('none')</code></td>
+      </tr>
+  </tbody>
+</table>
+
+  <footer class="footline">
+  </footer>
+</article>
         </div>
       </main>
     </div>
-    <script src="/js/clipboard/clipboard.min.js?1762782779" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762782779" defer></script>
-    <script src="/js/theme.min.js?1762782779" defer></script>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-url="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-url="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu">
+            <li class="" data-nav-url="/outils_dev/onedrive/index.html"><a class="padding" href="/outils_dev/onedrive/index.html">Connexion à OneDrive – Compte scolaire</a></li>
+            <li class="" data-nav-url="/outils_dev/fichiers_dossiers/index.html"><a class="padding" href="/outils_dev/fichiers_dossiers/index.html">Fichiers et répertoires (dossiers)</a></li>
+            <li class="alwaysopen " data-nav-url="/outils_dev/vs-code/index.html"><a class="padding" href="/outils_dev/vs-code/index.html">Utilisation de VS Code </a><ul id="R-subsections-f2060e120a11e14e08d58d8162e76852" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/outils_dev/jupyter/index.html"><a class="padding" href="/outils_dev/jupyter/index.html">Jupyter Notebook </a></li>
+            <li class="" data-nav-url="/outils_dev/trucs_pratiques/index.html"><a class="padding" href="/outils_dev/trucs_pratiques/index.html">Astuces, touches spéciales et &#43;</a></li>
+            <li class="" data-nav-url="/outils_dev/markdown/index.html"><a class="padding" href="/outils_dev/markdown/index.html">MarkDown </a></li>
+            <li class="" data-nav-url="/outils_dev/install_env/index.html"><a class="padding" href="/outils_dev/install_env/index.html">Installation de l'environnement sur Windows 11 </a></li>
+            <li class="" data-nav-url="/outils_dev/extensions/windows/index.html"><a class="padding" href="/outils_dev/extensions/windows/index.html">Installer un module (ex. Matplotlib) dans Visual Studio Code (Windows)</a></li>
+            <li class="active " data-nav-url="/outils_dev/matplotlib/axes/index.html"><a class="padding" href="/outils_dev/matplotlib/axes/index.html">Faire croiser les axes à l’origine (0,0)</a></li>
+            <li class="" data-nav-url="/outils_dev/matplotlib/couleurs/index.html"><a class="padding" href="/outils_dev/matplotlib/couleurs/index.html">Graphiques Matplotlib - Codes de couleurs</a></li>
+            <li class="" data-nav-url="/outils_dev/extensions/macos/index.html"><a class="padding" href="/outils_dev/extensions/macos/index.html">Installer un module (ex. Matplotlib) dans Visual Studio Code (MacOS)</a></li></ul></li>
+            <li class="" data-nav-url="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-url="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-url="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-url="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-url="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-url="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-url="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-url="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
+            <li class="" data-nav-url="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
+            <li class="" data-nav-url="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-url="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Manipulation de données dans un fichier (avec Pandas)</a></li>
+            <li class="" data-nav-url="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
+            <li class="" data-nav-url="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
+            <li class="" data-nav-url="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="" data-nav-url="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> 🧬 Projet intégrateur — L’ADN du coupable</a></li>
+            <li class="" data-nav-url="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="" data-nav-url="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1762817295" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762817295" defer></script>
+    <script src="/js/theme.min.js?1762817295" defer></script>
   </body>
 </html>

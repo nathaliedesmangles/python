@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+<html lang="fr" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) pente, ordonnee = np.polyfit(t[masque], y[masque], 1) # degré 1 droite = pente * t &#43; ordonnee # Graphique plt.plot(t, y, &#39;bo-&#39;, label=&#34;Chute libre&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire (0.5s-1.5s)&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.legend() plt.title(&#34;Chute libre verticale avec régression locale&#34;) plt.show()Exercice 2 – Mouvement rectiligne uniforme et régression linéaire import numpy as np import matplotlib.pyplot as plt # Vitesse constante v = 15 # Temps de 0 à 10 s t = np.arange(0, 10.5, 0.5) # Position x = v * t print(&#34;Dernière position :&#34;, x[-1]) # Régression linéaire a, b = np.polyfit(t, x, 1) droite = a * t &#43; b # Graphique plt.plot(t, x, &#39;bo&#39;, label=&#34;Position calculée&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Mouvement rectiligne uniforme&#34;) plt.legend() plt.show()Exercice 3 – Énergie cinétique et barres d’erreur import numpy as np import matplotlib.pyplot as plt # Masse m = 2.0 # Tableau des vitesses v = np.arange(0, 21, 2) # Énergie cinétique Ec = 0.5 * m * v**2 print(&#34;Énergies cinétiques :&#34;, Ec) print(&#34;Énergie maximale :&#34;, np.max(Ec)) print(&#34;Trois dernières valeurs :&#34;, Ec[-3:]) print(&#34;Vitesses 2 à 8 m/s :&#34;, v[1:5]) print(&#34;Énergies correspondantes :&#34;, Ec[1:5]) # Barres d’erreur (5 % de la valeur) erreurs = 0.05 * Ec # Graphique à barres plt.bar(v, Ec, yerr=erreurs, capsize=5, color=&#39;skyblue&#39;, edgecolor=&#39;black&#39;) plt.xlabel(&#34;Vitesse (m/s)&#34;) plt.ylabel(&#34;Énergie cinétique (J)&#34;) plt.title(&#34;Énergie cinétique en fonction de la vitesse&#34;) plt.show()Exercice 4 – Oscillations harmoniques import numpy as np import matplotlib.pyplot as plt # Paramètres A = 0.1 omega = 2 * np.pi # Temps t = np.linspace(0, 2, 101) # Position x = A * np.cos(omega * t) # Valeurs extrêmes print(&#34;Maximum :&#34;, np.max(x)) print(&#34;Minimum :&#34;, np.min(x)) # Tracé de l’oscillation plt.plot(t, x, &#39;b-&#39;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Oscillations harmoniques&#34;) plt.grid(True) plt.show()">
+    <meta name="generator" content="Relearn 8.2.0+9cac649a184a2967957ef9bbececf9402192846c">
+    <meta name="description" content="Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) pente, ordonnee = np.polyfit(t[masque], y[masque], 1) # degré 1 droite = pente * t &#43; ordonnee # Graphique plt.plot(t, y, &#39;bo-&#39;, label=&#34;Chute libre&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire (0.5s-1.5s)&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.legend() plt.title(&#34;Chute libre verticale avec régression locale&#34;) plt.show() Exercice 2 – Mouvement rectiligne uniforme et régression linéaire import numpy as np import matplotlib.pyplot as plt # Vitesse constante v = 15 # Temps de 0 à 10 s t = np.arange(0, 10.5, 0.5) # Position x = v * t print(&#34;Dernière position :&#34;, x[-1]) # Régression linéaire a, b = np.polyfit(t, x, 1) droite = a * t &#43; b # Graphique plt.plot(t, x, &#39;bo&#39;, label=&#34;Position calculée&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Mouvement rectiligne uniforme&#34;) plt.legend() plt.show() Exercice 3 – Énergie cinétique et barres d’erreur import numpy as np import matplotlib.pyplot as plt # Masse m = 2.0 # Tableau des vitesses v = np.arange(0, 21, 2) # Énergie cinétique Ec = 0.5 * m * v**2 print(&#34;Énergies cinétiques :&#34;, Ec) print(&#34;Énergie maximale :&#34;, np.max(Ec)) print(&#34;Trois dernières valeurs :&#34;, Ec[-3:]) print(&#34;Vitesses 2 à 8 m/s :&#34;, v[1:5]) print(&#34;Énergies correspondantes :&#34;, Ec[1:5]) # Barres d’erreur (5 % de la valeur) erreurs = 0.05 * Ec # Graphique à barres plt.bar(v, Ec, yerr=erreurs, capsize=5, color=&#39;skyblue&#39;, edgecolor=&#39;black&#39;) plt.xlabel(&#34;Vitesse (m/s)&#34;) plt.ylabel(&#34;Énergie cinétique (J)&#34;) plt.title(&#34;Énergie cinétique en fonction de la vitesse&#34;) plt.show() Exercice 4 – Oscillations harmoniques import numpy as np import matplotlib.pyplot as plt # Paramètres A = 0.1 omega = 2 * np.pi # Temps t = np.linspace(0, 2, 101) # Position x = A * np.cos(omega * t) # Valeurs extrêmes print(&#34;Maximum :&#34;, np.max(x)) print(&#34;Minimum :&#34;, np.min(x)) # Tracé de l’oscillation plt.plot(t, x, &#39;b-&#39;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Oscillations harmoniques&#34;) plt.grid(True) plt.show()">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
-    <meta name="twitter:description" content="Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) pente, ordonnee = np.polyfit(t[masque], y[masque], 1) # degré 1 droite = pente * t &#43; ordonnee # Graphique plt.plot(t, y, &#39;bo-&#39;, label=&#34;Chute libre&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire (0.5s-1.5s)&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.legend() plt.title(&#34;Chute libre verticale avec régression locale&#34;) plt.show()Exercice 2 – Mouvement rectiligne uniforme et régression linéaire import numpy as np import matplotlib.pyplot as plt # Vitesse constante v = 15 # Temps de 0 à 10 s t = np.arange(0, 10.5, 0.5) # Position x = v * t print(&#34;Dernière position :&#34;, x[-1]) # Régression linéaire a, b = np.polyfit(t, x, 1) droite = a * t &#43; b # Graphique plt.plot(t, x, &#39;bo&#39;, label=&#34;Position calculée&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Mouvement rectiligne uniforme&#34;) plt.legend() plt.show()Exercice 3 – Énergie cinétique et barres d’erreur import numpy as np import matplotlib.pyplot as plt # Masse m = 2.0 # Tableau des vitesses v = np.arange(0, 21, 2) # Énergie cinétique Ec = 0.5 * m * v**2 print(&#34;Énergies cinétiques :&#34;, Ec) print(&#34;Énergie maximale :&#34;, np.max(Ec)) print(&#34;Trois dernières valeurs :&#34;, Ec[-3:]) print(&#34;Vitesses 2 à 8 m/s :&#34;, v[1:5]) print(&#34;Énergies correspondantes :&#34;, Ec[1:5]) # Barres d’erreur (5 % de la valeur) erreurs = 0.05 * Ec # Graphique à barres plt.bar(v, Ec, yerr=erreurs, capsize=5, color=&#39;skyblue&#39;, edgecolor=&#39;black&#39;) plt.xlabel(&#34;Vitesse (m/s)&#34;) plt.ylabel(&#34;Énergie cinétique (J)&#34;) plt.title(&#34;Énergie cinétique en fonction de la vitesse&#34;) plt.show()Exercice 4 – Oscillations harmoniques import numpy as np import matplotlib.pyplot as plt # Paramètres A = 0.1 omega = 2 * np.pi # Temps t = np.linspace(0, 2, 101) # Position x = A * np.cos(omega * t) # Valeurs extrêmes print(&#34;Maximum :&#34;, np.max(x)) print(&#34;Minimum :&#34;, np.min(x)) # Tracé de l’oscillation plt.plot(t, x, &#39;b-&#39;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Oscillations harmoniques&#34;) plt.grid(True) plt.show()">
-    <meta property="og:url" content="https://example.org/solutions_exercices/8_numpy_regression/index.html">
+    <meta name="twitter:description" content="Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) pente, ordonnee = np.polyfit(t[masque], y[masque], 1) # degré 1 droite = pente * t &#43; ordonnee # Graphique plt.plot(t, y, &#39;bo-&#39;, label=&#34;Chute libre&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire (0.5s-1.5s)&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.legend() plt.title(&#34;Chute libre verticale avec régression locale&#34;) plt.show() Exercice 2 – Mouvement rectiligne uniforme et régression linéaire import numpy as np import matplotlib.pyplot as plt # Vitesse constante v = 15 # Temps de 0 à 10 s t = np.arange(0, 10.5, 0.5) # Position x = v * t print(&#34;Dernière position :&#34;, x[-1]) # Régression linéaire a, b = np.polyfit(t, x, 1) droite = a * t &#43; b # Graphique plt.plot(t, x, &#39;bo&#39;, label=&#34;Position calculée&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Mouvement rectiligne uniforme&#34;) plt.legend() plt.show() Exercice 3 – Énergie cinétique et barres d’erreur import numpy as np import matplotlib.pyplot as plt # Masse m = 2.0 # Tableau des vitesses v = np.arange(0, 21, 2) # Énergie cinétique Ec = 0.5 * m * v**2 print(&#34;Énergies cinétiques :&#34;, Ec) print(&#34;Énergie maximale :&#34;, np.max(Ec)) print(&#34;Trois dernières valeurs :&#34;, Ec[-3:]) print(&#34;Vitesses 2 à 8 m/s :&#34;, v[1:5]) print(&#34;Énergies correspondantes :&#34;, Ec[1:5]) # Barres d’erreur (5 % de la valeur) erreurs = 0.05 * Ec # Graphique à barres plt.bar(v, Ec, yerr=erreurs, capsize=5, color=&#39;skyblue&#39;, edgecolor=&#39;black&#39;) plt.xlabel(&#34;Vitesse (m/s)&#34;) plt.ylabel(&#34;Énergie cinétique (J)&#34;) plt.title(&#34;Énergie cinétique en fonction de la vitesse&#34;) plt.show() Exercice 4 – Oscillations harmoniques import numpy as np import matplotlib.pyplot as plt # Paramètres A = 0.1 omega = 2 * np.pi # Temps t = np.linspace(0, 2, 101) # Position x = A * np.cos(omega * t) # Valeurs extrêmes print(&#34;Maximum :&#34;, np.max(x)) print(&#34;Minimum :&#34;, np.min(x)) # Tracé de l’oscillation plt.plot(t, x, &#39;b-&#39;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Oscillations harmoniques&#34;) plt.grid(True) plt.show()">
+    <meta property="og:url" content="/solutions_exercices/8_numpy_regression/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
-    <meta property="og:description" content="Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) pente, ordonnee = np.polyfit(t[masque], y[masque], 1) # degré 1 droite = pente * t &#43; ordonnee # Graphique plt.plot(t, y, &#39;bo-&#39;, label=&#34;Chute libre&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire (0.5s-1.5s)&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.legend() plt.title(&#34;Chute libre verticale avec régression locale&#34;) plt.show()Exercice 2 – Mouvement rectiligne uniforme et régression linéaire import numpy as np import matplotlib.pyplot as plt # Vitesse constante v = 15 # Temps de 0 à 10 s t = np.arange(0, 10.5, 0.5) # Position x = v * t print(&#34;Dernière position :&#34;, x[-1]) # Régression linéaire a, b = np.polyfit(t, x, 1) droite = a * t &#43; b # Graphique plt.plot(t, x, &#39;bo&#39;, label=&#34;Position calculée&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Mouvement rectiligne uniforme&#34;) plt.legend() plt.show()Exercice 3 – Énergie cinétique et barres d’erreur import numpy as np import matplotlib.pyplot as plt # Masse m = 2.0 # Tableau des vitesses v = np.arange(0, 21, 2) # Énergie cinétique Ec = 0.5 * m * v**2 print(&#34;Énergies cinétiques :&#34;, Ec) print(&#34;Énergie maximale :&#34;, np.max(Ec)) print(&#34;Trois dernières valeurs :&#34;, Ec[-3:]) print(&#34;Vitesses 2 à 8 m/s :&#34;, v[1:5]) print(&#34;Énergies correspondantes :&#34;, Ec[1:5]) # Barres d’erreur (5 % de la valeur) erreurs = 0.05 * Ec # Graphique à barres plt.bar(v, Ec, yerr=erreurs, capsize=5, color=&#39;skyblue&#39;, edgecolor=&#39;black&#39;) plt.xlabel(&#34;Vitesse (m/s)&#34;) plt.ylabel(&#34;Énergie cinétique (J)&#34;) plt.title(&#34;Énergie cinétique en fonction de la vitesse&#34;) plt.show()Exercice 4 – Oscillations harmoniques import numpy as np import matplotlib.pyplot as plt # Paramètres A = 0.1 omega = 2 * np.pi # Temps t = np.linspace(0, 2, 101) # Position x = A * np.cos(omega * t) # Valeurs extrêmes print(&#34;Maximum :&#34;, np.max(x)) print(&#34;Minimum :&#34;, np.min(x)) # Tracé de l’oscillation plt.plot(t, x, &#39;b-&#39;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Oscillations harmoniques&#34;) plt.grid(True) plt.show()">
-    <meta property="og:locale" content="en_us">
+    <meta property="og:description" content="Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) pente, ordonnee = np.polyfit(t[masque], y[masque], 1) # degré 1 droite = pente * t &#43; ordonnee # Graphique plt.plot(t, y, &#39;bo-&#39;, label=&#34;Chute libre&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire (0.5s-1.5s)&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.legend() plt.title(&#34;Chute libre verticale avec régression locale&#34;) plt.show() Exercice 2 – Mouvement rectiligne uniforme et régression linéaire import numpy as np import matplotlib.pyplot as plt # Vitesse constante v = 15 # Temps de 0 à 10 s t = np.arange(0, 10.5, 0.5) # Position x = v * t print(&#34;Dernière position :&#34;, x[-1]) # Régression linéaire a, b = np.polyfit(t, x, 1) droite = a * t &#43; b # Graphique plt.plot(t, x, &#39;bo&#39;, label=&#34;Position calculée&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Mouvement rectiligne uniforme&#34;) plt.legend() plt.show() Exercice 3 – Énergie cinétique et barres d’erreur import numpy as np import matplotlib.pyplot as plt # Masse m = 2.0 # Tableau des vitesses v = np.arange(0, 21, 2) # Énergie cinétique Ec = 0.5 * m * v**2 print(&#34;Énergies cinétiques :&#34;, Ec) print(&#34;Énergie maximale :&#34;, np.max(Ec)) print(&#34;Trois dernières valeurs :&#34;, Ec[-3:]) print(&#34;Vitesses 2 à 8 m/s :&#34;, v[1:5]) print(&#34;Énergies correspondantes :&#34;, Ec[1:5]) # Barres d’erreur (5 % de la valeur) erreurs = 0.05 * Ec # Graphique à barres plt.bar(v, Ec, yerr=erreurs, capsize=5, color=&#39;skyblue&#39;, edgecolor=&#39;black&#39;) plt.xlabel(&#34;Vitesse (m/s)&#34;) plt.ylabel(&#34;Énergie cinétique (J)&#34;) plt.title(&#34;Énergie cinétique en fonction de la vitesse&#34;) plt.show() Exercice 4 – Oscillations harmoniques import numpy as np import matplotlib.pyplot as plt # Paramètres A = 0.1 omega = 2 * np.pi # Temps t = np.linspace(0, 2, 101) # Position x = A * np.cos(omega * t) # Valeurs extrêmes print(&#34;Maximum :&#34;, np.max(x)) print(&#34;Minimum :&#34;, np.min(x)) # Tracé de l’oscillation plt.plot(t, x, &#39;b-&#39;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Oscillations harmoniques&#34;) plt.grid(True) plt.show()">
+    <meta property="og:locale" content="fr">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
-    <meta itemprop="description" content="Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) pente, ordonnee = np.polyfit(t[masque], y[masque], 1) # degré 1 droite = pente * t &#43; ordonnee # Graphique plt.plot(t, y, &#39;bo-&#39;, label=&#34;Chute libre&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire (0.5s-1.5s)&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.legend() plt.title(&#34;Chute libre verticale avec régression locale&#34;) plt.show()Exercice 2 – Mouvement rectiligne uniforme et régression linéaire import numpy as np import matplotlib.pyplot as plt # Vitesse constante v = 15 # Temps de 0 à 10 s t = np.arange(0, 10.5, 0.5) # Position x = v * t print(&#34;Dernière position :&#34;, x[-1]) # Régression linéaire a, b = np.polyfit(t, x, 1) droite = a * t &#43; b # Graphique plt.plot(t, x, &#39;bo&#39;, label=&#34;Position calculée&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Mouvement rectiligne uniforme&#34;) plt.legend() plt.show()Exercice 3 – Énergie cinétique et barres d’erreur import numpy as np import matplotlib.pyplot as plt # Masse m = 2.0 # Tableau des vitesses v = np.arange(0, 21, 2) # Énergie cinétique Ec = 0.5 * m * v**2 print(&#34;Énergies cinétiques :&#34;, Ec) print(&#34;Énergie maximale :&#34;, np.max(Ec)) print(&#34;Trois dernières valeurs :&#34;, Ec[-3:]) print(&#34;Vitesses 2 à 8 m/s :&#34;, v[1:5]) print(&#34;Énergies correspondantes :&#34;, Ec[1:5]) # Barres d’erreur (5 % de la valeur) erreurs = 0.05 * Ec # Graphique à barres plt.bar(v, Ec, yerr=erreurs, capsize=5, color=&#39;skyblue&#39;, edgecolor=&#39;black&#39;) plt.xlabel(&#34;Vitesse (m/s)&#34;) plt.ylabel(&#34;Énergie cinétique (J)&#34;) plt.title(&#34;Énergie cinétique en fonction de la vitesse&#34;) plt.show()Exercice 4 – Oscillations harmoniques import numpy as np import matplotlib.pyplot as plt # Paramètres A = 0.1 omega = 2 * np.pi # Temps t = np.linspace(0, 2, 101) # Position x = A * np.cos(omega * t) # Valeurs extrêmes print(&#34;Maximum :&#34;, np.max(x)) print(&#34;Minimum :&#34;, np.min(x)) # Tracé de l’oscillation plt.plot(t, x, &#39;b-&#39;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Oscillations harmoniques&#34;) plt.grid(True) plt.show()">
+    <meta itemprop="description" content="Exercice 1 – Chute libre verticale et régression linéaire import numpy as np import matplotlib.pyplot as plt # Constantes g = 9.8 h = 20 # Tableau de temps t = np.linspace(0, 2, 21) # Position y = h - 0.5 * g * t**2 print(&#34;5 premières valeurs de y :&#34;, y[:5]) # Régression linéaire entre 0.5s et 1.5s masque = (t &gt;= 0.5) &amp; (t &lt;= 1.5) pente, ordonnee = np.polyfit(t[masque], y[masque], 1) # degré 1 droite = pente * t &#43; ordonnee # Graphique plt.plot(t, y, &#39;bo-&#39;, label=&#34;Chute libre&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire (0.5s-1.5s)&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.legend() plt.title(&#34;Chute libre verticale avec régression locale&#34;) plt.show() Exercice 2 – Mouvement rectiligne uniforme et régression linéaire import numpy as np import matplotlib.pyplot as plt # Vitesse constante v = 15 # Temps de 0 à 10 s t = np.arange(0, 10.5, 0.5) # Position x = v * t print(&#34;Dernière position :&#34;, x[-1]) # Régression linéaire a, b = np.polyfit(t, x, 1) droite = a * t &#43; b # Graphique plt.plot(t, x, &#39;bo&#39;, label=&#34;Position calculée&#34;) plt.plot(t, droite, &#39;r--&#39;, label=&#34;Régression linéaire&#34;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Mouvement rectiligne uniforme&#34;) plt.legend() plt.show() Exercice 3 – Énergie cinétique et barres d’erreur import numpy as np import matplotlib.pyplot as plt # Masse m = 2.0 # Tableau des vitesses v = np.arange(0, 21, 2) # Énergie cinétique Ec = 0.5 * m * v**2 print(&#34;Énergies cinétiques :&#34;, Ec) print(&#34;Énergie maximale :&#34;, np.max(Ec)) print(&#34;Trois dernières valeurs :&#34;, Ec[-3:]) print(&#34;Vitesses 2 à 8 m/s :&#34;, v[1:5]) print(&#34;Énergies correspondantes :&#34;, Ec[1:5]) # Barres d’erreur (5 % de la valeur) erreurs = 0.05 * Ec # Graphique à barres plt.bar(v, Ec, yerr=erreurs, capsize=5, color=&#39;skyblue&#39;, edgecolor=&#39;black&#39;) plt.xlabel(&#34;Vitesse (m/s)&#34;) plt.ylabel(&#34;Énergie cinétique (J)&#34;) plt.title(&#34;Énergie cinétique en fonction de la vitesse&#34;) plt.show() Exercice 4 – Oscillations harmoniques import numpy as np import matplotlib.pyplot as plt # Paramètres A = 0.1 omega = 2 * np.pi # Temps t = np.linspace(0, 2, 101) # Position x = A * np.cos(omega * t) # Valeurs extrêmes print(&#34;Maximum :&#34;, np.max(x)) print(&#34;Minimum :&#34;, np.min(x)) # Tracé de l’oscillation plt.plot(t, x, &#39;b-&#39;) plt.xlabel(&#34;Temps (s)&#34;) plt.ylabel(&#34;Position (m)&#34;) plt.title(&#34;Oscillations harmoniques&#34;) plt.grid(True) plt.show()">
     <meta itemprop="wordCount" content="355">
     <title> Tableaux NumPy et droite de régression :: 420-SN1-RE</title>
     <link href="/solutions_exercices/8_numpy_regression/index.xml" rel="alternate" type="application/rss+xml" title=" Tableaux NumPy et droite de régression :: 420-SN1-RE">
-    <link href="/images/logo.png?1762782779" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762782779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762782779" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762782779" rel="stylesheet">
-    <link href="/css/theme.min.css?1762782779" rel="stylesheet">
-    <link href="/css/format-html.min.css?1762782779" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1762782779" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1762782779" defer></script>
-    <script src="/js/search.min.js?1762782779" defer></script>
+    <link href="/images/logo.png?1762817295" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1762817295" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1762817295" defer></script>
+    <script src="/js/search-lunr.min.js?1762817295" defer></script>
+    <script src="/js/search.min.js?1762817295" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1762817295";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.fr.min.js?1762817295" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762817295" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762817295" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762817295" rel="stylesheet">
+    <link href="/css/theme.min.css?1762817295" rel="stylesheet">
+    <link href="/css/format-html.min.css?1762817295" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -40,9 +49,7 @@
       window.relearn.path='\/solutions_exercices\/8_numpy_regression\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/example.org';
-      window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1762782779";
+      window.relearn.absBaseUri='';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -51,6 +58,15 @@
       window.relearn.getItem = (s,n) => {return s.getItem(n)};
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
       // variant stuff
       window.relearn.themevariants = [ 'auto' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -78,17 +94,8 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-      // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
-      window.T_Reset_view = `Reset view`;
-      window.T_View_reset = `View reset!`;
-      window.T_No_results_found = `No results found for "{0}"`;
-      window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1762782779" rel="stylesheet">
+    <link href="/css/custom.css?1762817295" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_exercices/8_numpy_regression/index.html">
     <div id="R-body" class="default-animation">
@@ -97,9 +104,11 @@
         <div class="topbar-wrapper">
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
-            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -114,17 +123,17 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_exercices/index.html"><span itemprop="name">Solutions des exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Tableaux NumPy et droite de régression</span><meta itemprop="position" content="3"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_exercices/index.html"><span itemprop="name">Solutions des exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Tableaux NumPy et droite de régression</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/7_dictionnaires/index.html" title="Dictionnaires (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><a href="/solutions_exercices/7_dictionnaires/index.html" title="Dictionnaires (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/9_fichiers/index.html" title="Manipulation de données dans un fichier (avec Pandas) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><a href="/solutions_exercices/9_fichiers/index.html" title="Manipulation de données dans un fichier (avec Pandas) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
                   <div class="topbar-area topbar-area-more" data-area="more">
@@ -138,11 +147,218 @@
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable solutions_exercices" tabindex="-1">
         <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="tableaux-numpy-et-droite-de-régression"> Tableaux NumPy et droite de régression</h1>
+
+<h2 id="exercice-1--chute-libre-verticale-et-régression-linéaire">Exercice 1 – Chute libre verticale et régression linéaire</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Constantes</span>
+</span></span><span style="display:flex;"><span>g <span style="color:#f92672">=</span> <span style="color:#ae81ff">9.8</span>
+</span></span><span style="display:flex;"><span>h <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tableau de temps</span>
+</span></span><span style="display:flex;"><span>t <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">21</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Position</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> h <span style="color:#f92672">-</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">*</span> g <span style="color:#f92672">*</span> t<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;5 premières valeurs de y :&#34;</span>, y[:<span style="color:#ae81ff">5</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Régression linéaire entre 0.5s et 1.5s</span>
+</span></span><span style="display:flex;"><span>masque <span style="color:#f92672">=</span> (t <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">&amp;</span> (t <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1.5</span>)
+</span></span><span style="display:flex;"><span>pente, ordonnee <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(t[masque], y[masque], <span style="color:#ae81ff">1</span>)  <span style="color:#75715e"># degré 1</span>
+</span></span><span style="display:flex;"><span>droite <span style="color:#f92672">=</span> pente <span style="color:#f92672">*</span> t <span style="color:#f92672">+</span> ordonnee
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(t, y, <span style="color:#e6db74">&#39;bo-&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Chute libre&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(t, droite, <span style="color:#e6db74">&#39;r--&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Régression linéaire (0.5s-1.5s)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Temps (s)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Position (m)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Chute libre verticale avec régression locale&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h2 id="exercice-2--mouvement-rectiligne-uniforme-et-régression-linéaire">Exercice 2 – Mouvement rectiligne uniforme et régression linéaire</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Vitesse constante</span>
+</span></span><span style="display:flex;"><span>v <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Temps de 0 à 10 s</span>
+</span></span><span style="display:flex;"><span>t <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10.5</span>, <span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Position</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> v <span style="color:#f92672">*</span> t
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Dernière position :&#34;</span>, x[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Régression linéaire</span>
+</span></span><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(t, x, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>droite <span style="color:#f92672">=</span> a <span style="color:#f92672">*</span> t <span style="color:#f92672">+</span> b
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(t, x, <span style="color:#e6db74">&#39;bo&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Position calculée&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(t, droite, <span style="color:#e6db74">&#39;r--&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Régression linéaire&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Temps (s)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Position (m)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Mouvement rectiligne uniforme&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h2 id="exercice-3--énergie-cinétique-et-barres-derreur">Exercice 3 – Énergie cinétique et barres d&rsquo;erreur</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Masse</span>
+</span></span><span style="display:flex;"><span>m <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tableau des vitesses</span>
+</span></span><span style="display:flex;"><span>v <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">21</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Énergie cinétique</span>
+</span></span><span style="display:flex;"><span>Ec <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">*</span> m <span style="color:#f92672">*</span> v<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Énergies cinétiques :&#34;</span>, Ec)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Énergie maximale :&#34;</span>, np<span style="color:#f92672">.</span>max(Ec))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Trois dernières valeurs :&#34;</span>, Ec[<span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>:])
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Vitesses 2 à 8 m/s :&#34;</span>, v[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">5</span>])
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Énergies correspondantes :&#34;</span>, Ec[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">5</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Barres d’erreur (5 % de la valeur)</span>
+</span></span><span style="display:flex;"><span>erreurs <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.05</span> <span style="color:#f92672">*</span> Ec  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Graphique à barres</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>bar(v, Ec, yerr<span style="color:#f92672">=</span>erreurs, capsize<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;skyblue&#39;</span>, edgecolor<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;black&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Vitesse (m/s)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Énergie cinétique (J)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Énergie cinétique en fonction de la vitesse&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h2 id="exercice-4--oscillations-harmoniques">Exercice 4 – Oscillations harmoniques</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Paramètres</span>
+</span></span><span style="display:flex;"><span>A <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>
+</span></span><span style="display:flex;"><span>omega <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> np<span style="color:#f92672">.</span>pi
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Temps</span>
+</span></span><span style="display:flex;"><span>t <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">101</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Position</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> A <span style="color:#f92672">*</span> np<span style="color:#f92672">.</span>cos(omega <span style="color:#f92672">*</span> t)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Valeurs extrêmes</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Maximum :&#34;</span>, np<span style="color:#f92672">.</span>max(x))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Minimum :&#34;</span>, np<span style="color:#f92672">.</span>min(x))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tracé de l’oscillation</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(t, x, <span style="color:#e6db74">&#39;b-&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Temps (s)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Position (m)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Oscillations harmoniques&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
         </div>
       </main>
     </div>
-    <script src="/js/clipboard/clipboard.min.js?1762782779" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762782779" defer></script>
-    <script src="/js/theme.min.js?1762782779" defer></script>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-url="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-url="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-url="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-url="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-url="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-url="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-url="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-url="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
+            <li class="" data-nav-url="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
+            <li class="" data-nav-url="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-url="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Manipulation de données dans un fichier (avec Pandas)</a></li>
+            <li class="" data-nav-url="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
+            <li class="" data-nav-url="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
+            <li class="" data-nav-url="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="" data-nav-url="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> 🧬 Projet intégrateur — L’ADN du coupable</a></li>
+            <li class="" data-nav-url="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="parent " data-nav-url="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu">
+            <li class="" data-nav-url="/solutions_exercices/2_variables_types_entree_fn/index.html"><a class="padding" href="/solutions_exercices/2_variables_types_entree_fn/index.html"><b>2.</b> Variables, types, entrées et fonctions</a></li>
+            <li class="" data-nav-url="/solutions_exercices/3_struct_cond/index.html"><a class="padding" href="/solutions_exercices/3_struct_cond/index.html"><b>3.</b> Structures conditionnelles</a></li>
+            <li class="" data-nav-url="/solutions_exercices/4_boucles_debogage/index.html"><a class="padding" href="/solutions_exercices/4_boucles_debogage/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-url="/solutions_exercices/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_exercices/6_listes_chaines_visualisation/index.html">6. Listes, chaines et visualisation des données</a></li>
+            <li class="" data-nav-url="/solutions_exercices/7_dictionnaires/index.html"><a class="padding" href="/solutions_exercices/7_dictionnaires/index.html"><b>7.</b> Dictionnaires</a></li>
+            <li class="active " data-nav-url="/solutions_exercices/8_numpy_regression/index.html"><a class="padding" href="/solutions_exercices/8_numpy_regression/index.html"><b>8.</b> Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-url="/solutions_exercices/9_fichiers/index.html"><a class="padding" href="/solutions_exercices/9_fichiers/index.html"><b>9.</b> Manipulation de données dans un fichier (avec Pandas)</a></li>
+            <li class="" data-nav-url="/solutions_exercices/11_fonctions_perso/index.html"><a class="padding" href="/solutions_exercices/11_fonctions_perso/index.html"><b>11.</b> Fonctions personnalisées</a></li></ul></li>
+            <li class="" data-nav-url="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1762817295" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762817295" defer></script>
+    <script src="/js/theme.min.js?1762817295" defer></script>
   </body>
 </html>

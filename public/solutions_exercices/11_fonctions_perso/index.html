@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+<html lang="fr" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Exercice 1 : La loi d’Ohm def calculer_tension(): &#34;&#34;&#34; Calcule la tension électrique à partir de la résistance et du courant. Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères), puis applique la loi d&#39;Ohm : U = R * I. Affiche la tension calculée à l&#39;écran. Exemple : &gt;&gt;&gt; calculer_tension() Entrer la résistance en ohms : 10 Entrer le courant en ampères : 2 La tension est de 20.0 V &#34;&#34;&#34; # Demande la résistance à l&#39;utilisateur R = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Demande le courant à l&#39;utilisateur I = float(input(&#34;Entrer le courant en ampères : &#34;)) # Calcule la tension (U = R * I) U = R * I # Affiche le résultat print(f&#34;La tension est de {U} V&#34;) # Appel de la fonction calculer_tension()Exercice 2 : Élément chimique def element_chm(elt): &#34;&#34;&#34; Affiche le nom d’un élément chimique choisi. Args: elt (str): Nom ou symbole de l’élément chimique. Exemple : &gt;&gt;&gt; element_chm(&#34;Oxygène&#34;) L’élément choisi est : Oxygène &#34;&#34;&#34; # Affiche l&#39;élément chimique choisi print(f&#34;L’élément choisi est : {elt}&#34;) # Exemple d’appel element_chm(&#34;oxygène&#34;)Exercice 3 : Convertir Celsius en Kelvin def convertir_C_en_K(celsius): &#34;&#34;&#34; Convertit une température en degrés Celsius vers Kelvin. Formule utilisée : K = °C &#43; 273.15 Args: celsius (float): Température en degrés Celsius. Affiche : La température équivalente en Kelvin. Exemple : &gt;&gt;&gt; convertir_C_en_K(25) Une température de 25°C équivaut à 298.15 K. &#34;&#34;&#34; # Conversion en Kelvin kelvin = celsius &#43; 273.15 # Affiche la conversion print(f&#34;Une température de {celsius}°C équivaut à {kelvin} K.&#34;) # Exemple d’appel convertir_C_en_K(30)Exercice 4 : Calculer une énergie cinétique def energie_cinetique(m, v): &#34;&#34;&#34; Calcule et affiche l&#39;énergie cinétique d&#39;un objet. Formule utilisée : E_c = 0.5 * m * v² Args: m (float): Masse de l’objet en kilogrammes. v (float): Vitesse de l’objet en mètres par seconde. Affiche : L’énergie cinétique en joules. Exemple : &gt;&gt;&gt; energie_cinetique(2, 3) L&#39;énergie cinétique de l&#39;objet est de 9.0 joules. &#34;&#34;&#34; # Formule : E_c = 0.5 * m * v² E = 0.5 * m * v ** 2 # Affiche le résultat print(f&#34;L&#39;énergie cinétique de l&#39;objet est de {E} joules.&#34;) # Exemple d’appel energie_cinetique(2.0, 3.0)Exercice 5 : Aire d’un cercle import math # Import du module math pour utiliser pi def aire_cercle(): &#34;&#34;&#34; Calcule l’aire d’un cercle à partir de son rayon. Demande à l’utilisateur le rayon du cercle (en cm), puis calcule l’aire selon la formule : Aire = π * r². Affiche l’aire arrondie à deux décimales. Exemple : &gt;&gt;&gt; aire_cercle() Entrer le rayon du cercle (en cm) : 3 Aire du cercle de rayon 3.0 cm : 28.27 cm² &#34;&#34;&#34; # Demande le rayon rayon = float(input(&#34;Entrer le rayon du cercle (en cm) : &#34;)) # Calcule l&#39;aire (pi * r²) aire = math.pi * rayon ** 2 # Affiche l&#39;aire arrondie à 2 décimales print(f&#34;Aire du cercle de rayon {rayon} cm : {round(aire, 2)} cm²&#34;) # Appel de la fonction aire_cercle()Exercice 6 : Vérifier la portée locale def tester_variable(): &#34;&#34;&#34; Montre l’utilisation d’une variable locale dans une fonction. Définit une variable locale &#39;prenom&#39; et l’affiche pour illustrer la portée des variables (scope) en Python. Exemple : &gt;&gt;&gt; tester_variable() Dans la fonction tu t&#39;appelles : Nathalie &#34;&#34;&#34; # Variable locale à la fonction prenom = &#34;Nathalie&#34; print(f&#34;Dans la fonction tu t&#39;appelles : {prenom}&#34;) # Appel de la fonction tester_variable() # Essai d&#39;accès à une variable locale en dehors de sa portée # Cela provoquera une erreur print(f&#34;À l&#39;extérieur de la fonction tu t&#39;appelles : {prenom}&#34;)Résultat attendu :">
+    <meta name="generator" content="Relearn 8.2.0+9cac649a184a2967957ef9bbececf9402192846c">
+    <meta name="description" content="Exercice 1 : La loi d’Ohm def calculer_tension(): &#34;&#34;&#34; Calcule la tension électrique à partir de la résistance et du courant. Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères), puis applique la loi d&#39;Ohm : U = R * I. Affiche la tension calculée à l&#39;écran. Exemple : &gt;&gt;&gt; calculer_tension() Entrer la résistance en ohms : 10 Entrer le courant en ampères : 2 La tension est de 20.0 V &#34;&#34;&#34; # Demande la résistance à l&#39;utilisateur R = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Demande le courant à l&#39;utilisateur I = float(input(&#34;Entrer le courant en ampères : &#34;)) # Calcule la tension (U = R * I) U = R * I # Affiche le résultat print(f&#34;La tension est de {U} V&#34;) # Appel de la fonction calculer_tension() Exercice 2 : Élément chimique def element_chm(elt): &#34;&#34;&#34; Affiche le nom d’un élément chimique choisi. Args: elt (str): Nom ou symbole de l’élément chimique. Exemple : &gt;&gt;&gt; element_chm(&#34;Oxygène&#34;) L’élément choisi est : Oxygène &#34;&#34;&#34; # Affiche l&#39;élément chimique choisi print(f&#34;L’élément choisi est : {elt}&#34;) # Exemple d’appel element_chm(&#34;oxygène&#34;) Exercice 3 : Convertir Celsius en Kelvin def convertir_C_en_K(celsius): &#34;&#34;&#34; Convertit une température en degrés Celsius vers Kelvin. Formule utilisée : K = °C &#43; 273.15 Args: celsius (float): Température en degrés Celsius. Affiche : La température équivalente en Kelvin. Exemple : &gt;&gt;&gt; convertir_C_en_K(25) Une température de 25°C équivaut à 298.15 K. &#34;&#34;&#34; # Conversion en Kelvin kelvin = celsius &#43; 273.15 # Affiche la conversion print(f&#34;Une température de {celsius}°C équivaut à {kelvin} K.&#34;) # Exemple d’appel convertir_C_en_K(30) Exercice 4 : Calculer une énergie cinétique def energie_cinetique(m, v): &#34;&#34;&#34; Calcule et affiche l&#39;énergie cinétique d&#39;un objet. Formule utilisée : E_c = 0.5 * m * v² Args: m (float): Masse de l’objet en kilogrammes. v (float): Vitesse de l’objet en mètres par seconde. Affiche : L’énergie cinétique en joules. Exemple : &gt;&gt;&gt; energie_cinetique(2, 3) L&#39;énergie cinétique de l&#39;objet est de 9.0 joules. &#34;&#34;&#34; # Formule : E_c = 0.5 * m * v² E = 0.5 * m * v ** 2 # Affiche le résultat print(f&#34;L&#39;énergie cinétique de l&#39;objet est de {E} joules.&#34;) # Exemple d’appel energie_cinetique(2.0, 3.0) Exercice 5 : Aire d’un cercle import math # Import du module math pour utiliser pi def aire_cercle(): &#34;&#34;&#34; Calcule l’aire d’un cercle à partir de son rayon. Demande à l’utilisateur le rayon du cercle (en cm), puis calcule l’aire selon la formule : Aire = π * r². Affiche l’aire arrondie à deux décimales. Exemple : &gt;&gt;&gt; aire_cercle() Entrer le rayon du cercle (en cm) : 3 Aire du cercle de rayon 3.0 cm : 28.27 cm² &#34;&#34;&#34; # Demande le rayon rayon = float(input(&#34;Entrer le rayon du cercle (en cm) : &#34;)) # Calcule l&#39;aire (pi * r²) aire = math.pi * rayon ** 2 # Affiche l&#39;aire arrondie à 2 décimales print(f&#34;Aire du cercle de rayon {rayon} cm : {round(aire, 2)} cm²&#34;) # Appel de la fonction aire_cercle() Exercice 6 : Vérifier la portée locale def tester_variable(): &#34;&#34;&#34; Montre l’utilisation d’une variable locale dans une fonction. Définit une variable locale &#39;prenom&#39; et l’affiche pour illustrer la portée des variables (scope) en Python. Exemple : &gt;&gt;&gt; tester_variable() Dans la fonction tu t&#39;appelles : Nathalie &#34;&#34;&#34; # Variable locale à la fonction prenom = &#34;Nathalie&#34; print(f&#34;Dans la fonction tu t&#39;appelles : {prenom}&#34;) # Appel de la fonction tester_variable() # Essai d&#39;accès à une variable locale en dehors de sa portée # Cela provoquera une erreur print(f&#34;À l&#39;extérieur de la fonction tu t&#39;appelles : {prenom}&#34;) Résultat attendu :">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Fonctions personnalisées :: 420-SN1-RE">
-    <meta name="twitter:description" content="Exercice 1 : La loi d’Ohm def calculer_tension(): &#34;&#34;&#34; Calcule la tension électrique à partir de la résistance et du courant. Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères), puis applique la loi d&#39;Ohm : U = R * I. Affiche la tension calculée à l&#39;écran. Exemple : &gt;&gt;&gt; calculer_tension() Entrer la résistance en ohms : 10 Entrer le courant en ampères : 2 La tension est de 20.0 V &#34;&#34;&#34; # Demande la résistance à l&#39;utilisateur R = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Demande le courant à l&#39;utilisateur I = float(input(&#34;Entrer le courant en ampères : &#34;)) # Calcule la tension (U = R * I) U = R * I # Affiche le résultat print(f&#34;La tension est de {U} V&#34;) # Appel de la fonction calculer_tension()Exercice 2 : Élément chimique def element_chm(elt): &#34;&#34;&#34; Affiche le nom d’un élément chimique choisi. Args: elt (str): Nom ou symbole de l’élément chimique. Exemple : &gt;&gt;&gt; element_chm(&#34;Oxygène&#34;) L’élément choisi est : Oxygène &#34;&#34;&#34; # Affiche l&#39;élément chimique choisi print(f&#34;L’élément choisi est : {elt}&#34;) # Exemple d’appel element_chm(&#34;oxygène&#34;)Exercice 3 : Convertir Celsius en Kelvin def convertir_C_en_K(celsius): &#34;&#34;&#34; Convertit une température en degrés Celsius vers Kelvin. Formule utilisée : K = °C &#43; 273.15 Args: celsius (float): Température en degrés Celsius. Affiche : La température équivalente en Kelvin. Exemple : &gt;&gt;&gt; convertir_C_en_K(25) Une température de 25°C équivaut à 298.15 K. &#34;&#34;&#34; # Conversion en Kelvin kelvin = celsius &#43; 273.15 # Affiche la conversion print(f&#34;Une température de {celsius}°C équivaut à {kelvin} K.&#34;) # Exemple d’appel convertir_C_en_K(30)Exercice 4 : Calculer une énergie cinétique def energie_cinetique(m, v): &#34;&#34;&#34; Calcule et affiche l&#39;énergie cinétique d&#39;un objet. Formule utilisée : E_c = 0.5 * m * v² Args: m (float): Masse de l’objet en kilogrammes. v (float): Vitesse de l’objet en mètres par seconde. Affiche : L’énergie cinétique en joules. Exemple : &gt;&gt;&gt; energie_cinetique(2, 3) L&#39;énergie cinétique de l&#39;objet est de 9.0 joules. &#34;&#34;&#34; # Formule : E_c = 0.5 * m * v² E = 0.5 * m * v ** 2 # Affiche le résultat print(f&#34;L&#39;énergie cinétique de l&#39;objet est de {E} joules.&#34;) # Exemple d’appel energie_cinetique(2.0, 3.0)Exercice 5 : Aire d’un cercle import math # Import du module math pour utiliser pi def aire_cercle(): &#34;&#34;&#34; Calcule l’aire d’un cercle à partir de son rayon. Demande à l’utilisateur le rayon du cercle (en cm), puis calcule l’aire selon la formule : Aire = π * r². Affiche l’aire arrondie à deux décimales. Exemple : &gt;&gt;&gt; aire_cercle() Entrer le rayon du cercle (en cm) : 3 Aire du cercle de rayon 3.0 cm : 28.27 cm² &#34;&#34;&#34; # Demande le rayon rayon = float(input(&#34;Entrer le rayon du cercle (en cm) : &#34;)) # Calcule l&#39;aire (pi * r²) aire = math.pi * rayon ** 2 # Affiche l&#39;aire arrondie à 2 décimales print(f&#34;Aire du cercle de rayon {rayon} cm : {round(aire, 2)} cm²&#34;) # Appel de la fonction aire_cercle()Exercice 6 : Vérifier la portée locale def tester_variable(): &#34;&#34;&#34; Montre l’utilisation d’une variable locale dans une fonction. Définit une variable locale &#39;prenom&#39; et l’affiche pour illustrer la portée des variables (scope) en Python. Exemple : &gt;&gt;&gt; tester_variable() Dans la fonction tu t&#39;appelles : Nathalie &#34;&#34;&#34; # Variable locale à la fonction prenom = &#34;Nathalie&#34; print(f&#34;Dans la fonction tu t&#39;appelles : {prenom}&#34;) # Appel de la fonction tester_variable() # Essai d&#39;accès à une variable locale en dehors de sa portée # Cela provoquera une erreur print(f&#34;À l&#39;extérieur de la fonction tu t&#39;appelles : {prenom}&#34;)Résultat attendu :">
-    <meta property="og:url" content="https://example.org/solutions_exercices/11_fonctions_perso/index.html">
+    <meta name="twitter:description" content="Exercice 1 : La loi d’Ohm def calculer_tension(): &#34;&#34;&#34; Calcule la tension électrique à partir de la résistance et du courant. Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères), puis applique la loi d&#39;Ohm : U = R * I. Affiche la tension calculée à l&#39;écran. Exemple : &gt;&gt;&gt; calculer_tension() Entrer la résistance en ohms : 10 Entrer le courant en ampères : 2 La tension est de 20.0 V &#34;&#34;&#34; # Demande la résistance à l&#39;utilisateur R = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Demande le courant à l&#39;utilisateur I = float(input(&#34;Entrer le courant en ampères : &#34;)) # Calcule la tension (U = R * I) U = R * I # Affiche le résultat print(f&#34;La tension est de {U} V&#34;) # Appel de la fonction calculer_tension() Exercice 2 : Élément chimique def element_chm(elt): &#34;&#34;&#34; Affiche le nom d’un élément chimique choisi. Args: elt (str): Nom ou symbole de l’élément chimique. Exemple : &gt;&gt;&gt; element_chm(&#34;Oxygène&#34;) L’élément choisi est : Oxygène &#34;&#34;&#34; # Affiche l&#39;élément chimique choisi print(f&#34;L’élément choisi est : {elt}&#34;) # Exemple d’appel element_chm(&#34;oxygène&#34;) Exercice 3 : Convertir Celsius en Kelvin def convertir_C_en_K(celsius): &#34;&#34;&#34; Convertit une température en degrés Celsius vers Kelvin. Formule utilisée : K = °C &#43; 273.15 Args: celsius (float): Température en degrés Celsius. Affiche : La température équivalente en Kelvin. Exemple : &gt;&gt;&gt; convertir_C_en_K(25) Une température de 25°C équivaut à 298.15 K. &#34;&#34;&#34; # Conversion en Kelvin kelvin = celsius &#43; 273.15 # Affiche la conversion print(f&#34;Une température de {celsius}°C équivaut à {kelvin} K.&#34;) # Exemple d’appel convertir_C_en_K(30) Exercice 4 : Calculer une énergie cinétique def energie_cinetique(m, v): &#34;&#34;&#34; Calcule et affiche l&#39;énergie cinétique d&#39;un objet. Formule utilisée : E_c = 0.5 * m * v² Args: m (float): Masse de l’objet en kilogrammes. v (float): Vitesse de l’objet en mètres par seconde. Affiche : L’énergie cinétique en joules. Exemple : &gt;&gt;&gt; energie_cinetique(2, 3) L&#39;énergie cinétique de l&#39;objet est de 9.0 joules. &#34;&#34;&#34; # Formule : E_c = 0.5 * m * v² E = 0.5 * m * v ** 2 # Affiche le résultat print(f&#34;L&#39;énergie cinétique de l&#39;objet est de {E} joules.&#34;) # Exemple d’appel energie_cinetique(2.0, 3.0) Exercice 5 : Aire d’un cercle import math # Import du module math pour utiliser pi def aire_cercle(): &#34;&#34;&#34; Calcule l’aire d’un cercle à partir de son rayon. Demande à l’utilisateur le rayon du cercle (en cm), puis calcule l’aire selon la formule : Aire = π * r². Affiche l’aire arrondie à deux décimales. Exemple : &gt;&gt;&gt; aire_cercle() Entrer le rayon du cercle (en cm) : 3 Aire du cercle de rayon 3.0 cm : 28.27 cm² &#34;&#34;&#34; # Demande le rayon rayon = float(input(&#34;Entrer le rayon du cercle (en cm) : &#34;)) # Calcule l&#39;aire (pi * r²) aire = math.pi * rayon ** 2 # Affiche l&#39;aire arrondie à 2 décimales print(f&#34;Aire du cercle de rayon {rayon} cm : {round(aire, 2)} cm²&#34;) # Appel de la fonction aire_cercle() Exercice 6 : Vérifier la portée locale def tester_variable(): &#34;&#34;&#34; Montre l’utilisation d’une variable locale dans une fonction. Définit une variable locale &#39;prenom&#39; et l’affiche pour illustrer la portée des variables (scope) en Python. Exemple : &gt;&gt;&gt; tester_variable() Dans la fonction tu t&#39;appelles : Nathalie &#34;&#34;&#34; # Variable locale à la fonction prenom = &#34;Nathalie&#34; print(f&#34;Dans la fonction tu t&#39;appelles : {prenom}&#34;) # Appel de la fonction tester_variable() # Essai d&#39;accès à une variable locale en dehors de sa portée # Cela provoquera une erreur print(f&#34;À l&#39;extérieur de la fonction tu t&#39;appelles : {prenom}&#34;) Résultat attendu :">
+    <meta property="og:url" content="/solutions_exercices/11_fonctions_perso/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Fonctions personnalisées :: 420-SN1-RE">
-    <meta property="og:description" content="Exercice 1 : La loi d’Ohm def calculer_tension(): &#34;&#34;&#34; Calcule la tension électrique à partir de la résistance et du courant. Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères), puis applique la loi d&#39;Ohm : U = R * I. Affiche la tension calculée à l&#39;écran. Exemple : &gt;&gt;&gt; calculer_tension() Entrer la résistance en ohms : 10 Entrer le courant en ampères : 2 La tension est de 20.0 V &#34;&#34;&#34; # Demande la résistance à l&#39;utilisateur R = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Demande le courant à l&#39;utilisateur I = float(input(&#34;Entrer le courant en ampères : &#34;)) # Calcule la tension (U = R * I) U = R * I # Affiche le résultat print(f&#34;La tension est de {U} V&#34;) # Appel de la fonction calculer_tension()Exercice 2 : Élément chimique def element_chm(elt): &#34;&#34;&#34; Affiche le nom d’un élément chimique choisi. Args: elt (str): Nom ou symbole de l’élément chimique. Exemple : &gt;&gt;&gt; element_chm(&#34;Oxygène&#34;) L’élément choisi est : Oxygène &#34;&#34;&#34; # Affiche l&#39;élément chimique choisi print(f&#34;L’élément choisi est : {elt}&#34;) # Exemple d’appel element_chm(&#34;oxygène&#34;)Exercice 3 : Convertir Celsius en Kelvin def convertir_C_en_K(celsius): &#34;&#34;&#34; Convertit une température en degrés Celsius vers Kelvin. Formule utilisée : K = °C &#43; 273.15 Args: celsius (float): Température en degrés Celsius. Affiche : La température équivalente en Kelvin. Exemple : &gt;&gt;&gt; convertir_C_en_K(25) Une température de 25°C équivaut à 298.15 K. &#34;&#34;&#34; # Conversion en Kelvin kelvin = celsius &#43; 273.15 # Affiche la conversion print(f&#34;Une température de {celsius}°C équivaut à {kelvin} K.&#34;) # Exemple d’appel convertir_C_en_K(30)Exercice 4 : Calculer une énergie cinétique def energie_cinetique(m, v): &#34;&#34;&#34; Calcule et affiche l&#39;énergie cinétique d&#39;un objet. Formule utilisée : E_c = 0.5 * m * v² Args: m (float): Masse de l’objet en kilogrammes. v (float): Vitesse de l’objet en mètres par seconde. Affiche : L’énergie cinétique en joules. Exemple : &gt;&gt;&gt; energie_cinetique(2, 3) L&#39;énergie cinétique de l&#39;objet est de 9.0 joules. &#34;&#34;&#34; # Formule : E_c = 0.5 * m * v² E = 0.5 * m * v ** 2 # Affiche le résultat print(f&#34;L&#39;énergie cinétique de l&#39;objet est de {E} joules.&#34;) # Exemple d’appel energie_cinetique(2.0, 3.0)Exercice 5 : Aire d’un cercle import math # Import du module math pour utiliser pi def aire_cercle(): &#34;&#34;&#34; Calcule l’aire d’un cercle à partir de son rayon. Demande à l’utilisateur le rayon du cercle (en cm), puis calcule l’aire selon la formule : Aire = π * r². Affiche l’aire arrondie à deux décimales. Exemple : &gt;&gt;&gt; aire_cercle() Entrer le rayon du cercle (en cm) : 3 Aire du cercle de rayon 3.0 cm : 28.27 cm² &#34;&#34;&#34; # Demande le rayon rayon = float(input(&#34;Entrer le rayon du cercle (en cm) : &#34;)) # Calcule l&#39;aire (pi * r²) aire = math.pi * rayon ** 2 # Affiche l&#39;aire arrondie à 2 décimales print(f&#34;Aire du cercle de rayon {rayon} cm : {round(aire, 2)} cm²&#34;) # Appel de la fonction aire_cercle()Exercice 6 : Vérifier la portée locale def tester_variable(): &#34;&#34;&#34; Montre l’utilisation d’une variable locale dans une fonction. Définit une variable locale &#39;prenom&#39; et l’affiche pour illustrer la portée des variables (scope) en Python. Exemple : &gt;&gt;&gt; tester_variable() Dans la fonction tu t&#39;appelles : Nathalie &#34;&#34;&#34; # Variable locale à la fonction prenom = &#34;Nathalie&#34; print(f&#34;Dans la fonction tu t&#39;appelles : {prenom}&#34;) # Appel de la fonction tester_variable() # Essai d&#39;accès à une variable locale en dehors de sa portée # Cela provoquera une erreur print(f&#34;À l&#39;extérieur de la fonction tu t&#39;appelles : {prenom}&#34;)Résultat attendu :">
-    <meta property="og:locale" content="en_us">
+    <meta property="og:description" content="Exercice 1 : La loi d’Ohm def calculer_tension(): &#34;&#34;&#34; Calcule la tension électrique à partir de la résistance et du courant. Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères), puis applique la loi d&#39;Ohm : U = R * I. Affiche la tension calculée à l&#39;écran. Exemple : &gt;&gt;&gt; calculer_tension() Entrer la résistance en ohms : 10 Entrer le courant en ampères : 2 La tension est de 20.0 V &#34;&#34;&#34; # Demande la résistance à l&#39;utilisateur R = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Demande le courant à l&#39;utilisateur I = float(input(&#34;Entrer le courant en ampères : &#34;)) # Calcule la tension (U = R * I) U = R * I # Affiche le résultat print(f&#34;La tension est de {U} V&#34;) # Appel de la fonction calculer_tension() Exercice 2 : Élément chimique def element_chm(elt): &#34;&#34;&#34; Affiche le nom d’un élément chimique choisi. Args: elt (str): Nom ou symbole de l’élément chimique. Exemple : &gt;&gt;&gt; element_chm(&#34;Oxygène&#34;) L’élément choisi est : Oxygène &#34;&#34;&#34; # Affiche l&#39;élément chimique choisi print(f&#34;L’élément choisi est : {elt}&#34;) # Exemple d’appel element_chm(&#34;oxygène&#34;) Exercice 3 : Convertir Celsius en Kelvin def convertir_C_en_K(celsius): &#34;&#34;&#34; Convertit une température en degrés Celsius vers Kelvin. Formule utilisée : K = °C &#43; 273.15 Args: celsius (float): Température en degrés Celsius. Affiche : La température équivalente en Kelvin. Exemple : &gt;&gt;&gt; convertir_C_en_K(25) Une température de 25°C équivaut à 298.15 K. &#34;&#34;&#34; # Conversion en Kelvin kelvin = celsius &#43; 273.15 # Affiche la conversion print(f&#34;Une température de {celsius}°C équivaut à {kelvin} K.&#34;) # Exemple d’appel convertir_C_en_K(30) Exercice 4 : Calculer une énergie cinétique def energie_cinetique(m, v): &#34;&#34;&#34; Calcule et affiche l&#39;énergie cinétique d&#39;un objet. Formule utilisée : E_c = 0.5 * m * v² Args: m (float): Masse de l’objet en kilogrammes. v (float): Vitesse de l’objet en mètres par seconde. Affiche : L’énergie cinétique en joules. Exemple : &gt;&gt;&gt; energie_cinetique(2, 3) L&#39;énergie cinétique de l&#39;objet est de 9.0 joules. &#34;&#34;&#34; # Formule : E_c = 0.5 * m * v² E = 0.5 * m * v ** 2 # Affiche le résultat print(f&#34;L&#39;énergie cinétique de l&#39;objet est de {E} joules.&#34;) # Exemple d’appel energie_cinetique(2.0, 3.0) Exercice 5 : Aire d’un cercle import math # Import du module math pour utiliser pi def aire_cercle(): &#34;&#34;&#34; Calcule l’aire d’un cercle à partir de son rayon. Demande à l’utilisateur le rayon du cercle (en cm), puis calcule l’aire selon la formule : Aire = π * r². Affiche l’aire arrondie à deux décimales. Exemple : &gt;&gt;&gt; aire_cercle() Entrer le rayon du cercle (en cm) : 3 Aire du cercle de rayon 3.0 cm : 28.27 cm² &#34;&#34;&#34; # Demande le rayon rayon = float(input(&#34;Entrer le rayon du cercle (en cm) : &#34;)) # Calcule l&#39;aire (pi * r²) aire = math.pi * rayon ** 2 # Affiche l&#39;aire arrondie à 2 décimales print(f&#34;Aire du cercle de rayon {rayon} cm : {round(aire, 2)} cm²&#34;) # Appel de la fonction aire_cercle() Exercice 6 : Vérifier la portée locale def tester_variable(): &#34;&#34;&#34; Montre l’utilisation d’une variable locale dans une fonction. Définit une variable locale &#39;prenom&#39; et l’affiche pour illustrer la portée des variables (scope) en Python. Exemple : &gt;&gt;&gt; tester_variable() Dans la fonction tu t&#39;appelles : Nathalie &#34;&#34;&#34; # Variable locale à la fonction prenom = &#34;Nathalie&#34; print(f&#34;Dans la fonction tu t&#39;appelles : {prenom}&#34;) # Appel de la fonction tester_variable() # Essai d&#39;accès à une variable locale en dehors de sa portée # Cela provoquera une erreur print(f&#34;À l&#39;extérieur de la fonction tu t&#39;appelles : {prenom}&#34;) Résultat attendu :">
+    <meta property="og:locale" content="fr">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Fonctions personnalisées :: 420-SN1-RE">
-    <meta itemprop="description" content="Exercice 1 : La loi d’Ohm def calculer_tension(): &#34;&#34;&#34; Calcule la tension électrique à partir de la résistance et du courant. Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères), puis applique la loi d&#39;Ohm : U = R * I. Affiche la tension calculée à l&#39;écran. Exemple : &gt;&gt;&gt; calculer_tension() Entrer la résistance en ohms : 10 Entrer le courant en ampères : 2 La tension est de 20.0 V &#34;&#34;&#34; # Demande la résistance à l&#39;utilisateur R = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Demande le courant à l&#39;utilisateur I = float(input(&#34;Entrer le courant en ampères : &#34;)) # Calcule la tension (U = R * I) U = R * I # Affiche le résultat print(f&#34;La tension est de {U} V&#34;) # Appel de la fonction calculer_tension()Exercice 2 : Élément chimique def element_chm(elt): &#34;&#34;&#34; Affiche le nom d’un élément chimique choisi. Args: elt (str): Nom ou symbole de l’élément chimique. Exemple : &gt;&gt;&gt; element_chm(&#34;Oxygène&#34;) L’élément choisi est : Oxygène &#34;&#34;&#34; # Affiche l&#39;élément chimique choisi print(f&#34;L’élément choisi est : {elt}&#34;) # Exemple d’appel element_chm(&#34;oxygène&#34;)Exercice 3 : Convertir Celsius en Kelvin def convertir_C_en_K(celsius): &#34;&#34;&#34; Convertit une température en degrés Celsius vers Kelvin. Formule utilisée : K = °C &#43; 273.15 Args: celsius (float): Température en degrés Celsius. Affiche : La température équivalente en Kelvin. Exemple : &gt;&gt;&gt; convertir_C_en_K(25) Une température de 25°C équivaut à 298.15 K. &#34;&#34;&#34; # Conversion en Kelvin kelvin = celsius &#43; 273.15 # Affiche la conversion print(f&#34;Une température de {celsius}°C équivaut à {kelvin} K.&#34;) # Exemple d’appel convertir_C_en_K(30)Exercice 4 : Calculer une énergie cinétique def energie_cinetique(m, v): &#34;&#34;&#34; Calcule et affiche l&#39;énergie cinétique d&#39;un objet. Formule utilisée : E_c = 0.5 * m * v² Args: m (float): Masse de l’objet en kilogrammes. v (float): Vitesse de l’objet en mètres par seconde. Affiche : L’énergie cinétique en joules. Exemple : &gt;&gt;&gt; energie_cinetique(2, 3) L&#39;énergie cinétique de l&#39;objet est de 9.0 joules. &#34;&#34;&#34; # Formule : E_c = 0.5 * m * v² E = 0.5 * m * v ** 2 # Affiche le résultat print(f&#34;L&#39;énergie cinétique de l&#39;objet est de {E} joules.&#34;) # Exemple d’appel energie_cinetique(2.0, 3.0)Exercice 5 : Aire d’un cercle import math # Import du module math pour utiliser pi def aire_cercle(): &#34;&#34;&#34; Calcule l’aire d’un cercle à partir de son rayon. Demande à l’utilisateur le rayon du cercle (en cm), puis calcule l’aire selon la formule : Aire = π * r². Affiche l’aire arrondie à deux décimales. Exemple : &gt;&gt;&gt; aire_cercle() Entrer le rayon du cercle (en cm) : 3 Aire du cercle de rayon 3.0 cm : 28.27 cm² &#34;&#34;&#34; # Demande le rayon rayon = float(input(&#34;Entrer le rayon du cercle (en cm) : &#34;)) # Calcule l&#39;aire (pi * r²) aire = math.pi * rayon ** 2 # Affiche l&#39;aire arrondie à 2 décimales print(f&#34;Aire du cercle de rayon {rayon} cm : {round(aire, 2)} cm²&#34;) # Appel de la fonction aire_cercle()Exercice 6 : Vérifier la portée locale def tester_variable(): &#34;&#34;&#34; Montre l’utilisation d’une variable locale dans une fonction. Définit une variable locale &#39;prenom&#39; et l’affiche pour illustrer la portée des variables (scope) en Python. Exemple : &gt;&gt;&gt; tester_variable() Dans la fonction tu t&#39;appelles : Nathalie &#34;&#34;&#34; # Variable locale à la fonction prenom = &#34;Nathalie&#34; print(f&#34;Dans la fonction tu t&#39;appelles : {prenom}&#34;) # Appel de la fonction tester_variable() # Essai d&#39;accès à une variable locale en dehors de sa portée # Cela provoquera une erreur print(f&#34;À l&#39;extérieur de la fonction tu t&#39;appelles : {prenom}&#34;)Résultat attendu :">
+    <meta itemprop="description" content="Exercice 1 : La loi d’Ohm def calculer_tension(): &#34;&#34;&#34; Calcule la tension électrique à partir de la résistance et du courant. Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères), puis applique la loi d&#39;Ohm : U = R * I. Affiche la tension calculée à l&#39;écran. Exemple : &gt;&gt;&gt; calculer_tension() Entrer la résistance en ohms : 10 Entrer le courant en ampères : 2 La tension est de 20.0 V &#34;&#34;&#34; # Demande la résistance à l&#39;utilisateur R = float(input(&#34;Entrer la résistance en ohms : &#34;)) # Demande le courant à l&#39;utilisateur I = float(input(&#34;Entrer le courant en ampères : &#34;)) # Calcule la tension (U = R * I) U = R * I # Affiche le résultat print(f&#34;La tension est de {U} V&#34;) # Appel de la fonction calculer_tension() Exercice 2 : Élément chimique def element_chm(elt): &#34;&#34;&#34; Affiche le nom d’un élément chimique choisi. Args: elt (str): Nom ou symbole de l’élément chimique. Exemple : &gt;&gt;&gt; element_chm(&#34;Oxygène&#34;) L’élément choisi est : Oxygène &#34;&#34;&#34; # Affiche l&#39;élément chimique choisi print(f&#34;L’élément choisi est : {elt}&#34;) # Exemple d’appel element_chm(&#34;oxygène&#34;) Exercice 3 : Convertir Celsius en Kelvin def convertir_C_en_K(celsius): &#34;&#34;&#34; Convertit une température en degrés Celsius vers Kelvin. Formule utilisée : K = °C &#43; 273.15 Args: celsius (float): Température en degrés Celsius. Affiche : La température équivalente en Kelvin. Exemple : &gt;&gt;&gt; convertir_C_en_K(25) Une température de 25°C équivaut à 298.15 K. &#34;&#34;&#34; # Conversion en Kelvin kelvin = celsius &#43; 273.15 # Affiche la conversion print(f&#34;Une température de {celsius}°C équivaut à {kelvin} K.&#34;) # Exemple d’appel convertir_C_en_K(30) Exercice 4 : Calculer une énergie cinétique def energie_cinetique(m, v): &#34;&#34;&#34; Calcule et affiche l&#39;énergie cinétique d&#39;un objet. Formule utilisée : E_c = 0.5 * m * v² Args: m (float): Masse de l’objet en kilogrammes. v (float): Vitesse de l’objet en mètres par seconde. Affiche : L’énergie cinétique en joules. Exemple : &gt;&gt;&gt; energie_cinetique(2, 3) L&#39;énergie cinétique de l&#39;objet est de 9.0 joules. &#34;&#34;&#34; # Formule : E_c = 0.5 * m * v² E = 0.5 * m * v ** 2 # Affiche le résultat print(f&#34;L&#39;énergie cinétique de l&#39;objet est de {E} joules.&#34;) # Exemple d’appel energie_cinetique(2.0, 3.0) Exercice 5 : Aire d’un cercle import math # Import du module math pour utiliser pi def aire_cercle(): &#34;&#34;&#34; Calcule l’aire d’un cercle à partir de son rayon. Demande à l’utilisateur le rayon du cercle (en cm), puis calcule l’aire selon la formule : Aire = π * r². Affiche l’aire arrondie à deux décimales. Exemple : &gt;&gt;&gt; aire_cercle() Entrer le rayon du cercle (en cm) : 3 Aire du cercle de rayon 3.0 cm : 28.27 cm² &#34;&#34;&#34; # Demande le rayon rayon = float(input(&#34;Entrer le rayon du cercle (en cm) : &#34;)) # Calcule l&#39;aire (pi * r²) aire = math.pi * rayon ** 2 # Affiche l&#39;aire arrondie à 2 décimales print(f&#34;Aire du cercle de rayon {rayon} cm : {round(aire, 2)} cm²&#34;) # Appel de la fonction aire_cercle() Exercice 6 : Vérifier la portée locale def tester_variable(): &#34;&#34;&#34; Montre l’utilisation d’une variable locale dans une fonction. Définit une variable locale &#39;prenom&#39; et l’affiche pour illustrer la portée des variables (scope) en Python. Exemple : &gt;&gt;&gt; tester_variable() Dans la fonction tu t&#39;appelles : Nathalie &#34;&#34;&#34; # Variable locale à la fonction prenom = &#34;Nathalie&#34; print(f&#34;Dans la fonction tu t&#39;appelles : {prenom}&#34;) # Appel de la fonction tester_variable() # Essai d&#39;accès à une variable locale en dehors de sa portée # Cela provoquera une erreur print(f&#34;À l&#39;extérieur de la fonction tu t&#39;appelles : {prenom}&#34;) Résultat attendu :">
     <meta itemprop="wordCount" content="597">
     <title> Fonctions personnalisées :: 420-SN1-RE</title>
     <link href="/solutions_exercices/11_fonctions_perso/index.xml" rel="alternate" type="application/rss+xml" title=" Fonctions personnalisées :: 420-SN1-RE">
-    <link href="/images/logo.png?1762782779" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762782779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762782779" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762782779" rel="stylesheet">
-    <link href="/css/theme.min.css?1762782779" rel="stylesheet">
-    <link href="/css/format-html.min.css?1762782779" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1762782779" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1762782779" defer></script>
-    <script src="/js/search.min.js?1762782779" defer></script>
+    <link href="/images/logo.png?1762817295" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1762817295" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1762817295" defer></script>
+    <script src="/js/search-lunr.min.js?1762817295" defer></script>
+    <script src="/js/search.min.js?1762817295" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1762817295";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.fr.min.js?1762817295" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762817295" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762817295" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762817295" rel="stylesheet">
+    <link href="/css/theme.min.css?1762817295" rel="stylesheet">
+    <link href="/css/format-html.min.css?1762817295" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -40,9 +49,7 @@
       window.relearn.path='\/solutions_exercices\/11_fonctions_perso\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/example.org';
-      window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1762782779";
+      window.relearn.absBaseUri='';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -51,6 +58,15 @@
       window.relearn.getItem = (s,n) => {return s.getItem(n)};
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
       // variant stuff
       window.relearn.themevariants = [ 'auto' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -78,17 +94,8 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-      // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
-      window.T_Reset_view = `Reset view`;
-      window.T_View_reset = `View reset!`;
-      window.T_No_results_found = `No results found for "{0}"`;
-      window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1762782779" rel="stylesheet">
+    <link href="/css/custom.css?1762817295" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_exercices/11_fonctions_perso/index.html">
     <div id="R-body" class="default-animation">
@@ -97,9 +104,11 @@
         <div class="topbar-wrapper">
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
-            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -116,17 +125,17 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_exercices/index.html"><span itemprop="name">Solutions des exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Fonctions personnalisées</span><meta itemprop="position" content="3"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_exercices/index.html"><span itemprop="name">Solutions des exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Fonctions personnalisées</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/9_fichiers/index.html" title="Manipulation de données dans un fichier (avec Pandas) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><a href="/solutions_exercices/9_fichiers/index.html" title="Manipulation de données dans un fichier (avec Pandas) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_ateliers/index.html" title="Solutions des ateliers (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><a href="/solutions_ateliers/index.html" title="Solutions des ateliers (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
                   <div class="topbar-area topbar-area-more" data-area="more">
@@ -140,11 +149,263 @@
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable solutions_exercices" tabindex="-1">
         <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="fonctions-personnalisées"> Fonctions personnalisées</h1>
+
+<h2 id="exercice-1--la-loi-dohm">Exercice 1 : La loi d’Ohm</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculer_tension</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Calcule la tension électrique à partir de la résistance et du courant.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Demande à l&#39;utilisateur d&#39;entrer la résistance (en ohms) et le courant (en ampères),
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    puis applique la loi d&#39;Ohm : U = R * I.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Affiche la tension calculée à l&#39;écran.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Exemple :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt;&gt;&gt; calculer_tension()
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Entrer la résistance en ohms : 10
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Entrer le courant en ampères : 2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        La tension est de 20.0 V
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Demande la résistance à l&#39;utilisateur</span>
+</span></span><span style="display:flex;"><span>    R <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrer la résistance en ohms : &#34;</span>))
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Demande le courant à l&#39;utilisateur</span>
+</span></span><span style="display:flex;"><span>    I <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrer le courant en ampères : &#34;</span>))
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Calcule la tension (U = R * I)</span>
+</span></span><span style="display:flex;"><span>    U <span style="color:#f92672">=</span> R <span style="color:#f92672">*</span> I
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Affiche le résultat</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La tension est de </span><span style="color:#e6db74">{</span>U<span style="color:#e6db74">}</span><span style="color:#e6db74"> V&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Appel de la fonction</span>
+</span></span><span style="display:flex;"><span>calculer_tension()</span></span></code></pre></div>
+<h2 id="exercice-2--élément-chimique">Exercice 2 : Élément chimique</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">element_chm</span>(elt):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Affiche le nom d’un élément chimique choisi.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        elt (str): Nom ou symbole de l’élément chimique.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Exemple :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt;&gt;&gt; element_chm(&#34;Oxygène&#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        L’élément choisi est : Oxygène
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Affiche l&#39;élément chimique choisi</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;L’élément choisi est : </span><span style="color:#e6db74">{</span>elt<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple d’appel</span>
+</span></span><span style="display:flex;"><span>element_chm(<span style="color:#e6db74">&#34;oxygène&#34;</span>)</span></span></code></pre></div>
+<h2 id="exercice-3--convertir-celsius-en-kelvin">Exercice 3 : Convertir Celsius en Kelvin</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">convertir_C_en_K</span>(celsius):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Convertit une température en degrés Celsius vers Kelvin.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Formule utilisée : K = °C + 273.15
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        celsius (float): Température en degrés Celsius.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Affiche :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        La température équivalente en Kelvin.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Exemple :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt;&gt;&gt; convertir_C_en_K(25)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Une température de 25°C équivaut à 298.15 K.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Conversion en Kelvin</span>
+</span></span><span style="display:flex;"><span>    kelvin <span style="color:#f92672">=</span> celsius <span style="color:#f92672">+</span> <span style="color:#ae81ff">273.15</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Affiche la conversion</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Une température de </span><span style="color:#e6db74">{</span>celsius<span style="color:#e6db74">}</span><span style="color:#e6db74">°C équivaut à </span><span style="color:#e6db74">{</span>kelvin<span style="color:#e6db74">}</span><span style="color:#e6db74"> K.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple d’appel</span>
+</span></span><span style="display:flex;"><span>convertir_C_en_K(<span style="color:#ae81ff">30</span>)</span></span></code></pre></div>
+<h2 id="exercice-4--calculer-une-énergie-cinétique">Exercice 4 : Calculer une énergie cinétique</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">energie_cinetique</span>(m, v):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Calcule et affiche l&#39;énergie cinétique d&#39;un objet.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Formule utilisée : E_c = 0.5 * m * v²
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        m (float): Masse de l’objet en kilogrammes.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        v (float): Vitesse de l’objet en mètres par seconde.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Affiche :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        L’énergie cinétique en joules.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Exemple :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt;&gt;&gt; energie_cinetique(2, 3)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        L&#39;énergie cinétique de l&#39;objet est de 9.0 joules.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Formule : E_c = 0.5 * m * v²</span>
+</span></span><span style="display:flex;"><span>    E <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">*</span> m <span style="color:#f92672">*</span> v <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Affiche le résultat</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;L&#39;énergie cinétique de l&#39;objet est de </span><span style="color:#e6db74">{</span>E<span style="color:#e6db74">}</span><span style="color:#e6db74"> joules.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple d’appel</span>
+</span></span><span style="display:flex;"><span>energie_cinetique(<span style="color:#ae81ff">2.0</span>, <span style="color:#ae81ff">3.0</span>)</span></span></code></pre></div>
+<h2 id="exercice-5--aire-dun-cercle">Exercice 5 : Aire d’un cercle</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math  <span style="color:#75715e"># Import du module math pour utiliser pi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">aire_cercle</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Calcule l’aire d’un cercle à partir de son rayon.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Demande à l’utilisateur le rayon du cercle (en cm), puis calcule l’aire
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    selon la formule : Aire = π * r².
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Affiche l’aire arrondie à deux décimales.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Exemple :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt;&gt;&gt; aire_cercle()
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Entrer le rayon du cercle (en cm) : 3
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Aire du cercle de rayon 3.0 cm : 28.27 cm²
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Demande le rayon</span>
+</span></span><span style="display:flex;"><span>    rayon <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Entrer le rayon du cercle (en cm) : &#34;</span>))
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Calcule l&#39;aire (pi * r²)</span>
+</span></span><span style="display:flex;"><span>    aire <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>pi <span style="color:#f92672">*</span> rayon <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Affiche l&#39;aire arrondie à 2 décimales</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Aire du cercle de rayon </span><span style="color:#e6db74">{</span>rayon<span style="color:#e6db74">}</span><span style="color:#e6db74"> cm : </span><span style="color:#e6db74">{</span>round(aire, <span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> cm²&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Appel de la fonction</span>
+</span></span><span style="display:flex;"><span>aire_cercle()</span></span></code></pre></div>
+<h2 id="exercice-6--vérifier-la-portée-locale">Exercice 6 : Vérifier la portée locale</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">tester_variable</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Montre l’utilisation d’une variable locale dans une fonction.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Définit une variable locale &#39;prenom&#39; et l’affiche pour illustrer la portée
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    des variables (scope) en Python.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Exemple :
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt;&gt;&gt; tester_variable()
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Dans la fonction tu t&#39;appelles : Nathalie
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Variable locale à la fonction</span>
+</span></span><span style="display:flex;"><span>    prenom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Nathalie&#34;</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Dans la fonction tu t&#39;appelles : </span><span style="color:#e6db74">{</span>prenom<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Appel de la fonction</span>
+</span></span><span style="display:flex;"><span>tester_variable()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Essai d&#39;accès à une variable locale en dehors de sa portée</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cela provoquera une erreur</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;À l&#39;extérieur de la fonction tu t&#39;appelles : </span><span style="color:#e6db74">{</span>prenom<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<p><strong>Résultat attendu :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>NameError: name &#39;prenom&#39; is not defined</span></span></code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
         </div>
       </main>
     </div>
-    <script src="/js/clipboard/clipboard.min.js?1762782779" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762782779" defer></script>
-    <script src="/js/theme.min.js?1762782779" defer></script>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-url="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-url="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-url="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-url="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-url="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-url="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-url="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-url="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
+            <li class="" data-nav-url="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
+            <li class="" data-nav-url="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-url="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Manipulation de données dans un fichier (avec Pandas)</a></li>
+            <li class="" data-nav-url="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
+            <li class="" data-nav-url="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
+            <li class="" data-nav-url="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="" data-nav-url="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> 🧬 Projet intégrateur — L’ADN du coupable</a></li>
+            <li class="" data-nav-url="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="parent " data-nav-url="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu">
+            <li class="" data-nav-url="/solutions_exercices/2_variables_types_entree_fn/index.html"><a class="padding" href="/solutions_exercices/2_variables_types_entree_fn/index.html"><b>2.</b> Variables, types, entrées et fonctions</a></li>
+            <li class="" data-nav-url="/solutions_exercices/3_struct_cond/index.html"><a class="padding" href="/solutions_exercices/3_struct_cond/index.html"><b>3.</b> Structures conditionnelles</a></li>
+            <li class="" data-nav-url="/solutions_exercices/4_boucles_debogage/index.html"><a class="padding" href="/solutions_exercices/4_boucles_debogage/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-url="/solutions_exercices/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_exercices/6_listes_chaines_visualisation/index.html">6. Listes, chaines et visualisation des données</a></li>
+            <li class="" data-nav-url="/solutions_exercices/7_dictionnaires/index.html"><a class="padding" href="/solutions_exercices/7_dictionnaires/index.html"><b>7.</b> Dictionnaires</a></li>
+            <li class="" data-nav-url="/solutions_exercices/8_numpy_regression/index.html"><a class="padding" href="/solutions_exercices/8_numpy_regression/index.html"><b>8.</b> Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-url="/solutions_exercices/9_fichiers/index.html"><a class="padding" href="/solutions_exercices/9_fichiers/index.html"><b>9.</b> Manipulation de données dans un fichier (avec Pandas)</a></li>
+            <li class="active " data-nav-url="/solutions_exercices/11_fonctions_perso/index.html"><a class="padding" href="/solutions_exercices/11_fonctions_perso/index.html"><b>11.</b> Fonctions personnalisées</a></li></ul></li>
+            <li class="" data-nav-url="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1762817295" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762817295" defer></script>
+    <script src="/js/theme.min.js?1762817295" defer></script>
   </body>
 </html>

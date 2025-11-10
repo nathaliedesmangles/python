@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+<html lang="fr" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;)Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre)Exercice 3 prenoms = [] for i in range(3): prenom = input(f&#34;Entrez le prénom {i&#43;1} : &#34;) prenoms.append(prenom) print(&#34;Ordre alphabétique croissant :&#34;) for prenom in sorted(prenoms): print(prenom) print(&#34;Ordre alphabétique décroissant :&#34;) for prenom in sorted(prenoms, reverse=True): print(prenom)Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → GChaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.append(len(mot)) print(nb_lettres) # [12, 5, 8]Exercice 6 adn = &#34;atgct&#34; arn = adn.upper().replace(&#34;T&#34;, &#34;U&#34;) print(arn) # AUGCUGraphiques avec matplotlib Exercice 7 import matplotlib.pyplot as plt heures = [0, 4, 8, 12, 16, 20, 24] temperatures = [-5, -2, 3, 7, 6, 1, -2] plt.plot(heures, temperatures) plt.title(&#34;Température en fonction de l’heure&#34;) plt.xlabel(&#34;Heure (h)&#34;) plt.ylabel(&#34;Température (C)&#34;) plt.grid() plt.show()Exercice 8 import matplotlib.pyplot as plt temp = [10, 20, 30, 40, 50] attendu = [2.1, 3.8, 5.6, 7.3, 9.0] mesure = [2.0, 3.9, 5.2, 7.5, 8.8] plt.plot(temp, attendu, &#34;ok-&#34;, label=&#34;Valeurs attendues&#34;) # o = rond, k = noir, - = ligne plt.bar(temp, mesure, color=&#34;blue&#34;, alpha=0.5, label=&#34;Valeurs mesurées&#34;) plt.title(&#34;Comparaison des concentrations&#34;) plt.xlabel(&#34;Température (C)&#34;) plt.ylabel(&#34;Concentration&#34;) plt.grid() plt.legend() plt.show()">
+    <meta name="generator" content="Relearn 8.2.0+9cac649a184a2967957ef9bbececf9402192846c">
+    <meta name="description" content="Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;) Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre) Exercice 3 prenoms = [] for i in range(3): prenom = input(f&#34;Entrez le prénom {i&#43;1} : &#34;) prenoms.append(prenom) print(&#34;Ordre alphabétique croissant :&#34;) for prenom in sorted(prenoms): print(prenom) print(&#34;Ordre alphabétique décroissant :&#34;) for prenom in sorted(prenoms, reverse=True): print(prenom) Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → G Chaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.append(len(mot)) print(nb_lettres) # [12, 5, 8] Exercice 6 adn = &#34;atgct&#34; arn = adn.upper().replace(&#34;T&#34;, &#34;U&#34;) print(arn) # AUGCU Graphiques avec matplotlib Exercice 7 import matplotlib.pyplot as plt heures = [0, 4, 8, 12, 16, 20, 24] temperatures = [-5, -2, 3, 7, 6, 1, -2] plt.plot(heures, temperatures) plt.title(&#34;Température en fonction de l’heure&#34;) plt.xlabel(&#34;Heure (h)&#34;) plt.ylabel(&#34;Température (C)&#34;) plt.grid() plt.show() Exercice 8 import matplotlib.pyplot as plt temp = [10, 20, 30, 40, 50] attendu = [2.1, 3.8, 5.6, 7.3, 9.0] mesure = [2.0, 3.9, 5.2, 7.5, 8.8] plt.plot(temp, attendu, &#34;ok-&#34;, label=&#34;Valeurs attendues&#34;) # o = rond, k = noir, - = ligne plt.bar(temp, mesure, color=&#34;blue&#34;, alpha=0.5, label=&#34;Valeurs mesurées&#34;) plt.title(&#34;Comparaison des concentrations&#34;) plt.xlabel(&#34;Température (C)&#34;) plt.ylabel(&#34;Concentration&#34;) plt.grid() plt.legend() plt.show()">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Listes, chaines et visualisation des données :: 420-SN1-RE">
-    <meta name="twitter:description" content="Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;)Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre)Exercice 3 prenoms = [] for i in range(3): prenom = input(f&#34;Entrez le prénom {i&#43;1} : &#34;) prenoms.append(prenom) print(&#34;Ordre alphabétique croissant :&#34;) for prenom in sorted(prenoms): print(prenom) print(&#34;Ordre alphabétique décroissant :&#34;) for prenom in sorted(prenoms, reverse=True): print(prenom)Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → GChaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.append(len(mot)) print(nb_lettres) # [12, 5, 8]Exercice 6 adn = &#34;atgct&#34; arn = adn.upper().replace(&#34;T&#34;, &#34;U&#34;) print(arn) # AUGCUGraphiques avec matplotlib Exercice 7 import matplotlib.pyplot as plt heures = [0, 4, 8, 12, 16, 20, 24] temperatures = [-5, -2, 3, 7, 6, 1, -2] plt.plot(heures, temperatures) plt.title(&#34;Température en fonction de l’heure&#34;) plt.xlabel(&#34;Heure (h)&#34;) plt.ylabel(&#34;Température (C)&#34;) plt.grid() plt.show()Exercice 8 import matplotlib.pyplot as plt temp = [10, 20, 30, 40, 50] attendu = [2.1, 3.8, 5.6, 7.3, 9.0] mesure = [2.0, 3.9, 5.2, 7.5, 8.8] plt.plot(temp, attendu, &#34;ok-&#34;, label=&#34;Valeurs attendues&#34;) # o = rond, k = noir, - = ligne plt.bar(temp, mesure, color=&#34;blue&#34;, alpha=0.5, label=&#34;Valeurs mesurées&#34;) plt.title(&#34;Comparaison des concentrations&#34;) plt.xlabel(&#34;Température (C)&#34;) plt.ylabel(&#34;Concentration&#34;) plt.grid() plt.legend() plt.show()">
-    <meta property="og:url" content="https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html">
+    <meta name="twitter:description" content="Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;) Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre) Exercice 3 prenoms = [] for i in range(3): prenom = input(f&#34;Entrez le prénom {i&#43;1} : &#34;) prenoms.append(prenom) print(&#34;Ordre alphabétique croissant :&#34;) for prenom in sorted(prenoms): print(prenom) print(&#34;Ordre alphabétique décroissant :&#34;) for prenom in sorted(prenoms, reverse=True): print(prenom) Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → G Chaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.append(len(mot)) print(nb_lettres) # [12, 5, 8] Exercice 6 adn = &#34;atgct&#34; arn = adn.upper().replace(&#34;T&#34;, &#34;U&#34;) print(arn) # AUGCU Graphiques avec matplotlib Exercice 7 import matplotlib.pyplot as plt heures = [0, 4, 8, 12, 16, 20, 24] temperatures = [-5, -2, 3, 7, 6, 1, -2] plt.plot(heures, temperatures) plt.title(&#34;Température en fonction de l’heure&#34;) plt.xlabel(&#34;Heure (h)&#34;) plt.ylabel(&#34;Température (C)&#34;) plt.grid() plt.show() Exercice 8 import matplotlib.pyplot as plt temp = [10, 20, 30, 40, 50] attendu = [2.1, 3.8, 5.6, 7.3, 9.0] mesure = [2.0, 3.9, 5.2, 7.5, 8.8] plt.plot(temp, attendu, &#34;ok-&#34;, label=&#34;Valeurs attendues&#34;) # o = rond, k = noir, - = ligne plt.bar(temp, mesure, color=&#34;blue&#34;, alpha=0.5, label=&#34;Valeurs mesurées&#34;) plt.title(&#34;Comparaison des concentrations&#34;) plt.xlabel(&#34;Température (C)&#34;) plt.ylabel(&#34;Concentration&#34;) plt.grid() plt.legend() plt.show()">
+    <meta property="og:url" content="/solutions_exercices/6_listes_chaines_visualisation/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Listes, chaines et visualisation des données :: 420-SN1-RE">
-    <meta property="og:description" content="Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;)Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre)Exercice 3 prenoms = [] for i in range(3): prenom = input(f&#34;Entrez le prénom {i&#43;1} : &#34;) prenoms.append(prenom) print(&#34;Ordre alphabétique croissant :&#34;) for prenom in sorted(prenoms): print(prenom) print(&#34;Ordre alphabétique décroissant :&#34;) for prenom in sorted(prenoms, reverse=True): print(prenom)Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → GChaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.append(len(mot)) print(nb_lettres) # [12, 5, 8]Exercice 6 adn = &#34;atgct&#34; arn = adn.upper().replace(&#34;T&#34;, &#34;U&#34;) print(arn) # AUGCUGraphiques avec matplotlib Exercice 7 import matplotlib.pyplot as plt heures = [0, 4, 8, 12, 16, 20, 24] temperatures = [-5, -2, 3, 7, 6, 1, -2] plt.plot(heures, temperatures) plt.title(&#34;Température en fonction de l’heure&#34;) plt.xlabel(&#34;Heure (h)&#34;) plt.ylabel(&#34;Température (C)&#34;) plt.grid() plt.show()Exercice 8 import matplotlib.pyplot as plt temp = [10, 20, 30, 40, 50] attendu = [2.1, 3.8, 5.6, 7.3, 9.0] mesure = [2.0, 3.9, 5.2, 7.5, 8.8] plt.plot(temp, attendu, &#34;ok-&#34;, label=&#34;Valeurs attendues&#34;) # o = rond, k = noir, - = ligne plt.bar(temp, mesure, color=&#34;blue&#34;, alpha=0.5, label=&#34;Valeurs mesurées&#34;) plt.title(&#34;Comparaison des concentrations&#34;) plt.xlabel(&#34;Température (C)&#34;) plt.ylabel(&#34;Concentration&#34;) plt.grid() plt.legend() plt.show()">
-    <meta property="og:locale" content="en_us">
+    <meta property="og:description" content="Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;) Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre) Exercice 3 prenoms = [] for i in range(3): prenom = input(f&#34;Entrez le prénom {i&#43;1} : &#34;) prenoms.append(prenom) print(&#34;Ordre alphabétique croissant :&#34;) for prenom in sorted(prenoms): print(prenom) print(&#34;Ordre alphabétique décroissant :&#34;) for prenom in sorted(prenoms, reverse=True): print(prenom) Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → G Chaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.append(len(mot)) print(nb_lettres) # [12, 5, 8] Exercice 6 adn = &#34;atgct&#34; arn = adn.upper().replace(&#34;T&#34;, &#34;U&#34;) print(arn) # AUGCU Graphiques avec matplotlib Exercice 7 import matplotlib.pyplot as plt heures = [0, 4, 8, 12, 16, 20, 24] temperatures = [-5, -2, 3, 7, 6, 1, -2] plt.plot(heures, temperatures) plt.title(&#34;Température en fonction de l’heure&#34;) plt.xlabel(&#34;Heure (h)&#34;) plt.ylabel(&#34;Température (C)&#34;) plt.grid() plt.show() Exercice 8 import matplotlib.pyplot as plt temp = [10, 20, 30, 40, 50] attendu = [2.1, 3.8, 5.6, 7.3, 9.0] mesure = [2.0, 3.9, 5.2, 7.5, 8.8] plt.plot(temp, attendu, &#34;ok-&#34;, label=&#34;Valeurs attendues&#34;) # o = rond, k = noir, - = ligne plt.bar(temp, mesure, color=&#34;blue&#34;, alpha=0.5, label=&#34;Valeurs mesurées&#34;) plt.title(&#34;Comparaison des concentrations&#34;) plt.xlabel(&#34;Température (C)&#34;) plt.ylabel(&#34;Concentration&#34;) plt.grid() plt.legend() plt.show()">
+    <meta property="og:locale" content="fr">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Listes, chaines et visualisation des données :: 420-SN1-RE">
-    <meta itemprop="description" content="Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;)Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre)Exercice 3 prenoms = [] for i in range(3): prenom = input(f&#34;Entrez le prénom {i&#43;1} : &#34;) prenoms.append(prenom) print(&#34;Ordre alphabétique croissant :&#34;) for prenom in sorted(prenoms): print(prenom) print(&#34;Ordre alphabétique décroissant :&#34;) for prenom in sorted(prenoms, reverse=True): print(prenom)Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → GChaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.append(len(mot)) print(nb_lettres) # [12, 5, 8]Exercice 6 adn = &#34;atgct&#34; arn = adn.upper().replace(&#34;T&#34;, &#34;U&#34;) print(arn) # AUGCUGraphiques avec matplotlib Exercice 7 import matplotlib.pyplot as plt heures = [0, 4, 8, 12, 16, 20, 24] temperatures = [-5, -2, 3, 7, 6, 1, -2] plt.plot(heures, temperatures) plt.title(&#34;Température en fonction de l’heure&#34;) plt.xlabel(&#34;Heure (h)&#34;) plt.ylabel(&#34;Température (C)&#34;) plt.grid() plt.show()Exercice 8 import matplotlib.pyplot as plt temp = [10, 20, 30, 40, 50] attendu = [2.1, 3.8, 5.6, 7.3, 9.0] mesure = [2.0, 3.9, 5.2, 7.5, 8.8] plt.plot(temp, attendu, &#34;ok-&#34;, label=&#34;Valeurs attendues&#34;) # o = rond, k = noir, - = ligne plt.bar(temp, mesure, color=&#34;blue&#34;, alpha=0.5, label=&#34;Valeurs mesurées&#34;) plt.title(&#34;Comparaison des concentrations&#34;) plt.xlabel(&#34;Température (C)&#34;) plt.ylabel(&#34;Concentration&#34;) plt.grid() plt.legend() plt.show()">
+    <meta itemprop="description" content="Listes Exercice 1 animaux = [&#34;chat&#34;, &#34;chien&#34;, &#34;lapin&#34;, &#34;perroquet&#34;, &#34;tigre&#34;] for animal in animaux: print(f&#34;Voici un/une {animal}&#34;) Exercice 2 grille = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20] ] for ligne in grille: for chiffre in ligne: print(chiffre) Exercice 3 prenoms = [] for i in range(3): prenom = input(f&#34;Entrez le prénom {i&#43;1} : &#34;) prenoms.append(prenom) print(&#34;Ordre alphabétique croissant :&#34;) for prenom in sorted(prenoms): print(prenom) print(&#34;Ordre alphabétique décroissant :&#34;) for prenom in sorted(prenoms, reverse=True): print(prenom) Exercice 4 suspects = [ [&#34;A&#34;, &#34;T&#34;, &#34;C&#34;, &#34;G&#34;], [&#34;G&#34;, &#34;A&#34;, &#34;T&#34;, &#34;G&#34;], [&#34;A&#34;, &#34;T&#34;, &#34;T&#34;, &#34;G&#34;] ] print(suspects[0][1]) # 2e base de la 1re séquence → T print(suspects[2][-1]) # dernière base de la 3e séquence → G Chaînes de caractères Exercice 5 mots = [&#34;chlorophylle&#34;, &#34;atome&#34;, &#34;protéine&#34;] nb_lettres = [] for mot in mots: nb_lettres.append(len(mot)) print(nb_lettres) # [12, 5, 8] Exercice 6 adn = &#34;atgct&#34; arn = adn.upper().replace(&#34;T&#34;, &#34;U&#34;) print(arn) # AUGCU Graphiques avec matplotlib Exercice 7 import matplotlib.pyplot as plt heures = [0, 4, 8, 12, 16, 20, 24] temperatures = [-5, -2, 3, 7, 6, 1, -2] plt.plot(heures, temperatures) plt.title(&#34;Température en fonction de l’heure&#34;) plt.xlabel(&#34;Heure (h)&#34;) plt.ylabel(&#34;Température (C)&#34;) plt.grid() plt.show() Exercice 8 import matplotlib.pyplot as plt temp = [10, 20, 30, 40, 50] attendu = [2.1, 3.8, 5.6, 7.3, 9.0] mesure = [2.0, 3.9, 5.2, 7.5, 8.8] plt.plot(temp, attendu, &#34;ok-&#34;, label=&#34;Valeurs attendues&#34;) # o = rond, k = noir, - = ligne plt.bar(temp, mesure, color=&#34;blue&#34;, alpha=0.5, label=&#34;Valeurs mesurées&#34;) plt.title(&#34;Comparaison des concentrations&#34;) plt.xlabel(&#34;Température (C)&#34;) plt.ylabel(&#34;Concentration&#34;) plt.grid() plt.legend() plt.show()">
     <meta itemprop="wordCount" content="259">
     <title> Listes, chaines et visualisation des données :: 420-SN1-RE</title>
     <link href="/solutions_exercices/6_listes_chaines_visualisation/index.xml" rel="alternate" type="application/rss+xml" title=" Listes, chaines et visualisation des données :: 420-SN1-RE">
-    <link href="/images/logo.png?1762782779" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762782779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762782779" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762782779" rel="stylesheet">
-    <link href="/css/theme.min.css?1762782779" rel="stylesheet">
-    <link href="/css/format-html.min.css?1762782779" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1762782779" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1762782779" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1762782779" defer></script>
-    <script src="/js/search.min.js?1762782779" defer></script>
+    <link href="/images/logo.png?1762817295" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1762817295" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1762817295" defer></script>
+    <script src="/js/search-lunr.min.js?1762817295" defer></script>
+    <script src="/js/search.min.js?1762817295" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1762817295";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1762817295" defer></script>
+    <script src="/js/lunr/lunr.fr.min.js?1762817295" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762817295" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762817295" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762817295" rel="stylesheet">
+    <link href="/css/theme.min.css?1762817295" rel="stylesheet">
+    <link href="/css/format-html.min.css?1762817295" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -40,9 +49,7 @@
       window.relearn.path='\/solutions_exercices\/6_listes_chaines_visualisation\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/example.org';
-      window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1762782779";
+      window.relearn.absBaseUri='';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -51,6 +58,15 @@
       window.relearn.getItem = (s,n) => {return s.getItem(n)};
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
       // variant stuff
       window.relearn.themevariants = [ 'auto' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -78,17 +94,8 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-      // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
-      window.T_Reset_view = `Reset view`;
-      window.T_View_reset = `View reset!`;
-      window.T_No_results_found = `No results found for "{0}"`;
-      window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1762782779" rel="stylesheet">
+    <link href="/css/custom.css?1762817295" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_exercices/6_listes_chaines_visualisation/index.html">
     <div id="R-body" class="default-animation">
@@ -97,9 +104,11 @@
         <div class="topbar-wrapper">
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
-            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -130,17 +139,17 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_exercices/index.html"><span itemprop="name">Solutions des exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Listes, chaines et visualisation des données</span><meta itemprop="position" content="3"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/solutions_exercices/index.html"><span itemprop="name">Solutions des exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name"> Listes, chaines et visualisation des données</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/4_boucles_debogage/index.html" title="Boucles et débogage simple (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><a href="/solutions_exercices/4_boucles_debogage/index.html" title="Boucles et débogage simple (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/solutions_exercices/7_dictionnaires/index.html" title="Dictionnaires (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><a href="/solutions_exercices/7_dictionnaires/index.html" title="Dictionnaires (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
                   <div class="topbar-area topbar-area-more" data-area="more">
@@ -154,11 +163,198 @@
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable solutions_exercices" tabindex="-1">
         <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="listes-chaines-et-visualisation-des-données"> Listes, chaines et visualisation des données</h1>
+
+<h2 id="listes">Listes</h2>
+<h3 id="exercice-1">Exercice 1</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>animaux <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;chat&#34;</span>, <span style="color:#e6db74">&#34;chien&#34;</span>, <span style="color:#e6db74">&#34;lapin&#34;</span>, <span style="color:#e6db74">&#34;perroquet&#34;</span>, <span style="color:#e6db74">&#34;tigre&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> animal <span style="color:#f92672">in</span> animaux:
+</span></span><span style="display:flex;"><span>      print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Voici un/une </span><span style="color:#e6db74">{</span>animal<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<h3 id="exercice-2">Exercice 2</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>grille <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>           [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>],
+</span></span><span style="display:flex;"><span>           [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>],
+</span></span><span style="display:flex;"><span>           [<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">12</span>],
+</span></span><span style="display:flex;"><span>           [<span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">14</span>, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">16</span>],
+</span></span><span style="display:flex;"><span>           [<span style="color:#ae81ff">17</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">19</span>, <span style="color:#ae81ff">20</span>]
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> grille:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> chiffre <span style="color:#f92672">in</span> ligne:
+</span></span><span style="display:flex;"><span>        print(chiffre)</span></span></code></pre></div>
+<h3 id="exercice-3">Exercice 3</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>prenoms <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+</span></span><span style="display:flex;"><span>    prenom <span style="color:#f92672">=</span> input(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Entrez le prénom </span><span style="color:#e6db74">{</span>i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> : &#34;</span>)
+</span></span><span style="display:flex;"><span>    prenoms<span style="color:#f92672">.</span>append(prenom)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Ordre alphabétique croissant :&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> prenom <span style="color:#f92672">in</span> sorted(prenoms):
+</span></span><span style="display:flex;"><span>    print(prenom)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Ordre alphabétique décroissant :&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> prenom <span style="color:#f92672">in</span> sorted(prenoms, reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>):
+</span></span><span style="display:flex;"><span>    print(prenom)</span></span></code></pre></div>
+<h3 id="exercice-4">Exercice 4</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>suspects <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>             [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;T&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>, <span style="color:#e6db74">&#34;G&#34;</span>],
+</span></span><span style="display:flex;"><span>             [<span style="color:#e6db74">&#34;G&#34;</span>, <span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;T&#34;</span>, <span style="color:#e6db74">&#34;G&#34;</span>],
+</span></span><span style="display:flex;"><span>             [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;T&#34;</span>, <span style="color:#e6db74">&#34;T&#34;</span>, <span style="color:#e6db74">&#34;G&#34;</span>]
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(suspects[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>])  <span style="color:#75715e"># 2e base de la 1re séquence → T</span>
+</span></span><span style="display:flex;"><span>print(suspects[<span style="color:#ae81ff">2</span>][<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])  <span style="color:#75715e"># dernière base de la 3e séquence → G</span></span></span></code></pre></div>
+<hr>
+<h2 id="chaînes-de-caractères">Chaînes de caractères</h2>
+<h3 id="exercice-5">Exercice 5</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mots <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;chlorophylle&#34;</span>, <span style="color:#e6db74">&#34;atome&#34;</span>, <span style="color:#e6db74">&#34;protéine&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nb_lettres <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> mot <span style="color:#f92672">in</span> mots:
+</span></span><span style="display:flex;"><span>    nb_lettres<span style="color:#f92672">.</span>append(len(mot))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(nb_lettres)  <span style="color:#75715e"># [12, 5, 8]</span></span></span></code></pre></div>
+<h3 id="exercice-6">Exercice 6</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>adn <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;atgct&#34;</span>
+</span></span><span style="display:flex;"><span>arn <span style="color:#f92672">=</span> adn<span style="color:#f92672">.</span>upper()<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;T&#34;</span>, <span style="color:#e6db74">&#34;U&#34;</span>)
+</span></span><span style="display:flex;"><span>print(arn)  <span style="color:#75715e"># AUGCU</span></span></span></code></pre></div>
+<hr>
+<h2 id="graphiques-avec-matplotlib">Graphiques avec matplotlib</h2>
+<h3 id="exercice-7">Exercice 7</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>heures <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">24</span>]
+</span></span><span style="display:flex;"><span>temperatures <span style="color:#f92672">=</span> [<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(heures, temperatures)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Température en fonction de l’heure&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Heure (h)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Température (C)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h3 id="exercice-8">Exercice 8</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">50</span>]
+</span></span><span style="display:flex;"><span>attendu <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2.1</span>, <span style="color:#ae81ff">3.8</span>, <span style="color:#ae81ff">5.6</span>, <span style="color:#ae81ff">7.3</span>, <span style="color:#ae81ff">9.0</span>]
+</span></span><span style="display:flex;"><span>mesure <span style="color:#f92672">=</span>  [<span style="color:#ae81ff">2.0</span>, <span style="color:#ae81ff">3.9</span>, <span style="color:#ae81ff">5.2</span>, <span style="color:#ae81ff">7.5</span>, <span style="color:#ae81ff">8.8</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(temp, attendu, <span style="color:#e6db74">&#34;ok-&#34;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Valeurs attendues&#34;</span>)  <span style="color:#75715e"># o = rond, k = noir, - = ligne</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>bar(temp, mesure, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;blue&#34;</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Valeurs mesurées&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Comparaison des concentrations&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Température (C)&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Concentration&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
         </div>
       </main>
     </div>
-    <script src="/js/clipboard/clipboard.min.js?1762782779" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762782779" defer></script>
-    <script src="/js/theme.min.js?1762782779" defer></script>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-url="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-url="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-url="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-url="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-url="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
+            <li class="" data-nav-url="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-url="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-url="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
+            <li class="" data-nav-url="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
+            <li class="" data-nav-url="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-url="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Manipulation de données dans un fichier (avec Pandas)</a></li>
+            <li class="" data-nav-url="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
+            <li class="" data-nav-url="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
+            <li class="" data-nav-url="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="" data-nav-url="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> 🧬 Projet intégrateur — L’ADN du coupable</a></li>
+            <li class="" data-nav-url="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="parent " data-nav-url="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu">
+            <li class="" data-nav-url="/solutions_exercices/2_variables_types_entree_fn/index.html"><a class="padding" href="/solutions_exercices/2_variables_types_entree_fn/index.html"><b>2.</b> Variables, types, entrées et fonctions</a></li>
+            <li class="" data-nav-url="/solutions_exercices/3_struct_cond/index.html"><a class="padding" href="/solutions_exercices/3_struct_cond/index.html"><b>3.</b> Structures conditionnelles</a></li>
+            <li class="" data-nav-url="/solutions_exercices/4_boucles_debogage/index.html"><a class="padding" href="/solutions_exercices/4_boucles_debogage/index.html">4. Boucles et débogage simple</a></li>
+            <li class="active " data-nav-url="/solutions_exercices/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_exercices/6_listes_chaines_visualisation/index.html">6. Listes, chaines et visualisation des données</a></li>
+            <li class="" data-nav-url="/solutions_exercices/7_dictionnaires/index.html"><a class="padding" href="/solutions_exercices/7_dictionnaires/index.html"><b>7.</b> Dictionnaires</a></li>
+            <li class="" data-nav-url="/solutions_exercices/8_numpy_regression/index.html"><a class="padding" href="/solutions_exercices/8_numpy_regression/index.html"><b>8.</b> Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-url="/solutions_exercices/9_fichiers/index.html"><a class="padding" href="/solutions_exercices/9_fichiers/index.html"><b>9.</b> Manipulation de données dans un fichier (avec Pandas)</a></li>
+            <li class="" data-nav-url="/solutions_exercices/11_fonctions_perso/index.html"><a class="padding" href="/solutions_exercices/11_fonctions_perso/index.html"><b>11.</b> Fonctions personnalisées</a></li></ul></li>
+            <li class="" data-nav-url="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1762817295" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762817295" defer></script>
+    <script src="/js/theme.min.js?1762817295" defer></script>
   </body>
 </html>

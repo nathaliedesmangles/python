@@ -1,186 +1,186 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/faq/index.html</loc>
+    <loc>/faq/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/faq/alternatives/index.html</loc>
+    <loc>/faq/alternatives/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/faq/locaux_python/index.html</loc>
+    <loc>/faq/locaux_python/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/index.html</loc>
+    <loc>/outils_dev/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/onedrive/index.html</loc>
+    <loc>/outils_dev/onedrive/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/fichiers_dossiers/index.html</loc>
+    <loc>/outils_dev/fichiers_dossiers/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/vs-code/index.html</loc>
+    <loc>/outils_dev/vs-code/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/faq/raccourci_edge/index.html</loc>
+    <loc>/faq/raccourci_edge/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/vs-code/debogueur/index.html</loc>
+    <loc>/outils_dev/vs-code/debogueur/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/vs-code/sauvegarde/index.html</loc>
+    <loc>/outils_dev/vs-code/sauvegarde/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/jupyter/index.html</loc>
+    <loc>/outils_dev/jupyter/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/trucs_pratiques/index.html</loc>
+    <loc>/outils_dev/trucs_pratiques/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/markdown/index.html</loc>
+    <loc>/outils_dev/markdown/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/install_env/index.html</loc>
+    <loc>/outils_dev/install_env/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/extensions/windows/index.html</loc>
+    <loc>/outils_dev/extensions/windows/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/matplotlib/axes/index.html</loc>
+    <loc>/outils_dev/matplotlib/axes/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/matplotlib/couleurs/index.html</loc>
+    <loc>/outils_dev/matplotlib/couleurs/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils_dev/extensions/macos/index.html</loc>
+    <loc>/outils_dev/extensions/macos/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/regles/index.html</loc>
+    <loc>/regles/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/separateur_section/index.html</loc>
+    <loc>/separateur_section/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/cours/index.html</loc>
+    <loc>/cours/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine1/index.html</loc>
+    <loc>/semaine1/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine2/index.html</loc>
+    <loc>/semaine2/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine3/index.html</loc>
+    <loc>/semaine3/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine4/index.html</loc>
+    <loc>/semaine4/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine5/index.html</loc>
+    <loc>/semaine5/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/index.html</loc>
+    <loc>/semaine6/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/atelier/index.html</loc>
+    <loc>/semaine6/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/solution/index.html</loc>
+    <loc>/semaine6/solution/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/exercices/index.html</loc>
+    <loc>/semaine6/exercices/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/solutionexos/index.html</loc>
+    <loc>/semaine6/solutionexos/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/print_end/index.html</loc>
+    <loc>/semaine6/print_end/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine7/index.html</loc>
+    <loc>/semaine7/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine8/index.html</loc>
+    <loc>/semaine8/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine9/index.html</loc>
+    <loc>/semaine9/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine95/index.html</loc>
+    <loc>/semaine95/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine10/index.html</loc>
+    <loc>/semaine10/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine11/index.html</loc>
+    <loc>/semaine11/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine12/index.html</loc>
+    <loc>/semaine12/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine15/index.html</loc>
+    <loc>/semaine15/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/index.html</loc>
+    <loc>/solutions_exercices/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/2_variables_types_entree_fn/index.html</loc>
+    <loc>/solutions_exercices/2_variables_types_entree_fn/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/3_struct_cond/index.html</loc>
+    <loc>/solutions_exercices/3_struct_cond/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/4_boucles_debogage/index.html</loc>
+    <loc>/solutions_exercices/4_boucles_debogage/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/6_listes_chaines_visualisation/index.html</loc>
+    <loc>/solutions_exercices/6_listes_chaines_visualisation/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/7_dictionnaires/index.html</loc>
+    <loc>/solutions_exercices/7_dictionnaires/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/8_numpy_regression/index.html</loc>
+    <loc>/solutions_exercices/8_numpy_regression/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/9_fichiers/index.html</loc>
+    <loc>/solutions_exercices/9_fichiers/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_exercices/11_fonctions_perso/index.html</loc>
+    <loc>/solutions_exercices/11_fonctions_perso/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/index.html</loc>
+    <loc>/solutions_ateliers/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/2_variables_types_entrees_fn/index.html</loc>
+    <loc>/solutions_ateliers/2_variables_types_entrees_fn/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/3_struct_cond/index.html</loc>
+    <loc>/solutions_ateliers/3_struct_cond/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/4_boucles_debogage/index.html</loc>
+    <loc>/solutions_ateliers/4_boucles_debogage/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/6_listes_chaines_visualisation/index.html</loc>
+    <loc>/solutions_ateliers/6_listes_chaines_visualisation/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/7_dictionnaires/index.html</loc>
+    <loc>/solutions_ateliers/7_dictionnaires/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/8_numpy_regression/index.html</loc>
+    <loc>/solutions_ateliers/8_numpy_regression/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/9_fichiers/index.html</loc>
+    <loc>/solutions_ateliers/9_fichiers/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/solutions_ateliers/11_fonctions_perso/index.html</loc>
+    <loc>/solutions_ateliers/11_fonctions_perso/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/categories/index.html</loc>
+    <loc>/categories/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/index.html</loc>
+    <loc>/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/tags/index.html</loc>
+    <loc>/tags/index.html</loc>
   </url>
 </urlset>

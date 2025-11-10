@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ajouter un raccourci vers une URL dans Edge :: 420-SN1-RE</title>
-    <link>https://example.org/faq/raccourci_edge/index.html</link>
+    <link>/faq/raccourci_edge/index.html</link>
     <description>1. Ouvrir Microsoft Edge Cliquez sur le bouton Démarrer de Windows. Tapez Edge et ouvrez l’application Microsoft Edge. 2. Accéder à la page de démarrage Par défaut, Edge ouvre la page Nouvel onglet (Start / Microsoft Start).&#xA;Si ce n’est pas le cas :&#xA;Cliquez sur le menu … (en haut à droite). Sélectionnez Paramètres &gt; Démarrage, page d’accueil et nouveaux onglets. Assurez-vous que Nouvel onglet est bien sélectionné. 3. Ajouter un nouveau raccourci Sur la page d’accueil (nouvel onglet), repérez la section Sites principaux ou Sites rapides (juste sous la barre de recherche Bing).</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/faq/raccourci_edge/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/faq/raccourci_edge/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

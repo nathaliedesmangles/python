@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>print et end :: 420-SN1-RE</title>
-    <link>https://example.org/semaine6/print_end/index.html</link>
+    <link>/semaine6/print_end/index.html</link>
     <description>En Python, la fonction print(), ajoute par défaut un saut de ligne (\n) à la fin de chaque instruction. Ce comportement peut être modifié grâce au paramètre end, qui permet de préciser une autre chaîne de caractères (comme un espace &#34; &#34;, une virgule &#34;,&#34; ou un tiret &#34;-&#34;, etc.) à afficher à la fin. Cela rend possible l’affichage de plusieurs sorties sur la même ligne ou avec des séparateurs personnalisés. Exemples :</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/semaine6/print_end/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/semaine6/print_end/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

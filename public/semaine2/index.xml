@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Variables, types, entrée utilisateur et fonctions prédéfinies :: 420-SN1-RE</title>
-    <link>https://example.org/semaine2/index.html</link>
-    <description>Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Fichier de départ à utiliser Cliquez sur le lien pour télécharger le fichier. Bloc-notes de départ Enregistrez le fichier dans votre dossier exercices de la semaine en cours. Ouvrez Visual Studio Code. Dans VS Code, recherchez et ouvrez le fichier exercices_variables_entrees_fonctions.ipynb Assurez-vous que le noyau Python (Kernel) soit sélectionné. Vous pouvez commencer à faire les exercices. Exercice 1 : Distance parcourue Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.</description>
+    <link>/semaine2/index.html</link>
+    <description>Objectifs Créer des variables et afficher leurs types (int, float, str, bool). Demander une donnée à l’utilisateur, la convertir et l’afficher de manière claire et lisible. Utiliser diverses fonctions prédéfinies. Écrire des programmes simples en python. Apprendre par la pratique Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Fichier de départ à utiliser Cliquez sur le lien pour télécharger le fichier. Bloc-notes de départ Enregistrez le fichier dans votre dossier exercices de la semaine en cours. Ouvrez Visual Studio Code. Dans VS Code, recherchez et ouvrez le fichier exercices_variables_entrees_fonctions.ipynb Assurez-vous que le noyau Python (Kernel) soit sélectionné. Vous pouvez commencer à faire les exercices. Exercice 1 : Distance parcourue Un cycliste roule à une vitesse constante de 6,5 m/s pendant 12 minutes.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/semaine2/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/semaine2/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

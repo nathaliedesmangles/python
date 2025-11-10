@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exercices - Boucles imbriquées avec une liste de listes :: 420-SN1-RE</title>
-    <link>https://example.org/semaine6/exercices/index.html</link>
+    <link>/semaine6/exercices/index.html</link>
     <description>Niveau 1 – Manipuler et afficher Exercice 1 : Liste d’animaux Crée la liste suivante :</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/semaine6/exercices/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/semaine6/exercices/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

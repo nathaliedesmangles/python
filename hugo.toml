@@ -1,14 +1,25 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = '420-SN1-RE'
-theme = "relearn"
-repository_url = ""
+baseURL = "/"
+languageCode = "fr"
+title = "420-SN1-RE"
+
+# ⛔️ IMPORTANT: pas de `theme = "relearn"` quand on utilise un module
+# theme = "relearn"
+
+ignoreLogs = [
+  "warning-goldmark-raw-html",
+  "warning-relearnOutputFormat",
+  "warning-relearnOutputFormatNotFound"
+]
 
 [markup.goldmark.renderer]
 unsafe = true
 
+[module]
+  [[module.imports]]
+    path = "github.com/McShelby/hugo-theme-relearn"
+
 [params]
-  show_metadata = false 
+  show_metadata = false
+  disableTitleInSidebar = true
   logo = "images/logoSN.png"
   custom_css = ["css/custom.css"]
-

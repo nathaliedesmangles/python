@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Connexion à OneDrive – Compte scolaire :: 420-SN1-RE</title>
-    <link>https://example.org/outils_dev/onedrive/index.html</link>
+    <link>/outils_dev/onedrive/index.html</link>
     <description>Cliquer sur la petite flèche à droite du menu des applications dans la barre des tâches de Windows afin de faire apparaître les applications masquées.&#xA;Effectuer un clic droit sur le logo de OneDrive (s’il n’est pas connecté, il apparaît grisé et barré).&#xA;Cliquer sur « Se connecter ».</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/outils_dev/onedrive/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
+    <atom:link href="/outils_dev/onedrive/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -177,7 +177,7 @@ $$
    - `distances` (valeurs des distances)
 4. **Trier** les deux listes (boucles imbriquées + échanges entre listes).
 5. Afficher le **top 5 des suspects les plus proches**.
-6. Créer un **graphique en barres** affichant le **top 10 des suspects** avec barres d’erreur ±5 %.
+6. Créer un **graphique en barres** affichant le **top 10 des suspects** avec barres d’erreur **±5 %**.
 	* Titre: "Top 10 des suspects les plus proches (3 loci)"
 	* Étiquette de l'axe x: il n'y a pas d'étiquette
 	* Étiquette de l'axe y: "Distance ADN (u.a.)"
@@ -203,7 +203,7 @@ for i in range(len(distances) - 1):
 ```
 -->
 
-### 4. Ajout d'un 4e loci
+### 4. Ajout d'un 4e locus
 
 #### a) 4ᵉ locus estimé par régression linéaire
 
