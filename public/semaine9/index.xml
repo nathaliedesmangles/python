@@ -3,7 +3,7 @@
   <channel>
     <title> Manipulation de données dans un fichier (avec Pandas) :: 420-SN1-RE</title>
     <link>https://example.org/semaine9/index.html</link>
-    <description>Objectif Lire un fichier CSV contenant des données expérimentales. Nettoyer et sauvegarder un nouveau fichier corrigé. Manipuler un DataFrame Pandas (sélection, ajout, statistiques). Transformer les colonnes en tableaux NumPy pour des calculs scientifiques. Visualiser les données sous forme de nuage de points. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration&#xA;Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration.</description>
+    <description>Objectif Lire un fichier CSV contenant des données expérimentales. Nettoyer et sauvegarder un nouveau fichier corrigé. Manipuler un DataFrame Pandas (sélection, ajout, statistiques). Transformer les colonnes en tableaux NumPy pour des calculs scientifiques. Visualiser les données sous forme de nuage de points. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration&#xA;Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Fichiers de départ à utiliser Bloc-notes de départ - Pandas&#xA;Fichier etudiants.csv&#xA;Fichier experience.txt&#xA;Fichier solubilite_sel.csv&#xA;Fichier solutions.csv</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine9/index.xml" rel="self" type="application/rss+xml" />

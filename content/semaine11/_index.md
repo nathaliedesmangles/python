@@ -11,6 +11,12 @@ draft = false
 * Définir vos propres fonctions avec `def` (paramètres, `return`, portée locale)
 * Documenter les fonctions personnalisées (`docstring`)
 
+
+## Fichier .ipynb pour la démo en classe
+
+[Fichier utilisé pour la démonstration](https://python-a25.netlify.app/blocnotes/demo_fonctions.ipynb)
+
+
 ---
 
 {{% notice style="accent" title="Apprendre par la pratique" %}}
@@ -18,6 +24,7 @@ draft = false
 - Certains seront fait en classe à titre de démonstration.
 - Les solutions seront disponibles à la fin de la semaine prochaine.
 {{% /notice %}}
+
 
 # Exercices
 
@@ -27,6 +34,7 @@ draft = false
 {{% /notice %}}
 
 [Bloc-notes de départ](https://python-a25.netlify.app/blocnotes/exercices_fonctions_perso.ipynb)
+
 
 ## Exercice 1 : La loi d'Ohm
 
@@ -344,6 +352,7 @@ Où :
 	ii. **Calcule et retourne** le volume `V1` de solution mère à prélever (formule : `V1 = (C2 × V2) / C1`).
 	iii. **Affiche** une phrase qui résume le calcul avec les valeurs fournies.
 
+
 ## Exemple de résultats attendus
 
 ```
@@ -358,8 +367,7 @@ Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.
 
 > **RAPPEL**: Le **troisième et dernier examen** (30%) et prévu à la **semaine 15**.
 
-<!--
+
 1. Lire la description du [Projet final](../semaine12/)
-2. Prendre connaissance de la [Grille de correction](../semaine12/grille/)
-3. S'approprier des [Notions à savoir pour réussir le projet](../semaine12/competences_reussite/)
--->
+
+

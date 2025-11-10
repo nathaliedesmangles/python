@@ -19,7 +19,7 @@
       <link>https://example.org/outils_dev/vs-code/sauvegarde/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/outils_dev/vs-code/sauvegarde/index.html</guid>
-      <description>Sur cette page, vous trouverez les étapes pour sauvegarder vos programmes dans VS Code.&#xA;Sauvegarde automatique Si un rond est présent à droit du nom du fichier dans l’onglet en haut, c’est que votre travail n’est PAS sauvegardé (comme dans l’exemple ci-dessous).&#xA;Pour ACTIVER la sauvegarde automatique, allez dans fichier, puis cliquez sur Enregistrement automatique.&#xA;Vous devriez maintenant voir un crochet à gauche de cette option.&#xA;Il devrait maintenant avoir un X à gauche du nom du fichier dans l’onglet du haut.</description>
+      <description>Sur cette page, vous trouverez les étapes pour sauvegarder vos programmes dans VS Code.&#xA;Sauvegarde automatique Si un rond est présent à droit du nom du fichier dans l’onglet en haut, c’est que votre travail n’est PAS sauvegardé (comme dans l’exemple ci-dessous).&#xA;Pour ACTIVER la sauvegarde automatique, allez dans fichier, puis cliquez sur Enregistrement automatique.</description>
     </item>
   </channel>
 </rss>

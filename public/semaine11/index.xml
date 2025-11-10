@@ -3,7 +3,7 @@
   <channel>
     <title> Fonctions personnalisées :: 420-SN1-RE</title>
     <link>https://example.org/semaine11/index.html</link>
-    <description>Objectifs Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Appel de fonction&#xD;Ajoutez un Docstring pour chacune des fonctions créées. Pour les exercices #2 à #5, utilisez (appelez) la fonction crée.</description>
+    <description>Objectifs Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration&#xA;Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Appel de fonction&#xD;Ajoutez un Docstring pour chacune des fonctions créées. Pour les exercices #2 à #5, utilisez (appelez) la fonction crée. Bloc-notes de départ</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine11/index.xml" rel="self" type="application/rss+xml" />

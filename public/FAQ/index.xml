@@ -3,7 +3,7 @@
   <channel>
     <title>Foire Aux Questions :: 420-SN1-RE</title>
     <link>https://example.org/faq/index.html</link>
-    <description>Outils et locaux pour pratiquer À part Visual Studio Code, quels autres logiciels je peux installer sur mon ordinateur personnel pour pratiquer à la maison ? Alternatives à VS Code La sauvegarde automatique dans Visual Studio Code. Sauvegarde dans VS Code Les raccourcis clavier (copier, coller, couper, enregistrer, etc.) Trucs pratiques pour bien coder Où se trouve les touches pour [, ], {, }, @, &lt;, &gt;, etc. sur un clavier QWERTY.</description>
+    <description>Outils et locaux pour pratiquer À part Visual Studio Code, quels autres logiciels je peux installer sur mon ordinateur personnel pour pratiquer à la maison ? Alternatives à VS Code La sauvegarde automatique dans Visual Studio Code. Sauvegarde dans VS Code Les raccourcis clavier (copier, coller, couper, enregistrer, etc.) Trucs pratiques pour bien coder Où se trouve les touches pour [, ], {, }, @, &lt;, &gt;, etc. sur un clavier QWERTY. Trucs pratiques pour bien coder Dans quels locaux du cégep, je peux aller pratiquer ? Locaux avec Python, VS Code et Jupyter Comment déposer un travail sur Moodle ? Déposer un travail sur Moodle À propos de l’installation des outils Est-ce que je peux installer les outils de travail sur votre ordinateur personnel (Windows 11) ? Oui. Cliquez ICI pour voir comment</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/faq/index.xml" rel="self" type="application/rss+xml" />

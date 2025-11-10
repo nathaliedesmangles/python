@@ -3,36 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Hugo 0.152.2">
     <meta name="generator" content="Relearn 7.6.1+b0c6bb558d7728ac4535a2ac677c5f47297203cc">
-    <meta name="description" content="# Demander les données à l&#39;utilisateur temperature = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: # Version améliorée: gestion d&#39;une pression invalide print(&#34;Pression invalide.">
+    <meta name="description" content="# Demander les données à l&#39;utilisateur temperature = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: # Version améliorée: gestion d&#39;une pression invalide print(&#34;Pression invalide. Veuillez entrer 0.5, 1.0, 1.5 ou 2.0.&#34;) exit(0) # ou exit(), mais cela fera &#34;crasher&#34; Python (Kernel) # Déterminer l’état de l’eau if temperature &lt; 0: etat = &#34;solide&#34; description = &#34;L’eau est sous forme de glace.&#34; elif temperature &lt; ebullition: etat = &#34;liquide&#34; description = &#34;L’eau est liquide à cette température et pression.&#34; else: etat = &#34;gaz&#34; description = &#34;L’eau est sous forme de vapeur.&#34; # Affichage print(f&#34;État de l’eau : {etat}&#34;) print(description)Exemples de sorties Exemple 1 : Température de l&#39;eau en °C : 50Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0État de l’eau : liquideL’eau est liquide à cette température et pression.Exemple 2 : Température de l&#39;eau en °C : 101Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0État de l’eau : gazL’eau est sous forme de vapeur.Exemple 3 : Température de l&#39;eau en °C : -5Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 2.0État de l’eau : solideL’eau est sous forme de glace.Version améliorée avec None # Demander la température temp = float(input(&#34;Température de l&#39;eau en °C : &#34;)) # Demander la pression pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d&#39;ébullition selon la pression ebullition = None # valeur par défaut si pression invalide if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 # Vérifier si la pression est valide if ebullition is None: print(&#34;Erreur : la pression doit être 0.5, 1.0, 1.5 ou 2.0 atm.&#34;) else: # Déterminer l&#39;état de l&#39;eau if temp &lt; 0: etat = &#34;solide&#34; message = &#34;L’eau est sous forme de glace.&#34; elif temp &lt; ebullition: etat = &#34;liquide&#34; message = &#34;L’eau est liquide à cette température et pression.&#34; else: etat = &#34;gaz&#34; message = &#34;L’eau est sous forme de vapeur.&#34; # Afficher le résultat print(f&#34;État de l’eau : {etat}&#34;) print(message)Exemple d’exécution avec None pour une pression invalide : Température de l&#39;eau en °C : 50Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 3Erreur : la pression doit être 0.5, 1.0, 1.5 ou 2.0 atm.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Structures conditionnelles :: 420-SN1-RE">
-    <meta name="twitter:description" content="# Demander les données à l&#39;utilisateur temperature = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: # Version améliorée: gestion d&#39;une pression invalide print(&#34;Pression invalide.">
+    <meta name="twitter:description" content="# Demander les données à l&#39;utilisateur temperature = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: # Version améliorée: gestion d&#39;une pression invalide print(&#34;Pression invalide. Veuillez entrer 0.5, 1.0, 1.5 ou 2.0.&#34;) exit(0) # ou exit(), mais cela fera &#34;crasher&#34; Python (Kernel) # Déterminer l’état de l’eau if temperature &lt; 0: etat = &#34;solide&#34; description = &#34;L’eau est sous forme de glace.&#34; elif temperature &lt; ebullition: etat = &#34;liquide&#34; description = &#34;L’eau est liquide à cette température et pression.&#34; else: etat = &#34;gaz&#34; description = &#34;L’eau est sous forme de vapeur.&#34; # Affichage print(f&#34;État de l’eau : {etat}&#34;) print(description)Exemples de sorties Exemple 1 : Température de l&#39;eau en °C : 50Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0État de l’eau : liquideL’eau est liquide à cette température et pression.Exemple 2 : Température de l&#39;eau en °C : 101Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0État de l’eau : gazL’eau est sous forme de vapeur.Exemple 3 : Température de l&#39;eau en °C : -5Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 2.0État de l’eau : solideL’eau est sous forme de glace.Version améliorée avec None # Demander la température temp = float(input(&#34;Température de l&#39;eau en °C : &#34;)) # Demander la pression pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d&#39;ébullition selon la pression ebullition = None # valeur par défaut si pression invalide if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 # Vérifier si la pression est valide if ebullition is None: print(&#34;Erreur : la pression doit être 0.5, 1.0, 1.5 ou 2.0 atm.&#34;) else: # Déterminer l&#39;état de l&#39;eau if temp &lt; 0: etat = &#34;solide&#34; message = &#34;L’eau est sous forme de glace.&#34; elif temp &lt; ebullition: etat = &#34;liquide&#34; message = &#34;L’eau est liquide à cette température et pression.&#34; else: etat = &#34;gaz&#34; message = &#34;L’eau est sous forme de vapeur.&#34; # Afficher le résultat print(f&#34;État de l’eau : {etat}&#34;) print(message)Exemple d’exécution avec None pour une pression invalide : Température de l&#39;eau en °C : 50Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 3Erreur : la pression doit être 0.5, 1.0, 1.5 ou 2.0 atm.">
     <meta property="og:url" content="https://example.org/solutions_ateliers/3_struct_cond/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Structures conditionnelles :: 420-SN1-RE">
-    <meta property="og:description" content="# Demander les données à l&#39;utilisateur temperature = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: # Version améliorée: gestion d&#39;une pression invalide print(&#34;Pression invalide.">
+    <meta property="og:description" content="# Demander les données à l&#39;utilisateur temperature = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: # Version améliorée: gestion d&#39;une pression invalide print(&#34;Pression invalide. Veuillez entrer 0.5, 1.0, 1.5 ou 2.0.&#34;) exit(0) # ou exit(), mais cela fera &#34;crasher&#34; Python (Kernel) # Déterminer l’état de l’eau if temperature &lt; 0: etat = &#34;solide&#34; description = &#34;L’eau est sous forme de glace.&#34; elif temperature &lt; ebullition: etat = &#34;liquide&#34; description = &#34;L’eau est liquide à cette température et pression.&#34; else: etat = &#34;gaz&#34; description = &#34;L’eau est sous forme de vapeur.&#34; # Affichage print(f&#34;État de l’eau : {etat}&#34;) print(description)Exemples de sorties Exemple 1 : Température de l&#39;eau en °C : 50Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0État de l’eau : liquideL’eau est liquide à cette température et pression.Exemple 2 : Température de l&#39;eau en °C : 101Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0État de l’eau : gazL’eau est sous forme de vapeur.Exemple 3 : Température de l&#39;eau en °C : -5Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 2.0État de l’eau : solideL’eau est sous forme de glace.Version améliorée avec None # Demander la température temp = float(input(&#34;Température de l&#39;eau en °C : &#34;)) # Demander la pression pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d&#39;ébullition selon la pression ebullition = None # valeur par défaut si pression invalide if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 # Vérifier si la pression est valide if ebullition is None: print(&#34;Erreur : la pression doit être 0.5, 1.0, 1.5 ou 2.0 atm.&#34;) else: # Déterminer l&#39;état de l&#39;eau if temp &lt; 0: etat = &#34;solide&#34; message = &#34;L’eau est sous forme de glace.&#34; elif temp &lt; ebullition: etat = &#34;liquide&#34; message = &#34;L’eau est liquide à cette température et pression.&#34; else: etat = &#34;gaz&#34; message = &#34;L’eau est sous forme de vapeur.&#34; # Afficher le résultat print(f&#34;État de l’eau : {etat}&#34;) print(message)Exemple d’exécution avec None pour une pression invalide : Température de l&#39;eau en °C : 50Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 3Erreur : la pression doit être 0.5, 1.0, 1.5 ou 2.0 atm.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Structures conditionnelles :: 420-SN1-RE">
-    <meta itemprop="description" content="# Demander les données à l&#39;utilisateur temperature = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: # Version améliorée: gestion d&#39;une pression invalide print(&#34;Pression invalide.">
+    <meta itemprop="description" content="# Demander les données à l&#39;utilisateur temperature = float(input(&#34;Température de l&#39;eau en °C : &#34;)) pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d’ébullition selon la pression if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 else: # Version améliorée: gestion d&#39;une pression invalide print(&#34;Pression invalide. Veuillez entrer 0.5, 1.0, 1.5 ou 2.0.&#34;) exit(0) # ou exit(), mais cela fera &#34;crasher&#34; Python (Kernel) # Déterminer l’état de l’eau if temperature &lt; 0: etat = &#34;solide&#34; description = &#34;L’eau est sous forme de glace.&#34; elif temperature &lt; ebullition: etat = &#34;liquide&#34; description = &#34;L’eau est liquide à cette température et pression.&#34; else: etat = &#34;gaz&#34; description = &#34;L’eau est sous forme de vapeur.&#34; # Affichage print(f&#34;État de l’eau : {etat}&#34;) print(description)Exemples de sorties Exemple 1 : Température de l&#39;eau en °C : 50Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0État de l’eau : liquideL’eau est liquide à cette température et pression.Exemple 2 : Température de l&#39;eau en °C : 101Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0État de l’eau : gazL’eau est sous forme de vapeur.Exemple 3 : Température de l&#39;eau en °C : -5Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 2.0État de l’eau : solideL’eau est sous forme de glace.Version améliorée avec None # Demander la température temp = float(input(&#34;Température de l&#39;eau en °C : &#34;)) # Demander la pression pression = float(input(&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;)) # Déterminer le point d&#39;ébullition selon la pression ebullition = None # valeur par défaut si pression invalide if pression == 0.5: ebullition = 81 elif pression == 1.0: ebullition = 100 elif pression == 1.5: ebullition = 112 elif pression == 2.0: ebullition = 120 # Vérifier si la pression est valide if ebullition is None: print(&#34;Erreur : la pression doit être 0.5, 1.0, 1.5 ou 2.0 atm.&#34;) else: # Déterminer l&#39;état de l&#39;eau if temp &lt; 0: etat = &#34;solide&#34; message = &#34;L’eau est sous forme de glace.&#34; elif temp &lt; ebullition: etat = &#34;liquide&#34; message = &#34;L’eau est liquide à cette température et pression.&#34; else: etat = &#34;gaz&#34; message = &#34;L’eau est sous forme de vapeur.&#34; # Afficher le résultat print(f&#34;État de l’eau : {etat}&#34;) print(message)Exemple d’exécution avec None pour une pression invalide : Température de l&#39;eau en °C : 50Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 3Erreur : la pression doit être 0.5, 1.0, 1.5 ou 2.0 atm.">
     <meta itemprop="wordCount" content="445">
     <title> Structures conditionnelles :: 420-SN1-RE</title>
     <link href="/solutions_ateliers/3_struct_cond/index.xml" rel="alternate" type="application/rss+xml" title=" Structures conditionnelles :: 420-SN1-RE">
-    <link href="/images/logo.png?1762395649" rel="icon" type="image/png">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762395649" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762395649" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762395649" rel="stylesheet">
-    <link href="/css/theme.min.css?1762395649" rel="stylesheet">
-    <link href="/css/format-html.min.css?1762395649" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1762395649" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1762395649" defer></script>
-    <script src="/js/lunr/lunr.min.js?1762395649" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1762395649" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1762395649" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1762395649" defer></script>
-    <script src="/js/search.min.js?1762395649" defer></script>
+    <link href="/images/logo.png?1762782779" rel="icon" type="image/png">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762782779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762782779" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762782779" rel="stylesheet">
+    <link href="/css/theme.min.css?1762782779" rel="stylesheet">
+    <link href="/css/format-html.min.css?1762782779" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1762782779" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1762782779" defer></script>
+    <script src="/js/lunr/lunr.min.js?1762782779" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1762782779" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1762782779" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1762782779" defer></script>
+    <script src="/js/search.min.js?1762782779" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -42,7 +42,7 @@
       window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='https:\/\/example.org';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1762395649";
+      window.relearn.index_js_url="/searchindex.en.js?1762782779";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -88,7 +88,7 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <link href="/css/custom.css?1762395649" rel="stylesheet">
+    <link href="/css/custom.css?1762782779" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_ateliers/3_struct_cond/index.html">
     <div id="R-body" class="default-animation">
@@ -146,199 +146,11 @@
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable solutions_ateliers" tabindex="-1">
         <div class="flex-block-wrapper">
-<article class="default">
-  <header class="headline">
-  </header>
-
-<h1 id="structures-conditionnelles"> Structures conditionnelles</h1>
-
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Demander les données à l&#39;utilisateur</span>
-</span></span><span style="display:flex;"><span>temperature <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Température de l&#39;eau en °C : &#34;</span>))
-</span></span><span style="display:flex;"><span>pression <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;</span>))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Déterminer le point d’ébullition selon la pression</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> pression <span style="color:#f92672">==</span> <span style="color:#ae81ff">0.5</span>:
-</span></span><span style="display:flex;"><span>    ebullition <span style="color:#f92672">=</span> <span style="color:#ae81ff">81</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> pression <span style="color:#f92672">==</span> <span style="color:#ae81ff">1.0</span>:
-</span></span><span style="display:flex;"><span>    ebullition <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> pression <span style="color:#f92672">==</span> <span style="color:#ae81ff">1.5</span>:
-</span></span><span style="display:flex;"><span>    ebullition <span style="color:#f92672">=</span> <span style="color:#ae81ff">112</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> pression <span style="color:#f92672">==</span> <span style="color:#ae81ff">2.0</span>:
-</span></span><span style="display:flex;"><span>    ebullition <span style="color:#f92672">=</span> <span style="color:#ae81ff">120</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>: <span style="color:#75715e"># Version améliorée: gestion d&#39;une pression invalide</span>
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Pression invalide. Veuillez entrer 0.5, 1.0, 1.5 ou 2.0.&#34;</span>)
-</span></span><span style="display:flex;"><span>    exit(<span style="color:#ae81ff">0</span>) 	<span style="color:#75715e"># ou exit(), mais cela fera &#34;crasher&#34; Python (Kernel)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Déterminer l’état de l’eau</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> temperature <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>    etat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;solide&#34;</span>
-</span></span><span style="display:flex;"><span>    description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;L’eau est sous forme de glace.&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> temperature <span style="color:#f92672">&lt;</span> ebullition:
-</span></span><span style="display:flex;"><span>    etat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;liquide&#34;</span>
-</span></span><span style="display:flex;"><span>    description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;L’eau est liquide à cette température et pression.&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>    etat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gaz&#34;</span>
-</span></span><span style="display:flex;"><span>    description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;L’eau est sous forme de vapeur.&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage</span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;État de l’eau : </span><span style="color:#e6db74">{</span>etat<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>print(description)</span></span></code></pre></div>
-<hr>
-<h2 id="exemples-de-sorties"><strong>Exemples de sorties</strong></h2>
-<h3 id="exemple-1-">Exemple 1 :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Température de l&#39;eau en °C : 50
-Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0
-État de l’eau : liquide
-L’eau est liquide à cette température et pression.</code></pre></div>
-<h3 id="exemple-2-">Exemple 2 :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Température de l&#39;eau en °C : 101
-Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 1.0
-État de l’eau : gaz
-L’eau est sous forme de vapeur.</code></pre></div>
-<h3 id="exemple-3-">Exemple 3 :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Température de l&#39;eau en °C : -5
-Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 2.0
-État de l’eau : solide
-L’eau est sous forme de glace.</code></pre></div>
-<hr>
-<h2 id="version-améliorée-avec-none">Version améliorée avec None</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Demander la température</span>
-</span></span><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Température de l&#39;eau en °C : &#34;</span>))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Demander la pression</span>
-</span></span><span style="display:flex;"><span>pression <span style="color:#f92672">=</span> float(input(<span style="color:#e6db74">&#34;Pression en atm (0.5, 1.0, 1.5 ou 2.0) : &#34;</span>))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Déterminer le point d&#39;ébullition selon la pression</span>
-</span></span><span style="display:flex;"><span>ebullition <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>   <span style="color:#75715e"># valeur par défaut si pression invalide</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> pression <span style="color:#f92672">==</span> <span style="color:#ae81ff">0.5</span>:
-</span></span><span style="display:flex;"><span>    ebullition <span style="color:#f92672">=</span> <span style="color:#ae81ff">81</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> pression <span style="color:#f92672">==</span> <span style="color:#ae81ff">1.0</span>:
-</span></span><span style="display:flex;"><span>    ebullition <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> pression <span style="color:#f92672">==</span> <span style="color:#ae81ff">1.5</span>:
-</span></span><span style="display:flex;"><span>    ebullition <span style="color:#f92672">=</span> <span style="color:#ae81ff">112</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> pression <span style="color:#f92672">==</span> <span style="color:#ae81ff">2.0</span>:
-</span></span><span style="display:flex;"><span>    ebullition <span style="color:#f92672">=</span> <span style="color:#ae81ff">120</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Vérifier si la pression est valide</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ebullition <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Erreur : la pression doit être 0.5, 1.0, 1.5 ou 2.0 atm.&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Déterminer l&#39;état de l&#39;eau</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> temp <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>        etat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;solide&#34;</span>
-</span></span><span style="display:flex;"><span>        message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;L’eau est sous forme de glace.&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> temp <span style="color:#f92672">&lt;</span> ebullition:
-</span></span><span style="display:flex;"><span>        etat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;liquide&#34;</span>
-</span></span><span style="display:flex;"><span>        message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;L’eau est liquide à cette température et pression.&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>        etat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gaz&#34;</span>
-</span></span><span style="display:flex;"><span>        message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;L’eau est sous forme de vapeur.&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Afficher le résultat</span>
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;État de l’eau : </span><span style="color:#e6db74">{</span>etat<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>    print(message)</span></span></code></pre></div>
-<h3 id="exemple-dexécution-avec-none-pour-une-pression-invalide-">Exemple d’exécution avec <code>None</code> pour une pression invalide :</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Température de l&#39;eau en °C : 50
-Pression en atm (0.5, 1.0, 1.5 ou 2.0) : 3
-Erreur : la pression doit être 0.5, 1.0, 1.5 ou 2.0 atm.</code></pre></div>
-
-  <footer class="footline">
-  </footer>
-</article>
         </div>
       </main>
     </div>
-    <aside id="R-sidebar" class="default-animation">
-      <div id="R-header-topbar" class="default-animation"></div>
-      <div id="R-header-wrapper" class="default-animation">
-        <div id="R-header" class="default-animation">
-<a href="/">
-	<img src="/images/logo.png">
-</a>
-
-
-        </div>
-        <search><form action="/search/index.html" method="get">
-          <div class="searchbox default-animation">
-            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
-            <label class="a11y-only" for="R-search-by">Search</label>
-            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
-            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
-          </div>
-        </form></search>
-      </div>
-      <div id="R-homelinks" class="default-animation homelinks">
-        <div class="R-menu-divider default-animation">
-          <hr class="padding">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
-          <ul class="space collapsible-menu">
-            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
-          </ul>
-        </div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
-          <ul class="">
-          </ul>
-        </div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding">
-        </div>
-      </div>
-      <div id="R-content-wrapper" class="highlightable">
-        <div class="R-sidebarmenu R-shortcutmenu-main">
-          <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
-            <li class="" data-nav-id="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
-            <li class="" data-nav-id="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
-            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
-            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a></li>
-            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
-            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
-            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a></li>
-            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
-            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
-            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Manipulation de données dans un fichier (avec Pandas)</a></li>
-            <li class="" data-nav-id="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
-            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
-            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
-            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> 🧬 Projet intégrateur — L’ADN du coupable</a></li>
-            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
-            <li class="" data-nav-id="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
-            <li class="parent " data-nav-id="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu">
-            <li class="" data-nav-id="/solutions_ateliers/2_variables_types_entrees_fn/index.html"><a class="padding" href="/solutions_ateliers/2_variables_types_entrees_fn/index.html"><b>2.</b> Variables, types, entrées et fonction</a></li>
-            <li class="active " data-nav-id="/solutions_ateliers/3_struct_cond/index.html"><a class="padding" href="/solutions_ateliers/3_struct_cond/index.html"><b>3.</b> Structures conditionnelles</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/4_boucles_debogage/index.html"><a class="padding" href="/solutions_ateliers/4_boucles_debogage/index.html">4. Boucles de débogage simple</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/6_listes_chaines_visualisation/index.html"><a class="padding" href="/solutions_ateliers/6_listes_chaines_visualisation/index.html">6. Listes, chaines et visualisation des données</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/7_dictionnaires/index.html"><a class="padding" href="/solutions_ateliers/7_dictionnaires/index.html">7. Dictionnaires</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/8_numpy_regression/index.html"><a class="padding" href="/solutions_ateliers/8_numpy_regression/index.html"><b>8.</b> Tableaux NumPy et droite de régression</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/9_fichiers/index.html"><a class="padding" href="/solutions_ateliers/9_fichiers/index.html"><b>9.</b> Lecture et écriture de fichiers de données</a></li>
-            <li class="" data-nav-id="/solutions_ateliers/11_fonctions_perso/index.html"><a class="padding" href="/solutions_ateliers/11_fonctions_perso/index.html"><b>11.</b> Fonctions personnalisées</a></li></ul></li>
-          </ul>
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
-          <ul class="space collapsible-menu">
-          </ul>
-        </div>
-        <div id="R-footer-margin"></div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
-          <ul class="">
-          </ul>
-        </div>
-<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
-      </div>
-    </aside>
-    <script src="/js/clipboard/clipboard.min.js?1762395649" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762395649" defer></script>
-    <script src="/js/theme.min.js?1762395649" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1762782779" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762782779" defer></script>
+    <script src="/js/theme.min.js?1762782779" defer></script>
   </body>
 </html>

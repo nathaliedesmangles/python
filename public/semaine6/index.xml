@@ -3,7 +3,7 @@
   <channel>
     <title> Listes, chaînes et visualisation des données :: 420-SN1-RE</title>
     <link>https://example.org/semaine6/index.html</link>
-    <description>Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine.</description>
+    <description>Objectifs Créer, modifier et parcourir une liste simple. Manipuler des listes imbriquées (listes dans un liste). Appliquer les notions des listes simples sur les chaines de caractères. Créer, afficher, embellir et enregistrer des graphiques simples avec matplotlib. Apprendre par la pratique&#xD;Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Fichier de départ à utiliser Cliquez sur le lien pour télécharger le fichier. Bloc-notes de départ Enregistrez le fichier dans votre dossier exercices de la semaine en cours. Ouvrez Visual Studio Code. Dans VS Code, recherchez et ouvrez le fichier exercices_listes_chaines_graphes.ipynb Assurez-vous que le noyau Python (Kernel) soit sélectionné. Vous pouvez commencer à faire les exercices. Listes Exercice 1 : Crée une liste contenant 5 animaux. À l’aide d’une boucle for, affiche chaque animal avec une phrase du type : Voici un/une &lt;animal&gt;&#xD;Exemple de résultat avec la liste [“chat”, “chien”, “lapin”, “perroquet”, “tigre”] :</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine6/index.xml" rel="self" type="application/rss+xml" />
@@ -19,28 +19,28 @@
       <link>https://example.org/semaine6/solution/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine6/solution/index.html</guid>
-      <description>1. Les données # Données des températures temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;]&#xD;2.</description>
+      <description>1. Les données # Données des températures temperatures = [ [15, 16, 14, 14, 17, 18, 19], # Ville A [22, 23, 21, 20, 24, 25, 26], # Ville B [5, 7, 6, 6, 8, 9, 7], # Ville C [10, 11, 12, 10, 13, 14, 15] # Ville D ] villes = [&#34;Ville A&#34;, &#34;Ville B&#34;, &#34;Ville C&#34;, &#34;Ville D&#34;] jours = [&#34;Lun&#34;, &#34;Mar&#34;, &#34;Mer&#34;, &#34;Jeu&#34;, &#34;Ven&#34;, &#34;Sam&#34;, &#34;Dim&#34;]&#xD;2. Afficher les températures for i in range(len(villes)): print(villes[i], &#34;:&#34;, end=&#34; &#34;) for t in temperatures[i]: print(t,&#34; &#34;)&#x9;# les températures séparées par un espace print() # retour à la ligne&#xD;Résultat attendu :&#xA;Ville A : 15 16 14 14 17 18 19 Ville B : 22 23 21 20 24 25 26 Ville C : 5 7 6 6 8 9 7 Ville D : 10 11 12 10 13 14 15 3. Trouver les valeurs extrêmes (min et max) Étape 3a. Ville A seulement</description>
     </item>
     <item>
       <title>Exercices - Boucles imbriquées avec une liste de listes</title>
       <link>https://example.org/semaine6/exercices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine6/exercices/index.html</guid>
-      <description>Niveau 1 – Manipuler et afficher Exercice 1 : Liste d’animaux Crée la liste suivante :&#xA;animaux = [[&#34;chat&#34;, &#34;chien&#34;], [&#34;lion&#34;, &#34;tigre&#34;], [&#34;souris&#34;, &#34;rat&#34;]]&#xD;Créer une première boucle pour parcourir chaque sous-liste.&#xA;À l’intérieur, créer une deuxième boucle pour parcourir les animaux de la sous-liste.&#xA;Afficher chaque animal sur la même ligne (print(animal, end=&#34; &#34;).&#xA;Passer à la ligne quand tu as fini une sous-liste.&#xA;Résultat attendu :&#xA;chat chien lion tigre souris rat&#xD;Niveau 2 – Comprendre la structure Exercice 2 : Noms et prénoms Crée les deux listes :</description>
+      <description>Niveau 1 – Manipuler et afficher Exercice 1 : Liste d’animaux Crée la liste suivante :</description>
     </item>
     <item>
       <title>Exercices - Boucles imbriquées avec une liste de listes (solutions)</title>
       <link>https://example.org/semaine6/solutionexos/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine6/solutionexos/index.html</guid>
-      <description>Niveau 1 – Manipuler et afficher Exercice 1 : Liste d’animaux animaux = [[&#34;chat&#34;, &#34;chien&#34;], [&#34;lion&#34;, &#34;tigre&#34;], [&#34;souris&#34;, &#34;rat&#34;]] for sous_liste in animaux: # on parcourt les sous-listes for animal in sous_liste: # on parcourt chaque animal dans la sous-liste print(animal, &#34; &#34;)&#x9;# un espace sépare le noms des animaux print() # saut de ligne après chaque sous-liste&#xD;Explication :&#xA;La première boucle prend chaque sous-liste (par exemple [&#34;chat&#34;, &#34;chien&#34;]).</description>
+      <description>Niveau 1 – Manipuler et afficher Exercice 1 : Liste d’animaux animaux = [[&#34;chat&#34;, &#34;chien&#34;], [&#34;lion&#34;, &#34;tigre&#34;], [&#34;souris&#34;, &#34;rat&#34;]] for sous_liste in animaux: # on parcourt les sous-listes for animal in sous_liste: # on parcourt chaque animal dans la sous-liste print(animal, &#34; &#34;)&#x9;# un espace sépare le noms des animaux print() # saut de ligne après chaque sous-liste&#xD;Explication :</description>
     </item>
     <item>
       <title>print et end</title>
       <link>https://example.org/semaine6/print_end/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine6/print_end/index.html</guid>
-      <description>En Python, la fonction print(), ajoute par défaut un saut de ligne (\n) à la fin de chaque instruction. Ce comportement peut être modifié grâce au paramètre end, qui permet de préciser une autre chaîne de caractères (comme un espace &#34; &#34;, une virgule &#34;,&#34; ou un tiret &#34;-&#34;, etc.) à afficher à la fin. Cela rend possible l’affichage de plusieurs sorties sur la même ligne ou avec des séparateurs personnalisés.</description>
+      <description>En Python, la fonction print(), ajoute par défaut un saut de ligne (\n) à la fin de chaque instruction. Ce comportement peut être modifié grâce au paramètre end, qui permet de préciser une autre chaîne de caractères (comme un espace &#34; &#34;, une virgule &#34;,&#34; ou un tiret &#34;-&#34;, etc.) à afficher à la fin. Cela rend possible l’affichage de plusieurs sorties sur la même ligne ou avec des séparateurs personnalisés. Exemples :</description>
     </item>
   </channel>
 </rss>

@@ -3,7 +3,7 @@
   <channel>
     <title> Dictionnaires :: 420-SN1-RE</title>
     <link>https://example.org/solutions_exercices/7_dictionnaires/index.html</link>
-    <description>Exercice 1 : Créer un dictionnaire # Création d&#39;un dictionnaire vide cubes = {} # Ajout des clés et valeurs avec une boucle for i in range(1, 6): cubes[i] = i**3 print(&#34;Dictionnaire des cubes :&#34;, cubes)&#xD;Exercice 2 : Extraire clés et valeurs cles = list(cubes.keys()) valeurs = list(cubes.values()) print(&#34;Clés :&#34;, cles) print(&#34;Valeurs :&#34;, valeurs)&#xD;Exercice 3 : Parcourir items() for cle, valeur in cubes.items(): print(f&#34;Le cube de {cle} est {valeur}&#34;)&#xD;Exercice 4 : Modifier et supprimer # 1.</description>
+    <description>Exercice 1 : Créer un dictionnaire # Création d&#39;un dictionnaire vide cubes = {} # Ajout des clés et valeurs avec une boucle for i in range(1, 6): cubes[i] = i**3 print(&#34;Dictionnaire des cubes :&#34;, cubes)&#xD;Exercice 2 : Extraire clés et valeurs cles = list(cubes.keys()) valeurs = list(cubes.values()) print(&#34;Clés :&#34;, cles) print(&#34;Valeurs :&#34;, valeurs)&#xD;Exercice 3 : Parcourir items() for cle, valeur in cubes.items(): print(f&#34;Le cube de {cle} est {valeur}&#34;)&#xD;Exercice 4 : Modifier et supprimer # 1. Ajouter une nouvelle paire cubes[6] = 216 # 2. Modifier la valeur associée à la clé 3 cubes[3] = 30 # 3. Supprimer la clé 1 del cubes[1] print(&#34;Dictionnaire final :&#34;, cubes)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/solutions_exercices/7_dictionnaires/index.xml" rel="self" type="application/rss+xml" />
