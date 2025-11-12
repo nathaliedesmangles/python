@@ -12,7 +12,7 @@ draft = false
 > **Durée :** 3 semaines (en classe)  
 > **Pondération :** 15 % de la note finale  
 > **Thème scientifique :** biologie moléculaire et identification génétique  
-> **Équipe ?: ** en équipe de 2 ou seul.e
+> **Équipe ?:** en équipe de 2 ou individuellement  
 
 
 ## Résumé des compétences évaluées
