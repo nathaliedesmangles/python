@@ -160,6 +160,11 @@ def nom_fonction(param1, param2): # <--- Les deux-points
     print(résultat) # <--- La fonction se termine ici
 ```
 
+{{% notice style="accent" title="Important" %}}
+Notez les `:` (deux points après les parenthèses) et **l'indentation** qui indique à Python quelles instructions font partie de la fonction.
+{{% /notice %}}
+
+
 **Exemple** :
 
 ```python
@@ -268,6 +273,12 @@ print(x)       # Erreur : x n'existe pas ici
 
 Les ***docstrings*** `""" """` sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.
 
+### Pourquoi c’est utile ?
+
+* Comprendre rapidement ce que fait une fonction (même plusieurs semaines plus tard).
+* Faciliter le travail en équipe.
+* Rendre votre code plus professionnel et plus facile à maintenir.
+
 **Format standard**
 ```python
 def nom_fonction(param):
@@ -298,6 +309,23 @@ def addition(a, b):
     return a + b
 ```
 
+## `help()` et les docstrings
+
+La fonction intégrée `help()` permet d’afficher rapidement l’information sur une fonction, un module ou un objet Python.
+Elle montre automatiquement la **docstring**, c’est-à-dire le texte d’aide placé juste sous la définition d’une fonction.
+
+### Exemple
+
+```python
+def aire_cercle(r):
+    """Retourne l'aire d'un cercle de rayon r."""
+    return 3.1416 * r**2
+
+help(aire_cercle)
+```
+
+Résultat : Python affiche le nom de la fonction, son emplacement et la docstring.
+
 
 {{% notice style="cyan" title="À retenir" groupid="notice-toggle" expanded="false" %}}
 * `def` : sert à définir une fonction 
@@ -305,7 +333,11 @@ def addition(a, b):
 * `return` : Permet à la fonction de retourner un ou plusieurs résultats (`resultat = fonction()` ou <br> `print(fonction())` ou `resultat1, resultat2 = fonction()`)
 * **Portée locale** : Signifie que les variables dans une fonction n’existent qu’à l’intérieur de .elle-ci|
 * Pour **utiliser une fonction** prédéfinie ou personnalisé, il faut écrire son nom, les parenthèses et les paramètres si elle en a. Si la fonction retourne un ou plusieurs résultats, il faut les stocker dans des variables afin de pouvoir les utiliser dans le programme. 
+* Une **docstring** est écrite entre triples guillemets `""" ... """`.
+* Elle sert à décrire le rôle de la fonction, ses paramètres et ce qu’elle retourne.
+* `help()` lit cette docstring et affiche l’aide automatiquement.
 {{% /notice %}}
+
 
 ---
 
@@ -369,5 +401,6 @@ Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.
 
 
 1. Lire la description du [Projet final](../semaine12/)
+2. Lire les informations générales sur l'examen [Examen final](../semaine15/)
 
 

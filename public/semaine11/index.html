@@ -22,30 +22,30 @@ Apprendre par la pratique Faites les exercices en vous aidant des notes de cours
     <meta itemprop="name" content=" Fonctions personnalisées :: 420-SN1-RE">
     <meta itemprop="description" content="Objectifs Définir vos propres fonctions avec def (paramètres, return, portée locale) Documenter les fonctions personnalisées (docstring) Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration
 Apprendre par la pratique Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Appel de fonction Ajoutez un Docstring pour chacune des fonctions créées. Pour les exercices #2 à #5, utilisez (appelez) la fonction crée. Bloc-notes de départ">
-    <meta itemprop="wordCount" content="1573">
+    <meta itemprop="wordCount" content="1733">
     <title> Fonctions personnalisées :: 420-SN1-RE</title>
     <link href="/semaine11/index.xml" rel="alternate" type="application/rss+xml" title=" Fonctions personnalisées :: 420-SN1-RE">
-    <link href="/images/logo.png?1762991787" rel="icon" type="image/png">
-    <link href="/css/auto-complete/auto-complete.min.css?1762991787" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1762991787" defer></script>
-    <script src="/js/search-lunr.min.js?1762991787" defer></script>
-    <script src="/js/search.min.js?1762991787" defer></script>
+    <link href="/images/logo.png?1763139038" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1763139038" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1763139038" defer></script>
+    <script src="/js/search-lunr.min.js?1763139038" defer></script>
+    <script src="/js/search.min.js?1763139038" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1762991787";
+      window.relearn.index_js_url="/searchindex.en.js?1763139038";
     </script>
-    <script src="/js/lunr/lunr.min.js?1762991787" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1762991787" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1762991787" defer></script>
-    <script src="/js/lunr/lunr.fr.min.js?1762991787" defer></script>
+    <script src="/js/lunr/lunr.min.js?1763139038" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1763139038" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1763139038" defer></script>
+    <script src="/js/lunr/lunr.fr.min.js?1763139038" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['fr'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762991787" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1762991787" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1762991787" rel="stylesheet">
-    <link href="/css/theme.min.css?1762991787" rel="stylesheet">
-    <link href="/css/format-html.min.css?1762991787" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763139038" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763139038" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1763139038" rel="stylesheet">
+    <link href="/css/theme.min.css?1763139038" rel="stylesheet">
+    <link href="/css/format-html.min.css?1763139038" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -99,7 +99,7 @@ Apprendre par la pratique Faites les exercices en vous aidant des notes de cours
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/css/custom.css?1762991787" rel="stylesheet">
+    <link href="/css/custom.css?1763139038" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine11/index.html">
     <div id="R-body" class="default-animation">
@@ -138,7 +138,16 @@ Apprendre par la pratique Faites les exercices en vous aidant des notes de cours
         <li><a href="#la-portée-locale-des-variables">La portée locale des variables</a></li>
       </ul>
     </li>
-    <li><a href="#documenter-les-fonctions-docstrings">Documenter les fonctions (<em>docstrings</em>)</a></li>
+    <li><a href="#documenter-les-fonctions-docstrings">Documenter les fonctions (<em>docstrings</em>)</a>
+      <ul>
+        <li><a href="#pourquoi-cest-utile-">Pourquoi c’est utile ?</a></li>
+      </ul>
+    </li>
+    <li><a href="#help-et-les-docstrings"><code>help()</code> et les docstrings</a>
+      <ul>
+        <li><a href="#exemple">Exemple</a></li>
+      </ul>
+    </li>
   </ul>
 
   <ul>
@@ -312,6 +321,15 @@ L&rsquo;absence de ce décalage (<strong>indentation</strong>) provoque l&rsquo;
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">nom_fonction</span>(param1, param2): <span style="color:#75715e"># &lt;--- Les deux-points </span>
 </span></span><span style="display:flex;"><span>    instructions
 </span></span><span style="display:flex;"><span>    print(résultat) <span style="color:#75715e"># &lt;--- La fonction se termine ici</span></span></span></code></pre></div>
+
+<details open class=" box cstyle notices accent">
+  <summary class="box-label" tabindex="-1">
+    Important
+  </summary>
+  <div class="box-content">
+<p>Notez les <code>:</code> (deux points après les parenthèses) et <strong>l&rsquo;indentation</strong> qui indique à Python quelles instructions font partie de la fonction.</p>
+  </div>
+</details>
 <p><strong>Exemple</strong> :</p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Définition de la fonction</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">aire_rectangle</span>(longueur, largeur):
@@ -384,10 +402,16 @@ Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(test())  <span style="color:#75715e"># OK, affiche 10</span>
 </span></span><span style="display:flex;"><span>print(x)       <span style="color:#75715e"># Erreur : x n&#39;existe pas ici</span></span></span></code></pre></div>
-<p><a href="#R-image-6834ea26a51596a28b934dc7aefff772" class="lightbox-link"><img alt="Erreur de nom" class="lazy lightbox figure-image" loading="lazy" src="/semaine11/erreur_name.png?width=35vw" style="height: auto;width: 35vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6834ea26a51596a28b934dc7aefff772"><img alt="Erreur de nom" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine11/erreur_name.png?width=35vw"></a></p>
+<p><a href="#R-image-07fe8632efd678d081569633a2abc588" class="lightbox-link"><img alt="Erreur de nom" class="lazy lightbox figure-image" loading="lazy" src="/semaine11/erreur_name.png?width=35vw" style="height: auto;width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-07fe8632efd678d081569633a2abc588"><img alt="Erreur de nom" class="lazy lightbox lightbox-image" loading="lazy" src="/semaine11/erreur_name.png?width=35vw"></a></p>
 <h2 id="documenter-les-fonctions-docstrings">Documenter les fonctions (<em>docstrings</em>)</h2>
 <p>Les <em><strong>docstrings</strong></em> <code>&quot;&quot;&quot; &quot;&quot;&quot;</code> sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.</p>
+<h3 id="pourquoi-cest-utile-">Pourquoi c’est utile ?</h3>
+<ul>
+<li>Comprendre rapidement ce que fait une fonction (même plusieurs semaines plus tard).</li>
+<li>Faciliter le travail en équipe.</li>
+<li>Rendre votre code plus professionnel et plus facile à maintenir.</li>
+</ul>
 <p><strong>Format standard</strong></p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">nom_fonction</span>(param):
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
@@ -412,6 +436,16 @@ Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.</p>
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    int, float: La somme des deux nombres.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b</span></span></code></pre></div>
+<h2 id="help-et-les-docstrings"><code>help()</code> et les docstrings</h2>
+<p>La fonction intégrée <code>help()</code> permet d’afficher rapidement l’information sur une fonction, un module ou un objet Python.
+Elle montre automatiquement la <strong>docstring</strong>, c’est-à-dire le texte d’aide placé juste sous la définition d’une fonction.</p>
+<h3 id="exemple">Exemple</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">aire_cercle</span>(r):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Retourne l&#39;aire d&#39;un cercle de rayon r.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">3.1416</span> <span style="color:#f92672">*</span> r<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>help(aire_cercle)</span></span></code></pre></div>
+<p>Résultat : Python affiche le nom de la fonction, son emplacement et la docstring.</p>
 
 <details class=" box cstyle notices cyan expand" name="notice-toggle">
   <summary class="box-label">
@@ -425,6 +459,9 @@ Ici, 5 est la valeur pour la longueur et 2 celle de la largeur.</p>
 <li><code>return</code> : Permet à la fonction de retourner un ou plusieurs résultats (<code>resultat = fonction()</code> ou <br> <code>print(fonction())</code> ou <code>resultat1, resultat2 = fonction()</code>)</li>
 <li><strong>Portée locale</strong> : Signifie que les variables dans une fonction n’existent qu’à l’intérieur de .elle-ci|</li>
 <li>Pour <strong>utiliser une fonction</strong> prédéfinie ou personnalisé, il faut écrire son nom, les parenthèses et les paramètres si elle en a. Si la fonction retourne un ou plusieurs résultats, il faut les stocker dans des variables afin de pouvoir les utiliser dans le programme.</li>
+<li>Une <strong>docstring</strong> est écrite entre triples guillemets <code>&quot;&quot;&quot; ... &quot;&quot;&quot;</code>.</li>
+<li>Elle sert à décrire le rôle de la fonction, ses paramètres et ce qu’elle retourne.</li>
+<li><code>help()</code> lit cette docstring et affiche l’aide automatiquement.</li>
 </ul>
   </div>
 </details>
@@ -481,6 +518,7 @@ Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.</
 </blockquote>
 <ol>
 <li>Lire la description du <a href="/semaine12/index.html">Projet final</a></li>
+<li>Lire les informations générales sur l&rsquo;examen <a href="/semaine15/index.html">Examen final</a></li>
 </ol>
 
   <footer class="footline">
@@ -580,9 +618,9 @@ Il faut prélever 0.25 L de solution mère pour préparer la solution diluée.</
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1762991787"></script>
-    <script src="/js/clipboard/clipboard.min.js?1762991787" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1762991787" defer></script>
-    <script src="/js/theme.min.js?1762991787" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1763139038"></script>
+    <script src="/js/clipboard/clipboard.min.js?1763139038" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1763139038" defer></script>
+    <script src="/js/theme.min.js?1763139038" defer></script>
   </body>
 </html>
