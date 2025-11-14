@@ -331,11 +331,10 @@ Résultat : Python affiche le nom de la fonction, son emplacement et la docstrin
 * `def` : sert à définir une fonction 
 * ***nom_fonction(paramètres)*** : Les paramètres sont les variables représentant les données dont la fonction a besoin pour obtenir le résultat.                   
 * `return` : Permet à la fonction de retourner un ou plusieurs résultats (`resultat = fonction()` ou <br> `print(fonction())` ou `resultat1, resultat2 = fonction()`)
-* **Portée locale** : Signifie que les variables dans une fonction n’existent qu’à l’intérieur de .elle-ci|
+* **Portée locale** : Signifie que les variables dans une fonction n’existent qu’à l’intérieur de celle-ci.
 * Pour **utiliser une fonction** prédéfinie ou personnalisé, il faut écrire son nom, les parenthèses et les paramètres si elle en a. Si la fonction retourne un ou plusieurs résultats, il faut les stocker dans des variables afin de pouvoir les utiliser dans le programme. 
-* Une **docstring** est écrite entre triples guillemets `""" ... """`.
-* Elle sert à décrire le rôle de la fonction, ses paramètres et ce qu’elle retourne.
-* `help()` lit cette docstring et affiche l’aide automatiquement.
+* Une **docstring** est écrite entre triples guillemets `""" ... """`. Elle sert à décrire le rôle de la fonction, ses paramètres et ce qu’elle retourne.
+* `help()` lit la docstring et affiche l’aide automatiquement.
 {{% /notice %}}
 
 
