@@ -92,3 +92,81 @@ plt.ylabel("Oxygène (mg/L)")
 plt.grid()
 plt.show()
 ```
+
+
+---
+
+## Que fait `.map()` en pandas ?
+
+La méthode **`.map()`** permet de **remplacer les valeurs d’une série** selon un *dictionnaire de correspondance*.
+Elle prend chaque valeur d’une colonne et la transforme selon les règles définies.
+
+Exemple :
+
+```python
+couleurs = df["Qualite"].map({"Bonne": "skyblue",
+                              "Moyenne": "gold",
+                              "Faible": "salmon"})
+```
+
+Pour chaque ligne :
+
+| Valeur dans `Qualite` | Devient                             |
+| --------------------- | ----------------------------------- |
+| `"Bonne"`             | `"skyblue"`                         |
+| `"Moyenne"`           | `"gold"`                            |
+| `"Faible"`            | `"salmon"`                          |
+| autre chose           | `NaN` (car non prévue dans le dict) |
+
+Utile pour :
+
+* remplacer des valeurs textuelles par des étiquettes
+* transformer des catégories en nombres
+* assigner des couleurs pour un graphique (comme ici)
+
+
+
+## Comment faire la même chose **sans `.map()`**
+
+### 1. Avec une **boucle**
+
+```python
+couleurs = []
+
+for q in df["Qualite"]:
+    if q == "Bonne":
+        couleurs.append("skyblue")
+    elif q == "Moyenne":
+        couleurs.append("gold")
+    elif q == "Faible":
+        couleurs.append("salmon")
+    else:
+        couleurs.append(None)   # équivalent de NaN
+```
+
+
+### 2. Avec **np.where()**
+
+```python
+import numpy as np
+
+couleurs = np.where(df["Qualite"] == "Bonne", "skyblue",
+            np.where(df["Qualite"] == "Moyenne", "gold",
+            np.where(df["Qualite"] == "Faible", "salmon", None)))
+```
+
+
+### 3. Avec `replace()`
+
+```python
+couleurs = df["Qualite"].replace({
+    "Bonne": "skyblue",
+    "Moyenne": "gold",
+    "Faible": "salmon"
+})
+```
+
+**Avantage** : garde les autres valeurs intactes (pas transformées en NaN).
+
+
+

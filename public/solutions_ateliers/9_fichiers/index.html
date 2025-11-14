@@ -5,43 +5,43 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
     <meta name="generator" content="Relearn 8.2.0+9cac649a184a2967957ef9bbececf9402192846c">
-    <meta name="description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.fillna(df.mean(numeric_only=True)) print() print(&#34;Données après remplissage des NaN&#34;) print(df) # Ajout de la colonne &#39;Qualite&#39; selon la concentration en oxygène # Règles : # - Oxygène &gt;= 8.0 → &#34;Bonne&#34; # - 7.5 &lt;= Oxygène &lt; 8.0 → &#34;Moyenne&#34; # - Oxygène &lt; 7.5 → &#34;Faible&#34; df[&#34;Qualite&#34;] = np.where( df[&#34;Oxygene&#34;] &gt;= 8.0, &#34;Bonne&#34;, np.where( (df[&#34;Oxygene&#34;] &gt;= 7.5) &amp; (df[&#34;Oxygene&#34;] &lt; 8.0), &#34;Moyenne&#34;, &#34;Faible&#34; ) ) # Ajout de la colonne &#39;Alerte&#39; selon le pH # Si pH &lt; 7.0 → &#34;Attention&#34;, sinon &#34;OK&#34; df[&#34;Alerte&#34;] = np.where(df[&#34;pH&#34;] &lt; 7.0, &#34;Attention&#34;, &#34;OK&#34;) print() print(&#34;Données finales avec colonnes dérivées&#34;) print(df) # Sauvegarde finale du fichier nettoyé df.to_csv(&#34;eau_riviere_nettoyee.csv&#34;, index=False) print() print(&#34;Fichier &#39;eau_riviere_nettoyee.csv&#39; sauvegardé avec succès.&#34;) # PARTIE 2 — Visualisation graphique (Optionnel) import matplotlib.pyplot as plt # Graphique 1 erreur = 0.2 couleurs = df[&#34;Qualite&#34;].map({&#34;Bonne&#34;: &#34;skyblue&#34;, &#34;Moyenne&#34;: &#34;gold&#34;, &#34;Faible&#34;: &#34;salmon&#34;}) plt.bar(df[&#34;Site&#34;], df[&#34;Oxygene&#34;], yerr=erreur, capsize=5, color=couleurs) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid(axis=&#34;y&#34;, linestyle=&#34;--&#34;, alpha=0.7) plt.show() # Graphique 2 plt.scatter(df[&#34;Site&#34;], df[&#34;Oxygene&#34;]) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid() plt.show()">
+    <meta name="description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.fillna(df.mean(numeric_only=True)) print() print(&#34;Données après remplissage des NaN&#34;) print(df) # Ajout de la colonne &#39;Qualite&#39; selon la concentration en oxygène # Règles : # - Oxygène &gt;= 8.0 → &#34;Bonne&#34; # - 7.5 &lt;= Oxygène &lt; 8.0 → &#34;Moyenne&#34; # - Oxygène &lt; 7.5 → &#34;Faible&#34; df[&#34;Qualite&#34;] = np.where( df[&#34;Oxygene&#34;] &gt;= 8.0, &#34;Bonne&#34;, np.where( (df[&#34;Oxygene&#34;] &gt;= 7.5) &amp; (df[&#34;Oxygene&#34;] &lt; 8.0), &#34;Moyenne&#34;, &#34;Faible&#34; ) ) # Ajout de la colonne &#39;Alerte&#39; selon le pH # Si pH &lt; 7.0 → &#34;Attention&#34;, sinon &#34;OK&#34; df[&#34;Alerte&#34;] = np.where(df[&#34;pH&#34;] &lt; 7.0, &#34;Attention&#34;, &#34;OK&#34;) print() print(&#34;Données finales avec colonnes dérivées&#34;) print(df) # Sauvegarde finale du fichier nettoyé df.to_csv(&#34;eau_riviere_nettoyee.csv&#34;, index=False) print() print(&#34;Fichier &#39;eau_riviere_nettoyee.csv&#39; sauvegardé avec succès.&#34;) # PARTIE 2 — Visualisation graphique (Optionnel) import matplotlib.pyplot as plt # Graphique 1 erreur = 0.2 couleurs = df[&#34;Qualite&#34;].map({&#34;Bonne&#34;: &#34;skyblue&#34;, &#34;Moyenne&#34;: &#34;gold&#34;, &#34;Faible&#34;: &#34;salmon&#34;}) plt.bar(df[&#34;Site&#34;], df[&#34;Oxygene&#34;], yerr=erreur, capsize=5, color=couleurs) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid(axis=&#34;y&#34;, linestyle=&#34;--&#34;, alpha=0.7) plt.show() # Graphique 2 plt.scatter(df[&#34;Site&#34;], df[&#34;Oxygene&#34;]) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid() plt.show() Que fait .map() en pandas ? La méthode .map() permet de remplacer les valeurs d’une série selon un dictionnaire de correspondance. Elle prend chaque valeur d’une colonne et la transforme selon les règles définies.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <meta name="twitter:description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.fillna(df.mean(numeric_only=True)) print() print(&#34;Données après remplissage des NaN&#34;) print(df) # Ajout de la colonne &#39;Qualite&#39; selon la concentration en oxygène # Règles : # - Oxygène &gt;= 8.0 → &#34;Bonne&#34; # - 7.5 &lt;= Oxygène &lt; 8.0 → &#34;Moyenne&#34; # - Oxygène &lt; 7.5 → &#34;Faible&#34; df[&#34;Qualite&#34;] = np.where( df[&#34;Oxygene&#34;] &gt;= 8.0, &#34;Bonne&#34;, np.where( (df[&#34;Oxygene&#34;] &gt;= 7.5) &amp; (df[&#34;Oxygene&#34;] &lt; 8.0), &#34;Moyenne&#34;, &#34;Faible&#34; ) ) # Ajout de la colonne &#39;Alerte&#39; selon le pH # Si pH &lt; 7.0 → &#34;Attention&#34;, sinon &#34;OK&#34; df[&#34;Alerte&#34;] = np.where(df[&#34;pH&#34;] &lt; 7.0, &#34;Attention&#34;, &#34;OK&#34;) print() print(&#34;Données finales avec colonnes dérivées&#34;) print(df) # Sauvegarde finale du fichier nettoyé df.to_csv(&#34;eau_riviere_nettoyee.csv&#34;, index=False) print() print(&#34;Fichier &#39;eau_riviere_nettoyee.csv&#39; sauvegardé avec succès.&#34;) # PARTIE 2 — Visualisation graphique (Optionnel) import matplotlib.pyplot as plt # Graphique 1 erreur = 0.2 couleurs = df[&#34;Qualite&#34;].map({&#34;Bonne&#34;: &#34;skyblue&#34;, &#34;Moyenne&#34;: &#34;gold&#34;, &#34;Faible&#34;: &#34;salmon&#34;}) plt.bar(df[&#34;Site&#34;], df[&#34;Oxygene&#34;], yerr=erreur, capsize=5, color=couleurs) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid(axis=&#34;y&#34;, linestyle=&#34;--&#34;, alpha=0.7) plt.show() # Graphique 2 plt.scatter(df[&#34;Site&#34;], df[&#34;Oxygene&#34;]) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid() plt.show()">
+    <meta name="twitter:description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.fillna(df.mean(numeric_only=True)) print() print(&#34;Données après remplissage des NaN&#34;) print(df) # Ajout de la colonne &#39;Qualite&#39; selon la concentration en oxygène # Règles : # - Oxygène &gt;= 8.0 → &#34;Bonne&#34; # - 7.5 &lt;= Oxygène &lt; 8.0 → &#34;Moyenne&#34; # - Oxygène &lt; 7.5 → &#34;Faible&#34; df[&#34;Qualite&#34;] = np.where( df[&#34;Oxygene&#34;] &gt;= 8.0, &#34;Bonne&#34;, np.where( (df[&#34;Oxygene&#34;] &gt;= 7.5) &amp; (df[&#34;Oxygene&#34;] &lt; 8.0), &#34;Moyenne&#34;, &#34;Faible&#34; ) ) # Ajout de la colonne &#39;Alerte&#39; selon le pH # Si pH &lt; 7.0 → &#34;Attention&#34;, sinon &#34;OK&#34; df[&#34;Alerte&#34;] = np.where(df[&#34;pH&#34;] &lt; 7.0, &#34;Attention&#34;, &#34;OK&#34;) print() print(&#34;Données finales avec colonnes dérivées&#34;) print(df) # Sauvegarde finale du fichier nettoyé df.to_csv(&#34;eau_riviere_nettoyee.csv&#34;, index=False) print() print(&#34;Fichier &#39;eau_riviere_nettoyee.csv&#39; sauvegardé avec succès.&#34;) # PARTIE 2 — Visualisation graphique (Optionnel) import matplotlib.pyplot as plt # Graphique 1 erreur = 0.2 couleurs = df[&#34;Qualite&#34;].map({&#34;Bonne&#34;: &#34;skyblue&#34;, &#34;Moyenne&#34;: &#34;gold&#34;, &#34;Faible&#34;: &#34;salmon&#34;}) plt.bar(df[&#34;Site&#34;], df[&#34;Oxygene&#34;], yerr=erreur, capsize=5, color=couleurs) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid(axis=&#34;y&#34;, linestyle=&#34;--&#34;, alpha=0.7) plt.show() # Graphique 2 plt.scatter(df[&#34;Site&#34;], df[&#34;Oxygene&#34;]) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid() plt.show() Que fait .map() en pandas ? La méthode .map() permet de remplacer les valeurs d’une série selon un dictionnaire de correspondance. Elle prend chaque valeur d’une colonne et la transforme selon les règles définies.">
     <meta property="og:url" content="/solutions_ateliers/9_fichiers/index.html">
     <meta property="og:site_name" content="420-SN1-RE">
     <meta property="og:title" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <meta property="og:description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.fillna(df.mean(numeric_only=True)) print() print(&#34;Données après remplissage des NaN&#34;) print(df) # Ajout de la colonne &#39;Qualite&#39; selon la concentration en oxygène # Règles : # - Oxygène &gt;= 8.0 → &#34;Bonne&#34; # - 7.5 &lt;= Oxygène &lt; 8.0 → &#34;Moyenne&#34; # - Oxygène &lt; 7.5 → &#34;Faible&#34; df[&#34;Qualite&#34;] = np.where( df[&#34;Oxygene&#34;] &gt;= 8.0, &#34;Bonne&#34;, np.where( (df[&#34;Oxygene&#34;] &gt;= 7.5) &amp; (df[&#34;Oxygene&#34;] &lt; 8.0), &#34;Moyenne&#34;, &#34;Faible&#34; ) ) # Ajout de la colonne &#39;Alerte&#39; selon le pH # Si pH &lt; 7.0 → &#34;Attention&#34;, sinon &#34;OK&#34; df[&#34;Alerte&#34;] = np.where(df[&#34;pH&#34;] &lt; 7.0, &#34;Attention&#34;, &#34;OK&#34;) print() print(&#34;Données finales avec colonnes dérivées&#34;) print(df) # Sauvegarde finale du fichier nettoyé df.to_csv(&#34;eau_riviere_nettoyee.csv&#34;, index=False) print() print(&#34;Fichier &#39;eau_riviere_nettoyee.csv&#39; sauvegardé avec succès.&#34;) # PARTIE 2 — Visualisation graphique (Optionnel) import matplotlib.pyplot as plt # Graphique 1 erreur = 0.2 couleurs = df[&#34;Qualite&#34;].map({&#34;Bonne&#34;: &#34;skyblue&#34;, &#34;Moyenne&#34;: &#34;gold&#34;, &#34;Faible&#34;: &#34;salmon&#34;}) plt.bar(df[&#34;Site&#34;], df[&#34;Oxygene&#34;], yerr=erreur, capsize=5, color=couleurs) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid(axis=&#34;y&#34;, linestyle=&#34;--&#34;, alpha=0.7) plt.show() # Graphique 2 plt.scatter(df[&#34;Site&#34;], df[&#34;Oxygene&#34;]) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid() plt.show()">
+    <meta property="og:description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.fillna(df.mean(numeric_only=True)) print() print(&#34;Données après remplissage des NaN&#34;) print(df) # Ajout de la colonne &#39;Qualite&#39; selon la concentration en oxygène # Règles : # - Oxygène &gt;= 8.0 → &#34;Bonne&#34; # - 7.5 &lt;= Oxygène &lt; 8.0 → &#34;Moyenne&#34; # - Oxygène &lt; 7.5 → &#34;Faible&#34; df[&#34;Qualite&#34;] = np.where( df[&#34;Oxygene&#34;] &gt;= 8.0, &#34;Bonne&#34;, np.where( (df[&#34;Oxygene&#34;] &gt;= 7.5) &amp; (df[&#34;Oxygene&#34;] &lt; 8.0), &#34;Moyenne&#34;, &#34;Faible&#34; ) ) # Ajout de la colonne &#39;Alerte&#39; selon le pH # Si pH &lt; 7.0 → &#34;Attention&#34;, sinon &#34;OK&#34; df[&#34;Alerte&#34;] = np.where(df[&#34;pH&#34;] &lt; 7.0, &#34;Attention&#34;, &#34;OK&#34;) print() print(&#34;Données finales avec colonnes dérivées&#34;) print(df) # Sauvegarde finale du fichier nettoyé df.to_csv(&#34;eau_riviere_nettoyee.csv&#34;, index=False) print() print(&#34;Fichier &#39;eau_riviere_nettoyee.csv&#39; sauvegardé avec succès.&#34;) # PARTIE 2 — Visualisation graphique (Optionnel) import matplotlib.pyplot as plt # Graphique 1 erreur = 0.2 couleurs = df[&#34;Qualite&#34;].map({&#34;Bonne&#34;: &#34;skyblue&#34;, &#34;Moyenne&#34;: &#34;gold&#34;, &#34;Faible&#34;: &#34;salmon&#34;}) plt.bar(df[&#34;Site&#34;], df[&#34;Oxygene&#34;], yerr=erreur, capsize=5, color=couleurs) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid(axis=&#34;y&#34;, linestyle=&#34;--&#34;, alpha=0.7) plt.show() # Graphique 2 plt.scatter(df[&#34;Site&#34;], df[&#34;Oxygene&#34;]) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid() plt.show() Que fait .map() en pandas ? La méthode .map() permet de remplacer les valeurs d’une série selon un dictionnaire de correspondance. Elle prend chaque valeur d’une colonne et la transforme selon les règles définies.">
     <meta property="og:locale" content="fr">
     <meta property="og:type" content="website">
     <meta itemprop="name" content=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <meta itemprop="description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.fillna(df.mean(numeric_only=True)) print() print(&#34;Données après remplissage des NaN&#34;) print(df) # Ajout de la colonne &#39;Qualite&#39; selon la concentration en oxygène # Règles : # - Oxygène &gt;= 8.0 → &#34;Bonne&#34; # - 7.5 &lt;= Oxygène &lt; 8.0 → &#34;Moyenne&#34; # - Oxygène &lt; 7.5 → &#34;Faible&#34; df[&#34;Qualite&#34;] = np.where( df[&#34;Oxygene&#34;] &gt;= 8.0, &#34;Bonne&#34;, np.where( (df[&#34;Oxygene&#34;] &gt;= 7.5) &amp; (df[&#34;Oxygene&#34;] &lt; 8.0), &#34;Moyenne&#34;, &#34;Faible&#34; ) ) # Ajout de la colonne &#39;Alerte&#39; selon le pH # Si pH &lt; 7.0 → &#34;Attention&#34;, sinon &#34;OK&#34; df[&#34;Alerte&#34;] = np.where(df[&#34;pH&#34;] &lt; 7.0, &#34;Attention&#34;, &#34;OK&#34;) print() print(&#34;Données finales avec colonnes dérivées&#34;) print(df) # Sauvegarde finale du fichier nettoyé df.to_csv(&#34;eau_riviere_nettoyee.csv&#34;, index=False) print() print(&#34;Fichier &#39;eau_riviere_nettoyee.csv&#39; sauvegardé avec succès.&#34;) # PARTIE 2 — Visualisation graphique (Optionnel) import matplotlib.pyplot as plt # Graphique 1 erreur = 0.2 couleurs = df[&#34;Qualite&#34;].map({&#34;Bonne&#34;: &#34;skyblue&#34;, &#34;Moyenne&#34;: &#34;gold&#34;, &#34;Faible&#34;: &#34;salmon&#34;}) plt.bar(df[&#34;Site&#34;], df[&#34;Oxygene&#34;], yerr=erreur, capsize=5, color=couleurs) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid(axis=&#34;y&#34;, linestyle=&#34;--&#34;, alpha=0.7) plt.show() # Graphique 2 plt.scatter(df[&#34;Site&#34;], df[&#34;Oxygene&#34;]) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid() plt.show()">
-    <meta itemprop="wordCount" content="246">
+    <meta itemprop="description" content="import numpy as np import pandas as pd # PARTIE 1 — Lecture et nettoyage avec pandas # Lecture du fichier CSV &#34;eau_riviere.csv&#34; df = pd.read_csv(&#34;eau_riviere.csv&#34;) print() print(&#34;Données initiales (pandas)&#34;) print(df) # Détection des valeurs manquantes print() print(&#34;Valeurs manquantes par colonne&#34;) print(df.isna().sum()) # Remplacement des valeurs manquantes par la moyenne de la colonne df[&#34;Temperature&#34;] = df[&#34;Temperature&#34;].fillna(df[&#34;Temperature&#34;].mean()) df[&#34;pH&#34;] = df[&#34;pH&#34;].fillna(df[&#34;pH&#34;].mean()) df[&#34;Oxygene&#34;] = df[&#34;Oxygene&#34;].fillna(df[&#34;Oxygene&#34;].mean()) # OU pour tout le DataFrame d’un coup # df = df.fillna(df.mean(numeric_only=True)) print() print(&#34;Données après remplissage des NaN&#34;) print(df) # Ajout de la colonne &#39;Qualite&#39; selon la concentration en oxygène # Règles : # - Oxygène &gt;= 8.0 → &#34;Bonne&#34; # - 7.5 &lt;= Oxygène &lt; 8.0 → &#34;Moyenne&#34; # - Oxygène &lt; 7.5 → &#34;Faible&#34; df[&#34;Qualite&#34;] = np.where( df[&#34;Oxygene&#34;] &gt;= 8.0, &#34;Bonne&#34;, np.where( (df[&#34;Oxygene&#34;] &gt;= 7.5) &amp; (df[&#34;Oxygene&#34;] &lt; 8.0), &#34;Moyenne&#34;, &#34;Faible&#34; ) ) # Ajout de la colonne &#39;Alerte&#39; selon le pH # Si pH &lt; 7.0 → &#34;Attention&#34;, sinon &#34;OK&#34; df[&#34;Alerte&#34;] = np.where(df[&#34;pH&#34;] &lt; 7.0, &#34;Attention&#34;, &#34;OK&#34;) print() print(&#34;Données finales avec colonnes dérivées&#34;) print(df) # Sauvegarde finale du fichier nettoyé df.to_csv(&#34;eau_riviere_nettoyee.csv&#34;, index=False) print() print(&#34;Fichier &#39;eau_riviere_nettoyee.csv&#39; sauvegardé avec succès.&#34;) # PARTIE 2 — Visualisation graphique (Optionnel) import matplotlib.pyplot as plt # Graphique 1 erreur = 0.2 couleurs = df[&#34;Qualite&#34;].map({&#34;Bonne&#34;: &#34;skyblue&#34;, &#34;Moyenne&#34;: &#34;gold&#34;, &#34;Faible&#34;: &#34;salmon&#34;}) plt.bar(df[&#34;Site&#34;], df[&#34;Oxygene&#34;], yerr=erreur, capsize=5, color=couleurs) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid(axis=&#34;y&#34;, linestyle=&#34;--&#34;, alpha=0.7) plt.show() # Graphique 2 plt.scatter(df[&#34;Site&#34;], df[&#34;Oxygene&#34;]) plt.title(&#34;Concentration en oxygène dissous dans la rivière&#34;) plt.xlabel(&#34;Site d&#39;échantillonnage&#34;) plt.ylabel(&#34;Oxygène (mg/L)&#34;) plt.grid() plt.show() Que fait .map() en pandas ? La méthode .map() permet de remplacer les valeurs d’une série selon un dictionnaire de correspondance. Elle prend chaque valeur d’une colonne et la transforme selon les règles définies.">
+    <meta itemprop="wordCount" content="421">
     <title> Lecture et écriture de fichiers de données :: 420-SN1-RE</title>
     <link href="/solutions_ateliers/9_fichiers/index.xml" rel="alternate" type="application/rss+xml" title=" Lecture et écriture de fichiers de données :: 420-SN1-RE">
-    <link href="/images/logo.png?1763151003" rel="icon" type="image/png">
-    <link href="/css/auto-complete/auto-complete.min.css?1763151003" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1763151003" defer></script>
-    <script src="/js/search-lunr.min.js?1763151003" defer></script>
-    <script src="/js/search.min.js?1763151003" defer></script>
+    <link href="/images/logo.png?1763154343" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1763154343" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1763154343" defer></script>
+    <script src="/js/search-lunr.min.js?1763154343" defer></script>
+    <script src="/js/search.min.js?1763154343" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1763151003";
+      window.relearn.index_js_url="/searchindex.en.js?1763154343";
     </script>
-    <script src="/js/lunr/lunr.min.js?1763151003" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1763151003" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1763151003" defer></script>
-    <script src="/js/lunr/lunr.fr.min.js?1763151003" defer></script>
+    <script src="/js/lunr/lunr.min.js?1763154343" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1763154343" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1763154343" defer></script>
+    <script src="/js/lunr/lunr.fr.min.js?1763154343" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['fr'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763151003" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763151003" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1763151003" rel="stylesheet">
-    <link href="/css/theme.min.css?1763151003" rel="stylesheet">
-    <link href="/css/format-html.min.css?1763151003" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763154343" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763154343" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1763154343" rel="stylesheet">
+    <link href="/css/theme.min.css?1763154343" rel="stylesheet">
+    <link href="/css/format-html.min.css?1763154343" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -95,7 +95,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/css/custom.css?1763151003" rel="stylesheet">
+    <link href="/css/custom.css?1763154343" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/solutions_ateliers/9_fichiers/index.html">
     <div id="R-body" class="default-animation">
@@ -110,7 +110,19 @@
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
 <span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#que-fait-map-en-pandas-">Que fait <code>.map()</code> en pandas ?</a></li>
+    <li><a href="#comment-faire-la-même-chose-sans">Comment faire la même chose <strong>sans <code>.map()</code></strong></a>
+      <ul>
+        <li><a href="#1-avec-une-boucle">1. Avec une <strong>boucle</strong></a></li>
+        <li><a href="#2-avec-npwhere">2. Avec <strong>np.where()</strong></a></li>
+        <li><a href="#3-avec-replace">3. Avec <code>replace()</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
@@ -230,6 +242,73 @@
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Oxygène (mg/L)&#34;</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>grid()
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<hr>
+<h2 id="que-fait-map-en-pandas-">Que fait <code>.map()</code> en pandas ?</h2>
+<p>La méthode <strong><code>.map()</code></strong> permet de <strong>remplacer les valeurs d’une série</strong> selon un <em>dictionnaire de correspondance</em>.
+Elle prend chaque valeur d’une colonne et la transforme selon les règles définies.</p>
+<p>Exemple :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>couleurs <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Qualite&#34;</span>]<span style="color:#f92672">.</span>map({<span style="color:#e6db74">&#34;Bonne&#34;</span>: <span style="color:#e6db74">&#34;skyblue&#34;</span>,
+</span></span><span style="display:flex;"><span>                              <span style="color:#e6db74">&#34;Moyenne&#34;</span>: <span style="color:#e6db74">&#34;gold&#34;</span>,
+</span></span><span style="display:flex;"><span>                              <span style="color:#e6db74">&#34;Faible&#34;</span>: <span style="color:#e6db74">&#34;salmon&#34;</span>})</span></span></code></pre></div>
+<p>Pour chaque ligne :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Valeur dans <code>Qualite</code></th>
+          <th>Devient</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&quot;Bonne&quot;</code></td>
+          <td><code>&quot;skyblue&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>&quot;Moyenne&quot;</code></td>
+          <td><code>&quot;gold&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>&quot;Faible&quot;</code></td>
+          <td><code>&quot;salmon&quot;</code></td>
+      </tr>
+      <tr>
+          <td>autre chose</td>
+          <td><code>NaN</code> (car non prévue dans le dict)</td>
+      </tr>
+  </tbody>
+</table>
+<p>Utile pour :</p>
+<ul>
+<li>remplacer des valeurs textuelles par des étiquettes</li>
+<li>transformer des catégories en nombres</li>
+<li>assigner des couleurs pour un graphique (comme ici)</li>
+</ul>
+<h2 id="comment-faire-la-même-chose-sans">Comment faire la même chose <strong>sans <code>.map()</code></strong></h2>
+<h3 id="1-avec-une-boucle">1. Avec une <strong>boucle</strong></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>couleurs <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> q <span style="color:#f92672">in</span> df[<span style="color:#e6db74">&#34;Qualite&#34;</span>]:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> q <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Bonne&#34;</span>:
+</span></span><span style="display:flex;"><span>        couleurs<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#34;skyblue&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> q <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Moyenne&#34;</span>:
+</span></span><span style="display:flex;"><span>        couleurs<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#34;gold&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> q <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Faible&#34;</span>:
+</span></span><span style="display:flex;"><span>        couleurs<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#34;salmon&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        couleurs<span style="color:#f92672">.</span>append(<span style="color:#66d9ef">None</span>)   <span style="color:#75715e"># équivalent de NaN</span></span></span></code></pre></div>
+<h3 id="2-avec-npwhere">2. Avec <strong>np.where()</strong></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>couleurs <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>where(df[<span style="color:#e6db74">&#34;Qualite&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Bonne&#34;</span>, <span style="color:#e6db74">&#34;skyblue&#34;</span>,
+</span></span><span style="display:flex;"><span>            np<span style="color:#f92672">.</span>where(df[<span style="color:#e6db74">&#34;Qualite&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Moyenne&#34;</span>, <span style="color:#e6db74">&#34;gold&#34;</span>,
+</span></span><span style="display:flex;"><span>            np<span style="color:#f92672">.</span>where(df[<span style="color:#e6db74">&#34;Qualite&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Faible&#34;</span>, <span style="color:#e6db74">&#34;salmon&#34;</span>, <span style="color:#66d9ef">None</span>)))</span></span></code></pre></div>
+<h3 id="3-avec-replace">3. Avec <code>replace()</code></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>couleurs <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;Qualite&#34;</span>]<span style="color:#f92672">.</span>replace({
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Bonne&#34;</span>: <span style="color:#e6db74">&#34;skyblue&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Moyenne&#34;</span>: <span style="color:#e6db74">&#34;gold&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Faible&#34;</span>: <span style="color:#e6db74">&#34;salmon&#34;</span>
+</span></span><span style="display:flex;"><span>})</span></span></code></pre></div>
+<p><strong>Avantage</strong> : garde les autres valeurs intactes (pas transformées en NaN).</p>
 
   <footer class="footline">
   </footer>
@@ -325,8 +404,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1763151003" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1763151003" defer></script>
-    <script src="/js/theme.min.js?1763151003" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1763154343" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1763154343" defer></script>
+    <script src="/js/theme.min.js?1763154343" defer></script>
   </body>
 </html>
