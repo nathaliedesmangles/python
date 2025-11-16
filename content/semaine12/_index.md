@@ -14,6 +14,13 @@ draft = false
 > **Thème scientifique :** biologie moléculaire et identification génétique  
 > **En équipe :** de 1 😉 2 ou 3 maximum.  
 
+## Pour ceux qui sont **en équipe** et souhaitent pouvoir **travailler à distance** :
+
+1. Il faut installer l'extension ***Live Share*** sur Visual Studio Code	
+   > Elle doit déjà être installée sur les ordinateurs au cégep
+2. Suivre les étapes dans la vidéo [Installation et mise en route de Live Share](https://youtu.be/nf0xHJ2tQjU?si=e3Smn0_mtqefDsFr)
+
+
 
 ## Résumé des compétences évaluées
 
