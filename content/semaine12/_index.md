@@ -40,7 +40,7 @@ draft = false
 * Les 3 graphiques :
 	* `graphique_top10_3loci.png` - Top 10 des suspects les plus proches (3 loci)  
 	* `graphique_regression_locus1_locus2.png` - Corrélation entre Locus1 et Locus2  
-	* `graphique_bruit_locus1.png` - Effet du bruit expérimental sur les valeurs du Locus1
+	* `graphique_bruit_locus.png` - Effet du bruit expérimental sur les valeurs d'un Locus
 
 
 ## Bibliothèques autorisées et contraintes pédagogiques
@@ -204,16 +204,47 @@ for i in range(len(distances) - 1):
 ```
 -->
 
-### 4. Ajout d'un 4e locus
+### 3. Exporter les résultats
 
-#### a) 4ᵉ locus estimé par régression linéaire
+1. Extraire les 10 premiers suspects triés (noms + distances).
+2. Créer un DataFrame `resultats` avec ces données.
+3. Exporter dans `resultats.csv`
+
+
+### 4. Variantes expérimentales
+
+#### a) Ajout d'un 4ᵉ locus estimé par régression linéaire
 
 1. Calculer les coefficients `a` et `b` avec `np.polyfit(Locus1, Locus2, 1)`.
 2. Créer une nouvelle colonne : `Locus4_estime = a * Locus1 + b`.
 3. Estimer aussi `Locus4` du crime à l'aide des 3 ADN trouvés sur la scène de crime.
 4. Recalculer et afficher les **distances à 4 loci (4D)**.
 
+#### b) Bruit expérimental (incertitude de mesure)
 
+Dans cette partie, vous allez simuler l’effet d’erreurs de mesure sur chacun des trois loci ADN.
+Ce bruit représente l’incertitude liée aux instruments scientifiques (pipettes, spectromètres, capteurs, etc.).
+
+1. Générer un bruit aléatoire (0.01) **pour chacun des trois loci**
+   * Créez **trois tableaux de bruit gaussien** (distribution normale), chacun de **longueur `n`**.
+   ```python
+   bruit = np.random.normal(0, 0.01, n)
+   ```
+2. Créer les **trois loci bruités** en ajoutant le bruit à chaque locus original. Ces trois loci bruités sont les valeurs "mesurées avec incertitude".
+3. Recalculer toutes les distances 3D bruitées. Pour chaque suspect :
+      * utilisez la fonction `calculer_distance()` avec les **versions bruitées des 3 loci**.
+      * comparez-les au profil du crime (`c1`, `c2`, `c3`)
+   * Stockez les résultats dans une nouvelle liste nommée `distances_bruitees`.
+   * Ajoutez ensuite cette liste au DataFrame dans une nouvelle colonne nommée `Distance3D_bruitee`.
+4. Comparer les valeurs originales et bruitées
+   * Affichez simplement les 5 premières lignes (`.head()`) des données avec les colonnes : `Nom`, `Distance3D` (sans bruit) et `Distance3D_bruitee` (avec bruit). Ce tableau permet de voir si l’incertitude de mesure modifie ou non les distances.
+   * Créer un **nuage de points** (`scatter`) pour **un des trois locus et sont équivalent bruité* (à vous de choisir lequel). Utiliser des couleurs différentes pour les deux nuages de points. 
+	* Titre: "Effet du bruit expérimental sur Locus1, 2 ou 3" (**précider lequel**)
+	* Étiquette de l'axe x: ""Locus (valeur réelle)""
+	* Étiquette de l'axe y: "Locus / Locus_bruite"
+	* Nom du fichier : `graphique_bruit_locus.png`
+
+<!--
 #### b) Bruit expérimental (incertitude de mesure)
 
 1. Simuler un bruit aléatoire gaussien :
@@ -229,52 +260,30 @@ for i in range(len(distances) - 1):
 	* Nom du fichier : `graphique_bruit_locus1.png`
 4. Recalculer les distances 3D avec `Locus1_bruite`.
 5. Refaire un **tri** et afficher le **top 5 bruité**.
+-->
 
 
-#### c) Exporter les résultats
+### 5. Rapport scientifique (Conclusion 10-15 lignes)
 
-1. Extraire les 10 premiers suspects triés (noms + distances).
-2. Créer un DataFrame `resultats` avec ces données.
-3. Exporter dans `resultats.csv`
-
-
-<!--
-   ```python
-   resultats.to_csv("resultats.csv", sep=";", decimal=",", index=False)
-   ```
---> 
-
-
-### 5. Rapport scientifique
-
-Rédiger une conclusion (10-15 lignes) incluant :
-
-#### Éléments à inclure dans la conclusion du rapport
+#### Éléments de la conclusion
 
 * a) **Objectif du projet**
-
-  * Rappeler brièvement la tâche principale : identifier le suspect dont le profil est le plus proche de celui du crime.
-  * Mentionner les outils utilisés (NumPy, Pandas, Matplotlib).
+  * Rappeler brièvement la tâche principale.
+  * Mentionner les outils utilisés.
 
 * b) **Résultats principaux**
-
   * Indiquer quel suspect présente la plus petite distance.
   * Donner la valeur de la distance minimale (arrondie à 2 ou 3 décimales).
-  * Mentionner le rang ou les 5 suspects les plus proches (Top 5).
+  * Mentionner les 5 suspects les plus proches (Top 5).
 
 * c) **Analyse des distances**
-
   * Comparer la plus petite distance avec les autres pour montrer l’écart.
   * Dire si la différence est claire ou si plusieurs suspects ont des valeurs proches.
-  * Si applicable, comparer les résultats avant et après l’ajout du 4ᵉ locus.
 
 * d) **Effet des variantes**
-
   * **4ᵉ locus estimé :** préciser si cela change ou confirme le classement.
   * **Bruit expérimental :** dire si les résultats restent similaires ou non.
 
 * e) **Graphiques**
-
-  * Citer les trois graphiques produits (barres du Top 10, nuages de points avec droite de régression).
+  * Citer les trois graphiques produits (barres du Top 10, nuage de points avec droite de régression et nuages de points des loci bruités).
   * Indiquer brièvement ce qu’ils permettent de visualiser.
-

@@ -156,7 +156,7 @@ couleurs = np.where(df["Qualite"] == "Bonne", "skyblue",
 ```
 
 
-### 3. Avec `replace()`
+### 3. Avec **`replace()`**
 
 ```python
 couleurs = df["Qualite"].replace({

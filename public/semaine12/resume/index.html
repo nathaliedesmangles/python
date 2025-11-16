@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 8.2.0+9cac649a184a2967957ef9bbececf9402192846c">
+    <meta name="description" content="Le projet ADN du coupable consiste à utiliser la programmation Python pour identifier quel suspect, parmi 150 profils ADN, correspond le mieux au profil ADN trouvé sur une scène de crime.
+Ce projet permet de mettre en pratique toutes les compétences vues depuis le début de la session :
+lecture de fichiers CSV avec pandas manipulation de données (moyennes, nettoyage, gestion de NaN) calculs scientifiques avec numpy création de fonctions utilisation de boucles filtrage logique visualisation de données avec matplotlib régression linéaire avec numpy.polyfit Le projet s’effectue en équipe de 2 ou 3, sur environ 3 semaines.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Résumé du projet ADN du coupable :: 420-SN1-RE">
+    <meta name="twitter:description" content="Le projet ADN du coupable consiste à utiliser la programmation Python pour identifier quel suspect, parmi 150 profils ADN, correspond le mieux au profil ADN trouvé sur une scène de crime.
+Ce projet permet de mettre en pratique toutes les compétences vues depuis le début de la session :
+lecture de fichiers CSV avec pandas manipulation de données (moyennes, nettoyage, gestion de NaN) calculs scientifiques avec numpy création de fonctions utilisation de boucles filtrage logique visualisation de données avec matplotlib régression linéaire avec numpy.polyfit Le projet s’effectue en équipe de 2 ou 3, sur environ 3 semaines.">
+    <meta property="og:url" content="//localhost:1313/semaine12/resume/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Résumé du projet ADN du coupable :: 420-SN1-RE">
+    <meta property="og:description" content="Le projet ADN du coupable consiste à utiliser la programmation Python pour identifier quel suspect, parmi 150 profils ADN, correspond le mieux au profil ADN trouvé sur une scène de crime.
+Ce projet permet de mettre en pratique toutes les compétences vues depuis le début de la session :
+lecture de fichiers CSV avec pandas manipulation de données (moyennes, nettoyage, gestion de NaN) calculs scientifiques avec numpy création de fonctions utilisation de boucles filtrage logique visualisation de données avec matplotlib régression linéaire avec numpy.polyfit Le projet s’effectue en équipe de 2 ou 3, sur environ 3 semaines.">
+    <meta property="og:locale" content="fr">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Résumé du projet ADN du coupable :: 420-SN1-RE">
+    <meta itemprop="description" content="Le projet ADN du coupable consiste à utiliser la programmation Python pour identifier quel suspect, parmi 150 profils ADN, correspond le mieux au profil ADN trouvé sur une scène de crime.
+Ce projet permet de mettre en pratique toutes les compétences vues depuis le début de la session :
+lecture de fichiers CSV avec pandas manipulation de données (moyennes, nettoyage, gestion de NaN) calculs scientifiques avec numpy création de fonctions utilisation de boucles filtrage logique visualisation de données avec matplotlib régression linéaire avec numpy.polyfit Le projet s’effectue en équipe de 2 ou 3, sur environ 3 semaines.">
+    <meta itemprop="wordCount" content="523">
+    <title>Résumé du projet ADN du coupable :: 420-SN1-RE</title>
+    <link href="/semaine12/resume/index.xml" rel="alternate" type="application/rss+xml" title="Résumé du projet ADN du coupable :: 420-SN1-RE">
+    <link href="/images/logo.png?1763329807" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1763329807" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1763329807" defer></script>
+    <script src="/js/search-lunr.js?1763329807" defer></script>
+    <script src="/js/search.js?1763329807" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1763329807";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1763329807" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1763329807" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1763329807" defer></script>
+    <script src="/js/lunr/lunr.fr.min.js?1763329807" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763329807" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763329807" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1763329807" rel="stylesheet">
+    <link href="/css/theme.css?1763329807" rel="stylesheet">
+    <link href="/css/format-html.css?1763329807" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/semaine12\/resume\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="/css/custom.css?1763329807" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/semaine12/resume/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#contexte-scientifique">Contexte scientifique</a></li>
+    <li><a href="#objectif-principal">Objectif principal</a></li>
+    <li><a href="#distance-euclidienne">Distance euclidienne</a></li>
+    <li><a href="#analyses-et-graphiques-à-produire">Analyses et graphiques à produire</a>
+      <ul>
+        <li><a href="#1-barres-du-top-10">1. <strong>Barres du Top 10</strong></a></li>
+        <li><a href="#2-nuage-de-points-scatter">2. <strong>Nuage de points (scatter)</strong></a></li>
+        <li><a href="#3-droite-de-régression-linéaire">3. <strong>Droite de régression linéaire</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#variantes-du-projet">Variantes du projet</a>
+      <ul>
+        <li><a href="#variante-1--estimation-dun-4e-locus-par-modélisation">Variante 1 : <strong>Estimation d’un 4e locus par modélisation</strong></a></li>
+        <li><a href="#variante-2--simulation-derreurs-de-mesure-bruit">Variante 2 : <strong>Simulation d’erreurs de mesure (bruit)</strong></a></li>
+        <li><a href="#variante-3--export-du-top-10">Variante 3 : <strong>Export du Top 10</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion-à-rédiger">Conclusion à rédiger</a></li>
+    <li><a href="#résultat-final-attendu">Résultat final attendu</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/semaine12/index.html"><span itemprop="name"> 🧬 Projet intégrateur — L’ADN du coupable</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Résumé du projet ADN du coupable</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><a href="/semaine12/index.html" title="🧬 Projet intégrateur — L’ADN du coupable (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><a href="/semaine15/index.html" title="Évaluation intégratrice (30%) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine12" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="résumé-du-projet-adn-du-coupable">Résumé du projet ADN du coupable</h1>
+
+<p>Le projet <em>ADN du coupable</em> consiste à utiliser la programmation Python pour identifier quel suspect, parmi <strong>150 profils ADN</strong>, correspond le mieux au <strong>profil ADN trouvé sur une scène de crime</strong>.</p>
+<p>Ce projet permet de mettre en pratique <strong>toutes les compétences vues depuis le début de la session</strong> :</p>
+<ul>
+<li>lecture de fichiers CSV avec <em>pandas</em></li>
+<li>manipulation de données (moyennes, nettoyage, gestion de NaN)</li>
+<li>calculs scientifiques avec <em>numpy</em></li>
+<li>création de fonctions</li>
+<li>utilisation de boucles</li>
+<li>filtrage logique</li>
+<li>visualisation de données avec <em>matplotlib</em></li>
+<li>régression linéaire avec <em>numpy.polyfit</em></li>
+</ul>
+<p>Le projet s’effectue <strong>en équipe de 2 ou 3</strong>, sur environ <strong>3 semaines</strong>.</p>
+<h2 id="contexte-scientifique">Contexte scientifique</h2>
+<p>Chaque individu possède un profil ADN caractérisé ici par <strong>3 valeurs numériques appelées “loci”</strong> :</p>
+<ul>
+<li><code>Locus1</code></li>
+<li><code>Locus2</code></li>
+<li><code>Locus3</code></li>
+</ul>
+<p>Ces valeurs varient entre <strong>0,40 et 0,70</strong>.
+Plus les loci d’un suspect sont <em>proches</em> de ceux du crime, plus il est probable que ce soit le même individu.</p>
+<h2 id="objectif-principal">Objectif principal</h2>
+<p><strong>Trouver quel suspect a le profil ADN le plus proche</strong> du profil du crime.</p>
+<p>Pour cela, vous devez :</p>
+<ol>
+<li>Lire les fichiers CSV des suspects et du crime ;</li>
+<li>Nettoyer les données (remplacer les valeurs manquantes) ;</li>
+<li>Calculer une <strong>distance euclidienne 3D</strong> pour chaque suspect ;</li>
+<li>Classer les 150 distances du plus petit au plus grand ;</li>
+<li>Identifier le <strong>Top 10</strong> des suspects les plus proches ;</li>
+<li>Visualiser les résultats dans des graphiques.</li>
+</ol>
+<h2 id="distance-euclidienne">Distance euclidienne</h2>
+<p>La distance permet de quantifier la similarité entre deux profils ADN.</p>
+<p>Formule utilisée :</p>
+<span class="math align-center">$$
+	d = \sqrt{(s_1 - c_1)^2 + (s_2 - c_2)^2 + (s_3 - c_3)^2}  
+$$</span>
+<p>où chaque $(s_i)$ représente la valeur du locus d&rsquo;un suspect et $(c_i)$ représente la valeur d’un même locus chez un individu dont le profil ADN a été trouvé sur la scène de crime.</p>
+<ul>
+<li>Petite distance → suspect très proche du profil du crime</li>
+<li>Grande distance → suspect moins probable</li>
+</ul>
+<br>
+<h2 id="analyses-et-graphiques-à-produire">Analyses et graphiques à produire</h2>
+<p>Vous devrez produire :</p>
+<h3 id="1-barres-du-top-10">1. <strong>Barres du Top 10</strong></h3>
+<p>Un graphique qui montre clairement les 10 distances les plus faibles.</p>
+<h3 id="2-nuage-de-points-scatter">2. <strong>Nuage de points (scatter)</strong></h3>
+<p>Comparer deux loci (ex. Locus1 vs Locus2).</p>
+<h3 id="3-droite-de-régression-linéaire">3. <strong>Droite de régression linéaire</strong></h3>
+<p>Estimer une relation entre deux loci avec :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>polyfit(x, y, <span style="color:#ae81ff">1</span>)</span></span></code></pre></div>
+<h2 id="variantes-du-projet">Variantes du projet</h2>
+<h3 id="variante-1--estimation-dun-4e-locus-par-modélisation">Variante 1 : <strong>Estimation d’un 4e locus par modélisation</strong></h3>
+<p>À partir d’une relation linéaire entre deux loci, les étudiants créent :</p>
+<ul>
+<li>un <strong>Locus4_estime</strong></li>
+<li>une <strong>distance 4D</strong> optionnelle
+Cela montre le rôle de la modélisation scientifique.</li>
+</ul>
+<h3 id="variante-2--simulation-derreurs-de-mesure-bruit">Variante 2 : <strong>Simulation d’erreurs de mesure (bruit)</strong></h3>
+<p>Ajouter un bruit gaussien sur les données :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.01</span>, taille)</span></span></code></pre></div>
+<p>Puis observer si le classement change.
+Cela permet de discuter de la <strong>robustesse</strong> du modèle.</p>
+<h3 id="variante-3--export-du-top-10">Variante 3 : <strong>Export du Top 10</strong></h3>
+<p>Créer un fichier <code>resultats.csv</code> contenant les 10 suspects les plus probables.</p>
+<h2 id="conclusion-à-rédiger">Conclusion à rédiger</h2>
+<p>Dans la dernière section, les étudiants doivent expliquer :</p>
+<ul>
+<li>Quel suspect est le plus probable, et pourquoi ;</li>
+<li>Quelle est la distance minimale observée ;</li>
+<li>Ce que montrent les graphiques ;</li>
+<li>Si le bruit ou le Locus4 ont modifié le classement ;</li>
+<li>Si le résultat est stable ou sensible aux variations.</li>
+</ul>
+<h2 id="résultat-final-attendu">Résultat final attendu</h2>
+<p>Un dossier contenant :</p>
+<ul>
+<li>un notebook <code>.ipynb</code> complet (code + graphiques + analyses),</li>
+<li>un fichier <code>resultats.csv</code>,</li>
+<li>une conclusion clairement rédigée.</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+	<img src="/images/logo.png">
+</a>
+
+
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-url="/bienvenus/index.html"><a class="padding" href="/bienvenus/index.html">Mot de bienvenue</a></li>
+            <li class="" data-nav-url="/debogage/index.html"><a class="padding" href="/debogage/index.html">Bonnes pratiques, documentation, débogage</a></li>
+            <li class="" data-nav-url="/faq/index.html"><a class="padding" href="/faq/index.html"><b>* FAQ : </b>Foire Aux Questions</a><ul id="R-subsections-24e4fc446616bf2bbeac7b1dba804bb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/outils_dev/index.html"><a class="padding" href="/outils_dev/index.html"><b>* </b>Outils de développement</a><ul id="R-subsections-46cff1a3275685d62ad81ac8715a308f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/regles/index.html"><a class="padding" href="/regles/index.html"><b>* </b>Règlements de classe</a></li>
+            <li class="" data-nav-url="/separateur_section/index.html"><a class="padding" href="/separateur_section/index.html">───────────────────</a></li>
+            <li class="" data-nav-url="/cours/index.html"><a class="padding" href="/cours/index.html">Les séances de cours</a></li>
+            <li class="" data-nav-url="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1.</b> Présentation du cours et l&#39;environnement de travail</a></li>
+            <li class="" data-nav-url="/semaine2/index.html"><a class="padding" href="/semaine2/index.html">2. Variables, types, entrée utilisateur et fonctions prédéfinies</a><ul id="R-subsections-30aa4391f5b81ccda88d9d93cb48f88e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/semaine3/index.html"><a class="padding" href="/semaine3/index.html">3. Structures conditionnelles et algorithmes simples</a></li>
+            <li class="" data-nav-url="/semaine4/index.html"><a class="padding" href="/semaine4/index.html">4. Boucles et débogage simple</a></li>
+            <li class="" data-nav-url="/semaine5/index.html"><a class="padding" href="/semaine5/index.html">5. Évaluation #1 (25%)</a><ul id="R-subsections-c26f1618e27c79866a5eeda027ce1e7b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6.</b> Listes, chaînes et visualisation des données</a><ul id="R-subsections-3ce40544eeb139416d42a5fc9c160312" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
+            <li class="" data-nav-url="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
+            <li class="" data-nav-url="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Manipulation de données dans un fichier (avec Pandas)</a></li>
+            <li class="" data-nav-url="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
+            <li class="" data-nav-url="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a><ul id="R-subsections-f8cbb4e023a0fc71fa255b45db414bcc" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
+            <li class="parent " data-nav-url="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> 🧬 Projet intégrateur — L’ADN du coupable</a><ul id="R-subsections-6098c004e594c3cbee6d88e41d11b10b" class="collapsible-menu">
+            <li class="active " data-nav-url="/semaine12/resume/index.html"><a class="padding" href="/semaine12/resume/index.html">Résumé du projet ADN du coupable</a></li></ul></li>
+            <li class="" data-nav-url="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15.</b> Évaluation intégratrice (30%)</a></li>
+            <li class="" data-nav-url="/solutions_exercices/index.html"><a class="padding" href="/solutions_exercices/index.html"> >> Solutions des exercices</a><ul id="R-subsections-e7c5af3fa1ab3fb0f66aa688edb1d16e" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/solutions_ateliers/index.html"><a class="padding" href="/solutions_ateliers/index.html"> >> Solutions des ateliers</a><ul id="R-subsections-b3d3b34301768cb91d0008130382b665" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script>
+      window.MathJax = Object.assign( window.MathJax || {}, {
+        tex: {
+          inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+          displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+        },
+        options: {
+          enableMenu: false 
+        }
+      }, JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1763329807"></script>
+    <script src="/js/clipboard/clipboard.min.js?1763329807" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1763329807" defer></script>
+    <script src="/js/theme.js?1763329807" defer></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Résumé du projet ADN du coupable :: 420-SN1-RE</title>
+    <link>//localhost:1313/semaine12/resume/index.html</link>
+    <description>Le projet ADN du coupable consiste à utiliser la programmation Python pour identifier quel suspect, parmi 150 profils ADN, correspond le mieux au profil ADN trouvé sur une scène de crime.&#xA;Ce projet permet de mettre en pratique toutes les compétences vues depuis le début de la session :&#xA;lecture de fichiers CSV avec pandas manipulation de données (moyennes, nettoyage, gestion de NaN) calculs scientifiques avec numpy création de fonctions utilisation de boucles filtrage logique visualisation de données avec matplotlib régression linéaire avec numpy.polyfit Le projet s’effectue en équipe de 2 ou 3, sur environ 3 semaines.</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="//localhost:1313/semaine12/resume/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
