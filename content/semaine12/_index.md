@@ -312,7 +312,7 @@ $$
 
 * Générer 3 tableaux de bruit.
 ```python
-bruit = np.random.normal(0, 0.01, n)
+bruit = np.random.normal(0, 0.01, n)	# n est le nombre total de suspects
 ```
 * Construire trois colonnes bruitées.
 * Recalculer les distances bruitées.
