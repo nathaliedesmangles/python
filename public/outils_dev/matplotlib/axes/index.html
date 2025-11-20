@@ -33,27 +33,27 @@ import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y
     <meta itemprop="wordCount" content="293">
     <title>Faire croiser les axes à l’origine (0,0) :: 420-SN1-RE</title>
     <link href="/outils_dev/matplotlib/axes/index.xml" rel="alternate" type="application/rss+xml" title="Faire croiser les axes à l’origine (0,0) :: 420-SN1-RE">
-    <link href="/images/logo.png?1763331980" rel="icon" type="image/png">
-    <link href="/css/auto-complete/auto-complete.min.css?1763331980" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1763331980" defer></script>
-    <script src="/js/search-lunr.min.js?1763331980" defer></script>
-    <script src="/js/search.min.js?1763331980" defer></script>
+    <link href="/images/logo.png?1763597437" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1763597437" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1763597437" defer></script>
+    <script src="/js/search-lunr.min.js?1763597437" defer></script>
+    <script src="/js/search.min.js?1763597437" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1763331980";
+      window.relearn.index_js_url="/searchindex.en.js?1763597437";
     </script>
-    <script src="/js/lunr/lunr.min.js?1763331980" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1763331980" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1763331980" defer></script>
-    <script src="/js/lunr/lunr.fr.min.js?1763331980" defer></script>
+    <script src="/js/lunr/lunr.min.js?1763597437" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1763597437" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1763597437" defer></script>
+    <script src="/js/lunr/lunr.fr.min.js?1763597437" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['fr'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763331980" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763331980" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1763331980" rel="stylesheet">
-    <link href="/css/theme.min.css?1763331980" rel="stylesheet">
-    <link href="/css/format-html.min.css?1763331980" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763597437" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763597437" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1763597437" rel="stylesheet">
+    <link href="/css/theme.min.css?1763597437" rel="stylesheet">
+    <link href="/css/format-html.min.css?1763597437" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -107,7 +107,7 @@ import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/css/custom.css?1763331980" rel="stylesheet">
+    <link href="/css/custom.css?1763597437" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/outils_dev/matplotlib/axes/index.html">
     <div id="R-body" class="default-animation">
@@ -178,8 +178,8 @@ import matplotlib.pyplot as plt import numpy as np x = np.linspace(-5, 5, 100) y
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 <p><strong>Résultat</strong> :
 Les axes sont en bas et à gauche, et ils <strong>ne passent pas par (0,0)</strong>.</p>
-<p><a href="#R-image-5277934c8f7d86c8b72d2e002ee53ae6" class="lightbox-link"><img alt="Axes par défaut" class="lazy lightbox figure-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_defaut.png?width=30vw" style="height: auto;width: 30vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5277934c8f7d86c8b72d2e002ee53ae6"><img alt="Axes par défaut" class="lazy lightbox lightbox-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_defaut.png?width=30vw"></a></p>
+<p><a href="#R-image-de74d8a25d8682489dc4f350f7203da5" class="lightbox-link"><img alt="Axes par défaut" class="lazy lightbox figure-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_defaut.png?width=30vw" style="height: auto;width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-de74d8a25d8682489dc4f350f7203da5"><img alt="Axes par défaut" class="lazy lightbox lightbox-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_defaut.png?width=30vw"></a></p>
 <h2 id="2-les-spines-cest-quoi-">2. Les <em>spines</em>, c’est quoi ?</h2>
 <p>Les <em>spines</em> sont les <strong>lignes qui forment les axes du graphique</strong> :</p>
 <ul>
@@ -216,8 +216,8 @@ Les axes sont en bas et à gauche, et ils <strong>ne passent pas par (0,0)</stro
 <li>Les axes x et y se croisent à l’origine.</li>
 <li>C’est souvent ce qu’on veut en mathématiques ou en physique.</li>
 </ul>
-<p><a href="#R-image-f1c5c5b9ed983621cd7012906ba6d3c4" class="lightbox-link"><img alt="Axes décalés" class="lazy lightbox figure-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_decales.png?width=30vw" style="height: auto;width: 30vw;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f1c5c5b9ed983621cd7012906ba6d3c4"><img alt="Axes décalés" class="lazy lightbox lightbox-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_decales.png?width=30vw"></a></p>
+<p><a href="#R-image-461563ef0180c12a51d5d018da7f6a50" class="lightbox-link"><img alt="Axes décalés" class="lazy lightbox figure-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_decales.png?width=30vw" style="height: auto;width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-461563ef0180c12a51d5d018da7f6a50"><img alt="Axes décalés" class="lazy lightbox lightbox-image" loading="lazy" src="/outils_dev/matplotlib/axes/axes_decales.png?width=30vw"></a></p>
 
 <details class=" box cstyle notices cyan expand" name="notice-toggle">
   <summary class="box-label">
@@ -351,7 +351,6 @@ Les axes sont en bas et à gauche, et ils <strong>ne passent pas par (0,0)</stro
             <li class="" data-nav-url="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
             <li class="" data-nav-url="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
             <li class="" data-nav-url="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Manipulation de données dans un fichier (avec Pandas)</a></li>
-            <li class="" data-nav-url="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
             <li class="" data-nav-url="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
             <li class="" data-nav-url="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
             <li class="" data-nav-url="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> 🧬 Projet intégrateur — L’ADN du coupable</a></li>
@@ -375,8 +374,8 @@ Les axes sont en bas et à gauche, et ils <strong>ne passent pas par (0,0)</stro
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1763331980" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1763331980" defer></script>
-    <script src="/js/theme.min.js?1763331980" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1763597437" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1763597437" defer></script>
+    <script src="/js/theme.min.js?1763597437" defer></script>
   </body>
 </html>

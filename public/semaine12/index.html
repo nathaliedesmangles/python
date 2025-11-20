@@ -38,30 +38,30 @@ Thème scientifique : biologie moléculaire et identification génétique
 En équipe : de 1 😉 2 ou 3 maximum.
 Pour ceux qui sont en équipe et souhaitent pouvoir travailler à distance : Il faut installer l’extension Live Share sur Visual Studio Code Elle doit déjà être installée sur les ordinateurs au cégep
 Suivre les étapes dans la vidéo Installation et mise en route de Live Share Résumé des compétences évaluées Lecture et traitement de fichiers scientifiques (pandas) Calculs et modélisation numériques (numpy) Représentations graphiques (matplotlib) Logique algorithmique et tri (boucle for) Communication scientifique et analyse critique Fichiers fournis sur Moodle adn_suspects.csv — contient les données de 150 suspects (nom et valeurs de 3 loci). adn_crime.csv — contient les 3 valeurs de l’ADN trouvé sur la scène du crime. projet_adn_etudiant.ipynb - Le bloc-notes de départ à utiliser. grille_correction_adn_coupable.pdf - La grille de correction du projet. Fichiers à remettre sur Moodle projet_prenom_nom.ipynb - Le bloc-notes complété avec votre code. adn_suspects_corrige.csv - contient les données nettoyées pour les 150 suspects. resultats.csv - contient les données des 10 premiers suspects. Les 3 graphiques : graphique_top10_3loci.png - Top 10 des suspects les plus proches (3 loci) graphique_regression_locus1_locus2.png - Corrélation entre Locus1 et Locus2 graphique_bruit_locus.png - Effet du bruit expérimental sur les valeurs d’un Locus Bibliothèques autorisées et contraintes pédagogiques Numpy">
-    <meta itemprop="wordCount" content="1664">
+    <meta itemprop="wordCount" content="1811">
     <title> 🧬 Projet intégrateur — L’ADN du coupable :: 420-SN1-RE</title>
     <link href="/semaine12/index.xml" rel="alternate" type="application/rss+xml" title=" 🧬 Projet intégrateur — L’ADN du coupable :: 420-SN1-RE">
-    <link href="/images/logo.png?1763331980" rel="icon" type="image/png">
-    <link href="/css/auto-complete/auto-complete.min.css?1763331980" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1763331980" defer></script>
-    <script src="/js/search-lunr.min.js?1763331980" defer></script>
-    <script src="/js/search.min.js?1763331980" defer></script>
+    <link href="/images/logo.png?1763597437" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1763597437" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1763597437" defer></script>
+    <script src="/js/search-lunr.min.js?1763597437" defer></script>
+    <script src="/js/search.min.js?1763597437" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1763331980";
+      window.relearn.index_js_url="/searchindex.en.js?1763597437";
     </script>
-    <script src="/js/lunr/lunr.min.js?1763331980" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1763331980" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1763331980" defer></script>
-    <script src="/js/lunr/lunr.fr.min.js?1763331980" defer></script>
+    <script src="/js/lunr/lunr.min.js?1763597437" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1763597437" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1763597437" defer></script>
+    <script src="/js/lunr/lunr.fr.min.js?1763597437" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['fr'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763331980" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763331980" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1763331980" rel="stylesheet">
-    <link href="/css/theme.min.css?1763331980" rel="stylesheet">
-    <link href="/css/format-html.min.css?1763331980" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763597437" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1763597437" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1763597437" rel="stylesheet">
+    <link href="/css/theme.min.css?1763597437" rel="stylesheet">
+    <link href="/css/format-html.min.css?1763597437" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -115,7 +115,7 @@ Suivre les étapes dans la vidéo Installation et mise en route de Live Share R�
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/css/custom.css?1763331980" rel="stylesheet">
+    <link href="/css/custom.css?1763597437" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/semaine12/index.html">
     <div id="R-body" class="default-animation">
@@ -144,11 +144,21 @@ Suivre les étapes dans la vidéo Installation et mise en route de Live Share R�
     <li><a href="#objectifs-généraux">Objectifs généraux</a></li>
     <li><a href="#étapes-du-projet">Étapes du projet</a>
       <ul>
-        <li><a href="#1-lecture-et-exploration-des-données">1. Lecture et exploration des données</a></li>
-        <li><a href="#2-calcul-des-distances-adn-3-loci--3d">2. Calcul des distances ADN (3 loci = 3D)</a></li>
-        <li><a href="#3-exporter-les-résultats">3. Exporter les résultats</a></li>
-        <li><a href="#4-variantes-expérimentales">4. Variantes expérimentales</a></li>
-        <li><a href="#5-rapport-scientifique-conclusion-10-15-lignes">5. Rapport scientifique (Conclusion 10-15 lignes)</a></li>
+        <li><a href="#1-exportations-des-bibliothèques">1. Exportations des bibliothèques</a></li>
+        <li><a href="#2-lecture-des-fichiers-csv">2. Lecture des fichiers CSV</a></li>
+        <li><a href="#3-aperçu-et-statistiques">3. Aperçu et statistiques</a></li>
+        <li><a href="#4-nettoyage-des-nan">4. Nettoyage des NaN</a></li>
+        <li><a href="#5-extraction-des-valeurs-du-crime">5. Extraction des valeurs du crime</a></li>
+        <li><a href="#6-fonction-de-distance">6. Fonction de distance</a></li>
+        <li><a href="#7-distance-pour-150-suspects">7. Distance pour 150 suspects</a></li>
+        <li><a href="#8-tri-des-données-ordre-croissant-des-valeurs-des-distances">8. Tri des données (ordre croissant des valeurs des distances)</a></li>
+        <li><a href="#9-graphique-top-10">9. Graphique Top 10</a></li>
+        <li><a href="#10-relation-entre-deux-loci-et-régression">10. Relation entre deux loci et régression</a></li>
+        <li><a href="#11-export-du-top-10">11. Export du Top 10</a></li>
+        <li><a href="#12-variante-1-4e-locus-estimé">12. Variante 1: 4e locus estimé</a></li>
+        <li><a href="#13-variante-2-bruit-expérimental">13. Variante 2: Bruit expérimental</a></li>
+        <li><a href="#14-effet-du-bruit-sur-les-3-loci">14. Effet du bruit sur les 3 loci</a></li>
+        <li><a href="#15-conclusion">15. Conclusion</a></li>
       </ul>
     </li>
   </ul>
@@ -433,43 +443,211 @@ $$</span>
 <li>Utiliser les outils de <strong>programmation scientifique en Python</strong> (avec <code>numpy</code>, <code>pandas</code>, <code>matplotlib</code>).</li>
 </ul>
 <h2 id="étapes-du-projet">Étapes du projet</h2>
-<h3 id="1-lecture-et-exploration-des-données">1. Lecture et exploration des données</h3>
-<ol>
-<li>Lire les fichiers CSV (<code>;</code> comme séparateur, <code>,</code> pour décimales).</li>
-<li>Afficher le nombre de suspects.</li>
-<li>Calculer et afficher la <strong>moyenne</strong> et <strong>l’écart-type</strong> pour chaque locus.</li>
-<li>Remplacer les valeurs manquantes par la moyenne correspondante.</li>
-<li>Sauvegarder les données nettoyées dans un fichier nommé <code>adn_suspects_corrige.csv</code>.</li>
-</ol>
-<h3 id="2-calcul-des-distances-adn-3-loci--3d">2. Calcul des distances ADN (3 loci = 3D)</h3>
-<ol>
-<li>Extraire et afficher les valeurs des 3 loci sous forme de tableaux NumPy.</li>
-<li>Calculer et afficher la <strong>distance euclidienne</strong> entre chaque suspect et le profil du crime.</li>
-<li>Créer deux listes :
+<h3 id="1-exportations-des-bibliothèques">1. Exportations des bibliothèques</h3>
+<p><em><strong>Déjà inclu dans le fichier de départ .ipynb</strong></em></p>
+<h3 id="2-lecture-des-fichiers-csv">2. Lecture des fichiers CSV</h3>
+<p><strong>Objectif</strong>: Charger les données des suspects et du crime dans deux DataFrame distincts.</p>
 <ul>
-<li><code>noms</code> (noms des suspects)</li>
-<li><code>distances</code> (valeurs des distances)</li>
+<li>Lire le fichier <code>adn_suspects.csv</code> dans un DataFrame nommé <code>suspects</code>.</li>
+<li>Lire le fichier <code>adn_crime.csv</code> dans un DataFrame nommé <code>crime</code>.</li>
+<li>Utiliser <code>delimiter=&quot;;&quot;</code> et <code>decimal=&quot;,&quot;</code>.</li>
+<li>Afficher les 5 premières lignes de <code>suspects</code> avec <code>.head()</code> pour vérifier la lecture.</li>
+</ul>
+<h3 id="3-aperçu-et-statistiques">3. Aperçu et statistiques</h3>
+<p><strong>Objectif</strong>: Vérifier que les valeurs des loci sont valides.</p>
+<ul>
+<li>Afficher les statistiques des colonnes <code>Locus1</code>, <code>Locus2</code>, <code>Locus3</code>.</li>
+<li>Vérifier (à l&rsquo;oeil) que les valeurs sont entre environ 0.40 et 0.70.</li>
+</ul>
+<h3 id="4-nettoyage-des-nan">4. Nettoyage des NaN</h3>
+<p><strong>Objectif</strong> : Remplacer les valeurs manquantes par la moyenne de chaque colonne.</p>
+<ul>
+<li>Vérifier le nombre de <code>NaN</code> dans les trois loci.</li>
+<li>Pour chaque locus :
+<ul>
+<li>Calculer la moyenne.</li>
+<li>Remplacer les <code>NaN</code> par cette moyenne.</li>
 </ul>
 </li>
-<li><strong>Trier</strong> les deux listes (boucles imbriquées + échanges entre listes).</li>
-<li>Afficher le <strong>top 5 des suspects les plus proches</strong>.</li>
-<li>Créer un <strong>graphique en barres</strong> affichant le <strong>top 10 des suspects</strong> avec barres d’erreur <strong>±5 %</strong>.
+<li>Créer un nouveau DataFrame : <code>suspects_corrige</code> pour stocker les données nettoyées.</li>
+<li>Confirmer qu’il ne reste aucun <code>NaN</code>.</li>
+</ul>
+<h3 id="5-extraction-des-valeurs-du-crime">5. Extraction des valeurs du crime</h3>
+<p><strong>Objectif</strong> : Récupérer les trois valeurs du profil du crime.</p>
 <ul>
-<li>Titre: &ldquo;Top 10 des suspects les plus proches (3 loci)&rdquo;</li>
-<li>Étiquette de l&rsquo;axe x: il n&rsquo;y a pas d&rsquo;étiquette</li>
-<li>Étiquette de l&rsquo;axe y: &ldquo;Distance ADN (u.a.)&rdquo;</li>
-<li>Nom du fichier : <code>graphique_top10_3loci.png</code></li>
+<li>Accéder à la première ligne de <code>crime</code>.</li>
+<li>Extraire les <strong>valeurs</strong> des 3 loci.</li>
+<li>Les stocker dans <code>c1</code>, <code>c2</code>, <code>c3</code>.</li>
+<li>Les afficher.</li>
+</ul>
+<h3 id="6-fonction-de-distance">6. Fonction de distance</h3>
+<p><strong>Objectif</strong> : Créer une fonction qui calcule la distance entre un suspect et le crime.</p>
+<ul>
+<li>Définir une fonction <code>calculer_distance(...)</code> avec 6 paramètres (Les valeurs des 3 loci des <strong>s</strong>uspects et des 3 loci de la scène de <strong>c</strong>rime).</li>
+<li>Coder la formule pour calculer la distance:</li>
+<li>Retourner la distance.</li>
+</ul>
+<p><strong>Vérifier que</strong> :</p>
+<ul>
+<li>La fonction s’exécute.</li>
+<li>Un test simple retourne une valeur positive.</li>
+</ul>
+<h3 id="7-distance-pour-150-suspects">7. Distance pour 150 suspects</h3>
+<p><strong>Objectif</strong> : Calculer la distance 3D pour toutes les lignes.</p>
+<ul>
+<li>Extraire les trois colonnes et les convertir en trois tableaux NumPy.</li>
+<li>Créer une liste vide <code>distances3d</code>.</li>
+<li>Pour calculer toutes les distances, faire une boucle <code>for i in range(n)</code>. Dans la boucle :
+<ul>
+<li>Utiliser <code>calculer_distance(...)</code> pour calculer les 150 distances:</li>
+<li>Ajouter chaque distance dans la liste.</li>
 </ul>
 </li>
-<li>Créer un <strong>nuage de points</strong> (<code>scatter</code>) pour <code>Locus1</code> vs <code>Locus2</code>. Ajouter une <strong>droite de régression linéaire</strong> avec <code>np.polyfit()</code> et <code>plt.plot()</code>.
+<li>Ajouter la colonne <code>Distance3D</code> dans le DataFrame <code>suspects_corrige</code>.</li>
+</ul>
+<h3 id="8-tri-des-données-ordre-croissant-des-valeurs-des-distances">8. Tri des données (ordre croissant des valeurs des distances)</h3>
+<p><strong>Objectif</strong> : Trier les suspects du plus proche au plus éloigné.</p>
 <ul>
-<li>Titre: &ldquo;Corrélation entre Locus1 et Locus2&rdquo;</li>
-<li>Étiquette de l&rsquo;axe x: &ldquo;Locus2&rdquo;</li>
-<li>Étiquette de l&rsquo;axe y: &ldquo;Locus1&rdquo;</li>
-<li>Nom du fichier : <code>graphique_regression_locus1_locus2.png</code></li>
+<li>Créer deux listes <code>noms</code> et <code>distances3d</code> pour stoker les noms des 150 suspects et les 150 distances calculées à l&rsquo;étape 6.</li>
+<li>Pour chaque position <code>i</code> :
+<ul>
+<li>Trouver la plus petite distance dans les positions restantes.</li>
+<li>Échanger les distances.</li>
+<li>Échanger les noms de la même façon.</li>
 </ul>
 </li>
-</ol>
+<li>Extraire les 10 premiers suspects. Vérifier que les valeurs sont dans l’ordre croissant.</li>
+</ul>
+<h3 id="9-graphique-top-10">9. Graphique Top 10</h3>
+<p><strong>Objectif</strong> : Faire un graphique à barres simple du classement.</p>
+<ul>
+<li>Tracer le graphique à barres.
+<ul>
+<li><strong>Titre</strong>: &ldquo;Top 10 des suspects les plus proches (3 loci)&rdquo;</li>
+<li><strong>Étiquette de l&rsquo;axe x</strong>: il n&rsquo;y a pas d&rsquo;étiquette</li>
+<li><strong>Étiquette de l&rsquo;axe y</strong>: &ldquo;Distance ADN (u.a.)&rdquo;</li>
+<li><strong>Nom du fichier</strong>: <code>graphique_top10_3loci.png</code></li>
+</ul>
+</li>
+<li>Sauvegarder le graphique.</li>
+</ul>
+<h3 id="10-relation-entre-deux-loci-et-régression">10. Relation entre deux loci et régression</h3>
+<p><strong>Objectif</strong> : Comprendre la relation entre deux loci.</p>
+<ul>
+<li>Choisir :
+<ul>
+<li><code>x = Locus1</code></li>
+<li><code>y = Locus2</code></li>
+</ul>
+</li>
+<li>Tracer le nuage de points.
+<ul>
+<li><strong>Titre</strong>: &ldquo;Corrélation entre Locus1 et Locus2&rdquo;</li>
+<li><strong>Étiquette de l&rsquo;axe x</strong>: &ldquo;Locus2&rdquo;</li>
+<li><strong>Étiquette de l&rsquo;axe y</strong>: &ldquo;Locus1&rdquo;</li>
+<li><strong>Nom du fichier</strong> : <code>graphique_regression_locus1_locus2.png</code></li>
+</ul>
+</li>
+<li>Calculer la droite : <code>a, b = np.polyfit(x, y, 1)</code>.</li>
+<li>Tracer la droite avec <code>plt.plot</code>.</li>
+<li>Sauvegarder le graphique.</li>
+</ul>
+<h3 id="11-export-du-top-10">11. Export du Top 10</h3>
+<p><strong>Objectif</strong> : Créer un fichier <code>resultats.csv</code> contenant les informations des 10 suspects les plus probables.</p>
+<ul>
+<li>Créer un nouveau DataFrame pour stocker les 10 suspects.
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nouveau_df  <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Nom&#34;</span>: liste des <span style="color:#ae81ff">10</span> noms,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Distance3D&#34;</span>:  liste des distances des <span style="color:#ae81ff">10</span> noms
+</span></span><span style="display:flex;"><span>    })</span></span></code></pre></div>
+</li>
+<li>Exporter le nouveau dataframe dans le fichier .csv avec :
+<ul>
+<li><code>sep=&quot;;&quot;</code></li>
+<li><code>decimal=&quot;,&quot;</code></li>
+<li><code>index=False</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="12-variante-1-4e-locus-estimé">12. Variante 1: 4e locus estimé</h3>
+<p><strong>Objectif</strong> : Créer un nouveau locus basé sur une relation linéaire.</p>
+<ul>
+<li>Faire une régression entre <code>Locus1</code> et <code>Locus2</code>.</li>
+<li>Construire :
+<code>Locus4_estime = a * Locus1 + b</code></li>
+<li>Ajouter la colonne <code>Distance4D</code> au dataframe.</li>
+<li>Calculer la distance 4D.</li>
+<li>Afficher les 5 premières lignes pour comparer la colonne <code>Distance4D</code> avec la colonne <code>Distance3D</code>.</li>
+</ul>
+<h3 id="13-variante-2-bruit-expérimental">13. Variante 2: Bruit expérimental</h3>
+<p><strong>Objectif</strong> : Simuler des erreurs de mesure.</p>
+<ul>
+<li>Générer 3 tableaux de bruit.</li>
+</ul>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>bruit <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.01</span>, n)</span></span></code></pre></div>
+<ul>
+<li>Construire trois colonnes bruitées.</li>
+<li>Recalculer les distances bruitées.</li>
+<li>Ajouter la colonne <code>Distance3D_bruitee</code>.</li>
+<li>Comparer les distances sans bruit / avec bruit.</li>
+</ul>
+<h3 id="14-effet-du-bruit-sur-les-3-loci">14. Effet du bruit sur les 3 loci</h3>
+<p><strong>Objectif</strong> : Visualiser l&rsquo;effet du bruit sur un locus</p>
+<ul>
+<li>Tracer le nuage de points pour <code>Locus1</code> vs <code>Locus1_bruite</code>.
+<ul>
+<li><strong>Titre</strong>: &ldquo;Effet du bruit expérimental sur les valeurs du Locus1&rdquo;</li>
+<li><strong>Étiquette de l&rsquo;axe x</strong>: &ldquo;Locus1&rdquo;</li>
+<li><strong>Étiquette de l&rsquo;axe y</strong>: &ldquo;Locus1_bruite&rdquo;</li>
+<li><strong>Nom du fichier</strong> : <code>graphique_bruit_locus1.png</code></li>
+</ul>
+</li>
+<li>Calculer la droite : <code>a, b = np.polyfit(x, y, 1)</code>.</li>
+<li>Tracer la droite avec <code>plt.plot</code>.</li>
+<li>Sauvegarder le graphique.</li>
+</ul>
+<h3 id="15-conclusion">15. Conclusion</h3>
+<p><strong>Objectif</strong> : Résumer vos résultats en ~ 10-15 lignes.</p>
+<p>Idées à inclure :</p>
+<ul>
+<li>Rappel des objectifs du projet incluant l&rsquo;utilisation des bibliothèques.</li>
+<li>Qui semble être le suspect principal.</li>
+<li>Écarts entre les distances du Top 10.</li>
+<li>Effet du 4e locus sur l&rsquo;identification du suspect (distances).</li>
+<li>Effet du bruit sur l&rsquo;identification du suspect (locus original vs locus bruité).</li>
+<li>Graphiques qui soutiennent votre conclusion et pourquoi.</li>
+</ul>
+<!--
+
+### 1. Lecture et exploration des données
+
+1. Lire les fichiers CSV (`;` comme séparateur, `,` pour décimales).  
+2. Afficher le nombre de suspects.  
+3. Afficher les statistiques de base pour chaque locus.  
+4. Remplacer les valeurs manquantes par la moyenne correspondante.  
+5. Sauvegarder les données nettoyées dans un fichier nommé `adn_suspects_corrige.csv`.
+
+
+### 2. Calcul des distances ADN (3 loci = 3D)
+
+1. Extraire et afficher les valeurs des 3 loci sous forme de tableaux NumPy.  
+2. Calculer et afficher la **distance euclidienne** entre chaque suspect et le profil du crime.  
+3. Créer deux listes :  
+   - `noms` (noms des 150 suspects)  
+   - `distances` (valeurs des distances)
+4. **Trier** les deux listes (boucles imbriquées + échanges entre listes).
+5. Afficher le **top 5 des suspects les plus proches**.
+6. Créer un **graphique en barres** affichant le **top 10 des suspects** avec barres d’erreur **±5 %**.
+	* Titre: "Top 10 des suspects les plus proches (3 loci)"
+	* Étiquette de l'axe x: il n'y a pas d'étiquette
+	* Étiquette de l'axe y: "Distance ADN (u.a.)"
+	* Nom du fichier : `graphique_top10_3loci.png`
+7. Créer un **nuage de points** (`scatter`) pour `Locus1` vs `Locus2`. Ajouter une **droite de régression linéaire** avec `np.polyfit()` et `plt.plot()`.
+	* Titre: "Corrélation entre Locus1 et Locus2"
+	* Étiquette de l'axe x: "Locus2"
+	* Étiquette de l'axe y: "Locus1"
+	* Nom du fichier : `graphique_regression_locus1_locus2.png`
+-->
 <!--
 ```python
 for i in range(len(distances) - 1):
@@ -484,50 +662,47 @@ for i in range(len(distances) - 1):
             noms[j] = tmp_nom
 ```
 -->
-<h3 id="3-exporter-les-résultats">3. Exporter les résultats</h3>
-<ol>
-<li>Extraire les 10 premiers suspects triés (noms + distances).</li>
-<li>Créer un DataFrame <code>resultats</code> avec ces données.</li>
-<li>Exporter dans <code>resultats.csv</code></li>
-</ol>
-<h3 id="4-variantes-expérimentales">4. Variantes expérimentales</h3>
-<h4 id="a-ajout-dun-4ᵉ-locus-estimé-par-régression-linéaire">a) Ajout d&rsquo;un 4ᵉ locus estimé par régression linéaire</h4>
-<ol>
-<li>Calculer les coefficients <code>a</code> et <code>b</code> avec <code>np.polyfit(Locus1, Locus2, 1)</code>.</li>
-<li>Créer une nouvelle colonne : <code>Locus4_estime = a * Locus1 + b</code>.</li>
-<li>Estimer aussi <code>Locus4</code> du crime à l&rsquo;aide des 3 ADN trouvés sur la scène de crime.</li>
-<li>Recalculer et afficher les <strong>distances à 4 loci (4D)</strong>.</li>
-</ol>
-<h4 id="b-bruit-expérimental-incertitude-de-mesure">b) Bruit expérimental (incertitude de mesure)</h4>
-<p>Dans cette partie, vous allez simuler l’effet d’erreurs de mesure sur chacun des trois loci ADN.
-Ce bruit représente l’incertitude liée aux instruments scientifiques (pipettes, spectromètres, capteurs, etc.).</p>
-<ol>
-<li>Générer un bruit aléatoire (0.01) <strong>pour chacun des trois loci</strong>
-<ul>
-<li>Créez <strong>trois tableaux de bruit gaussien</strong> (distribution normale), chacun de <strong>longueur <code>n</code></strong>.</li>
-</ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>bruit <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.01</span>, n)</span></span></code></pre></div>
-</li>
-<li>Créer les <strong>trois loci bruités</strong> en ajoutant le bruit à chaque locus original. Ces trois loci bruités sont les valeurs &ldquo;mesurées avec incertitude&rdquo;.</li>
-<li>Recalculer toutes les distances 3D bruitées. Pour chaque suspect :
-<ul>
-<li>utilisez la fonction <code>calculer_distance()</code> avec les <strong>versions bruitées des 3 loci</strong>.</li>
-<li>comparez-les au profil du crime (<code>c1</code>, <code>c2</code>, <code>c3</code>)</li>
-<li>Stockez les résultats dans une nouvelle liste nommée <code>distances_bruitees</code>.</li>
-<li>Ajoutez ensuite cette liste au DataFrame dans une nouvelle colonne nommée <code>Distance3D_bruitee</code>.</li>
-</ul>
-</li>
-<li>Comparer les valeurs originales et bruitées
-<ul>
-<li>Affichez simplement les 5 premières lignes (<code>.head()</code>) des données avec les colonnes : <code>Nom</code>, <code>Distance3D</code> (sans bruit) et <code>Distance3D_bruitee</code> (avec bruit). Ce tableau permet de voir si l’incertitude de mesure modifie ou non les distances.</li>
-<li>Créer un <strong>nuage de points</strong> (<code>scatter</code>) pour *<em>un des trois locus et sont équivalent bruité</em> (à vous de choisir lequel). Utiliser des couleurs différentes pour les deux nuages de points.</li>
-<li>Titre: &ldquo;Effet du bruit expérimental sur Locus1, 2 ou 3&rdquo; (<strong>précider lequel</strong>)</li>
-<li>Étiquette de l&rsquo;axe x: &ldquo;&ldquo;Locus (valeur réelle)&rdquo;&rdquo;</li>
-<li>Étiquette de l&rsquo;axe y: &ldquo;Locus / Locus_bruite&rdquo;</li>
-<li>Nom du fichier : <code>graphique_bruit_locus.png</code></li>
-</ul>
-</li>
-</ol>
+<!--
+### 3. Exporter les résultats
+
+1. Extraire les 10 premiers suspects triés (noms + distances).
+2. Créer un DataFrame `resultats` avec ces données.
+3. Exporter dans `resultats.csv`
+
+
+### 4. Variantes expérimentales
+
+#### a) Ajout d'un 4ᵉ locus estimé par régression linéaire
+
+1. Calculer les coefficients `a` et `b` avec `np.polyfit(Locus1, Locus2, 1)`.
+2. Créer une nouvelle colonne : `Locus4_estime = a * Locus1 + b`.
+3. Estimer aussi `Locus4` du crime à l'aide des 3 ADN trouvés sur la scène de crime.
+4. Recalculer et afficher les **distances à 4 loci (4D)**.
+
+#### b) Bruit expérimental (incertitude de mesure)
+
+Dans cette partie, vous allez simuler l’effet d’erreurs de mesure sur chacun des trois loci ADN.
+Ce bruit représente l’incertitude liée aux instruments scientifiques (pipettes, spectromètres, capteurs, etc.).
+
+1. Générer un bruit aléatoire (0.01) **pour chacun des trois loci**
+   * Créez **trois tableaux de bruit gaussien** (distribution normale), chacun de **longueur `n`**.
+   ```python
+   bruit = np.random.normal(0, 0.01, n)
+   ```
+2. Créer les **trois loci bruités** en ajoutant le bruit à chaque locus original. Ces trois loci bruités sont les valeurs "mesurées avec incertitude".
+3. Recalculer toutes les distances 3D bruitées. Pour chaque suspect :
+      * utilisez la fonction `calculer_distance()` avec les **versions bruitées des 3 loci**.
+      * comparez-les au profil du crime (`c1`, `c2`, `c3`)
+   * Stockez les résultats dans une nouvelle liste nommée `distances_bruitees`.
+   * Ajoutez ensuite cette liste au DataFrame dans une nouvelle colonne nommée `Distance3D_bruitee`.
+4. Comparer les valeurs originales et bruitées
+   * Affichez simplement les 5 premières lignes (`.head()`) des données avec les colonnes : `Nom`, `Distance3D` (sans bruit) et `Distance3D_bruitee` (avec bruit). Ce tableau permet de voir si l’incertitude de mesure modifie ou non les distances.
+   * Créer un **nuage de points** (`scatter`) pour **un des trois locus et sont équivalent bruité* (à vous de choisir lequel). Utiliser des couleurs différentes pour les deux nuages de points. 
+	* Titre: "Effet du bruit expérimental sur Locus1, 2 ou 3" (**précider lequel**)
+	* Étiquette de l'axe x: ""Locus (valeur réelle)""
+	* Étiquette de l'axe y: "Locus / Locus_bruite"
+	* Nom du fichier : `graphique_bruit_locus.png`
+-->
 <!--
 #### b) Bruit expérimental (incertitude de mesure)
 
@@ -545,46 +720,32 @@ Ce bruit représente l’incertitude liée aux instruments scientifiques (pipett
 4. Recalculer les distances 3D avec `Locus1_bruite`.
 5. Refaire un **tri** et afficher le **top 5 bruité**.
 -->
-<h3 id="5-rapport-scientifique-conclusion-10-15-lignes">5. Rapport scientifique (Conclusion 10-15 lignes)</h3>
-<h4 id="éléments-de-la-conclusion">Éléments de la conclusion</h4>
-<ul>
-<li>
-<p>a) <strong>Objectif du projet</strong></p>
-<ul>
-<li>Rappeler brièvement la tâche principale.</li>
-<li>Mentionner les outils utilisés.</li>
-</ul>
-</li>
-<li>
-<p>b) <strong>Résultats principaux</strong></p>
-<ul>
-<li>Indiquer quel suspect présente la plus petite distance.</li>
-<li>Donner la valeur de la distance minimale (arrondie à 2 ou 3 décimales).</li>
-<li>Mentionner les 5 suspects les plus proches (Top 5).</li>
-</ul>
-</li>
-<li>
-<p>c) <strong>Analyse des distances</strong></p>
-<ul>
-<li>Comparer la plus petite distance avec les autres pour montrer l’écart.</li>
-<li>Dire si la différence est claire ou si plusieurs suspects ont des valeurs proches.</li>
-</ul>
-</li>
-<li>
-<p>d) <strong>Effet des variantes</strong></p>
-<ul>
-<li><strong>4ᵉ locus estimé :</strong> préciser si cela change ou confirme le classement.</li>
-<li><strong>Bruit expérimental :</strong> dire si les résultats restent similaires ou non.</li>
-</ul>
-</li>
-<li>
-<p>e) <strong>Graphiques</strong></p>
-<ul>
-<li>Citer les trois graphiques produits (barres du Top 10, nuage de points avec droite de régression et nuages de points des loci bruités).</li>
-<li>Indiquer brièvement ce qu’ils permettent de visualiser.</li>
-</ul>
-</li>
-</ul>
+<!--
+### 5. Rapport scientifique (Conclusion 10-15 lignes)
+
+#### Éléments de la conclusion
+
+* a) **Objectif du projet**
+  * Rappeler brièvement la tâche principale.
+  * Mentionner les outils utilisés.
+
+* b) **Résultats principaux**
+  * Indiquer quel suspect présente la plus petite distance.
+  * Donner la valeur de la distance minimale (arrondie à 2 ou 3 décimales).
+  * Mentionner les 5 suspects les plus proches (Top 5).
+
+* c) **Analyse des distances**
+  * Comparer la plus petite distance avec les autres pour montrer l’écart.
+  * Dire si la différence est claire ou si plusieurs suspects ont des valeurs proches.
+
+* d) **Effet des variantes**
+  * **4ᵉ locus estimé :** préciser si cela change ou confirme le classement.
+  * **Bruit expérimental :** dire si les résultats restent similaires ou non.
+
+* e) **Graphiques**
+  * Citer les trois graphiques produits (barres du Top 10, nuage de points avec droite de régression et nuages de points des loci bruités).
+  * Indiquer brièvement ce qu’ils permettent de visualiser.
+-->
 
   <footer class="footline">
   </footer>
@@ -648,7 +809,6 @@ Ce bruit représente l’incertitude liée aux instruments scientifiques (pipett
             <li class="" data-nav-url="/semaine7/index.html"><a class="padding" href="/semaine7/index.html">7. Dictionnaires</a></li>
             <li class="" data-nav-url="/semaine8/index.html"><a class="padding" href="/semaine8/index.html">8. Tableaux NumPy et droite de régression</a></li>
             <li class="" data-nav-url="/semaine9/index.html"><a class="padding" href="/semaine9/index.html">9. Manipulation de données dans un fichier (avec Pandas)</a></li>
-            <li class="" data-nav-url="/semaine95/index.html"><a class="padding" href="/semaine95/index.html">9.1 Culture générale (pour Physique mécanique)</a></li>
             <li class="" data-nav-url="/semaine10/index.html"><a class="padding" href="/semaine10/index.html">10. Évaluation #2 (30%)</a></li>
             <li class="" data-nav-url="/semaine11/index.html"><a class="padding" href="/semaine11/index.html">11. Fonctions personnalisées</a></li>
             <li class="active " data-nav-url="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12-14</b> 🧬 Projet intégrateur — L’ADN du coupable</a></li>
@@ -683,9 +843,9 @@ Ce bruit représente l’incertitude liée aux instruments scientifiques (pipett
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1763331980"></script>
-    <script src="/js/clipboard/clipboard.min.js?1763331980" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1763331980" defer></script>
-    <script src="/js/theme.min.js?1763331980" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1763597437"></script>
+    <script src="/js/clipboard/clipboard.min.js?1763597437" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1763597437" defer></script>
+    <script src="/js/theme.min.js?1763597437" defer></script>
   </body>
 </html>

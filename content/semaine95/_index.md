@@ -1,9 +1,9 @@
 +++
-chapter = true
+chapter = false
 pre = "9.1"
 title = " Culture générale (pour Physique mécanique)"
 weight = 110
-draft = false
+draft = true
 +++
 
 

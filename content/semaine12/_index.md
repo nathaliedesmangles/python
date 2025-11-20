@@ -167,11 +167,193 @@ $$
 
 ## Étapes du projet
 
+### 1. Exportations des bibliothèques
+
+***Déjà inclu dans le fichier de départ .ipynb***
+
+### 2. Lecture des fichiers CSV
+
+**Objectif**: Charger les données des suspects et du crime dans deux DataFrame distincts.
+
+* Lire le fichier `adn_suspects.csv` dans un DataFrame nommé `suspects`.
+* Lire le fichier `adn_crime.csv` dans un DataFrame nommé `crime`.
+* Utiliser `delimiter=";"` et `decimal=","`.
+* Afficher les 5 premières lignes de `suspects` avec `.head()` pour vérifier la lecture.
+
+
+### 3. Aperçu et statistiques
+
+**Objectif**: Vérifier que les valeurs des loci sont valides.
+
+* Afficher les statistiques des colonnes `Locus1`, `Locus2`, `Locus3`.
+* Vérifier (à l'oeil) que les valeurs sont entre environ 0.40 et 0.70.
+
+
+### 4. Nettoyage des NaN
+
+**Objectif** : Remplacer les valeurs manquantes par la moyenne de chaque colonne.
+
+* Vérifier le nombre de `NaN` dans les trois loci.
+* Pour chaque locus :
+  * Calculer la moyenne.
+  * Remplacer les `NaN` par cette moyenne.
+* Créer un nouveau DataFrame : `suspects_corrige` pour stocker les données nettoyées.
+* Confirmer qu’il ne reste aucun `NaN`.
+
+
+### 5. Extraction des valeurs du crime
+
+**Objectif** : Récupérer les trois valeurs du profil du crime.
+
+* Accéder à la première ligne de `crime`.
+* Extraire les **valeurs** des 3 loci.
+* Les stocker dans `c1`, `c2`, `c3`.
+* Les afficher.
+
+
+### 6. Fonction de distance
+
+**Objectif** : Créer une fonction qui calcule la distance entre un suspect et le crime.
+
+* Définir une fonction `calculer_distance(...)` avec 6 paramètres (Les valeurs des 3 loci des **s**uspects et des 3 loci de la scène de **c**rime).
+* Coder la formule pour calculer la distance:
+* Retourner la distance.
+
+**Vérifier que** : 
+   * La fonction s’exécute.
+   * Un test simple retourne une valeur positive.
+
+
+### 7. Distance pour 150 suspects
+
+**Objectif** : Calculer la distance 3D pour toutes les lignes.
+
+* Extraire les trois colonnes et les convertir en trois tableaux NumPy.
+* Créer une liste vide `distances3d`.
+* Pour calculer toutes les distances, faire une boucle `for i in range(n)`. Dans la boucle : 
+   * Utiliser `calculer_distance(...)` pour calculer les 150 distances:
+   * Ajouter chaque distance dans la liste.
+* Ajouter la colonne `Distance3D` dans le DataFrame `suspects_corrige`.
+
+
+### 8. Tri des données (ordre croissant des valeurs des distances)
+
+**Objectif** : Trier les suspects du plus proche au plus éloigné.
+
+* Créer deux listes `noms` et `distances3d` pour stoker les noms des 150 suspects et les 150 distances calculées à l'étape 6.
+* Pour chaque position `i` :
+  * Trouver la plus petite distance dans les positions restantes.
+  * Échanger les distances.
+  * Échanger les noms de la même façon.
+* Extraire les 10 premiers suspects. Vérifier que les valeurs sont dans l’ordre croissant.
+
+
+### 9. Graphique Top 10
+
+**Objectif** : Faire un graphique à barres simple du classement.
+
+* Tracer le graphique à barres.
+   * **Titre**: "Top 10 des suspects les plus proches (3 loci)"
+   * **Étiquette de l'axe x**: il n'y a pas d'étiquette
+   * **Étiquette de l'axe y**: "Distance ADN (u.a.)"
+   * **Nom du fichier**: `graphique_top10_3loci.png`
+* Sauvegarder le graphique.
+
+
+### 10. Relation entre deux loci et régression
+
+**Objectif** : Comprendre la relation entre deux loci.
+
+* Choisir :
+  * `x = Locus1`
+  * `y = Locus2`
+* Tracer le nuage de points.
+   * **Titre**: "Corrélation entre Locus1 et Locus2"
+   * **Étiquette de l'axe x**: "Locus2"
+   * **Étiquette de l'axe y**: "Locus1"
+   * **Nom du fichier** : `graphique_regression_locus1_locus2.png`
+* Calculer la droite : `a, b = np.polyfit(x, y, 1)`.
+* Tracer la droite avec `plt.plot`.
+* Sauvegarder le graphique.
+
+
+### 11. Export du Top 10
+
+**Objectif** : Créer un fichier `resultats.csv` contenant les informations des 10 suspects les plus probables.
+
+* Créer un nouveau DataFrame pour stocker les 10 suspects.
+  ```python
+  nouveau_df  = pd.DataFrame({
+          "Nom": liste des 10 noms,
+          "Distance3D":  liste des distances des 10 noms
+      })
+   ```
+* Exporter le nouveau dataframe dans le fichier .csv avec :
+  * `sep=";"`
+  * `decimal=","`
+  * `index=False`
+
+
+### 12. Variante 1: 4e locus estimé
+
+**Objectif** : Créer un nouveau locus basé sur une relation linéaire.
+
+* Faire une régression entre `Locus1` et `Locus2`.
+* Construire :
+  `Locus4_estime = a * Locus1 + b`
+* Ajouter la colonne `Distance4D` au dataframe.
+* Calculer la distance 4D.
+* Afficher les 5 premières lignes pour comparer la colonne `Distance4D` avec la colonne `Distance3D`.
+
+
+### 13. Variante 2: Bruit expérimental
+
+**Objectif** : Simuler des erreurs de mesure.
+
+* Générer 3 tableaux de bruit.
+```python
+bruit = np.random.normal(0, 0.01, n)
+```
+* Construire trois colonnes bruitées.
+* Recalculer les distances bruitées.
+* Ajouter la colonne `Distance3D_bruitee`.
+* Comparer les distances sans bruit / avec bruit.
+
+
+### 14. Effet du bruit sur les 3 loci
+
+**Objectif** : Visualiser l'effet du bruit sur un locus
+
+* Tracer le nuage de points pour `Locus1` vs `Locus1_bruite`. 
+   * **Titre**: "Effet du bruit expérimental sur les valeurs du Locus1"
+   * **Étiquette de l'axe x**: "Locus1"
+   * **Étiquette de l'axe y**: "Locus1_bruite"
+   * **Nom du fichier** : `graphique_bruit_locus1.png`
+* Calculer la droite : `a, b = np.polyfit(x, y, 1)`.
+* Tracer la droite avec `plt.plot`.
+* Sauvegarder le graphique.
+
+
+### 15. Conclusion
+
+**Objectif** : Résumer vos résultats en ~ 10-15 lignes.
+
+Idées à inclure :
+* Rappel des objectifs du projet incluant l'utilisation des bibliothèques. 
+* Qui semble être le suspect principal.
+* Écarts entre les distances du Top 10.
+* Effet du 4e locus sur l'identification du suspect (distances).
+* Effet du bruit sur l'identification du suspect (locus original vs locus bruité).
+* Graphiques qui soutiennent votre conclusion et pourquoi.
+
+
+<!--
+
 ### 1. Lecture et exploration des données
 
 1. Lire les fichiers CSV (`;` comme séparateur, `,` pour décimales).  
 2. Afficher le nombre de suspects.  
-3. Calculer et afficher la **moyenne** et **l’écart-type** pour chaque locus.  
+3. Afficher les statistiques de base pour chaque locus.  
 4. Remplacer les valeurs manquantes par la moyenne correspondante.  
 5. Sauvegarder les données nettoyées dans un fichier nommé `adn_suspects_corrige.csv`.
 
@@ -181,7 +363,7 @@ $$
 1. Extraire et afficher les valeurs des 3 loci sous forme de tableaux NumPy.  
 2. Calculer et afficher la **distance euclidienne** entre chaque suspect et le profil du crime.  
 3. Créer deux listes :  
-   - `noms` (noms des suspects)  
+   - `noms` (noms des 150 suspects)  
    - `distances` (valeurs des distances)
 4. **Trier** les deux listes (boucles imbriquées + échanges entre listes).
 5. Afficher le **top 5 des suspects les plus proches**.
@@ -195,6 +377,7 @@ $$
 	* Étiquette de l'axe x: "Locus2"
 	* Étiquette de l'axe y: "Locus1"
 	* Nom du fichier : `graphique_regression_locus1_locus2.png`
+-->
 
 <!--
 ```python
@@ -210,7 +393,7 @@ for i in range(len(distances) - 1):
             noms[j] = tmp_nom
 ```
 -->
-
+<!--
 ### 3. Exporter les résultats
 
 1. Extraire les 10 premiers suspects triés (noms + distances).
@@ -250,7 +433,7 @@ Ce bruit représente l’incertitude liée aux instruments scientifiques (pipett
 	* Étiquette de l'axe x: ""Locus (valeur réelle)""
 	* Étiquette de l'axe y: "Locus / Locus_bruite"
 	* Nom du fichier : `graphique_bruit_locus.png`
-
+-->
 <!--
 #### b) Bruit expérimental (incertitude de mesure)
 
@@ -269,7 +452,7 @@ Ce bruit représente l’incertitude liée aux instruments scientifiques (pipett
 5. Refaire un **tri** et afficher le **top 5 bruité**.
 -->
 
-
+<!--
 ### 5. Rapport scientifique (Conclusion 10-15 lignes)
 
 #### Éléments de la conclusion
@@ -294,3 +477,4 @@ Ce bruit représente l’incertitude liée aux instruments scientifiques (pipett
 * e) **Graphiques**
   * Citer les trois graphiques produits (barres du Top 10, nuage de points avec droite de régression et nuages de points des loci bruités).
   * Indiquer brièvement ce qu’ils permettent de visualiser.
+-->

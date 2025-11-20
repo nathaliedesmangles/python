@@ -106,13 +106,6 @@
       <description>Objectif Lire un fichier CSV contenant des données expérimentales. Nettoyer et sauvegarder un nouveau fichier corrigé. Manipuler un DataFrame Pandas (sélection, ajout, statistiques). Transformer les colonnes en tableaux NumPy pour des calculs scientifiques. Visualiser les données sous forme de nuage de points. Fichier .ipynb pour la démo en classe Fichier utilisé pour la démonstration&#xA;Apprendre par la pratique Faites les exercices en vous aidant des notes de cours ci-dessous. Certains seront fait en classe à titre de démonstration. Les solutions seront disponibles à la fin de la semaine prochaine. Exercices Fichiers de départ à utiliser Bloc-notes de départ - Pandas&#xA;Fichier etudiants.csv&#xA;Fichier experience.txt&#xA;Fichier solubilite_sel.csv&#xA;Fichier solutions.csv</description>
     </item>
     <item>
-      <title> Culture générale (pour Physique mécanique)</title>
-      <link>/semaine95/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/semaine95/index.html</guid>
-      <description>Objectifs Avec NumPy&#xA;Lire des données à partir de fichiers .txt et .csv avec NumPy. Écrire des données dans des fichiers .txt et .csv. Manipuler les données lues sous forme de tableaux NumPy pour faire des calculs scientifiques. Avec Pandas&#xA;Sélection et parcours des données dans un DataFrame Avec SciPy&#xA;Utiliser le module scipy.stats pour calculer une régression linéaire. Extraire la pente, l’ordonnée à l’origine et le coefficient de corrélation. Tracer la droite de régression sur un nuage de points avec matplotlib. Aller plus loin avec le module NumPy Pourquoi lire et écrire des fichiers ? En sciences, on ne travaille pas toujours avec des données générées dans le programme. Souvent, les données proviennent :</description>
-    </item>
-    <item>
       <title> Évaluation #2 (30%)</title>
       <link>/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
