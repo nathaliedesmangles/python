@@ -391,6 +391,13 @@ x,v
 0.2,1.5
 ```
 
+On peut aussi remplacer les `NaN` de **seulement les colonnes numériques** (`int` ou `float`). Il suffit d'utiliser l'option `numeric_only=True` dans la fonction de calcul (ex: 
+
+```python
+moyennes_num = df.mean(numeric_only=True)   # True avec T majuscule
+df = df.fillna(moyennes_num)
+```
+
 
 ## Exportation d’un fichier nettoyé avec `to_csv()`
 
