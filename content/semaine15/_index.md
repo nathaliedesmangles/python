@@ -36,7 +36,7 @@ draft = false
 -->
 
 {{% notice style="accent" title="Important" %}}
-Vous devez remettre votre code sur Moodle : le fichier `projet_prenom_nom.ipynb` (**15%**) au plus tard <b style="color:red;">hier soir 23h59</b>
+Vous devez remettre votre code sur Moodle : le fichier `projet_prenom_nom.ipynb` (**15%**) au plus tard <b style="color:red;">ce soir 23h59</b>
 {{% /notice %}}
 
 
