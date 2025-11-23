@@ -14,7 +14,10 @@ draft = false
 * **Matière**: 		        Principalement **le projet** et les semaines 6 à 14 inclusivement
 * **Documentation permise**: 	3 feuilles recto-verso (manuscrite ou imprimée)
 * **Format**:			Test sur Moodle (théorique + pratique).
-* **Nombre de questions**:	À VENIR
+* **Nombre de questions**:	15 questions
+    * 6 questions à choix multiples
+    * 7 questions à réponse courte
+    * 2 questions de composition (code complet)
 
 {{% notice style="accent" title="Important" icon="warning" %}}
 **Aucun cellulaire** sera permis pendant l'examen. Pour vous connecter à Moodle et *SafeExam Browser* vous devrez déjà connaitre **votre code permanent**.
