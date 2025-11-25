@@ -279,6 +279,11 @@ df
 * `delimiter=";"` → indique que les valeurs sont séparées par des points-virgules.
 * `decimal=","` → indique que la virgule est utilisée pour les décimales.
 
+**Information importante :**
+
+* Le fichier de données .csv doit obligatoirement être dans le même dossier que le fichier de code .ipynb, sans ça, Python vous dira qu'il ne trouve pas le fichier .csv
+
+
 ```
 	x	v
 0	0.00	0.00
