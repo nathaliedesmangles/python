@@ -412,10 +412,11 @@ Si on veut sauvegarder un fichier **corrigé** :
 
 ```python
 # Exportation du fichier corrigé
-df.to_csv("donnees_corrigees.csv", index=False)
+df.to_csv("donnees_corrigees.csv", sep=",", index=False)
 ```
 
 * Les colonnes numériques sont automatiquement converties en ***float*** python (le point pour les décimales)
+* `sep` indique le caractère pour séparer les colonnes
 * `index=False` empêche Pandas d’ajouter une colonne de numéros de ligne.
 
 **IMPORTANT** : Le fichier source **reste intact**, on ne modifie jamais le fichier original. C’est une bonne pratique de **ne jamais écraser le fichier original** pour conserver une trace des données brutes.
@@ -435,6 +436,13 @@ On peut aussi accéder à **plusieurs colonnes** :
 
 ```python
 df[["x", "v"]]	# Seulement les données des 2 colonnes
+```
+
+Si on fait un calcul sur les colonnes sélectionnées, il faudra autant de variables que de nombre de colonnes sélectionnées pour stocker les résultats.
+
+Exemple
+```python
+moy1, moy2 = df[["x", "v"]].mean()	# Seulement les données des 2 colonnes
 ```
 
 ### Création de nouvelles colonnes

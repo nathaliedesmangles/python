@@ -199,6 +199,7 @@ $$
   * Remplacer les `NaN` par cette moyenne.
 * Créer un nouveau DataFrame : `suspects_corrige` pour stocker les données nettoyées.
 * Confirmer qu’il ne reste aucun `NaN`.
+* Exporter les données crrigées dans un nouveau fichier `adn_suspects_corrige.csv`.
 
 
 ### 5. Extraction des valeurs du crime
@@ -242,9 +243,9 @@ $$
 
 * Créer deux listes `noms` et `distances3d` pour stoker les noms des 150 suspects et les 150 distances calculées à l'étape 6.
 * Pour chaque position `i` :
-  * Trouver la plus petite distance dans les positions restantes.
-  * Échanger les distances.
-  * Échanger les noms de la même façon.
+  * Comparer deux à deux les distances (ex: la première et la deuxième, la deuxième et la troisième, ainsi de suite)
+  * Vérifier laquelle est la plus petite des deux distances.
+  * Au besoin, échanger les distances et les noms de la même façon.
 * Extraire les 10 premiers suspects. Vérifier que les valeurs sont dans l’ordre croissant.
 
 
