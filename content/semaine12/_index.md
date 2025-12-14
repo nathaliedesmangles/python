@@ -246,10 +246,29 @@ $$
   * Comparer deux à deux les distances (ex: la première et la deuxième, la deuxième et la troisième, ainsi de suite)
   * Vérifier laquelle est la plus petite des deux distances.
   * Au besoin, échanger les distances et les noms de la même façon.
+
+
+### 9. Export du Top 10
+
+**Objectif** : Créer un fichier `resultats.csv` contenant les informations des 10 suspects les plus probables.
+
 * Extraire les 10 premiers suspects. Vérifier que les valeurs sont dans l’ordre croissant.
 
+* Créer un nouveau DataFrame pour stocker les 10 suspects.
+  ```python
+  nouveau_df  = pd.DataFrame({
+          "Nom": liste des 10 noms,
+          "Distance3D":  liste des distances des 10 noms
+      })
+   ```
+* Exporter le nouveau dataframe dans le fichier .csv avec :
+  * `sep=";"`
+  * `decimal=","`
+  * `index=False`
 
-### 9. Graphique Top 10
+
+
+### 10. Graphique Top 10
 
 **Objectif** : Faire un graphique à barres simple du classement.
 
@@ -261,7 +280,8 @@ $$
 * Sauvegarder le graphique.
 
 
-### 10. Relation entre deux loci et régression
+
+### 11. Relation entre deux loci et régression
 
 **Objectif** : Comprendre la relation entre deux loci.
 
@@ -278,36 +298,8 @@ $$
 * Sauvegarder le graphique.
 
 
-### 11. Export du Top 10
 
-**Objectif** : Créer un fichier `resultats.csv` contenant les informations des 10 suspects les plus probables.
-
-* Créer un nouveau DataFrame pour stocker les 10 suspects.
-  ```python
-  nouveau_df  = pd.DataFrame({
-          "Nom": liste des 10 noms,
-          "Distance3D":  liste des distances des 10 noms
-      })
-   ```
-* Exporter le nouveau dataframe dans le fichier .csv avec :
-  * `sep=";"`
-  * `decimal=","`
-  * `index=False`
-
-
-### 12. Variante 1: 4e locus estimé
-
-**Objectif** : Créer un nouveau locus basé sur une relation linéaire.
-
-* Faire une régression entre `Locus1` et `Locus2`.
-* Construire :
-  `Locus4_estime = a * Locus1 + b`
-* Ajouter la colonne `Distance4D` au dataframe.
-* Calculer la distance 4D.
-* Afficher les 5 premières lignes pour comparer la colonne `Distance4D` avec la colonne `Distance3D`.
-
-
-### 13. Variante 2: Bruit expérimental
+### 12. Variante 1: Ajout du bruit expérimental
 
 **Objectif** : Simuler des erreurs de mesure.
 
@@ -321,7 +313,7 @@ bruit = np.random.normal(0, 0.01, n)	# n est le nombre total de suspects
 * Comparer les distances sans bruit / avec bruit.
 
 
-### 14. Effet du bruit sur les 3 loci
+### 13. Effet du bruit sur les 3 loci
 
 **Objectif** : Visualiser l'effet du bruit sur un locus
 
@@ -333,6 +325,20 @@ bruit = np.random.normal(0, 0.01, n)	# n est le nombre total de suspects
 * Calculer la droite : `a, b = np.polyfit(x, y, 1)`.
 * Tracer la droite avec `plt.plot`.
 * Sauvegarder le graphique.
+
+
+
+### 14. Variante 2: 4e locus estimé
+
+**Objectif** : Créer un nouveau locus basé sur une relation linéaire.
+
+* Faire une régression entre `Locus1` et `Locus2`.
+* Construire :
+  `Locus4_estime = a * Locus1 + b`
+* Ajouter la colonne `Distance4D` au dataframe.
+* Calculer la distance 4D.
+* Afficher les 5 premières lignes pour comparer la colonne `Distance4D` avec la colonne `Distance3D`.
+
 
 
 ### 15. Conclusion

@@ -442,7 +442,7 @@ Si on fait un calcul sur les colonnes sélectionnées, il faudra autant de varia
 
 Exemple
 ```python
-moy1, moy2 = df[["x", "v"]].mean()	# Seulement les données des 2 colonnes
+moy1, moy2 = df[["x", "v"]].mean()	# 2 moyennes stockées
 ```
 
 ### Création de nouvelles colonnes
